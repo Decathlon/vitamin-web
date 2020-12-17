@@ -7,6 +7,9 @@ jobs:
   static_code_analysis:
       name: Static code analysis
       runs-on: ubuntu-latest
+      env:
+        sonar.projectKey: jlind23_vitamin-web
+        sonar.organization: jlind23
       steps:
         - uses: actions/checkout@v2
           with:
