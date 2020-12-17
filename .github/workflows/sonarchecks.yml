@@ -8,6 +8,8 @@ on:
     types: [opened, synchronize, reopened]
 jobs:
   sonarcloud:
+    env:
+      SONAR_TOKEN: test
     name: SonarCloud
     runs-on: ubuntu-latest
     steps:
