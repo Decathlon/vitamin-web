@@ -24,6 +24,14 @@
   </a>
 </p>
 
+<p align="center">Health Indicators</p>
+
+<p align="center">
+  <a aria-label="sonarcloud" href="https://sonarcloud.io/dashboard?id=Decathlon_vitamin-web">
+    <img src="https://sonarcloud.io/api/project_badges/measure?project=Decathlon_vitamin-web&metric=alert_status" alt="">
+  </a>
+</p>
+
 ## Introduction
 
 The Decathlon brand Design System is the framework that helps our ecosystem to design and develop consistent and quality experiences.
