@@ -9,13 +9,13 @@
 
 <p align="center">Decathlon Design System libraries for web</p>
 
-<p align="center"><a href="https://www.decathlon.design">www.decathlon.design</a>
+<p align="center"><a href="https://www.decathlon.design">www.decathlon.design</a></p>
 
 <p align="center">
   <a aria-label="contributors graph" href="https://github.com/decathlon/vitamin-web/graphs/contributors">
     <img src="https://img.shields.io/github/contributors/decathlon/vitamin-web.svg">
   </a>
-  <a aria-label="last commit" href="https://github.com/decathlon/vitamin-web/commits/main">
+  <a aria-label="last commit" href="https://github.com/Decathlon/vitamin-web/commits">
     <img alt="" src=
   "https://img.shields.io/github/last-commit/decathlon/vitamin-web.svg">
   </a>
