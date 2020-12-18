@@ -1,0 +1,40 @@
+@layer components {
+  .btn {
+    --button-font-family: var(--vtmn-typo_font-family--condensed), Arial,
+      Helvetica, sans-serif;
+    --button-font-size: 16px;
+    --button-letter-spacing: 0.6px;
+    --button-font-weight: bold;
+    --button-border-radius: 4px;
+    --button-height: 48px;
+    --button-min-width: calc(6 * var(--button-font-size));
+    --button-background-color: var(--vtmn-color_brand-digital);
+    --button-background-color-hover: var(--vtmn-color_brand-digital-dark-1);
+    --button-background-color-active: var(--vtmn-color_brand-digital-dark-2);
+    --button-background-color-focus: var(--vtmn-color_brand-digital);
+    --button-color: var(--vtmn-color_white);
+    --button-border-color: transparent;
+    --button-side-padding: 24px;
+
+    font-family: var(--button-font-family);
+    font-size: var(--button-font-size);
+    letter-spacing: var(--button-letter-spacing);
+    font-weight: var(--button-font-weight);
+    border-radius: var(--button-border-radius);
+    min-width: var(--button-min-width);
+    background-color: var(--button-background-color);
+    color: var(--button-color);
+    height: var(--button-height);
+    box-shadow: inset 0px 0px 0px 2px var(--button-border-color);
+    padding: 0 var(--button-side-padding);
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-width: 0;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,14 @@
+/* Tailwind CSS */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'tailwindcss/screens';
+
+/* Common */
+@import 'common/variables.css';
+
+/* Components */
+@import 'components/buttons.css';
+
+/* Utilities */
+@import 'utilities/typography.css';
