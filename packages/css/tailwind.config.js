@@ -1,6 +1,6 @@
 module.exports = {
   prefix: 'vtmn-',
-  purge: [],
+  purge: ['src/stories/**/*.mdx'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {
