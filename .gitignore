@@ -21,3 +21,6 @@
 **/.env.test.local
 **/.env.production.local
 **/.eslintcache
+
+# Editors
+.vscode
