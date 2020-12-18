@@ -51,7 +51,7 @@
     line-height: var(--vtmn-typo_title-4-line-height);
   }
 
-  h5.vtmn-typo_title-5 {
+  .vtmn-typo_title-5 {
     font-family: var(--vtmn-typo_font-family);
     color: var(--vtmn-color_black);
     font-weight: var(--vtmn-typo_font-weight--bold);
