@@ -5,9 +5,13 @@
   "author": "Decathlon <designsystem@decathlo>",
   "homepage": "https://github.com/Decathlon/vitamin-web#readme",
   "scripts": {
-    "build": "cross-env NODE_ENV=production postcss src/index.css -o lib/index.css",
-    "storybook": "npm run build && start-storybook -s ./lib -p 6006",
-    "build-storybook": "build-storybook"
+    "dev": "npm run watch:storybook",
+    "build": "cross-env NODE_ENV=production npm run build:tailwind",
+    "build:tailwind": "postcss src/index.css -o lib/index.css",
+    "watch:tailwind": "chokidar 'src/**/*.css' 'src/**/*.mdx' '*.js' -c 'npm run build:tailwind'",
+    "watch:storybook": "npm-run-all build:tailwind --parallel watch:tailwind start:storybook",
+    "start:storybook": "start-storybook -p 6006 -s lib",
+    "build:storybook": "build-storybook"
   },
   "directories": {
     "lib": "lib"
@@ -32,19 +36,6 @@
       "url": "http://www.apache.org/licenses/LICENSE-2.0"
     }
   ],
-  "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@storybook/addon-actions": "^6.1.11",
-    "@storybook/addon-essentials": "^6.1.11",
-    "@storybook/addon-links": "^6.1.11",
-    "@storybook/html": "^6.1.11",
-    "autoprefixer": "^10.1.0",
-    "babel-loader": "^8.2.2",
-    "cross-env": "^7.0.3",
-    "postcss": "^8.2.1",
-    "postcss-cli": "^8.3.1",
-    "postcss-import": "^14.0.0"
-  },
   "dependencies": {
     "tailwindcss": "^2.0.2"
   }
