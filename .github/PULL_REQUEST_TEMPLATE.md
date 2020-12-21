@@ -1,5 +1,6 @@
 ## Pull Request checklist
-🚨Please review the [guidelines for contributing](../CONTRIBUTING.md) to this repository.
+
+🚨 Please review the [guidelines for contributing](../blob/master/CONTRIBUTING.md) to this repository.
 
 - [ ] Make sure you are requesting to **pull a topic/feature/bugfix branch**. Don't request your master!
 - [ ] Make sure you are making a pull request against the **master branch** (left side).
@@ -13,6 +14,7 @@
 <!-- Please try to limit your pull request to one type, submit multiple pull requests if needed. -->
 
 Please check the type of change your PR introduces:
+
 - Bugfix
 - Feature
 - Code style update (formatting, renaming)
@@ -22,14 +24,17 @@ Please check the type of change your PR introduces:
 - Other (please describe):
 
 ## Description
+
 Please describe your Pull Request.
 
 ## What is the current behavior?
+
 <!-- Please describe the current behavior that you are modifying, or link to a relevant issue. -->
 
 Issue Number: N/A
 
 ## What is the new behavior?
+
 <!-- Please describe the behavior or changes that are being added by this PR. -->
 
 -

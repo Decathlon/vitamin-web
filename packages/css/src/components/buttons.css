@@ -1,5 +1,6 @@
 @layer components {
-  .btn {
+  /* Default button */
+  .vtmn-btn {
     --button-font-family: var(--vtmn-typo_font-family--condensed), Arial,
       Helvetica, sans-serif;
     --button-font-size: 16px;
@@ -37,26 +38,25 @@
     border-width: 0;
     text-decoration: none;
   }
-
-  .btn:disabled {
+  .vtmn-btn:disabled {
     opacity: 0.25;
     cursor: not-allowed;
   }
-  .btn:not([disabled]):hover {
+  .vtmn-btn:not([disabled]):hover {
     cursor: pointer;
     background-color: var(--button-background-color-hover);
   }
-  .btn:not([disabled]):active {
+  .vtmn-btn:not([disabled]):active {
     background-color: var(--button-background-color-active);
   }
-  .btn:not([disabled]):focus {
+  .vtmn-btn:not([disabled]):focus {
     outline: none;
     box-shadow: inset 0px 0px 0px 2px var(--button-border-color),
       0px 0px 0px 2px var(--vtmn-color_brand-digital-light-1);
   }
 
   /* Primary button */
-  .btn_variant--primary {
+  .vtmn-btn_variant--primary {
     --button-background-color: var(--vtmn-color_brand-digital);
     --button-background-color-hover: var(--vtmn-color_brand-digital-dark-1);
     --button-background-color-active: var(--vtmn-color_brand-digital-dark-2);
@@ -66,7 +66,7 @@
   }
 
   /* Primary reversed button */
-  .btn_variant--primary-reversed {
+  .vtmn-btn_variant--primary-reversed {
     --button-background-color: var(--vtmn-color_white);
     --button-background-color-hover: rgba(255, 255, 255, 0.8);
     --button-background-color-active: rgba(255, 255, 255, 0.6);
@@ -76,7 +76,7 @@
   }
 
   /* Secondary button */
-  .btn_variant--secondary {
+  .vtmn-btn_variant--secondary {
     --button-background-color: transparent;
     --button-background-color-hover: rgba(115, 128, 134, 0.05);
     --button-background-color-active: rgba(115, 128, 134, 0.15);
@@ -86,7 +86,7 @@
   }
 
   /* Secondary reversed button */
-  .btn_variant--secondary-reversed {
+  .vtmn-btn_variant--secondary-reversed {
     --button-background-color: transparent;
     --button-background-color-hover: rgba(255, 255, 255, 0.2);
     --button-background-color-active: rgba(255, 255, 255, 0.4);
@@ -96,7 +96,7 @@
   }
 
   /* Ghost button */
-  .btn_variant--ghost {
+  .vtmn-btn_variant--ghost {
     --button-background-color: transparent;
     --button-background-color-hover: rgba(0, 125, 188, 0.05);
     --button-background-color-active: rgba(0, 125, 188, 0.15);
@@ -106,7 +106,7 @@
   }
 
   /* Conversion button */
-  .btn_variant--conversion {
+  .vtmn-btn_variant--conversion {
     --button-background-color: var(--vtmn-color_yellow);
     --button-background-color-hover: var(--vtmn-color_yellow-light-1);
     --button-background-color-active: var(--vtmn-color_yellow-light-2);
@@ -116,58 +116,23 @@
   }
 
   /* Sizes */
-  .btn_size--small {
+  .vtmn-btn_size--small {
     --button-font-size: 14px;
     --button-height: 32px;
     --button-side-padding: 16px;
   }
-  .btn_size--medium,
-  .btn_size--stretched {
+  .vtmn-btn_size--medium,
+  .vtmn-btn_size--stretched {
     --button-font-size: 16px;
     --button-height: 48px;
     --button-side-padding: 24px;
   }
-  .btn_size--large {
+  .vtmn-btn_size--large {
     --button-font-size: 20px;
     --button-height: 64px;
     --button-side-padding: 40px;
   }
-  .btn_size--stretched {
+  .vtmn-btn_size--stretched {
     width: 100%;
-  }
-
-  /* Buttons with icon */
-  .btn > i {
-    font-weight: var(--button-font-weight) !important;
-  }
-  .btn > i,
-  .btn_size--medium > i,
-  .btn_size--stretched > i {
-    font-size: 20px;
-  }
-  .btn_size--small > i {
-    font-size: 16px;
-  }
-  .btn_size--large > i {
-    font-size: 24px;
-  }
-  .btn:not(.btn_with-only-icon) > i {
-    margin-right: 6px;
-  }
-
-  /* Buttons with only icon */
-  .btn_with-only-icon {
-    --button-min-width: initial;
-  }
-  .btn_with-only-icon,
-  .btn_with-only-icon.btn_size--medium,
-  .btn_with-only-icon.btn_size--stretched {
-    --button-side-padding: 14px;
-  }
-  .btn_with-only-icon.btn_size--small {
-    --button-side-padding: 8px;
-  }
-  .btn_with-only-icon.btn_size--large {
-    --button-side-padding: 20px;
   }
 }

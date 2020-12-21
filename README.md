@@ -7,7 +7,7 @@
 
 <h1 align="center">Vitamin Web</h1>
 
-<p align="center">Decathlon Design System libraries for web</p>
+<p align="center">Decathlon Design System libraries for web applications</p>
 
 <p align="center"><a href="https://www.decathlon.design">www.decathlon.design</a>
 
@@ -63,16 +63,16 @@ For this, feel free Thanks in advance!
 
 Before making this project Open source, we already received contributions from core contributors. Thanks a lot:
 
-* **Laurent Thiebault**  [lauthieb](https://github.com/lauthieb)
-* **Gabin Bloquet** [gabbloquet](https://github.com/gabbloquet)
-* **Amen Souissi** [amen-souissi](https://github.com/amen-souissi)
-* **Tanguy Muselet** [tmuselet](https://github.com/tmuselet)
-* **Romain Joly** [RomainJoly](https://github.com/RomainJoly)
-* **Samuel Delaporte** [samueldelaporte](https://github.com/samueldelaporte)
-* **Joffrey Leveugle** [jleveugle](https://github.com/jleveugle)
-* **Rémi Delgatte** [rdelgatte](https://github.com/rdelgatte)
-* **Nicolas Breunin** [NicolasBreunin](https://github.com/NicolasBreunin)
-* **Flavian Magrit** [FlavianMagrit](https://github.com/FlavianMagrit)
+- **Laurent Thiebault** [lauthieb](https://github.com/lauthieb)
+- **Gabin Bloquet** [gabbloquet](https://github.com/gabbloquet)
+- **Amen Souissi** [amen-souissi](https://github.com/amen-souissi)
+- **Tanguy Muselet** [tmuselet](https://github.com/tmuselet)
+- **Romain Joly** [RomainJoly](https://github.com/RomainJoly)
+- **Samuel Delaporte** [samueldelaporte](https://github.com/samueldelaporte)
+- **Joffrey Leveugle** [jleveugle](https://github.com/jleveugle)
+- **Rémi Delgatte** [rdelgatte](https://github.com/rdelgatte)
+- **Nicolas Breunin** [NicolasBreunin](https://github.com/NicolasBreunin)
+- **Flavian Magrit** [FlavianMagrit](https://github.com/FlavianMagrit)
 
 Thanks also to all our [contributors](https://github.com/Decathlon/vitamin-web/graphs/contributors) who participated in this project.
 

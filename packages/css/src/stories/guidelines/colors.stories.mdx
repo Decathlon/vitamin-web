@@ -4,6 +4,7 @@ import {
   Preview,
   ColorPalette,
   ColorItem,
+  Source,
 } from '@storybook/addon-docs/blocks';
 import tailwindConfig from '../../../tailwind.config.js';
 
@@ -21,18 +22,32 @@ You have two options in order to use colors from Vitamin Web:
 
 ### By using [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
 
-If you don't know CSS Custom Properties, you can see basic usage documentation [here](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#Basic_usage). All our CSS Custom Properties for colors are listed after in our palette at "Swatches" column.
+If you don't know CSS Custom Properties, you can see basic usage documentation [here](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#Basic_usage). All our CSS Custom Properties for colors are listed at "Swatches" column just below:
+
+<ColorPalette>
+  {Object.keys(tailwindConfig.theme.colors).map((key) => (
+    <ColorItem
+      title={key}
+      colors={
+        typeof tailwindConfig.theme.colors[key] === 'object'
+          ? Object.keys(tailwindConfig.theme.colors[key]).map((color) =>
+              color !== 'DEFAULT'
+                ? `var(--vtmn-color_${key}-${color})`
+                : `var(--vtmn-color_${key})`,
+            )
+          : [tailwindConfig.theme.colors[key]]
+      }
+    />
+  ))}
+</ColorPalette>
 
 ### By using [Tailwind CSS](https://tailwindcss.com) utility classes
 
 You can use colors with Tailwind CSS utility classes for [Background Color](https://tailwindcss.com/docs/background-color) & [Text Color](https://tailwindcss.com/docs/text-color) for example.
 But you can also use them for borders, gradients, etc. Go to [Tailwind CSS documentation](https://tailwindcss.com/docs) & quick search for anything!
-All our Tailwind CSS names for colors are listed after in our palette at "Name" column.
+All our Tailwind CSS colors configuration is listed just below:
 
-## Palette 🎨
-
-<ColorPalette>
-  {Object.keys(tailwindConfig.theme.colors).map((color) => (
-    <ColorItem title={color} colors={[`var(--vtmn-color_${color})`]} />
-  ))}
-</ColorPalette>
+<Source
+  language="json"
+  code={JSON.stringify(tailwindConfig.theme.colors, null, 2)}
+/>
