@@ -2,7 +2,7 @@
   "name": "@decathlon/vitamin-css",
   "version": "0.0.1",
   "description": "CSS styles for Vitamin Web",
-  "author": "Decathlon <designsystem@decathlo>",
+  "author": "Decathlon <designsystem@decathlon.net>",
   "homepage": "https://github.com/Decathlon/vitamin-web#readme",
   "scripts": {
     "dev": "npm run watch:storybook",
@@ -11,7 +11,7 @@
     "watch:tailwind": "chokidar 'src/**/*.css' 'src/**/*.mdx' '*.js' -c 'npm run build:tailwind'",
     "watch:storybook": "npm-run-all build:tailwind --parallel watch:tailwind start:storybook",
     "start:storybook": "start-storybook -p 6006 -s lib",
-    "build:storybook": "build-storybook"
+    "build:storybook": "build-storybook --docs"
   },
   "directories": {
     "lib": "lib"
