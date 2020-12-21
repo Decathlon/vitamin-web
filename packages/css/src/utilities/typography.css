@@ -79,30 +79,4 @@
     font-size: var(--vtmn-typo_text-3-font-size);
     line-height: var(--vtmn-typo_text-3-line-height);
   }
-
-  /* CSS utility classes */
-
-  .vtmn-typo_color--black {
-    color: var(--vtmn-color_black) !important;
-  }
-
-  .vtmn-typo_color--grey {
-    color: var(--vtmn-color_grey) !important;
-  }
-
-  .vtmn-typo_color--white {
-    color: var(--vtmn-color_white) !important;
-  }
-
-  .vtmn-typo_color--brand-digital {
-    color: var(--vtmn-color_brand-digital) !important;
-  }
-
-  .vtmn-typo_font-weight--regular {
-    font-weight: var(--vtmn-typo_font-weight--regular) !important;
-  }
-
-  .vtmn-typo_font-weight--bold {
-    font-weight: var(--vtmn-typo_font-weight--bold) !important;
-  }
 }
