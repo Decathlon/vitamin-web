@@ -11,7 +11,8 @@
     "watch:tailwind": "chokidar 'src/**/*.css' 'src/**/*.mdx' '*.js' -c 'npm run build:tailwind'",
     "watch:storybook": "npm-run-all build:tailwind --parallel watch:tailwind start:storybook",
     "start:storybook": "start-storybook -p 6006 -s lib",
-    "build:storybook": "build-storybook --docs"
+    "build:storybook": "build-storybook --docs",
+    "test": "jest"
   },
   "directories": {
     "lib": "lib"
@@ -38,5 +39,13 @@
   ],
   "dependencies": {
     "tailwindcss": "^2.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@storybook/addon-storyshots": "^6.1.11",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3"
   }
 }
