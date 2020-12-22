@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "postinstall": "npx husky install && lerna bootstrap && link-parent-bin",
+    "postinstall": "husky install",
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
     "pack": "lerna run pack",
@@ -9,7 +9,6 @@
     "format": "lerna run format",
     "lint": "lerna run lint",
     "lint:fix": "lerna run lint:fix",
-    "link-parent-bin": "link-parent-bin",
     "publish": "lerna publish from-package --ignore-prepublish --no-git-reset --yes"
   },
   "husky": {
@@ -37,7 +36,6 @@
     "eslint-config-airbnb": "^18.2.1",
     "husky": "^4.3.6",
     "lerna": "^3.22.1",
-    "link-parent-bin": "^2.0.0",
     "lint-staged": "^10.5.3",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.2.1",
