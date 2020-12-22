@@ -9,39 +9,10 @@ import tailwindConfig from '../../../../tailwind.config.js';
 
 For more details, see our [Layout's guideline](https://www.decathlon.design/726f8c765/p/061870-layout/b/91b22f).
 
-## Responsive Design
+## Breakpoints
 
-### Using [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
-
-If you want to make your web application responsive, you can use media queries. Here are media queries that respects our guideline:
-
-```css
-@media screen and (max-width: 599px) {
-  /* Mobile */
-}
-
-@media screen, (min-width: 600px) and (max-width: 895px) {
-  /* Tablet */
-}
-
-@media screen, (min-width: 896px) and (max-width: 1199px) {
-  /* Small desktop */
-}
-
-@media screen, (min-width: 1200px) and (max-width: 1799px) {
-  /* Medium desktop */
-}
-
-@media screen and (min-width: 1800px) {
-  /* Large desktop */
-}
-```
-
-### Using [Tailwind CSS](https://tailwindcss.com) utility classes
-
-Every utility class in Tailwind CSS can be applied conditionally at different breakpoints, which makes it a piece of cake to build complex responsive interfaces without ever leaving your HTML.
-
-Here is the list of our breakpoints in Tailwind CSS Configuration:
+Every utility class in [Tailwind CSS](https://tailwindcss.com) can be applied conditionally at different breakpoints, which makes it a piece of cake to build complex responsive interfaces without ever leaving your HTML.
+Here is the list of our breakpoints in Tailwind CSS Configuration, the values are the `min-width` where that breakpoint should start:
 
 <Source
   language="json"
@@ -50,19 +21,31 @@ Here is the list of our breakpoints in Tailwind CSS Configuration:
 
 If you want to use our utility classes from Tailwind CSS for Responsive Design, [see this documentation](https://tailwindcss.com/docs/responsive-design).
 
-With Vitamin, you will have to prefix Tailwind CSS utility classes with `vtmn-` and use our screens listed above.
-For example, if you want to always have text align to left except for small desktops:
-
-<Source
-  language="html"
-  code={'<div class="vtmn-text-left small-desktop:vtmn-text-center"'}
-/>
-
 ## Spacings
 
-TODO
+Spacings help creating hierarchy and relationships between elements.
+The spacing scale is inherited by the padding, margin, width, height, maxHeight, gap, inset, space, and translate core plugins.
 
-## Grid
+<Source
+  language="json"
+  code={JSON.stringify(tailwindConfig.theme.spacing, null, 2)}
+/>
 
-TODO
-[CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+These values will override the [Tailwind CSS' default spacing scale](https://tailwindcss.com/docs/customizing-spacing#default-spacing-scale) and generates classes like `p-10`, `w-8`, `h-6`, etc.
+
+## Grid system
+
+As you've probably seen on our [Layout's guideline](https://www.decathlon.design/726f8c765/p/061870-layout/b/60e5d1), we are in a 12 column grid system.
+
+If you want to apply this guideline, you just need to follow documentation from Tailwind CSS:
+
+- [Grid Template Columns](https://tailwindcss.com/docs/grid-template-columns)
+- [Grid Column Start / End](https://tailwindcss.com/docs/grid-column)
+- [Grid Template Rows](https://tailwindcss.com/docs/grid-template-rows)
+- [Grid Row Start / End](https://tailwindcss.com/docs/grid-row)
+- [Grid Auto Flow](https://tailwindcss.com/docs/grid-auto-flow)
+- [Grid Auto Columns](https://tailwindcss.com/docs/grid-auto-columns)
+- [Grid Auto Rows](https://tailwindcss.com/docs/grid-auto-rows)
+- [Gap](https://tailwindcss.com/docs/gap)
+
+Every Tailwind CSS utility classes from grid follows our configuration about breakpoints & spacings detailed above.
