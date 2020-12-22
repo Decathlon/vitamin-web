@@ -44,6 +44,27 @@
   --vtmn-typo_font-weight--regular: 400;
   --vtmn-typo_font-weight--bold: 700;
 
+  --vtmn-typo_display-1-font-size: 60px;
+  --vtmn-typo_display-1-line-height: 48px;
+
+  --vtmn-typo_display-2-font-size: 32px;
+  --vtmn-typo_display-2-line-height: 30px;
+
+  --vtmn-typo_title-1-font-size: 40px;
+  --vtmn-typo_title-1-line-height: 42px;
+
+  --vtmn-typo_title-2-font-size: 36px;
+  --vtmn-typo_title-2-line-height: 40px;
+
+  --vtmn-typo_title-3-font-size: 28px;
+  --vtmn-typo_title-3-line-height: 27px;
+
+  --vtmn-typo_title-4-font-size: 24px;
+  --vtmn-typo_title-4-line-height: 28px;
+
+  --vtmn-typo_title-5-font-size: 20px;
+  --vtmn-typo_title-5-line-height: 24px;
+
   --vtmn-typo_text-1-font-size: 18px;
   --vtmn-typo_text-1-line-height: 26px;
 
@@ -52,31 +73,6 @@
 
   --vtmn-typo_text-3-font-size: 14px;
   --vtmn-typo_text-3-line-height: 22px;
-}
-
-@screen mobile {
-  :root {
-    --vtmn-typo_display-1-font-size: 60px;
-    --vtmn-typo_display-1-line-height: 48px;
-
-    --vtmn-typo_display-2-font-size: 32px;
-    --vtmn-typo_display-2-line-height: 30px;
-
-    --vtmn-typo_title-1-font-size: 40px;
-    --vtmn-typo_title-1-line-height: 42px;
-
-    --vtmn-typo_title-2-font-size: 36px;
-    --vtmn-typo_title-2-line-height: 40px;
-
-    --vtmn-typo_title-3-font-size: 28px;
-    --vtmn-typo_title-3-line-height: 27px;
-
-    --vtmn-typo_title-4-font-size: 24px;
-    --vtmn-typo_title-4-line-height: 28px;
-
-    --vtmn-typo_title-5-font-size: 20px;
-    --vtmn-typo_title-5-line-height: 24px;
-  }
 }
 
 @screen tablet {
