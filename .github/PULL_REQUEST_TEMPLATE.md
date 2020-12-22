@@ -1,6 +1,6 @@
 ## Pull Request checklist
 
-🚨 Please review the [guidelines for contributing](../blob/master/CONTRIBUTING.md) to this repository.
+🚨 Please review the [guidelines for contributing](../blob/main/CONTRIBUTING.md) to this repository.
 
 - [ ] Make sure you are requesting to **pull a topic/feature/bugfix branch**. Don't request your master!
 - [ ] Make sure you are making a pull request against the **master branch** (left side).
