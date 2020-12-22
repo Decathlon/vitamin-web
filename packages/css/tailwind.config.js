@@ -5,10 +5,10 @@ module.exports = {
   important: true,
   theme: {
     screens: {
-      tablet: '600px',
-      'small-desktop': '900px',
-      'medium-desktop': '1200px',
-      'large-desktop': '1800px',
+      tablet: 'var(--vtmn-breakpoint_tablet)',
+      'small-desktop': 'var(--vtmn-breakpoint_small-desktop)',
+      'medium-desktop': 'var(--vtmn-breakpoint_medium-desktop)',
+      'large-desktop': 'var(--vtmn-breakpoint_large-desktop)',
     },
     colors: {
       'brand-digital': {
@@ -22,7 +22,7 @@ module.exports = {
       green: {
         'light-1': 'var(--vtmn-color_green-light-1)',
         'light-2': 'var(--vtmn-color_green-light-2)',
-        'light-3 ': 'var(--vtmn-color_green-light-3)',
+        'light-3': 'var(--vtmn-color_green-light-3)',
         DEFAULT: 'var(--vtmn-color_green)',
         'dark-1': 'var(--vtmn-color_green-dark-1)',
         'dark-2': 'var(--vtmn-color_green-dark-2)',
@@ -60,16 +60,16 @@ module.exports = {
       },
     },
     spacing: {
-      1: '4px',
-      2: '8px',
-      3: '12px',
-      4: '16px',
-      5: '24px',
-      6: '32px',
-      7: '40px',
-      8: '48px',
-      9: '56px',
-      10: '64px',
+      1: 'var(--vtmn-spacing_1)',
+      2: 'var(--vtmn-spacing_2)',
+      3: 'var(--vtmn-spacing_3)',
+      4: 'var(--vtmn-spacing_4)',
+      5: 'var(--vtmn-spacing_5)',
+      6: 'var(--vtmn-spacing_6)',
+      7: 'var(--vtmn-spacing_7)',
+      8: 'var(--vtmn-spacing_8)',
+      9: 'var(--vtmn-spacing_9)',
+      10: 'var(--vtmn-spacing_10)',
     },
     fontFamily: {
       display: ['Roboto Condensed', 'system-ui', '-apple-system'],
