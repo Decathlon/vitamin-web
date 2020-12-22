@@ -4,8 +4,9 @@
 @import 'tailwindcss/utilities';
 @import 'tailwindcss/screens';
 
-/* Common */
-@import 'common/variables.css';
+/* Design tokens */
+@import 'design-tokens/colors.css';
+@import 'design-tokens/typography.css';
 
 /* Components */
 @import 'components/buttons.css';
