@@ -1,15 +1,32 @@
 {
+  "name": "vitamin-web",
   "private": true,
+  "keywords": [
+    "design-system",
+    "ui-kit",
+    "libraries"
+  ],
+  "bugs": {
+    "url": "https://github.com/Decathlon/vitamin-web/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Decathlon/vitamin-web.git"
+  },
+  "license": "Apache-2.0",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "postinstall": "husky install",
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
-    "pack": "lerna run pack",
-    "test": "lerna run test",
     "format": "lerna run format",
+    "postinstall": "husky install",
     "lint": "lerna run lint",
     "lint:fix": "lerna run lint:fix",
-    "publish": "lerna publish from-package --ignore-prepublish --no-git-reset --yes"
+    "pack": "lerna run pack",
+    "publish": "lerna publish from-package --ignore-prepublish --no-git-reset --yes",
+    "test": "lerna run test"
   },
   "husky": {
     "hooks": {
@@ -21,6 +38,9 @@
       "npx prettier --write",
       "npm run lint:fix"
     ]
+  },
+  "dependencies": {
+    "@decathlon/vitamin-css": "file:packages/css"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
@@ -43,30 +63,10 @@
     "postcss-import": "^14.0.0",
     "prettier": "^2.2.1"
   },
-  "workspaces": [
-    "packages/*"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Decathlon/vitamin-web.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Decathlon/vitamin-web/issues"
-  },
-  "keywords": [
-    "design-system",
-    "ui-kit",
-    "libraries"
-  ],
-  "license": "Apache-2.0",
   "licenses": [
     {
       "type": "Apache-2.0",
       "url": "http://www.apache.org/licenses/LICENSE-2.0"
     }
-  ],
-  "name": "vitamin-web",
-  "dependencies": {
-    "@decathlon/vitamin-css": "file:packages/css"
-  }
+  ]
 }
