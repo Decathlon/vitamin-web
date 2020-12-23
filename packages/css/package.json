@@ -2,39 +2,30 @@
   "name": "@decathlon/vitamin-css",
   "version": "0.0.1",
   "description": "CSS styles for Vitamin Web",
-  "author": "Decathlon <designsystem@decathlon.net>",
   "homepage": "https://github.com/Decathlon/vitamin-web#readme",
-  "scripts": {
-    "dev": "start-storybook -p 6006",
-    "build": "cross-env NODE_ENV=production npm run build:tailwind",
-    "build:tailwind": "postcss src/index.css -o lib/index.css",
-    "build:storybook": "build-storybook --docs",
-    "stylelint": "stylelint **/*.css",
-    "stylelint:fix": "stylelint **/*.css --fix"
+  "bugs": {
+    "url": "https://github.com/Decathlon/vitamin-web/issues"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Decathlon/vitamin-web.git"
+  },
+  "license": "Apache-2.0",
+  "author": "Decathlon <designsystem@decathlon.net>",
   "directories": {
     "lib": "lib"
   },
   "files": [
     "lib"
   ],
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org"
+  "scripts": {
+    "build": "cross-env NODE_ENV=production npm run build:tailwind",
+    "build:storybook": "build-storybook --docs",
+    "build:tailwind": "postcss src/index.css -o lib/index.css",
+    "dev": "start-storybook -p 6006",
+    "stylelint": "stylelint **/*.css",
+    "stylelint:fix": "stylelint **/*.css --fix"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Decathlon/vitamin-web.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Decathlon/vitamin-web/issues"
-  },
-  "license": "Apache-2.0",
-  "licenses": [
-    {
-      "type": "Apache-2.0",
-      "url": "http://www.apache.org/licenses/LICENSE-2.0"
-    }
-  ],
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@storybook/addon-actions": "^6.1.11",
@@ -52,5 +43,14 @@
     "stylelint": "^13.8.0",
     "stylelint-config-standard": "^20.0.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
-  }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ]
 }

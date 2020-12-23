@@ -14,16 +14,6 @@
     "url": "git+https://github.com/Decathlon/vitamin-web.git"
   },
   "license": "Apache-2.0",
-  "licenses": [
-    {
-      "type": "Apache-2.0",
-      "url": "http://www.apache.org/licenses/LICENSE-2.0"
-    }
-  ],
-  "engines": {
-    "npm": "please-use-yarn",
-    "yarn": ">= 1.19.1"
-  },
   "workspaces": [
     "packages/*"
   ],
@@ -32,21 +22,22 @@
     "build": "lerna run build",
     "format": "lerna run format",
     "postinstall": "npx husky install",
-    "prettier": "prettier",
-    "prettier:fix": "prettier --write",
     "lint": "lerna -- exec eslint .",
     "lint:fix": "lerna exec -- eslint --fix .",
+    "pack": "lerna run pack",
+    "prettier": "prettier",
+    "prettier:fix": "prettier --write",
+    "publish": "lerna publish from-package --ignore-prepublish --no-git-reset --yes",
     "stylelint": "lerna run stylelint",
     "stylelint:fix": "lerna run stylelint:fix",
-    "pack": "lerna run pack",
-    "publish": "lerna publish from-package --ignore-prepublish --no-git-reset --yes",
     "test": "lerna run test"
   },
   "lint-staged": {
     "./packages/**/*.{js,jsx,ts,tsx}": [
       "npm run prettier:fix",
       "npm run lint:fix",
-      "npm run stylelint:fix"
+      "npm run stylelint:fix",
+      "sort-package-json \"package.json\" \"packages/*/package.json\""
     ]
   },
   "devDependencies": {
@@ -60,6 +51,17 @@
     "husky": "^4.3.6",
     "lerna": "^3.22.1",
     "lint-staged": "^10.5.3",
-    "prettier": "^2.2.1"
-  }
+    "prettier": "^2.2.1",
+    "sort-package-json": "^1.48.0"
+  },
+  "engines": {
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.19.1"
+  },
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ]
 }
