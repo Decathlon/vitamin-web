@@ -22,16 +22,21 @@
     "build": "lerna run build",
     "format": "lerna run format",
     "postinstall": "npx husky install",
+    "prettier": "prettier",
+    "prettier:fix": "prettier --write",
     "lint": "lerna -- exec eslint .",
     "lint:fix": "lerna exec -- eslint --fix .",
+    "stylelint": "lerna run stylelint",
+    "stylelint:fix": "lerna run stylelint:fix",
     "pack": "lerna run pack",
     "publish": "lerna publish from-package --ignore-prepublish --no-git-reset --yes",
     "test": "lerna run test"
   },
   "lint-staged": {
     "./packages/**/*.{js,jsx,ts,tsx}": [
-      "npx prettier --write",
-      "npm run lint:fix"
+      "npm run prettier:fix",
+      "npm run lint:fix",
+      "npm run stylelint:fix"
     ]
   },
   "devDependencies": {
