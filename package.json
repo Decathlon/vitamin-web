@@ -34,7 +34,7 @@
     }
   },
   "lint-staged": {
-    "./packages/*.{js,jsx,ts,tsx}": [
+    "./packages/**/*.{js,jsx,ts,tsx}": [
       "npx prettier --write",
       "npm run lint:fix"
     ]
