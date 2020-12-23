@@ -62,10 +62,8 @@ Read the [Installation Guide](https://yarnpkg.com/en/docs/install) for detailed 
 Once you have installed [Yarn](https://yarnpkg.com), please run:
 
 ```sh
-yarn install && yarn run boostrap
+yarn install
 ```
-
-These commands will install dependencies & bootstrap the project (see [@lerna/boostrap documentation](https://github.com/lerna/lerna/tree/main/commands/bootstrap#readme)).
 
 > 👉 See [the contributing docs](CONTRIBUTING.md) for more information about how to contribute.
 

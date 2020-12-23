@@ -18,7 +18,6 @@
     "packages/*"
   ],
   "scripts": {
-    "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
     "format": "lerna run format",
     "postinstall": "npx husky install",
