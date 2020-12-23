@@ -53,7 +53,7 @@ To quickly have your code available on production, please take care and read our
 
 ```bash
 git add <files>
-git commit -m "A commit message"
+git commit -m "<type>[optional scope]: <description>" (the message must follow https://www.conventionalcommits.org guidelines)
 git push origin <my-branch-name>
 ```
 

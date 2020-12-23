@@ -52,10 +52,20 @@ all of the current [guidelines](https://www.decathlon.design/726f8c765/p/189012-
 ## Contributing
 
 One of the Decathlon Design System goals is to provide guidelines & components to gain in consistency, efficiency & accessibility. The best way to achieve this is together!
-That's why we are on GitHub.
+That's why we are on GitHub. We would love contributions from the community (bug reports, feature requests, suggestions, Pull Requests, whatever you want!).
 
-We would love contributions from the community (bug reports, feature requests, suggestions, Pull Requests, whatever you want!).
-For this, feel free Thanks in advance!
+## Install dependencies
+
+In this monorepo, we use [Yarn](https://yarnpkg.com) & [Lerna](https://github.com/lerna/lerna).
+Read the [Installation Guide](https://yarnpkg.com/en/docs/install) for detailed instructions on how to install Yarn.
+
+Once you have installed [Yarn](https://yarnpkg.com), please run:
+
+```sh
+yarn install && yarn run boostrap
+```
+
+These commands will install dependencies & bootstrap the project (see [@lerna/boostrap documentation](https://github.com/lerna/lerna/tree/main/commands/bootstrap#readme)).
 
 > 👉 See [the contributing docs](CONTRIBUTING.md) for more information about how to contribute.
 
