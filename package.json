@@ -28,11 +28,6 @@
     "publish": "lerna publish from-package --ignore-prepublish --no-git-reset --yes",
     "test": "lerna run test"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "./packages/**/*.{js,jsx,ts,tsx}": [
       "npx prettier --write",
@@ -40,6 +35,8 @@
     ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "eslint": "^7.15.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.22.1",
