@@ -22,8 +22,8 @@
     "build": "lerna run build",
     "format": "lerna run format",
     "postinstall": "npx husky install",
-    "lint": "lerna -- exec eslint .",
-    "lint:fix": "lerna exec -- eslint --fix .",
+    "lint": "eslint *.js && lerna run --parallel lint",
+    "lint:fix": "eslint *.js && lerna run  --parallel lint:fix",
     "pack": "lerna run pack",
     "prettier": "prettier",
     "prettier:fix": "prettier --write",
@@ -56,7 +56,8 @@
   },
   "engines": {
     "npm": "please-use-yarn",
-    "yarn": ">= 1.19.1"
+    "yarn": ">= 1.19.1",
+    "node": "^12 || ^14"
   },
   "licenses": [
     {
