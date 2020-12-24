@@ -1,7 +1,7 @@
 {
   "name": "@decathlon/vitamin-css",
   "version": "0.0.1",
-  "description": "CSS styles for Vitamin Web",
+  "description": "CSS package of Vitamin Web",
   "homepage": "https://github.com/Decathlon/vitamin-web#readme",
   "bugs": {
     "url": "https://github.com/Decathlon/vitamin-web/issues"
@@ -23,8 +23,8 @@
     "build:storybook": "build-storybook --docs",
     "build:tailwind": "postcss src/index.css -o lib/index.css",
     "dev": "start-storybook -p 6006",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
+    "eslint": "eslint .",
+    "eslint:fix": "eslint --fix .",
     "stylelint": "stylelint **/*.css",
     "stylelint:fix": "stylelint **/*.css --fix"
   },
