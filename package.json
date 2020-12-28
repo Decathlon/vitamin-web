@@ -1,0 +1,71 @@
+{
+  "name": "vitamin-web",
+  "private": true,
+  "keywords": [
+    "design-system",
+    "ui-kit",
+    "libraries"
+  ],
+  "bugs": {
+    "url": "https://github.com/Decathlon/vitamin-web/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Decathlon/vitamin-web.git"
+  },
+  "license": "Apache-2.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "lerna run build",
+    "eslint": "lerna exec --parallel -- yarn run eslint",
+    "eslint:fix": "lerna exec --parallel -- yarn run eslint:fix",
+    "format": "lerna run format",
+    "postinstall": "npx husky install",
+    "pack": "lerna run pack",
+    "prettier": "prettier .",
+    "prettier:fix": "prettier . --write",
+    "publish": "lerna publish from-package --ignore-prepublish --no-git-reset --yes",
+    "stylelint": "lerna exec --parallel -- yarn run stylelint",
+    "stylelint:fix": "lerna exec --parallel -- yarn run stylelint:fix",
+    "test": "lerna run test"
+  },
+  "lint-staged": {
+    "./**/package.json": [
+      "sort-package-json && lerna exec --parallel -- sort-package-json"
+    ],
+    "./packages/**/*.{css}": [
+      "yarn run stylelint:fix"
+    ],
+    "./packages/**/*.{json,js,jsx,ts,tsx}": [
+      "yarn run prettier:fix",
+      "yarn run eslint:fix"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "husky": "^4.3.6",
+    "lerna": "^3.22.1",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1",
+    "sort-package-json": "^1.48.0"
+  },
+  "engines": {
+    "node": "^12 || ^14",
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.19.1"
+  },
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ]
+}

@@ -7,7 +7,7 @@
 
 <h1 align="center">Vitamin Web</h1>
 
-<p align="center">Decathlon Design System libraries for web</p>
+<p align="center">Decathlon Design System libraries for web applications</p>
 
 <p align="center"><a href="https://www.decathlon.design">www.decathlon.design</a></p>
 
@@ -52,10 +52,18 @@ all of the current [guidelines](https://www.decathlon.design/726f8c765/p/189012-
 ## Contributing
 
 One of the Decathlon Design System goals is to provide guidelines & components to gain in consistency, efficiency & accessibility. The best way to achieve this is together!
-That's why we are on GitHub.
+That's why we are on GitHub. We would love contributions from the community (bug reports, feature requests, suggestions, Pull Requests, whatever you want!).
 
-We would love contributions from the community (bug reports, feature requests, suggestions, Pull Requests, whatever you want!).
-For this, feel free Thanks in advance!
+## Install dependencies
+
+In this monorepo, we use [Yarn](https://yarnpkg.com) & [Lerna](https://github.com/lerna/lerna).
+Read the [Installation Guide](https://yarnpkg.com/en/docs/install) for detailed instructions on how to install Yarn.
+
+Once you have installed [Yarn](https://yarnpkg.com), please run:
+
+```sh
+yarn install
+```
 
 > 👉 See [the contributing docs](CONTRIBUTING.md) for more information about how to contribute.
 
@@ -63,16 +71,16 @@ For this, feel free Thanks in advance!
 
 Before making this project Open source, we already received contributions from core contributors. Thanks a lot:
 
-* **Laurent Thiebault**  [lauthieb](https://github.com/lauthieb)
-* **Gabin Bloquet** [gabbloquet](https://github.com/gabbloquet)
-* **Amen Souissi** [amen-souissi](https://github.com/amen-souissi)
-* **Tanguy Muselet** [tmuselet](https://github.com/tmuselet)
-* **Romain Joly** [RomainJoly](https://github.com/RomainJoly)
-* **Samuel Delaporte** [samueldelaporte](https://github.com/samueldelaporte)
-* **Joffrey Leveugle** [jleveugle](https://github.com/jleveugle)
-* **Rémi Delgatte** [rdelgatte](https://github.com/rdelgatte)
-* **Nicolas Breunin** [NicolasBreunin](https://github.com/NicolasBreunin)
-* **Flavian Magrit** [FlavianMagrit](https://github.com/FlavianMagrit)
+- **Laurent Thiebault** [lauthieb](https://github.com/lauthieb)
+- **Gabin Bloquet** [gabbloquet](https://github.com/gabbloquet)
+- **Amen Souissi** [amen-souissi](https://github.com/amen-souissi)
+- **Tanguy Muselet** [tmuselet](https://github.com/tmuselet)
+- **Romain Joly** [RomainJoly](https://github.com/RomainJoly)
+- **Samuel Delaporte** [samueldelaporte](https://github.com/samueldelaporte)
+- **Joffrey Leveugle** [jleveugle](https://github.com/jleveugle)
+- **Rémi Delgatte** [rdelgatte](https://github.com/rdelgatte)
+- **Nicolas Breunin** [NicolasBreunin](https://github.com/NicolasBreunin)
+- **Flavian Magrit** [FlavianMagrit](https://github.com/FlavianMagrit)
 
 Thanks also to all our [contributors](https://github.com/Decathlon/vitamin-web/graphs/contributors) who participated in this project.
 
