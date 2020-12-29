@@ -23,4 +23,14 @@
 **/.eslintcache
 
 # Editors
+**/.idea/
 **/.vscode
+**/*.sublime-project
+**/*.sublime-workspace
+
+# Misc
+$RECYCLE.BIN/
+.DS_Store
+Thumbs.db
+UserInterfaceState.xcuserstate
+.env

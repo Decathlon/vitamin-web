@@ -1,0 +1,12 @@
+.stencil/
+dist/
+www/
+loader/
+
+*~
+*.sw[mnpcod]
+*.log
+*.lock
+*.tmp
+*.tmp.*
+log.txt

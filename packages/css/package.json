@@ -23,7 +23,7 @@
     "build:storybook": "build-storybook --docs",
     "build:tailwind": "postcss src/index.css -o lib/index.css",
     "dev": "start-storybook -p 6006",
-    "eslint": "eslint src",
+    "eslint": "eslint src/**/*.js",
     "eslint:fix": "eslint --fix src",
     "stylelint": "stylelint src/**/*.css",
     "stylelint:fix": "stylelint src/**/*.css --fix"
