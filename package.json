@@ -29,18 +29,19 @@
     "publish": "lerna publish from-package --ignore-prepublish --no-git-reset --yes",
     "stylelint": "lerna exec --parallel -- yarn run stylelint",
     "stylelint:fix": "lerna exec --parallel -- yarn run stylelint:fix",
-    "test": "lerna run test"
+    "test": "lerna run test",
+    "test:coverage": "lerna run test:coverage"
   },
   "lint-staged": {
     "./**/package.json": [
       "sort-package-json && lerna exec --parallel -- sort-package-json"
     ],
-    "./packages/**/*.{css}": [
-      "yarn run stylelint:fix"
-    ],
-    "./packages/**/*.{json,js,jsx,ts,tsx}": [
+    "./packages/**/(!package)*.{json,js,jsx,ts,tsx}": [
       "yarn run prettier:fix",
       "yarn run eslint:fix"
+    ],
+    "./packages/**/*.{css}": [
+      "yarn run stylelint:fix"
     ]
   },
   "devDependencies": {
