@@ -16,7 +16,10 @@
     "lib": "lib"
   },
   "files": [
-    "lib"
+    "lib",
+    "src",
+    "postcss.config.js",
+    "tailwind.config.js"
   ],
   "scripts": {
     "build": "cross-env NODE_ENV=production npm run build:tailwind",

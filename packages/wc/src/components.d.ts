@@ -16,6 +16,14 @@ export namespace Components {
          */
         "last": string;
     }
+    interface VtmnButton {
+        "variant": | 'primary'
+    | 'primary-reversed'
+    | 'secondary'
+    | 'secondary-reversed'
+    | 'ghost'
+    | 'conversion';
+    }
 }
 declare global {
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
@@ -24,8 +32,15 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLVtmnButtonElement extends Components.VtmnButton, HTMLStencilElement {
+    }
+    var HTMLVtmnButtonElement: {
+        prototype: HTMLVtmnButtonElement;
+        new (): HTMLVtmnButtonElement;
+    };
     interface HTMLElementTagNameMap {
         "my-component": HTMLMyComponentElement;
+        "vtmn-button": HTMLVtmnButtonElement;
     }
 }
 declare namespace LocalJSX {
@@ -39,8 +54,17 @@ declare namespace LocalJSX {
          */
         "last"?: string;
     }
+    interface VtmnButton {
+        "variant"?: | 'primary'
+    | 'primary-reversed'
+    | 'secondary'
+    | 'secondary-reversed'
+    | 'ghost'
+    | 'conversion';
+    }
     interface IntrinsicElements {
         "my-component": MyComponent;
+        "vtmn-button": VtmnButton;
     }
 }
 export { LocalJSX as JSX };
@@ -48,6 +72,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "vtmn-button": LocalJSX.VtmnButton & JSXBase.HTMLAttributes<HTMLVtmnButtonElement>;
         }
     }
 }

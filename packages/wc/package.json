@@ -22,6 +22,7 @@
     "test:watch": "stencil test --spec --e2e --watchAll"
   },
   "dependencies": {
+    "@decathlon/vitamin-css": "^0.0.1",
     "@stencil/core": "^2.0.1"
   },
   "devDependencies": {
