@@ -58,8 +58,10 @@ module.exports = {
         'light-2': 'var(--vtmn-color_red-light-2)',
         DEFAULT: 'var(--vtmn-color_red)',
       },
+      transparent: 'var(--vtmn-color_transparent)',
     },
     spacing: {
+      0: 'var(--vtmn-spacing_0)',
       1: 'var(--vtmn-spacing_1)',
       2: 'var(--vtmn-spacing_2)',
       3: 'var(--vtmn-spacing_3)',
@@ -78,7 +80,11 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: {
+      cursor: ['disabled', 'hover'],
+      opacity: ['disabled', 'hover', 'active'],
+      backgroundColor: ['active'],
+    },
   },
   plugins: [],
 };

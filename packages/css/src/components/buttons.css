@@ -1,138 +1,140 @@
 @layer components {
   /* Default button */
   .vtmn-btn {
-    --button-font-family: var(--vtmn-typo_font-family--condensed), Arial,
-      Helvetica, sans-serif;
-    --button-font-size: 16px;
-    --button-letter-spacing: 0.6px;
-    --button-font-weight: bold;
-    --button-border-radius: 4px;
-    --button-height: 48px;
-    --button-min-width: calc(6 * var(--button-font-size));
-    --button-background-color: var(--vtmn-color_brand-digital);
-    --button-background-color-hover: var(--vtmn-color_brand-digital-dark-1);
-    --button-background-color-active: var(--vtmn-color_brand-digital-dark-2);
-    --button-background-color-focus: var(--vtmn-color_brand-digital);
-    --button-color: var(--vtmn-color_white);
-    --button-border-color: transparent;
-    --button-side-padding: 24px;
+    --btn-border-color: transparent;
 
-    font-family: var(--button-font-family);
-    font-size: var(--button-font-size);
-    letter-spacing: var(--button-letter-spacing);
-    font-weight: var(--button-font-weight);
-    border-radius: var(--button-border-radius);
-    min-width: var(--button-min-width);
-    background-color: var(--button-background-color);
-    color: var(--button-color);
-    height: var(--button-height);
-    box-shadow: inset 0 0 0 2px var(--button-border-color);
-    padding: 0 var(--button-side-padding);
-    display: inline-flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    overflow: hidden;
-    box-sizing: border-box;
-    border-width: 0;
-    text-decoration: none;
+    box-shadow: inset 0 0 0 0.125rem var(--btn-border-color);
+    min-width: calc(6 * 1rem);
+    letter-spacing: 0.0375rem;
+
+    @apply vtmn-font-display
+      vtmn-bg-brand-digital
+      vtmn-text-white
+      vtmn-text-base
+      vtmn-font-bold
+      vtmn-py-0
+      vtmn-px-5
+      vtmn-relative
+      vtmn-inline-flex
+      vtmn-no-underline
+      vtmn-rounded
+      vtmn-h-8
+      vtmn-border-0
+      vtmn-box-border
+      vtmn-overflow-hidden
+      vtmn-text-center
+      vtmn-items-center
+      vtmn-justify-center
+
+      disabled:vtmn-opacity-25
+      disabled:vtmn-cursor-not-allowed
+
+      hover:vtmn-cursor-pointer
+      hover:vtmn-bg-brand-digital-dark-1
+
+      active:vtmn-bg-brand-digital-dark-2;
   }
-  .vtmn-btn:disabled {
-    opacity: 0.25;
-    cursor: not-allowed;
-  }
-  .vtmn-btn:not([disabled]):hover {
-    cursor: pointer;
-    background-color: var(--button-background-color-hover);
-  }
-  .vtmn-btn:not([disabled]):active {
-    background-color: var(--button-background-color-active);
-  }
+
   .vtmn-btn:not([disabled]):focus {
     outline: none;
-    box-shadow: inset 0 0 0 2px var(--button-border-color),
+    box-shadow: inset 0 0 0 2px var(--btn-border-color),
       0 0 0 2px var(--vtmn-color_brand-digital-light-1);
   }
 
   /* Primary button */
   .vtmn-btn_variant--primary {
-    --button-background-color: var(--vtmn-color_brand-digital);
-    --button-background-color-hover: var(--vtmn-color_brand-digital-dark-1);
-    --button-background-color-active: var(--vtmn-color_brand-digital-dark-2);
-    --button-background-color-focus: var(--vtmn-color_brand-digital);
-    --button-color: var(--vtmn-color_white);
-    --button-border-color: transparent;
+    --btn-border-color: transparent;
+
+    @apply vtmn-bg-brand-digital
+      vtmn-text-white
+      hover:vtmn-bg-brand-digital-dark-1
+      active:vtmn-bg-brand-digital-dark-2;
   }
 
   /* Primary reversed button */
   .vtmn-btn_variant--primary-reversed {
-    --button-background-color: var(--vtmn-color_white);
-    --button-background-color-hover: rgba(255, 255, 255, 0.8);
-    --button-background-color-active: rgba(255, 255, 255, 0.6);
-    --button-background-color-focus: var(--vtmn-color_white);
-    --button-color: var(--vtmn-color_black);
-    --button-border-color: transparent;
+    --btn-border-color: transparent;
+
+    @apply vtmn-bg-white
+      vtmn-text-black;
+  }
+  .vtmn-btn_variant--primary-reversed:not([disabled]):hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .vtmn-btn_variant--primary-reversed:not([disabled]):active {
+    background-color: rgba(255, 255, 255, 0.6);
   }
 
   /* Secondary button */
   .vtmn-btn_variant--secondary {
-    --button-background-color: transparent;
-    --button-background-color-hover: rgba(115, 128, 134, 0.05);
-    --button-background-color-active: rgba(115, 128, 134, 0.15);
-    --button-background-color-focus: transparent;
-    --button-color: var(--vtmn-color_black);
-    --button-border-color: var(--vtmn-color_black);
+    --btn-border-color: var(--vtmn-color_black);
+
+    @apply vtmn-bg-transparent
+      vtmn-text-black;
+  }
+  .vtmn-btn_variant--secondary:not([disabled]):hover {
+    background-color: rgba(115, 128, 134, 0.05);
+  }
+  .vtmn-btn_variant--secondary:not([disabled]):active {
+    background-color: rgba(115, 128, 134, 0.15);
   }
 
   /* Secondary reversed button */
   .vtmn-btn_variant--secondary-reversed {
-    --button-background-color: transparent;
-    --button-background-color-hover: rgba(255, 255, 255, 0.2);
-    --button-background-color-active: rgba(255, 255, 255, 0.4);
-    --button-background-color-focus: transparent;
-    --button-color: var(--vtmn-color_white);
-    --button-border-color: var(--vtmn-color_white);
+    --btn-border-color: var(--vtmn-color_white);
+
+    @apply vtmn-bg-transparent
+      vtmn-text-white;
+  }
+  .vtmn-btn_variant--secondary-reversed:not([disabled]):hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .vtmn-btn_variant--secondary-reversed:not([disabled]):active {
+    background-color: rgba(255, 255, 255, 0.4);
   }
 
   /* Ghost button */
   .vtmn-btn_variant--ghost {
-    --button-background-color: transparent;
-    --button-background-color-hover: rgba(0, 125, 188, 0.05);
-    --button-background-color-active: rgba(0, 125, 188, 0.15);
-    --button-background-color-focus: transparent;
-    --button-color: var(--vtmn-color_brand-digital);
-    --button-border-color: transparent;
+    --btn-border-color: transparent;
+
+    @apply vtmn-bg-transparent
+      vtmn-text-brand-digital;
+  }
+  .vtmn-btn_variant--ghost:not([disabled]):hover {
+    background-color: rgba(0, 125, 188, 0.05);
+  }
+  .vtmn-btn_variant--ghost:not([disabled]):active {
+    background-color: rgba(0, 125, 188, 0.15);
   }
 
   /* Conversion button */
   .vtmn-btn_variant--conversion {
-    --button-background-color: var(--vtmn-color_yellow);
-    --button-background-color-hover: var(--vtmn-color_yellow-light-1);
-    --button-background-color-active: var(--vtmn-color_yellow-light-2);
-    --button-background-color-focus: var(--vtmn-color_yellow);
-    --button-color: var(--vtmn-color_black);
-    --button-border-color: transparent;
+    --btn-border-color: transparent;
+
+    @apply vtmn-bg-yellow
+      vtmn-text-black
+      hover:vtmn-bg-yellow-light-1
+      active:vtmn-bg-yellow-light-2;
   }
 
   /* Sizes */
   .vtmn-btn_size--small {
-    --button-font-size: 14px;
-    --button-height: 32px;
-    --button-side-padding: 16px;
+    @apply vtmn-text-sm
+      vtmn-h-6
+      vtmn-px-4;
   }
   .vtmn-btn_size--medium,
   .vtmn-btn_size--stretched {
-    --button-font-size: 16px;
-    --button-height: 48px;
-    --button-side-padding: 24px;
+    @apply vtmn-text-base
+      vtmn-h-8
+      vtmn-px-5;
   }
   .vtmn-btn_size--large {
-    --button-font-size: 20px;
-    --button-height: 64px;
-    --button-side-padding: 40px;
+    @apply vtmn-text-xl
+      vtmn-h-10
+      vtmn-px-7;
   }
   .vtmn-btn_size--stretched {
-    width: 100%;
+    @apply vtmn-w-full;
   }
 }
