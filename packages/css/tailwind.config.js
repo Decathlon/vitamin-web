@@ -58,7 +58,6 @@ module.exports = {
         'light-2': 'var(--vtmn-color_red-light-2)',
         DEFAULT: 'var(--vtmn-color_red)',
       },
-      transparent: 'var(--vtmn-color_transparent)',
     },
     spacing: {
       0: 'var(--vtmn-spacing_0)',

@@ -1,14 +1,15 @@
 @layer components {
   /* Default button */
   .vtmn-btn {
+    --btn-background-color: var(--vtmn-color_brand-digital);
     --btn-border-color: transparent;
 
+    background-color: var(--btn-background-color);
     box-shadow: inset 0 0 0 0.125rem var(--btn-border-color);
     min-width: calc(6 * 1rem);
     letter-spacing: 0.0375rem;
 
     @apply vtmn-font-display
-      vtmn-bg-brand-digital
       vtmn-text-white
       vtmn-text-base
       vtmn-font-bold
@@ -53,10 +54,10 @@
 
   /* Primary reversed button */
   .vtmn-btn_variant--primary-reversed {
+    --btn-background-color: var(--vtmn-color_white);
     --btn-border-color: transparent;
 
-    @apply vtmn-bg-white
-      vtmn-text-black;
+    @apply vtmn-text-black;
   }
   .vtmn-btn_variant--primary-reversed:not([disabled]):hover {
     background-color: rgba(255, 255, 255, 0.8);
@@ -67,10 +68,10 @@
 
   /* Secondary button */
   .vtmn-btn_variant--secondary {
+    --btn-background-color: transparent;
     --btn-border-color: var(--vtmn-color_black);
 
-    @apply vtmn-bg-transparent
-      vtmn-text-black;
+    @apply vtmn-text-black;
   }
   .vtmn-btn_variant--secondary:not([disabled]):hover {
     background-color: rgba(115, 128, 134, 0.05);
@@ -81,10 +82,10 @@
 
   /* Secondary reversed button */
   .vtmn-btn_variant--secondary-reversed {
+    --btn-background-color: transparent;
     --btn-border-color: var(--vtmn-color_white);
 
-    @apply vtmn-bg-transparent
-      vtmn-text-white;
+    @apply vtmn-text-white;
   }
   .vtmn-btn_variant--secondary-reversed:not([disabled]):hover {
     background-color: rgba(255, 255, 255, 0.2);
@@ -95,10 +96,10 @@
 
   /* Ghost button */
   .vtmn-btn_variant--ghost {
+    --btn-background-color: transparent;
     --btn-border-color: transparent;
 
-    @apply vtmn-bg-transparent
-      vtmn-text-brand-digital;
+    @apply vtmn-text-brand-digital;
   }
   .vtmn-btn_variant--ghost:not([disabled]):hover {
     background-color: rgba(0, 125, 188, 0.05);
@@ -109,10 +110,10 @@
 
   /* Conversion button */
   .vtmn-btn_variant--conversion {
+    --btn-background-color: var(--vtmn-color_yellow);
     --btn-border-color: transparent;
 
-    @apply vtmn-bg-yellow
-      vtmn-text-black
+    @apply vtmn-text-black
       hover:vtmn-bg-yellow-light-1
       active:vtmn-bg-yellow-light-2;
   }
