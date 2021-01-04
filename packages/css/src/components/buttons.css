@@ -38,8 +38,8 @@
 
   .vtmn-btn:not([disabled]):focus {
     outline: none;
-    box-shadow: inset 0 0 0 2px var(--btn-border-color),
-      0 0 0 2px var(--vtmn-color_brand-digital-light-1);
+    box-shadow: inset 0 0 0 0.125rem var(--btn-border-color),
+      0 0 0 0.125rem var(--vtmn-color_brand-digital-light-1);
   }
 
   /* Primary button */
@@ -60,10 +60,10 @@
     @apply vtmn-text-black;
   }
   .vtmn-btn_variant--primary-reversed:not([disabled]):hover {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: color-mod(var(--vtmn-color_white) alpha(80%));
   }
   .vtmn-btn_variant--primary-reversed:not([disabled]):active {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: color-mod(var(--vtmn-color_white) alpha(60%));
   }
 
   /* Secondary button */
@@ -74,10 +74,10 @@
     @apply vtmn-text-black;
   }
   .vtmn-btn_variant--secondary:not([disabled]):hover {
-    background-color: rgba(115, 128, 134, 0.05);
+    background-color: color-mod(var(--vtmn-color_grey-dark-2) alpha(5%));
   }
   .vtmn-btn_variant--secondary:not([disabled]):active {
-    background-color: rgba(115, 128, 134, 0.15);
+    background-color: color-mod(var(--vtmn-color_grey-dark-2) alpha(15%));
   }
 
   /* Secondary reversed button */
@@ -88,10 +88,10 @@
     @apply vtmn-text-white;
   }
   .vtmn-btn_variant--secondary-reversed:not([disabled]):hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: color-mod(var(--vtmn-color_white) alpha(20%));
   }
   .vtmn-btn_variant--secondary-reversed:not([disabled]):active {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: color-mod(var(--vtmn-color_white) alpha(40%));
   }
 
   /* Ghost button */
@@ -102,10 +102,14 @@
     @apply vtmn-text-brand-digital;
   }
   .vtmn-btn_variant--ghost:not([disabled]):hover {
-    background-color: rgba(0, 125, 188, 0.05);
+    background-color: color-mod(
+      var(--vtmn-color_brand-digital-dark-2) alpha(5%)
+    );
   }
   .vtmn-btn_variant--ghost:not([disabled]):active {
-    background-color: rgba(0, 125, 188, 0.15);
+    background-color: color-mod(
+      var(--vtmn-color_brand-digital-dark-2) alpha(15%)
+    );
   }
 
   /* Conversion button */
