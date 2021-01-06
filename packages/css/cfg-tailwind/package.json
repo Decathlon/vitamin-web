@@ -1,0 +1,6 @@
+{
+  "name": "@vitamin-shared/cfg-tailwind",
+  "private": true,
+  "main": "./tailwind.config.js",
+  "version": "0.0.1"
+}

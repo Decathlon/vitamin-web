@@ -1,0 +1,24 @@
+{
+  "name": "@vitamin-css/button",
+  "private": true,
+  "scripts": {
+    "build": "postcss --env production src/button.css -o dist/button.css"
+  },
+  "peerDependencies": {
+    "@vitamin-css/shared": "^0.0.1"
+  },
+  "devDependencies": {
+    "@vitamin-shared/cfg-postcss": "^0.0.1",
+    "@vitamin-shared/cfg-tailwind": "^0.0.1",
+    "@vitamin-css/shared": "^0.0.1",
+    "autoprefixer": "^10.2.0",
+    "cross-env": "^7.0.3",
+    "postcss": "^8.2.2",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.0",
+    "postcss-loader": "^4.1.0",
+    "postcss-custom-properties": "^10.0.0",
+    "tailwindcss": "^2.0.2"
+  },
+  "version": "0.0.1"
+}
