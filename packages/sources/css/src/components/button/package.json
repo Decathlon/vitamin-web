@@ -1,0 +1,25 @@
+{
+  "name": "@decathlon/vitamin-css-button",
+  "private": true,
+  "scripts": {
+    "build": "postcss --env production src/button.css -o dist/button.css"
+  },
+  "peerDependencies": {
+    "@decathlon/vitamin-css-design-tokens": "^0.0.1"
+  },
+  "devDependencies": {
+    "@decathlon/vitamin-css-postcss-config": "^0.0.1",
+    "@decathlon/vitamin-css-tailwind-config": "^0.0.1",
+    "@decathlon/vitamin-css-design-tokens": "^0.0.1",
+    "autoprefixer": "^10.2.0",
+    "cross-env": "^7.0.3",
+    "postcss": "^8.2.2",
+    "postcss-cli": "^8.3.1",
+    "postcss-color-mod-function": "^3.0.3",
+    "postcss-import": "^14.0.0",
+    "postcss-loader": "^4.1.0",
+    "postcss-custom-properties": "^10.0.0",
+    "tailwindcss": "^2.0.2"
+  },
+  "version": "0.0.1"
+}
