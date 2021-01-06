@@ -60,6 +60,7 @@ module.exports = {
       },
     },
     spacing: {
+      0: 'var(--vtmn-spacing_0)',
       1: 'var(--vtmn-spacing_1)',
       2: 'var(--vtmn-spacing_2)',
       3: 'var(--vtmn-spacing_3)',
@@ -78,7 +79,11 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: {
+      cursor: ['disabled', 'hover'],
+      opacity: ['disabled', 'hover', 'active'],
+      backgroundColor: ['active'],
+    },
   },
   plugins: [],
 };

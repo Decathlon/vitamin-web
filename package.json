@@ -1,5 +1,5 @@
 {
-  "name": "vitamin-web",
+  "name": "@decathlon/vitamin-web",
   "private": true,
   "keywords": [
     "design-system",
@@ -15,7 +15,7 @@
   },
   "license": "Apache-2.0",
   "workspaces": [
-    "packages/css/*"
+    "packages/**"
   ],
   "scripts": {
     "build": "lerna run build",
