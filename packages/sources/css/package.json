@@ -1,5 +1,18 @@
 {
   "name": "@decathlon/vitamin-css",
   "private": true,
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "main": "dist/index.css",
+  "scripts": {
+    "build": "postcss src/index.css -o dist/index.css"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss": "^8.2.2",
+    "postcss-cli": "^8.3.1",
+    "postcss-color-mod-function": "^3.0.3",
+    "postcss-import": "^14.0.0",
+    "postcss-loader": "^4.1.0",
+    "tailwindcss": "^2.0.2"
+  }
 }

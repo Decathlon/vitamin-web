@@ -7,7 +7,7 @@ import ghost from './examples/ghost.html';
 import conversion from './examples/conversion.html';
 
 export default {
-  title: 'Components / Buttons',
+  title: 'Components / Button',
 };
 
 export const Default = () => _default;

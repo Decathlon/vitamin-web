@@ -1,0 +1,17 @@
+/* Tailwind CSS */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'tailwindcss/screens';
+
+/* Design tokens */
+@import './shared/design-tokens/src/breakpoints';
+@import './shared/design-tokens/src/colors';
+@import './shared/design-tokens/src/spacings';
+@import './shared/design-tokens/src/typography';
+
+/* Components */
+@import './components/button/src';
+
+/* Utilities */
+@import './shared/utilities/src/typography';

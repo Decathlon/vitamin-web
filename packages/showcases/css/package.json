@@ -1,5 +1,16 @@
 {
   "name": "@decathlon/vitamin-css-showcase",
   "private": true,
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "scripts": {
+    "build:docs": "build-storybook --docs",
+    "start": "start-storybook -p 6006"
+  },
+  "devDependencies": {
+    "@decathlon/vitamin-css": "^0.0.1",
+    "@decathlon/vitamin-css-tailwind-config": "^0.0.1",
+    "@storybook/addon-essentials": "^6.1.11",
+    "@storybook/addon-links": "^6.1.11",
+    "@storybook/html": "^6.1.11"
+  }
 }
