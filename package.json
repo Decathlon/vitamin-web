@@ -1,5 +1,6 @@
 {
-  "name": "vitamin-web",
+  "name": "@decathlon/vitamin-web",
+  "version": "0.0.1",
   "private": true,
   "keywords": [
     "design-system",
@@ -15,18 +16,19 @@
   },
   "license": "Apache-2.0",
   "workspaces": [
-    "packages/*"
+    "packages/**"
   ],
   "scripts": {
     "build": "lerna run build",
-    "eslint": "lerna exec --parallel -- yarn run eslint",
-    "eslint:fix": "lerna exec --parallel -- yarn run eslint:fix",
+    "eslint": "lerna run eslint",
+    "eslint:fix": "lerna run eslint:fix",
     "format": "lerna run format",
     "postinstall": "npx husky install",
     "pack": "lerna run pack",
     "prettier": "prettier .",
     "prettier:fix": "prettier . --write",
     "publish": "lerna publish from-package --ignore-prepublish --no-git-reset --yes",
+    "start": "lerna run start --parallel",
     "stylelint": "lerna exec --parallel -- yarn run stylelint",
     "stylelint:fix": "lerna exec --parallel -- yarn run stylelint:fix",
     "test": "lerna run test"
@@ -39,7 +41,9 @@
       "yarn run stylelint:fix"
     ],
     "./packages/**/*.{json,js,jsx,ts,tsx}": [
-      "yarn run prettier:fix",
+      "yarn run prettier:fix"
+    ],
+    "./packages/**/*.{js,jsx,ts,tsx}": [
       "yarn run eslint:fix"
     ]
   },

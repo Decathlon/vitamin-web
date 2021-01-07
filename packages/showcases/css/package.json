@@ -1,0 +1,23 @@
+{
+  "name": "@decathlon/vitamin-css-showcase",
+  "version": "0.0.1",
+  "private": true,
+  "license": "Apache-2.0",
+  "scripts": {
+    "build:docs": "build-storybook --docs",
+    "start": "start-storybook -p 6006"
+  },
+  "devDependencies": {
+    "@decathlon/vitamin-css": "^0.0.1",
+    "@decathlon/vitamin-css-tailwind-config": "^0.0.1",
+    "@storybook/addon-essentials": "^6.1.11",
+    "@storybook/addon-links": "^6.1.11",
+    "@storybook/html": "^6.1.11"
+  },
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ]
+}

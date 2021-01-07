@@ -1,0 +1,170 @@
+/* Design tokens */
+@import '@decathlon/vitamin-css-design-tokens/src/breakpoints';
+@import '@decathlon/vitamin-css-design-tokens/src/colors';
+@import '@decathlon/vitamin-css-design-tokens/src/spacings';
+@import '@decathlon/vitamin-css-design-tokens/src/typography';
+
+@layer components {
+  /* Default button */
+
+  .vtmn-btn {
+    box-shadow: inset 0 0 0 0.125rem transparent;
+    min-width: calc(6 * 1rem);
+    letter-spacing: 0.0375rem;
+
+    @apply vtmn-bg-brand-digital
+      vtmn-font-display
+      vtmn-text-white
+      vtmn-text-base
+      vtmn-font-bold
+      vtmn-py-0
+      vtmn-px-5
+      vtmn-relative
+      vtmn-inline-flex
+      vtmn-no-underline
+      vtmn-rounded
+      vtmn-h-8
+      vtmn-border-0
+      vtmn-box-border
+      vtmn-overflow-hidden
+      vtmn-text-center
+      vtmn-items-center
+      vtmn-justify-center
+
+      disabled:vtmn-opacity-25
+      disabled:vtmn-cursor-not-allowed
+
+      hover:vtmn-cursor-pointer
+      hover:vtmn-bg-brand-digital-dark-1
+
+      active:vtmn-bg-brand-digital-dark-2;
+  }
+  .vtmn-btn:not([disabled]):focus {
+    outline: none;
+  }
+
+  /* Primary button */
+  .vtmn-btn_variant--primary {
+    box-shadow: inset 0 0 0 0.125rem transparent;
+
+    @apply vtmn-bg-brand-digital
+      vtmn-text-white
+      hover:vtmn-bg-brand-digital-dark-1
+      active:vtmn-bg-brand-digital-dark-2;
+  }
+  .vtmn-btn_variant--primary:not([disabled]):focus {
+    box-shadow: inset 0 0 0 0.125rem transparent,
+      0 0 0 0.125rem var(--vtmn-color_brand-digital-light-1);
+  }
+
+  /* Primary reversed button */
+  .vtmn-btn_variant--primary-reversed {
+    box-shadow: inset 0 0 0 0.125rem transparent;
+
+    @apply vtmn-bg-white
+      vtmn-text-black;
+  }
+  .vtmn-btn_variant--primary-reversed:not([disabled]):hover {
+    background-color: color-mod(var(--vtmn-color_white) alpha(80%));
+  }
+  .vtmn-btn_variant--primary-reversed:not([disabled]):active {
+    background-color: color-mod(var(--vtmn-color_white) alpha(60%));
+  }
+  .vtmn-btn_variant--primary-reversed:not([disabled]):focus {
+    box-shadow: inset 0 0 0 0.125rem transparent,
+      0 0 0 0.125rem var(--vtmn-color_brand-digital-light-1);
+  }
+
+  /* Secondary button */
+  .vtmn-btn_variant--secondary {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 0.125rem var(--vtmn-color_black);
+
+    @apply vtmn-text-black;
+  }
+  .vtmn-btn_variant--secondary:not([disabled]):hover {
+    background-color: color-mod(var(--vtmn-color_grey-dark-2) alpha(5%));
+  }
+  .vtmn-btn_variant--secondary:not([disabled]):active {
+    background-color: color-mod(var(--vtmn-color_grey-dark-2) alpha(15%));
+  }
+  .vtmn-btn_variant--secondary:not([disabled]):focus {
+    box-shadow: inset 0 0 0 0.125rem var(--vtmn-color_black),
+      0 0 0 0.125rem var(--vtmn-color_brand-digital-light-1);
+  }
+
+  /* Secondary reversed button */
+  .vtmn-btn_variant--secondary-reversed {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 0.125rem var(--vtmn-color_white);
+
+    @apply vtmn-text-white;
+  }
+  .vtmn-btn_variant--secondary-reversed:not([disabled]):hover {
+    background-color: color-mod(var(--vtmn-color_white) alpha(20%));
+  }
+  .vtmn-btn_variant--secondary-reversed:not([disabled]):active {
+    background-color: color-mod(var(--vtmn-color_white) alpha(40%));
+  }
+  .vtmn-btn_variant--secondary-reversed:not([disabled]):focus {
+    box-shadow: inset 0 0 0 0.125rem var(--vtmn-color_white),
+      0 0 0 0.125rem var(--vtmn-color_brand-digital-light-1);
+  }
+
+  /* Ghost button */
+  .vtmn-btn_variant--ghost {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 0.125rem transparent;
+
+    @apply vtmn-text-brand-digital;
+  }
+  .vtmn-btn_variant--ghost:not([disabled]):hover {
+    background-color: color-mod(
+      var(--vtmn-color_brand-digital-dark-2) alpha(5%)
+    );
+  }
+  .vtmn-btn_variant--ghost:not([disabled]):active {
+    background-color: color-mod(
+      var(--vtmn-color_brand-digital-dark-2) alpha(15%)
+    );
+  }
+  .vtmn-btn_variant--ghost:not([disabled]):focus {
+    box-shadow: inset 0 0 0 0.125rem transparent,
+      0 0 0 0.125rem var(--vtmn-color_brand-digital-light-1);
+  }
+
+  /* Conversion button */
+  .vtmn-btn_variant--conversion {
+    box-shadow: inset 0 0 0 0.125rem transparent;
+
+    @apply vtmn-bg-yellow
+      vtmn-text-black
+      hover:vtmn-bg-yellow-light-1
+      active:vtmn-bg-yellow-light-2;
+  }
+  .vtmn-btn_variant--conversion:not([disabled]):focus {
+    box-shadow: inset 0 0 0 0.125rem transparent,
+      0 0 0 0.125rem var(--vtmn-color_brand-digital-light-1);
+  }
+
+  /* Sizes */
+  .vtmn-btn_size--small {
+    @apply vtmn-text-sm
+      vtmn-h-6
+      vtmn-px-4;
+  }
+  .vtmn-btn_size--medium,
+  .vtmn-btn_size--stretched {
+    @apply vtmn-text-base
+      vtmn-h-8
+      vtmn-px-5;
+  }
+  .vtmn-btn_size--large {
+    @apply vtmn-text-xl
+      vtmn-h-10
+      vtmn-px-7;
+  }
+  .vtmn-btn_size--stretched {
+    @apply vtmn-w-full;
+  }
+}
