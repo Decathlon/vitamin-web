@@ -1,17 +1,27 @@
 {
   "name": "@decathlon/vitamin-css",
   "version": "0.0.1",
+  "license": "Apache-2.0",
   "main": "dist/index.css",
   "scripts": {
-    "build": "postcss src/index.css -o dist/index.css"
+    "build": "postcss src/index.css -o dist/index.css",
+    "prestart": "yarn build",
+    "start": "chokidar 'src/**/*.css' --command 'yarn build'"
   },
   "devDependencies": {
     "autoprefixer": "^9.8.6",
+    "chokidar-cli": "^2.1.0",
     "postcss": "^8.2.2",
     "postcss-cli": "^8.3.1",
     "postcss-color-mod-function": "^3.0.3",
     "postcss-import": "^14.0.0",
     "postcss-loader": "^4.1.0",
     "tailwindcss": "^2.0.2"
-  }
+  },
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ]
 }

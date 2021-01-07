@@ -1,5 +1,6 @@
 {
   "name": "@decathlon/vitamin-web",
+  "version": "0.0.1",
   "private": true,
   "keywords": [
     "design-system",
@@ -27,6 +28,7 @@
     "prettier": "prettier .",
     "prettier:fix": "prettier . --write",
     "publish": "lerna publish from-package --ignore-prepublish --no-git-reset --yes",
+    "start": "lerna run start --parallel",
     "stylelint": "lerna exec --parallel -- yarn run stylelint",
     "stylelint:fix": "lerna exec --parallel -- yarn run stylelint:fix",
     "test": "lerna run test"
