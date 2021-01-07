@@ -4,5 +4,5 @@ module.exports = {
     '../stories/guidelines/**/*.stories.(mdx|js)',
     '../stories/components/**/*.stories.(mdx|js)',
   ],
-  addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
+  addons: ['@storybook/addon-essentials'],
 };

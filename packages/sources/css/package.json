@@ -6,7 +6,9 @@
   "scripts": {
     "build": "postcss src/index.css -o dist/index.css",
     "prestart": "yarn build",
-    "start": "chokidar 'src/**/*.css' --command 'yarn build'"
+    "start": "chokidar 'src/**/*.css' --command 'yarn build'",
+    "stylelint": "stylelint src/**/*.css",
+    "stylelint:fix": "stylelint src/**/*.css --fix"
   },
   "devDependencies": {
     "autoprefixer": "^9.8.6",
@@ -16,6 +18,8 @@
     "postcss-color-mod-function": "^3.0.3",
     "postcss-import": "^14.0.0",
     "postcss-loader": "^4.1.0",
+    "stylelint": "^13.8.0",
+    "stylelint-config-standard": "^20.0.0",
     "tailwindcss": "^2.0.2"
   },
   "licenses": [
