@@ -39,7 +39,9 @@
       "yarn run stylelint:fix"
     ],
     "./packages/**/*.{json,js,jsx,ts,tsx}": [
-      "yarn run prettier:fix",
+      "yarn run prettier:fix"
+    ],
+    "./packages/**/*.{js,jsx,ts,tsx}": [
       "yarn run eslint:fix"
     ]
   },
