@@ -1,7 +1,7 @@
 import '@decathlon/vitamin-css';
 import { withDesign } from 'storybook-addon-designs';
-import viewports from './config/viewports.json';
-import backgrounds from './config/backgrounds.json';
+import viewports from './addons/viewports.json';
+import backgrounds from './addons/backgrounds.json';
 
 export const decorators = [withDesign];
 
