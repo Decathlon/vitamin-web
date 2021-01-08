@@ -28,6 +28,8 @@
     "stylelint:fix": "stylelint src/**/*.css --fix"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^6.1.11",
+    "@storybook/addon-backgrounds": "^6.1.11",
     "autoprefixer": "^9.8.6",
     "chokidar-cli": "^2.1.0",
     "postcss": "^8.2.2",

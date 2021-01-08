@@ -1,0 +1,17 @@
+{
+  "default": "light",
+  "values": [
+    {
+      "name": "light",
+      "value": "#ffffff"
+    },
+    {
+      "name": "blue",
+      "value": "#007dbc"
+    },
+    {
+      "name": "dark",
+      "value": "#1a2a34"
+    }
+  ]
+}

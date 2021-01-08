@@ -1,7 +1,8 @@
 module.exports = {
   prefix: 'vtmn-',
   purge: false,
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false, // or 'media' or 'class',
+  important: true,
   theme: {
     screens: {
       tablet: 'var(--vtmn-breakpoint_tablet)',

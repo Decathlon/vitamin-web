@@ -41,6 +41,8 @@
   }
   .vtmn-btn:not([disabled]):focus {
     outline: none;
+    box-shadow: inset 0 0 0 0.125rem transparent,
+      0 0 0 0.125rem var(--vtmn-color_brand-digital-light-1);
   }
 
   /* Primary button */

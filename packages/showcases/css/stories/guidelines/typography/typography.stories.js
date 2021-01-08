@@ -2,10 +2,16 @@ import _default from './examples/default.html';
 import displays from './examples/displays.html';
 import headings from './examples/headings.html';
 import bodyText from './examples/body-text.html';
-import utilityClasses from './examples/utility-classes.html';
 
 export default {
   title: 'Guidelines / Typography',
+  parameters: {
+    design: {
+      type: 'figma',
+      url:
+        'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vtmn-Web?node-id=0%3A1',
+    },
+  },
 };
 
 export const Default = () => _default;
@@ -40,15 +46,6 @@ BodyText.parameters = {
   docs: {
     source: {
       code: bodyText,
-    },
-  },
-};
-
-export const WithUtilityClasses = () => utilityClasses;
-WithUtilityClasses.parameters = {
-  docs: {
-    source: {
-      code: utilityClasses,
     },
   },
 };

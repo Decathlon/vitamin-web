@@ -8,6 +8,17 @@ import conversion from './examples/conversion.html';
 
 export default {
   title: 'Components / Button',
+  argTypes: { onclick: { action: 'clicked' } },
+  parameters: {
+    actions: {
+      handles: ['mouseenter', 'click', 'focusin', 'focusout'],
+    },
+    design: {
+      type: 'figma',
+      url:
+        'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vtmn-Web?node-id=31%3A136',
+    },
+  },
 };
 
 export const Default = () => _default;
@@ -35,6 +46,7 @@ PrimaryReversed.parameters = {
       code: primaryReversed,
     },
   },
+  backgrounds: { default: 'blue' },
 };
 
 export const Secondary = () => secondary;
@@ -53,6 +65,7 @@ SecondaryReversed.parameters = {
       code: secondaryReversed,
     },
   },
+  backgrounds: { default: 'blue' },
 };
 
 export const Ghost = () => ghost;
