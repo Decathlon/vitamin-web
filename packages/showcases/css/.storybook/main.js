@@ -14,5 +14,6 @@ module.exports = {
     'storybook-addon-designs',
     'storybook-mobile',
     'storybook-addon-outline',
+    'storybook-design-token',
   ],
 };

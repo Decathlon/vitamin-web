@@ -40,6 +40,7 @@
     "postcss-import": "^14.0.0",
     "postcss-loader": "^4.1.0",
     "storybook-addon-outline": "^1.2.0",
+    "storybook-design-token": "^0.8.1",
     "storybook-mobile": "^0.1.29",
     "stylelint": "^13.8.0",
     "stylelint-config-standard": "^20.0.0",
