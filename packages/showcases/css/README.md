@@ -32,4 +32,4 @@ To develop in watch mode and run all showcases with hot reloads, just run:
 yarn start
 ```
 
-Here is the showcases' URLs list:
+Then, the showcase on [localhost:6006](http://localhost:6006).
