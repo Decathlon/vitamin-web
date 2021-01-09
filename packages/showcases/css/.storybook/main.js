@@ -10,6 +10,9 @@ module.exports = {
     '@storybook/addon-backgrounds',
     '@storybook/addon-actions',
     '@storybook/addon-a11y',
+    '@whitespace/storybook-addon-html',
     'storybook-addon-designs',
+    'storybook-mobile',
+    'storybook-addon-outline',
   ],
 };
