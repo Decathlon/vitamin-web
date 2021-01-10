@@ -4,6 +4,34 @@ on:
   pull_request_target:
     types: [opened, synchronize, reopened]
 jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+
+      - name: Restore/create node_modules cache
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Build
+        run: yarn run build
+
+      - name: Lint
+        run: yarn run eslint
+
+      - name: Test
+        run: yarn run test
+
   sonarcloud:
     name: SonarCloud analysis
     runs-on: ubuntu-latest
