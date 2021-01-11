@@ -43,6 +43,7 @@
     "storybook-design-token": "^0.8.1",
     "storybook-mobile": "^0.1.29",
     "stylelint": "^13.8.0",
+    "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",
     "tailwindcss": "^2.0.2"
   },

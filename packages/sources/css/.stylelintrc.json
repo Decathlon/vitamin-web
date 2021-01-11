@@ -1,6 +1,6 @@
 {
-  "extends": "stylelint-config-standard",
-  "ignoreFiles": ["dist/**/*.css"],
+  "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
+  "ignoreFiles": ["**/dist/**/*.css"],
   "rules": {
     "at-rule-no-unknown": [
       true,
@@ -15,6 +15,7 @@
         ]
       }
     ],
+    "no-duplicate-selectors": null,
     "declaration-block-trailing-semicolon": null,
     "no-descending-specificity": null
   }
