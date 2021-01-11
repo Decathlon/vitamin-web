@@ -26,7 +26,12 @@
 
 <p align="center">Health Indicators</p>
 
+![Build main branch](https://github.com/Decathlon/vitamin-web/workflows/Build%20main%20branch/badge.svg)
+
 <p align="center">
+  <a aria-label="GitHub Actions - Build main branch" href="https://github.com/Decathlon/vitamin-web/actions">
+    <img src="https://github.com/Decathlon/vitamin-web/workflows/Build%20main%20branch/badge.svg" alt="">
+  </a>
   <a aria-label="sonarcloud" href="https://sonarcloud.io/dashboard?id=Decathlon_vitamin-web">
     <img src="https://sonarcloud.io/api/project_badges/measure?project=Decathlon_vitamin-web&metric=alert_status" alt="">
   </a>
@@ -49,6 +54,8 @@ all of the current [guidelines](https://www.decathlon.design/726f8c765/p/189012-
 One of the Decathlon Design System goals is to provide guidelines & components to gain in consistency, efficiency & accessibility. The best way to achieve this is together!
 That's why we are on GitHub. We would love contributions from the community (bug reports, feature requests, suggestions, Pull Requests, whatever you want!).
 
+> 👉 See [the contributing docs](CONTRIBUTING.md) for more information about how to contribute.
+
 ### Installation
 
 In this monorepo, we use [Yarn](https://yarnpkg.com) & [Lerna](https://github.com/lerna/lerna).
@@ -59,8 +66,6 @@ Once you have installed [Yarn](https://yarnpkg.com), please run:
 ```sh
 yarn
 ```
-
-> 👉 See [the contributing docs](CONTRIBUTING.md) for more information about how to contribute.
 
 ### Development
 

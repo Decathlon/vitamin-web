@@ -1,6 +1,9 @@
 {
   "name": "@decathlon/vitamin-css-tailwind-config",
+  "version": "0.0.1",
   "private": true,
   "main": "./tailwind.config.js",
-  "version": "0.0.1"
+  "dependencies": {
+    "tailwindcss": "^2.0.2"
+  }
 }
