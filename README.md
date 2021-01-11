@@ -26,8 +26,6 @@
 
 <p align="center">Health Indicators</p>
 
-![Build main branch](https://github.com/Decathlon/vitamin-web/workflows/Build%20main%20branch/badge.svg)
-
 <p align="center">
   <a aria-label="GitHub Actions - Build main branch" href="https://github.com/Decathlon/vitamin-web/actions">
     <img src="https://github.com/Decathlon/vitamin-web/workflows/Build%20main%20branch/badge.svg" alt="">
