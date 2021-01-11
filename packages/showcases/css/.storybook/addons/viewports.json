@@ -3,7 +3,7 @@
     "name": "Mobile",
     "styles": {
       "width": "360px",
-      "height": "600px"
+      "height": "640px"
     },
     "type": "mobile"
   },
@@ -11,7 +11,7 @@
     "name": "Tablet",
     "styles": {
       "width": "768px",
-      "height": "600px"
+      "height": "1024px"
     },
     "type": "tablet"
   },
@@ -19,15 +19,15 @@
     "name": "Small desktop",
     "styles": {
       "width": "1024px",
-      "height": "700px"
+      "height": "1366px"
     },
     "type": "desktop"
   },
   "mediumDesktop": {
     "name": "Medium desktop",
     "styles": {
-      "width": "1600px",
-      "height": "800px"
+      "width": "1440px",
+      "height": "1024px"
     },
     "type": "desktop"
   },
@@ -35,7 +35,7 @@
     "name": "Large desktop",
     "styles": {
       "width": "1920px",
-      "height": "800px"
+      "height": "1080px"
     },
     "type": "desktop"
   }
