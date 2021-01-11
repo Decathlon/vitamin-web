@@ -15,10 +15,10 @@ jobs:
           node-version: '12.x'
 
       - name: Restore/create node_modules cache
-        uses: actions/cache@v1
+        uses: actions/cache@v2
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
