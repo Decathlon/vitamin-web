@@ -1,0 +1,17 @@
+/**
+ * @tokens Spacings
+ * @presenter Spacing
+ */
+:root {
+  --vtmn-spacing_0: 0;
+  --vtmn-spacing_1: 0.25rem;
+  --vtmn-spacing_2: 0.5rem;
+  --vtmn-spacing_3: 0.75rem;
+  --vtmn-spacing_4: 1rem;
+  --vtmn-spacing_5: 1.5rem;
+  --vtmn-spacing_6: 2rem;
+  --vtmn-spacing_7: 2.5rem;
+  --vtmn-spacing_8: 3rem;
+  --vtmn-spacing_9: 3.5rem;
+  --vtmn-spacing_10: 4rem;
+}

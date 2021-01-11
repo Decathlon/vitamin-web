@@ -25,13 +25,16 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Build
-        run: yarn run build
+        run: yarn build
 
-      - name: Lint
-        run: yarn run eslint
+      - name: Prettier
+        run: yarn prettier
+
+      - name: Stylelint
+        run: yarn stylelint
 
       - name: Test
-        run: yarn run test
+        run: yarn test
 
   sonarcloud:
     name: SonarCloud analysis

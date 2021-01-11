@@ -1,10 +1,12 @@
 {
-  "name": "vitamin-web",
+  "name": "@decathlon/vitamin-web",
+  "version": "0.0.1",
   "private": true,
   "keywords": [
     "design-system",
     "ui-kit",
-    "libraries"
+    "libraries",
+    "vitamin"
   ],
   "bugs": {
     "url": "https://github.com/Decathlon/vitamin-web/issues"
@@ -15,18 +17,16 @@
   },
   "license": "Apache-2.0",
   "workspaces": [
-    "packages/*"
+    "packages/**"
   ],
   "scripts": {
     "build": "lerna run build",
-    "eslint": "lerna exec --parallel -- yarn run eslint",
-    "eslint:fix": "lerna exec --parallel -- yarn run eslint:fix",
-    "format": "lerna run format",
     "postinstall": "npx husky install",
     "pack": "lerna run pack",
     "prettier": "prettier .",
     "prettier:fix": "prettier . --write",
     "publish": "lerna publish from-package --ignore-prepublish --no-git-reset --yes",
+    "start": "lerna run start --parallel",
     "stylelint": "lerna exec --parallel -- yarn run stylelint",
     "stylelint:fix": "lerna exec --parallel -- yarn run stylelint:fix",
     "test": "lerna run test"
@@ -39,18 +39,13 @@
       "yarn run stylelint:fix"
     ],
     "./packages/**/*.{json,js,jsx,ts,tsx}": [
-      "yarn run prettier:fix",
-      "yarn run eslint:fix"
+      "yarn run prettier:fix"
     ]
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
-    "eslint": "^7.15.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.21.5",
+    "@octokit/core": "^3.2.4",
     "husky": "^4.3.6",
     "lerna": "^3.22.1",
     "lint-staged": "^10.5.3",

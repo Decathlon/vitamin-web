@@ -38,11 +38,6 @@ The Decathlon brand Design System is the framework that helps our ecosystem to d
 
 This repository will host our library called "Vitamin" for web applications.
 
-### Work In Progress :construction:
-
-We are pleased to build this Open Source initiative with the developer community. For the moment this repository is not yet very complete, as we are currently discussing in order to plan the best implementation according to our ambitions on this subject.
-Feel free to check out the [Issues](https://github.com/Decathlon/vitamin-web/issues), [Discussions](https://github.com/Decathlon/vitamin-web/discussions) & [Projects](https://github.com/Decathlon/vitamin-web/projects) tabs to follow the progress.
-
 ## Documentation
 
 All our documentation site lives on [Digital section of decathlon.design](https://www.decathlon.design/726f8c765/p/07d981-hello-world-).
@@ -54,7 +49,7 @@ all of the current [guidelines](https://www.decathlon.design/726f8c765/p/189012-
 One of the Decathlon Design System goals is to provide guidelines & components to gain in consistency, efficiency & accessibility. The best way to achieve this is together!
 That's why we are on GitHub. We would love contributions from the community (bug reports, feature requests, suggestions, Pull Requests, whatever you want!).
 
-## Install dependencies
+### Installation
 
 In this monorepo, we use [Yarn](https://yarnpkg.com) & [Lerna](https://github.com/lerna/lerna).
 Read the [Installation Guide](https://yarnpkg.com/en/docs/install) for detailed instructions on how to install Yarn.
@@ -62,10 +57,22 @@ Read the [Installation Guide](https://yarnpkg.com/en/docs/install) for detailed 
 Once you have installed [Yarn](https://yarnpkg.com), please run:
 
 ```sh
-yarn install
+yarn
 ```
 
 > 👉 See [the contributing docs](CONTRIBUTING.md) for more information about how to contribute.
+
+### Development
+
+To develop in watch mode and run all showcases with hot reloads, just run:
+
+```sh
+yarn start
+```
+
+Here is the showcases' URLs list:
+
+- CSS showcase: [localhost:6006](http://localhost:6006)
 
 ## Special thanks
 
