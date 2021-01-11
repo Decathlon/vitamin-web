@@ -1,18 +1,18 @@
 {
   "name": "@decathlon/vitamin-css-postcss-config",
-  "private": true,
   "version": "0.0.1",
-  "peerDependencies": {
+  "private": true,
+  "main": "./postcss.config.js",
+  "dependencies": {
     "autoprefixer": "^10.1.0",
     "postcss": "^8.2.2",
     "postcss-cli": "^8.3.1",
     "postcss-color-mod-function": "^3.0.3",
+    "postcss-combine-duplicated-selectors": "^10.0.2",
     "postcss-css-variables": "^0.17.0",
+    "postcss-discard-comments": "^4.0.2",
     "postcss-import": "^14.0.0",
     "postcss-loader": "^4.1.0",
-    "postcss-discard-comments": "^4.0.2",
-    "postcss-combine-duplicated-selectors": "^10.0.2",
     "tailwindcss": "^2.0.2"
-  },
-  "main": "./postcss.config.js"
+  }
 }
