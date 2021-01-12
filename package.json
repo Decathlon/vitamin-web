@@ -68,6 +68,6 @@
   "storybook-deployer": {
     "gitUsername": "Vitamin BOT",
     "gitEmail": "designsystem@decathlon.net",
-    "commitMessage": "Deploy Storybook"
+    "commitMessage": "chore: deploy Storybook"
   }
 }
