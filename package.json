@@ -2,6 +2,7 @@
   "name": "@decathlon/vitamin-web",
   "version": "0.0.1",
   "private": true,
+  "description": "Decathlon Design System - Vitamin libraries for web applications",
   "keywords": [
     "design-system",
     "ui-kit",
@@ -17,9 +18,11 @@
   },
   "license": "Apache-2.0",
   "workspaces": [
-    "packages/sources/*",
+    "packages/sources/css",
+    "packages/sources/css/config/*",
+    "packages/sources/css/src/design-tokens",
+    "packages/sources/css/src/utilities",
     "packages/sources/css/src/components/*",
-    "packages/sources/css/src/shared/*",
     "packages/showcases/*"
   ],
   "scripts": {

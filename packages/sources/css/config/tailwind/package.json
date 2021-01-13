@@ -1,0 +1,17 @@
+{
+  "name": "@decathlon/vitamin-css-tailwind-config",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Decathlon Design System - Vitamin CSS Tailwind configuration",
+  "license": "Apache-2.0",
+  "main": "./tailwind.config.js",
+  "dependencies": {
+    "tailwindcss": "^2.0.2"
+  },
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ]
+}

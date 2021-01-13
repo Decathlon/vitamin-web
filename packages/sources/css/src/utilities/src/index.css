@@ -1,0 +1,6 @@
+/* Design tokens */
+@import '@decathlon/vitamin-css-design-tokens/src/colors';
+@import '@decathlon/vitamin-css-design-tokens/src/spacings';
+@import '@decathlon/vitamin-css-design-tokens/src/typography';
+
+@import './typography';

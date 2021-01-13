@@ -1,6 +1,7 @@
 {
   "name": "@decathlon/vitamin-css",
   "version": "0.0.1",
+  "description": "Decathlon Design System - Vitamin CSS library",
   "keywords": [
     "design-system",
     "ui-kit",
@@ -28,13 +29,11 @@
     "stylelint:fix": "stylelint src/**/*.css --fix"
   },
   "devDependencies": {
+    "@decathlon/vitamin-css-postcss-config": "^0.0.1",
+    "@decathlon/vitamin-css-tailwind-config": "^0.0.1",
     "autoprefixer": "^9.8.6",
     "chokidar-cli": "^2.1.0",
-    "postcss": "^8.2.2",
-    "postcss-cli": "^8.3.1",
-    "postcss-color-mod-function": "^3.0.3",
-    "postcss-import": "^14.0.0",
-    "postcss-loader": "^4.1.0",
+    "postcss": "^8.2.4",
     "stylelint": "^13.8.0",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",

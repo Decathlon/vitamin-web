@@ -5,10 +5,10 @@ module.exports = {
   important: true,
   theme: {
     screens: {
-      tablet: 'var(--vtmn-breakpoint_tablet)',
-      'small-desktop': 'var(--vtmn-breakpoint_small-desktop)',
-      'medium-desktop': 'var(--vtmn-breakpoint_medium-desktop)',
-      'large-desktop': 'var(--vtmn-breakpoint_large-desktop)',
+      tablet: '600px',
+      'small-desktop': '900px',
+      'medium-desktop': '1200px',
+      'large-desktop': '1800px',
     },
     colors: {
       'brand-digital': {
