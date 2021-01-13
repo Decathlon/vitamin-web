@@ -28,10 +28,6 @@
     "stylelint:fix": "stylelint src/**/*.css --fix"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^6.1.11",
-    "@storybook/addon-actions": "^6.1.11",
-    "@storybook/addon-backgrounds": "^6.1.11",
-    "@whitespace/storybook-addon-html": "^4.2.0",
     "autoprefixer": "^9.8.6",
     "chokidar-cli": "^2.1.0",
     "postcss": "^8.2.2",
@@ -39,9 +35,6 @@
     "postcss-color-mod-function": "^3.0.3",
     "postcss-import": "^14.0.0",
     "postcss-loader": "^4.1.0",
-    "storybook-addon-outline": "^1.2.0",
-    "storybook-design-token": "^0.8.1",
-    "storybook-mobile": "^0.1.29",
     "stylelint": "^13.8.0",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",

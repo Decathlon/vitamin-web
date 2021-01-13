@@ -3,8 +3,8 @@
  * @presenter FontFamily
  */
 :root {
-  --vtmn-typo_font-family: 'Roboto, sans-serif';
-  --vtmn-typo_font-family--condensed: 'Roboto Condensed, sans-serif';
+  --vtmn-typo_font-family: 'Roboto', sans-serif;
+  --vtmn-typo_font-family--condensed: 'Roboto Condensed', sans-serif;
 }
 
 /**
