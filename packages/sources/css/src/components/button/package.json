@@ -1,6 +1,7 @@
 {
   "name": "@decathlon/vitamin-css-button",
   "version": "0.0.1",
+  "description": "Decathlon Design System - Vitamin CSS button component",
   "keywords": [
     "design-system",
     "ui-kit",

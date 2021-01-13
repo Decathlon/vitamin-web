@@ -47,7 +47,7 @@ jobs:
     name: SonarCloud analysis
     strategy:
       matrix:
-        project_base_dir: [".", "packages/showcases/css","packages/sources/css","packages/sources/css/src/components/button","packages/sources/css/src/shared/design-tokens","packages/sources/css/src/shared/postcss-config","packages/sources/css/src/shared/tailwind-config","packages/sources/css/src/shared/utilities"]
+        project_base_dir: ['packages/sources/css/src/components/button']
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

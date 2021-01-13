@@ -1,6 +1,7 @@
 {
   "name": "@decathlon/vitamin-css",
   "version": "0.0.1",
+  "description": "Decathlon Design System - Vitamin CSS library",
   "keywords": [
     "design-system",
     "ui-kit",

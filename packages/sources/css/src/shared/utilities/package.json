@@ -1,5 +1,6 @@
 {
   "name": "@decathlon/vitamin-css-utilities",
   "version": "0.0.1",
-  "private": true
+  "private": true,
+  "description": "Decathlon Design System - Vitamin CSS utilities"
 }
