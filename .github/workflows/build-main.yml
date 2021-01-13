@@ -45,6 +45,9 @@ jobs:
 
   sonarcloud:
     name: SonarCloud analysis
+    strategy:
+      matrix:
+        project_base_dir: [".", "packages/showcases/css","packages/sources/css","packages/sources/css/src/components/button","packages/sources/css/src/shared/design-tokens","packages/sources/css/src/shared/postcss-config","packages/sources/css/src/shared/tailwind-config","packages/sources/css/src/shared/utilities"]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -52,6 +55,8 @@ jobs:
           fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
+        with:
+          projectBaseDir: ${{ matrix.project_base_dir }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
