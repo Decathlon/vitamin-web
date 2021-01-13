@@ -2,6 +2,7 @@
   "name": "@decathlon/vitamin-showcase-css",
   "version": "0.0.1",
   "private": true,
+  "description": "Decathlon Design System - Vitamin CSS showcase",
   "license": "Apache-2.0",
   "scripts": {
     "build:docs": "build-storybook --docs",
