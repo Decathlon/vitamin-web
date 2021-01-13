@@ -4,6 +4,7 @@ const tailwindcss = require('tailwindcss');
 const autoprefixer = require('autoprefixer');
 const postcssCssVariables = require('postcss-css-variables');
 const postcssDiscardComments = require('postcss-discard-comments');
+const postcssCombineMediaQuery = require('postcss-combine-media-query');
 const postcssCombineDuplicatedSelectors = require('postcss-combine-duplicated-selectors');
 
 module.exports = {
@@ -14,6 +15,7 @@ module.exports = {
     autoprefixer,
     postcssCssVariables,
     postcssDiscardComments,
+    postcssCombineMediaQuery,
     postcssCombineDuplicatedSelectors,
   ],
 };

@@ -5,13 +5,12 @@
 @import 'tailwindcss/screens';
 
 /* Design tokens */
-@import './shared/design-tokens/src/breakpoints';
-@import './shared/design-tokens/src/colors';
-@import './shared/design-tokens/src/spacings';
-@import './shared/design-tokens/src/typography';
+@import './design-tokens/src/colors';
+@import './design-tokens/src/spacings';
+@import './design-tokens/src/typography';
 
 /* Components */
 @import './components/button/src';
 
 /* Utilities */
-@import './shared/utilities/src/typography';
+@import './utilities/src/typography';
