@@ -1,5 +1,5 @@
 {
-  "name": "@decathlon/vitamin-showcase-css",
+  "name": "@vtmn/showcase-css",
   "version": "0.0.0",
   "private": true,
   "description": "Decathlon Design System - Vitamin CSS showcase",
@@ -9,8 +9,8 @@
     "start": "start-storybook -p 6006"
   },
   "devDependencies": {
-    "@decathlon/vitamin-css": "^0.0.0",
-    "@decathlon/vitamin-css-tailwind-config": "^0.0.0",
+    "@vtmn/css": "^0.0.0",
+    "@vtmn/css-tailwind-config": "^0.0.0",
     "@storybook/addon-a11y": "^6.1.14",
     "@storybook/addon-actions": "^6.1.14",
     "@storybook/addon-backgrounds": "^6.1.14",

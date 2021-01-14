@@ -5,7 +5,7 @@ addons.setConfig({
   panelPosition: 'right',
   theme: {
     ...themes.normal,
-    brandTitle: '@decathlon/vitamin-css',
+    brandTitle: '@vtmn/css',
     brandUrl: 'https://github.com/Decathlon/vitamin-web',
     brandImage:
       'https://user-images.githubusercontent.com/9600228/102414461-e3b92b00-3ff6-11eb-9c96-5f37c4d5e02c.png',

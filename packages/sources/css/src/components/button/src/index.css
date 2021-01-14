@@ -1,7 +1,7 @@
 /* Design tokens */
-@import '@decathlon/vitamin-css-design-tokens/src/colors';
-@import '@decathlon/vitamin-css-design-tokens/src/spacings';
-@import '@decathlon/vitamin-css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/colors';
+@import '@vtmn/css-design-tokens/src/spacings';
+@import '@vtmn/css-design-tokens/src/typography';
 
 @layer components {
   /* Default button */

@@ -1,10 +1,10 @@
-import '@decathlon/vitamin-css';
+import '@vtmn/css';
 import { withDesign } from 'storybook-addon-designs';
 import viewports from './addons/viewports.json';
 import backgrounds from './addons/backgrounds.json';
 
 const cssReq = require.context(
-  '!!raw-loader!@decathlon/vitamin-css-design-tokens/src',
+  '!!raw-loader!@vtmn/css-design-tokens/src',
   true,
   /.\.css$/,
 );

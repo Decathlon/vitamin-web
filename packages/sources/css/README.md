@@ -1,4 +1,4 @@
-# `@decathlon/vitamin-css`
+# `@vtmn/css`
 
 > CSS full library of Vitamin Web
 

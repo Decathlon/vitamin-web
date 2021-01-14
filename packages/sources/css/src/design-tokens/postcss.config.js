@@ -1,1 +1,1 @@
-module.exports = require('@decathlon/vitamin-css-postcss-config');
+module.exports = require('@vtmn/css-postcss-config');

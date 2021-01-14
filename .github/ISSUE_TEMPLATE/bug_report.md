@@ -56,10 +56,10 @@ insert short code snippets here
 **Versions**
 
 <!--
-@decathlon/vitamin-... version
+@vtmn/... version
 -->
 
-- @decathlon/vitamin-...: vX.X.X
+- @vtmn/...: vX.X.X
 
 **Other information:**
 
