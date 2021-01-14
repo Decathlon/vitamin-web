@@ -1,3 +1,3 @@
-# `@decathlon/vitamin-css-button`
+# `@vtmn/css-button`
 
 > CSS standalone button component of Vitamin Web

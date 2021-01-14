@@ -1,5 +1,5 @@
 {
-  "name": "@decathlon/vitamin-css",
+  "name": "@vtmn/css",
   "version": "0.0.0",
   "description": "Decathlon Design System - Vitamin CSS library",
   "keywords": [
@@ -29,8 +29,8 @@
     "stylelint:fix": "stylelint src/**/*.css --fix"
   },
   "devDependencies": {
-    "@decathlon/vitamin-css-postcss-config": "^0.0.0",
-    "@decathlon/vitamin-css-tailwind-config": "^0.0.0",
+    "@vtmn/css-postcss-config": "^0.0.0",
+    "@vtmn/css-tailwind-config": "^0.0.0",
     "autoprefixer": "^9.8.6",
     "chokidar-cli": "^2.1.0",
     "postcss": "^8.2.4",

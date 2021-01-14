@@ -1,5 +1,5 @@
 {
-  "name": "@decathlon/vitamin-css-postcss-config",
+  "name": "@vtmn/css-postcss-config",
   "version": "0.0.0",
   "private": true,
   "description": "Decathlon Design System - Vitamin CSS PostCSS configuration",

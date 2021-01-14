@@ -1,1 +1,1 @@
-module.exports = require('@decathlon/vitamin-css-tailwind-config');
+module.exports = require('@vtmn/css-tailwind-config');
