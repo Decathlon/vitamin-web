@@ -22,16 +22,8 @@
   <a aria-label="license" href="https://github.com/decathlon/vitamin-web/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/decathlon/vitamin-web.svg" alt="">
   </a>
-</p>
-
-<p align="center">Health Indicators</p>
-
-<p align="center">
   <a aria-label="GitHub Actions - Build main branch" href="https://github.com/Decathlon/vitamin-web/actions">
     <img src="https://github.com/Decathlon/vitamin-web/workflows/Build%20main%20branch/badge.svg" alt="">
-  </a>
-  <a aria-label="sonarcloud" href="https://sonarcloud.io/dashboard?id=Decathlon_vitamin-web">
-    <img src="https://sonarcloud.io/api/project_badges/measure?project=Decathlon_vitamin-web&metric=alert_status" alt="">
   </a>
 </p>
 
