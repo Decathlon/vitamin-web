@@ -39,6 +39,13 @@ All our documentation site lives on [Digital section of decathlon.design](https:
 You'll be able to find detailed documentation about our [design insights & purposes](https://www.decathlon.design/726f8c765/p/6669a2-design-insights--purposes),
 all of the current [guidelines](https://www.decathlon.design/726f8c765/p/189012-logo/b/05184a) & [components](https://www.decathlon.design/726f8c765/p/324e98-component-status).
 
+## Packages
+
+- @vtmn/css [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status)](https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css)
+- @vtmn/css-button [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css_components_button&metric=alert_status)](https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css_components_button)
+- @vtmn-css-design-tokens [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css_design-tokens&metric=alert_status)](https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css_design-tokens)
+- @vtmn-css-utilities [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css_utilities&metric=alert_status)](https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css_utilities)
+
 ## Contributing
 
 One of the Decathlon Design System goals is to provide guidelines & components to gain in consistency, efficiency & accessibility. The best way to achieve this is together!
