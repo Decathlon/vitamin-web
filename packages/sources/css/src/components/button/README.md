@@ -1,3 +1,3 @@
 # `@vtmn/css-button`
 
-> CSS standalone button component of Vitamin Web
+> Decathlon Design System - Vitamin CSS styles for button

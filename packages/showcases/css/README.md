@@ -1,6 +1,6 @@
-# CSS Showcase
+# `@vtmn/css-showcase` (private)
 
-> Showcase for the CSS full library of Vitamin Web
+> Decathlon Design System - Vitamin CSS showcase
 
 ## Technologies
 
