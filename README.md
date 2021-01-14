@@ -41,10 +41,10 @@ all of the current [guidelines](https://www.decathlon.design/726f8c765/p/189012-
 
 ## Packages
 
-- @vtmn/css [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status)](https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css)
-- @vtmn/css-button [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css_components_button&metric=alert_status)](https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css_components_button)
-- @vtmn-css-design-tokens [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css_design-tokens&metric=alert_status)](https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css_design-tokens)
-- @vtmn-css-utilities [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css_utilities&metric=alert_status)](https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css_utilities)
+- [@vtmn/css](https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css#readme) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status)](https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css)
+- [@vtmn/css-button](https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/components/button#readme)[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css_components_button&metric=alert_status)](https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css_components_button)
+- [@vtmn/css-design-tokens](https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/design-tokens#readme) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css_design-tokens&metric=alert_status)](https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css_design-tokens)
+- [@vtmn/css-utilities](https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/utilities#readme) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css_utilities&metric=alert_status)](https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css_utilities)
 
 ## Contributing
 
