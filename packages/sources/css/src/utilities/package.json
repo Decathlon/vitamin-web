@@ -1,6 +1,6 @@
 {
   "name": "@decathlon/vitamin-css-utilities",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Decathlon Design System - Vitamin CSS utilities",
   "license": "Apache-2.0",
   "main": "dist/index.css",
@@ -11,9 +11,9 @@
     "build": "postcss src/index.css -o dist/index.css"
   },
   "devDependencies": {
-    "@decathlon/vitamin-css-design-tokens": "^0.0.1",
-    "@decathlon/vitamin-css-postcss-config": "^0.0.1",
-    "@decathlon/vitamin-css-tailwind-config": "^0.0.1"
+    "@decathlon/vitamin-css-design-tokens": "^0.0.0",
+    "@decathlon/vitamin-css-postcss-config": "^0.0.0",
+    "@decathlon/vitamin-css-tailwind-config": "^0.0.0"
   },
   "licenses": [
     {

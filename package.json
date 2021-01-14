@@ -1,6 +1,6 @@
 {
   "name": "@decathlon/vitamin-web",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "private": true,
   "description": "Decathlon Design System - Vitamin libraries for web applications",
   "keywords": [
