@@ -1,0 +1,39 @@
+/* Design tokens */
+@import '@vtmn/css-design-tokens/src/colors';
+@import '@vtmn/css-design-tokens/src/spacings';
+@import '@vtmn/css-design-tokens/src/typography';
+
+@layer components {
+  /* Default text-input */
+
+  .vtmn-text-input {
+    box-shadow: inset 0 0 0 0.125rem transparent;
+    min-width: calc(6 * 1rem);
+    border: 1px solid black;
+
+    @apply vtmn-bg-white
+      vtmn-font-display
+      vtmn-text-black
+      vtmn-text-base
+      vtmn-py-0
+      vtmn-px-5
+      vtmn-relative
+      vtmn-inline-flex
+      vtmn-no-underline
+      vtmn-rounded
+      vtmn-h-8
+      vtmn-box-border
+      vtmn-overflow-hidden
+      vtmn-text-center
+      vtmn-items-center
+      vtmn-justify-center
+
+      disabled:vtmn-opacity-25
+      disabled:vtmn-cursor-not-allowed
+
+      hover:vtmn-cursor-pointer
+      hover:vtmn-bg-brand-digital-dark-1
+
+      active:vtmn-bg-brand-digital-dark-2;
+  }
+}
