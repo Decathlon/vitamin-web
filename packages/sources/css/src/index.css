@@ -11,6 +11,7 @@
 
 /* Components */
 @import './components/button/src';
+@import './components/text-input/src';
 
 /* Utilities */
 @import './utilities/src/typography';
