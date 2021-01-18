@@ -1,16 +1,14 @@
 name: Build Pull Request
 
 on:
-  pull_request_target:
-    types: [opened, synchronize, reopened]
+  pull_request: {}
+
 jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          ref: refs/pull/${{ github.event.number }}/merge
 
       - uses: actions/setup-node@v1
         with:
@@ -39,32 +37,33 @@ jobs:
       - name: Test
         run: yarn test
 
-  sonarcloud:
-    name: SonarCloud analysis
-    strategy:
-      matrix:
-        project_base_dir:
-          - 'packages/sources/css'
-          - 'packages/sources/css/src/components/button'
-          - 'packages/sources/css/src/design-tokens'
-          - 'packages/sources/css/src/utilities'
-          
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          ref: refs/pull/${{ github.event.number }}/merge
-          fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
-      - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
-        with:
-          projectBaseDir: ${{ matrix.project_base_dir }}
-          args: >
-            -Dsonar.pullrequest.key=${{ github.event.number }}
-            -Dsonar.pullrequest.branch=PR-${{ github.event.number }}
-            -Dsonar.pullrequest.base=${{ github.base_ref }}
-            -Dsonar.scm.revision=${{ github.event.pull_request.head.sha }}
-            -Dsonar.pullrequest.github.repository=${{ github.repository }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+# Cannot be run on pull_request, and pull_request_event is not safe with checkout.
+#  sonarcloud:
+#    name: SonarCloud analysis
+#    strategy:
+#      matrix:
+#        project_base_dir:
+#          - 'packages/sources/css'
+#          - 'packages/sources/css/src/components/button'
+#          - 'packages/sources/css/src/design-tokens'
+#          - 'packages/sources/css/src/utilities'
+#          
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v2
+#        with:
+#          ref: refs/pull/${{ github.event.number }}/merge
+#          fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
+#      - name: SonarCloud Scan
+#        uses: SonarSource/sonarcloud-github-action@master
+#        with:
+#          projectBaseDir: ${{ matrix.project_base_dir }}
+#          args: >
+#            -Dsonar.pullrequest.key=${{ github.event.number }}
+#            -Dsonar.pullrequest.branch=PR-${{ github.event.number }}
+#            -Dsonar.pullrequest.base=${{ github.base_ref }}
+#            -Dsonar.scm.revision=${{ github.event.pull_request.head.sha }}
+#            -Dsonar.pullrequest.github.repository=${{ github.repository }}
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
+#          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
