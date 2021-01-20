@@ -13,9 +13,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Fetch all git tags
-        run: git fetch --depth=1 origin +refs/tags/*:refs/tags/*
-
       - uses: actions/setup-node@v1
         with:
           node-version: '12.x'
