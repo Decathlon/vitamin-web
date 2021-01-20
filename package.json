@@ -33,7 +33,7 @@
     "prepare": "yarn prettier:fix && yarn stylelint:fix && yarn build && yarn test",
     "prettier": "prettier .",
     "prettier:fix": "prettier . --write",
-    "publish": "lerna publish --no-private --yes",
+    "publish": "lerna publish --no-private --no-commit-hooks --yes",
     "start": "lerna run start --parallel",
     "stylelint": "lerna run stylelint",
     "stylelint:fix": "lerna run stylelint:fix",

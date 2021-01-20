@@ -36,7 +36,6 @@ jobs:
 
       - name: Test
         run: yarn test
-
 # Cannot be run on pull_request, and pull_request_event is not safe with checkout.
 #  sonarcloud:
 #    name: SonarCloud analysis
@@ -47,7 +46,7 @@ jobs:
 #          - 'packages/sources/css/src/components/button'
 #          - 'packages/sources/css/src/design-tokens'
 #          - 'packages/sources/css/src/utilities'
-#          
+#
 #    runs-on: ubuntu-latest
 #    steps:
 #      - uses: actions/checkout@v2

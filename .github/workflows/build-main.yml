@@ -45,11 +45,15 @@ jobs:
         env:
           GH_TOKEN: '${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}'
 
+      - name: Set some config for Git
+        run: |
+          git config --global user.name "$GITHUB_ACTOR"
+          git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"
+
       - name: Publish NPM packages
-        run: yarn publish
+        run: yarn run publish
         env:
-          HUSKY_SKIP_HOOKS: 1
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   sonarcloud:
