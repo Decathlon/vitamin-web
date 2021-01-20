@@ -5,7 +5,7 @@
   "command": {
     "bootstrap": {
       "npmClientArgs": ["--access public"]
-    },    
+    },
     "publish": {
       "conventionalCommits": true
     }
