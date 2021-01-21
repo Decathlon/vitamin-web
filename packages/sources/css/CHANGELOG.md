@@ -15,4 +15,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-- stylelint errors ([#43](https://github.com/Decathlon/vitamin-web/issues/43)) ([08f01ce](https://github.com/Decathlon/vitamin-web/commit/08f01ce02690e5d38919f7f1b4c95980a4805470))
+* stylelint errors ([#43](https://github.com/Decathlon/vitamin-web/issues/43)) ([08f01ce](https://github.com/Decathlon/vitamin-web/commit/08f01ce02690e5d38919f7f1b4c95980a4805470))
