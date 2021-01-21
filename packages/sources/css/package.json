@@ -33,7 +33,6 @@
   "devDependencies": {
     "@vtmn/css-postcss-config": "^0.0.0",
     "@vtmn/css-tailwind-config": "^0.0.0",
-    "autoprefixer": "^9.8.6",
     "chokidar-cli": "^2.1.0",
     "postcss": "^8.2.4",
     "stylelint": "^13.8.0",
