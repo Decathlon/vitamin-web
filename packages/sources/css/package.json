@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Decathlon Design System - Vitamin CSS library",
   "keywords": [
     "design-system",
@@ -39,9 +39,6 @@
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",
     "tailwindcss": "^2.0.2"
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "licenses": [
     {

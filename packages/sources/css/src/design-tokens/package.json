@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-design-tokens",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Decathlon Design System - Vitamin CSS design tokens",
   "license": "Apache-2.0",
   "main": "dist/index.css",
@@ -13,9 +13,6 @@
   "devDependencies": {
     "@vtmn/css-postcss-config": "^0.0.0",
     "@vtmn/css-tailwind-config": "^0.0.0"
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "licenses": [
     {
