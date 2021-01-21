@@ -23,6 +23,7 @@
   ],
   "scripts": {
     "build": "postcss src/index.css -o dist/index.css",
+    "npm-publish": "npm publish",
     "prestart": "yarn build",
     "start": "chokidar 'src/**/*.css' --command 'yarn build'",
     "stylelint": "stylelint src/**/*.css",
@@ -38,6 +39,9 @@
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",
     "tailwindcss": "^2.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "licenses": [
     {

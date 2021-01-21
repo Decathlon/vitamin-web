@@ -7,7 +7,9 @@
       "npmClientArgs": ["--access public"]
     },
     "publish": {
-      "conventionalCommits": true
+      "conventionalCommits": true,
+      "npmClient": "npm",
+      "registry": "https://registry.npmjs.org/"
     }
   }
 }
