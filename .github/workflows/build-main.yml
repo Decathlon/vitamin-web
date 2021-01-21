@@ -51,16 +51,10 @@ jobs:
       - name: Publish NPM packages
         run: |
           npm whoami
-          npm run release
+          yarn release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      - name: Log errors
-        if: ${{ always() }}
-        continue-on-error: true
-        run: |
-          cat /home/runner/.npm/_logs/*
 
       - name: Deploy Storybook showcases
         run: yarn run deploy-storybook --ci

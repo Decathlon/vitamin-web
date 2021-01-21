@@ -2,6 +2,11 @@
   "name": "@vtmn/css-design-tokens",
   "version": "0.0.2",
   "description": "Decathlon Design System - Vitamin CSS design tokens",
+  "homepage": "https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/design-tokens",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Decathlon/vitamin-web.git"
+  },
   "license": "Apache-2.0",
   "main": "dist/index.css",
   "files": [

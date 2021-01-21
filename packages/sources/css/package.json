@@ -9,6 +9,7 @@
     "css",
     "vitamin"
   ],
+  "homepage": "https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css",
   "bugs": {
     "url": "https://github.com/Decathlon/vitamin-web/issues"
   },
