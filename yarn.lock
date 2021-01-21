@@ -3334,6 +3334,11 @@
   dependencies:
     "@types/yargs-parser" "*"
 
+"@vtmn/css@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@vtmn/css/-/css-0.0.1.tgz#9419aac8a75d83792a28eb2876af3bd75fd97795"
+  integrity sha512-FBC4ZGCp488MyuDUKaT8LJTe91rwbGil7fHqkJbiIiWUT8wEhi056wE/x/LK0xLRIFVIeB7IONEERJj/AxBKZw==
+
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.9.0.tgz#bd850604b4042459a5a41cd7d338cbed695ed964"
@@ -7774,9 +7779,9 @@ humanize-ms@^1.2.1:
     ms "^2.0.0"
 
 husky@^4.3.6:
-  version "4.3.7"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-4.3.7.tgz#ca47bbe6213c1aa8b16bbd504530d9600de91e88"
-  integrity sha512-0fQlcCDq/xypoyYSJvEuzbDPHFf8ZF9IXKJxlrnvxABTSzK1VPT2RKYQKrcgJ+YD39swgoB6sbzywUqFxUiqjw==
+  version "4.3.8"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-4.3.8.tgz#31144060be963fd6850e5cc8f019a1dfe194296d"
+  integrity sha512-LCqqsB0PzJQ/AlCgfrfzRe3e3+NvmefAdKQhRYpxS4u6clblBoDdzzvHi8fmxKRzvMxPY/1WZWzomPZww0Anow==
   dependencies:
     chalk "^4.0.0"
     ci-info "^2.0.0"
