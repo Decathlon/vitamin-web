@@ -16,7 +16,7 @@
     "@storybook/addon-essentials": "^6.1.14",
     "@storybook/addon-viewport": "^6.1.14",
     "@storybook/html": "^6.1.14",
-    "@vtmn/css": "^0.0.1",
+    "@vtmn/css": "*",
     "@vtmn/css-tailwind-config": "^0.0.0",
     "@whitespace/storybook-addon-html": "^4.2.0",
     "storybook-addon-designs": "^5.4.2",

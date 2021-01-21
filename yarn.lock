@@ -3334,11 +3334,6 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@vtmn/css@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@vtmn/css/-/css-0.0.1.tgz#9419aac8a75d83792a28eb2876af3bd75fd97795"
-  integrity sha512-FBC4ZGCp488MyuDUKaT8LJTe91rwbGil7fHqkJbiIiWUT8wEhi056wE/x/LK0xLRIFVIeB7IONEERJj/AxBKZw==
-
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.9.0.tgz#bd850604b4042459a5a41cd7d338cbed695ed964"
