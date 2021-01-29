@@ -1,0 +1,35 @@
+{
+  "name": "@decathlon/vitamin-wc-button",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "main": "dist/index.cjs.js",
+  "unpkg": "dist/vitamin-wc-button/vitamin-wc-button.esm.js",
+  "module": "dist/custom-elements/index.js",
+  "types": "dist/custom-elements/index.d.ts",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "build:dev": "lerna exec --scope='@decathlon/vitamin-wc-button' --include-dependencies -- npm run build --if-present",
+    "dev": "chokidar \"../../../../../node_modules/@vtmn/css-button/dist/*.css\" \"src/**\" -c \"stencil build\"",
+    "generate": "stencil generate",
+    "start:dev": "yarn build:dev && lerna exec --parallel --scope='@decathlon/vitamin-wc-button' --include-dependencies -- npm run dev --if-present"
+  },
+  "dependencies": {
+    "@stencil/core": "^2.0.1"
+  },
+  "devDependencies": {
+    "@stencil/postcss": "^2.0.0",
+    "@vtmn/css-button": "^0.0.5",
+    "chokidar-cli": "^2.1.0",
+    "postcss-import": "^14.0.0",
+    "svelte": "^3.31.2"
+  },
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs"
+}
