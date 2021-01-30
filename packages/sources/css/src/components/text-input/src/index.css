@@ -4,13 +4,13 @@
 @import '@vtmn/css-design-tokens/src/typography';
 
 @layer components {
-  .vtmn-text-input,
-  .vtmn-text-input::before,
-  .vtmn-text-input::after {
+  .vtmn-input-text,
+  .vtmn-input-text::before,
+  .vtmn-input-text::after {
     box-sizing: border-box;
   }
 
-  .vtmn-text-input {
+  .vtmn-input-text {
     box-shadow: inset 0 0 0 1px var(--vtmn-color_grey-dark-3);
 
     @apply vtmn-block
@@ -25,21 +25,21 @@
       vtmn-rounded;
   }
 
-  .vtmn-text-input:not([disabled]):hover {
+  .vtmn-input-text:not([disabled]):hover {
     box-shadow: inset 0 0 0 1px var(--vtmn-color_brand-digital);
   }
 
-  .vtmn-text-input:not([disabled]):focus,
-  .vtmn-text-input:not([disabled]):active {
+  .vtmn-input-text:not([disabled]):focus,
+  .vtmn-input-text:not([disabled]):active {
     outline: none;
     box-shadow: inset 0 0 0 0.125rem var(--vtmn-color_brand-digital-light-1);
   }
 
-  .vtmn-text-input::placeholder {
+  .vtmn-input-text::placeholder {
     @apply vtmn-text-grey;
   }
 
-  .vtmn-text-input[disabled] {
+  .vtmn-input-text[disabled] {
     cursor: not-allowed;
 
     @apply vtmn-border-grey-light-1
@@ -47,23 +47,23 @@
       vtmn-text-grey-light-1;
   }
 
-  .vtmn-text-input[disabled]::placeholder {
+  .vtmn-input-text[disabled]::placeholder {
     @apply vtmn-text-grey-light-1;
   }
 
-  .vtmn-text-input_label {
+  .vtmn-input-text_label {
     @apply vtmn-text-black vtmn-text-base;
   }
 
-  .vtmn-text-input_helper-text {
+  .vtmn-input-text_helper-text {
     @apply vtmn-text-grey vtmn-text-sm;
   }
 
-  .vtmn-text-input--valid {
+  .vtmn-input-text--valid {
     box-shadow: inset 0 0 0 0.125rem var(--vtmn-color_success);
   }
 
-  .vtmn-text-input--error {
+  .vtmn-input-text--error {
     box-shadow: inset 0 0 0 0.125rem var(--vtmn-color_danger);
   }
 }
