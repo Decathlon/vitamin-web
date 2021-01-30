@@ -36,8 +36,8 @@
     "prettier:fix": "prettier . --write",
     "release": "lerna publish --no-verify-access --no-private --no-commit-hooks --yes",
     "start": "lerna run start --parallel",
-    "stylelint": "lerna run stylelint",
-    "stylelint:fix": "lerna run stylelint:fix",
+    "stylelint": "stylelint packages/**/*.css",
+    "stylelint:fix": "yarn stylelint --fix",
     "test": "lerna run test"
   },
   "lint-staged": {
