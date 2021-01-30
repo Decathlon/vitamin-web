@@ -4,36 +4,66 @@
 @import '@vtmn/css-design-tokens/src/typography';
 
 @layer components {
-  /* Default text-input */
+  .vtmn-text-input,
+  .vtmn-text-input::before,
+  .vtmn-text-input::after {
+    box-sizing: border-box;
+  }
 
   .vtmn-text-input {
-    box-shadow: inset 0 0 0 0.125rem transparent;
-    min-width: calc(6 * 1rem);
-    border: 1px solid black;
+    box-shadow: inset 0 0 0 1px var(--vtmn-color_grey-dark-3);
 
-    @apply vtmn-bg-white
-      vtmn-font-display
-      vtmn-text-black
+    @apply vtmn-block
+      vtmn-font-normal
       vtmn-text-base
-      vtmn-py-0
-      vtmn-px-5
-      vtmn-relative
-      vtmn-inline-flex
-      vtmn-no-underline
-      vtmn-rounded
-      vtmn-h-8
-      vtmn-box-border
-      vtmn-overflow-hidden
-      vtmn-text-center
-      vtmn-items-center
-      vtmn-justify-center
+      vtmn-text-black
+      vtmn-p-3
+      vtmn-mt-2
+      vtmn-mb-1
+      vtmn-leading-none
+      vtmn-bg-white
+      vtmn-rounded;
+  }
 
-      disabled:vtmn-opacity-25
-      disabled:vtmn-cursor-not-allowed
+  .vtmn-text-input:hover {
+    box-shadow: inset 0 0 0 1px var(--vtmn-color_brand-digital);
+  }
 
-      hover:vtmn-cursor-pointer
-      hover:vtmn-bg-brand-digital-dark-1
+  .vtmn-text-input:focus,
+  .vtmn-text-input:active {
+    outline: none;
+    box-shadow: inset 0 0 0 0.125rem var(--vtmn-color_brand-digital-light-1);
+  }
 
-      active:vtmn-bg-brand-digital-dark-2;
+  .vtmn-text-input::placeholder {
+    @apply vtmn-text-grey;
+  }
+
+  .vtmn-text-input[disabled] {
+    cursor: not-allowed;
+
+    @apply vtmn-border-grey-light-1
+      vtmn-bg-grey-light-3
+      vtmn-text-grey-light-1;
+  }
+
+  .vtmn-text-input[disabled]::placeholder {
+    @apply vtmn-text-grey-light-1;
+  }
+
+  .vtmn-text-input_label {
+    @apply vtmn-text-black vtmn-text-base;
+  }
+
+  .vtmn-text-input_helper-text {
+    @apply vtmn-text-grey vtmn-text-sm;
+  }
+
+  .vtmn-text-input--valid {
+    box-shadow: inset 0 0 0 0.125rem var(--vtmn-color_success);
+  }
+
+  .vtmn-text-input--error {
+    box-shadow: inset 0 0 0 0.125rem var(--vtmn-color_danger);
   }
 }

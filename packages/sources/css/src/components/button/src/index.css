@@ -12,7 +12,7 @@
     letter-spacing: 0.0375rem;
 
     @apply vtmn-bg-brand-digital
-      vtmn-font-display
+      vtmn-font-condensed
       vtmn-text-white
       vtmn-text-base
       vtmn-font-bold
