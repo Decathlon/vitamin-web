@@ -26,9 +26,7 @@
     "build": "postcss src/index.css -o dist/index.css",
     "npm-publish": "npm publish",
     "prestart": "yarn build",
-    "start": "chokidar 'src/**/*.css' --command 'yarn build'",
-    "stylelint": "stylelint src/**/*.css",
-    "stylelint:fix": "stylelint src/**/*.css --fix"
+    "start": "chokidar 'src/**/*.css' --command 'yarn build'"
   },
   "devDependencies": {
     "@vtmn/css-postcss-config": "^0.0.0",
