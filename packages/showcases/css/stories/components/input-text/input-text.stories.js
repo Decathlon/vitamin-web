@@ -5,7 +5,7 @@ import _disabled from './examples/disabled.html';
 import _multiline from './examples/multiline.html';
 
 export default {
-  title: 'Components / Text input',
+  title: 'Components / Input text',
   argTypes: { onchange: { action: 'write' } },
   parameters: {
     actions: {
