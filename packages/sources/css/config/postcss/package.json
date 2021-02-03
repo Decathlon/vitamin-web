@@ -15,7 +15,7 @@
     "postcss-css-variables": "^0.17.0",
     "postcss-discard-comments": "^4.0.2",
     "postcss-import": "^14.0.0",
-    "postcss-loader": "^4.1.0",
+    "postcss-loader": "^5.0.0",
     "tailwindcss": "^2.0.2"
   },
   "licenses": [
