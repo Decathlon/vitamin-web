@@ -72,6 +72,8 @@ module.exports = {
       10: 'var(--vtmn-spacing_10)',
     },
     fontFamily: {
+      normal: ['Roboto', 'system-ui', '-apple-system'],
+      condensed: ['Roboto Condensed', 'system-ui', '-apple-system'],
       display: ['Roboto Condensed', 'system-ui', '-apple-system'],
       body: ['Roboto', 'system-ui', '-apple-system'],
     },
