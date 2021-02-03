@@ -29,70 +29,72 @@
 
 ## Introduction
 
-The Decathlon brand Design System is the framework that helps our ecosystem to design and develop consistent and quality experiences.
+[Decathlon Design System](https://decathlon.design) is the framework that helps our ecosystem to design and develop consistent and quality experiences. For its [Digital section](https://www.decathlon.design/726f8c765/p/6145b2-overview), it is called Vitamin.
 
-This repository will host our library called "Vitamin" for web applications.
-
-## Documentation
-
-All our documentation site lives on [Digital section of decathlon.design](https://www.decathlon.design/726f8c765/p/07d981-hello-world-).
-You'll be able to find detailed documentation about our [design insights & purposes](https://www.decathlon.design/726f8c765/p/6669a2-design-insights--purposes),
-all of the current [guidelines](https://www.decathlon.design/726f8c765/p/189012-logo/b/05184a) & [components](https://www.decathlon.design/726f8c765/p/324e98-component-status).
+This repository hosts libraries for web applications.
 
 ## Packages
 
+In order to allow you to consume the elements of the Design System **according to your product constraints**, we give you the possibility of using the Vitamin web libraries with **different technologies & levels of granularity**.
+
+### Global CSS styles
+
+This package provides you with a complete CSS with a huge set of utility classes as it is generated with [Tailwind CSS](https://tailwindcss.com). Then it will be up to you to [optimize for production](https://tailwindcss.com/docs/optimizing-for-production) by purging the CSS according to the classes used in your HTML:
+
 - [@vtmn/css](https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css#readme) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status)](https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css) [![npm version](https://img.shields.io/npm/v/@vtmn/css?style=flat)](https://www.npmjs.com/package/@vtmn/css)
+
+### Specific CSS styles
+
+These packages allow the consumption of elements with a higher level of granularity. You get only the styles you need and what you consume is Pure CSS without CSS Custom Properties, therefore IE 11 compatible:
+
+#### For each component
+
 - [@vtmn/css-button](https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/components/button#readme)[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css_components_button&metric=alert_status)](https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css_components_button) [![npm version](https://img.shields.io/npm/v/@vtmn/css-button?style=flat)](https://www.npmjs.com/package/@vtmn/css-button)
 - [@vtmn/css-text-input](https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/components/text-input#readme)[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css_components_button&metric=alert_status)](https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css_components_text-input) [![npm version](https://img.shields.io/npm/v/@vtmn/css-text-input?style=flat)](https://www.npmjs.com/package/@vtmn/css-text-input)
+
+#### For design tokens
+
 - [@vtmn/css-design-tokens](https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/design-tokens#readme) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css_design-tokens&metric=alert_status)](https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css_design-tokens) [![npm version](https://img.shields.io/npm/v/@vtmn/css-design-tokens?style=flat)](https://www.npmjs.com/package/@vtmn/css-design-tokens)
+
+#### For utilities
+
 - [@vtmn/css-utilities](https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/utilities#readme) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css_utilities&metric=alert_status)](https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css_utilities) [![npm version](https://img.shields.io/npm/v/@vtmn/css-utilities?style=flat)](https://www.npmjs.com/package/@vtmn/css-utilities)
 
 ## Contributing
 
 One of the Decathlon Design System goals is to provide guidelines & components to gain in consistency, efficiency & accessibility. The best way to achieve this is together!
-That's why we are on GitHub. We would love contributions from the community (bug reports, feature requests, suggestions, Pull Requests, whatever you want!).
-
-> 👉 See [the contributing docs](CONTRIBUTING.md) for more information about how to contribute.
-
-### Installation
+That's why we are on GitHub. We would love contributions from the community _(bug reports, feature requests, suggestions, Pull Requests, whatever you want!)_.
 
 In this monorepo, we use [Yarn](https://yarnpkg.com) & [Lerna](https://github.com/lerna/lerna).
 Read the [Installation Guide](https://yarnpkg.com/en/docs/install) for detailed instructions on how to install Yarn.
 
-Once you have installed [Yarn](https://yarnpkg.com), please run:
+Once you have installed it, please run:
 
 ```sh
 yarn
 ```
 
-### Development
-
-To develop in watch mode and run all showcases with hot reloads, just run:
+Then, to develop in watch mode and run all showcases with hot reloads, just run:
 
 ```sh
 yarn start
 ```
 
-Here is the showcases' URLs list:
+Finally, the different showcases will be launched:
 
-- CSS showcase: [localhost:6006](http://localhost:6006)
+| Showcase | URL                                     |
+| -------- | --------------------------------------- |
+| CSS      | [localhost:6006](http://localhost:6006) |
+
+> 👉 See [the contributing docs](CONTRIBUTING.md) for more information about how to contribute.
 
 ## Special thanks
 
-Before making this project Open source, we already received contributions from core contributors. Thanks a lot:
+Thank you to the [contributors](https://github.com/Decathlon/vitamin-web/graphs/contributors) involved in this project. 💙
 
-- **Laurent Thiebault** [lauthieb](https://github.com/lauthieb)
-- **Gabin Bloquet** [gabbloquet](https://github.com/gabbloquet)
-- **Amen Souissi** [amen-souissi](https://github.com/amen-souissi)
-- **Tanguy Muselet** [tmuselet](https://github.com/tmuselet)
-- **Romain Joly** [RomainJoly](https://github.com/RomainJoly)
-- **Samuel Delaporte** [samueldelaporte](https://github.com/samueldelaporte)
-- **Joffrey Leveugle** [jleveugle](https://github.com/jleveugle)
-- **Rémi Delgatte** [rdelgatte](https://github.com/rdelgatte)
-- **Nicolas Breunin** [NicolasBreunin](https://github.com/NicolasBreunin)
-- **Flavian Magrit** [FlavianMagrit](https://github.com/FlavianMagrit)
-
-Thanks also to all our [contributors](https://github.com/Decathlon/vitamin-web/graphs/contributors) who participated in this project.
+<a href="https://github.com/decathlon/vitamin-web/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=decathlon/vitamin-web" />
+</a>
 
 ## License
 

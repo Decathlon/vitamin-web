@@ -3342,8 +3342,10 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@vtmn/css-design-tokens@^0.0.0":
+"@vtmn/css-design-tokens@^0.0.4":
   version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@vtmn/css-design-tokens/-/css-design-tokens-0.0.4.tgz#e2619d36b6bbfbcfa44fc2021997829d3716d5da"
+  integrity sha512-VvlV4S8QETllsR9PJtqjCGtpznfXtdLxTzQ4smhoGg3UlJvj2BxrwKjQT3sTPhafgLEqhUDkE3yyc3IKPN0XmQ==
 
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
