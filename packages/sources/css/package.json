@@ -38,6 +38,9 @@
     "stylelint-config-standard": "^20.0.0",
     "tailwindcss": "^2.0.2"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "licenses": [
     {
       "type": "Apache-2.0",
