@@ -1,28 +1,33 @@
 {
-  "name": "@decathlon/vitamin-wc-showcase",
-  "version": "0.0.1",
+  "name": "@vtmn/showcase-web-components",
+  "version": "0.0.0",
   "private": true,
-  "license": "MIT",
-  "main": "index.js",
+  "description": "Decathlon Design System - Vitamin Web Components showcase",
+  "license": "Apache-2.0",
   "scripts": {
     "build-storybook": "build-storybook",
-    "build:dev": "lerna exec --scope='@decathlon/vitamin-wc-showcase' --include-dependencies -- npm run build --if-present",
-    "dev": "start-storybook -p 6007",
-    "start:dev": "yarn build:dev && lerna exec --parallel --scope='@decathlon/vitamin-wc-showcase' --include-dependencies -- npm run dev --if-present"
+    "start": "start-storybook -p 6007"
   },
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/plugin-syntax-import-meta": "^7.10.4",
-    "@decathlon/vitamin-wc-button": "^0.0.1",
     "@open-wc/webpack-import-meta-loader": "^0.4.7",
     "@stencil/webpack": "^0.0.6",
     "@storybook/addon-actions": "^6.1.11",
     "@storybook/addon-essentials": "^6.1.11",
     "@storybook/addon-links": "^6.1.11",
     "@storybook/web-components": "^6.1.11",
+    "@vtmn/css": "*",
+    "@vtmn/web-components": "^0.0.1",
     "babel-loader": "^8.2.2",
     "lit-html": "^1.3.0",
     "webpack-merge": "^5.7.3"
-  }
+  },
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ]
 }

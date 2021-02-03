@@ -1,4 +1,5 @@
-import { defineCustomElements } from '@decathlon/vitamin-wc-button/dist/esm/loader';
+import '@vtmn/css';
+import { defineCustomElements } from '@vtmn/web-components/dist/esm/loader';
 
 defineCustomElements();
 

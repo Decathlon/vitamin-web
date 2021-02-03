@@ -23,8 +23,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "postcss src/index.css -o dist/index.css",
-    "dev": "chokidar \"src/*.css\" -c \"yarn build\""
+    "build": "postcss src/index.css -o dist/index.css"
   },
   "devDependencies": {
     "@vtmn/css-design-tokens": "^0.0.7",

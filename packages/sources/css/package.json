@@ -24,9 +24,8 @@
   ],
   "scripts": {
     "build": "postcss src/index.css -o dist/index.css",
-    "npm-publish": "npm publish",
     "prestart": "yarn build",
-    "start": "chokidar 'src/**/*.css' --command 'yarn build'"
+    "start": "chokidar 'src/**' -i '**/dist/**' -c 'lerna run --parallel --scope \"@vtmn/css-*\" build && yarn build'"
   },
   "devDependencies": {
     "@vtmn/css-postcss-config": "^0.0.0",
