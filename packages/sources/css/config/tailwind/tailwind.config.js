@@ -2,13 +2,12 @@ module.exports = {
   prefix: 'vtmn-',
   purge: false,
   darkMode: false, // or 'media' or 'class',
-  important: true,
   theme: {
     screens: {
-      tablet: '600px',
-      'small-desktop': '900px',
-      'medium-desktop': '1200px',
-      'large-desktop': '1800px',
+      tablet: { min: '600px', max: '899px' },
+      'small-desktop': { min: '900px', max: '1199px' },
+      'medium-desktop': { min: '1200px', max: '1799px' },
+      'large-desktop': { min: '1800px' },
     },
     colors: {
       'brand-digital': {
