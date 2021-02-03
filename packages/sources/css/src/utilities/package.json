@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-utilities",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Decathlon Design System - Vitamin CSS utility classes",
   "homepage": "https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/utilities",
   "repository": {
@@ -16,7 +16,7 @@
     "build": "postcss src/index.css -o dist/index.css"
   },
   "devDependencies": {
-    "@vtmn/css-design-tokens": "^0.0.4",
+    "@vtmn/css-design-tokens": "^0.0.5",
     "@vtmn/css-postcss-config": "^0.0.0",
     "@vtmn/css-tailwind-config": "^0.0.0"
   },
