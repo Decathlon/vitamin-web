@@ -1,4 +1,4 @@
-# `@vtmn/web-components-showcase` (private)
+# `@vtmn/showcase-web-components` (private)
 
 > Decathlon Design System - Vitamin Web Components showcase
 
