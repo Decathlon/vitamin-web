@@ -105,7 +105,15 @@ These packages allow the consumption of elements with a higher level of granular
 
 This package provides you with a library of Web Components ([Custom Elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements)). So, you will be able to use custom `<vtmn-**>` HTML tags directly in your markup:
 
-- [@vtmn/web-components](https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/web-components#readme) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_web-components&metric=alert_status)](https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_web-components) [![npm version](https://img.shields.io/npm/v/@vtmn/web-components?style=flat)](https://www.npmjs.com/package/@vtmn/web-components)
+<table>
+  <tr>
+    <th>@vtmn/web-components</th>
+    <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/web-components#readme">README</a></td>
+    <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-web-components">Showcase</a></td>
+    <td><a href="https://www.npmjs.com/package/@vtmn/web-components"><img src="https://img.shields.io/npm/v/@vtmn/web-components?style=flat" alt="npm version" /></a></td>
+    <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_web-components"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_web-components&metric=alert_status" alt="Quality Gate Status" /></a></td>
+  </tr>
+</table>
 
 ## Contributing
 
@@ -129,9 +137,10 @@ yarn start
 
 Finally, the different showcases will be launched:
 
-| Showcase | URL                                     |
-| -------- | --------------------------------------- |
-| CSS      | [localhost:6006](http://localhost:6006) |
+| Showcase       | URL                                     |
+| -------------- | --------------------------------------- |
+| CSS            | [localhost:6006](http://localhost:6006) |
+| Web Components | [localhost:6007](http://localhost:6007) |
 
 > 👉 See [the contributing docs](CONTRIBUTING.md) for more information about how to contribute.
 
