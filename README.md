@@ -41,7 +41,15 @@ In order to allow you to consume the elements of the Design System **according t
 
 This package provides you with a complete CSS with a huge set of utility classes as it is generated with [Tailwind CSS](https://tailwindcss.com). Then it will be up to you to [optimize for production](https://tailwindcss.com/docs/optimizing-for-production) by purging the CSS according to the classes used in your HTML:
 
-- [@vtmn/css](https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css#readme) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status)](https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css) [![npm version](https://img.shields.io/npm/v/@vtmn/css?style=flat)](https://www.npmjs.com/package/@vtmn/css)
+<table>
+  <tr>
+    <th>@vtmn/css</th>
+    <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css#readme">README</a></td>
+    <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css">Showcase</a></td>
+    <td><a href="https://www.npmjs.com/package/@vtmn/css"><img src="https://img.shields.io/npm/v/@vtmn/css?style=flat" alt="npm version" /></a></td>
+    <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status" alt="Quality Gate Status" /></a></td>
+  </tr>
+</table>
 
 ### Specific CSS styles
 
@@ -49,16 +57,46 @@ These packages allow the consumption of elements with a higher level of granular
 
 #### For each component
 
-- [@vtmn/css-button](https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/components/button#readme)[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css_components_button&metric=alert_status)](https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css_components_button) [![npm version](https://img.shields.io/npm/v/@vtmn/css-button?style=flat)](https://www.npmjs.com/package/@vtmn/css-button)
-- [@vtmn/css-text-input](https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/components/text-input#readme)[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css_components_button&metric=alert_status)](https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css_components_text-input) [![npm version](https://img.shields.io/npm/v/@vtmn/css-text-input?style=flat)](https://www.npmjs.com/package/@vtmn/css-text-input)
+<table>
+  <tr>
+    <th>@vtmn/css-button</th>
+    <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/components/button#readme">README</a></td>
+    <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-button--default">Showcase</a></td>
+    <td><a href="https://www.npmjs.com/package/@vtmn/css-button"><img src="https://img.shields.io/npm/v/@vtmn/css-button?style=flat" alt="npm version" /></a></td>
+    <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status" alt="Quality Gate Status" /></a></td>
+  </tr>
+  <tr>
+    <th>@vtmn/css-text-input</th>
+    <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/components/text-input#readme">README</a></td>
+    <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-text-input--default">Showcase</a></td>
+    <td><a href="https://www.npmjs.com/package/@vtmn/css-text-input"><img src="https://img.shields.io/npm/v/@vtmn/css-text-input?style=flat" alt="npm version" /></a></td>
+    <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status" alt="Quality Gate Status" /></a></td>
+  </tr>
+</table>
 
 #### For design tokens
 
-- [@vtmn/css-design-tokens](https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/design-tokens#readme) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css_design-tokens&metric=alert_status)](https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css_design-tokens) [![npm version](https://img.shields.io/npm/v/@vtmn/css-design-tokens?style=flat)](https://www.npmjs.com/package/@vtmn/css-design-tokens)
+<table>
+  <tr>
+    <th>@vtmn/css-design-tokens</th>
+    <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/design-tokens#readme">README</a></td>
+    <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css">Showcase</a></td>
+    <td><a href="https://www.npmjs.com/package/@vtmn/css-design-tokens"><img src="https://img.shields.io/npm/v/@vtmn/css-design-tokens?style=flat" alt="npm version" /></a></td>
+    <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status" alt="Quality Gate Status" /></a></td>
+  </tr>
+</table>
 
 #### For utilities
 
-- [@vtmn/css-utilities](https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/utilities#readme) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css_utilities&metric=alert_status)](https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css_utilities) [![npm version](https://img.shields.io/npm/v/@vtmn/css-utilities?style=flat)](https://www.npmjs.com/package/@vtmn/css-utilities)
+<table>
+  <tr>
+    <th>@vtmn/css-utilities</th>
+    <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/utilities#readme">README</a></td>
+    <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css">Showcase</a></td>
+    <td><a href="https://www.npmjs.com/package/@vtmn/css-utilities"><img src="https://img.shields.io/npm/v/@vtmn/css-utilities?style=flat" alt="npm version" /></a></td>
+    <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status" alt="Quality Gate Status" /></a></td>
+  </tr>
+</table>
 
 ## Contributing
 
