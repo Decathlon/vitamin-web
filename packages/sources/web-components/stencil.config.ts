@@ -4,7 +4,7 @@ import autoprefixer from 'autoprefixer';
 import postcssImport from 'postcss-import';
 
 export const config: Config = {
-  namespace: 'vitamin-wc',
+  namespace: 'vtmn-web-components',
   outputTargets: [
     {
       type: 'dist',

@@ -4,7 +4,7 @@
   "private": true,
   "license": "MIT",
   "main": "dist/index.cjs.js",
-  "unpkg": "dist/vitamin-wc/vitamin-wc.esm.js",
+  "unpkg": "dist/vtmn-web-components/vtmn-web-components.esm.js",
   "module": "dist/custom-elements/index.js",
   "types": "dist/custom-elements/index.d.ts",
   "files": [
@@ -14,7 +14,7 @@
   "scripts": {
     "build": "stencil build --docs",
     "generate": "stencil generate",
-    "start": "chokidar 'src/**' '../../../node_modules/@vtmn/css/dist/index.css' --ignore '(dist|loader|www)/**' -c 'yarn build'"
+    "start": "chokidar 'src/**' --ignore '(dist|loader|www)/**' -c 'yarn build'"
   },
   "dependencies": {
     "@stencil/core": "^2.0.1"
