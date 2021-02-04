@@ -101,7 +101,7 @@ These packages allow the consumption of elements with a higher level of granular
   </tr>
 </table>
 
-### Web Components
+### Web Components 🔵
 
 This package provides you with a library of Web Components ([Custom Elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements)). So, you will be able to use custom `<vtmn-**>` HTML tags directly in your markup:
 
