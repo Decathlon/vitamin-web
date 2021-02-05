@@ -1,4 +1,5 @@
 import * as React from 'react';
+import '@vtmn/css-text-input';
 import classNames from 'classnames';
 import { TextInputMessage } from './TextInputMessage/Index';
 

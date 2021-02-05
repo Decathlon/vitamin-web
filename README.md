@@ -115,6 +115,20 @@ This package provides you with a library of Web Components ([Custom Elements](ht
   </tr>
 </table>
 
+### React 🟣
+
+This package provides you with a library of [React](https://reactjs.org/) Components:
+
+<table>
+  <tr>
+    <th>@vtmn/react</th>
+    <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/react#readme">README</a></td>
+    <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-react">Showcase</a></td>
+    <td><a href="https://www.npmjs.com/package/@vtmn/react"><img src="https://img.shields.io/npm/v/@vtmn/react?style=flat" alt="npm version" /></a></td>
+    <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_react"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_react&metric=alert_status" alt="Quality Gate Status" /></a></td>
+  </tr>
+</table>
+
 ## Contributing
 
 One of the Decathlon Design System goals is to provide guidelines & components to gain in consistency, efficiency & accessibility. The best way to achieve this is together!
@@ -141,6 +155,7 @@ Finally, the different showcases will be launched:
 | -------------- | --------------------------------------- |
 | CSS            | [localhost:6006](http://localhost:6006) |
 | Web Components | [localhost:6007](http://localhost:6007) |
+| React          | [localhost:6008](http://localhost:6008) |
 
 > 👉 See [the contributing docs](CONTRIBUTING.md) for more information about how to contribute.
 

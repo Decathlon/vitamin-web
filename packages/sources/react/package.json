@@ -58,6 +58,8 @@
     "@types/react-dom": "^17.0.0",
     "@typescript-eslint/eslint-plugin": "^4.12.0",
     "@typescript-eslint/parser": "^4.12.0",
+    "@vtmn/css-button": "^0.1.1",
+    "@vtmn/css-text-input": "^0.1.2",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
     "babel-plugin-typescript-to-proptypes": "^1.4.2",
     "classnames": "^2.2.6",
