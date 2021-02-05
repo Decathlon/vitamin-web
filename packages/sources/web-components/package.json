@@ -1,8 +1,22 @@
 {
   "name": "@vtmn/web-components",
   "version": "0.0.0",
-  "private": true,
-  "license": "MIT",
+  "keywords": [
+    "design-system",
+    "ui-kit",
+    "libraries",
+    "web-components",
+    "vitamin"
+  ],
+  "homepage": "https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/web-components",
+  "bugs": {
+    "url": "https://github.com/Decathlon/vitamin-web/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Decathlon/vitamin-web.git"
+  },
+  "license": "Apache-2.0",
   "main": "dist/index.cjs.js",
   "unpkg": "dist/vtmn-web-components/vtmn-web-components.esm.js",
   "module": "dist/custom-elements/index.js",
@@ -26,8 +40,17 @@
     "postcss-import": "^14.0.0",
     "svelte": "^3.31.2"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "es2015": "dist/esm/index.mjs",
-  "es2017": "dist/esm/index.mjs"
+  "es2017": "dist/esm/index.mjs",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ]
 }
