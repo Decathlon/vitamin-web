@@ -25,6 +25,9 @@
   <a aria-label="GitHub Actions - Build main branch" href="https://github.com/Decathlon/vitamin-web/actions">
     <img src="https://github.com/Decathlon/vitamin-web/workflows/Build%20main%20branch/badge.svg" alt="">
   </a>
+  <a aria-label="license" href="https://join.slack.com/t/decathlon-design/shared_invite/zt-lvx09ln9-Im190Mul4MAfQgKmXszJ~A">
+    <img src="https://img.shields.io/badge/slack-Decathlon%20Design%20System-purple.svg?logo=slack" alt="">
+  </a>
 </p>
 
 ## Introduction
@@ -37,7 +40,7 @@ This repository hosts libraries for web applications.
 
 In order to allow you to consume the elements of the Design System **according to your product constraints**, we give you the possibility of using the Vitamin web libraries with **different technologies & levels of granularity**.
 
-### Global CSS styles
+### Global CSS styles 🎨
 
 This package provides you with a complete CSS with a huge set of utility classes as it is generated with [Tailwind CSS](https://tailwindcss.com). Then it will be up to you to [optimize for production](https://tailwindcss.com/docs/optimizing-for-production) by purging the CSS according to the classes used in your HTML:
 
@@ -51,7 +54,7 @@ This package provides you with a complete CSS with a huge set of utility classes
   </tr>
 </table>
 
-### Specific CSS styles
+### Specific CSS styles 🖌
 
 These packages allow the consumption of elements with a higher level of granularity. You get only the styles you need and what you consume is Pure CSS without CSS Custom Properties, therefore IE 11 compatible:
 
