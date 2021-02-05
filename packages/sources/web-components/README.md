@@ -1,10 +1,10 @@
-# `@vtmn/showcase-css` (private)
+# `@vtmn/web-components`
 
-> Decathlon Design System - Vitamin CSS showcase
+> Decathlon Design System - Vitamin Web Components library
 
 ## Technologies
 
-- [Storybook](https://storybook.js.org/) - CSS guidelines & components are exposed in a Storybook to help you understand how to consume this package.
+- [Stencil](https://stenciljs.com/) - Stencil is a toolchain for building reusable, scalable Design Systems. Generate small, blazing fast, and 100% standards based Web Components that run in every browser.
 
 ## Contributing
 
@@ -32,4 +32,4 @@ To develop in watch mode and run all showcases with hot reloads, just run:
 yarn start
 ```
 
-Then, the showcase on [localhost:6006](http://localhost:6006).
+Then, your CSS is building in watch mode to the `dist` folder.

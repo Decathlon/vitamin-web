@@ -1,0 +1,33 @@
+{
+  "name": "@vtmn/web-components",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "dist/index.cjs.js",
+  "unpkg": "dist/vtmn-web-components/vtmn-web-components.esm.js",
+  "module": "dist/custom-elements/index.js",
+  "types": "dist/custom-elements/index.d.ts",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs --prod --ci",
+    "generate": "stencil generate",
+    "start": "chokidar 'src/**' --ignore '(dist|loader|www)/**' -c 'stencil build --docs'"
+  },
+  "dependencies": {
+    "@stencil/core": "^2.0.1"
+  },
+  "devDependencies": {
+    "@stencil/postcss": "^2.0.0",
+    "@vtmn/css-button": "^0.1.1",
+    "chokidar-cli": "^2.1.0",
+    "postcss-import": "^14.0.0",
+    "svelte": "^3.31.2"
+  },
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs"
+}

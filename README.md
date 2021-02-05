@@ -56,7 +56,19 @@ This package provides you with a complete CSS with a huge set of utility classes
 
 ### Specific CSS styles 🖌
 
-These packages allow the consumption of elements with a higher level of granularity. You get only the styles you need and what you consume is Pure CSS without CSS Custom Properties, therefore IE 11 compatible:
+These packages allow the consumption of elements with a higher level of granularity. You get only the styles you need and what you consume is Pure CSS without [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*), therefore IE 11 compatible:
+
+#### For design tokens
+
+<table>
+  <tr>
+    <th>@vtmn/css-design-tokens</th>
+    <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/design-tokens#readme">README</a></td>
+    <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css">Showcase</a></td>
+    <td><a href="https://www.npmjs.com/package/@vtmn/css-design-tokens"><img src="https://img.shields.io/npm/v/@vtmn/css-design-tokens?style=flat" alt="npm version" /></a></td>
+    <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status" alt="Quality Gate Status" /></a></td>
+  </tr>
+</table>
 
 #### For each component
 
@@ -77,18 +89,6 @@ These packages allow the consumption of elements with a higher level of granular
   </tr>
 </table>
 
-#### For design tokens
-
-<table>
-  <tr>
-    <th>@vtmn/css-design-tokens</th>
-    <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/design-tokens#readme">README</a></td>
-    <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css">Showcase</a></td>
-    <td><a href="https://www.npmjs.com/package/@vtmn/css-design-tokens"><img src="https://img.shields.io/npm/v/@vtmn/css-design-tokens?style=flat" alt="npm version" /></a></td>
-    <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status" alt="Quality Gate Status" /></a></td>
-  </tr>
-</table>
-
 #### For utilities
 
 <table>
@@ -98,6 +98,20 @@ These packages allow the consumption of elements with a higher level of granular
     <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css">Showcase</a></td>
     <td><a href="https://www.npmjs.com/package/@vtmn/css-utilities"><img src="https://img.shields.io/npm/v/@vtmn/css-utilities?style=flat" alt="npm version" /></a></td>
     <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status" alt="Quality Gate Status" /></a></td>
+  </tr>
+</table>
+
+### Web Components 🔵
+
+This package provides you with a library of Web Components ([Custom Elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements)). So, you will be able to use custom `<vtmn-**>` HTML tags directly in your markup:
+
+<table>
+  <tr>
+    <th>@vtmn/web-components</th>
+    <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/web-components#readme">README</a></td>
+    <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-web-components">Showcase</a></td>
+    <td><a href="https://www.npmjs.com/package/@vtmn/web-components"><img src="https://img.shields.io/npm/v/@vtmn/web-components?style=flat" alt="npm version" /></a></td>
+    <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_web-components"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_web-components&metric=alert_status" alt="Quality Gate Status" /></a></td>
   </tr>
 </table>
 
@@ -123,9 +137,10 @@ yarn start
 
 Finally, the different showcases will be launched:
 
-| Showcase | URL                                     |
-| -------- | --------------------------------------- |
-| CSS      | [localhost:6006](http://localhost:6006) |
+| Showcase       | URL                                     |
+| -------------- | --------------------------------------- |
+| CSS            | [localhost:6006](http://localhost:6006) |
+| Web Components | [localhost:6007](http://localhost:6007) |
 
 > 👉 See [the contributing docs](CONTRIBUTING.md) for more information about how to contribute.
 

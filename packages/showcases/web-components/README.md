@@ -1,6 +1,6 @@
-# `@vtmn/showcase-css` (private)
+# `@vtmn/showcase-web-components` (private)
 
-> Decathlon Design System - Vitamin CSS showcase
+> Decathlon Design System - Vitamin Web Components showcase
 
 ## Technologies
 
