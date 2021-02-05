@@ -57,7 +57,7 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Deploy Storybook showcases
-        run: yarn run deploy-storybook --ci
+        run: yarn deploy-storybook --ci
         env:
           GH_TOKEN: '${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}'
 
@@ -72,6 +72,7 @@ jobs:
             'packages/sources/css/src/components/text-input',
             'packages/sources/css/src/design-tokens',
             'packages/sources/css/src/utilities',
+            'packages/sources/web-components',
           ]
     runs-on: ubuntu-latest
     steps:

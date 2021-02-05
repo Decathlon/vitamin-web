@@ -21,6 +21,7 @@
 **/.env.test.local
 **/.env.production.local
 **/.eslintcache
+**/storybook-static
 
 # Editors
 **/.vscode

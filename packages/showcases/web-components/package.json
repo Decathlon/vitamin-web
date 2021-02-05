@@ -6,6 +6,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "build-storybook": "build-storybook",
+    "build-storybook:docs": "build-storybook --docs",
     "start": "start-storybook -p 6007"
   },
   "dependencies": {},

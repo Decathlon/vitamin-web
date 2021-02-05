@@ -4,3 +4,5 @@
 **/coverage
 **/lib
 **/CHANGELOG.md
+**/.*
+**/storybook-static

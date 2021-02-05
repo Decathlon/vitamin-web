@@ -46,10 +46,10 @@
       "sort-package-json && lerna exec --parallel -- sort-package-json"
     ],
     "./packages/**/*.css": [
-      "yarn run stylelint:fix"
+      "yarn stylelint:fix"
     ],
     "./packages/**/*.{json,js,jsx,ts,tsx}": [
-      "yarn run prettier:fix"
+      "yarn prettier:fix"
     ]
   },
   "devDependencies": {
