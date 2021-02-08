@@ -1,0 +1,56 @@
+{
+  "name": "@vtmn/svelte",
+  "version": "0.0.0",
+  "description": "Decathlon Design System - Vitamin Svelte library",
+  "keywords": [
+    "design-system",
+    "ui-kit",
+    "libraries",
+    "svelte",
+    "vitamin"
+  ],
+  "homepage": "https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/svelte",
+  "bugs": {
+    "url": "https://github.com/Decathlon/vitamin-web/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Decathlon/vitamin-web.git"
+  },
+  "license": "Apache-2.0",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node preprocess",
+    "lint": "eslint --color",
+    "st": "yarn start",
+    "start": "chokidar 'src/**' --ignore '**/dist/**' -c 'yarn build'"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.13",
+    "@babel/eslint-parser": "7.12.13",
+    "@babel/preset-env": "7.12.13",
+    "@vtmn/css-button": "^0.1.1",
+    "babel-loader": "8.2.2",
+    "chokidar-cli": "^2.1.0",
+    "eslint": "7.19.0",
+    "eslint-plugin-svelte3": "3.0.0",
+    "glob": "7.1.6",
+    "react-is": "17.0.1",
+    "svelte": "3.32.1",
+    "svelte-loader": "2.13.6",
+    "svelte-preprocess": "4.6.6"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "svelte": "dist/index.js"
+}

@@ -81,6 +81,7 @@ For your information, here are the showcases' URLs:
 | CSS            | [localhost:6006](http://localhost:6006) |
 | Web Components | [localhost:6007](http://localhost:6007) |
 | React          | [localhost:6008](http://localhost:6008) |
+| Svelte         | [localhost:6009](http://localhost:6009) |
 
 ## Code of conduct
 
