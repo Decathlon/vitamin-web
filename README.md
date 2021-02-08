@@ -115,6 +115,20 @@ This package provides you with a library of Web Components ([Custom Elements](ht
   </tr>
 </table>
 
+### Vue 🟢
+
+This package provides you with a library of Vue components:
+
+<table>
+  <tr>
+    <th>@vtmn/vue</th>
+    <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/vue#readme">README</a></td>
+    <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-vue">Showcase</a></td>
+    <td><a href="https://www.npmjs.com/package/@vtmn/vue"><img src="https://img.shields.io/npm/v/@vtmn/vue?style=flat" alt="npm version" /></a></td>
+    <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_vue"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_vue&metric=alert_status" alt="Quality Gate Status" /></a></td>
+  </tr>
+</table>
+
 ## Contributing
 
 One of the Decathlon Design System goals is to provide guidelines & components to gain in consistency, efficiency & accessibility. The best way to achieve this is together!
@@ -141,6 +155,7 @@ Finally, the different showcases will be launched:
 | -------------- | --------------------------------------- |
 | CSS            | [localhost:6006](http://localhost:6006) |
 | Web Components | [localhost:6007](http://localhost:6007) |
+| Vue            | [localhost:6010](http://localhost:6010) |
 
 > 👉 See [the contributing docs](CONTRIBUTING.md) for more information about how to contribute.
 
