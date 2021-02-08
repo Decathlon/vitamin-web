@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "description": "Decathlon Design System - Vitamin CSS PostCSS configuration",
-  "license": "Apoache-2.0",
+  "license": "Apache-2.0",
   "main": "./postcss.config.js",
   "dependencies": {
     "autoprefixer": "^10.2.3",

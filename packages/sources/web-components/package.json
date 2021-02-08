@@ -28,7 +28,7 @@
   "scripts": {
     "build": "stencil build --docs --prod --ci",
     "generate": "stencil generate",
-    "start": "chokidar 'src/**' --ignore '(dist|loader|www)/**' -c 'stencil build --docs'"
+    "start": "chokidar \"src/**\" --ignore \"(dist|loader|www)/**\" -c \"stencil build --docs\""
   },
   "dependencies": {
     "@stencil/core": "^2.0.1"
