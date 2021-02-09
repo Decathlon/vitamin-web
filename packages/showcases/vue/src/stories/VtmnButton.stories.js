@@ -23,7 +23,6 @@ export default {
         options: ['small', 'medium', 'large', 'stretched'],
       },
     },
-    onClick: { action: 'clicked' },
   },
 };
 
@@ -34,6 +33,4 @@ const Template = (args, { argTypes }) => ({
 });
 
 export const Default = Template.bind({});
-Default.args = {
-  style: "background-color: 'red'",
-};
+Default.args = {};
