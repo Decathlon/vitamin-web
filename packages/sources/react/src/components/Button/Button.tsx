@@ -1,6 +1,6 @@
 import * as React from 'react';
+import classnames from 'classnames';
 import '@vtmn/css-button';
-import classNames from 'classnames';
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -20,6 +20,11 @@ export interface ButtonProps
    * @default 'medium'
    */
   size?: 'small' | 'medium' | 'large' | 'stretched';
+  /**
+   * The value of the optional icon.
+   * @default undefined
+   **/
+  icon?: string;
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -27,16 +32,13 @@ export const Button: React.FC<ButtonProps> = ({
   size = 'medium',
   children,
   className,
-  disabled,
   ...props
 }) => (
   <button
-    className={classNames(className, 'vtmn-btn', {
+    className={classnames(className, 'vtmn-btn', {
       [`vtmn-btn_variant--${variant}`]: variant,
       [`vtmn-btn_size--${size}`]: size && size !== 'medium',
-      'vtmn-btn_disabled': disabled,
     })}
-    disabled={disabled}
     {...props}>
     {children}
   </button>
