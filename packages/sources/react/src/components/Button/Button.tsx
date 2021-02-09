@@ -1,5 +1,4 @@
 import * as React from 'react';
-import classnames from 'classnames';
 import '@vtmn/css-button';
 
 export interface ButtonProps
@@ -33,15 +32,14 @@ export const Button: React.FC<ButtonProps> = ({
   children,
   className,
   ...props
-}) => (
-  <button
-    className={classnames(className, 'vtmn-btn', {
-      [`vtmn-btn_variant--${variant}`]: variant,
-      [`vtmn-btn_size--${size}`]: size && size !== 'medium',
-    })}
-    {...props}>
-    {children}
-  </button>
-);
+}) => {
+  return (
+    <button
+      className={`vtmn-btn ${className} vtmn-btn_variant--${variant} vtmn-btn_size--${size}`}
+      {...props}>
+      {children}
+    </button>
+  );
+};
 
 export default React.memo(Button);
