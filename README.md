@@ -161,7 +161,7 @@ Finally, the different showcases will be launched:
 
 ## Special thanks
 
-Thank you to the [contributors](https://github.com/Decathlon/vitamin-web/graphs/contributors) involved in this project. 💙
+Thank you to the [contributors](CONTRIBUTORS.md) involved in these vitamin-web libraries _(even before they were Open Source)_. 💙
 
 <a href="https://github.com/decathlon/vitamin-web/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=decathlon/vitamin-web" />
