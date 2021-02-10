@@ -25,6 +25,7 @@
     "packages/sources/css/src/utilities",
     "packages/sources/css/src/components/*",
     "packages/sources/web-components",
+    "packages/sources/react",
     "packages/showcases/*"
   ],
   "scripts": {
