@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { Button } from '@vtmn/react';
+import { VtmnButton } from '@vtmn/react';
 
 export default {
-  title: 'Components/Button',
-  component: Button,
+  title: 'Components/VtmnButton',
+  component: VtmnButton,
 };
 
-const Template = (args) => <Button {...args}>Button</Button>;
+const Template = (args) => <VtmnButton {...args}>Button</VtmnButton>;
 
 export const Default = Template.bind({});
 Default.argTypes = {

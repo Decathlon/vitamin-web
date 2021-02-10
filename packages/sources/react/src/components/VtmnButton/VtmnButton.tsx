@@ -1,7 +1,7 @@
 import * as React from 'react';
 import '@vtmn/css-button';
 
-export interface ButtonProps
+export interface VtmnButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   /**
    * That variant of the button.
@@ -26,7 +26,7 @@ export interface ButtonProps
   icon?: string;
 }
 
-export const Button: React.FC<ButtonProps> = ({
+export const VtmnButton: React.FC<VtmnButtonProps> = ({
   variant = 'primary',
   size = 'medium',
   children,
@@ -42,4 +42,4 @@ export const Button: React.FC<ButtonProps> = ({
   );
 };
 
-export default React.memo(Button);
+export default React.memo(VtmnButton);
