@@ -1,6 +1,6 @@
 # `@vtmn/css`
 
-> Decathlon Design System - Vitamin CSS library
+> Decathlon Design System - Vitamin global CSS styles library
 
 ## Technologies
 

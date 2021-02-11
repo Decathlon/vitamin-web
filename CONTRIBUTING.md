@@ -6,6 +6,9 @@ So, **thanks a lot for this**!! :tada::+1:
 **Table of Contents**
 
 - [Contributing](#contributing)
+  - [Overview](#overview)
+  - [Project structure](#project-structure)
+  - [Local development](#local-development)
   - [Code of conduct](#code-of-conduct)
   - [What are you talking about? Pull Request? Merge? Push?](#what-are-you-talking-about-pull-request-merge-push)
   - [How Can I contribute?](#how-can-i-contribute)
@@ -14,6 +17,53 @@ So, **thanks a lot for this**!! :tada::+1:
       - [Commit and Push on your branch](#commit-and-push-on-your-branch)
     - [Pull Request guidelines](#pull-request-guidelines)
     - [Contribution acceptance criteria](#contribution-acceptance-criteria)
+
+## Overview
+
+[Yarn workspaces](https://yarnpkg.com/lang/en/docs/workspaces/) are used to manage dependencies and build config across package and [lerna](https://github.com/lerna/lerna/) is used to manage versioning & publishing.
+
+## Project structure
+
+```
+vitamin-web/
+  lerna.json
+  package.json
+  ...
+  packages/
+    showcases/
+      css/
+      react/
+      web-components/
+    sources/
+      css/
+      react/
+      web-components/
+```
+
+## Local development
+
+Run the following to setup your local dev environment:
+
+```sh
+# Install `yarn`, alternatives at https://yarnpkg.com/en/docs/install
+brew install yarn
+
+# Clone or fork `vitamin-web`
+git clone git@github.com:Decathlon/vitamin-web.git # or your fork
+cd vitamin-web
+
+# install dependencies
+yarn
+
+# start showcases and build sources in watch mode & hot reload
+yarn start
+
+# build packages
+yarn build
+
+# test packages
+yarn test
+```
 
 ## Code of conduct
 

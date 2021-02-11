@@ -134,28 +134,30 @@ This package provides you with a library of [React](https://reactjs.org/) Compon
 One of the Decathlon Design System goals is to provide guidelines & components to gain in consistency, efficiency & accessibility. The best way to achieve this is together!
 That's why we are on GitHub. We would love contributions from the community _(bug reports, feature requests, suggestions, Pull Requests, whatever you want!)_.
 
-In this monorepo, we use [Yarn](https://yarnpkg.com) & [Lerna](https://github.com/lerna/lerna).
-Read the [Installation Guide](https://yarnpkg.com/en/docs/install) for detailed instructions on how to install Yarn.
+[Yarn workspaces](https://yarnpkg.com/lang/en/docs/workspaces/) are used to manage dependencies and build config across package and [lerna](https://github.com/lerna/lerna/) is used to manage versioning & publishing.
 
-Once you have installed it, please run:
+Run the following to setup your local dev environment:
 
 ```sh
+# Install `yarn`, alternatives at https://yarnpkg.com/en/docs/install
+brew install yarn
+
+# Clone or fork `vitamin-web`
+git clone git@github.com:Decathlon/vitamin-web.git # or your fork
+cd vitamin-web
+
+# install dependencies
 yarn
-```
 
-Then, to develop in watch mode and run all showcases with hot reloads, just run:
-
-```sh
+# start showcases and build sources in watch mode & hot reload
 yarn start
+
+# build packages
+yarn build
+
+# test packages
+yarn test
 ```
-
-Finally, the different showcases will be launched:
-
-| Showcase       | URL                                     |
-| -------------- | --------------------------------------- |
-| CSS            | [localhost:6006](http://localhost:6006) |
-| Web Components | [localhost:6007](http://localhost:6007) |
-| React          | [localhost:6008](http://localhost:6008) |
 
 > 👉 See [the contributing docs](CONTRIBUTING.md) for more information about how to contribute.
 
