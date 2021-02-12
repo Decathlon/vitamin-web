@@ -1,7 +1,7 @@
 {
   "name": "@vtmn/css-text-input",
-  "version": "0.1.5",
-  "description": "Decathlon Design System - Vitamin CSS styles for text input",
+  "version": "0.1.6",
+  "description": "Decathlon Design System - Vitamin specific CSS styles for text input component",
   "keywords": [
     "design-system",
     "ui-kit",

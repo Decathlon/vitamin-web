@@ -1,7 +1,7 @@
 {
   "name": "@vtmn/css",
-  "version": "0.1.6",
-  "description": "Decathlon Design System - Vitamin CSS library",
+  "version": "0.1.7",
+  "description": "Decathlon Design System - Vitamin global CSS styles library",
   "keywords": [
     "design-system",
     "ui-kit",
