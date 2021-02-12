@@ -96,7 +96,7 @@ For more information about how this component is designed and how to use it in y
 
 ## Changelog
 
-If you want to know the different changes between versions of this package, [look at the changelog here](https://github.com/Decathlon/vitamin-web/blob/main/packages/sources/css/src/components/text-input/CHANGELOG.md)
+If you want to know the different changes between versions of this package, [look at the changelog here](https://github.com/Decathlon/vitamin-web/blob/main/packages/sources/css/src/components/text-input/CHANGELOG.md).
 
 ## I have an issue, what should I do?
 

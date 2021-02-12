@@ -91,7 +91,7 @@ You can see the different CSS Custom Properties [here](https://github.com/Decath
 
 ## Changelog
 
-If you want to know the different changes between versions of this package, [look at the changelog here](https://github.com/Decathlon/vitamin-web/blob/main/packages/sources/css/src/design-tokens/CHANGELOG.md)
+If you want to know the different changes between versions of this package, [look at the changelog here](https://github.com/Decathlon/vitamin-web/blob/main/packages/sources/css/src/design-tokens/CHANGELOG.md).
 
 ## I have an issue, what should I do?
 

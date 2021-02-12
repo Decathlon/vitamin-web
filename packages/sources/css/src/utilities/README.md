@@ -91,7 +91,7 @@ You can see the different CSS utility classes [here](https://github.com/Decathlo
 
 ## Changelog
 
-If you want to know the different changes between versions of this package, [look at the changelog here](https://github.com/Decathlon/vitamin-web/blob/main/packages/sources/css/src/utilities/CHANGELOG.md)
+If you want to know the different changes between versions of this package, [look at the changelog here](https://github.com/Decathlon/vitamin-web/blob/main/packages/sources/css/src/utilities/CHANGELOG.md).
 
 ## I have an issue, what should I do?
 
