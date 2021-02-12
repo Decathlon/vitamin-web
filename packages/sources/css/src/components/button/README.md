@@ -1,6 +1,6 @@
 # `@vtmn/css-button`
 
-> Decathlon Design System - Vitamin specific CSS styles for button
+> Decathlon Design System - Vitamin specific CSS styles for button component
 
 <a href="https://www.decathlon.design/726f8c765/p/8008f8-button">
   <img src="https://img.shields.io/badge/docs-007dbc" alt="documentation" />
@@ -74,7 +74,7 @@ Once you have installed this package, you just have to import CSS styles!
 With a bundler that supports CSS imports in JS files:
 
 ```javascript
-import '@vtmn/css-button';
+import '@vtmn/css-button/dist/index.css';
 ```
 
 Otherwise include it in your HTML file:
