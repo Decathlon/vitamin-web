@@ -55,15 +55,28 @@ cd vitamin-web
 # install dependencies
 yarn
 
-# start showcases and build sources in watch mode & hot reload
-yarn start
-
 # build packages
 yarn build
 
 # test packages
 yarn test
 ```
+
+To develop in watch mode and run all showcases with hot reloads, just run:
+
+```sh
+
+# start showcases and build sources in watch mode & hot reload
+yarn start
+```
+
+Finally, the different showcases will be launched:
+
+| Showcase       | URL                                     |
+| -------------- | --------------------------------------- |
+| CSS            | [localhost:6006](http://localhost:6006) |
+| Web Components | [localhost:6007](http://localhost:6007) |
+| React          | [localhost:6008](http://localhost:6008) |
 
 ## Code of conduct
 
