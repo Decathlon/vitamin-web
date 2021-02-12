@@ -115,9 +115,23 @@ This package provides you with a library of Web Components ([Custom Elements](ht
   </tr>
 </table>
 
+### React 🟣
+
+This package provides you with a library of [React](https://reactjs.org/) components:
+
+<table>
+  <tr>
+    <th>@vtmn/react</th>
+    <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/react#readme">README</a></td>
+    <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-react">Showcase</a></td>
+    <td><a href="https://www.npmjs.com/package/@vtmn/react"><img src="https://img.shields.io/npm/v/@vtmn/react?style=flat" alt="npm version" /></a></td>
+    <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_react"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_react&metric=alert_status" alt="Quality Gate Status" /></a></td>
+  </tr>
+</table>
+
 ### Vue 🟢
 
-This package provides you with a library of Vue components:
+This package provides you with a library of [Vue](https://vuejs.org/) components:
 
 <table>
   <tr>
@@ -155,13 +169,19 @@ Finally, the different showcases will be launched:
 | -------------- | --------------------------------------- |
 | CSS            | [localhost:6006](http://localhost:6006) |
 | Web Components | [localhost:6007](http://localhost:6007) |
-| Vue            | [localhost:6010](http://localhost:6010) |
+
+<<<<<<< HEAD
+| Vue | [localhost:6010](http://localhost:6010) |
+=======
+| React | [localhost:6008](http://localhost:6008) |
+
+> > > > > > > main
 
 > 👉 See [the contributing docs](CONTRIBUTING.md) for more information about how to contribute.
 
 ## Special thanks
 
-Thank you to the [contributors](https://github.com/Decathlon/vitamin-web/graphs/contributors) involved in this project. 💙
+Thank you to the [contributors](CONTRIBUTORS.md) involved in these vitamin-web libraries _(even before they were Open Source)_. 💙
 
 <a href="https://github.com/decathlon/vitamin-web/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=decathlon/vitamin-web" />

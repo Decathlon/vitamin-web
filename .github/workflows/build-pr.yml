@@ -50,6 +50,7 @@ jobs:
 #           'packages/sources/css/src/utilities',
 #           'packages/sources/web-components',
 #           'packages/sources/vue',
+#           'packages/sources/react',
 #         ]
 #
 #    runs-on: ubuntu-latest

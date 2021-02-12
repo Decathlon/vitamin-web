@@ -1,0 +1,27 @@
+{
+  "name": "@vtmn/showcase-react",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Decathlon Design System - Vitamin React showcase",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build-storybook": "build-storybook",
+    "build-storybook:docs": "build-storybook --docs",
+    "start": "start-storybook -p 6008"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@storybook/addon-essentials": "^6.1.17",
+    "@storybook/react": "^6.1.17",
+    "@vtmn/react": "*",
+    "babel-loader": "8.1.0",
+    "react": "^17.0.1"
+  },
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ]
+}

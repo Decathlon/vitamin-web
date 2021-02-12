@@ -26,6 +26,7 @@
     "packages/sources/css/src/components/*",
     "packages/sources/web-components",
     "packages/sources/vue",
+    "packages/sources/react",
     "packages/showcases/*"
   ],
   "scripts": {
