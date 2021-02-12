@@ -97,6 +97,12 @@ For example:
 
 Fore more details about CSS utility classes from this package, [see Tailwind CSS documentation here](https://tailwindcss.com/docs).
 
+## Optimize for production
+
+To make the development experience as productive as possible, Tailwind generates thousands of utility classes for you, most of which you probably won't actually use.
+
+When building for production, you should always use [PurgeCSS](https://purgecss.com) to tree-shake unused styles and optimize your final build size.
+
 ## Playground
 
 If you want to test Vitamin Tailwind CSS utility classes, [see our live playground here](https://play.tailwindcss.com/BeTM6rz97A).
@@ -112,3 +118,7 @@ Please file the issue [here](https://github.com/Decathlon/vitamin-web/issues/new
 ## Contributing
 
 See [the contributing docs](https://github.com/Decathlon/vitamin-web/blob/main/CONTRIBUTING.md).
+
+## License
+
+Apache-2.0 © [Decathlon](https://github.com/Decathlon)

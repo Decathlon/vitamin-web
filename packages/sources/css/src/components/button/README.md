@@ -3,7 +3,7 @@
 > Decathlon Design System - Vitamin specific CSS styles for button component
 
 <a href="https://www.decathlon.design/726f8c765/p/8008f8-button">
-  <img src="https://img.shields.io/badge/docs-007dbc" alt="documentation" />
+  <img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" />
 </a>
 <a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-button--default">
   <img src="https://img.shields.io/badge/storybook-css-d891bc?style=flat&logo=storybook" alt="storybook" />
@@ -102,3 +102,7 @@ Please file the issue [here](https://github.com/Decathlon/vitamin-web/issues/new
 ## Contributing
 
 See [the contributing docs](https://github.com/Decathlon/vitamin-web/blob/main/CONTRIBUTING.md).
+
+## License
+
+Apache-2.0 © [Decathlon](https://github.com/Decathlon)

@@ -100,3 +100,7 @@ Please file the issue [here](https://github.com/Decathlon/vitamin-web/issues/new
 ## Contributing
 
 See [the contributing docs](https://github.com/Decathlon/vitamin-web/blob/main/CONTRIBUTING.md).
+
+## License
+
+Apache-2.0 © [Decathlon](https://github.com/Decathlon)
