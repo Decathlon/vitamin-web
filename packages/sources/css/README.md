@@ -79,7 +79,7 @@ Otherwise include it in your HTML file:
 All this package is generated with [Tailwind CSS](https://tailwindcss.com), a utility-first CSS framework that can be composed to build any design, directly in your markup.
 Be careful, in order to use our library, you will have to prefix all CSS utility classes with `vtmn-`.
 
-To know all the use cases and their associated code, [check out the showcase guidelines here](https://decathlon.github.io/vitamin-web/@vtmn/showcase-css).
+To know all the use cases and their associated code, [check out the showcase here](https://decathlon.github.io/vitamin-web/@vtmn/showcase-css).
 
 For example:
 

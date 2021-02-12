@@ -17,7 +17,7 @@ yarn add @vtmn/web-components
 Or you can also install it with a CDN like `unpkg.com`:
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@vtmn/web-components" />
+<script src="https://unpkg.com/@vtmn/web-components"></script>
 ```
 
 ## Install fonts
@@ -56,39 +56,36 @@ import 'typeface-roboto-condensed';
 
 ## Usage
 
-Once you have installed this package, you just have to import CSS styles!
+Once you have installed this package, you just have to define custom elements in your entry point:
 
-With a bundler that supports CSS imports in JS files:
-
-```javascript
-import '@vtmn/css/dist/index.css';
-```
-
-Otherwise include it in your HTML file:
+In a HTML file:
 
 ```html
-<link rel="stylesheet" href="./node_modules/@vtmn/css/dist/index.css" />
+<script type="module">
+  import { defineCustomElements } from './node_modules/@vtmn/web-components/dist/esm/loader.js';
+
+  defineCustomElements();
+</script>
+```
+
+Or, in a JavaScript file:
+
+```javascript
+import { defineCustomElements } from '@vtmn/web-components/dist/esm/loader.js';
+defineCustomElements();
+```
+
+Then, use a Vitamin Custom Element directly in your HTML. For example:
+
+```html
+<vtmn-button onclick="console.log('clicked')">Click</vtmn-button>
 ```
 
 ## Development
 
-To know all the use cases and their associated code, [check out the showcase guidelines here](https://decathlon.github.io/vitamin-web/@vtmn/showcase-css).
+To know all the use cases and their associated code, [check out the showcase here](https://decathlon.github.io/vitamin-web/@vtmn/showcase-web-components).
 
-For example:
-
-```html
-<div
-  class="vtmn-flex vtmn-bg-brand-digital-light-3 vtmn-rounded-lg vtmn-p-6 vtmn-mb-5"
->
-  <p class="vtmn-text-xl vtmn-text-center vtmn-font-semibold vtmn-text-black">
-    Hello
-    <span class="vtmn-text-brand-digital vtmn-text-2xl">World!</span>
-    <span role="img" aria-label="Tada!"> 🎉 </span>
-  </p>
-</div>
-```
-
-Fore more details about CSS utility classes from this package, [see Tailwind CSS documentation here](https://tailwindcss.com/docs).
+Fore more details about Custom Elements from Web Components specification, [see the MDN documentation here](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements).
 
 ## Changelog
 

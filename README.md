@@ -9,7 +9,9 @@
 
 <p align="center">Decathlon Design System libraries for web applications</p>
 
-<p align="center"><a href="https://www.decathlon.design">www.decathlon.design</a></p>
+<p align="center">
+  <a href="https://www.decathlon.design">Website</a> - <a href="https://decathlon.github.io/vitamin-web">Showcases</a>
+</p>
 
 <p align="center">
   <a aria-label="contributors graph" href="https://github.com/decathlon/vitamin-web/graphs/contributors">
