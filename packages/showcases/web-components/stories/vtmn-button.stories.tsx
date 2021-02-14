@@ -1,7 +1,7 @@
 import { html } from 'lit-html';
 
 export default {
-  title: 'Button',
+  title: 'Components/Button',
   component: 'vtmn-button',
 };
 
