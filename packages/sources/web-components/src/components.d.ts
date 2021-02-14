@@ -7,6 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface VtmnButton {
+        "size": 'small' | 'medium' | 'large' | 'stretched';
         "variant": | 'primary'
     | 'primary-reversed'
     | 'secondary'
@@ -28,6 +29,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface VtmnButton {
+        "size"?: 'small' | 'medium' | 'large' | 'stretched';
         "variant"?: | 'primary'
     | 'primary-reversed'
     | 'secondary'

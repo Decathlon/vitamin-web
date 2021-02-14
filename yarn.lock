@@ -2728,6 +2728,11 @@
     "@octokit/openapi-types" "^4.0.0"
     "@types/node" ">= 8"
 
+"@open-wc/lit-helpers@^0.3.12":
+  version "0.3.12"
+  resolved "https://registry.yarnpkg.com/@open-wc/lit-helpers/-/lit-helpers-0.3.12.tgz#11bf0731185a88ca50ed740908e91fd4436ba69d"
+  integrity sha512-ALnAkuHxYvMZNWnujsAd1rlURSjwHZazvUufZp+fKOybzwjPNH2NAQlIRQpe/Z0r7bJCLwV9h+Zy6iOL85VXlw==
+
 "@open-wc/webpack-import-meta-loader@^0.4.7":
   version "0.4.7"
   resolved "https://registry.yarnpkg.com/@open-wc/webpack-import-meta-loader/-/webpack-import-meta-loader-0.4.7.tgz#d8212640a386a66bf06a2a4c101936467839b5a1"

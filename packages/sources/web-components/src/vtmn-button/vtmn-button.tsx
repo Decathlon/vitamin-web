@@ -14,10 +14,12 @@ export class VtmnButton {
     | 'ghost'
     | 'conversion' = 'primary';
 
+  @Prop() size: 'small' | 'medium' | 'large' | 'stretched' = 'medium';
+
   render() {
     return (
       <button
-        class={`vtmn-btn vtmn-btn_variant--${this.variant}`}
+        class={`vtmn-btn vtmn-btn_variant--${this.variant} vtmn-btn_size--${this.size}`}
         type="button">
         <slot></slot>
       </button>
