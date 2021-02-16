@@ -38,6 +38,9 @@
     "prettier:fix": "prettier . --write",
     "release": "lerna publish --no-verify-access --no-private --no-commit-hooks --yes",
     "start": "lerna run start --parallel",
+    "start:css": "lerna run start --parallel --scope \"@vtmn/{showcase-css,css}\"",
+    "start:web-components": "lerna run start --parallel --scope \"@vtmn/{showcase-web-components,web-components}\"",
+    "start:react": "lerna run start --parallel --scope \"@vtmn/{showcase-react,react}\"",
     "stylelint": "stylelint packages/**/*.css",
     "stylelint:fix": "yarn stylelint --fix",
     "test": "lerna run test"

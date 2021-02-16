@@ -154,8 +154,12 @@ cd vitamin-web
 # install dependencies
 yarn
 
-# start showcases and build sources in watch mode & hot reload
+# start all showcases and build sources in watch mode & hot reload
 yarn start
+# or if you need don't need to launch every packages:
+yarn start:css
+yarn start:web-components
+yarn start:react
 
 # build packages
 yarn build
