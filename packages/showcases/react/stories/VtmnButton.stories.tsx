@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { VtmnButton, VtmnButtonProps } from '@vtmn/react';
+import { VtmnButton } from '@vtmn/react';
 
 import { Story, Meta } from '@storybook/react';
 
@@ -9,9 +9,9 @@ export default {
   component: VtmnButton,
   argTypes: {
     variant: {
-      defaultValue: 'primary',
       type: { name: 'string', required: false },
       description: 'The variant of the button.',
+      defaultValue: 'primary',
       control: {
         type: 'select',
         options: [
@@ -25,17 +25,17 @@ export default {
       },
     },
     size: {
-      defaultValue: 'medium',
       type: { name: 'string', required: false },
       description: 'The size of the button.',
+      defaultValue: 'medium',
       control: {
         type: 'select',
         options: ['small', 'medium', 'large', 'stretched'],
       },
     },
     children: {
-      description: 'The content to render inside the component',
       type: { name: 'string', required: false },
+      description: 'The content to render inside the component',
       defaultValue: 'Button',
       control: {
         type: 'text',
@@ -55,6 +55,6 @@ export default {
   },
 } as Meta;
 
-const Template: Story<VtmnButtonProps> = (args) => <VtmnButton {...args} />;
+const Template: Story = (args) => <VtmnButton {...args} />;
 
 export const Default = Template.bind({});

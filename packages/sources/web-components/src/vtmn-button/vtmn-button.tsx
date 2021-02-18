@@ -6,6 +6,10 @@ import { Component, Prop, h } from '@stencil/core';
   shadow: true,
 })
 export class VtmnButton {
+  /**
+   * The variant of the button.
+   * @default 'primary'
+   */
   @Prop() variant:
     | 'primary'
     | 'primary-reversed'
@@ -14,6 +18,10 @@ export class VtmnButton {
     | 'ghost'
     | 'conversion' = 'primary';
 
+  /**
+   * The size of the button.
+   * @default 'medium'
+   */
   @Prop() size: 'small' | 'medium' | 'large' | 'stretched' = 'medium';
 
   render() {
