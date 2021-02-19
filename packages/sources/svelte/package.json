@@ -38,7 +38,6 @@
     "eslint": "7.19.0",
     "eslint-plugin-svelte3": "3.0.0",
     "glob": "7.1.6",
-    "react-is": "17.0.1",
     "svelte": "3.32.1",
     "svelte-loader": "2.13.6",
     "svelte-preprocess": "4.6.6"
