@@ -40,7 +40,7 @@ export default /*#__PURE__*/ defineComponent({
 </script>
 
 <template>
-  <button type="button" :class="classes">
+  <button type="button" :class="classes" v-bind="$attrs">
     <slot></slot>
   </button>
 </template>
