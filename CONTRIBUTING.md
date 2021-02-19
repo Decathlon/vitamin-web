@@ -33,10 +33,12 @@ vitamin-web/
     showcases/
       css/
       react/
+      vue/
       web-components/
     sources/
       css/
       react/
+      vue/
       web-components/
 ```
 
@@ -72,6 +74,7 @@ yarn start
 yarn start:css
 yarn start:web-components
 yarn start:react
+yarn start:vue
 ```
 
 For your information, here are the showcases' URLs:
