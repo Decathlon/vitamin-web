@@ -12,11 +12,17 @@
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.12.13",
-    "@storybook/addon-essentials": "^6.1.17",
-    "@storybook/react": "^6.1.17",
+    "@storybook/addon-a11y": "^6.1.18",
+    "@storybook/addon-essentials": "^6.1.18",
+    "@storybook/react": "^6.1.18",
     "@vtmn/react": "*",
+    "@vtmn/showcase-core": "^0.0.0",
+    "@whitespace/storybook-addon-html": "^4.2.0",
     "babel-loader": "8.1.0",
-    "react": "^17.0.1"
+    "react": "^17.0.1",
+    "storybook-addon-designs": "^5.4.3",
+    "storybook-addon-outline": "^1.2.0",
+    "storybook-mobile": "^0.1.29"
   },
   "licenses": [
     {

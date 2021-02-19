@@ -1,14 +1,14 @@
 import { addons } from '@storybook/addons';
 import { themes } from '@storybook/theming';
-import vtmnCssLogo from '@vtmn/showcase-core/images/vtmn-css-logo.png';
+import vtmnWebComponentsLogo from '@vtmn/showcase-core/images/vtmn-web-components-logo.png';
 
 addons.setConfig({
   panelPosition: 'right',
   theme: {
     ...themes.normal,
-    brandTitle: '@vtmn/css',
+    brandTitle: '@vtmn/web-components',
     brandUrl: 'https://github.com/Decathlon/vitamin-web',
-    brandImage: vtmnCssLogo,
+    brandImage: vtmnWebComponentsLogo,
 
     colorPrimary: '#007dbc',
     colorSecondary: '#4e5d6b',

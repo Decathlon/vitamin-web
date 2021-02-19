@@ -7,6 +7,15 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface VtmnButton {
+        /**
+          * The size of the button.
+          * @default 'medium'
+         */
+        "size": 'small' | 'medium' | 'large' | 'stretched';
+        /**
+          * The variant of the button.
+          * @default 'primary'
+         */
         "variant": | 'primary'
     | 'primary-reversed'
     | 'secondary'
@@ -28,6 +37,15 @@ declare global {
 }
 declare namespace LocalJSX {
     interface VtmnButton {
+        /**
+          * The size of the button.
+          * @default 'medium'
+         */
+        "size"?: 'small' | 'medium' | 'large' | 'stretched';
+        /**
+          * The variant of the button.
+          * @default 'primary'
+         */
         "variant"?: | 'primary'
     | 'primary-reversed'
     | 'secondary'

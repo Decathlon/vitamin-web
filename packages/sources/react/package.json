@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/react",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "description": "Decathlon Design System - Vitamin React components library",
   "keywords": [
     "design-system",
@@ -80,7 +80,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-is": "^17.0.1",
-    "react-scripts": "4.0.1",
+    "react-scripts": "4.0.2",
     "react-test-renderer": "^17.0.1",
     "rimraf": "^3.0.2",
     "rollup": "^2.36.0",

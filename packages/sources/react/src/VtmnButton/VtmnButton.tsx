@@ -4,7 +4,7 @@ import '@vtmn/css-button';
 export interface VtmnButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   /**
-   * That variant of the button.
+   * The variant of the button.
    * @default 'primary'
    */
   variant?:
@@ -35,7 +35,9 @@ export const VtmnButton: React.FC<VtmnButtonProps> = ({
 }) => {
   return (
     <button
-      className={`vtmn-btn ${className} vtmn-btn_variant--${variant} vtmn-btn_size--${size}`}
+      className={`vtmn-btn vtmn-btn_variant--${variant} vtmn-btn_size--${size} ${
+        className ? className : ''
+      }`}
       {...props}>
       {children}
     </button>

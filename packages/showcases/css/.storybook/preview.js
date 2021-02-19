@@ -1,7 +1,7 @@
 import '@vtmn/css';
 import { withDesign } from 'storybook-addon-designs';
-import viewports from './addons/viewports.json';
-import backgrounds from './addons/backgrounds.json';
+import backgrounds from '@vtmn/showcase-core/addons/backgrounds.json';
+import viewports from '@vtmn/showcase-core/addons/viewports.json';
 
 const cssReq = require.context(
   '!!raw-loader!@vtmn/css-design-tokens/src',

@@ -1,1 +1,1 @@
-export { VtmnButton } from './components/VtmnButton';
+export { VtmnButton } from './VtmnButton';

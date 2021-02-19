@@ -6,6 +6,10 @@
       "value": "#ffffff"
     },
     {
+      "name": "grey",
+      "value": "#D9DDE1"
+    },
+    {
       "name": "blue",
       "value": "#007dbc"
     },

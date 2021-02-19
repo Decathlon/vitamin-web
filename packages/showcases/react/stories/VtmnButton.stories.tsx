@@ -1,9 +1,12 @@
-import { html } from 'lit-html';
-import { spread } from '@open-wc/lit-helpers';
+import React from 'react';
+
+import { VtmnButton } from '@vtmn/react';
+
+import { Story, Meta } from '@storybook/react';
 
 export default {
-  title: 'Components/Button',
-  component: 'vtmn-button',
+  title: 'Components/VtmnButton',
+  component: VtmnButton,
   argTypes: {
     variant: {
       type: { name: 'string', required: false },
@@ -30,6 +33,14 @@ export default {
         options: ['small', 'medium', 'large', 'stretched'],
       },
     },
+    children: {
+      type: { name: 'string', required: false },
+      description: 'The content to render inside the component',
+      defaultValue: 'Button',
+      control: {
+        type: 'text',
+      },
+    },
   },
   parameters: {
     backgrounds: { default: 'grey' },
@@ -42,10 +53,8 @@ export default {
         'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vtmn-Web?node-id=31%3A136',
     },
   },
-};
+} as Meta;
 
-const Template = (args) =>
-  html`<vtmn-button ...=${spread(args)}>Button</vtmn-button>`;
+const Template: Story = (args) => <VtmnButton {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {};

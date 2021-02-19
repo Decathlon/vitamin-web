@@ -66,11 +66,15 @@ To develop in watch mode and run all showcases with hot reloads, just run:
 
 ```sh
 
-# start showcases and build sources in watch mode & hot reload
+# start all showcases and build sources in watch mode & hot reload
 yarn start
+# or if you need don't need to launch every packages:
+yarn start:css
+yarn start:web-components
+yarn start:react
 ```
 
-Finally, the different showcases will be launched:
+For your information, here are the showcases' URLs:
 
 | Showcase       | URL                                     |
 | -------------- | --------------------------------------- |
