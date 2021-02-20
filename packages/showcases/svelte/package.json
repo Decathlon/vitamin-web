@@ -15,7 +15,7 @@
     "@storybook/addon-essentials": "^6.1.11",
     "@storybook/addon-links": "^6.1.11",
     "@storybook/svelte": "^6.1.11",
-    "@vtmn/svelte": "^0.0.0",
+    "@vtmn/svelte": "*",
     "svelte": "^3.31.2",
     "svelte-loader": "^2.13.6"
   },
