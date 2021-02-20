@@ -4,4 +4,15 @@
 
 ## Consuming Components
 
-Your package.json has a `"svelte"` field pointing to `src/components/index.js`, which allows Svelte apps to import the source code directly, if they are using a bundler plugin like [rollup-plugin-svelte](https://github.com/rollup/rollup-plugin-svelte) or [svelte-loader](https://github.com/sveltejs/svelte-loader) (where [`resolve.mainFields`](https://webpack.js.org/configuration/resolve/#resolve-mainfields) in your webpack config includes `"svelte"`).
+You may want to use the source Svelte files to benefit from some features (Server side rendering for instance). To do so, you will need to import components exposed in the `src/` folder of the package.
+
+Example with the `VtmnButton` :
+
+```js
+// App.svelte
+<script>
+  import VtmnButton from '@vtmn/svelte/src/components/VtmnButton.svelte';
+</script>
+
+<VtmnButton>Button</VtmnButton>
+```
