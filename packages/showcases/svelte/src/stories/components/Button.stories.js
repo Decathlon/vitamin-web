@@ -1,5 +1,5 @@
 import ButtonView from './ButtonView.svelte';
-import { Button } from '@vtmn/svelte';
+import Button from '@vtmn/svelte/src/components/Button.svelte';
 
 export default {
   title: 'Components/Button',
