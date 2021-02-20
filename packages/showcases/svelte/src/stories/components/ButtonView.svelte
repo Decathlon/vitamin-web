@@ -3,7 +3,7 @@
    * @component Button View
    * @wrapper
    */
-  import Button from '@vtmn/svelte/src/components/Button.svelte';
+  import VtmnButton from '../../../../../sources/svelte/src/components/VtmnButton.svelte';
 </script>
 
-<Button {...$$restProps}>Button</Button>
+<VtmnButton {...$$restProps}>Button</VtmnButton>

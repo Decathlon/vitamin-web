@@ -1,9 +1,9 @@
 import ButtonView from './ButtonView.svelte';
-import Button from '@vtmn/svelte/src/components/Button.svelte';
+import VtmnButton from '@vtmn/svelte/src/components/VtmnButton.svelte';
 
 export default {
-  title: 'Components/Button',
-  component: Button,
+  title: 'Components/VtmnButton',
+  component: VtmnButton,
   argTypes: {
     variant: {
       control: {
