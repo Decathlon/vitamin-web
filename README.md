@@ -134,6 +134,20 @@ This package provides you with a library of [React](https://reactjs.org/) Compon
   </tr>
 </table>
 
+### Svelte 🟠
+
+This package provides you with a library of [Svelte](https://svelte.dev/) Components:
+
+<table>
+  <tr>
+    <th>@vtmn/svelte</th>
+    <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/svelte#readme">README</a></td>
+    <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-svelte">Showcase</a></td>
+    <td><a href="https://www.npmjs.com/package/@vtmn/svelte"><img src="https://img.shields.io/npm/v/@vtmn/svelte?style=flat" alt="npm version" /></a></td>
+    <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_svelte"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_svelte&metric=alert_status" alt="Quality Gate Status" /></a></td>
+  </tr>
+</table>
+
 ## Contributing
 
 One of the Decathlon Design System goals is to provide guidelines & components to gain in consistency, efficiency & accessibility. The best way to achieve this is together!
