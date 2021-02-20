@@ -29,18 +29,13 @@
     "start": "chokidar 'src/**' --ignore '**/dist/**' -c 'yarn build'"
   },
   "devDependencies": {
-    "@babel/core": "7.12.13",
-    "@babel/eslint-parser": "7.12.13",
-    "@babel/preset-env": "7.12.13",
     "@rollup/plugin-node-resolve": "^11.2.0",
     "@vtmn/css-button": "^0.1.1",
-    "babel-loader": "8.2.2",
     "chokidar-cli": "^2.1.0",
     "eslint": "7.19.0",
     "eslint-plugin-svelte3": "3.0.0",
     "rollup": "^2.39.0",
     "rollup-plugin-css-only": "^3.1.0",
-    "rollup-plugin-import-css": "^2.0.0",
     "rollup-plugin-svelte": "^7.1.0",
     "svelte": "3.32.1",
     "svelte-preprocess": "4.6.6"
