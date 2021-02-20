@@ -142,8 +142,8 @@ This package provides you with a library of [Svelte](https://svelte.dev/) Compon
   <tr>
     <th>@vtmn/svelte</th>
     <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/svelte#readme">README</a></td>
-    <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-svelte">Showcase</a></td>
-    <td><a href="https://www.npmjs.com/package/@vtmn/svelte"><img src="https://img.shields.io/npm/v/@vtmn/svelte?style=flat" alt="npm version" /></a></td>
+    <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-svelte"><img src="https://img.shields.io/badge/storybook-svelte-F13C03?style=flat&logo=storybook" alt="storybook" /></a></a></td>
+    <td><a href="https://www.npmjs.com/package/@vtmn/svelte"><img src="https://img.shields.io/npm/v/@vtmn/svelte?style=flat&logo=npm" alt="npm version" /></a></td>
     <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_svelte"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_svelte&metric=alert_status" alt="Quality Gate Status" /></a></td>
   </tr>
 </table>
@@ -174,6 +174,7 @@ yarn start
 yarn start:css
 yarn start:web-components
 yarn start:react
+yarn start:svelte
 
 # build packages
 yarn build

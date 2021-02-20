@@ -1,9 +1,9 @@
-import { html } from 'lit-html';
-import { spread } from '@open-wc/lit-helpers';
+import VtmnButtonView from './VtmnButtonView.svelte';
+import VtmnButton from '@vtmn/svelte/src/components/VtmnButton.svelte';
 
 export default {
-  title: 'Components/Button',
-  component: 'vtmn-button',
+  title: 'Components/VtmnButton',
+  component: VtmnButton,
   argTypes: {
     variant: {
       type: { name: 'string', required: false },
@@ -30,6 +30,14 @@ export default {
         options: ['small', 'medium', 'large', 'stretched'],
       },
     },
+    children: {
+      type: { name: 'string', required: false },
+      description: 'The content to render inside the component',
+      defaultValue: 'Button',
+      control: {
+        type: 'text',
+      },
+    },
   },
   parameters: {
     backgrounds: { default: 'grey' },
@@ -44,8 +52,10 @@ export default {
   },
 };
 
-const Template = (args) =>
-  html`<vtmn-button ...=${spread(args)}>Button</vtmn-button>`;
+const Template = (args) => ({
+  Component: VtmnButtonView,
+  props: args,
+});
 
 export const Overview = Template.bind({});
 Overview.args = {};

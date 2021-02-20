@@ -33,10 +33,12 @@ vitamin-web/
     showcases/
       css/
       react/
+      svelte/
       web-components/
     sources/
       css/
       react/
+      svelte/
       web-components/
 ```
 
