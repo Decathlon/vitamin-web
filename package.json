@@ -31,6 +31,7 @@
   ],
   "scripts": {
     "build": "lerna run build",
+    "build-storybook": "lerna run build-storybook --stream",
     "deploy-storybook": "storybook-to-ghpages --packages packages -o docs --monorepo-index-generator packages/showcases/core/src/index-generator.js",
     "postinstall": "npx husky install",
     "pack": "lerna run pack",
