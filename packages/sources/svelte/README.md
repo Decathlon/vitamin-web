@@ -56,7 +56,7 @@ import 'typeface-roboto-condensed';
 
 You may want to use the source Svelte files to benefit from some features (Server Side Rendering for instance). To do so, you will need to import components exposed in the `src/` folder of the package.
 
-Example with the `VtmnButton` :
+Example with `VtmnButton` :
 
 ```js
 // App.svelte

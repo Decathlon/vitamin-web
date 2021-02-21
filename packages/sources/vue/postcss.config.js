@@ -22,8 +22,6 @@ module.exports = {
     'postcss-simple-vars': {},
     'postcss-nested': {},
     'postcss-url': {},
-    autoprefixer: {
-      overrideBrowserslist: '> 1%, IE 6, Explorer >= 10, Safari >= 7',
-    },
+    autoprefixer: {},
   },
 };

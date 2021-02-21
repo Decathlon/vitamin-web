@@ -54,12 +54,26 @@ import 'typeface-roboto-condensed';
 
 ## Usage
 
-TODO
+Once you have installed this package, you just have to import components you need in your Vue application!
 
-Example with the `VtmnButton` :
+Here is an example of the integration of `VtmnButton` component:
+
+**As Component**
 
 ```js
-TODO;
+import { VtmnButton } from '@vtmn/vue/dist/esm/VtmnButton';
+...
+components:{
+  VtmnButton
+}
+```
+
+**As Plugin**
+
+```js
+import { VtmnButton } from '@vtmn/vue';
+
+app.use(VtmnButton);
 ```
 
 ## Development

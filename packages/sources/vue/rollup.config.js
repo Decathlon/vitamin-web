@@ -40,9 +40,7 @@ const postcssConfigList = [
   simplevars,
   nested,
   postcssUrl({ url: 'inline' }),
-  autoprefixer({
-    overrideBrowserslist: '> 1%, IE 6, Explorer >= 10, Safari >= 7',
-  }),
+  autoprefixer({}),
 ];
 
 const argv = minimist(process.argv.slice(2));
