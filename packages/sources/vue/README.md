@@ -1,72 +1,83 @@
-# vue 3 Component Library BoilerPlate
+# `@vtmn/vue`
 
-**Technology Used:**\
-[Vuejs 3.0](https://github.com/vuejs/vue-next)\
-[Typescript](https://github.com/microsoft/TypeScript)\
-[Rollup](https://github.com/rollup/rollup)
+> Decathlon Design System - Vitamin Vue components library
 
-## Project setup
+<a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-vue"><img src="https://img.shields.io/badge/storybook-vue-41B883?style=flat&logo=storybook" alt="storybook" /></a></a>
+<a href="https://www.npmjs.com/package/@vtmn/vue"><img src="https://img.shields.io/npm/v/@vtmn/vue?style=flat&logo=npm" alt="npm version" /></a>
+<a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_vue"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_vue&metric=alert_status" alt="Quality Gate Status" /></a>
 
-Please follow below mentioned step to run this project:
+## Install package
 
-- Clone the repo
+After installing [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) or [yarn](https://yarnpkg.com/en/docs/install), you can install `@vtmn/vue` with this command:
 
-```shell
-https://github.com/shubhadip/vue3-component-library
+```sh
+# with npm
+npm i -S @vtmn/vue
+
+# with yarn
+yarn add @vtmn/vue
 ```
 
-### Run
+## Install fonts
 
-```
-yarn install
-```
+[Roboto](https://fonts.google.com/specimen/Roboto) & [Roboto Condensed](https://fonts.google.com/specimen/Roboto+Condensed) fonts as described in [Typography](https://www.decathlon.design/726f8c765/v/0/p/860e14-typography) section will not be automatically loaded. Fortunately, there is a few easy ways to get started.
 
-### Compiles and hot-reloads for development
+Shown below is a sample link markup used to load from a CDN:
 
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-
-```
-yarn build
-```
-
-### Build Library
-
-```
-yarn build:js
+```html
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap"
+/>
 ```
 
-### Build Library With Separate Css file
+Otherwise, you can install them with `typeface`:
 
-```
-yarn build:js_css
-```
+```sh
+# with npm
+npm i -S typeface-roboto typeface-roboto-condensed
 
-### Lints and fixes files
-
-```
-yarn lint
+# with yarn
+yarn add typeface-roboto typeface-roboto-condensed
 ```
 
-## Usage Of Components Built
+Then, you can import them in your entry-point:
 
-**As Component**
-
-```
-  import { TestWorld } from 'vue3-component-library/dist/esm/testworld';
-  ...
-  components:{
-    TestWorld
-  }
+```javascript
+import 'typeface-roboto';
+import 'typeface-roboto-condensed';
 ```
 
-**As Plugin**
+## Usage
 
+TODO
+
+Example with the `VtmnButton` :
+
+```js
+TODO;
 ```
-  import { TestWorld } from 'vue3-component-library';
-    ...
-  app.use(TestWorld)
-```
+
+## Development
+
+To know all the use cases and their associated code, [check out the showcase here](https://decathlon.github.io/vitamin-web/@vtmn/showcase-vue).
+
+## Changelog
+
+If you want to know the different changes between versions of this package, [look at the changelog here](https://github.com/Decathlon/vitamin-web/blob/main/packages/sources/vue/CHANGELOG.md).
+
+## I have an issue, what should I do?
+
+Please file the issue [here](https://github.com/Decathlon/vitamin-web/issues/new).
+
+## Contributing
+
+See [the contributing docs](https://github.com/Decathlon/vitamin-web/blob/main/CONTRIBUTING.md).
+
+## License
+
+Apache-2.0 © [Decathlon](https://github.com/Decathlon)

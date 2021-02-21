@@ -52,9 +52,9 @@ jobs:
 #           'packages/sources/css/src/design-tokens',
 #           'packages/sources/css/src/utilities',
 #           'packages/sources/web-components',
-#           'packages/sources/vue',
 #           'packages/sources/react',
 #           'packages/sources/svelte',
+#           'packages/sources/vue',
 #         ]
 #
 #    runs-on: ubuntu-latest

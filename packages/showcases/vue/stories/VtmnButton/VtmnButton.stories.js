@@ -1,8 +1,4 @@
-import React from 'react';
-
-import { VtmnButton } from '@vtmn/react';
-
-import { Story, Meta } from '@storybook/react';
+import { VtmnButton } from '@vtmn/vue/dist/esm/VtmnButton';
 
 export default {
   title: 'Components/VtmnButton',
@@ -33,14 +29,6 @@ export default {
         options: ['small', 'medium', 'large', 'stretched'],
       },
     },
-    children: {
-      type: { name: 'string', required: false },
-      description: 'The content to render inside the component',
-      defaultValue: 'Button',
-      control: {
-        type: 'text',
-      },
-    },
   },
   parameters: {
     backgrounds: { default: 'grey' },
@@ -53,8 +41,13 @@ export default {
         'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vtmn-Web?node-id=31%3A136',
     },
   },
-} as Meta;
+};
 
-const Template: Story = (args) => <VtmnButton {...args} />;
+const Template = (args, { argTypes }) => ({
+  props: Object.keys(argTypes),
+  components: { VtmnButton },
+  template: '<VtmnButton v-bind="$props">Button</VtmnButton>',
+});
 
 export const Overview = Template.bind({});
+Overview.args = {};

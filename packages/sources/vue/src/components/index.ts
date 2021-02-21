@@ -1,3 +1,3 @@
-import VtmnButton from './button';
+import VtmnButton from './VtmnButton';
 
 export { VtmnButton };

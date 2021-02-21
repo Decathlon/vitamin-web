@@ -1,7 +1,13 @@
-# Storybook Demo
+# `@vtmn/showcase-vue` (private)
 
-This is a demo app to test Vue 3's CLI integration with Storybook.
+> Decathlon Design System - Vitamin Vue showcase
 
-Run `yarn install` to sync Storybook module with the source code and run `yarn storybook` to start the Storybook.
+<a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-vue"><img src="https://img.shields.io/badge/storybook-vue-41B883?style=flat&logo=storybook" alt="storybook" /></a>
 
-You can also try `yarn serve` to see that vue-cli service also works.
+## I have an issue, what should I do?
+
+Please file the issue [here](https://github.com/Decathlon/vitamin-web/issues/new).
+
+## Contributing
+
+See [the contributing docs](https://github.com/Decathlon/vitamin-web/blob/main/CONTRIBUTING.md).
