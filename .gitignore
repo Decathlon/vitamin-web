@@ -12,6 +12,7 @@
 **/docs
 **/coverage
 **/lib
+**/public/bundle.*
 
 # Misc
 **/.DS_Store

@@ -1,0 +1,32 @@
+{
+  "name": "@vtmn/showcase-svelte",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Decathlon Design System - Vitamin Svelte showcase",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build-storybook": "build-storybook",
+    "build-storybook:docs": "build-storybook --docs",
+    "st": "yarn start",
+    "start": "start-storybook -p 6009"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^6.1.18",
+    "@storybook/addon-essentials": "^6.1.18",
+    "@storybook/addon-links": "^6.1.18",
+    "@storybook/svelte": "^6.1.18",
+    "@vtmn/showcase-core": "^0.0.0",
+    "@vtmn/svelte": "*",
+    "svelte": "^3.31.2",
+    "svelte-loader": "^2.13.6",
+    "storybook-addon-designs": "^5.4.3",
+    "storybook-addon-outline": "^1.2.0",
+    "storybook-mobile": "^0.1.29"
+  },
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ]
+}
