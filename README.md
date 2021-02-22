@@ -122,7 +122,7 @@ This package provides you with a library of Web Components ([Custom Elements](ht
 
 ### React 🔵
 
-This package provides you with a library of [React](https://reactjs.org/) Components:
+This package provides you with a library of [React](https://reactjs.org/) components:
 
 <table>
   <tr>
@@ -148,6 +148,20 @@ This package provides you with a library of [Svelte](https://svelte.dev/) Compon
   </tr>
 </table>
 
+### Vue 🟢
+
+This package provides you with a library of [Vue](https://vuejs.org/) components:
+
+<table>
+  <tr>
+    <th>@vtmn/vue</th>
+    <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/vue#readme">README</a></td>
+    <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-vue"><img src="https://img.shields.io/badge/storybook-vue-41B883?style=flat&logo=storybook" alt="storybook" /></a></a></td>
+    <td><a href="https://www.npmjs.com/package/@vtmn/vue"><img src="https://img.shields.io/npm/v/@vtmn/vue?style=flat&logo=npm" alt="npm version" /></a></td>
+    <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_vue"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_vue&metric=alert_status" alt="Quality Gate Status" /></a></td>
+  </tr>
+</table>
+
 ## Contributing
 
 One of the Decathlon Design System goals is to provide guidelines & components to gain in consistency, efficiency & accessibility. The best way to achieve this is together!
@@ -170,11 +184,12 @@ yarn
 
 # start all showcases and build sources in watch mode & hot reload
 yarn start
-# or if you need don't need to launch every packages:
+# or if you need don't need to launch every packages, you can launch separately:
 yarn start:css
 yarn start:web-components
 yarn start:react
 yarn start:svelte
+yarn start:vue
 
 # build packages
 yarn build

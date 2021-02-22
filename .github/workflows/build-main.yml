@@ -75,6 +75,7 @@ jobs:
             'packages/sources/web-components',
             'packages/sources/react',
             'packages/sources/svelte',
+            'packages/sources/vue',
           ]
     runs-on: ubuntu-latest
     steps:

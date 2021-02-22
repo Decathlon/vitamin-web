@@ -1,0 +1,35 @@
+{
+  "name": "@vtmn/showcase-vue",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Decathlon Design System - Vitamin Vue showcase",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build-storybook": "build-storybook",
+    "build-storybook:docs": "build-storybook --docs",
+    "st": "yarn start",
+    "start": "start-storybook -p 6010"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@storybook/addon-a11y": "6.2.0-alpha.24",
+    "@storybook/addon-essentials": "6.2.0-alpha.24",
+    "@storybook/vue3": "6.2.0-alpha.24",
+    "@vtmn/showcase-core": "^0.0.0",
+    "@vtmn/vue": "*",
+    "@vue/cli-plugin-babel": "^4.5.11",
+    "@vue/cli-plugin-typescript": "^4.5.11",
+    "@vue/cli-service": "^4.5.11",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-loader": "^8.2.2",
+    "storybook-addon-designs": "^5.4.3",
+    "storybook-addon-outline": "^1.2.0",
+    "storybook-mobile": "^0.1.29",
+    "typescript": "^4.1.3",
+    "vue-loader": "^16.1.2"
+  }
+}

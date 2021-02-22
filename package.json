@@ -25,6 +25,7 @@
     "packages/sources/css/src/utilities",
     "packages/sources/css/src/components/*",
     "packages/sources/web-components",
+    "packages/sources/vue",
     "packages/sources/react",
     "packages/sources/svelte",
     "packages/showcases/*"
@@ -44,6 +45,7 @@
     "start:web-components": "lerna run start --parallel --scope \"@vtmn/{showcase-web-components,web-components}\"",
     "start:react": "lerna run start --parallel --scope \"@vtmn/{showcase-react,react}\"",
     "start:svelte": "lerna run start --parallel --scope \"@vtmn/{showcase-svelte,svelte}\"",
+    "start:vue": "lerna run start --parallel --scope \"@vtmn/{showcase-vue,vue}\"",
     "stylelint": "stylelint packages/**/*.css",
     "stylelint:fix": "yarn stylelint --fix",
     "test": "lerna run test"

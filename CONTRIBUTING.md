@@ -34,11 +34,13 @@ vitamin-web/
       css/
       react/
       svelte/
+      vue/
       web-components/
     sources/
       css/
       react/
       svelte/
+      vue/
       web-components/
 ```
 
@@ -74,6 +76,7 @@ yarn start
 yarn start:css
 yarn start:web-components
 yarn start:react
+yarn start:vue
 ```
 
 For your information, here are the showcases' URLs:
@@ -84,6 +87,7 @@ For your information, here are the showcases' URLs:
 | Web Components | [localhost:6007](http://localhost:6007) |
 | React          | [localhost:6008](http://localhost:6008) |
 | Svelte         | [localhost:6009](http://localhost:6009) |
+| Vue            | [localhost:6010](http://localhost:6010) |
 
 ## Code of conduct
 

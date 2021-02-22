@@ -30,14 +30,6 @@ export default {
         options: ['small', 'medium', 'large', 'stretched'],
       },
     },
-    children: {
-      type: { name: 'string', required: false },
-      description: 'The content to render inside the component',
-      defaultValue: 'Button',
-      control: {
-        type: 'text',
-      },
-    },
   },
   parameters: {
     backgrounds: { default: 'grey' },
