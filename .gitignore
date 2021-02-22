@@ -23,7 +23,6 @@
 **/.env.production.local
 **/.eslintcache
 **/storybook-static
-.husky
 
 # Editors
 **/.vscode
