@@ -9884,10 +9884,10 @@ eslint-plugin-react@^7.21.5, eslint-plugin-react@^7.22.0:
     resolve "^1.18.1"
     string.prototype.matchall "^4.0.2"
 
-eslint-plugin-svelte3@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-svelte3/-/eslint-plugin-svelte3-3.0.0.tgz#7c085ccc214e07feaa125b02f51a5789bc807a7f"
-  integrity sha512-8IZAT1Qkk1X6z+zLGeIF4OYYhYodr5iUoCczovEAbtzf2VOoyrS1rk66SkYknJKjPh8rwFErjCpN4dFa2Bmbng==
+eslint-plugin-svelte3@3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-svelte3/-/eslint-plugin-svelte3-3.1.1.tgz#dabd16dd0c8af82fd625ac0c0d76d43cf23139ca"
+  integrity sha512-fZ8YA7vPYMW6jEOhHLfl/IS6rXh92NkzR8UxMleXWT/QHKzTwkMl/f6WiEM9MUU7jxG6YzWE0MJVDoQvGTzI2A==
 
 eslint-plugin-testing-library@^3.9.2:
   version "3.10.1"
