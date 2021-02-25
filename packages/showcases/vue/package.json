@@ -15,7 +15,6 @@
     "vue": "^3.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
     "@storybook/addon-a11y": "6.2.0-alpha.24",
     "@storybook/addon-essentials": "6.2.0-alpha.24",
     "@storybook/vue3": "6.2.0-alpha.24",
@@ -25,7 +24,6 @@
     "@vue/cli-plugin-typescript": "^4.5.11",
     "@vue/cli-service": "^4.5.11",
     "@vue/compiler-sfc": "^3.0.0",
-    "babel-loader": "^8.2.2",
     "storybook-addon-designs": "^5.4.3",
     "storybook-addon-outline": "^1.2.0",
     "storybook-mobile": "^0.1.29",
