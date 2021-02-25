@@ -76,7 +76,7 @@
     "handlebars": "^4.7.6",
     "jest-fetch-mock": "^3.0.3",
     "postcss": "^8.2.5",
-    "postcss-custom-media": "^7.0.8",
+    "postcss-custom-media": "^8.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-is": "^17.0.1",
