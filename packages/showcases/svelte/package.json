@@ -11,9 +11,9 @@
     "start": "start-storybook -p 6009"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^6.1.19",
-    "@storybook/addon-essentials": "^6.1.19",
-    "@storybook/svelte": "^6.1.19",
+    "@storybook/addon-a11y": "^6.1.20",
+    "@storybook/addon-essentials": "^6.1.20",
+    "@storybook/svelte": "^6.1.20",
     "@vtmn/showcase-core": "^0.0.0",
     "@vtmn/svelte": "*",
     "storybook-addon-designs": "^5.4.3",
