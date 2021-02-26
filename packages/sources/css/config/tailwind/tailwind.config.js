@@ -77,6 +77,12 @@ module.exports = {
       display: ['Roboto Condensed', 'system-ui', '-apple-system'],
       body: ['Roboto', 'system-ui', '-apple-system'],
     },
+    fontSize: {
+      sm: ['0.875rem', '1.25'],
+      base: ['1rem', '1.5'],
+      lg: ['1.25rem', '1.75'],
+      xl: ['1.5rem', '2'],
+    },
     extend: {},
   },
   variants: {
