@@ -7,5 +7,13 @@ module.exports = {
     'storybook-addon-designs',
     'storybook-mobile',
     'storybook-addon-outline',
+    {
+      name: '@storybook/addon-postcss',
+      options: {
+        postcssLoaderOptions: {
+          implementation: require('postcss'),
+        },
+      },
+    },
   ],
 };
