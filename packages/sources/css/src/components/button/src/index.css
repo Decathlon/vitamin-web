@@ -178,12 +178,12 @@
   }
 
   .vtmn-btn_size--large {
-    @apply vtmn-text-xl
+    @apply vtmn-text-lg
       vtmn-h-10
       vtmn-px-7;
   }
 
   .vtmn-btn_size--stretched {
-    @apply vtmn-w-full;
+    @apply vtmn-text-base vtmn-w-full;
   }
 }
