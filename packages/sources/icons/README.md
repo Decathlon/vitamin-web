@@ -26,9 +26,12 @@ Or you can also install it with a CDN like `unpkg.com`:
 
 ## Usage
 
-Once you have installed this package,
+Once you have installed this package, Vitamin icons gives you SVGs, so you can include them into your HTML in a few ways depending on how your project is setup.
+Our icons include a `width` and `height` of `16px` by default to allow for easy resizing via `font-size`.
 
-TODO
+### External image
+
+Reference Icons SVGs like normal images with the `<img>` element.
 
 ## Development
 

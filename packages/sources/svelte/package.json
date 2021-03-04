@@ -25,7 +25,6 @@
   "scripts": {
     "build": "rollup -c",
     "lint": "eslint --color",
-    "st": "yarn start",
     "start": "chokidar 'src/**' --ignore '**/dist/**' -c 'yarn build'"
   },
   "devDependencies": {

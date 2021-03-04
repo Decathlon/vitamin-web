@@ -7,7 +7,6 @@
   "scripts": {
     "build-storybook": "build-storybook",
     "build-storybook:docs": "build-storybook --docs",
-    "st": "yarn start",
     "start": "start-storybook -p 6010"
   },
   "devDependencies": {
