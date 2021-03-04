@@ -1,4 +1,4 @@
-# `@vtmn/showcase-css` (private)
+# `@vtmn/showcase-icons` (private)
 
 > Decathlon Design System - Vitamin icons showcase
 
