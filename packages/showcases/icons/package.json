@@ -1,24 +1,26 @@
 {
-  "name": "@vtmn/showcase-react",
+  "name": "@vtmn/showcase-icons",
   "version": "0.0.0",
   "private": true,
-  "description": "Decathlon Design System - Vitamin React showcase",
+  "description": "Decathlon Design System - Vitamin icons showcase",
   "license": "Apache-2.0",
   "scripts": {
     "build-storybook": "build-storybook",
     "build-storybook:docs": "build-storybook --docs",
-    "start": "start-storybook -p 6009"
+    "start": "start-storybook -p 6007"
   },
-  "dependencies": {},
   "devDependencies": {
     "@storybook/addon-a11y": "^6.1.20",
+    "@storybook/addon-actions": "^6.1.20",
+    "@storybook/addon-backgrounds": "^6.1.20",
+    "@storybook/addon-docs": "^6.1.20",
     "@storybook/addon-essentials": "^6.1.20",
-    "@storybook/react": "^6.1.20",
-    "@vtmn/react": "*",
+    "@storybook/addon-viewport": "^6.1.20",
+    "@storybook/html": "^6.1.20",
+    "@vtmn/icons": "*",
     "@vtmn/showcase-core": "^0.0.0",
     "@whitespace/storybook-addon-html": "^4.2.0",
-    "react": "^17.0.1",
-    "storybook-addon-designs": "^5.4.3",
+    "storybook-addon-designs": "^5.4.2",
     "storybook-addon-outline": "^1.2.0",
     "storybook-mobile": "^0.1.29"
   },

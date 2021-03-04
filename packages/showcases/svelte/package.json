@@ -8,7 +8,7 @@
     "build-storybook": "build-storybook",
     "build-storybook:docs": "build-storybook --docs",
     "st": "yarn start",
-    "start": "start-storybook -p 6009"
+    "start": "start-storybook -p 6010"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^6.1.20",

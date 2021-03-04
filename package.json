@@ -24,6 +24,7 @@
     "packages/sources/css/src/design-tokens",
     "packages/sources/css/src/utilities",
     "packages/sources/css/src/components/*",
+    "packages/sources/icons",
     "packages/sources/web-components",
     "packages/sources/vue",
     "packages/sources/react",

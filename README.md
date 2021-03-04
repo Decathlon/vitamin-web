@@ -200,6 +200,7 @@ yarn
 yarn start
 # or if you need don't need to launch every packages, you can launch separately:
 yarn start:css
+yarn start:icons
 yarn start:web-components
 yarn start:react
 yarn start:svelte
