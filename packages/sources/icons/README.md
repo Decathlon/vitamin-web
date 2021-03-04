@@ -2,6 +2,7 @@
 
 > Decathlon Design System - Vitamin icons library
 
+<a href="https://www.decathlon.design/726f8c765/p/91dc94-iconography"><img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" /></a>
 <a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-icons"><img src="https://img.shields.io/badge/storybook-icons-295573?style=flat&logo=storybook" alt="storybook" /></a>
 <a href="https://www.npmjs.com/package/@vtmn/icons"><img src="https://img.shields.io/npm/v/@vtmn/icons?style=flat&logo=npm" alt="npm version" /></a>
 <a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_icons"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_icons&metric=alert_status" alt="Quality Gate Status" /></a>
@@ -26,7 +27,15 @@ Or you can also install it with a CDN like `unpkg.com`:
 
 ## Usage
 
-Once you have installed this package, Vitamin icons gives you SVGs, so you can include them into your HTML in a few ways depending on how your project is setup.
+Once you have installed this package, depending on your setup, you can include `@vtmn/icons` in a handful of ways.
+
+- Reference via `<img>` element
+- Use the SVG sprite
+- Use the icon font
+- Include via CSS
+- Copy-paste SVGs as embedded HTML
+
+Vitamin icons gives you SVGs, so you can include them into your HTML in a few ways depending on how your project is setup.
 Our icons include a `width` and `height` of `16px` by default to allow for easy resizing via `font-size`.
 
 ### External image
@@ -70,6 +79,23 @@ If your icon is alone:
 
 ```html
 <span aria-label="Homepage" class="“vtmx-home-fill”"> </span>
+```
+
+### CSS
+
+You can also use the SVG within your CSS (**be sure to escape any characters**, such as `#` to `%23` when specifying hex color values). When no dimensions are specified via `width` and `height` on the `<svg>`, the icon will fill the available space.
+
+The `viewBox` attribute is required if you wish to resize icons with `background-size`. Note that the `xmlns` attribute is required.
+
+```css
+.vtmx::before {
+  display: inline-block;
+  content: '';
+  vertical-align: -0.125em;
+  background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path d="M7.3337.333v-4h1.334v4h4v1.334h-4v4h7.333v-4h-4v7.333h4z' fill='#001018'/></svg>');
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+}
 ```
 
 ### Embedded
