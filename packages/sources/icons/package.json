@@ -1,0 +1,44 @@
+{
+  "name": "@vtmn/icons",
+  "version": "0.0.0",
+  "description": "Decathlon Design System - Vitamin icons library",
+  "keywords": [
+    "design-system",
+    "ui-kit",
+    "libraries",
+    "icons",
+    "vitamin"
+  ],
+  "homepage": "https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/icons",
+  "bugs": {
+    "url": "https://github.com/Decathlon/vitamin-web/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Decathlon/vitamin-web.git"
+  },
+  "license": "Apache-2.0",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "npm run build -- -w",
+    "build": "node src/build.js"
+  },
+  "devDependencies": {
+    "fs-extra": "^9.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ]
+}

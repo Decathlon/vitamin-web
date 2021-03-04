@@ -106,6 +106,20 @@ These packages allow the consumption of elements with a higher level of granular
   </tr>
 </table>
 
+### Icons ✨
+
+This package provides you with a library of SVG icons:
+
+<table>
+  <tr>
+    <th>@vtmn/icons</th>
+    <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/icons#readme">README</a></td>
+    <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-icons"><img src="https://img.shields.io/badge/storybook-icons-295573?style=flat&logo=storybook" alt="storybook" /></a></td>
+    <td><a href="https://www.npmjs.com/package/@vtmn/icons"><img src="https://img.shields.io/npm/v/@vtmn/icons?style=flat&logo=npm" alt="npm version" /></a></td>
+    <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_icons"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_icons&metric=alert_status" alt="Quality Gate Status" /></a></td>
+  </tr>
+</table>
+
 ### Web Components ⚫️
 
 This package provides you with a library of Web Components ([Custom Elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements)). So, you will be able to use custom `<vtmn-**>` HTML tags directly in your markup:
