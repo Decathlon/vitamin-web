@@ -15,7 +15,7 @@
   - Vue
   - Documentation
 
-- **[Antoine Leblanc](https://github.com/amen-souissi)**
+- **[Antoine Leblanc](https://github.com/antleblanc)**
 
   - Documentation
 
