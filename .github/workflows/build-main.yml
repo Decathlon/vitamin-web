@@ -72,6 +72,7 @@ jobs:
             'packages/sources/css/src/components/text-input',
             'packages/sources/css/src/design-tokens',
             'packages/sources/css/src/utilities',
+            'packages/sources/icons',
             'packages/sources/web-components',
             'packages/sources/react',
             'packages/sources/svelte',
