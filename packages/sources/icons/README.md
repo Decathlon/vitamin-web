@@ -19,11 +19,7 @@ npm i -S @vtmn/icons
 yarn add @vtmn/icons
 ```
 
-Or you can also install it with a CDN like `unpkg.com`:
-
-```html
-<script src="https://unpkg.com/@vtmn/icons"></script>
-```
+Or you can also install it with a CDN like `unpkg.com`. You can browse content [here](https://unpkg.com/@vtmn/icons/).
 
 ## Usage
 
@@ -72,13 +68,13 @@ Use `font-size` and `color` to change the icon appearance.
 If your icon is followed by a text:
 
 ```html
-<span aria-hidden="true" class="“vtmx-home-fill”"> </span> Homepage
+<span aria-hidden="true" class="vtmx-home-fill"> </span> Homepage
 ```
 
 If your icon is alone:
 
 ```html
-<span aria-label="Homepage" class="“vtmx-home-fill”"> </span>
+<span aria-label="Homepage" class="vtmx-home-fill"> </span>
 ```
 
 ### CSS
