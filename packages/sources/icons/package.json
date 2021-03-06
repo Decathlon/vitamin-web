@@ -30,7 +30,7 @@
     "prebuild": "svgo -f src/vitamix",
     "build": "yarn build:svg && yarn build:font && yarn build:sprite",
     "build:svg": "node src/build-svg.js",
-    "build:font": "mkdir -p ./dist/vitamix/font && fantasticon",
+    "build:font": "mkdir -p ./dist/vitamix/font && fantasticon --normalize",
     "build:sprite": "mkdir -p ./dist/vitamix/sprite && spritesh -i src/vitamix -o dist/vitamix/sprite/vitamix.svg"
   },
   "devDependencies": {
