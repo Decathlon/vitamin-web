@@ -31,14 +31,17 @@ export const VtmnButton: React.FC<VtmnButtonProps> = ({
   size = 'medium',
   children,
   className,
+  icon,
   ...props
 }) => {
   return (
     <button
       className={`vtmn-btn vtmn-btn_variant--${variant} vtmn-btn_size--${size} ${
         className ? className : ''
-      }`}
+      }
+      ${icon && !children && 'vtmn-btn_with-only-icon'}`}
       {...props}>
+      {icon && <i className={`vtmx-${icon}`} />}
       {children}
     </button>
   );

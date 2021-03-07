@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { VtmnButton } from '@vtmn/react';
+import vitamixIconsList from '@vtmn/icons/dist/vitamix/font/vitamix.json';
 
 import { Story, Meta } from '@storybook/react';
 
@@ -31,6 +32,15 @@ export default {
       control: {
         type: 'select',
         options: ['small', 'medium', 'large', 'stretched'],
+      },
+    },
+    icon: {
+      type: { name: 'string', required: true },
+      description: 'The value of the icon.',
+      defaultValue: 'home-fill',
+      control: {
+        type: 'select',
+        options: Object.keys(vitamixIconsList),
       },
     },
     children: {
