@@ -26,7 +26,7 @@
     "dist"
   ],
   "scripts": {
-    "start": "chokidar 'src/**' --ignore '**/dist/**' -c 'yarn build'",
+    "start": "chokidar 'src/**' --initial --ignore '**/dist/**' -c 'yarn build'",
     "prebuild": "svgo -f src/vitamix",
     "build": "yarn build:svg && yarn build:font && yarn build:sprite",
     "build:svg": "node src/build-svg.js",
