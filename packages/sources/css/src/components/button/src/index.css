@@ -10,19 +10,18 @@
     box-shadow: inset 0 0 0 0.125rem transparent;
     min-width: calc(6 * 1rem);
     letter-spacing: 0.0375rem;
+    font-size: 1rem;
+    padding: 0.875rem 1.5rem;
+    white-space: no-wrap;
 
     @apply vtmn-bg-brand-digital
       vtmn-font-condensed
       vtmn-text-white
-      vtmn-text-base
       vtmn-font-bold
-      vtmn-py-0
-      vtmn-px-5
       vtmn-relative
       vtmn-inline-flex
       vtmn-no-underline
       vtmn-rounded
-      vtmn-h-8
       vtmn-border-0
       vtmn-box-border
       vtmn-overflow-hidden
@@ -165,25 +164,29 @@
 
   /* Sizes */
   .vtmn-btn_size--small {
-    @apply vtmn-text-sm
-      vtmn-h-6
-      vtmn-px-4;
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
   }
 
   .vtmn-btn_size--medium,
   .vtmn-btn_size--stretched {
-    @apply vtmn-text-base
-      vtmn-h-8
-      vtmn-px-5;
+    font-size: 1rem;
+    padding: 0.875rem 1.5rem;
   }
 
   .vtmn-btn_size--large {
-    @apply vtmn-text-lg
-      vtmn-h-10
-      vtmn-px-7;
+    font-size: 1.25rem;
+    padding: 1.25rem 2.5rem;
   }
 
   .vtmn-btn_size--stretched {
-    @apply vtmn-text-base vtmn-w-full;
+    font-size: 1rem;
+
+    @apply vtmn-w-full;
+  }
+
+  /* Exceptions */
+  .vtmn-btn--wrap {
+    white-space: normal;
   }
 }

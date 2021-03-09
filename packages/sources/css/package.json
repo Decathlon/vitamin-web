@@ -23,9 +23,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "postcss src/index.css -o dist/index.css",
-    "prestart": "yarn build",
-    "start": "chokidar \"src/**\" -i \"**/dist/**\" -c \"lerna run --parallel --scope \"@vtmn/css*\" build\""
+    "build": "postcss src/index.css -o dist/index.css && lerna run --parallel --scope \"@vtmn/css-*\" build",
+    "start": "chokidar \"src/**\" --initial -i \"**/dist/**\" -c \"yarn build\""
   },
   "devDependencies": {
     "@vtmn/css-postcss-config": "^0.0.0",
