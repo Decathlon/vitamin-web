@@ -51,7 +51,7 @@
   --vtmn-typo_text-3-line-height: 1.42;
 }
 
-@screen tablet {
+@media screen and (min-width: 600px) and (max-width: 899px) {
   :root {
     --vtmn-typo_display-1-font-size: rem(76px);
     --vtmn-typo_display-2-font-size: rem(48px);
@@ -73,7 +73,7 @@
   }
 }
 
-@screen small-desktop {
+@media screen and (min-width: 900px) and (max-width: 1199px) {
   :root {
     --vtmn-typo_display-1-font-size: rem(76px);
     --vtmn-typo_display-2-font-size: rem(48px);
@@ -95,7 +95,7 @@
   }
 }
 
-@screen medium-desktop {
+@media screen and (min-width: 1200px) and (max-width: 1799px) {
   :root {
     --vtmn-typo_display-1-font-size: rem(96px);
     --vtmn-typo_display-2-font-size: rem(60px);
@@ -117,7 +117,7 @@
   }
 }
 
-@screen large-desktop {
+@media screen and (min-width: 1800px) {
   :root {
     --vtmn-typo_display-1-font-size: rem(96px);
     --vtmn-typo_display-2-font-size: rem(60px);
