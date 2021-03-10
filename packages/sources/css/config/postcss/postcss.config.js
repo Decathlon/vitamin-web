@@ -4,6 +4,7 @@ const tailwindcss = require('tailwindcss');
 const autoprefixer = require('autoprefixer');
 const postcssCombineDuplicatedSelectors = require('postcss-combine-duplicated-selectors');
 const postcssDiscardComments = require('postcss-discard-comments');
+const postcssRem = require('postcss-rem');
 
 module.exports = {
   plugins: [
@@ -11,6 +12,7 @@ module.exports = {
     postcssColorMod,
     tailwindcss,
     autoprefixer,
+    postcssRem,
     postcssCombineDuplicatedSelectors,
     postcssDiscardComments,
   ],

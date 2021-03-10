@@ -7,9 +7,8 @@
   /* Default button */
 
   .vtmn-btn {
-    box-shadow: inset 0 0 0 0.125rem transparent;
-    min-width: calc(6 * 1rem);
-    letter-spacing: 0.0375rem;
+    box-shadow: inset 0 0 0 rem(2px) transparent;
+    min-width: calc(6 * rem(16px));
 
     @apply vtmn-bg-brand-digital
       vtmn-font-condensed
@@ -41,13 +40,13 @@
 
   .vtmn-btn:not([disabled]):focus {
     outline: none;
-    box-shadow: inset 0 0 0 0.125rem transparent,
-      0 0 0 0.125rem var(--vtmn-color_brand-digital-light-1);
+    box-shadow: inset 0 0 0 rem(2px) transparent,
+      0 0 0 rem(2px) var(--vtmn-color_brand-digital-light-1);
   }
 
   /* Primary button */
   .vtmn-btn_variant--primary {
-    box-shadow: inset 0 0 0 0.125rem transparent;
+    box-shadow: inset 0 0 0 rem(2px) transparent;
 
     @apply vtmn-bg-brand-digital
       vtmn-text-white
@@ -56,13 +55,13 @@
   }
 
   .vtmn-btn_variant--primary:not([disabled]):focus {
-    box-shadow: inset 0 0 0 0.125rem transparent,
-      0 0 0 0.125rem var(--vtmn-color_brand-digital-light-1);
+    box-shadow: inset 0 0 0 rem(2px) transparent,
+      0 0 0 rem(2px) var(--vtmn-color_brand-digital-light-1);
   }
 
   /* Primary reversed button */
   .vtmn-btn_variant--primary-reversed {
-    box-shadow: inset 0 0 0 0.125rem transparent;
+    box-shadow: inset 0 0 0 rem(2px) transparent;
 
     @apply vtmn-bg-white
       vtmn-text-black;
@@ -77,14 +76,14 @@
   }
 
   .vtmn-btn_variant--primary-reversed:not([disabled]):focus {
-    box-shadow: inset 0 0 0 0.125rem transparent,
-      0 0 0 0.125rem var(--vtmn-color_brand-digital-light-1);
+    box-shadow: inset 0 0 0 rem(2px) transparent,
+      0 0 0 rem(2px) var(--vtmn-color_brand-digital-light-1);
   }
 
   /* Secondary button */
   .vtmn-btn_variant--secondary {
     background-color: transparent;
-    box-shadow: inset 0 0 0 0.125rem var(--vtmn-color_black);
+    box-shadow: inset 0 0 0 rem(2px) var(--vtmn-color_black);
 
     @apply vtmn-text-black;
   }
@@ -98,14 +97,14 @@
   }
 
   .vtmn-btn_variant--secondary:not([disabled]):focus {
-    box-shadow: inset 0 0 0 0.125rem var(--vtmn-color_black),
-      0 0 0 0.125rem var(--vtmn-color_brand-digital-light-1);
+    box-shadow: inset 0 0 0 rem(2px) var(--vtmn-color_black),
+      0 0 0 rem(2px) var(--vtmn-color_brand-digital-light-1);
   }
 
   /* Secondary reversed button */
   .vtmn-btn_variant--secondary-reversed {
     background-color: transparent;
-    box-shadow: inset 0 0 0 0.125rem var(--vtmn-color_white);
+    box-shadow: inset 0 0 0 rem(2px) var(--vtmn-color_white);
 
     @apply vtmn-text-white;
   }
@@ -119,14 +118,14 @@
   }
 
   .vtmn-btn_variant--secondary-reversed:not([disabled]):focus {
-    box-shadow: inset 0 0 0 0.125rem var(--vtmn-color_white),
-      0 0 0 0.125rem var(--vtmn-color_brand-digital-light-1);
+    box-shadow: inset 0 0 0 rem(2px) var(--vtmn-color_white),
+      0 0 0 rem(2px) var(--vtmn-color_brand-digital-light-1);
   }
 
   /* Ghost button */
   .vtmn-btn_variant--ghost {
     background-color: transparent;
-    box-shadow: inset 0 0 0 0.125rem transparent;
+    box-shadow: inset 0 0 0 rem(2px) transparent;
 
     @apply vtmn-text-brand-digital;
   }
@@ -144,13 +143,13 @@
   }
 
   .vtmn-btn_variant--ghost:not([disabled]):focus {
-    box-shadow: inset 0 0 0 0.125rem transparent,
-      0 0 0 0.125rem var(--vtmn-color_brand-digital-light-1);
+    box-shadow: inset 0 0 0 rem(2px) transparent,
+      0 0 0 rem(2px) var(--vtmn-color_brand-digital-light-1);
   }
 
   /* Conversion button */
   .vtmn-btn_variant--conversion {
-    box-shadow: inset 0 0 0 0.125rem transparent;
+    box-shadow: inset 0 0 0 rem(2px) transparent;
 
     @apply vtmn-bg-yellow
       vtmn-text-black
@@ -159,8 +158,8 @@
   }
 
   .vtmn-btn_variant--conversion:not([disabled]):focus {
-    box-shadow: inset 0 0 0 0.125rem transparent,
-      0 0 0 0.125rem var(--vtmn-color_brand-digital-light-1);
+    box-shadow: inset 0 0 0 rem(2px) transparent,
+      0 0 0 rem(2px) var(--vtmn-color_brand-digital-light-1);
   }
 
   /* Sizes */

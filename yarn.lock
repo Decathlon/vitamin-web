@@ -17219,6 +17219,13 @@ postcss-reduce-transforms@^4.0.2:
     postcss "^7.0.0"
     postcss-value-parser "^3.0.0"
 
+postcss-rem@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/postcss-rem/-/postcss-rem-1.1.5.tgz#5e884162ecd42440326fa7c41b03ee7295fa846e"
+  integrity sha512-OXPzkWFlA3WkxOqPw2Moj8VvXsq8jcbyOI/mR7bqFkjG1fgndr1ADYY1uegIYGC3X958wJBHMXvv3BqnBRQAIA==
+  dependencies:
+    postcss "^7.0.26"
+
 postcss-replace-overflow-wrap@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/postcss-replace-overflow-wrap/-/postcss-replace-overflow-wrap-3.0.0.tgz#61b360ffdaedca84c7c918d2b0f0d0ea559ab01c"

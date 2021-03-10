@@ -22,16 +22,16 @@
  * @presenter FontSize
  */
 :root {
-  --vtmn-typo_display-1-font-size: 3.75rem;
-  --vtmn-typo_display-2-font-size: 2.625rem;
-  --vtmn-typo_title-1-font-size: 2.5rem;
-  --vtmn-typo_title-2-font-size: 2.25rem;
-  --vtmn-typo_title-3-font-size: 1.75rem;
-  --vtmn-typo_title-4-font-size: 1.5rem;
-  --vtmn-typo_title-5-font-size: 1.25rem;
-  --vtmn-typo_text-1-font-size: 1.125rem;
-  --vtmn-typo_text-2-font-size: 1rem;
-  --vtmn-typo_text-3-font-size: 0.875rem;
+  --vtmn-typo_display-1-font-size: rem(60px);
+  --vtmn-typo_display-2-font-size: rem(42px);
+  --vtmn-typo_title-1-font-size: rem(40px);
+  --vtmn-typo_title-2-font-size: rem(36px);
+  --vtmn-typo_title-3-font-size: rem(28px);
+  --vtmn-typo_title-4-font-size: rem(24px);
+  --vtmn-typo_title-5-font-size: rem(20px);
+  --vtmn-typo_text-1-font-size: rem(18px);
+  --vtmn-typo_text-2-font-size: rem(16px);
+  --vtmn-typo_text-3-font-size: rem(14px);
 }
 
 /**
@@ -53,13 +53,13 @@
 
 @screen tablet {
   :root {
-    --vtmn-typo_display-1-font-size: 4.75rem;
-    --vtmn-typo_display-2-font-size: 3rem;
-    --vtmn-typo_title-1-font-size: 2.75rem;
-    --vtmn-typo_title-2-font-size: 2.375rem;
-    --vtmn-typo_title-3-font-size: 1.875rem;
-    --vtmn-typo_title-4-font-size: 1.5rem;
-    --vtmn-typo_title-5-font-size: 1.25rem;
+    --vtmn-typo_display-1-font-size: rem(76px);
+    --vtmn-typo_display-2-font-size: rem(48px);
+    --vtmn-typo_title-1-font-size: rem(44px);
+    --vtmn-typo_title-2-font-size: rem(38px);
+    --vtmn-typo_title-3-font-size: rem(30px);
+    --vtmn-typo_title-4-font-size: rem(24px);
+    --vtmn-typo_title-5-font-size: rem(20px);
   }
 
   :root {
@@ -75,13 +75,13 @@
 
 @screen small-desktop {
   :root {
-    --vtmn-typo_display-1-font-size: 4.75rem;
-    --vtmn-typo_display-2-font-size: 3rem;
-    --vtmn-typo_title-1-font-size: 2.75rem;
-    --vtmn-typo_title-2-font-size: 2.375rem;
-    --vtmn-typo_title-3-font-size: 1.875rem;
-    --vtmn-typo_title-4-font-size: 1.5rem;
-    --vtmn-typo_title-5-font-size: 1.25rem;
+    --vtmn-typo_display-1-font-size: rem(76px);
+    --vtmn-typo_display-2-font-size: rem(48px);
+    --vtmn-typo_title-1-font-size: rem(44px);
+    --vtmn-typo_title-2-font-size: rem(38px);
+    --vtmn-typo_title-3-font-size: rem(30px);
+    --vtmn-typo_title-4-font-size: rem(24px);
+    --vtmn-typo_title-5-font-size: rem(20px);
   }
 
   :root {
@@ -97,13 +97,13 @@
 
 @screen medium-desktop {
   :root {
-    --vtmn-typo_display-1-font-size: 6rem;
-    --vtmn-typo_display-2-font-size: 3.75rem;
-    --vtmn-typo_title-1-font-size: 3rem;
-    --vtmn-typo_title-2-font-size: 2.5rem;
-    --vtmn-typo_title-3-font-size: 2rem;
-    --vtmn-typo_title-4-font-size: 1.625rem;
-    --vtmn-typo_title-5-font-size: 1.25rem;
+    --vtmn-typo_display-1-font-size: rem(96px);
+    --vtmn-typo_display-2-font-size: rem(60px);
+    --vtmn-typo_title-1-font-size: rem(48px);
+    --vtmn-typo_title-2-font-size: rem(40px);
+    --vtmn-typo_title-3-font-size: rem(32px);
+    --vtmn-typo_title-4-font-size: rem(26px);
+    --vtmn-typo_title-5-font-size: rem(20px);
   }
 
   :root {
@@ -119,13 +119,13 @@
 
 @screen large-desktop {
   :root {
-    --vtmn-typo_display-1-font-size: 6rem;
-    --vtmn-typo_display-2-font-size: 3.75rem;
-    --vtmn-typo_title-1-font-size: 3rem;
-    --vtmn-typo_title-2-font-size: 2.5rem;
-    --vtmn-typo_title-3-font-size: 2rem;
-    --vtmn-typo_title-4-font-size: 1.625rem;
-    --vtmn-typo_title-5-font-size: 1.25rem;
+    --vtmn-typo_display-1-font-size: rem(96px);
+    --vtmn-typo_display-2-font-size: rem(60px);
+    --vtmn-typo_title-1-font-size: rem(48px);
+    --vtmn-typo_title-2-font-size: rem(40px);
+    --vtmn-typo_title-3-font-size: rem(32px);
+    --vtmn-typo_title-4-font-size: rem(26px);
+    --vtmn-typo_title-5-font-size: rem(20px);
   }
 
   :root {

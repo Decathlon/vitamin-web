@@ -18,6 +18,9 @@
     "postcss-loader": "^5.0.0",
     "tailwindcss": "^2.0.2"
   },
+  "devDependencies": {
+    "postcss-rem": "^1.1.5"
+  },
   "licenses": [
     {
       "type": "Apache-2.0",

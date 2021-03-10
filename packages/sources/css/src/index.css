@@ -9,9 +9,9 @@
 @import './design-tokens/src/spacings';
 @import './design-tokens/src/typography';
 
+/* Utilities */
+@import './utilities/src/typography';
+
 /* Components */
 @import './components/button/src';
 @import './components/text-input/src';
-
-/* Utilities */
-@import './utilities/src/typography';
