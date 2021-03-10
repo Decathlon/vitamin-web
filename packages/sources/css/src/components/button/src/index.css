@@ -180,7 +180,6 @@
   }
 
   .vtmn-btn_size--stretched {
-
     @apply vtmn-w-full;
   }
 }
