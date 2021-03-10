@@ -184,9 +184,4 @@
 
     @apply vtmn-w-full;
   }
-
-  /* Exceptions */
-  .vtmn-btn--wrap {
-    white-space: normal;
-  }
 }
