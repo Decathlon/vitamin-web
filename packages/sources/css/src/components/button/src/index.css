@@ -180,7 +180,6 @@
   }
 
   .vtmn-btn_size--stretched {
-    font-size: 1rem;
 
     @apply vtmn-w-full;
   }
