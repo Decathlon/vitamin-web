@@ -43,14 +43,14 @@ export const VtmnButton: React.FC<VtmnButtonProps> = ({
   return (
     <button
       className={`vtmn-btn vtmn-btn_variant--${variant} vtmn-btn_size--${size} ${
-        className ? className : ''
-      }
-      ${icon && !children && 'vtmn-btn_with-only-icon'}`}
+        icon && !children ? 'vtmn-btn_with-only-icon' : ''
+      } ${className ? className : ''}`.trim()}
       {...props}>
       {icon && (
         <span
           className={`vtmx-${icon}`}
-          aria-label={iconAriaLabel ? iconAriaLabel : icon}></span>
+          aria-hidden={!!children}
+          {...(!children && { 'aria-label': iconAriaLabel })}></span>
       )}
       {children}
     </button>
