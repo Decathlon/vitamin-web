@@ -35,8 +35,16 @@ export default {
       },
     },
     icon: {
-      type: { name: 'string', required: true },
-      description: 'The value of the icon.',
+      type: { name: 'string', required: false },
+      description: 'The value of the optional icon.',
+      control: {
+        type: 'select',
+        options: Object.keys(vitamixIconsList),
+      },
+    },
+    iconAriaLabel: {
+      type: { name: 'string', required: false },
+      description: 'The aria-label of the optional icon.',
       defaultValue: 'home-fill',
       control: {
         type: 'select',

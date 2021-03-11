@@ -24,6 +24,11 @@ export interface VtmnButtonProps
    * @default undefined
    **/
   icon?: string;
+  /**
+   * The aria-label of the optional icon.
+   * @default undefined
+   **/
+  iconAriaLabel?: string;
 }
 
 export const VtmnButton: React.FC<VtmnButtonProps> = ({
@@ -32,6 +37,7 @@ export const VtmnButton: React.FC<VtmnButtonProps> = ({
   children,
   className,
   icon,
+  iconAriaLabel,
   ...props
 }) => {
   return (
@@ -41,7 +47,11 @@ export const VtmnButton: React.FC<VtmnButtonProps> = ({
       }
       ${icon && !children && 'vtmn-btn_with-only-icon'}`}
       {...props}>
-      {icon && <i className={`vtmx-${icon}`} />}
+      {icon && (
+        <span
+          className={`vtmx-${icon}`}
+          aria-label={iconAriaLabel ? iconAriaLabel : icon}></span>
+      )}
       {children}
     </button>
   );

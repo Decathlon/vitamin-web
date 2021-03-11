@@ -164,7 +164,7 @@
 
   /* Sizes */
   .vtmn-btn_size--small {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     padding: 0.5rem 1rem;
   }
 
@@ -176,7 +176,7 @@
 
   .vtmn-btn_size--large {
     font-size: 1.25rem;
-    padding: 1.25rem 2.5rem;
+    padding: 1.25rem 2rem;
   }
 
   .vtmn-btn_size--stretched {
@@ -186,28 +186,27 @@
   }
 
   /* Icon */
-  .vtmn-btn > i {
+  .vtmn-btn > [class^='vtmx-'] {
     display: inline-flex;
   }
 
   .vtmn-btn_with-only-icon {
     min-width: initial;
-    padding: 0;
   }
 
-  .vtmn-btn_with-only-icon.vtmn-btn_size--small > i {
+  .vtmn-btn_with-only-icon.vtmn-btn_size--small > [class^='vtmx-'] {
     font-size: 1rem;
   }
-  .vtmn-btn_with-only-icon > i,
-  .vtmn-btn_with-only-icon.vtmn-btn_size--medium > i,
-  .vtmn-btn_with-only-icon.vtmn-btn_size--stretched > i {
+  .vtmn-btn_with-only-icon > [class^='vtmx-'],
+  .vtmn-btn_with-only-icon.vtmn-btn_size--medium > [class^='vtmx-'],
+  .vtmn-btn_with-only-icon.vtmn-btn_size--stretched > [class^='vtmx-'] {
     font-size: 1.25rem;
   }
-  .vtmn-btn_with-only-icon.vtmn-btn_size--large > i {
+  .vtmn-btn_with-only-icon.vtmn-btn_size--large > [class^='vtmx-'] {
     font-size: 1.5rem;
   }
 
-  .vtmn-btn:not(.vtmn-btn_with-only-icon) > i {
+  .vtmn-btn:not(.vtmn-btn_with-only-icon) > [class^='vtmx-'] {
     margin-right: 0.4rem;
   }
 
