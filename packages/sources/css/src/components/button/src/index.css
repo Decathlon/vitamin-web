@@ -11,18 +11,17 @@
     letter-spacing: 0.0375rem;
     line-height: 1;
     font-size: 1rem;
+    padding: 0.875rem 1.5rem;
+    white-space: nowrap;
 
     @apply vtmn-bg-brand-digital
       vtmn-font-condensed
       vtmn-text-white
       vtmn-font-bold
-      vtmn-py-0
-      vtmn-px-5
       vtmn-relative
       vtmn-inline-flex
       vtmn-no-underline
       vtmn-rounded
-      vtmn-h-8
       vtmn-border-0
       vtmn-box-border
       vtmn-overflow-hidden
@@ -166,24 +165,18 @@
   /* Sizes */
   .vtmn-btn_size--small {
     font-size: 0.75rem;
-
-    @apply vtmn-h-6
-      vtmn-px-4;
+    padding: 0.5rem 1rem;
   }
 
   .vtmn-btn_size--medium,
   .vtmn-btn_size--stretched {
     font-size: 1rem;
-
-    @apply vtmn-h-8
-      vtmn-px-5;
+    padding: 0.875rem 1.5rem;
   }
 
   .vtmn-btn_size--large {
     font-size: 1.25rem;
-
-    @apply vtmn-h-10
-      vtmn-px-7;
+    padding: 1.25rem 2.5rem;
   }
 
   .vtmn-btn_size--stretched {
@@ -228,5 +221,9 @@
   }
   .vtmn-btn_with-only-icon.vtmn-btn_size--large {
     @apply vtmn-w-10;
+  }
+
+  .vtmn-btn_size--stretched {
+    @apply vtmn-w-full;
   }
 }

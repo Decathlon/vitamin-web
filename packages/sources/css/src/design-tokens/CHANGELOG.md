@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.14](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@0.0.13...@vtmn/css-design-tokens@0.0.14) (2021-03-09)
+
+**Note:** Version bump only for package @vtmn/css-design-tokens
+
+
+
+
+
 ## [0.0.13](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@0.0.12...@vtmn/css-design-tokens@0.0.13) (2021-02-26)
 
 **Note:** Version bump only for package @vtmn/css-design-tokens
