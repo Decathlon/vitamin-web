@@ -19,6 +19,10 @@
     "postcss-rem": "^1.1.5",
     "tailwindcss": "^2.0.2"
   },
+  "devDependencies": {
+    "postcss-css-var-to-sass-var": "^1.0.0",
+    "postcss-prettify": "^0.3.4"
+  },
   "licenses": [
     {
       "type": "Apache-2.0",

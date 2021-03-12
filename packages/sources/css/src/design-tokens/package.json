@@ -13,7 +13,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "postcss src/index.css -o dist/index.css && cross-env FONT_SIZE_BASE=10 postcss src/index.css -o dist/index-base10.css"
+    "build": "yarn build:css && yarn build:scss",
+    "build:css": "postcss src/index.css -o dist/index.css && cross-env FONT_SIZE_BASE=10 postcss src/index.css -o dist/index-base10.css",
+    "build:scss": "cross-env SCSS_FORMAT=true postcss dist/index.css -o dist/index.scss && cross-env SCSS_FORMAT=true postcss dist/index-base10.css -o dist/index-base10.scss"
   },
   "devDependencies": {
     "@vtmn/css-postcss-config": "^0.0.0",
