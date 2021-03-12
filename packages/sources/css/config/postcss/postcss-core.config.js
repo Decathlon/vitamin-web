@@ -6,6 +6,7 @@ const postcssCombineMediaQuery = require('postcss-combine-duplicated-selectors')
 const postcssDiscardComments = require('postcss-discard-comments');
 const postcssRem = require('postcss-rem');
 const postcssCssVarToSassVar = require('postcss-css-var-to-sass-var');
+const postcssCssVarToLessVar = require('postcss-css-var-to-less-var');
 const postcssPrettify = require('postcss-prettify');
 
 const postcssRemOptions =
@@ -23,6 +24,10 @@ let plugins = [
 
 if (process.env.SCSS_FORMAT === 'true') {
   plugins = [...plugins, postcssCssVarToSassVar];
+}
+
+if (process.env.LESS_FORMAT === 'true') {
+  plugins = [...plugins, postcssCssVarToLessVar];
 }
 
 plugins = [...plugins, postcssPrettify];

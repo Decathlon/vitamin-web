@@ -7711,7 +7711,7 @@ classnames@^2.2.5:
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
 
-clean-css@4.2.x, clean-css@^4.2.3, clean-css@^4.x:
+clean-css@4.2.x, clean-css@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.2.3.tgz#507b5de7d97b48ee53d84adb0160ff6216380f78"
   integrity sha512-VcMWDN54ZN/DS+g58HYL5/n4Zrqe8vHJpGA8KdgUXFU4fuP/aHNw8eld9SyEIyabIMJX/0RaY/fplOo5hYLSFA==
@@ -16584,14 +16584,6 @@ postcss-calc@^7.0.1:
     postcss-selector-parser "^6.0.2"
     postcss-value-parser "^4.0.2"
 
-postcss-clean@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/postcss-clean/-/postcss-clean-1.2.2.tgz#7b44303dcecbc2b29a70ed18d22af427203fa256"
-  integrity sha512-DpuMWW19Dd2K9KY4wknMz3khq9q2yZYa2U37bnhzdtBdBv0ggIfUj5T2XD3ir6gKVlDkb5OtOqw1iQJWq6qvpw==
-  dependencies:
-    clean-css "^4.x"
-    postcss "^6.x"
-
 postcss-cli@^8.3.1:
   version "8.3.1"
   resolved "https://registry.yarnpkg.com/postcss-cli/-/postcss-cli-8.3.1.tgz#865dad08300ac59ae9cecb7066780aa81c767a77"
@@ -16684,6 +16676,14 @@ postcss-convert-values@^4.0.1:
   dependencies:
     postcss "^7.0.0"
     postcss-value-parser "^3.0.0"
+
+postcss-css-var-to-less-var@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-css-var-to-less-var/-/postcss-css-var-to-less-var-1.0.0.tgz#f2f6083d3c7854506e75b13758b5083c27ef22bd"
+  integrity sha512-Jug8mdc8tCaVyIz27ihtLS7yoSmngA4gg2piw7SLzOUBvb2dUNMFWPFAL0Ifwr1BSC0CV2t85gZK8tDSYBimEw==
+  dependencies:
+    postcss "^6.0.19"
+    postcss-plugin-utilities "^2.2.2"
 
 postcss-css-var-to-sass-var@^1.0.0:
   version "1.0.0"
@@ -17478,7 +17478,7 @@ postcss@7.0.21:
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
-postcss@^6.0.19, postcss@^6.0.8, postcss@^6.0.9, postcss@^6.x:
+postcss@^6.0.19, postcss@^6.0.8, postcss@^6.0.9:
   version "6.0.23"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.23.tgz#61c82cc328ac60e677645f979054eb98bc0e3324"
   integrity sha512-soOk1h6J3VMTZtVeVpv15/Hpdl2cBLX3CAw4TAbkpTJiNPk9YP/zWcD1ND+xEtvyuuvKzbxliTOIyvkSeSJ6ag==
