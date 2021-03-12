@@ -6,17 +6,20 @@
 /* Default button */
 .vtmn-btn {
   box-shadow: inset 0 0 0 rem(2px) transparent;
-  min-width: rem(96px);
   font-size: rem(16px);
+  min-height: rem(48px);
+  min-width: rem(120px);
+  max-width: 100%;
   padding: rem(14px) rem(24px);
-  white-space: no-wrap;
+  line-height: 1.25;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   background-color: var(--vtmn-color_brand-digital);
   border-radius: rem(4px);
   border-width: 0;
   box-sizing: border-box;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   font-family: var(--vtmn-typo_font-family--condensed);
   font-weight: var(--vtmn-typo_font-weight--bold);
   overflow: hidden;
@@ -24,6 +27,7 @@
   text-align: center;
   color: var(--vtmn-color_white);
   text-decoration: none;
+  letter-spacing: 0.0375rem;
 }
 
 .vtmn-btn:hover {
@@ -170,21 +174,76 @@
 
 /* Sizes */
 .vtmn-btn_size--small {
-  font-size: rem(12px);
+  font-size: rem(14px);
   padding: rem(8px) rem(16px);
+  line-height: calc(16 / 14);
+  min-height: rem(32px);
+  min-width: rem(84px);
 }
 
 .vtmn-btn_size--medium,
 .vtmn-btn_size--stretched {
   font-size: rem(16px);
   padding: rem(14px) rem(24px);
+  line-height: 1.25;
+  min-height: rem(48px);
+  min-width: rem(120px);
 }
 
 .vtmn-btn_size--large {
   font-size: rem(20px);
   padding: rem(20px) rem(40px);
+  line-height: 1.2;
+  min-height: rem(64px);
+  min-width: rem(84px);
 }
 
 .vtmn-btn_size--stretched {
   width: 100%;
+}
+
+/* Button icons  */
+.vtmn-btn-icon {
+  height: rem(16px);
+  width: rem(16px);
+  margin-right: rem(12px);
+  vertical-align: middle;
+}
+.vtmn-btn-icon--without-label {
+  height: rem(20px);
+  width: rem(20px);
+  margin-right: 0;
+}
+
+.vtmn-btn_size--small .vtmn-btn-icon {
+  height: rem(14px);
+  width: rem(14px);
+  margin-right: rem(8px);
+}
+.vtmn-btn_size--small .vtmn-btn-icon--without-label {
+  height: rem(16px);
+  width: rem(16px);
+  margin-right: 0;
+}
+
+.vtmn-btn_size--medium .vtmn-btn-icon {
+  height: rem(16px);
+  width: rem(16px);
+  margin-right: rem(12px);
+}
+.vtmn-btn_size--medium .vtmn-btn-icon .vtmn-btn-icon--without-label {
+  height: rem(20px);
+  width: rem(20px);
+  margin-right: 0;
+}
+
+.vtmn-btn_size--large .vtmn-btn-icon {
+  height: rem(20px);
+  width: rem(20px);
+  margin-right: rem(16px);
+}
+.vtmn-btn_size--large .vtmn-btn-icon--without-label {
+  height: rem(24px);
+  width: rem(24px);
+  margin-right: 0;
 }
