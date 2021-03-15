@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-utilities",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Decathlon Design System - Vitamin specific CSS styles for utilities",
   "homepage": "https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/utilities",
   "repository": {
@@ -16,7 +16,7 @@
     "build": "postcss src/index.css -o dist/index.css && cross-env FONT_SIZE_BASE=10 postcss src/index.css -o dist/index-base10.css"
   },
   "devDependencies": {
-    "@vtmn/css-design-tokens": "^0.0.14",
+    "@vtmn/css-design-tokens": "^0.1.0",
     "@vtmn/css-postcss-config": "^0.0.0",
     "@vtmn/css-tailwind-config": "^0.0.0"
   },
