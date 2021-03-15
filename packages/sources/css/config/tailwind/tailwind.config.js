@@ -10,6 +10,8 @@ module.exports = {
       'large-desktop': { min: '1800px' },
     },
     colors: {
+      brand: 'var(--vtmn-color_brand)',
+      'brand-pro': 'var(--vtmn-color_brand-pro)',
       'brand-digital': {
         'light-1': 'var(--vtmn-color_brand-digital-light-1)',
         'light-2': 'var(--vtmn-color_brand-digital-light-2)',
