@@ -22,7 +22,6 @@
   display: inline-block;
   font-family: var(--vtmn-typo_font-family--condensed);
   font-weight: var(--vtmn-typo_font-weight--bold);
-  overflow: hidden;
   position: relative;
   text-align: center;
   color: var(--vtmn-color_white);
