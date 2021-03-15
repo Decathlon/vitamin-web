@@ -72,6 +72,7 @@
     "@octokit/core": "^3.2.4",
     "@storybook/storybook-deployer": "^2.8.7",
     "babel-loader": "^8.2.2",
+    "cross-env": "^7.0.2",
     "husky": "^5.0.9",
     "is-ci": "^3.0.0",
     "lerna": "^4.0.0",

@@ -70,7 +70,6 @@
     "@vue/eslint-config-prettier": "6.0.0",
     "@vue/eslint-config-typescript": "7.0.0",
     "babel-eslint": "^10.1.0",
-    "cross-env": "^7.0.2",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.20.0",
     "eslint-plugin-prettier": "3.3.1",
