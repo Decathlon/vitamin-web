@@ -27,7 +27,6 @@
   text-align: center;
   color: var(--vtmn-color_white);
   text-decoration: none;
-  letter-spacing: 0.0375rem;
 }
 
 .vtmn-btn:hover {
