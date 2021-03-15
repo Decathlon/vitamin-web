@@ -3,71 +3,72 @@
 @import '@vtmn/css-design-tokens/src/spacings';
 @import '@vtmn/css-design-tokens/src/typography';
 
-@layer components {
-  .vtmn-text-input,
-  .vtmn-text-input::before,
-  .vtmn-text-input::after {
-    box-sizing: border-box;
-  }
+.vtmn-text-input,
+.vtmn-text-input::before,
+.vtmn-text-input::after {
+  box-sizing: border-box;
+}
 
-  .vtmn-text-input {
-    box-shadow: inset 0 0 0 1px var(--vtmn-color_grey-dark-3);
+.vtmn-text-input {
+  box-shadow: inset 0 0 0 rem(1px) var(--vtmn-color_grey-light-1);
+  background-color: var(--vtmn-color_white);
+  border-radius: rem(4px);
+  display: block;
+  font-family: var(--vtmn-typo_font-family);
+  font-weight: var(--vtmn-typo_font-weight--regular);
+  font-size: rem(16px);
+  line-height: 1;
+  margin-bottom: rem(4px);
+  margin-top: rem(8px);
+  padding: rem(12px);
+  color: var(--vtmn-color_black);
+}
 
-    @apply vtmn-block
-      vtmn-font-normal
-      vtmn-text-base
-      vtmn-text-black
-      vtmn-p-3
-      vtmn-mt-2
-      vtmn-mb-1
-      vtmn-leading-none
-      vtmn-bg-white
-      vtmn-rounded;
-  }
+textarea.vtmn-text-input {
+  min-height: rem(40px);
+}
 
-  textarea.vtmn-text-input {
-    min-height: 2.5rem;
-  }
+.vtmn-text-input:not([disabled]):hover {
+  box-shadow: inset 0 0 0 rem(1px) var(--vtmn-color_brand-digital);
+}
 
-  .vtmn-text-input:not([disabled]):hover {
-    box-shadow: inset 0 0 0 1px var(--vtmn-color_brand-digital);
-  }
+.vtmn-text-input:not([disabled]):focus,
+.vtmn-text-input:not([disabled]):active {
+  outline: none;
+  box-shadow: inset 0 0 0 rem(2px) var(--vtmn-color_brand-digital-light-1);
+}
 
-  .vtmn-text-input:not([disabled]):focus,
-  .vtmn-text-input:not([disabled]):active {
-    outline: none;
-    box-shadow: inset 0 0 0 0.125rem var(--vtmn-color_brand-digital-light-1);
-  }
+.vtmn-text-input::placeholder {
+  color: var(--vtmn-color_grey);
+}
 
-  .vtmn-text-input::placeholder {
-    @apply vtmn-text-grey;
-  }
+.vtmn-text-input[disabled] {
+  cursor: not-allowed;
+  background-color: var(--vtmn-color_grey-light-3);
+  border-color: var(--vtmn-color_grey-light-1);
+  color: var(--vtmn-color_grey-light-1);
+}
 
-  .vtmn-text-input[disabled] {
-    cursor: not-allowed;
+.vtmn-text-input[disabled]::placeholder {
+  color: var(--vtmn-color_grey-light-1);
+}
 
-    @apply vtmn-border-grey-light-1
-      vtmn-bg-grey-light-3
-      vtmn-text-grey-light-1;
-  }
+.vtmn-text-input_label {
+  color: var(--vtmn-color_black);
+  font-size: rem(16px);
+  line-height: 1;
+}
 
-  .vtmn-text-input[disabled]::placeholder {
-    @apply vtmn-text-grey-light-1;
-  }
+.vtmn-text-input_helper-text {
+  color: var(--vtmn-color_grey);
+  font-size: rem(14px);
+  line-height: 1;
+}
 
-  .vtmn-text-input_label {
-    @apply vtmn-text-black vtmn-text-base;
-  }
+.vtmn-text-input--valid {
+  box-shadow: inset 0 0 0 rem(2px) var(--vtmn-color_success);
+}
 
-  .vtmn-text-input_helper-text {
-    @apply vtmn-text-grey vtmn-text-sm;
-  }
-
-  .vtmn-text-input--valid {
-    box-shadow: inset 0 0 0 0.125rem var(--vtmn-color_success);
-  }
-
-  .vtmn-text-input--error {
-    box-shadow: inset 0 0 0 0.125rem var(--vtmn-color_danger);
-  }
+.vtmn-text-input--error {
+  box-shadow: inset 0 0 0 rem(2px) var(--vtmn-color_danger);
 }

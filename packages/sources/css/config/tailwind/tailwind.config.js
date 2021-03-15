@@ -10,6 +10,8 @@ module.exports = {
       'large-desktop': { min: '1800px' },
     },
     colors: {
+      brand: 'var(--vtmn-color_brand)',
+      'brand-pro': 'var(--vtmn-color_brand-pro)',
       'brand-digital': {
         'light-1': 'var(--vtmn-color_brand-digital-light-1)',
         'light-2': 'var(--vtmn-color_brand-digital-light-2)',
@@ -81,12 +83,6 @@ module.exports = {
       ],
       display: ['Roboto Condensed', 'system-ui', '-apple-system', 'sans-serif'],
       body: ['Roboto', 'system-ui', '-apple-system', 'sans-serif'],
-    },
-    fontSize: {
-      sm: ['0.875rem', '1.25'],
-      base: ['1rem', '1.5'],
-      lg: ['1.25rem', '1.75'],
-      xl: ['1.5rem', '2'],
     },
     extend: {},
   },

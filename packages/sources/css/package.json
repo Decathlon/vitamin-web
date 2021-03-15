@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css",
-  "version": "0.1.12",
+  "version": "0.2.0",
   "description": "Decathlon Design System - Vitamin global CSS styles library",
   "keywords": [
     "design-system",
@@ -23,7 +23,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "postcss src/index.css -o dist/index.css && lerna run --parallel --scope \"@vtmn/css-*\" build",
+    "build": "postcss src/index.css -o dist/index.css && cross-env FONT_SIZE_BASE=10 postcss src/index.css -o dist/index-base10.css && lerna run --parallel --scope \"@vtmn/css-*\" build",
     "start": "chokidar \"src/**\" --initial -i \"**/dist/**\" -c \"yarn build\""
   },
   "devDependencies": {

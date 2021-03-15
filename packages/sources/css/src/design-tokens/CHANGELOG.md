@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@0.0.14...@vtmn/css-design-tokens@0.1.0) (2021-03-15)
+
+
+### Features
+
+* **@vtmn/css-design-tokens:** generate .less output ([068f2e4](https://github.com/Decathlon/vitamin-web/commit/068f2e4e932a3185c90b3de96ccd2a613a70e8de))
+* **@vtmn/css-design-tokens:** generate .scss output ([af50104](https://github.com/Decathlon/vitamin-web/commit/af50104d9891f23b0493c35b3a2bc91c9dac698d))
+
+
+
+
+
 ## [0.0.14](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@0.0.13...@vtmn/css-design-tokens@0.0.14) (2021-03-09)
 
 **Note:** Version bump only for package @vtmn/css-design-tokens

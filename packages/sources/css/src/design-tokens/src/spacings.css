@@ -4,14 +4,14 @@
  */
 :root {
   --vtmn-spacing_0: 0;
-  --vtmn-spacing_1: 0.25rem;
-  --vtmn-spacing_2: 0.5rem;
-  --vtmn-spacing_3: 0.75rem;
-  --vtmn-spacing_4: 1rem;
-  --vtmn-spacing_5: 1.5rem;
-  --vtmn-spacing_6: 2rem;
-  --vtmn-spacing_7: 2.5rem;
-  --vtmn-spacing_8: 3rem;
-  --vtmn-spacing_9: 3.5rem;
-  --vtmn-spacing_10: 4rem;
+  --vtmn-spacing_1: rem(4px);
+  --vtmn-spacing_2: rem(8px);
+  --vtmn-spacing_3: rem(12px);
+  --vtmn-spacing_4: rem(16px);
+  --vtmn-spacing_5: rem(24px);
+  --vtmn-spacing_6: rem(32px);
+  --vtmn-spacing_7: rem(40px);
+  --vtmn-spacing_8: rem(48px);
+  --vtmn-spacing_9: rem(56px);
+  --vtmn-spacing_10: rem(64px);
 }
