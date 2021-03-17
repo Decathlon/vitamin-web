@@ -40,7 +40,7 @@ Reference Icons SVGs like normal images with the `<img>` element.
 
 ```html
 <img
-  src="/node_modules/@vtmn/icons/vitamix/dist/svg/home-fill.svg"
+  src="/node_modules/@vtmn/icons/dist/vitamix/svg/home-fill.svg"
   alt="Home icon filled"
   width="32"
   height="32"
@@ -54,14 +54,14 @@ Use the SVG sprite to insert any icon through the `<use>` element. Use the iconâ
 ```html
 <svg width="32" height="32" fill="#001018">
   <use
-    xlink:href="/node_modules/@vtmn/icons/vitamix/dist/sprite/vitamix.svg#home-fill"
+    xlink:href="/node_modules/@vtmn/icons/dist/vitamix/sprite/vitamix.svg#home-fill"
   />
 </svg>
 ```
 
 ### Icon font
 
-Icon fonts with classes for every icon are also included. Include the icon web fonts in your page via CSS (`./node_modules/@vtmn/icons/dist/vitamix.css`), then reference the class names as needed (e.g. `vtmx-home-fill` for the `home-fill` icon) in your HTML.
+Icon fonts with classes for every icon are also included. Include the icon web fonts in your page via CSS (`./node_modules/@vtmn/icons/dist/vitamix/font/vitamix.css`), then reference the class names as needed (e.g. `vtmx-home-fill` for the `home-fill` icon) in your HTML.
 
 Use `font-size` and `color` to change the icon appearance.
 
