@@ -94,6 +94,10 @@ To know all the use cases and their associated code, [check out the showcase her
 
 For more information about how this component is designed and how to use it in your application, [check out the decathlon.design docs](https://www.decathlon.design/726f8c765/p/31121d-text-input)
 
+## Base 10 support
+
+If your project uses the mathematical trick of basing the value of `1rem` equals `10px`, there is also an `index-base10` output within the `dist` folder of this package.
+
 ## Changelog
 
 If you want to know the different changes between versions of this package, [look at the changelog here](https://github.com/Decathlon/vitamin-web/blob/main/packages/sources/css/src/components/text-input/CHANGELOG.md).

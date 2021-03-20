@@ -103,6 +103,10 @@ To make the development experience as productive as possible, Tailwind generates
 
 When building for production, you should always use [PurgeCSS](https://purgecss.com) to tree-shake unused styles and optimize your final build size.
 
+## Base 10 support
+
+If your project uses the mathematical trick of basing the value of `1rem` equals `10px`, there is also an `index-base10` output within the `dist` folder of this package.
+
 ## Playground
 
 If you want to test Vitamin Tailwind CSS utility classes, [see our live playground here](https://play.tailwindcss.com/BeTM6rz97A).

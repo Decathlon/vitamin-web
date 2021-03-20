@@ -89,6 +89,10 @@ For example:
 
 You can see the different CSS utility classes [here](https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/utilities/src).
 
+## Base 10 support
+
+If your project uses the mathematical trick of basing the value of `1rem` equals `10px`, there is also an `index-base10` output within the `dist` folder of this package.
+
 ## Changelog
 
 If you want to know the different changes between versions of this package, [look at the changelog here](https://github.com/Decathlon/vitamin-web/blob/main/packages/sources/css/src/utilities/CHANGELOG.md).
