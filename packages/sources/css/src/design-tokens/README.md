@@ -89,6 +89,10 @@ For example:
 
 You can see the different CSS Custom Properties [here](https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/design-tokens/src).
 
+## Scss & Less outputs
+
+In addition to CSS Custom Properties output this package also provides design tokens as scss or less variables. See `.scss` and `.less` files within the `dist` folder.
+
 ## Base 10 support
 
 If your project uses the mathematical trick of basing the value of `1rem` equals `10px`, there is also an `index-base10` output within the `dist` folder of this package.
