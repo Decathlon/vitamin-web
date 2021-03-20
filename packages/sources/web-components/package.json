@@ -29,7 +29,8 @@
   "scripts": {
     "build": "stencil build --docs --prod --ci",
     "generate": "stencil generate",
-    "start": "chokidar \"src/**\" --initial --ignore \"(dist|loader|www)/**\" -c \"stencil build --docs\""
+    "prestart": "yarn build",
+    "start": "chokidar \"src/**\" -i \"(dist|loader|www)/**\" -c \"stencil build --docs\""
   },
   "dependencies": {
     "@stencil/core": "^2.0.1"

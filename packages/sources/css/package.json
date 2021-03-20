@@ -24,7 +24,8 @@
   ],
   "scripts": {
     "build": "postcss src/index.css -o dist/index.css && cross-env FONT_SIZE_BASE=10 postcss src/index.css -o dist/index-base10.css && lerna run --parallel --scope \"@vtmn/css-*\" build",
-    "start": "chokidar \"src/**\" --initial -i \"**/dist/**\" -c \"yarn build\""
+    "prestart": "yarn build",
+    "start": "chokidar \"src/**\" -i \"**/dist/**\" -c \"yarn build\""
   },
   "devDependencies": {
     "@vtmn/css-postcss-config": "^0.0.0",

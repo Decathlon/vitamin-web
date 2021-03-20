@@ -6,6 +6,7 @@
 **/CHANGELOG.md
 **/.*
 **/*.d.ts
+**/*.hbs
 **/storybook-static
 packages/sources/web-components/src/**/README.md
 packages/sources/web-components/src/**/readme.md

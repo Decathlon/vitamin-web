@@ -25,7 +25,8 @@
   "scripts": {
     "build": "rollup -c",
     "lint": "eslint --color",
-    "start": "chokidar 'src/**' --initial --ignore \"**/dist/**\" -c \"yarn build\""
+    "prestart": "yarn build",
+    "start": "chokidar \"src/**\" -i \"**/dist/**\" -c \"yarn build\""
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^11.2.0",

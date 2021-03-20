@@ -5,6 +5,10 @@ module.exports = {
   assetTypes: ['ts', 'css', 'json', 'html'],
   name: 'vitamix',
   prefix: 'vtmx',
+  normalize: true,
+  templates: {
+    css: './src/templates/css.hbs'
+  },
   formatOptions: {
     json: {
       indent: 2
