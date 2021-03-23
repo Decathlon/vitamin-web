@@ -4,10 +4,11 @@ module.exports = {
   darkMode: false, // or 'media' or 'class',
   theme: {
     screens: {
-      tablet: { min: '600px', max: '899px' },
-      'small-desktop': { min: '900px', max: '1199px' },
-      'medium-desktop': { min: '1200px', max: '1799px' },
-      'large-desktop': { min: '1800px' },
+      mb: { max: '599px' },
+      tb: { min: '600px', max: '899px' },
+      sd: { min: '900px', max: '1199px' },
+      md: { min: '1200px', max: '1799px' },
+      ld: { min: '1800px' },
     },
     colors: {
       'brand-digital': {
