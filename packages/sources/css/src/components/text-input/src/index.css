@@ -6,7 +6,7 @@
 .vtmn-text-input_label,
 .vtmn-text-input,
 .vtmn-text-input_helper-text {
-  font-family: 'Roboto Condensed', 'system-ui', '-apple-system', sans-serif;
+  font-family: var(--vtmn-typo_font-family);
 }
 
 .vtmn-text-input,
