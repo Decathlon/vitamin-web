@@ -32,18 +32,6 @@
   export let helperText;
 
   /**
-   * Whether success should be shown or not
-   * @type {boolean}
-   */
-  export let showValid = true;
-
-  /**
-   * Whether error should be shown or not
-   * @type {boolean}
-   */
-  export let showError = true;
-
-  /**
    * Whether input is successful or not
    * @type {boolean}
    */
@@ -54,9 +42,6 @@
    * @type {boolean}
    */
   export let error = false;
-
-  $: valid = showValid && valid;
-  $: error = showError && error;
 </script>
 
 {#if labelText}
@@ -64,8 +49,8 @@
 {/if}
 <input
   class="vtmn-text-input"
-  class:vtmn-text-input--valid={!!valid}
-  class:vtmn-text-input--error={!!error}
+  class:vtmn-text-input--valid={valid}
+  class:vtmn-text-input--error={error}
   type="text"
   {id}
   {disabled}
