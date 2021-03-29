@@ -3,6 +3,12 @@
 @import '@vtmn/css-design-tokens/src/spacings';
 @import '@vtmn/css-design-tokens/src/typography';
 
+.vtmn-text-input_label,
+.vtmn-text-input,
+.vtmn-text-input_helper-text {
+  font-family: var(--vtmn-typo_font-family);
+}
+
 .vtmn-text-input,
 .vtmn-text-input::before,
 .vtmn-text-input::after {
