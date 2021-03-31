@@ -4,7 +4,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class',
   theme: {
     screens: {
-      mb: { max: '599px' },
+      mobile: { max: '599px' },
       tablet: { min: '600px', max: '899px' },
       'small-desktop': { min: '900px', max: '1199px' },
       'medium-desktop': { min: '1200px', max: '1799px' },
