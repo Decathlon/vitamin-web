@@ -1,5 +1,6 @@
 import * as React from 'react';
 import '@vtmn/css-button';
+import { VtmnButtonVariant, VtmnButtonSize } from './types';
 
 export interface VtmnButtonProps
   extends React.ComponentPropsWithoutRef<'button'> {
@@ -7,18 +8,12 @@ export interface VtmnButtonProps
    * The variant of the button.
    * @default 'primary'
    */
-  variant?:
-    | 'primary'
-    | 'primary-reversed'
-    | 'secondary'
-    | 'secondary-reversed'
-    | 'ghost'
-    | 'conversion';
+  variant?: VtmnButtonVariant;
   /**
    * The size of the button.
    * @default 'medium'
    */
-  size?: 'small' | 'medium' | 'large' | 'stretched';
+  size?: VtmnButtonSize;
   /**
    * The value of the optional icon.
    * @default undefined

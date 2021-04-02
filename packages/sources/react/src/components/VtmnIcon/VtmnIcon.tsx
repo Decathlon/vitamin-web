@@ -1,24 +1,18 @@
 import * as React from 'react';
 import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
+import { VtmnIconColor, VtmnIconSize } from './types';
 
 export interface VtmnIconProps extends React.HTMLAttributes<HTMLElement> {
   /**
    * The size of the icon in pixels.
    * @default 24
    **/
-  size?: 16 | 24 | 32 | 64;
+  size?: VtmnIconSize;
   /**
    * The color of the icon.
    * @default 'black'
    **/
-  color?:
-    | 'black'
-    | 'brand-digital'
-    | 'white'
-    | 'success'
-    | 'info'
-    | 'warning'
-    | 'danger';
+  color?: VtmnIconColor;
   /**
    * The value of the icon.
    **/
