@@ -5,6 +5,7 @@
 @import 'tailwindcss/screens';
 
 /* Design tokens */
+@import './design-tokens/src/breakpoints';
 @import './design-tokens/src/colors';
 @import './design-tokens/src/spacings';
 @import './design-tokens/src/typography';
