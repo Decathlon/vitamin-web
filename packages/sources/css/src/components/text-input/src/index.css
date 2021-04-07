@@ -5,7 +5,8 @@
 
 .vtmn-text-input_label,
 .vtmn-text-input,
-.vtmn-text-input_helper-text {
+.vtmn-text-input_helper-text,
+.vtmn-text-input_error-text {
   font-family: var(--vtmn-typo_font-family);
 }
 
@@ -26,7 +27,7 @@
   font-size: rem(16px);
   line-height: 1;
   margin-bottom: rem(4px);
-  margin-top: rem(8px);
+  margin-top: rem(4px);
   padding: rem(12px);
   color: var(--vtmn-color_black);
 }
@@ -68,6 +69,12 @@ textarea.vtmn-text-input {
 
 .vtmn-text-input_helper-text {
   color: var(--vtmn-color_grey);
+  font-size: rem(14px);
+  line-height: 1;
+}
+
+.vtmn-text-input_error-text {
+  color: var(--vtmn-color_black);
   font-size: rem(14px);
   line-height: 1;
 }
