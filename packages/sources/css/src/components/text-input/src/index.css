@@ -25,7 +25,7 @@
   font-size: rem(16px);
   line-height: 1;
   margin-bottom: rem(4px);
-  margin-top: rem(8px);
+  margin-top: rem(4px);
   padding: rem(12px);
   color: var(--vtmn-color_black);
 }
