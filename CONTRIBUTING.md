@@ -86,11 +86,11 @@ For your information, here are the showcases' URLs:
 | Showcase       | URL                                     |
 | -------------- | --------------------------------------- |
 | CSS            | [localhost:6006](http://localhost:6006) |
-| Icons          | [localhost:6010](http://localhost:6007) |
-| Web Components | [localhost:6007](http://localhost:6008) |
-| React          | [localhost:6008](http://localhost:6009) |
-| Svelte         | [localhost:6009](http://localhost:6010) |
-| Vue            | [localhost:6010](http://localhost:6011) |
+| Icons          | [localhost:6007](http://localhost:6007) |
+| Web Components | [localhost:6008](http://localhost:6008) |
+| React          | [localhost:6009](http://localhost:6009) |
+| Svelte         | [localhost:6010](http://localhost:6010) |
+| Vue            | [localhost:6011](http://localhost:6011) |
 
 ## Code of conduct
 
