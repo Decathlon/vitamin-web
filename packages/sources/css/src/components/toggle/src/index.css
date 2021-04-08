@@ -3,9 +3,8 @@
 @import '@vtmn/css-design-tokens/src/spacings';
 @import '@vtmn/css-design-tokens/src/typography';
 
-/* The switch - the box around the slider */
-.vtmn-toggle_switch,
-.vtmn-toggle_switch--disabled {
+/* The default switch - the box around the slider */
+.vtmn-toggle_switch {
   position: relative;
   display: inline-block;
   width: rem(56px);
@@ -19,7 +18,7 @@
   height: 0;
 }
 
-/* The slider */
+/* The default slider */
 .vtmn-toggle_slider {
   position: absolute;
   cursor: pointer;
@@ -32,7 +31,7 @@
   border-radius: rem(34px);
 }
 
-.vtmn-toggle_slider--disabled {
+.vtmn-toggle[disabled] + .vtmn-toggle_slider {
   position: absolute;
   cursor: not-allowed;
   top: 0;
@@ -45,7 +44,7 @@
 }
 
 .vtmn-toggle_slider::before,
-.vtmn-toggle_slider--disabled::before {
+.vtmn-toggle[disabled] + .vtmn-toggle_slider::before {
   position: absolute;
   content: '';
   height: rem(24px);
@@ -57,11 +56,19 @@
   border-radius: 50%;
 }
 
-.vtmn-toggle_slider:hover::before {
+.vtmn-toggle:not([disabled]) + .vtmn-toggle_slider:hover::before {
+  box-shadow: 0 0 0 rem(12px) rgba(0, 16, 24, 0.05);
+}
+
+.vtmn-toggle:not([disabled]) + .vtmn-toggle_slider:active::before {
+  box-shadow: 0 0 0 rem(12px) rgba(0, 16, 24, 0.15);
+}
+
+.vtmn-toggle:checked:not([disabled]) + .vtmn-toggle_slider:hover::before {
   box-shadow: 0 0 0 rem(12px) rgba(0, 125, 188, 0.05);
 }
 
-.vtmn-toggle_slider:active::before {
+.vtmn-toggle:checked:not([disabled]) + .vtmn-toggle_slider:active::before {
   box-shadow: 0 0 0 rem(12px) rgba(0, 125, 188, 0.15);
 }
 
