@@ -1,5 +1,4 @@
-import _selected from './examples/selected.html';
-import _unselected from './examples/unselected.html';
+import _default from './examples/default.html';
 import _disabled from './examples/disabled.html';
 
 export default {
@@ -17,20 +16,11 @@ export default {
   },
 };
 
-export const Selected = () => _selected;
-Selected.parameters = {
+export const Default = () => _default;
+Default.parameters = {
   docs: {
     source: {
-      code: _selected,
-    },
-  },
-};
-
-export const Unselected = () => _unselected;
-Unselected.parameters = {
-  docs: {
-    source: {
-      code: _unselected,
+      code: _default,
     },
   },
 };
