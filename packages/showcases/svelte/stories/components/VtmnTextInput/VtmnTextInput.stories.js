@@ -11,10 +11,10 @@ export default {
       defaultValue: 'Label',
     },
     placeholder: {
-      defaultValue: 'Placeholder',
+      defaultValue: 'Placeholder Text',
     },
     helperText: {
-      defaultValue: 'Helper text',
+      defaultValue: 'Helper text goes here',
     },
   },
   parameters: {
