@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@storybook/addon-a11y": "6.2.5",
-    "@storybook/addon-essentials": "6.2.5",
+    "@storybook/addon-essentials": "6.2.7",
     "@storybook/addon-postcss": "2.0.0",
     "@storybook/vue3": "6.2.5",
     "@vtmn/showcase-core": "^0.0.0",
