@@ -9,6 +9,7 @@
     "build-storybook:docs": "build-storybook --docs",
     "start": "start-storybook -p 6009"
   },
+  "dependencies": {},
   "devDependencies": {
     "@storybook/addon-a11y": "^6.1.20",
     "@storybook/addon-essentials": "^6.1.20",
