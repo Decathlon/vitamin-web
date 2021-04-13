@@ -1,7 +1,4 @@
-import React from 'react';
-
 import { VtmnTextInput } from '@vtmn/react';
-
 import { Story, Meta } from '@storybook/react';
 import { VtmnTextInputProps } from '@vtmn/react/src/components/VtmnTextInput';
 

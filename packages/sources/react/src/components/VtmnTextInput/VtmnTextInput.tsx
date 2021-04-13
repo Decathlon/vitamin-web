@@ -1,4 +1,5 @@
 import * as React from 'react';
+import clsx from 'clsx';
 
 import '@vtmn/css-text-input';
 
@@ -45,8 +46,12 @@ export const VtmnTextInput = ({
       <label className="vtmn-text-input_label" htmlFor={id}>
         {label}
         <input
-          className={`vtmn-text-input ${valid && 'vtmn-text-input--valid'}
-          ${error && 'vtmn-text-input--error'} ${className ? className : ''}`}
+          className={clsx(
+            'vtmn-text-input',
+            className,
+            { 'vtmn-text-input--valid': valid && !disabled },
+            { 'vtmn-text-input--error': error && !disabled },
+          )}
           id={id}
           type="text"
           placeholder={placeholder}
