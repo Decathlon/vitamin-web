@@ -3,17 +3,16 @@
 > Decathlon Design System - Vitamin specific CSS styles for toggle component
 
 <a href="https://www.decathlon.design/726f8c765/p/99628d-toggle">
-<img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" />
+  <img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" />
 </a>
-<a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-toggle--selected">
-<img src="https://img.shields.io/badge/storybook-css-d891bc?style=flat&logo=storybook" alt="storybook" />
+<a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-toggle--default">
+  <img src="https://img.shields.io/badge/storybook-css-d891bc?style=flat&logo=storybook" alt="storybook" />
 </a>
 <a href="https://www.npmjs.com/package/@vtmn/css-toggle">
-<img src="https://img.shields.io/npm/v/@vtmn/css-toggle?style=flat&logo=npm" alt="npm version" />
+  <img src="https://img.shields.io/npm/v/@vtmn/css-toggle?style=flat&logo=npm" alt="npm version" />
 </a>
-<!-- Change npm img and link-->
 <a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css">
-<img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status" alt="Quality Gate Status" />
+  <img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status" alt="Quality Gate Status" />
 </a>
 
 ## Install package
@@ -86,7 +85,7 @@ Otherwise include it in your HTML file:
 
 ## Development
 
-To know all the use cases and their associated code, [check out the showcase here](https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/index.html?path=/docs/components-toggle--selected).
+To know all the use cases and their associated code, [check out the showcase here](https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-toggle--default).
 
 ## Documentation
 

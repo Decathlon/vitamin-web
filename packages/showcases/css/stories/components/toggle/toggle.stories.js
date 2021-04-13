@@ -1,5 +1,6 @@
 import _default from './examples/default.html';
-import _disabled from './examples/disabled.html';
+import small from './examples/small.html';
+import medium from './examples/medium.html';
 
 export default {
   title: 'Components / Toggle ',
@@ -11,7 +12,7 @@ export default {
     design: {
       type: 'figma',
       url:
-        'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vtmn---Web?node-id=287%3A0',
+        'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=612%3A1192',
     },
   },
 };
@@ -25,11 +26,20 @@ Default.parameters = {
   },
 };
 
-export const Disabled = () => _disabled;
-Disabled.parameters = {
+export const Small = () => small;
+Small.parameters = {
   docs: {
     source: {
-      code: _disabled,
+      code: small,
+    },
+  },
+};
+
+export const Medium = () => medium;
+Medium.parameters = {
+  docs: {
+    source: {
+      code: medium,
     },
   },
 };
