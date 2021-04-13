@@ -16,4 +16,19 @@ module.exports = {
     'storybook-addon-outline',
     'storybook-design-token',
   ],
+  webpackFinal: (config) => {
+    config.module.rules = [
+      // remove the old html-loader, with default value to true for minimize parameter
+      ...config.module.rules.filter(({ test }) => test.toString() !== /\.html$/.toString()),
+      // add new html-loader with right configuration
+      {
+        test: /\.html$/,
+        loader: 'html-loader',
+        options: {
+          minimize: false
+        }
+      }
+    ];
+    return config;
+  },
 };

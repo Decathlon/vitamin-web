@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.2.6...@vtmn/css@0.3.0) (2021-04-07)
+
+
+### Bug Fixes
+
+* **vtmn-text-input:** reduce text-input margin-top to match figma data ([ffc296d](https://github.com/Decathlon/vitamin-web/commit/ffc296d3821c84a84d393ee6c6f9ef15ae9bae47))
+
+
+### Features
+
+* **vtmn-text-input:** add line break ([df6b3ad](https://github.com/Decathlon/vitamin-web/commit/df6b3ad08b8aea09a9424a56d78f5eca00f7638a))
+* **vtmn-text-input:** error message color changed to black and edit the default text ([2a58fc5](https://github.com/Decathlon/vitamin-web/commit/2a58fc51ba26c447893de0248682c7f1260800bf))
+
+
+
+
+
 ## [0.2.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.2.5...@vtmn/css@0.2.6) (2021-04-02)
 
 **Note:** Version bump only for package @vtmn/css
