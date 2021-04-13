@@ -1,5 +1,5 @@
 import disabled from './examples/disabled.html';
-import selected from './examples/selected.html';
+import _selected from './examples/selected.html';
 import unselected from './examples/unselected.html';
 
 export default {
@@ -17,11 +17,11 @@ export default {
   },
 };
 
-export const Selected = () => selected;
+export const Selected = () => _selected;
 Selected.parameters = {
   docs: {
     source: {
-      code: selected,
+      code: _selected,
     },
   },
 };

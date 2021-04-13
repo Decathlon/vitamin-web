@@ -16,3 +16,4 @@
 /* Components */
 @import './components/button/src';
 @import './components/text-input/src';
+@import './components/radio-button/src';
