@@ -50,7 +50,7 @@ export const VtmnTextInput = ({
           id={id}
           type="text"
           placeholder={placeholder}
-          disabled
+          disabled={disabled}
           {...props}
         />
       </label>

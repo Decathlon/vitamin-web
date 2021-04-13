@@ -15,6 +15,12 @@ export default {
       defaultValue: 'vtmn-input',
       control: { type: 'text' },
     },
+    className: {
+      type: { name: 'string', required: true },
+      description: 'The id of the input.',
+      defaultValue: 'vtmn-input',
+      control: { type: 'text' },
+    },
     label: {
       type: { name: 'string', required: true },
       description: 'The label of the input.',
@@ -32,6 +38,24 @@ export default {
       description: 'The helper text message of the input.',
       defaultValue: 'Helper text goes here',
       control: { type: 'text' },
+    },
+    disabled: {
+      type: { name: 'boolean', required: false },
+      description: 'The disabled state of the input.',
+      defaultValue: false,
+      control: { type: 'boolean' },
+    },
+    valid: {
+      type: { name: 'boolean', required: false },
+      description: 'The validity state of the input.',
+      defaultValue: false,
+      control: { type: 'boolean' },
+    },
+    error: {
+      type: { name: 'boolean', required: false },
+      description: 'The error state of the input.',
+      defaultValue: false,
+      control: { type: 'boolean' },
     },
   },
   parameters: {
