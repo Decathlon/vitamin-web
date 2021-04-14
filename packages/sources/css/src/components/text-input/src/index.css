@@ -52,13 +52,7 @@ textarea.vtmn-text-input {
 
 .vtmn-text-input[disabled] {
   cursor: not-allowed;
-  background-color: var(--vtmn-color_grey-light-3);
-  border-color: var(--vtmn-color_grey-light-1);
-  color: var(--vtmn-color_grey-light-1);
-}
-
-.vtmn-text-input[disabled]::placeholder {
-  color: var(--vtmn-color_grey-light-1);
+  opacity: 0.38;
 }
 
 .vtmn-text-input_label {
