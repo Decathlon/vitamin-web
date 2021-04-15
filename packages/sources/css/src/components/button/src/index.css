@@ -20,7 +20,7 @@
   border-width: 0;
   box-sizing: border-box;
   display: inline-block;
-  font-family: var(--vtmn-typo_font-family--condensed);
+  font-family: var(--vtmn-typo_font-family);
   font-weight: var(--vtmn-typo_font-weight--bold);
   position: relative;
   text-align: center;
