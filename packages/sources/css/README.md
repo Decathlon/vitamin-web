@@ -33,12 +33,14 @@ Shown below is a sample link markup used to load from a CDN:
 ```html
 <link
   rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+  href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap"
 />
-<link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap"
-/>
+```
+
+You can also do it via CSS Import:
+
+```css
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap");
 ```
 
 Otherwise, you can install them with `typeface`:
