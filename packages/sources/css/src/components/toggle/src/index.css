@@ -93,10 +93,10 @@
 }
 
 .vtmn-toggle_switch span::after {
-  content: url("data:image/svg+xml;charset=utf-8, <svg width='32' height='32' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='m6.667 10.115 6.128-6.129.943.943L6.667 12 2.424 7.757l.943-.942 3.3 3.3z' fill='%23007dbc'/></svg>");
+  content: url("data:image/svg+xml;charset=utf-8, <svg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M5.80351 10.8L14.2875 2.31484L12.5907 0.618038L5.80351 7.40644L2.40871 4.01164L0.711914 5.70844L5.80351 10.8Z' fill='%23007dbc'/></svg>");
   position: absolute;
-  top: rem(5px);
-  left: rem(5px);
+  top: rem(10px);
+  left: rem(9px);
   transition: box-shadow 0.2s, transform 0.2s, background-color 0.2s;
   opacity: 0;
 }
@@ -136,9 +136,9 @@
 }
 
 .vtmn-toggle_size--small span::after {
-  content: url("data:image/svg+xml;charset=utf-8, <svg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='m6.667 10.115 6.128-6.129.943.943L6.667 12 2.424 7.757l.943-.942 3.3 3.3z' fill='%23007dbc'/></svg>");
-  top: rem(4px);
-  left: rem(4px);
+  content: url("data:image/svg+xml;charset=utf-8, <svg width='18' height='18' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M5.80351 10.8L14.2875 2.31484L12.5907 0.618038L5.80351 7.40644L2.40871 4.01164L0.711914 5.70844L5.80351 10.8Z' fill='%23007dbc'/></svg>");
+  top: rem(8px);
+  left: rem(7px);
 }
 
 .vtmn-toggle_size--small input[type='checkbox']:checked + span::before {
@@ -197,9 +197,9 @@
 }
 
 .vtmn-toggle_size--medium span::after {
-  content: url("data:image/svg+xml;charset=utf-8, <svg width='32' height='32' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='m6.667 10.115 6.128-6.129.943.943L6.667 12 2.424 7.757l.943-.942 3.3 3.3z' fill='%23007dbc'/></svg>");
-  top: rem(5px);
-  left: rem(5px);
+  content: url("data:image/svg+xml;charset=utf-8, <svg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M5.80351 10.8L14.2875 2.31484L12.5907 0.618038L5.80351 7.40644L2.40871 4.01164L0.711914 5.70844L5.80351 10.8Z' fill='%23007dbc'/></svg>");
+  top: rem(10px);
+  left: rem(9px);
 }
 
 .vtmn-toggle_size--medium input[type='checkbox']:checked + span::before {
