@@ -61,7 +61,7 @@ textarea.vtmn-text-input {
   line-height: 1;
 }
 
-label + div {
+.vtmn-text-input_label + .vtmn-text-input_container {
   display: flex;
 }
 
