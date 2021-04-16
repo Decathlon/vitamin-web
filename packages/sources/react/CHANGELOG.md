@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.1.28...@vtmn/react@0.2.0) (2021-04-16)
+
+
+### Features
+
+* add all properties in story ([3c365ca](https://github.com/Decathlon/vitamin-web/commit/3c365ca66440b32b9fb8753b922416cfb6a9c436))
+* add is not disabled check on valid and error ([37a0c66](https://github.com/Decathlon/vitamin-web/commit/37a0c6620d03ca17898075ab0b756ba1c6828b84))
+* add multiline (textarea) ([4fae448](https://github.com/Decathlon/vitamin-web/commit/4fae448978e9932c6ad9c092543f7854463e2354))
+* **text-input:** initialize React ([673014d](https://github.com/Decathlon/vitamin-web/commit/673014d99af74bbbaf87a45ca12be651cf136bb8))
+
+
+
+
+
 ## [0.1.28](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.1.27...@vtmn/react@0.1.28) (2021-04-16)
 
 **Note:** Version bump only for package @vtmn/react
