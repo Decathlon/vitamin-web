@@ -19,7 +19,7 @@ export default {
       control: { type: 'text' },
     },
     placeholder: {
-      type: { name: 'string', required: true },
+      type: { name: 'string', required: false },
       description: 'The placeholder of the input.',
       defaultValue: 'Placeholder Text',
       control: { type: 'text' },
