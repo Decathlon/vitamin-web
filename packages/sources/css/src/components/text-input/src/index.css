@@ -70,7 +70,7 @@ textarea.vtmn-text-input {
 .vtmn-text-input + span {
   position: absolute;
   right: rem(11px);
-  bottom: rem(17px);
+  bottom: rem(16px);
   font-size: var(--vtmn-typo_title-5-font-size);
 }
 
@@ -109,4 +109,7 @@ textarea.vtmn-text-input {
 
 .vtmn-text-input--valid + span {
   color: var(--vtmn-color_success);
+  right: rem(9px);
+  bottom: rem(14px);
+  font-size: var(--vtmn-typo_title-4-font-size);
 }
