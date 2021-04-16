@@ -36,6 +36,12 @@ export default {
       defaultValue: 'Helper text goes here',
       control: { type: 'text' },
     },
+    multiline: {
+      type: { name: 'boolean', required: false },
+      description: 'If the component is a textarea or an input.',
+      defaultValue: false,
+      control: { type: 'boolean' },
+    },
     disabled: {
       type: { name: 'boolean', required: false },
       description: 'The disabled state of the input.',

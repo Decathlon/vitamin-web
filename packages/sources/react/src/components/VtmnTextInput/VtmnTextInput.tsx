@@ -20,7 +20,8 @@ export interface VtmnTextInputProps
   /**
    * Helper text to help the user
    * @type {string}
-   * @default not displayed by default
+   * @default
+   *  Undefined and therefore not displayed by default
    */
   helperText?: string;
 
@@ -29,6 +30,13 @@ export interface VtmnTextInputProps
    * @type {string}
    */
   placeholder?: string;
+
+  /**
+   * Is a TextArea
+   * @type {boolean}
+   * @defaultValue false (Input)
+   */
+  multiline?: boolean;
 
   /**
    * Whether input is successful or not
@@ -52,6 +60,7 @@ export const VtmnTextInput = ({
   helperText,
   id,
   labelText,
+  multiline = false,
   placeholder,
   valid = false,
   ...props
@@ -60,6 +69,22 @@ export const VtmnTextInput = ({
     <>
       <label className="vtmn-text-input_label" htmlFor={id}>
         {labelText}
+      </label>
+
+      {multiline ? (
+        <textarea
+          className={clsx(
+            'vtmn-text-input',
+            className,
+            { 'vtmn-text-input--valid': valid && !disabled },
+            { 'vtmn-text-input--error': error && !disabled },
+          )}
+          id={id}
+          placeholder={placeholder}
+          disabled={disabled}
+          {...props}
+        />
+      ) : (
         <input
           className={clsx(
             'vtmn-text-input',
@@ -73,7 +98,8 @@ export const VtmnTextInput = ({
           disabled={disabled}
           {...props}
         />
-      </label>
+      )}
+
       {helperText && (
         <p className="vtmn-text-input_helper-text">{helperText}</p>
       )}
