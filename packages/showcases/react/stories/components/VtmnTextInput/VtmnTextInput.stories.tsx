@@ -1,6 +1,6 @@
 import { VtmnTextInput } from '@vtmn/react';
-import { Story, Meta } from '@storybook/react';
-import { VtmnTextInputProps } from '@vtmn/react/src/components/VtmnTextInput';
+
+import { Meta, Story } from '@storybook/react';
 
 export default {
   title: 'Components/VtmnTextInput',
@@ -12,14 +12,20 @@ export default {
       defaultValue: 'vtmn-input',
       control: { type: 'text' },
     },
-    label: {
+    className: {
+      type: { name: 'string', required: true },
+      description: 'The id of the input.',
+      defaultValue: 'vtmn-input',
+      control: { type: 'text' },
+    },
+    labelText: {
       type: { name: 'string', required: true },
       description: 'The label of the input.',
       defaultValue: 'Label',
       control: { type: 'text' },
     },
     placeholder: {
-      type: { name: 'string', required: false },
+      type: { name: 'string', required: true },
       description: 'The placeholder of the input.',
       defaultValue: 'Placeholder Text',
       control: { type: 'text' },
@@ -62,8 +68,6 @@ export default {
   },
 } as Meta;
 
-const Template: Story<VtmnTextInputProps> = (args) => (
-  <VtmnTextInput {...args} />
-);
+const Template: Story = (args) => <VtmnTextInput {...args} />;
 
 export const Overview = Template.bind({});

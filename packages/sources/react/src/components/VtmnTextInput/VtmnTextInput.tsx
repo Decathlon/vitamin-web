@@ -6,26 +6,41 @@ import '@vtmn/css-text-input';
 export interface VtmnTextInputProps
   extends React.ComponentPropsWithoutRef<'input'> {
   /**
+   * ID of the input
+   * @type {string}
+   */
+  id: string;
+
+  /**
    * Label text linked to the input
    * @type {string}
    */
-  label: string;
+  labelText: string;
 
   /**
    * Helper text to help the user
    * @type {string}
+   * @default not displayed by default
    */
   helperText?: string;
 
   /**
+   * Placeholder
+   * @type {string}
+   */
+  placeholder?: string;
+
+  /**
    * Whether input is successful or not
    * @type {boolean}
+   * @defaultValue false
    */
   valid?: boolean;
 
   /**
    * Whether input is in error or not
    * @type {boolean}
+   * @defaultValue false
    */
   error?: boolean;
 }
@@ -36,7 +51,7 @@ export const VtmnTextInput = ({
   error = false,
   helperText,
   id,
-  label,
+  labelText,
   placeholder,
   valid = false,
   ...props
@@ -44,7 +59,7 @@ export const VtmnTextInput = ({
   return (
     <>
       <label className="vtmn-text-input_label" htmlFor={id}>
-        {label}
+        {labelText}
         <input
           className={clsx(
             'vtmn-text-input',

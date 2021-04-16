@@ -2,8 +2,7 @@ import React from 'react';
 
 import { VtmnButton } from '@vtmn/react';
 
-import { Story, Meta } from '@storybook/react';
-import { VtmnButtonProps } from '@vtmn/react/src/components/VtmnButton';
+import { Meta, Story } from '@storybook/react';
 
 export default {
   title: 'Components/VtmnButton',
@@ -56,6 +55,6 @@ export default {
   },
 } as Meta;
 
-const Template: Story<VtmnButtonProps> = (args) => <VtmnButton {...args} />;
+const Template: Story = (args) => <VtmnButton {...args} />;
 
 export const Overview = Template.bind({});
