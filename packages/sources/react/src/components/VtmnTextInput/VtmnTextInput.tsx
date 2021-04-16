@@ -20,8 +20,7 @@ export interface VtmnTextInputProps
   /**
    * Helper text to help the user
    * @type {string}
-   * @default
-   *  Undefined and therefore not displayed by default
+   * @defaultValue undefined and therefore not displayed by default
    */
   helperText?: string;
 
