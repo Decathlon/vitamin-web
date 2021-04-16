@@ -71,7 +71,7 @@ textarea.vtmn-text-input {
   position: absolute;
   right: rem(11px);
   bottom: rem(17px);
-  font-size: var(--vtmn-typo_text-1-font-size);
+  font-size: var(--vtmn-typo_title-5-font-size);
 }
 
 .vtmn-text-input[disabled] + span {
