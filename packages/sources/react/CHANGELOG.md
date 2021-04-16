@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.28](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.1.27...@vtmn/react@0.1.28) (2021-04-16)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
 ## [0.1.27](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.1.26...@vtmn/react@0.1.27) (2021-04-12)
 
 **Note:** Version bump only for package @vtmn/react
