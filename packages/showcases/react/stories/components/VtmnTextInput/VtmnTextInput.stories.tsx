@@ -12,12 +12,6 @@ export default {
       defaultValue: 'vtmn-input',
       control: { type: 'text' },
     },
-    className: {
-      type: { name: 'string', required: true },
-      description: 'The id of the input.',
-      defaultValue: 'vtmn-input',
-      control: { type: 'text' },
-    },
     label: {
       type: { name: 'string', required: true },
       description: 'The label of the input.',
