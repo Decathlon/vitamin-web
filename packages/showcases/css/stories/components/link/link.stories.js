@@ -1,7 +1,7 @@
 import _default from './examples/default.html';
-import _small from './examples/small.html';
-import _medium from './examples/medium.html';
-import _large from './examples/large.html';
+import small from './examples/small.html';
+import medium from './examples/medium.html';
+import large from './examples/large.html';
 
 export default {
   title: 'Components / Link ',
@@ -27,29 +27,29 @@ Default.parameters = {
   },
 };
 
-export const Small = () => _small;
-Default.parameters = {
+export const Small = () => small;
+Small.parameters = {
   docs: {
     source: {
-      code: _small,
+      code: small,
     },
   },
 };
 
-export const Medium = () => _medium;
-Default.parameters = {
+export const Medium = () => medium;
+Medium.parameters = {
   docs: {
     source: {
-      code: _medium,
+      code: medium,
     },
   },
 };
 
-export const Large = () => _large;
-Default.parameters = {
+export const Large = () => large;
+Large.parameters = {
   docs: {
     source: {
-      code: _large,
+      code: large,
     },
   },
 };
