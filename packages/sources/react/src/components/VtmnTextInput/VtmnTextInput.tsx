@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import '@vtmn/css-text-input';
 
 export interface VtmnTextInputProps
-  extends React.InputHTMLAttributes<HTMLInputElement> {
+  extends React.ComponentPropsWithoutRef<'input'> {
   /**
    * Label text linked to the input
    * @type {string}
