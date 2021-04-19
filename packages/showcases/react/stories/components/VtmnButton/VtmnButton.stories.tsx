@@ -2,7 +2,7 @@ import React from 'react';
 
 import { VtmnButton } from '@vtmn/react';
 
-import { Story, Meta } from '@storybook/react';
+import { Meta, Story } from '@storybook/react';
 
 export default {
   title: 'Components/VtmnButton',

@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/web-components",
-  "version": "0.3.9",
+  "version": "0.3.11",
   "description": "Decathlon Design System - Vitamin Web Components library",
   "keywords": [
     "design-system",
@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@stencil/postcss": "^2.0.0",
-    "@vtmn/css-button": "^0.1.14",
+    "@vtmn/css-button": "^0.1.16",
     "chokidar-cli": "^2.1.0",
     "postcss-import": "^14.0.0"
   },

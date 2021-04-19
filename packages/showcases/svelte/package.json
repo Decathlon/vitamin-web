@@ -10,16 +10,16 @@
     "start": "start-storybook -p 6010"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^6.1.20",
-    "@storybook/addon-essentials": "^6.1.20",
-    "@storybook/svelte": "^6.1.20",
+    "@storybook/addon-a11y": "^6.2.8",
+    "@storybook/addon-essentials": "^6.2.8",
+    "@storybook/svelte": "^6.2.8",
     "@vtmn/showcase-core": "^0.0.0",
     "@vtmn/svelte": "*",
     "storybook-addon-designs": "^5.4.3",
     "storybook-addon-outline": "^1.2.0",
     "storybook-mobile": "^0.1.29",
     "svelte": "^3.31.2",
-    "svelte-loader": "^3.0.0"
+    "svelte-loader": "^3.1.1"
   },
   "licenses": [
     {
