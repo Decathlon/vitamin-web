@@ -1,0 +1,41 @@
+{
+  "name": "@vtmn/css-toggle",
+  "version": "0.1.1",
+  "description": "Decathlon Design System - Vitamin specific CSS styles for toggle component",
+  "keywords": [
+    "design-system",
+    "ui-kit",
+    "libraries",
+    "css",
+    "vitamin"
+  ],
+  "bugs": {
+    "url": "https://github.com/Decathlon/vitamin-web/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Decathlon/vitamin-web.git"
+  },
+  "license": "Apache-2.0",
+  "main": "dist/index.css",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "postcss src/index.css -o dist/index.css && cross-env FONT_SIZE_BASE=10 postcss src/index.css -o dist/index-base10.css"
+  },
+  "devDependencies": {
+    "@vtmn/css-design-tokens": "^0.1.4",
+    "@vtmn/css-postcss-config": "^0.0.0",
+    "@vtmn/css-tailwind-config": "^0.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+:root {
+  --vtmn-breakpoint_mobile-max: '599px';
+  --vtmn-breakpoint_tablet-min: '600px';
+  --vtmn-breakpoint_tablet-max: '899px';
+  --vtmn-breakpoint_small-desktop-min: '900px';
+  --vtmn-breakpoint_small-desktop-max: '1199px';
+  --vtmn-breakpoint_medium-desktop-min: '1200px';
+  --vtmn-breakpoint_medium-desktop-max: '1799px';
+  --vtmn-breakpoint_large-desktop-min: '1800px';
+}
