@@ -40,7 +40,7 @@ Shown below is a sample link markup used to load from a CDN:
 You can also do it via CSS Import:
 
 ```css
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap');
 ```
 
 Otherwise, you can install them with `typeface`:
