@@ -32,13 +32,13 @@
     "@rollup/plugin-node-resolve": "^11.2.0",
     "@vtmn/css-button": "^0.1.15",
     "chokidar-cli": "^2.1.0",
-    "eslint": "7.23.0",
+    "eslint": "7.24.0",
     "eslint-plugin-svelte3": "3.1.2",
     "rollup": "^2.40.0",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-svelte": "^7.1.0",
     "svelte": "3.37.0",
-    "svelte-preprocess": "4.7.0"
+    "svelte-preprocess": "4.7.1"
   },
   "publishConfig": {
     "access": "public"
