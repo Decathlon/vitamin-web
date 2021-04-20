@@ -67,10 +67,15 @@ textarea.vtmn-text-input {
   display: inline-block;
 }
 
-.vtmn-text-input + span {
+.vtmn-text-input + span[class^='vtmx-'],
+.vtmn-text-input + svg,
+.vtmn-text-input + img {
   position: absolute;
   right: rem(11px);
   bottom: rem(16px);
+}
+
+.vtmn-text-input + span[class^='vtmx-'] {
   font-size: var(--vtmn-typo_title-5-font-size);
 }
 
