@@ -15,7 +15,7 @@ export default {
     labelText: {
       type: { name: 'string', required: true },
       description: 'The label of the toggle.',
-      defaultValue: 'Your choice',
+      defaultValue: 'Your label',
       control: { type: 'text' },
     },
     disabled: {
@@ -27,7 +27,7 @@ export default {
     size: {
       type: { name: 'string', required: false },
       description: 'The size of the toggle.',
-      defaultValue: 'primary',
+      defaultValue: 'medium',
       control: {
         type: 'select',
         options: ['small', 'medium'],

@@ -37,7 +37,7 @@ export const VtmnToggle = ({
       className={clsx('vtmn-toggle', `vtmn-toggle_size--${size}`, className)}>
       <div className="vtmn-toggle_switch">
         <input type="checkbox" id={id} {...props} />
-        <span aria-hidden="true" />
+        <span aria-hidden="true"></span>
       </div>
       <label htmlFor={id}>{labelText}</label>
     </div>
