@@ -13,7 +13,7 @@ export default {
       control: { type: 'text' },
     },
     target: {
-      type: { name: 'string', required: true },
+      type: { name: 'string', required: false },
       description: 'The target of the link.',
       defaultValue: '_blank',
       control: { type: 'text' },
