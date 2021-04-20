@@ -71,6 +71,7 @@ jobs:
             'packages/sources/css/src/components/button',
             'packages/sources/css/src/components/text-input',
             'packages/sources/css/src/components/toggle',
+            'packages/sources/css/src/components/link',
             'packages/sources/css/src/design-tokens',
             'packages/sources/css/src/utilities',
             'packages/sources/icons',

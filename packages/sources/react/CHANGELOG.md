@@ -3,6 +3,48 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.2.3...@vtmn/react@0.3.0) (2021-04-20)
+
+
+### Bug Fixes
+
+* add className in component wrapper ([8bf5be9](https://github.com/Decathlon/vitamin-web/commit/8bf5be9ec67861eec576e1a35f84981602599510))
+* span tag and default values for storybook ([1a8f17a](https://github.com/Decathlon/vitamin-web/commit/1a8f17a766f78ea1eb064d3dddace2e8a919bb5a))
+
+
+### Features
+
+* **link:** react implementation :tada: ([e65cd41](https://github.com/Decathlon/vitamin-web/commit/e65cd41cef903f85034faf1df74f371dc14eb2ea))
+* **toggle:** react implementation :tada: ([7d57a08](https://github.com/Decathlon/vitamin-web/commit/7d57a0873cc970b59aa68cc3a9dacf1762e2f9ae))
+
+
+
+
+
+## [0.2.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.2.2...@vtmn/react@0.2.3) (2021-04-19)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.2.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.2.1...@vtmn/react@0.2.2) (2021-04-19)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.2.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.2.0...@vtmn/react@0.2.1) (2021-04-16)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
 # [0.2.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.1.28...@vtmn/react@0.2.0) (2021-04-16)
 
 
