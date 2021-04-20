@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-design-tokens",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Decathlon Design System - Vitamin specific CSS styles for design tokens",
   "homepage": "https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/design-tokens",
   "repository": {

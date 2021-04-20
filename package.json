@@ -37,8 +37,6 @@
     "deploy-storybook": "storybook-to-ghpages --packages packages -o docs --monorepo-index-generator packages/showcases/core/src/index-generator.js",
     "postinstall": "is-ci || husky install",
     "pack": "lerna run pack",
-    "pre-commit": "lint-staged",
-    "commit-msg": "commitlint --edit $1",
     "prepare": "yarn prettier:fix && yarn stylelint:fix && yarn build && yarn test",
     "prettier": "prettier .",
     "prettier:fix": "prettier . --write",
@@ -78,6 +76,7 @@
     "lerna": "^4.0.0",
     "lint-staged": "^10.5.3",
     "prettier": "^2.2.1",
+    "shx": "^0.3.3",
     "sort-package-json": "^1.48.0"
   },
   "engines": {
