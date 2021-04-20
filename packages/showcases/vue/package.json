@@ -10,7 +10,7 @@
     "start": "start-storybook -p 6011"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
+    "core-js": "^3.10.2",
     "vue": "^3.0.0"
   },
   "devDependencies": {
