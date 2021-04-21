@@ -71,7 +71,7 @@ import 'typeface-roboto-condensed';
 
 ## Install icons (optional)
 
-If you need to use React components with icons displayed (via `VtmnIcon` component or props for icons in some components), you will need to install `@vtmn/icons` package.
+If you need to display icons in text input, you will need to install `@vtmn/icons` package.
 
 ```sh
 # with npm
