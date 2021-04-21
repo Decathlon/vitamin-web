@@ -15,6 +15,7 @@
 
 /* Components */
 @import './components/button/src';
+@import './components/checkbox/src';
+@import './components/link/src';
 @import './components/text-input/src';
 @import './components/toggle/src';
-@import './components/link/src';
