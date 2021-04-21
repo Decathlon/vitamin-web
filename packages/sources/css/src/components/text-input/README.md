@@ -81,7 +81,7 @@ npm i -S @vtmn/icons
 yarn add @vtmn/icons
 ```
 
-Then, import the icon font in the entry point of your React application:
+Then follow instructions in [@vtmn/icons](https://www.npmjs.com/package/@vtmn/icons) : 
 
 ```javascript
 import '@vtmn/icons/dist/vitamix/font/vitamix.css';
