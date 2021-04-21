@@ -5,10 +5,10 @@
 
 ## Properties
 
-| Property     | Attribute    | Description                    | Type                                                                                                | Default     |
-| ---------    | ---------    | --------------------------     | --------------------------------------------------------------------------------------------------- | ----------- |
-| `size`       | `size`       | The size of the button.        | `"large" \| "medium" \| "small"`                                                                    | `'medium'`  |
-| `standalone` | `standalone` | The link is standalone or not. | `"true" \| "false"`                                                                                 | `'false'`   |
+| Property       | Attribute       | Description              | Type                             | Default    |
+| -------------- | --------------- | ------------------------ | -------------------------------- | ---------- |
+| `isStandalone` | `is-standalone` | The variant of the link. | `boolean`                        | `false`    |
+| `size`         | `size`          | The size of the link.    | `"large" \| "medium" \| "small"` | `'medium'` |
 
 
 ----------------------------------------------

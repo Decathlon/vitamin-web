@@ -23,6 +23,19 @@ export namespace Components {
     | 'ghost'
     | 'conversion';
     }
+    interface VtmnLink {
+        /**
+          * The variant of the link.
+          * @type {boolean}
+          * @default false
+         */
+        "isStandalone": boolean;
+        /**
+          * The size of the link.
+          * @default 'medium'
+         */
+        "size": 'small' | 'medium' | 'large';
+    }
 }
 declare global {
     interface HTMLVtmnButtonElement extends Components.VtmnButton, HTMLStencilElement {
@@ -31,8 +44,15 @@ declare global {
         prototype: HTMLVtmnButtonElement;
         new (): HTMLVtmnButtonElement;
     };
+    interface HTMLVtmnLinkElement extends Components.VtmnLink, HTMLStencilElement {
+    }
+    var HTMLVtmnLinkElement: {
+        prototype: HTMLVtmnLinkElement;
+        new (): HTMLVtmnLinkElement;
+    };
     interface HTMLElementTagNameMap {
         "vtmn-button": HTMLVtmnButtonElement;
+        "vtmn-link": HTMLVtmnLinkElement;
     }
 }
 declare namespace LocalJSX {
@@ -53,8 +73,22 @@ declare namespace LocalJSX {
     | 'ghost'
     | 'conversion';
     }
+    interface VtmnLink {
+        /**
+          * The variant of the link.
+          * @type {boolean}
+          * @default false
+         */
+        "isStandalone"?: boolean;
+        /**
+          * The size of the link.
+          * @default 'medium'
+         */
+        "size"?: 'small' | 'medium' | 'large';
+    }
     interface IntrinsicElements {
         "vtmn-button": VtmnButton;
+        "vtmn-link": VtmnLink;
     }
 }
 export { LocalJSX as JSX };
@@ -62,6 +96,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "vtmn-button": LocalJSX.VtmnButton & JSXBase.HTMLAttributes<HTMLVtmnButtonElement>;
+            "vtmn-link": LocalJSX.VtmnLink & JSXBase.HTMLAttributes<HTMLVtmnLinkElement>;
         }
     }
 }
