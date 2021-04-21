@@ -1,6 +1,6 @@
 import disabled from './examples/disabled.html';
-import _selected from './examples/selected.html';
-import unselected from './examples/unselected.html';
+import selected from './examples/selected.html';
+import _default from './examples/_default.html';
 
 export default {
   title: 'Components / Radio Button',
@@ -17,11 +17,11 @@ export default {
   },
 };
 
-export const Selected = () => _selected;
+export const Selected = () => selected;
 Selected.parameters = {
   docs: {
     source: {
-      code: _selected,
+      code: selected,
     },
   },
 };
@@ -35,11 +35,11 @@ Disabled.parameters = {
   },
 };
 
-export const Unselected = () => unselected;
-Unselected.parameters = {
+export const Default = () => _default;
+Default.parameters = {
   docs: {
     source: {
-      code: unslected,
+      code: _default,
     },
   },
 };
