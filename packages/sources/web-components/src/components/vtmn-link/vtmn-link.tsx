@@ -18,6 +18,18 @@ export class VtmnLink {
    */
   @Prop() standalone: boolean = false;
 
+  /**
+   * The hypertext link
+   * @default '#'
+   */
+  @Prop() href: string = '#';
+
+  /**
+   * The target of the link
+   * @default '_blank'
+   */
+  @Prop() target: string = '_target';
+
   render() {
     return (
       <a
@@ -26,9 +38,9 @@ export class VtmnLink {
           `vtmn-link_size--${this.size} ` +
           (this.standalone ? 'vtmn-link--standalone' : '')
         }
-        href="#"
-        target="_blank">
-        Click here
+        href={this.href}
+        target={this.target}>
+        Link
       </a>
     );
   }

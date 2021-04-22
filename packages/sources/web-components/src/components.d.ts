@@ -25,6 +25,11 @@ export namespace Components {
     }
     interface VtmnLink {
         /**
+          * The hypertext link
+          * @default '#'
+         */
+        "href": string;
+        /**
           * The size of the link.
           * @default 'medium'
          */
@@ -34,6 +39,11 @@ export namespace Components {
           * @default false
          */
         "standalone": boolean;
+        /**
+          * The target of the link
+          * @default '_blank'
+         */
+        "target": string;
     }
 }
 declare global {
@@ -74,6 +84,11 @@ declare namespace LocalJSX {
     }
     interface VtmnLink {
         /**
+          * The hypertext link
+          * @default '#'
+         */
+        "href"?: string;
+        /**
           * The size of the link.
           * @default 'medium'
          */
@@ -83,6 +98,11 @@ declare namespace LocalJSX {
           * @default false
          */
         "standalone"?: boolean;
+        /**
+          * The target of the link
+          * @default '_blank'
+         */
+        "target"?: string;
     }
     interface IntrinsicElements {
         "vtmn-button": VtmnButton;

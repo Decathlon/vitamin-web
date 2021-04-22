@@ -5,6 +5,22 @@ export default {
   title: 'Components/Link',
   component: 'vtmn-link',
   argTypes: {
+    href: {
+      type: { name: 'string', required: true },
+      description: 'The hypertext link of the link.',
+      defaultValue: '#',
+      control: {
+        type: 'text',
+      },
+    },
+    target: {
+      type: { name: 'string', required: false },
+      description: 'The target of the link.',
+      defaultValue: '_blank',
+      control: {
+        type: 'text',
+      },
+    },
     standalone: {
       type: { name: 'boolean', required: false },
       description: 'Standalone link or not',
@@ -25,7 +41,7 @@ export default {
     },
   },
   parameters: {
-    backgrounds: { default: 'grey' },
+    backgrounds: { default: 'white' },
     actions: {
       handles: ['mouseenter', 'click', 'focusin', 'focusout'],
     },
