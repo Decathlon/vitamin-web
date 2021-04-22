@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/vue",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "description": "Decathlon Design System - Vitamin Svelte library",
   "keywords": [
     "design-system",
@@ -47,7 +47,7 @@
     "root": true
   },
   "dependencies": {
-    "core-js": "^3.6.5",
+    "core-js": "^3.10.2",
     "vue": "^3.0.0"
   },
   "devDependencies": {

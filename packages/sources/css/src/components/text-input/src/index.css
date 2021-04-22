@@ -28,7 +28,7 @@
   line-height: 1;
   margin-bottom: rem(4px);
   margin-top: rem(4px);
-  padding: rem(12px);
+  padding: rem(12px) rem(36px) rem(12px) rem(12px);
   color: var(--vtmn-color_black);
 }
 
@@ -50,21 +50,33 @@ textarea.vtmn-text-input {
   color: var(--vtmn-color_grey);
 }
 
-.vtmn-text-input[disabled] {
-  cursor: not-allowed;
-  background-color: var(--vtmn-color_grey-light-3);
-  border-color: var(--vtmn-color_grey-light-1);
-  color: var(--vtmn-color_grey-light-1);
-}
-
-.vtmn-text-input[disabled]::placeholder {
-  color: var(--vtmn-color_grey-light-1);
-}
-
 .vtmn-text-input_label {
   color: var(--vtmn-color_black);
   font-size: rem(16px);
   line-height: 1;
+  display: block;
+}
+
+.vtmn-text-input_container {
+  position: relative;
+  display: inline-block;
+}
+
+.vtmn-text-input + span[class^='vtmx-'],
+.vtmn-text-input + svg,
+.vtmn-text-input + img {
+  position: absolute;
+  font-size: var(--vtmn-typo_title-5-font-size);
+  right: rem(11px);
+  bottom: rem(16px);
+}
+
+.vtmn-text-input[disabled],
+.vtmn-text-input[disabled] + span[class^='vtmx-'],
+.vtmn-text-input[disabled] + svg,
+.vtmn-text-input[disabled] + img {
+  opacity: 0.38;
+  cursor: not-allowed;
 }
 
 .vtmn-text-input_helper-text {
@@ -73,16 +85,36 @@ textarea.vtmn-text-input {
   line-height: 1;
 }
 
-.vtmn-text-input_error-text {
+.vtmn-text-input_helper-text--error {
   color: var(--vtmn-color_black);
-  font-size: rem(14px);
-  line-height: 1;
+  margin-top: rem(-2px);
+}
+
+.vtmn-text-input_helper-text--error::before {
+  position: relative;
+  content: url("data:image/svg+xml;charset=utf-8, <svg width='14' height='14' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M1.333 8a6.667 6.667 0 1 0 13.333 0A6.667 6.667 0 0 0 1.333 8zm12 0A5.333 5.333 0 1 1 2.667 8a5.333 5.333 0 0 1 10.666 0zm-4.666 2v1.333H7.333V10h1.334zm0-1.333v-4H7.333v4h1.334z' fill='%23E32C26'/></svg>");
+  top: rem(2px);
+  margin-right: rem(5px);
 }
 
 .vtmn-text-input--valid {
   box-shadow: inset 0 0 0 rem(2px) var(--vtmn-color_success);
 }
 
+.vtmn-text-input--valid + span[class^='vtmx-'],
+.vtmn-text-input--valid + svg,
+.vtmn-text-input--valid + img {
+  color: var(--vtmn-color_success);
+  fill: var(--vtmn-color_success);
+}
+
 .vtmn-text-input--error {
   box-shadow: inset 0 0 0 rem(2px) var(--vtmn-color_danger);
+}
+
+.vtmn-text-input--error + span[class^='vtmx-'],
+.vtmn-text-input--error + svg,
+.vtmn-text-input--error + img {
+  color: var(--vtmn-color_danger);
+  fill: var(--vtmn-color_danger);
 }

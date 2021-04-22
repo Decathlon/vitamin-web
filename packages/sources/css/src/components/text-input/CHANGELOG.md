@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-text-input@0.2.1...@vtmn/css-text-input@0.3.0) (2021-04-21)
+
+
+### Bug Fixes
+
+* **@vtmn/cs-text-input:** larger check icon for valid input ([04f8422](https://github.com/Decathlon/vitamin-web/commit/04f842299c04aa9b1184ad67765a051cffac9eb7))
+* **@vtmn/css-text-input:** adjust icon font size ([7d2abf0](https://github.com/Decathlon/vitamin-web/commit/7d2abf06929193856c88cd51833bda9ddebd69a1))
+* **vtmn-text-input:** icon in html to allow to change it + when disabled component turns opaque ([e0f2c6e](https://github.com/Decathlon/vitamin-web/commit/e0f2c6ec1d5e8630f3e0b061c6d1ce7055da5e6d))
+* **vtmn-text-input:** when disabled, change opacity instead of colors manually ([9a054c7](https://github.com/Decathlon/vitamin-web/commit/9a054c744e90300752ce6cedf21f8cd64eea9df3))
+
+
+### Features
+
+* **@vtmn/css-text-input:** add three different ways to embed icon ([c7169c3](https://github.com/Decathlon/vitamin-web/commit/c7169c33b30a406193911bee670e877b65f1efb0))
+* **vtmn-text-input:** add checked icon for valid text-input ([caf90d1](https://github.com/Decathlon/vitamin-web/commit/caf90d1e91cb1f5827eb5fdfd57248b47e20632f))
+* **vtmn-text-input:** add icon for default, disabled, error text inputs ([dd719db](https://github.com/Decathlon/vitamin-web/commit/dd719db186c5e2a2670a25bbf13787f0d3039860))
+* **vtmn-text-input:** add icon warning on error text input ([13e1f41](https://github.com/Decathlon/vitamin-web/commit/13e1f41ae9df85a941f684c4da378d157a508cd9))
+
+
+
+
+
 ## [0.2.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-text-input@0.2.0...@vtmn/css-text-input@0.2.1) (2021-04-19)
 
 **Note:** Version bump only for package @vtmn/css-text-input
