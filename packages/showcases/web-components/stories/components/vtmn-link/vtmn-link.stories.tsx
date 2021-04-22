@@ -5,7 +5,7 @@ export default {
   title: 'Components/Link',
   component: 'vtmn-link',
   argTypes: {
-    isStandalone: {
+    standalone: {
       type: { name: 'boolean', required: false },
       description: 'Standalone link or not',
       defaultValue: false,
