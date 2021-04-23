@@ -23,6 +23,13 @@ export namespace Components {
     | 'ghost'
     | 'conversion';
     }
+    interface VtmnTextInput {
+        /**
+          * The size of the text-input.
+          * @default 'medium'
+         */
+        "size": 'small' | 'medium' | 'large' | 'stretched';
+    }
 }
 declare global {
     interface HTMLVtmnButtonElement extends Components.VtmnButton, HTMLStencilElement {
@@ -31,8 +38,15 @@ declare global {
         prototype: HTMLVtmnButtonElement;
         new (): HTMLVtmnButtonElement;
     };
+    interface HTMLVtmnTextInputElement extends Components.VtmnTextInput, HTMLStencilElement {
+    }
+    var HTMLVtmnTextInputElement: {
+        prototype: HTMLVtmnTextInputElement;
+        new (): HTMLVtmnTextInputElement;
+    };
     interface HTMLElementTagNameMap {
         "vtmn-button": HTMLVtmnButtonElement;
+        "vtmn-text-input": HTMLVtmnTextInputElement;
     }
 }
 declare namespace LocalJSX {
@@ -53,8 +67,16 @@ declare namespace LocalJSX {
     | 'ghost'
     | 'conversion';
     }
+    interface VtmnTextInput {
+        /**
+          * The size of the text-input.
+          * @default 'medium'
+         */
+        "size"?: 'small' | 'medium' | 'large' | 'stretched';
+    }
     interface IntrinsicElements {
         "vtmn-button": VtmnButton;
+        "vtmn-text-input": VtmnTextInput;
     }
 }
 export { LocalJSX as JSX };
@@ -62,6 +84,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "vtmn-button": LocalJSX.VtmnButton & JSXBase.HTMLAttributes<HTMLVtmnButtonElement>;
+            "vtmn-text-input": LocalJSX.VtmnTextInput & JSXBase.HTMLAttributes<HTMLVtmnTextInputElement>;
         }
     }
 }
