@@ -23,6 +23,13 @@ export namespace Components {
     | 'ghost'
     | 'conversion';
     }
+    interface VtmnToggle {
+        /**
+          * The size of the toggle.
+          * @default 'medium'
+         */
+        "size": 'small' | 'medium';
+    }
 }
 declare global {
     interface HTMLVtmnButtonElement extends Components.VtmnButton, HTMLStencilElement {
@@ -31,8 +38,15 @@ declare global {
         prototype: HTMLVtmnButtonElement;
         new (): HTMLVtmnButtonElement;
     };
+    interface HTMLVtmnToggleElement extends Components.VtmnToggle, HTMLStencilElement {
+    }
+    var HTMLVtmnToggleElement: {
+        prototype: HTMLVtmnToggleElement;
+        new (): HTMLVtmnToggleElement;
+    };
     interface HTMLElementTagNameMap {
         "vtmn-button": HTMLVtmnButtonElement;
+        "vtmn-toggle": HTMLVtmnToggleElement;
     }
 }
 declare namespace LocalJSX {
@@ -53,8 +67,16 @@ declare namespace LocalJSX {
     | 'ghost'
     | 'conversion';
     }
+    interface VtmnToggle {
+        /**
+          * The size of the toggle.
+          * @default 'medium'
+         */
+        "size"?: 'small' | 'medium';
+    }
     interface IntrinsicElements {
         "vtmn-button": VtmnButton;
+        "vtmn-toggle": VtmnToggle;
     }
 }
 export { LocalJSX as JSX };
@@ -62,6 +84,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "vtmn-button": LocalJSX.VtmnButton & JSXBase.HTMLAttributes<HTMLVtmnButtonElement>;
+            "vtmn-toggle": LocalJSX.VtmnToggle & JSXBase.HTMLAttributes<HTMLVtmnToggleElement>;
         }
     }
 }
