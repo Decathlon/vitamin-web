@@ -7,6 +7,18 @@ import { Component, Prop, h } from '@stencil/core';
 })
 export class VtmnButton {
   /**
+   * The checked state of the toggle.
+   * @default false
+   */
+  @Prop() checked: boolean = false;
+
+  /**
+   * The disabled state of the toggle.
+   * @default false
+   */
+  @Prop() disabled: boolean = false;
+
+  /**
    * The size of the toggle.
    * @default 'medium'
    */
@@ -14,9 +26,14 @@ export class VtmnButton {
 
   render() {
     return (
-      <div class="vtmn-toggle vtmn-toggle_size--medium">
+      <div class={'vtmn-toggle ' + `vtmn-toggle_size--${this.size}`}>
         <div class="vtmn-toggle_switch">
-          <input type="checkbox" id="your-choice" />
+          <input
+            type="checkbox"
+            id="your-choice"
+            checked={this.checked}
+            disabled={this.disabled}
+          />
           <span aria-hidden="true"></span>
         </div>
         <label htmlFor="your-choice">

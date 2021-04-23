@@ -14,6 +14,24 @@ export default {
         options: ['small', 'medium'],
       },
     },
+    checked: {
+      type: { name: 'boolean', required: false },
+      description: 'The checked state of the toggle',
+      defaultValue: false,
+      control: {
+        type: 'select',
+        options: [true, false],
+      },
+    },
+    disabled: {
+      type: { name: 'boolean', required: false },
+      description: 'The disabled state of the toggle',
+      defaultValue: false,
+      control: {
+        type: 'select',
+        options: [true, false],
+      },
+    },
   },
   parameters: {
     backgrounds: { default: 'white' },

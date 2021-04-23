@@ -25,6 +25,16 @@ export namespace Components {
     }
     interface VtmnToggle {
         /**
+          * The checked state of the toggle.
+          * @default false
+         */
+        "checked": boolean;
+        /**
+          * The disabled state of the toggle.
+          * @default false
+         */
+        "disabled": boolean;
+        /**
           * The size of the toggle.
           * @default 'medium'
          */
@@ -68,6 +78,16 @@ declare namespace LocalJSX {
     | 'conversion';
     }
     interface VtmnToggle {
+        /**
+          * The checked state of the toggle.
+          * @default false
+         */
+        "checked"?: boolean;
+        /**
+          * The disabled state of the toggle.
+          * @default false
+         */
+        "disabled"?: boolean;
         /**
           * The size of the toggle.
           * @default 'medium'
