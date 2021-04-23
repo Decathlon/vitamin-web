@@ -54,7 +54,7 @@ export default {
 };
 
 const Template = (args) =>
-  html`<vtmn-link ...=${spread(args)}>Link</vtmn-link>`;
+  html`<vtmn-link ...=${spread(args)}>Your link</vtmn-link>`;
 
 export const Overview = Template.bind({});
 Overview.args = {};

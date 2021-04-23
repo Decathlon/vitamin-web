@@ -33,14 +33,14 @@ export class VtmnLink {
   render() {
     return (
       <a
+        href={this.href}
+        target={this.target}
         class={
           'vtmn-link ' +
           `vtmn-link_size--${this.size} ` +
           (this.standalone ? 'vtmn-link--standalone' : '')
-        }
-        href={this.href}
-        target={this.target}>
-        Link
+        }>
+        <slot></slot>
       </a>
     );
   }
