@@ -5,7 +5,7 @@ import { Component, Prop, h } from '@stencil/core';
   styleUrl: 'vtmn-toggle.pcss',
   shadow: true,
 })
-export class VtmnButton {
+export class VtmnToggle {
   /**
    * The checked state of the toggle.
    * @default false
