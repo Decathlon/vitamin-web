@@ -1,0 +1,15 @@
+# vtmn-button
+
+<!-- Auto Generated Below -->
+
+
+## Properties
+
+| Property | Attribute | Description                 | Type                                            | Default    |
+| -------- | --------- | --------------------------- | ----------------------------------------------- | ---------- |
+| `size`   | `size`    | The size of the text-input. | `"large" \| "medium" \| "small" \| "stretched"` | `'medium'` |
+
+
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*
