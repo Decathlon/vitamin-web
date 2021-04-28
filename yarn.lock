@@ -9457,10 +9457,10 @@ eslint-plugin-react@^7.21.5, eslint-plugin-react@^7.22.0:
     resolve "^2.0.0-next.3"
     string.prototype.matchall "^4.0.4"
 
-eslint-plugin-svelte3@3.1.2:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-svelte3/-/eslint-plugin-svelte3-3.1.2.tgz#3fb394a0f368ad7a77b76c0de2d68f1e4db8d407"
-  integrity sha512-+aGgYFC/yjhGXmBevzwICFVif8tu++C9/lRg8cE6TTS45Hw8qZ6t5wItSXVNPqnxJ212ik+bad1F0Y9A3Swo0Q==
+eslint-plugin-svelte3@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-svelte3/-/eslint-plugin-svelte3-3.2.0.tgz#a6deb4ead4b31a647ea88a3823d7c96578f74683"
+  integrity sha512-qdWB1QN21dEozsJFdR8XlEhMnsS6aKHjsXWuNmchYwxoet5I6QdCr1Xcq62++IzRBMCNCeH4waXqSOAdqrZzgA==
 
 eslint-plugin-testing-library@^3.9.2:
   version "3.10.2"
@@ -9523,10 +9523,10 @@ eslint-webpack-plugin@^2.5.2:
     micromatch "^4.0.2"
     schema-utils "^3.0.0"
 
-eslint@7.24.0, eslint@^7.11.0, eslint@^7.20.0:
-  version "7.24.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.24.0.tgz#2e44fa62d93892bfdb100521f17345ba54b8513a"
-  integrity sha512-k9gaHeHiFmGCDQ2rEfvULlSLruz6tgfA8DEn+rY9/oYPFFTlz55mM/Q/Rij1b2Y42jwZiK3lXvNTw6w6TXzcKQ==
+eslint@7.25.0, eslint@^7.11.0, eslint@^7.20.0:
+  version "7.25.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.25.0.tgz#1309e4404d94e676e3e831b3a3ad2b050031eb67"
+  integrity sha512-TVpSovpvCNpLURIScDRB6g5CYu/ZFq9GfX2hLNIV4dSBKxIWojeDODvYl3t0k0VtMxYeR8OXPCFE5+oHMlGfhw==
   dependencies:
     "@babel/code-frame" "7.12.11"
     "@eslint/eslintrc" "^0.4.0"
