@@ -25,10 +25,10 @@ export namespace Components {
     }
     interface VtmnTextInput {
         /**
-          * The size of the text-input.
-          * @default 'medium'
+          * The state of the text-input.
+          * @default 'default'
          */
-        "size": 'small' | 'medium' | 'large' | 'stretched';
+        "state": 'valid' | 'error' | 'default';
     }
 }
 declare global {
@@ -69,10 +69,10 @@ declare namespace LocalJSX {
     }
     interface VtmnTextInput {
         /**
-          * The size of the text-input.
-          * @default 'medium'
+          * The state of the text-input.
+          * @default 'default'
          */
-        "size"?: 'small' | 'medium' | 'large' | 'stretched';
+        "state"?: 'valid' | 'error' | 'default';
     }
     interface IntrinsicElements {
         "vtmn-button": VtmnButton;

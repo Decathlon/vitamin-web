@@ -5,9 +5,9 @@
 
 ## Properties
 
-| Property | Attribute | Description                 | Type                                            | Default    |
-| -------- | --------- | --------------------------- | ----------------------------------------------- | ---------- |
-| `size`   | `size`    | The size of the text-input. | `"large" \| "medium" \| "small" \| "stretched"` | `'medium'` |
+| Property | Attribute | Description                  | Type                              | Default     |
+| -------- | --------- | ---------------------------- | --------------------------------- | ----------- |
+| `state`  | `state`   | The state of the text-input. | `"default" \| "error" \| "valid"` | `'default'` |
 
 
 ----------------------------------------------

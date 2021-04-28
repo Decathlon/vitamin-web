@@ -7,25 +7,49 @@ import { Component, Prop, h } from '@stencil/core';
 })
 export class VtmnTextInput {
   /**
-   * The size of the text-input.
-   * @default 'medium'
+   * The state of the text-input.
+   * @default 'default'
    */
-  @Prop() size: 'small' | 'medium' | 'large' | 'stretched' = 'medium';
+  @Prop() state: 'valid' | 'error' | 'default' = 'default';
+
+  /**
+   * The disabled state of the text-input.
+   * @default false
+   */
+  //@Prop() disabled: boolean = false;
 
   render() {
-    return [
-      <label class="vtmn-text-input_label" htmlFor="my-default-input-1">
-        Label
-      </label>,
-      <div class="vtmn-text-input_container">
-        <input
-          type="text"
-          class="vtmn-text-input"
-          id="my-default-input-1"
-          placeholder="Placeholder Text"
-        />
-      </div>,
-      <p class="vtmn-text-input_helper-text">Helper text goes here</p>,
-    ];
+    return (
+      <div>
+        <label class="vtmn-text-input_label" htmlFor="my-label">
+          <slot></slot>
+        </label>
+
+        <div class="vtmn-text-input_container">
+          <input
+            type="text"
+            class={[
+              'vtmn-text-input',
+              this.state != 'default' && `vtmn-text-input--${this.state}`,
+            ]
+              .filter(Boolean)
+              .join(' ')}
+            id="my-label"
+            placeholder="Placeholder Text"
+          />
+        </div>
+
+        <p
+          class={[
+            'vtmn-text-input_helper-text',
+            this.state != 'default' &&
+              `vtmn-text-input_helper-text--${this.state}`,
+          ]
+            .filter(Boolean)
+            .join(' ')}>
+          Helper text goes here
+        </p>
+      </div>
+    );
   }
 }

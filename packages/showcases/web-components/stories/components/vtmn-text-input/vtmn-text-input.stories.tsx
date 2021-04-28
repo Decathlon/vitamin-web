@@ -8,10 +8,19 @@ export default {
     state: {
       type: { name: 'string', required: false },
       description: 'The state of the text input.',
-      defaultValue: '',
+      defaultValue: 'default',
       control: {
         type: 'select',
-        options: ['valid', 'error', 'disabled', ''],
+        options: ['valid', 'error', 'default'],
+      },
+    },
+    /*disabled: {
+      type: { name: 'boolean', required: false },
+      description: 'The disabled state of the text input.',
+      defaultValue: false,
+      control: {
+        type: 'select',
+        options: [true, false],
       },
     },
     icon: {
@@ -22,7 +31,7 @@ export default {
         type: 'select',
         options: [true, false],
       },
-    },
+    },*/
   },
   parameters: {
     backgrounds: { default: 'white' },
