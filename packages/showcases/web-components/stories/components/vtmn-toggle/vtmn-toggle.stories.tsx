@@ -19,8 +19,7 @@ export default {
       description: 'The checked state of the toggle',
       defaultValue: false,
       control: {
-        type: 'select',
-        options: [true, false],
+        type: 'boolean',
       },
     },
     disabled: {
@@ -28,8 +27,7 @@ export default {
       description: 'The disabled state of the toggle',
       defaultValue: false,
       control: {
-        type: 'select',
-        options: [true, false],
+        type: 'boolean',
       },
     },
   },

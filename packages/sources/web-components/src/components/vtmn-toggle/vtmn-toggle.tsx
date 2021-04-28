@@ -10,13 +10,13 @@ export class VtmnToggle {
    * The checked state of the toggle.
    * @default false
    */
-  @Prop() checked: boolean = false;
+  @Prop({ attribute: 'checked' }) isChecked: boolean = false;
 
   /**
    * The disabled state of the toggle.
    * @default false
    */
-  @Prop() disabled: boolean = false;
+  @Prop({ attribute: 'disabled' }) isDisabled: boolean = false;
 
   /**
    * The size of the toggle.
@@ -26,13 +26,13 @@ export class VtmnToggle {
 
   render() {
     return (
-      <div class={'vtmn-toggle ' + `vtmn-toggle_size--${this.size}`}>
+      <div class={['vtmn-toggle', `vtmn-toggle_size--${this.size}`].join(' ')}>
         <div class="vtmn-toggle_switch">
           <input
             type="checkbox"
             id="your-choice"
-            checked={this.checked}
-            disabled={this.disabled}
+            checked={this.isChecked}
+            disabled={this.isDisabled}
           />
           <span aria-hidden="true"></span>
         </div>

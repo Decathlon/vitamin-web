@@ -28,12 +28,12 @@ export namespace Components {
           * The checked state of the toggle.
           * @default false
          */
-        "checked": boolean;
+        "isChecked": boolean;
         /**
           * The disabled state of the toggle.
           * @default false
          */
-        "disabled": boolean;
+        "isDisabled": boolean;
         /**
           * The size of the toggle.
           * @default 'medium'
@@ -82,12 +82,12 @@ declare namespace LocalJSX {
           * The checked state of the toggle.
           * @default false
          */
-        "checked"?: boolean;
+        "isChecked"?: boolean;
         /**
           * The disabled state of the toggle.
           * @default false
          */
-        "disabled"?: boolean;
+        "isDisabled"?: boolean;
         /**
           * The size of the toggle.
           * @default 'medium'

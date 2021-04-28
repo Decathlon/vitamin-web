@@ -5,11 +5,11 @@
 
 ## Properties
 
-| Property   | Attribute  | Description                       | Type                  | Default    |
-| ---------- | ---------- | --------------------------------- | --------------------- | ---------- |
-| `checked`  | `checked`  | The checked state of the toggle.  | `boolean`             | `false`    |
-| `disabled` | `disabled` | The disabled state of the toggle. | `boolean`             | `false`    |
-| `size`     | `size`     | The size of the toggle.           | `"medium" \| "small"` | `'medium'` |
+| Property     | Attribute  | Description                       | Type                  | Default    |
+| ------------ | ---------- | --------------------------------- | --------------------- | ---------- |
+| `isChecked`  | `checked`  | The checked state of the toggle.  | `boolean`             | `false`    |
+| `isDisabled` | `disabled` | The disabled state of the toggle. | `boolean`             | `false`    |
+| `size`       | `size`     | The size of the toggle.           | `"medium" \| "small"` | `'medium'` |
 
 
 ----------------------------------------------
