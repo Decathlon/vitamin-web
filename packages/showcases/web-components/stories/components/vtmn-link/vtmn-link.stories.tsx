@@ -26,8 +26,7 @@ export default {
       description: 'Standalone link or not',
       defaultValue: false,
       control: {
-        type: 'select',
-        options: [true, false],
+        type: 'boolean',
       },
     },
     size: {

@@ -16,7 +16,7 @@ export class VtmnLink {
    * Is the link standalone or not
    * @default false
    */
-  @Prop() standalone: boolean = false;
+  @Prop({ attribute: 'standalone' }) isStandalone: boolean = false;
 
   /**
    * The hypertext link
@@ -35,11 +35,13 @@ export class VtmnLink {
       <a
         href={this.href}
         target={this.target}
-        class={
-          'vtmn-link ' +
-          `vtmn-link_size--${this.size} ` +
-          (this.standalone ? 'vtmn-link--standalone' : '')
-        }>
+        class={[
+          'vtmn-link',
+          `vtmn-link_size--${this.size}`,
+          this.isStandalone && 'vtmn-link--standalone',
+        ]
+          .filter(Boolean)
+          .join(' ')}>
         <slot></slot>
       </a>
     );
