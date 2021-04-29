@@ -2,7 +2,7 @@ import { html } from 'lit-html';
 import { spread } from '@open-wc/lit-helpers';
 
 export default {
-  title: 'Components/Toggle',
+  title: 'Components/vtmn-toggle',
   component: 'vtmn-toggle',
   argTypes: {
     id: {
