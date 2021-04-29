@@ -2,7 +2,7 @@ import { html } from 'lit-html';
 import { spread } from '@open-wc/lit-helpers';
 
 export default {
-  title: 'Components/Link',
+  title: 'Components/vtmn-link',
   component: 'vtmn-link',
   argTypes: {
     href: {

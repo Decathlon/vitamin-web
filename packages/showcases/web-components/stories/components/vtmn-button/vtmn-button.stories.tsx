@@ -2,7 +2,7 @@ import { html } from 'lit-html';
 import { spread } from '@open-wc/lit-helpers';
 
 export default {
-  title: 'Components/Button',
+  title: 'Components/vtmn-button',
   component: 'vtmn-button',
   argTypes: {
     variant: {
