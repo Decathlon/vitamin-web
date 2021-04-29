@@ -25,6 +25,11 @@ export namespace Components {
     }
     interface VtmnToggle {
         /**
+          * The id of the toggle.
+          * @default 'my-id'
+         */
+        "id": string;
+        /**
           * The checked state of the toggle.
           * @default false
          */
@@ -78,6 +83,11 @@ declare namespace LocalJSX {
     | 'conversion';
     }
     interface VtmnToggle {
+        /**
+          * The id of the toggle.
+          * @default 'my-id'
+         */
+        "id"?: string;
         /**
           * The checked state of the toggle.
           * @default false

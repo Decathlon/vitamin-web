@@ -5,6 +5,14 @@ export default {
   title: 'Components/Toggle',
   component: 'vtmn-toggle',
   argTypes: {
+    id: {
+      type: { name: 'string', required: true },
+      description: 'The id of the toggle.',
+      defaultValue: 'my-id',
+      control: {
+        type: 'text',
+      },
+    },
     size: {
       type: { name: 'string', required: false },
       description: 'The size of the toggle.',
