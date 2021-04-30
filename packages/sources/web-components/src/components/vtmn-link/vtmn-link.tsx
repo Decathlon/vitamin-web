@@ -16,7 +16,7 @@ export class VtmnLink {
    * Is the link standalone or not
    * @default false
    */
-  @Prop({ attribute: 'standalone' }) isStandalone: boolean = false;
+  @Prop({ attribute: 'isstandalone' }) isStandalone: boolean = false;
 
   /**
    * The hypertext link
@@ -26,9 +26,9 @@ export class VtmnLink {
 
   /**
    * The target of the link
-   * @default '_blank'
+   * @default '_self'
    */
-  @Prop() target: string = '_blank';
+  @Prop() target: string = '_self';
 
   render() {
     return (

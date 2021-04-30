@@ -41,7 +41,7 @@ export namespace Components {
         "size": 'small' | 'medium' | 'large';
         /**
           * The target of the link
-          * @default '_blank'
+          * @default '_self'
          */
         "target": string;
     }
@@ -100,7 +100,7 @@ declare namespace LocalJSX {
         "size"?: 'small' | 'medium' | 'large';
         /**
           * The target of the link
-          * @default '_blank'
+          * @default '_self'
          */
         "target"?: string;
     }

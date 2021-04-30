@@ -7,26 +7,16 @@ export default {
   argTypes: {
     href: {
       type: { name: 'string', required: true },
-      description: 'The hypertext link of the link.',
+      description: 'The href of the link.',
       defaultValue: '#',
-      control: {
-        type: 'text',
-      },
+      control: { type: 'text' },
     },
     target: {
       type: { name: 'string', required: false },
       description: 'The target of the link.',
-      defaultValue: '_blank',
+      defaultValue: '_self',
       control: {
         type: 'text',
-      },
-    },
-    standalone: {
-      type: { name: 'boolean', required: false },
-      description: 'Standalone link or not',
-      defaultValue: false,
-      control: {
-        type: 'boolean',
       },
     },
     size: {
@@ -38,9 +28,15 @@ export default {
         options: ['small', 'medium', 'large'],
       },
     },
+    isStandalone: {
+      type: { name: 'boolean', required: false },
+      description: 'If the component is a standalone or not.',
+      defaultValue: false,
+      control: { type: 'boolean' },
+    },
   },
   parameters: {
-    backgrounds: { default: 'white' },
+    backgrounds: { default: 'grey' },
     actions: {
       handles: ['mouseenter', 'click', 'focusin', 'focusout'],
     },
