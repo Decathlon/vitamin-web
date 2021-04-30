@@ -31,7 +31,7 @@ export namespace Components {
         "helper": string;
         /**
           * The icon to be displayed
-          * @default ''
+          * @default null
          */
         "icon": string;
         /**
@@ -55,7 +55,7 @@ export namespace Components {
          */
         "label": string;
         /**
-          * The label of the text input.
+          * The placeholder of the text input.
           * @default 'My placeholder'
          */
         "placeholder": string;
@@ -110,7 +110,7 @@ declare namespace LocalJSX {
         "helper"?: string;
         /**
           * The icon to be displayed
-          * @default ''
+          * @default null
          */
         "icon"?: string;
         /**
@@ -134,7 +134,7 @@ declare namespace LocalJSX {
          */
         "label"?: string;
         /**
-          * The label of the text input.
+          * The placeholder of the text input.
           * @default 'My placeholder'
          */
         "placeholder"?: string;

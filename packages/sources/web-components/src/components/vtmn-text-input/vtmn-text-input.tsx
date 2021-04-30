@@ -19,7 +19,7 @@ export class VtmnTextInput {
   @Prop() label: string = 'My label';
 
   /**
-   * The label of the text input.
+   * The placeholder of the text input.
    * @default 'My placeholder'
    */
   @Prop() placeholder: string = 'My placeholder';
@@ -50,9 +50,9 @@ export class VtmnTextInput {
 
   /**
    * The icon to be displayed
-   * @default ''
+   * @default null
    */
-  @Prop() icon: string = '';
+  @Prop() icon: string = null;
 
   render() {
     if (this.isMultiline) {
@@ -101,7 +101,7 @@ export class VtmnTextInput {
             placeholder={this.placeholder}
             disabled={this.isDisabled}
           />
-          {this.icon != '' ? <span class="vtmx-search-line"></span> : null}
+          {this.icon != null ? <span class="vtmx-search-line"></span> : null}
         </div>,
 
         <p
