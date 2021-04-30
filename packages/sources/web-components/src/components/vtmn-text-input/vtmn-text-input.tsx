@@ -16,40 +16,46 @@ export class VtmnTextInput {
    * The disabled state of the text-input.
    * @default false
    */
-  //@Prop() disabled: boolean = false;
+  @Prop({ attribute: 'isdisabled' }) isDisabled: boolean = false;
+
+  /**
+   * The icon to be displayed
+   * @default ''
+   */
+  @Prop() icon: string = '';
 
   render() {
-    return (
-      <div>
-        <label class="vtmn-text-input_label" htmlFor="my-label">
-          <slot></slot>
-        </label>
+    return [
+      <label class="vtmn-text-input_label" htmlFor="my-label">
+        <slot></slot>
+      </label>,
 
-        <div class="vtmn-text-input_container">
-          <input
-            type="text"
-            class={[
-              'vtmn-text-input',
-              this.state != 'default' && `vtmn-text-input--${this.state}`,
-            ]
-              .filter(Boolean)
-              .join(' ')}
-            id="my-label"
-            placeholder="Placeholder Text"
-          />
-        </div>
-
-        <p
+      <div class="vtmn-text-input_container">
+        <input
+          type="text"
           class={[
-            'vtmn-text-input_helper-text',
-            this.state != 'default' &&
-              `vtmn-text-input_helper-text--${this.state}`,
+            'vtmn-text-input',
+            this.state != 'default' && `vtmn-text-input--${this.state}`,
           ]
             .filter(Boolean)
-            .join(' ')}>
-          Helper text goes here
-        </p>
-      </div>
-    );
+            .join(' ')}
+          id="my-label"
+          placeholder="Placeholder Text"
+          disabled={this.isDisabled}
+        />
+        {this.icon != '' ? <span class="vtmx-search-line"></span> : null}
+      </div>,
+
+      <p
+        class={[
+          'vtmn-text-input_helper-text',
+          this.state != 'default' &&
+            `vtmn-text-input_helper-text--${this.state}`,
+        ]
+          .filter(Boolean)
+          .join(' ')}>
+        Helper text goes here
+      </p>,
+    ];
   }
 }

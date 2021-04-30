@@ -2,7 +2,7 @@ import { html } from 'lit-html';
 import { spread } from '@open-wc/lit-helpers';
 
 export default {
-  title: 'Components/Text-input',
+  title: 'Components/vtmn-text-input',
   component: 'vtmn-text-input',
   argTypes: {
     state: {
@@ -14,24 +14,22 @@ export default {
         options: ['valid', 'error', 'default'],
       },
     },
-    /*disabled: {
+    isDisabled: {
       type: { name: 'boolean', required: false },
       description: 'The disabled state of the text input.',
       defaultValue: false,
       control: {
-        type: 'select',
-        options: [true, false],
+        type: 'boolean',
       },
     },
     icon: {
-      type: { name: 'boolean', required: false },
-      description: 'Icon displayed or not',
-      defaultValue: false,
+      type: { name: 'string', required: false },
+      description: 'Icon font to be displayed',
+      defaultValue: null,
       control: {
-        type: 'select',
-        options: [true, false],
+        type: 'text',
       },
-    },*/
+    },
   },
   parameters: {
     backgrounds: { default: 'white' },

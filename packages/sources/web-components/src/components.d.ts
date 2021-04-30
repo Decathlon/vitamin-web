@@ -25,6 +25,16 @@ export namespace Components {
     }
     interface VtmnTextInput {
         /**
+          * The icon to be displayed
+          * @default ''
+         */
+        "icon": string;
+        /**
+          * The disabled state of the text-input.
+          * @default false
+         */
+        "isDisabled": boolean;
+        /**
           * The state of the text-input.
           * @default 'default'
          */
@@ -68,6 +78,16 @@ declare namespace LocalJSX {
     | 'conversion';
     }
     interface VtmnTextInput {
+        /**
+          * The icon to be displayed
+          * @default ''
+         */
+        "icon"?: string;
+        /**
+          * The disabled state of the text-input.
+          * @default false
+         */
+        "isDisabled"?: boolean;
         /**
           * The state of the text-input.
           * @default 'default'
