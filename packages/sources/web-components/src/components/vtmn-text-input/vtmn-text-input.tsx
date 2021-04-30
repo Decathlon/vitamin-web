@@ -3,7 +3,7 @@ import { Component, Prop, h } from '@stencil/core';
 @Component({
   tag: 'vtmn-text-input',
   styleUrl: 'vtmn-text-input.pcss',
-  shadow: true,
+  shadow: false,
 })
 export class VtmnTextInput {
   /**
@@ -32,27 +32,27 @@ export class VtmnTextInput {
 
   /**
    * Is the text-input multiline or not.
-   * @default false
+   * @default
    */
-  @Prop({ attribute: 'ismultiline' }) isMultiline: boolean = false;
+  @Prop({ attribute: 'ismultiline' }) isMultiline: boolean;
 
   /**
    * The state of the text-input.
-   * @default null
+   * @default
    */
-  @Prop() state: 'valid' | 'error' | null = null;
+  @Prop() state: 'valid' | 'error' | null;
 
   /**
    * The disabled state of the text-input.
-   * @default false
+   * @default
    */
-  @Prop({ attribute: 'isdisabled' }) isDisabled: boolean = false;
+  @Prop({ attribute: 'isdisabled' }) isDisabled: boolean;
 
   /**
    * The icon to be displayed
-   * @default null
+   * @default
    */
-  @Prop() icon: string = null;
+  @Prop() icon: string;
 
   render() {
     if (this.isMultiline) {
@@ -64,7 +64,7 @@ export class VtmnTextInput {
         <textarea
           class={[
             'vtmn-text-input',
-            this.state != null && `vtmn-text-input--${this.state}`,
+            this.state && `vtmn-text-input--${this.state}`,
           ]
             .filter(Boolean)
             .join(' ')}
@@ -75,7 +75,7 @@ export class VtmnTextInput {
         <p
           class={[
             'vtmn-text-input_helper-text',
-            this.state != null && `vtmn-text-input_helper-text--${this.state}`,
+            this.state && `vtmn-text-input_helper-text--${this.state}`,
           ]
             .filter(Boolean)
             .join(' ')}>
@@ -93,7 +93,7 @@ export class VtmnTextInput {
             type="text"
             class={[
               'vtmn-text-input',
-              this.state != null && `vtmn-text-input--${this.state}`,
+              this.state && `vtmn-text-input--${this.state}`,
             ]
               .filter(Boolean)
               .join(' ')}
@@ -101,13 +101,13 @@ export class VtmnTextInput {
             placeholder={this.placeholder}
             disabled={this.isDisabled}
           />
-          {this.icon != null ? <span class="vtmx-search-line"></span> : null}
+          {this.icon ? <span class={this.icon}></span> : null}
         </div>,
 
         <p
           class={[
             'vtmn-text-input_helper-text',
-            this.state != null && `vtmn-text-input_helper-text--${this.state}`,
+            this.state && `vtmn-text-input_helper-text--${this.state}`,
           ]
             .filter(Boolean)
             .join(' ')}>

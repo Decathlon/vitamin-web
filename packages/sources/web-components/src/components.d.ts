@@ -31,7 +31,7 @@ export namespace Components {
         "helper": string;
         /**
           * The icon to be displayed
-          * @default null
+          * @default
          */
         "icon": string;
         /**
@@ -41,12 +41,12 @@ export namespace Components {
         "id": string;
         /**
           * The disabled state of the text-input.
-          * @default false
+          * @default
          */
         "isDisabled": boolean;
         /**
           * Is the text-input multiline or not.
-          * @default false
+          * @default
          */
         "isMultiline": boolean;
         /**
@@ -61,7 +61,7 @@ export namespace Components {
         "placeholder": string;
         /**
           * The state of the text-input.
-          * @default null
+          * @default
          */
         "state": 'valid' | 'error' | null;
     }
@@ -110,7 +110,7 @@ declare namespace LocalJSX {
         "helper"?: string;
         /**
           * The icon to be displayed
-          * @default null
+          * @default
          */
         "icon"?: string;
         /**
@@ -120,12 +120,12 @@ declare namespace LocalJSX {
         "id"?: string;
         /**
           * The disabled state of the text-input.
-          * @default false
+          * @default
          */
         "isDisabled"?: boolean;
         /**
           * Is the text-input multiline or not.
-          * @default false
+          * @default
          */
         "isMultiline"?: boolean;
         /**
@@ -140,7 +140,7 @@ declare namespace LocalJSX {
         "placeholder"?: string;
         /**
           * The state of the text-input.
-          * @default null
+          * @default
          */
         "state"?: 'valid' | 'error' | null;
     }
