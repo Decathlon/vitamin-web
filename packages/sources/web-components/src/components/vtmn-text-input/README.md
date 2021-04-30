@@ -5,11 +5,13 @@
 
 ## Properties
 
-| Property     | Attribute    | Description                           | Type                              | Default     |
-| ------------ | ------------ | ------------------------------------- | --------------------------------- | ----------- |
-| `icon`       | `icon`       | The icon to be displayed              | `string`                          | `''`        |
-| `isDisabled` | `isdisabled` | The disabled state of the text-input. | `boolean`                         | `false`     |
-| `state`      | `state`      | The state of the text-input.          | `"default" \| "error" \| "valid"` | `'default'` |
+| Property      | Attribute     | Description                           | Type                 | Default   |
+| ------------- | ------------- | ------------------------------------- | -------------------- | --------- |
+| `icon`        | `icon`        | The icon to be displayed              | `string`             | `''`      |
+| `id`          | `id`          | The id of the text input.             | `string`             | `'my-id'` |
+| `isDisabled`  | `isdisabled`  | The disabled state of the text-input. | `boolean`            | `false`   |
+| `isMultiline` | `ismultiline` | Is the text-input multiline or not.   | `boolean`            | `false`   |
+| `state`       | `state`       | The state of the text-input.          | `"error" \| "valid"` | `null`    |
 
 
 ----------------------------------------------

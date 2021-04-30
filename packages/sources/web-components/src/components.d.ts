@@ -30,15 +30,25 @@ export namespace Components {
          */
         "icon": string;
         /**
+          * The id of the text input.
+          * @default 'my-id'
+         */
+        "id": string;
+        /**
           * The disabled state of the text-input.
           * @default false
          */
         "isDisabled": boolean;
         /**
-          * The state of the text-input.
-          * @default 'default'
+          * Is the text-input multiline or not.
+          * @default false
          */
-        "state": 'valid' | 'error' | 'default';
+        "isMultiline": boolean;
+        /**
+          * The state of the text-input.
+          * @default null
+         */
+        "state": 'valid' | 'error' | null;
     }
 }
 declare global {
@@ -84,15 +94,25 @@ declare namespace LocalJSX {
          */
         "icon"?: string;
         /**
+          * The id of the text input.
+          * @default 'my-id'
+         */
+        "id"?: string;
+        /**
           * The disabled state of the text-input.
           * @default false
          */
         "isDisabled"?: boolean;
         /**
-          * The state of the text-input.
-          * @default 'default'
+          * Is the text-input multiline or not.
+          * @default false
          */
-        "state"?: 'valid' | 'error' | 'default';
+        "isMultiline"?: boolean;
+        /**
+          * The state of the text-input.
+          * @default null
+         */
+        "state"?: 'valid' | 'error' | null;
     }
     interface IntrinsicElements {
         "vtmn-button": VtmnButton;

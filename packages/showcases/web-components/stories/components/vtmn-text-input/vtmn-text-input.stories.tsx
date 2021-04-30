@@ -5,13 +5,29 @@ export default {
   title: 'Components/vtmn-text-input',
   component: 'vtmn-text-input',
   argTypes: {
+    id: {
+      type: { name: 'string', required: true },
+      description: 'Id of the text input',
+      defaultValue: 'my-id',
+      control: {
+        type: 'text',
+      },
+    },
+    isMultiline: {
+      type: { name: 'boolean', required: false },
+      description: 'Whether the text input is multiline or not.',
+      defaultValue: false,
+      control: {
+        type: 'boolean',
+      },
+    },
     state: {
       type: { name: 'string', required: false },
       description: 'The state of the text input.',
-      defaultValue: 'default',
+      defaultValue: null,
       control: {
         type: 'select',
-        options: ['valid', 'error', 'default'],
+        options: ['valid', 'error', null],
       },
     },
     isDisabled: {
@@ -32,7 +48,7 @@ export default {
     },
   },
   parameters: {
-    backgrounds: { default: 'white' },
+    backgrounds: { default: 'grey' },
     actions: {
       handles: ['mouseenter', 'click', 'focusin', 'focusout'],
     },

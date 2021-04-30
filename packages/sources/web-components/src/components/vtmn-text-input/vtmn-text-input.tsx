@@ -7,10 +7,22 @@ import { Component, Prop, h } from '@stencil/core';
 })
 export class VtmnTextInput {
   /**
-   * The state of the text-input.
-   * @default 'default'
+   * The id of the text input.
+   * @default 'my-id'
    */
-  @Prop() state: 'valid' | 'error' | 'default' = 'default';
+  @Prop() id: string = 'my-id';
+
+  /**
+   * Is the text-input multiline or not.
+   * @default false
+   */
+  @Prop({ attribute: 'ismultiline' }) isMultiline: boolean = false;
+
+  /**
+   * The state of the text-input.
+   * @default null
+   */
+  @Prop() state: 'valid' | 'error' | null = null;
 
   /**
    * The disabled state of the text-input.
@@ -25,37 +37,65 @@ export class VtmnTextInput {
   @Prop() icon: string = '';
 
   render() {
-    return [
-      <label class="vtmn-text-input_label" htmlFor="my-label">
-        <slot></slot>
-      </label>,
+    if (this.isMultiline) {
+      return [
+        <label class="vtmn-text-input_label" htmlFor="my-label">
+          <slot></slot>
+        </label>,
 
-      <div class="vtmn-text-input_container">
-        <input
-          type="text"
+        <textarea
           class={[
             'vtmn-text-input',
-            this.state != 'default' && `vtmn-text-input--${this.state}`,
+            this.state != null && `vtmn-text-input--${this.state}`,
           ]
             .filter(Boolean)
             .join(' ')}
-          id="my-label"
+          id="my-text-input-multiline"
           placeholder="Placeholder Text"
-          disabled={this.isDisabled}
-        />
-        {this.icon != '' ? <span class="vtmx-search-line"></span> : null}
-      </div>,
+          disabled={this.isDisabled}></textarea>,
 
-      <p
-        class={[
-          'vtmn-text-input_helper-text',
-          this.state != 'default' &&
-            `vtmn-text-input_helper-text--${this.state}`,
-        ]
-          .filter(Boolean)
-          .join(' ')}>
-        Helper text goes here
-      </p>,
-    ];
+        <p
+          class={[
+            'vtmn-text-input_helper-text',
+            this.state != null && `vtmn-text-input_helper-text--${this.state}`,
+          ]
+            .filter(Boolean)
+            .join(' ')}>
+          Helper text goes here
+        </p>,
+      ];
+    } else {
+      return [
+        <label class="vtmn-text-input_label" htmlFor="my-label">
+          <slot></slot>
+        </label>,
+
+        <div class="vtmn-text-input_container">
+          <input
+            type="text"
+            class={[
+              'vtmn-text-input',
+              this.state != null && `vtmn-text-input--${this.state}`,
+            ]
+              .filter(Boolean)
+              .join(' ')}
+            id="my-label"
+            placeholder="Placeholder Text"
+            disabled={this.isDisabled}
+          />
+          {this.icon != '' ? <span class="vtmx-search-line"></span> : null}
+        </div>,
+
+        <p
+          class={[
+            'vtmn-text-input_helper-text',
+            this.state != null && `vtmn-text-input_helper-text--${this.state}`,
+          ]
+            .filter(Boolean)
+            .join(' ')}>
+          Helper text goes here
+        </p>,
+      ];
+    }
   }
 }
