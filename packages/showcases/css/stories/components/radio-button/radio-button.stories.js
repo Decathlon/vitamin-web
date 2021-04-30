@@ -1,5 +1,3 @@
-import disabled from './examples/disabled.html';
-import selected from './examples/selected.html';
 import _default from './examples/_default.html';
 
 export default {
@@ -22,24 +20,6 @@ Default.parameters = {
   docs: {
     source: {
       code: _default,
-    },
-  },
-};
-
-export const Selected = () => selected;
-Selected.parameters = {
-  docs: {
-    source: {
-      code: selected,
-    },
-  },
-};
-
-export const Disabled = () => disabled;
-Disabled.parameters = {
-  docs: {
-    source: {
-      code: disabled,
     },
   },
 };
