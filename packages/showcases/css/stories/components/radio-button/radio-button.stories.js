@@ -3,7 +3,7 @@ import selected from './examples/selected.html';
 import _default from './examples/_default.html';
 
 export default {
-  title: 'Components / Radio Button',
+  title: 'Components / Radio button',
   argTypes: { onChange: { action: 'write' } },
   parameters: {
     actions: {
@@ -13,6 +13,15 @@ export default {
       type: 'figma',
       url:
         'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vtmn---Web?node-id=287%3A0',
+    },
+  },
+};
+
+export const Default = () => _default;
+Default.parameters = {
+  docs: {
+    source: {
+      code: _default,
     },
   },
 };
@@ -31,15 +40,6 @@ Disabled.parameters = {
   docs: {
     source: {
       code: disabled,
-    },
-  },
-};
-
-export const Default = () => _default;
-Default.parameters = {
-  docs: {
-    source: {
-      code: _default,
     },
   },
 };
