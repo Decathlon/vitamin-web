@@ -28,7 +28,7 @@ export class VtmnLink {
    * The target of the link
    * @default '_blank'
    */
-  @Prop() target: string = '_target';
+  @Prop() target: string = '_blank';
 
   render() {
     return (
