@@ -13,6 +13,30 @@ export default {
         type: 'text',
       },
     },
+    label: {
+      type: { name: 'string', required: true },
+      description: 'The label of the text input',
+      defaultValue: 'My label',
+      control: {
+        type: 'text',
+      },
+    },
+    placeholder: {
+      type: { name: 'string', required: true },
+      description: 'The placeholder of the text input',
+      defaultValue: 'My placeholder',
+      control: {
+        type: 'text',
+      },
+    },
+    helper: {
+      type: { name: 'string', required: true },
+      description: 'The helper of the text input',
+      defaultValue: 'My helper',
+      control: {
+        type: 'text',
+      },
+    },
     isMultiline: {
       type: { name: 'boolean', required: false },
       description: 'Whether the text input is multiline or not.',
@@ -61,7 +85,7 @@ export default {
 };
 
 const Template = (args) =>
-  html`<vtmn-text-input ...=${spread(args)}>Your label</vtmn-text-input>`;
+  html`<vtmn-text-input ...=${spread(args)}></vtmn-text-input>`;
 
 export const Overview = Template.bind({});
 Overview.args = {};

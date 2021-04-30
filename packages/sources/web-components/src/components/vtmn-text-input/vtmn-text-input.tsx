@@ -13,6 +13,24 @@ export class VtmnTextInput {
   @Prop() id: string = 'my-id';
 
   /**
+   * The label of the text input.
+   * @default 'My label'
+   */
+  @Prop() label: string = 'My label';
+
+  /**
+   * The label of the text input.
+   * @default 'My placeholder'
+   */
+  @Prop() placeholder: string = 'My placeholder';
+
+  /**
+   * The helper of the text input.
+   * @default 'My helper'
+   */
+  @Prop() helper: string = 'My helper';
+
+  /**
    * Is the text-input multiline or not.
    * @default false
    */
@@ -40,7 +58,7 @@ export class VtmnTextInput {
     if (this.isMultiline) {
       return [
         <label class="vtmn-text-input_label" htmlFor="my-label">
-          <slot></slot>
+          {this.label}
         </label>,
 
         <textarea
@@ -51,7 +69,7 @@ export class VtmnTextInput {
             .filter(Boolean)
             .join(' ')}
           id="my-text-input-multiline"
-          placeholder="Placeholder Text"
+          placeholder={this.placeholder}
           disabled={this.isDisabled}></textarea>,
 
         <p
@@ -61,13 +79,13 @@ export class VtmnTextInput {
           ]
             .filter(Boolean)
             .join(' ')}>
-          Helper text goes here
+          {this.helper}
         </p>,
       ];
     } else {
       return [
         <label class="vtmn-text-input_label" htmlFor="my-label">
-          <slot></slot>
+          {this.label}
         </label>,
 
         <div class="vtmn-text-input_container">
@@ -80,7 +98,7 @@ export class VtmnTextInput {
               .filter(Boolean)
               .join(' ')}
             id="my-label"
-            placeholder="Placeholder Text"
+            placeholder={this.placeholder}
             disabled={this.isDisabled}
           />
           {this.icon != '' ? <span class="vtmx-search-line"></span> : null}
@@ -93,7 +111,7 @@ export class VtmnTextInput {
           ]
             .filter(Boolean)
             .join(' ')}>
-          Helper text goes here
+          {this.helper}
         </p>,
       ];
     }
