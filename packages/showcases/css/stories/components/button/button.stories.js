@@ -5,6 +5,7 @@ import secondary from './examples/secondary.html';
 import secondaryReversed from './examples/secondary-reversed.html';
 import ghost from './examples/ghost.html';
 import conversion from './examples/conversion.html';
+import withIcon from './examples/with-icon.html';
 
 export default {
   title: 'Components / Button',
@@ -26,6 +27,15 @@ Default.parameters = {
   docs: {
     source: {
       code: _default,
+    },
+  },
+};
+
+export const WithIcon = () => withIcon;
+WithIcon.parameters = {
+  docs: {
+    source: {
+      code: withIcon,
     },
   },
 };
