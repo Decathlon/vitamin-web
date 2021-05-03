@@ -31,17 +31,17 @@ export namespace Components {
         "href": string;
         /**
           * Is the link standalone or not
-          * @default false
+          * @default null
          */
         "isStandalone": boolean;
         /**
           * The size of the link.
-          * @default 'medium'
+          * @default null
          */
         "size": 'small' | 'medium' | 'large';
         /**
           * The target of the link
-          * @default '_self'
+          * @default null
          */
         "target": string;
     }
@@ -90,17 +90,17 @@ declare namespace LocalJSX {
         "href"?: string;
         /**
           * Is the link standalone or not
-          * @default false
+          * @default null
          */
         "isStandalone"?: boolean;
         /**
           * The size of the link.
-          * @default 'medium'
+          * @default null
          */
         "size"?: 'small' | 'medium' | 'large';
         /**
           * The target of the link
-          * @default '_self'
+          * @default null
          */
         "target"?: string;
     }

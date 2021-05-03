@@ -14,7 +14,7 @@ export default {
     target: {
       type: { name: 'string', required: false },
       description: 'The target of the link.',
-      defaultValue: '_self',
+      defaultValue: null,
       control: {
         type: 'text',
       },
@@ -22,7 +22,7 @@ export default {
     size: {
       type: { name: 'string', required: false },
       description: 'The size of the link.',
-      defaultValue: 'medium',
+      defaultValue: null,
       control: {
         type: 'select',
         options: ['small', 'medium', 'large'],
@@ -31,12 +31,12 @@ export default {
     isStandalone: {
       type: { name: 'boolean', required: false },
       description: 'If the component is a standalone or not.',
-      defaultValue: false,
+      defaultValue: null,
       control: { type: 'boolean' },
     },
   },
   parameters: {
-    backgrounds: { default: 'grey' },
+    backgrounds: { default: 'white' },
     actions: {
       handles: ['mouseenter', 'click', 'focusin', 'focusout'],
     },

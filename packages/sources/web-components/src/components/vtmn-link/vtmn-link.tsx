@@ -8,15 +8,15 @@ import { Component, Prop, h } from '@stencil/core';
 export class VtmnLink {
   /**
    * The size of the link.
-   * @default 'medium'
+   * @default null
    */
-  @Prop() size: 'small' | 'medium' | 'large' = 'medium';
+  @Prop() size: 'small' | 'medium' | 'large';
 
   /**
    * Is the link standalone or not
-   * @default false
+   * @default null
    */
-  @Prop({ attribute: 'isstandalone' }) isStandalone: boolean = false;
+  @Prop({ attribute: 'isstandalone' }) isStandalone: boolean;
 
   /**
    * The hypertext link
@@ -26,9 +26,9 @@ export class VtmnLink {
 
   /**
    * The target of the link
-   * @default '_self'
+   * @default null
    */
-  @Prop() target: string = '_self';
+  @Prop() target: string;
 
   render() {
     return (
