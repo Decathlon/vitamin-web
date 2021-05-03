@@ -3,7 +3,6 @@ import { Component, Prop, h } from '@stencil/core';
 @Component({
   tag: 'vtmn-link',
   styleUrl: 'vtmn-link.pcss',
-  shadow: true,
 })
 export class VtmnLink {
   /**
