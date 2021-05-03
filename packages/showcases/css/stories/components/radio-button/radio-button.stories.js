@@ -1,4 +1,4 @@
-import _default from './examples/_default.html';
+import _default from './examples/default.html';
 
 export default {
   title: 'Components / Radio button',
