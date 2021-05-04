@@ -37,20 +37,22 @@
 
 .vtmn-radio-button[type='radio']:not(:checked):not(:disabled):hover
   + label::before {
-  box-shadow: 0 0 0 rem(7px) color-mod(var(--vtmn-color_grey-dark-1) alpha(5%));
+  box-shadow: 0 0 0 rem(7px) color-mod(var(--vtmn-color_black) alpha(5%));
 }
 
 .vtmn-radio-button[type='radio']:not(:checked):not(:disabled):active
   + label::before {
-  box-shadow: 0 0 0 rem(7px) rgba(0, 16, 24, 0.15);
+  box-shadow: 0 0 0 rem(7px) color-mod(var(--vtmn-color_black) alpha(15%));
 }
 
 .vtmn-radio-button[type='radio']:checked:not(:disabled):hover + label::before {
-  box-shadow: 0 0 0 rem(7px) rgba(0, 125, 188, 0.05);
+  box-shadow: 0 0 0 rem(7px)
+    color-mod(var(--vtmn-color_brand-digital) alpha(5%));
 }
 
 .vtmn-radio-button[type='radio']:checked:not(:disabled):active + label::before {
-  box-shadow: 0 0 0 rem(7px) rgba(0, 125, 188, 0.15);
+  box-shadow: 0 0 0 rem(7px)
+    color-mod(var(--vtmn-color_brand-digital) alpha(15%));
 }
 
 .vtmn-radio-button[type='radio'] + label::after {
