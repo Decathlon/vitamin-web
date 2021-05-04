@@ -15,20 +15,20 @@
   line-height: var(--vtmn-typo_text-2-line-height);
   cursor: pointer;
   user-select: none;
-  left: -24px;
-  padding: 8px 8px 8px 28px;
+  left: rem(-24px);
+  padding: rem(8px) rem(8px) rem(8px) rem(28px);
 }
 
 .vtmn-checkbox[type='checkbox'] + label::before {
   content: '';
   position: absolute;
-  left: 1px;
-  top: 7px;
-  width: 18px;
-  height: 18px;
-  border-width: 2px;
+  left: rem(1px);
+  top: rem(7px);
+  width: rem(18px);
+  height: rem(18px);
+  border-width: rem(2px);
   border-style: solid;
-  border-radius: 4px;
+  border-radius: rem(4px);
   transition: all 0.275s;
 }
 
@@ -38,12 +38,12 @@
 
 .vtmn-checkbox[type='checkbox']:not(:checked):not(:disabled):hover
   + label::before {
-  box-shadow: 0 0 0 7px rgba(0, 16, 24, 0.05);
+  box-shadow: 0 0 0 rem(7px) rgba(0, 16, 24, 0.05);
 }
 
 .vtmn-checkbox[type='checkbox']:not(:checked):not(:disabled):active
   + label::before {
-  box-shadow: 0 0 0 7px rgba(0, 16, 24, 0.15);
+  box-shadow: 0 0 0 rem(7px) rgba(0, 16, 24, 0.15);
 }
 
 .vtmn-checkbox[type='checkbox']:checked + label::before {
@@ -52,18 +52,18 @@
 }
 
 .vtmn-checkbox[type='checkbox']:checked:not(:disabled):hover + label::before {
-  box-shadow: 0 0 0 7px rgba(0, 125, 188, 0.05);
+  box-shadow: 0 0 0 rem(7px) rgba(0, 125, 188, 0.05);
 }
 
 .vtmn-checkbox[type='checkbox']:checked:not(:disabled):active + label::before {
-  box-shadow: 0 0 0 7px rgba(0, 125, 188, 0.15);
+  box-shadow: 0 0 0 rem(7px) rgba(0, 125, 188, 0.15);
 }
 
 .vtmn-checkbox[type='checkbox'] + label::after {
   content: url("data:image/svg+xml;charset=utf-8, <svg width='18' height='18' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'><path d='M5.80351 10.8L14.2875 2.31484L12.5907 0.618038L5.80351 7.40644L2.40871 4.01164L0.711914 5.70844L5.80351 10.8Z' fill='white'/></svg>");
   position: absolute;
-  top: 11px;
-  left: 3px;
+  top: rem(11px);
+  left: rem(3px);
   color: var(--vtmn-color_white);
   transition: all 0.2s;
 }
@@ -84,5 +84,5 @@
 }
 
 .vtmn-checkbox[type='checkbox']:focus-visible + label::before {
-  box-shadow: 0 0 0 4px var(--vtmn-color_brand-digital-light-1);
+  box-shadow: 0 0 0 rem(4px) var(--vtmn-color_brand-digital-light-1);
 }
