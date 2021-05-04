@@ -29,18 +29,18 @@
   text-decoration: none;
 }
 
-.vtmn-btn:hover {
+.vtmn-btn:not([disabled]):hover {
   background-color: var(--vtmn-color_brand-digital-dark-1);
   cursor: pointer;
 }
 
-.vtmn-btn:active {
+.vtmn-btn:not([disabled]):active {
   background-color: var(--vtmn-color_brand-digital-dark-2);
 }
 
 .vtmn-btn:disabled {
   cursor: not-allowed;
-  opacity: 0.25;
+  opacity: 0.38;
 }
 
 .vtmn-btn:not([disabled]):focus {
