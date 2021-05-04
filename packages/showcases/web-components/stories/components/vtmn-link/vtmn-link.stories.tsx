@@ -1,6 +1,9 @@
-export default (component) => ({
-  title: 'Components/VtmnLink',
-  component,
+import { html } from 'lit-html';
+import { spread } from '@open-wc/lit-helpers';
+
+export default {
+  title: 'Components/vtmn-link',
+  component: 'vtmn-link',
   argTypes: {
     href: {
       type: { name: 'string', required: true },
@@ -11,7 +14,7 @@ export default (component) => ({
     target: {
       type: { name: 'string', required: false },
       description: 'The target of the link.',
-      defaultValue: '_self',
+      defaultValue: null,
       control: {
         type: 'text',
       },
@@ -19,7 +22,7 @@ export default (component) => ({
     size: {
       type: { name: 'string', required: false },
       description: 'The size of the link.',
-      defaultValue: 'medium',
+      defaultValue: null,
       control: {
         type: 'select',
         options: ['small', 'medium', 'large'],
@@ -28,20 +31,12 @@ export default (component) => ({
     isStandalone: {
       type: { name: 'boolean', required: false },
       description: 'If the component is a standalone or not.',
-      defaultValue: false,
+      defaultValue: null,
       control: { type: 'boolean' },
-    },
-    children: {
-      type: { name: 'string', required: false },
-      description: 'The content to render inside the component.',
-      defaultValue: 'Link',
-      control: {
-        type: 'text',
-      },
     },
   },
   parameters: {
-    backgrounds: { default: 'grey' },
+    backgrounds: { default: 'white' },
     actions: {
       handles: ['mouseenter', 'click', 'focusin', 'focusout'],
     },
@@ -51,4 +46,10 @@ export default (component) => ({
         'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vtmn---Web?node-id=1207%3A8898',
     },
   },
-});
+};
+
+const Template = (args) =>
+  html`<vtmn-link ...=${spread(args)}>Your link</vtmn-link>`;
+
+export const Overview = Template.bind({});
+Overview.args = {};
