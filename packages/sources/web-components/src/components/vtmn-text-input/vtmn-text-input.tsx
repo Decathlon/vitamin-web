@@ -13,21 +13,18 @@ export class VtmnTextInput {
 
   /**
    * The label of the text input.
-   * @default 'My label'
    */
-  @Prop() label: string = 'My label';
+  @Prop() label: string;
 
   /**
    * The placeholder of the text input.
-   * @default 'My placeholder'
    */
-  @Prop() placeholder: string = 'My placeholder';
+  @Prop() placeholder: string;
 
   /**
    * The helper of the text input.
-   * @default 'My helper'
    */
-  @Prop() helper: string = 'My helper';
+  @Prop() helper: string;
 
   /**
    * Is the text-input multiline or not.
