@@ -26,42 +26,34 @@ export namespace Components {
     interface VtmnTextInput {
         /**
           * The helper of the text input.
-          * @default 'My helper'
          */
         "helper": string;
         /**
           * The icon to be displayed
-          * @default
          */
         "icon": string;
         /**
           * The id of the text input.
-          * @default 'my-id'
          */
         "id": string;
         /**
           * The disabled state of the text-input.
-          * @default
          */
         "isDisabled": boolean;
         /**
           * Is the text-input multiline or not.
-          * @default
          */
         "isMultiline": boolean;
         /**
           * The label of the text input.
-          * @default 'My label'
          */
         "label": string;
         /**
           * The placeholder of the text input.
-          * @default 'My placeholder'
          */
         "placeholder": string;
         /**
           * The state of the text-input.
-          * @default
          */
         "state": 'valid' | 'error' | null;
     }
@@ -105,42 +97,34 @@ declare namespace LocalJSX {
     interface VtmnTextInput {
         /**
           * The helper of the text input.
-          * @default 'My helper'
          */
         "helper"?: string;
         /**
           * The icon to be displayed
-          * @default
          */
         "icon"?: string;
         /**
           * The id of the text input.
-          * @default 'my-id'
          */
         "id"?: string;
         /**
           * The disabled state of the text-input.
-          * @default
          */
         "isDisabled"?: boolean;
         /**
           * Is the text-input multiline or not.
-          * @default
          */
         "isMultiline"?: boolean;
         /**
           * The label of the text input.
-          * @default 'My label'
          */
         "label"?: string;
         /**
           * The placeholder of the text input.
-          * @default 'My placeholder'
          */
         "placeholder"?: string;
         /**
           * The state of the text-input.
-          * @default
          */
         "state"?: 'valid' | 'error' | null;
     }

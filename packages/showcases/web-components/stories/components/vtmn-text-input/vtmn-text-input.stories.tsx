@@ -37,7 +37,7 @@ export default {
         type: 'text',
       },
     },
-    isMultiline: {
+    multiline: {
       type: { name: 'boolean', required: false },
       description: 'Whether the text input is multiline or not.',
       defaultValue: null,
@@ -54,7 +54,7 @@ export default {
         options: ['valid', 'error', null],
       },
     },
-    isDisabled: {
+    disabled: {
       type: { name: 'boolean', required: false },
       description: 'The disabled state of the text input.',
       defaultValue: null,

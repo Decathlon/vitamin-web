@@ -3,7 +3,6 @@ import { Component, Prop, h } from '@stencil/core';
 @Component({
   tag: 'vtmn-text-input',
   styleUrl: 'vtmn-text-input.pcss',
-  shadow: false,
 })
 export class VtmnTextInput {
   /**
@@ -28,25 +27,21 @@ export class VtmnTextInput {
 
   /**
    * Is the text-input multiline or not.
-   * @default
    */
-  @Prop({ attribute: 'ismultiline' }) isMultiline: boolean;
+  @Prop({ attribute: 'multiline' }) isMultiline: boolean;
 
   /**
    * The state of the text-input.
-   * @default
    */
   @Prop() state: 'valid' | 'error' | null;
 
   /**
    * The disabled state of the text-input.
-   * @default
    */
-  @Prop({ attribute: 'isdisabled' }) isDisabled: boolean;
+  @Prop({ attribute: 'disabled' }) isDisabled: boolean;
 
   /**
    * The icon to be displayed
-   * @default
    */
   @Prop() icon: string;
 
