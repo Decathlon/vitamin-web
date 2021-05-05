@@ -23,25 +23,6 @@ export namespace Components {
     | 'ghost'
     | 'conversion';
     }
-    interface VtmnToggle {
-        /**
-          * The id of the toggle and its label.
-         */
-        "id": string;
-        /**
-          * The checked state of the toggle.
-          * @default false
-         */
-        "isChecked": boolean;
-        /**
-          * The disabled state of the toggle.
-          * @default false
-         */
-        "isDisabled": boolean;
-        /**
-          * The size of the toggle.
-         */
-        "size": 'small' | 'medium';
     interface VtmnLink {
         /**
           * The hypertext link
@@ -64,6 +45,26 @@ export namespace Components {
          */
         "target": string;
     }
+    interface VtmnToggle {
+        /**
+          * The id of the toggle and its label.
+         */
+        "id": string;
+        /**
+          * The checked state of the toggle.
+          * @default false
+         */
+        "isChecked": boolean;
+        /**
+          * The disabled state of the toggle.
+          * @default false
+         */
+        "isDisabled": boolean;
+        /**
+          * The size of the toggle.
+         */
+        "size": 'small' | 'medium';
+    }
 }
 declare global {
     interface HTMLVtmnButtonElement extends Components.VtmnButton, HTMLStencilElement {
@@ -71,6 +72,12 @@ declare global {
     var HTMLVtmnButtonElement: {
         prototype: HTMLVtmnButtonElement;
         new (): HTMLVtmnButtonElement;
+    };
+    interface HTMLVtmnLinkElement extends Components.VtmnLink, HTMLStencilElement {
+    }
+    var HTMLVtmnLinkElement: {
+        prototype: HTMLVtmnLinkElement;
+        new (): HTMLVtmnLinkElement;
     };
     interface HTMLVtmnToggleElement extends Components.VtmnToggle, HTMLStencilElement {
     }
@@ -80,16 +87,8 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "vtmn-button": HTMLVtmnButtonElement;
-        "vtmn-toggle": HTMLVtmnToggleElement;
-    interface HTMLVtmnLinkElement extends Components.VtmnLink, HTMLStencilElement {
-    }
-    var HTMLVtmnLinkElement: {
-        prototype: HTMLVtmnLinkElement;
-        new (): HTMLVtmnLinkElement;
-    };
-    interface HTMLElementTagNameMap {
-        "vtmn-button": HTMLVtmnButtonElement;
         "vtmn-link": HTMLVtmnLinkElement;
+        "vtmn-toggle": HTMLVtmnToggleElement;
     }
 }
 declare namespace LocalJSX {
@@ -109,6 +108,28 @@ declare namespace LocalJSX {
     | 'secondary-reversed'
     | 'ghost'
     | 'conversion';
+    }
+    interface VtmnLink {
+        /**
+          * The hypertext link
+          * @default '#'
+         */
+        "href"?: string;
+        /**
+          * Is the link standalone or not
+          * @default null
+         */
+        "isStandalone"?: boolean;
+        /**
+          * The size of the link.
+          * @default null
+         */
+        "size"?: 'small' | 'medium' | 'large';
+        /**
+          * The target of the link
+          * @default null
+         */
+        "target"?: string;
     }
     interface VtmnToggle {
         /**
@@ -132,32 +153,8 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "vtmn-button": VtmnButton;
-        "vtmn-toggle": VtmnToggle;
-    interface VtmnLink {
-        /**
-          * The hypertext link
-          * @default '#'
-         */
-        "href"?: string;
-        /**
-          * Is the link standalone or not
-          * @default null
-         */
-        "isStandalone"?: boolean;
-        /**
-          * The size of the link.
-          * @default null
-         */
-        "size"?: 'small' | 'medium' | 'large';
-        /**
-          * The target of the link
-          * @default null
-         */
-        "target"?: string;
-    }
-    interface IntrinsicElements {
-        "vtmn-button": VtmnButton;
         "vtmn-link": VtmnLink;
+        "vtmn-toggle": VtmnToggle;
     }
 }
 export { LocalJSX as JSX };
@@ -165,8 +162,8 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "vtmn-button": LocalJSX.VtmnButton & JSXBase.HTMLAttributes<HTMLVtmnButtonElement>;
-            "vtmn-toggle": LocalJSX.VtmnToggle & JSXBase.HTMLAttributes<HTMLVtmnToggleElement>;
             "vtmn-link": LocalJSX.VtmnLink & JSXBase.HTMLAttributes<HTMLVtmnLinkElement>;
+            "vtmn-toggle": LocalJSX.VtmnToggle & JSXBase.HTMLAttributes<HTMLVtmnToggleElement>;
         }
     }
 }
