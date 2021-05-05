@@ -8,22 +8,22 @@ export class VtmnTextInput {
   /**
    * The id of the text input.
    */
-  @Prop() id: string;
+  @Prop() id!: string;
 
   /**
-   * The label of the text input.
+   * The label text of the text input.
    */
-  @Prop() label: string;
+  @Prop({ attribute: 'label' }) labelText!: string;
 
   /**
    * The placeholder of the text input.
    */
-  @Prop() placeholder: string;
+  @Prop() placeholder!: string;
 
   /**
-   * The helper of the text input.
+   * The helper text of the text input.
    */
-  @Prop() helper: string;
+  @Prop({ attribute: 'helper' }) helperText!: string;
 
   /**
    * Is the text-input multiline or not.
@@ -46,12 +46,12 @@ export class VtmnTextInput {
   @Prop() icon: string;
 
   render() {
-    if (this.isMultiline) {
-      return [
-        <label class="vtmn-text-input_label" htmlFor={this.id}>
-          {this.label}
-        </label>,
+    return [
+      <label class="vtmn-text-input_label" htmlFor={this.id}>
+        {this.labelText}
+      </label>,
 
+      this.isMultiline ? (
         <textarea
           class={[
             'vtmn-text-input',
@@ -61,24 +61,8 @@ export class VtmnTextInput {
             .join(' ')}
           id={this.id}
           placeholder={this.placeholder}
-          disabled={this.isDisabled}></textarea>,
-
-        <p
-          class={[
-            'vtmn-text-input_helper-text',
-            this.state && `vtmn-text-input_helper-text--${this.state}`,
-          ]
-            .filter(Boolean)
-            .join(' ')}>
-          {this.helper}
-        </p>,
-      ];
-    } else {
-      return [
-        <label class="vtmn-text-input_label" htmlFor={this.id}>
-          {this.label}
-        </label>,
-
+          disabled={this.isDisabled}></textarea>
+      ) : (
         <div class="vtmn-text-input_container">
           <input
             type="text"
@@ -93,18 +77,17 @@ export class VtmnTextInput {
             disabled={this.isDisabled}
           />
           {this.icon ? <span class={this.icon}></span> : null}
-        </div>,
-
-        <p
-          class={[
-            'vtmn-text-input_helper-text',
-            this.state && `vtmn-text-input_helper-text--${this.state}`,
-          ]
-            .filter(Boolean)
-            .join(' ')}>
-          {this.helper}
-        </p>,
-      ];
-    }
+        </div>
+      ),
+      <p
+        class={[
+          'vtmn-text-input_helper-text',
+          this.state && `vtmn-text-input_helper-text--${this.state}`,
+        ]
+          .filter(Boolean)
+          .join(' ')}>
+        {this.helperText}
+      </p>,
+    ];
   }
 }

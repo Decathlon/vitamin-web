@@ -47,9 +47,9 @@ export namespace Components {
     }
     interface VtmnTextInput {
         /**
-          * The helper of the text input.
+          * The helper text of the text input.
          */
-        "helper": string;
+        "helperText": string;
         /**
           * The icon to be displayed
          */
@@ -67,9 +67,9 @@ export namespace Components {
          */
         "isMultiline": boolean;
         /**
-          * The label of the text input.
+          * The label text of the text input.
          */
-        "label": string;
+        "labelText": string;
         /**
           * The placeholder of the text input.
          */
@@ -147,9 +147,9 @@ declare namespace LocalJSX {
     }
     interface VtmnTextInput {
         /**
-          * The helper of the text input.
+          * The helper text of the text input.
          */
-        "helper"?: string;
+        "helperText": string;
         /**
           * The icon to be displayed
          */
@@ -157,7 +157,7 @@ declare namespace LocalJSX {
         /**
           * The id of the text input.
          */
-        "id"?: string;
+        "id": string;
         /**
           * The disabled state of the text-input.
          */
@@ -167,13 +167,13 @@ declare namespace LocalJSX {
          */
         "isMultiline"?: boolean;
         /**
-          * The label of the text input.
+          * The label text of the text input.
          */
-        "label"?: string;
+        "labelText": string;
         /**
           * The placeholder of the text input.
          */
-        "placeholder"?: string;
+        "placeholder": string;
         /**
           * The state of the text-input.
          */
