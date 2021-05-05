@@ -13,6 +13,14 @@ export default {
         type: 'text',
       },
     },
+    label: {
+      type: { name: 'string', required: false },
+      description: 'The label of the toggle.',
+      defaultValue: null,
+      control: {
+        type: 'text',
+      },
+    },
     size: {
       type: { name: 'string', required: false },
       description: 'The size of the toggle.',
@@ -52,8 +60,7 @@ export default {
   },
 };
 
-const Template = (args) =>
-  html`<vtmn-toggle ...=${spread(args)}>Your label</vtmn-toggle>`;
+const Template = (args) => html`<vtmn-toggle ...=${spread(args)} />`;
 
 export const Overview = Template.bind({});
 Overview.args = {};

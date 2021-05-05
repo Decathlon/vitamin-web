@@ -8,7 +8,12 @@ export class VtmnToggle {
   /**
    * The id of the toggle and its label.
    */
-  @Prop() id: string;
+  @Prop() id!: string;
+
+  /**
+   * The text of the toggle.
+   */
+  @Prop() label: string;
 
   /**
    * The size of the toggle.
@@ -39,9 +44,7 @@ export class VtmnToggle {
           />
           <span aria-hidden="true"></span>
         </div>
-        <label htmlFor={this.id}>
-          <slot></slot>
-        </label>
+        <label htmlFor={this.id}>{this.label}</label>
       </div>
     );
   }
