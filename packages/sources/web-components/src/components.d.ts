@@ -63,7 +63,7 @@ export namespace Components {
         /**
           * The text of the toggle.
          */
-        "label": string;
+        "labelText": string;
         /**
           * The size of the toggle.
          */
@@ -153,7 +153,7 @@ declare namespace LocalJSX {
         /**
           * The text of the toggle.
          */
-        "label"?: string;
+        "labelText"?: string;
         /**
           * The size of the toggle.
          */

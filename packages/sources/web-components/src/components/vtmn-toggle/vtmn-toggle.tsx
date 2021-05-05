@@ -13,7 +13,7 @@ export class VtmnToggle {
   /**
    * The text of the toggle.
    */
-  @Prop() label: string;
+  @Prop({ attribute: 'label' }) labelText: string;
 
   /**
    * The size of the toggle.
@@ -44,7 +44,7 @@ export class VtmnToggle {
           />
           <span aria-hidden="true"></span>
         </div>
-        <label htmlFor={this.id}>{this.label}</label>
+        <label htmlFor={this.id}>{this.labelText}</label>
       </div>
     );
   }
