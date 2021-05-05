@@ -8,7 +8,7 @@ export default {
     id: {
       type: { name: 'string', required: true },
       description: 'Id of the text input',
-      defaultValue: 'my-id',
+      defaultValue: null,
       control: {
         type: 'text',
       },
