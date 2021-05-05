@@ -7,8 +7,8 @@ export default {
   argTypes: {
     id: {
       type: { name: 'string', required: true },
-      description: 'The id of the toggle.',
-      defaultValue: 'my-id',
+      description: 'The id of the toggle and its label.',
+      defaultValue: null,
       control: {
         type: 'text',
       },
@@ -16,7 +16,7 @@ export default {
     size: {
       type: { name: 'string', required: false },
       description: 'The size of the toggle.',
-      defaultValue: 'medium',
+      defaultValue: null,
       control: {
         type: 'select',
         options: ['small', 'medium'],
@@ -25,7 +25,7 @@ export default {
     checked: {
       type: { name: 'boolean', required: false },
       description: 'The checked state of the toggle',
-      defaultValue: false,
+      defaultValue: null,
       control: {
         type: 'boolean',
       },
@@ -33,7 +33,7 @@ export default {
     disabled: {
       type: { name: 'boolean', required: false },
       description: 'The disabled state of the toggle',
-      defaultValue: false,
+      defaultValue: null,
       control: {
         type: 'boolean',
       },

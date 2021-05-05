@@ -25,8 +25,7 @@ export namespace Components {
     }
     interface VtmnToggle {
         /**
-          * The id of the toggle.
-          * @default 'my-id'
+          * The id of the toggle and its label.
          */
         "id": string;
         /**
@@ -41,7 +40,6 @@ export namespace Components {
         "isDisabled": boolean;
         /**
           * The size of the toggle.
-          * @default 'medium'
          */
         "size": 'small' | 'medium';
     }
@@ -84,8 +82,7 @@ declare namespace LocalJSX {
     }
     interface VtmnToggle {
         /**
-          * The id of the toggle.
-          * @default 'my-id'
+          * The id of the toggle and its label.
          */
         "id"?: string;
         /**
@@ -100,7 +97,6 @@ declare namespace LocalJSX {
         "isDisabled"?: boolean;
         /**
           * The size of the toggle.
-          * @default 'medium'
          */
         "size"?: 'small' | 'medium';
     }

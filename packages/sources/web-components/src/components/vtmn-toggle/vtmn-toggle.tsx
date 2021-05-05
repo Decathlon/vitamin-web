@@ -3,32 +3,29 @@ import { Component, Prop, h } from '@stencil/core';
 @Component({
   tag: 'vtmn-toggle',
   styleUrl: 'vtmn-toggle.pcss',
-  shadow: true,
 })
 export class VtmnToggle {
   /**
-   * The id of the toggle.
-   * @default 'my-id'
+   * The id of the toggle and its label.
    */
-  @Prop() id: string = 'my-id';
+  @Prop() id: string;
 
   /**
    * The size of the toggle.
-   * @default 'medium'
    */
-  @Prop() size: 'small' | 'medium' = 'medium';
+  @Prop() size: 'small' | 'medium';
 
   /**
    * The checked state of the toggle.
    * @default false
    */
-  @Prop({ attribute: 'checked' }) isChecked: boolean = false;
+  @Prop({ attribute: 'checked' }) isChecked: boolean;
 
   /**
    * The disabled state of the toggle.
    * @default false
    */
-  @Prop({ attribute: 'disabled' }) isDisabled: boolean = false;
+  @Prop({ attribute: 'disabled' }) isDisabled: boolean;
 
   render() {
     return (
