@@ -8,9 +8,8 @@ import { Component, Prop, h } from '@stencil/core';
 export class VtmnTextInput {
   /**
    * The id of the text input.
-   * @default 'my-id'
    */
-  @Prop() id: string = 'my-id';
+  @Prop() id: string;
 
   /**
    * The label of the text input.
@@ -57,7 +56,7 @@ export class VtmnTextInput {
   render() {
     if (this.isMultiline) {
       return [
-        <label class="vtmn-text-input_label" htmlFor="my-label">
+        <label class="vtmn-text-input_label" htmlFor={this.id}>
           {this.label}
         </label>,
 
@@ -68,7 +67,7 @@ export class VtmnTextInput {
           ]
             .filter(Boolean)
             .join(' ')}
-          id="my-text-input-multiline"
+          id={this.id}
           placeholder={this.placeholder}
           disabled={this.isDisabled}></textarea>,
 
@@ -84,7 +83,7 @@ export class VtmnTextInput {
       ];
     } else {
       return [
-        <label class="vtmn-text-input_label" htmlFor="my-label">
+        <label class="vtmn-text-input_label" htmlFor={this.id}>
           {this.label}
         </label>,
 
@@ -97,7 +96,7 @@ export class VtmnTextInput {
             ]
               .filter(Boolean)
               .join(' ')}
-            id="my-label"
+            id={this.id}
             placeholder={this.placeholder}
             disabled={this.isDisabled}
           />
