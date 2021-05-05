@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.3.12...@vtmn/web-components@0.4.0) (2021-05-04)
+
+
+### Features
+
+* **@vtmn/WC-link:** add interface VtmnLink + update readme ([a270fd3](https://github.com/Decathlon/vitamin-web/commit/a270fd391a6820730c8e6505b62358375c8734f2))
+* **@vtmn/web-component-link:** init link web component ([ed25737](https://github.com/Decathlon/vitamin-web/commit/ed257378a4369590ee14f2b844fb7691caff6c4e))
+* **@vtmn/web-components:** component optimisation for prop by default ([d5805d5](https://github.com/Decathlon/vitamin-web/commit/d5805d5422225b5071656d1a5d8bbba66df6c45d))
+* **@vtmn/web-components:** readme update ([564acee](https://github.com/Decathlon/vitamin-web/commit/564acee95ecb5884de7d13fbb649acebe9f63060))
+* **@vtmn/web-components:** refacto variable name + set up class with boolean ([9abaf97](https://github.com/Decathlon/vitamin-web/commit/9abaf97064e1af40a26a6d81755f98c97b8d643d))
+* **@vtmn/web-components:** remove shadow property ([3a47007](https://github.com/Decathlon/vitamin-web/commit/3a47007c7edffc31c000aa6d09e4bb4ff7c741fa))
+* **@vtmn/web-components:** rename standalone prop + change default target value ([3a44177](https://github.com/Decathlon/vitamin-web/commit/3a441777fb1a0c68523eff8e6c57c12ba54d103a))
+* **@vtmn/web-components-link:** add href and target prop ([ec37009](https://github.com/Decathlon/vitamin-web/commit/ec37009988419eca9545986a998546b4828be19f))
+* **@vtmn/web-components-link:** create link web component with size and standalone properties ([2e2f81c](https://github.com/Decathlon/vitamin-web/commit/2e2f81cfe0233b3cfd7648a06a5bef28e29b438a))
+
+
+
+
+
 ## [0.3.12](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.3.11...@vtmn/web-components@0.3.12) (2021-04-29)
 
 **Note:** Version bump only for package @vtmn/web-components

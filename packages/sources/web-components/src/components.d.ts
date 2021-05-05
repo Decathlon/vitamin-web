@@ -42,6 +42,27 @@ export namespace Components {
           * The size of the toggle.
          */
         "size": 'small' | 'medium';
+    interface VtmnLink {
+        /**
+          * The hypertext link
+          * @default '#'
+         */
+        "href": string;
+        /**
+          * Is the link standalone or not
+          * @default null
+         */
+        "isStandalone": boolean;
+        /**
+          * The size of the link.
+          * @default null
+         */
+        "size": 'small' | 'medium' | 'large';
+        /**
+          * The target of the link
+          * @default null
+         */
+        "target": string;
     }
 }
 declare global {
@@ -60,6 +81,15 @@ declare global {
     interface HTMLElementTagNameMap {
         "vtmn-button": HTMLVtmnButtonElement;
         "vtmn-toggle": HTMLVtmnToggleElement;
+    interface HTMLVtmnLinkElement extends Components.VtmnLink, HTMLStencilElement {
+    }
+    var HTMLVtmnLinkElement: {
+        prototype: HTMLVtmnLinkElement;
+        new (): HTMLVtmnLinkElement;
+    };
+    interface HTMLElementTagNameMap {
+        "vtmn-button": HTMLVtmnButtonElement;
+        "vtmn-link": HTMLVtmnLinkElement;
     }
 }
 declare namespace LocalJSX {
@@ -103,6 +133,31 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "vtmn-button": VtmnButton;
         "vtmn-toggle": VtmnToggle;
+    interface VtmnLink {
+        /**
+          * The hypertext link
+          * @default '#'
+         */
+        "href"?: string;
+        /**
+          * Is the link standalone or not
+          * @default null
+         */
+        "isStandalone"?: boolean;
+        /**
+          * The size of the link.
+          * @default null
+         */
+        "size"?: 'small' | 'medium' | 'large';
+        /**
+          * The target of the link
+          * @default null
+         */
+        "target"?: string;
+    }
+    interface IntrinsicElements {
+        "vtmn-button": VtmnButton;
+        "vtmn-link": VtmnLink;
     }
 }
 export { LocalJSX as JSX };
@@ -111,6 +166,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "vtmn-button": LocalJSX.VtmnButton & JSXBase.HTMLAttributes<HTMLVtmnButtonElement>;
             "vtmn-toggle": LocalJSX.VtmnToggle & JSXBase.HTMLAttributes<HTMLVtmnToggleElement>;
+            "vtmn-link": LocalJSX.VtmnLink & JSXBase.HTMLAttributes<HTMLVtmnLinkElement>;
         }
     }
 }
