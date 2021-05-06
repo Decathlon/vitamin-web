@@ -79,6 +79,30 @@ export namespace Components {
          */
         "state": 'valid' | 'error' | null;
     }
+    interface VtmnToggle {
+        /**
+          * The id of the toggle and its label.
+         */
+        "id": string;
+        /**
+          * The checked state of the toggle.
+          * @default false
+         */
+        "isChecked": boolean;
+        /**
+          * The disabled state of the toggle.
+          * @default false
+         */
+        "isDisabled": boolean;
+        /**
+          * The text of the toggle.
+         */
+        "labelText": string;
+        /**
+          * The size of the toggle.
+         */
+        "size": 'small' | 'medium';
+    }
 }
 declare global {
     interface HTMLVtmnButtonElement extends Components.VtmnButton, HTMLStencilElement {
@@ -99,10 +123,17 @@ declare global {
         prototype: HTMLVtmnTextInputElement;
         new (): HTMLVtmnTextInputElement;
     };
+    interface HTMLVtmnToggleElement extends Components.VtmnToggle, HTMLStencilElement {
+    }
+    var HTMLVtmnToggleElement: {
+        prototype: HTMLVtmnToggleElement;
+        new (): HTMLVtmnToggleElement;
+    };
     interface HTMLElementTagNameMap {
         "vtmn-button": HTMLVtmnButtonElement;
         "vtmn-link": HTMLVtmnLinkElement;
         "vtmn-text-input": HTMLVtmnTextInputElement;
+        "vtmn-toggle": HTMLVtmnToggleElement;
     }
 }
 declare namespace LocalJSX {
@@ -179,10 +210,35 @@ declare namespace LocalJSX {
          */
         "state"?: 'valid' | 'error' | null;
     }
+    interface VtmnToggle {
+        /**
+          * The id of the toggle and its label.
+         */
+        "id": string;
+        /**
+          * The checked state of the toggle.
+          * @default false
+         */
+        "isChecked"?: boolean;
+        /**
+          * The disabled state of the toggle.
+          * @default false
+         */
+        "isDisabled"?: boolean;
+        /**
+          * The text of the toggle.
+         */
+        "labelText"?: string;
+        /**
+          * The size of the toggle.
+         */
+        "size"?: 'small' | 'medium';
+    }
     interface IntrinsicElements {
         "vtmn-button": VtmnButton;
         "vtmn-link": VtmnLink;
         "vtmn-text-input": VtmnTextInput;
+        "vtmn-toggle": VtmnToggle;
     }
 }
 export { LocalJSX as JSX };
@@ -192,6 +248,7 @@ declare module "@stencil/core" {
             "vtmn-button": LocalJSX.VtmnButton & JSXBase.HTMLAttributes<HTMLVtmnButtonElement>;
             "vtmn-link": LocalJSX.VtmnLink & JSXBase.HTMLAttributes<HTMLVtmnLinkElement>;
             "vtmn-text-input": LocalJSX.VtmnTextInput & JSXBase.HTMLAttributes<HTMLVtmnTextInputElement>;
+            "vtmn-toggle": LocalJSX.VtmnToggle & JSXBase.HTMLAttributes<HTMLVtmnToggleElement>;
         }
     }
 }

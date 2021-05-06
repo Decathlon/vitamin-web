@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.4.0...@vtmn/web-components@0.5.0) (2021-05-06)
+
+
+### Bug Fixes
+
+* **@vtmn/web-component-toggle:** rename webcomponet class ([862e59a](https://github.com/Decathlon/vitamin-web/commit/862e59a79e500fb1163f2f67adcbbf338d1e1a0d))
+* **@vtmn/web-components:** merge main conflicts ([0581ea2](https://github.com/Decathlon/vitamin-web/commit/0581ea22db017de17033a7bff745622cc7409555))
+
+
+### Features
+
+* **@vtmn/web-component-toggle:** add component ([e414165](https://github.com/Decathlon/vitamin-web/commit/e41416544c4615f4ffad13ac765a40a11c0ec8a5))
+* **@vtmn/web-component-toggle:** init web component ([373fd8d](https://github.com/Decathlon/vitamin-web/commit/373fd8d0508e6f591abbbbf915d57d934512865c))
+* **@vtmn/web-components:** add id props for input and its associated label ([5b2bec8](https://github.com/Decathlon/vitamin-web/commit/5b2bec8404e64b7f1717724af25febf63de4eb93))
+* **@vtmn/web-components:** add required variable in sources, add label text in optional ([ab05b0d](https://github.com/Decathlon/vitamin-web/commit/ab05b0d8fed08be97dc9323618cf07a00d988271))
+* **@vtmn/web-components:** optimisation variable naming + class ([ee928ff](https://github.com/Decathlon/vitamin-web/commit/ee928ff4e30074ee64ebaf0556aba7f4780767ba))
+* **@vtmn/web-components:** remove shadow and default hard coded values ([0365b4b](https://github.com/Decathlon/vitamin-web/commit/0365b4b493b7472262af9d494695a312c1c38eb4))
+* **@vtmn/web-components:** rename shadow ([190691d](https://github.com/Decathlon/vitamin-web/commit/190691d6e12271f781aed024a2df2a451ec4faed))
+* **@vtmn/web-components:** rename variable ([92b497f](https://github.com/Decathlon/vitamin-web/commit/92b497ff36b8934ea03c285d5f0d995986556722))
+* **@vtmn/web-components:** rename variable ([afde5c4](https://github.com/Decathlon/vitamin-web/commit/afde5c447224294d431b18747605c64c0895f8f1))
+
+
+
+
+
 # [0.4.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.3.12...@vtmn/web-components@0.4.0) (2021-05-04)
 
 
