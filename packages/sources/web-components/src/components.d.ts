@@ -45,6 +45,40 @@ export namespace Components {
          */
         "target": string;
     }
+    interface VtmnTextInput {
+        /**
+          * The helper text of the text input.
+         */
+        "helperText": string;
+        /**
+          * The icon to be displayed
+         */
+        "icon": string;
+        /**
+          * The id of the text input.
+         */
+        "id": string;
+        /**
+          * The disabled state of the text-input.
+         */
+        "isDisabled": boolean;
+        /**
+          * Is the text-input multiline or not.
+         */
+        "isMultiline": boolean;
+        /**
+          * The label text of the text input.
+         */
+        "labelText": string;
+        /**
+          * The placeholder of the text input.
+         */
+        "placeholder": string;
+        /**
+          * The state of the text-input.
+         */
+        "state": 'valid' | 'error' | null;
+    }
     interface VtmnToggle {
         /**
           * The id of the toggle and its label.
@@ -83,6 +117,12 @@ declare global {
         prototype: HTMLVtmnLinkElement;
         new (): HTMLVtmnLinkElement;
     };
+    interface HTMLVtmnTextInputElement extends Components.VtmnTextInput, HTMLStencilElement {
+    }
+    var HTMLVtmnTextInputElement: {
+        prototype: HTMLVtmnTextInputElement;
+        new (): HTMLVtmnTextInputElement;
+    };
     interface HTMLVtmnToggleElement extends Components.VtmnToggle, HTMLStencilElement {
     }
     var HTMLVtmnToggleElement: {
@@ -92,6 +132,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "vtmn-button": HTMLVtmnButtonElement;
         "vtmn-link": HTMLVtmnLinkElement;
+        "vtmn-text-input": HTMLVtmnTextInputElement;
         "vtmn-toggle": HTMLVtmnToggleElement;
     }
 }
@@ -135,6 +176,40 @@ declare namespace LocalJSX {
          */
         "target"?: string;
     }
+    interface VtmnTextInput {
+        /**
+          * The helper text of the text input.
+         */
+        "helperText": string;
+        /**
+          * The icon to be displayed
+         */
+        "icon"?: string;
+        /**
+          * The id of the text input.
+         */
+        "id": string;
+        /**
+          * The disabled state of the text-input.
+         */
+        "isDisabled"?: boolean;
+        /**
+          * Is the text-input multiline or not.
+         */
+        "isMultiline"?: boolean;
+        /**
+          * The label text of the text input.
+         */
+        "labelText": string;
+        /**
+          * The placeholder of the text input.
+         */
+        "placeholder": string;
+        /**
+          * The state of the text-input.
+         */
+        "state"?: 'valid' | 'error' | null;
+    }
     interface VtmnToggle {
         /**
           * The id of the toggle and its label.
@@ -162,6 +237,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "vtmn-button": VtmnButton;
         "vtmn-link": VtmnLink;
+        "vtmn-text-input": VtmnTextInput;
         "vtmn-toggle": VtmnToggle;
     }
 }
@@ -171,6 +247,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "vtmn-button": LocalJSX.VtmnButton & JSXBase.HTMLAttributes<HTMLVtmnButtonElement>;
             "vtmn-link": LocalJSX.VtmnLink & JSXBase.HTMLAttributes<HTMLVtmnLinkElement>;
+            "vtmn-text-input": LocalJSX.VtmnTextInput & JSXBase.HTMLAttributes<HTMLVtmnTextInputElement>;
             "vtmn-toggle": LocalJSX.VtmnToggle & JSXBase.HTMLAttributes<HTMLVtmnToggleElement>;
         }
     }
