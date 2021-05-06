@@ -13,7 +13,7 @@ export default {
         type: 'text',
       },
     },
-    label: {
+    labelText: {
       type: { name: 'string', required: true },
       description: 'The label of the text input',
       defaultValue: 'My label',
@@ -29,7 +29,7 @@ export default {
         type: 'text',
       },
     },
-    helper: {
+    helperText: {
       type: { name: 'string', required: true },
       description: 'The helper of the text input',
       defaultValue: 'My helper',

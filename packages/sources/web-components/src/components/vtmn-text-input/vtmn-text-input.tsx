@@ -13,7 +13,7 @@ export class VtmnTextInput {
   /**
    * The label text of the text input.
    */
-  @Prop({ attribute: 'label' }) labelText!: string;
+  @Prop({ attribute: 'labeltext' }) labelText!: string;
 
   /**
    * The placeholder of the text input.
@@ -23,7 +23,7 @@ export class VtmnTextInput {
   /**
    * The helper text of the text input.
    */
-  @Prop({ attribute: 'helper' }) helperText!: string;
+  @Prop({ attribute: 'helpertext' }) helperText!: string;
 
   /**
    * Is the text-input multiline or not.
