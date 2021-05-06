@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-text-input@0.3.0...@vtmn/css-text-input@0.4.0) (2021-05-06)
+
+
+### Features
+
+* **@vtmn/web-components:** css fixes for message margin + text input state set up ([1570974](https://github.com/Decathlon/vitamin-web/commit/15709740360dbd5f34d8cc89575e9539d5495b6c))
+
+
+
+
+
 # [0.3.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-text-input@0.2.1...@vtmn/css-text-input@0.3.0) (2021-04-21)
 
 
