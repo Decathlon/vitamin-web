@@ -13,7 +13,7 @@ export default {
         type: 'text',
       },
     },
-    label: {
+    labelText: {
       type: { name: 'string', required: false },
       description: 'The label of the toggle.',
       defaultValue: null,

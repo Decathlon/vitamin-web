@@ -13,7 +13,7 @@ export class VtmnToggle {
   /**
    * The text of the toggle.
    */
-  @Prop({ attribute: 'label' }) labelText: string;
+  @Prop({ attribute: 'labeltext' }) labelText: string;
 
   /**
    * The size of the toggle.
