@@ -3,7 +3,6 @@ import { Component, Prop, h } from '@stencil/core';
 @Component({
   tag: 'vtmn-button',
   styleUrl: 'vtmn-button.pcss',
-  shadow: true,
 })
 export class VtmnButton {
   /**
