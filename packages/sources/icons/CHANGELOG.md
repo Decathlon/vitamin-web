@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.3.0...@vtmn/icons@0.3.1) (2021-05-06)
+
+**Note:** Version bump only for package @vtmn/icons
+
+
+
+
+
+# [0.3.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.2.0...@vtmn/icons@0.3.0) (2021-05-06)
+
+
+### Features
+
+* **vtmn-icons:** add sprite type declaration ([d500f6f](https://github.com/Decathlon/vitamin-web/commit/d500f6f3d184148d992fd00c3dcacfff3e6f3f4b))
+
+
+
+
+
 # [0.2.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.1.9...@vtmn/icons@0.2.0) (2021-05-01)
 
 

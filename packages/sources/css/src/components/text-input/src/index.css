@@ -5,8 +5,7 @@
 
 .vtmn-text-input_label,
 .vtmn-text-input,
-.vtmn-text-input_helper-text,
-.vtmn-text-input_error-text {
+.vtmn-text-input_helper-text {
   font-family: var(--vtmn-typo_font-family);
 }
 
@@ -83,6 +82,7 @@ textarea.vtmn-text-input {
   color: var(--vtmn-color_grey);
   font-size: rem(14px);
   line-height: 1;
+  margin-top: 0;
 }
 
 .vtmn-text-input_helper-text--error {

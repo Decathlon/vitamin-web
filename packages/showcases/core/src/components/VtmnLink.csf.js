@@ -11,8 +11,10 @@ export default (component) => ({
     target: {
       type: { name: 'string', required: false },
       description: 'The target of the link.',
-      defaultValue: '_blank',
-      control: { type: 'text' },
+      defaultValue: '_self',
+      control: {
+        type: 'text',
+      },
     },
     size: {
       type: { name: 'string', required: false },

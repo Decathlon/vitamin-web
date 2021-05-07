@@ -3,6 +3,78 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.5.0...@vtmn/web-components@0.6.0) (2021-05-06)
+
+
+### Bug Fixes
+
+* **@vtmn/web-components:** default id set to null and add interpolation ([e274c94](https://github.com/Decathlon/vitamin-web/commit/e274c94c6b76b55ede10f1156358b1ca125b31e9))
+* **@vtmn/web-components:** merge main conflicts ([e0005db](https://github.com/Decathlon/vitamin-web/commit/e0005dba779409b63483ab69923779348216acf6))
+* **@vtmn/web-components:** remove default attributes ([47bf46f](https://github.com/Decathlon/vitamin-web/commit/47bf46f17551205d5998302703b58a454cb22343))
+* **@vtmn/web-components:** remove default values for label, placeholder and helper ([f5d51c6](https://github.com/Decathlon/vitamin-web/commit/f5d51c6c87b91a625c5d0db600289786b3d49eb1))
+
+
+### Features
+
+* **@vtmn/web-component:** add label, placeholder and helper message ([dae4d05](https://github.com/Decathlon/vitamin-web/commit/dae4d05ab3d1550bdb9fc6a35e15e9518cadcbdb))
+* **@vtmn/web-component-text-input:** init component ([e0c1442](https://github.com/Decathlon/vitamin-web/commit/e0c144207a039538a2e8f8a42f5e0e112f294013))
+* **@vtmn/web-component-text-input:** init component ([e8453b5](https://github.com/Decathlon/vitamin-web/commit/e8453b5c8b74b5951923aec9c893f48511072ff2))
+* **@vtmn/web-components:** add null default value for icon, fix readme error name ([16e2f3c](https://github.com/Decathlon/vitamin-web/commit/16e2f3c8380e879bbde7c2e2f6058a4cd66d2498))
+* **@vtmn/web-components:** add required variable in sources, optimisation html, rename variables ([e34ea0d](https://github.com/Decathlon/vitamin-web/commit/e34ea0dc92a36dbb5b95b7a3d20f4fe1dc3821ca))
+* **@vtmn/web-components:** add textarea render with new prop ([c1d2551](https://github.com/Decathlon/vitamin-web/commit/c1d2551d16abf707079aa2682a0df25467e4bf4d))
+* **@vtmn/web-components:** css fixes for message margin + text input state set up ([1570974](https://github.com/Decathlon/vitamin-web/commit/15709740360dbd5f34d8cc89575e9539d5495b6c))
+* **@vtmn/web-components:** fix bug icon font, optimisations ([26c4d98](https://github.com/Decathlon/vitamin-web/commit/26c4d98274c5bf147c094afb90d4b8a42d3a0435))
+* **@vtmn/web-components:** import and add icon font (bug), add disabled state ([ce95574](https://github.com/Decathlon/vitamin-web/commit/ce9557497c052e183fbd24bd3175de84faa95c8e))
+* **@vtmn/web-components:** rename variable ([89c60ce](https://github.com/Decathlon/vitamin-web/commit/89c60ce8f012f98cca0e78cd28b50ca5f9fb18c3))
+
+
+
+
+
+# [0.5.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.4.0...@vtmn/web-components@0.5.0) (2021-05-06)
+
+
+### Bug Fixes
+
+* **@vtmn/web-component-toggle:** rename webcomponet class ([862e59a](https://github.com/Decathlon/vitamin-web/commit/862e59a79e500fb1163f2f67adcbbf338d1e1a0d))
+* **@vtmn/web-components:** merge main conflicts ([0581ea2](https://github.com/Decathlon/vitamin-web/commit/0581ea22db017de17033a7bff745622cc7409555))
+
+
+### Features
+
+* **@vtmn/web-component-toggle:** add component ([e414165](https://github.com/Decathlon/vitamin-web/commit/e41416544c4615f4ffad13ac765a40a11c0ec8a5))
+* **@vtmn/web-component-toggle:** init web component ([373fd8d](https://github.com/Decathlon/vitamin-web/commit/373fd8d0508e6f591abbbbf915d57d934512865c))
+* **@vtmn/web-components:** add id props for input and its associated label ([5b2bec8](https://github.com/Decathlon/vitamin-web/commit/5b2bec8404e64b7f1717724af25febf63de4eb93))
+* **@vtmn/web-components:** add required variable in sources, add label text in optional ([ab05b0d](https://github.com/Decathlon/vitamin-web/commit/ab05b0d8fed08be97dc9323618cf07a00d988271))
+* **@vtmn/web-components:** optimisation variable naming + class ([ee928ff](https://github.com/Decathlon/vitamin-web/commit/ee928ff4e30074ee64ebaf0556aba7f4780767ba))
+* **@vtmn/web-components:** remove shadow and default hard coded values ([0365b4b](https://github.com/Decathlon/vitamin-web/commit/0365b4b493b7472262af9d494695a312c1c38eb4))
+* **@vtmn/web-components:** rename shadow ([190691d](https://github.com/Decathlon/vitamin-web/commit/190691d6e12271f781aed024a2df2a451ec4faed))
+* **@vtmn/web-components:** rename variable ([92b497f](https://github.com/Decathlon/vitamin-web/commit/92b497ff36b8934ea03c285d5f0d995986556722))
+* **@vtmn/web-components:** rename variable ([afde5c4](https://github.com/Decathlon/vitamin-web/commit/afde5c447224294d431b18747605c64c0895f8f1))
+
+
+
+
+
+# [0.4.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.3.12...@vtmn/web-components@0.4.0) (2021-05-04)
+
+
+### Features
+
+* **@vtmn/WC-link:** add interface VtmnLink + update readme ([a270fd3](https://github.com/Decathlon/vitamin-web/commit/a270fd391a6820730c8e6505b62358375c8734f2))
+* **@vtmn/web-component-link:** init link web component ([ed25737](https://github.com/Decathlon/vitamin-web/commit/ed257378a4369590ee14f2b844fb7691caff6c4e))
+* **@vtmn/web-components:** component optimisation for prop by default ([d5805d5](https://github.com/Decathlon/vitamin-web/commit/d5805d5422225b5071656d1a5d8bbba66df6c45d))
+* **@vtmn/web-components:** readme update ([564acee](https://github.com/Decathlon/vitamin-web/commit/564acee95ecb5884de7d13fbb649acebe9f63060))
+* **@vtmn/web-components:** refacto variable name + set up class with boolean ([9abaf97](https://github.com/Decathlon/vitamin-web/commit/9abaf97064e1af40a26a6d81755f98c97b8d643d))
+* **@vtmn/web-components:** remove shadow property ([3a47007](https://github.com/Decathlon/vitamin-web/commit/3a47007c7edffc31c000aa6d09e4bb4ff7c741fa))
+* **@vtmn/web-components:** rename standalone prop + change default target value ([3a44177](https://github.com/Decathlon/vitamin-web/commit/3a441777fb1a0c68523eff8e6c57c12ba54d103a))
+* **@vtmn/web-components-link:** add href and target prop ([ec37009](https://github.com/Decathlon/vitamin-web/commit/ec37009988419eca9545986a998546b4828be19f))
+* **@vtmn/web-components-link:** create link web component with size and standalone properties ([2e2f81c](https://github.com/Decathlon/vitamin-web/commit/2e2f81cfe0233b3cfd7648a06a5bef28e29b438a))
+
+
+
+
+
 ## [0.3.12](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.3.11...@vtmn/web-components@0.3.12) (2021-04-29)
 
 **Note:** Version bump only for package @vtmn/web-components
