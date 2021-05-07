@@ -28,12 +28,12 @@
   text-decoration: none;
 }
 
-.vtmn-btn:hover {
+.vtmn-btn:not([disabled]):hover {
   background-color: var(--vtmn-color_brand-digital-dark-1);
   cursor: pointer;
 }
 
-.vtmn-btn:active {
+.vtmn-btn:not([disabled]):active {
   background-color: var(--vtmn-color_brand-digital-dark-2);
 }
 
@@ -42,10 +42,10 @@
   opacity: 0.25;
 }
 
-.vtmn-btn:not([disabled]):focus {
+.vtmn-btn:not([disabled]):focus-visible {
   outline: none;
-  box-shadow: inset 0 0 0 rem(2px) transparent,
-    0 0 0 rem(2px) var(--vtmn-color_brand-digital-light-1);
+  box-shadow: 0 0 0 rem(4px) var(--vtmn-color_white),
+    0 0 0 rem(6px) var(--vtmn-color_black);
 }
 
 /* Primary button */
@@ -55,17 +55,12 @@
   color: var(--vtmn-color_white);
 }
 
-.vtmn-btn_variant--primary:hover {
+.vtmn-btn_variant--primary:not([disabled]):hover {
   background-color: var(--vtmn-color_brand-digital-dark-1);
 }
 
-.vtmn-btn_variant--primary:active {
+.vtmn-btn_variant--primary:not([disabled]):active {
   background-color: var(--vtmn-color_brand-digital-dark-2);
-}
-
-.vtmn-btn_variant--primary:not([disabled]):focus {
-  box-shadow: inset 0 0 0 rem(2px) transparent,
-    0 0 0 rem(2px) var(--vtmn-color_brand-digital-light-1);
 }
 
 /* Primary reversed button */
@@ -83,9 +78,10 @@
   background-color: color-mod(var(--vtmn-color_white) alpha(60%));
 }
 
-.vtmn-btn_variant--primary-reversed:not([disabled]):focus {
-  box-shadow: inset 0 0 0 rem(2px) transparent,
-    0 0 0 rem(2px) var(--vtmn-color_brand-digital-light-1);
+.vtmn-btn_variant--primary-reversed:not([disabled]):focus-visible {
+  box-shadow: 0 0 0 rem(2px) var(--vtmn-color_grey-light-2),
+    0 0 0 rem(4px) var(--vtmn-color_white),
+    0 0 0 rem(6px) var(--vtmn-color_black);
 }
 
 /* Secondary button */
@@ -103,9 +99,10 @@
   background-color: color-mod(var(--vtmn-color_grey-dark-2) alpha(15%));
 }
 
-.vtmn-btn_variant--secondary:not([disabled]):focus {
-  box-shadow: inset 0 0 0 rem(2px) var(--vtmn-color_black),
-    0 0 0 rem(2px) var(--vtmn-color_brand-digital-light-1);
+.vtmn-btn_variant--secondary:not([disabled]):focus-visible {
+  box-shadow: 0 0 0 rem(2px) var(--vtmn-color_black),
+    0 0 0 rem(4px) var(--vtmn-color_white),
+    0 0 0 rem(6px) var(--vtmn-color_black);
 }
 
 /* Secondary reversed button */
@@ -121,11 +118,6 @@
 
 .vtmn-btn_variant--secondary-reversed:not([disabled]):active {
   background-color: color-mod(var(--vtmn-color_white) alpha(40%));
-}
-
-.vtmn-btn_variant--secondary-reversed:not([disabled]):focus {
-  box-shadow: inset 0 0 0 rem(2px) var(--vtmn-color_white),
-    0 0 0 rem(2px) var(--vtmn-color_brand-digital-light-1);
 }
 
 /* Ghost button */
@@ -145,9 +137,10 @@
   );
 }
 
-.vtmn-btn_variant--ghost:not([disabled]):focus {
-  box-shadow: inset 0 0 0 rem(2px) transparent,
-    0 0 0 rem(2px) var(--vtmn-color_brand-digital-light-1);
+.vtmn-btn_variant--ghost:not([disabled]):focus-visible {
+  box-shadow: 0 0 0 rem(2px) var(--vtmn-color_black),
+    0 0 0 rem(4px) var(--vtmn-color_white),
+    0 0 0 rem(6px) var(--vtmn-color_black);
 }
 
 /* Conversion button */
@@ -157,17 +150,12 @@
   color: var(--vtmn-color_black);
 }
 
-.vtmn-btn_variant--conversion:hover {
+.vtmn-btn_variant--conversion:not([disabled]):hover {
   background-color: var(--vtmn-color_yellow-light-1);
 }
 
-.vtmn-btn_variant--conversion:active {
+.vtmn-btn_variant--conversion:not([disabled]):active {
   background-color: var(--vtmn-color_yellow-light-2);
-}
-
-.vtmn-btn_variant--conversion:not([disabled]):focus {
-  box-shadow: inset 0 0 0 rem(2px) transparent,
-    0 0 0 rem(2px) var(--vtmn-color_brand-digital-light-1);
 }
 
 /* Sizes */
