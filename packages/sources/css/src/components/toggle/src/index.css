@@ -177,10 +177,6 @@
     color-mod(var(--vtmn-color_brand-digital) alpha(15%));
 }
 
-.vtmn-toggle_size--small input[type='checkbox']:focus-visible + span::before {
-  box-shadow: 0 0 0 rem(6px) var(--vtmn-color_brand-digital);
-}
-
 /* Medium */
 
 .vtmn-toggle_size--medium .vtmn-toggle_switch {
@@ -237,8 +233,4 @@
   + span::before {
   box-shadow: 0 0 0 rem(12px)
     color-mod(var(--vtmn-color_brand-digital) alpha(15%));
-}
-
-.vtmn-toggle_size--medium input[type='checkbox']:focus-visible + span::before {
-  box-shadow: 0 0 0 rem(6px) var(--vtmn-color_brand-digital);
 }
