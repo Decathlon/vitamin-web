@@ -91,5 +91,6 @@
 }
 
 .vtmn-checkbox[type='checkbox']:focus-visible + label::before {
+  outline: none;
   box-shadow: 0 0 0 rem(4px) var(--vtmn-color_brand-digital-light-1);
 }
