@@ -24,7 +24,7 @@
     "@whitespace/storybook-addon-html": "^4.2.0",
     "storybook-addon-designs": "^5.4.2",
     "storybook-addon-outline": "^1.2.0",
-    "storybook-design-token": "^0.8.1",
+    "storybook-design-token": "^1.0.2",
     "storybook-mobile": "^0.1.29"
   },
   "licenses": [
