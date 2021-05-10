@@ -80,7 +80,7 @@
 
 .vtmn-btn_variant--primary-reversed:not([disabled]):focus-visible {
   outline: none;
-  box-shadow: 0 0 0 rem(2px) var(--vtmn-color_grey-light-2),
+  box-shadow: inset 0 0 0 rem(2px) var(--vtmn-color_grey-light-2),
     0 0 0 rem(4px) var(--vtmn-color_white),
     0 0 0 rem(6px) var(--vtmn-color_black);
 }
@@ -101,7 +101,8 @@
 }
 
 .vtmn-btn_variant--secondary:not([disabled]):focus-visible {
-  box-shadow: 0 0 0 rem(2px) var(--vtmn-color_black),
+  outline: none;
+  box-shadow: inset 0 0 0 rem(2px) var(--vtmn-color_black),
     0 0 0 rem(4px) var(--vtmn-color_white),
     0 0 0 rem(6px) var(--vtmn-color_black);
 }
@@ -136,13 +137,6 @@
   background-color: color-mod(
     var(--vtmn-color_brand-digital-dark-2) alpha(15%)
   );
-}
-
-.vtmn-btn_variant--ghost:not([disabled]):focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 rem(2px) var(--vtmn-color_black),
-    0 0 0 rem(4px) var(--vtmn-color_white),
-    0 0 0 rem(6px) var(--vtmn-color_black);
 }
 
 /* Conversion button */
