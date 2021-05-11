@@ -1,7 +1,8 @@
 import overview from './examples/overview.html';
-import small from './examples/small.html';
-import medium from './examples/medium.html';
-import large from './examples/large.html';
+import _default from './examples/default.html';
+import brand from './examples/brand.html';
+import reversed from './examples/reversed.html';
+import accent from './examples/accent.html';
 
 export default {
   title: 'Components / Badge ',
@@ -27,29 +28,39 @@ Overview.parameters = {
   },
 };
 
-export const Small = () => small;
-Small.parameters = {
+export const Default = () => _default;
+Default.parameters = {
   docs: {
     source: {
-      code: small,
+      code: _default,
     },
   },
 };
 
-export const Medium = () => medium;
-Medium.parameters = {
+export const Brand = () => brand;
+Brand.parameters = {
   docs: {
     source: {
-      code: medium,
+      code: brand,
     },
   },
 };
 
-export const Large = () => large;
-Large.parameters = {
+export const Reversed = () => reversed;
+Reversed.parameters = {
   docs: {
     source: {
-      code: large,
+      code: reversed,
+    },
+  },
+  backgrounds: { default: 'blue' },
+};
+
+export const Accent = () => accent;
+Accent.parameters = {
+  docs: {
+    source: {
+      code: accent,
     },
   },
 };
