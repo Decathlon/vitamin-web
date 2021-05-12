@@ -6,6 +6,28 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface VtmnBadge {
+        /**
+          * The icon of the badge
+         */
+        "icon": string;
+        /**
+          * The text of the badge.
+         */
+        "labelText": string;
+        /**
+          * The size of the badge.
+         */
+        "size": 'small' | 'medium' | 'large';
+        /**
+          * The value of the badge.
+         */
+        "value": string;
+        /**
+          * The variant of the badge.
+         */
+        "variant": 'default' | 'brand' | 'reversed' | 'accent' | null;
+    }
     interface VtmnButton {
         /**
           * The size of the button.
@@ -57,7 +79,7 @@ export namespace Components {
         /**
           * The id of the text input.
          */
-        "id": string;
+        "idText": string;
         /**
           * The disabled state of the text-input.
          */
@@ -83,7 +105,7 @@ export namespace Components {
         /**
           * The id of the toggle and its label.
          */
-        "id": string;
+        "idText": string;
         /**
           * The checked state of the toggle.
           * @default false
@@ -105,6 +127,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLVtmnBadgeElement extends Components.VtmnBadge, HTMLStencilElement {
+    }
+    var HTMLVtmnBadgeElement: {
+        prototype: HTMLVtmnBadgeElement;
+        new (): HTMLVtmnBadgeElement;
+    };
     interface HTMLVtmnButtonElement extends Components.VtmnButton, HTMLStencilElement {
     }
     var HTMLVtmnButtonElement: {
@@ -130,6 +158,7 @@ declare global {
         new (): HTMLVtmnToggleElement;
     };
     interface HTMLElementTagNameMap {
+        "vtmn-badge": HTMLVtmnBadgeElement;
         "vtmn-button": HTMLVtmnButtonElement;
         "vtmn-link": HTMLVtmnLinkElement;
         "vtmn-text-input": HTMLVtmnTextInputElement;
@@ -137,6 +166,28 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    interface VtmnBadge {
+        /**
+          * The icon of the badge
+         */
+        "icon"?: string;
+        /**
+          * The text of the badge.
+         */
+        "labelText"?: string;
+        /**
+          * The size of the badge.
+         */
+        "size"?: 'small' | 'medium' | 'large';
+        /**
+          * The value of the badge.
+         */
+        "value"?: string;
+        /**
+          * The variant of the badge.
+         */
+        "variant"?: 'default' | 'brand' | 'reversed' | 'accent' | null;
+    }
     interface VtmnButton {
         /**
           * The size of the button.
@@ -188,7 +239,7 @@ declare namespace LocalJSX {
         /**
           * The id of the text input.
          */
-        "id": string;
+        "idText": string;
         /**
           * The disabled state of the text-input.
          */
@@ -214,7 +265,7 @@ declare namespace LocalJSX {
         /**
           * The id of the toggle and its label.
          */
-        "id": string;
+        "idText": string;
         /**
           * The checked state of the toggle.
           * @default false
@@ -235,6 +286,7 @@ declare namespace LocalJSX {
         "size"?: 'small' | 'medium';
     }
     interface IntrinsicElements {
+        "vtmn-badge": VtmnBadge;
         "vtmn-button": VtmnButton;
         "vtmn-link": VtmnLink;
         "vtmn-text-input": VtmnTextInput;
@@ -245,6 +297,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "vtmn-badge": LocalJSX.VtmnBadge & JSXBase.HTMLAttributes<HTMLVtmnBadgeElement>;
             "vtmn-button": LocalJSX.VtmnButton & JSXBase.HTMLAttributes<HTMLVtmnButtonElement>;
             "vtmn-link": LocalJSX.VtmnLink & JSXBase.HTMLAttributes<HTMLVtmnLinkElement>;
             "vtmn-text-input": LocalJSX.VtmnTextInput & JSXBase.HTMLAttributes<HTMLVtmnTextInputElement>;
