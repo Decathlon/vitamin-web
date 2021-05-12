@@ -1,4 +1,4 @@
-import _default from './examples/default.html';
+import overview from './examples/overview.html';
 import small from './examples/small.html';
 import medium from './examples/medium.html';
 import large from './examples/large.html';
@@ -18,11 +18,11 @@ export default {
   },
 };
 
-export const Default = () => _default;
-Default.parameters = {
+export const Overview = () => overview;
+Overview.parameters = {
   docs: {
     source: {
-      code: _default,
+      code: overview,
     },
   },
 };
