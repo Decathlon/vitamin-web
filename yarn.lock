@@ -16185,11 +16185,11 @@ postcss-colormin@^4.0.3:
     postcss-value-parser "^3.0.0"
 
 postcss-combine-duplicated-selectors@^10.0.2:
-  version "10.0.2"
-  resolved "https://registry.yarnpkg.com/postcss-combine-duplicated-selectors/-/postcss-combine-duplicated-selectors-10.0.2.tgz#98e8b279d97732f723620616c0c0d3abbe2dcfde"
-  integrity sha512-KJsyWD3Hn4DAsZmX8IZP97oBMWuh7+ikvlaknFNAW4PYWQ6znGhO763Up4fA2UYVmo6+XVnJr9XqDn7EwWpoxw==
+  version "10.0.3"
+  resolved "https://registry.yarnpkg.com/postcss-combine-duplicated-selectors/-/postcss-combine-duplicated-selectors-10.0.3.tgz#71e8b6783e99cd560cf08ba7b896ad0db318c11c"
+  integrity sha512-IP0BmwFloCskv7DV7xqvzDXqMHpwdczJa6ZvIW8abgHdcIHs9mCJX2ltFhu3EwA51ozp13DByng30+Ke+eIExA==
   dependencies:
-    postcss-selector-parser "^6.0.0"
+    postcss-selector-parser "^6.0.4"
 
 postcss-combine-media-query@^1.0.1:
   version "1.0.1"
