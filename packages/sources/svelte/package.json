@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/svelte",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Decathlon Design System - Vitamin Svelte library",
   "keywords": [
     "design-system",
@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^11.2.0",
-    "@vtmn/css-button": "^0.2.1",
+    "@vtmn/css-button": "^0.2.2",
     "chokidar-cli": "^2.1.0",
     "eslint": "7.27.0",
     "eslint-plugin-svelte3": "3.2.0",
