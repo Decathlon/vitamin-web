@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.9.4...@vtmn/css@0.10.0) (2021-06-02)
+
+
+### Features
+
+* **@vtmn/css:** add focus-visible  ([#315](https://github.com/Decathlon/vitamin-web/issues/315)) ([0ebf1c7](https://github.com/Decathlon/vitamin-web/commit/0ebf1c7505d2506d964f4dbd878489ce93be421b))
+
+
+
+
+
 ## [0.9.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.9.3...@vtmn/css@0.9.4) (2021-06-02)
 
 **Note:** Version bump only for package @vtmn/css

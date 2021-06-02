@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-checkbox@0.1.2...@vtmn/css-checkbox@0.2.0) (2021-06-02)
+
+
+### Features
+
+* **@vtmn/css:** add focus-visible  ([#315](https://github.com/Decathlon/vitamin-web/issues/315)) ([0ebf1c7](https://github.com/Decathlon/vitamin-web/commit/0ebf1c7505d2506d964f4dbd878489ce93be421b))
+
+
+
+
+
 ## [0.1.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-checkbox@0.1.1...@vtmn/css-checkbox@0.1.2) (2021-06-01)
 
 **Note:** Version bump only for package @vtmn/css-checkbox
