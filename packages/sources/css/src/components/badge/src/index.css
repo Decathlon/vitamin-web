@@ -19,6 +19,10 @@
   font-size: var(--vtmn-typo_title-5-font-size);
 }
 
+.vtmn-badge svg {
+  display: inline;
+}
+
 .vtmn-badge_container {
   font-size: var(--vtmn-typo_text-3-font-size);
   min-width: rem(20px);
@@ -38,6 +42,12 @@
   top: rem(-10px);
 }
 
+.vtmn-badge svg + .vtmn-badge_container {
+  position: relative;
+  left: rem(-14px);
+  top: rem(-10px);
+}
+
 /* Sizes */
 
 .vtmn-badge_size--small span[class^='vtmx-'] {
@@ -51,6 +61,15 @@
   position: relative;
   left: rem(-5px);
   top: rem(-3px);
+}
+
+.vtmn-badge_size--small svg + .vtmn-badge_container {
+  min-width: rem(8px);
+  height: rem(8px);
+  padding: 0;
+  position: relative;
+  left: rem(-9px);
+  top: rem(-6px);
 }
 
 .vtmn-badge_size--medium span[class^='vtmx-'] {
