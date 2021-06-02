@@ -31,15 +31,6 @@ Overview.parameters = {
   },
 };
 
-export const WithIcon = () => withIcon;
-WithIcon.parameters = {
-  docs: {
-    source: {
-      code: withIcon,
-    },
-  },
-};
-
 export const Primary = () => primary;
 Primary.parameters = {
   docs: {
