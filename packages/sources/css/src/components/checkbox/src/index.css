@@ -46,6 +46,11 @@
   box-shadow: 0 0 0 rem(7px) color-mod(var(--vtmn-color_black) alpha(15%));
 }
 
+.vtmn-checkbox[type='checkbox']:not(:disabled):focus-visible + label::before {
+  box-shadow: 0 0 0 rem(4px) var(--vtmn-color_white),
+    0 0 0 rem(6px) var(--vtmn-color_black);
+}
+
 .vtmn-checkbox[type='checkbox']:checked + label::before {
   background-color: var(--vtmn-color_brand-digital);
   border-color: var(--vtmn-color_brand-digital);
@@ -86,5 +91,6 @@
 }
 
 .vtmn-checkbox[type='checkbox']:focus-visible + label::before {
+  outline: none;
   box-shadow: 0 0 0 rem(4px) var(--vtmn-color_brand-digital-light-1);
 }
