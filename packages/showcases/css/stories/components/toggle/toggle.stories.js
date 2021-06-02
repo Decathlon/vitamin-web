@@ -1,4 +1,4 @@
-import _default from './examples/default.html';
+import overview from './examples/overview.html';
 import small from './examples/small.html';
 import medium from './examples/medium.html';
 
@@ -11,17 +11,16 @@ export default {
     },
     design: {
       type: 'figma',
-      url:
-        'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=612%3A1192',
+      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=612%3A1192',
     },
   },
 };
 
-export const Default = () => _default;
-Default.parameters = {
+export const Overview = () => overview;
+Overview.parameters = {
   docs: {
     source: {
-      code: _default,
+      code: overview,
     },
   },
 };

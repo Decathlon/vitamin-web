@@ -1,8 +1,8 @@
-import _default from './examples/default.html';
-import _valid from './examples/valid.html';
-import _error from './examples/error.html';
-import _disabled from './examples/disabled.html';
-import _multiline from './examples/multiline.html';
+import overview from './examples/overview.html';
+import valid from './examples/valid.html';
+import error from './examples/error.html';
+import disabled from './examples/disabled.html';
+import multiline from './examples/multiline.html';
 
 export default {
   title: 'Components / Text input',
@@ -13,53 +13,52 @@ export default {
     },
     design: {
       type: 'figma',
-      url:
-        'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=150%3A3410',
+      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=150%3A3410',
     },
   },
 };
 
-export const Default = () => _default;
-Default.parameters = {
+export const Overview = () => overview;
+Overview.parameters = {
   docs: {
     source: {
-      code: _default,
+      code: overview,
     },
   },
 };
 
-export const Valid = () => _valid;
+export const Valid = () => valid;
 Valid.parameters = {
   docs: {
     source: {
-      code: _valid,
+      code: valid,
     },
   },
 };
 
-export const Error = () => _error;
+export const Error = () => error;
 Error.parameters = {
   docs: {
     source: {
-      code: _error,
+      code: error,
     },
   },
 };
 
-export const Disabled = () => _disabled;
+export const Disabled = () => disabled;
 Disabled.parameters = {
   docs: {
     source: {
-      code: _disabled,
+      code: disabled,
     },
   },
 };
 
-export const Multiline = () => _multiline;
+export const Multiline = () => multiline;
 Multiline.parameters = {
   docs: {
     source: {
-      code: _multiline,
+      code: multiline,
     },
   },
 };

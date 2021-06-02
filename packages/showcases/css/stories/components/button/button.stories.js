@@ -1,4 +1,4 @@
-import _default from './examples/default.html';
+import overview from './examples/overview.html';
 import primary from './examples/primary.html';
 import primaryReversed from './examples/primary-reversed.html';
 import secondary from './examples/secondary.html';
@@ -15,17 +15,16 @@ export default {
     },
     design: {
       type: 'figma',
-      url:
-        'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vtmn-Web?node-id=31%3A136',
+      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vtmn-Web?node-id=31%3A136',
     },
   },
 };
 
-export const Default = () => _default;
-Default.parameters = {
+export const Overview = () => overview;
+Overview.parameters = {
   docs: {
     source: {
-      code: _default,
+      code: overview,
     },
   },
 };

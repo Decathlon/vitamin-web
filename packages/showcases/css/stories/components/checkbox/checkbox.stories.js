@@ -1,4 +1,4 @@
-import _default from './examples/default.html';
+import overview from './examples/overview.html';
 
 export default {
   title: 'Components / Checkbox ',
@@ -9,17 +9,16 @@ export default {
     },
     design: {
       type: 'figma',
-      url:
-        'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=783%3A9869',
+      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=783%3A9869',
     },
   },
 };
 
-export const Default = () => _default;
-Default.parameters = {
+export const Overview = () => overview;
+Overview.parameters = {
   docs: {
     source: {
-      code: _default,
+      code: overview,
     },
   },
 };

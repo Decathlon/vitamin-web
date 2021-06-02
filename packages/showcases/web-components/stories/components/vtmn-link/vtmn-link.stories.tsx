@@ -42,8 +42,7 @@ export default {
     },
     design: {
       type: 'figma',
-      url:
-        'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vtmn---Web?node-id=1207%3A8898',
+      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vtmn---Web?node-id=1207%3A8898',
     },
   },
 };
