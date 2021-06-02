@@ -25,6 +25,7 @@
   position: relative;
   text-align: center;
   color: var(--vtmn-color_white);
+  fill: var(--vtmn-color_white);
   text-decoration: none;
 }
 
@@ -39,7 +40,7 @@
 
 .vtmn-btn:disabled {
   cursor: not-allowed;
-  opacity: 0.25;
+  opacity: 0.38;
 }
 
 .vtmn-btn:not([disabled]):focus-visible {
@@ -48,11 +49,22 @@
     0 0 0 rem(6px) var(--vtmn-color_black);
 }
 
+.vtmn-btn svg {
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+.vtmn-btn span[class^='vtmx-'] {
+  display: inline;
+  vertical-align: middle;
+}
+
 /* Primary button */
 .vtmn-btn_variant--primary {
   box-shadow: inset 0 0 0 rem(2px) transparent;
   background-color: var(--vtmn-color_brand-digital);
   color: var(--vtmn-color_white);
+  fill: var(--vtmn-color_white);
 }
 
 .vtmn-btn_variant--primary:not([disabled]):hover {
@@ -68,6 +80,7 @@
   box-shadow: inset 0 0 0 rem(2px) transparent;
   background-color: var(--vtmn-color_white);
   color: var(--vtmn-color_black);
+  fill: var(--vtmn-color_black);
 }
 
 .vtmn-btn_variant--primary-reversed:not([disabled]):hover {
@@ -90,6 +103,7 @@
   background-color: transparent;
   box-shadow: inset 0 0 0 rem(2px) var(--vtmn-color_black);
   color: var(--vtmn-color_black);
+  fill: var(--vtmn-color_black);
 }
 
 .vtmn-btn_variant--secondary:not([disabled]):hover {
@@ -112,6 +126,7 @@
   background-color: transparent;
   box-shadow: inset 0 0 0 rem(2px) var(--vtmn-color_white);
   color: var(--vtmn-color_white);
+  fill: var(--vtmn-color_white);
 }
 
 .vtmn-btn_variant--secondary-reversed:not([disabled]):hover {
@@ -127,6 +142,7 @@
   background-color: transparent;
   box-shadow: inset 0 0 0 rem(2px) transparent;
   color: var(--vtmn-color_brand-digital);
+  fill: var(--vtmn-color_brand-digital);
 }
 
 .vtmn-btn_variant--ghost:not([disabled]):hover {
@@ -144,6 +160,7 @@
   box-shadow: inset 0 0 0 rem(2px) transparent;
   background-color: var(--vtmn-color_yellow);
   color: var(--vtmn-color_black);
+  fill: var(--vtmn-color_black);
 }
 
 .vtmn-btn_variant--conversion:not([disabled]):hover {
@@ -179,4 +196,120 @@
 
 .vtmn-btn_size--stretched {
   width: 100%;
+}
+
+/* Button icons  */
+.vtmn-btn--icon-alone {
+  width: rem(48px);
+  height: rem(48px);
+  padding: rem(14px);
+}
+
+.vtmn-btn--icon-alone span[class^='vtmx-'] {
+  font-size: var(--vtmn-typo_text-2-font-size);
+}
+
+.vtmn-btn--icon-alone svg {
+  width: rem(16px);
+  display: block;
+}
+
+.vtmn-btn_size--small svg {
+  width: rem(14px);
+}
+
+.vtmn-btn_size--medium svg {
+  width: rem(16px);
+}
+
+.vtmn-btn_size--large svg {
+  width: rem(20px);
+}
+
+.vtmn-btn_size--small.vtmn-btn--icon-alone {
+  width: rem(32px);
+  height: rem(32px);
+  padding: rem(8px);
+}
+
+.vtmn-btn_size--small.vtmn-btn--icon-alone span[class^='vtmx-'] {
+  font-size: var(--vtmn-typo_text-3-font-size);
+}
+
+.vtmn-btn_size--medium.vtmn-btn--icon-alone {
+  width: rem(48px);
+  height: rem(48px);
+  padding: rem(14px);
+}
+
+.vtmn-btn_size--medium.vtmn-btn--icon-alone span[class^='vtmx-'] {
+  font-size: var(--vtmn-typo_text-2-font-size);
+}
+
+.vtmn-btn_size--large.vtmn-btn--icon-alone {
+  width: rem(64px);
+  height: rem(64px);
+  padding: rem(20px);
+}
+
+.vtmn-btn_size--large.vtmn-btn--icon-alone span[class^='vtmx-'] {
+  font-size: var(--vtmn-typo_title-5-font-size);
+}
+
+.vtmn-btn--icon-left span[class^='vtmx-'] {
+  padding-right: rem(8px);
+  vertical-align: middle;
+}
+
+.vtmn-btn--icon-right span[class^='vtmx-'] {
+  padding-left: rem(8px);
+  vertical-align: middle;
+}
+
+.vtmn-btn_size--small.vtmn-btn--icon-left span[class^='vtmx-'] {
+  padding-right: rem(6px);
+}
+
+.vtmn-btn_size--small.vtmn-btn--icon-right span[class^='vtmx-'] {
+  padding-left: rem(6px);
+}
+
+.vtmn-btn_size--small.vtmn-btn--icon-left svg {
+  margin-right: rem(6px);
+}
+
+.vtmn-btn_size--small.vtmn-btn--icon-right svg {
+  margin-left: rem(6px);
+}
+
+.vtmn-btn_size--medium.vtmn-btn--icon-left span[class^='vtmx-'] {
+  padding-right: rem(8px);
+}
+
+.vtmn-btn_size--medium.vtmn-btn--icon-right span[class^='vtmx-'] {
+  padding-left: rem(8px);
+}
+
+.vtmn-btn_size--medium.vtmn-btn--icon-left svg {
+  margin-right: rem(8px);
+}
+
+.vtmn-btn_size--medium.vtmn-btn--icon-right svg {
+  margin-left: rem(8px);
+}
+
+.vtmn-btn_size--large.vtmn-btn--icon-left span[class^='vtmx-'] {
+  padding-right: rem(12px);
+}
+
+.vtmn-btn_size--large.vtmn-btn--icon-right span[class^='vtmx-'] {
+  padding-left: rem(12px);
+}
+
+.vtmn-btn_size--large.vtmn-btn--icon-left svg {
+  margin-right: rem(12px);
+}
+
+.vtmn-btn_size--large.vtmn-btn--icon-right svg {
+  margin-left: rem(12px);
 }

@@ -5,7 +5,7 @@
 <a href="https://www.decathlon.design/726f8c765/p/8008f8-button">
   <img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" />
 </a>
-<a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-button--default">
+<a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-button--overview">
   <img src="https://img.shields.io/badge/storybook-css-d891bc?style=flat&logo=storybook" alt="storybook" />
 </a>
 <a href="https://www.npmjs.com/package/@vtmn/css-button">
@@ -87,7 +87,7 @@ Otherwise include it in your HTML file:
 
 ## Development
 
-To know all the use cases and their associated code, [check out the showcase here](https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/index.html?path=/docs/components-button--default).
+To know all the use cases and their associated code, [check out the showcase here](https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/index.html?path=/docs/components-button--overview).
 
 ## Documentation
 
