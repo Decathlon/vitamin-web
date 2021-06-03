@@ -45,6 +45,34 @@ export namespace Components {
          */
         "target": string;
     }
+    interface VtmnRadio {
+        /**
+          * The id of the radio and its label.
+         */
+        "id": string;
+        /**
+          * The checked state of the radio.
+          * @default false
+         */
+        "isChecked": boolean;
+        /**
+          * The disabled state of the radio.
+          * @default false
+         */
+        "isDisabled": boolean;
+        /**
+          * The text of the radio.
+         */
+        "labelText": string;
+        /**
+          * The name of the radio.
+         */
+        "nameText": string;
+        /**
+          * The value of the radio.
+         */
+        "valueText": string;
+    }
     interface VtmnTextInput {
         /**
           * The helper text of the text input.
@@ -117,6 +145,12 @@ declare global {
         prototype: HTMLVtmnLinkElement;
         new (): HTMLVtmnLinkElement;
     };
+    interface HTMLVtmnRadioElement extends Components.VtmnRadio, HTMLStencilElement {
+    }
+    var HTMLVtmnRadioElement: {
+        prototype: HTMLVtmnRadioElement;
+        new (): HTMLVtmnRadioElement;
+    };
     interface HTMLVtmnTextInputElement extends Components.VtmnTextInput, HTMLStencilElement {
     }
     var HTMLVtmnTextInputElement: {
@@ -132,6 +166,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "vtmn-button": HTMLVtmnButtonElement;
         "vtmn-link": HTMLVtmnLinkElement;
+        "vtmn-radio": HTMLVtmnRadioElement;
         "vtmn-text-input": HTMLVtmnTextInputElement;
         "vtmn-toggle": HTMLVtmnToggleElement;
     }
@@ -175,6 +210,34 @@ declare namespace LocalJSX {
           * @default null
          */
         "target"?: string;
+    }
+    interface VtmnRadio {
+        /**
+          * The id of the radio and its label.
+         */
+        "id": string;
+        /**
+          * The checked state of the radio.
+          * @default false
+         */
+        "isChecked"?: boolean;
+        /**
+          * The disabled state of the radio.
+          * @default false
+         */
+        "isDisabled"?: boolean;
+        /**
+          * The text of the radio.
+         */
+        "labelText"?: string;
+        /**
+          * The name of the radio.
+         */
+        "nameText"?: string;
+        /**
+          * The value of the radio.
+         */
+        "valueText"?: string;
     }
     interface VtmnTextInput {
         /**
@@ -237,6 +300,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "vtmn-button": VtmnButton;
         "vtmn-link": VtmnLink;
+        "vtmn-radio": VtmnRadio;
         "vtmn-text-input": VtmnTextInput;
         "vtmn-toggle": VtmnToggle;
     }
@@ -247,6 +311,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "vtmn-button": LocalJSX.VtmnButton & JSXBase.HTMLAttributes<HTMLVtmnButtonElement>;
             "vtmn-link": LocalJSX.VtmnLink & JSXBase.HTMLAttributes<HTMLVtmnLinkElement>;
+            "vtmn-radio": LocalJSX.VtmnRadio & JSXBase.HTMLAttributes<HTMLVtmnRadioElement>;
             "vtmn-text-input": LocalJSX.VtmnTextInput & JSXBase.HTMLAttributes<HTMLVtmnTextInputElement>;
             "vtmn-toggle": LocalJSX.VtmnToggle & JSXBase.HTMLAttributes<HTMLVtmnToggleElement>;
         }
