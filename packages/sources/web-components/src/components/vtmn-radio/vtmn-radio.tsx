@@ -13,12 +13,12 @@ export class VtmnRadio {
   /**
    * The text of the radio.
    */
-  @Prop({ attribute: 'labeltext' }) labelText: string;
+  @Prop({ attribute: 'labeltext' }) labelText!: string;
 
   /**
    * The name of the radio.
    */
-  @Prop({ attribute: 'nametext' }) nameText: string;
+  @Prop({ attribute: 'nametext' }) nameText!: string;
 
   /**
    * The value of the radio.
