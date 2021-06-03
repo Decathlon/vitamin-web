@@ -5,7 +5,7 @@ export default {
   title: 'Components/vtmn-toggle',
   component: 'vtmn-toggle',
   argTypes: {
-    id: {
+    idText: {
       type: { name: 'string', required: true },
       description: 'The id of the toggle and its label.',
       defaultValue: null,
