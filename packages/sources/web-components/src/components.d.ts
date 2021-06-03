@@ -229,11 +229,11 @@ declare namespace LocalJSX {
         /**
           * The text of the radio.
          */
-        "labelText"?: string;
+        "labelText": string;
         /**
           * The name of the radio.
          */
-        "nameText"?: string;
+        "nameText": string;
         /**
           * The value of the radio.
          */
