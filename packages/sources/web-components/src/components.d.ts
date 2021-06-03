@@ -23,6 +23,34 @@ export namespace Components {
     | 'ghost'
     | 'conversion';
     }
+    interface VtmnCheckbox {
+        /**
+          * The id of the checkbox and its label.
+         */
+        "id": string;
+        /**
+          * The checked state of the checkbox.
+          * @default false
+         */
+        "isChecked": boolean;
+        /**
+          * The disabled state of the checkbox.
+          * @default false
+         */
+        "isDisabled": boolean;
+        /**
+          * The text of the checkbox.
+         */
+        "labelText": string;
+        /**
+          * The name of the checkbox.
+         */
+        "nameText": string;
+        /**
+          * The value of the checkbox.
+         */
+        "valueText": string;
+    }
     interface VtmnLink {
         /**
           * The hypertext link
@@ -111,6 +139,12 @@ declare global {
         prototype: HTMLVtmnButtonElement;
         new (): HTMLVtmnButtonElement;
     };
+    interface HTMLVtmnCheckboxElement extends Components.VtmnCheckbox, HTMLStencilElement {
+    }
+    var HTMLVtmnCheckboxElement: {
+        prototype: HTMLVtmnCheckboxElement;
+        new (): HTMLVtmnCheckboxElement;
+    };
     interface HTMLVtmnLinkElement extends Components.VtmnLink, HTMLStencilElement {
     }
     var HTMLVtmnLinkElement: {
@@ -131,6 +165,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "vtmn-button": HTMLVtmnButtonElement;
+        "vtmn-checkbox": HTMLVtmnCheckboxElement;
         "vtmn-link": HTMLVtmnLinkElement;
         "vtmn-text-input": HTMLVtmnTextInputElement;
         "vtmn-toggle": HTMLVtmnToggleElement;
@@ -153,6 +188,34 @@ declare namespace LocalJSX {
     | 'secondary-reversed'
     | 'ghost'
     | 'conversion';
+    }
+    interface VtmnCheckbox {
+        /**
+          * The id of the checkbox and its label.
+         */
+        "id": string;
+        /**
+          * The checked state of the checkbox.
+          * @default false
+         */
+        "isChecked"?: boolean;
+        /**
+          * The disabled state of the checkbox.
+          * @default false
+         */
+        "isDisabled"?: boolean;
+        /**
+          * The text of the checkbox.
+         */
+        "labelText": string;
+        /**
+          * The name of the checkbox.
+         */
+        "nameText": string;
+        /**
+          * The value of the checkbox.
+         */
+        "valueText"?: string;
     }
     interface VtmnLink {
         /**
@@ -236,6 +299,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "vtmn-button": VtmnButton;
+        "vtmn-checkbox": VtmnCheckbox;
         "vtmn-link": VtmnLink;
         "vtmn-text-input": VtmnTextInput;
         "vtmn-toggle": VtmnToggle;
@@ -246,6 +310,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "vtmn-button": LocalJSX.VtmnButton & JSXBase.HTMLAttributes<HTMLVtmnButtonElement>;
+            "vtmn-checkbox": LocalJSX.VtmnCheckbox & JSXBase.HTMLAttributes<HTMLVtmnCheckboxElement>;
             "vtmn-link": LocalJSX.VtmnLink & JSXBase.HTMLAttributes<HTMLVtmnLinkElement>;
             "vtmn-text-input": LocalJSX.VtmnTextInput & JSXBase.HTMLAttributes<HTMLVtmnTextInputElement>;
             "vtmn-toggle": LocalJSX.VtmnToggle & JSXBase.HTMLAttributes<HTMLVtmnToggleElement>;
