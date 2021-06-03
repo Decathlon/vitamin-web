@@ -169,8 +169,7 @@
   min-height: rem(32px);
 }
 
-.vtmn-btn_size--medium,
-.vtmn-btn_size--stretched {
+.vtmn-btn_size--medium {
   font-size: rem(16px);
   padding: rem(14px) rem(24px);
   line-height: 1.25;
