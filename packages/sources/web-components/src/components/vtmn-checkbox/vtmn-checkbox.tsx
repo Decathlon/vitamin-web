@@ -8,7 +8,7 @@ export class VtmnCheckbox {
   /**
    * The id of the checkbox and its label.
    */
-  @Prop() id!: string;
+  @Prop({ attribute: 'idtext' }) idText!: string;
 
   /**
    * The text of the checkbox.
@@ -43,13 +43,13 @@ export class VtmnCheckbox {
         <input
           class="vtmn-checkbox"
           type="checkbox"
-          id={this.id}
+          id={this.idText}
           name={this.nameText}
           value={this.valueText}
           checked={this.isChecked}
           disabled={this.isDisabled}
         />
-        <label htmlFor={this.id}>{this.labelText}</label>
+        <label htmlFor={this.idText}>{this.labelText}</label>
       </div>
     );
   }

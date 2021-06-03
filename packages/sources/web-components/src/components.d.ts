@@ -27,7 +27,7 @@ export namespace Components {
         /**
           * The id of the checkbox and its label.
          */
-        "id": string;
+        "idText": string;
         /**
           * The checked state of the checkbox.
           * @default false
@@ -193,7 +193,7 @@ declare namespace LocalJSX {
         /**
           * The id of the checkbox and its label.
          */
-        "id": string;
+        "idText": string;
         /**
           * The checked state of the checkbox.
           * @default false

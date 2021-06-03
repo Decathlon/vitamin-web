@@ -5,7 +5,7 @@ export default {
   title: 'Components/vtmn-checkbox',
   component: 'vtmn-checkbox',
   argTypes: {
-    id: {
+    idText: {
       type: { name: 'string', required: true },
       description: 'The id of the checkbox and its label.',
       defaultValue: null,
