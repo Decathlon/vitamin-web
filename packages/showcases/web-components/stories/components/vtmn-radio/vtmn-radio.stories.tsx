@@ -5,7 +5,7 @@ export default {
   title: 'Components/vtmn-radio',
   component: 'vtmn-radio',
   argTypes: {
-    id: {
+    idText: {
       type: { name: 'string', required: true },
       description: 'The id of the radio and its label.',
       defaultValue: null,

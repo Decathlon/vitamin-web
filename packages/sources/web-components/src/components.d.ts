@@ -49,7 +49,7 @@ export namespace Components {
         /**
           * The id of the radio and its label.
          */
-        "id": string;
+        "idText": string;
         /**
           * The checked state of the radio.
           * @default false
@@ -215,7 +215,7 @@ declare namespace LocalJSX {
         /**
           * The id of the radio and its label.
          */
-        "id": string;
+        "idText": string;
         /**
           * The checked state of the radio.
           * @default false

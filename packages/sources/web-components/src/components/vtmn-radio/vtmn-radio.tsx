@@ -8,7 +8,7 @@ export class VtmnRadio {
   /**
    * The id of the radio and its label.
    */
-  @Prop() id!: string;
+  @Prop({ attribute: 'idtext' }) idText!: string;
 
   /**
    * The text of the radio.
@@ -43,13 +43,13 @@ export class VtmnRadio {
         <input
           class="vtmn-radio-button"
           type="radio"
-          id={this.id}
+          id={this.idText}
           name={this.nameText}
           value={this.valueText}
           checked={this.isChecked}
           disabled={this.isDisabled}
         />
-        <label htmlFor={this.id}>{this.labelText}</label>
+        <label htmlFor={this.idText}>{this.labelText}</label>
       </div>
     );
   }
