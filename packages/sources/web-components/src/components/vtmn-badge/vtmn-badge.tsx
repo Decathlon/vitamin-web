@@ -41,7 +41,7 @@ export class VtmnBadge {
           .filter(Boolean)
           .join(' ')}>
         {this.icon ? (
-          <span class={this.icon} aria-label={this.labelText}>
+          <span class={this.icon} aria-label={this.labelText} role="img">
             <div class="vtmn-badge_container">
               {this.size != 'small' ? `${this.value}` : ''}
             </div>
