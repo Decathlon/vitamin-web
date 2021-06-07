@@ -21,7 +21,7 @@
     "@vtmn/css-tailwind-config": "^0.0.0",
     "@vtmn/icons": "*",
     "@vtmn/showcase-core": "^0.0.0",
-    "@whitespace/storybook-addon-html": "^4.2.0",
+    "@whitespace/storybook-addon-html": "^5.0.0",
     "storybook-addon-designs": "^5.4.2",
     "storybook-addon-outline": "^1.2.0",
     "storybook-design-token": "^0.8.1",
