@@ -17316,12 +17316,13 @@ postcss-reduce-transforms@^4.0.2:
     postcss "^7.0.0"
     postcss-value-parser "^3.0.0"
 
-postcss-rem@^1.1.5:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/postcss-rem/-/postcss-rem-1.1.5.tgz#5e884162ecd42440326fa7c41b03ee7295fa846e"
-  integrity sha512-OXPzkWFlA3WkxOqPw2Moj8VvXsq8jcbyOI/mR7bqFkjG1fgndr1ADYY1uegIYGC3X958wJBHMXvv3BqnBRQAIA==
+postcss-rem@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-rem/-/postcss-rem-2.0.1.tgz#e9e88567e29c99f5d39bea2f8c360cb9960c8f95"
+  integrity sha512-81jCo/IBnNPfhlq5ZyPUdYIXAUE04chkeS2P4q4AGLntI+kLge6/ci/lsdmJ3mKqbnF6qTSoe1WLEZ/MAqcUhQ==
   dependencies:
-    postcss "^7.0.26"
+    postcss "^8.2.13"
+    startijenn-rem "^1.0.1"
 
 postcss-replace-overflow-wrap@^3.0.0:
   version "3.0.0"
@@ -17496,7 +17497,7 @@ postcss@^7, postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.17, po
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
-postcss@^8.1.0, postcss@^8.1.10, postcss@^8.1.6, postcss@^8.2.1, postcss@^8.2.5:
+postcss@^8.1.0, postcss@^8.1.10, postcss@^8.1.6, postcss@^8.2.1, postcss@^8.2.13, postcss@^8.2.5:
   version "8.3.0"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.3.0.tgz#b1a713f6172ca427e3f05ef1303de8b65683325f"
   integrity sha512-+ogXpdAjWGa+fdYY5BQ96V/6tAo+TdSSIMP5huJBIygdWwKtVoB5JWZ7yUd4xZ8r+8Kvvx4nyg/PQ071H4UtcQ==
@@ -20120,6 +20121,11 @@ stackframe@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/stackframe/-/stackframe-1.2.0.tgz#52429492d63c62eb989804c11552e3d22e779303"
   integrity sha512-GrdeshiRmS1YLMYgzF16olf2jJ/IzxXY9lhKOskuVziubpTYcYqyOwYeJKzQkwy7uN0fYSsbsC4RQaXf9LCrYA==
+
+startijenn-rem@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/startijenn-rem/-/startijenn-rem-1.0.1.tgz#3f62f868fd7cc1b9353410b3868d67329840469a"
+  integrity sha512-ig7lK/FR1okZNb3mtJJPYc8Z7ubcjhMPvAmBvcX5uuAAgam+d4mFZvofMRJcTb7CftQ0IZWbY2a4eFCVT6dOXA==
 
 state-toggle@^1.0.0:
   version "1.0.3"
