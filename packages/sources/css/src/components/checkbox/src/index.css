@@ -75,6 +75,15 @@
   transition: all 0.2s;
 }
 
+.vtmn-checkbox[type='checkbox'].vtmn-checkbox--indeterminate + label::after {
+  content: url("data:image/svg+xml;charset=utf-8, <svg width='24' height='24' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'><path d='M3.333 7.333h9.334v1.334H3.333V7.333z' fill='white' stroke-width='10'/></svg>");
+  position: absolute;
+  top: rem(8.5px);
+  left: rem(0.5px);
+  color: var(--vtmn-color_white);
+  transition: all 0.2s;
+}
+
 .vtmn-checkbox[type='checkbox']:not(:checked) + label::after {
   opacity: 0;
   transform: scale(0) rotate(45deg);
