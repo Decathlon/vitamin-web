@@ -23,7 +23,7 @@
   content: '';
   position: absolute;
   left: rem(1px);
-  top: rem(9px);
+  top: rem(8px);
   width: rem(18px);
   height: rem(18px);
   border-width: rem(2px);
@@ -69,7 +69,7 @@
 .vtmn-checkbox[type='checkbox'] + label::after {
   content: url("data:image/svg+xml;charset=utf-8, <svg width='18' height='18' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'><path d='M5.80351 10.8L14.2875 2.31484L12.5907 0.618038L5.80351 7.40644L2.40871 4.01164L0.711914 5.70844L5.80351 10.8Z' fill='white'/></svg>");
   position: absolute;
-  top: rem(12.5px);
+  top: rem(11.5px);
   left: rem(3.5px);
   color: var(--vtmn-color_white);
   transition: all 0.2s;
@@ -78,7 +78,7 @@
 .vtmn-checkbox[type='checkbox'].vtmn-checkbox--indeterminate + label::after {
   content: url("data:image/svg+xml;charset=utf-8, <svg width='24' height='24' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'><path d='M3.333 7.333h9.334v1.334H3.333V7.333z' fill='white' stroke-width='10'/></svg>");
   position: absolute;
-  top: rem(8.5px);
+  top: rem(7.5px);
   left: rem(0.5px);
   color: var(--vtmn-color_white);
   transition: all 0.2s;
