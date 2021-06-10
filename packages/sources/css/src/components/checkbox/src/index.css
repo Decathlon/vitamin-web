@@ -4,9 +4,7 @@
 @import '@vtmn/css-design-tokens/src/typography';
 
 .vtmn-checkbox[type='checkbox'] {
-  left: 0;
-  opacity: 0.01;
-  box-sizing: border-box;
+  display: none;
 }
 
 .vtmn-checkbox[type='checkbox'] + label {
@@ -15,7 +13,6 @@
   line-height: var(--vtmn-typo_text-2-line-height);
   cursor: pointer;
   user-select: none;
-  left: rem(-24px);
   padding: rem(8px) rem(8px) rem(8px) rem(28px);
 }
 
