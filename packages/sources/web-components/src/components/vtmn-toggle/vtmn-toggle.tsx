@@ -1,14 +1,14 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h, ComponentInterface } from '@stencil/core';
 
 @Component({
   tag: 'vtmn-toggle',
   styleUrl: 'vtmn-toggle.pcss',
 })
-export class VtmnToggle {
+export class VtmnToggle implements ComponentInterface {
   /**
    * The id of the toggle and its label.
    */
-  @Prop() id!: string;
+  @Prop() identifier!: string;
 
   /**
    * The text of the toggle.
@@ -38,13 +38,13 @@ export class VtmnToggle {
         <div class="vtmn-toggle_switch">
           <input
             type="checkbox"
-            id={this.id}
+            id={this.identifier}
             checked={this.isChecked}
             disabled={this.isDisabled}
           />
           <span aria-hidden="true"></span>
         </div>
-        <label htmlFor={this.id}>{this.labelText}</label>
+        <label htmlFor={this.identifier}>{this.labelText}</label>
       </div>
     );
   }

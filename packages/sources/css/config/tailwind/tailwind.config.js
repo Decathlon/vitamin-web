@@ -2,6 +2,10 @@ module.exports = {
   prefix: 'vtmn-',
   purge: false,
   darkMode: false, // or 'media' or 'class',
+  corePlugins: {
+    preflight:
+      process.env.PREFLIGHT === 'true' || process.env.PREFLIGHT === undefined,
+  },
   theme: {
     screens: {
       mobile: { max: '599px' },

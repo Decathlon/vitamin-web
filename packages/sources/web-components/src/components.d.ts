@@ -23,6 +23,34 @@ export namespace Components {
     | 'ghost'
     | 'conversion';
     }
+    interface VtmnCheckbox {
+        /**
+          * The id of the checkbox and its label.
+         */
+        "identifier": string;
+        /**
+          * The checked state of the checkbox.
+          * @default false
+         */
+        "isChecked": boolean;
+        /**
+          * The disabled state of the checkbox.
+          * @default false
+         */
+        "isDisabled": boolean;
+        /**
+          * The text of the checkbox.
+         */
+        "labelText": string;
+        /**
+          * The name of the checkbox.
+         */
+        "name": string;
+        /**
+          * The value of the checkbox.
+         */
+        "value": string;
+    }
     interface VtmnLink {
         /**
           * The hypertext link
@@ -85,7 +113,7 @@ export namespace Components {
         /**
           * The id of the text input.
          */
-        "id": string;
+        "identifier": string;
         /**
           * The disabled state of the text-input.
          */
@@ -111,7 +139,7 @@ export namespace Components {
         /**
           * The id of the toggle and its label.
          */
-        "id": string;
+        "identifier": string;
         /**
           * The checked state of the toggle.
           * @default false
@@ -139,6 +167,12 @@ declare global {
         prototype: HTMLVtmnButtonElement;
         new (): HTMLVtmnButtonElement;
     };
+    interface HTMLVtmnCheckboxElement extends Components.VtmnCheckbox, HTMLStencilElement {
+    }
+    var HTMLVtmnCheckboxElement: {
+        prototype: HTMLVtmnCheckboxElement;
+        new (): HTMLVtmnCheckboxElement;
+    };
     interface HTMLVtmnLinkElement extends Components.VtmnLink, HTMLStencilElement {
     }
     var HTMLVtmnLinkElement: {
@@ -165,6 +199,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "vtmn-button": HTMLVtmnButtonElement;
+        "vtmn-checkbox": HTMLVtmnCheckboxElement;
         "vtmn-link": HTMLVtmnLinkElement;
         "vtmn-radio": HTMLVtmnRadioElement;
         "vtmn-text-input": HTMLVtmnTextInputElement;
@@ -188,6 +223,34 @@ declare namespace LocalJSX {
     | 'secondary-reversed'
     | 'ghost'
     | 'conversion';
+    }
+    interface VtmnCheckbox {
+        /**
+          * The id of the checkbox and its label.
+         */
+        "identifier": string;
+        /**
+          * The checked state of the checkbox.
+          * @default false
+         */
+        "isChecked"?: boolean;
+        /**
+          * The disabled state of the checkbox.
+          * @default false
+         */
+        "isDisabled"?: boolean;
+        /**
+          * The text of the checkbox.
+         */
+        "labelText"?: string;
+        /**
+          * The name of the checkbox.
+         */
+        "name"?: string;
+        /**
+          * The value of the checkbox.
+         */
+        "value"?: string;
     }
     interface VtmnLink {
         /**
@@ -251,7 +314,7 @@ declare namespace LocalJSX {
         /**
           * The id of the text input.
          */
-        "id": string;
+        "identifier": string;
         /**
           * The disabled state of the text-input.
          */
@@ -277,7 +340,7 @@ declare namespace LocalJSX {
         /**
           * The id of the toggle and its label.
          */
-        "id": string;
+        "identifier": string;
         /**
           * The checked state of the toggle.
           * @default false
@@ -299,6 +362,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "vtmn-button": VtmnButton;
+        "vtmn-checkbox": VtmnCheckbox;
         "vtmn-link": VtmnLink;
         "vtmn-radio": VtmnRadio;
         "vtmn-text-input": VtmnTextInput;
@@ -310,6 +374,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "vtmn-button": LocalJSX.VtmnButton & JSXBase.HTMLAttributes<HTMLVtmnButtonElement>;
+            "vtmn-checkbox": LocalJSX.VtmnCheckbox & JSXBase.HTMLAttributes<HTMLVtmnCheckboxElement>;
             "vtmn-link": LocalJSX.VtmnLink & JSXBase.HTMLAttributes<HTMLVtmnLinkElement>;
             "vtmn-radio": LocalJSX.VtmnRadio & JSXBase.HTMLAttributes<HTMLVtmnRadioElement>;
             "vtmn-text-input": LocalJSX.VtmnTextInput & JSXBase.HTMLAttributes<HTMLVtmnTextInputElement>;

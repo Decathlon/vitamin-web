@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { VtmnButton } from '@vtmn/react';
-
+import vitamixIconsList from '@vtmn/icons/dist/vitamix/font/vitamix.json';
 import { Meta, Story } from '@storybook/react';
 
 export default {
@@ -31,6 +31,33 @@ export default {
       control: {
         type: 'select',
         options: ['small', 'medium', 'large', 'stretched'],
+      },
+    },
+    iconLeft: {
+      type: { name: 'string', required: false },
+      description: 'The icon to display on the left hand side of button.',
+      defaultValue: null,
+      control: {
+        type: 'select',
+        options: ['', ...Object.keys(vitamixIconsList)],
+      },
+    },
+    iconRight: {
+      type: { name: 'string', required: false },
+      description: 'The icon to display on the right hand side of button.',
+      defaultValue: null,
+      control: {
+        type: 'select',
+        options: ['', ...Object.keys(vitamixIconsList)],
+      },
+    },
+    iconAlone: {
+      type: { name: 'string', required: false },
+      description: 'The to display when it is a button with icon only.',
+      defaultValue: null,
+      control: {
+        type: 'select',
+        options: ['', ...Object.keys(vitamixIconsList)],
       },
     },
     children: {
