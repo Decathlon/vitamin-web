@@ -77,7 +77,7 @@ export namespace Components {
         /**
           * The id of the radio and its label.
          */
-        "idText": string;
+        "identifier": string;
         /**
           * The checked state of the radio.
           * @default false
@@ -95,11 +95,11 @@ export namespace Components {
         /**
           * The name of the radio.
          */
-        "nameText": string;
+        "name": string;
         /**
           * The value of the radio.
          */
-        "valueText": string;
+        "value": string;
     }
     interface VtmnTextInput {
         /**
@@ -278,7 +278,7 @@ declare namespace LocalJSX {
         /**
           * The id of the radio and its label.
          */
-        "idText": string;
+        "identifier": string;
         /**
           * The checked state of the radio.
           * @default false
@@ -292,15 +292,15 @@ declare namespace LocalJSX {
         /**
           * The text of the radio.
          */
-        "labelText": string;
+        "labelText"?: string;
         /**
           * The name of the radio.
          */
-        "nameText": string;
+        "name"?: string;
         /**
           * The value of the radio.
          */
-        "valueText"?: string;
+        "value"?: string;
     }
     interface VtmnTextInput {
         /**

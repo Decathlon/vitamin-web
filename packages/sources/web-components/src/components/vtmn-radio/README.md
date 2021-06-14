@@ -5,14 +5,14 @@
 
 ## Properties
 
-| Property                 | Attribute   | Description                        | Type      | Default     |
-| ------------------------ | ----------- | ---------------------------------- | --------- | ----------- |
-| `idText` _(required)_    | `idtext`    | The id of the radio and its label. | `string`  | `undefined` |
-| `isChecked`              | `checked`   | The checked state of the radio.    | `boolean` | `undefined` |
-| `isDisabled`             | `disabled`  | The disabled state of the radio.   | `boolean` | `undefined` |
-| `labelText` _(required)_ | `labeltext` | The text of the radio.             | `string`  | `undefined` |
-| `nameText` _(required)_  | `nametext`  | The name of the radio.             | `string`  | `undefined` |
-| `valueText`              | `valuetext` | The value of the radio.            | `string`  | `undefined` |
+| Property                  | Attribute    | Description                        | Type      | Default     |
+| ------------------------- | ------------ | ---------------------------------- | --------- | ----------- |
+| `identifier` _(required)_ | `identifier` | The id of the radio and its label. | `string`  | `undefined` |
+| `isChecked`               | `checked`    | The checked state of the radio.    | `boolean` | `undefined` |
+| `isDisabled`              | `disabled`   | The disabled state of the radio.   | `boolean` | `undefined` |
+| `labelText`               | `labeltext`  | The text of the radio.             | `string`  | `undefined` |
+| `name`                    | `name`       | The name of the radio.             | `string`  | `undefined` |
+| `value`                   | `value`      | The value of the radio.            | `string`  | `undefined` |
 
 
 ----------------------------------------------

@@ -1,4 +1,4 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h, Host } from '@stencil/core';
 
 @Component({
   tag: 'vtmn-radio',
@@ -8,22 +8,22 @@ export class VtmnRadio {
   /**
    * The id of the radio and its label.
    */
-  @Prop({ attribute: 'idtext' }) idText!: string;
+  @Prop() identifier!: string;
 
   /**
    * The text of the radio.
    */
-  @Prop({ attribute: 'labeltext' }) labelText!: string;
+  @Prop({ attribute: 'labeltext' }) labelText: string;
 
   /**
    * The name of the radio.
    */
-  @Prop({ attribute: 'nametext' }) nameText!: string;
+  @Prop() name: string;
 
   /**
    * The value of the radio.
    */
-  @Prop({ attribute: 'valuetext' }) valueText: string;
+  @Prop() value: string;
 
   /**
    * The checked state of the radio.
@@ -39,18 +39,18 @@ export class VtmnRadio {
 
   render() {
     return (
-      <div>
+      <Host>
         <input
           class="vtmn-radio-button"
           type="radio"
-          id={this.idText}
-          name={this.nameText}
-          value={this.valueText}
+          id={this.identifier}
+          name={this.name}
+          value={this.value}
           checked={this.isChecked}
           disabled={this.isDisabled}
         />
-        <label htmlFor={this.idText}>{this.labelText}</label>
-      </div>
+        <label htmlFor={this.identifier}>{this.labelText}</label>
+      </Host>
     );
   }
 }

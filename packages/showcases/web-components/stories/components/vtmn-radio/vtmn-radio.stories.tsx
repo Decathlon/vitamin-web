@@ -5,31 +5,31 @@ export default {
   title: 'Components/vtmn-radio',
   component: 'vtmn-radio',
   argTypes: {
-    idText: {
+    identifier: {
       type: { name: 'string', required: true },
       description: 'The id of the radio and its label.',
-      defaultValue: null,
+      defaultValue: 'my-radio',
       control: {
         type: 'text',
       },
     },
     labelText: {
-      type: { name: 'string', required: true },
+      type: { name: 'string', required: false },
       description: 'The label of the radio.',
-      defaultValue: null,
+      defaultValue: 'My label',
       control: {
         type: 'text',
       },
     },
-    nameText: {
-      type: { name: 'string', required: true },
+    name: {
+      type: { name: 'string', required: false },
       description: 'The name of the radio.',
       defaultValue: null,
       control: {
         type: 'text',
       },
     },
-    valueText: {
+    value: {
       type: { name: 'string', required: false },
       description: 'The value of the radio.',
       defaultValue: null,
