@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.9](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.6.8...@vtmn/web-components@0.6.9) (2021-06-14)
+
+**Note:** Version bump only for package @vtmn/web-components
+
+
+
+
+
 ## [0.6.8](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.6.7...@vtmn/web-components@0.6.8) (2021-06-14)
 
 **Note:** Version bump only for package @vtmn/web-components
