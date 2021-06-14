@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css",
-  "version": "0.10.1",
+  "version": "0.10.3",
   "description": "Decathlon Design System - Vitamin global CSS styles library",
   "keywords": [
     "design-system",
@@ -23,7 +23,11 @@
     "dist"
   ],
   "scripts": {
-    "build": "postcss src/index.css -o dist/index.css && cross-env FONT_SIZE_BASE=10 postcss src/index.css -o dist/index-base10.css && lerna run --parallel --scope \"@vtmn/css-*\" build",
+    "build:unreset:base10": "cross-env PREFLIGHT=false FONT_SIZE_BASE=10 postcss src/index.css -o dist/index-unreset-base10.css",
+    "build:unreset:base16": "cross-env PREFLIGHT=false postcss src/index.css -o dist/index-unreset.css",
+    "build:base16": "postcss src/index.css -o dist/index.css",
+    "build:base10": "cross-env FONT_SIZE_BASE=10 postcss src/index.css -o dist/index-base10.css",
+    "build": "npm run build:base16 && npm run build:base10 && npm run build:unreset:base10 && npm run build:unreset:base16 && lerna run --parallel --scope \"@vtmn/css-*\" build",
     "prestart": "yarn build",
     "start": "chokidar \"src/**\" -i \"**/dist/**\" -c \"yarn build\""
   },
