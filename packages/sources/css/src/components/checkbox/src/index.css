@@ -10,7 +10,7 @@
 .vtmn-checkbox[type='checkbox'] + label {
   position: relative;
   display: inline-flex;
-  align-items: end;
+  align-items: flex-end;
   font-size: var(--vtmn-typo_text-2-font-size);
   line-height: var(--vtmn-typo_text-2-line-height);
   cursor: pointer;

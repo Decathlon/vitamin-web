@@ -13,10 +13,10 @@
     "postcss-combine-duplicated-selectors": "^10.0.2",
     "postcss-combine-media-query": "^1.0.1",
     "postcss-css-variables": "^0.18.0",
-    "postcss-discard-comments": "^4.0.2",
+    "postcss-discard-comments": "^5.0.1",
     "postcss-import": "^14.0.0",
-    "postcss-loader": "^5.0.0",
-    "postcss-rem": "^1.1.5",
+    "postcss-loader": "^6.1.0",
+    "postcss-rem": "^2.0.1",
     "tailwindcss": "^2.0.2"
   },
   "devDependencies": {

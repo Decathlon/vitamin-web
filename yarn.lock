@@ -16389,6 +16389,11 @@ postcss-discard-comments@^4.0.2:
   dependencies:
     postcss "^7.0.0"
 
+postcss-discard-comments@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-discard-comments/-/postcss-discard-comments-5.0.1.tgz#9eae4b747cf760d31f2447c27f0619d5718901fe"
+  integrity sha512-lgZBPTDvWrbAYY1v5GYEv8fEO/WhKOu/hmZqmCYfrpD6eyDWWzAOsl2rF29lpvziKO02Gc5GJQtlpkTmakwOWg==
+
 postcss-discard-duplicates@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/postcss-discard-duplicates/-/postcss-discard-duplicates-4.0.2.tgz#3fe133cd3c82282e550fc9b239176a9207b784eb"
@@ -16563,14 +16568,14 @@ postcss-loader@^4.2.0:
     schema-utils "^3.0.0"
     semver "^7.3.4"
 
-postcss-loader@^5.0.0:
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/postcss-loader/-/postcss-loader-5.3.0.tgz#1657f869e48d4fdb018a40771c235e499ee26244"
-  integrity sha512-/+Z1RAmssdiSLgIZwnJHwBMnlABPgF7giYzTN2NOfr9D21IJZ4mQC1R2miwp80zno9M4zMD/umGI8cR+2EL5zw==
+postcss-loader@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/postcss-loader/-/postcss-loader-6.1.0.tgz#13c800a00b3c7d434a1319a73d85e2df0714cdde"
+  integrity sha512-yA/cXBfACkthZNA2hQxOnaReVfQ6uLmvbEDQzNafpbK40URZJvP/28dL1DG174Gvz3ptkkHbbwDBCh+gXR94CA==
   dependencies:
     cosmiconfig "^7.0.0"
     klona "^2.0.4"
-    semver "^7.3.4"
+    semver "^7.3.5"
 
 postcss-logical@^3.0.0:
   version "3.0.0"
@@ -16955,12 +16960,13 @@ postcss-reduce-transforms@^4.0.2:
     postcss "^7.0.0"
     postcss-value-parser "^3.0.0"
 
-postcss-rem@^1.1.5:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/postcss-rem/-/postcss-rem-1.1.5.tgz#5e884162ecd42440326fa7c41b03ee7295fa846e"
-  integrity sha512-OXPzkWFlA3WkxOqPw2Moj8VvXsq8jcbyOI/mR7bqFkjG1fgndr1ADYY1uegIYGC3X958wJBHMXvv3BqnBRQAIA==
+postcss-rem@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-rem/-/postcss-rem-2.0.1.tgz#e9e88567e29c99f5d39bea2f8c360cb9960c8f95"
+  integrity sha512-81jCo/IBnNPfhlq5ZyPUdYIXAUE04chkeS2P4q4AGLntI+kLge6/ci/lsdmJ3mKqbnF6qTSoe1WLEZ/MAqcUhQ==
   dependencies:
-    postcss "^7.0.26"
+    postcss "^8.2.13"
+    startijenn-rem "^1.0.1"
 
 postcss-replace-overflow-wrap@^3.0.0:
   version "3.0.0"
@@ -17144,7 +17150,7 @@ postcss@^8.1.0, postcss@^8.1.10, postcss@^8.1.6, postcss@^8.2.1:
     nanoid "^3.1.23"
     source-map-js "^0.6.2"
 
-postcss@^8.3.4:
+postcss@^8.2.13, postcss@^8.3.4:
   version "8.3.4"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.3.4.tgz#41ece1c43f2f7c74dc7d90144047ce052757b822"
   integrity sha512-/tZY0PXExXXnNhKv3TOvZAOUYRyuqcCbBm2c17YMDK0PlVII3K7/LKdt3ScHL+hhouddjUWi+1sKDf9xXW+8YA==
@@ -19748,6 +19754,11 @@ stackframe@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/stackframe/-/stackframe-1.2.0.tgz#52429492d63c62eb989804c11552e3d22e779303"
   integrity sha512-GrdeshiRmS1YLMYgzF16olf2jJ/IzxXY9lhKOskuVziubpTYcYqyOwYeJKzQkwy7uN0fYSsbsC4RQaXf9LCrYA==
+
+startijenn-rem@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/startijenn-rem/-/startijenn-rem-1.0.1.tgz#3f62f868fd7cc1b9353410b3868d67329840469a"
+  integrity sha512-ig7lK/FR1okZNb3mtJJPYc8Z7ubcjhMPvAmBvcX5uuAAgam+d4mFZvofMRJcTb7CftQ0IZWbY2a4eFCVT6dOXA==
 
 state-toggle@^1.0.0:
   version "1.0.3"
