@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.6.9...@vtmn/web-components@0.7.0) (2021-06-14)
+
+
+### Features
+
+* **@vtmn/web-components:** add checkbox component ([#342](https://github.com/Decathlon/vitamin-web/issues/342)) ([b373564](https://github.com/Decathlon/vitamin-web/commit/b3735640ecaf2abc9c3981c8e70ba8ddc1563946))
+
+
+
+
+
 ## [0.6.9](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.6.8...@vtmn/web-components@0.6.9) (2021-06-14)
 
 **Note:** Version bump only for package @vtmn/web-components
