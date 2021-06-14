@@ -1,6 +1,7 @@
 import { VtmnTextInput } from '@vtmn/react';
 
 import { Meta, Story } from '@storybook/react';
+import vitamixIconsList from '@vtmn/icons/dist/vitamix/font/vitamix.json';
 
 export default {
   title: 'Components/VtmnTextInput',
@@ -29,6 +30,15 @@ export default {
       description: 'The helper text message of the input.',
       defaultValue: 'Helper text goes here',
       control: { type: 'text' },
+    },
+    icon: {
+      type: { name: 'string', required: false },
+      description: 'The icon of text input.',
+      defaultValue: 'home-fill',
+      control: {
+        type: 'select',
+        options: ['', ...Object.keys(vitamixIconsList)],
+      },
     },
     multiline: {
       type: { name: 'boolean', required: false },

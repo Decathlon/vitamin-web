@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/icons",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Decathlon Design System - Vitamin icons library",
   "keywords": [
     "design-system",
@@ -37,7 +37,7 @@
   "devDependencies": {
     "chokidar-cli": "^2.1.0",
     "fantasticon": "^1.1.1",
-    "fs-extra": "^9.1.0",
+    "fs-extra": "^10.0.0",
     "spritesh": "^1.2.1",
     "svgo": "^2.2.0"
   },

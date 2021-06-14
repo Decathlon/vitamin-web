@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.8](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.6.7...@vtmn/web-components@0.6.8) (2021-06-14)
+
+**Note:** Version bump only for package @vtmn/web-components
+
+
+
+
+
+## [0.6.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.6.6...@vtmn/web-components@0.6.7) (2021-06-14)
+
+
+### Bug Fixes
+
+* **@vtmn/web-components:** change public reserved name of id attribute for toggle and text input components ([#343](https://github.com/Decathlon/vitamin-web/issues/343)) ([fdd81a0](https://github.com/Decathlon/vitamin-web/commit/fdd81a048049b37ba4af14fe8fdb1844712e7789))
+
+
+
+
+
+## [0.6.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.6.5...@vtmn/web-components@0.6.6) (2021-06-14)
+
+**Note:** Version bump only for package @vtmn/web-components
+
+
+
+
+
 ## [0.6.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.6.4...@vtmn/web-components@0.6.5) (2021-06-03)
 
 **Note:** Version bump only for package @vtmn/web-components

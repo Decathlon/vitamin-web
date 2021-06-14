@@ -17,10 +17,10 @@
     "@vtmn/icons": "*",
     "@vtmn/react": "*",
     "@vtmn/showcase-core": "^0.0.0",
-    "@whitespace/storybook-addon-html": "^4.2.0",
+    "@whitespace/storybook-addon-html": "^5.0.0",
     "clsx": "^1.1.1",
     "react": "^17.0.1",
-    "storybook-addon-designs": "^5.4.3",
+    "storybook-addon-designs": "^6.0.0",
     "storybook-addon-outline": "^1.2.0",
     "storybook-mobile": "^0.1.29"
   },
