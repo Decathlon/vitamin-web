@@ -2,6 +2,8 @@ import * as React from 'react';
 import clsx from 'clsx';
 
 import '@vtmn/css-text-input';
+import { VtmnIcon } from '../VtmnIcon';
+import { VitamixId } from '../../../../icons/dist/vitamix/font/vitamix';
 
 export interface VtmnTextInputProps
   extends React.ComponentPropsWithoutRef<'input'> {
@@ -31,6 +33,13 @@ export interface VtmnTextInputProps
   placeholder?: string;
 
   /**
+   * Icon
+   * @type {VitamixId}
+   * @defaultValue undefined and therefore not displayed by default
+   */
+  icon?: VitamixId;
+
+  /**
    * Is a TextArea
    * @type {boolean}
    * @defaultValue false (Input)
@@ -57,6 +66,7 @@ export const VtmnTextInput = ({
   disabled = false,
   error = false,
   helperText,
+  icon = undefined,
   id,
   labelText,
   multiline = false,
@@ -70,34 +80,39 @@ export const VtmnTextInput = ({
         {labelText}
       </label>
 
-      {multiline ? (
-        <textarea
-          className={clsx(
-            'vtmn-text-input',
-            className,
-            { 'vtmn-text-input--valid': valid && !disabled },
-            { 'vtmn-text-input--error': error && !disabled },
-          )}
-          id={id}
-          placeholder={placeholder}
-          disabled={disabled}
-          {...props}
-        />
-      ) : (
-        <input
-          className={clsx(
-            'vtmn-text-input',
-            className,
-            { 'vtmn-text-input--valid': valid && !disabled },
-            { 'vtmn-text-input--error': error && !disabled },
-          )}
-          id={id}
-          type="text"
-          placeholder={placeholder}
-          disabled={disabled}
-          {...props}
-        />
-      )}
+      <div className="vtmn-text-input_container">
+        {multiline ? (
+          <textarea
+            className={clsx(
+              'vtmn-text-input',
+              className,
+              { 'vtmn-text-input--valid': valid && !disabled },
+              { 'vtmn-text-input--error': error && !disabled },
+            )}
+            id={id}
+            placeholder={placeholder}
+            disabled={disabled}
+            {...props}
+          />
+        ) : (
+          <>
+            <input
+              className={clsx(
+                'vtmn-text-input',
+                className,
+                { 'vtmn-text-input--valid': valid && !disabled },
+                { 'vtmn-text-input--error': error && !disabled },
+              )}
+              id={id}
+              type="text"
+              placeholder={placeholder}
+              disabled={disabled}
+              {...props}
+            />
+            {icon && <VtmnIcon value={icon} />}
+          </>
+        )}
+      </div>
 
       {helperText && (
         <p className="vtmn-text-input_helper-text">{helperText}</p>
