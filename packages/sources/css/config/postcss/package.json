@@ -7,7 +7,7 @@
   "main": "./postcss-core.config.js",
   "dependencies": {
     "autoprefixer": "^10.2.3",
-    "postcss": "^8.2.5",
+    "postcss": "^8.3.4",
     "postcss-cli": "^8.3.1",
     "postcss-color-mod-function": "^3.0.3",
     "postcss-combine-duplicated-selectors": "^10.0.2",

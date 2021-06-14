@@ -15,7 +15,7 @@
     "@storybook/svelte": "^6.2.8",
     "@vtmn/showcase-core": "^0.0.0",
     "@vtmn/svelte": "*",
-    "storybook-addon-designs": "^5.4.3",
+    "storybook-addon-designs": "^6.0.0",
     "storybook-addon-outline": "^1.2.0",
     "storybook-mobile": "^0.1.29",
     "svelte": "^3.31.2",
