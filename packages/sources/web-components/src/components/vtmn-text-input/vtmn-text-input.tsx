@@ -8,7 +8,7 @@ export class VtmnTextInput {
   /**
    * The id of the text input.
    */
-  @Prop() id!: string;
+  @Prop() identifier!: string;
 
   /**
    * The label text of the text input.
@@ -47,7 +47,7 @@ export class VtmnTextInput {
 
   render() {
     return [
-      <label class="vtmn-text-input_label" htmlFor={this.id}>
+      <label class="vtmn-text-input_label" htmlFor={this.identifier}>
         {this.labelText}
       </label>,
 
@@ -59,7 +59,7 @@ export class VtmnTextInput {
           ]
             .filter(Boolean)
             .join(' ')}
-          id={this.id}
+          id={this.identifier}
           placeholder={this.placeholder}
           disabled={this.isDisabled}></textarea>
       ) : (
@@ -72,7 +72,7 @@ export class VtmnTextInput {
             ]
               .filter(Boolean)
               .join(' ')}
-            id={this.id}
+            id={this.identifier}
             placeholder={this.placeholder}
             disabled={this.isDisabled}
           />

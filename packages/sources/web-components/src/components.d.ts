@@ -57,7 +57,7 @@ export namespace Components {
         /**
           * The id of the text input.
          */
-        "id": string;
+        "identifier": string;
         /**
           * The disabled state of the text-input.
          */
@@ -83,7 +83,7 @@ export namespace Components {
         /**
           * The id of the toggle and its label.
          */
-        "id": string;
+        "identifier": string;
         /**
           * The checked state of the toggle.
           * @default false
@@ -188,7 +188,7 @@ declare namespace LocalJSX {
         /**
           * The id of the text input.
          */
-        "id": string;
+        "identifier": string;
         /**
           * The disabled state of the text-input.
          */
@@ -214,7 +214,7 @@ declare namespace LocalJSX {
         /**
           * The id of the toggle and its label.
          */
-        "id": string;
+        "identifier": string;
         /**
           * The checked state of the toggle.
           * @default false
