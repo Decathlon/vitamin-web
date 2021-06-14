@@ -5,10 +5,10 @@ export default {
   title: 'Components/vtmn-toggle',
   component: 'vtmn-toggle',
   argTypes: {
-    idText: {
+    identifier: {
       type: { name: 'string', required: true },
       description: 'The id of the toggle and its label.',
-      defaultValue: null,
+      defaultValue: 'my-toggle',
       control: {
         type: 'text',
       },
@@ -16,7 +16,7 @@ export default {
     labelText: {
       type: { name: 'string', required: false },
       description: 'The label of the toggle.',
-      defaultValue: null,
+      defaultValue: 'Try me',
       control: {
         type: 'text',
       },
@@ -54,7 +54,8 @@ export default {
     },
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vtmn---Web?node-id=612%3A1192',
+      url:
+        'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vtmn---Web?node-id=612%3A1192',
     },
   },
 };

@@ -8,7 +8,7 @@ export class VtmnToggle {
   /**
    * The id of the toggle and its label.
    */
-  @Prop({ attribute: 'idtext' }) idText!: string;
+  @Prop() identifier!: string;
 
   /**
    * The text of the toggle.
@@ -38,13 +38,13 @@ export class VtmnToggle {
         <div class="vtmn-toggle_switch">
           <input
             type="checkbox"
-            id={this.idText}
+            id={this.identifier}
             checked={this.isChecked}
             disabled={this.isDisabled}
           />
           <span aria-hidden="true"></span>
         </div>
-        <label htmlFor={this.idText}>{this.labelText}</label>
+        <label htmlFor={this.identifier}>{this.labelText}</label>
       </div>
     );
   }

@@ -5,13 +5,13 @@
 
 ## Properties
 
-| Property              | Attribute   | Description                         | Type                  | Default     |
-| --------------------- | ----------- | ----------------------------------- | --------------------- | ----------- |
-| `idText` _(required)_ | `idtext`    | The id of the toggle and its label. | `string`              | `undefined` |
-| `isChecked`           | `checked`   | The checked state of the toggle.    | `boolean`             | `undefined` |
-| `isDisabled`          | `disabled`  | The disabled state of the toggle.   | `boolean`             | `undefined` |
-| `labelText`           | `labeltext` | The text of the toggle.             | `string`              | `undefined` |
-| `size`                | `size`      | The size of the toggle.             | `"medium" \| "small"` | `undefined` |
+| Property                  | Attribute    | Description                         | Type                  | Default     |
+| ------------------------- | ------------ | ----------------------------------- | --------------------- | ----------- |
+| `identifier` _(required)_ | `identifier` | The id of the toggle and its label. | `string`              | `undefined` |
+| `isChecked`               | `checked`    | The checked state of the toggle.    | `boolean`             | `undefined` |
+| `isDisabled`              | `disabled`   | The disabled state of the toggle.   | `boolean`             | `undefined` |
+| `labelText`               | `labeltext`  | The text of the toggle.             | `string`              | `undefined` |
+| `size`                    | `size`       | The size of the toggle.             | `"medium" \| "small"` | `undefined` |
 
 
 ----------------------------------------------

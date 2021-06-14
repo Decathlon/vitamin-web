@@ -5,12 +5,12 @@ export default {
   title: 'Components/vtmn-text-input',
   component: 'vtmn-text-input',
   argTypes: {
-    id: {
+    identifier: {
       type: { name: 'string', required: true },
       description: 'Id of the text input',
       defaultValue: null,
       control: {
-        type: 'text',
+        type: 'my-text-input',
       },
     },
     labelText: {
@@ -78,7 +78,8 @@ export default {
     },
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vtmn---Web?node-id=150%3A4893',
+      url:
+        'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vtmn---Web?node-id=150%3A4893',
     },
   },
 };
