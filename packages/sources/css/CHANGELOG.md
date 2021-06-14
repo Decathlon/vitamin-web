@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.10.3...@vtmn/css@0.10.4) (2021-06-14)
+
+
+### Bug Fixes
+
+* **@vtmn/css-checkbox:** bug fixes + improvements ([#350](https://github.com/Decathlon/vitamin-web/issues/350)) ([bc1f1b2](https://github.com/Decathlon/vitamin-web/commit/bc1f1b2141573596e0468d5fcbe67daa6edae8d2))
+
+
+
+
+
 ## [0.10.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.10.2...@vtmn/css@0.10.3) (2021-06-14)
 
 **Note:** Version bump only for package @vtmn/css
