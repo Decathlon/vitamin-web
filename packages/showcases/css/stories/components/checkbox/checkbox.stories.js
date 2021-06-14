@@ -1,4 +1,5 @@
 import overview from './examples/overview.html';
+import indeterminate from './examples/indeterminate.html';
 
 export default {
   title: 'Components / Checkbox ',
@@ -19,6 +20,15 @@ Overview.parameters = {
   docs: {
     source: {
       code: overview,
+    },
+  },
+};
+
+export const Indeterminate = () => indeterminate;
+Indeterminate.parameters = {
+  docs: {
+    source: {
+      code: indeterminate,
     },
   },
 };

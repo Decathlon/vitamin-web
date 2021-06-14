@@ -4,36 +4,32 @@
 @import '@vtmn/css-design-tokens/src/typography';
 
 .vtmn-checkbox[type='checkbox'] {
-  left: 0;
-  opacity: 0.01;
-  box-sizing: border-box;
+  display: none;
 }
 
 .vtmn-checkbox[type='checkbox'] + label {
   position: relative;
+  display: inline-flex;
+  align-items: end;
   font-size: var(--vtmn-typo_text-2-font-size);
   line-height: var(--vtmn-typo_text-2-line-height);
   cursor: pointer;
   user-select: none;
-  left: rem(-24px);
-  padding: rem(8px) rem(8px) rem(8px) rem(28px);
 }
 
 .vtmn-checkbox[type='checkbox'] + label::before {
   content: '';
-  position: absolute;
-  left: rem(1px);
-  top: rem(7px);
-  width: rem(18px);
-  height: rem(18px);
   border-width: rem(2px);
   border-style: solid;
-  border-radius: rem(4px);
+  border-radius: rem(1px);
   transition: all 0.275s;
+  margin-top: rem(3px);
+  margin-right: rem(11px);
+  padding: rem(7px);
 }
 
 .vtmn-checkbox[type='checkbox']:not(:checked) + label::before {
-  border-color: var(--vtmn-color_grey-light-1);
+  border-color: var(--vtmn-color_grey);
 }
 
 .vtmn-checkbox[type='checkbox']:not(:checked):not(:disabled):hover
@@ -69,10 +65,16 @@
 .vtmn-checkbox[type='checkbox'] + label::after {
   content: url("data:image/svg+xml;charset=utf-8, <svg width='18' height='18' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'><path d='M5.80351 10.8L14.2875 2.31484L12.5907 0.618038L5.80351 7.40644L2.40871 4.01164L0.711914 5.70844L5.80351 10.8Z' fill='white'/></svg>");
   position: absolute;
-  top: rem(11px);
-  left: rem(3px);
+  top: rem(7px);
+  left: rem(2px);
   color: var(--vtmn-color_white);
   transition: all 0.2s;
+}
+
+.vtmn-checkbox[type='checkbox'].vtmn-checkbox--indeterminate + label::after {
+  content: url("data:image/svg+xml;charset=utf-8, <svg width='23' height='23' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'><path d='M3.333 7.333h9.334v1.334H3.333V7.333z' fill='white' stroke-width='10'/></svg>");
+  top: rem(3px);
+  left: rem(0);
 }
 
 .vtmn-checkbox[type='checkbox']:not(:checked) + label::after {
