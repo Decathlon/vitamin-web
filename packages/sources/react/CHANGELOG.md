@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.4.0...@vtmn/react@0.5.0) (2021-06-14)
+
+
+### Features
+
+* **@vtmn/react:** enhance button component with left, right, alone icon props ([806d4a3](https://github.com/Decathlon/vitamin-web/commit/806d4a3d739b447dbce0cce554509403ca8a3fe1))
+
+
+
+
+
 # [0.4.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.3.11...@vtmn/react@0.4.0) (2021-06-14)
 
 
