@@ -1,10 +1,10 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h, ComponentInterface } from '@stencil/core';
 
 @Component({
   tag: 'vtmn-text-input',
   styleUrl: 'vtmn-text-input.pcss',
 })
-export class VtmnTextInput {
+export class VtmnTextInput implements ComponentInterface {
   /**
    * The id of the text input.
    */
