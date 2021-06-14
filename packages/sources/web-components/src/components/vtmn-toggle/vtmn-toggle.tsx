@@ -1,10 +1,10 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h, ComponentInterface } from '@stencil/core';
 
 @Component({
   tag: 'vtmn-toggle',
   styleUrl: 'vtmn-toggle.pcss',
 })
-export class VtmnToggle {
+export class VtmnToggle implements ComponentInterface {
   /**
    * The id of the toggle and its label.
    */

@@ -27,7 +27,7 @@ export namespace Components {
         /**
           * The id of the checkbox and its label.
          */
-        "idText": string;
+        "identifier": string;
         /**
           * The checked state of the checkbox.
           * @default false
@@ -45,11 +45,11 @@ export namespace Components {
         /**
           * The name of the checkbox.
          */
-        "nameText": string;
+        "name": string;
         /**
           * The value of the checkbox.
          */
-        "valueText": string;
+        "value": string;
     }
     interface VtmnLink {
         /**
@@ -193,7 +193,7 @@ declare namespace LocalJSX {
         /**
           * The id of the checkbox and its label.
          */
-        "idText": string;
+        "identifier": string;
         /**
           * The checked state of the checkbox.
           * @default false
@@ -207,15 +207,15 @@ declare namespace LocalJSX {
         /**
           * The text of the checkbox.
          */
-        "labelText": string;
+        "labelText"?: string;
         /**
           * The name of the checkbox.
          */
-        "nameText": string;
+        "name"?: string;
         /**
           * The value of the checkbox.
          */
-        "valueText"?: string;
+        "value"?: string;
     }
     interface VtmnLink {
         /**

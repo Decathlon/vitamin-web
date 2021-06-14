@@ -5,31 +5,31 @@ export default {
   title: 'Components/vtmn-checkbox',
   component: 'vtmn-checkbox',
   argTypes: {
-    idText: {
+    identifier: {
       type: { name: 'string', required: true },
       description: 'The id of the checkbox and its label.',
-      defaultValue: null,
+      defaultValue: 'my-checkbox',
       control: {
         type: 'text',
       },
     },
     labelText: {
-      type: { name: 'string', required: true },
+      type: { name: 'string', required: false },
       description: 'The label of the checkbox.',
-      defaultValue: null,
+      defaultValue: 'My label',
       control: {
         type: 'text',
       },
     },
-    nameText: {
-      type: { name: 'string', required: true },
+    name: {
+      type: { name: 'string', required: false },
       description: 'The name of the checkbox.',
       defaultValue: null,
       control: {
         type: 'text',
       },
     },
-    valueText: {
+    value: {
       type: { name: 'string', required: false },
       description: 'The value of the checkbox.',
       defaultValue: null,

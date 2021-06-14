@@ -1,10 +1,10 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h, ComponentInterface } from '@stencil/core';
 
 @Component({
   tag: 'vtmn-link',
   styleUrl: 'vtmn-link.pcss',
 })
-export class VtmnLink {
+export class VtmnLink implements ComponentInterface {
   /**
    * The size of the link.
    * @default null
