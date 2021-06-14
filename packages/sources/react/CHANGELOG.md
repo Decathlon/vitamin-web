@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.3.11...@vtmn/react@0.4.0) (2021-06-14)
+
+
+### Features
+
+* **text-input:** add icon for react ([#314](https://github.com/Decathlon/vitamin-web/issues/314)) ([7814f81](https://github.com/Decathlon/vitamin-web/commit/7814f8167d501a4de357b50f435d5e6a8c7be8fe))
+
+
+
+
+
 ## [0.3.11](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.3.10...@vtmn/react@0.3.11) (2021-06-14)
 
 **Note:** Version bump only for package @vtmn/react
