@@ -33,9 +33,9 @@ export interface VtmnTextInputProps
   placeholder?: string;
 
   /**
-   * Icon
+   * Icon to display inside text input
    * @type {VitamixId}
-   * @defaultValue undefined and therefore not displayed by default
+   * @default undefined and therefore not displayed by default
    */
   icon?: VitamixId;
 
@@ -109,7 +109,7 @@ export const VtmnTextInput = ({
               disabled={disabled}
               {...props}
             />
-            {icon && <VtmnIcon value={icon} />}
+            {icon && <VtmnIcon value={icon} size={20} />}
           </>
         )}
       </div>
