@@ -41,7 +41,7 @@ export default {
     },
   },
   parameters: {
-    backgrounds: { default: 'grey' },
+    backgrounds: { default: 'white' },
     actions: {
       handles: ['mouseenter', 'click', 'focusin', 'focusout'],
     },

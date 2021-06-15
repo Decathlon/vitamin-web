@@ -27,7 +27,7 @@ export default /*#__PURE__*/ defineComponent({
         'vtmn-link': true,
         [`vtmn-link_size--${props.size}`]: true,
         'vtmn-link--standalone': props.isStandalone,
-        'vtmn-link--icon-along': props.hasIconAlong,
+        'vtmn-link--icon-along': props.hasIconAlong && props.isStandalone,
       })),
     };
   },
