@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.7.0...@vtmn/web-components@0.9.0) (2021-06-15)
+
+
+### Features
+
+* **@vtmn/web-components:** add radio component ([#341](https://github.com/Decathlon/vitamin-web/issues/341)) ([9b98708](https://github.com/Decathlon/vitamin-web/commit/9b98708af5c975178c633d766b3f36473418aad4))
+
+
+
+
+
 # [0.7.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.6.9...@vtmn/web-components@0.7.0) (2021-06-14)
 
 
