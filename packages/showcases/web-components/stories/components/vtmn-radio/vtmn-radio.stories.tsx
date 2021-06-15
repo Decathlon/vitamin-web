@@ -2,37 +2,44 @@ import { html } from 'lit-html';
 import { spread } from '@open-wc/lit-helpers';
 
 export default {
-  title: 'Components/vtmn-toggle',
-  component: 'vtmn-toggle',
+  title: 'Components/vtmn-radio',
+  component: 'vtmn-radio',
   argTypes: {
     identifier: {
       type: { name: 'string', required: true },
-      description: 'The id of the toggle and its label.',
-      defaultValue: 'my-toggle',
+      description: 'The id of the radio and its label.',
+      defaultValue: 'my-radio',
       control: {
         type: 'text',
       },
     },
     labelText: {
       type: { name: 'string', required: false },
-      description: 'The label of the toggle.',
-      defaultValue: 'Try me',
+      description: 'The label of the radio.',
+      defaultValue: 'My label',
       control: {
         type: 'text',
       },
     },
-    size: {
+    name: {
       type: { name: 'string', required: false },
-      description: 'The size of the toggle.',
+      description: 'The name of the radio.',
       defaultValue: null,
       control: {
-        type: 'select',
-        options: ['small', 'medium'],
+        type: 'text',
+      },
+    },
+    value: {
+      type: { name: 'string', required: false },
+      description: 'The value of the radio.',
+      defaultValue: null,
+      control: {
+        type: 'text',
       },
     },
     checked: {
       type: { name: 'boolean', required: false },
-      description: 'The checked state of the toggle',
+      description: 'The checked state of the radio',
       defaultValue: null,
       control: {
         type: 'boolean',
@@ -40,7 +47,7 @@ export default {
     },
     disabled: {
       type: { name: 'boolean', required: false },
-      description: 'The disabled state of the toggle',
+      description: 'The disabled state of the radio',
       defaultValue: null,
       control: {
         type: 'boolean',
@@ -54,12 +61,12 @@ export default {
     },
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vtmn---Web?node-id=612%3A1192',
+      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vtmn---Web?node-id=359%3A30',
     },
   },
 };
 
-const Template = (args) => html`<vtmn-toggle ...=${spread(args)} />`;
+const Template = (args) => html`<vtmn-radio ...=${spread(args)} />`;
 
 export const Overview = Template.bind({});
 Overview.args = {};

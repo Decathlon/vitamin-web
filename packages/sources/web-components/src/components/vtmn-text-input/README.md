@@ -9,7 +9,7 @@
 | -------------------------- | ------------- | ------------------------------------- | -------------------- | ----------- |
 | `helperText` _(required)_  | `helpertext`  | The helper text of the text input.    | `string`             | `undefined` |
 | `icon`                     | `icon`        | The icon to be displayed              | `string`             | `undefined` |
-| `id` _(required)_          | `id`          | The id of the text input.             | `string`             | `undefined` |
+| `identifier` _(required)_  | `identifier`  | The id of the text input.             | `string`             | `undefined` |
 | `isDisabled`               | `disabled`    | The disabled state of the text-input. | `boolean`            | `undefined` |
 | `isMultiline`              | `multiline`   | Is the text-input multiline or not.   | `boolean`            | `undefined` |
 | `labelText` _(required)_   | `labeltext`   | The label text of the text input.     | `string`             | `undefined` |

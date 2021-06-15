@@ -5,12 +5,12 @@ export default {
   title: 'Components/vtmn-text-input',
   component: 'vtmn-text-input',
   argTypes: {
-    id: {
+    identifier: {
       type: { name: 'string', required: true },
       description: 'Id of the text input',
       defaultValue: null,
       control: {
-        type: 'text',
+        type: 'my-text-input',
       },
     },
     labelText: {

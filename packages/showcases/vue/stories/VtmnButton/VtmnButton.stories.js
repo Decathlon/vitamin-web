@@ -42,10 +42,12 @@ export default {
   },
 };
 
-const Template = (args, { argTypes }) => ({
-  props: Object.keys(argTypes),
+const Template = (args) => ({
   components: { VtmnButton },
-  template: '<VtmnButton v-bind="$props">Button</VtmnButton>',
+  setup() {
+    return { args };
+  },
+  template: '<VtmnButton v-bind="args">Button</VtmnButton>',
 });
 
 export const Overview = Template.bind({});

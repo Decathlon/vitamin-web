@@ -1,10 +1,10 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Prop, h, ComponentInterface } from '@stencil/core';
 
 @Component({
   tag: 'vtmn-button',
   styleUrl: 'vtmn-button.pcss',
 })
-export class VtmnButton {
+export class VtmnButton implements ComponentInterface {
   /**
    * The variant of the button.
    * @default 'primary'
