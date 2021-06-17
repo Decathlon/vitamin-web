@@ -4,7 +4,8 @@
 @import '@vtmn/css-design-tokens/src/typography';
 
 .vtmn-checkbox[type='checkbox'] {
-  display: none;
+  position: absolute;
+  opacity: 0.01;
 }
 
 .vtmn-checkbox[type='checkbox'] + label {
