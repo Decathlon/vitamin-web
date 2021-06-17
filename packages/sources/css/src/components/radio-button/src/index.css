@@ -4,13 +4,15 @@
 @import '@vtmn/css-design-tokens/src/typography';
 
 .vtmn-radio-button[type='radio'] {
-  display: none;
+  position: absolute;
+  opacity: 0.01;
 }
 
 .vtmn-radio-button[type='radio'] + label {
   position: relative;
   display: inline-flex;
   align-items: flex-start;
+  font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
   line-height: var(--vtmn-typo_text-2-line-height);
   cursor: pointer;
@@ -41,7 +43,7 @@
   box-shadow: 0 0 0 rem(7px) color-mod(var(--vtmn-color_black) alpha(15%));
 }
 
-.vtmn-radio-button[type='radio']:not(:disabled):focus-visible + label::before {
+.vtmn-radio-button[type='radio']:focus-visible:not(:disabled) + label::before {
   box-shadow: 0 0 0 rem(4px) var(--vtmn-color_white),
     0 0 0 rem(6px) var(--vtmn-color_black);
 }

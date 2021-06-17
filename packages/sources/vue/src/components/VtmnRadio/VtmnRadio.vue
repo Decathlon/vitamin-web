@@ -34,17 +34,15 @@ export default /*#__PURE__*/ defineComponent({
 </script>
 
 <template>
-  <Host>
-    <input
-      class="vtmn-radio-button"
-      type="radio"
-      :id="this.identifier"
-      :name="this.name"
-      :value="this.value"
-      :checked="this.checked"
-      :disabled="this.disabled"
-      v-bind="$attrs"
-    />
-    <label :for="this.identifier">{{ this.labelText }}</label>
-  </Host>
+  <input
+    class="vtmn-radio-button"
+    type="radio"
+    :id="this.identifier"
+    :name="this.name"
+    :value="this.value"
+    :checked="this.checked"
+    :disabled="this.disabled"
+    v-bind="$attrs"
+  />
+  <label :for="this.identifier">{{ this.labelText }}</label>
 </template>
