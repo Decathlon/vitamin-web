@@ -5,25 +5,25 @@ import { defineComponent } from 'vue';
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnCheckbox',
   props: {
-    identifier: {
-      type: String,
-      default: null,
-    },
     labelText: {
       type: String,
       default: null,
     },
-    name: {
-      type: String,
-      default: null,
-    },
-    value: {
+    identifier: {
       type: String,
       default: null,
     },
     checked: {
       type: Boolean,
       default: false,
+    },
+    value: {
+      type: String,
+      default: null,
+    },
+    name: {
+      type: String,
+      default: null,
     },
     disabled: {
       type: Boolean,
@@ -37,11 +37,11 @@ export default /*#__PURE__*/ defineComponent({
   <input
     class="vtmn-checkbox"
     type="checkbox"
+    :checked="this.checked"
     :id="this.identifier"
     :name="this.name"
-    :value="this.value"
-    :checked="this.checked"
     :disabled="this.disabled"
+    :value="this.value"
     v-bind="$attrs"
   />
   <label :for="this.identifier">{{ this.labelText }}</label>
