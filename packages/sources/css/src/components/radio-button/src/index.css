@@ -24,7 +24,7 @@
   border: rem(2px) solid;
   border-radius: 100%;
   transition: all 0.275s;
-  margin-top: rem(2px);
+  margin-top: rem(1px);
   margin-right: rem(11px);
   padding: rem(8px);
 }
