@@ -39,7 +39,7 @@
     "stylelint": "^13.8.0",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^22.0.0",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^2.2.0"
   },
   "publishConfig": {
     "access": "public"

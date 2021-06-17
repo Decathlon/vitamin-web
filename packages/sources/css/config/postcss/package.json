@@ -17,7 +17,7 @@
     "postcss-import": "^14.0.0",
     "postcss-loader": "^6.1.0",
     "postcss-rem": "^2.0.1",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^2.2.0"
   },
   "devDependencies": {
     "postcss-css-var-to-less-var": "^1.0.0",
