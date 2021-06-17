@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.1.0...@vtmn/vue@0.2.0) (2021-06-17)
+
+
+### Features
+
+* **@vtmn/vue:** add checkbox component ([#363](https://github.com/Decathlon/vitamin-web/issues/363)) ([b3258c4](https://github.com/Decathlon/vitamin-web/commit/b3258c4374dac5a22d3e208cb785b444b6bdfdfd))
+
+
+
+
+
 # [0.1.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.0.31...@vtmn/vue@0.1.0) (2021-06-17)
 
 
