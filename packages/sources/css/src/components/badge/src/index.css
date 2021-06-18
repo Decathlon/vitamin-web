@@ -1,0 +1,51 @@
+/* Design tokens */
+@import '@vtmn/css-design-tokens/src/colors';
+@import '@vtmn/css-design-tokens/src/spacings';
+@import '@vtmn/css-design-tokens/src/typography';
+
+/* Default badge */
+.vtmn-badge {
+  position: relative;
+  width: fit-content;
+}
+
+.vtmn-badge .vtmn-badge-hide {
+  display: none;
+}
+
+.vtmn-badge .vtmn-badge-content {
+  position: absolute;
+  display: flex;
+  background-color: var(--vtmn-color_brand);
+  color: var(--vtmn-color_white);
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 12px;
+  z-index: 5;
+}
+.vtmn-badge-position-primary {
+  right: -5px;
+}
+
+.vtmn-badge-position-outside {
+  right: -10px;
+}
+
+.vtmn-badge-position-top-primary {
+  top: -5px;
+}
+
+.vtmn-badge-position-top-outside {
+  top: -10px;
+}
+
+.vtmn-badge-position-bottom-primary {
+  bottom: -5px;
+}
+
+.vtmn-badge-position-bottom-outside {
+  bottom: -10px;
+}
