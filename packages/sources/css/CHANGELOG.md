@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.11.0...@vtmn/css@0.11.1) (2021-06-18)
+
+
+### Bug Fixes
+
+* **@vtmn/css-textinput:** add resize property ([#369](https://github.com/Decathlon/vitamin-web/issues/369)) ([a94cb1f](https://github.com/Decathlon/vitamin-web/commit/a94cb1fca08d2f39b4d4b2e1347a1e0abe389f31))
+
+
+
+
+
 # [0.11.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.10.12...@vtmn/css@0.11.0) (2021-06-17)
 
 
