@@ -4,13 +4,15 @@
 @import '@vtmn/css-design-tokens/src/typography';
 
 .vtmn-checkbox[type='checkbox'] {
-  display: none;
+  position: absolute;
+  opacity: 0.01;
 }
 
 .vtmn-checkbox[type='checkbox'] + label {
   position: relative;
   display: inline-flex;
   align-items: flex-start;
+  font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
   line-height: var(--vtmn-typo_text-2-line-height);
   cursor: pointer;
