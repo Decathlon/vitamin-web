@@ -56,45 +56,54 @@ export class VtmnTextInput implements ComponentInterface {
         {this.labelText}
       </label>,
 
-      this.multiline ? (
-        <textarea
-          class={[
-            'vtmn-text-input',
-            this.valid && 'vtmn-text-input--valid',
-            this.error && 'vtmn-text-input--error',
+      this.multiline
+        ? [
+            <textarea
+              class={['vtmn-text-input', this.error && 'vtmn-text-input--error']
+                .filter(Boolean)
+                .join(' ')}
+              id={this.identifier}
+              placeholder={this.placeholder}
+              disabled={this.disabled}></textarea>,
+            this.error ? (
+              <p
+                class={[
+                  'vtmn-text-input_helper-text',
+                  this.error && 'vtmn-text-input_helper-text--error',
+                ]
+                  .filter(Boolean)
+                  .join(' ')}>
+                {this.helperText}
+              </p>
+            ) : null,
           ]
-            .filter(Boolean)
-            .join(' ')}
-          id={this.identifier}
-          placeholder={this.placeholder}
-          disabled={this.disabled}></textarea>
-      ) : (
-        <div class="vtmn-text-input_container">
-          <input
-            type="text"
-            class={[
-              'vtmn-text-input',
-              this.valid && 'vtmn-text-input--valid',
-              this.error && 'vtmn-text-input--error',
-            ]
-              .filter(Boolean)
-              .join(' ')}
-            id={this.identifier}
-            placeholder={this.placeholder}
-            disabled={this.disabled}
-          />
-          {this.icon ? <span class={`vtmx-${this.icon}`}></span> : null}
-        </div>
-      ),
-      <p
-        class={[
-          'vtmn-text-input_helper-text',
-          this.error && 'vtmn-text-input_helper-text--error',
-        ]
-          .filter(Boolean)
-          .join(' ')}>
-        {this.helperText}
-      </p>,
+        : [
+            <div class="vtmn-text-input_container">
+              <input
+                type="text"
+                class={[
+                  'vtmn-text-input',
+                  this.valid && 'vtmn-text-input--valid',
+                  this.error && 'vtmn-text-input--error',
+                ]
+                  .filter(Boolean)
+                  .join(' ')}
+                id={this.identifier}
+                placeholder={this.placeholder}
+                disabled={this.disabled}
+              />
+              {this.icon ? <span class={`vtmx-${this.icon}`}></span> : null}
+            </div>,
+            <p
+              class={[
+                'vtmn-text-input_helper-text',
+                this.error && 'vtmn-text-input_helper-text--error',
+              ]
+                .filter(Boolean)
+                .join(' ')}>
+              {this.helperText}
+            </p>,
+          ],
     ];
   }
 }
