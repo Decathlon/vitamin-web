@@ -27,13 +27,13 @@ export default {
         options: ['small', 'medium', 'large'],
       },
     },
-    isStandalone: {
+    standalone: {
       type: { name: 'boolean', required: false },
       description: 'If the component is a standalone or not.',
       defaultValue: false,
       control: { type: 'boolean' },
     },
-    hasIconAlong: {
+    iconAlong: {
       type: { name: 'boolean', required: false },
       description: 'If the component has an icon along or not.',
       defaultValue: false,

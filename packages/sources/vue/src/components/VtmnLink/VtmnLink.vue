@@ -10,11 +10,11 @@ export default /*#__PURE__*/ defineComponent({
       default: 'medium',
       validator: (val: string) => ['small', 'medium', 'large'].includes(val),
     },
-    isStandalone: {
+    standalone: {
       type: Boolean,
       default: false,
     },
-    hasIconAlong: {
+    iconAlong: {
       type: Boolean,
       default: false,
     },
@@ -26,8 +26,8 @@ export default /*#__PURE__*/ defineComponent({
       classes: computed(() => ({
         'vtmn-link': true,
         [`vtmn-link_size--${props.size}`]: true,
-        'vtmn-link--standalone': props.isStandalone,
-        'vtmn-link--icon-along': props.hasIconAlong && props.isStandalone,
+        'vtmn-link--standalone': props.standalone,
+        'vtmn-link--icon-along': props.iconAlong && props.standalone,
       })),
     };
   },
