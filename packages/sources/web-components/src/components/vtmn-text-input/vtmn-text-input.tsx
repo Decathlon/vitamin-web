@@ -28,17 +28,22 @@ export class VtmnTextInput implements ComponentInterface {
   /**
    * Is the text-input multiline or not.
    */
-  @Prop({ attribute: 'multiline' }) isMultiline: boolean;
+  @Prop() multiline: boolean;
 
   /**
-   * The state of the text-input.
+   * The valid variant state of the text-input.
    */
-  @Prop() state: 'valid' | 'error' | null;
+  @Prop() valid: boolean;
+
+  /**
+   * The error variant state of the text-input.
+   */
+  @Prop() error: boolean;
 
   /**
    * The disabled state of the text-input.
    */
-  @Prop({ attribute: 'disabled' }) isDisabled: boolean;
+  @Prop() disabled: boolean;
 
   /**
    * The icon to be displayed
@@ -51,38 +56,40 @@ export class VtmnTextInput implements ComponentInterface {
         {this.labelText}
       </label>,
 
-      this.isMultiline ? (
+      this.multiline ? (
         <textarea
           class={[
             'vtmn-text-input',
-            this.state && `vtmn-text-input--${this.state}`,
+            this.valid && 'vtmn-text-input--valid',
+            this.error && 'vtmn-text-input--error',
           ]
             .filter(Boolean)
             .join(' ')}
           id={this.identifier}
           placeholder={this.placeholder}
-          disabled={this.isDisabled}></textarea>
+          disabled={this.disabled}></textarea>
       ) : (
         <div class="vtmn-text-input_container">
           <input
             type="text"
             class={[
               'vtmn-text-input',
-              this.state && `vtmn-text-input--${this.state}`,
+              this.valid && 'vtmn-text-input--valid',
+              this.error && 'vtmn-text-input--error',
             ]
               .filter(Boolean)
               .join(' ')}
             id={this.identifier}
             placeholder={this.placeholder}
-            disabled={this.isDisabled}
+            disabled={this.disabled}
           />
-          {this.icon ? <span class={this.icon}></span> : null}
+          {this.icon ? <span class={`vtmx-${this.icon}`}></span> : null}
         </div>
       ),
       <p
         class={[
           'vtmn-text-input_helper-text',
-          this.state && `vtmn-text-input_helper-text--${this.state}`,
+          this.error && 'vtmn-text-input_helper-text--error',
         ]
           .filter(Boolean)
           .join(' ')}>
