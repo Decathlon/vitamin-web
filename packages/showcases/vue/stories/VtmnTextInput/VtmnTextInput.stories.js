@@ -46,13 +46,20 @@ export default {
         type: 'boolean',
       },
     },
-    state: {
-      type: { name: 'string', required: false },
-      description: 'The state of the text input.',
-      defaultValue: null,
+    valid: {
+      type: { name: 'boolean', required: false },
+      description: 'The valid variant state of the text input.',
+      defaultValue: false,
       control: {
-        type: 'select',
-        options: ['valid', 'error', null],
+        type: 'boolean',
+      },
+    },
+    error: {
+      type: { name: 'boolean', required: false },
+      description: 'The error variant state of the text input.',
+      defaultValue: false,
+      control: {
+        type: 'boolean',
       },
     },
     disabled: {

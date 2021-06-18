@@ -29,10 +29,13 @@ export default /*#__PURE__*/ defineComponent({
       type: Boolean,
       default: false,
     },
-    state: {
-      type: String,
-      default: null,
-      validator: (val: string) => ['valid', 'error', null].includes(val),
+    valid: {
+      type: Boolean,
+      default: false,
+    },
+    error: {
+      type: Boolean,
+      default: false,
     },
     icon: {
       type: String,
@@ -45,11 +48,12 @@ export default /*#__PURE__*/ defineComponent({
     return {
       classes: computed(() => ({
         'vtmn-text-input': true,
-        [`vtmn-text-input--${props.state}`]: props.state,
+        'vtmn-text-input--error': props.error,
+        'vtmn-text-input--valid': props.valid,
       })),
       helperClasses: computed(() => ({
         'vtmn-text-input_helper-text': true,
-        [`vtmn-text-input_helper-text--${props.state}`]: props.state,
+        'vtmn-text-input_helper-text--error': props.error,
       })),
       iconClass: computed(() => ({
         [`vtmx-${props.icon}`]: props.icon,
