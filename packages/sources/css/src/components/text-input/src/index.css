@@ -33,6 +33,7 @@
 
 textarea.vtmn-text-input {
   min-height: rem(40px);
+  resize: both;
 }
 
 .vtmn-text-input:not([disabled]):hover {
