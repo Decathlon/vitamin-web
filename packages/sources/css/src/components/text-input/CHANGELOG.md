@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-text-input@0.5.5...@vtmn/css-text-input@0.5.6) (2021-06-18)
+
+
+### Bug Fixes
+
+* **@vtmn/css-textinput:** add resize property ([#369](https://github.com/Decathlon/vitamin-web/issues/369)) ([a94cb1f](https://github.com/Decathlon/vitamin-web/commit/a94cb1fca08d2f39b4d4b2e1347a1e0abe389f31))
+
+
+
+
+
+## [0.5.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-text-input@0.5.4...@vtmn/css-text-input@0.5.5) (2021-06-17)
+
+**Note:** Version bump only for package @vtmn/css-text-input
+
+
+
+
+
+## [0.5.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-text-input@0.5.3...@vtmn/css-text-input@0.5.4) (2021-06-17)
+
+**Note:** Version bump only for package @vtmn/css-text-input
+
+
+
+
+
 ## [0.5.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-text-input@0.5.2...@vtmn/css-text-input@0.5.3) (2021-06-14)
 
 **Note:** Version bump only for package @vtmn/css-text-input
