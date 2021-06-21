@@ -58,15 +58,20 @@ export namespace Components {
          */
         "href": string;
         /**
-          * Is the link standalone or not
+          * Is the link has an icon or not
           * @default null
          */
-        "isStandalone": boolean;
+        "iconAlong": boolean;
         /**
           * The size of the link.
           * @default null
          */
         "size": 'small' | 'medium' | 'large';
+        /**
+          * Is the link standalone or not
+          * @default null
+         */
+        "standalone": boolean;
         /**
           * The target of the link
           * @default null
@@ -259,15 +264,20 @@ declare namespace LocalJSX {
          */
         "href"?: string;
         /**
-          * Is the link standalone or not
+          * Is the link has an icon or not
           * @default null
          */
-        "isStandalone"?: boolean;
+        "iconAlong"?: boolean;
         /**
           * The size of the link.
           * @default null
          */
         "size"?: 'small' | 'medium' | 'large';
+        /**
+          * Is the link standalone or not
+          * @default null
+         */
+        "standalone"?: boolean;
         /**
           * The target of the link
           * @default null
