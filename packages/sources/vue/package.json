@@ -62,6 +62,7 @@
     "@typescript-eslint/eslint-plugin": "^4.27.0",
     "@typescript-eslint/parser": "^4.27.0",
     "@vtmn/css-button": "^0.3.6",
+    "@vtmn/css-link": "^0.2.4",
     "@vue/cli-plugin-babel": "^4.5.11",
     "@vue/cli-plugin-eslint": "^4.5.11",
     "@vue/cli-plugin-typescript": "^4.5.11",
