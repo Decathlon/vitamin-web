@@ -33,7 +33,7 @@
   border-color: var(--vtmn-color_grey);
 }
 
-.vtmn-radio-button[type='radio']:not(:checked):not(:disabled):hover
+.vtmn-radio-button[type='radio']:not(:focus-visible):not(:checked):not(:disabled):hover
   + label::before {
   box-shadow: 0 0 0 rem(7px) color-mod(var(--vtmn-color_black) alpha(5%));
 }
@@ -52,7 +52,8 @@
   border-color: var(--vtmn-color_black);
 }
 
-.vtmn-radio-button[type='radio']:checked:not(:disabled):hover + label::before {
+.vtmn-radio-button[type='radio']:not(:focus-visible):checked:not(:disabled):hover
+  + label::before {
   box-shadow: 0 0 0 rem(7px)
     color-mod(var(--vtmn-color_brand-digital) alpha(5%));
 }
