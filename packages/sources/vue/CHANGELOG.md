@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.3.0...@vtmn/vue@0.4.0) (2021-06-21)
+
+
+### Features
+
+* **@vtmn/vue:** add text input component ([#359](https://github.com/Decathlon/vitamin-web/issues/359)) ([0589891](https://github.com/Decathlon/vitamin-web/commit/058989123c0282b126fddb7021d887a05f94ab8b))
+
+
+
+
+
+# [0.3.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.2.1...@vtmn/vue@0.3.0) (2021-06-21)
+
+
+### Features
+
+* **@vtmn/vue:** add link component ([#358](https://github.com/Decathlon/vitamin-web/issues/358)) ([7de0dd7](https://github.com/Decathlon/vitamin-web/commit/7de0dd77ca00686fabbd1fec1f2db6f75bef7068)), closes [#341](https://github.com/Decathlon/vitamin-web/issues/341)
+
+
+
+
+
 ## [0.2.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.2.0...@vtmn/vue@0.2.1) (2021-06-17)
 
 **Note:** Version bump only for package @vtmn/vue

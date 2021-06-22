@@ -1,18 +1,17 @@
-import { html } from 'lit-html';
-import { spread } from '@open-wc/lit-helpers';
+import { VtmnTextInput } from '@vtmn/vue/dist/esm/VtmnTextInput';
 
 import vitamixIconsList from '@vtmn/icons/dist/vitamix/font/vitamix.json';
 
 export default {
-  title: 'Components/vtmn-text-input',
-  component: 'vtmn-text-input',
+  title: 'Components/VtmnTextInput',
+  component: VtmnTextInput,
   argTypes: {
     identifier: {
       type: { name: 'string', required: true },
       description: 'Id of the text input',
-      defaultValue: null,
+      defaultValue: 'my-textinput',
       control: {
-        type: 'my-text-input',
+        type: 'text',
       },
     },
     labelText: {
@@ -49,7 +48,7 @@ export default {
     },
     valid: {
       type: { name: 'boolean', required: false },
-      description: 'The valid state of the text input.',
+      description: 'The valid variant state of the text input.',
       defaultValue: false,
       control: {
         type: 'boolean',
@@ -57,7 +56,7 @@ export default {
     },
     error: {
       type: { name: 'boolean', required: false },
-      description: 'The error state of the text input.',
+      description: 'The error variant state of the text input.',
       defaultValue: false,
       control: {
         type: 'boolean',
@@ -66,7 +65,7 @@ export default {
     disabled: {
       type: { name: 'boolean', required: false },
       description: 'The disabled state of the text input.',
-      defaultValue: false,
+      defaultValue: null,
       control: {
         type: 'boolean',
       },
@@ -88,13 +87,18 @@ export default {
     },
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vtmn---Web?node-id=150%3A4893',
+      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vitamin---Web-UI-kit?node-id=150%3A4893',
     },
   },
 };
 
-const Template = (args) =>
-  html`<vtmn-text-input ...=${spread(args)}></vtmn-text-input>`;
+const Template = (args) => ({
+  components: { VtmnTextInput },
+  setup() {
+    return { args };
+  },
+  template: '<VtmnTextInput v-bind="args"/>',
+});
 
 export const Overview = Template.bind({});
 Overview.args = {};

@@ -1,9 +1,8 @@
-import { html } from 'lit-html';
-import { spread } from '@open-wc/lit-helpers';
+import { VtmnLink } from '@vtmn/vue/dist/esm/VtmnLink';
 
 export default {
-  title: 'Components/vtmn-link',
-  component: 'vtmn-link',
+  title: 'Components/VtmnLink',
+  component: VtmnLink,
   argTypes: {
     href: {
       type: { name: 'string', required: true },
@@ -14,7 +13,7 @@ export default {
     target: {
       type: { name: 'string', required: false },
       description: 'The target of the link.',
-      defaultValue: null,
+      defaultValue: '_self',
       control: {
         type: 'text',
       },
@@ -22,7 +21,7 @@ export default {
     size: {
       type: { name: 'string', required: false },
       description: 'The size of the link.',
-      defaultValue: null,
+      defaultValue: 'medium',
       control: {
         type: 'select',
         options: ['small', 'medium', 'large'],
@@ -31,13 +30,13 @@ export default {
     standalone: {
       type: { name: 'boolean', required: false },
       description: 'If the component is a standalone or not.',
-      defaultValue: null,
+      defaultValue: false,
       control: { type: 'boolean' },
     },
     iconAlong: {
       type: { name: 'boolean', required: false },
-      description: 'If the component has an icon or not.',
-      defaultValue: null,
+      description: 'If the component has an icon along or not.',
+      defaultValue: false,
       control: { type: 'boolean' },
     },
   },
@@ -48,13 +47,18 @@ export default {
     },
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vtmn---Web?node-id=1207%3A8898',
+      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vtmn-Web?node-id=31%3A136',
     },
   },
 };
 
-const Template = (args) =>
-  html`<vtmn-link ...=${spread(args)}>Your link</vtmn-link>`;
+const Template = (args) => ({
+  components: { VtmnLink },
+  setup() {
+    return { args };
+  },
+  template: '<VtmnLink v-bind="args">My link</VtmnLink>',
+});
 
 export const Overview = Template.bind({});
 Overview.args = {};

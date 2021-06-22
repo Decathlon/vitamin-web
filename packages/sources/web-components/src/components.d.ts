@@ -58,15 +58,20 @@ export namespace Components {
          */
         "href": string;
         /**
-          * Is the link standalone or not
+          * Is the link has an icon or not
           * @default null
          */
-        "isStandalone": boolean;
+        "iconAlong": boolean;
         /**
           * The size of the link.
           * @default null
          */
         "size": 'small' | 'medium' | 'large';
+        /**
+          * Is the link standalone or not
+          * @default null
+         */
+        "standalone": boolean;
         /**
           * The target of the link
           * @default null
@@ -103,6 +108,14 @@ export namespace Components {
     }
     interface VtmnTextInput {
         /**
+          * The disabled state of the text-input.
+         */
+        "disabled": boolean;
+        /**
+          * The error variant state of the text-input.
+         */
+        "error": boolean;
+        /**
           * The helper text of the text input.
          */
         "helperText": string;
@@ -115,25 +128,21 @@ export namespace Components {
          */
         "identifier": string;
         /**
-          * The disabled state of the text-input.
-         */
-        "isDisabled": boolean;
-        /**
-          * Is the text-input multiline or not.
-         */
-        "isMultiline": boolean;
-        /**
           * The label text of the text input.
          */
         "labelText": string;
+        /**
+          * Is the text-input multiline or not.
+         */
+        "multiline": boolean;
         /**
           * The placeholder of the text input.
          */
         "placeholder": string;
         /**
-          * The state of the text-input.
+          * The valid variant state of the text-input.
          */
-        "state": 'valid' | 'error' | null;
+        "valid": boolean;
     }
     interface VtmnToggle {
         /**
@@ -259,15 +268,20 @@ declare namespace LocalJSX {
          */
         "href"?: string;
         /**
-          * Is the link standalone or not
+          * Is the link has an icon or not
           * @default null
          */
-        "isStandalone"?: boolean;
+        "iconAlong"?: boolean;
         /**
           * The size of the link.
           * @default null
          */
         "size"?: 'small' | 'medium' | 'large';
+        /**
+          * Is the link standalone or not
+          * @default null
+         */
+        "standalone"?: boolean;
         /**
           * The target of the link
           * @default null
@@ -304,6 +318,14 @@ declare namespace LocalJSX {
     }
     interface VtmnTextInput {
         /**
+          * The disabled state of the text-input.
+         */
+        "disabled"?: boolean;
+        /**
+          * The error variant state of the text-input.
+         */
+        "error"?: boolean;
+        /**
           * The helper text of the text input.
          */
         "helperText": string;
@@ -316,25 +338,21 @@ declare namespace LocalJSX {
          */
         "identifier": string;
         /**
-          * The disabled state of the text-input.
-         */
-        "isDisabled"?: boolean;
-        /**
-          * Is the text-input multiline or not.
-         */
-        "isMultiline"?: boolean;
-        /**
           * The label text of the text input.
          */
         "labelText": string;
+        /**
+          * Is the text-input multiline or not.
+         */
+        "multiline"?: boolean;
         /**
           * The placeholder of the text input.
          */
         "placeholder": string;
         /**
-          * The state of the text-input.
+          * The valid variant state of the text-input.
          */
-        "state"?: 'valid' | 'error' | null;
+        "valid"?: boolean;
     }
     interface VtmnToggle {
         /**
