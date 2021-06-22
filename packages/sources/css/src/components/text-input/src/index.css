@@ -65,6 +65,7 @@ textarea.vtmn-text-input {
 .vtmn-text-input_container {
   position: relative;
   display: inline-block;
+  width: min-content;
 }
 
 .vtmn-text-input + span[class^='vtmx-'],
@@ -77,13 +78,14 @@ textarea.vtmn-text-input {
 
 .vtmn-text-input[disabled],
 .vtmn-text-input[disabled] + span[class^='vtmx-'],
-.vtmn-text-input[disabled] + svg {
+.vtmn-text-input[disabled] + svg,
+.vtmn-text-input[disabled] + .vtmn-text-input_helper-text,
+.vtmn-text-input[disabled] + .vtmn-text-input_counter {
   opacity: 0.38;
   cursor: not-allowed;
 }
 
-.vtmn-text-input_helper-text,
-.vtmn-text-input_counter {
+.vtmn-text-input_helper-text {
   color: var(--vtmn-color_grey);
   font-size: rem(14px);
   line-height: 1;
@@ -123,5 +125,13 @@ textarea.vtmn-text-input {
 }
 
 .vtmn-text-input_counter {
-  margin-top: rem(-2px);
+  color: var(--vtmn-color_grey);
+  font-size: rem(14px);
+  line-height: 1;
+  float: right;
+}
+
+.vtmn-text-input:not([disabled]):focus + .vtmn-text-input_counter,
+.vtmn-text-input--error:not([disabled]) + .vtmn-text-input_counter {
+  color: var(--vtmn-color_black);
 }
