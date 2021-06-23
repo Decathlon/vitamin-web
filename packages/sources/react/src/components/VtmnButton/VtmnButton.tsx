@@ -2,7 +2,7 @@ import * as React from 'react';
 import '@vtmn/css-button';
 import { VtmnButtonVariant, VtmnButtonSize } from './types';
 import { VtmnIcon } from '../VtmnIcon';
-import { VitamixId } from '../../../../icons/dist/vitamix/font/vitamix';
+import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
 
 export interface VtmnButtonProps
   extends React.ComponentPropsWithoutRef<'button'> {

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.4.0...@vtmn/vue@0.5.0) (2021-06-23)
+
+
+### Features
+
+* **@vtmn/vue:** add icons in button component ([#382](https://github.com/Decathlon/vitamin-web/issues/382)) ([6ea5eb8](https://github.com/Decathlon/vitamin-web/commit/6ea5eb8f009e48edb368fbc278f1a5c2de0e748d))
+
+
+
+
+
 # [0.4.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.3.0...@vtmn/vue@0.4.0) (2021-06-21)
 
 

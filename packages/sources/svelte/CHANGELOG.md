@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.3.13...@vtmn/svelte@0.4.0) (2021-06-23)
+
+
+### Features
+
+* **@vtmn/svelte:** add icons in button component ([#381](https://github.com/Decathlon/vitamin-web/issues/381)) ([2a77b91](https://github.com/Decathlon/vitamin-web/commit/2a77b9155db257212b5e5dc5a73b0cba6f1143bf))
+
+
+
+
+
 ## [0.3.13](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.3.12...@vtmn/svelte@0.3.13) (2021-06-21)
 
 **Note:** Version bump only for package @vtmn/svelte

@@ -5,8 +5,27 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { VitamixId } from "@vtmn/icons/dist/vitamix/font/vitamix";
 export namespace Components {
     interface VtmnButton {
+        /**
+          * Icon to display when it is a button with icon only
+          * @type {VitamixId}
+          * @default undefined and therefore not displayed by default
+         */
+        "iconAlone": VitamixId;
+        /**
+          * Icon to display on the left hand side of button
+          * @type {VitamixId}
+          * @default undefined and therefore not displayed by default
+         */
+        "iconLeft": VitamixId;
+        /**
+          * Icon to display on the right hand side of button
+          * @type {VitamixId}
+          * @default undefined and therefore not displayed by default
+         */
+        "iconRight": VitamixId;
         /**
           * The size of the button.
           * @default 'medium'
@@ -217,6 +236,24 @@ declare global {
 }
 declare namespace LocalJSX {
     interface VtmnButton {
+        /**
+          * Icon to display when it is a button with icon only
+          * @type {VitamixId}
+          * @default undefined and therefore not displayed by default
+         */
+        "iconAlone"?: VitamixId;
+        /**
+          * Icon to display on the left hand side of button
+          * @type {VitamixId}
+          * @default undefined and therefore not displayed by default
+         */
+        "iconLeft"?: VitamixId;
+        /**
+          * Icon to display on the right hand side of button
+          * @type {VitamixId}
+          * @default undefined and therefore not displayed by default
+         */
+        "iconRight"?: VitamixId;
         /**
           * The size of the button.
           * @default 'medium'

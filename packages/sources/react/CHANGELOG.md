@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.5.6...@vtmn/react@0.6.0) (2021-06-23)
+
+
+### Features
+
+* **@vtmn/web-components:** add icons in button component ([#380](https://github.com/Decathlon/vitamin-web/issues/380)) ([0845a36](https://github.com/Decathlon/vitamin-web/commit/0845a360533c425a41da2d1836adfa263629415e))
+
+
+
+
+
 ## [0.5.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.5.5...@vtmn/react@0.5.6) (2021-06-21)
 
 **Note:** Version bump only for package @vtmn/react
