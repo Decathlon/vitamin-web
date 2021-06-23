@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.11.1...@vtmn/css@0.11.2) (2021-06-22)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** no more hover effect over focus-visible state ([#379](https://github.com/Decathlon/vitamin-web/issues/379)) ([48dc7ee](https://github.com/Decathlon/vitamin-web/commit/48dc7eea56caf547fea98f210852003dff4fa162))
+
+
+
+
+
 ## [0.11.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.11.0...@vtmn/css@0.11.1) (2021-06-18)
 
 
