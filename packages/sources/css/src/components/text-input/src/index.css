@@ -21,7 +21,6 @@
   background-color: var(--vtmn-color_white);
   border-radius: rem(4px);
   display: block;
-  font-family: var(--vtmn-typo_font-family);
   font-weight: var(--vtmn-typo_font-weight--regular);
   font-size: rem(16px);
   line-height: 1;
@@ -65,7 +64,6 @@ textarea.vtmn-text-input {
 .vtmn-text-input_container {
   position: relative;
   display: inline-block;
-  width: min-content;
 }
 
 .vtmn-text-input + span[class^='vtmx-'],
@@ -124,11 +122,10 @@ textarea.vtmn-text-input {
   fill: var(--vtmn-color_danger);
 }
 
-.vtmn-text-input_counter {
+textarea.vtmn-text-input + .vtmn-text-input_counter {
   color: var(--vtmn-color_grey);
   font-size: rem(14px);
   line-height: 1;
-  float: right;
 }
 
 .vtmn-text-input:not([disabled]):focus + .vtmn-text-input_counter,
