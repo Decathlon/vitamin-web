@@ -54,6 +54,26 @@ import 'typeface-roboto';
 import 'typeface-roboto-condensed';
 ```
 
+## Install icons (optional)
+
+If you need to use Svelte components with icons displayed (via props for icons in some components), you will need to install `@vtmn/icons` package.
+
+```sh
+# with npm
+npm i -S @vtmn/icons
+
+# with yarn
+yarn add @vtmn/icons
+```
+
+Then, import the icon font in the entry point of your React application:
+
+```javascript
+import '@vtmn/icons/dist/vitamix/font/vitamix.css';
+```
+
+Or you can also import it with a CDN like `unpkg.com` with [this file](https://unpkg.com/@vtmn/icons/dist/vitamix/font/vitamix.css).
+
 ## Usage
 
 You may want to use the source Svelte files to benefit from some features (Server Side Rendering for instance). To do so, you will need to import components exposed in the `src/` folder of the package.

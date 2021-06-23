@@ -13,6 +13,7 @@
     "@storybook/addon-a11y": "^6.2.8",
     "@storybook/addon-essentials": "^6.2.8",
     "@storybook/svelte": "^6.2.8",
+    "@vtmn/icons": "*",
     "@vtmn/showcase-core": "^0.0.0",
     "@vtmn/svelte": "*",
     "@whitespace/storybook-addon-html": "^5.0.0",
