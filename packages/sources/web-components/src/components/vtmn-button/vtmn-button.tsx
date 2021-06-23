@@ -1,4 +1,5 @@
 import { Component, Prop, h, ComponentInterface } from '@stencil/core';
+import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
 
 @Component({
   tag: 'vtmn-button',
@@ -23,12 +24,44 @@ export class VtmnButton implements ComponentInterface {
    */
   @Prop() size: 'small' | 'medium' | 'large' | 'stretched' = 'medium';
 
+  /**
+   * Icon to display on the left hand side of button
+   * @type {VitamixId}
+   * @default undefined and therefore not displayed by default
+   */
+  @Prop({ attribute: 'iconleft' }) iconLeft: VitamixId;
+
+  /**
+   * Icon to display on the right hand side of button
+   * @type {VitamixId}
+   * @default undefined and therefore not displayed by default
+   */
+  @Prop({ attribute: 'iconright' }) iconRight: VitamixId;
+
+  /**
+   * Icon to display when it is a button with icon only
+   * @type {VitamixId}
+   * @default undefined and therefore not displayed by default
+   */
+  @Prop({ attribute: 'iconalone' }) iconAlone: VitamixId;
+
   render() {
     return (
       <button
-        class={`vtmn-btn vtmn-btn_variant--${this.variant} vtmn-btn_size--${this.size}`}
+        class={`vtmn-btn vtmn-btn_variant--${this.variant} vtmn-btn_size--${
+          this.size
+        }
+        ${!this.iconAlone && this.iconLeft ? 'vtmn-btn--icon-left' : ''} ${
+          !this.iconAlone && this.iconRight ? 'vtmn-btn--icon-right' : ''
+        } ${this.iconAlone ? 'vtmn-btn--icon-alone' : ''}`}
         type="button">
-        <slot></slot>
+        {this.iconLeft && <span class={`vtmx-${this.iconLeft}`}></span>}
+        {this.iconAlone ? (
+          <span class={`vtmx-${this.iconAlone}`}></span>
+        ) : (
+          <slot></slot>
+        )}
+        {this.iconRight && <span class={`vtmx-${this.iconRight}`}></span>}
       </button>
     );
   }

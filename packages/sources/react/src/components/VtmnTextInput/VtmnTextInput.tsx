@@ -3,7 +3,7 @@ import clsx from 'clsx';
 
 import '@vtmn/css-text-input';
 import { VtmnIcon } from '../VtmnIcon';
-import { VitamixId } from '../../../../icons/dist/vitamix/font/vitamix';
+import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
 
 export interface VtmnTextInputProps
   extends React.ComponentPropsWithoutRef<'input'> {
