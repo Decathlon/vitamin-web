@@ -7,7 +7,7 @@ export default {
   title: 'Components/VtmnTextInput',
   component: VtmnTextInput,
   argTypes: {
-    id: {
+    identifier: {
       type: { name: 'string', required: true },
       description: 'The id of the input.',
       defaultValue: 'vtmn-input',

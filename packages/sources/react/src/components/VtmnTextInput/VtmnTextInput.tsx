@@ -11,7 +11,7 @@ export interface VtmnTextInputProps
    * ID of the input
    * @type {string}
    */
-  id: string;
+  identifier: string;
 
   /**
    * Label text linked to the input
@@ -67,7 +67,7 @@ export const VtmnTextInput = ({
   error = false,
   helperText,
   icon = undefined,
-  id,
+  identifier,
   labelText,
   multiline = false,
   placeholder,
@@ -76,7 +76,7 @@ export const VtmnTextInput = ({
 }: VtmnTextInputProps) => {
   return (
     <>
-      <label className="vtmn-text-input_label" htmlFor={id}>
+      <label className="vtmn-text-input_label" htmlFor={identifier}>
         {labelText}
       </label>
 
@@ -89,7 +89,7 @@ export const VtmnTextInput = ({
               { 'vtmn-text-input--valid': valid && !disabled },
               { 'vtmn-text-input--error': error && !disabled },
             )}
-            id={id}
+            id={identifier}
             placeholder={placeholder}
             disabled={disabled}
             {...props}
@@ -103,7 +103,7 @@ export const VtmnTextInput = ({
                 { 'vtmn-text-input--valid': valid && !disabled },
                 { 'vtmn-text-input--error': error && !disabled },
               )}
-              id={id}
+              id={identifier}
               type="text"
               placeholder={placeholder}
               disabled={disabled}
