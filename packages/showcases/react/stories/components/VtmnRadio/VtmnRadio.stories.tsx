@@ -1,37 +1,34 @@
-import { VtmnToggle } from '@vtmn/react';
+import { VtmnRadio } from '@vtmn/react';
 
 import { Meta, Story } from '@storybook/react';
 
 export default {
-  title: 'Components/VtmnToggle',
-  component: VtmnToggle,
+  title: 'Components/VtmnRadio',
+  component: VtmnRadio,
   argTypes: {
     identifier: {
       type: { name: 'string', required: true },
-      description: 'The id of the toggle.',
-      defaultValue: 'vtmn-toggle',
+      description: 'The id of the radio.',
+      defaultValue: 'vtmn-radio',
       control: { type: 'text' },
     },
     labelText: {
       type: { name: 'string', required: false },
-      description: 'The label of the toggle.',
+      description: 'The label of the radio.',
       defaultValue: 'Your label',
+      control: { type: 'text' },
+    },
+    name: {
+      type: { name: 'string', required: false },
+      description: 'The name of the radio.',
+      defaultValue: null,
       control: { type: 'text' },
     },
     disabled: {
       type: { name: 'boolean', required: false },
-      description: 'The disabled state of the toggle.',
+      description: 'The disabled state of the radio.',
       defaultValue: false,
       control: { type: 'boolean' },
-    },
-    size: {
-      type: { name: 'string', required: false },
-      description: 'The size of the toggle.',
-      defaultValue: 'medium',
-      control: {
-        type: 'select',
-        options: ['small', 'medium'],
-      },
     },
   },
   parameters: {
@@ -41,11 +38,11 @@ export default {
     },
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=612%3A1192',
+      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vitamin---Web-UI-kit?node-id=359%3A30',
     },
   },
 } as Meta;
 
-const Template: Story = (args) => <VtmnToggle {...args} />;
+const Template: Story = (args) => <VtmnRadio {...args} />;
 
 export const Overview = Template.bind({});

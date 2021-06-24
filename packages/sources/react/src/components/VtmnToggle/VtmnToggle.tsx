@@ -10,7 +10,7 @@ export interface VtmnToggleProps
    * ID of the toggle.
    * @type {string}
    */
-  id: string;
+  identifier: string;
 
   /**
    * Label text linked to the toggle.
@@ -27,7 +27,7 @@ export interface VtmnToggleProps
 
 export const VtmnToggle = ({
   className,
-  id,
+  identifier,
   labelText,
   size = 'medium',
   ...props
@@ -36,10 +36,10 @@ export const VtmnToggle = ({
     <div
       className={clsx('vtmn-toggle', `vtmn-toggle_size--${size}`, className)}>
       <div className="vtmn-toggle_switch">
-        <input type="checkbox" id={id} {...props} />
+        <input type="checkbox" id={identifier} {...props} />
         <span aria-hidden="true"></span>
       </div>
-      <label htmlFor={id}>{labelText}</label>
+      <label htmlFor={identifier}>{labelText}</label>
     </div>
   );
 };
