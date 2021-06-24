@@ -44,14 +44,14 @@ export namespace Components {
     }
     interface VtmnCheckbox {
         /**
-          * The id of the checkbox and its label.
-         */
-        "identifier": string;
-        /**
           * The checked state of the checkbox.
           * @default false
          */
-        "isChecked": boolean;
+        "checked": boolean;
+        /**
+          * The id of the checkbox and its label.
+         */
+        "identifier": string;
         /**
           * The disabled state of the checkbox.
           * @default false
@@ -99,19 +99,19 @@ export namespace Components {
     }
     interface VtmnRadio {
         /**
-          * The id of the radio and its label.
-         */
-        "identifier": string;
-        /**
           * The checked state of the radio.
           * @default false
          */
-        "isChecked": boolean;
+        "checked": boolean;
         /**
           * The disabled state of the radio.
           * @default false
          */
-        "isDisabled": boolean;
+        "disabled": boolean;
+        /**
+          * The id of the radio and its label.
+         */
+        "identifier": string;
         /**
           * The text of the radio.
          */
@@ -165,19 +165,19 @@ export namespace Components {
     }
     interface VtmnToggle {
         /**
-          * The id of the toggle and its label.
-         */
-        "identifier": string;
-        /**
           * The checked state of the toggle.
           * @default false
          */
-        "isChecked": boolean;
+        "checked": boolean;
         /**
           * The disabled state of the toggle.
           * @default false
          */
-        "isDisabled": boolean;
+        "disabled": boolean;
+        /**
+          * The id of the toggle and its label.
+         */
+        "identifier": string;
         /**
           * The text of the toggle.
          */
@@ -272,14 +272,14 @@ declare namespace LocalJSX {
     }
     interface VtmnCheckbox {
         /**
-          * The id of the checkbox and its label.
-         */
-        "identifier": string;
-        /**
           * The checked state of the checkbox.
           * @default false
          */
-        "isChecked"?: boolean;
+        "checked"?: boolean;
+        /**
+          * The id of the checkbox and its label.
+         */
+        "identifier": string;
         /**
           * The disabled state of the checkbox.
           * @default false
@@ -327,19 +327,19 @@ declare namespace LocalJSX {
     }
     interface VtmnRadio {
         /**
-          * The id of the radio and its label.
-         */
-        "identifier": string;
-        /**
           * The checked state of the radio.
           * @default false
          */
-        "isChecked"?: boolean;
+        "checked"?: boolean;
         /**
           * The disabled state of the radio.
           * @default false
          */
-        "isDisabled"?: boolean;
+        "disabled"?: boolean;
+        /**
+          * The id of the radio and its label.
+         */
+        "identifier": string;
         /**
           * The text of the radio.
          */
@@ -393,19 +393,19 @@ declare namespace LocalJSX {
     }
     interface VtmnToggle {
         /**
-          * The id of the toggle and its label.
-         */
-        "identifier": string;
-        /**
           * The checked state of the toggle.
           * @default false
          */
-        "isChecked"?: boolean;
+        "checked"?: boolean;
         /**
           * The disabled state of the toggle.
           * @default false
          */
-        "isDisabled"?: boolean;
+        "disabled"?: boolean;
+        /**
+          * The id of the toggle and its label.
+         */
+        "identifier": string;
         /**
           * The text of the toggle.
          */

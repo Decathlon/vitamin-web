@@ -4,7 +4,7 @@ export default {
   title: 'Components/VtmnTextInput',
   component: VtmnTextInput,
   argTypes: {
-    id: {
+    identifier: {
       defaultValue: 'vtmn-input',
     },
     labelText: {

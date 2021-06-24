@@ -5,7 +5,7 @@
    * ID of the input
    * @type {string}
    */
-  export let id;
+  export let identifier;
 
   /**
    * Label text linked to the input
@@ -45,14 +45,14 @@
 </script>
 
 {#if labelText}
-  <label class="vtmn-text-input_label" for="{id}">{labelText}</label>
+  <label class="vtmn-text-input_label" for="{identifier}">{labelText}</label>
 {/if}
 <input
   class="vtmn-text-input"
   class:vtmn-text-input--valid={valid}
   class:vtmn-text-input--error={error}
   type="text"
-  {id}
+  {identifier}
   {disabled}
   {placeholder}
   {...$$restProps}
