@@ -24,13 +24,13 @@ export class VtmnToggle implements ComponentInterface {
    * The checked state of the toggle.
    * @default false
    */
-  @Prop({ attribute: 'checked' }) isChecked: boolean;
+  @Prop() checked: boolean;
 
   /**
    * The disabled state of the toggle.
    * @default false
    */
-  @Prop({ attribute: 'disabled' }) isDisabled: boolean;
+  @Prop() disabled: boolean;
 
   render() {
     return (
@@ -39,8 +39,8 @@ export class VtmnToggle implements ComponentInterface {
           <input
             type="checkbox"
             id={this.identifier}
-            checked={this.isChecked}
-            disabled={this.isDisabled}
+            checked={this.checked}
+            disabled={this.disabled}
           />
           <span aria-hidden="true"></span>
         </div>
