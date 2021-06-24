@@ -27,8 +27,8 @@
   },
   "devDependencies": {
     "@vtmn/css-design-tokens": "^0.1.11",
-    "@vtmn/css-postcss-config": "^0.0.0",
-    "@vtmn/css-tailwind-config": "^0.0.0"
+    "@vtmn/css-postcss-config": "*",
+    "@vtmn/css-tailwind-config": "*"
   },
   "publishConfig": {
     "access": "public"

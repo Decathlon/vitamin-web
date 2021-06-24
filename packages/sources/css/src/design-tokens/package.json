@@ -19,8 +19,8 @@
     "build:less": "cross-env LESS_FORMAT=true postcss dist/index.css -o dist/index.less && cross-env LESS_FORMAT=true postcss dist/index-base10.css -o dist/index-base10.less"
   },
   "devDependencies": {
-    "@vtmn/css-postcss-config": "^0.0.0",
-    "@vtmn/css-tailwind-config": "^0.0.0"
+    "@vtmn/css-postcss-config": "*",
+    "@vtmn/css-tailwind-config": "*"
   },
   "publishConfig": {
     "access": "public"

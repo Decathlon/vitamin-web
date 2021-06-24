@@ -32,8 +32,8 @@
     "start": "chokidar \"src/**\" -i \"**/dist/**\" -c \"yarn build\""
   },
   "devDependencies": {
-    "@vtmn/css-postcss-config": "^0.0.0",
-    "@vtmn/css-tailwind-config": "^0.0.0",
+    "@vtmn/css-postcss-config": "*",
+    "@vtmn/css-tailwind-config": "*",
     "chokidar-cli": "^2.1.0",
     "postcss": "^8.3.5",
     "stylelint": "^13.8.0",
