@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.11.2...@vtmn/css@0.12.0) (2021-06-24)
+
+
+### Features
+
+* **@vtmn/css:** improvements (text input) ([#378](https://github.com/Decathlon/vitamin-web/issues/378)) ([c7dec76](https://github.com/Decathlon/vitamin-web/commit/c7dec76f40ba6539e7d5204ee08c51a162958cfa))
+
+
+
+
+
 ## [0.11.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.11.1...@vtmn/css@0.11.2) (2021-06-22)
 
 
