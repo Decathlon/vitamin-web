@@ -3,7 +3,7 @@ import '@vtmn/css-radio-button/dist/index.css';
 import { defineComponent } from 'vue';
 
 export default /*#__PURE__*/ defineComponent({
-  name: 'VtmnRadio',
+  name: 'VtmnRadioButton',
   props: {
     identifier: {
       type: String,

@@ -31,7 +31,7 @@ export interface VtmnRadioProps
   disabled?: boolean;
 }
 
-export const VtmnRadio = ({
+export const VtmnRadioButton = ({
   identifier,
   labelText,
   name,
@@ -53,4 +53,4 @@ export const VtmnRadio = ({
   );
 };
 
-export default React.memo(VtmnRadio);
+export default React.memo(VtmnRadioButton);

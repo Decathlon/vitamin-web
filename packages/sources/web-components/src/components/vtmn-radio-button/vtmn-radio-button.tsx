@@ -1,10 +1,10 @@
 import { Component, Prop, h, Host, ComponentInterface } from '@stencil/core';
 
 @Component({
-  tag: 'vtmn-radio',
-  styleUrl: 'vtmn-radio.pcss',
+  tag: 'vtmn-radio-button',
+  styleUrl: 'vtmn-radio-button.pcss',
 })
-export class VtmnRadio implements ComponentInterface {
+export class VtmnRadioButton implements ComponentInterface {
   /**
    * The id of the radio and its label.
    */

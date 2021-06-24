@@ -1,11 +1,11 @@
 import { App as Application } from 'vue';
-import VtmnRadio from './VtmnRadio.vue';
+import VtmnRadioButton from './VtmnRadioButton.vue';
 
 import { registerComponent } from '../../utils/plugins/index';
 
 const Plugin = {
   install(vue: Application) {
-    registerComponent(vue, VtmnRadio);
+    registerComponent(vue, VtmnRadioButton);
   },
 };
 
@@ -13,4 +13,4 @@ const Plugin = {
 
 export default Plugin;
 
-export { VtmnRadio };
+export { VtmnRadioButton };

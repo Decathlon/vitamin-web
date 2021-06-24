@@ -1,9 +1,8 @@
-import { html } from 'lit-html';
-import { spread } from '@open-wc/lit-helpers';
+import { VtmnRadioButton } from '@vtmn/vue/dist/esm/VtmnRadioButton';
 
 export default {
-  title: 'Components/vtmn-radio',
-  component: 'vtmn-radio',
+  title: 'Components/VtmnRadioButton',
+  component: VtmnRadioButton,
   argTypes: {
     identifier: {
       type: { name: 'string', required: true },
@@ -55,18 +54,24 @@ export default {
     },
   },
   parameters: {
-    backgrounds: { default: 'white' },
+    backgrounds: { default: 'grey' },
     actions: {
       handles: ['mouseenter', 'click', 'focusin', 'focusout'],
     },
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vtmn---Web?node-id=359%3A30',
+      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vitamin---Web-UI-kit?node-id=359%3A30',
     },
   },
 };
 
-const Template = (args) => html`<vtmn-radio ...=${spread(args)} />`;
+const Template = (args) => ({
+  components: { VtmnRadioButton },
+  setup() {
+    return { args };
+  },
+  template: '<VtmnRadioButton v-bind="args"/>',
+});
 
 export const Overview = Template.bind({});
 Overview.args = {};

@@ -1,15 +1,15 @@
-import { VtmnRadio } from '@vtmn/react';
+import { VtmnRadioButton } from '@vtmn/react';
 
 import { Meta, Story } from '@storybook/react';
 
 export default {
-  title: 'Components/VtmnRadio',
-  component: VtmnRadio,
+  title: 'Components/VtmnRadioButton',
+  component: VtmnRadioButton,
   argTypes: {
     identifier: {
       type: { name: 'string', required: true },
       description: 'The id of the radio.',
-      defaultValue: 'vtmn-radio',
+      defaultValue: 'vtmn-radio-button',
       control: { type: 'text' },
     },
     labelText: {
@@ -43,6 +43,6 @@ export default {
   },
 } as Meta;
 
-const Template: Story = (args) => <VtmnRadio {...args} />;
+const Template: Story = (args) => <VtmnRadioButton {...args} />;
 
 export const Overview = Template.bind({});
