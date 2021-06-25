@@ -2,22 +2,12 @@ import { VtmnLink } from '@vtmn/vue/dist/esm/VtmnLink';
 import {
   argTypes,
   parameters,
-} from '@vtmn/showcase-core/src/components/VtmnLink.csf';
+} from '@vtmn/showcase-core/csf/components/VtmnLink.csf';
 
 export default {
   title: 'Components/VtmnLink',
   component: VtmnLink,
-  argTypes: {
-    ...argTypes,
-    children: {
-      type: { name: 'string', required: false },
-      description: 'The content to render inside the component.',
-      defaultValue: 'Link',
-      control: {
-        type: 'text',
-      },
-    },
-  },
+  argTypes,
   parameters,
 };
 

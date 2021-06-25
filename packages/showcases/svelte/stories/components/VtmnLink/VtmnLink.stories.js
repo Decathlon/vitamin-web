@@ -3,7 +3,7 @@ import VtmnLink from '@vtmn/svelte/src/components/VtmnLink.svelte';
 import {
   argTypes,
   parameters,
-} from '@vtmn/showcase-core/src/components/VtmnLink.csf';
+} from '@vtmn/showcase-core/csf/components/VtmnLink.csf';
 
 export default {
   title: 'Components/VtmnLink',
