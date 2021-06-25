@@ -17,17 +17,12 @@ export interface VtmnIconProps extends React.HTMLAttributes<HTMLElement> {
    * The value of the icon.
    **/
   value: VitamixId;
-  /**
-   * The aria-label of the icon.
-   **/
-  ariaLabel?: string;
 }
 
 export const Icon: React.FC<VtmnIconProps> = ({
   size = 24,
   color = 'black',
   value,
-  ariaLabel,
   className,
   style,
   ...props
@@ -35,7 +30,6 @@ export const Icon: React.FC<VtmnIconProps> = ({
   <span
     className={`vtmx-${value} ${className ? className : ''}`}
     style={{ fontSize: size, color: `var(--vtmn-color_${color})`, ...style }}
-    aria-label={ariaLabel ? ariaLabel : value}
     {...props}></span>
 );
 
