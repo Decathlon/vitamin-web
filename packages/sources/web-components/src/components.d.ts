@@ -56,7 +56,7 @@ export namespace Components {
           * The disabled state of the checkbox.
           * @default false
          */
-        "isDisabled": boolean;
+        "disabled": boolean;
         /**
           * The text of the checkbox.
          */
@@ -284,7 +284,7 @@ declare namespace LocalJSX {
           * The disabled state of the checkbox.
           * @default false
          */
-        "isDisabled"?: boolean;
+        "disabled"?: boolean;
         /**
           * The text of the checkbox.
          */
