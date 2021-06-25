@@ -1,7 +1,7 @@
 export const argTypes = {
   identifier: {
     type: { name: 'string', required: true },
-    description: 'The id of the checkbox and its label.',
+    description: 'The id of the checkbox.',
     defaultValue: 'my-checkbox',
     control: {
       type: 'text',
@@ -41,7 +41,7 @@ export const argTypes = {
   },
   disabled: {
     type: { name: 'boolean', required: false },
-    description: 'The disabled state of the checkbox',
+    description: 'The disabled state of the checkbox.',
     defaultValue: null,
     control: {
       type: 'boolean',
