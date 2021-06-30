@@ -5,8 +5,16 @@
 
 .vtmn-badge {
   font-family: var(--vtmn-typo_font-family);
-  font-size: var(--vtmn-typo_text-2-font-size);
-  display: inline;
+  font-size: var(--vtmn-typo_text-3-font-size);
+  display: inline-flex;
+  min-width: rem(20px);
+  height: rem(20px);
+  justify-content: center;
+  align-items: center;
+  border-radius: rem(10px);
+  background-color: var(--vtmn-color_grey-light-4);
+  box-shadow: inset 0 0 0 rem(1px) var(--vtmn-color_grey-light-3);
+  padding: 0 rem(6px);
 }
 
 .vtmn-badge:focus-visible {
@@ -15,90 +23,33 @@
     0 0 0 rem(6px) var(--vtmn-color_black);
 }
 
-.vtmn-badge span[class^='vtmx-'] {
-  font-size: var(--vtmn-typo_title-5-font-size);
-}
-
-.vtmn-badge svg {
-  display: inline;
-}
-
-.vtmn-badge_container {
-  font-size: var(--vtmn-typo_text-3-font-size);
-  min-width: rem(20px);
-  height: rem(20px);
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: rem(10px);
-  background-color: var(--vtmn-color_grey-light-4);
-  box-shadow: inset 0 0 0 rem(1px) var(--vtmn-color_grey-light-3);
-  padding: 0 rem(5px);
-}
-
-.vtmn-badge span[class^='vtmx-'] .vtmn-badge_container {
-  position: relative;
-  left: rem(-10px);
-  top: rem(-10px);
-}
-
-.vtmn-badge svg + .vtmn-badge_container {
-  position: relative;
-  left: rem(-14px);
-  top: rem(-10px);
-}
-
 /* Sizes */
 
-.vtmn-badge_size--small span[class^='vtmx-'] {
-  font-size: var(--vtmn-typo_text-3-font-size);
-}
-
-.vtmn-badge_size--small span[class^='vtmx-'] .vtmn-badge_container {
+.vtmn-badge_size--small {
   min-width: rem(8px);
   height: rem(8px);
   padding: 0;
-  position: relative;
-  left: rem(-5px);
-  top: rem(-3px);
-}
-
-.vtmn-badge_size--small svg + .vtmn-badge_container {
-  min-width: rem(8px);
-  height: rem(8px);
-  padding: 0;
-  position: relative;
-  left: rem(-9px);
-  top: rem(-6px);
-}
-
-.vtmn-badge_size--medium span[class^='vtmx-'] {
-  font-size: var(--vtmn-typo_title-5-font-size);
-}
-
-.vtmn-badge_size--large span[class^='vtmx-'] {
-  font-size: var(--vtmn-typo_title-4-font-size);
 }
 
 /* Variants */
 
-.vtmn-badge_variant--default .vtmn-badge_container {
+.vtmn-badge_variant--default {
   background-color: var(--vtmn-color_grey-light-4);
   box-shadow: inset 0 0 0 rem(1px) var(--vtmn-color_grey-light-3);
 }
 
-.vtmn-badge_variant--brand .vtmn-badge_container {
+.vtmn-badge_variant--brand {
   background-color: var(--vtmn-color_brand-digital);
   box-shadow: none;
   color: var(--vtmn-color_white);
 }
 
-.vtmn-badge_variant--reversed .vtmn-badge_container {
+.vtmn-badge_variant--reversed {
   background-color: var(--vtmn-color_white);
   box-shadow: none;
 }
 
-.vtmn-badge_variant--accent .vtmn-badge_container {
+.vtmn-badge_variant--accent {
   background-color: var(--vtmn-color_yellow);
   box-shadow: none;
 }
