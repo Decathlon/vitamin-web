@@ -13,11 +13,18 @@
    * @type {boolean}
    * @default false
    */
-  export let isStandalone = false;
+  export let standalone = false;
+
+  /**
+   * Whether link has an icon or not.
+   * @type {boolean}
+   * @default false
+   */
+   export let iconAlong = false;
 </script>
 
 <a
-  class={['vtmn-link', `vtmn-link_size--${size}`, isStandalone && 'vtmn-link--standalone'].filter(Boolean).join(' ')}
+  class={['vtmn-link', `vtmn-link_size--${size}`, standalone && 'vtmn-link--standalone', (standalone && iconAlong) && 'vtmn-link--icon-along'].filter(Boolean).join(' ')}
   {...$$restProps}>
   <slot></slot>
 </a>

@@ -1,6 +1,8 @@
 import { html } from 'lit-html';
 import { spread } from '@open-wc/lit-helpers';
 
+import vitamixIconsList from '@vtmn/icons/dist/vitamix/font/vitamix.json';
+
 export default {
   title: 'Components/vtmn-text-input',
   component: 'vtmn-text-input',
@@ -45,19 +47,26 @@ export default {
         type: 'boolean',
       },
     },
-    state: {
-      type: { name: 'string', required: false },
-      description: 'The state of the text input.',
-      defaultValue: null,
+    valid: {
+      type: { name: 'boolean', required: false },
+      description: 'The valid state of the text input.',
+      defaultValue: false,
       control: {
-        type: 'select',
-        options: ['valid', 'error', null],
+        type: 'boolean',
+      },
+    },
+    error: {
+      type: { name: 'boolean', required: false },
+      description: 'The error state of the text input.',
+      defaultValue: false,
+      control: {
+        type: 'boolean',
       },
     },
     disabled: {
       type: { name: 'boolean', required: false },
       description: 'The disabled state of the text input.',
-      defaultValue: null,
+      defaultValue: false,
       control: {
         type: 'boolean',
       },
@@ -67,7 +76,8 @@ export default {
       description: 'Icon font to be displayed',
       defaultValue: null,
       control: {
-        type: 'text',
+        type: 'select',
+        options: ['', ...Object.keys(vitamixIconsList)],
       },
     },
   },

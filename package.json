@@ -68,7 +68,7 @@
     "@commitlint/cli": "^12.0.0",
     "@commitlint/config-conventional": "^12.0.0",
     "@octokit/core": "^3.2.4",
-    "@storybook/storybook-deployer": "^2.8.7",
+    "@storybook/storybook-deployer": "^2.8.10",
     "babel-loader": "^8.2.2",
     "cross-env": "^7.0.2",
     "husky": "^6.0.0",

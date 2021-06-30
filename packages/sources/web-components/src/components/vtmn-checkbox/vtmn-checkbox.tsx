@@ -11,9 +11,9 @@ export class VtmnCheckbox implements ComponentInterface {
   @Prop() identifier!: string;
 
   /**
-   * The text of the checkbox.
+   * The value of the checkbox.
    */
-  @Prop({ attribute: 'labeltext' }) labelText: string;
+  @Prop() value: string;
 
   /**
    * The name of the checkbox.
@@ -21,21 +21,21 @@ export class VtmnCheckbox implements ComponentInterface {
   @Prop() name: string;
 
   /**
-   * The value of the checkbox.
+   * The text of the checkbox.
    */
-  @Prop() value: string;
-
-  /**
-   * The checked state of the checkbox.
-   * @default false
-   */
-  @Prop({ attribute: 'checked' }) isChecked: boolean;
+  @Prop({ attribute: 'labeltext' }) labelText: string;
 
   /**
    * The disabled state of the checkbox.
    * @default false
    */
   @Prop({ attribute: 'disabled' }) isDisabled: boolean;
+
+  /**
+   * The checked state of the checkbox.
+   * @default false
+   */
+  @Prop() checked: boolean;
 
   render() {
     return (
@@ -46,7 +46,7 @@ export class VtmnCheckbox implements ComponentInterface {
           id={this.identifier}
           name={this.name}
           value={this.value}
-          checked={this.isChecked}
+          checked={this.checked}
           disabled={this.isDisabled}
         />
         <label htmlFor={this.identifier}>{this.labelText}</label>

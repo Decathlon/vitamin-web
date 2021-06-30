@@ -3,6 +3,98 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.12.0...@vtmn/css@0.12.1) (2021-06-24)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+# [0.12.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.11.2...@vtmn/css@0.12.0) (2021-06-24)
+
+
+### Features
+
+* **@vtmn/css:** improvements (text input) ([#378](https://github.com/Decathlon/vitamin-web/issues/378)) ([c7dec76](https://github.com/Decathlon/vitamin-web/commit/c7dec76f40ba6539e7d5204ee08c51a162958cfa))
+
+
+
+
+
+## [0.11.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.11.1...@vtmn/css@0.11.2) (2021-06-22)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** no more hover effect over focus-visible state ([#379](https://github.com/Decathlon/vitamin-web/issues/379)) ([48dc7ee](https://github.com/Decathlon/vitamin-web/commit/48dc7eea56caf547fea98f210852003dff4fa162))
+
+
+
+
+
+## [0.11.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.11.0...@vtmn/css@0.11.1) (2021-06-18)
+
+
+### Bug Fixes
+
+* **@vtmn/css-textinput:** add resize property ([#369](https://github.com/Decathlon/vitamin-web/issues/369)) ([a94cb1f](https://github.com/Decathlon/vitamin-web/commit/a94cb1fca08d2f39b4d4b2e1347a1e0abe389f31))
+
+
+
+
+
+# [0.11.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.10.12...@vtmn/css@0.11.0) (2021-06-17)
+
+
+### Features
+
+* **@vtmn/vue:** add checkbox component ([#363](https://github.com/Decathlon/vitamin-web/issues/363)) ([b3258c4](https://github.com/Decathlon/vitamin-web/commit/b3258c4374dac5a22d3e208cb785b444b6bdfdfd))
+
+
+
+
+
+## [0.10.12](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.10.11...@vtmn/css@0.10.12) (2021-06-17)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+## [0.10.11](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.10.10...@vtmn/css@0.10.11) (2021-06-17)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+## [0.10.10](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.10.9...@vtmn/css@0.10.10) (2021-06-17)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+## [0.10.9](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.10.8...@vtmn/css@0.10.9) (2021-06-15)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+## [0.10.8](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.10.7...@vtmn/css@0.10.8) (2021-06-15)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
 ## [0.10.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.10.6...@vtmn/css@0.10.7) (2021-06-14)
 
 **Note:** Version bump only for package @vtmn/css

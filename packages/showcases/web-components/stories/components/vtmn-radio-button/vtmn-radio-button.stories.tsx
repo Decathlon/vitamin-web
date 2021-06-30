@@ -2,8 +2,8 @@ import { html } from 'lit-html';
 import { spread } from '@open-wc/lit-helpers';
 
 export default {
-  title: 'Components/vtmn-radio',
-  component: 'vtmn-radio',
+  title: 'Components/vtmn-radio-button',
+  component: 'vtmn-radio-button',
   argTypes: {
     identifier: {
       type: { name: 'string', required: true },
@@ -66,7 +66,7 @@ export default {
   },
 };
 
-const Template = (args) => html`<vtmn-radio ...=${spread(args)} />`;
+const Template = (args) => html`<vtmn-radio-button ...=${spread(args)} />`;
 
 export const Overview = Template.bind({});
 Overview.args = {};

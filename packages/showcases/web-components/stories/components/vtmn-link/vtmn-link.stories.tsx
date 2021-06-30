@@ -28,9 +28,15 @@ export default {
         options: ['small', 'medium', 'large'],
       },
     },
-    isStandalone: {
+    standalone: {
       type: { name: 'boolean', required: false },
       description: 'If the component is a standalone or not.',
+      defaultValue: null,
+      control: { type: 'boolean' },
+    },
+    iconAlong: {
+      type: { name: 'boolean', required: false },
+      description: 'If the component has an icon or not.',
       defaultValue: null,
       control: { type: 'boolean' },
     },

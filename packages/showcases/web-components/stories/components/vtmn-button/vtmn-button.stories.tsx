@@ -1,5 +1,6 @@
 import { html } from 'lit-html';
 import { spread } from '@open-wc/lit-helpers';
+import vitamixIconsList from '@vtmn/icons/dist/vitamix/font/vitamix.json';
 
 export default {
   title: 'Components/vtmn-button',
@@ -28,6 +29,33 @@ export default {
       control: {
         type: 'select',
         options: ['small', 'medium', 'large', 'stretched'],
+      },
+    },
+    iconLeft: {
+      type: { name: 'string', required: false },
+      description: 'The icon to display on the left hand side of button.',
+      defaultValue: null,
+      control: {
+        type: 'select',
+        options: ['', ...Object.keys(vitamixIconsList)],
+      },
+    },
+    iconRight: {
+      type: { name: 'string', required: false },
+      description: 'The icon to display on the right hand side of button.',
+      defaultValue: null,
+      control: {
+        type: 'select',
+        options: ['', ...Object.keys(vitamixIconsList)],
+      },
+    },
+    iconAlone: {
+      type: { name: 'string', required: false },
+      description: 'The to display when it is a button with icon only.',
+      defaultValue: null,
+      control: {
+        type: 'select',
+        options: ['', ...Object.keys(vitamixIconsList)],
       },
     },
   },

@@ -1,10 +1,10 @@
 import { Component, Prop, h, Host, ComponentInterface } from '@stencil/core';
 
 @Component({
-  tag: 'vtmn-radio',
-  styleUrl: 'vtmn-radio.pcss',
+  tag: 'vtmn-radio-button',
+  styleUrl: 'vtmn-radio-button.pcss',
 })
-export class VtmnRadio implements ComponentInterface {
+export class VtmnRadioButton implements ComponentInterface {
   /**
    * The id of the radio and its label.
    */
@@ -29,13 +29,13 @@ export class VtmnRadio implements ComponentInterface {
    * The checked state of the radio.
    * @default false
    */
-  @Prop({ attribute: 'checked' }) isChecked: boolean;
+  @Prop() checked: boolean;
 
   /**
    * The disabled state of the radio.
    * @default false
    */
-  @Prop({ attribute: 'disabled' }) isDisabled: boolean;
+  @Prop() disabled: boolean;
 
   render() {
     return (
@@ -46,8 +46,8 @@ export class VtmnRadio implements ComponentInterface {
           id={this.identifier}
           name={this.name}
           value={this.value}
-          checked={this.isChecked}
-          disabled={this.isDisabled}
+          checked={this.checked}
+          disabled={this.disabled}
         />
         <label htmlFor={this.identifier}>{this.labelText}</label>
       </Host>
