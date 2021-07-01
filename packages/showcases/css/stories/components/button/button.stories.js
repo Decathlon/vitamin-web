@@ -5,19 +5,12 @@ import secondary from './examples/secondary.html';
 import secondaryReversed from './examples/secondary-reversed.html';
 import ghost from './examples/ghost.html';
 import conversion from './examples/conversion.html';
+import { parameters } from '@vtmn/showcase-core/csf/components/VtmnButton.csf';
 
 export default {
   title: 'Components / Button',
   argTypes: { onclick: { action: 'clicked' } },
-  parameters: {
-    actions: {
-      handles: ['mouseenter', 'click', 'focusin', 'focusout'],
-    },
-    design: {
-      type: 'figma',
-      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vtmn-Web?node-id=31%3A136',
-    },
-  },
+  parameters,
 };
 
 export const Overview = () => overview;

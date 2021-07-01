@@ -25,6 +25,20 @@ export interface VtmnRadioProps
   name?: string;
 
   /**
+   * Label text linked to the radio.
+   * @type {string}
+   * @default null
+   */
+  value?: string;
+
+  /**
+   * Label text linked to the radio.
+   * @type {boolean}
+   * @default false
+   */
+  checked?: boolean;
+
+  /**
    * Disabled state of the radio.
    * @type {boolean}
    */
@@ -35,6 +49,8 @@ export const VtmnRadioButton = ({
   identifier,
   labelText,
   name,
+  value,
+  checked,
   disabled,
   ...props
 }: VtmnRadioProps) => {
@@ -45,6 +61,8 @@ export const VtmnRadioButton = ({
         type="radio"
         id={identifier}
         name={name}
+        value={value}
+        checked={checked}
         disabled={disabled}
         {...props}
       />

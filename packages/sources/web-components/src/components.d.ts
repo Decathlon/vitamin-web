@@ -49,14 +49,14 @@ export namespace Components {
          */
         "checked": boolean;
         /**
-          * The id of the checkbox and its label.
-         */
-        "identifier": string;
-        /**
           * The disabled state of the checkbox.
           * @default false
          */
-        "isDisabled": boolean;
+        "disabled": boolean;
+        /**
+          * The id of the checkbox and its label.
+         */
+        "identifier": string;
         /**
           * The text of the checkbox.
          */
@@ -277,14 +277,14 @@ declare namespace LocalJSX {
          */
         "checked"?: boolean;
         /**
-          * The id of the checkbox and its label.
-         */
-        "identifier": string;
-        /**
           * The disabled state of the checkbox.
           * @default false
          */
-        "isDisabled"?: boolean;
+        "disabled"?: boolean;
+        /**
+          * The id of the checkbox and its label.
+         */
+        "identifier": string;
         /**
           * The text of the checkbox.
          */
