@@ -2,9 +2,11 @@ import overview from './examples/overview.html';
 import primary from './examples/primary.html';
 import primaryReversed from './examples/primary-reversed.html';
 import secondary from './examples/secondary.html';
-import secondaryReversed from './examples/secondary-reversed.html';
-import ghost from './examples/ghost.html';
+import tertiary from './examples/tertiary.html';
 import conversion from './examples/conversion.html';
+import ghost from './examples/ghost.html';
+import ghostReversed from './examples/ghost-reversed.html';
+
 import { parameters } from '@vtmn/showcase-core/csf/components/VtmnButton.csf';
 
 export default {
@@ -48,25 +50,17 @@ Secondary.parameters = {
       code: secondary,
     },
   },
+  backgrounds: { default: 'white' },
 };
 
-export const SecondaryReversed = () => secondaryReversed;
-SecondaryReversed.parameters = {
+export const Tertiary = () => tertiary;
+Tertiary.parameters = {
   docs: {
     source: {
-      code: secondaryReversed,
+      code: tertiary,
     },
   },
-  backgrounds: { default: 'blue' },
-};
-
-export const Ghost = () => ghost;
-Ghost.parameters = {
-  docs: {
-    source: {
-      code: ghost,
-    },
-  },
+  backgrounds: { default: 'white' },
 };
 
 export const Conversion = () => conversion;
@@ -76,4 +70,24 @@ Conversion.parameters = {
       code: conversion,
     },
   },
+};
+
+export const Ghost = () => ghost;
+Ghost.parameters = {
+  docs: {
+    source: {
+      code: ghost,
+    },
+  },
+  backgrounds: { default: 'white' },
+};
+
+export const GhostReversed = () => ghostReversed;
+GhostReversed.parameters = {
+  docs: {
+    source: {
+      code: ghostReversed,
+    },
+  },
+  backgrounds: { default: 'blue' },
 };
