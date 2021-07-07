@@ -48,7 +48,7 @@ export const argTypes = {
   },
   valid: {
     type: { name: 'boolean', required: false },
-    description: 'The validity state of the input.',
+    description: 'The valid state of the input.',
     defaultValue: false,
     control: { type: 'boolean' },
   },
