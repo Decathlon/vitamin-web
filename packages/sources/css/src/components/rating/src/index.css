@@ -1,0 +1,60 @@
+/* Design tokens */
+@import '@vtmn/css-design-tokens/src/colors';
+@import '@vtmn/css-design-tokens/src/spacings';
+@import '@vtmn/css-design-tokens/src/typography';
+
+/****** Style Star Rating Widget *****/
+
+.vtmn-rating .rating {
+  border: none;
+  float: left;
+}
+
+.vtmn-rating .rating > input {
+  display: none;
+}
+
+.vtmn-rating .rating > label {
+  color: var(--vtmn-color_black);
+  float: right;
+}
+
+.vtmn-rating .rating > label::before {
+  margin: 0 rem(5px);
+  font-size: rem(16px);
+  font-family: vitamix, var(--vtmn-typo_font-family);
+  display: inline-block;
+  content: '\f220';
+}
+
+.vtmn-rating .rating > .half::before {
+  content: '\f21f';
+  color: transparent;
+  position: absolute;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.vtmn-rating .rating > input:checked ~ .full::before, /* show gold star when clicked on full */
+.vtmn-rating .rating:not(:checked) > .full:hover::before, /* hover current full star */
+.vtmn-rating .rating:not(:checked) > label:hover ~ label::before {
+  /* hover previous stars in list */
+  color: var(--vtmn-color_black);
+  content: '\f21d';
+}
+
+.vtmn-rating .rating > input:checked ~ .half::before, /* show gold star when clicked on half */
+.vtmn-rating .rating:not(:checked) > .half:hover::before {
+  /* hover current half star */
+  color: var(--vtmn-color_black);
+}
+
+/*
+.vtmn-rating .rating > input:checked + label:hover::before, 
+.vtmn-rating .rating > input:checked ~ label:hover::before,
+.vtmn-rating .rating > label:hover::before ~ input:checked ~ label::before, 
+.vtmn-rating .rating > input:checked ~ label:hover::before ~ label::before {
+  color: red;
+  content: '\f21d';
+}
+*/

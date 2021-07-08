@@ -51,6 +51,7 @@ jobs:
 #           'packages/sources/css/src/components/checkbox',
 #           'packages/sources/css/src/components/link',
 #           'packages/sources/css/src/components/radio-button',
+#           'packages/sources/css/src/components/rating',
 #           'packages/sources/css/src/components/text-input',
 #           'packages/sources/css/src/components/toggle',
 #           'packages/sources/css/src/design-tokens',
