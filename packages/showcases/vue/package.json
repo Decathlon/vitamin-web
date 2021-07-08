@@ -16,7 +16,7 @@
   "devDependencies": {
     "@storybook/addon-a11y": "6.3.0",
     "@storybook/addon-essentials": "6.3.0",
-    "@storybook/vue3": "6.3.0",
+    "@storybook/vue3": "6.3.3",
     "@vtmn/showcase-core": "*",
     "@vtmn/vue": "*",
     "@vue/cli-plugin-babel": "^4.5.11",
