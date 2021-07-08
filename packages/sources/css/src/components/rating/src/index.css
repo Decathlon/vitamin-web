@@ -15,7 +15,7 @@
 }
 
 .vtmn-rating .rating > label {
-  color: var(--vtmn-color_black);
+  color: var(--vtmn-color_brand-digital);
   float: right;
 }
 
@@ -39,14 +39,14 @@
 .vtmn-rating .rating:not(:checked) > .full:hover::before, /* hover current full star */
 .vtmn-rating .rating:not(:checked) > label:hover ~ label::before {
   /* hover previous stars in list */
-  color: var(--vtmn-color_black);
+  color: var(--vtmn-color_brand-digital);
   content: '\f21d';
 }
 
 .vtmn-rating .rating > input:checked ~ .half::before, /* show gold star when clicked on half */
 .vtmn-rating .rating:not(:checked) > .half:hover::before {
   /* hover current half star */
-  color: var(--vtmn-color_black);
+  color: var(--vtmn-color_brand-digital);
 }
 
 /*
@@ -58,3 +58,16 @@
   content: '\f21d';
 }
 */
+
+.vtmn-rating .note {
+  font-family: var(--vtmn-typo_font-family);
+  font-size: var(--vtmn-typo_text-2-font-size);
+  color: var(--vtmn-color_black);
+  font-weight: var(--vtmn-typo_font-weight--bold);
+}
+
+.vtmn-rating .comment {
+  font-family: var(--vtmn-typo_font-family);
+  font-size: var(--vtmn-typo_text-2font-size);
+  color: var(--vtmn-color_grey);
+}
