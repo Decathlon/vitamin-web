@@ -68,6 +68,6 @@
 
 .vtmn-rating .comment {
   font-family: var(--vtmn-typo_font-family);
-  font-size: var(--vtmn-typo_text-2font-size);
+  font-size: var(--vtmn-typo_text-2-font-size);
   color: var(--vtmn-color_grey);
 }
