@@ -3,23 +3,27 @@
 @import '@vtmn/css-design-tokens/src/spacings';
 @import '@vtmn/css-design-tokens/src/typography';
 
-/****** Style Star Rating Widget *****/
+/* Interactive Rating **/
 
-.vtmn-rating .rating {
-  border: none;
-  float: left;
+.vtmn-rating {
+  color: var(--vtmn-color_black);
 }
 
-.vtmn-rating .rating > input {
+.vtmn-rating--interactive {
+  border: none;
+  float: left;
+  color: var(--vtmn-color_brand-digital);
+}
+
+.vtmn-rating--interactive > input {
   display: none;
 }
 
-.vtmn-rating .rating > label {
-  color: var(--vtmn-color_brand-digital);
+.vtmn-rating--interactive > label {
   float: right;
 }
 
-.vtmn-rating .rating > label::before {
+.vtmn-rating--interactive > label::before {
   margin: 0 rem(5px);
   font-size: rem(16px);
   font-family: vitamix, var(--vtmn-typo_font-family);
@@ -27,47 +31,56 @@
   content: '\f220';
 }
 
-.vtmn-rating .rating > .half::before {
+.vtmn-rating span[class^='vtmx-'] {
+  font-size: rem(16px);
+  vertical-align: middle;
+}
+
+.vtmn-rating--interactive > .half::before {
   content: '\f21f';
   color: transparent;
   position: absolute;
 }
 
-/***** CSS Magic to Highlight Stars on Hover *****/
+/***** Highlight Stars on Hover *****/
 
-.vtmn-rating .rating > input:checked ~ .full::before, /* show gold star when clicked on full */
-.vtmn-rating .rating:not(:checked) > .full:hover::before, /* hover current full star */
-.vtmn-rating .rating:not(:checked) > label:hover ~ label::before {
+.vtmn-rating--interactive > input:checked ~ .full::before, /* show gold star when clicked on full */
+.vtmn-rating--interactive:not(:checked) > .full:hover::before, /* hover current full star */
+.vtmn-rating--interactive:not(:checked) > label:hover ~ label::before {
   /* hover previous stars in list */
-  color: var(--vtmn-color_brand-digital);
   content: '\f21d';
 }
 
-.vtmn-rating .rating > input:checked ~ .half::before, /* show gold star when clicked on half */
-.vtmn-rating .rating:not(:checked) > .half:hover::before {
+.vtmn-rating--interactive > input:checked ~ .half::before, /* show gold star when clicked on half */
+.vtmn-rating--interactive:not(:checked) > .half:hover::before {
   /* hover current half star */
-  color: var(--vtmn-color_brand-digital);
 }
 
-/*
-.vtmn-rating .rating > input:checked + label:hover::before, 
-.vtmn-rating .rating > input:checked ~ label:hover::before,
-.vtmn-rating .rating > label:hover::before ~ input:checked ~ label::before, 
-.vtmn-rating .rating > input:checked ~ label:hover::before ~ label::before {
+/* Highlight previous stars when already selected stars 
+
+.vtmn-rating--interactive > input:checked + label:hover::before, 
+.vtmn-rating--interactive > input:checked ~ label:hover::before,
+.vtmn-rating--interactive > label:hover::before ~ input:checked ~ label::before, 
+.vtmn-rating--interactive > input:checked ~ label:hover::before ~ label::before {
   color: red;
   content: '\f21d';
 }
 */
 
-.vtmn-rating .note {
+.vtmn-rating_note,
+.vtmn-rating_comment {
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
   color: var(--vtmn-color_black);
   font-weight: var(--vtmn-typo_font-weight--bold);
 }
 
-.vtmn-rating .comment {
+.vtmn-rating_comment--secondary {
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
   color: var(--vtmn-color_grey);
+}
+
+.vtmn-rating span[class^='vtmx-'].blue {
+  color: var(--vtmn-color_brand-digital);
 }
