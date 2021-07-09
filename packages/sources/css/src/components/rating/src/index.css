@@ -9,9 +9,12 @@
   color: var(--vtmn-color_black);
 }
 
-.vtmn-rating--interactive {
+.vtmn-rating fieldset {
   border: none;
   float: left;
+}
+
+.vtmn-rating--interactive {
   color: var(--vtmn-color_brand-digital);
 }
 
@@ -26,7 +29,7 @@
 
 .vtmn-rating--interactive > label::before {
   margin: 0 rem(5px);
-  font-size: rem(16px);
+  font-size: var(--vtmn-typo_text-2-font-size);
   font-family: vitamix, var(--vtmn-typo_font-family);
   display: inline-block;
   content: '\f220';
@@ -80,10 +83,42 @@
 }
 
 .vtmn-rating span[class^='vtmx-'] {
-  font-size: rem(16px);
+  font-size: var(--vtmn-typo_text-2-font-size);
   vertical-align: middle;
 }
 
-.vtmn-rating span[class^='vtmx-'].blue {
+/* Color variants */
+
+.vtmn-rating_color--brand {
   color: var(--vtmn-color_brand-digital);
+}
+
+.vtmn-rating_color--black {
+  color: var(--vtmn-color_black);
+}
+
+/* Size variants */
+
+.vtmn-rating_size--small {
+  font-size: var(--vtmn-typo_text-3-font-size);
+}
+
+.vtmn-rating_size--small span {
+  font-size: var(--vtmn-typo_text-3-font-size);
+}
+
+.vtmn-rating_size--small span[class^='vtmx-'] {
+  font-size: var(--vtmn-typo_text-2-font-size);
+}
+
+.vtmn-rating_size--medium {
+  font-size: var(--vtmn-typo_text-1-font-size);
+}
+
+.vtmn-rating_size--medium span {
+  font-size: var(--vtmn-typo_text-1-font-size);
+}
+
+.vtmn-rating_size--medium span[class^='vtmx-'] {
+  font-size: rem(32px);
 }
