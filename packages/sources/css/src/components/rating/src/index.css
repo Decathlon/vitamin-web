@@ -21,6 +21,7 @@
 
 .vtmn-rating--interactive > label {
   float: right;
+  cursor: pointer;
 }
 
 .vtmn-rating--interactive > label::before {
@@ -29,11 +30,6 @@
   font-family: vitamix, var(--vtmn-typo_font-family);
   display: inline-block;
   content: '\f220';
-}
-
-.vtmn-rating span[class^='vtmx-'] {
-  font-size: rem(16px);
-  vertical-align: middle;
 }
 
 .vtmn-rating--interactive > .half::before {
@@ -53,6 +49,8 @@
 
 .vtmn-rating--interactive > input:checked ~ .half::before, /* show gold star when clicked on half */
 .vtmn-rating--interactive:not(:checked) > .half:hover::before {
+  color: var(--vtmn-color_brand-digital);
+
   /* hover current half star */
 }
 
@@ -79,6 +77,11 @@
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
   color: var(--vtmn-color_grey);
+}
+
+.vtmn-rating span[class^='vtmx-'] {
+  font-size: rem(16px);
+  vertical-align: middle;
 }
 
 .vtmn-rating span[class^='vtmx-'].blue {
