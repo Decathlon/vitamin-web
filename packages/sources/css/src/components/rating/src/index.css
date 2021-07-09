@@ -25,12 +25,12 @@
 .vtmn-rating--interactive > label {
   float: right;
   cursor: pointer;
+  font-size: var(--vtmn-typo_text-2-font-size);
+  font-family: vitamix, var(--vtmn-typo_font-family);
 }
 
 .vtmn-rating--interactive > label::before {
   margin: 0 rem(5px);
-  font-size: var(--vtmn-typo_text-2-font-size);
-  font-family: vitamix, var(--vtmn-typo_font-family);
   display: inline-block;
   content: '\f220';
 }
@@ -111,6 +111,10 @@
   font-size: var(--vtmn-typo_text-2-font-size);
 }
 
+.vtmn-rating_size--small .vtmn-rating--interactive > label::before {
+  font-size: var(--vtmn-typo_text-2-font-size);
+}
+
 .vtmn-rating_size--medium {
   font-size: var(--vtmn-typo_text-1-font-size);
 }
@@ -120,5 +124,9 @@
 }
 
 .vtmn-rating_size--medium span[class^='vtmx-'] {
+  font-size: rem(32px);
+}
+
+.vtmn-rating_size--medium .vtmn-rating--interactive > label::before {
   font-size: rem(32px);
 }
