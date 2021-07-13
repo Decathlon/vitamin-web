@@ -7,15 +7,17 @@
 
 .vtmn-rating {
   color: var(--vtmn-color_black);
+  clear: both;
+  margin: rem(10px) rem(5px);
 }
 
-.vtmn-rating fieldset {
-  border: none;
-  float: left;
+.vtmn-rating:disabled {
+  opacity: 0.38;
 }
 
 .vtmn-rating--interactive {
   color: var(--vtmn-color_brand-digital);
+  float: left;
 }
 
 .vtmn-rating--interactive > input {
@@ -87,6 +89,10 @@
   vertical-align: middle;
 }
 
+.vtmn-rating span[class^='vtmx-'] ~ span {
+  vertical-align: middle;
+}
+
 /* Color variants */
 
 .vtmn-rating_color--brand {
@@ -129,4 +135,9 @@
 
 .vtmn-rating_size--medium .vtmn-rating--interactive > label::before {
   font-size: rem(32px);
+}
+
+.vtmn-rating_size--medium .vtmn-rating--interactive ~ span {
+  position: relative;
+  top: rem(10px);
 }
