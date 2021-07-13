@@ -9,19 +9,19 @@ export namespace Components {
     interface VtmnBadge {
         /**
           * The size of the badge.
-          * @default null
+          * @default undefined
          */
-        "size": 'small' | 'medium';
+        "size"?: 'small' | 'medium';
         /**
           * The target of the badge
-          * @default null
+          * @default undefined
          */
-        "value": string;
+        "value"?: string;
         /**
           * The variant of the badge.
-          * @default null
+          * @default undefined
          */
-        "variant": 'default' | 'brand' | 'reversed' | 'accent';
+        "variant"?: 'default' | 'brand' | 'reversed' | 'accent';
     }
     interface VtmnButton {
         /**
@@ -234,17 +234,17 @@ declare namespace LocalJSX {
     interface VtmnBadge {
         /**
           * The size of the badge.
-          * @default null
+          * @default undefined
          */
         "size"?: 'small' | 'medium';
         /**
           * The target of the badge
-          * @default null
+          * @default undefined
          */
         "value"?: string;
         /**
           * The variant of the badge.
-          * @default null
+          * @default undefined
          */
         "variant"?: 'default' | 'brand' | 'reversed' | 'accent';
     }

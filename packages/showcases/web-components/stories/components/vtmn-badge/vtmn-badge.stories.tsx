@@ -8,7 +8,7 @@ export default {
     variant: {
       type: { name: 'string', required: false },
       description: 'The variant of the badge.',
-      defaultValue: 'default',
+      defaultValue: '',
       control: {
         type: 'select',
         options: ['default', 'brand', 'reversed', 'accent'],
@@ -17,7 +17,7 @@ export default {
     size: {
       type: { name: 'string', required: false },
       description: 'The size of the badge.',
-      defaultValue: null,
+      defaultValue: '',
       control: {
         type: 'select',
         options: ['small', 'medium'],
@@ -26,7 +26,7 @@ export default {
     value: {
       type: { name: 'string', required: false },
       description: 'The value in the badge.',
-      defaultValue: null,
+      defaultValue: '',
       control: {
         type: 'text',
       },
