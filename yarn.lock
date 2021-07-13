@@ -17310,11 +17310,11 @@ postcss-reduce-transforms@^4.0.2:
     postcss-value-parser "^3.0.0"
 
 postcss-rem@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/postcss-rem/-/postcss-rem-2.0.1.tgz#e9e88567e29c99f5d39bea2f8c360cb9960c8f95"
-  integrity sha512-81jCo/IBnNPfhlq5ZyPUdYIXAUE04chkeS2P4q4AGLntI+kLge6/ci/lsdmJ3mKqbnF6qTSoe1WLEZ/MAqcUhQ==
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/postcss-rem/-/postcss-rem-2.0.2.tgz#5633589f6e816516be60f9ab6df5d8037f64ff41"
+  integrity sha512-rhREfkcljKJtCY7adt5e+sRkPkj4z4GEW8utwiqsDgC6xF4U3guQZ08Dlu7XQDrwtUD4PGXwoh/qyD+RJpJq7g==
   dependencies:
-    postcss "^8.2.13"
+    postcss "^8.3.5"
     startijenn-rem "^1.0.1"
 
 postcss-replace-overflow-wrap@^3.0.0:
@@ -17481,7 +17481,7 @@ postcss@^6.0.19:
     source-map "^0.6.1"
     supports-color "^5.4.0"
 
-postcss@^8.1.0, postcss@^8.1.10, postcss@^8.1.6, postcss@^8.2.1, postcss@^8.2.13, postcss@^8.3.5:
+postcss@^8.1.0, postcss@^8.1.10, postcss@^8.1.6, postcss@^8.2.1, postcss@^8.3.5:
   version "8.3.5"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.3.5.tgz#982216b113412bc20a86289e91eb994952a5b709"
   integrity sha512-NxTuJocUhYGsMiMFHDUkmjSKT3EdH4/WbGF6GCi1NDGk+vbcUTun4fpbOqaPtD8IIsztA2ilZm2DhYCuyN58gA==
@@ -20104,9 +20104,9 @@ store2@^2.12.0, store2@^2.7.1:
   integrity sha512-7t+/wpKLanLzSnQPX8WAcuLCCeuSHoWdQuh9SB3xD0kNOM38DNf+0Oa+wmvxmYueRzkmh6IcdKFtvTa+ecgPDw==
 
 storybook-addon-designs@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/storybook-addon-designs/-/storybook-addon-designs-6.0.0.tgz#ecc826bf053bf965773ce74f1234427c90fddbeb"
-  integrity sha512-nwwUusxOmUt82ajTjfBDQfOU2zEO3WrHxG9J7rZmSLnoC42OC8P/FJtAuhL5JregCQildVbjIfeFfz7pMGJOjQ==
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/storybook-addon-designs/-/storybook-addon-designs-6.0.1.tgz#e87fadf688ecb2dc03d22564232c7476eb3af5a9"
+  integrity sha512-BVoh8a1UoXz3xUuUeP5F+V95xGqmHlGR+K9vgZfwnpFLB7IWkRFUmW9a+bF+tl94b3PvcncI33qUnQeBn5KlqA==
   dependencies:
     "@figspec/react" "^0.1.6"
 
