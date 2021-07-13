@@ -106,11 +106,11 @@
 }
 
 .vtmn-btn_variant--secondary:not([disabled]):hover {
-  background-color: #f2f9fc;
+  background-color: var(--vtmn-color_blue-light-1);
 }
 
 .vtmn-btn_variant--secondary:not([disabled]):active {
-  background-color: #d9ecf5;
+  background-color: var(--vtmn-color_blue-light-2);
 }
 
 /* Tertiary button */
@@ -121,11 +121,11 @@
 }
 
 .vtmn-btn_variant--tertiary:not([disabled]):hover {
-  background-color: #deeff7;
+  background-color: var(--vtmn-color_blue-light-3);
 }
 
 .vtmn-btn_variant--tertiary:not([disabled]):active {
-  background-color: #cde6f2;
+  background-color: var(--vtmn-color_blue-light-4);
 }
 
 /* Conversion button */
@@ -153,11 +153,11 @@
 }
 
 .vtmn-btn_variant--ghost:not([disabled]):hover {
-  background-color: #f2f9fc;
+  background-color: var(--vtmn-color_blue-light-1);
 }
 
 .vtmn-btn_variant--ghost:not([disabled]):active {
-  background-color: #d9ecf5;
+  background-color: var(--vtmn-color_blue-light-2);
 }
 
 /* Ghost Reversed button */
