@@ -23,33 +23,30 @@
     0 0 0 rem(6px) var(--vtmn-color_black);
 }
 
-/* Sizes */
-
-.vtmn-badge_size--small {
-  min-width: rem(8px);
-  height: rem(8px);
-  padding: 0;
-}
-
 /* Variants */
 
 .vtmn-badge_variant--default {
   background-color: var(--vtmn-color_grey-light-4);
   box-shadow: inset 0 0 0 rem(1px) var(--vtmn-color_grey-light-3);
 }
-
 .vtmn-badge_variant--brand {
   background-color: var(--vtmn-color_brand-digital);
   box-shadow: none;
   color: var(--vtmn-color_white);
 }
-
 .vtmn-badge_variant--reversed {
   background-color: var(--vtmn-color_white);
   box-shadow: none;
 }
-
 .vtmn-badge_variant--accent {
   background-color: var(--vtmn-color_yellow);
   box-shadow: none;
+}
+
+/* Sizes */
+
+.vtmn-badge_size--without-value {
+  min-width: rem(8px);
+  height: rem(8px);
+  padding: 0;
 }
