@@ -6,4 +6,4 @@
   import VtmnTextInput from '@vtmn/svelte/src/components/VtmnTextInput.svelte';
 </script>
 
-<VtmnTextInput {...$$restProps} />
+<VtmnTextInput {...$$props} />
