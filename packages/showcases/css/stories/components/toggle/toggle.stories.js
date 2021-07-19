@@ -1,19 +1,12 @@
 import overview from './examples/overview.html';
 import small from './examples/small.html';
 import medium from './examples/medium.html';
+import { parameters } from '@vtmn/showcase-core/csf/components/VtmnToggle.csf';
 
 export default {
   title: 'Components / Toggle ',
   argTypes: { onchange: { action: 'write' } },
-  parameters: {
-    actions: {
-      handles: ['mouseenter', 'click', 'focusin', 'focusout'],
-    },
-    design: {
-      type: 'figma',
-      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=612%3A1192',
-    },
-  },
+  parameters,
 };
 
 export const Overview = () => overview;

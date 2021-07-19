@@ -45,7 +45,7 @@
     !iconAlone && iconRight ? 'vtmn-btn--icon-right' : '',
     iconAlone ? 'vtmn-btn--icon-alone' : '']
     .join(' ')}
-  {...$$restProps}>
+  {...$$props}>
   {#if !iconAlone && iconLeft}
     <span class={`vtmx-${iconLeft}`}></span>
   {/if}
