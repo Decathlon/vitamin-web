@@ -55,7 +55,7 @@
   {identifier}
   {disabled}
   {placeholder}
-  {...$$restProps}
+  {...$$props}
 />
 {#if helperText}
   <p class="vtmn-text-input_helper-text">{helperText}</p>

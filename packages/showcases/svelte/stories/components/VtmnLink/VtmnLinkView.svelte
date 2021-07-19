@@ -8,4 +8,4 @@
   export let children = 'Link';
 </script>
 
-<VtmnLink {...$$restProps}>{children}</VtmnLink>
+<VtmnLink {...$$props}>{children}</VtmnLink>
