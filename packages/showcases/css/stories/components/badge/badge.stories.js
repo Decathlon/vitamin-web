@@ -3,19 +3,11 @@ import _default from './examples/default.html';
 import brand from './examples/brand.html';
 import reversed from './examples/reversed.html';
 import accent from './examples/accent.html';
+import { parameters } from '@vtmn/showcase-core/csf/components/VtmnBadge.csf';
 
 export default {
   title: 'Components / Badge ',
-  argTypes: { onchange: { action: 'write' } },
-  parameters: {
-    actions: {
-      handles: ['mouseenter', 'click', 'focusin', 'focusout'],
-    },
-    design: {
-      type: 'figma',
-      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vtmn---Web?node-id=1450%3A8683',
-    },
-  },
+  parameters,
 };
 
 export const Overview = () => overview;
