@@ -48,6 +48,6 @@ export const parameters = {
   },
   design: {
     type: 'figma',
-    url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vitamin---Web-UI-kit?node-id=359%3A30',
+    url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=359%3A30',
   },
 };
