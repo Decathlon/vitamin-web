@@ -29,7 +29,7 @@ export class VtmnCheckbox implements ComponentInterface {
    * The disabled state of the checkbox.
    * @default false
    */
-  @Prop({ attribute: 'disabled' }) isDisabled: boolean;
+  @Prop() disabled: boolean;
 
   /**
    * The checked state of the checkbox.
@@ -47,7 +47,7 @@ export class VtmnCheckbox implements ComponentInterface {
           name={this.name}
           value={this.value}
           checked={this.checked}
-          disabled={this.isDisabled}
+          disabled={this.disabled}
         />
         <label htmlFor={this.identifier}>{this.labelText}</label>
       </Host>

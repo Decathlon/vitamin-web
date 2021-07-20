@@ -2,19 +2,12 @@ import overview from './examples/overview.html';
 import small from './examples/small.html';
 import medium from './examples/medium.html';
 import large from './examples/large.html';
+import { parameters } from '@vtmn/showcase-core/csf/components/VtmnLink.csf';
 
 export default {
   title: 'Components / Link ',
   argTypes: { onchange: { action: 'write' } },
-  parameters: {
-    actions: {
-      handles: ['mouseenter', 'click', 'focusin', 'focusout'],
-    },
-    design: {
-      type: 'figma',
-      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vtmn---Web?node-id=1207%3A8898',
-    },
-  },
+  parameters,
 };
 
 export const Overview = () => overview;

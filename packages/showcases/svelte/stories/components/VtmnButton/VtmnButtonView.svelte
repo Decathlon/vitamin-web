@@ -4,6 +4,8 @@
    * @wrapper
    */
   import VtmnButton from '@vtmn/svelte/src/components/VtmnButton.svelte';
+
+  export let children = 'Button';
 </script>
 
-<VtmnButton {...$$restProps}>Button</VtmnButton>
+<VtmnButton {...$$props}>{children}</VtmnButton>

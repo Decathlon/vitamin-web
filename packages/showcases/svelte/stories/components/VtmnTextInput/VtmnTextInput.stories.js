@@ -1,36 +1,19 @@
+import VtmnTextInputView from './VtmnTextInputView.svelte';
 import VtmnTextInput from '@vtmn/svelte/src/components/VtmnTextInput.svelte';
+import {
+  argTypes,
+  parameters,
+} from '@vtmn/showcase-core/csf/components/VtmnTextInput.csf';
 
 export default {
   title: 'Components/VtmnTextInput',
   component: VtmnTextInput,
-  argTypes: {
-    identifier: {
-      defaultValue: 'vtmn-input',
-    },
-    labelText: {
-      defaultValue: 'Label',
-    },
-    placeholder: {
-      defaultValue: 'Placeholder Text',
-    },
-    helperText: {
-      defaultValue: 'Helper text goes here',
-    },
-  },
-  parameters: {
-    backgrounds: { default: 'grey' },
-    actions: {
-      handles: ['mouseenter', 'click', 'focusin', 'focusout'],
-    },
-    design: {
-      type: 'figma',
-      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vtmn-Web?node-id=31%3A136',
-    },
-  },
+  argTypes,
+  parameters,
 };
 
 const Template = (args) => ({
-  Component: VtmnTextInput,
+  Component: VtmnTextInputView,
   props: args,
 });
 
