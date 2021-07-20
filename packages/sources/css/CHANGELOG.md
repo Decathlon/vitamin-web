@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.12.2...@vtmn/css@0.13.0) (2021-07-20)
+
+
+### Features
+
+* **@vtmn/css:** add badge component ([#317](https://github.com/Decathlon/vitamin-web/issues/317)) ([4beea13](https://github.com/Decathlon/vitamin-web/commit/4beea134d9bf23174d368747d9282dabdf4fdef9))
+
+
+
+
+
 ## [0.12.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.12.1...@vtmn/css@0.12.2) (2021-07-19)
 
 **Note:** Version bump only for package @vtmn/css
