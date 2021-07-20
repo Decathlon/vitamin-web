@@ -7,34 +7,23 @@ import { Component, Prop, h, ComponentInterface } from '@stencil/core';
 export class VtmnBadge implements ComponentInterface {
   /**
    * The variant of the badge.
-   * @default undefined
+   * @default 'default'
    */
-  @Prop() variant?: 'default' | 'brand' | 'reversed' | 'accent';
-
-  /**
-   * The size of the badge.
-   * @default undefined
-   */
-  @Prop() size?: 'small' | 'medium';
+  @Prop() variant?: 'default' | 'brand' | 'reversed' | 'accent' = 'default';
 
   /**
    * The target of the badge
    * @default undefined
    */
-  @Prop() value?: string;
+  @Prop() value?: number = undefined;
 
   render() {
     return (
-      <div
-        class={[
-          'vtmn-badge',
-          this.size && `vtmn-badge_size--${this.size}`,
-          this.variant && `vtmn-badge_variant--${this.variant}`,
-        ]
-          .filter(Boolean)
-          .join(' ')}>
-        {this.size != 'small' && this.value ? this.value : null}
-      </div>
+      <span
+        class={`vtmn-badge vtmn-badge_variant--${this.variant}
+        ${this.value === undefined ? 'vtmn-badge_size--without-value' : ''}`}>
+        {this.value && this.value > 99 ? '99+' : this.value}
+      </span>
     );
   }
 }

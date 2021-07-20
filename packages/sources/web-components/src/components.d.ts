@@ -9,18 +9,13 @@ import { VitamixId } from "@vtmn/icons/dist/vitamix/font/vitamix";
 export namespace Components {
     interface VtmnBadge {
         /**
-          * The size of the badge.
-          * @default undefined
-         */
-        "size"?: 'small' | 'medium';
-        /**
           * The target of the badge
           * @default undefined
          */
-        "value"?: string;
+        "value"?: number;
         /**
           * The variant of the badge.
-          * @default undefined
+          * @default 'default'
          */
         "variant"?: 'default' | 'brand' | 'reversed' | 'accent';
     }
@@ -261,18 +256,13 @@ declare global {
 declare namespace LocalJSX {
     interface VtmnBadge {
         /**
-          * The size of the badge.
-          * @default undefined
-         */
-        "size"?: 'small' | 'medium';
-        /**
           * The target of the badge
           * @default undefined
          */
-        "value"?: string;
+        "value"?: number;
         /**
           * The variant of the badge.
-          * @default undefined
+          * @default 'default'
          */
         "variant"?: 'default' | 'brand' | 'reversed' | 'accent';
     }
