@@ -80,7 +80,7 @@ These packages allow the consumption of elements with a higher level of granular
     <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/components/badge#readme">README</a></td>
     <td><a href="https://www.decathlon.design/726f8c765/p/465f7c-badge-beta"><img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" /></a></td>
     <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-badge--overview"><img src="https://img.shields.io/badge/storybook-css-d891bc?style=flat&logo=storybook" alt="storybook" /></a></td>
-    <td><a href="https://www.npmjs.com/package/@vtmn/css-badge"><img src="https://img.shields.io/npm/v/@vtmn/css-button?style=flat&logo=npm" alt="npm version" /></a></td>
+    <td><a href="https://www.npmjs.com/package/@vtmn/css-badge"><img src="https://img.shields.io/npm/v/@vtmn/css-badge?style=flat&logo=npm" alt="npm version" /></a></td>
     <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status" alt="Quality Gate Status" /></a></td>
   </tr>
   <tr>
