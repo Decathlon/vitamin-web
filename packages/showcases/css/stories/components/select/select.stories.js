@@ -1,8 +1,6 @@
 import overview from './examples/overview.html';
-/*import valid from './examples/valid.html';
 import error from './examples/error.html';
 import disabled from './examples/disabled.html';
-import multiline from './examples/multiline.html';*/
 
 export default {
   title: 'Components / Select',
@@ -26,15 +24,6 @@ Overview.parameters = {
     },
   },
 };
-/*
-export const Valid = () => valid;
-Valid.parameters = {
-  docs: {
-    source: {
-      code: valid,
-    },
-  },
-};
 
 export const Error = () => error;
 Error.parameters = {
@@ -53,13 +42,3 @@ Disabled.parameters = {
     },
   },
 };
-
-export const Multiline = () => multiline;
-Multiline.parameters = {
-  docs: {
-    source: {
-      code: multiline,
-    },
-  },
-};
-*/
