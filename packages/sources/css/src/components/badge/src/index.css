@@ -7,7 +7,6 @@
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-3-font-size);
   display: inline-flex;
-  min-width: rem(20px);
   height: rem(20px);
   justify-content: center;
   align-items: center;

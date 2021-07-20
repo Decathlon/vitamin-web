@@ -7,6 +7,18 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { VitamixId } from "@vtmn/icons/dist/vitamix/font/vitamix";
 export namespace Components {
+    interface VtmnBadge {
+        /**
+          * The target of the badge
+          * @default undefined
+         */
+        "value"?: number;
+        /**
+          * The variant of the badge.
+          * @default 'default'
+         */
+        "variant"?: 'default' | 'brand' | 'reversed' | 'accent';
+    }
     interface VtmnButton {
         /**
           * Icon to display when it is a button with icon only
@@ -189,6 +201,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLVtmnBadgeElement extends Components.VtmnBadge, HTMLStencilElement {
+    }
+    var HTMLVtmnBadgeElement: {
+        prototype: HTMLVtmnBadgeElement;
+        new (): HTMLVtmnBadgeElement;
+    };
     interface HTMLVtmnButtonElement extends Components.VtmnButton, HTMLStencilElement {
     }
     var HTMLVtmnButtonElement: {
@@ -226,6 +244,7 @@ declare global {
         new (): HTMLVtmnToggleElement;
     };
     interface HTMLElementTagNameMap {
+        "vtmn-badge": HTMLVtmnBadgeElement;
         "vtmn-button": HTMLVtmnButtonElement;
         "vtmn-checkbox": HTMLVtmnCheckboxElement;
         "vtmn-link": HTMLVtmnLinkElement;
@@ -235,6 +254,18 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    interface VtmnBadge {
+        /**
+          * The target of the badge
+          * @default undefined
+         */
+        "value"?: number;
+        /**
+          * The variant of the badge.
+          * @default 'default'
+         */
+        "variant"?: 'default' | 'brand' | 'reversed' | 'accent';
+    }
     interface VtmnButton {
         /**
           * Icon to display when it is a button with icon only
@@ -416,6 +447,7 @@ declare namespace LocalJSX {
         "size"?: 'small' | 'medium';
     }
     interface IntrinsicElements {
+        "vtmn-badge": VtmnBadge;
         "vtmn-button": VtmnButton;
         "vtmn-checkbox": VtmnCheckbox;
         "vtmn-link": VtmnLink;
@@ -428,6 +460,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "vtmn-badge": LocalJSX.VtmnBadge & JSXBase.HTMLAttributes<HTMLVtmnBadgeElement>;
             "vtmn-button": LocalJSX.VtmnButton & JSXBase.HTMLAttributes<HTMLVtmnButtonElement>;
             "vtmn-checkbox": LocalJSX.VtmnCheckbox & JSXBase.HTMLAttributes<HTMLVtmnCheckboxElement>;
             "vtmn-link": LocalJSX.VtmnLink & JSXBase.HTMLAttributes<HTMLVtmnLinkElement>;
