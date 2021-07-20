@@ -15,7 +15,13 @@ export class VtmnLink implements ComponentInterface {
    * Is the link standalone or not
    * @default null
    */
-  @Prop({ attribute: 'isstandalone' }) isStandalone: boolean;
+  @Prop() standalone: boolean;
+
+  /**
+   * Is the link has an icon or not
+   * @default null
+   */
+  @Prop({ attribute: 'iconalong' }) iconAlong: boolean;
 
   /**
    * The hypertext link
@@ -37,7 +43,8 @@ export class VtmnLink implements ComponentInterface {
         class={[
           'vtmn-link',
           `vtmn-link_size--${this.size}`,
-          this.isStandalone && 'vtmn-link--standalone',
+          this.standalone && 'vtmn-link--standalone',
+          this.standalone && this.iconAlong && 'vtmn-link--icon-along',
         ]
           .filter(Boolean)
           .join(' ')}>

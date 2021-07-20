@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css",
-  "version": "0.10.7",
+  "version": "0.12.2",
   "description": "Decathlon Design System - Vitamin global CSS styles library",
   "keywords": [
     "design-system",
@@ -32,14 +32,14 @@
     "start": "chokidar \"src/**\" -i \"**/dist/**\" -c \"yarn build\""
   },
   "devDependencies": {
-    "@vtmn/css-postcss-config": "^0.0.0",
-    "@vtmn/css-tailwind-config": "^0.0.0",
+    "@vtmn/css-postcss-config": "*",
+    "@vtmn/css-tailwind-config": "*",
     "chokidar-cli": "^2.1.0",
-    "postcss": "^8.3.4",
+    "postcss": "^8.3.5",
     "stylelint": "^13.8.0",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^22.0.0",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^2.2.0"
   },
   "publishConfig": {
     "access": "public"

@@ -34,7 +34,7 @@
   "scripts": {
     "build": "lerna run build",
     "build-storybook": "lerna run build-storybook --stream",
-    "deploy-storybook": "storybook-to-ghpages --packages packages -o docs --monorepo-index-generator packages/showcases/core/src/index-generator.js",
+    "deploy-storybook": "storybook-to-ghpages --packages packages -o docs --monorepo-index-generator packages/showcases/core/scripts/index-generator.js",
     "postinstall": "is-ci || husky install",
     "pack": "lerna run pack",
     "prepare": "yarn prettier:fix && yarn stylelint:fix && yarn build && yarn test",
@@ -68,7 +68,7 @@
     "@commitlint/cli": "^12.0.0",
     "@commitlint/config-conventional": "^12.0.0",
     "@octokit/core": "^3.2.4",
-    "@storybook/storybook-deployer": "^2.8.7",
+    "@storybook/storybook-deployer": "^2.8.10",
     "babel-loader": "^8.2.2",
     "cross-env": "^7.0.2",
     "husky": "^6.0.0",

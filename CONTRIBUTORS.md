@@ -30,6 +30,15 @@
   - CSS
   - Documentation
 
+- **[Gaspard Mathon](https://github.com/GaspardMathon)**
+
+  - CSS
+  - Web Components
+  - React
+  - Svelte
+  - Vue
+  - Documentation
+
 - **[Grégoire Waymel](https://github.com/GregoireW)**
 
   - Monorepo with Lerna

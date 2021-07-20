@@ -3,6 +3,77 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.7.2...@vtmn/react@0.7.3) (2021-07-19)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.7.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.7.1...@vtmn/react@0.7.2) (2021-06-25)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.7.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.7.0...@vtmn/react@0.7.1) (2021-06-24)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+# [0.7.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.6.0...@vtmn/react@0.7.0) (2021-06-24)
+
+
+### Features
+
+* **@vtmn/react:** add checkbox component ([#384](https://github.com/Decathlon/vitamin-web/issues/384)) ([ad9c7ed](https://github.com/Decathlon/vitamin-web/commit/ad9c7ed0343b869f9420b9ac07ca73f4933c9b76))
+* **vtmn/react:** add radio component + rename component props ([#385](https://github.com/Decathlon/vitamin-web/issues/385)) ([a0ee6bc](https://github.com/Decathlon/vitamin-web/commit/a0ee6bc765d53c890d67ee9c10cb0ef5bfbac281))
+
+
+
+
+
+# [0.6.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.5.6...@vtmn/react@0.6.0) (2021-06-23)
+
+
+### Features
+
+* **@vtmn/web-components:** add icons in button component ([#380](https://github.com/Decathlon/vitamin-web/issues/380)) ([0845a36](https://github.com/Decathlon/vitamin-web/commit/0845a360533c425a41da2d1836adfa263629415e))
+
+
+
+
+
+## [0.5.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.5.5...@vtmn/react@0.5.6) (2021-06-21)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.5.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.5.4...@vtmn/react@0.5.5) (2021-06-17)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.5.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.5.3...@vtmn/react@0.5.4) (2021-06-17)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
 ## [0.5.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.5.2...@vtmn/react@0.5.3) (2021-06-14)
 
 **Note:** Version bump only for package @vtmn/react

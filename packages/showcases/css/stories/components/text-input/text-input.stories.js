@@ -3,19 +3,12 @@ import valid from './examples/valid.html';
 import error from './examples/error.html';
 import disabled from './examples/disabled.html';
 import multiline from './examples/multiline.html';
+import { parameters } from '@vtmn/showcase-core/csf/components/VtmnTextInput.csf';
 
 export default {
   title: 'Components / Text input',
   argTypes: { onchange: { action: 'write' } },
-  parameters: {
-    actions: {
-      handles: ['mouseenter', 'click', 'focusin', 'focusout'],
-    },
-    design: {
-      type: 'figma',
-      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=150%3A3410',
-    },
-  },
+  parameters,
 };
 
 export const Overview = () => overview;

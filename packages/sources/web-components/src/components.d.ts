@@ -5,6 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { VitamixId } from "@vtmn/icons/dist/vitamix/font/vitamix";
 export namespace Components {
     interface VtmnBadge {
         /**
@@ -25,6 +26,24 @@ export namespace Components {
     }
     interface VtmnButton {
         /**
+          * Icon to display when it is a button with icon only
+          * @type {VitamixId}
+          * @default undefined and therefore not displayed by default
+         */
+        "iconAlone": VitamixId;
+        /**
+          * Icon to display on the left hand side of button
+          * @type {VitamixId}
+          * @default undefined and therefore not displayed by default
+         */
+        "iconLeft": VitamixId;
+        /**
+          * Icon to display on the right hand side of button
+          * @type {VitamixId}
+          * @default undefined and therefore not displayed by default
+         */
+        "iconRight": VitamixId;
+        /**
           * The size of the button.
           * @default 'medium'
          */
@@ -42,19 +61,19 @@ export namespace Components {
     }
     interface VtmnCheckbox {
         /**
-          * The id of the checkbox and its label.
-         */
-        "identifier": string;
-        /**
           * The checked state of the checkbox.
           * @default false
          */
-        "isChecked": boolean;
+        "checked": boolean;
         /**
           * The disabled state of the checkbox.
           * @default false
          */
-        "isDisabled": boolean;
+        "disabled": boolean;
+        /**
+          * The id of the checkbox and its label.
+         */
+        "identifier": string;
         /**
           * The text of the checkbox.
          */
@@ -75,36 +94,41 @@ export namespace Components {
          */
         "href": string;
         /**
-          * Is the link standalone or not
+          * Is the link has an icon or not
           * @default null
          */
-        "isStandalone": boolean;
+        "iconAlong": boolean;
         /**
           * The size of the link.
           * @default null
          */
         "size": 'small' | 'medium' | 'large';
         /**
+          * Is the link standalone or not
+          * @default null
+         */
+        "standalone": boolean;
+        /**
           * The target of the link
           * @default null
          */
         "target": string;
     }
-    interface VtmnRadio {
-        /**
-          * The id of the radio and its label.
-         */
-        "identifier": string;
+    interface VtmnRadioButton {
         /**
           * The checked state of the radio.
           * @default false
          */
-        "isChecked": boolean;
+        "checked": boolean;
         /**
           * The disabled state of the radio.
           * @default false
          */
-        "isDisabled": boolean;
+        "disabled": boolean;
+        /**
+          * The id of the radio and its label.
+         */
+        "identifier": string;
         /**
           * The text of the radio.
          */
@@ -120,6 +144,14 @@ export namespace Components {
     }
     interface VtmnTextInput {
         /**
+          * The disabled state of the text-input.
+         */
+        "disabled": boolean;
+        /**
+          * The error variant state of the text-input.
+         */
+        "error": boolean;
+        /**
           * The helper text of the text input.
          */
         "helperText": string;
@@ -132,41 +164,37 @@ export namespace Components {
          */
         "identifier": string;
         /**
-          * The disabled state of the text-input.
-         */
-        "isDisabled": boolean;
-        /**
-          * Is the text-input multiline or not.
-         */
-        "isMultiline": boolean;
-        /**
           * The label text of the text input.
          */
         "labelText": string;
+        /**
+          * Is the text-input multiline or not.
+         */
+        "multiline": boolean;
         /**
           * The placeholder of the text input.
          */
         "placeholder": string;
         /**
-          * The state of the text-input.
+          * The valid variant state of the text-input.
          */
-        "state": 'valid' | 'error' | null;
+        "valid": boolean;
     }
     interface VtmnToggle {
-        /**
-          * The id of the toggle and its label.
-         */
-        "identifier": string;
         /**
           * The checked state of the toggle.
           * @default false
          */
-        "isChecked": boolean;
+        "checked": boolean;
         /**
           * The disabled state of the toggle.
           * @default false
          */
-        "isDisabled": boolean;
+        "disabled": boolean;
+        /**
+          * The id of the toggle and its label.
+         */
+        "identifier": string;
         /**
           * The text of the toggle.
          */
@@ -202,11 +230,11 @@ declare global {
         prototype: HTMLVtmnLinkElement;
         new (): HTMLVtmnLinkElement;
     };
-    interface HTMLVtmnRadioElement extends Components.VtmnRadio, HTMLStencilElement {
+    interface HTMLVtmnRadioButtonElement extends Components.VtmnRadioButton, HTMLStencilElement {
     }
-    var HTMLVtmnRadioElement: {
-        prototype: HTMLVtmnRadioElement;
-        new (): HTMLVtmnRadioElement;
+    var HTMLVtmnRadioButtonElement: {
+        prototype: HTMLVtmnRadioButtonElement;
+        new (): HTMLVtmnRadioButtonElement;
     };
     interface HTMLVtmnTextInputElement extends Components.VtmnTextInput, HTMLStencilElement {
     }
@@ -225,7 +253,7 @@ declare global {
         "vtmn-button": HTMLVtmnButtonElement;
         "vtmn-checkbox": HTMLVtmnCheckboxElement;
         "vtmn-link": HTMLVtmnLinkElement;
-        "vtmn-radio": HTMLVtmnRadioElement;
+        "vtmn-radio-button": HTMLVtmnRadioButtonElement;
         "vtmn-text-input": HTMLVtmnTextInputElement;
         "vtmn-toggle": HTMLVtmnToggleElement;
     }
@@ -250,6 +278,24 @@ declare namespace LocalJSX {
     }
     interface VtmnButton {
         /**
+          * Icon to display when it is a button with icon only
+          * @type {VitamixId}
+          * @default undefined and therefore not displayed by default
+         */
+        "iconAlone"?: VitamixId;
+        /**
+          * Icon to display on the left hand side of button
+          * @type {VitamixId}
+          * @default undefined and therefore not displayed by default
+         */
+        "iconLeft"?: VitamixId;
+        /**
+          * Icon to display on the right hand side of button
+          * @type {VitamixId}
+          * @default undefined and therefore not displayed by default
+         */
+        "iconRight"?: VitamixId;
+        /**
           * The size of the button.
           * @default 'medium'
          */
@@ -267,19 +313,19 @@ declare namespace LocalJSX {
     }
     interface VtmnCheckbox {
         /**
-          * The id of the checkbox and its label.
-         */
-        "identifier": string;
-        /**
           * The checked state of the checkbox.
           * @default false
          */
-        "isChecked"?: boolean;
+        "checked"?: boolean;
         /**
           * The disabled state of the checkbox.
           * @default false
          */
-        "isDisabled"?: boolean;
+        "disabled"?: boolean;
+        /**
+          * The id of the checkbox and its label.
+         */
+        "identifier": string;
         /**
           * The text of the checkbox.
          */
@@ -300,36 +346,41 @@ declare namespace LocalJSX {
          */
         "href"?: string;
         /**
-          * Is the link standalone or not
+          * Is the link has an icon or not
           * @default null
          */
-        "isStandalone"?: boolean;
+        "iconAlong"?: boolean;
         /**
           * The size of the link.
           * @default null
          */
         "size"?: 'small' | 'medium' | 'large';
         /**
+          * Is the link standalone or not
+          * @default null
+         */
+        "standalone"?: boolean;
+        /**
           * The target of the link
           * @default null
          */
         "target"?: string;
     }
-    interface VtmnRadio {
-        /**
-          * The id of the radio and its label.
-         */
-        "identifier": string;
+    interface VtmnRadioButton {
         /**
           * The checked state of the radio.
           * @default false
          */
-        "isChecked"?: boolean;
+        "checked"?: boolean;
         /**
           * The disabled state of the radio.
           * @default false
          */
-        "isDisabled"?: boolean;
+        "disabled"?: boolean;
+        /**
+          * The id of the radio and its label.
+         */
+        "identifier": string;
         /**
           * The text of the radio.
          */
@@ -345,6 +396,14 @@ declare namespace LocalJSX {
     }
     interface VtmnTextInput {
         /**
+          * The disabled state of the text-input.
+         */
+        "disabled"?: boolean;
+        /**
+          * The error variant state of the text-input.
+         */
+        "error"?: boolean;
+        /**
           * The helper text of the text input.
          */
         "helperText": string;
@@ -357,41 +416,37 @@ declare namespace LocalJSX {
          */
         "identifier": string;
         /**
-          * The disabled state of the text-input.
-         */
-        "isDisabled"?: boolean;
-        /**
-          * Is the text-input multiline or not.
-         */
-        "isMultiline"?: boolean;
-        /**
           * The label text of the text input.
          */
         "labelText": string;
+        /**
+          * Is the text-input multiline or not.
+         */
+        "multiline"?: boolean;
         /**
           * The placeholder of the text input.
          */
         "placeholder": string;
         /**
-          * The state of the text-input.
+          * The valid variant state of the text-input.
          */
-        "state"?: 'valid' | 'error' | null;
+        "valid"?: boolean;
     }
     interface VtmnToggle {
-        /**
-          * The id of the toggle and its label.
-         */
-        "identifier": string;
         /**
           * The checked state of the toggle.
           * @default false
          */
-        "isChecked"?: boolean;
+        "checked"?: boolean;
         /**
           * The disabled state of the toggle.
           * @default false
          */
-        "isDisabled"?: boolean;
+        "disabled"?: boolean;
+        /**
+          * The id of the toggle and its label.
+         */
+        "identifier": string;
         /**
           * The text of the toggle.
          */
@@ -406,7 +461,7 @@ declare namespace LocalJSX {
         "vtmn-button": VtmnButton;
         "vtmn-checkbox": VtmnCheckbox;
         "vtmn-link": VtmnLink;
-        "vtmn-radio": VtmnRadio;
+        "vtmn-radio-button": VtmnRadioButton;
         "vtmn-text-input": VtmnTextInput;
         "vtmn-toggle": VtmnToggle;
     }
@@ -419,7 +474,7 @@ declare module "@stencil/core" {
             "vtmn-button": LocalJSX.VtmnButton & JSXBase.HTMLAttributes<HTMLVtmnButtonElement>;
             "vtmn-checkbox": LocalJSX.VtmnCheckbox & JSXBase.HTMLAttributes<HTMLVtmnCheckboxElement>;
             "vtmn-link": LocalJSX.VtmnLink & JSXBase.HTMLAttributes<HTMLVtmnLinkElement>;
-            "vtmn-radio": LocalJSX.VtmnRadio & JSXBase.HTMLAttributes<HTMLVtmnRadioElement>;
+            "vtmn-radio-button": LocalJSX.VtmnRadioButton & JSXBase.HTMLAttributes<HTMLVtmnRadioButtonElement>;
             "vtmn-text-input": LocalJSX.VtmnTextInput & JSXBase.HTMLAttributes<HTMLVtmnTextInputElement>;
             "vtmn-toggle": LocalJSX.VtmnToggle & JSXBase.HTMLAttributes<HTMLVtmnToggleElement>;
         }

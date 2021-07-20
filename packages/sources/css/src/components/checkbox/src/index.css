@@ -4,13 +4,15 @@
 @import '@vtmn/css-design-tokens/src/typography';
 
 .vtmn-checkbox[type='checkbox'] {
-  display: none;
+  position: absolute;
+  opacity: 0.01;
 }
 
 .vtmn-checkbox[type='checkbox'] + label {
   position: relative;
   display: inline-flex;
-  align-items: flex-end;
+  align-items: flex-start;
+  font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
   line-height: var(--vtmn-typo_text-2-line-height);
   cursor: pointer;
@@ -32,7 +34,7 @@
   border-color: var(--vtmn-color_grey);
 }
 
-.vtmn-checkbox[type='checkbox']:not(:checked):not(:disabled):hover
+.vtmn-checkbox[type='checkbox']:not(:focus-visible):not(:checked):not(:disabled):hover
   + label::before {
   box-shadow: 0 0 0 rem(7px) color-mod(var(--vtmn-color_black) alpha(5%));
 }
@@ -52,7 +54,8 @@
   border-color: var(--vtmn-color_brand-digital);
 }
 
-.vtmn-checkbox[type='checkbox']:checked:not(:disabled):hover + label::before {
+.vtmn-checkbox[type='checkbox']:not(:focus-visible):checked:not(:disabled):hover
+  + label::before {
   box-shadow: 0 0 0 rem(7px)
     color-mod(var(--vtmn-color_brand-digital) alpha(5%));
 }
@@ -90,9 +93,4 @@
 .vtmn-checkbox[type='checkbox']:disabled + label {
   opacity: 0.38;
   cursor: not-allowed;
-}
-
-.vtmn-checkbox[type='checkbox']:focus-visible + label::before {
-  outline: none;
-  box-shadow: 0 0 0 rem(4px) var(--vtmn-color_brand-digital-light-1);
 }

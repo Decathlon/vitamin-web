@@ -16,11 +16,19 @@ export interface VtmnLinkProps extends React.ComponentPropsWithoutRef<'a'> {
    * @type {boolean}
    * @default false
    */
-  isStandalone?: boolean;
+  standalone?: boolean;
+
+  /**
+   * Whether link has an icon or not.
+   * @type {boolean}
+   * @default false
+   */
+  iconAlong?: boolean;
 }
 
 export const VtmnLink = ({
-  isStandalone = false,
+  iconAlong = false,
+  standalone = false,
   size = 'medium',
   children,
   className,
@@ -31,7 +39,8 @@ export const VtmnLink = ({
       className={clsx(
         'vtmn-link',
         `vtmn-link_size--${size}`,
-        { 'vtmn-link--standalone': isStandalone },
+        { 'vtmn-link--standalone': standalone },
+        { 'vtmn-link--icon-along': standalone && iconAlong },
         className,
       )}
       {...props}>

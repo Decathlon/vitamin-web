@@ -3,6 +3,111 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.11.3...@vtmn/web-components@0.11.4) (2021-07-19)
+
+**Note:** Version bump only for package @vtmn/web-components
+
+
+
+
+
+## [0.11.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.11.2...@vtmn/web-components@0.11.3) (2021-06-25)
+
+**Note:** Version bump only for package @vtmn/web-components
+
+
+
+
+
+## [0.11.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.11.1...@vtmn/web-components@0.11.2) (2021-06-24)
+
+**Note:** Version bump only for package @vtmn/web-components
+
+
+
+
+
+## [0.11.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.11.0...@vtmn/web-components@0.11.1) (2021-06-24)
+
+**Note:** Version bump only for package @vtmn/web-components
+
+
+
+
+
+# [0.11.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.10.2...@vtmn/web-components@0.11.0) (2021-06-23)
+
+
+### Features
+
+* **@vtmn/web-components:** add icons in button component ([#380](https://github.com/Decathlon/vitamin-web/issues/380)) ([0845a36](https://github.com/Decathlon/vitamin-web/commit/0845a360533c425a41da2d1836adfa263629415e))
+
+
+
+
+
+## [0.10.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.10.1...@vtmn/web-components@0.10.2) (2021-06-21)
+
+**Note:** Version bump only for package @vtmn/web-components
+
+
+
+
+
+## [0.10.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.10.0...@vtmn/web-components@0.10.1) (2021-06-21)
+
+**Note:** Version bump only for package @vtmn/web-components
+
+
+
+
+
+# [0.10.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.9.3...@vtmn/web-components@0.10.0) (2021-06-18)
+
+
+### Features
+
+* **@vtmn/web-components:** add custom-elements.json ([98ba3aa](https://github.com/Decathlon/vitamin-web/commit/98ba3aa602e583dbe118c945b70bc15aa8a8ffee))
+
+
+
+
+
+## [0.9.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.9.2...@vtmn/web-components@0.9.3) (2021-06-17)
+
+**Note:** Version bump only for package @vtmn/web-components
+
+
+
+
+
+## [0.9.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.9.1...@vtmn/web-components@0.9.2) (2021-06-17)
+
+**Note:** Version bump only for package @vtmn/web-components
+
+
+
+
+
+## [0.9.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.9.0...@vtmn/web-components@0.9.1) (2021-06-15)
+
+**Note:** Version bump only for package @vtmn/web-components
+
+
+
+
+
+# [0.9.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.7.0...@vtmn/web-components@0.9.0) (2021-06-15)
+
+
+### Features
+
+* **@vtmn/web-components:** add radio component ([#341](https://github.com/Decathlon/vitamin-web/issues/341)) ([9b98708](https://github.com/Decathlon/vitamin-web/commit/9b98708af5c975178c633d766b3f36473418aad4))
+
+
+
+
+
 # [0.7.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.6.9...@vtmn/web-components@0.7.0) (2021-06-14)
 
 
