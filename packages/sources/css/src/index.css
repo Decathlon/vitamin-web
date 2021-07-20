@@ -14,6 +14,7 @@
 @import './utilities/src/typography';
 
 /* Components */
+@import './components/badge/src';
 @import './components/button/src';
 @import './components/checkbox/src';
 @import './components/link/src';
