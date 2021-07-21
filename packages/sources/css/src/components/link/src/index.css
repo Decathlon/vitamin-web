@@ -7,39 +7,30 @@
   font-family: var(--vtmn-typo_font-family);
   color: var(--vtmn-color_brand-digital);
   font-size: var(--vtmn-typo_text-2-font-size);
-  border-bottom: rem(1px) solid var(--vtmn-color_brand);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .vtmn-link--standalone {
-  border-bottom: none;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-.vtmn-link:hover {
-  color: var(--vtmn-color_brand-digital-dark-1);
-  border-bottom: rem(1px) solid var(--vtmn-color_brand-digital-dark-1);
-}
-
+.vtmn-link:hover,
 .vtmn-link--standalone:hover {
   color: var(--vtmn-color_brand-digital-dark-1);
-  text-decoration: rem(1px) underline;
-  border-bottom: none;
+  text-decoration: underline;
 }
 
-.vtmn-link:active {
-  color: var(--vtmn-color_brand-digital-dark-2);
-  border-bottom: rem(1px) solid var(--vtmn-color_brand-digital-dark-2);
-}
-
+.vtmn-link:active,
 .vtmn-link--standalone:active {
   color: var(--vtmn-color_brand-digital-dark-2);
-  text-decoration: rem(1px) underline;
-  border-bottom: none;
+  text-decoration: underline;
 }
 
-.vtmn-link:visited {
+.vtmn-link:visited,
+.vtmn-link--standalone:visited {
   color: #6c4d6f;
-  border: none;
+  text-decoration: none;
 }
 
 .vtmn-link:focus-visible {

@@ -48,7 +48,7 @@ export const argTypes = {
   },
   valid: {
     type: { name: 'boolean', required: false },
-    description: 'The validity state of the input.',
+    description: 'The valid state of the input.',
     defaultValue: false,
     control: { type: 'boolean' },
   },
@@ -67,6 +67,6 @@ export const parameters = {
   },
   design: {
     type: 'figma',
-    url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vtmn-Web?node-id=150%3A3410',
+    url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=150%3A3410',
   },
 };
