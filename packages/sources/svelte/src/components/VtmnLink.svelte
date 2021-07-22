@@ -2,6 +2,20 @@
   import '@vtmn/css-link';
 
   /**
+   * The href of the link.
+   * @type {string}
+   * @default '#'
+   */
+  export let href = '#';
+
+  /**
+   * The target of the link.
+   * @type {string}
+   * @default '_self'
+   */
+  export let target = '_target';
+
+  /**
    * The size of the link.
    * @type {string}
    * @default 'medium'
@@ -20,11 +34,21 @@
    * @type {boolean}
    * @default false
    */
-   export let iconAlong = false;
+  export let iconAlong = false;
 </script>
 
 <a
-  class={['vtmn-link', `vtmn-link_size--${size}`, standalone && 'vtmn-link--standalone', (standalone && iconAlong) && 'vtmn-link--icon-along'].filter(Boolean).join(' ')}
-  {...$$props}>
-  <slot></slot>
+  {href}
+  {target}
+  class={[
+    'vtmn-link',
+    `vtmn-link_size--${size}`,
+    standalone && 'vtmn-link--standalone',
+    standalone && iconAlong && 'vtmn-link--icon-along',
+  ]
+    .filter(Boolean)
+    .join(' ')}
+  {...$$props}
+>
+  <slot />
 </a>

@@ -5,6 +5,14 @@ import { reactive, computed, defineComponent } from 'vue';
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnLink',
   props: {
+    href: {
+      type: String,
+      default: '#',
+    },
+    target: {
+      type: String,
+      default: '_self',
+    },
     size: {
       type: String,
       default: 'medium',
@@ -35,7 +43,7 @@ export default /*#__PURE__*/ defineComponent({
 </script>
 
 <template>
-  <a :class="classes" v-bind="$attrs">
+  <a :href="href" :target="target" :class="classes" v-bind="$attrs">
     <slot></slot>
   </a>
 </template>
