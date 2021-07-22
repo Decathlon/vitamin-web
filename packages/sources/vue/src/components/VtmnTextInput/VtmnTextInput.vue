@@ -49,7 +49,7 @@ export default /*#__PURE__*/ defineComponent({
       classes: computed(() => ({
         'vtmn-text-input': true,
         'vtmn-text-input--error': props.error,
-        'vtmn-text-input--valid': props.valid,
+        'vtmn-text-input--valid': props.valid && !props.multiline,
       })),
       helperClasses: computed(() => ({
         'vtmn-text-input_helper-text': true,
@@ -74,6 +74,9 @@ export default /*#__PURE__*/ defineComponent({
     :placeholder="this.placeholder"
     :disabled="this.disabled"
   ></textarea>
+  <p v-if="this.multiline && this.error" :class="helperClasses">
+    Error text goes here
+  </p>
   <div v-if="!this.multiline" class="vtmn-text-input_container">
     <input
       type="text"
@@ -84,7 +87,7 @@ export default /*#__PURE__*/ defineComponent({
     />
     <span :v-if="this.icon" :class="iconClass"></span>
   </div>
-  <p :class="helperClasses">
+  <p v-if="!this.multiline" :class="helperClasses">
     {{ this.helperText }}
   </p>
 </template>
