@@ -2,6 +2,7 @@
 @import '@vtmn/css-design-tokens/src/colors';
 @import '@vtmn/css-design-tokens/src/spacings';
 @import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/states';
 
 /* Default button */
 .vtmn-btn {
@@ -40,7 +41,7 @@
 
 .vtmn-btn:disabled {
   cursor: not-allowed;
-  opacity: 0.38;
+  opacity: var(--vtmn-state_disabled_opacity);
 }
 
 .vtmn-btn:not([disabled]):focus-visible {

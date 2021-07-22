@@ -2,6 +2,7 @@
 @import '@vtmn/css-design-tokens/src/colors';
 @import '@vtmn/css-design-tokens/src/spacings';
 @import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/states';
 
 .vtmn-link {
   font-family: var(--vtmn-typo_font-family);

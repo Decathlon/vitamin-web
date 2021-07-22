@@ -2,6 +2,7 @@
 @import '@vtmn/css-design-tokens/src/colors';
 @import '@vtmn/css-design-tokens/src/spacings';
 @import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/states';
 
 .vtmn-text-input_label,
 .vtmn-text-input,
@@ -79,7 +80,7 @@ textarea.vtmn-text-input {
 .vtmn-text-input[disabled] + svg,
 .vtmn-text-input[disabled] + .vtmn-text-input_helper-text,
 .vtmn-text-input[disabled] + .vtmn-text-input_counter {
-  opacity: 0.38;
+  opacity: var(--vtmn-state_disabled_opacity);
   cursor: not-allowed;
 }
 
