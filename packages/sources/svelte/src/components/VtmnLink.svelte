@@ -2,20 +2,6 @@
   import '@vtmn/css-link';
 
   /**
-   * The href of the link.
-   * @type {string}
-   * @default '#'
-   */
-  export let href = '#';
-
-  /**
-   * The target of the link.
-   * @type {string}
-   * @default '_self'
-   */
-  export let target = '_target';
-
-  /**
    * The size of the link.
    * @type {string}
    * @default 'medium'
@@ -38,8 +24,6 @@
 </script>
 
 <a
-  {href}
-  {target}
   class={[
     'vtmn-link',
     `vtmn-link_size--${size}`,
