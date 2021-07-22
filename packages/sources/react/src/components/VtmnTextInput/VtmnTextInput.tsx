@@ -82,15 +82,19 @@ export const VtmnTextInput = ({
       <textarea
         className={clsx('vtmn-text-input', className, {
           'vtmn-text-input--error': error,
+          'vtmn-text-input--valid': valid,
         })}
         id={identifier}
         placeholder={placeholder}
         disabled={disabled}
         {...props}
       />,
-      error && (
-        <p className="vtmn-text-input_helper-text vtmn-text-input_helper-text--error">
-          Error text goes here
+      helperText && (
+        <p
+          className={clsx('vtmn-text-input_helper-text', className, {
+            'vtmn-text-input_helper-text--error': error,
+          })}>
+          {helperText}
         </p>
       ),
     ];
