@@ -32,6 +32,12 @@
   export let helperText;
 
   /**
+   * Whether input is multiline or not
+   * @type {boolean}
+   */
+  export let multiline = false;
+
+  /**
    * Whether input is successful or not
    * @type {boolean}
    */
@@ -42,21 +48,52 @@
    * @type {boolean}
    */
   export let error = false;
+
+  /**
+   * Icon to be displayed
+   * @type {string}
+   */
+  export let icon;
 </script>
 
 {#if labelText}
-  <label class="vtmn-text-input_label" for="{identifier}">{labelText}</label>
+  <label class="vtmn-text-input_label" for={identifier}>{labelText}</label>
 {/if}
-<input
-  class="vtmn-text-input"
-  class:vtmn-text-input--valid={valid}
-  class:vtmn-text-input--error={error}
-  type="text"
-  {identifier}
-  {disabled}
-  {placeholder}
-  {...$$props}
-/>
-{#if helperText}
-  <p class="vtmn-text-input_helper-text">{helperText}</p>
+{#if multiline}
+  <textarea
+    class="vtmn-text-input"
+    class:vtmn-text-input--error={error}
+    id="my-text-input-multiline-1"
+    {identifier}
+    {disabled}
+    {placeholder}
+    {...$$props}
+  />
+  {#if helperText && error}
+    <p class="vtmn-text-input_helper-text vtmn-text-input_helper-text--error">
+      {helperText}
+    </p>
+  {/if}
+{:else}
+  <div class="vtmn-text-input_container">
+    <input
+      class="vtmn-text-input"
+      class:vtmn-text-input--valid={valid}
+      class:vtmn-text-input--error={error}
+      type="text"
+      {identifier}
+      {disabled}
+      {placeholder}
+      {...$$props}
+    />
+    <span class={icon && `vtmx-${icon}`} />
+  </div>
+  {#if helperText}
+    <p
+      class="vtmn-text-input_helper-text"
+      class:vtmn-text-input_helper-text--error={error}
+    >
+      {helperText}
+    </p>
+  {/if}
 {/if}
