@@ -2,6 +2,6 @@
 @import '@vtmn/css-design-tokens/src/colors';
 @import '@vtmn/css-design-tokens/src/spacings';
 @import '@vtmn/css-design-tokens/src/typography';
-@import '@vtmn/css-design-tokens/src/states';
+@import '@vtmn/css-design-tokens/src/opacities';
 
 @import './typography';

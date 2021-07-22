@@ -1,6 +1,6 @@
 /**
- * @tokens States
- * @presenter States
+ * @tokens Opacities
+ * @presenter Opacity
  */
 :root {
   --vtmn-state_disabled_opacity: 0.38;
