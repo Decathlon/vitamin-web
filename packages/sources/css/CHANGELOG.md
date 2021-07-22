@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.15.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.14.0...@vtmn/css@0.15.0) (2021-07-22)
+
+
+### Features
+
+* **@vtmn/css:** add variable for disabled state opacity ([#458](https://github.com/Decathlon/vitamin-web/issues/458)) ([d9f0e62](https://github.com/Decathlon/vitamin-web/commit/d9f0e624e55e4c6c1d1cb8672dd159c1879abfbd))
+
+
+
+
+
 # [0.14.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.13.0...@vtmn/css@0.14.0) (2021-07-20)
 
 
