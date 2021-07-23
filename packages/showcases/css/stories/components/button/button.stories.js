@@ -50,7 +50,7 @@ Secondary.parameters = {
       code: secondary,
     },
   },
-  backgrounds: { default: 'white' },
+  backgrounds: { default: 'light' },
 };
 
 export const Tertiary = () => tertiary;
@@ -60,7 +60,7 @@ Tertiary.parameters = {
       code: tertiary,
     },
   },
-  backgrounds: { default: 'white' },
+  backgrounds: { default: 'light' },
 };
 
 export const Conversion = () => conversion;
@@ -79,7 +79,7 @@ Ghost.parameters = {
       code: ghost,
     },
   },
-  backgrounds: { default: 'white' },
+  backgrounds: { default: 'light' },
 };
 
 export const GhostReversed = () => ghostReversed;
