@@ -63,6 +63,6 @@
   opacity: 0.38;
 }
 
-.vtmn-select--error .vtmn-select select {
+.vtmn-select--error select {
   box-shadow: inset 0 0 0 rem(2px) var(--vtmn-color_danger);
 }
