@@ -17,7 +17,7 @@ export interface VtmnTextInputProps
    * Label text linked to the input
    * @type {string}
    */
-  labelText: string;
+  labelText?: string;
 
   /**
    * Helper text to help the user
@@ -74,51 +74,50 @@ export const VtmnTextInput = ({
   valid = false,
   ...props
 }: VtmnTextInputProps) => {
-  return (
-    <>
+  return [
+    labelText && (
       <label className="vtmn-text-input_label" htmlFor={identifier}>
         {labelText}
       </label>
-
+    ),
+    multiline ? (
+      <textarea
+        className={clsx('vtmn-text-input', className, {
+          'vtmn-text-input--error': error,
+          'vtmn-text-input--valid': valid,
+        })}
+        id={identifier}
+        placeholder={placeholder}
+        disabled={disabled}
+        {...props}
+      />
+    ) : (
       <div className="vtmn-text-input_container">
-        {multiline ? (
-          <textarea
-            className={clsx(
-              'vtmn-text-input',
-              className,
-              { 'vtmn-text-input--valid': valid && !disabled },
-              { 'vtmn-text-input--error': error && !disabled },
-            )}
-            id={identifier}
-            placeholder={placeholder}
-            disabled={disabled}
-            {...props}
-          />
-        ) : (
-          <>
-            <input
-              className={clsx(
-                'vtmn-text-input',
-                className,
-                { 'vtmn-text-input--valid': valid && !disabled },
-                { 'vtmn-text-input--error': error && !disabled },
-              )}
-              id={identifier}
-              type="text"
-              placeholder={placeholder}
-              disabled={disabled}
-              {...props}
-            />
-            {icon && <VtmnIcon value={icon} size={20} />}
-          </>
-        )}
+        <input
+          className={clsx(
+            'vtmn-text-input',
+            className,
+            { 'vtmn-text-input--valid': valid && !disabled },
+            { 'vtmn-text-input--error': error && !disabled },
+          )}
+          id={identifier}
+          type="text"
+          placeholder={placeholder}
+          disabled={disabled}
+          {...props}
+        />
+        {icon && <VtmnIcon value={icon} size={20} />}
       </div>
-
-      {helperText && (
-        <p className="vtmn-text-input_helper-text">{helperText}</p>
-      )}
-    </>
-  );
+    ),
+    helperText && (
+      <p
+        className={clsx('vtmn-text-input_helper-text', className, {
+          'vtmn-text-input_helper-text--error': error,
+        })}>
+        {helperText}
+      </p>
+    ),
+  ];
 };
 
 export default React.memo(VtmnTextInput);

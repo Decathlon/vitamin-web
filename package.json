@@ -64,7 +64,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.14.6",
+    "@babel/core": "^7.14.8",
     "@commitlint/cli": "^12.0.0",
     "@commitlint/config-conventional": "^12.0.0",
     "@octokit/core": "^3.2.4",
@@ -74,7 +74,7 @@
     "husky": "^6.0.0",
     "is-ci": "^3.0.0",
     "lerna": "^4.0.0",
-    "lint-staged": "^11.0.0",
+    "lint-staged": "^11.1.0",
     "prettier": "^2.2.1",
     "shx": "^0.3.3",
     "sort-package-json": "^1.48.0"

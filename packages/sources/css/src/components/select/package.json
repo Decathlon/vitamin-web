@@ -1,7 +1,7 @@
 {
-  "name": "@vtmn/css-button",
-  "version": "0.4.1",
-  "description": "Decathlon Design System - Vitamin specific CSS styles for button component",
+  "name": "@vtmn/css-select",
+  "version": "0.1.0",
+  "description": "Decathlon Design System - Vitamin specific CSS styles for select component",
   "keywords": [
     "design-system",
     "ui-kit",
@@ -9,7 +9,6 @@
     "css",
     "vitamin"
   ],
-  "homepage": "https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/components/button",
   "bugs": {
     "url": "https://github.com/Decathlon/vitamin-web/issues"
   },
@@ -26,7 +25,7 @@
     "build": "postcss src/index.css -o dist/index.css && cross-env FONT_SIZE_BASE=10 postcss src/index.css -o dist/index-base10.css"
   },
   "devDependencies": {
-    "@vtmn/css-design-tokens": "^0.2.1",
+    "@vtmn/css-design-tokens": "^0.1.12",
     "@vtmn/css-postcss-config": "*",
     "@vtmn/css-tailwind-config": "*"
   },
