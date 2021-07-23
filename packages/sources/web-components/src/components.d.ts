@@ -50,8 +50,9 @@ export namespace Components {
         "variant": | 'primary'
     | 'primary-reversed'
     | 'secondary'
-    | 'secondary-reversed'
+    | 'tertiary'
     | 'ghost'
+    | 'ghost-reversed'
     | 'conversion';
     }
     interface VtmnCheckbox {
@@ -297,8 +298,9 @@ declare namespace LocalJSX {
         "variant"?: | 'primary'
     | 'primary-reversed'
     | 'secondary'
-    | 'secondary-reversed'
+    | 'tertiary'
     | 'ghost'
+    | 'ghost-reversed'
     | 'conversion';
     }
     interface VtmnCheckbox {

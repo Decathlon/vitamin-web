@@ -2,8 +2,9 @@ export type VtmnButtonVariant =
   | 'primary'
   | 'primary-reversed'
   | 'secondary'
-  | 'secondary-reversed'
+  | 'tertiary'
   | 'ghost'
+  | 'ghost-reversed'
   | 'conversion';
 
 export type VtmnButtonSize = 'small' | 'medium' | 'large' | 'stretched';

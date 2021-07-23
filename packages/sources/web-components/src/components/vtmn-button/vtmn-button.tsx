@@ -14,8 +14,9 @@ export class VtmnButton implements ComponentInterface {
     | 'primary'
     | 'primary-reversed'
     | 'secondary'
-    | 'secondary-reversed'
+    | 'tertiary'
     | 'ghost'
+    | 'ghost-reversed'
     | 'conversion' = 'primary';
 
   /**

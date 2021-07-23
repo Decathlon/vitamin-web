@@ -3,7 +3,7 @@
 
   /**
    * The variant of the button.
-   * @type {'primary' | 'primary-reversed' | 'secondary' | 'secondary-reversed' | 'ghost' | 'conversion'}
+   * @type {'primary' | 'primary-reversed' | 'secondary' | 'tertiary' | 'ghost' | 'ghost-reversed' | 'conversion'}
    * @default 'primary'
    */
   export let variant = 'primary';
