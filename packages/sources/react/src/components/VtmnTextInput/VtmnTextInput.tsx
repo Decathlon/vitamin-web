@@ -74,7 +74,49 @@ export const VtmnTextInput = ({
   valid = false,
   ...props
 }: VtmnTextInputProps) => {
-  if (multiline) {
+  return [
+    <label className="vtmn-text-input_label" htmlFor={identifier}>
+      {labelText}
+    </label>,
+    multiline ? (
+      <textarea
+        className={clsx('vtmn-text-input', className, {
+          'vtmn-text-input--error': error,
+          'vtmn-text-input--valid': valid,
+        })}
+        id={identifier}
+        placeholder={placeholder}
+        disabled={disabled}
+        {...props}
+      />
+    ) : (
+      <div className="vtmn-text-input_container">
+        <input
+          className={clsx(
+            'vtmn-text-input',
+            className,
+            { 'vtmn-text-input--valid': valid && !disabled },
+            { 'vtmn-text-input--error': error && !disabled },
+          )}
+          id={identifier}
+          type="text"
+          placeholder={placeholder}
+          disabled={disabled}
+          {...props}
+        />
+        {icon && <VtmnIcon value={icon} size={20} />}
+      </div>
+    ),
+    helperText && (
+      <p
+        className={clsx('vtmn-text-input_helper-text', className, {
+          'vtmn-text-input_helper-text--error': error,
+        })}>
+        {helperText}
+      </p>
+    ),
+  ];
+  /*if (multiline) {
     return [
       <label className="vtmn-text-input_label" htmlFor={identifier}>
         {labelText}
@@ -128,7 +170,7 @@ export const VtmnTextInput = ({
         </p>
       ),
     ];
-  }
+  }*/
 };
 
 export default React.memo(VtmnTextInput);
