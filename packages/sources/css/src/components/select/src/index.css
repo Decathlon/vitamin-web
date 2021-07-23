@@ -15,7 +15,6 @@
 }
 
 .vtmn-select select {
-  -webkit-appearance: none;
   appearance: none;
   padding: rem(12px) rem(40px) rem(12px) rem(12px);
   display: block;
