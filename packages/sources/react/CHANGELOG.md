@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.8.0...@vtmn/react@0.8.1) (2021-07-23)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+# [0.8.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.7.4...@vtmn/react@0.8.0) (2021-07-23)
+
+
+### Features
+
+* **@vtmn/react @vtmn/vue @vtmn/svelte:** correct multiline states and helper texts ([#454](https://github.com/Decathlon/vitamin-web/issues/454)) ([f119bbe](https://github.com/Decathlon/vitamin-web/commit/f119bbe75eddf1f859461a071569bc6c53b4d1a3))
+
+
+
+
+
+## [0.7.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.7.3...@vtmn/react@0.7.4) (2021-07-22)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
 ## [0.7.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.7.2...@vtmn/react@0.7.3) (2021-07-19)
 
 **Note:** Version bump only for package @vtmn/react

@@ -64,7 +64,7 @@ export default /*#__PURE__*/ defineComponent({
 </script>
 
 <template>
-  <label class="vtmn-text-input_label" :for="this.identifier">
+  <label :v-if="labelText" class="vtmn-text-input_label" :for="this.identifier">
     {{ this.labelText }}
   </label>
   <textarea
@@ -74,7 +74,7 @@ export default /*#__PURE__*/ defineComponent({
     :placeholder="this.placeholder"
     :disabled="this.disabled"
   ></textarea>
-  <div v-if="!this.multiline" class="vtmn-text-input_container">
+  <div v-else class="vtmn-text-input_container">
     <input
       type="text"
       :class="classes"
@@ -84,7 +84,7 @@ export default /*#__PURE__*/ defineComponent({
     />
     <span :v-if="this.icon" :class="iconClass"></span>
   </div>
-  <p :class="helperClasses">
+  <p :v-if="helperText" :class="helperClasses">
     {{ this.helperText }}
   </p>
 </template>
