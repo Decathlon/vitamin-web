@@ -83,12 +83,12 @@
     />
     <span class={icon && `vtmx-${icon}`} />
   </div>
-  {#if helperText}
-    <p
-      class="vtmn-text-input_helper-text"
-      class:vtmn-text-input_helper-text--error={error}
-    >
-      {helperText}
-    </p>
-  {/if}
+{/if}
+{#if helperText}
+  <p
+    class="vtmn-text-input_helper-text"
+    class:vtmn-text-input_helper-text--error={error}
+  >
+    {helperText}
+  </p>
 {/if}
