@@ -61,6 +61,7 @@
 .vtmn-select select:disabled,
 .vtmn-select select:disabled + label {
   opacity: 0.38;
+  cursor: not-allowed;
 }
 
 .vtmn-select--error select {
