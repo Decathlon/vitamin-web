@@ -17,7 +17,7 @@ export interface VtmnTextInputProps
    * Label text linked to the input
    * @type {string}
    */
-  labelText: string;
+  labelText?: string;
 
   /**
    * Helper text to help the user
@@ -75,9 +75,11 @@ export const VtmnTextInput = ({
   ...props
 }: VtmnTextInputProps) => {
   return [
-    <label className="vtmn-text-input_label" htmlFor={identifier}>
-      {labelText}
-    </label>,
+    labelText && (
+      <label className="vtmn-text-input_label" htmlFor={identifier}>
+        {labelText}
+      </label>
+    ),
     multiline ? (
       <textarea
         className={clsx('vtmn-text-input', className, {
