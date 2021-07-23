@@ -2,6 +2,7 @@
 @import '@vtmn/css-design-tokens/src/colors';
 @import '@vtmn/css-design-tokens/src/spacings';
 @import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/opacities';
 
 .vtmn-toggle {
   display: flex;
@@ -117,7 +118,7 @@
 }
 
 .vtmn-toggle input[type='checkbox']:disabled + span {
-  opacity: 0.5;
+  opacity: var(--vtmn-state_disabled_opacity);
 }
 
 /* Small */
