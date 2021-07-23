@@ -30,6 +30,7 @@
   padding: rem(12px) rem(36px) rem(12px) rem(12px);
   color: var(--vtmn-color_black);
   min-height: rem(48px);
+  appearance: none;
 }
 
 textarea.vtmn-text-input {
