@@ -59,23 +59,25 @@ export class VtmnTextInput implements ComponentInterface {
       this.multiline
         ? [
             <textarea
-              class={['vtmn-text-input', this.error && 'vtmn-text-input--error']
+              class={[
+                'vtmn-text-input',
+                this.error && 'vtmn-text-input--error',
+                this.valid && 'vtmn-text-input--valid',
+              ]
                 .filter(Boolean)
                 .join(' ')}
               id={this.identifier}
               placeholder={this.placeholder}
               disabled={this.disabled}></textarea>,
-            this.error ? (
-              <p
-                class={[
-                  'vtmn-text-input_helper-text',
-                  this.error && 'vtmn-text-input_helper-text--error',
-                ]
-                  .filter(Boolean)
-                  .join(' ')}>
-                {this.helperText}
-              </p>
-            ) : null,
+            <p
+              class={[
+                'vtmn-text-input_helper-text',
+                this.error && 'vtmn-text-input_helper-text--error',
+              ]
+                .filter(Boolean)
+                .join(' ')}>
+              {this.helperText}
+            </p>,
           ]
         : [
             <div class="vtmn-text-input_container">

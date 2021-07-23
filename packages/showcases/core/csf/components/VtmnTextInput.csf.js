@@ -8,13 +8,13 @@ export const argTypes = {
     control: { type: 'text' },
   },
   labelText: {
-    type: { name: 'string', required: true },
+    type: { name: 'string', required: false },
     description: 'The label of the input.',
     defaultValue: 'Label',
     control: { type: 'text' },
   },
   placeholder: {
-    type: { name: 'string', required: true },
+    type: { name: 'string', required: false },
     description: 'The placeholder of the input.',
     defaultValue: 'Placeholder Text',
     control: { type: 'text' },
