@@ -316,3 +316,21 @@
 .vtmn-btn_size--large.vtmn-btn--icon-right svg {
   margin-left: rem(12px);
 }
+
+/* Deprecated */
+
+/* Secondary reversed button */
+.vtmn-btn_variant--secondary-reversed {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 rem(2px) var(--vtmn-color_white);
+  color: var(--vtmn-color_white);
+  fill: var(--vtmn-color_white);
+}
+
+.vtmn-btn_variant--secondary-reversed:not([disabled]):hover {
+  background-color: color-mod(var(--vtmn-color_white) alpha(20%));
+}
+
+.vtmn-btn_variant--secondary-reversed:not([disabled]):active {
+  background-color: color-mod(var(--vtmn-color_white) alpha(40%));
+}
