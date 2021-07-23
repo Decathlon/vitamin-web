@@ -64,20 +64,11 @@
     class="vtmn-text-input"
     class:vtmn-text-input--error={error}
     class:vtmn-text-input--valid={valid}
-    id="my-text-input-multiline-1"
     {identifier}
     {disabled}
     {placeholder}
     {...$$props}
   />
-  {#if helperText}
-    <p
-      class="vtmn-text-input_helper-text"
-      class:vtmn-text-input_helper-text--error={error}
-    >
-      {helperText}
-    </p>
-  {/if}
 {:else}
   <div class="vtmn-text-input_container">
     <input
