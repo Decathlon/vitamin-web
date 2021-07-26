@@ -201,7 +201,7 @@
 
 .vtmn-btn--icon-alone span[class^='vtmx-'] {
   font-size: var(--vtmn-typo_text-2-font-size);
-  transform: translateY(rem(1px));
+  transform: translateY(rem(2px));
 }
 
 .vtmn-btn--icon-alone svg {
