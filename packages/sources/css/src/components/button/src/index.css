@@ -204,7 +204,7 @@
 
 .vtmn-btn--icon-alone span[class^='vtmx-'] {
   font-size: var(--vtmn-typo_text-2-font-size);
-  transform: translateY(rem(2px));
+  transform: translateY(rem(1px));
 }
 
 .vtmn-btn--icon-alone svg {
@@ -256,12 +256,12 @@
 
 .vtmn-btn--icon-left span[class^='vtmx-'] {
   padding-right: rem(8px);
-  transform: translateY(rem(2px));
+  transform: translateY(rem(1px));
 }
 
 .vtmn-btn--icon-right span[class^='vtmx-'] {
   padding-left: rem(8px);
-  transform: translateY(rem(2px));
+  transform: translateY(rem(1px));
 }
 
 .vtmn-btn_size--small.vtmn-btn--icon-left span[class^='vtmx-'] {
