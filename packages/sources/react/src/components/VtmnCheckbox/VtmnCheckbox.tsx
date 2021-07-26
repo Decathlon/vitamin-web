@@ -63,7 +63,7 @@ export const VtmnCheckbox = ({
         id={identifier}
         name={name}
         value={value}
-        checked={checked}
+        defaultChecked={checked}
         disabled={disabled}
         {...props}
       />
