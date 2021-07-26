@@ -19,7 +19,7 @@ export interface VtmnIconProps extends React.HTMLAttributes<HTMLElement> {
   value: VitamixId;
 }
 
-export const Icon: React.FC<VtmnIconProps> = ({
+export const VtmnIcon: React.FC<VtmnIconProps> = ({
   size = 24,
   color = 'black',
   value,
@@ -33,4 +33,4 @@ export const Icon: React.FC<VtmnIconProps> = ({
     {...props}></span>
 );
 
-export default React.memo(Icon);
+export default React.memo(VtmnIcon);
