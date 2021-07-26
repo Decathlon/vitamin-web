@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.14.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.13.2...@vtmn/web-components@0.14.0) (2021-07-26)
+
+
+### Features
+
+* **@vtmn/web-components:** add badge component ([#465](https://github.com/Decathlon/vitamin-web/issues/465)) ([c19a86a](https://github.com/Decathlon/vitamin-web/commit/c19a86aa5c91fa0137f2fd08d329f69f69f8825a))
+
+
+
+
+
 ## [0.13.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.13.1...@vtmn/web-components@0.13.2) (2021-07-23)
 
 **Note:** Version bump only for package @vtmn/web-components
