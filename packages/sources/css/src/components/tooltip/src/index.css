@@ -1,0 +1,27 @@
+/* Design tokens */
+@import '@vtmn/css-design-tokens/src/colors';
+@import '@vtmn/css-design-tokens/src/spacings';
+@import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/opacities';
+
+.vtmn-tooltip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--vtmn-color_black);
+  padding: rem(8px) rem(12px);
+  height: rem(36px);
+  width: fit-content;
+  border-radius: rem(4px);
+  color: var(--vtmn-color_white);
+  font-family: var(--vtmn-typo_font-family);
+  font-size: var(--vtmn-typo_text-3-font-size);
+  font-weight: var(--vtmn-typo_font-weight--regular);
+  line-height: var(--vtmn-typo_text-3-line-height);
+}
+
+.vtmn-tooltip--top::before {
+  content: url("data:image/svg+xml;charset=utf-8, <svg width='14' height='14' viewBox='0 0 14 14' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m8 5.333 4 4H4l4-4z' fill='%23001018'/></svg>");
+  position: absolute;
+  transform: translateY(rem(-18px)) scale(1.5);
+}
