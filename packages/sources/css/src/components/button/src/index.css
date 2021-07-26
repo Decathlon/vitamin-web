@@ -6,12 +6,12 @@
 
 /* Default button */
 .vtmn-btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  text-align: center;
   box-shadow: inset 0 0 0 rem(2px) transparent;
   font-size: var(--vtmn-typo_text-2-font-size);
   height: rem(48px);
+  max-width: 100%;
   padding: rem(14px) rem(24px);
   line-height: 1.25;
   letter-spacing: rem(0.5px);
@@ -21,6 +21,8 @@
   font-weight: var(--vtmn-typo_font-weight--bold);
   color: var(--vtmn-color_white);
   fill: var(--vtmn-color_white);
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
