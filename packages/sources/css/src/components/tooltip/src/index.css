@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   background-color: var(--vtmn-color_black);
   padding: rem(8px) rem(12px);
   height: rem(36px);
@@ -21,7 +22,61 @@
 }
 
 .vtmn-tooltip--top::before {
-  content: url("data:image/svg+xml;charset=utf-8, <svg width='14' height='14' viewBox='0 0 14 14' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m8 5.333 4 4H4l4-4z' fill='%23001018'/></svg>");
+  content: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m8 5.333 4 4H4l4-4z' fill='%23001018'/></svg>");
   position: absolute;
-  transform: translateY(rem(-18px)) scale(1.5);
+  top: 0;
+  transform: translateY(rem(-8px)) scale(1.5);
+}
+
+.vtmn-tooltip--top-left::before {
+  content: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m8 5.333 4 4H4l4-4z' fill='%23001018'/></svg>");
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(rem(8px), rem(-8px)) scale(1.5);
+}
+
+.vtmn-tooltip--top-right::before {
+  content: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m8 5.333 4 4H4l4-4z' fill='%23001018'/></svg>");
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(rem(-8px), rem(-8px)) scale(1.5);
+}
+
+.vtmn-tooltip--left::before {
+  content: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m5.333 8 4-4v8l-4-4z' fill='%23001018'/></svg>");
+  position: absolute;
+  left: 0;
+  transform: translate(rem(-10px), rem(4px)) scale(1.5);
+}
+
+.vtmn-tooltip--right::before {
+  content: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m10.667 8-4 4V4l4 4z' fill='%23001018'/></svg>");
+  position: absolute;
+  right: 0;
+  transform: translate(rem(10px), rem(4px)) scale(1.5);
+}
+
+.vtmn-tooltip--bottom::before {
+  content: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m8 10.667-4-4h8l-4 4z' fill='%23001018'/></svg>");
+  position: absolute;
+  bottom: 0;
+  transform: translateY(rem(16px)) scale(1.5);
+}
+
+.vtmn-tooltip--bottom-left::before {
+  content: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m8 10.667-4-4h8l-4 4z' fill='%23001018'/></svg>");
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(rem(8px), rem(16px)) scale(1.5);
+}
+
+.vtmn-tooltip--bottom-right::before {
+  content: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m8 10.667-4-4h8l-4 4z' fill='%23001018'/></svg>");
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(rem(-8px), rem(16px)) scale(1.5);
 }
