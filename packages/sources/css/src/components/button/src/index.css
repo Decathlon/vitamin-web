@@ -2,32 +2,22 @@
 @import '@vtmn/css-design-tokens/src/colors';
 @import '@vtmn/css-design-tokens/src/spacings';
 @import '@vtmn/css-design-tokens/src/typography';
-@import '@vtmn/css-design-tokens/src/opacities';
 
 /* Default button */
 .vtmn-btn {
   box-shadow: inset 0 0 0 rem(2px) transparent;
-  font-size: var(--vtmn-typo_text-1-font-size);
-  min-height: rem(48px);
+  font-size: var(--vtmn-typo_text-2-font-size);
+  height: rem(48px);
   max-width: 100%;
   padding: rem(14px) rem(24px);
   line-height: 1.25;
   letter-spacing: rem(0.5px);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   background-color: var(--vtmn-color_brand-digital);
   border-radius: rem(4px);
-  border-width: 0;
-  box-sizing: border-box;
-  display: inline-block;
   font-family: var(--vtmn-typo_font-family);
   font-weight: var(--vtmn-typo_font-weight--bold);
-  position: relative;
-  text-align: center;
   color: var(--vtmn-color_white);
   fill: var(--vtmn-color_white);
-  text-decoration: none;
 }
 
 .vtmn-btn:not([disabled]):hover {
@@ -41,7 +31,7 @@
 
 .vtmn-btn:disabled {
   cursor: not-allowed;
-  opacity: var(--vtmn-state_disabled_opacity);
+  opacity: 0.38;
 }
 
 .vtmn-btn:not([disabled]):focus-visible {
@@ -60,8 +50,7 @@
 }
 
 .vtmn-btn span[class^='vtmx-'] {
-  display: inline;
-  vertical-align: middle;
+  display: inline-block;
 }
 
 /* Primary button */
@@ -181,21 +170,21 @@
   font-size: rem(14px);
   padding: rem(8px) rem(16px);
   line-height: calc(16 / 14);
-  min-height: rem(32px);
+  height: rem(32px);
 }
 
 .vtmn-btn_size--medium {
   font-size: rem(16px);
   padding: rem(14px) rem(24px);
   line-height: 1.25;
-  min-height: rem(48px);
+  height: rem(48px);
 }
 
 .vtmn-btn_size--large {
   font-size: rem(20px);
   padding: rem(20px) rem(40px);
   line-height: 1.2;
-  min-height: rem(64px);
+  height: rem(64px);
 }
 
 .vtmn-btn_size--stretched {
@@ -211,6 +200,7 @@
 
 .vtmn-btn--icon-alone span[class^='vtmx-'] {
   font-size: var(--vtmn-typo_text-2-font-size);
+  transform: translateY(rem(1px));
 }
 
 .vtmn-btn--icon-alone svg {
@@ -262,12 +252,12 @@
 
 .vtmn-btn--icon-left span[class^='vtmx-'] {
   padding-right: rem(8px);
-  vertical-align: middle;
+  transform: translateY(rem(2px));
 }
 
 .vtmn-btn--icon-right span[class^='vtmx-'] {
   padding-left: rem(8px);
-  vertical-align: middle;
+  transform: translateY(rem(2px));
 }
 
 .vtmn-btn_size--small.vtmn-btn--icon-left span[class^='vtmx-'] {
