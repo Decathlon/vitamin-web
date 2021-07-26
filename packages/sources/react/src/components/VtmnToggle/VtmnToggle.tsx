@@ -17,47 +17,18 @@ export interface VtmnToggleProps
    * @type {string}
    */
   labelText: string;
-
-  /**
-   * The size of the toggle.
-   * @default 'medium'
-   */
-  size?: VtmnToggleSize;
-
-  /**
-   * Label text linked to the toggle.
-   * @type {boolean}
-   * @default false
-   */
-  checked?: boolean;
-
-  /**
-   * Disabled state of the toggle.
-   * @type {boolean}
-   */
-  disabled?: boolean;
 }
 
 export const VtmnToggle = ({
   className,
   identifier,
   labelText,
-  size = 'medium',
-  checked,
-  disabled,
   ...props
 }: VtmnToggleProps) => {
   return (
-    <div
-      className={clsx('vtmn-toggle', `vtmn-toggle_size--${size}`, className)}>
+    <div className={clsx('vtmn-toggle')}>
       <div className="vtmn-toggle_switch">
-        <input
-          type="checkbox"
-          id={identifier}
-          checked={checked}
-          disabled={disabled}
-          {...props}
-        />
+        <input type="checkbox" id={identifier} {...props} />
         <span aria-hidden="true"></span>
       </div>
       <label htmlFor={identifier}>{labelText}</label>

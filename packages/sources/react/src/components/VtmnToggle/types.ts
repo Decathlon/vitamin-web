@@ -1,1 +1,1 @@
-export type VtmnToggleSize = 'small' | 'medium';
+export type VtmnToggleSize = 'small' | 'medium' | undefined;
