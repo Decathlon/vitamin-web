@@ -15,6 +15,43 @@ module.exports = {
       'large-desktop': { min: '1800px' },
     },
     colors: {
+      'background-primary': 'var(--vtmn-semantic-color_background-primary)',
+      'background-secondary': 'var(--vtmn-semantic-color_background-secondary)',
+      'background-tertiary': 'var(--vtmn-semantic-color_background-tertiary)',
+      'background-brand-primary':
+        'var(--vtmn-semantic-color_background-brand-primary)',
+      'background-brand-secondary':
+        'var(--vtmn-semantic-color_background-brand-secondary)',
+      'background-accent': 'var(--vtmn-semantic-color_background-accent)',
+      'background-discount': 'var(--vtmn-semantic-color_background-discount)',
+      'background-primary-reversed':
+        'var(--vtmn-semantic-color_background-primary-reversed)',
+      'background-brand-primary-reversed':
+        'var(--vtmn-semantic-color_background-brand-primary-reversed)',
+      'content-primary': 'var(--vtmn-semantic-color_content-primary)',
+      'content-secondary': 'var(--vtmn-semantic-color_content-secondary)',
+      'content-action': 'var(--vtmn-semantic-color_content-action)',
+      'content-active': 'var(--vtmn-semantic-color_content-active)',
+      'content-inactive': 'var(--vtmn-semantic-color_content-inactive)',
+      'content-negative': 'var(--vtmn-semantic-color_content-negative)',
+      'content-warning': 'var(--vtmn-semantic-color_content-warning)',
+      'content-positive': 'var(--vtmn-semantic-color_content-positive)',
+      'content-information': 'var(--vtmn-semantic-color_content-information)',
+      'content-primary-reversed':
+        'var(--vtmn-semantic-color_content-primary-reversed)',
+      'content-action-reversed':
+        'var(--vtmn-semantic-color_content-action-reversed)',
+      'border-primary': 'var(--vtmn-semantic-color_border-primary)',
+      'border-secondary': 'var(--vtmn-semantic-color_border-secondary)',
+      'border-active': 'var(--vtmn-semantic-color_border-active)',
+      'border-inactive': 'var(--vtmn-semantic-color_border-inactive)',
+      'border-negative': 'var(--vtmn-semantic-color_border-negative)',
+      'border-warning': 'var(--vtmn-semantic-color_border-warning)',
+      'border-positive': 'var(--vtmn-semantic-color_border-positive)',
+      'border-information': 'var(--vtmn-semantic-color_border-information)',
+      'border-primary-reversed':
+        'var(--vtmn-semantic-color_border-primary-reversed)',
+      /* DEPRECATED colors below (no longer maintained) */
       brand: 'var(--vtmn-color_brand)',
       'brand-pro': 'var(--vtmn-color_brand-pro)',
       'brand-digital': {

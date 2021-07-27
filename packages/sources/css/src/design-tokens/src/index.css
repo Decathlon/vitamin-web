@@ -1,5 +1,7 @@
 @import './breakpoints';
 @import './colors';
+@import './opacities';
 @import './spacings';
 @import './typography';
-@import './opacities';
+@import './themes/core-light';
+@import './themes/core-dark';

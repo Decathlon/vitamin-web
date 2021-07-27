@@ -1,0 +1,35 @@
+/**
+ * @tokens Core theme (Dark mode)
+ * @presenter Color
+ */
+:root.dark {
+  --vtmn-semantic-color_background-primary: var(--vtmn-base-color_black);
+  --vtmn-semantic-color_background-secondary: var(--vtmn-base-color_grey900);
+  --vtmn-semantic-color_background-tertiary: var(--vtmn-base-color_grey800);
+  --vtmn-semantic-color_background-brand-primary: var(--vtmn-base-color_blue300);
+  --vtmn-semantic-color_background-brand-secondary: var(--vtmn-base-color_blue700);
+  --vtmn-semantic-color_background-accent: var(--vtmn-base-color_yellow400);
+  --vtmn-semantic-color_background-discount: var(--vtmn-base-color_red400);
+  --vtmn-semantic-color_background-primary-reversed: var(--vtmn-base-color_black);
+  --vtmn-semantic-color_background-brand-primary-reversed: var(--vtmn-base-color_black);
+  --vtmn-semantic-color_content-primary: var(--vtmn-base-color_white);
+  --vtmn-semantic-color_content-secondary: var(--vtmn-base-color_grey300);
+  --vtmn-semantic-color_content-action: var(--vtmn-base-color_blue200);
+  --vtmn-semantic-color_content-active: var(--vtmn-base-color_blue300);
+  --vtmn-semantic-color_content-inactive: var(--vtmn-base-color_grey500);
+  --vtmn-semantic-color_content-negative: var(--vtmn-base-color_red300);
+  --vtmn-semantic-color_content-warning: var(--vtmn-base-color_orange300);
+  --vtmn-semantic-color_content-positive: var(--vtmn-base-color_conifer300);
+  --vtmn-semantic-color_content-information: var(--vtmn-base-color_blue300);
+  --vtmn-semantic-color_content-primary-reversed: var(--vtmn-base-color_black);
+  --vtmn-semantic-color_content-action-reversed: var(--vtmn-base-color_black);
+  --vtmn-semantic-color_border-primary: var(--vtmn-base-color_white);
+  --vtmn-semantic-color_border-secondary: var(--vtmn-base-color_grey200);
+  --vtmn-semantic-color_border-active: var(--vtmn-base-color_blue300);
+  --vtmn-semantic-color_border-inactive: var(--vtmn-base-color_grey500);
+  --vtmn-semantic-color_border-negative: var(--vtmn-base-color_red300);
+  --vtmn-semantic-color_border-warning: var(--vtmn-base-color_orange300);
+  --vtmn-semantic-color_border-positive: var(--vtmn-base-color_conifer300);
+  --vtmn-semantic-color_border-information: var(--vtmn-base-color_blue300);
+  --vtmn-semantic-color_border-primary-reversed: var(--vtmn-base-color_black);
+}

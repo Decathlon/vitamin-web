@@ -1,7 +1,71 @@
 /**
- * @tokens Colors
+ * @tokens Base colors palette
  * @presenter Color
  */
+:root {
+  --vtmn-base-color_blue50: #e7f3f9;
+  --vtmn-base-color_blue100: #bedeef;
+  --vtmn-base-color_blue200: #7ebee0;
+  --vtmn-base-color_blue300: #3d9acc;
+  --vtmn-base-color_blue400: #007dbc;
+  --vtmn-base-color_blue500: #00689d;
+  --vtmn-base-color_blue600: #00537d;
+  --vtmn-base-color_blue700: #012b49;
+  --vtmn-base-color_green50: #e4f9f3;
+  --vtmn-base-color_green100: #beefe2;
+  --vtmn-base-color_green200: #7cdfc4;
+  --vtmn-base-color_green300: #21ce9c;
+  --vtmn-base-color_green400: #02be8a;
+  --vtmn-base-color_green500: #029e73;
+  --vtmn-base-color_green600: #017f5c;
+  --vtmn-base-color_green700: #006f43;
+  --vtmn-base-color_conifer50: #eafbe8;
+  --vtmn-base-color_conifer100: #cbf0c7;
+  --vtmn-base-color_conifer200: #88d77f;
+  --vtmn-base-color_conifer300: #74c76a;
+  --vtmn-base-color_conifer400: #23a942;
+  --vtmn-base-color_conifer500: #41a036;
+  --vtmn-base-color_conifer600: #378d2e;
+  --vtmn-base-color_conifer700: #256c1d;
+  --vtmn-base-color_yellow50: #fffef0;
+  --vtmn-base-color_yellow100: #fffbc7;
+  --vtmn-base-color_yellow200: #fff58d;
+  --vtmn-base-color_yellow300: #fff370;
+  --vtmn-base-color_yellow400: #ffea28;
+  --vtmn-base-color_yellow500: #bcb02c;
+  --vtmn-base-color_yellow600: #999028;
+  --vtmn-base-color_yellow700: #67611b;
+  --vtmn-base-color_orange50: #fff3ed;
+  --vtmn-base-color_orange100: #ffe4d6;
+  --vtmn-base-color_orange200: #fac3a5;
+  --vtmn-base-color_orange300: #fa9c69;
+  --vtmn-base-color_orange400: #ff600a;
+  --vtmn-base-color_orange500: #c15e29;
+  --vtmn-base-color_orange600: #9a4b21;
+  --vtmn-base-color_orange700: #673216;
+  --vtmn-base-color_red50: #feeced;
+  --vtmn-base-color_red100: #fec9cb;
+  --vtmn-base-color_red200: #fd9297;
+  --vtmn-base-color_red300: #fd7278;
+  --vtmn-base-color_red400: #e3262f;
+  --vtmn-base-color_red500: #ab0009;
+  --vtmn-base-color_red600: #870007;
+  --vtmn-base-color_red700: #5a0005;
+  --vtmn-base-color_white: #fff;
+  --vtmn-base-color_grey50: #f7f8f9;
+  --vtmn-base-color_grey100: #eff1f3;
+  --vtmn-base-color_grey200: #d9dde1;
+  --vtmn-base-color_grey300: #b3bac3;
+  --vtmn-base-color_grey400: #8c96a2;
+  --vtmn-base-color_grey500: #687787;
+  --vtmn-base-color_grey600: #4e5d6b;
+  --vtmn-base-color_grey700: #344450;
+  --vtmn-base-color_grey800: #1a2a34;
+  --vtmn-base-color_grey900: #172129;
+  --vtmn-base-color_black: #001018;
+}
+
+/* DEPRECATED (no longer maintained) */
 :root {
   --vtmn-color_black: #001018;
   --vtmn-color_brand: #0082c3;
