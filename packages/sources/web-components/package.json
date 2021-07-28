@@ -38,7 +38,7 @@
   "devDependencies": {
     "@stencil/postcss": "^2.0.0",
     "@vtmn/icons": "^0.3.3",
-    "chokidar-cli": "^2.1.0",
+    "chokidar-cli": "^3.0.0",
     "postcss-import": "^14.0.0"
   },
   "publishConfig": {

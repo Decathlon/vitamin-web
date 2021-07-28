@@ -31,7 +31,7 @@
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.0.0",
     "@vtmn/icons": "^0.3.3",
-    "chokidar-cli": "^2.1.0",
+    "chokidar-cli": "^3.0.0",
     "eslint": "7.31.0",
     "eslint-plugin-svelte3": "3.2.0",
     "rollup": "^2.52.1",

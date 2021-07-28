@@ -35,7 +35,7 @@
     "build:sprite": "shx mkdir -p ./dist/vitamix/sprite && spritesh --viewbox \"0 0 16 16\" -i src/vitamix -o dist/vitamix/sprite/vitamix.svg && node src/scripts/add-sprite-declaration.js"
   },
   "devDependencies": {
-    "chokidar-cli": "^2.1.0",
+    "chokidar-cli": "^3.0.0",
     "fantasticon": "^1.1.1",
     "fs-extra": "^10.0.0",
     "rimraf": "^3.0.2",
