@@ -44,7 +44,7 @@ Reversed.parameters = {
       code: reversed,
     },
   },
-  backgrounds: { default: 'blue' },
+  backgrounds: { default: 'primary-reversed' },
 };
 
 export const Accent = () => accent;

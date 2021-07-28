@@ -1,0 +1,16 @@
+<div class="vtmn-select">
+  <label for="my-select">Theme:</label>
+
+  <select onchange="addTheme(this.value)">
+    <option value="" disabled="" selected="">Select</option>
+    <option value="vtmn-theme_core-light">Core theme (Light mode)</option>
+    <option value="vtmn-theme_core-dark">Core theme (Dark mode)</option>
+  </select>
+</div>
+
+<script>
+  function addTheme(value) {
+    document.documentElement.removeAttribute('class');
+    document.documentElement.setAttribute('class', value);
+  }
+</script>

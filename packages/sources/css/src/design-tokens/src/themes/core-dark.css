@@ -2,7 +2,7 @@
  * @tokens Core theme (Dark mode)
  * @presenter Color
  */
-:root.dark {
+:root.vtmn-theme_core-dark {
   --vtmn-semantic-color_background-primary: var(--vtmn-base-color_black);
   --vtmn-semantic-color_background-secondary: var(--vtmn-base-color_grey900);
   --vtmn-semantic-color_background-tertiary: var(--vtmn-base-color_grey800);

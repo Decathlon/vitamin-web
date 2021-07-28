@@ -19,20 +19,13 @@ For more details, see our [Colors' guideline](https://www.decathlon.design/726f8
 If you don't know CSS Custom Properties, you can see basic usage documentation [here](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#Basic_usage). All our CSS Custom Properties for colors are listed at "Swatches" column just below:
 
 <ColorPalette>
-  {Object.keys(tailwindConfig.theme.colors).map((key) => (
-    <ColorItem
-      title={key}
-      colors={
-        typeof tailwindConfig.theme.colors[key] === 'object'
-          ? Object.keys(tailwindConfig.theme.colors[key]).map((color) =>
-              color !== 'DEFAULT'
-                ? `var(--vtmn-color_${key}-${color})`
-                : `var(--vtmn-color_${key})`,
-            )
-          : [tailwindConfig.theme.colors[key]]
-      }
-    />
-  ))}
+  {Object.keys(tailwindConfig.theme.colors).map((key) => {
+    if (typeof tailwindConfig.theme.colors[key] === 'string') {
+      return (
+        <ColorItem title={key} colors={[tailwindConfig.theme.colors[key]]} />
+      );
+    }
+  })}
 </ColorPalette>
 
 ## Using [Tailwind CSS](https://tailwindcss.com) utility classes
@@ -44,5 +37,11 @@ All our Tailwind CSS colors' configuration is listed just below:
 
 <Source
   language="json"
-  code={JSON.stringify(tailwindConfig.theme.colors, null, 2)}
+  code={JSON.stringify(
+    Object.keys(tailwindConfig.theme.colors).filter(
+      (key) => typeof tailwindConfig.theme.colors[key] === 'string',
+    ),
+    null,
+    2,
+  )}
 />

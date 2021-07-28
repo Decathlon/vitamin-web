@@ -3,7 +3,7 @@
  * @presenter Color
  */
 :root,
-:root.light {
+:root.vtmn-theme_core-light {
   --vtmn-semantic-color_background-primary: var(--vtmn-base-color_white);
   --vtmn-semantic-color_background-secondary: var(--vtmn-base-color_grey50);
   --vtmn-semantic-color_background-tertiary: var(--vtmn-base-color_grey100);

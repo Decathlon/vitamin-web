@@ -52,8 +52,8 @@ module.exports = {
       'border-primary-reversed':
         'var(--vtmn-semantic-color_border-primary-reversed)',
       /* DEPRECATED colors below (no longer maintained) */
-      brand: 'var(--vtmn-color_brand)',
-      'brand-pro': 'var(--vtmn-color_brand-pro)',
+      brand: { DEFAULT: 'var(--vtmn-color_brand)' },
+      'brand-pro': { DEFAULT: 'var(--vtmn-color_brand-pro)' },
       'brand-digital': {
         'light-1': 'var(--vtmn-color_brand-digital-light-1)',
         'light-2': 'var(--vtmn-color_brand-digital-light-2)',
@@ -70,7 +70,7 @@ module.exports = {
         'dark-1': 'var(--vtmn-color_green-dark-1)',
         'dark-2': 'var(--vtmn-color_green-dark-2)',
       },
-      white: 'var(--vtmn-color_white)',
+      white: { DEFAULT: 'var(--vtmn-color_white)' },
       grey: {
         'light-1': 'var(--vtmn-color_grey-light-1)',
         'light-2': 'var(--vtmn-color_grey-light-2)',
@@ -81,11 +81,11 @@ module.exports = {
         'dark-2': 'var(--vtmn-color_grey-dark-2)',
         'dark-3': 'var(--vtmn-color_grey-dark-3)',
       },
-      black: 'var(--vtmn-color_black)',
-      success: 'var(--vtmn-color_success)',
-      info: 'var(--vtmn-color_info)',
-      warning: 'var(--vtmn-color_warning)',
-      danger: 'var(--vtmn-color_danger)',
+      black: { DEFAULT: 'var(--vtmn-color_black)' },
+      success: { DEFAULT: 'var(--vtmn-color_success)' },
+      info: { DEFAULT: 'var(--vtmn-color_info)' },
+      warning: { DEFAULT: 'var(--vtmn-color_warning)' },
+      danger: { DEFAULT: 'var(--vtmn-color_danger)' },
       yellow: {
         'light-1': 'var(--vtmn-color_yellow-light-1)',
         'light-2': 'var(--vtmn-color_yellow-light-2)',
