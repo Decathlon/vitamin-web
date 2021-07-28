@@ -2,58 +2,55 @@
 @import '@vtmn/css-design-tokens/src/colors';
 @import '@vtmn/css-design-tokens/src/spacings';
 @import '@vtmn/css-design-tokens/src/typography';
-@import '@vtmn/css-design-tokens/src/opacities';
+@import '@vtmn/css-design-tokens/src/shadows';
 
 /* START TOOLTIP STYLES */
 .vtmn-tooltip {
-  position: relative; /* opinion 1 */
+  position: relative;
 }
 
 /* Applies to all tooltips */
 .vtmn-tooltip::before,
 .vtmn-tooltip::after {
-  text-transform: none; /* opinion 2 */
-  font-size: 0.9em; /* opinion 3 */
-  line-height: 1;
+  font-family: var(--vtmn-typo_font-family);
+  font-size: var(--vtmn-typo_text-3-font-size);
+  font-weight: var(--vtmn-typo_font-weight--regular);
+  line-height: var(--vtmn-typo_text-3-line-height);
   user-select: none;
   pointer-events: none;
   position: absolute;
   display: none;
-  opacity: 0;
+  opacity: 1;
+  cursor: help;
 }
 .vtmn-tooltip::before {
   content: '';
-  border: 5px solid transparent; /* opinion 4 */
-  z-index: 1001; /* absurdity 1 */
+  border: rem(8px) solid transparent;
+  z-index: 1000;
 }
 .vtmn-tooltip::after {
-  content: attr(data-tooltip); /* magic! */
-
-  /* most of the rest of this is opinion */
-  font-family: Helvetica, sans-serif;
-  text-align: center;
-
-  /* 
-    Let the content set the size of the tooltips 
-    but this will also keep them from being obnoxious
-    */
-  min-width: 3em;
-  max-width: 21em;
+  content: attr(data-tooltip);
+  width: fit-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: 1ch 1.5ch;
-  border-radius: 0.3ch;
-  box-shadow: 0 1em 2em -0.5em rgba(0, 0, 0, 0.35);
-  background: #333;
-  color: #fff;
-  z-index: 1000; /* absurdity 2 */
+  padding: rem(8px) rem(12px);
+  height: rem(36px);
+  border-radius: rem(4px);
+  box-shadow: var(--vtmn-shadow_200);
+  background-color: var(--vtmn-color_black);
+  color: var(--vtmn-color_white);
+  z-index: 99;
 }
 
 /* Make the tooltips respond to hover */
 .vtmn-tooltip:hover::before,
-.vtmn-tooltip:hover::after {
-  display: block;
+.vtmn-tooltip:hover::after,
+.vtmn-tooltip:focus-visible::before,
+.vtmn-tooltip:focus-visible::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* don't show empty tooltips */
@@ -67,11 +64,11 @@
 .vtmn-tooltip[direction^='top']::before {
   bottom: 100%;
   border-bottom-width: 0;
-  border-top-color: #333;
+  border-top-color: var(--vtmn-color_black);
 }
 .vtmn-tooltip:not([direction])::after,
 .vtmn-tooltip[direction^='top']::after {
-  bottom: calc(100% + 5px);
+  bottom: calc(100% + rem(7px));
 }
 .vtmn-tooltip:not([direction])::before,
 .vtmn-tooltip:not([direction])::after,
@@ -81,14 +78,26 @@
   transform: translate(-50%, -0.5em);
 }
 
+/* DIRECTION: top-left */
+.vtmn-tooltip:not([direction])::after,
+.vtmn-tooltip[direction='top-left']::after {
+  transform: translate(-75%, -0.5em);
+}
+
+/* DIRECTION: top-right */
+.vtmn-tooltip:not([direction])::after,
+.vtmn-tooltip[direction='top-right']::after {
+  transform: translate(-25%, -0.5em);
+}
+
 /* DIRECTION: bottom */
 .vtmn-tooltip[direction^='bottom']::before {
   top: 100%;
   border-top-width: 0;
-  border-bottom-color: #333;
+  border-bottom-color: var(--vtmn-color_black);
 }
 .vtmn-tooltip[direction^='bottom']::after {
-  top: calc(100% + 5px);
+  top: calc(100% + rem(7px));
 }
 .vtmn-tooltip[direction^='bottom']::before,
 .vtmn-tooltip[direction^='bottom']::after {
@@ -96,17 +105,27 @@
   transform: translate(-50%, 0.5em);
 }
 
+/* DIRECTION: bottom-left */
+.vtmn-tooltip[direction='bottom-left']::after {
+  transform: translate(-75%, 0.5em);
+}
+
+/* DIRECTION: bottom-right */
+.vtmn-tooltip[direction='bottom-right']::after {
+  transform: translate(-25%, 0.5em);
+}
+
 /* DIRECTION: LEFT */
 .vtmn-tooltip[direction^='left']::before {
   top: 50%;
   border-right-width: 0;
-  border-left-color: #333;
-  left: calc(0em - 5px);
+  border-left-color: var(--vtmn-color_black);
+  left: calc(0em - rem(7px));
   transform: translate(-0.5em, -50%);
 }
 .vtmn-tooltip[direction^='left']::after {
   top: 50%;
-  right: calc(100% + 5px);
+  right: calc(100% + rem(7px));
   transform: translate(-0.5em, -50%);
 }
 
@@ -114,163 +133,12 @@
 .vtmn-tooltip[direction^='right']::before {
   top: 50%;
   border-left-width: 0;
-  border-right-color: #333;
-  right: calc(0em - 5px);
+  border-right-color: var(--vtmn-color_black);
+  right: calc(0em - rem(7px));
   transform: translate(0.5em, -50%);
 }
 .vtmn-tooltip[direction^='right']::after {
   top: 50%;
-  left: calc(100% + 5px);
+  left: calc(100% + rem(7px));
   transform: translate(0.5em, -50%);
 }
-
-/* KEYFRAMES */
-@keyframes tooltip {
-  to {
-    opacity: 1;
-  }
-}
-
-/* FX All The Things */
-.vtmn-tooltip:not([direction]):hover::before,
-.vtmn-tooltip:not([direction]):hover::after,
-.vtmn-tooltip[direction^='top']:hover::before,
-.vtmn-tooltip[direction^='top']:hover::after,
-.vtmn-tooltip[direction^='bottom']:hover::before,
-.vtmn-tooltip[direction^='bottom']:hover::after {
-  animation: tooltip 200ms ease-out forwards;
-}
-
-.vtmn-tooltip[direction^='left']:hover::before,
-.vtmn-tooltip[direction^='left']:hover::after,
-.vtmn-tooltip[direction^='right']:hover::before,
-.vtmn-tooltip[direction^='right']:hover::after {
-  animation: tooltip 200ms ease-out forwards;
-}
-
-/* UNRELATED to tooltips */
-main {
-  flex: 1 1 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-main div {
-  text-align: center;
-  color: #353539;
-}
-main span {
-  padding: 0.5em 1em;
-  margin: 0.5em;
-  display: inline-block;
-  background: #dedede;
-}
-
-/*
-.vtmn-tooltip {
-  position: relative;
-  background: #ffbb99;
-  cursor: pointer;
-}
-
-.vtmn-tooltip::before {
-  content: attr(data-tooltip);
-  display: none;
-  position: absolute;
-  padding: rem(8px) rem(12px);
-  min-height: rem(36px);
-  width: fit-content;
-  font-family: var(--vtmn-typo_font-family);
-  font-size: var(--vtmn-typo_text-3-font-size);
-  font-weight: var(--vtmn-typo_font-weight--regular);
-  line-height: var(--vtmn-typo_text-3-line-height);
-  color: var(--vtmn-color_white);
-  background-color: var(--vtmn-color_black);
-  border-radius: rem(4px);
-  z-index: 99;
-}
-
-.vtmn-tooltip:hover::before {
-  display: inline-block;
-  bottom: 0;
-} */
-
-/* Original
-.vtmn-tooltip {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  background-color: var(--vtmn-color_black);
-  padding: rem(8px) rem(12px);
-  height: rem(36px);
-  width: fit-content;
-  border-radius: rem(4px);
-  color: var(--vtmn-color_white);
-  font-family: var(--vtmn-typo_font-family);
-  font-size: var(--vtmn-typo_text-3-font-size);
-  font-weight: var(--vtmn-typo_font-weight--regular);
-  line-height: var(--vtmn-typo_text-3-line-height);
-}
-
-.vtmn-tooltip--top::before {
-  content: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m8 5.333 4 4H4l4-4z' fill='%23001018'/></svg>");
-  position: absolute;
-  top: 0;
-  transform: translateY(rem(-8px)) scale(1.5);
-}
-
-.vtmn-tooltip--top-left::before {
-  content: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m8 5.333 4 4H4l4-4z' fill='%23001018'/></svg>");
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(rem(8px), rem(-8px)) scale(1.5);
-}
-
-.vtmn-tooltip--top-right::before {
-  content: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m8 5.333 4 4H4l4-4z' fill='%23001018'/></svg>");
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(rem(-8px), rem(-8px)) scale(1.5);
-}
-
-.vtmn-tooltip--left::before {
-  content: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m5.333 8 4-4v8l-4-4z' fill='%23001018'/></svg>");
-  position: absolute;
-  left: 0;
-  transform: translate(rem(-10px), rem(4px)) scale(1.5);
-}
-
-.vtmn-tooltip--right::before {
-  content: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m10.667 8-4 4V4l4 4z' fill='%23001018'/></svg>");
-  position: absolute;
-  right: 0;
-  transform: translate(rem(10px), rem(4px)) scale(1.5);
-}
-
-.vtmn-tooltip--bottom::before {
-  content: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m8 10.667-4-4h8l-4 4z' fill='%23001018'/></svg>");
-  position: absolute;
-  bottom: 0;
-  transform: translateY(rem(16px)) scale(1.5);
-}
-
-.vtmn-tooltip--bottom-left::before {
-  content: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m8 10.667-4-4h8l-4 4z' fill='%23001018'/></svg>");
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: translate(rem(8px), rem(16px)) scale(1.5);
-}
-
-.vtmn-tooltip--bottom-right::before {
-  content: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m8 10.667-4-4h8l-4 4z' fill='%23001018'/></svg>");
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  transform: translate(rem(-8px), rem(16px)) scale(1.5);
-}
-*/
