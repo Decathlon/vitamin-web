@@ -4,7 +4,6 @@
 @import '@vtmn/css-design-tokens/src/typography';
 @import '@vtmn/css-design-tokens/src/shadows';
 
-/* START TOOLTIP STYLES */
 .vtmn-tooltip {
   position: relative;
 }
@@ -16,6 +15,7 @@
   font-size: var(--vtmn-typo_text-3-font-size);
   font-weight: var(--vtmn-typo_font-weight--regular);
   line-height: var(--vtmn-typo_text-3-line-height);
+  box-shadow: var(--vtmn-shadow_200);
   user-select: none;
   pointer-events: none;
   position: absolute;
@@ -37,7 +37,6 @@
   padding: rem(8px) rem(12px);
   height: rem(36px);
   border-radius: rem(4px);
-  box-shadow: var(--vtmn-shadow_200);
   background-color: var(--vtmn-color_black);
   color: var(--vtmn-color_white);
   z-index: 99;
@@ -59,7 +58,7 @@
   display: none !important;
 }
 
-/* DIRECTION: top */
+/* DIRECTION: TOP */
 .vtmn-tooltip:not([data-position])::before,
 .vtmn-tooltip[data-position^='top']::before {
   bottom: 100%;
@@ -78,19 +77,19 @@
   transform: translate(-50%, -0.5em);
 }
 
-/* DIRECTION: top-left */
+/* DIRECTION: TOP-LEFT */
 .vtmn-tooltip:not([data-position])::after,
-.vtmn-tooltip[data-position='top-start']::after {
+.vtmn-tooltip[data-position='top-left']::after {
   transform: translate(-75%, -0.5em);
 }
 
-/* DIRECTION: top-right */
+/* DIRECTION: TOP-RIGHT */
 .vtmn-tooltip:not([data-position])::after,
-.vtmn-tooltip[data-position='top-end']::after {
+.vtmn-tooltip[data-position='top-right']::after {
   transform: translate(-25%, -0.5em);
 }
 
-/* DIRECTION: bottom */
+/* DIRECTION: BOTTOM */
 .vtmn-tooltip[data-position^='bottom']::before {
   top: 100%;
   border-top-width: 0;
@@ -105,13 +104,13 @@
   transform: translate(-50%, 0.5em);
 }
 
-/* DIRECTION: bottom-left */
-.vtmn-tooltip[data-position='bottom-start']::after {
+/* DIRECTION: BOTTOM-LEFT */
+.vtmn-tooltip[data-position='bottom-left']::after {
   transform: translate(-75%, 0.5em);
 }
 
-/* DIRECTION: bottom-right */
-.vtmn-tooltip[data-position='bottom-end']::after {
+/* DIRECTION: BOTTOM-RIGHT */
+.vtmn-tooltip[data-position='bottom-right']::after {
   transform: translate(-25%, 0.5em);
 }
 
