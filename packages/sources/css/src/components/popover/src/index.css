@@ -4,10 +4,99 @@
 @import '@vtmn/css-design-tokens/src/typography';
 
 .vtmn-popover {
+  background: #ececec;
+  color: #555;
+  cursor: help;
+  font-family: var(--vtmn-typo_font-family);
+  position: absolute;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 15px 20px;
+  width: 200px;
+  left: 50%;
+  top: 50%;
+  transform: translateZ(0) translateX(-50%) translateY(-50%);
+  -webkit-font-smoothing: antialiased;
+}
+
+.vtmn-popover [role='tooltip'] {
+  bottom: 100%;
+  left: 50%;
+  opacity: 0;
+  padding: rem(16px);
+  width: max-content;
+  max-width: rem(250px);
+  transform: translate(-50%, rem(10px));
+  box-shadow: 0 rem(16px) rem(16px) 0 rgba(0, 0, 0, 0.28);
+  pointer-events: none;
+  position: absolute;
+  background: var(--vtmn-color_black);
+  color: var(--vtmn-color_white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.vtmn-popover_title {
+  margin: rem(4px) 0;
+  font-family: var(--vtmn-typo_font-family);
+  font-weight: var(--vtmn-typo_font-weight--bold);
+  font-size: var(--vtmn-typo_text-2-font-size);
+  line-height: var(--vtmn-typo_text-2-line-height);
+  align-self: flex-start;
+}
+
+.vtmn-popover_text {
+  margin: rem(8px) 0;
+  font-family: var(--vtmn-typo_font-family);
+  font-weight: var(--vtmn-typo_font-weight--regular);
+  font-size: var(--vtmn-typo_text-3-font-size);
+  line-height: var(--vtmn-typo_text-3-line-height);
+  align-self: flex-start;
+  text-align: left;
+}
+
+.vtmn-popover button {
+  margin: rem(8px) 0;
+  align-self: flex-end;
+}
+
+.vtmn-popover [role='tooltip']::before {
+  bottom: -1.2em;
+  height: 1.2em;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  content: ' ';
+  display: block;
+}
+
+.vtmn-popover [role='tooltip']::after {
+  border-left: solid transparent 0.8em;
+  border-right: solid transparent 0.8em;
+  border-top: solid var(--vtmn-color_black) 0.8em;
+  bottom: -0.8em;
+  content: ' ';
+  height: 0;
+  left: 50%;
+  margin-left: -13px;
+  width: 0;
+  position: absolute;
+}
+
+.vtmn-popover:hover [role='tooltip'],
+.vtmn-popover:focus [role='tooltip'] {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, 0);
+}
+
+/*
+.vtmn-popover {
   position: relative;
 }
 
-/* Applies to all popovers */
+/* Applies to all popovers 
 .vtmn-popover::before,
 .vtmn-popover::after {
   font-family: var(--vtmn-typo_font-family);
@@ -40,7 +129,7 @@
   z-index: 99;
 }
 
-/* Make the popovers respond to hover */
+/* Make the popovers respond to hover 
 .vtmn-popover:hover::before,
 .vtmn-popover:hover::after,
 .vtmn-popover:focus-visible::before,
@@ -50,13 +139,13 @@
   align-items: center;
 }
 
-/* don't show empty popovers */
+/* don't show empty popovers 
 .vtmn-popover[data-popover='']::before,
 .vtmn-popover[data-popover='']::after {
   display: none !important;
 }
 
-/* DIRECTION: TOP */
+/* DIRECTION: TOP 
 .vtmn-popover:not([data-position])::before,
 .vtmn-popover[data-position^='top']::before {
   bottom: 100%;
@@ -75,19 +164,19 @@
   transform: translate(-50%, -0.5em);
 }
 
-/* DIRECTION: TOP-LEFT */
+/* DIRECTION: TOP-LEFT 
 .vtmn-popover:not([data-position])::after,
 .vtmn-popover[data-position='top-left']::after {
   transform: translate(-75%, -0.5em);
 }
 
-/* DIRECTION: TOP-RIGHT */
+/* DIRECTION: TOP-RIGHT 
 .vtmn-popover:not([data-position])::after,
 .vtmn-popover[data-position='top-right']::after {
   transform: translate(-25%, -0.5em);
 }
 
-/* DIRECTION: BOTTOM */
+/* DIRECTION: BOTTOM 
 .vtmn-popover[data-position^='bottom']::before {
   top: 100%;
   border-top-width: 0;
@@ -102,17 +191,17 @@
   transform: translate(-50%, 0.5em);
 }
 
-/* DIRECTION: BOTTOM-LEFT */
+/* DIRECTION: BOTTOM-LEFT 
 .vtmn-popover[data-position='bottom-left']::after {
   transform: translate(-75%, 0.5em);
 }
 
-/* DIRECTION: BOTTOM-RIGHT */
+/* DIRECTION: BOTTOM-RIGHT 
 .vtmn-popover[data-position='bottom-right']::after {
   transform: translate(-25%, 0.5em);
 }
 
-/* DIRECTION: LEFT */
+/* DIRECTION: LEFT 
 .vtmn-popover[data-position^='left']::before {
   top: 50%;
   border-right-width: 0;
@@ -126,7 +215,7 @@
   transform: translate(-0.5em, -50%);
 }
 
-/* DIRECTION: RIGHT */
+/* DIRECTION: RIGHT 
 .vtmn-popover[data-position^='right']::before {
   top: 50%;
   border-left-width: 0;
@@ -139,3 +228,4 @@
   left: calc(100% + rem(7px));
   transform: translate(0.5em, -50%);
 }
+*/
