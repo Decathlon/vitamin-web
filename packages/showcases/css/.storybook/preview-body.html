@@ -1,11 +1,12 @@
-<div class="vtmn-select">
-  <label for="my-select">Theme:</label>
+<div class="extended-toolbar">
+  <div class="vtmn-select">
+    <label for="my-select">Theme:</label>
 
-  <select onchange="addTheme(this.value)">
-    <option value="" disabled="" selected="">Select</option>
-    <option value="vtmn-theme_core-light">Core theme (Light mode)</option>
-    <option value="vtmn-theme_core-dark">Core theme (Dark mode)</option>
-  </select>
+    <select onchange="addTheme(this.value)">
+      <option value="vtmn-theme_core-light" selected>Core theme (Light mode)</option>
+      <option value="vtmn-theme_core-dark">Core theme (Dark mode)</option>
+    </select>
+  </div>
 </div>
 
 <script>

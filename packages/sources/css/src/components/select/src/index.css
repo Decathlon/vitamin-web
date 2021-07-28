@@ -1,16 +1,11 @@
-/* Design tokens */
-@import '@vtmn/css-design-tokens/src/colors';
-@import '@vtmn/css-design-tokens/src/spacings';
-@import '@vtmn/css-design-tokens/src/typography';
-
-/* @import '@vtmn/css-design-tokens/src/opacities'; */
+@import '@vtmn/css-design-tokens/src/index';
 
 .vtmn-select {
   font-family: var(--vtmn-typo_font-family);
   box-sizing: border-box;
   font-size: var(--vtmn-typo_text-2-font-size);
   line-height: var(--vtmn-typo_text-2-line-height);
-  color: var(--vtmn-color_black);
+  color: var(--vtmn-semantic-color_content-primary);
   width: min-content;
 }
 
