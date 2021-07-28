@@ -7,7 +7,7 @@
 /* Default button */
 .vtmn-btn {
   box-shadow: inset 0 0 0 rem(2px) transparent;
-  font-size: var(--vtmn-typo_text-1-font-size);
+  font-size: var(--vtmn-typo_text-2-font-size);
   min-height: rem(48px);
   max-width: 100%;
   padding: rem(14px) rem(24px);
@@ -18,8 +18,6 @@
   white-space: nowrap;
   background-color: var(--vtmn-color_brand-digital);
   border-radius: rem(4px);
-  border-width: 0;
-  box-sizing: border-box;
   display: inline-block;
   font-family: var(--vtmn-typo_font-family);
   font-weight: var(--vtmn-typo_font-weight--bold);
@@ -27,7 +25,6 @@
   text-align: center;
   color: var(--vtmn-color_white);
   fill: var(--vtmn-color_white);
-  text-decoration: none;
 }
 
 .vtmn-btn:not([disabled]):hover {
@@ -60,8 +57,7 @@
 }
 
 .vtmn-btn span[class^='vtmx-'] {
-  display: inline;
-  vertical-align: middle;
+  display: inline-block;
 }
 
 /* Primary button */
@@ -211,6 +207,7 @@
 
 .vtmn-btn--icon-alone span[class^='vtmx-'] {
   font-size: var(--vtmn-typo_text-2-font-size);
+  transform: translateY(rem(2px));
 }
 
 .vtmn-btn--icon-alone svg {
@@ -238,6 +235,7 @@
 
 .vtmn-btn_size--small.vtmn-btn--icon-alone span[class^='vtmx-'] {
   font-size: var(--vtmn-typo_text-3-font-size);
+  transform: translateY(rem(2px));
 }
 
 .vtmn-btn_size--medium.vtmn-btn--icon-alone {
@@ -262,12 +260,12 @@
 
 .vtmn-btn--icon-left span[class^='vtmx-'] {
   padding-right: rem(8px);
-  vertical-align: middle;
+  transform: translateY(rem(2px));
 }
 
 .vtmn-btn--icon-right span[class^='vtmx-'] {
   padding-left: rem(8px);
-  vertical-align: middle;
+  transform: translateY(rem(2px));
 }
 
 .vtmn-btn_size--small.vtmn-btn--icon-left span[class^='vtmx-'] {
