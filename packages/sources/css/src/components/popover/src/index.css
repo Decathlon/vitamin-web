@@ -1,0 +1,141 @@
+/* Design tokens */
+@import '@vtmn/css-design-tokens/src/colors';
+@import '@vtmn/css-design-tokens/src/spacings';
+@import '@vtmn/css-design-tokens/src/typography';
+
+.vtmn-popover {
+  position: relative;
+}
+
+/* Applies to all popovers */
+.vtmn-popover::before,
+.vtmn-popover::after {
+  font-family: var(--vtmn-typo_font-family);
+  font-size: var(--vtmn-typo_text-3-font-size);
+  font-weight: var(--vtmn-typo_font-weight--regular);
+  line-height: var(--vtmn-typo_text-3-line-height);
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  display: none;
+  opacity: 1;
+  cursor: help;
+}
+.vtmn-popover::before {
+  content: '';
+  border: rem(8px) solid transparent;
+  z-index: 1000;
+}
+.vtmn-popover::after {
+  content: attr(data-popover);
+  width: fit-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: rem(8px) rem(12px);
+  height: rem(36px);
+  border-radius: rem(4px);
+  background-color: var(--vtmn-color_black);
+  color: var(--vtmn-color_white);
+  z-index: 99;
+}
+
+/* Make the popovers respond to hover */
+.vtmn-popover:hover::before,
+.vtmn-popover:hover::after,
+.vtmn-popover:focus-visible::before,
+.vtmn-popover:focus-visible::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* don't show empty popovers */
+.vtmn-popover[data-popover='']::before,
+.vtmn-popover[data-popover='']::after {
+  display: none !important;
+}
+
+/* DIRECTION: TOP */
+.vtmn-popover:not([data-position])::before,
+.vtmn-popover[data-position^='top']::before {
+  bottom: 100%;
+  border-bottom-width: 0;
+  border-top-color: var(--vtmn-color_black);
+}
+.vtmn-popover:not([data-position])::after,
+.vtmn-popover[data-position^='top']::after {
+  bottom: calc(100% + rem(7px));
+}
+.vtmn-popover:not([data-position])::before,
+.vtmn-popover:not([data-position])::after,
+.vtmn-popover[data-position^='top']::before,
+.vtmn-popover[data-position^='top']::after {
+  left: 50%;
+  transform: translate(-50%, -0.5em);
+}
+
+/* DIRECTION: TOP-LEFT */
+.vtmn-popover:not([data-position])::after,
+.vtmn-popover[data-position='top-left']::after {
+  transform: translate(-75%, -0.5em);
+}
+
+/* DIRECTION: TOP-RIGHT */
+.vtmn-popover:not([data-position])::after,
+.vtmn-popover[data-position='top-right']::after {
+  transform: translate(-25%, -0.5em);
+}
+
+/* DIRECTION: BOTTOM */
+.vtmn-popover[data-position^='bottom']::before {
+  top: 100%;
+  border-top-width: 0;
+  border-bottom-color: var(--vtmn-color_black);
+}
+.vtmn-popover[data-position^='bottom']::after {
+  top: calc(100% + rem(7px));
+}
+.vtmn-popover[data-position^='bottom']::before,
+.vtmn-popover[data-position^='bottom']::after {
+  left: 50%;
+  transform: translate(-50%, 0.5em);
+}
+
+/* DIRECTION: BOTTOM-LEFT */
+.vtmn-popover[data-position='bottom-left']::after {
+  transform: translate(-75%, 0.5em);
+}
+
+/* DIRECTION: BOTTOM-RIGHT */
+.vtmn-popover[data-position='bottom-right']::after {
+  transform: translate(-25%, 0.5em);
+}
+
+/* DIRECTION: LEFT */
+.vtmn-popover[data-position^='left']::before {
+  top: 50%;
+  border-right-width: 0;
+  border-left-color: var(--vtmn-color_black);
+  left: calc(0em - rem(8px));
+  transform: translate(-0.5em, -50%);
+}
+.vtmn-popover[data-position^='left']::after {
+  top: 50%;
+  right: calc(100% + rem(7px));
+  transform: translate(-0.5em, -50%);
+}
+
+/* DIRECTION: RIGHT */
+.vtmn-popover[data-position^='right']::before {
+  top: 50%;
+  border-left-width: 0;
+  border-right-color: var(--vtmn-color_black);
+  right: calc(0em - rem(8px));
+  transform: translate(0.5em, -50%);
+}
+.vtmn-popover[data-position^='right']::after {
+  top: 50%;
+  left: calc(100% + rem(7px));
+  transform: translate(0.5em, -50%);
+}
