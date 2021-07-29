@@ -77,7 +77,7 @@
   transform: translate(-50%, -0.5em);
 }
 
-/* DIRECTION: TOP-LEFT */
+/* POSITION: TOP-LEFT */
 .vtmn-tooltip:not([data-position])::after,
 .vtmn-tooltip[data-position='top-left']::after {
   transform: translate(-75%, -0.5em);
