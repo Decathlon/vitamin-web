@@ -83,7 +83,7 @@
   transform: translate(-75%, -0.5em);
 }
 
-/* DIRECTION: TOP-RIGHT */
+/* POSITION: TOP-RIGHT */
 .vtmn-tooltip:not([data-position])::after,
 .vtmn-tooltip[data-position='top-right']::after {
   transform: translate(-25%, -0.5em);
