@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.4.3...@vtmn/css-button@0.4.4) (2021-07-28)
+
+**Note:** Version bump only for package @vtmn/css-button
+
+
+
+
+
+## [0.4.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.4.2...@vtmn/css-button@0.4.3) (2021-07-27)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** better icon alignment for buttons ([#474](https://github.com/Decathlon/vitamin-web/issues/474)) ([c1f2c1c](https://github.com/Decathlon/vitamin-web/commit/c1f2c1c97d932f88e1af5476dce0222484315a75))
+
+
+
+
+
+## [0.4.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.4.1...@vtmn/css-button@0.4.2) (2021-07-23)
+
+**Note:** Version bump only for package @vtmn/css-button
+
+
+
+
+
+## [0.4.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.4.0...@vtmn/css-button@0.4.1) (2021-07-23)
+
+**Note:** Version bump only for package @vtmn/css-button
+
+
+
+
+
+# [0.4.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.3.7...@vtmn/css-button@0.4.0) (2021-07-22)
+
+
+### Features
+
+* **@vtmn/css:** add variable for disabled state opacity ([#458](https://github.com/Decathlon/vitamin-web/issues/458)) ([d9f0e62](https://github.com/Decathlon/vitamin-web/commit/d9f0e624e55e4c6c1d1cb8672dd159c1879abfbd))
+
+
+
+
+
 ## [0.3.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.3.6...@vtmn/css-button@0.3.7) (2021-06-24)
 
 **Note:** Version bump only for package @vtmn/css-button

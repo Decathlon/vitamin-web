@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.5.3...@vtmn/svelte@0.5.4) (2021-07-28)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+## [0.5.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.5.2...@vtmn/svelte@0.5.3) (2021-07-28)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+## [0.5.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.5.1...@vtmn/svelte@0.5.2) (2021-07-23)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+## [0.5.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.5.0...@vtmn/svelte@0.5.1) (2021-07-23)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+# [0.5.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.4.7...@vtmn/svelte@0.5.0) (2021-07-23)
+
+
+### Features
+
+* **@vtmn/react @vtmn/vue @vtmn/svelte:** correct multiline states and helper texts ([#454](https://github.com/Decathlon/vitamin-web/issues/454)) ([f119bbe](https://github.com/Decathlon/vitamin-web/commit/f119bbe75eddf1f859461a071569bc6c53b4d1a3))
+
+
+
+
+
+## [0.4.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.4.6...@vtmn/svelte@0.4.7) (2021-07-22)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
 ## [0.4.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.4.5...@vtmn/svelte@0.4.6) (2021-07-19)
 
 **Note:** Version bump only for package @vtmn/svelte

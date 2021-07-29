@@ -2,6 +2,7 @@
 @import '@vtmn/css-design-tokens/src/colors';
 @import '@vtmn/css-design-tokens/src/spacings';
 @import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/opacities';
 
 .vtmn-radio-button[type='radio'] {
   position: absolute;
@@ -83,7 +84,7 @@
 }
 
 .vtmn-radio-button[type='radio']:disabled + label {
-  opacity: 0.38;
+  opacity: var(--vtmn-state_disabled_opacity);
   cursor: not-allowed;
 }
 

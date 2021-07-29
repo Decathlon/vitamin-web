@@ -1,0 +1,16 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import vitamixIcons from '@vtmn/icons/dist/vitamix/font/vitamix.json';
+
+# Overview
+
+<Meta title="Icons / Overview" />
+
+<Preview>
+  {Object.keys(vitamixIcons).map((icon) => (
+    <span
+      key={icon}
+      aria-label={icon}
+      className={`vtmx-${icon}`}
+      style={{ fontSize: 32 }}></span>
+  ))}
+</Preview>
