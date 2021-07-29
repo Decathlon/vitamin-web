@@ -58,7 +58,7 @@
   display: none !important;
 }
 
-/* DIRECTION: TOP */
+/* POSITION: TOP */
 .vtmn-tooltip:not([data-position])::before,
 .vtmn-tooltip[data-position^='top']::before {
   bottom: 100%;
