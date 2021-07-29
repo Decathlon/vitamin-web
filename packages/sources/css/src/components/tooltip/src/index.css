@@ -104,7 +104,7 @@
   transform: translate(-50%, 0.5em);
 }
 
-/* DIRECTION: BOTTOM-LEFT */
+/* POSITION: BOTTOM-LEFT */
 .vtmn-tooltip[data-position='bottom-left']::after {
   transform: translate(-75%, 0.5em);
 }
