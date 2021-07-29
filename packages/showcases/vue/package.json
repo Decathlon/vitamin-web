@@ -14,9 +14,9 @@
     "vue": "^3.0.0"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "6.3.5",
-    "@storybook/addon-essentials": "6.3.5",
-    "@storybook/vue3": "6.3.5",
+    "@storybook/addon-a11y": "6.3.6",
+    "@storybook/addon-essentials": "6.3.6",
+    "@storybook/vue3": "6.3.6",
     "@vtmn/icons": "*",
     "@vtmn/showcase-core": "*",
     "@vtmn/vue": "*",

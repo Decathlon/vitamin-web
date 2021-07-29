@@ -17,6 +17,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   background-color: var(--vtmn-color_brand-digital);
+  border: none;
   border-radius: rem(4px);
   display: inline-block;
   font-family: var(--vtmn-typo_font-family);
