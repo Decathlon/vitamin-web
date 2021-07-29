@@ -114,7 +114,7 @@
   transform: translate(-25%, 0.5em);
 }
 
-/* DIRECTION: LEFT */
+/* POSITION: LEFT */
 .vtmn-tooltip[data-position^='left']::before {
   top: 50%;
   border-right-width: 0;
