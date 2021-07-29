@@ -109,7 +109,7 @@
   transform: translate(-75%, 0.5em);
 }
 
-/* DIRECTION: BOTTOM-RIGHT */
+/* POSITION: BOTTOM-RIGHT */
 .vtmn-tooltip[data-position='bottom-right']::after {
   transform: translate(-25%, 0.5em);
 }
