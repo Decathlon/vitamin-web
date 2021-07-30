@@ -140,3 +140,18 @@
   left: calc(100% + rem(7px));
   transform: translate(0.5em, -50%);
 }
+
+/* ANIMATION */
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.vtmn-tooltip:not([data-tooltip='']):hover::before,
+.vtmn-tooltip:not([data-tooltip='']):hover::after {
+  animation: fade 200ms ease-out forwards;
+}
