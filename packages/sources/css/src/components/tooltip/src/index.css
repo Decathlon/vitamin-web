@@ -38,7 +38,7 @@
   border-radius: rem(4px);
   background-color: var(--vtmn-color_black);
   color: var(--vtmn-color_white);
-  z-index: 99;
+  z-index: 1000;
 }
 
 /* Make the tooltips respond to hover */
@@ -62,9 +62,9 @@
 .vtmn-tooltip[data-position^='top']::before {
   bottom: 100%;
   border-bottom-width: 0;
-  border-top-color: var(--vtmn-color_black);
+  border-top: rem(8px) solid var(--vtmn-color_black);
   left: 50%;
-  transform: translate(-50%, -0.5em);
+  transform: translate(-50%, -78%);
 }
 
 .vtmn-tooltip:not([data-position])::after,
@@ -90,9 +90,9 @@
 .vtmn-tooltip[data-position^='bottom']::before {
   top: 100%;
   border-top-width: 0;
-  border-bottom-color: var(--vtmn-color_black);
+  border-bottom: rem(8px) solid var(--vtmn-color_black);
   left: 50%;
-  transform: translate(-50%, 0.5em);
+  transform: translate(-50%, 78%);
 }
 
 .vtmn-tooltip[data-position^='bottom']::after {
@@ -115,9 +115,9 @@
 .vtmn-tooltip[data-position^='left']::before {
   top: 50%;
   border-right-width: 0;
-  border-left-color: var(--vtmn-color_black);
+  border-left: rem(8px) solid var(--vtmn-color_black);
   left: calc(0em - rem(8px));
-  transform: translate(-0.5em, -50%);
+  transform: translate(-76%, -50%);
 }
 
 .vtmn-tooltip[data-position^='left']::after {
@@ -130,9 +130,9 @@
 .vtmn-tooltip[data-position^='right']::before {
   top: 50%;
   border-left-width: 0;
-  border-right-color: var(--vtmn-color_black);
+  border-right: rem(8px) solid var(--vtmn-color_black);
   right: calc(0em - rem(8px));
-  transform: translate(0.5em, -50%);
+  transform: translate(76%, -50%);
 }
 
 .vtmn-tooltip[data-position^='right']::after {
@@ -153,5 +153,5 @@
 
 .vtmn-tooltip:not([data-tooltip='']):hover::before,
 .vtmn-tooltip:not([data-tooltip='']):hover::after {
-  animation: fade 200ms ease-out forwards;
+  animation: fade 200ms ease-in-out forwards;
 }
