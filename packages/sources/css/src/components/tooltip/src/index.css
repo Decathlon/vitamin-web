@@ -89,7 +89,7 @@
   transform: translate(-25%, -0.5em);
 }
 
-/* DIRECTION: BOTTOM */
+/* POSITION: BOTTOM */
 .vtmn-tooltip[data-position^='bottom']::before {
   top: 100%;
   border-top-width: 0;
