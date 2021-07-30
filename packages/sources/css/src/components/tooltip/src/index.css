@@ -19,14 +19,14 @@
   user-select: none;
   position: absolute;
   display: none;
-  opacity: 1;
-  cursor: help;
 }
+
 .vtmn-tooltip::before {
   content: '';
   border: rem(8px) solid transparent;
   z-index: 1000;
 }
+
 .vtmn-tooltip::after {
   content: attr(data-tooltip);
   width: fit-content;
@@ -66,6 +66,7 @@
   left: 50%;
   transform: translate(-50%, -0.5em);
 }
+
 .vtmn-tooltip:not([data-position])::after,
 .vtmn-tooltip[data-position^='top']::after {
   bottom: calc(100% + rem(7px));
@@ -93,6 +94,7 @@
   left: 50%;
   transform: translate(-50%, 0.5em);
 }
+
 .vtmn-tooltip[data-position^='bottom']::after {
   top: calc(100% + rem(7px));
   left: 50%;
@@ -117,6 +119,7 @@
   left: calc(0em - rem(8px));
   transform: translate(-0.5em, -50%);
 }
+
 .vtmn-tooltip[data-position^='left']::after {
   top: 50%;
   right: calc(100% + rem(7px));
@@ -131,6 +134,7 @@
   right: calc(0em - rem(8px));
   transform: translate(0.5em, -50%);
 }
+
 .vtmn-tooltip[data-position^='right']::after {
   top: 50%;
   left: calc(100% + rem(7px));
