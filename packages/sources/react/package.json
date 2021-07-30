@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/react",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "Decathlon Design System - Vitamin React components library",
   "keywords": [
     "design-system",
@@ -57,7 +57,7 @@
     "@types/react-dom": "^17.0.0",
     "@typescript-eslint/eslint-plugin": "^4.28.4",
     "@typescript-eslint/parser": "^4.28.4",
-    "@vtmn/icons": "^0.3.3",
+    "@vtmn/icons": "^0.3.4",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.1",
     "babel-plugin-typescript-to-proptypes": "^1.4.2",
     "enzyme": "^3.11.0",
