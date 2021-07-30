@@ -147,88 +147,40 @@
 
 /* POSITION: LEFT */
 .vtmn-popover[data-position='left'] [role='tooltip'] {
-  bottom: 100%;
-  left: 50%;
-  opacity: 0;
-  padding: rem(16px);
-  width: max-content;
-  max-width: rem(250px);
-  transform: translate(-50%, 115%);
-  box-shadow: 0 rem(16px) rem(16px) 0 rgba(0, 0, 0, 0.28);
-  pointer-events: none;
-  position: absolute;
-  border-radius: rem(8px);
-  background: var(--vtmn-color_black);
-  color: var(--vtmn-color_white);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  transform: translate(-100%, -50%);
 }
 
 .vtmn-popover[data-position='left'] [role='tooltip']::after {
-  z-index: 1000;
   border-top: solid transparent 0.6em;
   border-bottom: solid transparent 0.6em;
   border-left: solid var(--vtmn-color_black) 0.65em;
   right: -0.6em;
   bottom: 50%;
-  border-radius: 0;
-  content: ' ';
-  height: 0;
-  width: 0;
-  position: absolute;
+  box-shadow: none;
 }
 
 .vtmn-popover[data-position='left']:hover [role='tooltip'],
 .vtmn-popover[data-position='left']:focus [role='tooltip'] {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translate(-100%, 50%);
-  left: -1em;
-  bottom: 0;
+  left: -1.5em;
 }
 
 /* POSITION: RIGHT */
 .vtmn-popover[data-position='right'] [role='tooltip'] {
-  bottom: 100%;
-  left: 50%;
-  opacity: 0;
-  padding: rem(16px);
-  width: max-content;
-  max-width: rem(250px);
-  transform: translate(-50%, 115%);
-  box-shadow: 0 rem(16px) rem(16px) 0 rgba(0, 0, 0, 0.28);
-  pointer-events: none;
-  position: absolute;
-  border-radius: rem(8px);
-  background: var(--vtmn-color_black);
-  color: var(--vtmn-color_white);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  transform: translate(100%, -50%);
 }
 
 .vtmn-popover[data-position='right'] [role='tooltip']::after {
-  z-index: 1000;
   border-top: solid transparent 0.6em;
   border-bottom: solid transparent 0.6em;
   border-right: solid var(--vtmn-color_black) 0.65em;
   left: -0.6em;
   bottom: 50%;
-  border-radius: 0;
-  content: ' ';
-  height: 0;
-  width: 0;
-  position: absolute;
+  box-shadow: none;
 }
 
 .vtmn-popover[data-position='right']:hover [role='tooltip'],
 .vtmn-popover[data-position='right']:focus [role='tooltip'] {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translate(40%, 50%);
-  left: 0;
-  bottom: 0;
+  right: -1.5em;
 }
 
 /*
