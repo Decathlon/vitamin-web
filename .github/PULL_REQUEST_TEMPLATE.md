@@ -5,7 +5,8 @@
 - [ ] Make sure you are requesting to **pull a topic/feature/bugfix branch**. Don't request your main!
 - [ ] Check the commit's or even all commits' message styles matches our requested structure.
 - [ ] Check your code additions will fail neither code linting checks nor unit test.
-- [ ] Check PR name, it must follow the following pattern : TYPE(@vtmn/PACKAGENAME): SHORT DESCRIPTION
+- [ ] Check PR name, it must follow the https://www.conventionalcommits.org pattern
+- [ ] If it's a new component in CSS, ask for design review
 
 ## Description
 
