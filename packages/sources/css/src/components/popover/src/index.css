@@ -5,6 +5,7 @@
 
 .vtmn-popover {
   position: relative;
+  cursor: pointer;
 }
 
 .vtmn-popover_title {
@@ -41,7 +42,6 @@
   background: var(--vtmn-color_black);
   color: var(--vtmn-color_white);
   display: none;
-  pointer-events: none;
   position: absolute;
   padding: rem(16px);
 }
@@ -53,7 +53,7 @@
   height: 0;
   width: 0;
   position: absolute;
-  box-shadow: 0 rem(16px) rem(16px) 0 rgba(0, 0, 0, 0.28);
+  box-shadow: none;
 }
 
 .vtmn-popover:hover [role='tooltip'],
@@ -156,7 +156,6 @@
   border-left: solid var(--vtmn-color_black) 0.65em;
   right: -0.6em;
   bottom: 50%;
-  box-shadow: none;
 }
 
 .vtmn-popover[data-position='left']:hover [role='tooltip'],
@@ -175,11 +174,10 @@
   border-right: solid var(--vtmn-color_black) 0.65em;
   left: -0.6em;
   bottom: 50%;
-  box-shadow: none;
 }
 
 .vtmn-popover[data-position='right']:hover [role='tooltip'],
-.vtmn-popover[data-position='right']:focus [role='tooltip'] {
+.vtmn-popover[data-position='right']:focus-within [role='tooltip'] {
   right: -1.5em;
 }
 
@@ -193,6 +191,6 @@
   }
 }
 
-.vtmn-popover:hover [role='tooltip'] {
+.vtmn-popover:not(:focus-within):not(:active):hover [role='tooltip'] {
   animation: fade 200ms ease-in-out forwards;
 }
