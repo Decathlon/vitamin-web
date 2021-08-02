@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.3.4...@vtmn/icons@0.4.0) (2021-08-02)
+
+
+### Features
+
+* **@vtmn/icons:** change default display of vtmx sprites ([#493](https://github.com/Decathlon/vitamin-web/issues/493)) ([eb63477](https://github.com/Decathlon/vitamin-web/commit/eb6347716e0fd62650ae8dfb26187b40b019ae0e))
+
+
+
+
+
 ## [0.3.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.3.3...@vtmn/icons@0.3.4) (2021-07-30)
 
 **Note:** Version bump only for package @vtmn/icons
