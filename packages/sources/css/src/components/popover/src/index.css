@@ -35,8 +35,8 @@
 /* ALL POPOVER */
 .vtmn-popover [role='tooltip'] {
   z-index: 1000;
-  width: max-content;
-  max-width: rem(250px);
+  min-width: rem(250px);
+  width: auto;
   box-shadow: 0 rem(16px) rem(16px) 0 rgba(0, 0, 0, 0.28);
   border-radius: rem(8px);
   background: var(--vtmn-color_black);
