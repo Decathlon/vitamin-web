@@ -9,9 +9,17 @@
   color: var(--vtmn-color_black);
   clear: both;
   margin: rem(10px) rem(5px);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.vtmn-rating:disabled {
+.vtmn-rating > *:not(input, label) {
+  margin: 0 rem(3px);
+}
+
+.vtmn-rating--disabled {
   opacity: 0.38;
 }
 
@@ -34,13 +42,7 @@
 .vtmn-rating--interactive > label::before {
   margin: 0 rem(5px);
   display: inline-block;
-  content: '\f220';
-}
-
-.vtmn-rating--interactive > .half::before {
-  content: '\f21f';
-  color: transparent;
-  position: absolute;
+  content: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M3.298 14.805 8 12.173l4.702 2.632-1.05-5.285 3.957-3.659-5.352-.634L8 .333 5.743 5.227.39 5.86l3.958 3.66-1.05 5.285zm7.533-2.575L8 10.645 5.169 12.23 5.8 9.048 3.42 6.845l3.222-.382L8 3.517l1.359 2.946 3.222.382-2.382 2.203.632 3.182z' fill='%23007dbc'/></svg>");
 }
 
 /***** Highlight Stars on Hover *****/
@@ -49,14 +51,7 @@
 .vtmn-rating--interactive:not(:checked) > .full:hover::before, /* hover current full star */
 .vtmn-rating--interactive:not(:checked) > label:hover ~ label::before {
   /* hover previous stars in list */
-  content: '\f21d';
-}
-
-.vtmn-rating--interactive > input:checked ~ .half::before, /* show gold star when clicked on half */
-.vtmn-rating--interactive:not(:checked) > .half:hover::before {
-  color: var(--vtmn-color_brand-digital);
-
-  /* hover current half star */
+  content: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m8 12.173-4.702 2.632 1.05-5.285L.391 5.861l5.352-.634L8 .333l2.257 4.894 5.352.634-3.957 3.659 1.05 5.285L8 12.173z' fill='%23007dbc'/></svg>");
 }
 
 /* Highlight previous stars when already selected stars 
@@ -86,11 +81,6 @@
 
 .vtmn-rating span[class^='vtmx-'] {
   font-size: var(--vtmn-typo_text-2-font-size);
-  vertical-align: middle;
-}
-
-.vtmn-rating span[class^='vtmx-'] ~ span {
-  vertical-align: middle;
 }
 
 /* Color variants */
@@ -117,10 +107,6 @@
   font-size: var(--vtmn-typo_text-2-font-size);
 }
 
-.vtmn-rating_size--small .vtmn-rating--interactive > label::before {
-  font-size: var(--vtmn-typo_text-2-font-size);
-}
-
 .vtmn-rating_size--medium {
   font-size: var(--vtmn-typo_text-1-font-size);
 }
@@ -133,11 +119,25 @@
   font-size: rem(32px);
 }
 
-.vtmn-rating_size--medium .vtmn-rating--interactive > label::before {
-  font-size: rem(32px);
+.vtmn-rating.vtmn-rating_size--small > *:not(input, label) {
+  margin: 0 rem(3px);
 }
 
-.vtmn-rating_size--medium .vtmn-rating--interactive ~ span {
-  position: relative;
-  top: rem(10px);
+.vtmn-rating.vtmn-rating_size--medium > *:not(input, label) {
+  margin: 0 rem(5px);
+}
+
+.vtmn-rating_size--small .vtmn-rating--interactive > label::before {
+  content: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M3.298 14.805 8 12.173l4.702 2.632-1.05-5.285 3.957-3.659-5.352-.634L8 .333 5.743 5.227.39 5.86l3.958 3.66-1.05 5.285zm7.533-2.575L8 10.645 5.169 12.23 5.8 9.048 3.42 6.845l3.222-.382L8 3.517l1.359 2.946 3.222.382-2.382 2.203.632 3.182z' fill='%23007dbc'/></svg>");
+}
+
+.vtmn-rating_size--medium .vtmn-rating--interactive > label::before {
+  content: url("data:image/svg+xml;charset=utf-8, <svg width='32' height='32' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M3.298 14.805 8 12.173l4.702 2.632-1.05-5.285 3.957-3.659-5.352-.634L8 .333 5.743 5.227.39 5.86l3.958 3.66-1.05 5.285zm7.533-2.575L8 10.645 5.169 12.23 5.8 9.048 3.42 6.845l3.222-.382L8 3.517l1.359 2.946 3.222.382-2.382 2.203.632 3.182z' fill='%23007dbc'/></svg>");
+}
+
+.vtmn-rating_size--medium .vtmn-rating--interactive > input:checked ~ .full::before, /* show gold star when clicked on full */
+.vtmn-rating_size--medium .vtmn-rating--interactive:not(:checked) > .full:hover::before, /* hover current full star */
+.vtmn-rating_size--medium .vtmn-rating--interactive:not(:checked) > label:hover ~ label::before {
+  /* hover previous stars in list */
+  content: url("data:image/svg+xml;charset=utf-8, <svg width='32' height='32' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m8 12.173-4.702 2.632 1.05-5.285L.391 5.861l5.352-.634L8 .333l2.257 4.894 5.352.634-3.957 3.659 1.05 5.285L8 12.173z' fill='%23007dbc'/></svg>");
 }
