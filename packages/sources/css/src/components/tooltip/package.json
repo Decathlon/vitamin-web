@@ -1,8 +1,17 @@
 {
-  "name": "@vtmn/css-utilities",
-  "version": "0.1.3",
-  "description": "Decathlon Design System - Vitamin specific CSS styles for utilities",
-  "homepage": "https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/utilities",
+  "name": "@vtmn/css-tooltip",
+  "version": "0.1.0",
+  "description": "Decathlon Design System - Vitamin specific CSS styles for tooltip component",
+  "keywords": [
+    "design-system",
+    "ui-kit",
+    "libraries",
+    "css",
+    "vitamin"
+  ],
+  "bugs": {
+    "url": "https://github.com/Decathlon/vitamin-web/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Decathlon/vitamin-web.git"
