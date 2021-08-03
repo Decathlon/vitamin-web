@@ -51,7 +51,7 @@
     "vue": "^3.0.0"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.14.8",
+    "@babel/preset-env": "^7.14.9",
     "@babel/preset-typescript": "7.14.5",
     "@rollup/plugin-alias": "^3.1.5",
     "@rollup/plugin-babel": "^5.2.1",
@@ -59,8 +59,8 @@
     "@rollup/plugin-image": "^2.0.5",
     "@rollup/plugin-node-resolve": "^13.0.0",
     "@rollup/plugin-replace": "^3.0.0",
-    "@typescript-eslint/eslint-plugin": "^4.28.4",
-    "@typescript-eslint/parser": "^4.28.4",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
     "@vtmn/icons": "^0.4.0",
     "@vue/cli-plugin-babel": "^4.5.11",
     "@vue/cli-plugin-eslint": "^4.5.11",
@@ -71,7 +71,7 @@
     "@vue/eslint-config-typescript": "7.0.0",
     "babel-eslint": "^10.1.0",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^7.20.0",
+    "eslint": "^7.32.0",
     "eslint-plugin-prettier": "3.4.0",
     "eslint-plugin-vue": "^7.15.0",
     "rimraf": "^3.0.2",
