@@ -18,8 +18,9 @@
 @import './components/button/src';
 @import './components/checkbox/src';
 @import './components/link/src';
+@import './components/modal/src';
+@import './components/radio-button/src';
 @import './components/select/src';
 @import './components/text-input/src';
 @import './components/toggle/src';
-@import './components/radio-button/src';
 @import './components/tooltip/src';
