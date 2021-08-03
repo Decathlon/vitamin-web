@@ -32,7 +32,7 @@
     "@rollup/plugin-node-resolve": "^13.0.0",
     "@vtmn/icons": "^0.4.0",
     "chokidar-cli": "^3.0.0",
-    "eslint": "7.31.0",
+    "eslint": "7.32.0",
     "eslint-plugin-svelte3": "3.2.0",
     "rollup": "^2.55.1",
     "rollup-plugin-css-only": "^3.1.0",

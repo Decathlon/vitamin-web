@@ -22,6 +22,7 @@ export const parameters = {
   },
   design: {
     type: 'figma',
-    url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=1450%3A8683',
+    url:
+      'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=1450%3A8683',
   },
 };
