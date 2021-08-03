@@ -191,6 +191,7 @@
   }
 }
 
-.vtmn-popover:not(:focus-within):not(:active):hover [role='tooltip'] {
-  animation: fade 200ms ease-in-out forwards;
+.vtmn-popover:not(:focus-within):active [role='tooltip'],
+.vtmn-popover:not(:focus-within):hover [role='tooltip'] {
+  animation: fade 200ms ease-in-out;
 }
