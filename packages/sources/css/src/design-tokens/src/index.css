@@ -3,5 +3,6 @@
 @import './opacities';
 @import './spacings';
 @import './typography';
+@import './themes/default';
 @import './themes/core-light';
 @import './themes/core-dark';
