@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css",
-  "version": "0.16.2",
+  "version": "0.17.1",
   "description": "Decathlon Design System - Vitamin global CSS styles library",
   "keywords": [
     "design-system",
@@ -34,7 +34,7 @@
   "devDependencies": {
     "@vtmn/css-postcss-config": "*",
     "@vtmn/css-tailwind-config": "*",
-    "chokidar-cli": "^2.1.0",
+    "chokidar-cli": "^3.0.0",
     "postcss": "^8.3.5",
     "stylelint": "^13.8.0",
     "stylelint-config-prettier": "^8.0.2",
