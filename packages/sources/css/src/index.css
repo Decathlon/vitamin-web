@@ -22,4 +22,5 @@
 @import './components/text-input/src';
 @import './components/toggle/src';
 @import './components/radio-button/src';
+@import './components/rating/src';
 @import './components/tooltip/src';
