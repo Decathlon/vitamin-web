@@ -72,6 +72,7 @@ jobs:
             'packages/sources/css/src/components/button',
             'packages/sources/css/src/components/checkbox',
             'packages/sources/css/src/components/link',
+            'packages/sources/css/src/components/popover',
             'packages/sources/css/src/components/radio-button',
             'packages/sources/css/src/components/rating',
             'packages/sources/css/src/components/select',
