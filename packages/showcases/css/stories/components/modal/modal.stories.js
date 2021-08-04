@@ -21,4 +21,5 @@ Overview.parameters = {
       code: overview,
     },
   },
+  backgrounds: { default: 'grey' },
 };

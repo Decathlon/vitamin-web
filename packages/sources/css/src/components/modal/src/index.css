@@ -6,4 +6,37 @@
 
 .vtmn-modal {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--vtmn-color_white);
+  border-radius: rem(8px);
+  padding: rem(32px);
+  font-family: var(--vtmn-typo_font-family);
+}
+
+.vtmn-modal_title {
+  font-weight: var(--vtmn-typo_font-weight--bold);
+  font-size: rem(26px);
+  line-height: rem(32px);
+  align-self: flex-start;
+}
+
+.vtmn-modal_title::after {
+  content: '';
+  mask: url();
+  background-color: var(--vtmn-color_black);
+}
+
+.vtmn-modal_text {
+  margin: rem(16px) 0;
+  font-weight: var(--vtmn-typo_font-weight--regular);
+  font-size: var(--vtmn-typo_text-3-font-size);
+  line-height: rem(24px);
+  align-self: flex-start;
+  text-align: left;
+}
+
+.vtmn-modal_action {
+  margin: 0;
+  align-self: flex-end;
 }
