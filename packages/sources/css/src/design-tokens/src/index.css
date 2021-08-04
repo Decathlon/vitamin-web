@@ -1,6 +1,7 @@
 @import './breakpoints';
 @import './colors';
 @import './opacities';
+@import './shadows.css';
 @import './spacings';
 @import './typography';
 @import './themes/default';

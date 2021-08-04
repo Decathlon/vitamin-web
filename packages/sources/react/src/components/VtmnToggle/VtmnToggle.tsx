@@ -54,7 +54,7 @@ export const VtmnToggle = ({
         <input
           type="checkbox"
           id={identifier}
-          checked={checked}
+          defaultChecked={checked}
           disabled={disabled}
           {...props}
         />

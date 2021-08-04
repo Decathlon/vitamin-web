@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.7.5...@vtmn/vue@0.7.6) (2021-08-03)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+## [0.7.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.7.4...@vtmn/vue@0.7.5) (2021-08-02)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+## [0.7.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.7.3...@vtmn/vue@0.7.4) (2021-07-30)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+## [0.7.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.7.2...@vtmn/vue@0.7.3) (2021-07-28)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
 ## [0.7.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.7.1...@vtmn/vue@0.7.2) (2021-07-23)
 
 **Note:** Version bump only for package @vtmn/vue

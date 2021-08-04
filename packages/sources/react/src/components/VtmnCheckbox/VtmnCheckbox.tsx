@@ -19,20 +19,6 @@ export interface VtmnCheckboxProps
 
   /**
    * Label text linked to the checkbox.
-   * @type {string}
-   * @default null
-   */
-  name?: string;
-
-  /**
-   * Label text linked to the checkbox.
-   * @type {string}
-   * @default null
-   */
-  value?: string;
-
-  /**
-   * Label text linked to the checkbox.
    * @type {boolean}
    * @default false
    */
@@ -49,8 +35,6 @@ export interface VtmnCheckboxProps
 export const VtmnCheckbox = ({
   identifier,
   labelText,
-  name,
-  value,
   checked,
   disabled,
   ...props
@@ -61,9 +45,7 @@ export const VtmnCheckbox = ({
         className="vtmn-checkbox"
         type="checkbox"
         id={identifier}
-        name={name}
-        value={value}
-        checked={checked}
+        defaultChecked={checked}
         disabled={disabled}
         {...props}
       />

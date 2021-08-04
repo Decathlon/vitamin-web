@@ -3,6 +3,60 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.17.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.17.0...@vtmn/css@0.17.1) (2021-08-03)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+# [0.17.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.16.5...@vtmn/css@0.17.0) (2021-08-02)
+
+
+### Features
+
+* **@vtmn/css:** add tooltip component ([#468](https://github.com/Decathlon/vitamin-web/issues/468)) ([d74bc64](https://github.com/Decathlon/vitamin-web/commit/d74bc64ffb941cc143095ed96d98a4225955cfd4))
+
+
+
+
+
+## [0.16.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.16.4...@vtmn/css@0.16.5) (2021-07-30)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+## [0.16.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.16.3...@vtmn/css@0.16.4) (2021-07-29)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+## [0.16.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.16.2...@vtmn/css@0.16.3) (2021-07-28)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+## [0.16.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.16.1...@vtmn/css@0.16.2) (2021-07-27)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** better icon alignment for buttons ([#474](https://github.com/Decathlon/vitamin-web/issues/474)) ([c1f2c1c](https://github.com/Decathlon/vitamin-web/commit/c1f2c1c97d932f88e1af5476dce0222484315a75))
+
+
+
+
+
 ## [0.16.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.16.0...@vtmn/css@0.16.1) (2021-07-23)
 
 **Note:** Version bump only for package @vtmn/css
