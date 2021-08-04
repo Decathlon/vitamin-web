@@ -42,8 +42,14 @@
 }
 
 .vtmn-rating--interactive > label::before {
+  width: rem(16px);
+  height: rem(16px);
+  display: inline-block;
   margin: 0 rem(3px);
-  content: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M3.298 14.805 8 12.173l4.702 2.632-1.05-5.285 3.957-3.659-5.352-.634L8 .333 5.743 5.227.39 5.86l3.958 3.66-1.05 5.285zm7.533-2.575L8 10.645 5.169 12.23 5.8 9.048 3.42 6.845l3.222-.382L8 3.517l1.359 2.946 3.222.382-2.382 2.203.632 3.182z' fill='%23007dbc'/></svg>");
+  content: '';
+  mask: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M3.298 14.805 8 12.173l4.702 2.632-1.05-5.285 3.957-3.659-5.352-.634L8 .333 5.743 5.227.39 5.86l3.958 3.66-1.05 5.285zm7.533-2.575L8 10.645 5.169 12.23 5.8 9.048 3.42 6.845l3.222-.382L8 3.517l1.359 2.946 3.222.382-2.382 2.203.632 3.182z'/></svg>");
+  background-color: var(--vtmn-color_brand-digital);
+  mask-size: cover;
 }
 
 /***** Highlight Stars on Hover *****/
@@ -52,7 +58,7 @@
 .vtmn-rating--interactive:not(:checked) > .full:hover::before, /* hover current full star */
 .vtmn-rating--interactive:not(:checked) > label:hover ~ label::before {
   /* hover previous stars in list */
-  content: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m8 12.173-4.702 2.632 1.05-5.285L.391 5.861l5.352-.634L8 .333l2.257 4.894 5.352.634-3.957 3.659 1.05 5.285L8 12.173z' fill='%23007dbc'/></svg>");
+  mask: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m8 12.173-4.702 2.632 1.05-5.285L.391 5.861l5.352-.634L8 .333l2.257 4.894 5.352.634-3.957 3.659 1.05 5.285L8 12.173z'/></svg>");
 }
 
 .vtmn-rating_note,
@@ -127,11 +133,13 @@
 }
 
 .vtmn-rating_size--small .vtmn-rating--interactive > label::before {
-  content: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M3.298 14.805 8 12.173l4.702 2.632-1.05-5.285 3.957-3.659-5.352-.634L8 .333 5.743 5.227.39 5.86l3.958 3.66-1.05 5.285zm7.533-2.575L8 10.645 5.169 12.23 5.8 9.048 3.42 6.845l3.222-.382L8 3.517l1.359 2.946 3.222.382-2.382 2.203.632 3.182z' fill='%23007dbc'/></svg>");
+  mask: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M3.298 14.805 8 12.173l4.702 2.632-1.05-5.285 3.957-3.659-5.352-.634L8 .333 5.743 5.227.39 5.86l3.958 3.66-1.05 5.285zm7.533-2.575L8 10.645 5.169 12.23 5.8 9.048 3.42 6.845l3.222-.382L8 3.517l1.359 2.946 3.222.382-2.382 2.203.632 3.182z'/></svg>");
 }
 
 .vtmn-rating_size--medium .vtmn-rating--interactive > label::before {
-  content: url("data:image/svg+xml;charset=utf-8, <svg width='32' height='32' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M3.298 14.805 8 12.173l4.702 2.632-1.05-5.285 3.957-3.659-5.352-.634L8 .333 5.743 5.227.39 5.86l3.958 3.66-1.05 5.285zm7.533-2.575L8 10.645 5.169 12.23 5.8 9.048 3.42 6.845l3.222-.382L8 3.517l1.359 2.946 3.222.382-2.382 2.203.632 3.182z' fill='%23007dbc'/></svg>");
+  width: rem(32px);
+  height: rem(32px);
+  mask: url("data:image/svg+xml;charset=utf-8, <svg width='32' height='32' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M3.298 14.805 8 12.173l4.702 2.632-1.05-5.285 3.957-3.659-5.352-.634L8 .333 5.743 5.227.39 5.86l3.958 3.66-1.05 5.285zm7.533-2.575L8 10.645 5.169 12.23 5.8 9.048 3.42 6.845l3.222-.382L8 3.517l1.359 2.946 3.222.382-2.382 2.203.632 3.182z'/></svg>");
 }
 
 .vtmn-rating_size--medium
@@ -145,5 +153,5 @@
   .vtmn-rating--interactive:not(:checked)
   > label:hover
   ~ label::before {
-  content: url("data:image/svg+xml;charset=utf-8, <svg width='32' height='32' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m8 12.173-4.702 2.632 1.05-5.285L.391 5.861l5.352-.634L8 .333l2.257 4.894 5.352.634-3.957 3.659 1.05 5.285L8 12.173z' fill='%23007dbc'/></svg>");
+  mask: url("data:image/svg+xml;charset=utf-8, <svg width='32' height='32' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m8 12.173-4.702 2.632 1.05-5.285L.391 5.861l5.352-.634L8 .333l2.257 4.894 5.352.634-3.957 3.659 1.05 5.285L8 12.173z'/></svg>");
 }
