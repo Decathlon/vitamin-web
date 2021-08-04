@@ -44,6 +44,7 @@
   display: none;
   position: absolute;
   padding: rem(16px);
+  animation: fade-popover 200ms ease-in-out;
 }
 
 .vtmn-popover [role='tooltip']::after {
@@ -165,20 +166,12 @@
   bottom: 50%;
 }
 
-.vtmn-popover:focus-within [role='tooltip'] {
-  animation: 200ms ease-in-out fade;
-}
-
 /* ANIMATION */
-@keyframes fade {
+@keyframes fade-popover {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
   }
-}
-
-.vtmn-popover:focus-within [role='tooltip'] {
-  animation: 200ms ease-in-out fade;
 }
