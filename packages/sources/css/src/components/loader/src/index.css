@@ -14,8 +14,8 @@
 
 /* // Circle styles. */
 .vtmn-loader > svg > circle {
-  animation: 2s linear infinite forwards circle-rotation,
-    3s linear infinite alternate circle-progress;
+  animation: 1s linear infinite forwards circle-rotation,
+    3s ease-in-out infinite alternate circle-progress;
   display: block;
   fill: transparent;
   stroke: var(--vtmn-color_brand-digital);
@@ -40,11 +40,11 @@
 /* Circle animation progress */
 @keyframes circle-progress {
   from {
-    stroke-dashoffset: 0;
+    stroke-dashoffset: 20;
   }
 
   to {
-    stroke-dashoffset: 560;
+    stroke-dashoffset: 540;
   }
 }
 
