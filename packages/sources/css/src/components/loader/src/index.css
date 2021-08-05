@@ -1,90 +1,107 @@
 /* Design tokens */
 @import '@vtmn/css-design-tokens/src/colors';
-@import '@vtmn/css-design-tokens/src/spacings';
-@import '@vtmn/css-design-tokens/src/typography';
-@import '@vtmn/css-design-tokens/src/opacities';
 
 .vtmn-loader {
   width: rem(32px);
   height: rem(32px);
+  background-color: #c4000000;
+  mask-image: linear-gradient(transparent 50%, white 50%),
+    linear-gradient(to right, transparent 50%, white 50%);
+  position: relative;
+  color: var(--vtmn-color_brand-digital);
+  animation: rotate 6s infinite;
 }
-.vtmn-loader > svg {
-  max-width: rem(32px);
-}
-
-/* // Circle styles. */
-.vtmn-loader > svg > circle {
-  animation: 1s linear infinite forwards circle-rotation,
-    3s ease-in-out infinite alternate circle-progress;
-  display: block;
-  fill: transparent;
-  stroke: var(--vtmn-color_brand-digital);
-  stroke-linecap: round;
-  stroke-dasharray: 280;
-  stroke-dashoffset: 280;
-  stroke-width: rem(2px);
-  transform-origin: 50% 50%;
-}
-
-/* Circle animation rotation */
-@keyframes circle-rotation {
-  from {
-    transform: rotate(0);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+.vtmn-loader::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: rem(2px) solid transparent;
+  border-top-color: currentColor;
+  border-radius: 50%;
+  background-color: transparent;
+  animation: rotate-shrink 0.75s infinite linear alternate;
 }
 
-/* Circle animation progress */
-@keyframes circle-progress {
-  from {
-    stroke-dashoffset: 20;
-  }
-
-  to {
-    stroke-dashoffset: 540;
-  }
-}
-
-/* SIZE */
-
-/* SMALL */
-.vtmn-loader.vtmn-loader_size--small {
+.vtmn-loader_size--small.vtmn-loader {
   width: rem(16px);
   height: rem(16px);
 }
-.vtmn-loader.vtmn-loader_size--small > svg {
-  max-width: rem(16px);
+
+.vtmn-loader_size--small.vtmn-loader::before {
+  border-width: rem(1px);
 }
 
-.vtmn-loader.vtmn-loader_size--small > svg > circle {
-  stroke-width: rem(1px);
-}
-
-/* MEDIUM */
-.vtmn-loader.vtmn-loader_size--medium {
+.vtmn-loader_size--medium.vtmn-loader {
   width: rem(32px);
   height: rem(32px);
 }
-.vtmn-loader.vtmn-loader_size--medium > svg {
-  max-width: rem(32px);
+
+.vtmn-loader_size--medium.vtmn-loader::before {
+  border-width: rem(2px);
 }
 
-.vtmn-loader.vtmn-loader_size--medium > svg > circle {
-  stroke-width: rem(2px);
-}
-
-/* LARGE */
-.vtmn-loader.vtmn-loader_size--large {
+.vtmn-loader_size--large.vtmn-loader {
   width: rem(64px);
   height: rem(64px);
 }
-.vtmn-loader.vtmn-loader_size--large > svg {
-  max-width: rem(64px);
+
+.vtmn-loader_size--large.vtmn-loader::before {
+  border-width: rem(4px);
 }
 
-.vtmn-loader.vtmn-loader_size--large > svg > circle {
-  stroke-width: rem(4px);
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  12.5% {
+    transform: rotate(180deg);
+    animation-timing-function: linear;
+  }
+  25% {
+    transform: rotate(630deg);
+  }
+  37.5% {
+    transform: rotate(810deg);
+    animation-timing-function: linear;
+  }
+  50% {
+    transform: rotate(1260deg);
+  }
+  62.5% {
+    transform: rotate(1440deg);
+    animation-timing-function: linear;
+  }
+  75% {
+    transform: rotate(1890deg);
+  }
+  87.5% {
+    transform: rotate(2070deg);
+    animation-timing-function: linear;
+  }
+  100% {
+    transform: rotate(2520deg);
+  }
+}
+
+@keyframes rotate-shrink {
+  0% {
+    transform: rotate(-30deg);
+  }
+  29.4% {
+    border-left-color: transparent;
+  }
+  29.41% {
+    border-left-color: currentColor;
+  }
+  64.7% {
+    border-bottom-color: transparent;
+  }
+  64.71% {
+    border-bottom-color: currentColor;
+  }
+  100% {
+    border-left-color: currentColor;
+    border-bottom-color: currentColor;
+    transform: rotate(225deg);
+  }
 }
