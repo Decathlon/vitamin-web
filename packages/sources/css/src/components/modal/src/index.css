@@ -5,9 +5,20 @@
 @import '@vtmn/css-design-tokens/src/shadows';
 
 .vtmn-modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: color-mod(var(--vtmn-color_black) alpha(0.8));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+}
+
+.vtmn-modal_content {
   position: relative;
   display: flex;
   flex-direction: column;
+  max-width: rem(600px);
   background-color: var(--vtmn-color_white);
   border-radius: rem(8px);
   padding: rem(32px);
