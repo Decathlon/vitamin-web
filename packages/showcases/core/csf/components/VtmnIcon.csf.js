@@ -39,7 +39,6 @@ export const argTypes = {
 };
 
 export const parameters = {
-  backgrounds: { default: 'grey' },
   design: {
     type: 'figma',
     url: 'https://www.figma.com/file/ujn50nNMfGKzZJccATv7Vk/?node-id=0%3A1',

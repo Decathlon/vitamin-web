@@ -51,6 +51,38 @@ module.exports = {
       'border-information': 'var(--vtmn-semantic-color_border-information)',
       'border-primary-reversed':
         'var(--vtmn-semantic-color_border-primary-reversed)',
+      'hover-primary': 'var(--vtmn-semantic-color_hover-primary)',
+      'hover-primary-transparent':
+        'var(--vtmn-semantic-color_hover-primary-transparent)',
+      'hover-secondary-transparent':
+        'var(--vtmn-semantic-color_hover-secondary-transparent)',
+      'hover-tertiary-transparent':
+        'var(--vtmn-semantic-color_hover-tertiary-transparent)',
+      'hover-tertiary': 'var(--vtmn-semantic-color_hover-tertiary)',
+      'hover-brand': 'var(--vtmn-semantic-color_hover-brand)',
+      'hover-accent': 'var(--vtmn-semantic-color_hover-accent)',
+      'hover-primary-reversed-transparent':
+        'var(--vtmn-semantic-color_hover-primary-reversed-transparent)',
+      'hover-secondary-reversed-transparent':
+        'var(--vtmn-semantic-color_hover-secondary-reversed-transparent)',
+      'hover-brand-reversed-transparent':
+        'var(--vtmn-semantic-color_hover-brand-reversed-transparent)',
+      'active-primary': 'var(--vtmn-semantic-color_active-primary)',
+      'active-primary-transparent':
+        'var(--vtmn-semantic-color_active-primary-transparent)',
+      'active-secondary-transparent':
+        'var(--vtmn-semantic-color_active-secondary-transparent)',
+      'active-tertiary': 'var(--vtmn-semantic-color_active-tertiary)',
+      'active-tertiary-transparent':
+        'var(--vtmn-semantic-color_active-tertiary-transparent)',
+      'active-brand': 'var(--vtmn-semantic-color_active-brand)',
+      'active-accent': 'var(--vtmn-semantic-color_active-accent)',
+      'active-primary-reversed-transparent':
+        'var(--vtmn-semantic-color_active-primary-reversed-transparent)',
+      'active-secondary-reversed-transparent':
+        'var(--vtmn-semantic-color_active-secondary-reversed-transparent)',
+      'active-brand-reversed-transparent':
+        'var(--vtmn-semantic-color_active-brand-reversed-transparent)',
       /* DEPRECATED colors below (no longer maintained) */
       brand: { DEFAULT: 'var(--vtmn-color_brand)' },
       'brand-pro': { DEFAULT: 'var(--vtmn-color_brand-pro)' },

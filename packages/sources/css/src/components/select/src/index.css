@@ -29,7 +29,7 @@
   display: block;
   position: relative;
   float: right;
-  top: rem(42px);
+  top: rem(36px);
   right: rem(12px);
   width: rem(24px);
   height: rem(24px);
@@ -60,7 +60,7 @@
 
 .vtmn-select_container select:disabled,
 .vtmn-select_container select:disabled + label {
-  opacity: 0.38;
+  opacity: var(--vtmn-state_disabled_opacity);
   cursor: not-allowed;
 }
 
