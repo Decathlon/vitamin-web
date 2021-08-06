@@ -37,6 +37,12 @@
   z-index: 1000;
 }
 
+.vtmn-tooltip:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 rem(4px) var(--vtmn-color_white),
+    0 0 0 rem(6px) var(--vtmn-color_black);
+}
+
 /* Make the tooltips respond to hover */
 .vtmn-tooltip:hover::before,
 .vtmn-tooltip:hover::after,
@@ -142,7 +148,7 @@
 }
 
 /* ANIMATION */
-@keyframes fade {
+@keyframes fade-tooltip {
   from {
     opacity: 0;
   }
@@ -152,6 +158,8 @@
 }
 
 .vtmn-tooltip:not([data-tooltip='']):hover::before,
-.vtmn-tooltip:not([data-tooltip='']):hover::after {
-  animation: fade 200ms ease-in-out forwards;
+.vtmn-tooltip:not([data-tooltip='']):hover::after,
+.vtmn-tooltip:not([data-tooltip='']):focus-visible::before,
+.vtmn-tooltip:not([data-tooltip='']):focus-visible::after {
+  animation: fade-tooltip 200ms ease-in-out forwards;
 }
