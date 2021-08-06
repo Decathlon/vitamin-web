@@ -18,6 +18,7 @@
 @import './components/button/src';
 @import './components/checkbox/src';
 @import './components/link/src';
+@import './components/loader/src';
 @import './components/popover/src';
 @import './components/select/src';
 @import './components/text-input/src';
