@@ -1,5 +1,4 @@
-/* Design tokens */
-@import '@vtmn/css-design-tokens/src/colors';
+@import '@vtmn/css-design-tokens/src/index';
 
 .vtmn-loader {
   width: rem(32px);
