@@ -75,7 +75,7 @@
   font-size: var(--vtmn-typo_text-2-font-size);
 }
 
-/* Color variants */
+/* Variants */
 
 .vtmn-rating_variant--default {
   color: var(--vtmn-semantic-color_content-primary);
@@ -85,7 +85,7 @@
   color: var(--vtmn-semantic-color_background-brand-primary);
 }
 
-/* Size variants */
+/* Sizes */
 
 .vtmn-rating_size--small {
   font-size: var(--vtmn-typo_text-3-font-size);
