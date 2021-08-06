@@ -68,7 +68,7 @@
 .vtmn-checkbox[type='checkbox'] + label::after {
   content: '';
   mask: url("data:image/svg+xml;charset=utf-8, <svg width='18' height='18' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'><path d='M5.80351 10.8L14.2875 2.31484L12.5907 0.618038L5.80351 7.40644L2.40871 4.01164L0.711914 5.70844L5.80351 10.8Z'/></svg>");
-  mask-size: 'cover';
+  mask-size: cover;
   position: absolute;
   height: rem(18px);
   width: rem(18px);
@@ -81,7 +81,7 @@
 .vtmn-checkbox[type='checkbox'].vtmn-checkbox--indeterminate + label::after {
   content: '';
   mask: url("data:image/svg+xml;charset=utf-8, <svg width='23' height='23' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'><path d='M3.333 7.333h9.334v1.334H3.333V7.333z' stroke-width='10'/></svg>");
-  mask-size: 'cover';
+  mask-size: cover;
   height: rem(23px);
   width: rem(23px);
   top: rem(3px);

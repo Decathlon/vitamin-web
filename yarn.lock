@@ -4803,6 +4803,11 @@
   resolved "https://registry.yarnpkg.com/@vtmn/css-design-tokens/-/css-design-tokens-0.1.12.tgz#6237c745bacb3b8343a8d8c31a6759aed91b8253"
   integrity sha512-gQhR0lzOjNI+cvjBpLyR9ZDcmm14X55rZtw+XGkHcjtWUFflv7CG+U56RuQUaGTq1NIwTN/elcvP4dZMtkbZAg==
 
+"@vtmn/css-design-tokens@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@vtmn/css-design-tokens/-/css-design-tokens-0.2.2.tgz#d8d8cf2754ee5c0221c217bc6395d0bb7fbe6de9"
+  integrity sha512-3Eyqt48h3EbR5Qfx1IPJS+swLpYFYKh79awNyBykLssQc6iPgwECn0HTHKL8Gm8CJqhfXCW8sSYGFEGgGqYsvw==
+
 "@vue/babel-helper-vue-jsx-merge-props@^1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@vue/babel-helper-vue-jsx-merge-props/-/babel-helper-vue-jsx-merge-props-1.2.1.tgz#31624a7a505fb14da1d58023725a4c5f270e6a81"
