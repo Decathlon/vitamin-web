@@ -39,8 +39,8 @@
 
 .vtmn-tooltip:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 rem(4px) var(--vtmn-color_white),
-    0 0 0 rem(6px) var(--vtmn-color_black);
+  box-shadow: 0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
+    0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
 }
 
 /* Make the tooltips respond to hover */

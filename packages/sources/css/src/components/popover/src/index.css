@@ -39,8 +39,8 @@
   width: auto;
   box-shadow: 0 rem(16px) rem(16px) 0 rgba(0, 0, 0, 0.28);
   border-radius: rem(8px);
-  background: var(--vtmn-color_black);
-  color: var(--vtmn-color_white);
+  background-color: var(--vtmn-semantic-color_background-primary-reversed);
+  color: var(--vtmn-semantic-color_content-primary-reversed);
   display: none;
   position: absolute;
   padding: rem(16px);
@@ -66,8 +66,8 @@
 
 .vtmn-popover:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 rem(4px) var(--vtmn-color_white),
-    0 0 0 rem(6px) var(--vtmn-color_black);
+  box-shadow: 0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
+    0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
 }
 
 /* POSITION: TOP */
@@ -80,7 +80,8 @@
 .vtmn-popover[data-position^='top'] > [role='tooltip']::after {
   border-left: solid transparent 0.6em;
   border-right: solid transparent 0.6em;
-  border-top: solid var(--vtmn-color_black) 0.65em;
+  border-top: solid var(--vtmn-semantic-color_background-primary-reversed)
+    0.65em;
   bottom: -0.6em;
   left: 50%;
   transform: translateX(-50%);
@@ -114,7 +115,8 @@
 .vtmn-popover[data-position^='bottom'] > [role='tooltip']::after {
   border-left: solid transparent 0.6em;
   border-right: solid transparent 0.6em;
-  border-bottom: solid var(--vtmn-color_black) 0.65em;
+  border-bottom: solid var(--vtmn-semantic-color_background-primary-reversed)
+    0.65em;
   top: -0.6em;
   left: 50%;
   transform: translateX(-50%);
@@ -147,7 +149,8 @@
 .vtmn-popover[data-position='left'] > [role='tooltip']::after {
   border-top: solid transparent 0.6em;
   border-bottom: solid transparent 0.6em;
-  border-left: solid var(--vtmn-color_black) 0.65em;
+  border-left: solid var(--vtmn-semantic-color_background-primary-reversed)
+    0.65em;
   right: -0.6em;
   bottom: 50%;
 }
@@ -161,7 +164,8 @@
 .vtmn-popover[data-position='right'] > [role='tooltip']::after {
   border-top: solid transparent 0.6em;
   border-bottom: solid transparent 0.6em;
-  border-right: solid var(--vtmn-color_black) 0.65em;
+  border-right: solid var(--vtmn-semantic-color_background-primary-reversed)
+    0.65em;
   left: -0.6em;
   bottom: 50%;
 }
