@@ -1,5 +1,5 @@
 {
-  "default": "primary",
+  "default": "secondary",
   "values": [
     {
       "name": "primary",

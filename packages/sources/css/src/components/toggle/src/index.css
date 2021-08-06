@@ -37,34 +37,35 @@
 .vtmn-toggle_switch
   input[type='checkbox']:not([disabled]):hover
   + span::before {
-  box-shadow: 0 0 0 rem(12px) color-mod(var(--vtmn-color_grey-dark-1) alpha(5%));
+  box-shadow: 0 0 0 rem(12px)
+    var(--vtmn-semantic-color_hover-secondary-transparent);
 }
 
 .vtmn-toggle_switch
   input[type='checkbox']:not([disabled]):active
   + span::before {
   box-shadow: 0 0 0 rem(12px)
-    color-mod(var(--vtmn-color_grey-dark-1) alpha(15%));
+    var(--vtmn-semantic-color_active-secondary-transparent);
 }
 
 .vtmn-toggle_switch
   input[type='checkbox']:not([disabled]):hover:checked
   + span::before {
   box-shadow: 0 0 0 rem(12px)
-    color-mod(var(--vtmn-semantic-color_content-active) alpha(5%));
+    var(--vtmn-semantic-color_hover-primary-transparent);
 }
 
 .vtmn-toggle_switch
   input[type='checkbox']:not([disabled]):active:checked
   + span::before {
   box-shadow: 0 0 0 rem(12px)
-    color-mod(var(--vtmn-semantic-color_content-active) alpha(15%));
+    var(--vtmn-semantic-color_active-primary-transparent);
 }
 
 .vtmn-toggle_switch input[type='checkbox']:focus-visible + span {
   outline: none;
-  box-shadow: 0 0 0 rem(4px) var(--vtmn-color_white),
-    0 0 0 rem(6px) var(--vtmn-color_black);
+  box-shadow: 0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
+    0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
 }
 
 .vtmn-toggle_switch span {
@@ -151,27 +152,29 @@
 .vtmn-toggle_size--small
   input[type='checkbox']:not([disabled]):hover
   + span::before {
-  box-shadow: 0 0 0 rem(8px) color-mod(var(--vtmn-color_grey-dark-1) alpha(5%));
+  box-shadow: 0 0 0 rem(8px)
+    var(--vtmn-semantic-color_hover-secondary-transparent);
 }
 
 .vtmn-toggle_size--small
   input[type='checkbox']:not([disabled]):active
   + span::before {
-  box-shadow: 0 0 0 rem(8px) color-mod(var(--vtmn-color_grey-dark-1) alpha(15%));
+  box-shadow: 0 0 0 rem(8px)
+    var(--vtmn-semantic-color_active-secondary-transparent);
 }
 
 .vtmn-toggle_size--small
   input[type='checkbox']:not([disabled]):hover:checked
   + span::before {
   box-shadow: 0 0 0 rem(8px)
-    color-mod(var(--vtmn-semantic-color_content-active) alpha(5%));
+    var(--vtmn-semantic-color_hover-primary-transparent);
 }
 
 .vtmn-toggle_size--small
   input[type='checkbox']:not([disabled]):active:checked
   + span::before {
   box-shadow: 0 0 0 rem(8px)
-    color-mod(var(--vtmn-semantic-color_content-active) alpha(15%));
+    var(--vtmn-semantic-color_active-primary-transparent);
 }
 
 /* Medium */
@@ -208,26 +211,27 @@
 .vtmn-toggle_switch--medium
   input[type='checkbox']:not([disabled]):hover
   + span::before {
-  box-shadow: 0 0 0 rem(12px) color-mod(var(--vtmn-color_grey-dark-1) alpha(5%));
+  box-shadow: 0 0 0 rem(12px)
+    var(--vtmn-semantic-color_hover-secondary-transparent);
 }
 
 .vtmn-toggle_switch--medium
   input[type='checkbox']:not([disabled]):active
   + span::before {
   box-shadow: 0 0 0 rem(12px)
-    color-mod(var(--vtmn-color_grey-dark-1) alpha(15%));
+    var(--vtmn-semantic-color_active-secondary-transparent);
 }
 
 .vtmn-toggle_switch--medium
   input[type='checkbox']:not([disabled]):hover:checked
   + span::before {
   box-shadow: 0 0 0 rem(12px)
-    color-mod(var(--vtmn-semantic-color_content-active) alpha(5%));
+    var(--vtmn-semantic-color_hover-primary-transparent);
 }
 
 .vtmn-toggle_switch--medium
   input[type='checkbox']:not([disabled]):active:checked
   + span::before {
   box-shadow: 0 0 0 rem(12px)
-    color-mod(var(--vtmn-semantic-color_content-active) alpha(15%));
+    var(--vtmn-semantic-color_active-primary-transparent);
 }

@@ -1,8 +1,4 @@
-/* Design tokens */
-@import '@vtmn/css-design-tokens/src/colors';
-@import '@vtmn/css-design-tokens/src/spacings';
-@import '@vtmn/css-design-tokens/src/typography';
-@import '@vtmn/css-design-tokens/src/shadows';
+@import '@vtmn/css-design-tokens/src/index';
 
 .vtmn-tooltip {
   position: relative;
@@ -36,8 +32,8 @@
   padding: rem(8px) rem(12px);
   height: rem(36px);
   border-radius: rem(4px);
-  background-color: var(--vtmn-color_black);
-  color: var(--vtmn-color_white);
+  background-color: var(--vtmn-semantic-color_background-primary-reversed);
+  color: var(--vtmn-semantic-color_content-primary-reversed);
   z-index: 1000;
 }
 
@@ -62,7 +58,8 @@
 .vtmn-tooltip[data-position^='top']::before {
   bottom: 100%;
   border-bottom-width: 0;
-  border-top: rem(8px) solid var(--vtmn-color_black);
+  border-top: rem(8px) solid
+    var(--vtmn-semantic-color_background-primary-reversed);
   left: 50%;
   transform: translate(-50%, -78%);
 }
@@ -90,7 +87,8 @@
 .vtmn-tooltip[data-position^='bottom']::before {
   top: 100%;
   border-top-width: 0;
-  border-bottom: rem(8px) solid var(--vtmn-color_black);
+  border-bottom: rem(8px) solid
+    var(--vtmn-semantic-color_background-primary-reversed);
   left: 50%;
   transform: translate(-50%, 78%);
 }
@@ -115,7 +113,8 @@
 .vtmn-tooltip[data-position^='left']::before {
   top: 50%;
   border-right-width: 0;
-  border-left: rem(8px) solid var(--vtmn-color_black);
+  border-left: rem(8px) solid
+    var(--vtmn-semantic-color_background-primary-reversed);
   left: calc(0em - rem(8px));
   transform: translate(-76%, -50%);
 }
@@ -130,7 +129,8 @@
 .vtmn-tooltip[data-position^='right']::before {
   top: 50%;
   border-left-width: 0;
-  border-right: rem(8px) solid var(--vtmn-color_black);
+  border-right: rem(8px) solid
+    var(--vtmn-semantic-color_background-primary-reversed);
   right: calc(0em - rem(8px));
   transform: translate(76%, -50%);
 }
