@@ -79,17 +79,16 @@
   font-size: var(--vtmn-typo_text-2-font-size);
 }
 
-/* Color variants */
-
-.vtmn-rating_color--brand {
-  color: var(--vtmn-color_brand-digital);
-}
-
-.vtmn-rating_color--black {
+/* Variants */
+.vtmn-rating_variant--default {
   color: var(--vtmn-color_black);
 }
 
-/* Size variants */
+.vtmn-rating_variant--brand {
+  color: var(--vtmn-color_brand-digital);
+}
+
+/* Sizes */
 
 .vtmn-rating_size--small {
   font-size: var(--vtmn-typo_text-3-font-size);
