@@ -4,50 +4,98 @@
 @import '@vtmn/css-design-tokens/src/typography';
 @import '@vtmn/css-design-tokens/src/shadows';
 
-.vtmn-modal {
-  height: 100vh;
-  width: 100vw;
-  background-color: color-mod(var(--vtmn-color_black) alpha(0.8));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
+.vtmn-modal[open] .vtmn-modal_content-overlay {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.vtmn-modal summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.vtmn-modal summary:focus {
+  outline: none;
 }
 
 .vtmn-modal_content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  max-width: rem(600px);
   background-color: var(--vtmn-color_white);
   border-radius: rem(8px);
   padding: rem(32px);
   font-family: var(--vtmn-typo_font-family);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: rem(600px);
+  max-height: 90vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: all;
 }
 
-.vtmn-modal_title {
+.vtmn-modal_content .vtmn-modal_title {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: all;
+}
+
+.vtmn-modal_content .vtmn-modal_title_text {
   font-weight: var(--vtmn-typo_font-weight--bold);
   font-size: rem(26px);
   line-height: rem(32px);
-  align-self: flex-start;
+  pointer-events: none;
 }
 
-.vtmn-modal_title::after {
-  content: '';
-  mask: url();
-  background-color: var(--vtmn-color_black);
+.vtmn-modal_content span[class^='vtmx'] {
+  font-size: rem(24px);
+  color: var(--vtmn-color_black);
+  pointer-events: none;
 }
 
-.vtmn-modal_text {
+.vtmn-modal_content .vtmn-modal_body {
   margin: rem(16px) 0;
+  overflow-y: auto;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 90%,
+    rgba(230, 230, 230, 0.8) 100%
+  );
+}
+
+.vtmn-modal_content .vtmn-modal_body .vtmn-modal_body_text {
+  padding-bottom: rem(30px);
   font-weight: var(--vtmn-typo_font-weight--regular);
   font-size: var(--vtmn-typo_text-3-font-size);
   line-height: rem(24px);
   align-self: flex-start;
+  pointer-events: all;
   text-align: left;
 }
 
-.vtmn-modal_action {
+.vtmn-modal_content .vtmn-modal_actions {
   margin: 0;
   align-self: flex-end;
+  pointer-events: all;
+}
+
+.vtmn-modal_content .vtmn-modal_actions button {
+  margin: 0 rem(12px);
+}
+
+.vtmn-modal_content-overlay {
+  transition: opacity 0.2s ease-out;
+  pointer-events: none;
+  background: color-mod(var(--vtmn-color_black) alpha(0.8));
+  position: fixed;
+  opacity: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
 }
