@@ -58,14 +58,26 @@
   pointer-events: none;
 }
 
+.vtmn-modal_body_overflow-indicator {
+  position: absolute;
+  bottom: 6rem;
+  left: 0;
+  width: 100%;
+  height: 2rem;
+  background: linear-gradient(180deg, hsla(0, 0%, 95.7%, 0), #f4f4f4);
+  content: '';
+  overflow: auto;
+}
+
 .vtmn-modal_content .vtmn-modal_body {
   margin: rem(16px) 0;
   overflow-y: auto;
-  background: linear-gradient(
+
+  /* background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 90%,
     rgba(230, 230, 230, 0.8) 100%
-  );
+  ); */
 }
 
 .vtmn-modal_content .vtmn-modal_body .vtmn-modal_body_text {
