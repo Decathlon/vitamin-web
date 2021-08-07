@@ -1,3 +1,7 @@
+@import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/colors';
+@import '@vtmn/css-design-tokens/src/themes/default';
+
 .vtmn-typo_display-1 {
   font-family: var(--vtmn-typo_font-family--condensed);
   color: var(--vtmn-semantic-color_content-primary);

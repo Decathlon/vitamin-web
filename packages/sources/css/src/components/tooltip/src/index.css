@@ -1,4 +1,8 @@
-@import '@vtmn/css-design-tokens/src/index';
+@import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/opacities';
+@import '@vtmn/css-design-tokens/src/shadows';
+@import '@vtmn/css-design-tokens/src/colors';
+@import '@vtmn/css-design-tokens/src/themes/default';
 
 .vtmn-tooltip {
   position: relative;

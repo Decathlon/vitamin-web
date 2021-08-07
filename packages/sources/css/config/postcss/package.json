@@ -22,7 +22,8 @@
   "devDependencies": {
     "postcss-css-var-to-less-var": "^1.0.0",
     "postcss-css-var-to-sass-var": "^1.0.0",
-    "postcss-prettify": "^0.3.4"
+    "postcss-prettify": "^0.3.4",
+    "postcss-remove-root": "^0.0.2"
   },
   "licenses": [
     {
