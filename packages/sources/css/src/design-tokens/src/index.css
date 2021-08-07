@@ -1,9 +1,10 @@
 @import './breakpoints';
-@import './colors';
+@import './legacy-colors';
 @import './opacities';
 @import './shadows.css';
 @import './spacings';
 @import './typography';
+@import './base-colors';
 @import './themes/default';
 @import './themes/core-light';
 @import './themes/core-dark';

@@ -483,47 +483,4 @@
     var(--vtmn-base-color_blue700--s),
     var(--vtmn-base-color_blue700--l)
   );
-
-  /* DEPRECATED (no longer maintained) */
-  --vtmn-color_black: #001018;
-  --vtmn-color_brand: #0082c3;
-  --vtmn-color_brand-pro: #012b49;
-  --vtmn-color_brand-digital: #007dbc;
-  --vtmn-color_brand-digital-dark-1: #00689d;
-  --vtmn-color_brand-digital-dark-2: #00537d;
-  --vtmn-color_brand-digital-light-1: #7ebee0;
-  --vtmn-color_brand-digital-light-2: #bedeef;
-  --vtmn-color_brand-digital-light-3: #e7f3f9;
-  --vtmn-color_green: #02be8a;
-  --vtmn-color_green-dark-1: #029e73;
-  --vtmn-color_green-dark-2: #017f5c;
-  --vtmn-color_green-light-1: #7cdfc4;
-  --vtmn-color_green-light-2: #beefe2;
-  --vtmn-color_green-light-3: #e4f9f3;
-  --vtmn-color_grey: #687787;
-  --vtmn-color_grey-dark-1: #4e5d6b;
-  --vtmn-color_grey-dark-2: #344450;
-  --vtmn-color_grey-dark-3: #1a2a34;
-  --vtmn-color_grey-light-1: #b3bac3;
-  --vtmn-color_grey-light-2: #d9dde1;
-  --vtmn-color_grey-light-3: #eff1f3;
-  --vtmn-color_grey-light-4: #f7f8f9;
-  --vtmn-color_orange: #fe5800;
-  --vtmn-color_orange-light-1: #feab7b;
-  --vtmn-color_orange-light-2: #fed5bd;
-  --vtmn-color_red: #ee000c;
-  --vtmn-color_red-light-1: #ed8b8f;
-  --vtmn-color_red-light-2: #f5c7c9;
-  --vtmn-color_white: #fff;
-  --vtmn-color_blue-light-1: #f2f9fc;
-  --vtmn-color_blue-light-2: #d9ecf5;
-  --vtmn-color_blue-light-3: #deeff7;
-  --vtmn-color_blue-light-4: #cde6f2;
-  --vtmn-color_yellow: #ffea28;
-  --vtmn-color_yellow-light-1: #fff58d;
-  --vtmn-color_yellow-light-2: #fffbc7;
-  --vtmn-color_success: #23a942;
-  --vtmn-color_info: #007dbc;
-  --vtmn-color_warning: #ff600a;
-  --vtmn-color_danger: #e32c26;
 }
