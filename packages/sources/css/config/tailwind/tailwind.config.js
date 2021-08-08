@@ -83,7 +83,7 @@ module.exports = {
         'var(--vtmn-semantic-color_active-secondary-reversed-transparent)',
       'active-brand-reversed-transparent':
         'var(--vtmn-semantic-color_active-brand-reversed-transparent)',
-      /* DEPRECATED colors below (no longer maintained) */
+      /* DEPRECATED legacy colors below (no longer maintained) */
       brand: { DEFAULT: 'var(--vtmn-color_brand)' },
       'brand-pro': { DEFAULT: 'var(--vtmn-color_brand-pro)' },
       'brand-digital': {

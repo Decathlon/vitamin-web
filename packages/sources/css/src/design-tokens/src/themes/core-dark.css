@@ -119,9 +119,9 @@
   --vtmn-semantic-color_border-primary-reversed--s: var(--vtmn-base-color_black--s);
   --vtmn-semantic-color_border-primary-reversed--l: var(--vtmn-base-color_black--l);
   --vtmn-semantic-color_border-primary-reversed: hsl(var(--vtmn-semantic-color_border-primary-reversed--h), var(--vtmn-semantic-color_border-primary-reversed--s), var(--vtmn-semantic-color_border-primary-reversed--l));
-  --vtmn-semantic-color_hover-primary--h: var(--vtmn-base-color_blue50--h);
-  --vtmn-semantic-color_hover-primary--s: var(--vtmn-base-color_blue50--s);
-  --vtmn-semantic-color_hover-primary--l: var(--vtmn-base-color_blue50--l);
+  --vtmn-semantic-color_hover-primary--h: var(--vtmn-base-color_blue700--h);
+  --vtmn-semantic-color_hover-primary--s: var(--vtmn-base-color_blue700--s);
+  --vtmn-semantic-color_hover-primary--l: var(--vtmn-base-color_blue700--l);
   --vtmn-semantic-color_hover-primary: hsl(var(--vtmn-semantic-color_hover-primary--h), var(--vtmn-semantic-color_hover-primary--s), var(--vtmn-semantic-color_hover-primary--l));
 
   /* Auto-generated */
@@ -137,9 +137,9 @@
   --vtmn-semantic-color_hover-tertiary-transparent--s: var(--vtmn-semantic-color_hover-primary--s);
   --vtmn-semantic-color_hover-tertiary-transparent--l: calc(var(--vtmn-semantic-color_hover-primary--l) * 0.98);
   --vtmn-semantic-color_hover-tertiary-transparent: hsla(var(--vtmn-semantic-color_hover-tertiary-transparent--h), var(--vtmn-semantic-color_hover-tertiary-transparent--s), var(--vtmn-semantic-color_hover-tertiary-transparent--l), 0.05);
-  --vtmn-semantic-color_hover-tertiary--h: var(--vtmn-semantic-color_background-brand-primary--h);
-  --vtmn-semantic-color_hover-tertiary--s: var(--vtmn-semantic-color_background-brand-primary--s);
-  --vtmn-semantic-color_hover-tertiary--l: calc(var(--vtmn-semantic-color_background-brand-primary--l) * 0.95);
+  --vtmn-semantic-color_hover-tertiary--h: var(--vtmn-semantic-color_background-brand-secondary--h);
+  --vtmn-semantic-color_hover-tertiary--s: var(--vtmn-semantic-color_background-brand-secondary--s);
+  --vtmn-semantic-color_hover-tertiary--l: calc(var(--vtmn-semantic-color_background-brand-secondary--l) * 0.95);
   --vtmn-semantic-color_hover-tertiary: hsl(var(--vtmn-semantic-color_hover-tertiary--h), var(--vtmn-semantic-color_hover-tertiary--s), var(--vtmn-semantic-color_hover-tertiary--l), 1);
   --vtmn-semantic-color_hover-brand--h: var(--vtmn-semantic-color_background-brand-primary--h);
   --vtmn-semantic-color_hover-brand--s: var(--vtmn-semantic-color_background-brand-primary--s);
@@ -197,8 +197,8 @@
   --vtmn-semantic-color_active-secondary-reversed-transparent--s: var(--vtmn-semantic-color_content-primary-reversed--s);
   --vtmn-semantic-color_active-secondary-reversed-transparent--l: var(--vtmn-semantic-color_content-primary-reversed--l);
   --vtmn-semantic-color_active-secondary-reversed-transparent: hsla(var(--vtmn-semantic-color_active-secondary-reversed-transparent--h), var(--vtmn-semantic-color_active-secondary-reversed-transparent--s), var(--vtmn-semantic-color_active-secondary-reversed-transparent--l), 0.4);
-  --vtmn-semantic-color_active-tertiary-reversed-transparent--h: var(--vtmn-semantic-color_content-primary-reversed--h);
-  --vtmn-semantic-color_active-tertiary-reversed-transparent--s: var(--vtmn-semantic-color_content-primary-reversed--s);
-  --vtmn-semantic-color_active-tertiary-reversed-transparent--l: var(--vtmn-semantic-color_content-primary-reversed--l);
-  --vtmn-semantic-color_active-tertiary-reversed-transparent: hsla(var(--vtmn-semantic-color_active-tertiary-reversed-transparent--h), var(--vtmn-semantic-color_active-tertiary-reversed-transparent--s), var(--vtmn-semantic-color_active-tertiary-reversed-transparent--l), 0.6);
+  --vtmn-semantic-color_active-brand-reversed-transparent--h: var(--vtmn-semantic-color_content-primary-reversed--h);
+  --vtmn-semantic-color_active-brand-reversed-transparent--s: var(--vtmn-semantic-color_content-primary-reversed--s);
+  --vtmn-semantic-color_active-brand-reversed-transparent--l: var(--vtmn-semantic-color_content-primary-reversed--l);
+  --vtmn-semantic-color_active-brand-reversed-transparent: hsla(var(--vtmn-semantic-color_active-brand-reversed-transparent--h), var(--vtmn-semantic-color_active-brand-reversed-transparent--s), var(--vtmn-semantic-color_active-brand-reversed-transparent--l), 0.6);
 }
