@@ -19,6 +19,7 @@
 @import './components/checkbox/src';
 @import './components/link/src';
 @import './components/select/src';
+@import './components/snackbar/src';
 @import './components/text-input/src';
 @import './components/toggle/src';
 @import './components/radio-button/src';

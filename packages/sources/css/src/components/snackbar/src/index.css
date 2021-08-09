@@ -1,0 +1,32 @@
+/* Design tokens */
+@import '@vtmn/css-design-tokens/src/colors';
+@import '@vtmn/css-design-tokens/src/spacings';
+@import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/opacities';
+@import '@vtmn/css-design-tokens/src/shadows';
+
+.vtmn-snackbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: rem(8px) rem(16px);
+  height: rem(48px);
+  max-width: fit-content;
+  font-family: var(--vtmn-typo_font-family);
+  font-size: var(--vtmn-typo_text-2-font-size);
+  line-height: var(--vtmn-typo_text-2-line-height);
+  color: var(--vtmn-color_white);
+  background-color: var(--vtmn-color_black);
+  box-shadow: var(--vtmn-shadow_200);
+  border-radius: rem(4px);
+}
+
+.vtmn-snackbar > button {
+  margin-left: rem(16px);
+}
+
+.vtmn-snackbar > p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
