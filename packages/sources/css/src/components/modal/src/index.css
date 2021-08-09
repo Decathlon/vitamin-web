@@ -12,6 +12,7 @@
 .vtmn-modal summary {
   list-style: none;
   cursor: pointer;
+  display: inline-block;
 }
 
 .vtmn-modal summary:focus {
@@ -59,6 +60,13 @@
   pointer-events: none;
 }
 
+.vtmn-modal_content svg {
+  width: rem(24px);
+  height: rem(24px);
+  fill: var(--vtmn-color_black);
+  pointer-events: none;
+}
+
 .vtmn-modal_body_overflow-indicator {
   position: absolute;
   bottom: 5.5rem;
@@ -70,7 +78,7 @@
     rgba(255, 255, 255, 0),
     rgba(255, 255, 255, 0.8)
   );
-  overflow: auto;
+  overflow-y: auto;
 }
 
 .vtmn-modal_content .vtmn-modal_body {
