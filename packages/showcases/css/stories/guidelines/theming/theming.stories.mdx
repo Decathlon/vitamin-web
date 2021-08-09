@@ -1,0 +1,109 @@
+import { Meta, Source } from '@storybook/addon-docs/blocks';
+import tailwindConfig from '@vtmn/css-tailwind-config';
+import dedent from 'ts-dedent';
+
+<Meta title="Guidelines / Theming" />
+
+# Theming
+
+> Themes are used to customize component styles to fit the specific aesthetic of a product. By using Vitamin's themes, designers & developers can easily customize all of their components..
+
+For more details, see our <a class="vtmn-link vtmn-link--icon-along" href="https://www.decathlon.design/726f8c765/p/88a9a6-theming-beta" target="_blank">Theming's guideline</a>.
+
+## Showcase's theme switcher
+
+As you probably see just above in the "Extented" toolbar, you have a "Theme Switcher" available. Feel free to test it directly inside this showcase to switch between our different themes!
+
+## Usage
+
+If you want to switch between different themes in your project, you can do it easily by simply toggling CSS classes of the section where you want to see your components changed their theme.
+
+For the moment, we have one theme available (Core) with two different modes (Light & Dark), here are their CSS classes:
+
+- `.vtmn-theme_core--light`
+- `.vtmn-theme_core--dark`
+
+_For your information, if you don't set any CSS class for theming, the theme will be Core theme (Light mode) by default._
+
+### With global CSS package
+
+You just need to apply one of these classes listed above and your child elements will use the theme you defined automatically.
+
+### With specific CSS packages (`@vtmn/css-**`)
+
+If you want to use different themes for specific CSS packages like `@vtmn/css-button`, `@vtmn/css-toggle` etc., you will need to import the CSS variables via `@vtmn/css-design-tokens` package, then use the file that contains CSS classes for specific elements with CSS variables inside.
+
+For this, be sure to install & import `@vtmn/css-design-tokens` before:
+
+```sh
+# with npm
+npm i -S @vtmn/css-design-tokens
+
+# with yarn
+yarn add @vtmn/css-design-tokens
+```
+
+Or you can also install it with a CDN like `unpkg.com`:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@vtmn/css-design-tokens" />
+```
+
+With a bundler that supports CSS imports in JS files:
+
+```javascript
+import '@vtmn/css-design-tokens/dist/index.css';
+import '@vtmn/css-<your-component>/dist/index-with-vars.css';
+```
+
+Otherwise include it in your HTML file:
+
+```html
+<link
+  rel="stylesheet"
+  href="./node_modules/@vtmn/css-design-tokens/dist/index.css"
+/>
+<link
+  rel="stylesheet"
+  href="./node_modules/@vtmn/css-<your-component>/dist/index-with-vars.css"
+/>
+```
+
+Then, you just need to apply one of these classes listed above and your child elements will use the theme you defined automatically.
+
+## Examples
+
+### Core theme (Light mode)
+
+<div class="vtmn-theme_core--light vtmn-p-2">
+  <button class="vtmn-btn">Button in Core theme (Light mode)</button>
+</div>
+
+<Source
+  code={dedent`
+    <div class="vtmn-theme_core--light">
+      <button class="vtmn-btn">Button in Core theme (Light mode)</button>
+    </div>
+  `}
+/>
+
+### Core theme (Dark mode)
+
+<div class="vtmn-theme_core--dark vtmn-p-2">
+  <button class="vtmn-btn">Button in Core theme (Dark mode)</button>
+</div>
+
+<Source
+  code={dedent`
+    <div class="vtmn-theme_core--dark">
+      <button class="vtmn-btn">Button in Core theme (Dark mode)</button>
+    </div>
+  `}
+/>
+
+## To go further
+
+The `prefers-color-scheme` CSS media feature is used to detect if the user has requested a light or dark color theme.
+The user might indicate this preference through an operating system setting (e.g. light or dark mode) or a user agent setting.
+
+If you want to use it to directly choose the correct theme based on the user preference, we invite you to follow [this documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme).

@@ -86,7 +86,7 @@ To know all the use cases and their associated code, [check out the showcase gui
 For example:
 
 ```html
-<p style="color: var(--vtmn-color_brand-digital)">Hello World!</p>
+<p style="color: var(--vtmn-semantic-color_content-primary)">Hello World!</p>
 ```
 
 You can see the different CSS Custom Properties [here](https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/design-tokens/src).
