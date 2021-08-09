@@ -10,4 +10,3 @@
 **/storybook-static
 packages/sources/web-components/src/**/README.md
 packages/sources/web-components/src/**/readme.md
-packages/sources/css/src/design-tokens/src/themes/**/*.css
