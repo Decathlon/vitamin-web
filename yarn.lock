@@ -4989,6 +4989,11 @@
   resolved "https://registry.yarnpkg.com/@vtmn/css-design-tokens/-/css-design-tokens-0.1.12.tgz#6237c745bacb3b8343a8d8c31a6759aed91b8253"
   integrity sha512-gQhR0lzOjNI+cvjBpLyR9ZDcmm14X55rZtw+XGkHcjtWUFflv7CG+U56RuQUaGTq1NIwTN/elcvP4dZMtkbZAg==
 
+"@vtmn/css-design-tokens@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@vtmn/css-design-tokens/-/css-design-tokens-0.2.2.tgz#d8d8cf2754ee5c0221c217bc6395d0bb7fbe6de9"
+  integrity sha512-3Eyqt48h3EbR5Qfx1IPJS+swLpYFYKh79awNyBykLssQc6iPgwECn0HTHKL8Gm8CJqhfXCW8sSYGFEGgGqYsvw==
+
 "@vue/babel-helper-vue-jsx-merge-props@^1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@vue/babel-helper-vue-jsx-merge-props/-/babel-helper-vue-jsx-merge-props-1.2.1.tgz#31624a7a505fb14da1d58023725a4c5f270e6a81"
@@ -9661,9 +9666,9 @@ eslint-plugin-testing-library@^3.9.2:
     "@typescript-eslint/experimental-utils" "^3.10.1"
 
 eslint-plugin-vue@^7.15.0:
-  version "7.15.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-vue/-/eslint-plugin-vue-7.15.0.tgz#272318b4aac789ea92e6cd28ef14698e9715ceab"
-  integrity sha512-br58VTAT8JB4Qe7XJVN7fNBqQgclE+hcsievoyQyGtCZsYprFMQYu+c9yHX9XkP55cMnSVZpW5fRgy3n/wZskA==
+  version "7.15.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-vue/-/eslint-plugin-vue-7.15.1.tgz#699c1f3ce2032ea8843b8d5d1adb863b7979965c"
+  integrity sha512-4/r+n/i+ovyeW2gVRRH92kpy4lkpFbyPR4BMxGBTLtGnwqOKKzjSo6EMSaT0RhWPvEjK9uifcY8e7z5n8BIEgw==
   dependencies:
     eslint-utils "^2.1.0"
     natural-compare "^1.4.0"
