@@ -69,9 +69,13 @@ import 'typeface-roboto';
 import 'typeface-roboto-condensed';
 ```
 
-## Usage
+# Usage
 
 Once you have installed this package, you just have to import CSS styles!
+
+### Without theming
+
+If you don't need different themes, you can choose the specific CSS package without CSS variables.
 
 With a bundler that supports CSS imports in JS files:
 
@@ -83,6 +87,44 @@ Otherwise include it in your HTML file:
 
 ```html
 <link rel="stylesheet" href="./node_modules/@vtmn/css-toggle/dist/index.css" />
+```
+
+### With theming
+
+If you need different themes, you can choose the specific CSS package with CSS variables. For this, be sure to install & import `@vtmn/css-design-tokens` before:
+
+```sh
+# with npm
+npm i -S @vtmn/css-design-tokens
+
+# with yarn
+yarn add @vtmn/css-design-tokens
+```
+
+Or you can also install it with a CDN like `unpkg.com`:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@vtmn/css-design-tokens" />
+```
+
+With a bundler that supports CSS imports in JS files:
+
+```javascript
+import '@vtmn/css-design-tokens/dist/index.css';
+import '@vtmn/css-toggle/dist/index-with-vars.css';
+```
+
+Otherwise include it in your HTML file:
+
+```html
+<link
+  rel="stylesheet"
+  href="./node_modules/@vtmn/css-design-tokens/dist/index.css"
+/>
+<link
+  rel="stylesheet"
+  href="./node_modules/@vtmn/css-toggle/dist/index-with-vars.css"
+/>
 ```
 
 ## Development
