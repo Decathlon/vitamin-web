@@ -20,7 +20,7 @@
 }
 
 .vtmn-rating--disabled {
-  opacity: var(--vtmn-state_disabled_opacity);
+  opacity: var(--vtmn-opacity_disabled-state);
 }
 
 .vtmn-rating--interactive {

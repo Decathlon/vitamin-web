@@ -90,7 +90,7 @@
 }
 
 .vtmn-radio-button[type='radio']:disabled + label {
-  opacity: var(--vtmn-state_disabled_opacity);
+  opacity: var(--vtmn-opacity_disabled-state);
   cursor: not-allowed;
 }
 

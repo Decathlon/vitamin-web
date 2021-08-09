@@ -118,7 +118,7 @@
 }
 
 .vtmn-toggle input[type='checkbox']:disabled + span {
-  opacity: var(--vtmn-state_disabled_opacity);
+  opacity: var(--vtmn-opacity_disabled-state);
 }
 
 /* Small */
