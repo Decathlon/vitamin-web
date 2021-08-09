@@ -186,9 +186,9 @@
   --vtmn-semantic-color_active-brand--s: var(--vtmn-semantic-color_background-brand-primary--s);
   --vtmn-semantic-color_active-brand--l: calc(var(--vtmn-semantic-color_background-brand-primary--l) * 0.7);
   --vtmn-semantic-color_active-brand: hsla(var(--vtmn-semantic-color_active-brand--h), var(--vtmn-semantic-color_active-brand--s), var(--vtmn-semantic-color_active-brand--l), 1);
-  --vtmn-semantic-color_active-accent--h: var(--vtmn-semantic-color_background-accent--h);
-  --vtmn-semantic-color_active-accent--s: var(--vtmn-semantic-color_background-accent--s);
-  --vtmn-semantic-color_active-accent--l: calc(var(--vtmn-semantic-color_background-accent--l) + (100% - var(--vtmn-semantic-color_background-accent--l)) * 0.5);
+  --vtmn-semantic-color_active-accent--h: var(--vtmn-semantic-color_hover-accent--h);
+  --vtmn-semantic-color_active-accent--s: var(--vtmn-semantic-color_hover-accent--s);
+  --vtmn-semantic-color_active-accent--l: calc(var(--vtmn-semantic-color_hover-accent--l) + (100% - var(--vtmn-semantic-color_hover-accent--l)) * 0.5);
   --vtmn-semantic-color_active-accent: hsla(var(--vtmn-semantic-color_active-accent--h), var(--vtmn-semantic-color_active-accent--s), var(--vtmn-semantic-color_active-accent--l), 1);
   --vtmn-semantic-color_active-primary-reversed-transparent--h: var(--vtmn-semantic-color_content-primary-reversed--h);
   --vtmn-semantic-color_active-primary-reversed-transparent--s: var(--vtmn-semantic-color_content-primary-reversed--s);
