@@ -91,8 +91,10 @@
 .vtmn-modal_content .vtmn-modal_actions {
   white-space: nowrap;
   margin: 0;
-  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
   pointer-events: all;
+  width: 100%;
 }
 
 .vtmn-modal_content .vtmn-modal_actions button {
@@ -122,9 +124,7 @@
   }
 
   .vtmn-modal_content .vtmn-modal_actions {
-    display: flex;
     flex-direction: column;
-    width: 100%;
   }
 
   .vtmn-modal_content .vtmn-modal_actions button {
