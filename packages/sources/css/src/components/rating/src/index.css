@@ -1,13 +1,12 @@
-/* Design tokens */
-@import '@vtmn/css-design-tokens/src/colors';
-@import '@vtmn/css-design-tokens/src/spacings';
 @import '@vtmn/css-design-tokens/src/typography';
 @import '@vtmn/css-design-tokens/src/opacities';
+@import '@vtmn/css-design-tokens/src/base-colors';
+@import '@vtmn/css-design-tokens/src/themes/default';
 
 /* Interactive Rating **/
 
 .vtmn-rating {
-  color: var(--vtmn-color_black);
+  color: var(--vtmn-semantic-color_content-primary);
   clear: both;
   margin: rem(10px) rem(5px);
   display: flex;
@@ -21,13 +20,13 @@
 }
 
 .vtmn-rating--disabled {
-  opacity: var(--vtmn-state_disabled_opacity);
+  opacity: var(--vtmn-opacity_disabled-state);
 }
 
 .vtmn-rating--interactive {
   display: flex;
   flex-direction: row-reverse;
-  color: var(--vtmn-color_brand-digital);
+  color: var(--vtmn-semantic-color_content-active);
 }
 
 .vtmn-rating--interactive > input {
@@ -48,7 +47,7 @@
   margin: 0 rem(3px);
   content: '';
   mask: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M3.298 14.805 8 12.173l4.702 2.632-1.05-5.285 3.957-3.659-5.352-.634L8 .333 5.743 5.227.39 5.86l3.958 3.66-1.05 5.285zm7.533-2.575L8 10.645 5.169 12.23 5.8 9.048 3.42 6.845l3.222-.382L8 3.517l1.359 2.946 3.222.382-2.382 2.203.632 3.182z'/></svg>");
-  background-color: var(--vtmn-color_brand-digital);
+  background-color: var(--vtmn-semantic-color_content-active);
   mask-size: cover;
 }
 
@@ -64,15 +63,15 @@
 .vtmn-rating_comment--primary {
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
-  color: var(--vtmn-color_black);
+  color: var(--vtmn-semantic-color_content-primary);
   font-weight: var(--vtmn-typo_font-weight--bold);
 }
 
 .vtmn-rating_comment--secondary {
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
+  color: var(--vtmn-semantic-color_content-secondary);
   font-weight: var(--vtmn-typo_font-weight--regular);
-  color: var(--vtmn-color_grey);
 }
 
 .vtmn-rating span[class^='vtmx-'] {
@@ -80,12 +79,13 @@
 }
 
 /* Variants */
+
 .vtmn-rating_variant--default {
-  color: var(--vtmn-color_black);
+  color: var(--vtmn-semantic-color_content-primary);
 }
 
 .vtmn-rating_variant--brand {
-  color: var(--vtmn-color_brand-digital);
+  color: var(--vtmn-semantic-color_background-brand-primary);
 }
 
 /* Sizes */

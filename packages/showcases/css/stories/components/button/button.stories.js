@@ -40,7 +40,7 @@ PrimaryReversed.parameters = {
       code: primaryReversed,
     },
   },
-  backgrounds: { default: 'blue' },
+  backgrounds: { default: 'primary-reversed' },
 };
 
 export const Secondary = () => secondary;
@@ -50,7 +50,6 @@ Secondary.parameters = {
       code: secondary,
     },
   },
-  backgrounds: { default: 'light' },
 };
 
 export const Tertiary = () => tertiary;
@@ -60,7 +59,6 @@ Tertiary.parameters = {
       code: tertiary,
     },
   },
-  backgrounds: { default: 'light' },
 };
 
 export const Conversion = () => conversion;
@@ -79,7 +77,6 @@ Ghost.parameters = {
       code: ghost,
     },
   },
-  backgrounds: { default: 'light' },
 };
 
 export const GhostReversed = () => ghostReversed;
@@ -89,5 +86,5 @@ GhostReversed.parameters = {
       code: ghostReversed,
     },
   },
-  backgrounds: { default: 'blue' },
+  backgrounds: { default: 'primary-reversed' },
 };
