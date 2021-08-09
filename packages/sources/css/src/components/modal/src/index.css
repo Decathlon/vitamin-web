@@ -27,12 +27,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: rem(600px);
+  width: rem(600px);
   max-height: 90vh;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  box-shadow: var(--vtmn-shadow_200);
   pointer-events: all;
 }
 
@@ -60,24 +61,21 @@
 
 .vtmn-modal_body_overflow-indicator {
   position: absolute;
-  bottom: 6rem;
-  left: 0;
-  width: 100%;
-  height: 2rem;
-  background: linear-gradient(180deg, hsla(0, 0%, 95.7%, 0), #f4f4f4);
-  content: '';
+  bottom: 5.5rem;
+  left: rem(32px);
+  right: rem(32px);
+  height: 4rem;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.8)
+  );
   overflow: auto;
 }
 
 .vtmn-modal_content .vtmn-modal_body {
   margin: rem(16px) 0;
   overflow-y: auto;
-
-  /* background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0) 90%,
-    rgba(230, 230, 230, 0.8) 100%
-  ); */
 }
 
 .vtmn-modal_content .vtmn-modal_body .vtmn-modal_body_text {
@@ -91,6 +89,7 @@
 }
 
 .vtmn-modal_content .vtmn-modal_actions {
+  white-space: nowrap;
   margin: 0;
   align-self: flex-end;
   pointer-events: all;
@@ -110,4 +109,38 @@
   right: 0;
   left: 0;
   top: 0;
+}
+
+@media screen and (max-width: 599px) {
+  .vtmn-modal_content {
+    width: 100%;
+    max-width: 100%;
+    bottom: 0;
+    padding: rem(24px);
+    left: 0;
+    transform: translate(0, 0);
+  }
+
+  .vtmn-modal_content .vtmn-modal_actions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .vtmn-modal_content .vtmn-modal_actions button {
+    margin: rem(6px) 0;
+  }
+
+  .vtmn-modal_body_overflow-indicator {
+    bottom: 10rem;
+    left: rem(24px);
+    right: rem(24px);
+    height: 4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .vtmn-modal_content {
+    width: rem(900px);
+  }
 }
