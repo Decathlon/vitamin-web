@@ -1,6 +1,6 @@
 {
   "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
-  "ignoreFiles": ["**/dist/**/*.css"],
+  "ignoreFiles": ["**/dist/**/*.css", "packages/sources/css/src/design-tokens/src/themes/**/*.css"],
   "rules": {
     "at-rule-no-unknown": [
       true,

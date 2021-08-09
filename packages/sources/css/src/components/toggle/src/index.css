@@ -1,8 +1,7 @@
-/* Design tokens */
-@import '@vtmn/css-design-tokens/src/colors';
-@import '@vtmn/css-design-tokens/src/spacings';
 @import '@vtmn/css-design-tokens/src/typography';
 @import '@vtmn/css-design-tokens/src/opacities';
+@import '@vtmn/css-design-tokens/src/base-colors';
+@import '@vtmn/css-design-tokens/src/themes/default';
 
 .vtmn-toggle {
   display: flex;
@@ -26,7 +25,7 @@
 }
 
 .vtmn-toggle_switch input[type='checkbox']:checked + span {
-  background-color: var(--vtmn-color_brand-digital);
+  background-color: var(--vtmn-semantic-color_content-active);
 }
 
 .vtmn-toggle_switch input[type='checkbox']:checked + span::before {
@@ -41,34 +40,35 @@
 .vtmn-toggle_switch
   input[type='checkbox']:not([disabled]):hover
   + span::before {
-  box-shadow: 0 0 0 rem(12px) color-mod(var(--vtmn-color_grey-dark-1) alpha(5%));
+  box-shadow: 0 0 0 rem(12px)
+    var(--vtmn-semantic-color_hover-secondary-transparent);
 }
 
 .vtmn-toggle_switch
   input[type='checkbox']:not([disabled]):active
   + span::before {
   box-shadow: 0 0 0 rem(12px)
-    color-mod(var(--vtmn-color_grey-dark-1) alpha(15%));
+    var(--vtmn-semantic-color_active-secondary-transparent);
 }
 
 .vtmn-toggle_switch
   input[type='checkbox']:not([disabled]):hover:checked
   + span::before {
   box-shadow: 0 0 0 rem(12px)
-    color-mod(var(--vtmn-color_brand-digital) alpha(5%));
+    var(--vtmn-semantic-color_hover-primary-transparent);
 }
 
 .vtmn-toggle_switch
   input[type='checkbox']:not([disabled]):active:checked
   + span::before {
   box-shadow: 0 0 0 rem(12px)
-    color-mod(var(--vtmn-color_brand-digital) alpha(15%));
+    var(--vtmn-semantic-color_active-primary-transparent);
 }
 
 .vtmn-toggle_switch input[type='checkbox']:focus-visible + span {
   outline: none;
-  box-shadow: 0 0 0 rem(4px) var(--vtmn-color_white),
-    0 0 0 rem(6px) var(--vtmn-color_black);
+  box-shadow: 0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
+    0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
 }
 
 .vtmn-toggle_switch span {
@@ -77,7 +77,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--vtmn-color_grey-light-1);
+  background-color: var(--vtmn-semantic-color_content-inactive);
   transition: background-color 0.4s, box-shadow 0.2s;
   border-radius: rem(16px);
   pointer-events: none;
@@ -90,7 +90,7 @@
   width: rem(24px);
   left: rem(4px);
   top: rem(4px);
-  background-color: var(--vtmn-color_white);
+  background-color: var(--vtmn-semantic-color_content-primary-reversed);
   transition: box-shadow 0.2s, transform 0.2s, background-color 0.2s;
   border-radius: 50%;
 }
@@ -106,7 +106,7 @@
 
 .vtmn-toggle label {
   font-family: var(--vtmn-typo_font-family);
-  color: var(--vtmn-color_black);
+  color: var(--vtmn-semantic-color_content-primary);
   font-size: var(--vtmn-typo_text-2-font-size);
   margin-left: rem(12px);
 }
@@ -118,7 +118,7 @@
 }
 
 .vtmn-toggle input[type='checkbox']:disabled + span {
-  opacity: var(--vtmn-state_disabled_opacity);
+  opacity: var(--vtmn-opacity_disabled-state);
 }
 
 /* Small */
@@ -155,27 +155,29 @@
 .vtmn-toggle_size--small
   input[type='checkbox']:not([disabled]):hover
   + span::before {
-  box-shadow: 0 0 0 rem(8px) color-mod(var(--vtmn-color_grey-dark-1) alpha(5%));
+  box-shadow: 0 0 0 rem(8px)
+    var(--vtmn-semantic-color_hover-secondary-transparent);
 }
 
 .vtmn-toggle_size--small
   input[type='checkbox']:not([disabled]):active
   + span::before {
-  box-shadow: 0 0 0 rem(8px) color-mod(var(--vtmn-color_grey-dark-1) alpha(15%));
+  box-shadow: 0 0 0 rem(8px)
+    var(--vtmn-semantic-color_active-secondary-transparent);
 }
 
 .vtmn-toggle_size--small
   input[type='checkbox']:not([disabled]):hover:checked
   + span::before {
   box-shadow: 0 0 0 rem(8px)
-    color-mod(var(--vtmn-color_brand-digital) alpha(5%));
+    var(--vtmn-semantic-color_hover-primary-transparent);
 }
 
 .vtmn-toggle_size--small
   input[type='checkbox']:not([disabled]):active:checked
   + span::before {
   box-shadow: 0 0 0 rem(8px)
-    color-mod(var(--vtmn-color_brand-digital) alpha(15%));
+    var(--vtmn-semantic-color_active-primary-transparent);
 }
 
 /* Medium */
@@ -212,26 +214,27 @@
 .vtmn-toggle_switch--medium
   input[type='checkbox']:not([disabled]):hover
   + span::before {
-  box-shadow: 0 0 0 rem(12px) color-mod(var(--vtmn-color_grey-dark-1) alpha(5%));
+  box-shadow: 0 0 0 rem(12px)
+    var(--vtmn-semantic-color_hover-secondary-transparent);
 }
 
 .vtmn-toggle_switch--medium
   input[type='checkbox']:not([disabled]):active
   + span::before {
   box-shadow: 0 0 0 rem(12px)
-    color-mod(var(--vtmn-color_grey-dark-1) alpha(15%));
+    var(--vtmn-semantic-color_active-secondary-transparent);
 }
 
 .vtmn-toggle_switch--medium
   input[type='checkbox']:not([disabled]):hover:checked
   + span::before {
   box-shadow: 0 0 0 rem(12px)
-    color-mod(var(--vtmn-color_brand-digital) alpha(5%));
+    var(--vtmn-semantic-color_hover-primary-transparent);
 }
 
 .vtmn-toggle_switch--medium
   input[type='checkbox']:not([disabled]):active:checked
   + span::before {
   box-shadow: 0 0 0 rem(12px)
-    color-mod(var(--vtmn-color_brand-digital) alpha(15%));
+    var(--vtmn-semantic-color_active-primary-transparent);
 }

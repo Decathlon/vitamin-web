@@ -57,7 +57,6 @@ export const argTypes = {
 };
 
 export const parameters = {
-  backgrounds: { default: 'grey' },
   actions: {
     handles: ['mouseenter', 'click', 'focusin', 'focusout'],
   },

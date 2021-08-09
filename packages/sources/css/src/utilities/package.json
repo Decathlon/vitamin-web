@@ -13,7 +13,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "postcss src/index.css -o dist/index.css && cross-env FONT_SIZE_BASE=10 postcss src/index.css -o dist/index-base10.css"
+    "build": "sh build.sh"
   },
   "devDependencies": {
     "@vtmn/css-design-tokens": "^0.3.0",

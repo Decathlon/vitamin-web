@@ -1,21 +1,41 @@
 {
-  "default": "light",
+  "default": "secondary",
   "values": [
     {
-      "name": "light",
-      "value": "#ffffff"
+      "name": "primary",
+      "value": "var(--vtmn-semantic-color_background-primary)"
     },
     {
-      "name": "grey",
-      "value": "#D9DDE1"
+      "name": "secondary",
+      "value": "var(--vtmn-semantic-color_background-secondary)"
     },
     {
-      "name": "blue",
-      "value": "#007dbc"
+      "name": "tertiary",
+      "value": "var(--vtmn-semantic-color_background-tertiary)"
     },
     {
-      "name": "dark",
-      "value": "#1a2a34"
+      "name": "brand-primary",
+      "value": "var(--vtmn-semantic-color_background-brand-primary)"
+    },
+    {
+      "name": "brand-secondary",
+      "value": "var(--vtmn-semantic-color_background-brand-secondary)"
+    },
+    {
+      "name": "accent",
+      "value": "var(--vtmn-semantic-color_background-accent)"
+    },
+    {
+      "name": "discount",
+      "value": "var(--vtmn-semantic-color_background-discount)"
+    },
+    {
+      "name": "primary-reversed",
+      "value": "var(--vtmn-semantic-color_background-primary-reversed)"
+    },
+    {
+      "name": "brand-primary-reversed",
+      "value": "var(--vtmn-semantic-color_background-primary-brand-reversed)"
     }
   ]
 }

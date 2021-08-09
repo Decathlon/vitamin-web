@@ -1,5 +1,5 @@
-/* Design tokens */
-@import '@vtmn/css-design-tokens/src/colors';
+@import '@vtmn/css-design-tokens/src/base-colors';
+@import '@vtmn/css-design-tokens/src/themes/default';
 
 .vtmn-loader {
   width: rem(32px);
@@ -8,7 +8,7 @@
   mask-image: linear-gradient(transparent 50%, white 50%),
     linear-gradient(to right, transparent 50%, white 50%);
   position: relative;
-  color: var(--vtmn-color_brand-digital);
+  color: var(--vtmn-semantic-color_content-active);
   animation: rotate 6s infinite;
 }
 .vtmn-loader::before {
