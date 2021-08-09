@@ -124,7 +124,7 @@
 
 /* Tertiary button */
 .vtmn-btn_variant--tertiary {
-  background-color: var(--vtmn-semantic-color_background-secondary);
+  background-color: var(--vtmn-semantic-color_background-brand-secondary);
   color: var(--vtmn-semantic-color_content-action);
   fill: var(--vtmn-semantic-color_content-action);
 }
