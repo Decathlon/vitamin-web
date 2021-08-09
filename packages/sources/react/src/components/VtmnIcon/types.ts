@@ -7,4 +7,13 @@ export type VtmnIconColor =
   | 'warning'
   | 'danger';
 
+export type VtmnIconVariant =
+  | 'default'
+  | 'brand'
+  | 'reversed'
+  | 'positive'
+  | 'information'
+  | 'warning'
+  | 'danger';
+
 export type VtmnIconSize = 16 | 20 | 24 | 32 | 64;

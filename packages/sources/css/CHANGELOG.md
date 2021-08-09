@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.20.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.20.1...@vtmn/css@0.20.2) (2021-08-09)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+## [0.20.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.20.0...@vtmn/css@0.20.1) (2021-08-06)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+# [0.20.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.19.0...@vtmn/css@0.20.0) (2021-08-06)
+
+
+### Features
+
+* **@vtmn/css:** add loader component ([#497](https://github.com/Decathlon/vitamin-web/issues/497)) ([25205ab](https://github.com/Decathlon/vitamin-web/commit/25205ab9eeccfff910128accceb50528aed81f4f))
+
+
+
+
+
+# [0.19.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.18.0...@vtmn/css@0.19.0) (2021-08-04)
+
+
+### Features
+
+* **@vtmn/css:** add popover component ([#481](https://github.com/Decathlon/vitamin-web/issues/481)) ([7002c6b](https://github.com/Decathlon/vitamin-web/commit/7002c6b16aed968eaf80be399a14dff632e0e81a))
+
+
+
+
+
+# [0.18.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.17.1...@vtmn/css@0.18.0) (2021-08-04)
+
+
+### Features
+
+* **@vtmn/css:** add rating component ([#434](https://github.com/Decathlon/vitamin-web/issues/434)) ([0c23395](https://github.com/Decathlon/vitamin-web/commit/0c2339551711095a8e2ca14bd16eda462fdf15cd)), closes [#317](https://github.com/Decathlon/vitamin-web/issues/317)
+
+
+
+
+
 ## [0.17.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.17.0...@vtmn/css@0.17.1) (2021-08-03)
 
 **Note:** Version bump only for package @vtmn/css

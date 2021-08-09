@@ -12,8 +12,8 @@ export const argTypes = {
   },
   color: {
     type: { name: 'string', required: false },
-    description: 'The color of the icon.',
-    defaultValue: 'black',
+    description:
+      'The color of the icon. (DEPRECATED - Use "variant" prop instead).',
     control: {
       type: 'select',
       options: [
@@ -36,10 +36,26 @@ export const argTypes = {
       options: Object.keys(vitamixIconsList),
     },
   },
+  variant: {
+    type: { name: 'string', required: false },
+    description: 'The variant of the icon.',
+    defaultValue: 'default',
+    control: {
+      type: 'select',
+      options: [
+        'default',
+        'brand',
+        'reversed',
+        'positive',
+        'information',
+        'warning',
+        'danger',
+      ],
+    },
+  },
 };
 
 export const parameters = {
-  backgrounds: { default: 'grey' },
   design: {
     type: 'figma',
     url: 'https://www.figma.com/file/ujn50nNMfGKzZJccATv7Vk/?node-id=0%3A1',
