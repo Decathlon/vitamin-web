@@ -1,8 +1,8 @@
 /**
- * @tokens Colors
- * @presenter Color
+ * Legacy colors - DEPRECATED (no longer maintained)
  */
 :root {
+  /* DEPRECATED (no longer maintained) */
   --vtmn-color_black: #001018;
   --vtmn-color_brand: #0082c3;
   --vtmn-color_brand-pro: #012b49;

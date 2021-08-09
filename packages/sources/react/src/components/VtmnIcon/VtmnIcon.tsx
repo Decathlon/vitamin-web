@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
-import { VtmnIconColor, VtmnIconSize } from './types';
+import { VtmnIconColor, VtmnIconSize, VtmnIconVariant } from './types';
 
 export interface VtmnIconProps extends React.HTMLAttributes<HTMLElement> {
   /**
@@ -9,10 +9,16 @@ export interface VtmnIconProps extends React.HTMLAttributes<HTMLElement> {
    **/
   size?: VtmnIconSize;
   /**
-   * The color of the icon.
-   * @default 'black'
+   * The legacy color of the icon.
+   * @default undefined
+   * @deprecated use the "variant" prop instead
    **/
   color?: VtmnIconColor;
+  /**
+   * The variant of the icon.
+   * @default 'default'
+   */
+  variant?: VtmnIconVariant;
   /**
    * The value of the icon.
    **/
@@ -21,16 +27,44 @@ export interface VtmnIconProps extends React.HTMLAttributes<HTMLElement> {
 
 export const VtmnIcon: React.FC<VtmnIconProps> = ({
   size = 24,
-  color = 'black',
+  color,
+  variant = 'default',
   value,
   className,
   style,
   ...props
-}) => (
-  <span
-    className={`vtmx-${value} ${className ? className : ''}`}
-    style={{ fontSize: size, color: `var(--vtmn-color_${color})`, ...style }}
-    {...props}></span>
-);
+}) => {
+  const retrieveSemanticColor = (variant: VtmnIconVariant) => {
+    switch (variant) {
+      case 'default':
+        return 'content-primary';
+      case 'brand':
+        return 'background-brand-primary';
+      case 'reversed':
+        return 'content-primary-reversed';
+      case 'positive':
+        return 'content-positive';
+      case 'information':
+        return 'content-information';
+      case 'warning':
+        return 'content-warning';
+      case 'danger':
+        return 'content-danger';
+    }
+  };
+
+  return (
+    <span
+      className={`vtmx-${value} ${className ? className : ''}`}
+      style={{
+        fontSize: size,
+        color: color
+          ? `var(--vtmn-color_${color})`
+          : `var(--vtmn-semantic-color_${retrieveSemanticColor(variant)})`,
+        ...style,
+      }}
+      {...props}></span>
+  );
+};
 
 export default React.memo(VtmnIcon);

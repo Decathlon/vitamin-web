@@ -5,10 +5,7 @@
 @import 'tailwindcss/screens';
 
 /* Design tokens */
-@import './design-tokens/src/breakpoints';
-@import './design-tokens/src/colors';
-@import './design-tokens/src/spacings';
-@import './design-tokens/src/typography';
+@import './design-tokens/src/index';
 
 /* Utilities */
 @import './utilities/src/typography';
@@ -18,8 +15,11 @@
 @import './components/button/src';
 @import './components/checkbox/src';
 @import './components/link/src';
+@import './components/loader/src';
 @import './components/modal/src';
+@import './components/popover/src';
 @import './components/radio-button/src';
+@import './components/rating/src';
 @import './components/select/src';
 @import './components/text-input/src';
 @import './components/toggle/src';

@@ -108,11 +108,26 @@ These packages allow the consumption of elements with a higher level of granular
     <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status" alt="Quality Gate Status" /></a></td>
   </tr>
   <tr>
+    <th>@vtmn/css-loader</th>
+    <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/components/loader#readme">README</a></td>
+    <td><a href="https://www.decathlon.design/726f8c765/p/09b561-loader-beta/b/32cf1b"><img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" /></a></td>
+    <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-loader--overview"><img src="https://img.shields.io/badge/storybook-css-d891bc?style=flat&logo=storybook" alt="storybook" /></a></td>
+    <td><a href="https://www.npmjs.com/package/@vtmn/css-loader"><img src="https://img.shields.io/npm/v/@vtmn/css-loader?style=flat&logo=npm" alt="npm version" /></a></td>
+    <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status" alt="Quality Gate Status" /></a></td>
+  </tr>
+  <tr>
     <th>@vtmn/css-modal</th>
     <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/components/modal#readme">README</a></td>
     <td><a href="https://www.decathlon.design/726f8c765/p/9596dd-modal-beta/b/08a8f6"><img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" /></a></td>
     <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-modal--overview"><img src="https://img.shields.io/badge/storybook-css-d891bc?style=flat&logo=storybook" alt="storybook" /></a></td>
     <td><a href="https://www.npmjs.com/package/@vtmn/css-modal"><img src="https://img.shields.io/npm/v/@vtmn/css-modal?style=flat&logo=npm" alt="npm version" /></a></td>
+  </tr>
+  <tr>
+    <th>@vtmn/css-popover</th>
+    <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/components/popover#readme">README</a></td>
+    <td><a href="https://www.decathlon.design/726f8c765/p/3086dd-popover-beta/b/129609"><img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" /></a></td>
+    <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-popover--overview"><img src="https://img.shields.io/badge/storybook-css-d891bc?style=flat&logo=storybook" alt="storybook" /></a></td>
+    <td><a href="https://www.npmjs.com/package/@vtmn/css-popover"><img src="https://img.shields.io/npm/v/@vtmn/css-popover?style=flat&logo=npm" alt="npm version" /></a></td>
     <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status" alt="Quality Gate Status" /></a></td>
   </tr>
   <tr>
@@ -121,6 +136,14 @@ These packages allow the consumption of elements with a higher level of granular
     <td><a href="https://www.decathlon.design/726f8c765/p/31e934-radio-button"><img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" /></a></td>
     <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-radio-button--overview"><img src="https://img.shields.io/badge/storybook-css-d891bc?style=flat&logo=storybook" alt="storybook" /></a></td>
     <td><a href="https://www.npmjs.com/package/@vtmn/css-radio-button"><img src="https://img.shields.io/npm/v/@vtmn/css-radio-button?style=flat&logo=npm" alt="npm version" /></a></td>
+    <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status" alt="Quality Gate Status" /></a></td>
+  </tr>
+  <tr>
+    <th>@vtmn/css-rating</th>
+    <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/components/rating#readme">README</a></td>
+    <td><a href="https://www.decathlon.design/726f8c765/p/19ec87-rating-beta/b/5496b9"><img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" /></a></td>
+    <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-rating--overview"><img src="https://img.shields.io/badge/storybook-css-d891bc?style=flat&logo=storybook" alt="storybook" /></a></td>
+    <td><a href="https://www.npmjs.com/package/@vtmn/css-rating"><img src="https://img.shields.io/npm/v/@vtmn/css-rating?style=flat&logo=npm" alt="npm version" /></a></td>
     <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status" alt="Quality Gate Status" /></a></td>
   </tr>
   <tr>

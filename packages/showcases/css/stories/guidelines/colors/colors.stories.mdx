@@ -12,27 +12,20 @@ import tailwindConfig from '@vtmn/css-tailwind-config';
 
 > Our colors convey our brand personality and values but also help users navigate through the interface. The right combination of colors can influence how they feel, think, and behave.
 
-For more details, see our [Colors' guideline](https://www.decathlon.design/726f8c765/p/85c5a1-colors/b/06f55e).
+For more details, see our <a class="vtmn-link vtmn-link--icon-along" href="https://www.decathlon.design/726f8c765/p/85c5a1-colors/b/06f55e" target="_blank">Colors' guideline</a>.
 
 ## Using [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
 
 If you don't know CSS Custom Properties, you can see basic usage documentation [here](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#Basic_usage). All our CSS Custom Properties for colors are listed at "Swatches" column just below:
 
 <ColorPalette>
-  {Object.keys(tailwindConfig.theme.colors).map((key) => (
-    <ColorItem
-      title={key}
-      colors={
-        typeof tailwindConfig.theme.colors[key] === 'object'
-          ? Object.keys(tailwindConfig.theme.colors[key]).map((color) =>
-              color !== 'DEFAULT'
-                ? `var(--vtmn-color_${key}-${color})`
-                : `var(--vtmn-color_${key})`,
-            )
-          : [tailwindConfig.theme.colors[key]]
-      }
-    />
-  ))}
+  {Object.keys(tailwindConfig.theme.colors).map((key) => {
+    if (typeof tailwindConfig.theme.colors[key] === 'string') {
+      return (
+        <ColorItem title={key} colors={[tailwindConfig.theme.colors[key]]} />
+      );
+    }
+  })}
 </ColorPalette>
 
 ## Using [Tailwind CSS](https://tailwindcss.com) utility classes
@@ -40,9 +33,4 @@ If you don't know CSS Custom Properties, you can see basic usage documentation [
 You can use colors with Tailwind CSS utility classes for [Background Color](https://tailwindcss.com/docs/background-color) & [Text Color](https://tailwindcss.com/docs/text-color) for example.
 But you can also use them for borders, gradients, etc. Go to [Tailwind CSS documentation](https://tailwindcss.com/docs) & quick search for anything!
 
-All our Tailwind CSS colors' configuration is listed just below:
-
-<Source
-  language="json"
-  code={JSON.stringify(tailwindConfig.theme.colors, null, 2)}
-/>
+All our Tailwind CSS colors names are just above next to their representation.
