@@ -1,4 +1,5 @@
-<!--<div class="block">
+<!-- V1
+  <div class="block">
   <details class="vtmn-modal">
     <summary>
       Show the modal
@@ -68,7 +69,7 @@
 </div>
 -->
 
-<!--
+<!-- V2
 <div class="block">
   <p data-toggle="modal" data-target="#modal-1">Launch modal</p>
 
@@ -104,23 +105,59 @@
 </div>
 -->
 
-<div class="wrap">
-  <a href="#modal-1" class="btn btn-big">Launch Modal</a>
-</div>
+<!-- V2/2-->
 
-<!-- Modal -->
-<div class="modal" id="modal-1" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-header">
-      <h2>Modal in CSS?</h2>
-      <a href="#" class="btn-close" aria-hidden="true">×</a>
+<a tabindex="-1" href="#modal-1">
+  <button class="vtmn-btn vtmn-btn_size--small">Modal</button>
+</a>
+
+<div class="vtmn-modal" id="modal-1" aria-hidden="true">
+  <div class="vtmn-modal_content">
+    <div class="vtmn-modal_content_title">
+      <p class="vtmn-modal_content_title--text">What is a modal?</p>
+      <a href="#" class="vtmn-modal_content_title--close" aria-hidden="true"
+        ><span class="vtmx-close-line"></span
+      ></a>
     </div>
-    <div class="modal-body">
-      <p>One modal example here! :D</p>
+    <div class="vtmn-modal_content_body">
+      <p class="vtmn-modal_content_body--text">
+        A modal is a window that appears on top of the main content and
+        requiring user interaction. This modal disables the main content until
+        the user explicitly interacts with the modal dialog.
+      </p>
+      <div class="vtmn-modal_content_body--overflow-indicator"></div>
     </div>
-    <div class="modal-footer">
-      <a href="#" class="btn">Nice!</a>
+    <div class="vtmn-modal_content_actions">
+      <a tabindex="-1" href="#" aria-hidden="true"
+        ><button class="vtmn-btn vtmn-btn_variant--secondary">
+          Got Back
+        </button></a
+      >
+      <button class="vtmn-btn vtmn-btn_variant--primary">
+        Yes, I understand
+      </button>
     </div>
   </div>
 </div>
-<!-- /Modal -->
+
+<!-- V3 
+<div class="block">
+  <input type="checkbox" id="modal" />
+  <label for="modal" class="example-label">Open Modal</label>
+  <label for="modal" class="modal-background"></label>
+  <div class="modal">
+    <div class="modal-header">
+      <h3>Modal Title</h3>
+      <label for="modal">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAdVBMVEUAAABNTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU0N3NIOAAAAJnRSTlMAAQIDBAUGBwgRFRYZGiEjQ3l7hYaqtLm8vsDFx87a4uvv8fP1+bbY9ZEAAAB8SURBVBhXXY5LFoJAAMOCIP4VBRXEv5j7H9HFDOizu2TRFljedgCQHeocWHVaAWStXnKyl2oVWI+kd1XLvFV1D7Ng3qrWKYMZ+MdEhk3gbhw59KvlH0eTnf2mgiRwvQ7NW6aqNmncukKhnvo/zzlQ2PR/HgsAJkncH6XwAcr0FUY5BVeFAAAAAElFTkSuQmCC"
+          width="16"
+          height="16"
+          alt=""
+        />
+      </label>
+    </div>
+    <p>Content</p>
+  </div>
+</div>
+-->
