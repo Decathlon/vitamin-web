@@ -75,8 +75,11 @@ input[type='checkbox']:checked ~ .modal-background {
 .vtmn-modal::before {
   content: '';
   display: none;
-  background: color-mod(
-    var(--vtmn-semantic-color_background-primary-reversed) alpha(0.8)
+  background: hsla(
+    var(--vtmn-semantic-color_background-primary-reversed--h),
+    var(--vtmn-semantic-color_background-primary-reversed--s),
+    var(--vtmn-semantic-color_background-primary-reversed--l),
+    0.8
   );
   position: fixed;
   top: 0;
