@@ -14,8 +14,8 @@
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
   line-height: var(--vtmn-typo_text-2-line-height);
-  color: var(--vtmn-color_white);
-  background-color: var(--vtmn-color_black);
+  color: var(--vtmn-semantic-color_content-primary-reversed);
+  background-color: var(--vtmn-semantic-color_background-primary-reversed);
   box-shadow: var(--vtmn-shadow_200);
   border-radius: rem(4px);
 }
