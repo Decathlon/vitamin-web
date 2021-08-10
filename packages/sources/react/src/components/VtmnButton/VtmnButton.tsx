@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '@vtmn/css-button';
+import '@vtmn/css-button/dist/index-with-vars.css';
 import { VtmnButtonVariant, VtmnButtonSize } from './types';
 import { VtmnIcon } from '../VtmnIcon';
 import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
