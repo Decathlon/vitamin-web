@@ -1,4 +1,6 @@
 @import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/animations';
+@import '@vtmn/css-design-tokens/src/shadows';
 @import '@vtmn/css-design-tokens/src/base-colors';
 @import '@vtmn/css-design-tokens/src/themes/default';
 
@@ -36,14 +38,14 @@
   z-index: 1000;
   min-width: rem(250px);
   width: auto;
-  box-shadow: 0 rem(16px) rem(16px) 0 rgba(0, 0, 0, 0.28);
+  box-shadow: var(--vtmn-shadow_200);
   border-radius: rem(8px);
   background-color: var(--vtmn-semantic-color_background-primary-reversed);
   color: var(--vtmn-semantic-color_content-primary-reversed);
   display: none;
   position: absolute;
   padding: rem(16px);
-  animation: fade-popover 200ms ease-in-out;
+  animation: var(--vtmn-animation_fade-in);
 }
 
 .vtmn-popover > [role='tooltip']::after {
@@ -167,14 +169,4 @@
     0.65em;
   left: -0.6em;
   bottom: 50%;
-}
-
-/* ANIMATION */
-@keyframes fade-popover {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }

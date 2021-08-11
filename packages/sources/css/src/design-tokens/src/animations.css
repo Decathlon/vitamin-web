@@ -1,0 +1,17 @@
+/**
+ * @tokens Animations
+ * @presenter Animation
+ */
+:root {
+  --vtmn-animation_fade-in: --vtmn-animation_keyframes_fade-in 200ms ease-in-out
+    forwards;
+}
+
+@keyframes --vtmn-animation_keyframes_fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

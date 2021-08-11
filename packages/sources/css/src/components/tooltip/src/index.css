@@ -1,6 +1,7 @@
 @import '@vtmn/css-design-tokens/src/typography';
 @import '@vtmn/css-design-tokens/src/opacities';
 @import '@vtmn/css-design-tokens/src/shadows';
+@import '@vtmn/css-design-tokens/src/animations';
 @import '@vtmn/css-design-tokens/src/base-colors';
 @import '@vtmn/css-design-tokens/src/themes/default';
 
@@ -151,19 +152,9 @@
   transform: translate(0.5em, -50%);
 }
 
-/* ANIMATION */
-@keyframes fade-tooltip {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .vtmn-tooltip:not([data-tooltip='']):hover::before,
 .vtmn-tooltip:not([data-tooltip='']):hover::after,
 .vtmn-tooltip:not([data-tooltip='']):focus-visible::before,
 .vtmn-tooltip:not([data-tooltip='']):focus-visible::after {
-  animation: fade-tooltip 200ms ease-in-out forwards;
+  animation: var(--vtmn-animation_fade-in);
 }
