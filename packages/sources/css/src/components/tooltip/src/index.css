@@ -48,16 +48,6 @@
     0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
 }
 
-/* Make the tooltips respond to hover */
-.vtmn-tooltip:hover::before,
-.vtmn-tooltip:hover::after,
-.vtmn-tooltip:focus-visible::before,
-.vtmn-tooltip:focus-visible::after {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* don't show empty tooltips */
 .vtmn-tooltip[data-tooltip='']::before,
 .vtmn-tooltip[data-tooltip='']::after {
@@ -152,9 +142,36 @@
   transform: translate(0.5em, -50%);
 }
 
-.vtmn-tooltip:not([data-tooltip='']):hover::before,
-.vtmn-tooltip:not([data-tooltip='']):hover::after,
-.vtmn-tooltip:not([data-tooltip='']):focus-visible::before,
-.vtmn-tooltip:not([data-tooltip='']):focus-visible::after {
-  animation: var(--vtmn-animation_fade-in);
+@media screen and (min-width: 600px) {
+  .vtmn-tooltip:not([data-tooltip='']):hover::before,
+  .vtmn-tooltip:not([data-tooltip='']):hover::after,
+  .vtmn-tooltip:not([data-tooltip='']):focus-visible::before,
+  .vtmn-tooltip:not([data-tooltip='']):focus-visible::after {
+    animation: var(--vtmn-animation_fade-in);
+  }
+
+  /* Make the tooltips respond to hover */
+  .vtmn-tooltip:hover::before,
+  .vtmn-tooltip:hover::after,
+  .vtmn-tooltip:focus-visible::before,
+  .vtmn-tooltip:focus-visible::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .vtmn-tooltip:not([data-tooltip='']):focus::before,
+  .vtmn-tooltip:not([data-tooltip='']):focus::after {
+    animation: var(--vtmn-animation_fade-in);
+  }
+
+  /* Make the tooltips respond to hover */
+  .vtmn-tooltip:focus::before,
+  .vtmn-tooltip:focus::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
