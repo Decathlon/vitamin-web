@@ -167,7 +167,6 @@
     animation: var(--vtmn-animation_fade-in);
   }
 
-  /* Make the tooltips respond to hover */
   .vtmn-tooltip:focus::before,
   .vtmn-tooltip:focus::after {
     display: flex;

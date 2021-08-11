@@ -3,11 +3,10 @@
  * @presenter Animation
  */
 :root {
-  --vtmn-animation_fade-in: --vtmn-animation_keyframes_fade-in 200ms ease-in-out
-    forwards;
+  --vtmn-animation_fade-in: fade_in 200ms ease-in-out forwards;
 }
 
-@keyframes --vtmn-animation_keyframes_fade-in {
+@keyframes fade_in {
   from {
     opacity: 0;
   }
