@@ -1,4 +1,5 @@
 import overview from './examples/overview.html';
+import demo from './examples/demo/demo.html';
 
 export default {
   title: 'Components / Snackbar',
@@ -19,6 +20,15 @@ Overview.parameters = {
   docs: {
     source: {
       code: overview,
+    },
+  },
+};
+
+export const Demo = () => demo;
+Demo.parameters = {
+  docs: {
+    source: {
+      code: demo,
     },
   },
 };
