@@ -22,17 +22,17 @@
   margin-bottom: rem(5px);
   width: min-content;
   background-color: var(--vtmn-semantic-color_background-primary);
+  cursor: pointer;
 }
 
 /* Set the dropdown arrow icon */
-.vtmn-select_container label::after {
+.vtmn-select_container::after {
   content: '';
   mask: url("data:image/svg+xml;charset=utf-8, <svg width='24' height='24' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m8 8.781 3.3-3.3.943.943L8 10.667 3.757 6.424l.943-.943 3.3 3.3z'/></svg>");
-  mask-size: cover;
   display: block;
   position: relative;
   float: right;
-  top: rem(36px);
+  top: rem(-40px);
   right: rem(12px);
   width: rem(24px);
   height: rem(24px);
