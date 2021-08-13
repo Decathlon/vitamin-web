@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.22.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.21.0...@vtmn/css@0.22.0) (2021-08-13)
+
+
+### Features
+
+* **@vtmn/css-popover & @vtmn/css-tooltip:** change showcase for a better global experience ([#513](https://github.com/Decathlon/vitamin-web/issues/513)) ([773e5c0](https://github.com/Decathlon/vitamin-web/commit/773e5c000e53e641dccdf4757d05c97492263c6e))
+
+
+
+
+
 # [0.21.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.20.4...@vtmn/css@0.21.0) (2021-08-11)
 
 
