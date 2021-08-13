@@ -6,46 +6,37 @@
 </button>
 
 <div class="block">
-  <div class="vtmn-toast">
-    <p>
-      This is the description of a snackbar This is the description of a
-      snackbar
-    </p>
+  <div id="vtmn-toast-1" class="vtmn-toast">
+    <p>This is the description of a snackbar</p>
   </div>
 </div>
 
 <div class="block">
-  <div class="vtmn-toast vtmn-toast_with-icon-info">
-    <p>
-      This is the description of a snackbar This is the description of a
-      snackbar
-    </p>
+  <div id="vtmn-toast-2" class="vtmn-toast vtmn-toast_with-icon-info">
+    <p>This is the description of a snackbar</p>
   </div>
 </div>
 
 <div class="block">
-  <div class="vtmn-toast vtmn-toast_icon-close">
-    <p>
-      This is the description of a snackbar This is the description of a
-      snackbar
-    </p>
+  <div id="vtmn-toast-3" class="vtmn-toast vtmn-toast_icon-close">
+    <p>This is the description of a snackbar</p>
   </div>
 </div>
 
 <div class="block">
-  <div class="vtmn-toast vtmn-toast_with-icon-info vtmn-toast_icon-close">
-    <p>
-      This is the description of a snackbar This is the description of a
-      snackbar
-    </p>
+  <div
+    id="vtmn-toast-4"
+    class="vtmn-toast vtmn-toast_with-icon-info vtmn-toast_icon-close"
+  >
+    <p>This is the description of a snackbar</p>
   </div>
 </div>
 
 <script type="text/javascript">
-  document.getElementById('vtmn-snck-1').style.display = 'none';
-  document.getElementById('vtmn-snck-2').style.display = 'none';
-  document.getElementById('vtmn-snck-1').style.display = 'none';
-  document.getElementById('vtmn-snck-2').style.display = 'none';
+  document.getElementById('vtmn-toast-1').style.display = 'none';
+  document.getElementById('vtmn-toast-2').style.display = 'none';
+  document.getElementById('vtmn-toast-3').style.display = 'none';
+  document.getElementById('vtmn-toast-4').style.display = 'none';
 
   function showToast(toast) {
     toast.style.position = 'fixed';
@@ -59,16 +50,42 @@
   }
 
   document.getElementById('btn-toast-1').addEventListener('click', function () {
-    document.getElementById('vtmn-snck-2').style.display = 'none';
-    showToast(document.getElementById('vtmn-snck-1'));
+    document.getElementById('vtmn-toast-2').style.display = 'none';
+    document.getElementById('vtmn-toast-3').style.display = 'none';
+    document.getElementById('vtmn-toast-4').style.display = 'none';
+    showToast(document.getElementById('vtmn-toast-1'));
   });
 
   document.getElementById('btn-toast-2').addEventListener('click', function () {
-    document.getElementById('vtmn-snck-1').style.display = 'none';
-    showToast(document.getElementById('vtmn-snck-2'));
+    document.getElementById('vtmn-toast-1').style.display = 'none';
+    document.getElementById('vtmn-toast-3').style.display = 'none';
+    document.getElementById('vtmn-toast-4').style.display = 'none';
+    showToast(document.getElementById('vtmn-toast-2'));
   });
 
-  document.getElementById('btn-dismiss').addEventListener('click', function () {
-    document.getElementById('vtmn-snck-1').style.display = 'none';
+  document.getElementById('btn-toast-3').addEventListener('click', function () {
+    document.getElementById('vtmn-toast-1').style.display = 'none';
+    document.getElementById('vtmn-toast-2').style.display = 'none';
+    document.getElementById('vtmn-toast-4').style.display = 'none';
+    showToast(document.getElementById('vtmn-toast-3'));
   });
+
+  document.getElementById('btn-toast-4').addEventListener('click', function () {
+    document.getElementById('vtmn-toast-1').style.display = 'none';
+    document.getElementById('vtmn-toast-2').style.display = 'none';
+    document.getElementById('vtmn-toast-3').style.display = 'none';
+    showToast(document.getElementById('vtmn-toast-4'));
+  });
+
+  /*document
+    .querySelector('#vtmn-toast-3 > p\\:after')
+    .addEventListener('click', function () {
+      document.getElementById('vtmn-toast-3').style.display = 'none';
+    });
+
+  document
+    .querySelector('#vtmn-toast-4 > p::after')
+    .addEventListener('click', function () {
+      document.getElementById('vtmn-toast-4').style.display = 'none';
+    });*/
 </script>

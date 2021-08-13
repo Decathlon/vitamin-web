@@ -4,6 +4,7 @@
  */
 :root {
   --vtmn-animation_fade-in: fade_in 200ms ease-in-out forwards;
+  --vtmn-animation_show-up: show-up 400ms ease-in-out forwards;
 }
 
 @keyframes fade_in {
@@ -12,5 +13,14 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes show-up {
+  from {
+    bottom: rem(-100px);
+  }
+  to {
+    bottom: 0;
   }
 }

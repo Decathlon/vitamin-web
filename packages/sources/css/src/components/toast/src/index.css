@@ -1,8 +1,10 @@
-@import '@vtmn/css-design-tokens/src/legacy-colors';
+@import '@vtmn/css-design-tokens/src/base-colors';
+@import '@vtmn/css-design-tokens/src/themes/default';
 @import '@vtmn/css-design-tokens/src/spacings';
 @import '@vtmn/css-design-tokens/src/typography';
 @import '@vtmn/css-design-tokens/src/opacities';
 @import '@vtmn/css-design-tokens/src/shadows';
+@import '@vtmn/css-design-tokens/src/animations';
 
 .vtmn-toast {
   display: flex;
@@ -18,6 +20,7 @@
   background-color: var(--vtmn-semantic-color_background-primary-reversed);
   box-shadow: var(--vtmn-shadow_200);
   border-radius: rem(4px);
+  animation: var(--vtmn-animation_show-up);
 }
 
 .vtmn-toast > p {
@@ -43,6 +46,7 @@
 }
 
 .vtmn-toast_icon-close > p::after {
+  cursor: pointer;
   margin-left: rem(16px);
   mask: url("data:image/svg+xml;charset=utf-8, <svg width='24' height='24' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m8 7.057 3.3-3.3.943.943-3.3 3.3 3.3 3.3-.943.943-3.3-3.3-3.3 3.3-.943-.943 3.3-3.3-3.3-3.3.943-.943 3.3 3.3z'/></svg>");
 }
