@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.21.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.20.4...@vtmn/css@0.21.0) (2021-08-11)
+
+
+### Features
+
+* **@vtmn/css-select:** move the icon after from the label to the container ([#510](https://github.com/Decathlon/vitamin-web/issues/510)) ([5445a63](https://github.com/Decathlon/vitamin-web/commit/5445a63b6c2199aee4d66d71208b30c0f77a7461))
+
+
+
+
+
+## [0.20.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.20.3...@vtmn/css@0.20.4) (2021-08-09)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
 ## [0.20.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.20.2...@vtmn/css@0.20.3) (2021-08-09)
 
 **Note:** Version bump only for package @vtmn/css
