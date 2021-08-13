@@ -142,7 +142,7 @@
   transform: translate(0.5em, -50%);
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
   .vtmn-tooltip:not([data-tooltip='']):hover::before,
   .vtmn-tooltip:not([data-tooltip='']):hover::after,
   .vtmn-tooltip:not([data-tooltip='']):focus-visible::before,
@@ -161,12 +161,13 @@
   }
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 899px) {
   .vtmn-tooltip:not([data-tooltip='']):focus::before,
   .vtmn-tooltip:not([data-tooltip='']):focus::after {
     animation: var(--vtmn-animation_fade-in);
   }
 
+  /* Make the tooltips respond to focus */
   .vtmn-tooltip:focus::before,
   .vtmn-tooltip:focus::after {
     display: flex;
