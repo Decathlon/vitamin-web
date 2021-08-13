@@ -1,5 +1,5 @@
 import overview from './examples/overview.html';
-import demo from './examples/demo/demo.html';
+import demo from './examples/demo.html';
 
 export default {
   title: 'Components / Snackbar',

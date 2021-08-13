@@ -1,0 +1,50 @@
+<button id="btn-snck-1" class="vtmn-btn">Snackbar with button</button>
+<button id="btn-snck-2" class="vtmn-btn">Snackbar without button</button>
+
+<div class="block">
+  <div id="vtmn-snck-1" class="vtmn-snackbar">
+    <p>This is the description of a snackbar</p>
+    <button
+      id="btn-dismiss"
+      class="vtmn-btn vtmn-btn_variant--tertiary vtmn-btn_size--small"
+    >
+      Button
+    </button>
+  </div>
+</div>
+
+<div class="block">
+  <div id="vtmn-snck-2" class="vtmn-snackbar">
+    <p>This is the description of a snackbar</p>
+  </div>
+</div>
+
+<script type="text/javascript">
+  document.getElementById('vtmn-snck-1').style.display = 'none';
+  document.getElementById('vtmn-snck-2').style.display = 'none';
+
+  function showSnackbar(snackbar) {
+    snackbar.style.position = 'fixed';
+    snackbar.style.right = '50%';
+    snackbar.style.bottom = '0';
+    snackbar.style.transform = 'translate(50%, -50%)';
+    snackbar.style.display = 'flex';
+    setTimeout(() => {
+      snackbar.style.display = 'none';
+    }, 5000);
+  }
+
+  document.getElementById('btn-snck-1').addEventListener('click', function () {
+    document.getElementById('vtmn-snck-2').style.display = 'none';
+    showSnackbar(document.getElementById('vtmn-snck-1'));
+  });
+
+  document.getElementById('btn-snck-2').addEventListener('click', function () {
+    document.getElementById('vtmn-snck-1').style.display = 'none';
+    showSnackbar(document.getElementById('vtmn-snck-2'));
+  });
+
+  document.getElementById('btn-dismiss').addEventListener('click', function () {
+    document.getElementById('vtmn-snck-1').style.display = 'none';
+  });
+</script>

@@ -18,6 +18,7 @@
   background-color: var(--vtmn-semantic-color_background-primary-reversed);
   box-shadow: var(--vtmn-shadow_200);
   border-radius: rem(4px);
+  animation: show-up 400ms ease-in-out forwards;
 }
 
 .vtmn-snackbar > button {
@@ -28,4 +29,13 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+@keyframes show-up {
+  from {
+    bottom: rem(-100px);
+  }
+  to {
+    bottom: 0;
+  }
 }
