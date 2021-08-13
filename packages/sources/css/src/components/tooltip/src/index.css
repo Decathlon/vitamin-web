@@ -1,6 +1,7 @@
 @import '@vtmn/css-design-tokens/src/typography';
 @import '@vtmn/css-design-tokens/src/opacities';
 @import '@vtmn/css-design-tokens/src/shadows';
+@import '@vtmn/css-design-tokens/src/animations';
 @import '@vtmn/css-design-tokens/src/base-colors';
 @import '@vtmn/css-design-tokens/src/themes/default';
 
@@ -45,16 +46,6 @@
   outline: none;
   box-shadow: 0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
     0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
-}
-
-/* Make the tooltips respond to hover */
-.vtmn-tooltip:hover::before,
-.vtmn-tooltip:hover::after,
-.vtmn-tooltip:focus-visible::before,
-.vtmn-tooltip:focus-visible::after {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* don't show empty tooltips */
@@ -151,19 +142,36 @@
   transform: translate(0.5em, -50%);
 }
 
-/* ANIMATION */
-@keyframes fade-tooltip {
-  from {
-    opacity: 0;
+@media screen and (min-width: 900px) {
+  .vtmn-tooltip:not([data-tooltip='']):hover::before,
+  .vtmn-tooltip:not([data-tooltip='']):hover::after,
+  .vtmn-tooltip:not([data-tooltip='']):focus-visible::before,
+  .vtmn-tooltip:not([data-tooltip='']):focus-visible::after {
+    animation: var(--vtmn-animation_fade-in);
   }
-  to {
-    opacity: 1;
+
+  /* Make the tooltips respond to hover */
+  .vtmn-tooltip:hover::before,
+  .vtmn-tooltip:hover::after,
+  .vtmn-tooltip:focus-visible::before,
+  .vtmn-tooltip:focus-visible::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
-.vtmn-tooltip:not([data-tooltip='']):hover::before,
-.vtmn-tooltip:not([data-tooltip='']):hover::after,
-.vtmn-tooltip:not([data-tooltip='']):focus-visible::before,
-.vtmn-tooltip:not([data-tooltip='']):focus-visible::after {
-  animation: fade-tooltip 200ms ease-in-out forwards;
+@media screen and (max-width: 899px) {
+  .vtmn-tooltip:not([data-tooltip='']):focus::before,
+  .vtmn-tooltip:not([data-tooltip='']):focus::after {
+    animation: var(--vtmn-animation_fade-in);
+  }
+
+  /* Make the tooltips respond to focus */
+  .vtmn-tooltip:focus::before,
+  .vtmn-tooltip:focus::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
