@@ -1,0 +1,139 @@
+{
+  "npmScope": "vitamin-web",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "nx.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": ["build", "test", "lint", "package", "prepare"],
+        "accessToken": "YTMxNjdiMmQtYWEyNi00MjRjLWJiZjYtYmQyYjYwNDQxYjYxfHJlYWQtd3JpdGU="
+      }
+    }
+  },
+  "targetDependencies": {
+    "build": [
+      {
+        "target": "build",
+        "projects": "dependencies"
+      }
+    ],
+    "prepare": [
+      {
+        "target": "prepare",
+        "projects": "dependencies"
+      }
+    ],
+    "package": [
+      {
+        "target": "package",
+        "projects": "dependencies"
+      }
+    ]
+  },
+  "projects": {
+    "@vtmn/showcase-core": {
+      "implicitDependencies": []
+    },
+    "@vtmn/showcase-css": {
+      "implicitDependencies": []
+    },
+    "@vtmn/showcase-icons": {
+      "implicitDependencies": []
+    },
+    "@vtmn/showcase-react": {
+      "implicitDependencies": []
+    },
+    "@vtmn/showcase-svelte": {
+      "implicitDependencies": []
+    },
+    "@vtmn/showcase-vue": {
+      "implicitDependencies": []
+    },
+    "@vtmn/showcase-web-components": {
+      "implicitDependencies": []
+    },
+    "@vtmn/css-postcss-config": {
+      "implicitDependencies": []
+    },
+    "@vtmn/css-tailwind-config": {
+      "implicitDependencies": []
+    },
+    "@vtmn/css": {
+      "implicitDependencies": []
+    },
+    "@vtmn/css-badge": {
+      "implicitDependencies": []
+    },
+    "@vtmn/css-button": {
+      "implicitDependencies": []
+    },
+    "@vtmn/css-checkbox": {
+      "implicitDependencies": []
+    },
+    "@vtmn/css-link": {
+      "implicitDependencies": []
+    },
+    "@vtmn/css-loader": {
+      "implicitDependencies": []
+    },
+    "@vtmn/css-popover": {
+      "implicitDependencies": []
+    },
+    "@vtmn/css-radio-button": {
+      "implicitDependencies": []
+    },
+    "@vtmn/css-rating": {
+      "implicitDependencies": []
+    },
+    "@vtmn/css-select": {
+      "implicitDependencies": []
+    },
+    "@vtmn/css-text-input": {
+      "implicitDependencies": []
+    },
+    "@vtmn/css-toggle": {
+      "implicitDependencies": []
+    },
+    "@vtmn/css-tooltip": {
+      "implicitDependencies": []
+    },
+    "@vtmn/css-design-tokens": {
+      "implicitDependencies": []
+    },
+    "@vtmn/css-utilities": {
+      "implicitDependencies": []
+    },
+    "@vtmn/icons": {
+      "implicitDependencies": []
+    },
+    "@vtmn/react": {
+      "implicitDependencies": []
+    },
+    "@vtmn/svelte": {
+      "implicitDependencies": []
+    },
+    "@vtmn/vue": {
+      "implicitDependencies": []
+    },
+    "vtmn-web-components-loader": {
+      "implicitDependencies": []
+    },
+    "@vtmn/web-components": {
+      "implicitDependencies": []
+    }
+  },
+  "affected": {
+    "defaultBase": "main"
+  },
+  "workspaceLayout": {
+    "libsDir": "packages",
+    "appsDir": "packages"
+  }
+}
