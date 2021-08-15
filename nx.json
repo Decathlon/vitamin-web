@@ -1,5 +1,5 @@
 {
-  "npmScope": "vitamin-web",
+  "npmScope": "vtmn",
   "implicitDependencies": {
     "workspace.json": "*",
     "package.json": {
