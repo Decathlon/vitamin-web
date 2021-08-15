@@ -33,7 +33,7 @@
   ],
   "scripts": {
     "affected:build": "nx affected:build",
-    "affected:build-storybook": "nx affected:build-storybook",
+    "affected:build-storybook": "nx affected --target=build-storybook",
     "affected:test": "nx affected:test",
     "affected:dep-graph": "nx affected:dep-graph",
     "build": "nx run-many --target=build --all --parallel",
