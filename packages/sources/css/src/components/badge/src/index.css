@@ -43,7 +43,7 @@
 }
 .vtmn-badge_variant--accent {
   background-color: var(--vtmn-semantic-color_background-accent);
-  color: var(--vtmn-semantic-color_content-primary);
+  color: var(--vtmn-semantic-color_content-accent);
   box-shadow: none;
 }
 
