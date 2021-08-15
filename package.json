@@ -32,9 +32,15 @@
     "packages/showcases/*"
   ],
   "scripts": {
-    "build": "nx affected:build --parallel",
-    "build-storybook": "nx affected --target=build-storybook --parallel",
+    "affected:build": "nx affected:build",
+    "affected:build-storybook": "nx affected:build-storybook",
+    "affected:test": "nx affected:test",
+    "affected:dep-graph": "nx affected:dep-graph",
+    "build": "nx run-many --target=build --all --parallel",
+    "build-storybook": "nx run-many --target=build-storybook --all --parallel",
+    "dep-graph": "nx dep-graph",
     "deploy-storybook": "storybook-to-ghpages --packages packages -o docs --monorepo-index-generator packages/showcases/core/scripts/index-generator.js",
+    "lint": "yarn prettier && yarn stylelint",
     "postinstall": "is-ci || husky install",
     "prepare": "yarn prettier:fix && yarn stylelint:fix && yarn build && yarn test",
     "prettier": "prettier .",
@@ -49,7 +55,7 @@
     "start:web-components": "nx run-many --target=start --projects=@vtmn/showcase-web-components,@vtmn/web-components --parallel",
     "stylelint": "stylelint packages/**/*.css",
     "stylelint:fix": "yarn stylelint --fix",
-    "test": "nx affected:test --parallel"
+    "test": "nx run-many --target=test --all --parallel"
   },
   "lint-staged": {
     "./**/package.json": [
@@ -66,10 +72,10 @@
     "@babel/core": "^7.14.8",
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
-    "@nrwl/cli": "latest",
-    "@nrwl/nx-cloud": "latest",
-    "@nrwl/tao": "latest",
-    "@nrwl/workspace": "latest",
+    "@nrwl/cli": "^12.7.1",
+    "@nrwl/nx-cloud": "^12.3.10",
+    "@nrwl/tao": "^12.7.1",
+    "@nrwl/workspace": "^12.7.1",
     "@octokit/core": "^3.2.4",
     "@storybook/storybook-deployer": "^2.8.10",
     "babel-loader": "^8.2.2",

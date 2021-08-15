@@ -1,5 +1,8 @@
 {
   "version": 2,
+  "cli": {
+    "packageManager": "yarn"
+  },
   "projects": {
     "@vtmn/showcase-core": {
       "root": "packages/showcases/core",
@@ -7,27 +10,27 @@
     },
     "@vtmn/showcase-css": {
       "root": "packages/showcases/css",
-      "type": "library"
+      "type": "application"
     },
     "@vtmn/showcase-icons": {
       "root": "packages/showcases/icons",
-      "type": "library"
+      "type": "application"
     },
     "@vtmn/showcase-react": {
       "root": "packages/showcases/react",
-      "type": "library"
+      "type": "application"
     },
     "@vtmn/showcase-svelte": {
       "root": "packages/showcases/svelte",
-      "type": "library"
+      "type": "application"
     },
     "@vtmn/showcase-vue": {
       "root": "packages/showcases/vue",
-      "type": "library"
+      "type": "application"
     },
     "@vtmn/showcase-web-components": {
       "root": "packages/showcases/web-components",
-      "type": "library"
+      "type": "application"
     },
     "@vtmn/css-postcss-config": {
       "root": "packages/sources/css/config/postcss",

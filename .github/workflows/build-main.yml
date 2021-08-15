@@ -39,11 +39,8 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Prettier
-        run: yarn prettier
-
-      - name: Stylelint
-        run: yarn stylelint
+      - name: Lint
+        run: yarn lint
 
       - name: Test
         run: yarn test
