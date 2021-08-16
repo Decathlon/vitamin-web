@@ -5109,17 +5109,17 @@
     "@vue/shared" "3.2.2"
 
 "@vue/compiler-sfc@^3.0.7", "@vue/compiler-sfc@^3.2.1":
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/@vue/compiler-sfc/-/compiler-sfc-3.2.1.tgz#7809b298cf0fbce62a2c628b7dfc1e82dd9a3a9b"
-  integrity sha512-fVLdme5RZVkBt+jxv2LCSRM72o4FX7BR2eu2FpjjEi1kEtUMKBDnjKwGWy7TyhTju0t0CocctyoM+G56vH7NpQ==
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/@vue/compiler-sfc/-/compiler-sfc-3.2.2.tgz#5b7b13b07689be8e4880d856f72d1be500785be9"
+  integrity sha512-hrtqpQ5L6IPn5v7yVRo7uvLcQxv0z1+KBjZBWMBOcrXz4t+PKUxU/SWd6Tl9T8FDmYlunzKUh6lcx+2CLo6f5A==
   dependencies:
     "@babel/parser" "^7.13.9"
     "@babel/types" "^7.13.0"
     "@types/estree" "^0.0.48"
-    "@vue/compiler-core" "3.2.1"
-    "@vue/compiler-dom" "3.2.1"
-    "@vue/compiler-ssr" "3.2.1"
-    "@vue/shared" "3.2.1"
+    "@vue/compiler-core" "3.2.2"
+    "@vue/compiler-dom" "3.2.2"
+    "@vue/compiler-ssr" "3.2.2"
+    "@vue/shared" "3.2.2"
     consolidate "^0.16.0"
     estree-walker "^2.0.1"
     hash-sum "^2.0.0"
@@ -5131,13 +5131,13 @@
     postcss-selector-parser "^6.0.4"
     source-map "^0.6.1"
 
-"@vue/compiler-ssr@3.2.1":
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/@vue/compiler-ssr/-/compiler-ssr-3.2.1.tgz#f900762f83482e44e9260c2322e3d332c711826c"
-  integrity sha512-6YAOtQunuEyYlVSjK1F7a7BXi7rxVfiTiJ0Ro7eq0q0MNCFV9Z+sN68lfa/E4ABVb0ledEY/Rt8kL23nwCoTCQ==
+"@vue/compiler-ssr@3.2.2":
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/@vue/compiler-ssr/-/compiler-ssr-3.2.2.tgz#633bb8e01f00a969c35ca12db32be7fe4c7185a9"
+  integrity sha512-rVl1agMFhdEN3Go0bCriXo+3cysxKIuRP0yh1Wd8ysRrKfAmokyDhUA8PrGSq2Ymj/LdZTh+4OKfj3p2+C+hlA==
   dependencies:
-    "@vue/compiler-dom" "3.2.1"
-    "@vue/shared" "3.2.1"
+    "@vue/compiler-dom" "3.2.2"
+    "@vue/shared" "3.2.2"
 
 "@vue/component-compiler-utils@^3.1.0", "@vue/component-compiler-utils@^3.1.2":
   version "3.2.2"
