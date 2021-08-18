@@ -18,6 +18,7 @@
     "@storybook/addon-a11y": "^6.3.7",
     "@storybook/addon-essentials": "^6.3.7",
     "@storybook/web-components": "^6.3.7",
+    "@vtmn/css": "*",
     "@vtmn/icons": "*",
     "@vtmn/showcase-core": "*",
     "@vtmn/web-components": "*",
