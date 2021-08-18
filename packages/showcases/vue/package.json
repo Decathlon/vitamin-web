@@ -10,7 +10,7 @@
     "start": "start-storybook -p 6011"
   },
   "dependencies": {
-    "core-js": "^3.16.1",
+    "core-js": "^3.16.2",
     "vue": "^3.2.1"
   },
   "devDependencies": {
@@ -23,7 +23,7 @@
     "@vue/cli-plugin-babel": "^4.5.11",
     "@vue/cli-plugin-typescript": "^4.5.11",
     "@vue/cli-service": "^4.5.11",
-    "@vue/compiler-sfc": "^3.2.1",
+    "@vue/compiler-sfc": "^3.2.4",
     "@whitespace/storybook-addon-html": "^5.0.0",
     "storybook-addon-designs": "^6.0.0",
     "storybook-addon-outline": "^1.4.0",
