@@ -47,7 +47,7 @@
     "root": true
   },
   "dependencies": {
-    "core-js": "^3.16.1",
+    "core-js": "^3.16.2",
     "vue": "^3.2.1"
   },
   "devDependencies": {
@@ -59,14 +59,14 @@
     "@rollup/plugin-image": "^2.0.5",
     "@rollup/plugin-node-resolve": "^13.0.0",
     "@rollup/plugin-replace": "^3.0.0",
-    "@typescript-eslint/eslint-plugin": "^4.29.1",
-    "@typescript-eslint/parser": "^4.29.1",
+    "@typescript-eslint/eslint-plugin": "^4.29.2",
+    "@typescript-eslint/parser": "^4.29.2",
     "@vtmn/icons": "^0.4.0",
     "@vue/cli-plugin-babel": "^4.5.11",
     "@vue/cli-plugin-eslint": "^4.5.11",
     "@vue/cli-plugin-typescript": "^4.5.11",
     "@vue/cli-service": "^4.5.11",
-    "@vue/compiler-sfc": "^3.2.1",
+    "@vue/compiler-sfc": "^3.2.4",
     "@vue/eslint-config-prettier": "6.0.0",
     "@vue/eslint-config-typescript": "7.0.0",
     "babel-eslint": "^10.1.0",
