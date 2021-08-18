@@ -82,6 +82,10 @@ Once you have installed this package, you just have to define custom elements in
 In a HTML file:
 
 ```html
+<link
+  rel="stylesheet"
+  href="./node_modules/@vtmn/css-design-tokens/dist/index.css"
+/>
 <script type="module">
   import { defineCustomElements } from './node_modules/@vtmn/web-components/dist/esm/loader.js';
 
@@ -92,6 +96,7 @@ In a HTML file:
 Or, in a JavaScript file:
 
 ```javascript
+import '@vtmn/css-design-tokens/dist/index.css';
 import { defineCustomElements } from '@vtmn/web-components/dist/esm/loader.js';
 defineCustomElements();
 ```
