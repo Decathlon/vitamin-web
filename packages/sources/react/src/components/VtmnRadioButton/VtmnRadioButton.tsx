@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import '@vtmn/css-radio-button';
+import '@vtmn/css-radio-button/dist/index-with-vars.css';
 
 export interface VtmnRadioProps
   extends React.ComponentPropsWithoutRef<'input'> {
