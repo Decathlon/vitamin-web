@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@0.4.0...@vtmn/css-design-tokens@0.4.1) (2021-08-15)
+
+**Note:** Version bump only for package @vtmn/css-design-tokens
+
+
+
+
+
+# [0.4.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@0.3.1...@vtmn/css-design-tokens@0.4.0) (2021-08-13)
+
+
+### Features
+
+* **@vtmn/css-popover & @vtmn/css-tooltip:** change showcase for a better global experience ([#513](https://github.com/Decathlon/vitamin-web/issues/513)) ([773e5c0](https://github.com/Decathlon/vitamin-web/commit/773e5c000e53e641dccdf4757d05c97492263c6e))
+
+
+
+
+
 ## [0.3.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@0.3.0...@vtmn/css-design-tokens@0.3.1) (2021-08-09)
 
 **Note:** Version bump only for package @vtmn/css-design-tokens
