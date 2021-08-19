@@ -5,6 +5,7 @@ import postcssImport from 'postcss-import';
 
 export const config: Config = {
   namespace: 'vtmn-web-components',
+  globalStyle: '../css/src/design-tokens/dist/index.css',
   outputTargets: [
     {
       type: 'dist',
