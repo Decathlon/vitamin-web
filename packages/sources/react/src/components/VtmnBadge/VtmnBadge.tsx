@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '@vtmn/css-badge';
+import '@vtmn/css-badge/dist/index-with-vars.css';
 import { VtmnBadgeVariant } from './types';
 
 export interface VtmnBadgeProps extends React.ComponentPropsWithoutRef<'span'> {
