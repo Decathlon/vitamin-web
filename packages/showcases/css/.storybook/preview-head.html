@@ -15,7 +15,7 @@
     border-bottom: 1px solid var(--vtmn-semantic-color_border-secondary);
     position: fixed;
     width: 100%;
-    z-index: 99999;
+    z-index: 50;
     top: 0;
   }
   .extented-toolbar__title {
@@ -46,8 +46,11 @@
   .sbdocs-content {
     margin-top: 150px;
   }
-  .sbdocs-content div {
+  .sbdocs-content div[class^=css-] {
     color: var(--vtmn-semantic-color_content-primary);
+  }
+  .sbdocs-content pre code {
+    color: var(--vtmn-semantic-color_content-primary)!important;
   }
   .sbdocs-content svg {
     color: var(--vtmn-base-color_black);
@@ -59,7 +62,7 @@
     border-bottom-color: var(--vtmn-semantic-color_border-secondary)!important;
     font-family: var(--vtmn-typo_font-family)!important;
   }
-  .sbdocs-h2 {
+  .sbdocs-h1, .sbdocs-h2 {
     font-family: var(--vtmn-typo_font-family)!important;
   }
   .sbdocs-a {

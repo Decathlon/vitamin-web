@@ -76,6 +76,10 @@
   --vtmn-semantic-color_content-information--s: var(--vtmn-base-color_blue400--s);
   --vtmn-semantic-color_content-information--l: var(--vtmn-base-color_blue400--l);
   --vtmn-semantic-color_content-information: hsl(var(--vtmn-semantic-color_content-information--h), var(--vtmn-semantic-color_content-information--s), var(--vtmn-semantic-color_content-information--l));
+  --vtmn-semantic-color_content-accent--h: var(--vtmn-base-color_black--h);
+  --vtmn-semantic-color_content-accent--s: var(--vtmn-base-color_black--s);
+  --vtmn-semantic-color_content-accent--l: var(--vtmn-base-color_black--l);
+  --vtmn-semantic-color_content-accent: hsl(var(--vtmn-semantic-color_content-accent--h), var(--vtmn-semantic-color_content-accent--s), var(--vtmn-semantic-color_content-accent--l));
   --vtmn-semantic-color_content-primary-reversed--h: var(--vtmn-base-color_white--h);
   --vtmn-semantic-color_content-primary-reversed--s: var(--vtmn-base-color_white--s);
   --vtmn-semantic-color_content-primary-reversed--l: var(--vtmn-base-color_white--l);

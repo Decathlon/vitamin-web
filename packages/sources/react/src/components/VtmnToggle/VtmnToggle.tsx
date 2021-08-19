@@ -1,7 +1,7 @@
 import * as React from 'react';
 import clsx from 'clsx';
 
-import '@vtmn/css-toggle';
+import '@vtmn/css-toggle/dist/index-with-vars.css';
 import { VtmnToggleSize } from './types';
 
 export interface VtmnToggleProps
