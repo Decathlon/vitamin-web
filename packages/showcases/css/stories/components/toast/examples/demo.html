@@ -1,25 +1,39 @@
-<button id="btn-toast-1" class="vtmn-btn">Simple toast</button>
-<button id="btn-toast-2" class="vtmn-btn">Toast with information icon</button>
-<button id="btn-toast-3" class="vtmn-btn">Toast with close icon</button>
-<button id="btn-toast-4" class="vtmn-btn">
-  Toast both information and close icons
-</button>
+<div class="block">
+  <button id="btn-toast-1" class="vtmn-btn vtmn-btn_variant--ghost">
+    Simple toast
+  </button>
+</div>
+<div class="block">
+  <button id="btn-toast-2" class="vtmn-btn vtmn-btn_variant--ghost">
+    Toast with information icon
+  </button>
+</div>
+<div class="block">
+  <button id="btn-toast-3" class="vtmn-btn vtmn-btn_variant--ghost">
+    Toast with close icon
+  </button>
+</div>
+<div class="block">
+  <button id="btn-toast-4" class="vtmn-btn vtmn-btn_variant--ghost">
+    Toast both information and close icons
+  </button>
+</div>
 
 <div class="block">
   <div id="vtmn-toast-1" class="vtmn-toast">
-    <p>This is the description of a snackbar</p>
+    <p>This is the description of a toast</p>
   </div>
 </div>
 
 <div class="block">
   <div id="vtmn-toast-2" class="vtmn-toast vtmn-toast_with-icon-info">
-    <p>This is the description of a snackbar</p>
+    <p>This is the description of a toast</p>
   </div>
 </div>
 
 <div class="block">
   <div id="vtmn-toast-3" class="vtmn-toast vtmn-toast_icon-close">
-    <p>This is the description of a snackbar</p>
+    <p>This is the description of a toast</p>
   </div>
 </div>
 
@@ -28,7 +42,7 @@
     id="vtmn-toast-4"
     class="vtmn-toast vtmn-toast_with-icon-info vtmn-toast_icon-close"
   >
-    <p>This is the description of a snackbar</p>
+    <p>This is the description of a toast</p>
   </div>
 </div>
 
@@ -76,16 +90,4 @@
     document.getElementById('vtmn-toast-3').style.display = 'none';
     showToast(document.getElementById('vtmn-toast-4'));
   });
-
-  /*document
-    .querySelector('#vtmn-toast-3 > p\\:after')
-    .addEventListener('click', function () {
-      document.getElementById('vtmn-toast-3').style.display = 'none';
-    });
-
-  document
-    .querySelector('#vtmn-toast-4 > p::after')
-    .addEventListener('click', function () {
-      document.getElementById('vtmn-toast-4').style.display = 'none';
-    });*/
 </script>
