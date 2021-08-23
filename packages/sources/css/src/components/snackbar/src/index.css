@@ -31,11 +31,11 @@
   animation: var(--vtmn-animation_overlay);
 }
 
-.vtmn-snackbar > button {
+.vtmn-snackbar > .vtmn-btn {
   margin-left: rem(16px);
 }
 
-.vtmn-snackbar > p {
+.vtmn-snackbar_content {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
