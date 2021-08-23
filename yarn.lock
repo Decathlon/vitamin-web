@@ -4806,6 +4806,11 @@
     "@typescript-eslint/types" "4.29.2"
     eslint-visitor-keys "^2.0.0"
 
+"@vtmn/css-design-tokens@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@vtmn/css-design-tokens/-/css-design-tokens-0.3.1.tgz#477a8773f055dca1f26aec50ee8d06bcc6d0a58b"
+  integrity sha512-WOA7PwiPOrrABmtvOTSi6/1HkwIcLNpDfuA199vzanyFi9jG5pclzt0P6Iv7az9nYMLEww7tEc6GdUJxLC5A0w==
+
 "@vue/babel-helper-vue-jsx-merge-props@^1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@vue/babel-helper-vue-jsx-merge-props/-/babel-helper-vue-jsx-merge-props-1.2.1.tgz#31624a7a505fb14da1d58023725a4c5f270e6a81"
@@ -19832,9 +19837,9 @@ store2@^2.12.0, store2@^2.7.1:
   integrity sha512-7t+/wpKLanLzSnQPX8WAcuLCCeuSHoWdQuh9SB3xD0kNOM38DNf+0Oa+wmvxmYueRzkmh6IcdKFtvTa+ecgPDw==
 
 storybook-addon-designs@^6.0.0:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/storybook-addon-designs/-/storybook-addon-designs-6.0.1.tgz#e87fadf688ecb2dc03d22564232c7476eb3af5a9"
-  integrity sha512-BVoh8a1UoXz3xUuUeP5F+V95xGqmHlGR+K9vgZfwnpFLB7IWkRFUmW9a+bF+tl94b3PvcncI33qUnQeBn5KlqA==
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/storybook-addon-designs/-/storybook-addon-designs-6.1.0.tgz#6609ac17e86a20c3f1bf3815234cb66f96bdfca2"
+  integrity sha512-S7Av7MACRP3XtUeD4gHF/g3Ov+3WQ0KyJPqsjv4KFAZlP7CQXu2DkC/w9532OqTJV2C7ksCbi5XBrm5tbwMx3g==
   dependencies:
     "@figspec/react" "^0.1.6"
 
