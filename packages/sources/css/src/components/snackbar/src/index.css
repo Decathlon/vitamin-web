@@ -20,7 +20,15 @@
   background-color: var(--vtmn-semantic-color_background-primary-reversed);
   box-shadow: var(--vtmn-shadow_200);
   border-radius: rem(4px);
-  animation: var(--vtmn-animation_show-up);
+}
+
+.vtmn-snackbar.show {
+  visibility: visible;
+  position: fixed;
+  right: 50%;
+  bottom: 0;
+  transform: translate(50%, -50%);
+  animation: var(--vtmn-animation_overlay);
 }
 
 .vtmn-snackbar > button {

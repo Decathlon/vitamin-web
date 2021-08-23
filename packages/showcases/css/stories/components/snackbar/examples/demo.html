@@ -1,10 +1,10 @@
 <div class="block">
-  <<button id="btn-snackbar-1" class="vtmn-btn vtmn-btn_variant--ghost">
+  <button id="btn-snackbar-1" class="vtmn-btn vtmn-btn_variant--ghost">
     Snackbar with button
   </button>
 </div>
 <div class="block">
-  <<button id="btn-snackbar-2" class="vtmn-btn vtmn-btn_variant--ghost">
+  <button id="btn-snackbar-2" class="vtmn-btn vtmn-btn_variant--ghost">
     Snackbar without button
   </button>
 </div>
@@ -28,35 +28,31 @@
 </div>
 
 <script type="text/javascript">
-  document.getElementById('vtmn-snackbar-1').style.display = 'none';
-  document.getElementById('vtmn-snackbar-2').style.display = 'none';
+  document.getElementById('vtmn-snackbar-1').style.visibility = 'hidden';
+  document.getElementById('vtmn-snackbar-2').style.visibility = 'hidden';
 
   function showSnackbar(snackbar) {
-    snackbar.style.position = 'fixed';
-    snackbar.style.right = '50%';
-    snackbar.style.bottom = '0';
-    snackbar.style.transform = 'translate(50%, -50%)';
-    snackbar.style.display = 'flex';
-    setTimeout(() => {
-      snackbar.style.display = 'none';
+    snackbar.style.visibility = 'visible';
+    snackbar.classList.add('show');
+    setTimeout(function () {
+      snackbar.classList.remove('show');
+      snackbar.style.visibility = 'hidden';
     }, 5000);
   }
 
   document
     .getElementById('btn-snackbar-1')
     .addEventListener('click', function () {
-      document.getElementById('vtmn-snackbar-2').style.display = 'none';
       showSnackbar(document.getElementById('vtmn-snackbar-1'));
     });
 
   document
     .getElementById('btn-snackbar-2')
     .addEventListener('click', function () {
-      document.getElementById('vtmn-snackbar-1').style.display = 'none';
       showSnackbar(document.getElementById('vtmn-snackbar-2'));
     });
 
   document.getElementById('btn-dismiss').addEventListener('click', function () {
-    document.getElementById('vtmn-snackbar-1').style.display = 'none';
+    document.getElementById('vtmn-snackbar-1').style.visibility = 'hidden';
   });
 </script>

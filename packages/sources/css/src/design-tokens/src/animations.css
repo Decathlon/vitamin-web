@@ -5,9 +5,12 @@
 :root {
   --vtmn-animation_fade-in: fade_in 200ms ease-in-out forwards;
   --vtmn-animation_show-up: show-up 400ms ease-in-out forwards;
+  --vtmn-animation_overlay: fade-in 0.5s ease-in-out forwards,
+    show-up 0.5s ease-in-out forwards, fade-out 0.5s 4.5s ease-in-out forwards,
+    vanish 0.5s 4.5s ease-in-out forwards;
 }
 
-@keyframes fade_in {
+@keyframes fade-in {
   from {
     opacity: 0;
   }
@@ -18,7 +21,25 @@
 
 @keyframes show-up {
   from {
-    bottom: rem(-100px);
+    bottom: 0;
+  }
+  to {
+    bottom: 15px;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes vanish {
+  from {
+    bottom: 15px;
   }
   to {
     bottom: 0;
