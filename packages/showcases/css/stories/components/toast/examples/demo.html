@@ -47,47 +47,26 @@
 </div>
 
 <script type="text/javascript">
-  document.getElementById('vtmn-toast-1').style.display = 'none';
-  document.getElementById('vtmn-toast-2').style.display = 'none';
-  document.getElementById('vtmn-toast-3').style.display = 'none';
-  document.getElementById('vtmn-toast-4').style.display = 'none';
-
   function showToast(toast) {
-    toast.style.position = 'fixed';
-    toast.style.right = '50%';
-    toast.style.bottom = '0';
-    toast.style.transform = 'translate(50%, -50%)';
-    toast.style.display = 'flex';
-    setTimeout(() => {
-      toast.style.display = 'none';
+    toast.classList.add('show');
+    setTimeout(function () {
+      toast.classList.remove('show');
     }, 5000);
   }
 
   document.getElementById('btn-toast-1').addEventListener('click', function () {
-    document.getElementById('vtmn-toast-2').style.display = 'none';
-    document.getElementById('vtmn-toast-3').style.display = 'none';
-    document.getElementById('vtmn-toast-4').style.display = 'none';
     showToast(document.getElementById('vtmn-toast-1'));
   });
 
   document.getElementById('btn-toast-2').addEventListener('click', function () {
-    document.getElementById('vtmn-toast-1').style.display = 'none';
-    document.getElementById('vtmn-toast-3').style.display = 'none';
-    document.getElementById('vtmn-toast-4').style.display = 'none';
     showToast(document.getElementById('vtmn-toast-2'));
   });
 
   document.getElementById('btn-toast-3').addEventListener('click', function () {
-    document.getElementById('vtmn-toast-1').style.display = 'none';
-    document.getElementById('vtmn-toast-2').style.display = 'none';
-    document.getElementById('vtmn-toast-4').style.display = 'none';
     showToast(document.getElementById('vtmn-toast-3'));
   });
 
   document.getElementById('btn-toast-4').addEventListener('click', function () {
-    document.getElementById('vtmn-toast-1').style.display = 'none';
-    document.getElementById('vtmn-toast-2').style.display = 'none';
-    document.getElementById('vtmn-toast-3').style.display = 'none';
     showToast(document.getElementById('vtmn-toast-4'));
   });
 </script>
