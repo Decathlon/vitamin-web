@@ -4806,6 +4806,11 @@
     "@typescript-eslint/types" "4.29.2"
     eslint-visitor-keys "^2.0.0"
 
+"@vtmn/css-design-tokens@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@vtmn/css-design-tokens/-/css-design-tokens-0.3.1.tgz#477a8773f055dca1f26aec50ee8d06bcc6d0a58b"
+  integrity sha512-WOA7PwiPOrrABmtvOTSi6/1HkwIcLNpDfuA199vzanyFi9jG5pclzt0P6Iv7az9nYMLEww7tEc6GdUJxLC5A0w==
+
 "@vue/babel-helper-vue-jsx-merge-props@^1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@vue/babel-helper-vue-jsx-merge-props/-/babel-helper-vue-jsx-merge-props-1.2.1.tgz#31624a7a505fb14da1d58023725a4c5f270e6a81"
@@ -18970,9 +18975,9 @@ rollup@^1.31.1:
     acorn "^7.1.0"
 
 rollup@^2.56.1:
-  version "2.56.2"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.56.2.tgz#a045ff3f6af53ee009b5f5016ca3da0329e5470f"
-  integrity sha512-s8H00ZsRi29M2/lGdm1u8DJpJ9ML8SUOpVVBd33XNeEeL3NVaTiUcSBHzBdF3eAyR0l7VSpsuoVUGrRHq7aPwQ==
+  version "2.56.3"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.56.3.tgz#b63edadd9851b0d618a6d0e6af8201955a77aeff"
+  integrity sha512-Au92NuznFklgQCUcV96iXlxUbHuB1vQMaH76DHl5M11TotjOHwqk9CwcrT78+Tnv4FN9uTBxq6p4EJoYkpyekg==
   optionalDependencies:
     fsevents "~2.3.2"
 
