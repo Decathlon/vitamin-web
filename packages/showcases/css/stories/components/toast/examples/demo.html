@@ -32,25 +32,31 @@
 </div>
 
 <div class="block">
-  <div id="vtmn-toast-3" class="vtmn-toast vtmn-toast_icon-close">
+  <div id="vtmn-toast-3" class="vtmn-toast">
     <p>This is the description of a toast</p>
+    <span id="btn-close-toast-3" class="vtmx-close-line"></span>
   </div>
 </div>
 
 <div class="block">
-  <div
-    id="vtmn-toast-4"
-    class="vtmn-toast vtmn-toast_with-icon-info vtmn-toast_icon-close"
-  >
+  <div id="vtmn-toast-4" class="vtmn-toast vtmn-toast_with-icon-info">
     <p>This is the description of a toast</p>
+    <span id="btn-close-toast-4" class="vtmx-close-line"></span>
   </div>
 </div>
 
 <script type="text/javascript">
+  document.getElementById('vtmn-toast-1').style.visibility = 'hidden';
+  document.getElementById('vtmn-toast-2').style.visibility = 'hidden';
+  document.getElementById('vtmn-toast-3').style.visibility = 'hidden';
+  document.getElementById('vtmn-toast-4').style.visibility = 'hidden';
+
   function showToast(toast) {
+    toast.style.visibility = 'visible';
     toast.classList.add('show');
     setTimeout(function () {
       toast.classList.remove('show');
+      toast.style.visibility = 'hidden';
     }, 5000);
   }
 
@@ -69,4 +75,16 @@
   document.getElementById('btn-toast-4').addEventListener('click', function () {
     showToast(document.getElementById('vtmn-toast-4'));
   });
+
+  document
+    .getElementById('btn-close-toast-3')
+    .addEventListener('click', function () {
+      document.getElementById('vtmn-toast-3').style.visibility = 'hidden';
+    });
+
+  document
+    .getElementById('btn-close-toast-4')
+    .addEventListener('click', function () {
+      document.getElementById('vtmn-toast-4').style.visibility = 'hidden';
+    });
 </script>

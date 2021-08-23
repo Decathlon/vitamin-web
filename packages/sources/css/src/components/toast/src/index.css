@@ -7,17 +7,12 @@
 @import '@vtmn/css-design-tokens/src/animations';
 
 .vtmn-toast {
-  visibility: hidden;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: rem(8px) rem(16px);
   height: rem(48px);
   max-width: fit-content;
-  position: fixed;
-  right: 50%;
-  bottom: 0;
-  transform: translate(50%, -50%);
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
   line-height: var(--vtmn-typo_text-2-line-height);
@@ -29,6 +24,10 @@
 
 .vtmn-toast.show {
   visibility: visible;
+  position: fixed;
+  right: 50%;
+  bottom: 0;
+  transform: translate(50%, -50%);
   animation: var(--vtmn-animation_overlay);
 }
 
@@ -38,8 +37,7 @@
   text-overflow: ellipsis;
 }
 
-.vtmn-toast_with-icon-info > p::before,
-.vtmn-toast_icon-close > p::after {
+.vtmn-toast_with-icon-info > p::before {
   display: inline-block;
   vertical-align: middle;
   white-space: nowrap;
@@ -54,8 +52,10 @@
   mask: url("data:image/svg+xml;charset=utf-8, <svg width='24' height='24' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M1.333 8a6.666 6.666 0 1 0 13.333 0A6.666 6.666 0 0 0 1.333 8zm12 0A5.333 5.333 0 1 1 2.667 8a5.333 5.333 0 0 1 10.666 0zM8.667 4.667V6H7.333V4.667h1.334zm0 6.666v-4H7.333v4h1.334z'/></svg>");
 }
 
-.vtmn-toast_icon-close > p::after {
+.vtmn-toast > span[class^='vtmx-'] {
   cursor: pointer;
   margin-left: rem(16px);
-  mask: url("data:image/svg+xml;charset=utf-8, <svg width='24' height='24' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m8 7.057 3.3-3.3.943.943-3.3 3.3 3.3 3.3-.943.943-3.3-3.3-3.3 3.3-.943-.943 3.3-3.3-3.3-3.3.943-.943 3.3 3.3z'/></svg>");
+  white-space: nowrap;
+  font-size: rem(24px);
+  color: var(--vtmn-semantic-color_content-primary-reversed);
 }
