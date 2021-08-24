@@ -4,6 +4,9 @@
  */
 :root {
   --vtmn-animation_fade-in: fade_in 200ms ease-in-out forwards;
+  --vtmn-animation_alert: fade_in 0.5s ease-in forwards,
+    slide-down 0.5s ease-in forwards, slide-left 0.5s 1s ease-in forwards,
+    slide-right 0.5s 8s ease-out forwards;
 }
 
 @keyframes fade_in {
@@ -12,5 +15,35 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes slide-down {
+  from {
+    transform: translate(calc(100% - 56px), 0);
+    top: -15%;
+  }
+  to {
+    transform: translate(calc(100% - 56px), 0);
+    top: 15%;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    transform: translate(calc(100% - 56px), 0);
+  }
+
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(110%, 0);
   }
 }

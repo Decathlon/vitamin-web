@@ -19,6 +19,7 @@
   background-color: var(--vtmn-semantic-color_background-primary-reversed);
   box-shadow: var(--vtmn-shadow_200);
   border-radius: rem(4px);
+  z-index: 5;
 }
 
 .vtmn-alert_content {
@@ -96,4 +97,12 @@
   font-size: rem(24px);
   height: rem(24px);
   color: var(--vtmn-semantic-color_content-primary-reversed);
+}
+
+.vtmn-alert.show {
+  visibility: visible;
+  position: fixed;
+  top: 0;
+  right: 0;
+  animation: var(--vtmn-animation_alert);
 }
