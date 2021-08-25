@@ -2873,9 +2873,9 @@
     resolve "^1.17.0"
 
 "@rollup/plugin-image@^2.0.5":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@rollup/plugin-image/-/plugin-image-2.1.0.tgz#55a477f07af04b1b0caf63f098568a8bf8b1fa8f"
-  integrity sha512-IiRhjv65A4Rb/9R+gTP2JdIciumkc8c+3xFoUfw3PUkX77SqqzvJ028AfX856E3ZdExMrqY9C9ZVXN46w6rh9A==
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@rollup/plugin-image/-/plugin-image-2.1.1.tgz#898d6b59ac0025d7971ef45640ab330cb0663b0c"
+  integrity sha512-AgP4U85zuQJdUopLUCM+hTf45RepgXeTb8EJsleExVy99dIoYpt3ZlDYJdKmAc2KLkNntCDg6BPJvgJU3uGF+g==
   dependencies:
     "@rollup/pluginutils" "^3.1.0"
     mini-svg-data-uri "^1.2.3"
