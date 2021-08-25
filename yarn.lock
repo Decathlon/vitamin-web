@@ -2983,9 +2983,9 @@
   integrity sha512-T7VNNlYVM1SgQ+VsMYhnDkcGmWhQdL0bDyGm5TlQ3GBXnJscEClUUOKduWTmm2zCnvNLC1hc3JpuXjs/nFOc5w==
 
 "@stencil/core@^2.0.1":
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.6.0.tgz#29da96d8b6fc83e689b9f297ef3e8b59b90a676a"
-  integrity sha512-QsxWayZyusnqSZrlCl81R71rA3KqFjVVQSH4E0rGN15F1GdQaFonKlHLyCOLKLig1zzC+DQkLLiUuocexuvdeQ==
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.7.1.tgz#1bffff72dbe762d27b477da4ea06c647e84472fa"
+  integrity sha512-kpeqCyfoWyqyiqn32xQGx5bpVwH1UtcZEpYPx42MpoxHZNlpmjV+852/PGFFWsMTqrLiP8Z1NU5rT7yXUCsG6Q==
 
 "@stencil/postcss@^2.0.0":
   version "2.0.0"
