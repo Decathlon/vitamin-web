@@ -8,3 +8,4 @@ export { VtmnLink } from './components/VtmnLink';
 export { VtmnRadioButton } from './components/VtmnRadioButton';
 export { VtmnTextInput } from './components/VtmnTextInput';
 export { VtmnToggle } from './components/VtmnToggle';
+export { VtmnTooltip } from './components/VtmnTooltip';
