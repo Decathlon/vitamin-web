@@ -9,6 +9,9 @@
     "build-storybook:docs": "build-storybook --docs",
     "start": "start-storybook -p 6010"
   },
+  "dependencies": {
+    "@storybook/addon-svelte-csf": "^1.1.0"
+  },
   "devDependencies": {
     "@storybook/addon-a11y": "^6.3.7",
     "@storybook/addon-essentials": "^6.3.7",

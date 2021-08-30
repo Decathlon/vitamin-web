@@ -1,5 +1,8 @@
 <script>
   import '@vtmn/css-button/dist/index.css';
+  import { cn } from '../utils/classnames';
+
+  /** @restProps { button } */
 
   /**
    * The variant of the button.
@@ -34,27 +37,34 @@
    * @default undefined and therefore not displayed by default
    */
   export let iconAlone;
+
+  let className;
+  /**
+   * @type {string} A custom class to apply to the component.
+   */
+  export { className as class };
+
+  $: componentClass = cn(
+    'vtmn-btn',
+    variant && `vtmn-btn_variant--${variant}`,
+    size && `vtmn-btn_size--${size}`,
+    !iconAlone && iconLeft && 'vtmn-btn--icon-left',
+    !iconAlone && iconRight && 'vtmn-btn--icon-right',
+    iconAlone && 'vtmn-btn--icon-alone',
+    className,
+  );
 </script>
 
-<button
-  type="button"
-  class={['vtmn-btn',
-    `vtmn-btn_variant--${variant}`,
-    `vtmn-btn_size--${size}`,
-    !iconAlone && iconLeft ? 'vtmn-btn--icon-left' : '',
-    !iconAlone && iconRight ? 'vtmn-btn--icon-right' : '',
-    iconAlone ? 'vtmn-btn--icon-alone' : '']
-    .join(' ')}
-  {...$$props}>
+<button type="button" class={componentClass} {...$$restProps}>
   {#if !iconAlone && iconLeft}
-    <span class={`vtmx-${iconLeft}`}></span>
+    <span class={`vtmx-${iconLeft}`} />
   {/if}
   {#if iconAlone}
-    <span class={`vtmx-${iconAlone}`}></span>
+    <span class={`vtmx-${iconAlone}`} />
   {:else}
-    <slot></slot>
+    <slot />
   {/if}
   {#if !iconAlone && iconRight}
-    <span class={`vtmx-${iconRight}`}></span>
+    <span class={`vtmx-${iconRight}`} />
   {/if}
 </button>
