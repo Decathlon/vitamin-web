@@ -95,5 +95,9 @@
     "gitUsername": "Vitamin BOT",
     "gitEmail": "designsystem@decathlon.net",
     "commitMessage": "chore: deploy storybook"
+  },
+  "volta": {
+    "node": "14.17.5",
+    "yarn": "1.22.11"
   }
 }

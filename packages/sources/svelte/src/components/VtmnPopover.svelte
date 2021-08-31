@@ -20,7 +20,7 @@
   import { cn } from '../utils/classnames';
 
   /** @type {string} - An unique id */
-  export let id = '';
+  export let identifier = '';
   /** @type {POSITION} */
   export let position = DEFAULT_POSITION;
 
@@ -36,13 +36,13 @@
 <div
   class={componentClass}
   data-position={position}
-  aria-describedby={id}
+  aria-describedby={identifier}
   tabindex="0"
   {...$$restProps}
 >
   <slot name="placeholder" />
 
-  <div {id} role="tooltip">
+  <div id={identifier} role="tooltip">
     <p class="vtmn-popover_title"><slot name="title" /></p>
     <p class="vtmn-popover_text"><slot name="body" /></p>
   </div>
