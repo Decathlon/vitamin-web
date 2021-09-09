@@ -336,6 +336,11 @@
   margin-left: rem(12px);
 }
 
+/* Exceptions */
+.vtmn-btn--multiline {
+  white-space: normal;
+}
+
 /* DEPRECATED (no longer maintained) */
 
 /* Secondary reversed button */
