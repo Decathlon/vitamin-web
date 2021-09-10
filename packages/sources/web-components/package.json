@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/web-components",
-  "version": "0.14.9",
+  "version": "0.14.10",
   "description": "Decathlon Design System - Vitamin Web Components library",
   "keywords": [
     "design-system",
@@ -39,7 +39,7 @@
   "devDependencies": {
     "@stencil/postcss": "^2.0.0",
     "@vtmn/css-badge": "^0.3.7",
-    "@vtmn/css-button": "^0.4.9",
+    "@vtmn/css-button": "^0.4.10",
     "@vtmn/css-checkbox": "^0.4.7",
     "@vtmn/css-link": "^0.3.7",
     "@vtmn/css-radio-button": "^0.4.7",
