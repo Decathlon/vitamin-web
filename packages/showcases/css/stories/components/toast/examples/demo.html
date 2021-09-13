@@ -152,6 +152,7 @@
         .addEventListener('click', function () {
           toast.parentElement.remove();
           nbToast--;
+          reorderToasts();
         });
       timeOut(toast);
     } else if (toast === 'vtmn-toast-4') {
@@ -168,6 +169,7 @@
         .addEventListener('click', function () {
           toast.parentElement.remove();
           nbToast--;
+          reorderToasts();
         });
       timeOut(toast);
     }
@@ -180,12 +182,16 @@
       setTimeout(function () {
         toast.parentElement.remove();
         nbToast--;
-        let toasts = document.getElementsByClassName('vtmn-toast');
-        toasts.forEach((toast, index) => {
-          toast.style.transform =
-            'translate(50%, calc(-50% - ' + 60 * index + 'px)';
-        });
+        reorderToasts();
       }, 5000);
+    }
+
+    function reorderToasts() {
+      let toasts = document.getElementsByClassName('vtmn-toast');
+      toasts.forEach((toast, index) => {
+        toast.style.transform =
+          'translate(50%, calc(-50% - ' + 60 * index + 'px)';
+      });
     }
 
     counter++;
