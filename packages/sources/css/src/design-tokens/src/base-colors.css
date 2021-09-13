@@ -483,4 +483,68 @@
     var(--vtmn-base-color_blue700--s),
     var(--vtmn-base-color_blue700--l)
   );
+  --vtmn-base-color_purple50--h: 300;
+  --vtmn-base-color_purple50--s: 16.1%;
+  --vtmn-base-color_purple50--l: 93.9%;
+  --vtmn-base-color_purple50: hsl(
+    var(--vtmn-base-color_purple50--h),
+    var(--vtmn-base-color_purple50--s),
+    var(--vtmn-base-color_purple50--l)
+  );
+  --vtmn-base-color_purple100--h: 296;
+  --vtmn-base-color_purple100--s: 17.1%;
+  --vtmn-base-color_purple100--l: 83.9%;
+  --vtmn-base-color_purple100: hsl(
+    var(--vtmn-base-color_purple100--h),
+    var(--vtmn-base-color_purple100--s),
+    var(--vtmn-base-color_purple100--l)
+  );
+  --vtmn-base-color_purple200--h: 295;
+  --vtmn-base-color_purple200--s: 17.5%;
+  --vtmn-base-color_purple200--l: 62%;
+  --vtmn-base-color_purple200: hsl(
+    var(--vtmn-base-color_purple200--h),
+    var(--vtmn-base-color_purple200--s),
+    var(--vtmn-base-color_purple200--l)
+  );
+  --vtmn-base-color_purple300--h: 294;
+  --vtmn-base-color_purple300--s: 17.6%;
+  --vtmn-base-color_purple300--l: 52%;
+  --vtmn-base-color_purple300: hsl(
+    var(--vtmn-base-color_purple300--h),
+    var(--vtmn-base-color_purple300--s),
+    var(--vtmn-base-color_purple300--l)
+  );
+  --vtmn-base-color_purple400--h: 295;
+  --vtmn-base-color_purple400--s: 17.5%;
+  --vtmn-base-color_purple400--l: 37.1%;
+  --vtmn-base-color_purple400: hsl(
+    var(--vtmn-base-color_purple400--h),
+    var(--vtmn-base-color_purple400--s),
+    var(--vtmn-base-color_purple400--l)
+  );
+  --vtmn-base-color_purple500--h: 296;
+  --vtmn-base-color_purple500--s: 17.7%;
+  --vtmn-base-color_purple500--l: 31%;
+  --vtmn-base-color_purple500: hsl(
+    var(--vtmn-base-color_purple500--h),
+    var(--vtmn-base-color_purple500--s),
+    var(--vtmn-base-color_purple500--l)
+  );
+  --vtmn-base-color_purple600--h: 295;
+  --vtmn-base-color_purple600--s: 17.2%;
+  --vtmn-base-color_purple600--l: 25.1%;
+  --vtmn-base-color_purple600: hsl(
+    var(--vtmn-base-color_purple600--h),
+    var(--vtmn-base-color_purple600--s),
+    var(--vtmn-base-color_purple600--l)
+  );
+  --vtmn-base-color_purple700--h: 295;
+  --vtmn-base-color_purple700--s: 16.9%;
+  --vtmn-base-color_purple700--l: 15.1%;
+  --vtmn-base-color_purple700: hsl(
+    var(--vtmn-base-color_purple700--h),
+    var(--vtmn-base-color_purple700--s),
+    var(--vtmn-base-color_purple700--l)
+  );
 }
