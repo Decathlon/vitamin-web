@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { VtmnTooltipPosition } from './types';
-import { VtmnIcon, VtmnIconProps } from '../VtmnIcon';
+import { VtmnIcon } from '../VtmnIcon';
 import { VitamixId } from '../../../../icons/dist/vitamix/font/vitamix';
 
 export interface VtmnTooltipProps
@@ -33,20 +33,22 @@ export interface VtmnTooltipProps
 export const VtmnTooltip = ({
   textValue,
   icon,
-  position = 'top',
+  position = VtmnTooltipPosition.TOP,
   tooltip = '',
   className,
   ...props
 }: VtmnTooltipProps) => {
   return (
-    <span
-      tabIndex="0"
-      className={`vtmn-tooltip ${className ?? className}`}
-      data-tooltip={tooltip}
-      data-position={position}
-      {...props}>
-      {icon ? <VtmnIcon size={16} color="black" value={icon} /> : textValue}
-    </span>
+    <div className="vtmn-flex">
+      <span
+        tabIndex={0}
+        className={`vtmn-tooltip ${className ?? className}`}
+        data-tooltip={tooltip}
+        data-position={position}
+        {...props}>
+        {icon ? <VtmnIcon size={16} color="black" value={icon} /> : textValue}
+      </span>
+    </div>
   );
 };
 
