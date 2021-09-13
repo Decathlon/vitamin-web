@@ -3,60 +3,64 @@
     Snackbar with button
   </button>
 </div>
+
 <div class="block">
   <button id="btn-snackbar-2" class="vtmn-btn vtmn-btn_variant--ghost">
     Snackbar without button
   </button>
 </div>
 
-<div class="block">
-  <div id="vtmn-snackbar-1" class="vtmn-snackbar">
-    <div class="vtmn-snackbar_content">
-      This is the description of a snackbar
-    </div>
-    <button
-      id="btn-dismiss"
-      class="vtmn-btn vtmn-btn_variant--tertiary vtmn-btn_size--small"
-    >
-      Button
-    </button>
-  </div>
-</div>
-
-<div class="block">
-  <div id="vtmn-snackbar-2" class="vtmn-snackbar">
-    <div class="vtmn-snackbar_content">
-      This is the description of a snackbar
-    </div>
-  </div>
-</div>
-
 <script type="text/javascript">
-  document.getElementById('vtmn-snackbar-1').style.visibility = 'hidden';
-  document.getElementById('vtmn-snackbar-2').style.visibility = 'hidden';
-
   function showSnackbar(snackbar) {
-    snackbar.style.visibility = 'visible';
-    snackbar.classList.add('show');
-    setTimeout(function () {
-      snackbar.classList.remove('show');
-      snackbar.style.visibility = 'hidden';
-    }, 5000);
+    //If snackbar already existing, remove it
+    if (document.getElementById('vtmn-snackbar-1')) {
+      document.getElementById('vtmn-snackbar-1').remove();
+    }
+    if (document.getElementById('vtmn-snackbar-2')) {
+      document.getElementById('vtmn-snackbar-2').remove();
+    }
+
+    //Create the block div container
+    var newDiv = document.createElement('div');
+    newDiv.classList.add('block');
+
+    if (snackbar === 'vtmn-snackbar-1') {
+      document.body.appendChild(newDiv);
+      document.body.lastChild.innerHTML =
+        '<div id="vtmn-snackbar-1" class="vtmn-snackbar"><div class="vtmn-snackbar_content">This is the description of a snackbar</div><button id="btn-dismiss" class="vtmn-btn vtmn-btn_variant--tertiary vtmn-btn_size--small">Button</button></div>';
+      let snackbar1 = document.getElementById('vtmn-snackbar-1');
+      document
+        .getElementById('btn-dismiss')
+        .addEventListener('click', function () {
+          document.getElementById('vtmn-snackbar-1').remove();
+        });
+      timeOut(snackbar1);
+    } else if (snackbar === 'vtmn-snackbar-2') {
+      document.body.appendChild(newDiv);
+      document.body.lastChild.innerHTML =
+        '<div id="vtmn-snackbar-2" class="vtmn-snackbar"><div class="vtmn-snackbar_content">This is the description of a snackbar</div></div>';
+      let snackbar2 = document.getElementById('vtmn-snackbar-2');
+      timeOut(snackbar2);
+    }
+
+    function timeOut(snackbar) {
+      snackbar.classList.add('show');
+      setTimeout(function () {
+        snackbar.classList.remove('show');
+        snackbar.remove();
+      }, 5000);
+    }
   }
 
   document
     .getElementById('btn-snackbar-1')
     .addEventListener('click', function () {
-      showSnackbar(document.getElementById('vtmn-snackbar-1'));
+      showSnackbar('vtmn-snackbar-1');
     });
 
   document
     .getElementById('btn-snackbar-2')
     .addEventListener('click', function () {
-      showSnackbar(document.getElementById('vtmn-snackbar-2'));
+      showSnackbar('vtmn-snackbar-2');
     });
-
-  document.getElementById('btn-dismiss').addEventListener('click', function () {
-    document.getElementById('vtmn-snackbar-1').style.visibility = 'hidden';
-  });
 </script>
