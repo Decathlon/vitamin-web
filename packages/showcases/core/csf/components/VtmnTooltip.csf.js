@@ -1,7 +1,7 @@
 export const argTypes = {
   position: {
     type: { name: 'string', required: false },
-    description: 'The position of the tooltip.',
+    description: 'The tooltip position',
     defaultValue: 'top',
     control: {
       type: 'select',
@@ -21,14 +21,14 @@ export const argTypes = {
 
   tooltip: {
     type: { name: 'string', required: false },
-    description: 'The printed tooltip.',
+    description: 'The printed tooltip',
     defaultValue: 'Tooltip example',
     control: { type: 'text' },
   },
 
   icon: {
     type: { name: 'string', required: false },
-    description: 'The icon of the tooltip',
+    description: 'The tooltip icon',
     default: '',
     control: {
       type: 'select',
@@ -38,7 +38,7 @@ export const argTypes = {
 
   textValue: {
     type: { name: 'string', required: false },
-    description: 'The text of the child',
+    description: 'The text of the hoverable element',
     defaultValue: 'Tooltip',
     control: { type: 'text' },
   },
