@@ -4806,11 +4806,6 @@
     "@typescript-eslint/types" "4.29.2"
     eslint-visitor-keys "^2.0.0"
 
-"@vtmn/css-design-tokens@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@vtmn/css-design-tokens/-/css-design-tokens-0.3.1.tgz#477a8773f055dca1f26aec50ee8d06bcc6d0a58b"
-  integrity sha512-WOA7PwiPOrrABmtvOTSi6/1HkwIcLNpDfuA199vzanyFi9jG5pclzt0P6Iv7az9nYMLEww7tEc6GdUJxLC5A0w==
-
 "@vue/babel-helper-vue-jsx-merge-props@^1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@vue/babel-helper-vue-jsx-merge-props/-/babel-helper-vue-jsx-merge-props-1.2.1.tgz#31624a7a505fb14da1d58023725a4c5f270e6a81"
@@ -6522,11 +6517,6 @@ braces@^3.0.1, braces@~3.0.2:
   integrity sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==
   dependencies:
     fill-range "^7.0.1"
-
-brew@0.0.8:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/brew/-/brew-0.0.8.tgz#0418840ef1526f0eb5301ed31f22848d71624c6f"
-  integrity sha1-BBiEDvFSbw61MB7THyKEjXFiTG8=
 
 brorand@^1.0.1, brorand@^1.1.0:
   version "1.1.0"
@@ -22687,11 +22677,6 @@ yargs@^17.0.0:
     string-width "^4.2.0"
     y18n "^5.0.5"
     yargs-parser "^20.2.2"
-
-yarn@^1.22.11:
-  version "1.22.11"
-  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.22.11.tgz#d0104043e7349046e0e2aec977c24be106925ed6"
-  integrity sha512-AWje4bzqO9RUn3sdnM5N8n4ZJ0BqCc/kqFJvpOI5/EVkINXui0yuvU7NDCEF//+WaxHuNay2uOHxA4+tq1P3cg==
 
 yocto-queue@^0.1.0:
   version "0.1.0"
