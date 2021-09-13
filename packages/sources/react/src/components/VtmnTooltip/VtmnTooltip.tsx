@@ -24,7 +24,7 @@ export interface VtmnTooltipProps
   icon?: VitamixId;
 
   /**
-   * The tooltip text of the span.
+   * The hoverable text.
    * @default ''
    */
   textValue?: string;
@@ -41,7 +41,7 @@ export const VtmnTooltip = ({
   return (
     <span
       tabIndex="0"
-      className={`vtmn-tooltip ${className ? className : ''}`}
+      className={`vtmn-tooltip ${className ?? className}`}
       data-tooltip={tooltip}
       data-position={position}
       {...props}>
