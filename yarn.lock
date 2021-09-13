@@ -20535,10 +20535,10 @@ svelte-preprocess@4.9.1:
     sorcery "^0.10.0"
     strip-indent "^3.0.0"
 
-svelte@3.42.1, svelte@^3.31.2:
-  version "3.42.1"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.42.1.tgz#d4b4d9068cce911835f7c6b8ff1d290e1a0b5657"
-  integrity sha512-XtExLd2JAU3T7M2g/DkO3UNj/3n1WdTXrfL63OZ5nZq7nAqd9wQw+lR4Pv/wkVbrWbAIPfLDX47UjFdmnY+YtQ==
+svelte@3.42.5, svelte@^3.31.2:
+  version "3.42.5"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.42.5.tgz#06c27ccdacebb4027b7a625633e7ca285bdff713"
+  integrity sha512-+y9ivcwMojAb0e87W7vR/UP7go44zc/3gtEciIMb8CUoIkUx6UJmPloBvVuO9MDXoGkUZM5SHr5PbLze9fJQVw==
 
 sveltedoc-parser@^4.1.0:
   version "4.1.0"
