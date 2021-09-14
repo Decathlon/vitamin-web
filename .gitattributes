@@ -1,0 +1,16 @@
+* text eol=lf
+
+*.png binary
+*.jpg binary
+*.ico binary
+*.gif binary
+*.svg binary
+*.eot binary
+*.eot binary
+*.otf binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+
+[core]
+  ignorecase=false

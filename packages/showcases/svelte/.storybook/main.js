@@ -1,9 +1,9 @@
 module.exports = {
   'stories': [
-    '../stories/**/*.stories.mdx',
-    '../stories/**/*.stories.@(js|jsx|ts|tsx)'
+    '../stories/**/*.stories.{js,jsx,ts,tsx,mdx,svelte}'
   ],
   'addons': [
+    '@storybook/addon-svelte-csf',
     '@storybook/addon-essentials',
     '@storybook/addon-a11y',
     '@whitespace/storybook-addon-html',
