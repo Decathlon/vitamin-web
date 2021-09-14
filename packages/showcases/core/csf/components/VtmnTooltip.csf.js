@@ -9,7 +9,6 @@ export const argTypes = {
         'bottom-left',
         'bottom',
         'bottom-right',
-        'bottom',
         'left',
         'right',
         'top-left',
@@ -20,7 +19,7 @@ export const argTypes = {
   },
 
   tooltip: {
-    type: { name: 'string', required: false },
+    type: { name: 'string', required: true },
     description: 'The printed tooltip',
     defaultValue: 'Tooltip example',
     control: { type: 'text' },

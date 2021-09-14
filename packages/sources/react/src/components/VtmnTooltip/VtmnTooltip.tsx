@@ -15,7 +15,7 @@ export interface VtmnTooltipProps
    * The tooltip text of the span.
    * @default ''
    */
-  tooltip?: string;
+  tooltip: string;
 
   /**
    * The tooltip associated icon.
