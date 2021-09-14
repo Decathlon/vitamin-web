@@ -37,7 +37,8 @@
 
 @media screen and (max-width: 599px) {
   .vtmn-snackbar {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .vtmn-snackbar.show {
