@@ -38,9 +38,9 @@
 
 This repository hosts libraries for web applications.
 
-## Packages
+## Core packages
 
-In order to allow you to consume the elements of the Design System **according to your product constraints**, we give you the possibility of using the Vitamin web libraries with **different technologies & levels of granularity**.
+In order to allow you to consume the elements of the Design System **according to your product constraints**, we give you the possibility of using the Vitamin web libraries with **different technologies & levels of granularity** with core packages developed and maintained by the Vitamin core team.
 
 ### Global CSS styles 🎨
 
@@ -212,6 +212,10 @@ This package provides you with a library of Web Components ([Custom Elements](ht
     <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_web-components"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_web-components&metric=alert_status" alt="Quality Gate Status" /></a></td>
   </tr>
 </table>
+
+## Community packages
+
+In order to enhance your Developer eXperience, we give you the possibility to develop your components in React, Svelte and Vue based on our core packages just above. These libraries are developed and maintained by the community, the Vitamin core team will be there to review, and ensure the quality of your propositions, feel free to contribute!
 
 ### React 🔵
 
