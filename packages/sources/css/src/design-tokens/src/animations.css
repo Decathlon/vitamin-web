@@ -4,9 +4,10 @@
  */
 :root {
   --vtmn-animation_fade-in: fade_in 200ms ease-in-out forwards;
-  --vtmn-animation_alert: fade_in 0.5s ease-in forwards,
-    slide-down 0.5s ease-in forwards, slide-left 0.5s 1s ease-in forwards,
-    slide-right 0.5s 8s ease-out forwards;
+  --vtmn-animation_alert: fade_in 200ms ease-in forwards,
+    slide-left 0.5s ease-in forwards, slide-right 0.5s 7.5s ease-in forwards;
+  --vtmn-animation_alert-mobile: fade_in 200ms ease-in forwards,
+    slide-down 0.5s ease-in forwards, slide-up 0.5s 7.5s ease-in forwards;
 }
 
 @keyframes fade_in {
@@ -18,32 +19,41 @@
   }
 }
 
-@keyframes slide-down {
-  from {
-    transform: translate(calc(100% - 56px), 0);
-    top: -15%;
-  }
-  to {
-    transform: translate(calc(100% - 56px), 0);
-    top: 15%;
-  }
-}
-
 @keyframes slide-left {
   from {
-    transform: translate(calc(100% - 56px), 0);
+    transform: translateX(100%);
   }
 
   to {
-    transform: translate(0, 0);
+    transform: translateX(0);
   }
 }
 
 @keyframes slide-right {
   from {
-    transform: translate(0, 0);
+    transform: translateX(0);
   }
   to {
-    transform: translate(110%, 0);
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
   }
 }

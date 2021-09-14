@@ -19,90 +19,79 @@
   </button>
 </div>
 
-<div class="block">
-  <div id="vtmn-alert-4" class="vtmn-alert vtmn-alert_icon-info">
-    <div class="vtmn-alert_content">
-      <div class="vtmn-alert_content-title">
-        This is the title of the alert
-        <span id="btn-close-alert-4" class="vtmx-close-line"></span>
-      </div>
-      <span class="vtmn-alert_content-text">
-        Alert are used to draw the users attention to an important information
-      </span>
-    </div>
-  </div>
-</div>
-
-<div class="block">
-  <div id="vtmn-alert-3" class="vtmn-alert vtmn-alert_icon-warning">
-    <div class="vtmn-alert_content">
-      <div class="vtmn-alert_content-title">This is the title of the alert</div>
-      <span class="vtmn-alert_content-text">
-        Alert are used to draw the users attention to an important information
-      </span>
-    </div>
-  </div>
-</div>
-
-<div class="block">
-  <div id="vtmn-alert-2" class="vtmn-alert vtmn-alert_icon-success">
-    <div class="vtmn-alert_content">
-      <div class="vtmn-alert_content-title">
-        This is the title of the alert
-        <span id="btn-close-alert-2" class="vtmx-close-line"></span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="block">
-  <div id="vtmn-alert-1" class="vtmn-alert vtmn-alert_icon-danger">
-    <div class="vtmn-alert_content">
-      <div class="vtmn-alert_content-title">This is the title of the alert</div>
-    </div>
-  </div>
-</div>
-
 <script type="text/javascript">
-  document.getElementById('vtmn-alert-1').style.visibility = 'hidden';
-  document.getElementById('vtmn-alert-2').style.visibility = 'hidden';
-  document.getElementById('vtmn-alert-3').style.visibility = 'hidden';
-  document.getElementById('vtmn-alert-4').style.visibility = 'hidden';
-
   function showAlert(alert) {
-    alert.style.visibility = 'visible';
-    alert.classList.add('show');
-    setTimeout(function () {
-      alert.classList.remove('show');
-      alert.style.visibility = 'hidden';
-    }, 10000);
+    if (document.getElementById('vtmn-alert-1')) {
+      document.getElementById('vtmn-alert-1').remove();
+    }
+    if (document.getElementById('vtmn-alert-2')) {
+      document.getElementById('vtmn-alert-2').remove();
+    }
+    if (document.getElementById('vtmn-alert-3')) {
+      document.getElementById('vtmn-alert-3').remove();
+    }
+    if (document.getElementById('vtmn-alert-4')) {
+      document.getElementById('vtmn-alert-4').remove();
+    }
+    //Create the block div container
+    var newDiv = document.createElement('div');
+    newDiv.classList.add('block');
+    document.body.appendChild(newDiv);
+
+    if (alert === 'vtmn-alert-1') {
+      document.body.lastChild.innerHTML =
+        '<div id="vtmn-alert-1" class="vtmn-alert vtmn-alert_icon-danger"><div class="vtmn-alert_content"><div class="vtmn-alert_content-title">This is the title of the alert</div></div></div>';
+      let alert = document.getElementById('vtmn-alert-1');
+      timeOut(alert);
+    } else if (alert === 'vtmn-alert-2') {
+      document.body.lastChild.innerHTML =
+        '<div id="vtmn-alert-2" class="vtmn-alert vtmn-alert_icon-success"><div class="vtmn-alert_content"><div class="vtmn-alert_content-title">This is the title of the alert<span id="btn-close-alert-2" class="vtmx-close-line"></span></div></div></div>';
+      let alert = document.getElementById('vtmn-alert-2');
+      document
+        .getElementById('btn-close-alert-2')
+        .addEventListener('click', function () {
+          alert.remove();
+        });
+      timeOut(alert);
+    } else if (alert === 'vtmn-alert-3') {
+      document.body.lastChild.innerHTML =
+        '<div id="vtmn-alert-3" class="vtmn-alert vtmn-alert_icon-warning"><div class="vtmn-alert_content"><div class="vtmn-alert_content-title">This is the title of the alert</div><span class="vtmn-alert_content-text">Alert are used to draw the users attention to an important information</span></div></div>';
+      let alert = document.getElementById('vtmn-alert-3');
+      timeOut(alert);
+    } else if (alert === 'vtmn-alert-4') {
+      document.body.lastChild.innerHTML =
+        '<div id="vtmn-alert-4" class="vtmn-alert vtmn-alert_icon-info"><div class="vtmn-alert_content"><div class="vtmn-alert_content-title">This is the title of the alert<span id="btn-close-alert-4" class="vtmx-close-line"></span></div><span class="vtmn-alert_content-text">Alert are used to draw the users attention to an important information</span></div></div>';
+      let alert = document.getElementById('vtmn-alert-4');
+      document
+        .getElementById('btn-close-alert-4')
+        .addEventListener('click', function () {
+          alert.remove();
+        });
+      timeOut(alert);
+    }
+
+    function timeOut(alert) {
+      alert.classList.add('show');
+      setTimeout(function () {
+        alert.classList.remove('show');
+        alert.remove();
+      }, 8000);
+    }
   }
 
   document.getElementById('btn-alert-1').addEventListener('click', function () {
-    showAlert(document.getElementById('vtmn-alert-1'));
+    showAlert('vtmn-alert-1');
   });
 
   document.getElementById('btn-alert-2').addEventListener('click', function () {
-    showAlert(document.getElementById('vtmn-alert-2'));
+    showAlert('vtmn-alert-2');
   });
 
   document.getElementById('btn-alert-3').addEventListener('click', function () {
-    showAlert(document.getElementById('vtmn-alert-3'));
+    showAlert('vtmn-alert-3');
   });
 
   document.getElementById('btn-alert-4').addEventListener('click', function () {
-    showAlert(document.getElementById('vtmn-alert-4'));
+    showAlert('vtmn-alert-4');
   });
-
-  document
-    .getElementById('btn-close-alert-2')
-    .addEventListener('click', function () {
-      document.getElementById('vtmn-alert-2').style.visibility = 'hidden';
-    });
-
-  document
-    .getElementById('btn-close-alert-4')
-    .addEventListener('click', function () {
-      document.getElementById('vtmn-alert-4').style.visibility = 'hidden';
-    });
 </script>
