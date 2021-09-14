@@ -63,7 +63,8 @@ export const VtmnIcon: React.FC<VtmnIconProps> = ({
           : `var(--vtmn-semantic-color_${retrieveSemanticColor(variant)})`,
         ...style,
       }}
-      {...props}></span>
+      {...props}
+    ></span>
   );
 };
 

@@ -56,7 +56,8 @@ export const VtmnButton = ({
       } ${!iconAlone && iconLeft ? 'vtmn-btn--icon-left' : ''} ${
         !iconAlone && iconRight ? 'vtmn-btn--icon-right' : ''
       } ${iconAlone ? 'vtmn-btn--icon-alone' : ''}`}
-      {...props}>
+      {...props}
+    >
       {!iconAlone && iconLeft && (
         <VtmnIcon
           value={iconLeft}

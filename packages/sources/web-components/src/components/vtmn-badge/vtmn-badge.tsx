@@ -25,7 +25,8 @@ export class VtmnBadge implements ComponentInterface {
           !this.value && this.value !== 0
             ? 'vtmn-badge_size--without-value'
             : ''
-        }`}>
+        }`}
+      >
         {this.value && this.value > 99 ? '99+' : this.value}
       </span>
     );
