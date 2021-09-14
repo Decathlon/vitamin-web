@@ -27,7 +27,7 @@
 
     if (snackbar === 'vtmn-snackbar-1') {
       document.body.lastChild.innerHTML =
-        '<div id="vtmn-snackbar-1" class="vtmn-snackbar"><div class="vtmn-snackbar_content">This is the description of a snackbar</div><button id="btn-dismiss" class="vtmn-btn vtmn-btn_variant--tertiary vtmn-btn_size--small">Button</button></div>';
+        '<div id="vtmn-snackbar-1" class="vtmn-snackbar">This is the description of a snackbar<button id="btn-dismiss" class="vtmn-btn vtmn-btn_variant--tertiary vtmn-btn_size--small">Button</button></div>';
       let snackbar = document.getElementById('vtmn-snackbar-1');
       document
         .getElementById('btn-dismiss')
@@ -37,7 +37,7 @@
       timeOut(snackbar);
     } else if (snackbar === 'vtmn-snackbar-2') {
       document.body.lastChild.innerHTML =
-        '<div id="vtmn-snackbar-2" class="vtmn-snackbar"><div class="vtmn-snackbar_content">This is the description of a snackbar</div></div>';
+        '<div id="vtmn-snackbar-2" class="vtmn-snackbar">This is the description of a snackbar</div>';
       let snackbar = document.getElementById('vtmn-snackbar-2');
       timeOut(snackbar);
     }
