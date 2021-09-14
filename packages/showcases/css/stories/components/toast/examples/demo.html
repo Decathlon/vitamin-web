@@ -1,94 +1,3 @@
-<!--<div class="block">
-  <button id="btn-toast-1" class="vtmn-btn vtmn-btn_variant--ghost">
-    Simple toast
-  </button>
-</div>
-<div class="block">
-  <button id="btn-toast-2" class="vtmn-btn vtmn-btn_variant--ghost">
-    Toast with information icon
-  </button>
-</div>
-<div class="block">
-  <button id="btn-toast-3" class="vtmn-btn vtmn-btn_variant--ghost">
-    Toast with close icon
-  </button>
-</div>
-<div class="block">
-  <button id="btn-toast-4" class="vtmn-btn vtmn-btn_variant--ghost">
-    Toast both information and close icons
-  </button>
-</div>
-
-<div class="block">
-  <div id="vtmn-toast-1" class="vtmn-toast">
-    <div class="vtmn-toast_content">This is the description of a snackbar</div>
-  </div>
-</div>
-
-<div class="block">
-  <div id="vtmn-toast-2" class="vtmn-toast vtmn-toast_with-icon-info">
-    <div class="vtmn-toast_content">This is the description of a snackbar</div>
-  </div>
-</div>
-
-<div class="block">
-  <div id="vtmn-toast-3" class="vtmn-toast">
-    <div class="vtmn-toast_content">This is the description of a snackbar</div>
-    <span id="btn-close-toast-3" class="vtmx-close-line"></span>
-  </div>
-</div>
-
-<div class="block">
-  <div id="vtmn-toast-4" class="vtmn-toast vtmn-toast_with-icon-info">
-    <div class="vtmn-toast_content">This is the description of a snackbar</div>
-    <span id="btn-close-toast-4" class="vtmx-close-line"></span>
-  </div>
-</div>
-
-<script type="text/javascript">
-  document.getElementById('vtmn-toast-1').style.visibility = 'hidden';
-  document.getElementById('vtmn-toast-2').style.visibility = 'hidden';
-  document.getElementById('vtmn-toast-3').style.visibility = 'hidden';
-  document.getElementById('vtmn-toast-4').style.visibility = 'hidden';
-
-  function showToast(toast) {
-    toast.style.visibility = 'visible';
-    toast.classList.add('show');
-    setTimeout(function () {
-      toast.classList.remove('show');
-      toast.style.visibility = 'hidden';
-    }, 5000);
-  }
-
-  document.getElementById('btn-toast-1').addEventListener('click', function () {
-    showToast(document.getElementById('vtmn-toast-1'));
-  });
-
-  document.getElementById('btn-toast-2').addEventListener('click', function () {
-    showToast(document.getElementById('vtmn-toast-2'));
-  });
-
-  document.getElementById('btn-toast-3').addEventListener('click', function () {
-    showToast(document.getElementById('vtmn-toast-3'));
-  });
-
-  document.getElementById('btn-toast-4').addEventListener('click', function () {
-    showToast(document.getElementById('vtmn-toast-4'));
-  });
-
-  document
-    .getElementById('btn-close-toast-3')
-    .addEventListener('click', function () {
-      document.getElementById('vtmn-toast-3').style.visibility = 'hidden';
-    });
-
-  document
-    .getElementById('btn-close-toast-4')
-    .addEventListener('click', function () {
-      document.getElementById('vtmn-toast-4').style.visibility = 'hidden';
-    });
-</script>
--->
 <div class="block">
   <button id="btn-toast-1" class="vtmn-btn vtmn-btn_variant--ghost">
     Simple toast
@@ -177,7 +86,7 @@
     function timeOut(toast) {
       toast.classList.add('show');
       toast.style.transform =
-        'translate(50%, calc(-50% - ' + 60 * nbToast + 'px)';
+        'translate(50%, calc(-50% - ' + 80 * nbToast + 'px)';
       nbToast++;
       setTimeout(function () {
         toast.parentElement.remove();
@@ -190,7 +99,7 @@
       let toasts = document.getElementsByClassName('vtmn-toast');
       toasts.forEach((toast, index) => {
         toast.style.transform =
-          'translate(50%, calc(-50% - ' + 60 * index + 'px)';
+          'translate(50%, calc(-50% - ' + 80 * index + 'px)';
       });
     }
 

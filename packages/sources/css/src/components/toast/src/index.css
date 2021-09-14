@@ -11,8 +11,8 @@
   flex-direction: row;
   align-items: center;
   padding: rem(8px) rem(16px);
-  height: rem(48px);
-  max-width: fit-content;
+  min-height: rem(48px);
+  width: fit-content;
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
   line-height: var(--vtmn-typo_text-2-line-height);
@@ -23,18 +23,11 @@
 }
 
 .vtmn-toast.show {
-  visibility: visible;
   position: fixed;
   right: 50%;
   bottom: 0;
   transform: translate(50%, -50%);
   animation: var(--vtmn-animation_overlay);
-}
-
-.vtmn-toast_content {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 .vtmn-toast_with-icon-info > .vtmn-toast_content::before {
@@ -58,4 +51,11 @@
   white-space: nowrap;
   font-size: rem(24px);
   color: var(--vtmn-semantic-color_content-primary-reversed);
+}
+
+@media screen and (max-width: 599px) {
+  .vtmn-toast {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
