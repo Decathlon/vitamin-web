@@ -103,7 +103,7 @@
 .vtmn-btn_variant--primary-reversed:not([disabled]):focus-visible {
   outline: none;
   box-shadow: 0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary),
-    0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary-reversed);
+    0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary-reversed-reversed);
 }
 
 /* Secondary button */
@@ -336,6 +336,11 @@
 
 .vtmn-btn_size--large.vtmn-btn--icon-right svg {
   margin-left: rem(12px);
+}
+
+/* Exceptions */
+.vtmn-btn--multiline {
+  white-space: normal;
 }
 
 /* DEPRECATED (no longer maintained) */
