@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@stencil/core": "^2.0.1",
-    "@vtmn/css-design-tokens": "^0.3.1"
+    "@vtmn/css-design-tokens": "^0.4.2"
   },
   "devDependencies": {
     "@stencil/postcss": "^2.0.0",
