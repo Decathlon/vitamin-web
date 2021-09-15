@@ -62,7 +62,7 @@ These packages allow the consumption of elements with a higher level of granular
 
 <details>
   <summary>For design tokens</summary>
-  
+
   <table>
     <tr>
       <th>@vtmn/css-design-tokens</th>
@@ -285,18 +285,18 @@ cd vitamin-web
 # install dependencies
 yarn
 
+# build all packages
+yarn build
+
 # start all showcases and build sources in watch mode & hot reload
 yarn start
-# or if you need don't need to launch every packages, you can launch separately:
+# or you can launch separately (recommended)
 yarn start:css
 yarn start:icons
 yarn start:web-components
 yarn start:react
 yarn start:svelte
 yarn start:vue
-
-# build packages
-yarn build
 
 # test packages
 yarn test
