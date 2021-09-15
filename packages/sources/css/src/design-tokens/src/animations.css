@@ -3,7 +3,7 @@
  * @presenter Animation
  */
 :root {
-  --vtmn-animation_fade-in: fade_in 200ms ease-in-out forwards;
+  --vtmn-animation_fade-in: fade-in 200ms ease-in-out forwards;
   --vtmn-animation_show-up: show-up 400ms ease-in-out forwards;
   --vtmn-animation_overlay: fade-in 0.5s ease-in-out forwards,
     show-up 0.5s ease-in-out forwards, fade-out 0.5s 4.5s ease-in-out forwards,
