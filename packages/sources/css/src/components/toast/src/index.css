@@ -13,6 +13,7 @@
   padding: rem(8px) rem(16px);
   min-height: rem(48px);
   width: fit-content;
+  justify-content: space-between;
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
   line-height: var(--vtmn-typo_text-2-line-height);
