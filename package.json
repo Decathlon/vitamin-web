@@ -59,7 +59,7 @@
     "./packages/**/*.css": [
       "yarn stylelint:fix"
     ],
-    "./packages/**/*.{json,js,jsx,ts,tsx}": [
+    "./packages/**/*.{json,js,jsx,ts,tsx,svelte}": [
       "yarn prettier:fix"
     ]
   },
@@ -76,6 +76,7 @@
     "lerna": "^4.0.0",
     "lint-staged": "^11.1.0",
     "prettier": "^2.2.1",
+    "prettier-plugin-svelte": "^2.4.0",
     "shx": "^0.3.3",
     "sort-package-json": "^1.48.0"
   },
@@ -94,5 +95,9 @@
     "gitUsername": "Vitamin BOT",
     "gitEmail": "designsystem@decathlon.net",
     "commitMessage": "chore: deploy storybook"
+  },
+  "volta": {
+    "node": "14.17.5",
+    "yarn": "1.22.11"
   }
 }
