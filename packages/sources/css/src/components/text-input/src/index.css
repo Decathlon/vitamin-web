@@ -37,7 +37,7 @@ textarea.vtmn-text-input {
   resize: both;
 }
 
-.vtmn-text-input:not([disabled]):not(textarea):hover {
+.vtmn-text-input:not(:disabled):not(:focus):not(textarea):hover {
   box-shadow: inset 0 0 0 rem(1px) var(--vtmn-semantic-color_border-active);
 }
 
@@ -46,7 +46,7 @@ textarea.vtmn-text-input {
   box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-active);
 }
 
-.vtmn-text-input:not([disabled]):active {
+.vtmn-text-input:not(:disabled):focus {
   outline: none;
   box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-active);
 }
@@ -60,6 +60,7 @@ textarea.vtmn-text-input {
   font-size: rem(16px);
   line-height: 1;
   display: block;
+  width: fit-content;
 }
 
 .vtmn-text-input_container {
@@ -76,11 +77,11 @@ textarea.vtmn-text-input {
   color: var(--vtmn-semantic-color_content-primary);
 }
 
-.vtmn-text-input[disabled],
-.vtmn-text-input[disabled] + span[class^='vtmx-'],
-.vtmn-text-input[disabled] + svg,
-.vtmn-text-input[disabled] + .vtmn-text-input_helper-text,
-.vtmn-text-input[disabled] + .vtmn-text-input_counter {
+.vtmn-text-input:disabled,
+.vtmn-text-input:disabled + span[class^='vtmx-'],
+.vtmn-text-input:disabled + svg,
+.vtmn-text-input:disabled + .vtmn-text-input_helper-text,
+.vtmn-text-input:disabled + .vtmn-text-input_counter {
   opacity: var(--vtmn-opacity_disabled-state);
   cursor: not-allowed;
 }
@@ -90,11 +91,13 @@ textarea.vtmn-text-input {
   font-size: rem(14px);
   line-height: 1;
   margin-top: 0;
+  width: fit-content;
 }
 
 .vtmn-text-input_helper-text--error {
   color: var(--vtmn-semantic-color_content-primary);
   margin-top: rem(-2px);
+  width: fit-content;
 }
 
 .vtmn-text-input_helper-text--error::before {
@@ -136,7 +139,7 @@ textarea.vtmn-text-input + .vtmn-text-input_counter {
   line-height: 1;
 }
 
-.vtmn-text-input:not([disabled]):focus-visible + .vtmn-text-input_counter,
-.vtmn-text-input--error:not([disabled]) + .vtmn-text-input_counter {
+.vtmn-text-input:not(:disabled):focus-visible + .vtmn-text-input_counter,
+.vtmn-text-input--error:not(:disabled) + .vtmn-text-input_counter {
   color: var(--vtmn-semantic-color_content-primary);
 }

@@ -1,6 +1,8 @@
 <script>
   import '@vtmn/css-text-input/dist/index.css';
 
+  /** @restProps { input | textarea } */
+
   /**
    * ID of the input
    * @type {string}
@@ -64,10 +66,10 @@
     class="vtmn-text-input"
     class:vtmn-text-input--error={error}
     class:vtmn-text-input--valid={valid}
-    {identifier}
+    id={identifier}
     {disabled}
     {placeholder}
-    {...$$props}
+    {...$$restProps}
   />
 {:else}
   <div class="vtmn-text-input_container">
@@ -76,10 +78,10 @@
       class:vtmn-text-input--valid={valid}
       class:vtmn-text-input--error={error}
       type="text"
-      {identifier}
+      id={identifier}
       {disabled}
       {placeholder}
-      {...$$props}
+      {...$$restProps}
     />
     <span class={icon && `vtmx-${icon}`} />
   </div>
