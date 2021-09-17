@@ -18,7 +18,7 @@
 
 <div class="block">
   <button id="btn-toast-4" class="vtmn-btn vtmn-btn_variant--ghost">
-    Toast both information and close icons
+    Toast with both information and close icons
   </button>
 </div>
 
@@ -36,7 +36,7 @@
       document.body.lastChild.innerHTML =
         '<div id="vtmn-toast-' +
         toastId +
-        '" class="vtmn-toast"><div class="vtmn-toast_content">This is the description of a snackbar</div></div>';
+        '" class="vtmn-toast"><div class="vtmn-toast_content">This is the description of a toast</div></div>';
       let toast = document.getElementById('vtmn-toast-' + toastId);
       timeOut(toast);
     } else if (toast === 'vtmn-toast-2') {
@@ -44,7 +44,7 @@
       document.body.lastChild.innerHTML =
         '<div id="vtmn-toast-' +
         toastId +
-        '" class="vtmn-toast vtmn-toast_with-icon-info"><div class="vtmn-toast_content">This is the description of a snackbar</div></div>';
+        '" class="vtmn-toast vtmn-toast--with-icon-info"><div class="vtmn-toast_content">This is the description of a toast</div></div>';
       let toast = document.getElementById('vtmn-toast-' + toastId);
       timeOut(toast);
     } else if (toast === 'vtmn-toast-3') {
@@ -52,7 +52,7 @@
       document.body.lastChild.innerHTML =
         '<div id="vtmn-toast-' +
         toastId +
-        '" class="vtmn-toast"><div class="vtmn-toast_content">This is the description of a snackbar</div><span id="btn-close-toast-' +
+        '" class="vtmn-toast"><div class="vtmn-toast_content">This is the description of a toast</div><span id="btn-close-toast-' +
         toastId +
         '" class="vtmx-close-line"></span></div>';
       let toast = document.getElementById('vtmn-toast-' + toastId);
@@ -69,7 +69,7 @@
       document.body.lastChild.innerHTML =
         '<div id="vtmn-toast-' +
         toastId +
-        '" class="vtmn-toast vtmn-toast_with-icon-info"><div class="vtmn-toast_content">This is the description of a snackbar</div><span id="btn-close-toast-' +
+        '" class="vtmn-toast vtmn-toast--with-icon-info"><div class="vtmn-toast_content">This is the description of a toast</div><span id="btn-close-toast-' +
         toastId +
         '" class="vtmx-close-line"></span></div>';
       let toast = document.getElementById('vtmn-toast-' + toastId);
