@@ -1,0 +1,48 @@
+@import '@vtmn/css-design-tokens/src/base-colors';
+@import '@vtmn/css-design-tokens/src/themes/default';
+@import '@vtmn/css-design-tokens/src/spacings';
+@import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/opacities';
+@import '@vtmn/css-design-tokens/src/shadows';
+@import '@vtmn/css-design-tokens/src/animations';
+
+.vtmn-snackbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: rem(8px) rem(16px);
+  min-height: rem(48px);
+  width: fit-content;
+  font-family: var(--vtmn-typo_font-family);
+  font-size: var(--vtmn-typo_text-2-font-size);
+  line-height: var(--vtmn-typo_text-2-line-height);
+  color: var(--vtmn-semantic-color_content-primary-reversed);
+  background-color: var(--vtmn-semantic-color_background-primary-reversed);
+  box-shadow: var(--vtmn-shadow_200);
+  border-radius: rem(4px);
+}
+
+.vtmn-snackbar.show {
+  position: fixed;
+  right: 50%;
+  bottom: 0;
+  transform: translate(50%, -50%);
+  animation: var(--vtmn-animation_overlay);
+}
+
+.vtmn-snackbar > .vtmn-btn {
+  margin-left: rem(16px);
+  min-width: fit-content;
+}
+
+@media screen and (max-width: 599px) {
+  .vtmn-snackbar {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .vtmn-snackbar.show {
+    transform: translate(50%, 0%);
+  }
+}
