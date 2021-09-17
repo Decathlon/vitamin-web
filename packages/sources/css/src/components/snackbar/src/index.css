@@ -31,7 +31,7 @@
   animation: var(--vtmn-animation_overlay);
 }
 
-.vtmn-snackbar > .vtmn-btn {
+.vtmn-snackbar > .vtmn-snackbar_content > .vtmn-btn {
   margin-left: rem(16px);
   min-width: fit-content;
 }
