@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.25.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.24.1...@vtmn/css@0.25.0) (2021-09-17)
+
+
+### Features
+
+* **@vtmn/css:** add toast component ([#500](https://github.com/Decathlon/vitamin-web/issues/500)) ([ce81148](https://github.com/Decathlon/vitamin-web/commit/ce811483867afda773b942ec557d925a23882f12))
+
+
+
+
+
+## [0.24.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.24.0...@vtmn/css@0.24.1) (2021-09-17)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+# [0.24.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.23.0...@vtmn/css@0.24.0) (2021-09-17)
+
+
+### Features
+
+* **@vtmn/css:** add snackbar component ([#499](https://github.com/Decathlon/vitamin-web/issues/499)) ([fccad63](https://github.com/Decathlon/vitamin-web/commit/fccad63db0b4c86e038166dceafdf43dd0cfdf58))
+
+
+
+
+
+# [0.23.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.22.5...@vtmn/css@0.23.0) (2021-09-17)
+
+
+### Features
+
+* **@vtmn/css-text-input:** adjust width of label and texts, focus is… ([#593](https://github.com/Decathlon/vitamin-web/issues/593)) ([34dc78f](https://github.com/Decathlon/vitamin-web/commit/34dc78fabd1469767d0bdf227ab6ceed4c34d01e))
+
+
+
+
+
 ## [0.22.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.22.4...@vtmn/css@0.22.5) (2021-09-16)
 
 **Note:** Version bump only for package @vtmn/css

@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.5.0...@vtmn/css-button@0.5.1) (2021-09-17)
+
+**Note:** Version bump only for package @vtmn/css-button
+
+
+
+
+
+# [0.5.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.4.12...@vtmn/css-button@0.5.0) (2021-09-17)
+
+
+### Features
+
+* **@vtmn/css-text-input:** adjust width of label and texts, focus is… ([#593](https://github.com/Decathlon/vitamin-web/issues/593)) ([34dc78f](https://github.com/Decathlon/vitamin-web/commit/34dc78fabd1469767d0bdf227ab6ceed4c34d01e))
+
+
+
+
+
 ## [0.4.12](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.4.11...@vtmn/css-button@0.4.12) (2021-09-16)
 
 **Note:** Version bump only for package @vtmn/css-button
