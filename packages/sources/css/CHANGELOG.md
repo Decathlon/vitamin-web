@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.25.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.24.1...@vtmn/css@0.25.0) (2021-09-17)
+
+
+### Features
+
+* **@vtmn/css:** add toast component ([#500](https://github.com/Decathlon/vitamin-web/issues/500)) ([ce81148](https://github.com/Decathlon/vitamin-web/commit/ce811483867afda773b942ec557d925a23882f12))
+
+
+
+
+
 ## [0.24.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.24.0...@vtmn/css@0.24.1) (2021-09-17)
 
 **Note:** Version bump only for package @vtmn/css
