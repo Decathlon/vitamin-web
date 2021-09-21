@@ -37,7 +37,6 @@
 }
 
 .vtmn-modal.show {
-  visibility: visible;
   animation: var(--vtmn-animation_fade-in);
 }
 
