@@ -4837,7 +4837,7 @@
     "@typescript-eslint/types" "4.31.1"
     eslint-visitor-keys "^2.0.0"
 
-"@vtmn/css-design-tokens@^0.3.0", "@vtmn/css-design-tokens@^0.3.1":
+"@vtmn/css-design-tokens@^0.3.0":
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/@vtmn/css-design-tokens/-/css-design-tokens-0.3.1.tgz#477a8773f055dca1f26aec50ee8d06bcc6d0a58b"
   integrity sha512-WOA7PwiPOrrABmtvOTSi6/1HkwIcLNpDfuA199vzanyFi9jG5pclzt0P6Iv7az9nYMLEww7tEc6GdUJxLC5A0w==
