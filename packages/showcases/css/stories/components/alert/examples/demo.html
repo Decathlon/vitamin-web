@@ -21,6 +21,31 @@
 
 <script type="text/javascript">
   (function () {
+    const throttle = (func, limit) => {
+      let lastFunc;
+      let lastRan;
+      return function () {
+        const context = this;
+        const args = arguments;
+        if (!lastRan) {
+          func.apply(context, args);
+          lastRan = Date.now();
+        } else {
+          clearTimeout(lastFunc);
+          lastFunc = setTimeout(function () {
+            if (Date.now() - lastRan >= limit) {
+              func.apply(context, args);
+              lastRan = Date.now();
+            }
+          }, limit - (Date.now() - lastRan));
+        }
+      };
+    };
+
+    function sleep(ms) {
+      return new Promise((resolve) => setTimeout(resolve, ms));
+    }
+
     class Queue {
       /**
        * Again, our queue is using a JavaScript array as a list rather than memory.
@@ -81,94 +106,123 @@
     let alertQueue = new Queue();
 
     const templateAlert1 = (id) => `
-    <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_icon-danger">
-      <div class="vtmn-alert_content">
-        <div class="vtmn-alert_content-title">
-          This is the title of the alert
+      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_icon-danger">
+        <div class="vtmn-alert_content">
+          <div class="vtmn-alert_content-title">
+            This is the title of the alert
+          </div>
         </div>
-      </div>
-    </div>`;
+      </div>`;
 
     const templateAlert2 = (id) => `
-    <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_icon-success">
-      <div class="vtmn-alert_content">
-        <div class="vtmn-alert_content-title">
-          This is the title of the alert
-          <span id="btn-close-alert-${id}" class="vtmx-close-line"></span>
+      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_icon-success">
+        <div class="vtmn-alert_content">
+          <div class="vtmn-alert_content-title">
+            This is the title of the alert
+            <span id="btn-close-alert-${id}" class="vtmx-close-line"></span>
+          </div>
         </div>
-      </div>
-    </div>`;
+      </div>`;
 
     const templateAlert3 = (id) => `
-    <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_icon-warning">
-      <div class="vtmn-alert_content">
-        <div class="vtmn-alert_content-title">
-          This is the title of the alert
+      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_icon-warning">
+        <div class="vtmn-alert_content">
+          <div class="vtmn-alert_content-title">
+            This is the title of the alert
+          </div>
+          <span class="vtmn-alert_content-text">
+            Alert are used to draw the users attention to an important information
+          </span>
         </div>
-        <span class="vtmn-alert_content-text">
-          Alert are used to draw the users attention to an important information
-        </span>
-      </div>
-    </div>`;
+      </div>`;
 
     const templateAlert4 = (id) => `
-    <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_icon-info">
-      <div class="vtmn-alert_content">
-        <div class="vtmn-alert_content-title">
-          This is the title of the alert
-          <span id="btn-close-alert-${id}" class="vtmx-close-line"></span>
+      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_icon-info">
+        <div class="vtmn-alert_content">
+          <div class="vtmn-alert_content-title">
+            This is the title of the alert
+            <span id="btn-close-alert-${id}" class="vtmx-close-line"></span>
+          </div>
+          <span class="vtmn-alert_content-text">
+            Alert are used to draw the users attention to an important information
+          </span>
         </div>
-        <span class="vtmn-alert_content-text">
-          Alert are used to draw the users attention to an important information
-        </span>
-      </div>
-    </div>`;
+      </div>`;
 
     function instanciateAlert(id) {
-      console.count('instanciateAlert');
+      let uid = uuidv4();
       switch (id) {
         case 1:
-          document.body.lastChild.innerHTML = templateAlert1(uuidv4());
+          document.body.lastChild.innerHTML = templateAlert1(uid);
+          document.getElementById(`vtmn-alert-${uid}`).style.display = 'none';
+          break;
         /*case 2:
-        document.body.lastChild.innerHTML = templateAlert2(uuidv4());
-      case 3:
-        document.body.lastChild.innerHTML = templateAlert3(uuidv4());
-      case 4:
-        document.body.lastChild.innerHTML = templateAlert4(uuidv4());*/
+          document.body.lastChild.innerHTML = templateAlert2(uid);
+          break;
+        case 3:
+          document.body.lastChild.innerHTML = templateAlert3(uid);
+          break;
+        case 4:
+          document.body.lastChild.innerHTML = templateAlert4(uid);
+          break;*/
         default:
           document.body.lastChild.remove();
       }
-      alertQueue.enqueue(document.body.lastChild);
-      console.count('enqueue');
+
+      alertQueue.enqueue(document.getElementById(`vtmn-alert-${uid}`));
     }
 
     function createAlert(type) {
-      console.count('createAlert');
       //Create the block div container
       let newDiv = document.createElement('div');
       newDiv.classList.add('block');
       document.body.appendChild(newDiv);
       instanciateAlert(type);
-      console.count('end');
     }
-  });
 
-  document.getElementById('btn-alert-1').addEventListener('click', function () {
-    console.count('btn-1');
-    createAlert(1);
-  });
+    let intervalTimer = setInterval(function addShowClass() {
+      console.count('start interval');
+      if (alertQueue.length > 0) {
+        clearInterval(intervalTimer);
+        console.count('> 0');
+        let currentAlert = alertQueue.dequeue();
+        console.log('currentAlert', currentAlert);
+        currentAlert.style.display = 'flex';
+        currentAlert.classList.add('show');
+        setTimeout(function () {
+          currentAlert.remove();
+          intervalTimer = setInterval(addShowClass, 1000);
+        }, 8000);
+      } else {
+        console.count('< 0');
+      }
+    }, 1000);
 
-  document.getElementById('btn-alert-2').addEventListener('click', function () {
-    //showAlert('vtmn-alert-2');
-  });
+    document
+      .getElementById('btn-alert-1')
+      .addEventListener('click', function () {
+        console.count('btn-1');
+        createAlert(1);
+      });
 
-  document.getElementById('btn-alert-3').addEventListener('click', function () {
-    //showAlert('vtmn-alert-3');
-  });
+    document
+      .getElementById('btn-alert-2')
+      .addEventListener('click', function () {
+        //showAlert('vtmn-alert-2');
+      });
 
-  document.getElementById('btn-alert-4').addEventListener('click', function () {
-    //showAlert('vtmn-alert-4');
-  });
+    document
+      .getElementById('btn-alert-3')
+      .addEventListener('click', function () {
+        //showAlert('vtmn-alert-3');
+      });
+
+    document
+      .getElementById('btn-alert-4')
+      .addEventListener('click', function () {
+        //showAlert('vtmn-alert-4');
+      });
+  })();
 </script>
 
 <!--<script type="text/javascript">
