@@ -28,7 +28,7 @@
 
 .vtmn-link:visited,
 .vtmn-link--standalone:visited {
-  color: #6c4d6f;
+  color: var(--vtmn-semantic-color_content-visited);
   text-decoration: none;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .vtmn-link--icon-along:visited::after {
-  background-color: #6c4d6f;
+  background-color: var(--vtmn-semantic-color_content-visited);
 }
 
 .vtmn-link_size--small {

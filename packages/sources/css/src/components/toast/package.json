@@ -1,0 +1,41 @@
+{
+  "name": "@vtmn/css-toast",
+  "version": "0.1.0",
+  "description": "Decathlon Design System - Vitamin specific CSS styles for toast component",
+  "keywords": [
+    "design-system",
+    "ui-kit",
+    "libraries",
+    "css",
+    "vitamin"
+  ],
+  "bugs": {
+    "url": "https://github.com/Decathlon/vitamin-web/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Decathlon/vitamin-web.git"
+  },
+  "license": "Apache-2.0",
+  "main": "dist/index.css",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "postcss src/index.css -o dist/index.css && cross-env FONT_SIZE_BASE=10 postcss src/index.css -o dist/index-base10.css"
+  },
+  "devDependencies": {
+    "@vtmn/css-design-tokens": "^0.3.0",
+    "@vtmn/css-postcss-config": "*",
+    "@vtmn/css-tailwind-config": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ]
+}

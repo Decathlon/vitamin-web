@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/vue",
-  "version": "0.7.8",
+  "version": "0.7.10",
   "description": "Decathlon Design System - Vitamin Svelte library",
   "keywords": [
     "design-system",
@@ -72,7 +72,7 @@
     "babel-eslint": "^10.1.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.32.0",
-    "eslint-plugin-prettier": "3.4.0",
+    "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-vue": "^7.15.0",
     "rimraf": "^3.0.2",
     "rollup": "^2.56.1",
