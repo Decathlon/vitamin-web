@@ -21,31 +21,6 @@
 
 <script type="text/javascript">
   (function () {
-    const throttle = (func, limit) => {
-      let lastFunc;
-      let lastRan;
-      return function () {
-        const context = this;
-        const args = arguments;
-        if (!lastRan) {
-          func.apply(context, args);
-          lastRan = Date.now();
-        } else {
-          clearTimeout(lastFunc);
-          lastFunc = setTimeout(function () {
-            if (Date.now() - lastRan >= limit) {
-              func.apply(context, args);
-              lastRan = Date.now();
-            }
-          }, limit - (Date.now() - lastRan));
-        }
-      };
-    };
-
-    function sleep(ms) {
-      return new Promise((resolve) => setTimeout(resolve, ms));
-    }
-
     class Queue {
       /**
        * Again, our queue is using a JavaScript array as a list rather than memory.
@@ -154,9 +129,8 @@
       switch (id) {
         case 1:
           document.body.lastChild.innerHTML = templateAlert1(uid);
-          document.getElementById(`vtmn-alert-${uid}`).style.display = 'none';
           break;
-        /*case 2:
+        case 2:
           document.body.lastChild.innerHTML = templateAlert2(uid);
           break;
         case 3:
@@ -164,11 +138,20 @@
           break;
         case 4:
           document.body.lastChild.innerHTML = templateAlert4(uid);
-          break;*/
+          break;
         default:
           document.body.lastChild.remove();
       }
 
+      if (document.getElementById(`btn-close-alert-${uid}`)) {
+        document
+          .getElementById(`btn-close-alert-${uid}`)
+          .addEventListener('click', function () {
+            document.getElementById(`vtmn-alert-${uid}`).remove();
+          });
+      }
+
+      document.getElementById(`vtmn-alert-${uid}`).style.display = 'none';
       alertQueue.enqueue(document.getElementById(`vtmn-alert-${uid}`));
     }
 
@@ -180,250 +163,43 @@
       instanciateAlert(type);
     }
 
+    let timeOut;
     let intervalTimer = setInterval(function addShowClass() {
-      console.count('start interval');
       if (alertQueue.length > 0) {
         clearInterval(intervalTimer);
-        console.count('> 0');
         let currentAlert = alertQueue.dequeue();
-        console.log('currentAlert', currentAlert);
         currentAlert.style.display = 'flex';
         currentAlert.classList.add('show');
-        setTimeout(function () {
+        timeOut = setTimeout(function removeShowClass() {
           currentAlert.remove();
           intervalTimer = setInterval(addShowClass, 1000);
         }, 8000);
       } else {
-        console.count('< 0');
       }
     }, 1000);
 
     document
       .getElementById('btn-alert-1')
       .addEventListener('click', function () {
-        console.count('btn-1');
         createAlert(1);
       });
 
     document
       .getElementById('btn-alert-2')
       .addEventListener('click', function () {
-        //showAlert('vtmn-alert-2');
+        createAlert(2);
       });
 
     document
       .getElementById('btn-alert-3')
       .addEventListener('click', function () {
-        //showAlert('vtmn-alert-3');
+        createAlert(3);
       });
 
     document
       .getElementById('btn-alert-4')
       .addEventListener('click', function () {
-        //showAlert('vtmn-alert-4');
+        createAlert(4);
       });
   })();
 </script>
-
-<!--<script type="text/javascript">
-  function showAlert(alertType) {
-    //Create the block div container
-    var newDiv = document.createElement('div');
-    newDiv.classList.add('block');
-    document.body.appendChild(newDiv);
-
-    if (alertType === 1) {
-      document.body.lastChild.innerHTML = `
-      <div id="vtmn-alert-1" class="vtmn-alert vtmn-alert_icon-danger">
-        <div class="vtmn-alert_content">
-          <div class="vtmn-alert_content-title">
-            This is the title of the alert
-          </div>
-        </div>
-      </div>`;
-      addShowClass(document.getElementById('vtmn-alert-1'));
-    } /*else if (alertType === 2) {
-      alertID = '2-' + counter;
-      counter++;
-      document.body.lastChild.innerHTML = `
-      `;
-      '<div id="vtmn-alert-' +
-        alertID +
-        '" class="vtmn-alert vtmn-alert_icon-success"><div class="vtmn-alert_content"><div class="vtmn-alert_content-title">This is the title of the alert<span id="btn-close-alert-' +
-        alertID +
-        '" class="vtmx-close-line"></span></div></div></div>';
-      currentAlert = document.getElementById('vtmn-alert-' + alertID);
-      document
-        .getElementById('btn-close-alert-' + alertID)
-        .addEventListener('click', function () {
-          currentAlert.remove();
-        });
-    } else if (alertType === 3) {
-      alertID = '3-' + counter;
-      counter++;
-      document.body.lastChild.innerHTML =
-        '<div id="vtmn-alert-' +
-        alertID +
-        '" class="vtmn-alert vtmn-alert_icon-warning"><div class="vtmn-alert_content"><div class="vtmn-alert_content-title">This is the title of the alert</div><span class="vtmn-alert_content-text">Alert are used to draw the users attention to an important information</span></div></div>';
-      currentAlert = document.getElementById('vtmn-alert-' + alertID);
-    } else if (alertType === 4) {
-      document.body.lastChild.innerHTML =
-        '<div id="vtmn-alert-1" class="vtmn-alert vtmn-alert_icon-info"><div class="vtmn-alert_content"><div class="vtmn-alert_content-title">This is the title of the alert<span id="btn-close-alert-1" class="vtmx-close-line"></span></div><span class="vtmn-alert_content-text">Alert are used to draw the users attention to an important information</span></div></div>';
-      currentAlert = document.getElementById('vtmn-alert-1');
-      document
-        .getElementById('btn-close-alert-' + alertID)
-        .addEventListener('click', function () {
-          currentAlert.remove();
-        });
-    }*/
-
-    function addShowClass(alert) {
-      alert.classList.add('show');
-      console.count();
-      setTimeout(() => {
-        alert.remove();
-      }, 8000);
-    }
-  }
-
-  document.getElementById('btn-alert-1').addEventListener('click', function () {
-    console.count();
-  });
-
-  /*function throttle(callback, limit) {
-    var waiting = false; // Initially, we're not waiting
-    return function () {
-      // We return a throttled function
-      if (!waiting) {
-        // If we're not waiting
-        callback.apply(this, arguments); // Execute users function
-        waiting = true; // Prevent future invocations
-        setTimeout(function () {
-          // After a period of time
-          waiting = false; // And allow future invocations
-        }, limit);
-      }
-    };*/
-  }
-</script>-->
-
-<!--
-  <script type="text/javascript">
-  var counter = 0;
-  var alertQueue = [];
-  var alertID;
-  var currentAlert;
-
-  function sleep(ms) {
-    return new Promise((resolve) => setTimeout(resolve, ms));
-  }
-
-  function doSomething(id) {
-    const behaviours = {
-      id1: () => {},
-      id2: () => {},
-    };
-
-    behaviours[id]();
-  }
-
-  const simpleTemplate = (id) => `
-  <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_icon-danger">
-    <div class="vtmn-alert_content">
-      <div class="vtmn-alert_content-title">This is the title of the alert</div>
-    </div>
-  </div>;
-`;
-
-  function showAlert(alertType) {
-    //Create the block div container
-    var newDiv = document.createElement('div');
-    newDiv.classList.add('block');
-    document.body.appendChild(newDiv);
-
-    if (alertType === 'vtmn-alert-1') {
-      alertID = '1-' + counter;
-      counter++;
-      document.body.lastChild.innerHTML = simpleTemplate(alertId);
-      currentAlert = document.getElementById('vtmn-alert-' + alertID);
-    } else if (alertType === 'vtmn-alert-2') {
-      alertID = '2-' + counter;
-      counter++;
-      document.body.lastChild.innerHTML = `
-      `;
-      '<div id="vtmn-alert-' +
-        alertID +
-        '" class="vtmn-alert vtmn-alert_icon-success"><div class="vtmn-alert_content"><div class="vtmn-alert_content-title">This is the title of the alert<span id="btn-close-alert-' +
-        alertID +
-        '" class="vtmx-close-line"></span></div></div></div>';
-      currentAlert = document.getElementById('vtmn-alert-' + alertID);
-      document
-        .getElementById('btn-close-alert-' + alertID)
-        .addEventListener('click', function () {
-          currentAlert.remove();
-        });
-    } else if (alertType === 'vtmn-alert-3') {
-      alertID = '3-' + counter;
-      counter++;
-      document.body.lastChild.innerHTML =
-        '<div id="vtmn-alert-' +
-        alertID +
-        '" class="vtmn-alert vtmn-alert_icon-warning"><div class="vtmn-alert_content"><div class="vtmn-alert_content-title">This is the title of the alert</div><span class="vtmn-alert_content-text">Alert are used to draw the users attention to an important information</span></div></div>';
-      currentAlert = document.getElementById('vtmn-alert-' + alertID);
-    } else if (alertType === 'vtmn-alert-4') {
-      alertID = '4-' + counter;
-      counter++;
-      document.body.lastChild.innerHTML =
-        '<div id="vtmn-alert-' +
-        alertID +
-        '" class="vtmn-alert vtmn-alert_icon-info"><div class="vtmn-alert_content"><div class="vtmn-alert_content-title">This is the title of the alert<span id="btn-close-alert-' +
-        alertID +
-        '" class="vtmx-close-line"></span></div><span class="vtmn-alert_content-text">Alert are used to draw the users attention to an important information</span></div></div>';
-      currentAlert = document.getElementById('vtmn-alert-' + alertID);
-      document
-        .getElementById('btn-close-alert-' + alertID)
-        .addEventListener('click', function () {
-          currentAlert.remove();
-        });
-    }
-
-    addShowClass(currentAlert);
-  }
-
-  async function addShowClass(alert) {
-    alertStack.push(alert);
-    console.log('stack', alertStack);
-    for (alert of alertStack) {
-      console.count('forloop');
-      alert.classList.add('show');
-      await sleep(8000);
-      alertStack.shift();
-      alert.remove();
-    }
-  }
-
-  document.getElementById('btn-alert-1').addEventListener('click', function () {
-    showAlert('vtmn-alert-1');
-  });
-
-  document.getElementById('btn-alert-2').addEventListener('click', function () {
-    showAlert('vtmn-alert-2');
-  });
-
-  document.getElementById('btn-alert-3').addEventListener('click', function () {
-    showAlert('vtmn-alert-3');
-  });
-
-  document.getElementById('btn-alert-4').addEventListener('click', function () {
-    showAlert('vtmn-alert-4');
-  });
-</script>-->
-
-<!--<script>
-   const alertQueue = [];
-
-   const dispatchAlert () => {
-     alertID = Math.Random()
-     alertQueue.unshift(alertID);
-  }
-</script>-->
