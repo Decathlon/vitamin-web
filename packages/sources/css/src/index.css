@@ -17,12 +17,13 @@
 @import './components/checkbox/src';
 @import './components/link/src';
 @import './components/loader/src';
+@import './components/modal/src';
 @import './components/popover/src';
+@import './components/radio-button/src';
+@import './components/rating/src';
 @import './components/select/src';
 @import './components/snackbar/src';
 @import './components/text-input/src';
 @import './components/toast/src';
 @import './components/toggle/src';
-@import './components/radio-button/src';
-@import './components/rating/src';
 @import './components/tooltip/src';
