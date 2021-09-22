@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-loader",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Decathlon Design System - Vitamin specific CSS styles for loader component",
   "keywords": [
     "design-system",
@@ -25,7 +25,7 @@
     "build": "sh build.sh"
   },
   "devDependencies": {
-    "@vtmn/css-design-tokens": "^0.5.0",
+    "@vtmn/css-design-tokens": "^0.6.0",
     "@vtmn/css-postcss-config": "*",
     "@vtmn/css-tailwind-config": "*"
   },
