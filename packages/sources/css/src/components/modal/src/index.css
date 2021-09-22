@@ -77,8 +77,6 @@
   font-size: var(--vtmn-typo_text-3-font-size);
   line-height: rem(24px);
   align-self: flex-start;
-
-  /* pointer-events: all; */
   text-align: left;
 }
 
