@@ -1,4 +1,4 @@
-import { VtmnLoader } from '@vtmn/react/src/components/VtmnLoader';
+import { VtmnLoader } from '@vtmn/react';
 import { Meta, Story } from '@storybook/react';
 import {
   argTypes,
