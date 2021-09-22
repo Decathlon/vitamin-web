@@ -1,5 +1,8 @@
 <script>
   import '@vtmn/css-link';
+  import { cn } from '../utils/classnames';
+
+  /** @restProps { a } */
 
   /**
    * The size of the link.
@@ -21,18 +24,22 @@
    * @default false
    */
   export let iconAlong = false;
-</script>
 
-<a
-  class={[
+  let className;
+  /**
+   * @type {string} A custom class to apply to the component.
+   */
+  export { className as class };
+
+  $: componentClass = cn(
     'vtmn-link',
-    `vtmn-link_size--${size}`,
+    size && `vtmn-link_size--${size}`,
     standalone && 'vtmn-link--standalone',
     standalone && iconAlong && 'vtmn-link--icon-along',
-  ]
-    .filter(Boolean)
-    .join(' ')}
-  {...$$props}
->
+    className,
+  );
+</script>
+
+<a class={componentClass} {...$$restProps}>
   <slot />
 </a>

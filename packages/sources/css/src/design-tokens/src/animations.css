@@ -3,14 +3,85 @@
  * @presenter Animation
  */
 :root {
-  --vtmn-animation_fade-in: fade_in 200ms ease-in-out forwards;
+  --vtmn-animation_alert: fade-in 200ms ease-in forwards,
+    slide-left 0.2s ease-in forwards, slide-right 0.2s 7.5s ease-in forwards;
+  --vtmn-animation_alert-mobile: fade_in 200ms ease-in forwards,
+    slide-down 0.2s ease-in forwards, slide-up 0.2s 7.5s ease-in forwards;
+  --vtmn-animation_fade-in: fade-in 200ms ease-in-out forwards;
+  --vtmn-animation_show-up: show-up 400ms ease-in-out forwards;
+  --vtmn-animation_overlay: fade-in 0.5s ease-in-out forwards,
+    show-up 0.5s ease-in-out forwards, fade-out 0.5s 4.5s ease-in-out forwards,
+    vanish 0.5s 4.5s ease-in-out forwards;
 }
 
-@keyframes fade_in {
+@keyframes fade-in {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes show-up {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 15px;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes vanish {
+  from {
+    bottom: 15px;
+  }
+  to {
+    bottom: 0;
   }
 }
