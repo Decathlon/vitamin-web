@@ -81,7 +81,7 @@
     let alertQueue = new Queue();
 
     const templateAlert1 = (id) => `
-      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_icon-danger">
+      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_variant--danger">
         <div class="vtmn-alert_content">
           <div class="vtmn-alert_content-title">
             This is the title of the alert
@@ -90,7 +90,7 @@
       </div>`;
 
     const templateAlert2 = (id) => `
-      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_icon-success">
+      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_variant--success">
         <div class="vtmn-alert_content">
           <div class="vtmn-alert_content-title">
             This is the title of the alert
@@ -100,25 +100,25 @@
       </div>`;
 
     const templateAlert3 = (id) => `
-      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_icon-warning">
+      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_variant--warning">
         <div class="vtmn-alert_content">
           <div class="vtmn-alert_content-title">
             This is the title of the alert
           </div>
-          <span class="vtmn-alert_content-text">
+          <span class="vtmn-alert_content-description">
             Alert are used to draw the users attention to an important information
           </span>
         </div>
       </div>`;
 
     const templateAlert4 = (id) => `
-      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_icon-info">
+      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_variant--info">
         <div class="vtmn-alert_content">
           <div class="vtmn-alert_content-title">
             This is the title of the alert
             <span id="btn-close-alert-${id}" class="vtmx-close-line"></span>
           </div>
-          <span class="vtmn-alert_content-text">
+          <span class="vtmn-alert_content-description">
             Alert are used to draw the users attention to an important information
           </span>
         </div>
