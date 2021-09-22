@@ -76,7 +76,7 @@
   background-color: var(--vtmn-semantic-color_active-brand);
 }
 
-.vtmn-btn_variant--primary:not([disabled]):focus-visible {
+.vtmn-btn_variant--primary:not(:disabled):focus-visible {
   outline: none;
   box-shadow: 0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
     0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
@@ -130,7 +130,7 @@
   background-color: var(--vtmn-semantic-color_active-primary);
 }
 
-.vtmn-btn_variant--secondary:not([disabled]):focus-visible {
+.vtmn-btn_variant--secondary:not(:disabled):focus-visible {
   outline: none;
   box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-secondary),
     0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
@@ -152,7 +152,7 @@
   background-color: var(--vtmn-semantic-color_active-tertiary);
 }
 
-.vtmn-btn_variant--tertiary:not([disabled]):focus-visible {
+.vtmn-btn_variant--tertiary:not(:disabled):focus-visible {
   outline: none;
   box-shadow: 0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
     0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
@@ -174,7 +174,7 @@
   background-color: var(--vtmn-semantic-color_active-accent);
 }
 
-.vtmn-btn_variant--conversion:not([disabled]):focus-visible {
+.vtmn-btn_variant--conversion:not(:disabled):focus-visible {
   outline: none;
   box-shadow: inset 0 0 0 rem(2px) transparent,
     0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
@@ -197,7 +197,7 @@
   background-color: var(--vtmn-semantic-color_active-primary);
 }
 
-.vtmn-btn_variant--ghost:not([disabled]):focus-visible {
+.vtmn-btn_variant--ghost:not(:disabled):focus-visible {
   outline: none;
   box-shadow: inset 0 0 0 rem(2px) transparent,
     0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),

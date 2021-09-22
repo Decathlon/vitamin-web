@@ -68,6 +68,7 @@ jobs:
         project_base_dir:
           [
             'packages/sources/css',
+            'packages/sources/css/src/components/alert',
             'packages/sources/css/src/components/badge',
             'packages/sources/css/src/components/button',
             'packages/sources/css/src/components/checkbox',
