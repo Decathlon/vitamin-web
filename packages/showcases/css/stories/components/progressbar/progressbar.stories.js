@@ -1,7 +1,7 @@
 import overview from './examples/overview.html';
 
 export default {
-  title: 'Components / Progress bar',
+  title: 'Components / Progressbar',
   argTypes: { onchange: { action: 'write' } },
   parameters: {
     actions: {
@@ -21,4 +21,5 @@ Overview.parameters = {
       code: overview,
     },
   },
+  backgrounds: { default: 'primary' },
 };

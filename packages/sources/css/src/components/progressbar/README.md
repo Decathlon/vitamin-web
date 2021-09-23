@@ -1,15 +1,15 @@
-# `@vtmn/css-progress-bar`
+# `@vtmn/css-progressbar`
 
 > Decathlon Design System - Vitamin specific CSS styles for progress bar component
 
 <a href="https://www.decathlon.design/726f8c765/p/2388f2-progressbar-beta/b/42a1a2">
   <img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" />
 </a>
-<a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-progress-bar--overview">
+<a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-progressbar--overview">
   <img src="https://img.shields.io/badge/storybook-css-d891bc?style=flat&logo=storybook" alt="storybook" />
 </a>
-<a href="https://www.npmjs.com/package/@vtmn/css-progress-bar">
-  <img src="https://img.shields.io/npm/v/@vtmn/css-progress-bar?style=flat&logo=npm" alt="npm version" />
+<a href="https://www.npmjs.com/package/@vtmn/css-progressbar">
+  <img src="https://img.shields.io/npm/v/@vtmn/css-progressbar?style=flat&logo=npm" alt="npm version" />
 </a>
 <a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css">
   <img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status" alt="Quality Gate Status" />
@@ -17,20 +17,20 @@
 
 ## Install package
 
-After installing [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) or [yarn](https://yarnpkg.com/en/docs/install), you can install `@vtmn/css-progress-bar` with this command:
+After installing [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) or [yarn](https://yarnpkg.com/en/docs/install), you can install `@vtmn/css-progressbar` with this command:
 
 ```sh
 # with npm
-npm i -S @vtmn/css-progress-bar
+npm i -S @vtmn/css-progressbar
 
 # with yarn
-yarn add @vtmn/css-progress-bar
+yarn add @vtmn/css-progressbar
 ```
 
 Or you can also install it with a CDN like `unpkg.com`:
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@vtmn/css-progress-bar" />
+<link rel="stylesheet" href="https://unpkg.com/@vtmn/css-progressbar" />
 ```
 
 ## Install fonts
@@ -80,7 +80,7 @@ If you don't need different themes, you can choose the specific CSS package with
 With a bundler that supports CSS imports in JS files:
 
 ```javascript
-import '@vtmn/css-progress-bar/dist/index.css';
+import '@vtmn/css-progressbar/dist/index.css';
 ```
 
 Otherwise include it in your HTML file:
@@ -88,7 +88,7 @@ Otherwise include it in your HTML file:
 ```html
 <link
   rel="stylesheet"
-  href="./node_modules/@vtmn/css-progress-bar/dist/index.css"
+  href="./node_modules/@vtmn/css-progressbar/dist/index.css"
 />
 ```
 
@@ -114,7 +114,7 @@ With a bundler that supports CSS imports in JS files:
 
 ```javascript
 import '@vtmn/css-design-tokens/dist/index.css';
-import '@vtmn/css-progress-bar/dist/index-with-vars.css';
+import '@vtmn/css-progressbar/dist/index-with-vars.css';
 ```
 
 Otherwise include it in your HTML file:
@@ -126,13 +126,13 @@ Otherwise include it in your HTML file:
 />
 <link
   rel="stylesheet"
-  href="./node_modules/@vtmn/css-progress-bar/dist/index-with-vars.css"
+  href="./node_modules/@vtmn/css-progressbar/dist/index-with-vars.css"
 />
 ```
 
 ## Development
 
-To know all the use cases and their associated code, [check out the showcase here](https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-progress-bar--overview).
+To know all the use cases and their associated code, [check out the showcase here](https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-progressbar--overview).
 
 ## Documentation
 
@@ -144,7 +144,7 @@ If your project uses the mathematical trick of basing the value of `1rem` equals
 
 ## Changelog
 
-If you want to know the different changes between versions of this package, [look at the changelog here](https://github.com/Decathlon/vitamin-web/blob/main/packages/sources/css/src/components/progress-bar/CHANGELOG.md).
+If you want to know the different changes between versions of this package, [look at the changelog here](https://github.com/Decathlon/vitamin-web/blob/main/packages/sources/css/src/components/progressbar/CHANGELOG.md).
 
 ## I have an issue, what should I do?
 

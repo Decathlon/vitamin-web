@@ -1,0 +1,72 @@
+@import '@vtmn/css-design-tokens/src/base-colors';
+@import '@vtmn/css-design-tokens/src/themes/default';
+
+.vtmn-progressbar_container {
+  max-width: rem(375px);
+  position: relative;
+}
+
+.vtmn-progressbar_label {
+  margin-bottom: rem(8px);
+  width: 100%;
+}
+
+.vtmn-progressbar_label::after {
+  content: attr(data-value) '%';
+  position: absolute;
+  right: 0;
+}
+
+.vtmn-progressbar {
+  background-color: var(--vtmn-semantic-color_background-tertiary);
+  height: rem(8px);
+  width: 100%;
+  border-radius: rem(32px);
+}
+
+.vtmn-progressbar_fill {
+  background-color: var(--vtmn-semantic-color_content-action);
+  height: 100%;
+  border-radius: rem(32px);
+}
+
+/* SIZES */
+
+/* Small */
+.vtmn-progressbar_size--small {
+  font-size: var(--vtmn-typo_text-3-font-size);
+}
+
+.vtmn-progressbar_size--small .vtmn-progressbar_labels {
+  margin-bottom: rem(4px);
+}
+
+.vtmn-progressbar_size--small .vtmn-progressbar {
+  height: rem(4px);
+}
+
+/* Medium (default) */
+.vtmn-progressbar_size--medium {
+  font-size: var(--vtmn-typo_text-2-font-size);
+}
+
+.vtmn-progressbar_size--medium .vtmn-progressbar_labels {
+  margin-bottom: rem(8px);
+}
+
+.vtmn-progressbar_size--medium .vtmn-progressbar {
+  height: rem(8px);
+}
+
+/* Large */
+.vtmn-progressbar_size--large {
+  font-size: var(--vtmn-typo_text-2-font-size);
+}
+
+.vtmn-progressbar_size--large .vtmn-progressbar_labels {
+  margin-bottom: rem(8px);
+}
+
+.vtmn-progressbar_size--large .vtmn-progressbar {
+  height: rem(16px);
+}
