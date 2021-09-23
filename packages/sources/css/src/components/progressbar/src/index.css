@@ -4,6 +4,7 @@
 .vtmn-progressbar_container {
   max-width: rem(375px);
   position: relative;
+  color: var(--vtmn-semantic-color_content-primary);
 }
 
 .vtmn-progressbar_label {
@@ -22,6 +23,7 @@
   height: rem(8px);
   width: 100%;
   border-radius: rem(32px);
+  position: relative;
 }
 
 .vtmn-progressbar_fill {
@@ -69,4 +71,32 @@
 
 .vtmn-progressbar_size--large .vtmn-progressbar {
   height: rem(16px);
+}
+
+/* INDETERMINATE */
+
+/* Linear */
+
+.vtmn-progressbar_linear--indeterminate .vtmn-progressbar_fill {
+  position: absolute;
+  animation: 1.5s ease-in-out infinite linear-indeterminate;
+}
+
+@keyframes linear-indeterminate {
+  0% {
+    left: 0%;
+    right: 100%;
+  }
+  20% {
+    left: 0%;
+    right: 0%;
+  }
+  50% {
+    left: 100%;
+    right: 0%;
+  }
+  100% {
+    left: 100%;
+    right: 0%;
+  }
 }
