@@ -1,8 +1,10 @@
-/* Design tokens */
-@import '@vtmn/css-design-tokens/src/legacy-colors';
+@import '@vtmn/css-design-tokens/src/base-colors';
+@import '@vtmn/css-design-tokens/src/themes/default';
 @import '@vtmn/css-design-tokens/src/spacings';
 @import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/opacities';
 @import '@vtmn/css-design-tokens/src/shadows';
+@import '@vtmn/css-design-tokens/src/animations';
 
 .vtmn-modal {
   background: hsla(
