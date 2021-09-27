@@ -28,11 +28,9 @@
 
     setInterval(() => {
       let random = Math.ceil(Math.random() * (15 - 1) + 1);
-      console.log('random', random);
 
       if (Number(currentLabelValue + random) >= 100) {
         progressbarLabel.setAttribute('data-value', '0');
-        console.log('reset data value', currentLabelValue);
       }
 
       currentLabelValue = Number(progressbarLabel.getAttribute('data-value'));
