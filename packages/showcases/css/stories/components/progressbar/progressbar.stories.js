@@ -1,6 +1,7 @@
 import overview from './examples/overview.html';
 import linear from './examples/linear.html';
 import circle from './examples/circle.html';
+import demo from './examples/demo.html';
 
 export default {
   title: 'Components / Progressbar',
@@ -41,6 +42,16 @@ Circle.parameters = {
   docs: {
     source: {
       code: circle,
+    },
+  },
+  backgrounds: { default: 'primary' },
+};
+
+export const Demo = () => demo;
+Demo.parameters = {
+  docs: {
+    source: {
+      code: demo,
     },
   },
   backgrounds: { default: 'primary' },

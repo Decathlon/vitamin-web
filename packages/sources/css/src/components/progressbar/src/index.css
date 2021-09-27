@@ -30,6 +30,7 @@
   background-color: var(--vtmn-semantic-color_content-action);
   height: 100%;
   border-radius: rem(32px);
+  transition: all ease-out 200ms;
 }
 
 /* SIZES */
