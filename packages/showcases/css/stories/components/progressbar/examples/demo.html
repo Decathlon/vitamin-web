@@ -28,17 +28,21 @@
 
     setInterval(() => {
       let random = Math.ceil(Math.random() * (15 - 1) + 1);
-
-      if (Number(currentLabelValue + random) >= 100) {
-        progressbarLabel.setAttribute('data-value', '0');
-      }
-
       currentLabelValue = Number(progressbarLabel.getAttribute('data-value'));
       let newValue = Number(currentLabelValue + random);
-      progressbarLabel.setAttribute('data-value', String(newValue));
-      progressbar.style.width = `${newValue}%`;
+      if (newValue > 100) {
+        newValue = 100;
+        progressbarLabel.setAttribute('data-value', newValue);
+        progressbar.style.width = `${newValue}%`;
+        setTimeout(() => {
+          newValue = 0;
+          progressbarLabel.setAttribute('data-value', newValue);
+          progressbar.style.width = `${newValue}%`;
+        }, 2000);
+      } else {
+        progressbarLabel.setAttribute('data-value', newValue);
+        progressbar.style.width = `${newValue}%`;
+      }
     }, 1000);
-
-    //function toggleIndeterminate() {}
   })();
 </script>
