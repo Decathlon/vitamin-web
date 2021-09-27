@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.10.1...@vtmn/react@0.11.0) (2021-09-27)
+
+
+### Features
+
+* **@vtmn/react:** add tooltip component ([#544](https://github.com/Decathlon/vitamin-web/issues/544)) ([8514a36](https://github.com/Decathlon/vitamin-web/commit/8514a369440749f3bd5d5c0858d1fadb599cd12d))
+
+
+
+
+
 ## [0.10.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.10.0...@vtmn/react@0.10.1) (2021-09-22)
 
 **Note:** Version bump only for package @vtmn/react
