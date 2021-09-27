@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-radio-button",
-  "version": "0.4.10",
+  "version": "0.4.11",
   "description": "Decathlon Design System - Vitamin specific CSS styles for radio button component",
   "keywords": [
     "design-system",
@@ -25,7 +25,7 @@
     "build": "node build.js"
   },
   "devDependencies": {
-    "@vtmn/css-design-tokens": "^0.6.0",
+    "@vtmn/css-design-tokens": "^0.6.1",
     "@vtmn/css-postcss-config": "*",
     "@vtmn/css-tailwind-config": "*"
   },
