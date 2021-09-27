@@ -21,7 +21,7 @@
     "storybook-addon-designs": "^6.0.0",
     "storybook-addon-outline": "^1.4.0",
     "storybook-mobile": "^0.1.29",
-    "svelte": "^3.31.2",
+    "svelte": "^3.43.0",
     "svelte-loader": "^3.1.2"
   },
   "licenses": [
