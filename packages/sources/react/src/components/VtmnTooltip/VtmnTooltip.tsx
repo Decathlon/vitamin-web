@@ -1,7 +1,5 @@
 import * as React from 'react';
 import { VtmnTooltipPosition } from './types';
-import { VtmnIcon } from '../VtmnIcon';
-import { VitamixId } from '../../../../icons/dist/vitamix/font/vitamix';
 
 export interface VtmnTooltipProps
   extends React.ComponentPropsWithoutRef<'span'> {
@@ -18,21 +16,14 @@ export interface VtmnTooltipProps
   tooltip: string;
 
   /**
-   * The tooltip associated icon.
+   * The tooltip children
    * @default ''
    */
-  icon?: VitamixId;
-
-  /**
-   * The hoverable text.
-   * @default ''
-   */
-  textValue?: string;
+  children: JSX.Element;
 }
 
 export const VtmnTooltip = ({
-  textValue,
-  icon,
+  children,
   position = VtmnTooltipPosition.TOP,
   tooltip = '',
   className,
@@ -46,7 +37,7 @@ export const VtmnTooltip = ({
         data-tooltip={tooltip}
         data-position={position}
         {...props}>
-        {icon ? <VtmnIcon size={16} color="black" value={icon} /> : textValue}
+        {children}
       </span>
     </div>
   );

@@ -25,21 +25,10 @@ export const argTypes = {
     control: { type: 'text' },
   },
 
-  icon: {
-    type: { name: 'string', required: false },
-    description: 'The tooltip icon',
-    default: '',
-    control: {
-      type: 'select',
-      options: ['', 'question-line', 'information-line', 'error-warning-line'],
-    },
-  },
-
-  textValue: {
-    type: { name: 'string', required: false },
-    description: 'The text of the hoverable element',
-    defaultValue: 'Tooltip',
-    control: { type: 'text' },
+  children: {
+    type: { name: 'string', required: true },
+    description: 'The tooltip children',
+    defaultValue: null,
   },
 };
 
