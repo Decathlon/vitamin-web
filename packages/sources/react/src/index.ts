@@ -9,3 +9,4 @@ export { VtmnLoader } from './components/VtmnLoader';
 export { VtmnRadioButton } from './components/VtmnRadioButton';
 export { VtmnTextInput } from './components/VtmnTextInput';
 export { VtmnToggle } from './components/VtmnToggle';
+export { VtmnTooltip } from './components/VtmnTooltip';
