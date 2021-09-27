@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.27.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.26.0...@vtmn/css@0.27.0) (2021-09-22)
+
+
+### Features
+
+* **@vtmn/css:** add modal component ([#498](https://github.com/Decathlon/vitamin-web/issues/498)) ([059e932](https://github.com/Decathlon/vitamin-web/commit/059e9326b6218f4aac3c2c69696139ee73768917))
+
+
+
+
+
+# [0.26.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.25.0...@vtmn/css@0.26.0) (2021-09-22)
+
+
+### Bug Fixes
+
+* **@vtmn/css-design-tokens:** problem with vtmn-semantic-color_hover-tertiary variable ([6f668f9](https://github.com/Decathlon/vitamin-web/commit/6f668f99b8f4895facecc2189190902052a6c042))
+
+
+### Features
+
+* **@vtmn/css:** add alert component ([#501](https://github.com/Decathlon/vitamin-web/issues/501)) ([5386c78](https://github.com/Decathlon/vitamin-web/commit/5386c7858ecf08beaf55c6474589d63026c6bf82))
+
+
+
+
+
 # [0.25.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.24.1...@vtmn/css@0.25.0) (2021-09-17)
 
 
