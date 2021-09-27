@@ -19,18 +19,18 @@
 }
 
 .vtmn-progressbar {
-  background-color: var(--vtmn-semantic-color_background-tertiary);
-  height: rem(8px);
   width: 100%;
+  height: rem(8px);
   border-radius: rem(32px);
-  position: relative;
+  background-color: var(--vtmn-semantic-color_background-tertiary);
 }
 
-.vtmn-progressbar_fill {
-  background-color: var(--vtmn-semantic-color_content-action);
+.vtmn-progressbar > line {
+  width: 100%;
   height: 100%;
-  border-radius: rem(32px);
-  transition: all ease-out 200ms;
+  stroke: var(--vtmn-semantic-color_content-action);
+  stroke-width: rem(8px);
+  stroke-linecap: round;
 }
 
 /* SIZES */
@@ -48,6 +48,10 @@
   height: rem(4px);
 }
 
+.vtmn-progressbar_size--small .vtmn-progressbar > line {
+  stroke-width: rem(4px);
+}
+
 /* Medium (default) */
 .vtmn-progressbar_size--medium {
   font-size: var(--vtmn-typo_text-2-font-size);
@@ -59,6 +63,10 @@
 
 .vtmn-progressbar_size--medium .vtmn-progressbar {
   height: rem(8px);
+}
+
+.vtmn-progressbar_size--medium .vtmn-progressbar > line {
+  stroke-width: rem(8px);
 }
 
 /* Large */
@@ -74,30 +82,26 @@
   height: rem(16px);
 }
 
+.vtmn-progressbar_size--large .vtmn-progressbar > line {
+  stroke-width: rem(16px);
+}
+
 /* INDETERMINATE */
 
 /* Linear */
-
-.vtmn-progressbar_linear--indeterminate .vtmn-progressbar_fill {
+.vtmn-progressbar_linear--indeterminate.vtmn-progressbar > line {
   position: absolute;
   animation: 1.5s ease-in-out infinite linear-indeterminate;
 }
 
 @keyframes linear-indeterminate {
   0% {
-    left: 0%;
-    right: 100%;
+    transform: translateX(-100%);
   }
-  40% {
-    left: 0%;
-    right: 0%;
-  }
-  70% {
-    left: 100%;
-    right: 0%;
+  60% {
+    transform: translateX(105%);
   }
   100% {
-    left: 100%;
-    right: 0%;
+    transform: translateX(105%);
   }
 }
