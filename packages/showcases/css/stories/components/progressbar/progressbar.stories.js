@@ -1,6 +1,6 @@
 import overview from './examples/overview.html';
 import linear from './examples/linear.html';
-import circle from './examples/circle.html';
+import circular from './examples/circular.html';
 import demo from './examples/demo.html';
 
 export default {
@@ -37,11 +37,11 @@ Linear.parameters = {
   backgrounds: { default: 'primary' },
 };
 
-export const Circle = () => circle;
-Circle.parameters = {
+export const Circular = () => circular;
+Circular.parameters = {
   docs: {
     source: {
-      code: circle,
+      code: circular,
     },
   },
   backgrounds: { default: 'primary' },

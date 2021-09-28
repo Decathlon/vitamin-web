@@ -8,6 +8,12 @@
   --vtmn-animation_overlay: fade-in 0.5s ease-in-out forwards,
     show-up 0.5s ease-in-out forwards, fade-out 0.5s 4.5s ease-in-out forwards,
     vanish 0.5s 4.5s ease-in-out forwards;
+  --vtmn-animation_linear-indeterminate: 1.5s ease-in-out infinite
+    linear-indeterminate;
+  --vtmn-animation_circle-indeterminate: 1.5s ease-in-out infinite
+    circle-indeterminate;
+  --vtmn-animation_circle-indeterminate-small: 1.5s ease-in-out infinite
+    circle-indeterminate-small;
 }
 
 @keyframes fade-in {
@@ -43,5 +49,39 @@
   }
   to {
     bottom: 0;
+  }
+}
+
+@keyframes linear-indeterminate {
+  0% {
+    transform: translateX(-100%);
+  }
+  60% {
+    transform: translateX(105%);
+  }
+  100% {
+    transform: translateX(105%);
+  }
+}
+
+@keyframes circle-indeterminate {
+  from {
+    stroke-dashoffset: 400;
+    transform: rotate(-90deg);
+  }
+  to {
+    stroke-dashoffset: -400;
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes circle-indeterminate-small {
+  from {
+    stroke-dashoffset: 200;
+    transform: rotate(-90deg);
+  }
+  to {
+    stroke-dashoffset: -200;
+    transform: rotate(270deg);
   }
 }
