@@ -22,7 +22,7 @@
   background-color: var(--vtmn-semantic-color_background-primary-reversed);
   box-shadow: var(--vtmn-shadow_200);
   border-radius: rem(4px);
-  z-index: 100;
+  z-index: 1005;
 }
 
 .vtmn-alert_content {

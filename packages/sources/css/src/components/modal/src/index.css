@@ -19,11 +19,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 5;
+  z-index: 1006;
 }
 
 .vtmn-modal_content {
-  z-index: 6;
   background-color: var(--vtmn-semantic-color_background-primary);
   border-radius: rem(8px);
   padding: rem(32px);

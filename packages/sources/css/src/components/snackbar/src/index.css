@@ -21,6 +21,7 @@
   background-color: var(--vtmn-semantic-color_background-primary-reversed);
   box-shadow: var(--vtmn-shadow_200);
   border-radius: rem(4px);
+  z-index: 1003;
 }
 
 .vtmn-snackbar.show {
