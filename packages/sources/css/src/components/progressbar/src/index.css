@@ -54,7 +54,7 @@
 }
 
 .vtmn-progressbar_variant--circle > .vtmn-progressbar_image {
-  max-width: rem(108px);
+  max-width: rem(112px);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -84,25 +84,62 @@
   transform: rotate(-90deg);
   fill: transparent;
   stroke-dasharray: 400;
-  stroke-dashoffset: calc(400 - (400 * 65) / 100);
 }
 
 /* SIZES */
 
 /* Small */
-.vtmn-progressbar_size--small {
+
+/* Circle */
+.vtmn-progressbar_size--small.vtmn-progressbar_variant--circle.vtmn-progressbar_container {
+  width: rem(70px);
+  height: rem(70px);
+}
+
+.vtmn-progressbar_size--small.vtmn-progressbar_variant--circle
+  .vtmn-progressbar_label::after {
+  font-size: var(--vtmn-typo_text-1-font-size);
+  font-weight: var(--vtmn-typo_font-weight--regular);
+}
+
+.vtmn-progressbar_size--small.vtmn-progressbar_variant--circle
+  .vtmn-progressbar_track {
+  width: rem(64px);
+  height: rem(64px);
+  stroke-width: rem(4px);
+}
+
+.vtmn-progressbar_size--small.vtmn-progressbar_variant--circle
+  .vtmn-progressbar_indicator {
+  width: rem(64px);
+  height: rem(64px);
+  stroke-width: rem(4px);
+  stroke-dasharray: 200;
+}
+
+.vtmn-progressbar_size--small.vtmn-progressbar_variant--circle
+  > .vtmn-progressbar_image {
+  max-width: rem(56px);
+}
+
+/* Linear */
+.vtmn-progressbar_size--small:not(.vtmn-progressbar_variant--circle) {
   font-size: var(--vtmn-typo_text-3-font-size);
 }
 
-.vtmn-progressbar_size--small .vtmn-progressbar_labels {
+.vtmn-progressbar_size--small:not(.vtmn-progressbar_variant--circle)
+  .vtmn-progressbar_labels {
   margin-bottom: rem(4px);
 }
 
-.vtmn-progressbar_size--small .vtmn-progressbar {
+.vtmn-progressbar_size--small:not(.vtmn-progressbar_variant--circle)
+  .vtmn-progressbar {
   height: rem(4px);
 }
 
-.vtmn-progressbar_size--small .vtmn-progressbar > line {
+.vtmn-progressbar_size--small:not(.vtmn-progressbar_variant--circle)
+  .vtmn-progressbar
+  > line {
   stroke-width: rem(4px);
 }
 

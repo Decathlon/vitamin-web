@@ -52,7 +52,13 @@
   >
     <span class="vtmn-progressbar_label" data-value="65"></span>
     <svg class="vtmn-progressbar">
-      <circle class="vtmn-progressbar_indicator" cx="50%" cy="50%" r="64" />
+      <circle
+        class="vtmn-progressbar_indicator"
+        stroke-dashoffset="calc(400 - (400 * 65) / 100)"
+        cx="50%"
+        cy="50%"
+        r="64"
+      />
     </svg>
   </div>
 </div>
@@ -73,7 +79,13 @@
     />
     <svg class="vtmn-progressbar">
       <circle class="vtmn-progressbar_track" cx="50%" cy="50%" r="64" />
-      <circle class="vtmn-progressbar_indicator" cx="50%" cy="50%" r="64" />
+      <circle
+        class="vtmn-progressbar_indicator"
+        stroke-dashoffset="calc(400 - (400 * 65) / 100)"
+        cx="50%"
+        cy="50%"
+        r="64"
+      />
     </svg>
   </div>
 </div>

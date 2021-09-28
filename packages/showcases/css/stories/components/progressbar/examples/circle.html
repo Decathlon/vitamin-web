@@ -1,27 +1,152 @@
 <div class="block">
-  <div class="vtmn-progressbar_container">
-    <div class="vtmn-progressbar vtmn-progressbar_variant--circle">
-      <svg width="128" height="128" viewBox="0 0 128 128">
-        <circle
-          cx="50%"
-          cy="50%"
-          r="40%"
-          fill="transparent"
-          stroke="#ccc"
-          stroke-width="5"
-        ></circle>
+  <div
+    class="
+      vtmn-progressbar_container
+      vtmn-progressbar_variant--circle
+      vtmn-progressbar_size--small
+    "
+    role="progressbar"
+    aria-label="progress bar"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    aria-valuenow="25"
+  >
+    <svg class="vtmn-progressbar">
+      <circle
+        class="vtmn-progressbar_indicator"
+        stroke-dashoffset="calc(200 - (200 * 25) / 100)"
+        cx="50%"
+        cy="50%"
+        r="32"
+      />
+    </svg>
+  </div>
+</div>
 
-        <circle
-          cx="50%"
-          cy="50%"
-          r="40%"
-          fill="transparent"
-          stroke="blue"
-          stroke-width="10"
-          stroke-linecap="round"
-          stroke-dasharray="250"
-        ></circle>
-      </svg>
-    </div>
+<div class="block">
+  <div
+    class="vtmn-progressbar_container vtmn-progressbar_variant--circle"
+    role="progressbar"
+    aria-label="progress bar"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    aria-valuenow="40"
+  >
+    <svg class="vtmn-progressbar">
+      <circle class="vtmn-progressbar_track" cx="50%" cy="50%" r="64" />
+      <circle
+        class="vtmn-progressbar_indicator"
+        stroke-dashoffset="calc(400 - (400 * 40) / 100)"
+        cx="50%"
+        cy="50%"
+        r="64"
+      />
+    </svg>
+  </div>
+</div>
+
+<div class="block">
+  <div
+    class="
+      vtmn-progressbar_container
+      vtmn-progressbar_variant--circle
+      vtmn-progressbar_size--small
+    "
+    role="progressbar"
+    aria-label="progress bar"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    aria-valuenow="50"
+  >
+    <span class="vtmn-progressbar_label" data-value="50"></span>
+    <svg class="vtmn-progressbar">
+      <circle
+        class="vtmn-progressbar_indicator"
+        stroke-dashoffset="calc(200 - (200 * 50) / 100)"
+        cx="50%"
+        cy="50%"
+        r="32"
+      />
+    </svg>
+  </div>
+</div>
+
+<div class="block">
+  <div
+    class="vtmn-progressbar_container vtmn-progressbar_variant--circle"
+    role="progressbar"
+    aria-label="progress bar"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    aria-valuenow="60"
+  >
+    <span class="vtmn-progressbar_label" data-value="60"></span>
+    <svg class="vtmn-progressbar">
+      <circle class="vtmn-progressbar_track" cx="50%" cy="50%" r="64" />
+      <circle
+        class="vtmn-progressbar_indicator"
+        stroke-dashoffset="calc(400 - (400 * 60) / 100)"
+        cx="50%"
+        cy="50%"
+        r="64"
+      />
+    </svg>
+  </div>
+</div>
+
+<div class="block">
+  <div
+    class="
+      vtmn-progressbar_container
+      vtmn-progressbar_variant--circle
+      vtmn-progressbar_size--small
+    "
+    role="progressbar"
+    aria-label="progress bar"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    aria-valuenow="70"
+  >
+    <img
+      class="vtmn-progressbar_image"
+      src="https://www.themadeco.fr/47568/decor-mural-carreaux-noir-et-blanc.jpg"
+      alt="Black and white grid"
+    />
+    <svg class="vtmn-progressbar">
+      <circle
+        class="vtmn-progressbar_indicator"
+        stroke-dashoffset="calc(200 - (200 * 70) / 100)"
+        cx="50%"
+        cy="50%"
+        r="32"
+      />
+    </svg>
+  </div>
+</div>
+
+<div class="block">
+  <div
+    class="vtmn-progressbar_container vtmn-progressbar_variant--circle"
+    role="progressbar"
+    aria-label="progress bar"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    aria-valuenow="80"
+  >
+    <img
+      class="vtmn-progressbar_image"
+      src="https://www.themadeco.fr/47568/decor-mural-carreaux-noir-et-blanc.jpg"
+      alt="Black and white grid"
+    />
+    <svg class="vtmn-progressbar">
+      <circle class="vtmn-progressbar_track" cx="50%" cy="50%" r="64" />
+      <circle
+        class="vtmn-progressbar_indicator"
+        stroke-dashoffset="calc(400 - (400 * 80) / 100)"
+        cx="50%"
+        cy="50%"
+        r="64"
+      />
+    </svg>
   </div>
 </div>
