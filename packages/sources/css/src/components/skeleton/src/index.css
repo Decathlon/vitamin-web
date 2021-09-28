@@ -7,7 +7,7 @@
 
 .vtmn-skeleton {
   display: inline-block;
-  height: 1px;
+  height: rem(1px);
   position: relative;
   overflow: hidden;
   background-color: var(--vtmn-semantic-color_background-tertiary);
@@ -67,11 +67,11 @@
   content: '';
 }
 .vtmn-skeleton_line {
-  height: 8px;
-  border-radius: 8px;
+  height: rem(8px);
+  border-radius: rem(8px);
 }
 .vtmn-skeleton_avatar {
-  width: 32px;
-  height: 32px;
+  width: rem(32px);
+  height: rem(32px);
   border-radius: 50%;
 }
