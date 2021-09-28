@@ -123,23 +123,19 @@
 }
 
 /* Linear */
-.vtmn-progressbar_size--small:not(.vtmn-progressbar_variant--circle) {
+.vtmn-progressbar_size--small {
   font-size: var(--vtmn-typo_text-3-font-size);
 }
 
-.vtmn-progressbar_size--small:not(.vtmn-progressbar_variant--circle)
-  .vtmn-progressbar_labels {
+.vtmn-progressbar_size--small .vtmn-progressbar_labels {
   margin-bottom: rem(4px);
 }
 
-.vtmn-progressbar_size--small:not(.vtmn-progressbar_variant--circle)
-  .vtmn-progressbar {
+.vtmn-progressbar_size--small .vtmn-progressbar {
   height: rem(4px);
 }
 
-.vtmn-progressbar_size--small:not(.vtmn-progressbar_variant--circle)
-  .vtmn-progressbar
-  > line {
+.vtmn-progressbar_size--small .vtmn-progressbar_indicator {
   stroke-width: rem(4px);
 }
 
@@ -156,7 +152,7 @@
   height: rem(8px);
 }
 
-.vtmn-progressbar_size--medium .vtmn-progressbar > line {
+.vtmn-progressbar_size--medium .vtmn-progressbar_indicator {
   stroke-width: rem(8px);
 }
 
@@ -173,19 +169,38 @@
   height: rem(16px);
 }
 
-.vtmn-progressbar_size--large .vtmn-progressbar > line {
+.vtmn-progressbar_size--large .vtmn-progressbar_indicator {
   stroke-width: rem(16px);
 }
 
 /* INDETERMINATE */
 
 /* Linear */
-.vtmn-progressbar_linear--indeterminate.vtmn-progressbar > line {
+.vtmn-progressbar--indeterminate .vtmn-progressbar_indicator {
   position: absolute;
   animation: 1.5s ease-in-out infinite linear-indeterminate;
 }
 
+/* Circle */
+.vtmn-progressbar_variant--circle.vtmn-progressbar--indeterminate
+  .vtmn-progressbar_indicator {
+  position: absolute;
+  animation: 1.5s ease-in-out infinite circle-indeterminate;
+}
+
 @keyframes linear-indeterminate {
+  0% {
+    transform: translateX(-100%);
+  }
+  60% {
+    transform: translateX(105%);
+  }
+  100% {
+    transform: translateX(105%);
+  }
+}
+
+@keyframes circle-indeterminate {
   0% {
     transform: translateX(-100%);
   }
