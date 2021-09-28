@@ -79,6 +79,7 @@ jobs:
             'packages/sources/css/src/components/radio-button',
             'packages/sources/css/src/components/rating',
             'packages/sources/css/src/components/select',
+            'packages/sources/css/src/components/skeleton',
             'packages/sources/css/src/components/snackbar',
             'packages/sources/css/src/components/text-input',
             'packages/sources/css/src/components/toast',

@@ -12,6 +12,7 @@
   --vtmn-animation_overlay: fade-in 0.5s ease-in-out forwards,
     show-up 0.5s ease-in-out forwards, fade-out 0.5s 4.5s ease-in-out forwards,
     vanish 0.5s 4.5s ease-in-out forwards;
+  --vtmn-animation_shimmer: shimmer 1.5s ease-in-out infinite;
 }
 
 @keyframes fade-in {
@@ -83,5 +84,14 @@
   }
   to {
     bottom: 0;
+  }
+}
+
+@keyframes shimmer {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
   }
 }

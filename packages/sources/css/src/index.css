@@ -22,6 +22,7 @@
 @import './components/radio-button/src';
 @import './components/rating/src';
 @import './components/select/src';
+@import './components/skeleton/src';
 @import './components/snackbar/src';
 @import './components/text-input/src';
 @import './components/toast/src';

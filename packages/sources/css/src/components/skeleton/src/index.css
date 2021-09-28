@@ -1,0 +1,77 @@
+@import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/opacities';
+@import '@vtmn/css-design-tokens/src/shadows';
+@import '@vtmn/css-design-tokens/src/animations';
+@import '@vtmn/css-design-tokens/src/base-colors';
+@import '@vtmn/css-design-tokens/src/themes/default';
+
+.vtmn-skeleton {
+  display: inline-block;
+  height: rem(1px);
+  position: relative;
+  overflow: hidden;
+  background-color: var(--vtmn-semantic-color_background-tertiary);
+}
+.vtmn-skeleton::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(
+    90deg,
+    hsla(
+        var(--vtmn-semantic-color_background-primary--h),
+        var(--vtmn-semantic-color_background-primary--s),
+        var(--vtmn-semantic-color_background-primary--l),
+        0
+      )
+      0,
+    hsla(
+        var(--vtmn-semantic-color_background-primary--h),
+        var(--vtmn-semantic-color_background-primary--s),
+        var(--vtmn-semantic-color_background-primary--l),
+        0.3
+      )
+      10%,
+    hsla(
+        var(--vtmn-semantic-color_background-primary--h),
+        var(--vtmn-semantic-color_background-primary--s),
+        var(--vtmn-semantic-color_background-primary--l),
+        0.6
+      )
+      40%,
+    hsla(
+        var(--vtmn-semantic-color_background-primary--h),
+        var(--vtmn-semantic-color_background-primary--s),
+        var(--vtmn-semantic-color_background-primary--l),
+        0.6
+      )
+      60%,
+    hsla(
+        var(--vtmn-semantic-color_background-primary--h),
+        var(--vtmn-semantic-color_background-primary--s),
+        var(--vtmn-semantic-color_background-primary--l),
+        0.3
+      )
+      90%,
+    hsla(
+      var(--vtmn-semantic-color_background-primary--h),
+      var(--vtmn-semantic-color_background-primary--s),
+      var(--vtmn-semantic-color_background-primary--l),
+      0
+    )
+  );
+  animation: var(--vtmn-animation_shimmer);
+  content: '';
+}
+.vtmn-skeleton_line {
+  height: rem(8px);
+  border-radius: rem(8px);
+}
+.vtmn-skeleton_avatar {
+  width: rem(32px);
+  height: rem(32px);
+  border-radius: 50%;
+}

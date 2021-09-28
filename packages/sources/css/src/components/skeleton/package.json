@@ -1,7 +1,7 @@
 {
-  "name": "@vtmn/css-toast",
-  "version": "0.1.1",
-  "description": "Decathlon Design System - Vitamin specific CSS styles for toast component",
+  "name": "@vtmn/css-skeleton",
+  "version": "0.0.0",
+  "description": "Decathlon Design System - Vitamin specific CSS styles for skeleton component",
   "keywords": [
     "design-system",
     "ui-kit",
