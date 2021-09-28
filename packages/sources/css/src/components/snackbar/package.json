@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-snackbar",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Decathlon Design System - Vitamin specific CSS styles for snackbar component",
   "keywords": [
     "design-system",
@@ -22,10 +22,10 @@
     "dist"
   ],
   "scripts": {
-    "build": "postcss src/index.css -o dist/index.css && cross-env FONT_SIZE_BASE=10 postcss src/index.css -o dist/index-base10.css"
+    "build": "node build.js"
   },
   "devDependencies": {
-    "@vtmn/css-design-tokens": "^0.3.0",
+    "@vtmn/css-design-tokens": "^0.7.0",
     "@vtmn/css-postcss-config": "*",
     "@vtmn/css-tailwind-config": "*"
   },

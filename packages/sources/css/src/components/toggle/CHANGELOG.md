@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.11](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-toggle@0.3.10...@vtmn/css-toggle@0.3.11) (2021-09-28)
+
+**Note:** Version bump only for package @vtmn/css-toggle
+
+
+
+
+
+## [0.3.10](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-toggle@0.3.9...@vtmn/css-toggle@0.3.10) (2021-09-27)
+
+**Note:** Version bump only for package @vtmn/css-toggle
+
+
+
+
+
+## [0.3.9](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-toggle@0.3.8...@vtmn/css-toggle@0.3.9) (2021-09-22)
+
+**Note:** Version bump only for package @vtmn/css-toggle
+
+
+
+
+
 ## [0.3.8](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-toggle@0.3.7...@vtmn/css-toggle@0.3.8) (2021-09-17)
 
 **Note:** Version bump only for package @vtmn/css-toggle

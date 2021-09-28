@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/icons",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Decathlon Design System - Vitamin icons library",
   "keywords": [
     "design-system",
@@ -26,13 +26,13 @@
     "dist"
   ],
   "scripts": {
-    "prestart": "yarn build",
-    "start": "chokidar \"src/**/\" -i \"**/dist/**\" -c \"yarn build\"",
     "prebuild": "rimraf dist && svgo -f src/vitamix",
     "build": "yarn build:svg && yarn build:font && yarn build:sprite",
-    "build:svg": "node src/scripts/build-svg.js",
     "build:font": "shx mkdir -p ./dist/vitamix/font && fantasticon",
-    "build:sprite": "shx mkdir -p ./dist/vitamix/sprite && spritesh --viewbox \"0 0 16 16\" -i src/vitamix -o dist/vitamix/sprite/vitamix.svg && node src/scripts/add-sprite-declaration.js"
+    "build:sprite": "shx mkdir -p ./dist/vitamix/sprite && spritesh --viewbox \"0 0 16 16\" -i src/vitamix -o dist/vitamix/sprite/vitamix.svg && node src/scripts/add-sprite-declaration.js",
+    "build:svg": "node src/scripts/build-svg.js",
+    "prestart": "yarn build",
+    "start": "chokidar \"src/**/\" -i \"**/dist/**\" -c \"yarn build\""
   },
   "devDependencies": {
     "chokidar-cli": "^3.0.0",
@@ -40,7 +40,7 @@
     "fs-extra": "^10.0.0",
     "rimraf": "^3.0.2",
     "spritesh": "^1.2.1",
-    "svgo": "^2.2.0"
+    "svgo": "^2.7.0"
   },
   "publishConfig": {
     "access": "public"

@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.11.0...@vtmn/react@0.12.0) (2021-09-28)
+
+
+### Features
+
+* **@vtmn/css:** add skeleton component ([#616](https://github.com/Decathlon/vitamin-web/issues/616)) ([db8d9e8](https://github.com/Decathlon/vitamin-web/commit/db8d9e80eeb56aac8b3b5584b421244eb8588537))
+
+
+
+
+
+# [0.11.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.10.1...@vtmn/react@0.11.0) (2021-09-27)
+
+
+### Features
+
+* **@vtmn/react:** add tooltip component ([#544](https://github.com/Decathlon/vitamin-web/issues/544)) ([8514a36](https://github.com/Decathlon/vitamin-web/commit/8514a369440749f3bd5d5c0858d1fadb599cd12d))
+
+
+
+
+
+## [0.10.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.10.0...@vtmn/react@0.10.1) (2021-09-22)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+# [0.10.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.9.11...@vtmn/react@0.10.0) (2021-09-22)
+
+
+### Features
+
+* **react:** add loader component ([#546](https://github.com/Decathlon/vitamin-web/issues/546)) ([8099ad6](https://github.com/Decathlon/vitamin-web/commit/8099ad62b604a39bd205336b47a03e8e0e397a50))
+
+
+
+
+
 ## [0.9.11](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.9.10...@vtmn/react@0.9.11) (2021-09-14)
 
 **Note:** Version bump only for package @vtmn/react
