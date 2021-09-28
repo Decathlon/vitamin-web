@@ -13,6 +13,7 @@
 }
 
 .vtmn-progressbar_label::after {
+  width: fit-content;
   content: attr(data-value) '%';
   position: absolute;
   right: 0;
@@ -25,12 +26,47 @@
   background-color: var(--vtmn-semantic-color_background-tertiary);
 }
 
-.vtmn-progressbar > line {
+.vtmn-progressbar_indicator {
   width: 100%;
   height: 100%;
   stroke: var(--vtmn-semantic-color_content-action);
   stroke-width: rem(8px);
   stroke-linecap: round;
+}
+
+/* Circle */
+.vtmn-progressbar_variant--circle.vtmn-progressbar_container {
+  width: fit-content;
+  height: fit-content;
+}
+
+.vtmn-progressbar_variant--circle .vtmn-progressbar_label {
+  width: 100%;
+  height: 100%;
+}
+
+.vtmn-progressbar_variant--circle .vtmn-progressbar_label::after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: var(--vtmn-typo_title-3-font-size);
+  font-weight: var(--vtmn-typo_font-weight--bold);
+}
+
+.vtmn-progressbar_variant--circle > .vtmn-progressbar {
+  width: rem(136px);
+  height: rem(136px);
+  background-color: transparent;
+}
+
+.vtmn-progressbar_variant--circle .vtmn-progressbar_indicator {
+  width: rem(128px);
+  height: rem(128px);
+  transform-origin: center;
+  transform: rotate(-90deg);
+  fill: transparent;
+  stroke-dasharray: 400;
+  stroke-dashoffset: calc(400 - (400 * 65) / 100);
 }
 
 /* SIZES */
