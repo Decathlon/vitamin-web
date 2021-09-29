@@ -100,32 +100,6 @@
     progressbar1.style.transform = 'translateX(-105%)';
     progressbarContainer1.setAttribute('aria-valuenow', '0');
 
-    /* Circular */
-    let progressbarContainer2 = document.getElementById(
-      'vtmn-progressbar-container-2',
-    );
-    let progressbarLabel2 = document.getElementById('vtmn-progressbar-label-2');
-    let currentLabelValue2 = progressbarLabel2.getAttribute('data-value');
-    let progressbar2 = document.getElementById('vtmn-progressbar-2');
-    progressbar2.setAttribute(
-      'stroke-dashoffset',
-      'calc(400 - (400 * 0) / 100)',
-    );
-    progressbarContainer2.setAttribute('aria-valuenow', '0');
-
-    /* Circular small*/
-    let progressbarContainer3 = document.getElementById(
-      'vtmn-progressbar-container-3',
-    );
-    let progressbarLabel3 = document.getElementById('vtmn-progressbar-label-3');
-    let currentLabelValue3 = progressbarLabel3.getAttribute('data-value');
-    let progressbar3 = document.getElementById('vtmn-progressbar-3');
-    progressbar3.setAttribute(
-      'stroke-dashoffset',
-      'calc(200 - (200 * 0) / 100)',
-    );
-    progressbarContainer3.setAttribute('aria-valuenow', '0');
-
     setInterval(() => {
       let random = Math.ceil(Math.random() * (15 - 1) + 1);
       currentLabelValue1 = Number(progressbarLabel1.getAttribute('data-value'));
@@ -147,6 +121,19 @@
         progressbarContainer1.setAttribute('aria-valuenow', `${newValue}`);
       }
     }, 1000);
+
+    /* Circular */
+    let progressbarContainer2 = document.getElementById(
+      'vtmn-progressbar-container-2',
+    );
+    let progressbarLabel2 = document.getElementById('vtmn-progressbar-label-2');
+    let currentLabelValue2 = progressbarLabel2.getAttribute('data-value');
+    let progressbar2 = document.getElementById('vtmn-progressbar-2');
+    progressbar2.setAttribute(
+      'stroke-dashoffset',
+      'calc(400 - (400 * 0) / 100)',
+    );
+    progressbarContainer2.setAttribute('aria-valuenow', '0');
 
     setInterval(() => {
       let random = Math.ceil(Math.random() * (15 - 1) + 1);
@@ -178,6 +165,19 @@
         progressbarContainer2.setAttribute('aria-valuenow', `${newValue}`);
       }
     }, 1000);
+
+    /* Circular small*/
+    let progressbarContainer3 = document.getElementById(
+      'vtmn-progressbar-container-3',
+    );
+    let progressbarLabel3 = document.getElementById('vtmn-progressbar-label-3');
+    let currentLabelValue3 = progressbarLabel3.getAttribute('data-value');
+    let progressbar3 = document.getElementById('vtmn-progressbar-3');
+    progressbar3.setAttribute(
+      'stroke-dashoffset',
+      'calc(200 - (200 * 0) / 100)',
+    );
+    progressbarContainer3.setAttribute('aria-valuenow', '0');
 
     setInterval(() => {
       let random = Math.ceil(Math.random() * (15 - 1) + 1);
