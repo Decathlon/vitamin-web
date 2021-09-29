@@ -34,6 +34,7 @@
   stroke: var(--vtmn-semantic-color_content-active);
   stroke-width: rem(8px);
   stroke-linecap: round;
+  transition: all 200ms;
 }
 
 /* Circle */

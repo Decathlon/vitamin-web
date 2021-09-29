@@ -1,47 +1,136 @@
 <div class="block">
-  <div class="vtmn-progressbar_container">
+  <div
+    id="vtmn-progressbar-container-1"
+    class="vtmn-progressbar_container"
+    role="progressbar"
+    aria-label="progress bar"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    aria-valuenow="0"
+  >
     <span
       id="vtmn-progressbar-label-1"
       class="vtmn-progressbar_label"
       data-value="0"
       >Loading</span
     >
-    <div class="vtmn-progressbar">
-      <div
+    <svg>
+      <line
         id="vtmn-progressbar-1"
-        class="vtmn-progressbar_fill"
-        role="progressbar"
-        aria-valuenow="0"
-        aria-valuemin="0"
-        aria-valuemax="100"
-      ></div>
-    </div>
+        class="vtmn-progressbar_indicator"
+        x1="0"
+        x2="100%"
+        y1="50%"
+        y2="50%"
+      />
+    </svg>
+  </div>
+</div>
+
+<div class="block">
+  <div
+    id="vtmn-progressbar-container-2"
+    class="vtmn-progressbar_container vtmn-progressbar_variant--circle"
+    role="progressbar"
+    aria-label="progress bar"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    aria-valuenow="0"
+  >
+    <span
+      id="vtmn-progressbar-label-2"
+      class="vtmn-progressbar_label"
+      data-value="0"
+    ></span>
+    <svg>
+      <circle class="vtmn-progressbar_track" cx="50%" cy="50%" r="64" />
+      <circle
+        id="vtmn-progressbar-2"
+        class="vtmn-progressbar_indicator"
+        stroke-dashoffset="calc(400 - (400 * 0) / 100)"
+        cx="50%"
+        cy="50%"
+        r="64"
+      />
+    </svg>
   </div>
 </div>
 
 <script type="text/javascript">
   (function () {
-    let progressbarLabel = document.getElementById('vtmn-progressbar-label-1');
-    let currentLabelValue = progressbarLabel.getAttribute('data-value');
-    let progressbar = document.getElementById('vtmn-progressbar-1');
-    progressbar.style.width = '0%';
+    /* Linear */
+    let progressbarContainer1 = document.getElementById(
+      'vtmn-progressbar-container-1',
+    );
+    let progressbarLabel1 = document.getElementById('vtmn-progressbar-label-1');
+    let currentLabelValue1 = progressbarLabel1.getAttribute('data-value');
+    let progressbar1 = document.getElementById('vtmn-progressbar-1');
+    progressbar1.style.transform = 'translateX(-105%)';
+    progressbarContainer1.setAttribute('aria-valuenow', '0');
+
+    /* Circular */
+    let progressbarContainer2 = document.getElementById(
+      'vtmn-progressbar-container-2',
+    );
+    let progressbarLabel2 = document.getElementById('vtmn-progressbar-label-2');
+    let currentLabelValue2 = progressbarLabel2.getAttribute('data-value');
+    let progressbar2 = document.getElementById('vtmn-progressbar-2');
+    progressbar2.setAttribute(
+      'stroke-dashoffset',
+      'calc(400 - (400 * 0) / 100)',
+    );
+    progressbarContainer2.setAttribute('aria-valuenow', '0');
 
     setInterval(() => {
       let random = Math.ceil(Math.random() * (15 - 1) + 1);
-      currentLabelValue = Number(progressbarLabel.getAttribute('data-value'));
-      let newValue = Number(currentLabelValue + random);
+      currentLabelValue1 = Number(progressbarLabel1.getAttribute('data-value'));
+      let newValue = Number(currentLabelValue1 + random);
       if (newValue > 100) {
         newValue = 100;
-        progressbarLabel.setAttribute('data-value', newValue);
-        progressbar.style.width = `${newValue}%`;
+        progressbarLabel1.setAttribute('data-value', newValue);
+        progressbar1.style.transform = `translateX(calc(-100% + ${newValue}%))`;
+        progressbarContainer1.setAttribute('aria-valuenow', `${newValue}`);
         setTimeout(() => {
           newValue = 0;
-          progressbarLabel.setAttribute('data-value', newValue);
-          progressbar.style.width = `${newValue}%`;
+          progressbarLabel1.setAttribute('data-value', newValue);
+          progressbar1.style.transform = `translateX(-105%)`;
+          progressbarContainer1.setAttribute('aria-valuenow', `${newValue}`);
         }, 2000);
       } else {
-        progressbarLabel.setAttribute('data-value', newValue);
-        progressbar.style.width = `${newValue}%`;
+        progressbarLabel1.setAttribute('data-value', newValue);
+        progressbar1.style.transform = `translateX(calc(-100% + ${newValue}%))`;
+        progressbarContainer1.setAttribute('aria-valuenow', `${newValue}`);
+      }
+    }, 1000);
+
+    setInterval(() => {
+      let random = Math.ceil(Math.random() * (15 - 1) + 1);
+      currentLabelValue2 = Number(progressbarLabel2.getAttribute('data-value'));
+      let newValue = Number(currentLabelValue2 + random);
+      if (newValue > 100) {
+        newValue = 100;
+        progressbarLabel2.setAttribute('data-value', newValue);
+        progressbar2.setAttribute(
+          'stroke-dashoffset',
+          `calc(400 - (400 * ${newValue}) / 100)`,
+        );
+        progressbarContainer2.setAttribute('aria-valuenow', `${newValue}`);
+        setTimeout(() => {
+          newValue = 0;
+          progressbarLabel2.setAttribute('data-value', newValue);
+          progressbar2.setAttribute(
+            'stroke-dashoffset',
+            `calc(400 - (400 * ${newValue}) / 100)`,
+          );
+          progressbarContainer2.setAttribute('aria-valuenow', `${newValue}`);
+        }, 2000);
+      } else {
+        progressbarLabel2.setAttribute('data-value', newValue);
+        progressbar2.setAttribute(
+          'stroke-dashoffset',
+          `calc(400 - (400 * ${newValue}) / 100)`,
+        );
+        progressbarContainer2.setAttribute('aria-valuenow', `${newValue}`);
       }
     }, 1000);
   })();
