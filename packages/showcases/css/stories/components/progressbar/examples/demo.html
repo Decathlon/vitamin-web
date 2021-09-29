@@ -56,6 +56,38 @@
   </div>
 </div>
 
+<div class="block">
+  <div
+    id="vtmn-progressbar-container-3"
+    class="
+      vtmn-progressbar_container
+      vtmn-progressbar_variant--circle
+      vtmn-progressbar_size--small
+    "
+    role="progressbar"
+    aria-label="progress bar"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    aria-valuenow="50"
+  >
+    <span
+      id="vtmn-progressbar-label-3"
+      class="vtmn-progressbar_label"
+      data-value="0"
+    ></span>
+    <svg>
+      <circle
+        id="vtmn-progressbar-3"
+        class="vtmn-progressbar_indicator"
+        stroke-dashoffset="calc(200 - (200 * 0) / 100)"
+        cx="50%"
+        cy="50%"
+        r="32"
+      />
+    </svg>
+  </div>
+</div>
+
 <script type="text/javascript">
   (function () {
     /* Linear */
@@ -80,6 +112,19 @@
       'calc(400 - (400 * 0) / 100)',
     );
     progressbarContainer2.setAttribute('aria-valuenow', '0');
+
+    /* Circular small*/
+    let progressbarContainer3 = document.getElementById(
+      'vtmn-progressbar-container-3',
+    );
+    let progressbarLabel3 = document.getElementById('vtmn-progressbar-label-3');
+    let currentLabelValue3 = progressbarLabel3.getAttribute('data-value');
+    let progressbar3 = document.getElementById('vtmn-progressbar-3');
+    progressbar3.setAttribute(
+      'stroke-dashoffset',
+      'calc(200 - (200 * 0) / 100)',
+    );
+    progressbarContainer3.setAttribute('aria-valuenow', '0');
 
     setInterval(() => {
       let random = Math.ceil(Math.random() * (15 - 1) + 1);
@@ -131,6 +176,37 @@
           `calc(400 - (400 * ${newValue}) / 100)`,
         );
         progressbarContainer2.setAttribute('aria-valuenow', `${newValue}`);
+      }
+    }, 1000);
+
+    setInterval(() => {
+      let random = Math.ceil(Math.random() * (15 - 1) + 1);
+      currentLabelValue3 = Number(progressbarLabel3.getAttribute('data-value'));
+      let newValue = Number(currentLabelValue3 + random);
+      if (newValue > 100) {
+        newValue = 100;
+        progressbarLabel3.setAttribute('data-value', newValue);
+        progressbar3.setAttribute(
+          'stroke-dashoffset',
+          `calc(200 - (200 * ${newValue}) / 100)`,
+        );
+        progressbarContainer3.setAttribute('aria-valuenow', `${newValue}`);
+        setTimeout(() => {
+          newValue = 0;
+          progressbarLabel3.setAttribute('data-value', newValue);
+          progressbar3.setAttribute(
+            'stroke-dashoffset',
+            `calc(200 - (200 * ${newValue}) / 100)`,
+          );
+          progressbarContainer3.setAttribute('aria-valuenow', `${newValue}`);
+        }, 2000);
+      } else {
+        progressbarLabel3.setAttribute('data-value', newValue);
+        progressbar3.setAttribute(
+          'stroke-dashoffset',
+          `calc(200 - (200 * ${newValue}) / 100)`,
+        );
+        progressbarContainer3.setAttribute('aria-valuenow', `${newValue}`);
       }
     }, 1000);
   })();
