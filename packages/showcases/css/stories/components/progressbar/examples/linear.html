@@ -267,20 +267,6 @@
       }
     }
 
-    function setCircularProgress(container, progress, value) {
-      if (container.classList.contains('vtmn-progressbar_size--small')) {
-        progress.setAttribute(
-          'stroke-dashoffset',
-          `calc(200 - (200 * ${value}) / 100)`,
-        );
-      } else {
-        progress.setAttribute(
-          'stroke-dashoffset',
-          `calc(400 - (400 * ${value}) / 100)`,
-        );
-      }
-    }
-
     function resetProgress(container, progress, label, type) {
       label.setAttribute('data-value', '0');
       container.setAttribute('aria-valuenow', '0');
