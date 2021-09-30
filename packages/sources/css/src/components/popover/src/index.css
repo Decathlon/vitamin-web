@@ -3,6 +3,7 @@
 @import '@vtmn/css-design-tokens/src/shadows';
 @import '@vtmn/css-design-tokens/src/base-colors';
 @import '@vtmn/css-design-tokens/src/themes/default';
+@import '@vtmn/css-design-tokens/src/z-indexes';
 
 .vtmn-popover {
   position: relative;
@@ -35,7 +36,6 @@
 
 /* ALL POPOVER */
 .vtmn-popover > [role='tooltip'] {
-  z-index: 1000;
   min-width: rem(250px);
   width: auto;
   box-shadow: var(--vtmn-shadow_200);
@@ -46,10 +46,10 @@
   position: absolute;
   padding: rem(16px);
   animation: var(--vtmn-animation_fade-in);
+  z-index: var(--vtmn-z-index_popover);
 }
 
 .vtmn-popover > [role='tooltip']::after {
-  z-index: 1000;
   border-radius: 0;
   content: ' ';
   height: 0;

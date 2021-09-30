@@ -4,6 +4,7 @@
 @import '@vtmn/css-design-tokens/src/animations';
 @import '@vtmn/css-design-tokens/src/base-colors';
 @import '@vtmn/css-design-tokens/src/themes/default';
+@import '@vtmn/css-design-tokens/src/z-indexes';
 
 .vtmn-tooltip {
   position: relative;
@@ -12,6 +13,7 @@
 /* Applies to all tooltips */
 .vtmn-tooltip::before,
 .vtmn-tooltip::after {
+  z-index: var(--vtmn-z-index_tooltip);
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-3-font-size);
   font-weight: var(--vtmn-typo_font-weight--regular);
@@ -25,7 +27,6 @@
 .vtmn-tooltip::before {
   content: '';
   border: rem(8px) solid transparent;
-  z-index: 1000;
 }
 
 .vtmn-tooltip::after {
@@ -39,7 +40,6 @@
   border-radius: rem(4px);
   background-color: var(--vtmn-semantic-color_background-primary-reversed);
   color: var(--vtmn-semantic-color_content-primary-reversed);
-  z-index: 1000;
 }
 
 .vtmn-tooltip:focus-visible {

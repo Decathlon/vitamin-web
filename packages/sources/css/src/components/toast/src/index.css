@@ -5,6 +5,7 @@
 @import '@vtmn/css-design-tokens/src/opacities';
 @import '@vtmn/css-design-tokens/src/shadows';
 @import '@vtmn/css-design-tokens/src/animations';
+@import '@vtmn/css-design-tokens/src/z-indexes';
 
 .vtmn-toast {
   display: flex;
@@ -21,6 +22,7 @@
   background-color: var(--vtmn-semantic-color_background-primary-reversed);
   box-shadow: var(--vtmn-shadow_200);
   border-radius: rem(4px);
+  z-index: var(--vtmn-z-index_toast);
 }
 
 .vtmn-toast.show {
