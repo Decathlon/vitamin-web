@@ -30,7 +30,7 @@
 <div class="block">
   <div
     id="vtmn-progressbar-container-2"
-    class="vtmn-progressbar_container vtmn-progressbar_variant--circle"
+    class="vtmn-progressbar_container vtmn-progressbar_variant--circular"
     role="progressbar"
     aria-label="progress bar"
     aria-valuemin="0"
@@ -61,7 +61,7 @@
     id="vtmn-progressbar-container-3"
     class="
       vtmn-progressbar_container
-      vtmn-progressbar_variant--circle
+      vtmn-progressbar_variant--circular
       vtmn-progressbar_size--small
     "
     role="progressbar"
@@ -90,124 +90,82 @@
 
 <script type="text/javascript">
   (function () {
-    /* Linear */
-    let progressbarContainer1 = document.getElementById(
-      'vtmn-progressbar-container-1',
-    );
-    let progressbarLabel1 = document.getElementById('vtmn-progressbar-label-1');
-    let currentLabelValue1 = progressbarLabel1.getAttribute('data-value');
-    let progressbar1 = document.getElementById('vtmn-progressbar-1');
-    progressbar1.style.transform = 'translateX(-105%)';
-    progressbarContainer1.setAttribute('aria-valuenow', '0');
+    for (let i = 1; i <= 3; i++) {
+      let container = document.getElementById(
+        `vtmn-progressbar-container-${i}`,
+      );
+      let label = document.getElementById(`vtmn-progressbar-label-${i}`);
+      let progress = document.getElementById(`vtmn-progressbar-${i}`);
 
-    setInterval(() => {
-      let random = Math.ceil(Math.random() * (15 - 1) + 1);
-      currentLabelValue1 = Number(progressbarLabel1.getAttribute('data-value'));
-      let newValue = Number(currentLabelValue1 + random);
-      if (newValue > 100) {
-        newValue = 100;
-        progressbarLabel1.setAttribute('data-value', newValue);
-        progressbar1.style.transform = `translateX(calc(-100% + ${newValue}%))`;
-        progressbarContainer1.setAttribute('aria-valuenow', `${newValue}`);
-        setTimeout(() => {
-          newValue = 0;
-          progressbarLabel1.setAttribute('data-value', newValue);
-          progressbar1.style.transform = `translateX(-105%)`;
-          progressbarContainer1.setAttribute('aria-valuenow', `${newValue}`);
-        }, 2000);
-      } else {
-        progressbarLabel1.setAttribute('data-value', newValue);
-        progressbar1.style.transform = `translateX(calc(-100% + ${newValue}%))`;
-        progressbarContainer1.setAttribute('aria-valuenow', `${newValue}`);
+      let type = container.classList.contains(
+        'vtmn-progressbar_variant--circular',
+      )
+        ? 'circular'
+        : 'linear';
+
+      resetProgress(container, progress, label, type);
+      launchProgress(container, progress, label, type);
+    }
+
+    function launchProgress(container, progress, label, type) {
+      setInterval(() => {
+        let random = getRandom(1, 15);
+        let currentLabelValue = Number(label.getAttribute('data-value'));
+        let newValue = Number(currentLabelValue + random);
+        if (newValue >= 100) {
+          newValue = 100;
+          addProgress(container, progress, label, type, newValue);
+          setTimeout(() => {
+            resetProgress(container, progress, label, type);
+          }, 2000);
+        } else {
+          addProgress(container, progress, label, type, newValue);
+        }
+      }, 1000);
+    }
+
+    function getRandom(min, max) {
+      return Math.ceil(Math.random() * (max - min) + min);
+    }
+
+    function addProgress(container, progress, label, type, value) {
+      label.setAttribute('data-value', `${value}`);
+      container.setAttribute('aria-valuenow', `${value}`);
+      switch (type) {
+        case 'linear':
+          progress.style.transform = `translateX(calc(-100% + ${value}%))`;
+          break;
+        case 'circular':
+          setCircularProgress(container, progress, value);
+          break;
       }
-    }, 1000);
+    }
 
-    /* Circular */
-    let progressbarContainer2 = document.getElementById(
-      'vtmn-progressbar-container-2',
-    );
-    let progressbarLabel2 = document.getElementById('vtmn-progressbar-label-2');
-    let currentLabelValue2 = progressbarLabel2.getAttribute('data-value');
-    let progressbar2 = document.getElementById('vtmn-progressbar-2');
-    progressbar2.setAttribute(
-      'stroke-dashoffset',
-      'calc(400 - (400 * 0) / 100)',
-    );
-    progressbarContainer2.setAttribute('aria-valuenow', '0');
-
-    setInterval(() => {
-      let random = Math.ceil(Math.random() * (15 - 1) + 1);
-      currentLabelValue2 = Number(progressbarLabel2.getAttribute('data-value'));
-      let newValue = Number(currentLabelValue2 + random);
-      if (newValue > 100) {
-        newValue = 100;
-        progressbarLabel2.setAttribute('data-value', newValue);
-        progressbar2.setAttribute(
+    function setCircularProgress(container, progress, value) {
+      if (container.classList.contains('vtmn-progressbar_size--small')) {
+        progress.setAttribute(
           'stroke-dashoffset',
-          `calc(400 - (400 * ${newValue}) / 100)`,
+          `calc(200 - (200 * ${value}) / 100)`,
         );
-        progressbarContainer2.setAttribute('aria-valuenow', `${newValue}`);
-        setTimeout(() => {
-          newValue = 0;
-          progressbarLabel2.setAttribute('data-value', newValue);
-          progressbar2.setAttribute(
-            'stroke-dashoffset',
-            `calc(400 - (400 * ${newValue}) / 100)`,
-          );
-          progressbarContainer2.setAttribute('aria-valuenow', `${newValue}`);
-        }, 2000);
       } else {
-        progressbarLabel2.setAttribute('data-value', newValue);
-        progressbar2.setAttribute(
+        progress.setAttribute(
           'stroke-dashoffset',
-          `calc(400 - (400 * ${newValue}) / 100)`,
+          `calc(400 - (400 * ${value}) / 100)`,
         );
-        progressbarContainer2.setAttribute('aria-valuenow', `${newValue}`);
       }
-    }, 1000);
+    }
 
-    /* Circular small*/
-    let progressbarContainer3 = document.getElementById(
-      'vtmn-progressbar-container-3',
-    );
-    let progressbarLabel3 = document.getElementById('vtmn-progressbar-label-3');
-    let currentLabelValue3 = progressbarLabel3.getAttribute('data-value');
-    let progressbar3 = document.getElementById('vtmn-progressbar-3');
-    progressbar3.setAttribute(
-      'stroke-dashoffset',
-      'calc(200 - (200 * 0) / 100)',
-    );
-    progressbarContainer3.setAttribute('aria-valuenow', '0');
-
-    setInterval(() => {
-      let random = Math.ceil(Math.random() * (15 - 1) + 1);
-      currentLabelValue3 = Number(progressbarLabel3.getAttribute('data-value'));
-      let newValue = Number(currentLabelValue3 + random);
-      if (newValue > 100) {
-        newValue = 100;
-        progressbarLabel3.setAttribute('data-value', newValue);
-        progressbar3.setAttribute(
-          'stroke-dashoffset',
-          `calc(200 - (200 * ${newValue}) / 100)`,
-        );
-        progressbarContainer3.setAttribute('aria-valuenow', `${newValue}`);
-        setTimeout(() => {
-          newValue = 0;
-          progressbarLabel3.setAttribute('data-value', newValue);
-          progressbar3.setAttribute(
-            'stroke-dashoffset',
-            `calc(200 - (200 * ${newValue}) / 100)`,
-          );
-          progressbarContainer3.setAttribute('aria-valuenow', `${newValue}`);
-        }, 2000);
-      } else {
-        progressbarLabel3.setAttribute('data-value', newValue);
-        progressbar3.setAttribute(
-          'stroke-dashoffset',
-          `calc(200 - (200 * ${newValue}) / 100)`,
-        );
-        progressbarContainer3.setAttribute('aria-valuenow', `${newValue}`);
+    function resetProgress(container, progress, label, type) {
+      label.setAttribute('data-value', '0');
+      container.setAttribute('aria-valuenow', '0');
+      switch (type) {
+        case 'linear':
+          progress.style.transform = `translateX(-105%)`;
+          break;
+        case 'circular':
+          setCircularProgress(container, progress, 0);
+          break;
       }
-    }, 1000);
+    }
   })();
 </script>

@@ -38,17 +38,17 @@
 }
 
 /* Circle */
-.vtmn-progressbar_variant--circle.vtmn-progressbar_container {
+.vtmn-progressbar_variant--circular.vtmn-progressbar_container {
   width: rem(136px);
   height: rem(136px);
 }
 
-.vtmn-progressbar_variant--circle .vtmn-progressbar_label {
+.vtmn-progressbar_variant--circular .vtmn-progressbar_label {
   width: 100%;
   height: 100%;
 }
 
-.vtmn-progressbar_variant--circle .vtmn-progressbar_label::after {
+.vtmn-progressbar_variant--circular .vtmn-progressbar_label::after {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -56,7 +56,7 @@
   font-weight: var(--vtmn-typo_font-weight--bold);
 }
 
-.vtmn-progressbar_variant--circle .vtmn-progressbar_image {
+.vtmn-progressbar_variant--circular .vtmn-progressbar_image {
   max-width: rem(112px);
   top: 50%;
   left: 50%;
@@ -66,13 +66,13 @@
   position: absolute;
 }
 
-.vtmn-progressbar_variant--circle svg {
+.vtmn-progressbar_variant--circular svg {
   width: 100%;
   height: 100%;
   background-color: transparent;
 }
 
-.vtmn-progressbar_variant--circle .vtmn-progressbar_track {
+.vtmn-progressbar_variant--circular .vtmn-progressbar_track {
   width: rem(128px);
   height: rem(128px);
   stroke-width: rem(8px);
@@ -80,7 +80,7 @@
   stroke: var(--vtmn-semantic-color_background-tertiary);
 }
 
-.vtmn-progressbar_variant--circle .vtmn-progressbar_indicator {
+.vtmn-progressbar_variant--circular .vtmn-progressbar_indicator {
   width: rem(128px);
   height: rem(128px);
   transform-origin: center;
@@ -92,25 +92,25 @@
 /* SIZES */
 
 /* Small */
-.vtmn-progressbar_size--small.vtmn-progressbar_variant--circle.vtmn-progressbar_container {
+.vtmn-progressbar_size--small.vtmn-progressbar_variant--circular.vtmn-progressbar_container {
   width: rem(70px);
   height: rem(70px);
 }
 
-.vtmn-progressbar_size--small.vtmn-progressbar_variant--circle
+.vtmn-progressbar_size--small.vtmn-progressbar_variant--circular
   .vtmn-progressbar_label::after {
   font-size: var(--vtmn-typo_text-1-font-size);
   font-weight: var(--vtmn-typo_font-weight--regular);
 }
 
-.vtmn-progressbar_size--small.vtmn-progressbar_variant--circle
+.vtmn-progressbar_size--small.vtmn-progressbar_variant--circular
   .vtmn-progressbar_track {
   width: rem(64px);
   height: rem(64px);
   stroke-width: rem(4px);
 }
 
-.vtmn-progressbar_size--small.vtmn-progressbar_variant--circle
+.vtmn-progressbar_size--small.vtmn-progressbar_variant--circular
   .vtmn-progressbar_indicator {
   width: rem(64px);
   height: rem(64px);
@@ -118,25 +118,25 @@
   stroke-dasharray: 200;
 }
 
-.vtmn-progressbar_size--small.vtmn-progressbar_variant--circle
+.vtmn-progressbar_size--small.vtmn-progressbar_variant--circular
   > .vtmn-progressbar_image {
   max-width: rem(56px);
 }
 
-.vtmn-progressbar_size--small:not(.vtmn-progressbar_variant--circle) {
+.vtmn-progressbar_size--small:not(.vtmn-progressbar_variant--circular) {
   font-size: var(--vtmn-typo_text-3-font-size);
 }
 
-.vtmn-progressbar_size--small:not(.vtmn-progressbar_variant--circle)
+.vtmn-progressbar_size--small:not(.vtmn-progressbar_variant--circular)
   .vtmn-progressbar_labels {
   margin-bottom: rem(4px);
 }
 
-.vtmn-progressbar_size--small:not(.vtmn-progressbar_variant--circle) svg {
+.vtmn-progressbar_size--small:not(.vtmn-progressbar_variant--circular) svg {
   height: rem(4px);
 }
 
-.vtmn-progressbar_size--small:not(.vtmn-progressbar_variant--circle)
+.vtmn-progressbar_size--small:not(.vtmn-progressbar_variant--circular)
   .vtmn-progressbar_indicator {
   stroke-width: rem(4px);
 }
@@ -184,13 +184,13 @@
 }
 
 /* Circle */
-.vtmn-progressbar_variant--circle.vtmn-progressbar--indeterminate
+.vtmn-progressbar_variant--circular.vtmn-progressbar--indeterminate
   .vtmn-progressbar_indicator {
   position: absolute;
   animation: var(--vtmn-animation_circle-indeterminate);
 }
 
-.vtmn-progressbar_variant--circle.vtmn-progressbar_size--small.vtmn-progressbar--indeterminate
+.vtmn-progressbar_variant--circular.vtmn-progressbar_size--small.vtmn-progressbar--indeterminate
   .vtmn-progressbar_indicator {
   position: absolute;
   animation: var(--vtmn-animation_circle-indeterminate-small);
