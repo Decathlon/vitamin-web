@@ -4,15 +4,16 @@
 @import '@vtmn/css-design-tokens/src/animations';
 @import '@vtmn/css-design-tokens/src/base-colors';
 @import '@vtmn/css-design-tokens/src/themes/default';
+@import '@vtmn/css-design-tokens/src/z-indexes';
 
 .vtmn-tooltip {
   position: relative;
-  z-index: 1001;
 }
 
 /* Applies to all tooltips */
 .vtmn-tooltip::before,
 .vtmn-tooltip::after {
+  z-index: var(--vtmn-z-index_tooltip);
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-3-font-size);
   font-weight: var(--vtmn-typo_font-weight--regular);

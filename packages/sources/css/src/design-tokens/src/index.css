@@ -1,11 +1,12 @@
 @import './animations';
+@import './base-colors';
 @import './breakpoints';
 @import './legacy-colors';
 @import './opacities';
-@import './shadows.css';
+@import './shadows';
 @import './spacings';
-@import './typography';
-@import './base-colors';
 @import './themes/default';
 @import './themes/core-light';
 @import './themes/core-dark';
+@import './typography';
+@import './z-indexes';

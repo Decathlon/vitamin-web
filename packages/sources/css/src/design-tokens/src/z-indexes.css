@@ -1,0 +1,8 @@
+:root {
+  --vtmn-z-index_tooltip: 100;
+  --vtmn-z-index_popover: 200;
+  --vtmn-z-index_snackbar: 300;
+  --vtmn-z-index_toast: 400;
+  --vtmn-z-index_alert: 500;
+  --vtmn-z-index_modal: 600;
+}

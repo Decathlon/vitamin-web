@@ -5,6 +5,7 @@
 @import '@vtmn/css-design-tokens/src/opacities';
 @import '@vtmn/css-design-tokens/src/shadows';
 @import '@vtmn/css-design-tokens/src/animations';
+@import '@vtmn/css-design-tokens/src/z-indexes';
 
 .vtmn-modal {
   background: hsla(
@@ -19,7 +20,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 1006;
+  z-index: var(--vtmn-z-index_modal);
 }
 
 .vtmn-modal_content {
