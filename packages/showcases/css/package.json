@@ -5,9 +5,9 @@
   "description": "Decathlon Design System - Vitamin CSS showcase",
   "license": "Apache-2.0",
   "scripts": {
-    "build-storybook": "build-storybook -s ./public",
-    "build-storybook:docs": "build-storybook -s ./public --docs",
-    "start": "start-storybook -s ./public -p 6006"
+    "build-storybook": "build-storybook",
+    "build-storybook:docs": "build-storybook --docs",
+    "start": "start-storybook -p 6006"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^6.3.7",
