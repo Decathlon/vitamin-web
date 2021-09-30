@@ -76,6 +76,7 @@ jobs:
             'packages/sources/css/src/components/loader',
             'packages/sources/css/src/components/modal',
             'packages/sources/css/src/components/popover',
+            'packages/sources/css/src/components/progressbar',
             'packages/sources/css/src/components/radio-button',
             'packages/sources/css/src/components/rating',
             'packages/sources/css/src/components/select',

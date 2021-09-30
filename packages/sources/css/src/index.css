@@ -19,6 +19,7 @@
 @import './components/loader/src';
 @import './components/modal/src';
 @import './components/popover/src';
+@import './components/progressbar/src';
 @import './components/radio-button/src';
 @import './components/rating/src';
 @import './components/select/src';

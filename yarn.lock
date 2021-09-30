@@ -4833,6 +4833,11 @@
     "@typescript-eslint/types" "4.31.2"
     eslint-visitor-keys "^2.0.0"
 
+"@vtmn/css-design-tokens@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@vtmn/css-design-tokens/-/css-design-tokens-0.5.0.tgz#d0a3c223d25ca73b6cb7cc573668ebc317cb4011"
+  integrity sha512-J8wqaOz8OOc3O6MQWNV/lwOOT1vmypjevMds2vqDeyh2HzGubR35TqcfivT9ZVxXnzTzXHypygEM3Z1H2kP28w==
+
 "@vue/babel-helper-vue-jsx-merge-props@^1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@vue/babel-helper-vue-jsx-merge-props/-/babel-helper-vue-jsx-merge-props-1.2.1.tgz#31624a7a505fb14da1d58023725a4c5f270e6a81"
