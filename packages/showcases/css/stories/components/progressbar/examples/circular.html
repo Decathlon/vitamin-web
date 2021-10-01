@@ -188,35 +188,6 @@
 
 <div class="block">
   <div
-    id="vtmn-progressbar-container-2"
-    class="vtmn-progressbar_container vtmn-progressbar_variant--circular"
-    role="progressbar"
-    aria-label="progress bar"
-    aria-valuemin="0"
-    aria-valuemax="100"
-    aria-valuenow="0"
-  >
-    <span
-      id="vtmn-progressbar-label-2"
-      class="vtmn-progressbar_label"
-      data-value="0"
-    ></span>
-    <svg>
-      <circle class="vtmn-progressbar_track" cx="50%" cy="50%" r="64" />
-      <circle
-        id="vtmn-progressbar-2"
-        class="vtmn-progressbar_indicator"
-        stroke-dashoffset="calc(400 - (400 * 0) / 100)"
-        cx="50%"
-        cy="50%"
-        r="64"
-      />
-    </svg>
-  </div>
-</div>
-
-<div class="block">
-  <div
     id="vtmn-progressbar-container-3"
     class="
       vtmn-progressbar_container
@@ -247,6 +218,35 @@
   </div>
 </div>
 
+<div class="block">
+  <div
+    id="vtmn-progressbar-container-2"
+    class="vtmn-progressbar_container vtmn-progressbar_variant--circular"
+    role="progressbar"
+    aria-label="progress bar"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    aria-valuenow="0"
+  >
+    <span
+      id="vtmn-progressbar-label-2"
+      class="vtmn-progressbar_label"
+      data-value="0"
+    ></span>
+    <svg>
+      <circle class="vtmn-progressbar_track" cx="50%" cy="50%" r="64" />
+      <circle
+        id="vtmn-progressbar-2"
+        class="vtmn-progressbar_indicator"
+        stroke-dashoffset="calc(400 - (400 * 0) / 100)"
+        cx="50%"
+        cy="50%"
+        r="64"
+      />
+    </svg>
+  </div>
+</div>
+
 <script type="text/javascript">
   (function () {
     for (let i = 2; i <= 3; i++) {
@@ -258,23 +258,23 @@
 
       let type = 'circular';
 
-      resetProgress(container, progress, label, type);
-      launchProgress(container, progress, label, type);
+      resetProgressCircular(container, progress, label, type);
+      launchProgressCircular(container, progress, label, type);
     }
 
-    function launchProgress(container, progress, label, type) {
+    function launchProgressCircular(container, progress, label, type) {
       setInterval(() => {
         let random = getRandom(1, 15);
         let currentLabelValue = Number(label.getAttribute('data-value'));
         let newValue = Number(currentLabelValue + random);
         if (newValue >= 100) {
           newValue = 100;
-          addProgress(container, progress, label, type, newValue);
+          addProgressCircular(container, progress, label, type, newValue);
           setTimeout(() => {
-            resetProgress(container, progress, label, type);
+            resetProgressCircular(container, progress, label, type);
           }, 2000);
         } else {
-          addProgress(container, progress, label, type, newValue);
+          addProgressCircular(container, progress, label, type, newValue);
         }
       }, 1000);
     }
@@ -283,17 +283,10 @@
       return Math.ceil(Math.random() * (max - min) + min);
     }
 
-    function addProgress(container, progress, label, type, value) {
+    function addProgressCircular(container, progress, label, type, value) {
       label.setAttribute('data-value', `${value}`);
       container.setAttribute('aria-valuenow', `${value}`);
-      switch (type) {
-        case 'linear':
-          progress.style.transform = `translateX(calc(-100% + ${value}%))`;
-          break;
-        case 'circular':
-          setCircularProgress(container, progress, value);
-          break;
-      }
+      setCircularProgress(container, progress, value);
     }
 
     function setCircularProgress(container, progress, value) {
@@ -310,17 +303,10 @@
       }
     }
 
-    function resetProgress(container, progress, label, type) {
+    function resetProgressCircular(container, progress, label, type) {
       label.setAttribute('data-value', '0');
       container.setAttribute('aria-valuenow', '0');
-      switch (type) {
-        case 'linear':
-          progress.style.transform = `translateX(-105%)`;
-          break;
-        case 'circular':
-          setCircularProgress(container, progress, 0);
-          break;
-      }
+      setCircularProgress(container, progress, 0);
     }
   })();
 </script>
