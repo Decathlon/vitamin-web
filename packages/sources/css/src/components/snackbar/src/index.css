@@ -15,6 +15,7 @@
   padding: rem(8px) rem(16px);
   min-height: rem(48px);
   width: fit-content;
+  min-width: fit-content;
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
   line-height: var(--vtmn-typo_text-2-line-height);
@@ -33,7 +34,7 @@
   animation: var(--vtmn-animation_overlay);
 }
 
-.vtmn-snackbar > .vtmn-snackbar_content > .vtmn-btn {
+.vtmn-snackbar > .vtmn-btn {
   margin-left: rem(16px);
   min-width: fit-content;
 }
