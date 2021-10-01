@@ -55,7 +55,7 @@
   );
 </script>
 
-<button type="button" class={componentClass} {...$$restProps}>
+<button on:click type="button" class={componentClass} {...$$restProps}>
   {#if !iconAlone && iconLeft}
     <span class={`vtmx-${iconLeft}`} />
   {/if}
