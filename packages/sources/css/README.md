@@ -92,7 +92,7 @@ For example:
   <p class="vtmn-text-xl vtmn-text-center vtmn-font-semibold vtmn-text-black">
     Hello
     <span class="vtmn-text-brand-digital vtmn-text-2xl">World!</span>
-    <span role="img" aria-label="Tada!"> 🎉 </span>
+    <span role="img" aria-label="Welcome menu"> 🎉 </span>
   </p>
 </div>
 ```
