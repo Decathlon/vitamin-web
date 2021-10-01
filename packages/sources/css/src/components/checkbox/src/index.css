@@ -10,8 +10,7 @@
 
 .vtmn-checkbox[type='checkbox'] + label {
   position: relative;
-  display: inline-flex;
-  align-items: flex-start;
+  display: block;
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
   line-height: var(--vtmn-typo_text-2-line-height);
@@ -28,7 +27,7 @@
   transition: all 0.275s;
   margin-top: rem(3px);
   margin-right: rem(11px);
-  padding: rem(7px);
+  padding: rem(8px);
 }
 
 .vtmn-checkbox[type='checkbox']:not(:checked) + label::before {
@@ -76,7 +75,7 @@
   height: rem(18px);
   width: rem(18px);
   top: rem(7px);
-  left: rem(2px);
+  left: rem(3px);
   background-color: var(--vtmn-semantic-color_content-primary-reversed);
   transition: all 0.2s;
 }
