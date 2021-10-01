@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.29.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.29.1...@vtmn/css@0.29.2) (2021-10-01)
+
+
+### Bug Fixes
+
+* **storybook:** fix deprecated content ([#639](https://github.com/Decathlon/vitamin-web/issues/639)) ([cf54633](https://github.com/Decathlon/vitamin-web/commit/cf54633e0b0ed503037860f6f1d456c413cf9874))
+
+
+
+
+
 ## [0.29.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.29.0...@vtmn/css@0.29.1) (2021-09-30)
 
 **Note:** Version bump only for package @vtmn/css
