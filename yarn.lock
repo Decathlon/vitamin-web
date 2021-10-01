@@ -20012,6 +20012,11 @@ storybook-addon-outline@^1.4.0, storybook-addon-outline@^1.4.1:
     "@storybook/core-events" "^6.3.0"
     ts-dedent "^2.1.1"
 
+storybook-addon-run-script@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/storybook-addon-run-script/-/storybook-addon-run-script-0.1.4.tgz#8a7c331567d9d89214716cf30aacc55db428c4c7"
+  integrity sha512-jyYvnbpM18dcCL765rK5XZrk93OnC1cYdK/jOConpkw5Zin8JR5Bzzr43/WpunJn9XMwZvvaozPoOemGIsZJBw==
+
 storybook-design-token@^0.8.1:
   version "0.8.4"
   resolved "https://registry.yarnpkg.com/storybook-design-token/-/storybook-design-token-0.8.4.tgz#add60a1570b2308127f6141756bb9df0a681b3ae"

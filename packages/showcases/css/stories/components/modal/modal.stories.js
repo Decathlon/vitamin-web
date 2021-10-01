@@ -1,3 +1,5 @@
+import { withRunScript } from 'storybook-addon-run-script/html';
+import demoScript from './examples/demo.runscript';
 import overview from './examples/overview.html';
 import demo from './examples/demo.html';
 
@@ -10,7 +12,8 @@ export default {
     },
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vitamin---Web-UI-kit-(v0)?node-id=2993%3A12130',
+      url:
+        'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vitamin---Web-UI-kit-(v0)?node-id=2993%3A12130',
     },
   },
 };
@@ -25,6 +28,7 @@ Overview.parameters = {
 };
 
 export const Demo = () => demo;
+Demo.decorators = [withRunScript(demoScript)];
 Demo.parameters = {
   docs: {
     source: {
