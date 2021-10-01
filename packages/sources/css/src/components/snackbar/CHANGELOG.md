@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-snackbar@0.2.2...@vtmn/css-snackbar@0.2.3) (2021-10-01)
+
+
+### Bug Fixes
+
+* **@vtmn-snackbar:** button wrapping ([#642](https://github.com/Decathlon/vitamin-web/issues/642)) ([36074b1](https://github.com/Decathlon/vitamin-web/commit/36074b1b2a9cf5222f4ff0b2e360f9733b0417e7))
+
+
+
+
+
 ## [0.2.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-snackbar@0.2.1...@vtmn/css-snackbar@0.2.2) (2021-09-30)
 
 **Note:** Version bump only for package @vtmn/css-snackbar

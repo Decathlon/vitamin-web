@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.7.0...@vtmn/svelte@0.7.1) (2021-10-01)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** add on:click on VtmnButton to handle click events ([#636](https://github.com/Decathlon/vitamin-web/issues/636)) ([1a45fce](https://github.com/Decathlon/vitamin-web/commit/1a45fcefa864b7f735b4a8be737b7551ccf8dfa4))
+
+
+
+
+
 # [0.7.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.6.0...@vtmn/svelte@0.7.0) (2021-09-28)
 
 
