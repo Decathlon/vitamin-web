@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@babel/runtime": "^7.14.8",
-    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-commonjs": "^21.0.0",
     "@rollup/plugin-node-resolve": "^13.0.5",
     "@rollup/plugin-typescript": "^8.2.5",
     "@rollup/plugin-url": "^6.0.0",
