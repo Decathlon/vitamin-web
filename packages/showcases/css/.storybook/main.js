@@ -16,6 +16,9 @@ module.exports = {
     'storybook-addon-outline',
     'storybook-design-token',
   ],
+  features: {
+    storyStoreV7: true,
+  },
   webpackFinal: (config) => {
     config.module.rules = [
       // remove the old html-loader, with default value to true for minimize parameter
