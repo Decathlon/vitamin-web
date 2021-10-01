@@ -1,3 +1,6 @@
+import { withRunScript } from 'storybook-addon-run-script/html';
+import linearScript from './examples/circular.runscript';
+import circularScript from './examples/linear.runscript';
 import overview from './examples/overview.html';
 import linear from './examples/linear.html';
 import circular from './examples/circular.html';
@@ -11,7 +14,8 @@ export default {
     },
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vitamin---Web-UI-kit-(v0)?node-id=2887%3A11057',
+      url:
+        'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vitamin---Web-UI-kit-(v0)?node-id=2887%3A11057',
     },
   },
 };
@@ -27,6 +31,7 @@ Overview.parameters = {
 };
 
 export const Linear = () => linear;
+Linear.decorators = [withRunScript(linearScript)];
 Linear.parameters = {
   docs: {
     source: {
@@ -37,6 +42,7 @@ Linear.parameters = {
 };
 
 export const Circular = () => circular;
+Circular.decorators = [withRunScript(circularScript)];
 Circular.parameters = {
   docs: {
     source: {
