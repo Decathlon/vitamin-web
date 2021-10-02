@@ -34,14 +34,14 @@
   "scripts": {
     "affected:build": "nx affected:build",
     "affected:build-storybook": "nx affected --target=build-storybook",
-    "affected:test": "nx affected:test",
     "affected:dep-graph": "nx affected:dep-graph",
+    "affected:test": "nx affected:test",
     "build": "nx run-many --target=build --all --parallel",
     "build-storybook": "nx run-many --target=build-storybook --all --parallel",
     "dep-graph": "nx dep-graph",
     "deploy-storybook": "storybook-to-ghpages --packages packages -o docs --monorepo-index-generator packages/showcases/core/scripts/index-generator.js",
-    "lint": "yarn prettier && yarn stylelint",
     "postinstall": "is-ci || husky install",
+    "lint": "yarn prettier && yarn stylelint",
     "prepare": "yarn prettier:fix && yarn stylelint:fix && yarn build && yarn test",
     "prettier": "prettier .",
     "prettier:fix": "prettier . --write",
@@ -59,7 +59,7 @@
   },
   "lint-staged": {
     "./**/package.json": [
-      "sort-package-json && lerna exec --parallel -- sort-package-json"
+      "sort-package-json && nx run-many --target=sort-package-json --all --parallel"
     ],
     "./packages/**/*.css": [
       "yarn stylelint:fix"
