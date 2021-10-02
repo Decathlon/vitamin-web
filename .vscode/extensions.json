@@ -11,6 +11,7 @@
     "esbenp.prettier-vscode",
     "svelte.svelte-vscode",
     "bradlc.vscode-tailwindcss",
-    "octref.vetur"
+    "octref.vetur",
+    "nrwl.angular-console",
   ]
 }

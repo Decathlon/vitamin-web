@@ -44,6 +44,10 @@
       "root": "packages/sources/css",
       "type": "library"
     },
+    "@vtmn/css-alert": {
+      "root": "packages/sources/css/src/components/alert",
+      "type": "library"
+    },
     "@vtmn/css-badge": {
       "root": "packages/sources/css/src/components/badge",
       "type": "library"
@@ -64,8 +68,16 @@
       "root": "packages/sources/css/src/components/loader",
       "type": "library"
     },
+    "@vtmn/css-modal": {
+      "root": "packages/sources/css/src/components/modal",
+      "type": "library"
+    },
     "@vtmn/css-popover": {
       "root": "packages/sources/css/src/components/popover",
+      "type": "library"
+    },
+    "@vtmn/css-progressbar": {
+      "root": "packages/sources/css/src/components/progressbar",
       "type": "library"
     },
     "@vtmn/css-radio-button": {
@@ -80,8 +92,20 @@
       "root": "packages/sources/css/src/components/select",
       "type": "library"
     },
+    "@vtmn/css-skeleton": {
+      "root": "packages/sources/css/src/components/skeleton",
+      "type": "library"
+    },
+    "@vtmn/css-snackbar": {
+      "root": "packages/sources/css/src/components/snackbar",
+      "type": "library"
+    },
     "@vtmn/css-text-input": {
       "root": "packages/sources/css/src/components/text-input",
+      "type": "library"
+    },
+    "@vtmn/css-toast": {
+      "root": "packages/sources/css/src/components/toast",
       "type": "library"
     },
     "@vtmn/css-toggle": {
@@ -114,10 +138,6 @@
     },
     "@vtmn/vue": {
       "root": "packages/sources/vue",
-      "type": "library"
-    },
-    "vtmn-web-components-loader": {
-      "root": "packages/sources/web-components/loader",
       "type": "library"
     },
     "@vtmn/web-components": {
