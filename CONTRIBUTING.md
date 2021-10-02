@@ -20,7 +20,7 @@ So, **thanks a lot for this**!! :tada::+1:
 
 ## Overview
 
-[Yarn workspaces](https://yarnpkg.com/lang/en/docs/workspaces/) are used to manage dependencies and build config across package and [lerna](https://github.com/lerna/lerna/) is used to manage versioning & publishing.
+[Yarn workspaces](https://yarnpkg.com/lang/en/docs/workspaces/) and [nx](https://nx.dev) are used to manage dependencies and build config across package. [Lerna](https://github.com/lerna/lerna/) is used to manage versioning & publishing.
 
 ## Project structure
 

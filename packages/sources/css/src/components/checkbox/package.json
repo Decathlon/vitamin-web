@@ -19,7 +19,8 @@
   "license": "Apache-2.0",
   "main": "dist/index.css",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "scripts": {
     "build": "node build.js"
