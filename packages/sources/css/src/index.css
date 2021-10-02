@@ -5,27 +5,27 @@
 @import 'tailwindcss/screens';
 
 /* Design tokens */
-@import './design-tokens/src/index';
+@import '@vtmn/css-design-tokens/src';
 
 /* Utilities */
-@import './utilities/src/typography';
+@import '@vtmn/css-utilities/src';
 
 /* Components */
-@import './components/alert/src';
-@import './components/badge/src';
-@import './components/button/src';
-@import './components/checkbox/src';
-@import './components/link/src';
-@import './components/loader/src';
-@import './components/modal/src';
-@import './components/popover/src';
-@import './components/progressbar/src';
-@import './components/radio-button/src';
-@import './components/rating/src';
-@import './components/select/src';
-@import './components/skeleton/src';
-@import './components/snackbar/src';
-@import './components/text-input/src';
-@import './components/toast/src';
-@import './components/toggle/src';
-@import './components/tooltip/src';
+@import '@vtmn/css-alert/src';
+@import '@vtmn/css-badge/src';
+@import '@vtmn/css-button/src';
+@import '@vtmn/css-checkbox/src';
+@import '@vtmn/css-link/src';
+@import '@vtmn/css-loader/src';
+@import '@vtmn/css-modal/src';
+@import '@vtmn/css-popover/src';
+@import '@vtmn/css-progressbar/src';
+@import '@vtmn/css-radio-button/src';
+@import '@vtmn/css-rating/src';
+@import '@vtmn/css-select/src';
+@import '@vtmn/css-skeleton/src';
+@import '@vtmn/css-snackbar/src';
+@import '@vtmn/css-text-input/src';
+@import '@vtmn/css-toast/src';
+@import '@vtmn/css-toggle/src';
+@import '@vtmn/css-tooltip/src';

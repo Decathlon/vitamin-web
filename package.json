@@ -32,28 +32,34 @@
     "packages/showcases/*"
   ],
   "scripts": {
-    "build": "lerna run build",
-    "build-storybook": "lerna run build-storybook --stream",
+    "affected:build": "nx affected:build",
+    "affected:build-storybook": "nx affected --target=build-storybook",
+    "affected:dep-graph": "nx affected:dep-graph",
+    "affected:test": "nx affected:test",
+    "build": "nx run-many --target=build --all --parallel",
+    "build-storybook": "nx run-many --target=build-storybook --all --parallel",
+    "dep-graph": "nx dep-graph",
     "deploy-storybook": "storybook-to-ghpages --packages packages -o docs --monorepo-index-generator packages/showcases/core/scripts/index-generator.js",
     "postinstall": "is-ci || husky install",
-    "pack": "lerna run pack",
+    "lint": "yarn prettier && yarn stylelint",
+    "prepare": "yarn prettier:fix && yarn stylelint:fix && yarn build && yarn test",
     "prettier": "prettier .",
     "prettier:fix": "prettier . --write",
     "release": "lerna publish --no-verify-access --no-private --no-commit-hooks --yes",
-    "start": "lerna run start --parallel",
-    "start:css": "lerna run start --parallel --scope \"@vtmn/{showcase-css,css}\"",
-    "start:icons": "lerna run start --parallel --scope \"@vtmn/{showcase-icons,icons}\"",
-    "start:react": "lerna run start --parallel --scope \"@vtmn/{showcase-react,react}\"",
-    "start:svelte": "lerna run start --parallel --scope \"@vtmn/{showcase-svelte,svelte}\"",
-    "start:vue": "lerna run start --parallel --scope \"@vtmn/{showcase-vue,vue}\"",
-    "start:web-components": "lerna run start --parallel --scope \"@vtmn/{showcase-web-components,web-components}\"",
+    "start": "nx run-many --target=start --all --parallel",
+    "start:css": "nx run-many --target=start --projects=@vtmn/showcase-css,@vtmn/css --parallel",
+    "start:icons": "nx run-many --target=start --projects=@vtmn/showcase-icons,@vtmn/icons --parallel",
+    "start:react": "nx run-many --target=start --projects=@vtmn/showcase-react,@vtmn/react --parallel",
+    "start:svelte": "nx run-many --target=start --projects=@vtmn/showcase-svelte,@vtmn/svelte --parallel",
+    "start:vue": "nx run-many --target=start --projects=@vtmn/showcase-vue,@vtmn/vue --parallel",
+    "start:web-components": "nx run-many --target=start --projects=@vtmn/showcase-web-components,@vtmn/web-components --parallel",
     "stylelint": "stylelint packages/**/*.css",
     "stylelint:fix": "yarn stylelint --fix",
-    "test": "lerna run test"
+    "test": "nx run-many --target=test --all --parallel"
   },
   "lint-staged": {
     "./**/package.json": [
-      "sort-package-json && lerna exec --parallel -- sort-package-json"
+      "sort-package-json && nx run-many --target=sort-package-json --all --parallel"
     ],
     "./packages/**/*.css": [
       "yarn stylelint:fix"
@@ -66,6 +72,10 @@
     "@babel/core": "^7.14.8",
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
+    "@nrwl/cli": "^12.7.1",
+    "@nrwl/nx-cloud": "^12.3.10",
+    "@nrwl/tao": "^12.7.1",
+    "@nrwl/workspace": "^12.7.1",
     "@octokit/core": "^3.2.4",
     "@storybook/storybook-deployer": "^2.8.10",
     "babel-loader": "^8.2.2",
@@ -77,7 +87,8 @@
     "prettier": "^2.2.1",
     "prettier-plugin-svelte": "^2.4.0",
     "shx": "^0.3.3",
-    "sort-package-json": "^1.52.0"
+    "sort-package-json": "^1.52.0",
+    "typescript": "4.2.4"
   },
   "engines": {
     "node": "^12 || ^14",

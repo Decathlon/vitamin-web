@@ -1,0 +1,148 @@
+{
+  "version": 2,
+  "cli": {
+    "packageManager": "yarn"
+  },
+  "projects": {
+    "@vtmn/showcase-core": {
+      "root": "packages/showcases/core",
+      "type": "library"
+    },
+    "@vtmn/showcase-css": {
+      "root": "packages/showcases/css",
+      "type": "application"
+    },
+    "@vtmn/showcase-icons": {
+      "root": "packages/showcases/icons",
+      "type": "application"
+    },
+    "@vtmn/showcase-react": {
+      "root": "packages/showcases/react",
+      "type": "application"
+    },
+    "@vtmn/showcase-svelte": {
+      "root": "packages/showcases/svelte",
+      "type": "application"
+    },
+    "@vtmn/showcase-vue": {
+      "root": "packages/showcases/vue",
+      "type": "application"
+    },
+    "@vtmn/showcase-web-components": {
+      "root": "packages/showcases/web-components",
+      "type": "application"
+    },
+    "@vtmn/css-postcss-config": {
+      "root": "packages/sources/css/config/postcss",
+      "type": "library"
+    },
+    "@vtmn/css-tailwind-config": {
+      "root": "packages/sources/css/config/tailwind",
+      "type": "library"
+    },
+    "@vtmn/css": {
+      "root": "packages/sources/css",
+      "type": "library"
+    },
+    "@vtmn/css-alert": {
+      "root": "packages/sources/css/src/components/alert",
+      "type": "library"
+    },
+    "@vtmn/css-badge": {
+      "root": "packages/sources/css/src/components/badge",
+      "type": "library"
+    },
+    "@vtmn/css-button": {
+      "root": "packages/sources/css/src/components/button",
+      "type": "library"
+    },
+    "@vtmn/css-checkbox": {
+      "root": "packages/sources/css/src/components/checkbox",
+      "type": "library"
+    },
+    "@vtmn/css-link": {
+      "root": "packages/sources/css/src/components/link",
+      "type": "library"
+    },
+    "@vtmn/css-loader": {
+      "root": "packages/sources/css/src/components/loader",
+      "type": "library"
+    },
+    "@vtmn/css-modal": {
+      "root": "packages/sources/css/src/components/modal",
+      "type": "library"
+    },
+    "@vtmn/css-popover": {
+      "root": "packages/sources/css/src/components/popover",
+      "type": "library"
+    },
+    "@vtmn/css-progressbar": {
+      "root": "packages/sources/css/src/components/progressbar",
+      "type": "library"
+    },
+    "@vtmn/css-radio-button": {
+      "root": "packages/sources/css/src/components/radio-button",
+      "type": "library"
+    },
+    "@vtmn/css-rating": {
+      "root": "packages/sources/css/src/components/rating",
+      "type": "library"
+    },
+    "@vtmn/css-select": {
+      "root": "packages/sources/css/src/components/select",
+      "type": "library"
+    },
+    "@vtmn/css-skeleton": {
+      "root": "packages/sources/css/src/components/skeleton",
+      "type": "library"
+    },
+    "@vtmn/css-snackbar": {
+      "root": "packages/sources/css/src/components/snackbar",
+      "type": "library"
+    },
+    "@vtmn/css-text-input": {
+      "root": "packages/sources/css/src/components/text-input",
+      "type": "library"
+    },
+    "@vtmn/css-toast": {
+      "root": "packages/sources/css/src/components/toast",
+      "type": "library"
+    },
+    "@vtmn/css-toggle": {
+      "root": "packages/sources/css/src/components/toggle",
+      "type": "library"
+    },
+    "@vtmn/css-tooltip": {
+      "root": "packages/sources/css/src/components/tooltip",
+      "type": "library"
+    },
+    "@vtmn/css-design-tokens": {
+      "root": "packages/sources/css/src/design-tokens",
+      "type": "library"
+    },
+    "@vtmn/css-utilities": {
+      "root": "packages/sources/css/src/utilities",
+      "type": "library"
+    },
+    "@vtmn/icons": {
+      "root": "packages/sources/icons",
+      "type": "library"
+    },
+    "@vtmn/react": {
+      "root": "packages/sources/react",
+      "type": "library"
+    },
+    "@vtmn/svelte": {
+      "root": "packages/sources/svelte",
+      "type": "library"
+    },
+    "@vtmn/vue": {
+      "root": "packages/sources/vue",
+      "type": "library"
+    },
+    "@vtmn/web-components": {
+      "root": "packages/sources/web-components",
+      "type": "library"
+    }
+  }
+}

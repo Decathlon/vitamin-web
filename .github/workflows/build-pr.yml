@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@v1
         with:
@@ -26,19 +28,16 @@ jobs:
           HUSKY: 0
 
       - name: Build sources
-        run: yarn build
+        run: yarn affected:build
 
-      - name: Prettier
-        run: yarn prettier
-
-      - name: Stylelint
-        run: yarn stylelint
+      - name: Lint
+        run: yarn lint
 
       - name: Test
-        run: yarn test
+        run: yarn affected:test
 
       - name: Build showcases
-        run: yarn build-storybook
+        run: yarn affected:build-storybook
 # Cannot be run on pull_request, and pull_request_event is not safe with checkout.
 #  sonarcloud:
 #    name: SonarCloud analysis
