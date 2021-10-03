@@ -1,7 +1,7 @@
-@import '@vtmn/css-design-tokens/src/typography';
-@import '@vtmn/css-design-tokens/src/opacities';
 @import '@vtmn/css-design-tokens/src/base-colors';
 @import '@vtmn/css-design-tokens/src/themes/default';
+@import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/opacities';
 
 .vtmn-toggle {
   display: flex;
