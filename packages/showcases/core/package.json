@@ -4,9 +4,6 @@
   "private": true,
   "description": "Decathlon Design System - Vitamin core files for showcases",
   "license": "Apache-2.0",
-  "devDependencies": {
-    "@vtmn/icons": "*"
-  },
   "licenses": [
     {
       "type": "Apache-2.0",
