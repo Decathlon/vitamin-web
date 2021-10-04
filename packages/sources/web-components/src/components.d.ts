@@ -138,6 +138,44 @@ export namespace Components {
          */
         "value": string;
     }
+    interface VtmnSelect {
+        /**
+          * The state of the select when disabled
+          * @type {boolean}
+          * @default false
+         */
+        "disabled": boolean;
+        /**
+          * The state of the select when in error
+          * @type {boolean}
+          * @default false
+         */
+        "error": boolean;
+        /**
+          * The placeholder of the select.
+          * @type {string}
+          * @default 'Error text goes here'
+         */
+        "errorText": string;
+        /**
+          * The id of the select.
+          * @type {string}
+          * @default 'vtmn-select'
+         */
+        "identifier": string;
+        /**
+          * The label text of the select.
+          * @type {string}
+          * @default 'Label'
+         */
+        "labelText": string;
+        /**
+          * The helper text of the select in error.
+          * @type {string}
+          * @default 'Select'
+         */
+        "placeholder": string;
+    }
     interface VtmnTextInput {
         /**
           * The disabled state of the text-input.
@@ -232,6 +270,12 @@ declare global {
         prototype: HTMLVtmnRadioButtonElement;
         new (): HTMLVtmnRadioButtonElement;
     };
+    interface HTMLVtmnSelectElement extends Components.VtmnSelect, HTMLStencilElement {
+    }
+    var HTMLVtmnSelectElement: {
+        prototype: HTMLVtmnSelectElement;
+        new (): HTMLVtmnSelectElement;
+    };
     interface HTMLVtmnTextInputElement extends Components.VtmnTextInput, HTMLStencilElement {
     }
     var HTMLVtmnTextInputElement: {
@@ -250,6 +294,7 @@ declare global {
         "vtmn-checkbox": HTMLVtmnCheckboxElement;
         "vtmn-link": HTMLVtmnLinkElement;
         "vtmn-radio-button": HTMLVtmnRadioButtonElement;
+        "vtmn-select": HTMLVtmnSelectElement;
         "vtmn-text-input": HTMLVtmnTextInputElement;
         "vtmn-toggle": HTMLVtmnToggleElement;
     }
@@ -386,6 +431,44 @@ declare namespace LocalJSX {
          */
         "value"?: string;
     }
+    interface VtmnSelect {
+        /**
+          * The state of the select when disabled
+          * @type {boolean}
+          * @default false
+         */
+        "disabled"?: boolean;
+        /**
+          * The state of the select when in error
+          * @type {boolean}
+          * @default false
+         */
+        "error"?: boolean;
+        /**
+          * The placeholder of the select.
+          * @type {string}
+          * @default 'Error text goes here'
+         */
+        "errorText"?: string;
+        /**
+          * The id of the select.
+          * @type {string}
+          * @default 'vtmn-select'
+         */
+        "identifier": string;
+        /**
+          * The label text of the select.
+          * @type {string}
+          * @default 'Label'
+         */
+        "labelText"?: string;
+        /**
+          * The helper text of the select in error.
+          * @type {string}
+          * @default 'Select'
+         */
+        "placeholder"?: string;
+    }
     interface VtmnTextInput {
         /**
           * The disabled state of the text-input.
@@ -454,6 +537,7 @@ declare namespace LocalJSX {
         "vtmn-checkbox": VtmnCheckbox;
         "vtmn-link": VtmnLink;
         "vtmn-radio-button": VtmnRadioButton;
+        "vtmn-select": VtmnSelect;
         "vtmn-text-input": VtmnTextInput;
         "vtmn-toggle": VtmnToggle;
     }
@@ -467,6 +551,7 @@ declare module "@stencil/core" {
             "vtmn-checkbox": LocalJSX.VtmnCheckbox & JSXBase.HTMLAttributes<HTMLVtmnCheckboxElement>;
             "vtmn-link": LocalJSX.VtmnLink & JSXBase.HTMLAttributes<HTMLVtmnLinkElement>;
             "vtmn-radio-button": LocalJSX.VtmnRadioButton & JSXBase.HTMLAttributes<HTMLVtmnRadioButtonElement>;
+            "vtmn-select": LocalJSX.VtmnSelect & JSXBase.HTMLAttributes<HTMLVtmnSelectElement>;
             "vtmn-text-input": LocalJSX.VtmnTextInput & JSXBase.HTMLAttributes<HTMLVtmnTextInputElement>;
             "vtmn-toggle": LocalJSX.VtmnToggle & JSXBase.HTMLAttributes<HTMLVtmnToggleElement>;
         }
