@@ -5,7 +5,7 @@ import '@vtmn/css-toggle/dist/index-with-vars.css';
 import { VtmnToggleSize } from './types';
 
 export interface VtmnToggleProps
-  extends React.ComponentPropsWithoutRef<'input'> {
+  extends Omit<React.ComponentPropsWithoutRef<'input'>, 'size'> {
   /**
    * ID of the toggle.
    * @type {string}
