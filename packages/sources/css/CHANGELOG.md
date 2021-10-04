@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.29.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.29.6...@vtmn/css@0.29.7) (2021-10-04)
+
+
+### Bug Fixes
+
+* **@vtmn/css-modal:** add clickable overlay ([#647](https://github.com/Decathlon/vitamin-web/issues/647)) ([3a0b569](https://github.com/Decathlon/vitamin-web/commit/3a0b56947b9f13a4bf674e698675b5fd4bd7378b))
+
+
+
+
+
 ## [0.29.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.29.5...@vtmn/css@0.29.6) (2021-10-04)
 
 **Note:** Version bump only for package @vtmn/css
