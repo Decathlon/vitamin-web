@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.15](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.3.14...@vtmn/css-badge@0.3.15) (2021-10-04)
+
+**Note:** Version bump only for package @vtmn/css-badge
+
+
+
+
+
 ## [0.3.14](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.3.13...@vtmn/css-badge@0.3.14) (2021-10-02)
 
 **Note:** Version bump only for package @vtmn/css-badge

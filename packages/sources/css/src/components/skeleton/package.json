@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-skeleton",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Decathlon Design System - Vitamin specific CSS styles for skeleton component",
   "keywords": [
     "design-system",
@@ -26,7 +26,7 @@
     "build": "node build.js"
   },
   "devDependencies": {
-    "@vtmn/css-design-tokens": "^0.8.2",
+    "@vtmn/css-design-tokens": "^0.8.3",
     "@vtmn/css-postcss-config": "*",
     "@vtmn/css-tailwind-config": "*"
   },

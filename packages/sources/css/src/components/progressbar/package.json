@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-progressbar",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Decathlon Design System - Vitamin specific CSS styles for progressbar component",
   "keywords": [
     "design-system",
@@ -23,10 +23,10 @@
     "src"
   ],
   "scripts": {
-    "build": "sh build.sh"
+    "build": "node build.js"
   },
   "devDependencies": {
-    "@vtmn/css-design-tokens": "^0.8.2",
+    "@vtmn/css-design-tokens": "^0.8.3",
     "@vtmn/css-postcss-config": "*",
     "@vtmn/css-tailwind-config": "*"
   },
