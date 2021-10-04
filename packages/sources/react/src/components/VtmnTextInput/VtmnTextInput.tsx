@@ -79,7 +79,6 @@ export const VtmnTextInput = ({
   icon = undefined,
   identifier,
   labelText,
-
   placeholder,
   valid = false,
   ...props
