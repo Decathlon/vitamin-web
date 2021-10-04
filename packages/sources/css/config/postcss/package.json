@@ -5,25 +5,23 @@
   "description": "Decathlon Design System - Vitamin CSS PostCSS configuration",
   "license": "Apache-2.0",
   "main": "./postcss-core.config.js",
-  "dependencies": {
+  "devDependencies": {
     "autoprefixer": "^10.3.6",
     "postcss": "^8.3.8",
     "postcss-cli": "^9.0.0",
     "postcss-color-mod-function": "^3.0.3",
     "postcss-combine-duplicated-selectors": "^10.0.2",
     "postcss-combine-media-query": "^1.0.1",
+    "postcss-css-var-to-less-var": "^1.0.0",
+    "postcss-css-var-to-sass-var": "^1.0.0",
     "postcss-css-variables": "^0.18.0",
     "postcss-discard-comments": "^5.0.1",
     "postcss-import": "^14.0.0",
     "postcss-loader": "^6.1.0",
-    "postcss-rem": "^2.0.1",
-    "tailwindcss": "^2.2.16"
-  },
-  "devDependencies": {
-    "postcss-css-var-to-less-var": "^1.0.0",
-    "postcss-css-var-to-sass-var": "^1.0.0",
     "postcss-prettify": "^0.3.4",
-    "postcss-remove-root": "^0.0.2"
+    "postcss-rem": "^2.0.1",
+    "postcss-remove-root": "^0.0.2",
+    "tailwindcss": "^2.2.16"
   },
   "licenses": [
     {

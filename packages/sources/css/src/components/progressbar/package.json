@@ -23,7 +23,7 @@
     "src"
   ],
   "scripts": {
-    "build": "sh build.sh"
+    "build": "node build.js"
   },
   "devDependencies": {
     "@vtmn/css-design-tokens": "^0.8.2",
