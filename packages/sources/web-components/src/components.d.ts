@@ -138,6 +138,18 @@ export namespace Components {
          */
         "value": string;
     }
+    interface VtmnSnackbar {
+        /**
+          * The label of the snackbar button
+          * @default undefined
+         */
+        "buttonLabel": String;
+        /**
+          * Display a button in the snackbar
+          * @default false
+         */
+        "withButton": boolean;
+    }
     interface VtmnTextInput {
         /**
           * The disabled state of the text-input.
@@ -232,6 +244,12 @@ declare global {
         prototype: HTMLVtmnRadioButtonElement;
         new (): HTMLVtmnRadioButtonElement;
     };
+    interface HTMLVtmnSnackbarElement extends Components.VtmnSnackbar, HTMLStencilElement {
+    }
+    var HTMLVtmnSnackbarElement: {
+        prototype: HTMLVtmnSnackbarElement;
+        new (): HTMLVtmnSnackbarElement;
+    };
     interface HTMLVtmnTextInputElement extends Components.VtmnTextInput, HTMLStencilElement {
     }
     var HTMLVtmnTextInputElement: {
@@ -250,6 +268,7 @@ declare global {
         "vtmn-checkbox": HTMLVtmnCheckboxElement;
         "vtmn-link": HTMLVtmnLinkElement;
         "vtmn-radio-button": HTMLVtmnRadioButtonElement;
+        "vtmn-snackbar": HTMLVtmnSnackbarElement;
         "vtmn-text-input": HTMLVtmnTextInputElement;
         "vtmn-toggle": HTMLVtmnToggleElement;
     }
@@ -386,6 +405,18 @@ declare namespace LocalJSX {
          */
         "value"?: string;
     }
+    interface VtmnSnackbar {
+        /**
+          * The label of the snackbar button
+          * @default undefined
+         */
+        "buttonLabel"?: String;
+        /**
+          * Display a button in the snackbar
+          * @default false
+         */
+        "withButton"?: boolean;
+    }
     interface VtmnTextInput {
         /**
           * The disabled state of the text-input.
@@ -454,6 +485,7 @@ declare namespace LocalJSX {
         "vtmn-checkbox": VtmnCheckbox;
         "vtmn-link": VtmnLink;
         "vtmn-radio-button": VtmnRadioButton;
+        "vtmn-snackbar": VtmnSnackbar;
         "vtmn-text-input": VtmnTextInput;
         "vtmn-toggle": VtmnToggle;
     }
@@ -467,6 +499,7 @@ declare module "@stencil/core" {
             "vtmn-checkbox": LocalJSX.VtmnCheckbox & JSXBase.HTMLAttributes<HTMLVtmnCheckboxElement>;
             "vtmn-link": LocalJSX.VtmnLink & JSXBase.HTMLAttributes<HTMLVtmnLinkElement>;
             "vtmn-radio-button": LocalJSX.VtmnRadioButton & JSXBase.HTMLAttributes<HTMLVtmnRadioButtonElement>;
+            "vtmn-snackbar": LocalJSX.VtmnSnackbar & JSXBase.HTMLAttributes<HTMLVtmnSnackbarElement>;
             "vtmn-text-input": LocalJSX.VtmnTextInput & JSXBase.HTMLAttributes<HTMLVtmnTextInputElement>;
             "vtmn-toggle": LocalJSX.VtmnToggle & JSXBase.HTMLAttributes<HTMLVtmnToggleElement>;
         }
