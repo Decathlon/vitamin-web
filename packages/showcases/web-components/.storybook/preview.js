@@ -12,6 +12,7 @@ export const decorators = [withDesign];
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   backgrounds,
+  controls: { expanded: true },
   viewport: {
     viewports,
   },
