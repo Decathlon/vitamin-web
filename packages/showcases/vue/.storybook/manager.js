@@ -3,7 +3,7 @@ import { themes } from '@storybook/theming';
 import vtmnVueLogo from '@vtmn/showcase-core/images/vtmn-vue-logo.png';
 
 addons.setConfig({
-  panelPosition: 'right',
+  panelPosition: 'bottom',
   theme: {
     ...themes.normal,
     brandTitle: '@vtmn/vue',

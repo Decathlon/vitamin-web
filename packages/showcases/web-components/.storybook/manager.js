@@ -3,7 +3,7 @@ import { themes } from '@storybook/theming';
 import vtmnWebComponentsLogo from '@vtmn/showcase-core/images/vtmn-web-components-logo.png';
 
 addons.setConfig({
-  panelPosition: 'right',
+  panelPosition: 'bottom',
   theme: {
     ...themes.normal,
     brandTitle: '@vtmn/web-components',
