@@ -10,14 +10,14 @@ export namespace Components {
     interface VtmnBadge {
         /**
           * The target of the badge
-          * @default undefined
+          * @default 0
          */
-        "value"?: number;
+        "value": number;
         /**
           * The variant of the badge.
           * @default 'default'
          */
-        "variant"?: 'default' | 'brand' | 'reversed' | 'accent';
+        "variant": 'default' | 'brand' | 'reversed' | 'accent';
     }
     interface VtmnButton {
         /**
@@ -265,7 +265,7 @@ declare namespace LocalJSX {
     interface VtmnBadge {
         /**
           * The target of the badge
-          * @default undefined
+          * @default 0
          */
         "value"?: number;
         /**

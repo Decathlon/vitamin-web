@@ -9,13 +9,13 @@ export class VtmnBadge implements ComponentInterface {
    * The variant of the badge.
    * @default 'default'
    */
-  @Prop() variant?: 'default' | 'brand' | 'reversed' | 'accent' = 'default';
+  @Prop() variant: 'default' | 'brand' | 'reversed' | 'accent' = 'default';
 
   /**
    * The target of the badge
-   * @default undefined
+   * @default 0
    */
-  @Prop() value?: number = undefined;
+  @Prop() value: number = 0;
 
   render() {
     return (
