@@ -1,11 +1,9 @@
 export const argTypes = {
   withButton: {
-    argName: 'withButton',
     type: { name: 'boolean', required: false },
-    description: 'Display a button in the snackbar',
+    description: 'boolean',
   },
   buttonLabel: {
-    argName: 'buttonLabel',
     type: { name: 'string', required: false },
     description: 'The label of the snackbar button',
   },

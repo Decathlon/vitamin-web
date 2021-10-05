@@ -6,16 +6,16 @@ import { Component, Prop, h, ComponentInterface } from '@stencil/core';
 })
 export class VtmnSnackbar implements ComponentInterface {
   /**
-   * Display a button in the snackbar
+   * The label of the snackbar button
    * @default false
    */
-  @Prop({ attribute: 'withbutton' }) withButton: boolean = false;
+  @Prop({ attribute: 'withbutton' }) withButton: boolean;
 
   /**
    * The label of the snackbar button
-   * @default undefined
+   * @default null
    */
-  @Prop({ attribute: 'buttonlabel' }) buttonLabel: String = undefined;
+  @Prop({ attribute: 'buttonlabel' }) buttonLabel: String;
 
   render() {
     return (
