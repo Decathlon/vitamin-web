@@ -22,12 +22,17 @@ export class VtmnBadge implements ComponentInterface {
       <span
         class={`vtmn-badge vtmn-badge_variant--${this.variant}
         ${
-          !this.value && this.value !== 0
+          !this.value || this.value < 0
             ? 'vtmn-badge_size--without-value'
-            : ''
+            : null
         }`}
       >
-        {this.value && this.value > 99 ? '99+' : this.value}
+        {this.value && this.value > 99
+          ? '99+'
+          : this.value <= 0
+          ? null
+          : this.value}
+        {}
       </span>
     );
   }

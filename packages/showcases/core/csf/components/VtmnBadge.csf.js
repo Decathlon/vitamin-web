@@ -2,7 +2,6 @@ export const argTypes = {
   variant: {
     type: { name: 'string', required: false },
     description: 'The variant of the badge.',
-    defaultValue: '',
     control: {
       type: 'select',
       options: ['default', 'brand', 'reversed', 'accent'],
@@ -11,7 +10,6 @@ export const argTypes = {
   value: {
     type: { name: 'number', required: false },
     description: 'The value of the badge.',
-    defaultValue: null,
   },
 };
 
