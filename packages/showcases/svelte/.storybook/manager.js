@@ -3,7 +3,7 @@ import { themes } from '@storybook/theming';
 import vtmnSvelteLogo from '@vtmn/showcase-core/images/vtmn-svelte-logo.png';
 
 addons.setConfig({
-  panelPosition: 'right',
+  panelPosition: 'bottom',
   theme: {
     ...themes.normal,
     brandTitle: '@vtmn/svelte',
