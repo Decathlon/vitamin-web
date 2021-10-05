@@ -7,30 +7,33 @@ import { Component, Prop, h, ComponentInterface } from '@stencil/core';
 export class VtmnToggle implements ComponentInterface {
   /**
    * The id of the toggle and its label.
+   * @default 'my-toggle'
    */
-  @Prop() identifier!: string;
+  @Prop() identifier: string = 'my-toggle';
 
   /**
    * The text of the toggle.
+   * @default 'Your label'
    */
-  @Prop({ attribute: 'labeltext' }) labelText: string;
+  @Prop({ attribute: 'labeltext' }) labelText: string = 'Your label';
 
   /**
    * The size of the toggle.
+   * @default 'medium'
    */
-  @Prop() size: 'small' | 'medium';
+  @Prop() size: 'small' | 'medium' = 'medium';
 
   /**
    * The checked state of the toggle.
    * @default false
    */
-  @Prop() checked: boolean;
+  @Prop() checked: boolean = false;
 
   /**
    * The disabled state of the toggle.
    * @default false
    */
-  @Prop() disabled: boolean;
+  @Prop() disabled: boolean = false;
 
   render() {
     return (

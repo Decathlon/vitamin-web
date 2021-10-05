@@ -189,14 +189,17 @@ export namespace Components {
         "disabled": boolean;
         /**
           * The id of the toggle and its label.
+          * @default 'my-toggle'
          */
         "identifier": string;
         /**
           * The text of the toggle.
+          * @default 'Your label'
          */
         "labelText": string;
         /**
           * The size of the toggle.
+          * @default 'medium'
          */
         "size": 'small' | 'medium';
     }
@@ -437,14 +440,17 @@ declare namespace LocalJSX {
         "disabled"?: boolean;
         /**
           * The id of the toggle and its label.
+          * @default 'my-toggle'
          */
-        "identifier": string;
+        "identifier"?: string;
         /**
           * The text of the toggle.
+          * @default 'Your label'
          */
         "labelText"?: string;
         /**
           * The size of the toggle.
+          * @default 'medium'
          */
         "size"?: 'small' | 'medium';
     }

@@ -2,33 +2,58 @@ export const argTypes = {
   identifier: {
     type: { name: 'string', required: true },
     description: 'The id of the toggle.',
-    defaultValue: 'vtmn-toggle',
+    table: {
+      type: {
+        summary: 'string',
+      },
+      defaultValue: { summary: 'my-toggle' },
+    },
     control: { type: 'text' },
   },
   checked: {
     type: { name: 'boolean', required: false },
     description: 'The checked state of the toggle.',
-    defaultValue: false,
+    table: {
+      type: {
+        summary: 'boolean',
+      },
+      defaultValue: { summary: 'false' },
+    },
     control: { type: 'boolean' },
   },
   labelText: {
     type: { name: 'string', required: false },
     description: 'The label of the toggle.',
-    defaultValue: 'Your label',
+    table: {
+      type: {
+        summary: 'string',
+      },
+      defaultValue: { summary: 'my-label' },
+    },
     control: { type: 'text' },
   },
   disabled: {
     type: { name: 'boolean', required: false },
     description: 'The disabled state of the toggle.',
-    defaultValue: false,
+    table: {
+      type: {
+        summary: 'boolean',
+      },
+      defaultValue: { summary: 'false' },
+    },
     control: { type: 'boolean' },
   },
   size: {
     type: { name: 'string', required: false },
     description: 'The size of the toggle.',
-    defaultValue: 'medium',
+    table: {
+      type: {
+        summary: 'radio',
+      },
+      defaultValue: { summary: 'medium' },
+    },
     control: {
-      type: 'select',
+      type: 'radio',
       options: ['small', 'medium'],
     },
   },
