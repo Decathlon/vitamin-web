@@ -49,23 +49,6 @@ export class VtmnSelect implements ComponentInterface {
 
   render() {
     return (
-      /*<button
-        class={`vtmn-btn vtmn-btn_variant--${this.variant} vtmn-btn_size--${
-          this.size
-        }
-        ${!this.iconAlone && this.iconLeft ? 'vtmn-btn--icon-left' : ''} ${
-          !this.iconAlone && this.iconRight ? 'vtmn-btn--icon-right' : ''
-        } ${this.iconAlone ? 'vtmn-btn--icon-alone' : ''}`}
-        type="button">
-        {this.iconLeft && <span class={`vtmx-${this.iconLeft}`}></span>}
-        {this.iconAlone ? (
-          <span class={`vtmx-${this.iconAlone}`}></span>
-        ) : (
-          <slot></slot>
-        )}
-        {this.iconRight && <span class={`vtmx-${this.iconRight}`}></span>}
-      </button>
-    );*/
       <div class="vtmn-select_container">
         <label htmlFor={this.identifier}>{this.labelText}</label>
 
