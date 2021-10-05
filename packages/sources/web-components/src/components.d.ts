@@ -141,40 +141,44 @@ export namespace Components {
     interface VtmnTextInput {
         /**
           * The disabled state of the text-input.
+          * @default false
          */
         "disabled": boolean;
         /**
-          * The error variant state of the text-input.
-         */
-        "error": boolean;
-        /**
           * The helper text of the text input.
+          * @default 'Helper text goes here'
          */
         "helperText": string;
         /**
           * The icon to be displayed
+          * @default undefined
          */
-        "icon": string;
+        "icon": VitamixId;
         /**
           * The id of the text input.
+          * @default 'my-input'
          */
         "identifier": string;
         /**
           * The label text of the text input.
+          * @default 'My label'
          */
         "labelText": string;
         /**
           * Is the text-input multiline or not.
+          * @default false
          */
         "multiline": boolean;
         /**
           * The placeholder of the text input.
+          * @default 'My placeholder'
          */
         "placeholder": string;
         /**
-          * The valid variant state of the text-input.
+          * The variant state of the text-input.
+          * @default 'default'
          */
-        "valid": boolean;
+        "variant": 'default' | 'error' | 'valid';
     }
     interface VtmnToggle {
         /**
@@ -392,40 +396,44 @@ declare namespace LocalJSX {
     interface VtmnTextInput {
         /**
           * The disabled state of the text-input.
+          * @default false
          */
         "disabled"?: boolean;
         /**
-          * The error variant state of the text-input.
-         */
-        "error"?: boolean;
-        /**
           * The helper text of the text input.
+          * @default 'Helper text goes here'
          */
-        "helperText": string;
+        "helperText"?: string;
         /**
           * The icon to be displayed
+          * @default undefined
          */
-        "icon"?: string;
+        "icon"?: VitamixId;
         /**
           * The id of the text input.
+          * @default 'my-input'
          */
-        "identifier": string;
+        "identifier"?: string;
         /**
           * The label text of the text input.
+          * @default 'My label'
          */
-        "labelText": string;
+        "labelText"?: string;
         /**
           * Is the text-input multiline or not.
+          * @default false
          */
         "multiline"?: boolean;
         /**
           * The placeholder of the text input.
+          * @default 'My placeholder'
          */
-        "placeholder": string;
+        "placeholder"?: string;
         /**
-          * The valid variant state of the text-input.
+          * The variant state of the text-input.
+          * @default 'default'
          */
-        "valid"?: boolean;
+        "variant"?: 'default' | 'error' | 'valid';
     }
     interface VtmnToggle {
         /**

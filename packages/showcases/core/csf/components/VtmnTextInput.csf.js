@@ -4,31 +4,57 @@ export const argTypes = {
   identifier: {
     type: { name: 'string', required: true },
     description: 'The id of the input.',
-    defaultValue: 'vtmn-input',
+    table: {
+      type: {
+        summary: 'string',
+      },
+      defaultValue: { summary: 'my-input' },
+    },
     control: { type: 'text' },
   },
   labelText: {
     type: { name: 'string', required: false },
     description: 'The label of the input.',
-    defaultValue: 'Label',
+    table: {
+      type: {
+        summary: 'string',
+      },
+      defaultValue: { summary: 'My label' },
+    },
     control: { type: 'text' },
   },
   placeholder: {
     type: { name: 'string', required: false },
     description: 'The placeholder of the input.',
-    defaultValue: 'Placeholder Text',
+    table: {
+      type: {
+        summary: 'string',
+      },
+      defaultValue: { summary: 'My placeholder' },
+    },
     control: { type: 'text' },
   },
   helperText: {
     type: { name: 'string', required: false },
     description: 'The helper text message of the input.',
-    defaultValue: 'Helper text goes here',
+    table: {
+      type: {
+        summary: 'string',
+      },
+      defaultValue: { summary: 'Helper text goes here' },
+    },
     control: { type: 'text' },
   },
   icon: {
     type: { name: 'string', required: false },
     description: 'The icon of text input.',
-    defaultValue: 'home-fill',
+    table: {
+      type: {
+        summary: 'string',
+        detail: 'Vitamix icon',
+      },
+      defaultValue: { summary: 'undefined' },
+    },
     control: {
       type: 'select',
       options: ['', ...Object.keys(vitamixIconsList)],
@@ -37,26 +63,38 @@ export const argTypes = {
   multiline: {
     type: { name: 'boolean', required: false },
     description: 'If the component is a textarea or an input.',
-    defaultValue: false,
+    table: {
+      type: {
+        summary: 'boolean',
+      },
+      defaultValue: { summary: 'false' },
+    },
     control: { type: 'boolean' },
   },
   disabled: {
     type: { name: 'boolean', required: false },
     description: 'The disabled state of the input.',
-    defaultValue: false,
+    table: {
+      type: {
+        summary: 'boolean',
+      },
+      defaultValue: { summary: 'false' },
+    },
     control: { type: 'boolean' },
   },
-  valid: {
-    type: { name: 'boolean', required: false },
-    description: 'The valid state of the input.',
-    defaultValue: false,
-    control: { type: 'boolean' },
-  },
-  error: {
-    type: { name: 'boolean', required: false },
-    description: 'The error state of the input.',
-    defaultValue: false,
-    control: { type: 'boolean' },
+  variant: {
+    type: { name: 'radio', required: false },
+    description: 'The state of the input.',
+    table: {
+      type: {
+        summary: 'radio',
+      },
+      defaultValue: { summary: 'default' },
+    },
+    control: {
+      type: 'radio',
+      options: ['default', 'error', 'valid'],
+    },
   },
 };
 

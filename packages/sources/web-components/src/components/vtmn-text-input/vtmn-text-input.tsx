@@ -1,4 +1,5 @@
 import { Component, Prop, h, ComponentInterface } from '@stencil/core';
+import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
 
 @Component({
   tag: 'vtmn-text-input',
@@ -7,48 +8,52 @@ import { Component, Prop, h, ComponentInterface } from '@stencil/core';
 export class VtmnTextInput implements ComponentInterface {
   /**
    * The id of the text input.
+   * @default 'my-input'
    */
-  @Prop() identifier!: string;
+  @Prop() identifier: string = 'my-input';
 
   /**
    * The label text of the text input.
+   * @default 'My label'
    */
-  @Prop({ attribute: 'labeltext' }) labelText!: string;
+  @Prop({ attribute: 'labeltext' }) labelText: string = 'My label';
 
   /**
    * The placeholder of the text input.
+   * @default 'My placeholder'
    */
-  @Prop() placeholder!: string;
+  @Prop() placeholder: string = 'My placeholder';
 
   /**
    * The helper text of the text input.
+   * @default 'Helper text goes here'
    */
-  @Prop({ attribute: 'helpertext' }) helperText!: string;
+  @Prop({ attribute: 'helpertext' }) helperText: string =
+    'Helper text goes here';
 
   /**
    * Is the text-input multiline or not.
+   * @default false
    */
-  @Prop() multiline: boolean;
+  @Prop() multiline: boolean = false;
 
   /**
-   * The valid variant state of the text-input.
+   * The variant state of the text-input.
+   * @default 'default'
    */
-  @Prop() valid: boolean;
-
-  /**
-   * The error variant state of the text-input.
-   */
-  @Prop() error: boolean;
+  @Prop() variant: 'default' | 'error' | 'valid' = 'default';
 
   /**
    * The disabled state of the text-input.
+   * @default false
    */
   @Prop() disabled: boolean;
 
   /**
    * The icon to be displayed
+   * @default undefined
    */
-  @Prop() icon: string;
+  @Prop() icon: VitamixId;
 
   render() {
     return [
@@ -61,8 +66,8 @@ export class VtmnTextInput implements ComponentInterface {
             <textarea
               class={[
                 'vtmn-text-input',
-                this.error && 'vtmn-text-input--error',
-                this.valid && 'vtmn-text-input--valid',
+                this.variant == 'error' && 'vtmn-text-input--error',
+                this.variant == 'valid' && 'vtmn-text-input--valid',
               ]
                 .filter(Boolean)
                 .join(' ')}
@@ -73,7 +78,7 @@ export class VtmnTextInput implements ComponentInterface {
             <p
               class={[
                 'vtmn-text-input_helper-text',
-                this.error && 'vtmn-text-input_helper-text--error',
+                this.variant == 'error' && 'vtmn-text-input_helper-text--error',
               ]
                 .filter(Boolean)
                 .join(' ')}
@@ -87,8 +92,8 @@ export class VtmnTextInput implements ComponentInterface {
                 type="text"
                 class={[
                   'vtmn-text-input',
-                  this.valid && 'vtmn-text-input--valid',
-                  this.error && 'vtmn-text-input--error',
+                  this.variant == 'valid' && 'vtmn-text-input--valid',
+                  this.variant == 'error' && 'vtmn-text-input--error',
                 ]
                   .filter(Boolean)
                   .join(' ')}
@@ -101,7 +106,7 @@ export class VtmnTextInput implements ComponentInterface {
             <p
               class={[
                 'vtmn-text-input_helper-text',
-                this.error && 'vtmn-text-input_helper-text--error',
+                this.variant == 'error' && 'vtmn-text-input_helper-text--error',
               ]
                 .filter(Boolean)
                 .join(' ')}
