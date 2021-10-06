@@ -15,37 +15,37 @@ export class VtmnSelect implements ComponentInterface {
   /**
    * The label text of the select.
    * @type {string}
-   * @default 'Label'
+   * @default 'My label'
    */
-  @Prop({ attribute: 'labeltext' }) labelText: string;
+  @Prop({ attribute: 'labeltext' }) labelText: string = 'My label';
 
   /**
    * The placeholder of the select.
    * @type {string}
    * @default 'Error text goes here'
    */
-  @Prop({ attribute: 'errortext' }) errorText: string;
+  @Prop({ attribute: 'errortext' }) errorText: string = 'Error text goes here';
 
   /**
    * The helper text of the select in error.
    * @type {string}
-   * @default 'Select'
+   * @default 'Select an option'
    */
-  @Prop() placeholder: string;
+  @Prop() placeholder: string = 'Select an option';
 
   /**
    * The state of the select when disabled
    * @type {boolean}
    * @default false
    */
-  @Prop() disabled: boolean;
+  @Prop() disabled: boolean = false;
 
   /**
    * The state of the select when in error
    * @type {boolean}
    * @default false
    */
-  @Prop() error: boolean;
+  @Prop() error: boolean = false;
 
   render() {
     return (
@@ -64,13 +64,7 @@ export class VtmnSelect implements ComponentInterface {
               {this.placeholder}
             </option>
           ) : null}
-
-          <option value="option-1">Option 1</option>
-          <option value="option-2">Option 2</option>
-          <option value="option-3">Option 3</option>
-          <option value="option-4">Option 4</option>
-          <option value="option-5">Option 5</option>
-          <option value="option-6">Option 6</option>
+          <slot />
         </select>
         {this.error && this.errorText ? (
           <p class="vtmn-select_error-text">{this.errorText}</p>

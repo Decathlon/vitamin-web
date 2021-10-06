@@ -166,13 +166,13 @@ export namespace Components {
         /**
           * The label text of the select.
           * @type {string}
-          * @default 'Label'
+          * @default 'My label'
          */
         "labelText": string;
         /**
           * The helper text of the select in error.
           * @type {string}
-          * @default 'Select'
+          * @default 'Select an option'
          */
         "placeholder": string;
     }
@@ -459,13 +459,13 @@ declare namespace LocalJSX {
         /**
           * The label text of the select.
           * @type {string}
-          * @default 'Label'
+          * @default 'My label'
          */
         "labelText"?: string;
         /**
           * The helper text of the select in error.
           * @type {string}
-          * @default 'Select'
+          * @default 'Select an option'
          */
         "placeholder"?: string;
     }
