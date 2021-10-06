@@ -7,10 +7,9 @@
 
 ## Properties
 
-| Property      | Attribute    | Description                      | Type      | Default    |
-| ------------- | ------------ | -------------------------------- | --------- | ---------- |
-| `buttonLabel` | --           | The label of the snackbar button | `String`  | `'Button'` |
-| `withButton`  | `withbutton` | The label of the snackbar button | `boolean` | `false`    |
+| Property      | Attribute     | Description                      | Type     | Default     |
+| ------------- | ------------- | -------------------------------- | -------- | ----------- |
+| `buttonLabel` | `buttonlabel` | The label of the snackbar button | `string` | `undefined` |
 
 
 ----------------------------------------------

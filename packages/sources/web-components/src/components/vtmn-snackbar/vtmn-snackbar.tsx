@@ -10,19 +10,7 @@ export class VtmnSnackbar implements ComponentInterface {
    * @type {string}
    * @default undefined
    */
-  @Prop({ attribute: 'buttonlabel' }) buttonLabel: String = 'Button';
-
-  /**
-   * The label of the snackbar button
-   * @type {boolean}
-   * @default false
-   */
-  @Prop({ attribute: 'withbutton' }) withButton: boolean = false;
-
-  componentDidUpdate() {
-    console.log('label', this.buttonLabel);
-    console.log('withButton', this.withButton);
-  }
+  @Prop({ attribute: 'buttonlabel' }) buttonLabel: string;
 
   render() {
     return (
@@ -30,7 +18,7 @@ export class VtmnSnackbar implements ComponentInterface {
         <div class="vtmn-snackbar_content">
           <slot />
         </div>
-        {this.withButton ? (
+        {this.buttonLabel ? (
           <button class="vtmn-btn vtmn-btn_variant--secondary vtmn-btn_size--small">
             {this.buttonLabel}
           </button>

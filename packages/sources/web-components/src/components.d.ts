@@ -144,13 +144,7 @@ export namespace Components {
           * @type {string}
           * @default undefined
          */
-        "buttonLabel": String;
-        /**
-          * The label of the snackbar button
-          * @type {boolean}
-          * @default false
-         */
-        "withButton": boolean;
+        "buttonLabel": string;
     }
     interface VtmnTextInput {
         /**
@@ -413,13 +407,7 @@ declare namespace LocalJSX {
           * @type {string}
           * @default undefined
          */
-        "buttonLabel"?: String;
-        /**
-          * The label of the snackbar button
-          * @type {boolean}
-          * @default false
-         */
-        "withButton"?: boolean;
+        "buttonLabel"?: string;
     }
     interface VtmnTextInput {
         /**
