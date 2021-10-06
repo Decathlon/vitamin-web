@@ -110,6 +110,50 @@ export namespace Components {
          */
         "target": string;
     }
+    interface VtmnProgressbar {
+        /**
+          * The current value of the progressbar.
+          * @type {number}
+          * @default 50
+         */
+        "currentValue": number;
+        /**
+          * The size of the progressbar.
+          * @type {boolean}
+          * @default 'false'
+         */
+        "indeterminate": boolean;
+        /**
+          * The label of the linear progressbar.
+          * @type {string}
+          * @default 'Loading'
+         */
+        "labelText": string;
+        /**
+          * The maximum value of the progressbar.
+          * @type {number}
+          * @default 100
+         */
+        "maxValue": number;
+        /**
+          * The minimum value of the progressbar.
+          * @type {number}
+          * @default 0
+         */
+        "minValue": number;
+        /**
+          * The size of the progressbar.
+          * @type {string}
+          * @default 'medium'
+         */
+        "size": 'small' | 'medium' | 'large';
+        /**
+          * The variant of the progressbar.
+          * @type {string}
+          * @default 'default'
+         */
+        "variant": 'default' | 'linear' | 'circular';
+    }
     interface VtmnRadioButton {
         /**
           * The checked state of the radio.
@@ -226,6 +270,12 @@ declare global {
         prototype: HTMLVtmnLinkElement;
         new (): HTMLVtmnLinkElement;
     };
+    interface HTMLVtmnProgressbarElement extends Components.VtmnProgressbar, HTMLStencilElement {
+    }
+    var HTMLVtmnProgressbarElement: {
+        prototype: HTMLVtmnProgressbarElement;
+        new (): HTMLVtmnProgressbarElement;
+    };
     interface HTMLVtmnRadioButtonElement extends Components.VtmnRadioButton, HTMLStencilElement {
     }
     var HTMLVtmnRadioButtonElement: {
@@ -249,6 +299,7 @@ declare global {
         "vtmn-button": HTMLVtmnButtonElement;
         "vtmn-checkbox": HTMLVtmnCheckboxElement;
         "vtmn-link": HTMLVtmnLinkElement;
+        "vtmn-progressbar": HTMLVtmnProgressbarElement;
         "vtmn-radio-button": HTMLVtmnRadioButtonElement;
         "vtmn-text-input": HTMLVtmnTextInputElement;
         "vtmn-toggle": HTMLVtmnToggleElement;
@@ -358,6 +409,50 @@ declare namespace LocalJSX {
          */
         "target"?: string;
     }
+    interface VtmnProgressbar {
+        /**
+          * The current value of the progressbar.
+          * @type {number}
+          * @default 50
+         */
+        "currentValue"?: number;
+        /**
+          * The size of the progressbar.
+          * @type {boolean}
+          * @default 'false'
+         */
+        "indeterminate"?: boolean;
+        /**
+          * The label of the linear progressbar.
+          * @type {string}
+          * @default 'Loading'
+         */
+        "labelText"?: string;
+        /**
+          * The maximum value of the progressbar.
+          * @type {number}
+          * @default 100
+         */
+        "maxValue"?: number;
+        /**
+          * The minimum value of the progressbar.
+          * @type {number}
+          * @default 0
+         */
+        "minValue"?: number;
+        /**
+          * The size of the progressbar.
+          * @type {string}
+          * @default 'medium'
+         */
+        "size"?: 'small' | 'medium' | 'large';
+        /**
+          * The variant of the progressbar.
+          * @type {string}
+          * @default 'default'
+         */
+        "variant"?: 'default' | 'linear' | 'circular';
+    }
     interface VtmnRadioButton {
         /**
           * The checked state of the radio.
@@ -453,6 +548,7 @@ declare namespace LocalJSX {
         "vtmn-button": VtmnButton;
         "vtmn-checkbox": VtmnCheckbox;
         "vtmn-link": VtmnLink;
+        "vtmn-progressbar": VtmnProgressbar;
         "vtmn-radio-button": VtmnRadioButton;
         "vtmn-text-input": VtmnTextInput;
         "vtmn-toggle": VtmnToggle;
@@ -466,6 +562,7 @@ declare module "@stencil/core" {
             "vtmn-button": LocalJSX.VtmnButton & JSXBase.HTMLAttributes<HTMLVtmnButtonElement>;
             "vtmn-checkbox": LocalJSX.VtmnCheckbox & JSXBase.HTMLAttributes<HTMLVtmnCheckboxElement>;
             "vtmn-link": LocalJSX.VtmnLink & JSXBase.HTMLAttributes<HTMLVtmnLinkElement>;
+            "vtmn-progressbar": LocalJSX.VtmnProgressbar & JSXBase.HTMLAttributes<HTMLVtmnProgressbarElement>;
             "vtmn-radio-button": LocalJSX.VtmnRadioButton & JSXBase.HTMLAttributes<HTMLVtmnRadioButtonElement>;
             "vtmn-text-input": LocalJSX.VtmnTextInput & JSXBase.HTMLAttributes<HTMLVtmnTextInputElement>;
             "vtmn-toggle": LocalJSX.VtmnToggle & JSXBase.HTMLAttributes<HTMLVtmnToggleElement>;
