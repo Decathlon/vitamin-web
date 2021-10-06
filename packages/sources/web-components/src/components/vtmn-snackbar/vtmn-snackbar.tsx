@@ -7,15 +7,22 @@ import { Component, Prop, h, ComponentInterface } from '@stencil/core';
 export class VtmnSnackbar implements ComponentInterface {
   /**
    * The label of the snackbar button
-   * @default false
+   * @type {string}
+   * @default undefined
    */
-  @Prop({ attribute: 'withbutton' }) withButton: boolean;
+  @Prop({ attribute: 'buttonlabel' }) buttonLabel: String = 'Button';
 
   /**
    * The label of the snackbar button
-   * @default null
+   * @type {boolean}
+   * @default false
    */
-  @Prop({ attribute: 'buttonlabel' }) buttonLabel: String;
+  @Prop({ attribute: 'withbutton' }) withButton: boolean = false;
+
+  componentDidUpdate() {
+    console.log('label', this.buttonLabel);
+    console.log('withButton', this.withButton);
+  }
 
   render() {
     return (

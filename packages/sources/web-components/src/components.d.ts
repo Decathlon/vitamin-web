@@ -141,11 +141,13 @@ export namespace Components {
     interface VtmnSnackbar {
         /**
           * The label of the snackbar button
-          * @default null
+          * @type {string}
+          * @default undefined
          */
         "buttonLabel": String;
         /**
           * The label of the snackbar button
+          * @type {boolean}
           * @default false
          */
         "withButton": boolean;
@@ -408,11 +410,13 @@ declare namespace LocalJSX {
     interface VtmnSnackbar {
         /**
           * The label of the snackbar button
-          * @default null
+          * @type {string}
+          * @default undefined
          */
         "buttonLabel"?: String;
         /**
           * The label of the snackbar button
+          * @type {boolean}
           * @default false
          */
         "withButton"?: boolean;
