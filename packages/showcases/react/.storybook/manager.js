@@ -3,7 +3,7 @@ import { themes } from '@storybook/theming';
 import vtmnReactLogo from '@vtmn/showcase-core/images/vtmn-react-logo.png';
 
 addons.setConfig({
-  panelPosition: 'right',
+  panelPosition: 'bottom',
   theme: {
     ...themes.normal,
     brandTitle: '@vtmn/react',
