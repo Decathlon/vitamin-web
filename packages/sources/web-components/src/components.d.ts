@@ -160,13 +160,13 @@ export namespace Components {
         /**
           * The id of the select.
           * @type {string}
-          * @default 'vtmn-select'
+          * @default undefined
          */
         "identifier": string;
         /**
           * The label text of the select.
           * @type {string}
-          * @default 'My label'
+          * @default undefined
          */
         "labelText": string;
         /**
@@ -453,15 +453,15 @@ declare namespace LocalJSX {
         /**
           * The id of the select.
           * @type {string}
-          * @default 'vtmn-select'
+          * @default undefined
          */
         "identifier": string;
         /**
           * The label text of the select.
           * @type {string}
-          * @default 'My label'
+          * @default undefined
          */
-        "labelText"?: string;
+        "labelText": string;
         /**
           * The helper text of the select in error.
           * @type {string}

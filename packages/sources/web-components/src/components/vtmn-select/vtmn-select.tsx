@@ -8,16 +8,16 @@ export class VtmnSelect implements ComponentInterface {
   /**
    * The id of the select.
    * @type {string}
-   * @default 'vtmn-select'
+   * @default undefined
    */
   @Prop() identifier!: string;
 
   /**
    * The label text of the select.
    * @type {string}
-   * @default 'My label'
+   * @default undefined
    */
-  @Prop({ attribute: 'labeltext' }) labelText: string = 'My label';
+  @Prop({ attribute: 'labeltext' }) labelText!: string;
 
   /**
    * The placeholder of the select.
@@ -50,7 +50,9 @@ export class VtmnSelect implements ComponentInterface {
   render() {
     return (
       <div class="vtmn-select_container">
-        <label htmlFor={this.identifier}>{this.labelText}</label>
+        {this.labelText ? (
+          <label htmlFor={this.identifier}>{this.labelText}</label>
+        ) : null}
 
         <select
           name="sports"

@@ -17,7 +17,7 @@ export const argTypes = {
       type: {
         summary: 'string',
       },
-      defaultValue: { summary: 'My label' },
+      defaultValue: { summary: 'undefined' },
     },
     control: { type: 'text' },
   },
