@@ -110,6 +110,14 @@ export namespace Components {
          */
         "target": string;
     }
+    interface VtmnLoader {
+        /**
+          * The size of the toggle.
+          * @type {string}
+          * @default 'medium'
+         */
+        "size": 'small' | 'medium' | 'large';
+    }
     interface VtmnRadioButton {
         /**
           * The checked state of the radio.
@@ -226,6 +234,12 @@ declare global {
         prototype: HTMLVtmnLinkElement;
         new (): HTMLVtmnLinkElement;
     };
+    interface HTMLVtmnLoaderElement extends Components.VtmnLoader, HTMLStencilElement {
+    }
+    var HTMLVtmnLoaderElement: {
+        prototype: HTMLVtmnLoaderElement;
+        new (): HTMLVtmnLoaderElement;
+    };
     interface HTMLVtmnRadioButtonElement extends Components.VtmnRadioButton, HTMLStencilElement {
     }
     var HTMLVtmnRadioButtonElement: {
@@ -249,6 +263,7 @@ declare global {
         "vtmn-button": HTMLVtmnButtonElement;
         "vtmn-checkbox": HTMLVtmnCheckboxElement;
         "vtmn-link": HTMLVtmnLinkElement;
+        "vtmn-loader": HTMLVtmnLoaderElement;
         "vtmn-radio-button": HTMLVtmnRadioButtonElement;
         "vtmn-text-input": HTMLVtmnTextInputElement;
         "vtmn-toggle": HTMLVtmnToggleElement;
@@ -358,6 +373,14 @@ declare namespace LocalJSX {
          */
         "target"?: string;
     }
+    interface VtmnLoader {
+        /**
+          * The size of the toggle.
+          * @type {string}
+          * @default 'medium'
+         */
+        "size"?: 'small' | 'medium' | 'large';
+    }
     interface VtmnRadioButton {
         /**
           * The checked state of the radio.
@@ -453,6 +476,7 @@ declare namespace LocalJSX {
         "vtmn-button": VtmnButton;
         "vtmn-checkbox": VtmnCheckbox;
         "vtmn-link": VtmnLink;
+        "vtmn-loader": VtmnLoader;
         "vtmn-radio-button": VtmnRadioButton;
         "vtmn-text-input": VtmnTextInput;
         "vtmn-toggle": VtmnToggle;
@@ -466,6 +490,7 @@ declare module "@stencil/core" {
             "vtmn-button": LocalJSX.VtmnButton & JSXBase.HTMLAttributes<HTMLVtmnButtonElement>;
             "vtmn-checkbox": LocalJSX.VtmnCheckbox & JSXBase.HTMLAttributes<HTMLVtmnCheckboxElement>;
             "vtmn-link": LocalJSX.VtmnLink & JSXBase.HTMLAttributes<HTMLVtmnLinkElement>;
+            "vtmn-loader": LocalJSX.VtmnLoader & JSXBase.HTMLAttributes<HTMLVtmnLoaderElement>;
             "vtmn-radio-button": LocalJSX.VtmnRadioButton & JSXBase.HTMLAttributes<HTMLVtmnRadioButtonElement>;
             "vtmn-text-input": LocalJSX.VtmnTextInput & JSXBase.HTMLAttributes<HTMLVtmnTextInputElement>;
             "vtmn-toggle": LocalJSX.VtmnToggle & JSXBase.HTMLAttributes<HTMLVtmnToggleElement>;
