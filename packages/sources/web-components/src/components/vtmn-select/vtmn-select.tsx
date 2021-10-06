@@ -20,6 +20,13 @@ export class VtmnSelect implements ComponentInterface {
   @Prop({ attribute: 'labeltext' }) labelText!: string;
 
   /**
+   * The name of the select.
+   * @type {string}
+   * @default undefined
+   */
+  @Prop({ attribute: 'namevalue' }) nameValue!: string;
+
+  /**
    * The placeholder of the select.
    * @type {string}
    * @default 'Error text goes here'
@@ -55,7 +62,7 @@ export class VtmnSelect implements ComponentInterface {
         ) : null}
 
         <select
-          name="sports"
+          name={this.nameValue}
           id={this.identifier}
           class={this.error ? 'vtmn-select--error' : ''}
           autocomplete="true"

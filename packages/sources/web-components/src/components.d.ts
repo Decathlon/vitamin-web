@@ -170,6 +170,12 @@ export namespace Components {
          */
         "labelText": string;
         /**
+          * The name of the select.
+          * @type {string}
+          * @default undefined
+         */
+        "nameValue": string;
+        /**
           * The helper text of the select in error.
           * @type {string}
           * @default 'Select an option'
@@ -462,6 +468,12 @@ declare namespace LocalJSX {
           * @default undefined
          */
         "labelText": string;
+        /**
+          * The name of the select.
+          * @type {string}
+          * @default undefined
+         */
+        "nameValue": string;
         /**
           * The helper text of the select in error.
           * @type {string}

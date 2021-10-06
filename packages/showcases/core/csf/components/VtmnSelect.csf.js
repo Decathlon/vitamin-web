@@ -21,6 +21,17 @@ export const argTypes = {
     },
     control: { type: 'text' },
   },
+  nameValue: {
+    type: { name: 'string', required: false },
+    description: 'The value of the select.',
+    table: {
+      type: {
+        summary: 'string',
+      },
+      defaultValue: { summary: 'undefined' },
+    },
+    control: { type: 'text' },
+  },
   placeholder: {
     type: { name: 'string', required: false },
     description: 'The default disabled value of the select',
