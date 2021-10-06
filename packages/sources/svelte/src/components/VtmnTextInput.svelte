@@ -56,6 +56,12 @@
    * @type {string}
    */
   export let icon;
+
+  /**
+   * The value of the input
+   * @type {string}
+   */
+  export let value;
 </script>
 
 {#if labelText}
@@ -63,6 +69,7 @@
 {/if}
 {#if multiline}
   <textarea
+    bind:value
     class="vtmn-text-input"
     class:vtmn-text-input--error={error}
     class:vtmn-text-input--valid={valid}
@@ -74,6 +81,7 @@
 {:else}
   <div class="vtmn-text-input_container">
     <input
+      bind:value
       class="vtmn-text-input"
       class:vtmn-text-input--valid={valid}
       class:vtmn-text-input--error={error}

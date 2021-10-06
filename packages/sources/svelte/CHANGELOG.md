@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.7.2...@vtmn/svelte@0.7.3) (2021-10-05)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** allow to use two-ways binding on VtmnTextInput ([#659](https://github.com/Decathlon/vitamin-web/issues/659)) ([f157771](https://github.com/Decathlon/vitamin-web/commit/f157771d6fbb765cdc5f70915c525a2c9bcf58ae))
+
+
+
+
+
 ## [0.7.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.7.1...@vtmn/svelte@0.7.2) (2021-10-01)
 
 **Note:** Version bump only for package @vtmn/svelte
