@@ -88,4 +88,8 @@ export const VtmnButton = React.forwardRef<HTMLButtonElement, VtmnButtonProps>(
   },
 );
 
-export default React.memo(VtmnButton);
+const MemoVtmnButton = React.memo(VtmnButton);
+
+MemoVtmnButton.displayName = 'VtmnButton';
+
+export default MemoVtmnButton;
