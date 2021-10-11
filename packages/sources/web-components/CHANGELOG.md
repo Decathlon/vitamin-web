@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.15.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.14.21...@vtmn/web-components@0.15.0) (2021-10-11)
+
+
+### Features
+
+* **@vtmn-snackbar:** add snckbar web component wip ([d93c384](https://github.com/Decathlon/vitamin-web/commit/d93c3847ad06110a98b3b6c62161cf1b03a4255e))
+* **@vtmn-snackbar:** pb variable non trigger ([f9a20f9](https://github.com/Decathlon/vitamin-web/commit/f9a20f96d789cafacbb48e6428608dc84dfa609b))
+* **@vtmn/web-components:** add loader web component ([#664](https://github.com/Decathlon/vitamin-web/issues/664)) ([ef3c017](https://github.com/Decathlon/vitamin-web/commit/ef3c017faf490016f5cd8a76b7f46f7524d83989))
+* **@vtmn/web-components:** bug snackbar ([f5e0d37](https://github.com/Decathlon/vitamin-web/commit/f5e0d37083f79d6d65a9169f616a9bdba20c8f38))
+
+
+
+
+
 ## [0.14.21](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.14.20...@vtmn/web-components@0.14.21) (2021-10-04)
 
 **Note:** Version bump only for package @vtmn/web-components
