@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.12.4...@vtmn/react@0.13.0) (2021-10-12)
+
+
+### Features
+
+* **@vtmn/react:** refactoring button component to support `ref` prop ([#662](https://github.com/Decathlon/vitamin-web/issues/662)) ([8284df3](https://github.com/Decathlon/vitamin-web/commit/8284df3a54f4a6780a1d56982529cfe715424c4a))
+
+
+
+
+
 ## [0.12.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.12.3...@vtmn/react@0.12.4) (2021-10-12)
 
 **Note:** Version bump only for package @vtmn/react
