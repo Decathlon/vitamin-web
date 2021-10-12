@@ -54,4 +54,8 @@ export const VtmnCheckbox = ({
   );
 };
 
-export default React.memo(VtmnCheckbox);
+const MemoVtmnCheckbox = React.memo(VtmnCheckbox);
+
+MemoVtmnCheckbox.displayName = 'VtmnCheckbox';
+
+export default MemoVtmnCheckbox;

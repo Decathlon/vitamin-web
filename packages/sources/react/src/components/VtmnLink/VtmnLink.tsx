@@ -50,4 +50,8 @@ export const VtmnLink = ({
   );
 };
 
-export default React.memo(VtmnLink);
+const MemoVtmnLink = React.memo(VtmnLink);
+
+MemoVtmnLink.displayName = 'VtmnLink';
+
+export default MemoVtmnLink;

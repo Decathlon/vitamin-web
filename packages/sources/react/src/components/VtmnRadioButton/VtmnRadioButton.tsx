@@ -53,4 +53,8 @@ export const VtmnRadioButton = ({
   );
 };
 
-export default React.memo(VtmnRadioButton);
+const MemoVtmnRadioButton = React.memo(VtmnRadioButton);
+
+MemoVtmnRadioButton.displayName = 'VtmnRadioButton';
+
+export default MemoVtmnRadioButton;

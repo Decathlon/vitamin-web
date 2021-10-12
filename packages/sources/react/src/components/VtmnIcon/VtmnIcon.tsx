@@ -68,4 +68,8 @@ export const VtmnIcon: React.FC<VtmnIconProps> = ({
   );
 };
 
-export default React.memo(VtmnIcon);
+const MemoVtmnIcon = React.memo(VtmnIcon);
+
+MemoVtmnIcon.displayName = 'VtmnIcon';
+
+export default MemoVtmnIcon;

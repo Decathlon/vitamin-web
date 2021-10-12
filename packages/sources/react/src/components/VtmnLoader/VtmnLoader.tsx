@@ -24,4 +24,8 @@ export const VtmnLoader = ({
   );
 };
 
-export default React.memo(VtmnLoader);
+const MemoVtmnLoader = React.memo(VtmnLoader);
+
+MemoVtmnLoader.displayName = 'VtmnLoader';
+
+export default MemoVtmnLoader;

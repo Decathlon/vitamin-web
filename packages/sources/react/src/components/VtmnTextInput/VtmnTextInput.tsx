@@ -132,4 +132,8 @@ export const VtmnTextInput = ({
   );
 };
 
-export default React.memo(VtmnTextInput);
+const MemoVtmnTextInput = React.memo(VtmnTextInput);
+
+MemoVtmnTextInput.displayName = 'VtmnTextInput';
+
+export default MemoVtmnTextInput;

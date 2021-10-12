@@ -66,4 +66,8 @@ export const VtmnToggle = ({
   );
 };
 
-export default React.memo(VtmnToggle);
+const MemoVtmnToggle = React.memo(VtmnToggle);
+
+MemoVtmnToggle.displayName = 'VtmnToggle';
+
+export default MemoVtmnToggle;

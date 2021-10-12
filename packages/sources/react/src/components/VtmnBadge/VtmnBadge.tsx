@@ -34,4 +34,8 @@ export const VtmnBadge = ({
   );
 };
 
-export default React.memo(VtmnBadge);
+const MemoVtmnBadge = React.memo(VtmnBadge);
+
+MemoVtmnBadge.displayName = 'VtmnBadge';
+
+export default MemoVtmnBadge;

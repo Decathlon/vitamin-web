@@ -44,4 +44,8 @@ export const VtmnTooltip = ({
   );
 };
 
-export default React.memo(VtmnTooltip);
+const MemoVtmnTooltip = React.memo(VtmnTooltip);
+
+MemoVtmnTooltip.displayName = 'VtmnTooltip';
+
+export default MemoVtmnTooltip;
