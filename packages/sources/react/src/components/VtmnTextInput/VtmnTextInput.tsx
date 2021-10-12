@@ -21,7 +21,7 @@ type VtmnTextInputAdditionalProps = {
   /**
    * Helper text to help the user
    * @type {string}
-   * @defaultValue undefined and therefore not displayed by default
+   * @defaultValue undefined
    */
   helperText?: string;
 
@@ -34,7 +34,7 @@ type VtmnTextInputAdditionalProps = {
   /**
    * Icon to display inside text input
    * @type {VitamixId}
-   * @default undefined and therefore not displayed by default
+   * @defaultValue undefined
    */
   icon?: VitamixId;
 

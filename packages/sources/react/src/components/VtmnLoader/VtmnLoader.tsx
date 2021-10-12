@@ -6,7 +6,7 @@ import { VtmnLoaderSize } from './types';
 export interface VtmnLoaderProps extends React.ComponentPropsWithoutRef<'div'> {
   /**
    * The size of the loader.
-   * @default 'medium'
+   * @defaultValue 'medium'
    */
   size?: VtmnLoaderSize;
 }

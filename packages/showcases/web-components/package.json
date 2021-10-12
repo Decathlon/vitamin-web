@@ -9,7 +9,6 @@
     "build-storybook:docs": "build-storybook --docs",
     "start": "start-storybook -p 6008"
   },
-  "dependencies": {},
   "devDependencies": {
     "@babel/plugin-syntax-import-meta": "^7.10.4",
     "@open-wc/lit-helpers": "^0.3.12",

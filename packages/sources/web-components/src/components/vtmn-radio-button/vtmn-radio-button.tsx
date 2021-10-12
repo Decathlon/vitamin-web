@@ -27,13 +27,13 @@ export class VtmnRadioButton implements ComponentInterface {
 
   /**
    * The checked state of the radio.
-   * @default false
+   * @defaultValue false
    */
   @Prop() checked: boolean;
 
   /**
    * The disabled state of the radio.
-   * @default false
+   * @defaultValue false
    */
   @Prop() disabled: boolean;
 

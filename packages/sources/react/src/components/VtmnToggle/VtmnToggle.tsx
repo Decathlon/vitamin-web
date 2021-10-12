@@ -20,14 +20,14 @@ export interface VtmnToggleProps
 
   /**
    * The size of the toggle.
-   * @default 'medium'
+   * @defaultValue 'medium'
    */
   size?: VtmnToggleSize;
 
   /**
    * Label text linked to the toggle.
    * @type {boolean}
-   * @default false
+   * @defaultValue false
    */
   checked?: boolean;
 

@@ -5,18 +5,18 @@ import { VtmnIconColor, VtmnIconSize, VtmnIconVariant } from './types';
 export interface VtmnIconProps extends React.HTMLAttributes<HTMLElement> {
   /**
    * The size of the icon in pixels.
-   * @default 24
+   * @defaultValue 24
    **/
   size?: VtmnIconSize;
   /**
    * The legacy color of the icon.
-   * @default undefined
+   * @defaultValue undefined
    * @deprecated use the "variant" prop instead
    **/
   color?: VtmnIconColor;
   /**
    * The variant of the icon.
-   * @default 'default'
+   * @defaultValue 'default'
    */
   variant?: VtmnIconVariant;
   /**

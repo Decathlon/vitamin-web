@@ -7,21 +7,21 @@
   /**
    * The size of the link.
    * @type {string}
-   * @default 'medium'
+   * @defaultValue 'medium'
    */
   export let size = 'medium';
 
   /**
    * Whether link is standalone or not.
    * @type {boolean}
-   * @default false
+   * @defaultValue false
    */
   export let standalone = false;
 
   /**
    * Whether link has an icon or not.
    * @type {boolean}
-   * @default false
+   * @defaultValue false
    */
   export let iconAlong = false;
 

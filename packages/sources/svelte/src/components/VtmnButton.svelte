@@ -7,34 +7,34 @@
   /**
    * The variant of the button.
    * @type {'primary' | 'primary-reversed' | 'secondary' | 'tertiary' | 'ghost' | 'ghost-reversed' | 'conversion'}
-   * @default 'primary'
+   * @defaultValue 'primary'
    */
   export let variant = 'primary';
   /**
    * The size of the button.
    * @type {'small' | 'medium' | 'large' | 'stretched'}
-   * @default 'medium'
+   * @defaultValue 'medium'
    */
   export let size = 'medium';
 
   /**
    * Icon to display on the left hand side of button
    * @type string
-   * @default undefined and therefore not displayed by default
+   * @defaultValue undefined
    */
   export let iconLeft;
 
   /**
    * Icon to display on the right hand side of button
    * @type string
-   * @default undefined and therefore not displayed by default
+   * @defaultValue undefined
    */
   export let iconRight;
 
   /**
    * Icon to display when it is a button with icon only
    * @type string
-   * @default undefined and therefore not displayed by default
+   * @defaultValue undefined
    */
   export let iconAlone;
 
