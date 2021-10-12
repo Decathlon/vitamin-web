@@ -9,8 +9,9 @@ import { VitamixId } from "@vtmn/icons/dist/vitamix/font/vitamix";
 export namespace Components {
     interface VtmnBadge {
         /**
-          * The target of the badge
-          * @default undefined
+          * The value in the badge
+          * @type {number}
+          * @default 50
          */
         "value"?: number;
         /**
@@ -257,8 +258,9 @@ declare global {
 declare namespace LocalJSX {
     interface VtmnBadge {
         /**
-          * The target of the badge
-          * @default undefined
+          * The value in the badge
+          * @type {number}
+          * @default 50
          */
         "value"?: number;
         /**

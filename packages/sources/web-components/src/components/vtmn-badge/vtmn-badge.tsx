@@ -12,21 +12,25 @@ export class VtmnBadge implements ComponentInterface {
   @Prop() variant?: 'default' | 'brand' | 'reversed' | 'accent' = 'default';
 
   /**
-   * The target of the badge
-   * @default undefined
+   * The value in the badge
+   * @type {number}
+   * @default 50
    */
-  @Prop() value?: number = undefined;
+  @Prop() value?: number = 50;
 
   render() {
     return (
       <span
         class={`vtmn-badge vtmn-badge_variant--${this.variant}
         ${
-          !this.value && this.value !== 0
-            ? 'vtmn-badge_size--without-value'
-            : ''
-        }`}>
-        {this.value && this.value > 99 ? '99+' : this.value}
+          !this.value && this.value <= 0 ? 'vtmn-badge_size--without-value' : ''
+        }`}
+      >
+        {this.value && this.value > 99
+          ? '99+'
+          : this.value <= 0
+          ? null
+          : this.value}
       </span>
     );
   }
