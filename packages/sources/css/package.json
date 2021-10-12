@@ -40,6 +40,7 @@
     "@vtmn/css-link": "^0.3.16",
     "@vtmn/css-loader": "^0.1.14",
     "@vtmn/css-modal": "^0.2.6",
+    "@vtmn/css-navbar": "^0.0.0",
     "@vtmn/css-popover": "^0.2.11",
     "@vtmn/css-postcss-config": "*",
     "@vtmn/css-progressbar": "^0.1.4",
