@@ -8,16 +8,10 @@ After installing [npm](https://docs.npmjs.com/downloading-and-installing-node-js
 
 ```sh
 # with npm
-npm i -S @vtmn/web-components
+npm i -S @vtmn/css-design-tokens @vtmn/web-components
 
 # with yarn
-yarn add @vtmn/web-components
-```
-
-Or you can also install it with a CDN like `unpkg.com`:
-
-```html
-<script src="https://unpkg.com/@vtmn/web-components"></script>
+yarn add @vtmn/css-design-tokens @vtmn/web-components
 ```
 
 ## Install fonts
@@ -88,7 +82,19 @@ In a HTML file:
 />
 <script type="module">
   import { defineCustomElements } from './node_modules/@vtmn/web-components/dist/esm/loader.js';
+  defineCustomElements();
+</script>
+```
 
+Or you can also install it with a CDN like `unpkg.com`:
+
+```html
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@vtmn/css-design-tokens/dist/index.css"
+/>
+<script type="module">
+  import { defineCustomElements } from 'https://unpkg.com/@vtmn/web-components/dist/esm/loader.js';
   defineCustomElements();
 </script>
 ```

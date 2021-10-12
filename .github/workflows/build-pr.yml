@@ -30,9 +30,6 @@ jobs:
       - name: Build sources
         run: yarn affected:build
 
-      - name: Lint
-        run: yarn lint
-
       - name: Test
         run: yarn affected:test
 

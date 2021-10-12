@@ -9,6 +9,7 @@
   overflow: hidden;
   background-color: var(--vtmn-semantic-color_background-tertiary);
 }
+
 .vtmn-skeleton::after {
   position: absolute;
   top: 0;
@@ -63,10 +64,12 @@
   animation: var(--vtmn-animation_shimmer);
   content: '';
 }
+
 .vtmn-skeleton_line {
   height: rem(8px);
   border-radius: rem(8px);
 }
+
 .vtmn-skeleton_avatar {
   width: rem(32px);
   height: rem(32px);

@@ -1,4 +1,4 @@
-import '@vtmn/css';
+import '@vtmn/css-design-tokens/dist/index.css';
 import '@vtmn/icons/dist/vitamix/font/vitamix.css';
 import { withDesign } from 'storybook-addon-designs';
 import backgrounds from '@vtmn/showcase-core/addons/backgrounds.json';

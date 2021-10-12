@@ -2,12 +2,19 @@ import { withRunScript } from 'storybook-addon-run-script/html';
 import demoScript from './examples/demo.runscript';
 import overview from './examples/overview.html';
 import demo from './examples/demo.html';
-import { parameters } from '@vtmn/showcase-core/csf/components/VtmnSnackbar.csf';
 
 export default {
   title: 'Components / Snackbar',
   argTypes: { onchange: { action: 'write' } },
-  parameters,
+  parameters: {
+    actions: {
+      handles: ['mouseenter', 'click', 'focusin', 'focusout'],
+    },
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vitamin---Web-UI-kit-(v0)?node-id=2796%3A12600',
+    },
+  },
 };
 
 export const Overview = () => overview;
