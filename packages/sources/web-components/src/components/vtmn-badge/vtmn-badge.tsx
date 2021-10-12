@@ -7,16 +7,17 @@ import { Component, Prop, h, ComponentInterface } from '@stencil/core';
 export class VtmnBadge implements ComponentInterface {
   /**
    * The variant of the badge.
-   * @default 'default'
+   * @type {string}
+   * @defaultValue 'default'
    */
   @Prop() variant?: 'default' | 'brand' | 'reversed' | 'accent' = 'default';
 
   /**
    * The value in the badge
    * @type {number}
-   * @default 50
+   * @defaultValue 0
    */
-  @Prop() value?: number = 50;
+  @Prop() value?: number = 0;
 
   render() {
     return (

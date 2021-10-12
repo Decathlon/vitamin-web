@@ -11,12 +11,13 @@ export namespace Components {
         /**
           * The value in the badge
           * @type {number}
-          * @default 50
+          * @defaultValue 0
          */
         "value"?: number;
         /**
           * The variant of the badge.
-          * @default 'default'
+          * @type {string}
+          * @defaultValue 'default'
          */
         "variant"?: 'default' | 'brand' | 'reversed' | 'accent';
     }
@@ -24,29 +25,29 @@ export namespace Components {
         /**
           * Icon to display when it is a button with icon only
           * @type {VitamixId}
-          * @default undefined and therefore not displayed by default
+          * @defaultValue undefined
          */
         "iconAlone": VitamixId;
         /**
           * Icon to display on the left hand side of button
           * @type {VitamixId}
-          * @default undefined and therefore not displayed by default
+          * @defaultValue undefined
          */
         "iconLeft": VitamixId;
         /**
           * Icon to display on the right hand side of button
           * @type {VitamixId}
-          * @default undefined and therefore not displayed by default
+          * @defaultValue undefined
          */
         "iconRight": VitamixId;
         /**
           * The size of the button.
-          * @default 'medium'
+          * @defaultValue 'medium'
          */
         "size": 'small' | 'medium' | 'large' | 'stretched';
         /**
           * The variant of the button.
-          * @default 'primary'
+          * @defaultValue 'primary'
          */
         "variant": | 'primary'
     | 'primary-reversed'
@@ -59,12 +60,12 @@ export namespace Components {
     interface VtmnCheckbox {
         /**
           * The checked state of the checkbox.
-          * @default false
+          * @defaultValue false
          */
         "checked": boolean;
         /**
           * The disabled state of the checkbox.
-          * @default false
+          * @defaultValue false
          */
         "disabled": boolean;
         /**
@@ -87,39 +88,39 @@ export namespace Components {
     interface VtmnLink {
         /**
           * The hypertext link
-          * @default '#'
+          * @defaultValue '#'
          */
         "href": string;
         /**
           * Is the link has an icon or not
-          * @default null
+          * @defaultValue undefined
          */
         "iconAlong": boolean;
         /**
           * The size of the link.
-          * @default null
+          * @defaultValue undefined
          */
         "size": 'small' | 'medium' | 'large';
         /**
           * Is the link standalone or not
-          * @default null
+          * @defaultValue undefined
          */
         "standalone": boolean;
         /**
           * The target of the link
-          * @default null
+          * @defaultValue null
          */
         "target": string;
     }
     interface VtmnRadioButton {
         /**
           * The checked state of the radio.
-          * @default false
+          * @defaultValue false
          */
         "checked": boolean;
         /**
           * The disabled state of the radio.
-          * @default false
+          * @defaultValue false
          */
         "disabled": boolean;
         /**
@@ -180,12 +181,12 @@ export namespace Components {
     interface VtmnToggle {
         /**
           * The checked state of the toggle.
-          * @default false
+          * @defaultValue false
          */
         "checked": boolean;
         /**
           * The disabled state of the toggle.
-          * @default false
+          * @defaultValue false
          */
         "disabled": boolean;
         /**
@@ -260,12 +261,13 @@ declare namespace LocalJSX {
         /**
           * The value in the badge
           * @type {number}
-          * @default 50
+          * @defaultValue 0
          */
         "value"?: number;
         /**
           * The variant of the badge.
-          * @default 'default'
+          * @type {string}
+          * @defaultValue 'default'
          */
         "variant"?: 'default' | 'brand' | 'reversed' | 'accent';
     }
@@ -273,29 +275,29 @@ declare namespace LocalJSX {
         /**
           * Icon to display when it is a button with icon only
           * @type {VitamixId}
-          * @default undefined and therefore not displayed by default
+          * @defaultValue undefined
          */
         "iconAlone"?: VitamixId;
         /**
           * Icon to display on the left hand side of button
           * @type {VitamixId}
-          * @default undefined and therefore not displayed by default
+          * @defaultValue undefined
          */
         "iconLeft"?: VitamixId;
         /**
           * Icon to display on the right hand side of button
           * @type {VitamixId}
-          * @default undefined and therefore not displayed by default
+          * @defaultValue undefined
          */
         "iconRight"?: VitamixId;
         /**
           * The size of the button.
-          * @default 'medium'
+          * @defaultValue 'medium'
          */
         "size"?: 'small' | 'medium' | 'large' | 'stretched';
         /**
           * The variant of the button.
-          * @default 'primary'
+          * @defaultValue 'primary'
          */
         "variant"?: | 'primary'
     | 'primary-reversed'
@@ -308,12 +310,12 @@ declare namespace LocalJSX {
     interface VtmnCheckbox {
         /**
           * The checked state of the checkbox.
-          * @default false
+          * @defaultValue false
          */
         "checked"?: boolean;
         /**
           * The disabled state of the checkbox.
-          * @default false
+          * @defaultValue false
          */
         "disabled"?: boolean;
         /**
@@ -336,39 +338,39 @@ declare namespace LocalJSX {
     interface VtmnLink {
         /**
           * The hypertext link
-          * @default '#'
+          * @defaultValue '#'
          */
         "href"?: string;
         /**
           * Is the link has an icon or not
-          * @default null
+          * @defaultValue undefined
          */
         "iconAlong"?: boolean;
         /**
           * The size of the link.
-          * @default null
+          * @defaultValue undefined
          */
         "size"?: 'small' | 'medium' | 'large';
         /**
           * Is the link standalone or not
-          * @default null
+          * @defaultValue undefined
          */
         "standalone"?: boolean;
         /**
           * The target of the link
-          * @default null
+          * @defaultValue null
          */
         "target"?: string;
     }
     interface VtmnRadioButton {
         /**
           * The checked state of the radio.
-          * @default false
+          * @defaultValue false
          */
         "checked"?: boolean;
         /**
           * The disabled state of the radio.
-          * @default false
+          * @defaultValue false
          */
         "disabled"?: boolean;
         /**
@@ -429,12 +431,12 @@ declare namespace LocalJSX {
     interface VtmnToggle {
         /**
           * The checked state of the toggle.
-          * @default false
+          * @defaultValue false
          */
         "checked"?: boolean;
         /**
           * The disabled state of the toggle.
-          * @default false
+          * @defaultValue false
          */
         "disabled"?: boolean;
         /**

@@ -8,33 +8,33 @@ export interface VtmnButtonProps
   extends React.ComponentPropsWithoutRef<'button'> {
   /**
    * The variant of the button.
-   * @default 'primary'
+   * @defaultValue 'primary'
    */
   variant?: VtmnButtonVariant;
   /**
    * The size of the button.
-   * @default 'medium'
+   * @defaultValue 'medium'
    */
   size?: VtmnButtonSize;
 
   /**
    * Icon to display on the left hand side of button
    * @type {VitamixId}
-   * @default undefined and therefore not displayed by default
+   * @defaultValue undefined
    */
   iconLeft?: VitamixId;
 
   /**
    * Icon to display on the right hand side of button
    * @type {VitamixId}
-   * @default undefined and therefore not displayed by default
+   * @defaultValue undefined
    */
   iconRight?: VitamixId;
 
   /**
    * Icon to display when it is a button with icon only
    * @type {VitamixId}
-   * @default undefined and therefore not displayed by default
+   * @defaultValue undefined
    */
   iconAlone?: VitamixId;
 }

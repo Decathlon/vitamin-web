@@ -27,13 +27,13 @@ export class VtmnCheckbox implements ComponentInterface {
 
   /**
    * The disabled state of the checkbox.
-   * @default false
+   * @defaultValue false
    */
   @Prop() disabled: boolean;
 
   /**
    * The checked state of the checkbox.
-   * @default false
+   * @defaultValue false
    */
   @Prop() checked: boolean;
 

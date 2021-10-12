@@ -5,13 +5,13 @@ import { VtmnBadgeVariant } from './types';
 export interface VtmnBadgeProps extends React.ComponentPropsWithoutRef<'span'> {
   /**
    * The variant of the badge.
-   * @default 'default'
+   * @defaultValue 'default'
    */
   variant?: VtmnBadgeVariant;
 
   /**
    * The value of the badge.
-   * @default null
+   * @defaultValue undefined
    */
   value?: number;
 }

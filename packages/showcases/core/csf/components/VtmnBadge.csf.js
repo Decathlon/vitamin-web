@@ -17,12 +17,12 @@ export const argTypes = {
   value: {
     type: { name: 'number', required: false },
     description: 'The value in the badge.',
-    defaultValue: 50,
+    defaultValue: 0,
     table: {
       type: {
         summary: 'number',
       },
-      defaultValue: { summary: 50 },
+      defaultValue: { summary: 0 },
     },
     control: { type: 'range', min: 0, max: 100 },
   },

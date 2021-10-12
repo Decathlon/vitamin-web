@@ -8,7 +8,7 @@ import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
 export class VtmnButton implements ComponentInterface {
   /**
    * The variant of the button.
-   * @default 'primary'
+   * @defaultValue 'primary'
    */
   @Prop() variant:
     | 'primary'
@@ -21,28 +21,28 @@ export class VtmnButton implements ComponentInterface {
 
   /**
    * The size of the button.
-   * @default 'medium'
+   * @defaultValue 'medium'
    */
   @Prop() size: 'small' | 'medium' | 'large' | 'stretched' = 'medium';
 
   /**
    * Icon to display on the left hand side of button
    * @type {VitamixId}
-   * @default undefined and therefore not displayed by default
+   * @defaultValue undefined
    */
   @Prop({ attribute: 'iconleft' }) iconLeft: VitamixId;
 
   /**
    * Icon to display on the right hand side of button
    * @type {VitamixId}
-   * @default undefined and therefore not displayed by default
+   * @defaultValue undefined
    */
   @Prop({ attribute: 'iconright' }) iconRight: VitamixId;
 
   /**
    * Icon to display when it is a button with icon only
    * @type {VitamixId}
-   * @default undefined and therefore not displayed by default
+   * @defaultValue undefined
    */
   @Prop({ attribute: 'iconalone' }) iconAlone: VitamixId;
 

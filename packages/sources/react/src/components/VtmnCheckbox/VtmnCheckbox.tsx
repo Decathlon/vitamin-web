@@ -13,21 +13,21 @@ export interface VtmnCheckboxProps
   /**
    * Label text linked to the checkbox.
    * @type {string}
-   * @default null
+   * @defaultValue undefined
    */
   labelText?: string;
 
   /**
    * Label text linked to the checkbox.
    * @type {boolean}
-   * @default false
+   * @defaultValue false
    */
   checked?: boolean;
 
   /**
    * Label text linked to the checkbox.
    * @type {boolean}
-   * @default false
+   * @defaultValue false
    */
   disabled?: boolean;
 }

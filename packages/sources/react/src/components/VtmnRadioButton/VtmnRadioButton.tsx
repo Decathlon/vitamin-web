@@ -13,14 +13,14 @@ export interface VtmnRadioProps
   /**
    * Label text linked to the radio.
    * @type {string}
-   * @default undefined
+   * @defaultValue undefined
    */
   labelText?: string;
 
   /**
    * Label text linked to the radio.
    * @type {boolean}
-   * @default false
+   * @defaultValue false
    */
   checked?: boolean;
 

@@ -7,31 +7,31 @@ import { Component, Prop, h, ComponentInterface } from '@stencil/core';
 export class VtmnLink implements ComponentInterface {
   /**
    * The size of the link.
-   * @default null
+   * @defaultValue undefined
    */
   @Prop() size: 'small' | 'medium' | 'large';
 
   /**
    * Is the link standalone or not
-   * @default null
+   * @defaultValue undefined
    */
   @Prop() standalone: boolean;
 
   /**
    * Is the link has an icon or not
-   * @default null
+   * @defaultValue undefined
    */
   @Prop({ attribute: 'iconalong' }) iconAlong: boolean;
 
   /**
    * The hypertext link
-   * @default '#'
+   * @defaultValue '#'
    */
   @Prop() href: string = '#';
 
   /**
    * The target of the link
-   * @default null
+   * @defaultValue null
    */
   @Prop() target: string;
 

@@ -7,21 +7,21 @@ import { VtmnLinkSize } from './types';
 export interface VtmnLinkProps extends React.ComponentPropsWithoutRef<'a'> {
   /**
    * The size of the link.
-   * @default 'medium'
+   * @defaultValue 'medium'
    */
   size?: VtmnLinkSize;
 
   /**
    * Whether link is standalone or not.
    * @type {boolean}
-   * @default false
+   * @defaultValue false
    */
   standalone?: boolean;
 
   /**
    * Whether link has an icon or not.
    * @type {boolean}
-   * @default false
+   * @defaultValue false
    */
   iconAlong?: boolean;
 }
