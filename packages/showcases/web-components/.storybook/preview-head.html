@@ -13,13 +13,20 @@
     background-color: var(--vtmn-semantic-color_background-primary);
     padding: 1rem;
     border-bottom: 1px solid var(--vtmn-semantic-color_border-secondary);
-    position: fixed;
     width: 100%;
     z-index: 50;
-    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--vtmn-shadow_100);
   }
-  .extented-toolbar__title {
-    margin-bottom: 1rem;
+  .extended-toolbar > .report {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
   }
   .sb-show-main.sb-main-padded {
     padding: 0;
@@ -28,10 +35,9 @@
   /* Stories' preview */
   #root {
     padding: 1rem;
-    margin-top: 100px;
   }
   .block {
-    padding: 0.375rem 0;
+    margin-bottom: 1rem;
   }
 
   /* Docs preview */
@@ -78,4 +84,20 @@
   .docblock-argstable-head th {
     color: var(--vtmn-semantic-color_content-primary)!important;
   }
+
+  @media screen  and (max-width: 599px){
+    .extended-toolbar {
+    height: fit-content;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .extended-toolbar > .vtmn-select_container {
+    padding-bottom: 0;
+  }
+  .extended-toolbar > .report {
+    display: none;
+  }
+}
 </style>
