@@ -36,7 +36,8 @@ export const VtmnTooltip = ({
         className={`vtmn-tooltip ${className ?? className}`}
         data-tooltip={tooltip}
         data-position={position}
-        {...props}>
+        {...props}
+      >
         {children}
       </span>
     </div>

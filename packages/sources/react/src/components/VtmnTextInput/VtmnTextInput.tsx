@@ -123,7 +123,8 @@ export const VtmnTextInput = ({
         <p
           className={clsx('vtmn-text-input_helper-text', className, {
             'vtmn-text-input_helper-text--error': error,
-          })}>
+          })}
+        >
           {helperText}
         </p>
       )}
