@@ -8,10 +8,10 @@ After installing [npm](https://docs.npmjs.com/downloading-and-installing-node-js
 
 ```sh
 # with npm
-npm i -S @vtmn/web-components
+npm i -S @vtmn/css-design-tokens @vtmn/web-components
 
 # with yarn
-yarn add @vtmn/web-components
+yarn add @vtmn/css-design-tokens @vtmn/web-components
 ```
 
 ## Install fonts
