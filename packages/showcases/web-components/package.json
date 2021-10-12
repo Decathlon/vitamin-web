@@ -9,9 +9,6 @@
     "build-storybook:docs": "build-storybook --docs",
     "start": "start-storybook -p 6008"
   },
-  "dependencies": {
-    "@vtmn/css-design-tokens": "*"
-  },
   "devDependencies": {
     "@babel/plugin-syntax-import-meta": "^7.10.4",
     "@open-wc/lit-helpers": "^0.3.12",
@@ -20,6 +17,7 @@
     "@storybook/addon-a11y": "^6.3.7",
     "@storybook/addon-essentials": "^6.3.7",
     "@storybook/web-components": "^6.3.7",
+    "@vtmn/css": "*",
     "@vtmn/icons": "*",
     "@vtmn/showcase-core": "*",
     "@vtmn/web-components": "*",
