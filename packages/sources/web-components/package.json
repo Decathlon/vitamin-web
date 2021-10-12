@@ -19,9 +19,9 @@
   },
   "license": "Apache-2.0",
   "main": "dist/index.cjs.js",
-  "unpkg": "dist/vtmn-web-components/vtmn-web-components.esm.js",
-  "module": "dist/custom-elements/index.js",
-  "types": "dist/custom-elements/index.d.ts",
+  "unpkg": "dist/vtmn-web-components/index.esm.js",
+  "module": "dist/index.js",
+  "types": "dist/types/index.d.ts",
   "files": [
     "dist/"
   ],
@@ -53,8 +53,8 @@
   },
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "es2015": "dist/esm/index.mjs",
-  "es2017": "dist/esm/index.mjs",
+  "es2015": "dist/esm/index.js",
+  "es2017": "dist/esm/index.js",
   "licenses": [
     {
       "type": "Apache-2.0",
