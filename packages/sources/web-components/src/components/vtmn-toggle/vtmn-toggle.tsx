@@ -22,13 +22,13 @@ export class VtmnToggle implements ComponentInterface {
 
   /**
    * The checked state of the toggle.
-   * @default false
+   * @defaultValue false
    */
   @Prop() checked: boolean;
 
   /**
    * The disabled state of the toggle.
-   * @default false
+   * @defaultValue false
    */
   @Prop() disabled: boolean;
 

@@ -2,16 +2,29 @@ export const argTypes = {
   variant: {
     type: { name: 'string', required: false },
     description: 'The variant of the badge.',
-    defaultValue: '',
+    table: {
+      type: {
+        summary: 'string',
+      },
+      defaultValue: { summary: 'default' },
+    },
+    defaultValue: 'default',
     control: {
-      type: 'select',
+      type: 'radio',
       options: ['default', 'brand', 'reversed', 'accent'],
     },
   },
   value: {
     type: { name: 'number', required: false },
-    description: 'The value of the badge.',
-    defaultValue: null,
+    description: 'The value in the badge.',
+    defaultValue: 0,
+    table: {
+      type: {
+        summary: 'number',
+      },
+      defaultValue: { summary: 0 },
+    },
+    control: { type: 'range', min: 0, max: 100 },
   },
 };
 
