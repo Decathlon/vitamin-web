@@ -43,8 +43,7 @@ export const VtmnLink = ({
         { 'vtmn-link--icon-along': standalone && iconAlong },
         className,
       )}
-      {...props}
-    >
+      {...props}>
       {children}
     </a>
   );
