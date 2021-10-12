@@ -68,16 +68,14 @@ export class VtmnTextInput implements ComponentInterface {
                 .join(' ')}
               id={this.identifier}
               placeholder={this.placeholder}
-              disabled={this.disabled}
-            ></textarea>,
+              disabled={this.disabled}></textarea>,
             <p
               class={[
                 'vtmn-text-input_helper-text',
                 this.error && 'vtmn-text-input_helper-text--error',
               ]
                 .filter(Boolean)
-                .join(' ')}
-            >
+                .join(' ')}>
               {this.helperText}
             </p>,
           ]
@@ -104,8 +102,7 @@ export class VtmnTextInput implements ComponentInterface {
                 this.error && 'vtmn-text-input_helper-text--error',
               ]
                 .filter(Boolean)
-                .join(' ')}
-            >
+                .join(' ')}>
               {this.helperText}
             </p>,
           ],

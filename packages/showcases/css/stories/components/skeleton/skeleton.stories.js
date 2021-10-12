@@ -9,7 +9,8 @@ export default {
     },
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vitamin-Web-UI-kit-v0?node-id=3451%3A10738',
+      url:
+        'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vitamin-Web-UI-kit-v0?node-id=3451%3A10738',
     },
   },
 };
