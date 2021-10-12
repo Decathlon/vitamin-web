@@ -13,6 +13,10 @@
   align-items: center;
 }
 
+.vtmn-navbar span {
+  font-size: var(--vtmn-typo_title-5-font-size);
+}
+
 .vtmn-navbar_left-navigation {
   height: 100%;
   display: flex;
@@ -23,9 +27,11 @@
 }
 
 .vtmn-navbar_left-navigation > div {
-  border: 1px dashed blue;
   height: 100%;
-  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .vtmn-navbar_logo {
@@ -36,10 +42,32 @@
 }
 
 .vtmn-navbar_middle-area {
-  border: 1px dashed blue;
   height: 100%;
   width: 100%;
   margin: 0 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.vtmn-navbar_middle-area .vtmn-text-input_container {
+  width: 100%;
+  height: fit-content;
+}
+
+.vtmn-navbar_middle-area .vtmn-text-input_container span[class^='vtmx-'] {
+  position: absolute;
+  top: 0;
+  bottom: initial;
+  right: 10px;
+  transform: translate(0, 50%);
+}
+
+.vtmn-navbar_middle-area input {
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
 }
 
 .vtmn-navbar_right-navigation {
@@ -53,9 +81,11 @@
 
 .vtmn-navbar_right-navigation > div {
   height: 100%;
-  aspect-ratio: 1 / 1;
-  border: 1px dashed blue;
   margin: 0 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .vtmn-navbar_right-navigation > div:first-child {
