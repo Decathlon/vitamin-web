@@ -23,14 +23,13 @@
   "module": "dist/custom-elements/index.js",
   "types": "dist/custom-elements/index.d.ts",
   "files": [
-    "dist/",
-    "loader/"
+    "dist/"
   ],
   "scripts": {
     "build": "stencil build --docs --prod --ci",
     "generate": "stencil generate",
     "prestart": "yarn build",
-    "start": "chokidar \"src/**\" -i \"(dist|loader|www)/**\" -c \"stencil build --docs\""
+    "start": "chokidar \"src/**\" -i \"dist/**\" -c \"stencil build --docs\""
   },
   "dependencies": {
     "@stencil/core": "^2.0.1",
