@@ -55,8 +55,7 @@ export class VtmnButton implements ComponentInterface {
         ${!this.iconAlone && this.iconLeft ? 'vtmn-btn--icon-left' : ''} ${
           !this.iconAlone && this.iconRight ? 'vtmn-btn--icon-right' : ''
         } ${this.iconAlone ? 'vtmn-btn--icon-alone' : ''}`}
-        type="button"
-      >
+        type="button">
         {this.iconLeft && <span class={`vtmx-${this.iconLeft}`}></span>}
         {this.iconAlone ? (
           <span class={`vtmx-${this.iconAlone}`}></span>

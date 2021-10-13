@@ -19,8 +19,7 @@ export const VtmnLoader = ({
   return (
     <div
       className={`vtmn-loader vtmn-loader_size--${size} ${className}`}
-      {...props}
-    ></div>
+      {...props}></div>
   );
 };
 
