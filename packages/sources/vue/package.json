@@ -18,19 +18,17 @@
     "url": "git+https://github.com/Decathlon/vitamin-web.git"
   },
   "license": "Apache-2.0",
-  "main": "dist/cjs/index.js",
-  "unpkg": "dist/vuelib.min.js",
-  "module": "dist/esm/index.js",
-  "types": "types/index.d.ts",
+  "main": "dist/vtmn/vue.cjs.js",
+  "module": "dist/vtmn/vue.es.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist",
-    "src",
-    "types/*.d.ts"
+    "dist/*.d.ts"
   ],
   "scripts": {
-    "build": "rimraf dist && tsc --emitDeclarationOnly && vite build",
+    "build": "vite build && tsc --emitDeclarationOnly",
     "lint": "vue-cli-service lint",
-    "start": "rimraf dist && tsc --emitDeclarationOnly && vite build --watch"
+    "start": "concurrently \"vite build --watch\" \"tsc --emitDeclarationOnly\""
   },
   "eslintConfig": {
     "env": {
@@ -71,6 +69,7 @@
     "@vue/eslint-config-prettier": "6.0.0",
     "@vue/eslint-config-typescript": "7.0.0",
     "babel-eslint": "^10.1.0",
+    "concurrently": "^6.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.0.0",
     "eslint-plugin-prettier": "4.0.0",

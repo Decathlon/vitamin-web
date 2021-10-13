@@ -1,4 +1,4 @@
-import { VtmnTextInput } from '@vtmn/vue/dist/esm/VtmnTextInput';
+import { VtmnTextInput } from '@vtmn/vue';
 import {
   argTypes,
   parameters,

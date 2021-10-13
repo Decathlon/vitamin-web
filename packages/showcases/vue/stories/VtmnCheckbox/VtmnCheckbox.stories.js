@@ -1,4 +1,4 @@
-import { VtmnCheckbox } from '@vtmn/vue/dist/esm/VtmnCheckbox';
+import { VtmnCheckbox } from '@vtmn/vue';
 import {
   argTypes,
   parameters,

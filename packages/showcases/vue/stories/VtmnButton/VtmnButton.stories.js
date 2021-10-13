@@ -1,4 +1,4 @@
-import { VtmnButton } from '@vtmn/vue/dist/esm/VtmnButton';
+import { VtmnButton } from '@vtmn/vue';
 import {
   argTypes,
   parameters,
