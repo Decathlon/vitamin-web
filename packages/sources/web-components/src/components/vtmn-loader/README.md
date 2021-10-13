@@ -9,7 +9,7 @@
 
 | Property | Attribute | Description             | Type                             | Default    |
 | -------- | --------- | ----------------------- | -------------------------------- | ---------- |
-| `size`   | `size`    | The size of the toggle. | `"large" \| "medium" \| "small"` | `'medium'` |
+| `size`   | `size`    | The size of the loader. | `"large" \| "medium" \| "small"` | `'medium'` |
 
 
 ----------------------------------------------

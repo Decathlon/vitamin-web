@@ -114,7 +114,7 @@ export namespace Components {
     }
     interface VtmnLoader {
         /**
-          * The size of the toggle.
+          * The size of the loader.
           * @type {string}
           * @defaultValue 'medium'
          */
@@ -379,7 +379,7 @@ declare namespace LocalJSX {
     }
     interface VtmnLoader {
         /**
-          * The size of the toggle.
+          * The size of the loader.
           * @type {string}
           * @defaultValue 'medium'
          */
