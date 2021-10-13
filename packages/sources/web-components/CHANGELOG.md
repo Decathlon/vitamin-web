@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.15.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.14.26...@vtmn/web-components@0.15.0) (2021-10-13)
+
+
+### Features
+
+* **@vtmn/web-components:** add loader component ([47a5665](https://github.com/Decathlon/vitamin-web/commit/47a56659da380e7bc5e3f35277f9b3602a567bbb))
+
+
+
+
+
 ## [0.14.26](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.14.25...@vtmn/web-components@0.14.26) (2021-10-12)
 
 **Note:** Version bump only for package @vtmn/web-components
