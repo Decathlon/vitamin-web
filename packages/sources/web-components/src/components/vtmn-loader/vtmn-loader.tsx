@@ -6,7 +6,7 @@ import { Component, Prop, h, ComponentInterface } from '@stencil/core';
 })
 export class VtmnLoader implements ComponentInterface {
   /**
-   * The size of the toggle.
+   * The size of the loader.
    * @type {string}
    * @defaultValue 'medium'
    */
