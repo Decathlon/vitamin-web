@@ -49,8 +49,7 @@ export const VtmnToggle = ({
 }: VtmnToggleProps) => {
   return (
     <div
-      className={clsx('vtmn-toggle', `vtmn-toggle_size--${size}`, className)}
-    >
+      className={clsx('vtmn-toggle', `vtmn-toggle_size--${size}`, className)}>
       <div className="vtmn-toggle_switch">
         <input
           type="checkbox"
