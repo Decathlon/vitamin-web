@@ -1,14 +1,10 @@
-/* Tailwind CSS */
+/* Guidelines */
 @import 'tailwindcss/base';
+@import '@vtmn/css-design-tokens/src';
+@import '@vtmn/css-utilities/src';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import 'tailwindcss/screens';
-
-/* Design tokens */
-@import '@vtmn/css-design-tokens/src';
-
-/* Utilities */
-@import '@vtmn/css-utilities/src';
 
 /* Components */
 @import '@vtmn/css-alert/src';
