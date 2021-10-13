@@ -40,6 +40,7 @@
     "@vtmn/css-button": "^0.6.7",
     "@vtmn/css-checkbox": "^0.4.16",
     "@vtmn/css-link": "^0.3.16",
+    "@vtmn/css-loader": "^0.1.14",
     "@vtmn/css-radio-button": "^0.4.17",
     "@vtmn/css-text-input": "^0.8.9",
     "@vtmn/css-toggle": "^0.3.16",

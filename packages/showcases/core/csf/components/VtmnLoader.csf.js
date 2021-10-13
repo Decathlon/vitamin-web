@@ -3,8 +3,14 @@ export const argTypes = {
     type: { name: 'string', required: false },
     description: 'The size of the loader.',
     defaultValue: 'medium',
+    table: {
+      type: {
+        summary: 'string',
+      },
+      defaultValue: { summary: 'medium' },
+    },
     control: {
-      type: 'select',
+      type: 'radio',
       options: ['small', 'medium', 'large'],
     },
   },
