@@ -27,7 +27,8 @@ export const VtmnBadge = ({
       className={`vtmn-badge vtmn-badge_variant--${variant} ${
         !value && value !== 0 ? 'vtmn-badge_size--without-value' : ''
       } ${className ? className : ''}`}
-      {...props}>
+      {...props}
+    >
       {value && value > 99 ? '99+' : value}
     </span>
   );

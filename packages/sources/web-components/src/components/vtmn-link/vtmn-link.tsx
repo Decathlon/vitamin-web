@@ -47,7 +47,8 @@ export class VtmnLink implements ComponentInterface {
           this.standalone && this.iconAlong && 'vtmn-link--icon-along',
         ]
           .filter(Boolean)
-          .join(' ')}>
+          .join(' ')}
+      >
         <slot></slot>
       </a>
     );
