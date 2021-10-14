@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.15.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.15.1...@vtmn/web-components@0.15.2) (2021-10-14)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** order of CSS classes ([#679](https://github.com/Decathlon/vitamin-web/issues/679)) ([9ca377f](https://github.com/Decathlon/vitamin-web/commit/9ca377fc2342d1b97c19d0517158f541983811f2))
+
+
+
+
+
 ## [0.15.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.15.0...@vtmn/web-components@0.15.1) (2021-10-13)
 
 **Note:** Version bump only for package @vtmn/web-components
