@@ -4,9 +4,15 @@ export const argTypes = {
   variant: {
     type: { name: 'string', required: false },
     description: 'The variant of the button.',
+    table: {
+      type: {
+        summary: 'string',
+      },
+      defaultValue: { summary: 'primary' },
+    },
     defaultValue: 'primary',
     control: {
-      type: 'select',
+      type: 'radio',
       options: [
         'primary',
         'primary-reversed',
@@ -21,16 +27,42 @@ export const argTypes = {
   size: {
     type: { name: 'string', required: false },
     description: 'The size of the button.',
+    table: {
+      type: {
+        summary: 'string',
+      },
+      defaultValue: { summary: 'medium' },
+    },
     defaultValue: 'medium',
     control: {
-      type: 'select',
+      type: 'radio',
       options: ['small', 'medium', 'large', 'stretched'],
+    },
+  },
+  label: {
+    type: { name: 'string', required: false },
+    description: 'The text label in the the button.',
+    table: {
+      type: {
+        summary: 'string',
+      },
+      defaultValue: { summary: 'Button' },
+    },
+    defaultValue: 'Button',
+    control: {
+      type: 'text',
     },
   },
   iconLeft: {
     type: { name: 'string', required: false },
     description: 'The icon to display on the left hand side of button.',
-    defaultValue: null,
+    table: {
+      type: {
+        summary: 'VitamixId',
+      },
+      defaultValue: { summary: 'undefined' },
+    },
+    defaultValue: undefined,
     control: {
       type: 'select',
       options: ['', ...Object.keys(vitamixIconsList)],
@@ -39,7 +71,13 @@ export const argTypes = {
   iconRight: {
     type: { name: 'string', required: false },
     description: 'The icon to display on the right hand side of button.',
-    defaultValue: null,
+    table: {
+      type: {
+        summary: 'VitamixId',
+      },
+      defaultValue: { summary: 'undefined' },
+    },
+    defaultValue: undefined,
     control: {
       type: 'select',
       options: ['', ...Object.keys(vitamixIconsList)],
@@ -47,8 +85,14 @@ export const argTypes = {
   },
   iconAlone: {
     type: { name: 'string', required: false },
-    description: 'The to display when it is a button with icon only.',
-    defaultValue: null,
+    description: 'The icon to display when it is a button with icon only.',
+    table: {
+      type: {
+        summary: 'VitamixId',
+      },
+      defaultValue: { summary: 'undefined' },
+    },
+    defaultValue: undefined,
     control: {
       type: 'select',
       options: ['', ...Object.keys(vitamixIconsList)],

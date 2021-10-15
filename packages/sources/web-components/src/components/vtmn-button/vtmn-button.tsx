@@ -8,9 +8,10 @@ import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
 export class VtmnButton implements ComponentInterface {
   /**
    * The variant of the button.
+   * @type {string}
    * @defaultValue 'primary'
    */
-  @Prop() variant:
+  @Prop() variant?:
     | 'primary'
     | 'primary-reversed'
     | 'secondary'
@@ -21,30 +22,38 @@ export class VtmnButton implements ComponentInterface {
 
   /**
    * The size of the button.
+   * @type {string}
    * @defaultValue 'medium'
    */
-  @Prop() size: 'small' | 'medium' | 'large' | 'stretched' = 'medium';
+  @Prop() size?: 'small' | 'medium' | 'large' | 'stretched' = 'medium';
+
+  /**
+   * The size of the button.
+   * @type {string}
+   * @defaultValue 'Button'
+   */
+  @Prop() label?: string = 'Button';
 
   /**
    * Icon to display on the left hand side of button
    * @type {VitamixId}
    * @defaultValue undefined
    */
-  @Prop({ attribute: 'iconleft' }) iconLeft: VitamixId;
+  @Prop({ attribute: 'iconleft' }) iconLeft?: VitamixId;
 
   /**
    * Icon to display on the right hand side of button
    * @type {VitamixId}
    * @defaultValue undefined
    */
-  @Prop({ attribute: 'iconright' }) iconRight: VitamixId;
+  @Prop({ attribute: 'iconright' }) iconRight?: VitamixId;
 
   /**
    * Icon to display when it is a button with icon only
    * @type {VitamixId}
    * @defaultValue undefined
    */
-  @Prop({ attribute: 'iconalone' }) iconAlone: VitamixId;
+  @Prop({ attribute: 'iconalone' }) iconAlone?: VitamixId;
 
   render() {
     return (
@@ -57,13 +66,17 @@ export class VtmnButton implements ComponentInterface {
         } ${this.iconAlone ? 'vtmn-btn--icon-alone' : ''}`}
         type="button"
       >
-        {this.iconLeft && <span class={`vtmx-${this.iconLeft}`}></span>}
+        {!this.iconAlone && this.iconLeft && (
+          <span class={`vtmx-${this.iconLeft}`}></span>
+        )}
         {this.iconAlone ? (
           <span class={`vtmx-${this.iconAlone}`}></span>
         ) : (
-          <slot></slot>
+          this.label
         )}
-        {this.iconRight && <span class={`vtmx-${this.iconRight}`}></span>}
+        {!this.iconAlone && this.iconRight && (
+          <span class={`vtmx-${this.iconRight}`}></span>
+        )}
       </button>
     );
   }

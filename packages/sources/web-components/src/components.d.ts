@@ -27,29 +27,37 @@ export namespace Components {
           * @type {VitamixId}
           * @defaultValue undefined
          */
-        "iconAlone": VitamixId;
+        "iconAlone"?: VitamixId;
         /**
           * Icon to display on the left hand side of button
           * @type {VitamixId}
           * @defaultValue undefined
          */
-        "iconLeft": VitamixId;
+        "iconLeft"?: VitamixId;
         /**
           * Icon to display on the right hand side of button
           * @type {VitamixId}
           * @defaultValue undefined
          */
-        "iconRight": VitamixId;
+        "iconRight"?: VitamixId;
         /**
           * The size of the button.
+          * @type {string}
+          * @defaultValue 'Button'
+         */
+        "label"?: string;
+        /**
+          * The size of the button.
+          * @type {string}
           * @defaultValue 'medium'
          */
-        "size": 'small' | 'medium' | 'large' | 'stretched';
+        "size"?: 'small' | 'medium' | 'large' | 'stretched';
         /**
           * The variant of the button.
+          * @type {string}
           * @defaultValue 'primary'
          */
-        "variant": | 'primary'
+        "variant"?: | 'primary'
     | 'primary-reversed'
     | 'secondary'
     | 'tertiary'
@@ -307,11 +315,19 @@ declare namespace LocalJSX {
         "iconRight"?: VitamixId;
         /**
           * The size of the button.
+          * @type {string}
+          * @defaultValue 'Button'
+         */
+        "label"?: string;
+        /**
+          * The size of the button.
+          * @type {string}
           * @defaultValue 'medium'
          */
         "size"?: 'small' | 'medium' | 'large' | 'stretched';
         /**
           * The variant of the button.
+          * @type {string}
           * @defaultValue 'primary'
          */
         "variant"?: | 'primary'

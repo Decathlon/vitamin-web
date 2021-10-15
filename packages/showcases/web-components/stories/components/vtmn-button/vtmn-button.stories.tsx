@@ -12,8 +12,7 @@ export default {
   parameters,
 };
 
-const Template = (args) =>
-  html`<vtmn-button ...=${spread(args)}>Button</vtmn-button>`;
+const Template = (args) => html`<vtmn-button ...=${spread(args)} />`;
 
 export const Overview = Template.bind({});
 Overview.args = {};
