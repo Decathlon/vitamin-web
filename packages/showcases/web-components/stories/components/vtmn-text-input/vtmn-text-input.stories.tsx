@@ -13,7 +13,7 @@ export default {
 };
 
 const Template = (args) =>
-  html`<vtmn-text-input ...=${spread(args)}></vtmn-text-input>`;
+  html`<vtmn-text-input ...=${spread(args)}>Label</vtmn-text-input>`;
 
 export const Overview = Template.bind({});
 Overview.args = {};
