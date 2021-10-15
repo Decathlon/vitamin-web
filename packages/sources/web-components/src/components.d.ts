@@ -88,29 +88,34 @@ export namespace Components {
     interface VtmnLink {
         /**
           * The hypertext link
+          * @type {string}
           * @defaultValue '#'
          */
         "href": string;
         /**
-          * Is the link has an icon or not
-          * @defaultValue undefined
+          * The size of the link
+          * @type {string}
+          * @defaultValue 'medium'
          */
-        "iconAlong": boolean;
+        "size"?: 'small' | 'medium' | 'large';
         /**
-          * The size of the link.
-          * @defaultValue undefined
+          * Whether the link is standalone
+          * @type {boolean}
+          * @defaultValue false
          */
-        "size": 'small' | 'medium' | 'large';
-        /**
-          * Is the link standalone or not
-          * @defaultValue undefined
-         */
-        "standalone": boolean;
+        "standalone"?: boolean;
         /**
           * The target of the link
-          * @defaultValue null
+          * @type {string}
+          * @defaultValue '_self'
          */
-        "target": string;
+        "target"?: string;
+        /**
+          * Whether the link has an icon
+          * @type {boolean}
+          * @defaultValue false
+         */
+        "withIcon": boolean;
     }
     interface VtmnLoader {
         /**
@@ -353,29 +358,34 @@ declare namespace LocalJSX {
     interface VtmnLink {
         /**
           * The hypertext link
+          * @type {string}
           * @defaultValue '#'
          */
         "href"?: string;
         /**
-          * Is the link has an icon or not
-          * @defaultValue undefined
-         */
-        "iconAlong"?: boolean;
-        /**
-          * The size of the link.
-          * @defaultValue undefined
+          * The size of the link
+          * @type {string}
+          * @defaultValue 'medium'
          */
         "size"?: 'small' | 'medium' | 'large';
         /**
-          * Is the link standalone or not
-          * @defaultValue undefined
+          * Whether the link is standalone
+          * @type {boolean}
+          * @defaultValue false
          */
         "standalone"?: boolean;
         /**
           * The target of the link
-          * @defaultValue null
+          * @type {string}
+          * @defaultValue '_self'
          */
         "target"?: string;
+        /**
+          * Whether the link has an icon
+          * @type {boolean}
+          * @defaultValue false
+         */
+        "withIcon"?: boolean;
     }
     interface VtmnLoader {
         /**
