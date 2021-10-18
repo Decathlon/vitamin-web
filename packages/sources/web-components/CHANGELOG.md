@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.16.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.15.2...@vtmn/web-components@0.16.0) (2021-10-18)
+
+
+### Features
+
+* **@vtmn/web-components:** refacto link, change css style order ([#682](https://github.com/Decathlon/vitamin-web/issues/682)) ([45d96cc](https://github.com/Decathlon/vitamin-web/commit/45d96ccf2acbb571ac9de724a12abadea675b626))
+
+
+
+
+
 ## [0.15.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/web-components@0.15.1...@vtmn/web-components@0.15.2) (2021-10-14)
 
 
