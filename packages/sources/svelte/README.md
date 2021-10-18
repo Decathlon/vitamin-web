@@ -83,8 +83,8 @@ Example with `VtmnButton` :
 ```js
 // App.svelte
 <script>
-  import VtmnButton from '@vtmn/svelte/src/components/VtmnButton.svelte';
-</script>
+  import { VtmnButton } from '@vtmn/svelte';
+<script>
 
 <VtmnButton>Button</VtmnButton>
 ```
