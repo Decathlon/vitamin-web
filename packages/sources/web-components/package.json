@@ -18,46 +18,31 @@
     "url": "git+https://github.com/Decathlon/vitamin-web.git"
   },
   "license": "Apache-2.0",
-  "main": "dist/index.cjs.js",
-  "unpkg": "dist/vtmn-web-components/index.esm.js",
-  "module": "dist/index.js",
-  "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": "./dist/web-components.es.js"
+  },
+  "main": "dist/web-components.es.js",
+  "types": "types/web-components.d.ts",
   "files": [
-    "dist/"
+    "dist",
+    "types"
   ],
   "scripts": {
-    "build": "stencil build --docs --prod --ci",
-    "generate": "stencil generate",
-    "prestart": "yarn build",
-    "start": "chokidar \"src/**\" -i \"dist/**\" -c \"stencil build --docs\""
+    "build": "tsc && vite build",
+    "start": "tsc && vite build --watch"
   },
   "dependencies": {
-    "@stencil/core": "^2.0.1"
+    "lit": "^2.0.0"
   },
   "devDependencies": {
-    "@stencil/postcss": "^2.0.0",
-    "@vtmn/css-badge": "^0.3.17",
     "@vtmn/css-button": "^0.6.8",
-    "@vtmn/css-checkbox": "^0.4.17",
-    "@vtmn/css-link": "^0.4.0",
-    "@vtmn/css-loader": "^0.1.15",
-    "@vtmn/css-radio-button": "^0.4.18",
-    "@vtmn/css-text-input": "^0.8.10",
-    "@vtmn/css-toggle": "^0.3.17",
-    "@vtmn/icons": "^0.5.0",
-    "chokidar-cli": "^3.0.0",
-    "postcss-import": "^14.0.0"
-  },
-  "peerDependencies": {
-    "@vtmn/css-design-tokens": "^0.8.4"
+    "@vtmn/css-design-tokens": "^0.8.5",
+    "typescript": "^4.3.2",
+    "vite": "^2.6.4"
   },
   "publishConfig": {
     "access": "public"
   },
-  "collection": "dist/collection/collection-manifest.json",
-  "collection:main": "dist/collection/index.js",
-  "es2015": "dist/esm/index.js",
-  "es2017": "dist/esm/index.js",
   "licenses": [
     {
       "type": "Apache-2.0",
