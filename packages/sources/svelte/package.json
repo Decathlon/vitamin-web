@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@vtmn/css-button": "^0.6.8",
-    "@vtmn/css-design-tokens: "^0.8.5",
+    "@vtmn/css-design-tokens": "^0.8.5",
     "@vtmn/css-link": "^0.3.17",
     "@vtmn/css-popover": "^0.2.12",
     "@vtmn/css-text-input": "^0.8.10"
