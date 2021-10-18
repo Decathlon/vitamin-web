@@ -47,6 +47,9 @@
     "svelte": "3.43.1",
     "svelte-preprocess": "4.9.8"
   },
+  "peerDependencies": {
+    "svelte": "^3.34.0"
+  },
   "publishConfig": {
     "access": "public"
   },
