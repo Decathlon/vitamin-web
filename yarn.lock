@@ -2936,9 +2936,9 @@
     tslib "^2.0.0"
 
 "@nrwl/nx-cloud@^12.3.10":
-  version "12.3.13"
-  resolved "https://registry.yarnpkg.com/@nrwl/nx-cloud/-/nx-cloud-12.3.13.tgz#f2ebf28ab918af8cc61e9d45f070c4459ba42703"
-  integrity sha512-t+msfqNhhIvYMSdsh5WMcgpggHjX+RkORboNyGZS1KA6iL9mFABYxroiOeB9JxwGiA4HMjejyOVu0CzKfB8pyw==
+  version "12.5.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/nx-cloud/-/nx-cloud-12.5.0.tgz#a24d347d99a6d41242f28d649647c118cd0dafbb"
+  integrity sha512-3WhuYYNW9L4xFCdCTWBlJUN0CoWMAYpfY1tnLM/ZVgW2Akv9jLgXKbCKV+cO0xqglSy+eMokwwQnB9PxF35aYQ==
   dependencies:
     axios "^0.21.1"
     chalk "4.1.0"
@@ -5199,6 +5199,11 @@
   dependencies:
     "@typescript-eslint/types" "5.0.0"
     eslint-visitor-keys "^3.0.0"
+
+"@vtmn/css-link@^0.3.17":
+  version "0.3.17"
+  resolved "https://registry.yarnpkg.com/@vtmn/css-link/-/css-link-0.3.17.tgz#4bdd95cd04187fb9c7cd395489613907a91d0c42"
+  integrity sha512-vDdo64czpjih423To3JTO1YFnZVX7voWqDwmaZo6dViwUEZK+x4vweHX5CD/citKCq/YFJ1rrSyUXbd8x5Qqng==
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.2.1":
   version "1.2.1"
