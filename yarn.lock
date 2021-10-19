@@ -5205,6 +5205,11 @@
   resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-1.9.3.tgz#93d61893ce6c723d0209af0483ec8b91a2cd811f"
   integrity sha512-yW6H/q+4Mc2PcVjSOelcsMrg/k15DnMUz8jyCFsI04emc3aLwo4AoofUfGnjHUkgirrDxSJLVqQVGhonQ3yykA==
 
+"@vtmn/css-link@^0.3.17":
+  version "0.3.17"
+  resolved "https://registry.yarnpkg.com/@vtmn/css-link/-/css-link-0.3.17.tgz#4bdd95cd04187fb9c7cd395489613907a91d0c42"
+  integrity sha512-vDdo64czpjih423To3JTO1YFnZVX7voWqDwmaZo6dViwUEZK+x4vweHX5CD/citKCq/YFJ1rrSyUXbd8x5Qqng==
+
 "@vue/babel-helper-vue-jsx-merge-props@^1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@vue/babel-helper-vue-jsx-merge-props/-/babel-helper-vue-jsx-merge-props-1.2.1.tgz#31624a7a505fb14da1d58023725a4c5f270e6a81"
