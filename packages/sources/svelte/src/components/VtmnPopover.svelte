@@ -16,7 +16,7 @@
 </script>
 
 <script>
-  import '@vtmn/css-popover/dist/index.css';
+  import '@vtmn/css-popover';
   import { cn } from '../utils/classnames';
 
   /** @type {string} - An unique id */

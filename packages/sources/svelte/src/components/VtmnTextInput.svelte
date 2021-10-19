@@ -1,5 +1,5 @@
 <script>
-  import '@vtmn/css-text-input/dist/index.css';
+  import '@vtmn/css-text-input';
 
   /** @restProps { input | textarea } */
 

@@ -15,9 +15,8 @@ export class VtmnLoader implements ComponentInterface {
   render() {
     return (
       <div
-        class={['vtmn-loader', `vtmn-loader_size--${this.size}`].join(
-          ' ',
-        )}></div>
+        class={['vtmn-loader', `vtmn-loader_size--${this.size}`].join(' ')}
+      ></div>
     );
   }
 }

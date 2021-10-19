@@ -1,5 +1,5 @@
 <script>
-  import '@vtmn/css-button/dist/index.css';
+  import '@vtmn/css-button';
   import { cn } from '../utils/classnames';
 
   /** @restProps { button } */
