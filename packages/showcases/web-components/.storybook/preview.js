@@ -1,6 +1,6 @@
 import '@vtmn/css';
 import '@vtmn/icons/dist/vitamix/font/vitamix.css';
-import '@vtmn/web-components/dist/web-components.es.js';
+import '@vtmn/web-components';
 import { withDesign } from 'storybook-addon-designs';
 import backgrounds from '@vtmn/showcase-core/addons/backgrounds.json';
 import viewports from '@vtmn/showcase-core/addons/viewports.json';
