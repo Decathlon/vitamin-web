@@ -45,6 +45,13 @@
     "root": true
   },
   "dependencies": {
+    "@vtmn/css-button": "^0.6.9",
+    "@vtmn/css-checkbox": "^0.4.18",
+    "@vtmn/css-design-tokens": "^0.8.6",
+    "@vtmn/css-link": "^0.3.17",
+    "@vtmn/css-radio-button": "^0.4.19",
+    "@vtmn/css-text-input": "^0.8.11",
+    "@vtmn/css-toggle": "^0.3.18",
     "core-js": "^3.18.1",
     "vue": "^3.2.1"
   },
