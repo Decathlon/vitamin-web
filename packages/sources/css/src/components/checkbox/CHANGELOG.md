@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.18](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-checkbox@0.4.17...@vtmn/css-checkbox@0.4.18) (2021-10-19)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** allow to dynamically import css modules ([#701](https://github.com/Decathlon/vitamin-web/issues/701)) ([7c6e08c](https://github.com/Decathlon/vitamin-web/commit/7c6e08c4f76aa32fe92f91d7979df73796ff66e7))
+
+
+
+
+
 ## [0.4.17](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-checkbox@0.4.16...@vtmn/css-checkbox@0.4.17) (2021-10-14)
 
 **Note:** Version bump only for package @vtmn/css-checkbox

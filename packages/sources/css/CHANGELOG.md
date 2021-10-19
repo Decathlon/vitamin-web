@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.30.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.30.0...@vtmn/css@0.30.1) (2021-10-19)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** allow to dynamically import css modules ([#701](https://github.com/Decathlon/vitamin-web/issues/701)) ([7c6e08c](https://github.com/Decathlon/vitamin-web/commit/7c6e08c4f76aa32fe92f91d7979df73796ff66e7))
+
+
+
+
+
 # [0.30.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.29.10...@vtmn/css@0.30.0) (2021-10-18)
 
 
