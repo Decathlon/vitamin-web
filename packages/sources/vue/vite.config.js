@@ -1,12 +1,13 @@
 import { defineConfig } from 'vite';
 import path from 'path';
 import vue from '@vitejs/plugin-vue';
+import typescript from '@rollup/plugin-typescript';
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const packagejson = require(path.resolve(process.cwd(), './package.json'));
 
 module.exports = defineConfig({
-  plugins: [vue()],
+  plugins: [vue(), typescript({ sourceMap: true })],
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),

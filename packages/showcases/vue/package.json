@@ -17,6 +17,7 @@
     "@storybook/addon-a11y": "6.3.10",
     "@storybook/addon-essentials": "6.3.10",
     "@storybook/vue3": "6.3.10",
+    "@vtmn/css-design-tokens": "*",
     "@vtmn/icons": "*",
     "@vtmn/showcase-core": "*",
     "@vtmn/vue": "*",
