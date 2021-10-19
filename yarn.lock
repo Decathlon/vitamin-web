@@ -3152,9 +3152,9 @@
     react-lifecycles-compat "^3.0.4"
 
 "@rollup/plugin-alias@^3.1.5":
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/@rollup/plugin-alias/-/plugin-alias-3.1.5.tgz#73356a3a1eab2e1e2fd952f9f53cd89fc740d952"
-  integrity sha512-yzUaSvCC/LJPbl9rnzX3HN7vy0tq7EzHoEiQl1ofh4n5r2Rd5bj/+zcJgaGA76xbw95/JjWQyvHg9rOJp2y0oQ==
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/@rollup/plugin-alias/-/plugin-alias-3.1.6.tgz#5adc4079f2fb6a185d9f852f9e589c47edac9021"
+  integrity sha512-cN1LPc/nv8MUJOyj2X/7ETAbkvR+NvEkYIeEKxjBAbowLWGmNtmpVhV4uFoVaM5Y2t0H1sELT3mohRmSfSoffw==
   dependencies:
     slash "^3.0.0"
 
@@ -5199,6 +5199,11 @@
   dependencies:
     "@typescript-eslint/types" "5.0.0"
     eslint-visitor-keys "^3.0.0"
+
+"@vtmn/css-link@^0.3.17":
+  version "0.3.17"
+  resolved "https://registry.yarnpkg.com/@vtmn/css-link/-/css-link-0.3.17.tgz#4bdd95cd04187fb9c7cd395489613907a91d0c42"
+  integrity sha512-vDdo64czpjih423To3JTO1YFnZVX7voWqDwmaZo6dViwUEZK+x4vweHX5CD/citKCq/YFJ1rrSyUXbd8x5Qqng==
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.2.1":
   version "1.2.1"
