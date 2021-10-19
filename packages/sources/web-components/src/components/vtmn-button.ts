@@ -1,4 +1,4 @@
-import { html, css, LitElement, unsafeCSS } from 'lit';
+import { html, LitElement, unsafeCSS } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';
 import { VtmnButtonVariant, VtmnButtonSize } from './types';
@@ -38,18 +38,13 @@ export class VtmnButton extends LitElement {
           'vtmn-btn_size--large': this.size === 'large',
           'vtmn-btn_size--stretched': this.size === 'stretched',
         })}
-        ?disabled=${this.disabled}
       >
         <slot></slot>
       </button>
     `;
   }
 
-  static styles = [
-    css`
-      ${unsafeCSS(styles)}
-    `,
-  ];
+  static styles = [unsafeCSS(styles)];
 }
 
 declare global {
