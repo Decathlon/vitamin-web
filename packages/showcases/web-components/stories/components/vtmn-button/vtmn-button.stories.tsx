@@ -1,9 +1,6 @@
 import { html } from 'lit-html';
 import { spread } from '@open-wc/lit-helpers';
-import {
-  argTypes,
-  parameters,
-} from '@vtmn/showcase-core/csf/components/VtmnButton.csf';
+import { argTypes, parameters } from './vtmn-button.csf';
 
 export default {
   title: 'Components/vtmn-button',
