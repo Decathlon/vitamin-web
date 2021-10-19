@@ -3188,9 +3188,9 @@
     mini-svg-data-uri "^1.2.3"
 
 "@rollup/plugin-node-resolve@^13.0.5":
-  version "13.0.5"
-  resolved "https://registry.yarnpkg.com/@rollup/plugin-node-resolve/-/plugin-node-resolve-13.0.5.tgz#016abe58796a4ff544d6beac7818921e3d3777fc"
-  integrity sha512-mVaw6uxtvuGx/XCI4qBQXsDZJUfyx5vp39iE0J/7Hd6wDhEbjHr6aES7Nr9yWbuE0BY+oKp6N7Bq6jX5NCGNmQ==
+  version "13.0.6"
+  resolved "https://registry.yarnpkg.com/@rollup/plugin-node-resolve/-/plugin-node-resolve-13.0.6.tgz#29629070bb767567be8157f575cfa8f2b8e9ef77"
+  integrity sha512-sFsPDMPd4gMqnh2gS0uIxELnoRUp5kBl5knxD2EO0778G1oOJv4G1vyT2cpWz75OU2jDVcXhjVUuTAczGyFNKA==
   dependencies:
     "@rollup/pluginutils" "^3.1.0"
     "@types/resolve" "1.17.1"
@@ -5199,6 +5199,11 @@
   dependencies:
     "@typescript-eslint/types" "5.0.0"
     eslint-visitor-keys "^3.0.0"
+
+"@vtmn/css-link@^0.3.17":
+  version "0.3.17"
+  resolved "https://registry.yarnpkg.com/@vtmn/css-link/-/css-link-0.3.17.tgz#4bdd95cd04187fb9c7cd395489613907a91d0c42"
+  integrity sha512-vDdo64czpjih423To3JTO1YFnZVX7voWqDwmaZo6dViwUEZK+x4vweHX5CD/citKCq/YFJ1rrSyUXbd8x5Qqng==
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.2.1":
   version "1.2.1"
