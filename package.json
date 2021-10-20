@@ -44,7 +44,6 @@
     "postinstall": "is-ci || husky install",
     "lint": "yarn prettier && yarn stylelint",
     "lint:fix": "yarn prettier:fix && yarn stylelint:fix",
-    "prepare": "yarn build && yarn test",
     "prettier": "prettier .",
     "prettier:fix": "prettier . --write",
     "release": "lerna publish --no-verify-access --no-private --no-commit-hooks --yes",
