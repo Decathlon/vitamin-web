@@ -4,6 +4,7 @@
   import { parameters } from '@vtmn/showcase-core/csf/components/VtmnPopover.csf';
 
   const popoverArgs = {
+    id: 'My popover',
     title: 'This is the title of the popover',
     body: 'A popover can appear when users click or focus an element.',
     position: VTMN_POPOVER_POSITION.BOTTOM,
@@ -24,7 +25,7 @@
 
 <Template let:args>
   <div>
-    <VtmnPopover position={args.position}>
+    <VtmnPopover position={args.position} id={args.id}>
       <svelte:fragment slot="title">{args.title}</svelte:fragment>
       <svelte:fragment slot="body">{args.body}</svelte:fragment>
       <VtmnLink slot="placeholder">Popover on the {args.position}</VtmnLink>
