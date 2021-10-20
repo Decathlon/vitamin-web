@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.19](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-checkbox@0.4.18...@vtmn/css-checkbox@0.4.19) (2021-10-20)
+
+**Note:** Version bump only for package @vtmn/css-checkbox
+
+
+
+
+
 ## [0.4.18](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-checkbox@0.4.17...@vtmn/css-checkbox@0.4.18) (2021-10-19)
 
 
