@@ -31,7 +31,7 @@
   "dependencies": {
     "@vtmn/css-button": "^0.6.9",
     "@vtmn/css-design-tokens": "^0.8.6",
-    "@vtmn/css-link": "^0.3.17",
+    "@vtmn/css-link": "^0.4.1",
     "@vtmn/css-popover": "^0.2.13",
     "@vtmn/css-text-input": "^0.8.11"
   },
