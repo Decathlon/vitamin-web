@@ -1,10 +1,12 @@
 <script>
   import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
-  import { VtmnPopover, VtmnButton, VTMN_POPOVER_POSITION } from '@vtmn/svelte';
+  import { VtmnPopover, VtmnLink, VTMN_POPOVER_POSITION } from '@vtmn/svelte';
+  import { parameters } from '@vtmn/showcase-core/csf/components/VtmnPopover.csf';
 
   const popoverArgs = {
     title: 'This is the title of the popover',
-    body: 'A popover can appear when users click or focus an element to provide his description in details, and often also with a link or button inside. Popovers will automatically close when clicking outside the popover bounds.',
+    body: 'A popover can appear when users click or focus an element.',
+    position: VTMN_POPOVER_POSITION.BOTTOM,
   };
 </script>
 
@@ -14,54 +16,20 @@
   argTypes={{
     position: {
       control: 'select',
-      options: Object.keys(VTMN_POPOVER_POSITION),
-      mapping: VTMN_POPOVER_POSITION,
+      options: Object.values(VTMN_POPOVER_POSITION),
     },
-    title: { control: 'text' },
-    body: { control: 'text' },
   }}
+  {parameters}
 />
 
 <Template let:args>
-  <div class="story-container">
+  <div>
     <VtmnPopover position={args.position}>
       <svelte:fragment slot="title">{args.title}</svelte:fragment>
       <svelte:fragment slot="body">{args.body}</svelte:fragment>
-      <VtmnButton slot="placeholder">{args.position}</VtmnButton>
+      <VtmnLink slot="placeholder">Popover on the {args.position}</VtmnLink>
     </VtmnPopover>
   </div>
 </Template>
 
-<Story name="All positions">
-  <div class="story-container">
-    {#each Object.values(VTMN_POPOVER_POSITION) as position}
-      <VtmnPopover {position}>
-        <svelte:fragment slot="title">{popoverArgs.title}</svelte:fragment>
-        <svelte:fragment slot="body">{popoverArgs.body}</svelte:fragment>
-        <VtmnButton slot="placeholder">{position}</VtmnButton>
-      </VtmnPopover>
-    {/each}
-  </div>
-</Story>
-
-<Story
-  name="With Controls"
-  args={{
-    position: VTMN_POPOVER_POSITION.BOTTOM,
-    ...popoverArgs,
-  }}
-/>
-
-<style>
-  .story-container {
-    font-size: 1rem;
-
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 1rem;
-  }
-</style>
+<Story name="Overview" args={popoverArgs} />

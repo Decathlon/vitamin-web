@@ -84,7 +84,7 @@ Then, you just need to import components you need. Example with `VtmnButton` :
 // App.svelte
 <script>
   import { VtmnButton } from '@vtmn/svelte';
-<script>
+</script>
 
 <VtmnButton>Button</VtmnButton>
 ```

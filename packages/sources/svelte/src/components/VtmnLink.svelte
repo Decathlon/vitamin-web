@@ -2,7 +2,17 @@
   import '@vtmn/css-link';
   import { cn } from '../utils/classnames';
 
-  /** @restProps { a } */
+  /**
+   * The href of the link.
+   * @type {string}
+   */
+  export let href;
+
+  /**
+   * The target of the link.
+   * @type {string}
+   */
+  export let target;
 
   /**
    * The size of the link.
@@ -27,7 +37,7 @@
 
   let className;
   /**
-   * @type {string} A custom class to apply to the component.
+   * @type {string} Custom classes to apply to the component.
    */
   export { className as class };
 
@@ -40,6 +50,4 @@
   );
 </script>
 
-<a class={componentClass} {...$$restProps}>
-  <slot />
-</a>
+<a {href} {target} class={componentClass} {...$$restProps}><slot /></a>

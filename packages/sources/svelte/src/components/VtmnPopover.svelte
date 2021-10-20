@@ -10,7 +10,7 @@
 
   let className;
   /**
-   * @type {string} A custom class to apply to the component.
+   * @type {string} Custom classes to apply to the component.
    */
   export { className as class };
 
