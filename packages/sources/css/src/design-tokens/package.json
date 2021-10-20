@@ -32,5 +32,5 @@
       "url": "http://www.apache.org/licenses/LICENSE-2.0"
     }
   ],
-  "svelte": "dist/index-with-vars.css"
+  "svelte": "dist/index.css"
 }
