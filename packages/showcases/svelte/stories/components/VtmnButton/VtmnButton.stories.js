@@ -1,5 +1,5 @@
 import VtmnButtonView from './VtmnButtonView.svelte';
-import VtmnButton from '@vtmn/svelte/src/components/VtmnButton.svelte';
+import { VtmnButton } from '@vtmn/svelte';
 import {
   argTypes,
   parameters,

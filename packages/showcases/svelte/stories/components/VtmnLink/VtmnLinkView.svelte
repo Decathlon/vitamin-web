@@ -3,7 +3,7 @@
    * @component Link View
    * @wrapper
    */
-  import VtmnLink from '@vtmn/svelte/src/components/VtmnLink.svelte';
+  import { VtmnLink } from '@vtmn/svelte';
 
   export let children = 'Link';
 </script>

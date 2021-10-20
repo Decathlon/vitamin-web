@@ -1,5 +1,5 @@
 import VtmnTextInputView from './VtmnTextInputView.svelte';
-import VtmnTextInput from '@vtmn/svelte/src/components/VtmnTextInput.svelte';
+import { VtmnTextInput } from '@vtmn/svelte';
 import {
   argTypes,
   parameters,

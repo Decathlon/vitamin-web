@@ -1,5 +1,5 @@
 import VtmnLinkView from './VtmnLinkView.svelte';
-import VtmnLink from '@vtmn/svelte/src/components/VtmnLink.svelte';
+import { VtmnLink } from '@vtmn/svelte';
 import {
   argTypes,
   parameters,

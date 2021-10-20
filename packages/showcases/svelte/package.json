@@ -10,10 +10,11 @@
     "start": "start-storybook -p 6010"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^6.3.7",
-    "@storybook/addon-essentials": "^6.3.7",
+    "@storybook/addon-a11y": "^6.3.12",
+    "@storybook/addon-essentials": "^6.3.12",
     "@storybook/addon-svelte-csf": "^1.1.0",
-    "@storybook/svelte": "^6.3.7",
+    "@storybook/svelte": "^6.3.12",
+    "@vtmn/css": "*",
     "@vtmn/icons": "*",
     "@vtmn/showcase-core": "*",
     "@vtmn/svelte": "*",

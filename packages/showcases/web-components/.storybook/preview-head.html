@@ -1,10 +1,6 @@
 <link
-  href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
   rel="stylesheet"
-/>
-<link
-  href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap"
-  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap"
 />
 
 <style>
@@ -21,7 +17,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    box-shadow: var(--vtmn-shadow_100);
   }
   .extended-toolbar > .report {
     width: 100%;
@@ -55,8 +50,24 @@
   .sbdocs-content {
     margin-top: 80px;
   }
-  .sbdocs-content div[class^=css-] {
-    color: var(--vtmn-semantic-color_content-primary);
+  .sbdocs-content div[class^=css-] table svg {
+    color: var(--vtmn-semantic-color_content-primary)!important;
+  }
+  .sbdocs-content div[class^=css-] table button[title="Reset controls"] {
+    background-color: var(--vtmn-semantic-color_background-secondary)!important;
+    color: var(--vtmn-semantic-color_content-primary)!important;
+  }
+  .sbdocs-content div[class^=css-] table, .sbdocs-content div[class^=css-] td {
+    color: var(--vtmn-semantic-color_content-primary)!important;
+  }
+  .sbdocs-content div[class^=css-] table, .sbdocs-content div[class^=css-] td {
+    background-color: var(--vtmn-semantic-color_background-primary)!important;
+  }
+  .sbdocs-content div[class^=css-] thead {
+    background-color: var(--vtmn-semantic-color_background-tertiary)!important;
+  }
+  .sbdocs-content div[class^=css-] tr[title] td {
+    background-color: var(--vtmn-semantic-color_background-tertiary)!important;
   }
   .sbdocs-content pre code {
     color: var(--vtmn-semantic-color_content-secondary)!important;

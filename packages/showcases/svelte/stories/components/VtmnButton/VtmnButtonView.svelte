@@ -3,7 +3,7 @@
    * @component Button View
    * @wrapper
    */
-  import VtmnButton from '@vtmn/svelte/src/components/VtmnButton.svelte';
+  import { VtmnButton } from '@vtmn/svelte';
 
   export let children = 'Button';
 </script>

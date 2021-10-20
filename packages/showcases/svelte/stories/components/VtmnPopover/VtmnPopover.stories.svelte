@@ -1,9 +1,6 @@
 <script>
   import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
-  import VtmnPopover, {
-    POSITION,
-  } from '@vtmn/svelte/src/components/VtmnPopover.svelte';
-  import VtmnButton from '@vtmn/svelte/src/components/VtmnButton.svelte';
+  import { VtmnPopover, VtmnButton, VTMN_POPOVER_POSITION } from '@vtmn/svelte';
 
   const popoverArgs = {
     title: 'This is the title of the popover',
@@ -17,8 +14,8 @@
   argTypes={{
     position: {
       control: 'select',
-      options: Object.keys(POSITION),
-      mapping: POSITION,
+      options: Object.keys(VTMN_POPOVER_POSITION),
+      mapping: VTMN_POPOVER_POSITION,
     },
     title: { control: 'text' },
     body: { control: 'text' },
@@ -37,7 +34,7 @@
 
 <Story name="All positions">
   <div class="story-container">
-    {#each Object.values(POSITION) as position}
+    {#each Object.values(VTMN_POPOVER_POSITION) as position}
       <VtmnPopover {position}>
         <svelte:fragment slot="title">{popoverArgs.title}</svelte:fragment>
         <svelte:fragment slot="body">{popoverArgs.body}</svelte:fragment>
@@ -50,7 +47,7 @@
 <Story
   name="With Controls"
   args={{
-    position: POSITION.BOTTOM,
+    position: VTMN_POPOVER_POSITION.BOTTOM,
     ...popoverArgs,
   }}
 />

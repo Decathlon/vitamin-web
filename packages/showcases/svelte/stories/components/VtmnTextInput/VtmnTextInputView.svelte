@@ -3,7 +3,7 @@
    * @component Text Input View
    * @wrapper
    */
-  import VtmnTextInput from '@vtmn/svelte/src/components/VtmnTextInput.svelte';
+  import { VtmnTextInput } from '@vtmn/svelte';
 </script>
 
 <VtmnTextInput {...$$props} />

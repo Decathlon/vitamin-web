@@ -1,28 +1,12 @@
-<script context="module">
-  /** @enum */
-  export const POSITION = {
-    TOP_LEFT: 'top-left',
-    TOP: 'top',
-    TOP_RIGHT: 'top-right',
-    RIGHT: 'right',
-    BOTTOM_RIGHT: 'bottom-right',
-    BOTTOM: 'bottom',
-    BOTTOM_LEFT: 'bottom-left',
-    LEFT: 'left',
-  };
-
-  /** @type {POSITION} */
-  export const DEFAULT_POSITION = POSITION.BOTTOM;
-</script>
-
 <script>
   import '@vtmn/css-popover';
   import { cn } from '../utils/classnames';
+  import { VTMN_POPOVER_POSITION } from '../utils/enums';
 
   /** @type {string} - An unique id */
   export let identifier = '';
-  /** @type {POSITION} */
-  export let position = DEFAULT_POSITION;
+  /** @type {VTMN_POPOVER_POSITION} */
+  export let position = VTMN_POPOVER_POSITION.BOTTOM;
 
   let className;
   /**
