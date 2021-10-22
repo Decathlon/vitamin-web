@@ -1,5 +1,6 @@
 <script>
   import '@vtmn/css-text-input';
+  import { cn } from '../utils/classnames';
 
   /** @restProps { input | textarea } */
 
@@ -7,7 +8,7 @@
    * ID of the input
    * @type {string}
    */
-  export let identifier;
+  export let id;
 
   /**
    * Label text linked to the input
@@ -62,18 +63,29 @@
    * @type {string}
    */
   export let value;
+
+  let className;
+  /**
+   * @type {string} Custom classes to apply to the component.
+   */
+  export { className as class };
+
+  $: componentClass = cn(
+    'vtmn-text-input',
+    valid && 'vtmn-text-input--valid',
+    error && 'vtmn-text-input--error',
+    className,
+  );
 </script>
 
 {#if labelText}
-  <label class="vtmn-text-input_label" for={identifier}>{labelText}</label>
+  <label class="vtmn-text-input_label" for={id}>{labelText}</label>
 {/if}
 {#if multiline}
   <textarea
     bind:value
-    class="vtmn-text-input"
-    class:vtmn-text-input--error={error}
-    class:vtmn-text-input--valid={valid}
-    id={identifier}
+    class={componentClass}
+    {id}
     {disabled}
     {placeholder}
     {...$$restProps}
@@ -82,11 +94,9 @@
   <div class="vtmn-text-input_container">
     <input
       bind:value
-      class="vtmn-text-input"
-      class:vtmn-text-input--valid={valid}
-      class:vtmn-text-input--error={error}
+      class={componentClass}
       type="text"
-      id={identifier}
+      {id}
       {disabled}
       {placeholder}
       {...$$restProps}
@@ -96,8 +106,10 @@
 {/if}
 {#if helperText}
   <p
-    class="vtmn-text-input_helper-text"
-    class:vtmn-text-input_helper-text--error={error}
+    class={cn(
+      'vtmn-text-input_helper-text',
+      error && 'vtmn-text-input_helper-text--error',
+    )}
   >
     {helperText}
   </p>

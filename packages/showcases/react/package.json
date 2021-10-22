@@ -11,9 +11,9 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@storybook/addon-a11y": "^6.3.7",
-    "@storybook/addon-essentials": "^6.3.7",
-    "@storybook/react": "^6.3.7",
+    "@storybook/addon-a11y": "^6.3.12",
+    "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/react": "^6.3.12",
     "@vtmn/icons": "*",
     "@vtmn/react": "*",
     "@vtmn/showcase-core": "*",
@@ -21,7 +21,6 @@
     "clsx": "^1.1.1",
     "react": "^17.0.1",
     "storybook-addon-designs": "^6.0.0",
-    "storybook-addon-outline": "^1.4.0",
     "storybook-mobile": "^0.1.29"
   },
   "licenses": [

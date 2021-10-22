@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.12](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.7.11...@vtmn/svelte@0.7.12) (2021-10-20)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+## [0.7.11](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.7.10...@vtmn/svelte@0.7.11) (2021-10-20)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+## [0.7.10](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.7.9...@vtmn/svelte@0.7.10) (2021-10-20)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+## [0.7.9](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.7.8...@vtmn/svelte@0.7.9) (2021-10-20)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+## [0.7.8](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.7.7...@vtmn/svelte@0.7.8) (2021-10-20)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** version of css-link dependency ([e890023](https://github.com/Decathlon/vitamin-web/commit/e89002380e59525a1a624ded65cbe7b69ac0c94b))
+
+
+
+
+
 ## [0.7.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.7.6...@vtmn/svelte@0.7.7) (2021-10-19)
 
 

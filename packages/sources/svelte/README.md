@@ -76,15 +76,15 @@ Or you can also import it with a CDN like `unpkg.com` with [this file](https://u
 
 ## Usage
 
-You may want to use the source Svelte files to benefit from some features (Server Side Rendering for instance). To do so, you will need to import components exposed in the `src/` folder of the package.
+To use this package, you need to use the source files and compile on your side. To do so, you can start with [+SvelteKit](https://kit.svelte.dev/) for example.
 
-Example with `VtmnButton` :
+Then, you just need to import components you need. Example with `VtmnButton` :
 
 ```js
 // App.svelte
 <script>
   import { VtmnButton } from '@vtmn/svelte';
-<script>
+</script>
 
 <VtmnButton>Button</VtmnButton>
 ```
