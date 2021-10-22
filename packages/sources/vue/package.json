@@ -45,13 +45,7 @@
     "root": true
   },
   "dependencies": {
-    "@vtmn/css-button": "^0.6.9",
-    "@vtmn/css-checkbox": "^0.4.18",
     "@vtmn/css-design-tokens": "^0.8.6",
-    "@vtmn/css-link": "^0.3.17",
-    "@vtmn/css-radio-button": "^0.4.19",
-    "@vtmn/css-text-input": "^0.8.11",
-    "@vtmn/css-toggle": "^0.3.18",
     "core-js": "^3.18.1",
     "vue": "^3.2.1"
   },
@@ -67,6 +61,12 @@
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
     "@vitejs/plugin-vue": "^1.9.3",
+    "@vtmn/css-button": "^0.6.9",
+    "@vtmn/css-checkbox": "^0.4.18",
+    "@vtmn/css-link": "^0.3.17",
+    "@vtmn/css-radio-button": "^0.4.19",
+    "@vtmn/css-text-input": "^0.8.11",
+    "@vtmn/css-toggle": "^0.3.18",
     "@vtmn/icons": "^0.5.0",
     "@vue/cli-plugin-babel": "^4.5.11",
     "@vue/cli-plugin-eslint": "^4.5.11",
