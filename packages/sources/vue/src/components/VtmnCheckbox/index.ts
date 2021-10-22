@@ -1,16 +1,8 @@
 import { App as Application } from 'vue';
 import VtmnCheckbox from './VtmnCheckbox.vue';
 
-import { registerComponent } from '../../utils/plugins/index';
-
-const Plugin = {
-  install(vue: Application) {
-    registerComponent(vue, VtmnCheckbox);
-  },
+VtmnCheckbox.install = (Vue: Application) => {
+  Vue.component(VtmnCheckbox.name, VtmnCheckbox);
 };
 
-// use(Plugin);
-
-export default Plugin;
-
-export { VtmnCheckbox };
+export default VtmnCheckbox;

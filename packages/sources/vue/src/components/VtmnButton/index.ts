@@ -1,16 +1,8 @@
 import { App as Application } from 'vue';
 import VtmnButton from './VtmnButton.vue';
 
-import { registerComponent } from '../../utils/plugins/index';
-
-const Plugin = {
-  install(vue: Application) {
-    registerComponent(vue, VtmnButton);
-  },
+VtmnButton.install = (Vue: Application) => {
+  Vue.component(VtmnButton.name, VtmnButton);
 };
 
-// use(Plugin);
-
-export default Plugin;
-
-export { VtmnButton };
+export default VtmnButton;

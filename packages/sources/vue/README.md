@@ -12,10 +12,10 @@ After installing [npm](https://docs.npmjs.com/downloading-and-installing-node-js
 
 ```sh
 # with npm
-npm i -S @vtmn/vue
+npm i -S @vtmn/css-design-tokens @vtmn/vue
 
 # with yarn
-yarn add @vtmn/vue
+yarn add @vtmn/css-design-tokens @vtmn/vue
 ```
 
 ## Install fonts
@@ -75,26 +75,35 @@ Or you can also import it with a CDN like `unpkg.com` with [this file](https://u
 
 ## Usage
 
+Once you have installed this package, you first need to import some CSS styles.
+
+With a bundler that supports CSS imports in JS files:
+
+```javascript
+import '@vtmn/css-design-tokens/dist/index.css';
+import '@vtmn/vue/dist/style.css';
+```
+
+Otherwise include it in your HTML file:
+
+```html
+<link
+  rel="stylesheet"
+  href="./node_modules/@vtmn/css-design-tokens/dist/index.css"
+/>
+<link rel="stylesheet" href="./node_modules/@vtmn/vue/dist/style.css" />
+```
+
 Once you have installed this package, you just have to import components you need in your Vue application!
 
 Here is an example of the integration of `VtmnButton` component:
 
-**As Component**
-
 ```js
-import { VtmnButton } from '@vtmn/vue/dist/esm/VtmnButton';
+import { VtmnButton } from '@vtmn/vue';
 ...
 components:{
   VtmnButton
 }
-```
-
-**As Plugin**
-
-```js
-import { VtmnButton } from '@vtmn/vue';
-
-app.use(VtmnButton);
 ```
 
 ## Development

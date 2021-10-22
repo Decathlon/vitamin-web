@@ -1,4 +1,4 @@
-import { VtmnLink } from '@vtmn/vue/dist/esm/VtmnLink';
+import { VtmnLink } from '@vtmn/vue';
 import {
   argTypes,
   parameters,

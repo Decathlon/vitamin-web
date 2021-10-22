@@ -1,4 +1,4 @@
-import { VtmnToggle } from '@vtmn/vue/dist/esm/VtmnToggle';
+import { VtmnToggle } from '@vtmn/vue';
 import {
   argTypes,
   parameters,

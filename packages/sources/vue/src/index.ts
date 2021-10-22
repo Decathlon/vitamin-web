@@ -2,14 +2,19 @@
 import { App as Application, Plugin } from 'vue';
 import * as components from './components/index';
 
-const install: Exclude<Plugin['install'], undefined> = (
-  instance: Application,
-) => {
-  for (const componentKey in components) {
-    instance.use((components as any)[componentKey]);
+function install(Vue: Application) {
+  // tslint:disable-next-line: forin
+  for (const component in components) {
+    // @ts-expect-error
+    Vue.component(components[component].name, components[component]);
   }
-};
+}
 
 export default install;
 
-export * from './components';
+export { default as VtmnButton } from './components/VtmnButton';
+export { default as VtmnCheckbox } from './components/VtmnCheckbox';
+export { default as VtmnLink } from './components/VtmnLink';
+export { default as VtmnRadioButton } from './components/VtmnRadioButton';
+export { default as VtmnTextInput } from './components/VtmnTextInput';
+export { default as VtmnToggle } from './components/VtmnToggle';

@@ -1,4 +1,4 @@
-import { VtmnRadioButton } from '@vtmn/vue/dist/esm/VtmnRadioButton';
+import { VtmnRadioButton } from '@vtmn/vue';
 import {
   argTypes,
   parameters,

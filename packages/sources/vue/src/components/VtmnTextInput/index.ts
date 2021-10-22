@@ -1,16 +1,8 @@
 import { App as Application } from 'vue';
 import VtmnTextInput from './VtmnTextInput.vue';
 
-import { registerComponent } from '../../utils/plugins/index';
-
-const Plugin = {
-  install(vue: Application) {
-    registerComponent(vue, VtmnTextInput);
-  },
+VtmnTextInput.install = (Vue: Application) => {
+  Vue.component(VtmnTextInput.name, VtmnTextInput);
 };
 
-// use(Plugin);
-
-export default Plugin;
-
-export { VtmnTextInput };
+export default VtmnTextInput;

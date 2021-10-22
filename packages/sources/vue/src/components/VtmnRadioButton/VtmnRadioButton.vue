@@ -1,5 +1,5 @@
 <script lang="ts">
-import '@vtmn/css-radio-button/dist/index.css';
+import '@vtmn/css-radio-button/dist/index-with-vars.css';
 import { defineComponent } from 'vue';
 
 export default /*#__PURE__*/ defineComponent({
