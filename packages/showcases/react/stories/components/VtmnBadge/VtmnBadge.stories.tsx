@@ -1,15 +1,11 @@
 import React from 'react';
 import { VtmnBadge } from '@vtmn/react';
 import { Meta, Story } from '@storybook/react';
-import {
-  argTypes,
-  parameters,
-} from '@vtmn/showcase-core/csf/components/VtmnBadge.csf';
+import { parameters } from '@vtmn/showcase-core/csf/components/VtmnBadge.csf';
 
 export default {
   title: 'Components/VtmnBadge',
   component: VtmnBadge,
-  argTypes,
   parameters,
 } as Meta;
 
