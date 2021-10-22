@@ -23,6 +23,8 @@ module.exports = defineConfig({
       output: {
         // Provide global variables to use in the UMD build
         // for externalized deps
+        sourcemap: true,
+        exports: 'named',
         globals: {
           vue: 'Vue',
         },
