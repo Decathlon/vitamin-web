@@ -1,4 +1,3 @@
-import '@vtmn/css-design-tokens';
 import '@vtmn/vue/dist/style.css'
 import '@vtmn/icons/dist/vitamix/font/vitamix.css';
 import { withDesign } from 'storybook-addon-designs';

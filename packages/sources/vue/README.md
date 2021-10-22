@@ -12,10 +12,10 @@ After installing [npm](https://docs.npmjs.com/downloading-and-installing-node-js
 
 ```sh
 # with npm
-npm i -S @vtmn/css-design-tokens @vtmn/vue
+npm i -S @vtmn/vue
 
 # with yarn
-yarn add @vtmn/css-design-tokens @vtmn/vue
+yarn add @vtmn/vue
 ```
 
 ## Install fonts
@@ -65,7 +65,7 @@ npm i -S @vtmn/icons
 yarn add @vtmn/icons
 ```
 
-Then, import the icon font in the entry point of your React application:
+Then, import the icon font in the entry point of your Vue application:
 
 ```javascript
 import '@vtmn/icons/dist/vitamix/font/vitamix.css';
@@ -75,22 +75,17 @@ Or you can also import it with a CDN like `unpkg.com` with [this file](https://u
 
 ## Usage
 
-Once you have installed this package, you first need to import some CSS styles.
+Once you have installed this package, you first need to import CSS styles.
 
 With a bundler that supports CSS imports in JS files:
 
 ```javascript
-import '@vtmn/css-design-tokens/dist/index.css';
 import '@vtmn/vue/dist/style.css';
 ```
 
 Otherwise include it in your HTML file:
 
 ```html
-<link
-  rel="stylesheet"
-  href="./node_modules/@vtmn/css-design-tokens/dist/index.css"
-/>
 <link rel="stylesheet" href="./node_modules/@vtmn/vue/dist/style.css" />
 ```
 
@@ -98,12 +93,21 @@ Once you have installed this package, you just have to import components you nee
 
 Here is an example of the integration of `VtmnButton` component:
 
-```js
+```vue
+<template>
+  <VtmnButton>Click</VtmnButton>
+</template>
+
+<script>
 import { VtmnButton } from '@vtmn/vue';
-...
-components:{
-  VtmnButton
-}
+
+export default {
+  name: 'App',
+  components: {
+    VtmnButton,
+  },
+};
+</script>
 ```
 
 ## Development
