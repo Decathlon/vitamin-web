@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.13.1...@vtmn/react@0.13.2) (2021-10-22)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** order of CSS classes ([#679](https://github.com/Decathlon/vitamin-web/issues/679)) ([9ca377f](https://github.com/Decathlon/vitamin-web/commit/9ca377fc2342d1b97c19d0517158f541983811f2))
+* **@vtmn/react:** dependencies ([2ae50d7](https://github.com/Decathlon/vitamin-web/commit/2ae50d70bfa7ec632160a361eca333f6e33a3556))
+
+
+
+
+
 ## [0.13.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.13.0...@vtmn/react@0.13.1) (2021-10-13)
 
 **Note:** Version bump only for package @vtmn/react
