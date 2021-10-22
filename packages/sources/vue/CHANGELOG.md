@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.8.2...@vtmn/vue@0.8.3) (2021-10-22)
+
+
+### Bug Fixes
+
+* **@vtmn/vue:** typescript build init ([#677](https://github.com/Decathlon/vitamin-web/issues/677)) ([7a7c24a](https://github.com/Decathlon/vitamin-web/commit/7a7c24a0a9fd8fe9be266b3bab7a11785b4ca456))
+
+
+
+
+
 ## [0.8.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.8.1...@vtmn/vue@0.8.2) (2021-10-12)
 
 **Note:** Version bump only for package @vtmn/vue
