@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/web-components",
-  "version": "0.16.2",
+  "version": "0.16.3",
   "description": "Decathlon Design System - Vitamin Web Components library",
   "keywords": [
     "design-system",
@@ -44,7 +44,7 @@
     "@vtmn/css-radio-button": "^0.4.20",
     "@vtmn/css-text-input": "^0.8.12",
     "@vtmn/css-toggle": "^0.3.19",
-    "@vtmn/icons": "^0.5.0",
+    "@vtmn/icons": "^0.5.1",
     "chokidar-cli": "^3.0.0",
     "postcss-import": "^14.0.0"
   },
