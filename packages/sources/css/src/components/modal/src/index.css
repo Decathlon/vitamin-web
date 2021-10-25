@@ -7,11 +7,10 @@
 @import '@vtmn/css-design-tokens/src/z-indexes';
 
 .vtmn-modal_background-overlay {
-  background: hsla(
-    var(--vtmn-semantic-color_background-primary-reversed--h),
-    var(--vtmn-semantic-color_background-primary-reversed--s),
-    var(--vtmn-semantic-color_background-primary-reversed--l),
-    0.8
+  background: hsl(
+    var(--vtmn-semantic-color_background-primary-reversed--h)
+      var(--vtmn-semantic-color_background-primary-reversed--s)
+      var(--vtmn-semantic-color_background-primary-reversed--l) / 80%
   );
   position: fixed;
   top: 0;
@@ -92,17 +91,15 @@
   height: 4rem;
   background: linear-gradient(
     180deg,
-    hsla(
-      var(--vtmn-semantic-color_background-primary--h),
-      var(--vtmn-semantic-color_background-primary--s),
-      var(--vtmn-semantic-color_background-primary--l),
-      0
+    hsl(
+      var(--vtmn-semantic-color_background-primary--h)
+        var(--vtmn-semantic-color_background-primary--s)
+        var(--vtmn-semantic-color_background-primary--l) / 0%
     ),
-    hsla(
-      var(--vtmn-semantic-color_background-primary--h),
-      var(--vtmn-semantic-color_background-primary--s),
-      var(--vtmn-semantic-color_background-primary--l),
-      0.8
+    hsl(
+      var(--vtmn-semantic-color_background-primary--h)
+        var(--vtmn-semantic-color_background-primary--s)
+        var(--vtmn-semantic-color_background-primary--l) / 80%
     )
   );
   overflow: auto;

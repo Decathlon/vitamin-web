@@ -21,7 +21,7 @@
   cursor: pointer;
   margin: 0;
   outline: none;
-  opacity: 0.01;
+  opacity: 1%;
 }
 
 .vtmn-toggle_switch input[type='checkbox']:checked + span {
@@ -34,7 +34,7 @@
 
 .vtmn-toggle_switch input[type='checkbox']:checked + span::after {
   transform: translateX(rem(24px));
-  opacity: 1;
+  opacity: 100%;
 }
 
 .vtmn-toggle_switch
@@ -101,7 +101,7 @@
   top: rem(10px);
   left: rem(9px);
   transition: box-shadow 0.2s, transform 0.2s, background-color 0.2s;
-  opacity: 0;
+  opacity: 0%;
 }
 
 .vtmn-toggle label {
