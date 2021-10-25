@@ -5,7 +5,7 @@
 
 .vtmn-radio-button[type='radio'] {
   position: absolute;
-  opacity: 0.01;
+  opacity: 1%;
 }
 
 .vtmn-radio-button[type='radio'] + label {
@@ -80,12 +80,12 @@
 }
 
 .vtmn-radio-button[type='radio']:not(:checked) + label::after {
-  opacity: 0;
+  opacity: 0%;
   transform: scale(0) rotate(45deg);
 }
 
 .vtmn-radio-button[type='radio']:checked + label::after {
-  opacity: 1;
+  opacity: 100%;
   transform: scale(1) rotate(0);
 }
 
