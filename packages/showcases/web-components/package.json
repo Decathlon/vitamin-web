@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@babel/plugin-syntax-import-meta": "^7.10.4",
-    "@open-wc/lit-helpers": "^0.3.12",
+    "@open-wc/lit-helpers": "^0.4.0",
     "@open-wc/webpack-import-meta-loader": "^0.4.7",
     "@stencil/webpack": "^0.0.6",
     "@storybook/addon-a11y": "^6.3.12",
