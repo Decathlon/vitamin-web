@@ -25,9 +25,7 @@
 />
 
 <Template let:args>
-  <div>
-    <VtmnTextInput {...args} />
-  </div>
+  <VtmnTextInput {...args} />
 </Template>
 
 <Story name="Overview" args={textinputArgs} />
