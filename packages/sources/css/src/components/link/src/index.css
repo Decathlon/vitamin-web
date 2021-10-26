@@ -14,12 +14,6 @@
   text-decoration: none;
 }
 
-.vtmn-link:visited,
-.vtmn-link--standalone:visited {
-  color: var(--vtmn-semantic-color_content-visited);
-  text-decoration: none;
-}
-
 .vtmn-link:hover,
 .vtmn-link--standalone:hover {
   color: var(--vtmn-semantic-color_hover-brand);
@@ -30,6 +24,12 @@
 .vtmn-link--standalone:active {
   color: var(--vtmn-semantic-color_active-brand);
   text-decoration: underline;
+}
+
+.vtmn-link:visited,
+.vtmn-link--standalone:visited {
+  color: var(--vtmn-semantic-color_content-visited);
+  text-decoration: none;
 }
 
 .vtmn-link:focus-visible {
