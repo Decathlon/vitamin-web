@@ -1,4 +1,5 @@
 import { VtmnTextInput } from '@vtmn/react';
+import { action } from '@storybook/addon-actions';
 import { Meta, Story } from '@storybook/react';
 import {
   argTypes,
@@ -8,10 +9,22 @@ import {
 export default {
   title: 'Components/VtmnTextInput',
   component: VtmnTextInput,
-  argTypes,
+  argTypes: {
+    ...argTypes,
+    onIconClick: {
+      type: { name: 'string', required: false },
+      description: 'Called when icon is clicked',
+      control: {
+        type: 'text',
+      },
+    },
+  },
   parameters,
 } as Meta;
 
 const Template: Story = (args) => <VtmnTextInput {...args} />;
 
 export const Overview = Template.bind({});
+Overview.args = {
+  onIconClick: () => action('icon clicked'),
+};
