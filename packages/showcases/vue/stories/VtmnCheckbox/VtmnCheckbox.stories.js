@@ -16,7 +16,7 @@ const Template = (args) => ({
   setup() {
     return { args };
   },
-  template: '<VtmnCheckbox v-bind="args"/>',
+  template: `<VtmnCheckbox v-bind="args"/>`,
 });
 
 export const Overview = Template.bind({});

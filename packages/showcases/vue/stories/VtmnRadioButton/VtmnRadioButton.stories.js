@@ -16,7 +16,7 @@ const Template = (args) => ({
   setup() {
     return { args };
   },
-  template: '<VtmnRadioButton v-bind="args"/>',
+  template: `<VtmnRadioButton v-bind="args"/>`,
 });
 
 export const Overview = Template.bind({});
