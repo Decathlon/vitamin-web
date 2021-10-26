@@ -16,7 +16,7 @@ const Template = (args) => ({
   setup() {
     return { args };
   },
-  template: '<VtmnTextInput v-bind="args"/>',
+  template: `<VtmnTextInput v-bind="args"/>`,
 });
 
 export const Overview = Template.bind({});

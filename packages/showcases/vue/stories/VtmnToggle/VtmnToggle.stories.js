@@ -16,7 +16,7 @@ const Template = (args) => ({
   setup() {
     return { args };
   },
-  template: '<VtmnToggle v-bind="args"/>',
+  template: `<VtmnToggle v-bind="args"/>`,
 });
 
 export const Overview = Template.bind({});
