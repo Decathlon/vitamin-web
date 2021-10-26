@@ -24,13 +24,11 @@
 />
 
 <Template let:args>
-  <div>
-    <VtmnPopover position={args.position} id={args.id}>
-      <svelte:fragment slot="title">{args.title}</svelte:fragment>
-      <svelte:fragment slot="body">{args.body}</svelte:fragment>
-      <VtmnLink slot="placeholder">Popover on the {args.position}</VtmnLink>
-    </VtmnPopover>
-  </div>
+  <VtmnPopover position={args.position} id={args.id}>
+    <svelte:fragment slot="title">{args.title}</svelte:fragment>
+    <svelte:fragment slot="body">{args.body}</svelte:fragment>
+    <VtmnLink slot="placeholder">Popover on the {args.position}</VtmnLink>
+  </VtmnPopover>
 </Template>
 
 <Story name="Overview" args={popoverArgs} />

@@ -3,8 +3,8 @@ import '@vtmn/icons/dist/vitamix/font/vitamix.css';
 import { withDesign } from 'storybook-addon-designs';
 import backgrounds from '@vtmn/showcase-core/addons/backgrounds.json';
 import viewports from '@vtmn/showcase-core/addons/viewports.json';
-import dedent from "ts-dedent";
-import { paramCase } from "param-case";
+import dedent from 'ts-dedent';
+import { paramCase } from 'param-case';
 
 const templateSourceCode = (
   templateSource,
@@ -40,7 +40,7 @@ const templateSourceCode = (
   );
 };
 
-export const decorators = [withDesign];
+export const decorators = [() => ({ template: '<div><story/></div>' }), withDesign];
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },

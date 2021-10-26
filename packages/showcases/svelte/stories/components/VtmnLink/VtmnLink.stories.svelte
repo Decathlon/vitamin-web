@@ -12,9 +12,7 @@
 <Meta title="Components/VtmnLink" component={VtmnLink} {parameters} />
 
 <Template let:args>
-  <div>
-    <VtmnLink {...args}>Link</VtmnLink>
-  </div>
+  <VtmnLink {...args}>Link</VtmnLink>
 </Template>
 
 <Story name="Overview" args={linkArgs} />
