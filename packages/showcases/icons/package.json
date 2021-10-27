@@ -17,6 +17,7 @@
     "@storybook/addon-essentials": "^6.3.12",
     "@storybook/addon-viewport": "^6.3.12",
     "@storybook/html": "^6.3.12",
+    "@vtmn/css": "*",
     "@vtmn/icons": "*",
     "@vtmn/showcase-core": "*",
     "@whitespace/storybook-addon-html": "^5.0.0",
