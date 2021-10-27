@@ -56,6 +56,10 @@
       "root": "packages/sources/css/src/components/button",
       "type": "library"
     },
+    "@vtmn/css-card": {
+      "root": "packages/sources/css/src/components/card",
+      "type": "library"
+    },
     "@vtmn/css-checkbox": {
       "root": "packages/sources/css/src/components/checkbox",
       "type": "library"
