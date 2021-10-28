@@ -1,7 +1,7 @@
 import overview from './examples/overview.html';
-import { default as top } from './examples/top-image.html';
-import { default as side } from './examples/side-image.html';
-import { default as full } from './examples/full-image.html';
+import { default as topImage } from './examples/top-image.html';
+import { default as sideImage } from './examples/side-image.html';
+import { default as fullImage } from './examples/full-image.html';
 
 export default {
   title: 'Components / Card ',
@@ -17,29 +17,29 @@ Overview.parameters = {
   },
 };
 
-export const Top = () => top;
-Top.parameters = {
+export const TopImage = () => topImage;
+TopImage.parameters = {
   docs: {
     source: {
-      code: top,
+      code: topImage,
     },
   },
 };
 
-export const Side = () => side;
-Side.parameters = {
+export const SideImage = () => sideImage;
+SideImage.parameters = {
   docs: {
     source: {
-      code: side,
+      code: sideImage,
     },
   },
 };
 
-export const Full = () => full;
-Full.parameters = {
+export const FullImage = () => fullImage;
+FullImage.parameters = {
   docs: {
     source: {
-      code: overview,
+      code: fullImage,
     },
   },
 };
