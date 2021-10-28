@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.6.11...@vtmn/css-button@0.7.0) (2021-10-28)
+
+
+### Features
+
+* **@vtmn/css:** add card component ([#718](https://github.com/Decathlon/vitamin-web/issues/718)) ([4fb362d](https://github.com/Decathlon/vitamin-web/commit/4fb362dd39e518e0637dfc4772d76fdc077c66a1))
+
+
+
+
+
 ## [0.6.11](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.6.10...@vtmn/css-button@0.6.11) (2021-10-25)
 
 **Note:** Version bump only for package @vtmn/css-button
