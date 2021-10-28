@@ -1,7 +1,7 @@
 import overview from './examples/overview.html';
-import { default as topImage } from './examples/top-image.html';
-import { default as sideImage } from './examples/side-image.html';
-import { default as fullImage } from './examples/full-image.html';
+import topImage from './examples/top-image.html';
+import sideImage from './examples/side-image.html';
+import fullImage from './examples/full-image.html';
 
 export default {
   title: 'Components / Card ',
