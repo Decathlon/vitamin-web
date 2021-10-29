@@ -2,6 +2,7 @@
 @import '@vtmn/css-design-tokens/src/themes/default';
 @import '@vtmn/css-design-tokens/src/typography';
 @import '@vtmn/css-design-tokens/src/opacities';
+@import '@vtmn/css-design-tokens/src/shadows';
 
 .vtmn-card {
   border-radius: 8px;
@@ -13,7 +14,7 @@
   margin: 16px;
   display: flex;
   flex-direction: column;
-  color: var(--vtmn-semantic-color_primary);
+  color: var(--vtmn-semantic-color_content-primary);
 }
 
 .vtmn-card_content
