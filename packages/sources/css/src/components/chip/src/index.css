@@ -1,0 +1,36 @@
+@import '@vtmn/css-design-tokens/src/base-colors';
+@import '@vtmn/css-design-tokens/src/themes/default';
+@import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/opacities';
+@import '@vtmn/css-design-tokens/src/shadows';
+
+.vtmn-chip {
+  border-radius: 8px;
+  box-shadow: var(--vtmn-shadow_100);
+  background-color: var(--vtmn-semantic-color_background-primary);
+  position: relative;
+}
+
+.vtmn-card_contentrtgrdtg {
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+  color: var(--vtmn-semantic-color_content-primary);
+}
+
+.vtmn-card_content--titlertgrtg {
+  font-size: var(--vtmn-typo_title-5-font-size);
+  font-weight: var(--vtmn-typo_font-weight--bold);
+}
+
+.vtmn-card_content--bodyrtgrtg {
+  font-size: var(--vtmn-typo_text-3-font-size);
+}
+
+.vtmn-card_variant--side-imagergtrtg {
+  display: flex;
+  height: min-content;
+  width: auto;
+  flex-direction: row;
+  background-color: var(--vtmn-semantic-color_background-primary);
+}
