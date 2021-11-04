@@ -6,7 +6,8 @@
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-3-font-size);
   display: inline-flex;
-  height: rem(20px);
+  height: 20px;
+  min-width: 20px;
   justify-content: center;
   align-items: center;
   border-radius: rem(10px);
