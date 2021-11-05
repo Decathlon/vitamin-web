@@ -5,7 +5,7 @@
 
 .vtmn-chip {
   height: 40px;
-  width: max-content;
+  min-width: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -19,6 +19,7 @@
   color: var(--vtmn-semantic-color_content-action);
   font-size: var(--vtmn-typo_text-2-font-size);
   font-weight: var(--vtmn-typo_font-weight--bold);
+  outline: none;
 }
 
 .vtmn-chip:not(.vtmn-chip--disabled):hover {
@@ -127,12 +128,12 @@
 }
 
 @media screen and (max-width: 600px) {
-  .vtmn-chip:hover {
-    cursor: initial;
+  .vtmn-chip:not(.vtmn-chip--disabled):hover {
+    cursor: unset;
   }
 
   .vtmn-chip:not(.vtmn-chip--disabled):focus-visible {
-    box-shadow: none;
+    box-shadow: inset 0 0 0 1px var(--vtmn-semantic-color_border-inactive);
   }
 
   span[class^='vtmx-close-'] {
