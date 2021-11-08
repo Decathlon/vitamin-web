@@ -284,12 +284,10 @@
   font-size: var(--vtmn-typo_title-5-font-size);
 }
 
-.vtmn-btn--icon-left span[class^='vtmx-'] {
+.vtmn-btn--icon-left span[class^='vtmx-'],
+.vtmn-btn--icon-right span[class^='vtmx-'],
+.vtmn-btn_size--medium.vtmn-btn--icon-left span[class^='vtmx-'] {
   padding-right: rem(8px);
-}
-
-.vtmn-btn--icon-right span[class^='vtmx-'] {
-  padding-left: rem(8px);
 }
 
 .vtmn-btn_size--small.vtmn-btn--icon-left span[class^='vtmx-'] {
@@ -306,10 +304,6 @@
 
 .vtmn-btn_size--small.vtmn-btn--icon-right svg {
   margin-left: rem(6px);
-}
-
-.vtmn-btn_size--medium.vtmn-btn--icon-left span[class^='vtmx-'] {
-  padding-right: rem(8px);
 }
 
 .vtmn-btn_size--medium.vtmn-btn--icon-right span[class^='vtmx-'] {
