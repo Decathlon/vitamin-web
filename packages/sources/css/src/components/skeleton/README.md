@@ -71,7 +71,7 @@ import 'typeface-roboto-condensed';
 
 ## Install icons (optional)
 
-If you need to display icons in text input, you will need to install `@vtmn/icons` package.
+If you need to display icons, you will need to install `@vtmn/icons` package.
 
 ```sh
 # with npm

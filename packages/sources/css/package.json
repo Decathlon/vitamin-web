@@ -23,9 +23,11 @@
     "dist"
   ],
   "scripts": {
-    "build": "npm run build:base16 && npm run build:base10 && npm run build:unreset:base10 && npm run build:unreset:base16",
+    "build": "npm run build:base16 && npm run build:base10 && npm run build:components:base10 && npm run build:components:base16 && npm run build:unreset:base10 && npm run build:unreset:base16",
     "build:base10": "cross-env FONT_SIZE_BASE=10 postcss src/index.css -o dist/index-base10.css",
     "build:base16": "postcss src/index.css -o dist/index.css",
+    "build:components:base10": "cross-env FONT_SIZE_BASE=10 postcss src/components/index.css -o dist/components-base10.css",
+    "build:components:base16": "postcss src/components/index.css -o dist/components.css",
     "build:unreset:base10": "cross-env PREFLIGHT=false FONT_SIZE_BASE=10 postcss src/index.css -o dist/index-unreset-base10.css",
     "build:unreset:base16": "cross-env PREFLIGHT=false postcss src/index.css -o dist/index-unreset.css",
     "prestart": "yarn build",
@@ -48,7 +50,7 @@
     "@vtmn/css-select": "^0.2.16",
     "@vtmn/css-skeleton": "^0.1.9",
     "@vtmn/css-snackbar": "^0.2.10",
-    "@vtmn/css-tailwind-config": "*",
+    "@vtmn/css-tailwind-preset": "*",
     "@vtmn/css-text-input": "^0.8.13",
     "@vtmn/css-toast": "^0.2.9",
     "@vtmn/css-toggle": "^0.3.20",

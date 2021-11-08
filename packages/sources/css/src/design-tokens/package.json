@@ -20,8 +20,7 @@
     "build:scss": "cross-env SCSS_FORMAT=true postcss dist/index.css -o dist/index.scss && cross-env SCSS_FORMAT=true postcss dist/index-base10.css -o dist/index-base10.scss"
   },
   "devDependencies": {
-    "@vtmn/css-postcss-config": "*",
-    "@vtmn/css-tailwind-config": "*"
+    "@vtmn/css-postcss-config": "*"
   },
   "publishConfig": {
     "access": "public"
