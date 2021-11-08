@@ -10357,7 +10357,7 @@ eslint@7.6.0:
     text-table "^0.2.0"
     v8-compile-cache "^2.0.3"
 
-eslint@8.2.0, eslint@^8.0.0:
+eslint@8.2.0, eslint@^8.2.0:
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.2.0.tgz#44d3fb506d0f866a506d97a0fc0e90ee6d06a815"
   integrity sha512-erw7XmM+CLxTOickrimJ1SiF55jiNlVSp2qqm0NuBWPtHYQCegD5ZMaW0c3i5ytPqL+SSLaCxdvQXFPLJn+ABw==
@@ -17271,7 +17271,7 @@ postcss-calc@^8.0.0:
     postcss-selector-parser "^6.0.2"
     postcss-value-parser "^4.0.2"
 
-postcss-cli@^9.0.0:
+postcss-cli@^9.0.2:
   version "9.0.2"
   resolved "https://registry.yarnpkg.com/postcss-cli/-/postcss-cli-9.0.2.tgz#96081b2fe1e94e7c4a0b4d6bb361aba16d541045"
   integrity sha512-08Wujoy7YGhKCFrGsT9OXqWjtHlGQ+JmyaD/4McjCiwor2IUTRVzXiJd+xmLTGdSWjceS6/TePaJQwBlkVWHiw==
