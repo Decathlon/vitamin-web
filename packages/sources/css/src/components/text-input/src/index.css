@@ -80,8 +80,7 @@ textarea.vtmn-text-input {
 .vtmn-text-input:disabled,
 .vtmn-text-input:disabled + span[class^='vtmx-'],
 .vtmn-text-input:disabled + svg,
-.vtmn-text-input:disabled + .vtmn-text-input_helper-text,
-.vtmn-text-input:disabled + .vtmn-text-input_counter {
+.vtmn-text-input:disabled + .vtmn-text-input_helper-text {
   opacity: var(--vtmn-opacity_disabled-state);
   cursor: not-allowed;
 }
@@ -131,15 +130,4 @@ textarea.vtmn-text-input {
 .vtmn-text-input--error + svg {
   color: var(--vtmn-semantic-color_content-primary);
   fill: var(--vtmn-semantic-color_content-primary);
-}
-
-textarea.vtmn-text-input + .vtmn-text-input_counter {
-  color: var(--vtmn-semantic-color_content-secondary);
-  font-size: rem(14px);
-  line-height: 1;
-}
-
-.vtmn-text-input:not(:disabled):focus-visible + .vtmn-text-input_counter,
-.vtmn-text-input--error:not(:disabled) + .vtmn-text-input_counter {
-  color: var(--vtmn-semantic-color_content-primary);
 }
