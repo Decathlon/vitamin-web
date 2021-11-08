@@ -10,3 +10,14 @@ export { VtmnRadioButton } from './components/VtmnRadioButton';
 export { VtmnTextInput } from './components/VtmnTextInput';
 export { VtmnToggle } from './components/VtmnToggle';
 export { VtmnTooltip } from './components/VtmnTooltip';
+
+export type { VtmnBadgeProps } from './components/VtmnBadge';
+export type { VtmnButtonProps } from './components/VtmnButton';
+export type { VtmnCheckboxProps } from './components/VtmnCheckbox';
+export type { VtmnIconProps } from './components/VtmnIcon';
+export type { VtmnLinkProps } from './components/VtmnLink';
+export type { VtmnLoaderProps } from './components/VtmnLoader';
+export type { VtmnRadioProps } from './components/VtmnRadioButton';
+export type { VtmnTextInputProps } from './components/VtmnTextInput';
+export type { VtmnToggleProps } from './components/VtmnToggle';
+export type { VtmnTooltipProps } from './components/VtmnTooltip';
