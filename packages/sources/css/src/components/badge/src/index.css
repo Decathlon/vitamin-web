@@ -52,7 +52,7 @@
 
 /* Sizes */
 
-.vtmn-badge_size--without-value {
+.vtmn-badge:empty {
   min-width: rem(8px);
   height: rem(8px);
   padding: 0;
