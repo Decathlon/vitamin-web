@@ -11,8 +11,9 @@
   align-items: center;
   position: relative;
   height: 48px;
-  max-width: 100%;
-  width: fit-content;
+  /*max-width: 100%;
+  width: fit-content;*/
+  min-width: max-content;
   padding: 14px 24px;
   font-family: var(--vtmn-typo_font-family);
   font-weight: var(--vtmn-typo_font-weight--bold);
@@ -245,7 +246,7 @@
 
 /* Button icons  */
 .vtmn-btn--icon-alone {
-  width: rem(48px);
+  min-width: rem(48px);
   height: rem(48px);
   padding: rem(14px);
 }
@@ -255,7 +256,7 @@
 }
 
 .vtmn-btn_size--small.vtmn-btn--icon-alone {
-  width: rem(32px);
+  min-width: rem(32px);
   height: rem(32px);
   padding: rem(8px);
 }
@@ -265,7 +266,7 @@
 }
 
 .vtmn-btn_size--medium.vtmn-btn--icon-alone {
-  width: rem(48px);
+  min-width: rem(48px);
   height: rem(48px);
   padding: rem(14px);
 }
@@ -275,7 +276,7 @@
 }
 
 .vtmn-btn_size--large.vtmn-btn--icon-alone {
-  width: rem(64px);
+  min-width: rem(64px);
   height: rem(64px);
   padding: rem(20px);
 }
@@ -285,7 +286,6 @@
 }
 
 .vtmn-btn--icon-left span[class^='vtmx-'],
-.vtmn-btn--icon-right span[class^='vtmx-'],
 .vtmn-btn_size--medium.vtmn-btn--icon-left span[class^='vtmx-'] {
   padding-right: rem(8px);
 }
@@ -306,6 +306,7 @@
   margin-left: rem(6px);
 }
 
+.vtmn-btn--icon-right span[class^='vtmx-'],
 .vtmn-btn_size--medium.vtmn-btn--icon-right span[class^='vtmx-'] {
   padding-left: rem(8px);
 }
