@@ -10,16 +10,14 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 48px;
-  /*max-width: 100%;
-  width: fit-content;*/
+  height: rem(48px);
   min-width: max-content;
-  padding: 14px 24px;
+  padding: rem(14px) rem(24px);
   font-family: var(--vtmn-typo_font-family);
   font-weight: var(--vtmn-typo_font-weight--bold);
   font-size: var(--vtmn-typo_text-2-font-size);
-  letter-spacing: 0.34px;
-  border-radius: 4px;
+  letter-spacing: rem(0.34px);
+  border-radius: rem(4px);
   color: var(--vtmn-semantic-color_content-primary-reversed);
   fill: var(--vtmn-semantic-color_content-primary-reversed);
   overflow: hidden;
