@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-alert",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "description": "Decathlon Design System - Vitamin specific CSS styles for alert component",
   "keywords": [
     "design-system",
@@ -26,7 +26,7 @@
     "build": "node build.js"
   },
   "devDependencies": {
-    "@vtmn/css-design-tokens": "^0.8.8",
+    "@vtmn/css-design-tokens": "^0.8.9",
     "@vtmn/css-postcss-config": "*",
     "@vtmn/css-tailwind-config": "*"
   },
