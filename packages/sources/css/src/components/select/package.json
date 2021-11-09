@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-select",
-  "version": "0.2.16",
+  "version": "0.2.17",
   "description": "Decathlon Design System - Vitamin specific CSS styles for select component",
   "keywords": [
     "design-system",
@@ -26,7 +26,7 @@
     "build": "node build.js"
   },
   "devDependencies": {
-    "@vtmn/css-design-tokens": "^0.8.8",
+    "@vtmn/css-design-tokens": "^0.8.9",
     "@vtmn/css-postcss-config": "*"
   },
   "publishConfig": {
