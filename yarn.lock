@@ -5537,10 +5537,10 @@
   dependencies:
     eslint-config-prettier "^6.0.0"
 
-"@vue/eslint-config-typescript@9.0.0":
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/@vue/eslint-config-typescript/-/eslint-config-typescript-9.0.0.tgz#e6a46d4ffb2c82b639fe183ec734569f33b47605"
-  integrity sha512-X5inaB7c8ADWt2ygFshuT5GRw1obXWQKFR7GTvK0q+H9Cuz/BRDLXEHZTx7AxHiA5Qri1q1C1uMCPFiCBAg+6w==
+"@vue/eslint-config-typescript@9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@vue/eslint-config-typescript/-/eslint-config-typescript-9.0.1.tgz#692fc007cf20012882ac7466b69c3967a0b9809b"
+  integrity sha512-LmhEEy7xYLpPQDQnFhRP3ZEd9zFFKsQX7/qF3AKcNxTrgc4E0aASWK0Ciinlnw17hXNtq8LZKd3mYgtMigwxVg==
   dependencies:
     vue-eslint-parser "^8.0.0"
 
@@ -15869,11 +15869,6 @@ nan@^2.12.1, nan@^2.14.2:
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.15.0.tgz#3f34a473ff18e15c1b5626b62903b5ad6e665fee"
   integrity sha512-8ZtvEnA2c5aYCZYd1cvgdnU6cqwixRoYg70xPLWUws5ORTa/lnw+u4amixRS/Ac5U5mQVgp9pnlSUnbNWFaWZQ==
 
-nanocolors@^0.2.11:
-  version "0.2.13"
-  resolved "https://registry.yarnpkg.com/nanocolors/-/nanocolors-0.2.13.tgz#dfd1ed0bfab05e9fe540eb6874525f0a1684099b"
-  integrity sha512-0n3mSAQLPpGLV9ORXT5+C/D4mwew7Ebws69Hx4E2sgz2ZA5+32Q80B9tL8PbL7XHnRDiAxH/pnrUJ9a4fkTNTA==
-
 nanoid@^3.1.30:
   version "3.1.30"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.1.30.tgz#63f93cc548d2a113dc5dfbc63bfa09e2b9b64362"
@@ -17277,16 +17272,16 @@ postcss-calc@^8.0.0:
     postcss-value-parser "^4.0.2"
 
 postcss-cli@^9.0.0:
-  version "9.0.1"
-  resolved "https://registry.yarnpkg.com/postcss-cli/-/postcss-cli-9.0.1.tgz#4c3c5dac092fd048457ffc337eeff9e6415d55e7"
-  integrity sha512-zO160OBaAZBFUWO+QZIzEKMjnPIc5c61dMg1d7xafblh9cxbNb6s16ahJuP91PcVsu//gqr7BKllJxRiRDsSYw==
+  version "9.0.2"
+  resolved "https://registry.yarnpkg.com/postcss-cli/-/postcss-cli-9.0.2.tgz#96081b2fe1e94e7c4a0b4d6bb361aba16d541045"
+  integrity sha512-08Wujoy7YGhKCFrGsT9OXqWjtHlGQ+JmyaD/4McjCiwor2IUTRVzXiJd+xmLTGdSWjceS6/TePaJQwBlkVWHiw==
   dependencies:
     chokidar "^3.3.0"
     dependency-graph "^0.11.0"
     fs-extra "^10.0.0"
     get-stdin "^9.0.0"
     globby "^12.0.0"
-    nanocolors "^0.2.11"
+    picocolors "^1.0.0"
     postcss-load-config "^3.0.0"
     postcss-reporter "^7.0.0"
     pretty-hrtime "^1.0.3"
