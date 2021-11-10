@@ -7,7 +7,7 @@
 
 | Property  | Attribute | Description               | Type                                             | Default     |
 | --------- | --------- | ------------------------- | ------------------------------------------------ | ----------- |
-| `value`   | `value`   | The target of the badge   | `number`                                         | `undefined` |
+| `value`   | `value`   | The value in the badge    | `number`                                         | `0`         |
 | `variant` | `variant` | The variant of the badge. | `"accent" \| "brand" \| "default" \| "reversed"` | `'default'` |
 
 

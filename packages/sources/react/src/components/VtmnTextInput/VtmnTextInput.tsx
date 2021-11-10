@@ -21,7 +21,7 @@ type VtmnTextInputAdditionalProps = {
   /**
    * Helper text to help the user
    * @type {string}
-   * @defaultValue undefined and therefore not displayed by default
+   * @defaultValue undefined
    */
   helperText?: string;
 
@@ -34,7 +34,7 @@ type VtmnTextInputAdditionalProps = {
   /**
    * Icon to display inside text input
    * @type {VitamixId}
-   * @default undefined and therefore not displayed by default
+   * @defaultValue undefined
    */
   icon?: VitamixId;
 
@@ -58,6 +58,13 @@ type VtmnTextInputAdditionalProps = {
    * @defaultValue false
    */
   error?: boolean;
+
+  /**
+   * Called when icon is clicked
+   * @type {React.MouseEventHandler}
+   * @defaultValue undefined
+   */
+  onIconClick?: React.MouseEventHandler;
 };
 
 type VtmnTextInputMultiline = VtmnTextInputAdditionalProps & {
@@ -81,6 +88,7 @@ export const VtmnTextInput = ({
   labelText,
   placeholder,
   valid = false,
+  onIconClick,
   ...props
 }: VtmnTextInputProps) => {
   return (
@@ -116,7 +124,7 @@ export const VtmnTextInput = ({
             disabled={disabled}
             {...props}
           />
-          {icon && <VtmnIcon value={icon} size={20} />}
+          {icon && <VtmnIcon value={icon} size={20} onClick={onIconClick} />}
         </div>
       )}
       {helperText && (
@@ -132,4 +140,8 @@ export const VtmnTextInput = ({
   );
 };
 
-export default React.memo(VtmnTextInput);
+const MemoVtmnTextInput = React.memo(VtmnTextInput);
+
+MemoVtmnTextInput.displayName = 'VtmnTextInput';
+
+export default MemoVtmnTextInput;

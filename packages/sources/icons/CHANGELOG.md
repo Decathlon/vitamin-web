@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.5.1...@vtmn/icons@0.6.0) (2021-10-29)
+
+
+### Features
+
+* **@vtmn/icons:** add new icons (car, walk, train, mic) ([aaa5699](https://github.com/Decathlon/vitamin-web/commit/aaa569930786e09a7bd57d739338c8b1c988f4f7))
+
+
+
+
+
+## [0.5.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.5.0...@vtmn/icons@0.5.1) (2021-10-22)
+
+**Note:** Version bump only for package @vtmn/icons
+
+
+
+
+
 # [0.5.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.4.0...@vtmn/icons@0.5.0) (2021-09-28)
 
 

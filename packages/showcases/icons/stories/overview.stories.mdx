@@ -5,13 +5,55 @@ import vitamixIcons from '@vtmn/icons/dist/vitamix/font/vitamix.json';
 
 <Meta title="Icons / Overview" />
 
+The list of Vitamix icons.
+Tip: click on an icon and it will be copied to your clipboard! 📎
+
 <Canvas>
-  {Object.keys(vitamixIcons).map((icon) => (
-    <span
-      key={icon}
-      aria-label={icon}
-      className={`vtmx-${icon}`}
-      style={{ fontSize: 32 }}
-    ></span>
-  ))}
+  <div
+    style={{
+      display: 'flex',
+      flexWrap: 'wrap',
+      justifyContent: 'center',
+    }}
+  >
+    {Object.keys(vitamixIcons).map((icon) => (
+      <div
+        key={icon}
+        className="icon-tile"
+        onClick={() => {
+          const textArea = document.createElement('textarea');
+          textArea.value = icon;
+          document.body.appendChild(textArea);
+          textArea.select();
+          document.execCommand('Copy');
+          textArea.remove();
+        }}
+        title={`Copy ${icon} to clipboard`}
+      >
+        <span
+          aria-label={icon}
+          className={`vtmx-${icon}`}
+          style={{
+            fontSize: 32,
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'flex-end',
+            height: '100%',
+            marginBottom: 8,
+          }}
+        ></span>
+        <span
+          style={{
+            fontSize: 15,
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'flex-start',
+            height: '100%',
+          }}
+        >
+          {icon}
+        </span>
+      </div>
+    ))}
+  </div>
 </Canvas>

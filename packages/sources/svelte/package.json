@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/svelte",
-  "version": "0.7.4",
+  "version": "0.7.21",
   "description": "Decathlon Design System - Vitamin Svelte library",
   "keywords": [
     "design-system",
@@ -28,17 +28,27 @@
     "prestart": "yarn build",
     "start": "chokidar \"src/**\" -i \"**/dist/**\" -c \"yarn build\""
   },
+  "dependencies": {
+    "@vtmn/css-button": "^0.7.1",
+    "@vtmn/css-design-tokens": "^0.8.9",
+    "@vtmn/css-link": "^0.4.5",
+    "@vtmn/css-popover": "^0.2.16",
+    "@vtmn/css-text-input": "^0.8.14"
+  },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.0.5",
-    "@vtmn/icons": "^0.5.0",
+    "@vtmn/icons": "^0.6.0",
     "chokidar-cli": "^3.0.0",
-    "eslint": "8.0.0",
+    "eslint": "8.2.0",
     "eslint-plugin-svelte3": "3.2.1",
     "rollup": "^2.57.0",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-svelte": "^7.1.0",
-    "svelte": "3.43.1",
+    "svelte": "3.44.1",
     "svelte-preprocess": "4.9.8"
+  },
+  "peerDependencies": {
+    "svelte": "^3.34.0"
   },
   "publishConfig": {
     "access": "public"
@@ -48,5 +58,6 @@
       "type": "Apache-2.0",
       "url": "http://www.apache.org/licenses/LICENSE-2.0"
     }
-  ]
+  ],
+  "svelte": "src/index.js"
 }

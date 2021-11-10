@@ -1,4 +1,4 @@
-import { VtmnToggle } from '@vtmn/vue/dist/esm/VtmnToggle';
+import { VtmnToggle } from '@vtmn/vue';
 import {
   argTypes,
   parameters,
@@ -16,7 +16,7 @@ const Template = (args) => ({
   setup() {
     return { args };
   },
-  template: '<VtmnToggle v-bind="args"/>',
+  template: `<VtmnToggle v-bind="args"/>`,
 });
 
 export const Overview = Template.bind({});

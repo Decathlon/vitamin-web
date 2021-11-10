@@ -17,6 +17,8 @@
     ],
     "no-duplicate-selectors": null,
     "declaration-block-trailing-semicolon": null,
-    "no-descending-specificity": null
+    "no-descending-specificity": null,
+    "selector-class-pattern": null,
+    "custom-property-pattern": null
   }
 }

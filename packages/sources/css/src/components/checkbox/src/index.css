@@ -5,7 +5,7 @@
 
 .vtmn-checkbox[type='checkbox'] {
   position: absolute;
-  opacity: 0.01;
+  opacity: 1%;
 }
 
 .vtmn-checkbox[type='checkbox'] + label {
@@ -92,12 +92,12 @@
 }
 
 .vtmn-checkbox[type='checkbox']:not(:checked) + label::after {
-  opacity: 0;
+  opacity: 0%;
   transform: scale(0) rotate(45deg);
 }
 
 .vtmn-checkbox[type='checkbox']:checked + label::after {
-  opacity: 1;
+  opacity: 100%;
   transform: scale(1) rotate(0);
 }
 

@@ -1,4 +1,4 @@
-import { VtmnTextInput } from '@vtmn/vue/dist/esm/VtmnTextInput';
+import { VtmnTextInput } from '@vtmn/vue';
 import {
   argTypes,
   parameters,
@@ -16,7 +16,7 @@ const Template = (args) => ({
   setup() {
     return { args };
   },
-  template: '<VtmnTextInput v-bind="args"/>',
+  template: `<VtmnTextInput v-bind="args"/>`,
 });
 
 export const Overview = Template.bind({});

@@ -1,19 +1,16 @@
-/* Tailwind CSS */
+/* Guidelines */
 @import 'tailwindcss/base';
+@import '@vtmn/css-design-tokens/src';
+@import '@vtmn/css-utilities/src';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import 'tailwindcss/screens';
-
-/* Design tokens */
-@import '@vtmn/css-design-tokens/src';
-
-/* Utilities */
-@import '@vtmn/css-utilities/src';
 
 /* Components */
 @import '@vtmn/css-alert/src';
 @import '@vtmn/css-badge/src';
 @import '@vtmn/css-button/src';
+@import '@vtmn/css-card/src';
 @import '@vtmn/css-checkbox/src';
 @import '@vtmn/css-link/src';
 @import '@vtmn/css-loader/src';

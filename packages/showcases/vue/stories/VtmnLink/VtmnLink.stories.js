@@ -1,4 +1,4 @@
-import { VtmnLink } from '@vtmn/vue/dist/esm/VtmnLink';
+import { VtmnLink } from '@vtmn/vue';
 import {
   argTypes,
   parameters,
@@ -16,7 +16,7 @@ const Template = (args) => ({
   setup() {
     return { args };
   },
-  template: '<VtmnLink v-bind="args">Link</VtmnLink>',
+  template: `<VtmnLink v-bind="args">Link</VtmnLink>`,
 });
 
 export const Overview = Template.bind({});

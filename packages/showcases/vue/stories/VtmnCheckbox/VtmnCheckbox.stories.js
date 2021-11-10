@@ -1,4 +1,4 @@
-import { VtmnCheckbox } from '@vtmn/vue/dist/esm/VtmnCheckbox';
+import { VtmnCheckbox } from '@vtmn/vue';
 import {
   argTypes,
   parameters,
@@ -16,7 +16,7 @@ const Template = (args) => ({
   setup() {
     return { args };
   },
-  template: '<VtmnCheckbox v-bind="args"/>',
+  template: `<VtmnCheckbox v-bind="args"/>`,
 });
 
 export const Overview = Template.bind({});

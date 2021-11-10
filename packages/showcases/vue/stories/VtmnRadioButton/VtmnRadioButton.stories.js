@@ -1,4 +1,4 @@
-import { VtmnRadioButton } from '@vtmn/vue/dist/esm/VtmnRadioButton';
+import { VtmnRadioButton } from '@vtmn/vue';
 import {
   argTypes,
   parameters,
@@ -16,7 +16,7 @@ const Template = (args) => ({
   setup() {
     return { args };
   },
-  template: '<VtmnRadioButton v-bind="args"/>',
+  template: `<VtmnRadioButton v-bind="args"/>`,
 });
 
 export const Overview = Template.bind({});

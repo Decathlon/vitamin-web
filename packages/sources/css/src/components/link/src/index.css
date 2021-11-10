@@ -51,16 +51,16 @@
   background-color: var(--vtmn-semantic-color_content-action);
 }
 
+.vtmn-link--icon-along:visited::after {
+  background-color: var(--vtmn-semantic-color_content-visited);
+}
+
 .vtmn-link--icon-along:hover::after {
   background-color: var(--vtmn-semantic-color_hover-brand);
 }
 
 .vtmn-link--icon-along:active::after {
   background-color: var(--vtmn-semantic-color_active-brand);
-}
-
-.vtmn-link--icon-along:visited::after {
-  background-color: var(--vtmn-semantic-color_content-visited);
 }
 
 .vtmn-link_size--small {

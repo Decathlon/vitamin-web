@@ -20,14 +20,14 @@ export interface VtmnToggleProps
 
   /**
    * The size of the toggle.
-   * @default 'medium'
+   * @defaultValue 'medium'
    */
   size?: VtmnToggleSize;
 
   /**
    * Label text linked to the toggle.
    * @type {boolean}
-   * @default false
+   * @defaultValue false
    */
   checked?: boolean;
 
@@ -66,4 +66,8 @@ export const VtmnToggle = ({
   );
 };
 
-export default React.memo(VtmnToggle);
+const MemoVtmnToggle = React.memo(VtmnToggle);
+
+MemoVtmnToggle.displayName = 'VtmnToggle';
+
+export default MemoVtmnToggle;

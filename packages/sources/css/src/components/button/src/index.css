@@ -9,6 +9,7 @@
   font-size: var(--vtmn-typo_text-2-font-size);
   min-height: rem(48px);
   max-width: 100%;
+  width: fit-content;
   padding: rem(14px) rem(24px);
   line-height: 1.25;
   letter-spacing: rem(0.5px);

@@ -1,5 +1,5 @@
 <script lang="ts">
-import '@vtmn/css-button/dist/index.css';
+import '@vtmn/css-button/dist/index-with-vars.css';
 import { reactive, computed, defineComponent } from 'vue';
 
 export default /*#__PURE__*/ defineComponent({

@@ -6,34 +6,39 @@ import { Component, Prop, h, ComponentInterface } from '@stencil/core';
 })
 export class VtmnLink implements ComponentInterface {
   /**
-   * The size of the link.
-   * @default null
-   */
-  @Prop() size: 'small' | 'medium' | 'large';
-
-  /**
-   * Is the link standalone or not
-   * @default null
-   */
-  @Prop() standalone: boolean;
-
-  /**
-   * Is the link has an icon or not
-   * @default null
-   */
-  @Prop({ attribute: 'iconalong' }) iconAlong: boolean;
-
-  /**
    * The hypertext link
-   * @default '#'
+   * @type {string}
+   * @defaultValue '#'
    */
   @Prop() href: string = '#';
 
   /**
    * The target of the link
-   * @default null
+   * @type {string}
+   * @defaultValue '_self'
    */
-  @Prop() target: string;
+  @Prop() target?: string = '_self';
+
+  /**
+   * The size of the link
+   * @type {string}
+   * @defaultValue 'medium'
+   */
+  @Prop() size?: 'small' | 'medium' | 'large' = 'medium';
+
+  /**
+   * Whether the link is standalone
+   * @type {boolean}
+   * @defaultValue false
+   */
+  @Prop() standalone?: boolean = false;
+
+  /**
+   * Whether the link has an icon
+   * @type {boolean}
+   * @defaultValue false
+   */
+  @Prop({ attribute: 'withicon' }) withIcon: boolean = false;
 
   render() {
     return (
@@ -44,7 +49,7 @@ export class VtmnLink implements ComponentInterface {
           'vtmn-link',
           `vtmn-link_size--${this.size}`,
           this.standalone && 'vtmn-link--standalone',
-          this.standalone && this.iconAlong && 'vtmn-link--icon-along',
+          this.standalone && this.withIcon && 'vtmn-link--icon-along',
         ]
           .filter(Boolean)
           .join(' ')}

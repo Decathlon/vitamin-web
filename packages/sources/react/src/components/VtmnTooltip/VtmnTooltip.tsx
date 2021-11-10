@@ -5,19 +5,19 @@ export interface VtmnTooltipProps
   extends React.ComponentPropsWithoutRef<'span'> {
   /**
    * The position of tooltip from original element.
-   * @default 'top'
+   * @defaultValue 'top'
    */
   position?: VtmnTooltipPosition;
 
   /**
    * The tooltip text of the span.
-   * @default ''
+   * @defaultValue undefined
    */
   tooltip: string;
 
   /**
    * The tooltip children
-   * @default ''
+   * @defaultValue undefined
    */
   children: JSX.Element;
 }
@@ -25,7 +25,7 @@ export interface VtmnTooltipProps
 export const VtmnTooltip = ({
   children,
   position = VtmnTooltipPosition.TOP,
-  tooltip = '',
+  tooltip,
   className,
   ...props
 }: VtmnTooltipProps) => {
@@ -44,4 +44,8 @@ export const VtmnTooltip = ({
   );
 };
 
-export default React.memo(VtmnTooltip);
+const MemoVtmnTooltip = React.memo(VtmnTooltip);
+
+MemoVtmnTooltip.displayName = 'VtmnTooltip';
+
+export default MemoVtmnTooltip;

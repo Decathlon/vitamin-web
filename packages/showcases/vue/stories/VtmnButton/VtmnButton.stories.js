@@ -1,4 +1,4 @@
-import { VtmnButton } from '@vtmn/vue/dist/esm/VtmnButton';
+import { VtmnButton } from '@vtmn/vue';
 import {
   argTypes,
   parameters,
@@ -16,7 +16,7 @@ const Template = (args) => ({
   setup() {
     return { args };
   },
-  template: '<VtmnButton v-bind="args">Button</VtmnButton>',
+  template: `<VtmnButton v-bind="args">Button</VtmnButton>`,
 });
 
 export const Overview = Template.bind({});

@@ -1,5 +1,5 @@
 <script lang="ts">
-import '@vtmn/css-checkbox/dist/index.css';
+import '@vtmn/css-checkbox/dist/index-with-vars.css';
 import { defineComponent } from 'vue';
 
 export default /*#__PURE__*/ defineComponent({

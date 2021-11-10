@@ -2,32 +2,42 @@
   import '@vtmn/css-link';
   import { cn } from '../utils/classnames';
 
-  /** @restProps { a } */
+  /**
+   * The href of the link.
+   * @type {string}
+   */
+  export let href;
+
+  /**
+   * The target of the link.
+   * @type {string}
+   */
+  export let target;
 
   /**
    * The size of the link.
    * @type {string}
-   * @default 'medium'
+   * @defaultValue 'medium'
    */
   export let size = 'medium';
 
   /**
    * Whether link is standalone or not.
    * @type {boolean}
-   * @default false
+   * @defaultValue false
    */
   export let standalone = false;
 
   /**
    * Whether link has an icon or not.
    * @type {boolean}
-   * @default false
+   * @defaultValue false
    */
   export let iconAlong = false;
 
   let className;
   /**
-   * @type {string} A custom class to apply to the component.
+   * @type {string} Custom classes to apply to the component.
    */
   export { className as class };
 
@@ -40,6 +50,4 @@
   );
 </script>
 
-<a class={componentClass} {...$$restProps}>
-  <slot />
-</a>
+<a {href} {target} class={componentClass} {...$$restProps}><slot /></a>

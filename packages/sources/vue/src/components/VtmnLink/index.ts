@@ -1,16 +1,8 @@
 import { App as Application } from 'vue';
 import VtmnLink from './VtmnLink.vue';
 
-import { registerComponent } from '../../utils/plugins/index';
-
-const Plugin = {
-  install(vue: Application) {
-    registerComponent(vue, VtmnLink);
-  },
+VtmnLink.install = (Vue: Application) => {
+  Vue.component(VtmnLink.name, VtmnLink);
 };
 
-// use(Plugin);
-
-export default Plugin;
-
-export { VtmnLink };
+export default VtmnLink;

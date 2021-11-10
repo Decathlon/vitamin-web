@@ -1,5 +1,5 @@
 <script lang="ts">
-import '@vtmn/css-toggle/dist/index.css';
+import '@vtmn/css-toggle/dist/index-with-vars.css';
 import { computed, defineComponent, reactive } from 'vue';
 
 export default /*#__PURE__*/ defineComponent({

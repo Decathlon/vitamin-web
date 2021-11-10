@@ -10,8 +10,14 @@ module.exports = {
     screens: {
       mobile: { max: '599px' },
       tablet: { min: '600px', max: '899px' },
+      'gt-tablet': { min: '600px' },
+      'lt-small-desktop': { max: '899px' },
       'small-desktop': { min: '900px', max: '1199px' },
+      'gt-small-desktop': { min: '900px' },
+      'lt-medium-desktop': { max: '1199px' },
       'medium-desktop': { min: '1200px', max: '1799px' },
+      'gt-medium-desktop': { min: '1200px' },
+      'lt-large-desktop': { max: '1799px' },
       'large-desktop': { min: '1800px' },
     },
     colors: {

@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.16](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-popover@0.2.15...@vtmn/css-popover@0.2.16) (2021-11-09)
+
+**Note:** Version bump only for package @vtmn/css-popover
+
+
+
+
+
+## [0.2.15](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-popover@0.2.14...@vtmn/css-popover@0.2.15) (2021-10-25)
+
+**Note:** Version bump only for package @vtmn/css-popover
+
+
+
+
+
+## [0.2.14](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-popover@0.2.13...@vtmn/css-popover@0.2.14) (2021-10-20)
+
+**Note:** Version bump only for package @vtmn/css-popover
+
+
+
+
+
+## [0.2.13](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-popover@0.2.12...@vtmn/css-popover@0.2.13) (2021-10-19)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** allow to dynamically import css modules ([#701](https://github.com/Decathlon/vitamin-web/issues/701)) ([7c6e08c](https://github.com/Decathlon/vitamin-web/commit/7c6e08c4f76aa32fe92f91d7979df73796ff66e7))
+
+
+
+
+
+## [0.2.12](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-popover@0.2.11...@vtmn/css-popover@0.2.12) (2021-10-14)
+
+**Note:** Version bump only for package @vtmn/css-popover
+
+
+
+
+
 ## [0.2.11](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-popover@0.2.10...@vtmn/css-popover@0.2.11) (2021-10-12)
 
 **Note:** Version bump only for package @vtmn/css-popover
