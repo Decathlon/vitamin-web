@@ -1,4 +1,4 @@
-# `@vtmn/css-tailwind-preset` (private)
+# `@vtmn/css-tailwind-preset`
 
 > Decathlon Design System - Vitamin CSS Tailwind preset
 
