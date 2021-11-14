@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-card",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Decathlon Design System - Vitamin specific CSS styles for card component",
   "keywords": [
     "design-system",
@@ -26,7 +26,7 @@
     "build": "node build.js"
   },
   "devDependencies": {
-    "@vtmn/css-design-tokens": "^0.8.9",
+    "@vtmn/css-design-tokens": "^0.9.0",
     "@vtmn/css-postcss-config": "*"
   },
   "publishConfig": {
