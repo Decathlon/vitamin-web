@@ -21,6 +21,7 @@
   "workspaces": [
     "packages/sources/css",
     "packages/sources/css/config/*",
+    "packages/sources/css/presets/*",
     "packages/sources/css/src/design-tokens",
     "packages/sources/css/src/utilities",
     "packages/sources/css/src/components/*",
