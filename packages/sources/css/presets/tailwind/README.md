@@ -74,22 +74,6 @@ import '@vtmn/icons/dist/vitamix/font/vitamix.css';
 
 Or you can also import it with a CDN like `unpkg.com` with [this file](https://unpkg.com/@vtmn/icons/dist/vitamix/font/vitamix.css).
 
-## Usage
-
-Once you have installed this package, you just have to import CSS styles!
-
-With a bundler that supports CSS imports in JS files:
-
-```javascript
-import '@vtmn/css/dist/index.css';
-```
-
-Otherwise include it in your HTML file:
-
-```html
-<link rel="stylesheet" href="./node_modules/@vtmn/css/dist/index.css" />
-```
-
 ## Development
 
 If you are there, it's probably because you already use a [Tailwind CSS](https://tailwindcss.com/) in your project. If you want to take full advantage of all its features like functions & directives by building your own classes via [`@apply`](https://tailwindcss.com/docs/functions-and-directives#apply) for example inherited from the Vitamin CSS styles, you are at the right place!
