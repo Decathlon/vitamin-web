@@ -92,13 +92,13 @@ module.exports = {
 Then import files inside your CSS entry point:
 
 ```css
-@import 'tailwindcss/base'; // import base CSS classes from Tailwind CSS (optional)
-@import '@vtmn/css-design-tokens/dist/index.css'; // import Vitamin utilities CSS classes (required)
-@import '@vtmn/css-utilities/dist/index.css'; // import Vitamin utilities CSS classes (required)
-@import 'tailwindcss/components'; // import components CSS classes from Tailwind CSS (optional)
-@import 'tailwindcss/utilities'; // import utilities CSS classes from Tailwind CSS (optional)
-@import 'tailwindcss/screens'; // import screens CSS classes from Tailwind CSS (optional)
-@import '@vtmn/css/dist/components.css'; // import Vitamin components CSS classes (required)
+@import 'tailwindcss/base'; /* import base CSS classes from Tailwind CSS (optional) */
+@import '@vtmn/css-design-tokens/dist/index.css'; /* import Vitamin utilities CSS classes (required) */
+@import '@vtmn/css-utilities/dist/index.css'; /* import Vitamin utilities CSS classes (required) */
+@import 'tailwindcss/components'; /* import components CSS classes from Tailwind CSS (optional) */
+@import 'tailwindcss/utilities'; /* import utilities CSS classes from Tailwind CSS (optional) */
+@import 'tailwindcss/screens'; /* import screens CSS classes from Tailwind CSS (optional) */
+@import '@vtmn/css/dist/components.css'; /* import Vitamin components CSS classes (required) */
 ```
 
 Fore more details about Tailwind presets, [see Tailwind CSS documentation about presets here](https://tailwindcss.com/docs/presets).
@@ -136,13 +136,13 @@ Fore more details about this, [see Tailwind CSS documentation about optimizing f
 If your project uses the mathematical trick of basing the value of `1rem` equals `10px`, you can import files like this instead:
 
 ```css
-@import 'tailwindcss/base'; // import base CSS classes from Tailwind CSS (optional)
-@import '@vtmn/css-design-tokens/dist/index-base10.css'; // import Vitamin utilities CSS classes (required)
-@import '@vtmn/css-utilities/dist/index-base10.css'; // import Vitamin utilities CSS classes (required)
-@import 'tailwindcss/components'; // import components CSS classes from Tailwind CSS (optional)
-@import 'tailwindcss/utilities'; // import utilities CSS classes from Tailwind CSS (optional)
-@import 'tailwindcss/screens'; // import screens CSS classes from Tailwind CSS (optional)
-@import '@vtmn/css/dist/components-base10.css'; // import Vitamin components CSS classes (required)
+@import 'tailwindcss/base'; /* import base CSS classes from Tailwind CSS (optional) */
+@import '@vtmn/css-design-tokens/dist/index-base10.css'; /* import Vitamin utilities CSS classes (required) */
+@import '@vtmn/css-utilities/dist/index-base10.css'; /* import Vitamin utilities CSS classes (required) */
+@import 'tailwindcss/components'; /* import components CSS classes from Tailwind CSS (optional) */
+@import 'tailwindcss/utilities'; /* import utilities CSS classes from Tailwind CSS (optional) */
+@import 'tailwindcss/screens'; /* import screens CSS classes from Tailwind CSS (optional) */
+@import '@vtmn/css/dist/components-base10.css'; /* import Vitamin components CSS classes (required) */
 ```
 
 ## Playground

@@ -21,7 +21,7 @@
   "license": "Apache-2.0",
   "main": "./tailwind-preset.js",
   "files": [
-    "./tailwind-preset.js"
+    "tailwind-preset.js"
   ],
   "dependencies": {
     "@vtmn/css": "^0.33.1",
