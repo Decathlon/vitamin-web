@@ -101,7 +101,9 @@ Then import files inside your CSS entry point:
 @import '@vtmn/css/dist/components.css'; /* import Vitamin components CSS classes (required) */
 ```
 
-Fore more details about Tailwind presets, [see Tailwind CSS documentation about presets here](https://tailwindcss.com/docs/presets).
+_You will need a plugin to understand `@import` statements. If you use PostCSS, you can use [postcss-import](https://www.npmjs.com/package/postcss-import)._
+
+For more details about Tailwind presets, [see Tailwind CSS documentation about presets here](https://tailwindcss.com/docs/presets).
 
 Important: our Taiwind CSS preset has a prefix in order to avoid conflicts with existing Tailwind CSS project. So, to use our library, you will have to prefix all CSS utility classes with `vtmn-`.
 
@@ -121,7 +123,7 @@ For example:
 </div>
 ```
 
-Fore more details about CSS utility classes from this package, [see Tailwind CSS documentation here](https://tailwindcss.com/docs).
+For more details about CSS utility classes from this package, [see Tailwind CSS documentation here](https://tailwindcss.com/docs).
 
 ## Optimizing for production
 
@@ -129,7 +131,7 @@ To make the development experience as productive as possible, Tailwind generates
 
 When building for production, you should always use [PurgeCSS](https://purgecss.com) to tree-shake unused styles and optimize your final build size.
 
-Fore more details about this, [see Tailwind CSS documentation about optimizing for production here](https://tailwindcss.com/docs/optimizing-for-production).
+For more details about this, [see Tailwind CSS documentation about optimizing for production here](https://tailwindcss.com/docs/optimizing-for-production).
 
 ## Base 10 support
 
@@ -144,6 +146,8 @@ If your project uses the mathematical trick of basing the value of `1rem` equals
 @import 'tailwindcss/screens'; /* import screens CSS classes from Tailwind CSS (optional) */
 @import '@vtmn/css/dist/components-base10.css'; /* import Vitamin components CSS classes (required) */
 ```
+
+_You will need a plugin to understand `@import` statements. If you use PostCSS, you can use [postcss-import](https://www.npmjs.com/package/postcss-import)._
 
 ## Playground
 

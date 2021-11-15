@@ -117,7 +117,7 @@ For example:
 </div>
 ```
 
-Fore more details about CSS utility classes from this package, [see Tailwind CSS documentation here](https://tailwindcss.com/docs).
+For more details about CSS utility classes from this package, [see Tailwind CSS documentation here](https://tailwindcss.com/docs).
 
 ## Tailwind preset
 
