@@ -1,6 +1,6 @@
-# `@vtmn/css`
+# `@vtmn/css-tailwind-preset`
 
-> Decathlon Design System - Vitamin Vitamin global CSS styles library
+> Decathlon Design System - Vitamin CSS Tailwind preset
 
 <a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css"><img src="https://img.shields.io/badge/storybook-css-d891bc?style=flat&logo=storybook" alt="storybook" /></a>
 <a href="https://www.npmjs.com/package/@vtmn/css"><img src="https://img.shields.io/npm/v/@vtmn/css?style=flat&logo=npm" alt="npm version" /></a>
@@ -12,16 +12,10 @@ After installing [npm](https://docs.npmjs.com/downloading-and-installing-node-js
 
 ```sh
 # with npm
-npm i -S @vtmn/css
+npm i -S @vtmn/css-tailwind-preset
 
 # with yarn
-yarn add @vtmn/css
-```
-
-Or you can also install it with a CDN like `unpkg.com`:
-
-```html
-<link rel="stylesheet" href="https://unpkg.com/@vtmn/css" />
+yarn add @vtmn/css-tailwind-preset
 ```
 
 ## Install fonts
@@ -80,26 +74,38 @@ import '@vtmn/icons/dist/vitamix/font/vitamix.css';
 
 Or you can also import it with a CDN like `unpkg.com` with [this file](https://unpkg.com/@vtmn/icons/dist/vitamix/font/vitamix.css).
 
-## Usage
-
-Once you have installed this package, you just have to import CSS styles!
-
-With a bundler that supports CSS imports in JS files:
-
-```javascript
-import '@vtmn/css/dist/index.css';
-```
-
-Otherwise include it in your HTML file:
-
-```html
-<link rel="stylesheet" href="./node_modules/@vtmn/css/dist/index.css" />
-```
-
 ## Development
 
-All this package is generated with [Tailwind CSS](https://tailwindcss.com), a utility-first CSS framework that can be composed to build any design, directly in your markup.
-Be careful, in order to use our library, you will have to prefix all CSS utility classes with `vtmn-`.
+If you are there, it's probably because you already use a [Tailwind CSS](https://tailwindcss.com/) in your project. If you want to take full advantage of all its features like functions & directives by building your own classes via [`@apply`](https://tailwindcss.com/docs/functions-and-directives#apply) for example inherited from the Vitamin CSS styles, you are at the right place!
+
+If you don't have Tailwind CSS and you are interested, you can install it by following [this documentation](https://tailwindcss.com/docs/installation). If not, we encourage you to simply you our [`@vtmn/css`](https://www.npmjs.com/package/@vtmn/css) package which will give you all the different Vitamin styles without the need to build them with Tailwind CSS.
+
+In order to use our Tailwind preset, simply add this line inside your `tailwind.config.js` file:
+
+```js
+module.exports = {
+  presets: [require('@vtmn/css-tailwind-preset')],
+  // ...
+};
+```
+
+Then import files inside your CSS entry point:
+
+```css
+@import 'tailwindcss/base'; /* import base CSS classes from Tailwind CSS (optional) */
+@import '@vtmn/css-design-tokens/dist/index.css'; /* import Vitamin utilities CSS classes (required) */
+@import '@vtmn/css-utilities/dist/index.css'; /* import Vitamin utilities CSS classes (required) */
+@import 'tailwindcss/components'; /* import components CSS classes from Tailwind CSS (optional) */
+@import 'tailwindcss/utilities'; /* import utilities CSS classes from Tailwind CSS (optional) */
+@import 'tailwindcss/screens'; /* import screens CSS classes from Tailwind CSS (optional) */
+@import '@vtmn/css/dist/components.css'; /* import Vitamin components CSS classes (required) */
+```
+
+_You will need a plugin to understand `@import` statements. If you use PostCSS, you can use [postcss-import](https://www.npmjs.com/package/postcss-import)._
+
+For more details about Tailwind presets, [see Tailwind CSS documentation about presets here](https://tailwindcss.com/docs/presets).
+
+Important: our Taiwind CSS preset has a prefix in order to avoid conflicts with existing Tailwind CSS project. So, to use our library, you will have to prefix all CSS utility classes with `vtmn-`.
 
 To know all the use cases and their associated code, [check out the showcase here](https://decathlon.github.io/vitamin-web/@vtmn/showcase-css).
 
@@ -119,19 +125,29 @@ For example:
 
 For more details about CSS utility classes from this package, [see Tailwind CSS documentation here](https://tailwindcss.com/docs).
 
-## Tailwind preset
-
-Are you already using [Tailwind CSS](https://tailwindcss.com/) in your project? Do you want to take full advantage of all its features like functions & directives by building your own classes via [`@apply`](https://tailwindcss.com/docs/functions-and-directives#apply) for example? Good news, we invit you to have a look at our package [`@vtmn/css-tailwind-preset`](https://www.npmjs.com/package/@vtmn/css-tailwind-preset) which will explain you how to use Vitamin styles in a Tailwind project.
-
 ## Optimizing for production
 
 To make the development experience as productive as possible, Tailwind generates thousands of utility classes for you, most of which you probably won't actually use.
 
 When building for production, you should always use [PurgeCSS](https://purgecss.com) to tree-shake unused styles and optimize your final build size.
 
+For more details about this, [see Tailwind CSS documentation about optimizing for production here](https://tailwindcss.com/docs/optimizing-for-production).
+
 ## Base 10 support
 
-If your project uses the mathematical trick of basing the value of `1rem` equals `10px`, there is also an `index-base10` output within the `dist` folder of this package.
+If your project uses the mathematical trick of basing the value of `1rem` equals `10px`, you can import files like this instead:
+
+```css
+@import 'tailwindcss/base'; /* import base CSS classes from Tailwind CSS (optional) */
+@import '@vtmn/css-design-tokens/dist/index-base10.css'; /* import Vitamin utilities CSS classes (required) */
+@import '@vtmn/css-utilities/dist/index-base10.css'; /* import Vitamin utilities CSS classes (required) */
+@import 'tailwindcss/components'; /* import components CSS classes from Tailwind CSS (optional) */
+@import 'tailwindcss/utilities'; /* import utilities CSS classes from Tailwind CSS (optional) */
+@import 'tailwindcss/screens'; /* import screens CSS classes from Tailwind CSS (optional) */
+@import '@vtmn/css/dist/components-base10.css'; /* import Vitamin components CSS classes (required) */
+```
+
+_You will need a plugin to understand `@import` statements. If you use PostCSS, you can use [postcss-import](https://www.npmjs.com/package/postcss-import)._
 
 ## Playground
 
@@ -139,7 +155,7 @@ If you want to test Vitamin Tailwind CSS utility classes, [see our live playgrou
 
 ## Changelog
 
-If you want to know the different changes between versions of this package, [look at the changelog here](https://github.com/Decathlon/vitamin-web/blob/main/packages/sources/css/CHANGELOG.md).
+If you want to know the different changes between versions of this package, [look at the changelog here](https://github.com/Decathlon/vitamin-web/blob/main/packages/sources/css/presets/tailwind/CHANGELOG.md).
 
 ## I have an issue, what should I do?
 

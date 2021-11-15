@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-tooltip",
-  "version": "0.3.16",
+  "version": "0.4.0",
   "description": "Decathlon Design System - Vitamin specific CSS styles for tooltip component",
   "keywords": [
     "design-system",
@@ -26,9 +26,8 @@
     "build": "node build.js"
   },
   "devDependencies": {
-    "@vtmn/css-design-tokens": "^0.8.9",
-    "@vtmn/css-postcss-config": "*",
-    "@vtmn/css-tailwind-config": "*"
+    "@vtmn/css-design-tokens": "^0.9.0",
+    "@vtmn/css-postcss-config": "*"
   },
   "publishConfig": {
     "access": "public"
