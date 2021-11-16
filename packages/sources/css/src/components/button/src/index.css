@@ -44,8 +44,7 @@
 
 .vtmn-btn:not(:disabled):focus-visible {
   outline: none;
-  box-shadow: 0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
-    0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
+  box-shadow: var(--vtmn-shadow_focus-visible);
 }
 
 .vtmn-btn:not(:disabled) {
@@ -75,12 +74,6 @@
 
 .vtmn-btn_variant--primary:not(:disabled):active {
   background-color: var(--vtmn-semantic-color_active-brand);
-}
-
-.vtmn-btn_variant--primary:not(:disabled):focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
-    0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
 }
 
 /* Primary reversed button */
@@ -134,8 +127,7 @@
 .vtmn-btn_variant--secondary:not(:disabled):focus-visible {
   outline: none;
   box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-secondary),
-    0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
-    0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
+    var(--vtmn-shadow_focus-visible);
 }
 
 /* Tertiary button */
@@ -151,12 +143,6 @@
 
 .vtmn-btn_variant--tertiary:not(:disabled):active {
   background-color: var(--vtmn-semantic-color_active-tertiary);
-}
-
-.vtmn-btn_variant--tertiary:not(:disabled):focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
-    0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
 }
 
 /* Conversion button */
@@ -177,9 +163,7 @@
 
 .vtmn-btn_variant--conversion:not(:disabled):focus-visible {
   outline: none;
-  box-shadow: inset 0 0 0 rem(2px) transparent,
-    0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
-    0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
+  box-shadow: inset 0 0 0 rem(2px) transparent, var(--vtmn-shadow_focus-visible);
 }
 
 /* Ghost button */
@@ -200,9 +184,7 @@
 
 .vtmn-btn_variant--ghost:not(:disabled):focus-visible {
   outline: none;
-  box-shadow: inset 0 0 0 rem(2px) transparent,
-    0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
-    0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
+  box-shadow: inset 0 0 0 rem(2px) transparent, var(--vtmn-shadow_focus-visible);
 }
 
 /* Ghost Reversed button */
