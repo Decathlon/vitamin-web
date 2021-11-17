@@ -35,7 +35,9 @@
   outline: none;
 }
 
-.vtmn-chip:not(.vtmn-chip--disabled):focus-visible {
+.vtmn-chip:not(.vtmn-chip--with-close-icon):not(.vtmn-chip--disabled):focus-visible,
+.vtmn-chip.vtmn-chip--with-close-icon:focus-visible
+  > span[class^='vtmx-close'] {
   box-shadow: inset 0 0 0 rem(1px) var(--vtmn-semantic-color_border-inactive),
     0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
     0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
@@ -46,21 +48,23 @@
   cursor: not-allowed;
 }
 
-.vtmn-chip_variant--selected {
+.vtmn-chip.vtmn-chip_variant--selected {
   box-shadow: none;
   background-color: var(--vtmn-semantic-color_background-brand-primary);
   color: var(--vtmn-semantic-color_content-primary-reversed);
 }
 
-.vtmn-chip_variant--selected:not(.vtmn-chip--with-close-icon):not(.vtmn-chip--disabled):hover {
+.vtmn-chip.vtmn-chip_variant--selected:not(.vtmn-chip--with-close-icon):not(.vtmn-chip--disabled):hover {
   background-color: var(--vtmn-semantic-color_hover-brand);
 }
 
-.vtmn-chip_variant--selected:not(.vtmn-chip--with-close-icon):not(.vtmn-chip--disabled):active {
+.vtmn-chip.vtmn-chip_variant--selected:not(.vtmn-chip--with-close-icon):not(.vtmn-chip--disabled):active {
   background-color: var(--vtmn-semantic-color_active-brand);
 }
 
-.vtmn-chip_variant--selected:not(.vtmn-chip--disabled):focus-visible {
+.vtmn-chip.vtmn-chip_variant--selected:not(.vtmn-chip--with-close-icon):not(.vtmn-chip--disabled):focus-visible,
+.vtmn-chip.vtmn-chip_variant--selected.vtmn-chip--with-close-icon:focus-visible
+  > span[class^='vtmx-close'] {
   box-shadow: 0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
     0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
 }
