@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-tailwind-preset",
-  "version": "0.33.3",
+  "version": "0.33.4",
   "description": "Decathlon Design System - Vitamin CSS Tailwind preset",
   "keywords": [
     "design-system",
@@ -24,7 +24,7 @@
     "tailwind-preset.js"
   ],
   "dependencies": {
-    "@vtmn/css": "^0.33.3",
+    "@vtmn/css": "^0.33.4",
     "@vtmn/css-design-tokens": "^0.9.1",
     "@vtmn/css-utilities": "^0.2.1"
   },

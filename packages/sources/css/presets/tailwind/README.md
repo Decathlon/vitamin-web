@@ -76,7 +76,7 @@ Or you can also import it with a CDN like `unpkg.com` with [this file](https://u
 
 ## Development
 
-If you are there, it's probably because you already use a [Tailwind CSS](https://tailwindcss.com/) in your project. If you want to take full advantage of all its features like functions & directives by building your own classes via [`@apply`](https://tailwindcss.com/docs/functions-and-directives#apply) for example inherited from the Vitamin CSS styles, you are at the right place!
+If you are there, it's probably because you already use [Tailwind CSS](https://tailwindcss.com/) in your project. If you want to take full advantage of all its features like [functions & directives](https://tailwindcss.com/docs/functions-and-directives) by building your own classes via [`@apply`](https://tailwindcss.com/docs/functions-and-directives#apply) for example inherited from the Vitamin CSS styles, you are at the right place!
 
 If you don't have Tailwind CSS and you are interested, you can install it by following [this documentation](https://tailwindcss.com/docs/installation). If not, we encourage you to simply you our [`@vtmn/css`](https://www.npmjs.com/package/@vtmn/css) package which will give you all the different Vitamin styles without the need to build them with Tailwind CSS.
 
@@ -93,7 +93,7 @@ Then import files inside your CSS entry point:
 
 ```css
 @import 'tailwindcss/base'; /* import base CSS classes from Tailwind CSS (optional) */
-@import '@vtmn/css-design-tokens/dist/index.css'; /* import Vitamin utilities CSS classes (required) */
+@import '@vtmn/css-design-tokens/dist/index.css'; /* import Vitamin design tokens CSS classes (required) */
 @import '@vtmn/css-utilities/dist/index.css'; /* import Vitamin utilities CSS classes (required) */
 @import 'tailwindcss/components'; /* import components CSS classes from Tailwind CSS (optional) */
 @import 'tailwindcss/utilities'; /* import utilities CSS classes from Tailwind CSS (optional) */
@@ -139,7 +139,7 @@ If your project uses the mathematical trick of basing the value of `1rem` equals
 
 ```css
 @import 'tailwindcss/base'; /* import base CSS classes from Tailwind CSS (optional) */
-@import '@vtmn/css-design-tokens/dist/index-base10.css'; /* import Vitamin utilities CSS classes (required) */
+@import '@vtmn/css-design-tokens/dist/index-base10.css'; /* import Vitamin design tokens CSS classes (required) */
 @import '@vtmn/css-utilities/dist/index-base10.css'; /* import Vitamin utilities CSS classes (required) */
 @import 'tailwindcss/components'; /* import components CSS classes from Tailwind CSS (optional) */
 @import 'tailwindcss/utilities'; /* import utilities CSS classes from Tailwind CSS (optional) */
