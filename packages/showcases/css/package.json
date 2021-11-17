@@ -18,7 +18,7 @@
     "@storybook/addon-viewport": "^6.3.12",
     "@storybook/html": "^6.3.12",
     "@vtmn/css": "*",
-    "@vtmn/css-tailwind-config": "*",
+    "@vtmn/css-tailwind-preset": "*",
     "@vtmn/icons": "*",
     "@vtmn/showcase-core": "*",
     "@whitespace/storybook-addon-html": "^5.0.0",

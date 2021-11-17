@@ -36,8 +36,8 @@
       "root": "packages/sources/css/config/postcss",
       "type": "library"
     },
-    "@vtmn/css-tailwind-config": {
-      "root": "packages/sources/css/config/tailwind",
+    "@vtmn/css-tailwind-preset": {
+      "root": "packages/sources/css/presets/tailwind",
       "type": "library"
     },
     "@vtmn/css": {

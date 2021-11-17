@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/web-components",
-  "version": "0.16.8",
+  "version": "0.16.12",
   "description": "Decathlon Design System - Vitamin Web Components library",
   "keywords": [
     "design-system",
@@ -36,14 +36,14 @@
   },
   "devDependencies": {
     "@stencil/postcss": "^2.0.0",
-    "@vtmn/css-badge": "^0.3.20",
-    "@vtmn/css-button": "^0.7.0",
-    "@vtmn/css-checkbox": "^0.4.20",
-    "@vtmn/css-link": "^0.4.4",
-    "@vtmn/css-loader": "^0.1.18",
-    "@vtmn/css-radio-button": "^0.4.21",
-    "@vtmn/css-text-input": "^0.8.13",
-    "@vtmn/css-toggle": "^0.3.20",
+    "@vtmn/css-badge": "^0.4.1",
+    "@vtmn/css-button": "^0.8.1",
+    "@vtmn/css-checkbox": "^0.5.1",
+    "@vtmn/css-link": "^0.5.1",
+    "@vtmn/css-loader": "^0.2.1",
+    "@vtmn/css-radio-button": "^0.5.1",
+    "@vtmn/css-text-input": "^0.9.1",
+    "@vtmn/css-toggle": "^0.4.1",
     "@vtmn/icons": "^0.6.0",
     "chokidar-cli": "^3.0.0",
     "postcss-import": "^14.0.0"

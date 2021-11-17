@@ -56,6 +56,8 @@ This package provides you with a complete CSS with a huge set of utility classes
   </tr>
 </table>
 
+If you already using [Tailwind CSS](https://tailwindcss.com/) in your project or you want to take full advantage of all its features like functions & directives by building your own classes via [`@apply`](https://tailwindcss.com/docs/functions-and-directives#apply) for example. You can check our package [`@vtmn/css-tailwind-preset`](https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/presets/tailwind#readme) which will explain you how to use Vitamin styles in a Tailwind project.
+
 ### Specific CSS styles 🖌
 
 These packages allow the consumption of elements with a higher level of granularity. You get only the styles you need and what you consume is Pure CSS without [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*), therefore IE 11 compatible:

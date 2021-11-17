@@ -1,5 +1,5 @@
 import { Meta, ColorPalette, ColorItem, Source } from '@storybook/addon-docs';
-import tailwindConfig from '@vtmn/css-tailwind-config';
+import tailwindPreset from '@vtmn/css-tailwind-preset';
 
 <Meta title="Guidelines / Colors" />
 
@@ -14,10 +14,10 @@ For more details, see our <a class="vtmn-link vtmn-link--icon-along" href="https
 If you don't know CSS Custom Properties, you can see basic usage documentation [here](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#Basic_usage). All our CSS Custom Properties for colors are listed at "Swatches" column just below:
 
 <ColorPalette>
-  {Object.keys(tailwindConfig.theme.colors).map((key) => {
-    if (typeof tailwindConfig.theme.colors[key] === 'string') {
+  {Object.keys(tailwindPreset.theme.colors).map((key) => {
+    if (typeof tailwindPreset.theme.colors[key] === 'string') {
       return (
-        <ColorItem title={key} colors={[tailwindConfig.theme.colors[key]]} />
+        <ColorItem title={key} colors={[tailwindPreset.theme.colors[key]]} />
       );
     }
   })}
