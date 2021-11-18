@@ -122,7 +122,7 @@
   height: auto;
   border-radius: 8px;
   color: var(--vtmn-semantic-color_content-primary-reversed);
-  background: linear-gradient(
+  background-color: linear-gradient(
     180deg,
     rgb(0 16 24 / 0%) 20%,
     var(--vtmn-semantic-color_background-primary-reversed) 100%
