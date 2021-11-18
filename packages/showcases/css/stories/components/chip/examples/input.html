@@ -1,95 +1,141 @@
-<div class="block" style="display: flex; flex-direction: row">
-  <div
-    class="
-      vtmn-chip
-      vtmn-chip_variant--selected
-      vtmn-chip--with-left-element vtmn-chip--with-close-icon
-    "
-    tabindex="0"
-  >
-    <span class="vtmx-map-pin-line"></span>
-    Around me
-    <span class="vtmx-close-line"></span>
+<style>
+  .block > * {
+    margin: 0.5rem 0.3rem;
+  }
+</style>
+
+<div class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap">
+  <div class="vtmn-chip vtmn-chip_variant--input" tabindex="0">HTML</div>
+
+  <div class="vtmn-chip vtmn-chip_variant--input vtmn-chip--selected">
+    <span class="vtmx-ruler-line"></span>
+    CSS
+    <button
+      class="
+        vtmn-btn vtmn-btn--icon-alone
+        vtmn-btn_size--small
+        vtmn-btn_variant--ghost-reversed
+      "
+      aria-label="Unselect CSS"
+    >
+      <span class="vtmx-close-line"></span>
+    </button>
+  </div>
+
+  <div class="vtmn-chip vtmn-chip_variant--input vtmn-chip--selected">
+    <img
+      src="https://storage.googleapis.com/dkt-design-cdn/images/placeholder.jpg"
+      alt="Black and white grid"
+    />
+    JavaScript
+    <button
+      class="
+        vtmn-btn vtmn-btn--icon-alone
+        vtmn-btn_size--small
+        vtmn-btn_variant--ghost-reversed
+      "
+      aria-label="Unselect JavaScript"
+    >
+      <span class="vtmx-close-line"></span>
+    </button>
   </div>
 
   <div
     class="
       vtmn-chip
-      vtmn-chip_variant--selected
-      vtmn-chip--with-left-element vtmn-chip--with-close-icon
+      vtmn-chip_variant--input
+      vtmn-chip--selected vtmn-chip--disabled
     "
-    tabindex="0"
   >
-    <span class="vtmx-walk-line"></span>
-    Walking
-    <span class="vtmx-close-line"></span>
-  </div>
-
-  <div class="vtmn-chip vtmn-chip--with-left-element" tabindex="0">
-    <span class="vtmx-calendar-line"></span>
-    Today
-  </div>
-
-  <div class="vtmn-chip vtmn-chip--with-left-element" tabindex="0">
-    <span class="vtmx-time-line"></span>
-    Later
+    WASM
+    <button
+      class="
+        vtmn-btn vtmn-btn--icon-alone
+        vtmn-btn_size--small
+        vtmn-btn_variant--ghost-reversed
+      "
+      aria-label="Unselect WASM"
+      disabled
+    >
+      <span class="vtmx-close-line"></span>
+    </button>
   </div>
 </div>
 
-<div class="block" style="display: flex; flex-direction: row">
+<div class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap">
   <div
-    class="vtmn-chip vtmn-chip_size--small vtmn-chip--with-left-element"
+    class="vtmn-chip vtmn-chip_variant--input vtmn-chip_size--small"
     tabindex="0"
   >
-    <img
-      src="https://storage.googleapis.com/dkt-design-cdn/images/placeholder.jpg"
-      alt="Black and white grid"
-    />
-    John Doe
+    HTML
   </div>
 
   <div
     class="
       vtmn-chip
+      vtmn-chip_variant--input
       vtmn-chip_size--small
-      vtmn-chip_variant--selected
-      vtmn-chip--with-left-element vtmn-chip--with-close-icon
+      vtmn-chip--selected
     "
-    tabindex="0"
   >
-    <img
-      src="https://storage.googleapis.com/dkt-design-cdn/images/placeholder.jpg"
-      alt="Black and white grid"
-    />
-    Roger Dupont
-    <span class="vtmx-close-line"></span>
-  </div>
-
-  <div
-    class="vtmn-chip vtmn-chip_size--small vtmn-chip--with-left-element"
-    tabindex="0"
-  >
-    <img
-      src="https://storage.googleapis.com/dkt-design-cdn/images/placeholder.jpg"
-      alt="Black and white grid"
-    />
-    La panthère rose
+    <span class="vtmx-ruler-line"></span>
+    CSS
+    <button
+      class="
+        vtmn-btn vtmn-btn--icon-alone
+        vtmn-btn_size--small
+        vtmn-btn_variant--ghost-reversed
+      "
+      aria-label="Unselect CSS"
+    >
+      <span class="vtmx-close-line"></span>
+    </button>
   </div>
 
   <div
     class="
       vtmn-chip
+      vtmn-chip_variant--input
       vtmn-chip_size--small
-      vtmn-chip_variant--selected
-      vtmn-chip--with-left-element vtmn-chip--with-close-icon
+      vtmn-chip--selected
     "
-    tabindex="0"
   >
     <img
       src="https://storage.googleapis.com/dkt-design-cdn/images/placeholder.jpg"
       alt="Black and white grid"
     />
-    Bill Gates
-    <span class="vtmx-close-line"></span>
+    JavaScript
+    <button
+      class="
+        vtmn-btn vtmn-btn--icon-alone
+        vtmn-btn_size--small
+        vtmn-btn_variant--ghost-reversed
+      "
+      aria-label="Unselect JavaScript"
+    >
+      <span class="vtmx-close-line"></span>
+    </button>
+  </div>
+
+  <div
+    class="
+      vtmn-chip
+      vtmn-chip_variant--input
+      vtmn-chip_size--small
+      vtmn-chip--selected vtmn-chip--disabled
+    "
+  >
+    WASM
+    <button
+      class="
+        vtmn-btn vtmn-btn--icon-alone
+        vtmn-btn_size--small
+        vtmn-btn_variant--ghost-reversed
+      "
+      aria-label="Unselect WASM"
+      disabled
+    >
+      <span class="vtmx-close-line"></span>
+    </button>
   </div>
 </div>

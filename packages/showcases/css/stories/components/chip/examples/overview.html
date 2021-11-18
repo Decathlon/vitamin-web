@@ -1,145 +1,161 @@
-<div class="block" style="display: flex; flex-direction: row">
-  <div class="vtmn-chip" tabindex="0">Filter chip</div>
+<style>
+  .block > * {
+    margin: 0.5rem 0.3rem;
+  }
+</style>
 
-  <div class="vtmn-chip vtmn-chip--disabled" tabindex="0">Filter chip</div>
-
-  <div class="vtmn-chip vtmn-chip_variant--selected" tabindex="0">
-    Single choice chip
+<div class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap">
+  <div class="vtmn-chip vtmn-chip_variant--single-choice" tabindex="0">
+    Single choice
   </div>
 
   <div
-    class="vtmn-chip vtmn-chip_variant--selected vtmn-chip--disabled"
+    class="vtmn-chip vtmn-chip_variant--single-choice vtmn-chip--selected"
     tabindex="0"
   >
-    Single choice chip
+    Single choice selected
+  </div>
+
+  <div class="vtmn-chip vtmn-chip_variant--single-choice" tabindex="0">
+    Single choice
+  </div>
+
+  <div class="vtmn-chip vtmn-chip_variant--single-choice vtmn-chip--disabled">
+    Single choice disabled
   </div>
 </div>
 
-<div class="block" style="display: flex; flex-direction: row">
-  <div class="vtmn-chip vtmn-chip--with-badge" tabindex="0">
-    Filter chip
-    <span class="vtmn-badge">1</span>
-  </div>
-
+<div class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap">
   <div
-    class="vtmn-chip vtmn-chip_variant--selected vtmn-chip--with-left-element"
+    class="vtmn-chip vtmn-chip_variant--input vtmn-chip_size--small"
     tabindex="0"
   >
-    <span class="vtmx-check-line"></span>
-    Single choice chip
-  </div>
-
-  <div
-    class="vtmn-chip vtmn-chip--with-left-element vtmn-chip--with-badge"
-    tabindex="0"
-  >
-    <span class="vtmx-check-line"></span>
-    Filter chip
-    <span class="vtmn-badge">1</span>
-  </div>
-
-  <div
-    class="vtmn-chip vtmn-chip_variant--selected vtmn-chip--with-close-icon"
-    tabindex="0"
-  >
-    Single choice chip
-    <span class="vtmx-close-line"></span>
-  </div>
-</div>
-
-<div class="block" style="display: flex; flex-direction: row">
-  <div
-    class="vtmn-chip vtmn-chip--with-right-element vtmn-chip--with-close-icon"
-    tabindex="0"
-  >
-    <span class="vtmx-map-pin-line"></span>
-    Filter chip
-    <span class="vtmx-close-line"></span>
+    HTML
   </div>
 
   <div
     class="
       vtmn-chip
-      vtmn-chip_variant--selected
-      vtmn-chip--with-badge vtmn-chip--with-left-element
+      vtmn-chip_variant--input
+      vtmn-chip_size--small
+      vtmn-chip--selected
     "
-    tabindex="0"
   >
-    <span class="vtmx-map-pin-line"></span>
-    Single choice chip
-    <span class="vtmn-badge vtmn-badge_variant--reversed">1</span>
+    <span class="vtmx-ruler-line"></span>
+    CSS
+    <button
+      class="
+        vtmn-btn vtmn-btn--icon-alone
+        vtmn-btn_size--small
+        vtmn-btn_variant--ghost-reversed
+      "
+      aria-label="Unselect CSS"
+    >
+      <span class="vtmx-close-line"></span>
+    </button>
   </div>
 
   <div
-    class="vtmn-chip vtmn-chip--with-close-icon vtmn-chip--with-left-element"
-    tabindex="0"
+    class="
+      vtmn-chip
+      vtmn-chip_variant--input
+      vtmn-chip_size--small
+      vtmn-chip--selected
+    "
   >
     <img
       src="https://storage.googleapis.com/dkt-design-cdn/images/placeholder.jpg"
       alt="Black and white grid"
     />
-    Filter chip
-    <span class="vtmx-close-line"></span>
+    JavaScript
+    <button
+      class="
+        vtmn-btn vtmn-btn--icon-alone
+        vtmn-btn_size--small
+        vtmn-btn_variant--ghost-reversed
+      "
+      aria-label="Unselect JavaScript"
+    >
+      <span class="vtmx-close-line"></span>
+    </button>
   </div>
 
   <div
     class="
       vtmn-chip
-      vtmn-chip_variant--selected
-      vtmn-chip--with-badge vtmn-chip--with-left-element
+      vtmn-chip_variant--input
+      vtmn-chip_size--small
+      vtmn-chip--selected vtmn-chip--disabled
     "
-    tabindex="0"
   >
-    <img
-      src="https://storage.googleapis.com/dkt-design-cdn/images/placeholder.jpg"
-      alt="Black and white grid"
-    />
-    Single choice chip
-    <span class="vtmn-badge vtmn-badge_variant--reversed">1</span>
+    WASM
+    <button
+      class="
+        vtmn-btn vtmn-btn--icon-alone
+        vtmn-btn_size--small
+        vtmn-btn_variant--ghost-reversed
+      "
+      aria-label="Unselect WASM"
+      disabled
+    >
+      <span class="vtmx-close-line"></span>
+    </button>
   </div>
 </div>
 
-<div class="block" style="display: flex; flex-direction: row">
-  <div class="vtmn-chip vtmn-chip_size--small" tabindex="0">Filter chip</div>
-
+<div class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap">
   <div
-    class="
-      vtmn-chip
-      vtmn-chip_size--small
-      vtmn-chip--with-left-element vtmn-chip--with-close-icon
-    "
+    class="vtmn-chip vtmn-chip_variant--filter vtmn-chip--selected"
     tabindex="0"
   >
-    <span class="vtmx-map-pin-line"></span>
-    Single choice chip
-    <span class="vtmx-close-line"></span>
+    Nature hiking
+  </div>
+
+  <div class="vtmn-chip vtmn-chip_variant--filter" tabindex="0">
+    Snow hiking
   </div>
 
   <div
     class="
       vtmn-chip
-      vtmn-chip_variant--selected
-      vtmn-chip_size--small
-      vtmn-chip--with-badge
+      vtmn-chip_variant--filter
+      vtmn-chip--selected vtmn-chip--disabled
     "
+  >
+    Mountain hiking
+  </div>
+
+  <div class="vtmn-chip vtmn-chip_variant--filter" tabindex="0">
+    Fast hiking
+  </div>
+</div>
+
+<div class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap">
+  <div
+    class="vtmn-chip vtmn-chip_variant--action vtmn-chip_size--small"
     tabindex="0"
   >
-    Single choice chip
-    <span class="vtmn-badge vtmn-badge_variant--reversed">1</span>
+    <span class="vtmx-settings-line" aria-hidden="true"></span>
+    Change settings
+  </div>
+
+  <div
+    class="vtmn-chip vtmn-chip_variant--action vtmn-chip_size--small"
+    tabindex="0"
+  >
+    <span class="vtmx-add-line" aria-hidden="true"></span>
+    Add a new row
   </div>
 
   <div
     class="
       vtmn-chip
-      vtmn-chip_variant--selected
+      vtmn-chip_variant--action
       vtmn-chip_size--small
-      vtmn-chip--with-left-element
+      vtmn-chip--disabled
     "
-    tabindex="0"
   >
-    <img
-      src="https://storage.googleapis.com/dkt-design-cdn/images/placeholder.jpg"
-      alt="Black and white grid"
-    />Filter chip
+    <span class="vtmx-phone-line" aria-hidden="true"></span>
+    Call the help desk
   </div>
 </div>

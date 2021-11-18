@@ -5,7 +5,7 @@
 .vtmn-badge {
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-3-font-size);
-  font-weight: 500;
+  font-weight: var(--vtmn-typo_font-weight--regular);
   line-height: 20px;
   display: inline-flex;
   height: 20px;
