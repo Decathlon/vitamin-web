@@ -6,17 +6,17 @@
 /* Chip component */
 
 .vtmn-chip {
-  height: 40px;
-  min-width: fit-content;
+  height: rem(40px);
+  min-width: max-content;
   max-width: max-content;
   display: flex;
   flex-direction: row;
   justify-content: center;
   line-height: var(--vtmn-typo_text-2-line-height);
   align-items: center;
-  padding: 8px 16px;
-  box-shadow: inset 0 0 0 1px var(--vtmn-semantic-color_border-inactive);
-  border-radius: 30px;
+  padding: rem(8px) rem(16px);
+  box-shadow: inset 0 0 0 rem(1px) var(--vtmn-semantic-color_border-inactive);
+  border-radius: rem(30px);
   background-color: var(--vtmn-semantic-color_background-primary);
   position: relative;
   color: var(--vtmn-semantic-color_content-action);
@@ -27,7 +27,7 @@
 
 .vtmn-chip > .vtmn-badge {
   font-weight: var(--vtmn-typo_font-weight--regular);
-  transform: translateX(6px);
+  transform: translateX(rem(6px));
 }
 
 /* States */
@@ -42,9 +42,9 @@
 
 .vtmn-chip:not(.vtmn-chip--disabled):focus-visible {
   outline: none;
-  box-shadow: inset 0 0 0 1px var(--vtmn-semantic-color_border-inactive),
-    0 0 0 4px var(--vtmn-semantic-color_border-primary-reversed),
-    0 0 0 6px var(--vtmn-semantic-color_border-primary);
+  box-shadow: inset 0 0 0 rem(1px) var(--vtmn-semantic-color_border-inactive),
+    0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
+    0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
 }
 
 .vtmn-chip.vtmn-chip--disabled {
@@ -72,10 +72,10 @@
   content: '';
   mask: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' xmlns='http://www.w3.org/2000/svg'><path d='m6.667 10.115 6.128-6.129.943.943L6.667 12 2.424 7.757l.943-.942 3.3 3.3Z'/></svg>");
   mask-size: cover;
-  height: 24px;
-  width: 24px;
+  height: rem(24px);
+  width: rem(24px);
   position: relative;
-  left: -4px;
+  left: rem(-4px);
   background-color: var(--vtmn-semantic-color_content-primary-reversed);
 }
 
@@ -83,80 +83,80 @@
 
 .vtmn-chip_size--small {
   line-height: var(--vtmn-typo_text-3-line-height);
-  height: 32px;
+  height: rem(32px);
   font-size: var(--vtmn-typo_text-3-font-size);
 }
 
 .vtmn-chip_size--small > .vtmn-badge {
-  transform: translateX(8px);
+  transform: translateX(rem(8px));
 }
 
 .vtmn-chip_size--medium {
   line-height: var(--vtmn-typo_text-2-line-height);
-  height: 40px;
+  height: rem(40px);
   font-size: var(--vtmn-typo_text-2-font-size);
 }
 
 .vtmn-chip_size--medium > .vtmn-badge {
-  transform: translateX(6px);
+  transform: translateX(rem(6px));
 }
 
 /* Variants (filter by default) */
 
 .vtmn-chip_variant--filter > .vtmn-badge {
   font-weight: var(--vtmn-typo_font-weight--regular);
-  transform: translateX(6px);
+  transform: translateX(rem(6px));
 }
 
 .vtmn-chip_variant--filter.vtmn-chip_size--small > .vtmn-badge {
-  transform: translateX(8px);
+  transform: translateX(rem(8px));
 }
 
 .vtmn-chip_variant--filter.vtmn-chip_size--medium > .vtmn-badge {
-  transform: translateX(6px);
+  transform: translateX(rem(6px));
 }
 
 .vtmn-chip_variant--filter.vtmn-chip--selected {
-  padding-left: 16px;
+  padding-left: rem(16px);
 }
 
 .vtmn-chip_variant--filter.vtmn-chip--selected::before {
   content: '';
   mask: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' xmlns='http://www.w3.org/2000/svg'><path d='m6.667 10.115 6.128-6.129.943.943L6.667 12 2.424 7.757l.943-.942 3.3 3.3Z'/></svg>");
   mask-size: cover;
-  height: 24px;
-  width: 24px;
+  height: rem(24px);
+  width: rem(24px);
   position: relative;
-  left: -4px;
+  left: rem(-4px);
   background-color: var(--vtmn-semantic-color_content-primary-reversed);
 }
 
 .vtmn-chip_variant--filter.vtmn-chip_size--small.vtmn-chip--selected::before {
-  left: -6px;
+  left: rem(-6px);
 }
 
 .vtmn-chip_variant--filter.vtmn-chip_size--medium.vtmn-chip--selected::before {
-  left: -4px;
+  left: rem(-4px);
 }
 
 .vtmn-chip_variant--action > span[class^='vtmx-'],
 .vtmn-chip_variant--action > svg {
   color: var(--vtmn-semantic-color_content-action);
   fill: var(--vtmn-semantic-color_content-action);
-  width: 24px;
-  height: 24px;
-  font-size: 24px;
-  transform: translateX(-4px);
+  width: rem(24px);
+  height: rem(24px);
+  font-size: rem(24px);
+  transform: translateX(rem(-4px));
 }
 
 .vtmn-chip_variant--action.vtmn-chip_size--small > span[class^='vtmx-'],
 .vtmn-chip_variant--action.vtmn-chip_size--small > svg {
-  transform: translateX(-6px);
+  transform: translateX(rem(-6px));
 }
 
 .vtmn-chip_variant--action.vtmn-chip_size--medium > span[class^='vtmx-'],
 .vtmn-chip_variant--action.vtmn-chip_size--medium > svg {
-  transform: translateX(-4px);
+  transform: translateX(rem(-4px));
 }
 
 .vtmn-chip_variant--single-choice.vtmn-chip--selected::before {
@@ -172,44 +172,44 @@
 
 .vtmn-chip_variant--input > span[class^='vtmx-'],
 .vtmn-chip_variant--input > svg {
-  transform: translateX(-6px);
+  transform: translateX(rem(-6px));
 }
 
 .vtmn-chip_variant--input.vtmn-chip_size--small > span[class^='vtmx-'],
 .vtmn-chip_variant--input.vtmn-chip_size--small > svg {
-  transform: translateX(-8px);
+  transform: translateX(rem(-8px));
 }
 
 .vtmn-chip_variant--input.vtmn-chip_size--medium > span[class^='vtmx-'],
 .vtmn-chip_variant--input.vtmn-chip_size--medium > svg {
-  transform: translateX(-6px);
+  transform: translateX(rem(-6px));
 }
 
 .vtmn-chip_variant--input > img {
-  height: 20px;
-  width: 20px;
+  height: rem(20px);
+  width: rem(20px);
   border-radius: 50%;
-  transform: translateX(-6px);
+  transform: translateX(rem(-6px));
 }
 
 .vtmn-chip_variant--input.vtmn-chip_size--small > img {
-  transform: translateX(-8px);
+  transform: translateX(rem(-8px));
 }
 
 .vtmn-chip_variant--input.vtmn-chip_size--medium > img {
-  transform: translateX(-6px);
+  transform: translateX(rem(-6px));
 }
 
 .vtmn-chip_variant--input.vtmn-chip--selected {
-  padding-right: 6px;
+  padding-right: rem(6px);
 }
 
 .vtmn-chip_variant--input.vtmn-chip_size--small.vtmn-chip--selected {
-  padding-right: 4px;
+  padding-right: rem(4px);
 }
 
 .vtmn-chip_variant--input.vtmn-chip_size--medium.vtmn-chip--selected {
-  padding-right: 6px;
+  padding-right: rem(6px);
 }
 
 .vtmn-chip_variant--input.vtmn-chip--selected::before {
@@ -224,9 +224,9 @@
 }
 
 .vtmn-chip_variant--input.vtmn-chip--selected > .vtmn-btn--icon-alone {
-  margin-left: 6px;
+  margin-left: rem(6px);
   padding: 0;
-  height: 24px;
+  height: rem(24px);
   border-radius: 50%;
 }
 
@@ -234,8 +234,8 @@
   > .vtmn-btn--icon-alone
   > span[class^='vtmx-'],
 .vtmn-chip_variant--input.vtmn-chip--selected > .vtmn-btn--icon-alone > svg {
-  font-size: 24px;
-  transform: translate(1px, 3px);
+  font-size: rem(24px);
+  transform: translate(rem(1px), rem(3px));
 }
 
 .vtmn-chip_variant--input.vtmn-chip--selected:not(.vtmn-chip--disabled):hover {
