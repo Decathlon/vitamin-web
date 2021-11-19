@@ -4,25 +4,33 @@
 @import '@vtmn/css-design-tokens/src/opacities';
 
 .vtmn-breadcrumb {
-  box-shadow: inset 0 0 0 rem(2px) transparent;
-  font-size: var(--vtmn-typo_text-2-font-size);
-  min-height: rem(48px);
-  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: fit-content;
   width: fit-content;
-  padding: rem(14px) rem(24px);
-  line-height: 1.25;
-  letter-spacing: rem(0.5px);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  background-color: var(--vtmn-semantic-color_background-brand-primary);
-  color: var(--vtmn-semantic-color_content-primary-reversed);
-  fill: var(--vtmn-semantic-color_content-primary-reversed);
-  border: none;
-  border-radius: rem(4px);
-  display: inline-block;
   font-family: var(--vtmn-typo_font-family);
-  font-weight: var(--vtmn-typo_font-weight--bold);
-  position: relative;
-  text-align: center;
+  color: var(--vtmn-semantic-color_content-tertiary);
+  font-size: var(--vtmn-typo_text-3-font-size);
+  font-weight: var(--vtmn-typo_font-weight--regular);
+  line-height: var(--vtmn-typo_text-3-line-height);
+}
+
+.vtmn-breadcrumb > li {
+  list-style-type: none;
+}
+
+.vtmn-breadcrumb > li:not(:last-child)::after {
+  content: '/';
+  margin: 0 rem(8px);
+}
+
+.vtmn-breadcrumb > li > a:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.vtmn-breadcrumb > li:last-child {
+  color: var(--vtmn-semantic-color_content-primary);
 }
