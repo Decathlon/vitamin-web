@@ -4,10 +4,7 @@
 @import '@vtmn/css-design-tokens/src/opacities';
 
 .vtmn-breadcrumb {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+  display: block;
   height: fit-content;
   width: fit-content;
   font-family: var(--vtmn-typo_font-family);
@@ -17,20 +14,31 @@
   line-height: var(--vtmn-typo_text-3-line-height);
 }
 
-.vtmn-breadcrumb > li {
+.vtmn-breadcrumb > ol,
+.vtmn-breadcrumb li {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.vtmn-breadcrumb li {
   list-style-type: none;
 }
 
-.vtmn-breadcrumb > li:not(:last-child)::after {
+.vtmn-breadcrumb li > span {
+  margin-right: rem(4px);
+}
+
+.vtmn-breadcrumb li:not(:last-child)::after {
   content: '/';
   margin: 0 rem(8px);
 }
 
-.vtmn-breadcrumb > li > a:hover {
+.vtmn-breadcrumb li > a:hover {
   text-decoration: underline;
   color: inherit;
 }
 
-.vtmn-breadcrumb > li:last-child {
+.vtmn-breadcrumb li:last-child {
   color: var(--vtmn-semantic-color_content-primary);
 }
