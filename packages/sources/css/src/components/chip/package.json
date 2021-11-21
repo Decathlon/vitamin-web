@@ -1,16 +1,14 @@
 {
-  "name": "@vtmn/css-tailwind-preset",
-  "version": "0.33.5",
-  "description": "Decathlon Design System - Vitamin CSS Tailwind preset",
+  "name": "@vtmn/css-chip",
+  "version": "0.1.0",
+  "description": "Decathlon Design System - Vitamin specific CSS styles for chip component",
   "keywords": [
     "design-system",
     "ui-kit",
     "libraries",
     "css",
-    "tailwind",
     "vitamin"
   ],
-  "homepage": "https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/presets/tailwind",
   "bugs": {
     "url": "https://github.com/Decathlon/vitamin-web/issues"
   },
@@ -19,17 +17,17 @@
     "url": "git+https://github.com/Decathlon/vitamin-web.git"
   },
   "license": "Apache-2.0",
-  "main": "./tailwind-preset.js",
+  "main": "dist/index.css",
   "files": [
-    "tailwind-preset.js"
+    "dist",
+    "src"
   ],
-  "dependencies": {
-    "@vtmn/css": "^0.34.0",
-    "@vtmn/css-design-tokens": "^0.9.1",
-    "@vtmn/css-utilities": "^0.2.1"
+  "scripts": {
+    "build": "node build.js"
   },
-  "peerDependencies": {
-    "tailwindcss": "^2.2.19"
+  "devDependencies": {
+    "@vtmn/css-design-tokens": "^0.8.8",
+    "@vtmn/css-postcss-config": "*"
   },
   "publishConfig": {
     "access": "public"
@@ -39,5 +37,6 @@
       "type": "Apache-2.0",
       "url": "http://www.apache.org/licenses/LICENSE-2.0"
     }
-  ]
+  ],
+  "svelte": "dist/index-with-vars.css"
 }

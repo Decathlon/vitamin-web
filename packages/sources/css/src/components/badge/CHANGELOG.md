@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.4.1...@vtmn/css-badge@0.5.0) (2021-11-18)
+
+
+### Features
+
+* **@vtmn/css:** add chip component ([#730](https://github.com/Decathlon/vitamin-web/issues/730)) ([c2de91d](https://github.com/Decathlon/vitamin-web/commit/c2de91de8695b73c81a24c0efea587348c599947))
+
+
+
+
+
 ## [0.4.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.4.0...@vtmn/css-badge@0.4.1) (2021-11-15)
 
 **Note:** Version bump only for package @vtmn/css-badge
