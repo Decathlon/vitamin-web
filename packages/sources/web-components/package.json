@@ -32,7 +32,7 @@
     "start": "chokidar \"src/**\" -i \"dist/**\" -c \"stencil build --docs\""
   },
   "dependencies": {
-    "@stencil/core": "^2.0.1"
+    "@stencil/core": "^2.11.0"
   },
   "devDependencies": {
     "@stencil/postcss": "^2.0.0",
