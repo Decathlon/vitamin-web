@@ -24,7 +24,7 @@ export interface VtmnTooltipProps
 
 export const VtmnTooltip = ({
   children,
-  position = VtmnTooltipPosition.TOP,
+  position = 'top',
   tooltip,
   className,
   ...props
