@@ -13,42 +13,63 @@ export default {
   parameters,
 } as Meta;
 
-const Template: Story = (args) => (
-  <>
-    <div className="block">
-      <VtmnAlert
-        message={'Test message info closable'}
-        title={'Alert info closable'}
-        type={'info'}
-        closable={true}
-      />
-    </div>
+const Template: Story = (args) => <VtmnAlert {...args} />;
 
-    <div className="block">
-      <VtmnAlert
-        message={'Test message warning not closable'}
-        title={'Alert warning not closable'}
-        type={'warning'}
-        closable={false}
-      />
-    </div>
+export const InfoClosable = Template.bind({});
+InfoClosable.args = {
+  type: 'info',
+  closable: true,
+  title: 'Alert info closable',
+  message: 'Test message info closable',
+};
 
-    <div className="block">
-      <VtmnAlert
-        title={'Alert success closable no message'}
-        type={'success'}
-        closable={true}
-      />
-    </div>
+export const WarningNotClosable = Template.bind({});
+WarningNotClosable.args = {
+  type: 'warning',
+  title: 'Alert warning not closable',
+  message: 'Test message warning not closable',
+};
 
-    <div className="block">
-      <VtmnAlert
-        title={'Alert danger not closable no message'}
-        type={'danger'}
-        closable={false}
-      />
-    </div>
-  </>
-);
+export const SuccessClosableNoMessage = Template.bind({});
+SuccessClosableNoMessage.args = {
+  type: 'success',
+  closable: true,
+  title: 'Alert success closable no message',
+};
 
-export const Overview = Template.bind({});
+export const DangerNotClosableNoMessage = Template.bind({});
+DangerNotClosableNoMessage.args = {
+  type: 'danger',
+  title: 'Alert danger not closable no message',
+};
+
+<>
+  <div className="block">
+    <VtmnAlert
+      message={'Test message info closable'}
+      title={'Alert info closable'}
+      type={'info'}
+      closable={true}
+    />
+  </div>
+
+  <div className="block">
+    <VtmnAlert
+      message={'Test message warning not closable'}
+      title={'Alert warning not closable'}
+      type={'warning'}
+    />
+  </div>
+
+  <div className="block">
+    <VtmnAlert
+      title={'Alert success closable no message'}
+      type={'success'}
+      closable={true}
+    />
+  </div>
+
+  <div className="block">
+    <VtmnAlert title={'Alert danger not closable no message'} type={'danger'} />
+  </div>
+</>;

@@ -9,7 +9,7 @@ export const argTypes = {
   message: {
     type: { name: 'string', required: true },
     description: 'The printed message',
-    defaultValue: 'Alert message',
+    defaultValue: null,
     control: { type: 'text' },
   },
 
