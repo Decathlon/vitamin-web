@@ -1,7 +1,7 @@
 export type VtmnTooltipPosition =
   | 'bottom-left'
   | 'bottom'
-  | 'bottom - right'
+  | 'bottom-right'
   | 'left'
   | 'right'
   | 'top-left'
