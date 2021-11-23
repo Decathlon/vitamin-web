@@ -26,7 +26,7 @@
 }
 
 .vtmn-chip > .vtmn-badge {
-  font-weight: var(--vtmn-typo_font-weight--regular);
+  font-weight: var(--vtmn-typo_font-weight--normal);
   transform: translateX(rem(6px));
 }
 
@@ -104,7 +104,7 @@
 /* Variants (filter by default) */
 
 .vtmn-chip_variant--filter > .vtmn-badge {
-  font-weight: var(--vtmn-typo_font-weight--regular);
+  font-weight: var(--vtmn-typo_font-weight--normal);
   transform: translateX(rem(6px));
 }
 
