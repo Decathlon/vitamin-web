@@ -61,13 +61,13 @@
   },
   "lint-staged": {
     "./**/package.json": [
-      "sort-package-json && nx run-many --target=sort-package-json --all --parallel"
+      "sort-package-json && yarn && nx run-many --target=sort-package-json --all --parallel"
     ],
     "./packages/**/*.css": [
-      "yarn stylelint:fix"
+      "yarn && yarn stylelint:fix"
     ],
     "./packages/**/*.{json,js,jsx,ts,tsx,svelte}": [
-      "yarn prettier:fix"
+      "yarn && yarn prettier:fix"
     ]
   },
   "devDependencies": {
