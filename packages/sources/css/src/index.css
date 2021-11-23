@@ -1,4 +1,3 @@
-/* Guidelines */
 @import 'tailwindcss/base';
 @import '@vtmn/css-design-tokens/src';
 @import '@vtmn/css-utilities/src';
@@ -6,23 +5,4 @@
 @import 'tailwindcss/utilities';
 @import 'tailwindcss/screens';
 
-/* Components */
-@import '@vtmn/css-alert/src';
-@import '@vtmn/css-badge/src';
-@import '@vtmn/css-button/src';
-@import '@vtmn/css-card/src';
-@import '@vtmn/css-checkbox/src';
-@import '@vtmn/css-link/src';
-@import '@vtmn/css-loader/src';
-@import '@vtmn/css-modal/src';
-@import '@vtmn/css-popover/src';
-@import '@vtmn/css-progressbar/src';
-@import '@vtmn/css-radio-button/src';
-@import '@vtmn/css-rating/src';
-@import '@vtmn/css-select/src';
-@import '@vtmn/css-skeleton/src';
-@import '@vtmn/css-snackbar/src';
-@import '@vtmn/css-text-input/src';
-@import '@vtmn/css-toast/src';
-@import '@vtmn/css-toggle/src';
-@import '@vtmn/css-tooltip/src';
+@import './components';

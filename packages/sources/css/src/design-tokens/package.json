@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-design-tokens",
-  "version": "0.8.8",
+  "version": "0.9.1",
   "description": "Decathlon Design System - Vitamin specific CSS styles for design tokens",
   "homepage": "https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/design-tokens",
   "repository": {
@@ -20,8 +20,7 @@
     "build:scss": "cross-env SCSS_FORMAT=true postcss dist/index.css -o dist/index.scss && cross-env SCSS_FORMAT=true postcss dist/index-base10.css -o dist/index-base10.scss"
   },
   "devDependencies": {
-    "@vtmn/css-postcss-config": "*",
-    "@vtmn/css-tailwind-config": "*"
+    "@vtmn/css-postcss-config": "*"
   },
   "publishConfig": {
     "access": "public"

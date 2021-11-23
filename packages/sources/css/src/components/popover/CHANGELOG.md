@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-popover@0.3.0...@vtmn/css-popover@0.3.1) (2021-11-15)
+
+**Note:** Version bump only for package @vtmn/css-popover
+
+
+
+
+
+# [0.3.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-popover@0.2.16...@vtmn/css-popover@0.3.0) (2021-11-14)
+
+
+### Features
+
+* expose our Tailwind CSS preset ([#741](https://github.com/Decathlon/vitamin-web/issues/741)) ([fee3087](https://github.com/Decathlon/vitamin-web/commit/fee308730bd4978fecdcfdf4bc3d8b9ef95e5739))
+
+
+
+
+
+## [0.2.16](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-popover@0.2.15...@vtmn/css-popover@0.2.16) (2021-11-09)
+
+**Note:** Version bump only for package @vtmn/css-popover
+
+
+
+
+
 ## [0.2.15](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-popover@0.2.14...@vtmn/css-popover@0.2.15) (2021-10-25)
 
 **Note:** Version bump only for package @vtmn/css-popover

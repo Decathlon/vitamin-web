@@ -117,7 +117,7 @@ Then, use a Vitamin Custom Element directly in your HTML. For example:
 
 To know all the use cases and their associated code, [check out the showcase here](https://decathlon.github.io/vitamin-web/@vtmn/showcase-web-components).
 
-Fore more details about Custom Elements from Web Components specification, [see the MDN documentation here](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements).
+For more details about Custom Elements from Web Components specification, [see the MDN documentation here](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements).
 
 ## Changelog
 

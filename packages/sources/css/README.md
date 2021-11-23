@@ -60,6 +60,26 @@ import 'typeface-roboto';
 import 'typeface-roboto-condensed';
 ```
 
+## Install icons (optional)
+
+If you need to display icons, you will need to install `@vtmn/icons` package.
+
+```sh
+# with npm
+npm i -S @vtmn/icons
+
+# with yarn
+yarn add @vtmn/icons
+```
+
+Then follow instructions in [README of @vtmn/icons](https://www.npmjs.com/package/@vtmn/icons) :
+
+```javascript
+import '@vtmn/icons/dist/vitamix/font/vitamix.css';
+```
+
+Or you can also import it with a CDN like `unpkg.com` with [this file](https://unpkg.com/@vtmn/icons/dist/vitamix/font/vitamix.css).
+
 ## Usage
 
 Once you have installed this package, you just have to import CSS styles!
@@ -97,9 +117,13 @@ For example:
 </div>
 ```
 
-Fore more details about CSS utility classes from this package, [see Tailwind CSS documentation here](https://tailwindcss.com/docs).
+For more details about CSS utility classes from this package, [see Tailwind CSS documentation here](https://tailwindcss.com/docs).
 
-## Optimize for production
+## Tailwind preset
+
+Are you already using [Tailwind CSS](https://tailwindcss.com/) in your project? Do you want to take full advantage of all its features like [functions & directives](https://tailwindcss.com/docs/functions-and-directives) by building your own classes via [`@apply`](https://tailwindcss.com/docs/functions-and-directives#apply) for example? Good news, we invit you to have a look at our package [`@vtmn/css-tailwind-preset`](https://www.npmjs.com/package/@vtmn/css-tailwind-preset) which will explain you how to use Vitamin styles in a Tailwind CSS project.
+
+## Optimizing for production
 
 To make the development experience as productive as possible, Tailwind generates thousands of utility classes for you, most of which you probably won't actually use.
 

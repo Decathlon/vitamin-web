@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-link",
-  "version": "0.4.4",
+  "version": "0.5.1",
   "description": "Decathlon Design System - Vitamin specific CSS styles for link component",
   "keywords": [
     "design-system",
@@ -26,9 +26,8 @@
     "build": "node build.js"
   },
   "devDependencies": {
-    "@vtmn/css-design-tokens": "^0.8.8",
-    "@vtmn/css-postcss-config": "*",
-    "@vtmn/css-tailwind-config": "*"
+    "@vtmn/css-design-tokens": "^0.9.1",
+    "@vtmn/css-postcss-config": "*"
   },
   "publishConfig": {
     "access": "public"

@@ -5,7 +5,6 @@ import {
   argTypes,
   parameters,
 } from '@vtmn/showcase-core/csf/components/VtmnTooltip.csf';
-import { VtmnTooltipPosition } from '@vtmn/react/src/components/VtmnTooltip/types';
 
 export default {
   title: 'Components/VtmnTooltip',
@@ -20,5 +19,5 @@ export const TooltipText = Template.bind({});
 TooltipText.args = {
   tooltip: 'I am a tooltip example',
   children: 'Tooltip Example',
-  position: VtmnTooltipPosition.RIGHT,
+  position: 'right',
 };

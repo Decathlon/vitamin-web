@@ -1,5 +1,5 @@
 import { Meta, Source } from '@storybook/addon-docs';
-import tailwindConfig from '@vtmn/css-tailwind-config';
+import tailwindPreset from '@vtmn/css-tailwind-preset';
 
 <Meta title="Guidelines / Layout" />
 
@@ -16,7 +16,7 @@ Here is the list of our breakpoints in Tailwind CSS Configuration, the values ar
 
 <Source
   language="json"
-  code={JSON.stringify(tailwindConfig.theme.screens, null, 2)}
+  code={JSON.stringify(tailwindPreset.theme.screens, null, 2)}
 />
 
 If you want to use our utility classes from Tailwind CSS for Responsive Design, [see this documentation](https://tailwindcss.com/docs/responsive-design).
@@ -28,7 +28,7 @@ The spacing scale is inherited by the padding, margin, width, height, maxHeight,
 
 <Source
   language="json"
-  code={JSON.stringify(tailwindConfig.theme.spacing, null, 2)}
+  code={JSON.stringify(tailwindPreset.theme.spacing, null, 2)}
 />
 
 These values will override the [Tailwind CSS' default spacing scale](https://tailwindcss.com/docs/customizing-spacing#default-spacing-scale) and generates classes like `p-10`, `w-8`, `h-6`, etc.
