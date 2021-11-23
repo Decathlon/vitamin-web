@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/vue",
-  "version": "0.8.21",
+  "version": "0.8.22",
   "description": "Decathlon Design System - Vitamin Svelte library",
   "keywords": [
     "design-system",
@@ -62,11 +62,11 @@
     "@typescript-eslint/eslint-plugin": "^5.2.0",
     "@typescript-eslint/parser": "^5.2.0",
     "@vitejs/plugin-vue": "^1.9.3",
-    "@vtmn/css-button": "^0.8.1",
+    "@vtmn/css-button": "^0.8.2",
     "@vtmn/css-checkbox": "^0.5.1",
-    "@vtmn/css-link": "^0.5.1",
+    "@vtmn/css-link": "^0.5.2",
     "@vtmn/css-radio-button": "^0.5.1",
-    "@vtmn/css-text-input": "^0.10.0",
+    "@vtmn/css-text-input": "^0.10.1",
     "@vtmn/css-toggle": "^0.4.1",
     "@vtmn/icons": "^0.6.0",
     "@vue/cli-plugin-babel": "^4.5.11",
