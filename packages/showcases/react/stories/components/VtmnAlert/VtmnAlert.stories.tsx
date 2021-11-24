@@ -5,6 +5,7 @@ import {
   parameters,
 } from '@vtmn/showcase-core/csf/components/VtmnAlert.csf';
 import VtmnAlert from '@vtmn/react/src/components/VtmnAlert/VtmnAlert';
+import { VtmnButton } from '@vtmn/react';
 
 export default {
   title: 'Components/VtmnAlert',
@@ -13,9 +14,18 @@ export default {
   parameters,
 } as Meta;
 
-const Template: Story = (args) => <VtmnAlert {...args} />;
+const OverviewTemplate: Story = (args) => <VtmnAlert {...args} />;
 
-export const InfoClosable = Template.bind({});
+const DemoTemplate: Story = (args) => (
+  <div>
+    <VtmnButton onClick={() => handleTriggerAlertClick()}>
+      Trigger Alert
+    </VtmnButton>
+    <VtmnAlert {...args} />
+  </div>
+);
+
+export const InfoClosable = OverviewTemplate.bind({});
 InfoClosable.args = {
   type: 'info',
   closable: true,
@@ -23,53 +33,31 @@ InfoClosable.args = {
   message: 'Test message info closable',
 };
 
-export const WarningNotClosable = Template.bind({});
+export const WarningNotClosable = OverviewTemplate.bind({});
 WarningNotClosable.args = {
   type: 'warning',
   title: 'Alert warning not closable',
   message: 'Test message warning not closable',
 };
 
-export const SuccessClosableNoMessage = Template.bind({});
+export const SuccessClosableNoMessage = OverviewTemplate.bind({});
 SuccessClosableNoMessage.args = {
   type: 'success',
   closable: true,
   title: 'Alert success closable no message',
 };
 
-export const DangerNotClosableNoMessage = Template.bind({});
+export const DangerNotClosableNoMessage = OverviewTemplate.bind({});
 DangerNotClosableNoMessage.args = {
   type: 'danger',
   title: 'Alert danger not closable no message',
 };
 
-<>
-  <div className="block">
-    <VtmnAlert
-      message={'Test message info closable'}
-      title={'Alert info closable'}
-      type={'info'}
-      closable={true}
-    />
-  </div>
-
-  <div className="block">
-    <VtmnAlert
-      message={'Test message warning not closable'}
-      title={'Alert warning not closable'}
-      type={'warning'}
-    />
-  </div>
-
-  <div className="block">
-    <VtmnAlert
-      title={'Alert success closable no message'}
-      type={'success'}
-      closable={true}
-    />
-  </div>
-
-  <div className="block">
-    <VtmnAlert title={'Alert danger not closable no message'} type={'danger'} />
-  </div>
-</>;
+export const Demo = DemoTemplate.bind({});
+Demo.args = {
+  type: 'warning',
+  title: 'Alert warning closable triggering test',
+  message: 'This is a test message',
+  closable: true,
+  showAlert: false,
+};

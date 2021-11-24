@@ -25,6 +25,13 @@ export interface VtmnAlertProps
    * @defaultValue 'false'
    */
   closable?: boolean;
+
+  /**
+   * The alert visibility
+   * @type {boolean}
+   * @defaultValue 'false'
+   */
+  showAlert: boolean;
 }
 
 export const VtmnAlert = ({
@@ -32,23 +39,32 @@ export const VtmnAlert = ({
   title,
   message,
   closable = false,
+  showAlert = false,
   className,
   ...props
 }: VtmnAlertProps) => {
   return (
-    <dialog
-      className={clsx('vtmn-alert', `vtmn-alert_variant--${type}`, className)}
-    >
-      <div className="vtmn-alert_content">
-        <div className="vtmn-alert_content-title">
-          {title}
-          {closable && <span className="vtmx-close-line"></span>}
-        </div>
-        {message && (
-          <span className="vtmn-alert_content-description">{message}</span>
+    showAlert && (
+      <div
+        role="dialog"
+        className={clsx(
+          'vtmn-alert',
+          `vtmn-alert_variant--${type}`,
+          { show: showAlert },
+          className,
         )}
+      >
+        <article className="vtmn-alert_content">
+          <div className="vtmn-alert_content-title">
+            {title}
+            {closable && <span className="vtmx-close-line"></span>}
+          </div>
+          {message && (
+            <span className="vtmn-alert_content-description">{message}</span>
+          )}
+        </article>
       </div>
-    </dialog>
+    )
   );
 };
 

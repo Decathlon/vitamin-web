@@ -7,7 +7,7 @@ export const argTypes = {
   },
 
   message: {
-    type: { name: 'string', required: true },
+    type: { name: 'string', required: false },
     description: 'The printed message',
     defaultValue: null,
     control: { type: 'text' },
@@ -16,6 +16,13 @@ export const argTypes = {
   closable: {
     type: { name: 'boolean', required: false },
     description: 'The presence of closing icon',
+    defaultValue: false,
+    control: { type: 'boolean' },
+  },
+
+  showAlert: {
+    type: { name: 'boolean', required: true },
+    description: 'The alert visibility',
     defaultValue: false,
     control: { type: 'boolean' },
   },
