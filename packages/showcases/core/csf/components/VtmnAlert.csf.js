@@ -19,13 +19,6 @@ export const argTypes = {
     defaultValue: false,
     control: { type: 'boolean' },
   },
-
-  showAlert: {
-    type: { name: 'boolean', required: true },
-    description: 'The alert visibility',
-    defaultValue: false,
-    control: { type: 'boolean' },
-  },
 };
 
 export const parameters = {
