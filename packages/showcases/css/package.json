@@ -27,7 +27,7 @@
     "storybook-addon-outline": "^1.4.0",
     "storybook-addon-run-script": "^0.1.4",
     "storybook-design-token": "^0.8.1",
-    "storybook-mobile": "^0.1.29"
+    "storybook-mobile": "^1.0.0"
   },
   "licenses": [
     {
