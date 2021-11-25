@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Meta, Story } from '@storybook/react';
 import {
   argTypes,
@@ -16,14 +16,30 @@ export default {
 
 const OverviewTemplate: Story = (args) => <VtmnAlert {...args} />;
 
-const DemoTemplate: Story = (args) => (
-  <div>
-    <VtmnButton onClick={() => handleTriggerAlertClick()}>
-      Trigger Alert
-    </VtmnButton>
-    <VtmnAlert {...args} />
-  </div>
-);
+const DemoTemplate: Story = (args) => {
+  const [showAlert, setShowAlert] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (showAlert) {
+      setTimeout(() => {
+        setShowAlert(false);
+      }, 8000);
+    }
+  }, [showAlert]);
+
+  return (
+    <div>
+      <VtmnButton onClick={() => setShowAlert(true)}>Trigger Alert</VtmnButton>
+      {showAlert && (
+        <VtmnAlert
+          showAlert={showAlert}
+          onClose={() => setShowAlert(false)}
+          {...args}
+        />
+      )}
+    </div>
+  );
+};
 
 export const InfoClosable = OverviewTemplate.bind({});
 InfoClosable.args = {
@@ -58,6 +74,4 @@ Demo.args = {
   type: 'warning',
   title: 'Alert warning closable triggering test',
   message: 'This is a test message',
-  closable: true,
-  showAlert: false,
 };
