@@ -8,7 +8,10 @@
   height: fit-content;
   width: fit-content;
   font-family: var(--vtmn-typo_font-family);
-  color: var(--vtmn-semantic-color_content-tertiary);
+  color: var(
+    --vtmn-semantic-color_content-secondary
+  ); /* To replace with a tertiary */
+
   font-size: var(--vtmn-typo_text-3-font-size);
   font-weight: var(--vtmn-typo_font-weight--regular);
   line-height: var(--vtmn-typo_text-3-line-height);
