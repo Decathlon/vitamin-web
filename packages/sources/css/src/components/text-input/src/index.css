@@ -53,7 +53,7 @@ textarea.vtmn-text-input {
 }
 
 .vtmn-text-input::placeholder {
-  color: var(--vtmn-semantic-color_content-tertiary);
+  color: var(--vtmn-semantic-color_content-secondary);
 }
 
 .vtmn-text-input_label {
