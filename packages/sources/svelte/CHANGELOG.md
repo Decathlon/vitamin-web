@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.29](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.7.28...@vtmn/svelte@0.7.29) (2021-11-30)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+## [0.7.28](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.7.27...@vtmn/svelte@0.7.28) (2021-11-30)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** fix optionnal props values ([#768](https://github.com/Decathlon/vitamin-web/issues/768)) ([ff52c9b](https://github.com/Decathlon/vitamin-web/commit/ff52c9b84d7401e32a52d8db45e331cc675a4a04))
+
+
+
+
+
 ## [0.7.27](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.7.26...@vtmn/svelte@0.7.27) (2021-11-23)
 
 **Note:** Version bump only for package @vtmn/svelte
