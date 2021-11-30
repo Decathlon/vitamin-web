@@ -21,7 +21,7 @@
   background-color: var(--vtmn-semantic-color_background-primary);
   border-radius: rem(4px);
   display: block;
-  font-weight: var(--vtmn-typo_font-weight--regular);
+  font-weight: var(--vtmn-typo_font-weight--normal);
   font-size: rem(16px);
   line-height: 1;
   margin-bottom: rem(4px);

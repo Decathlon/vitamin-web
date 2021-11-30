@@ -154,7 +154,7 @@ module.exports = {
       10: 'var(--vtmn-spacing_10)',
     },
     fontFamily: {
-      normal: ['Roboto', 'system-ui', '-apple-system', 'sans-serif'],
+      regular: ['Roboto', 'system-ui', '-apple-system', 'sans-serif'],
       condensed: [
         'Roboto Condensed',
         'system-ui',
