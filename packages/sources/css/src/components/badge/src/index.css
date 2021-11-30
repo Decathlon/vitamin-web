@@ -8,8 +8,8 @@
   font-weight: var(--vtmn-typo_font-weight--regular);
   line-height: var(--vtmn-typo_text-3-line-height);
   display: inline-flex;
-  height: 20px;
-  min-width: 20px;
+  height: rem(20px);
+  min-width: rem(20px);
   justify-content: center;
   align-items: center;
   border-radius: rem(10px);
@@ -55,7 +55,7 @@
 
 /* Sizes */
 
-.vtmn-badge_size--without-value {
+.vtmn-badge:empty {
   min-width: rem(8px);
   height: rem(8px);
   padding: 0;
