@@ -47,7 +47,7 @@
 .vtmn-alert_content-description {
   margin-top: rem(8px);
   font-family: var(--vtmn-typo_font-family);
-  font-weight: var(--vtmn-typo_font-weight--regular);
+  font-weight: var(--vtmn-typo_font-weight--normal);
   font-size: rem(16px);
   line-height: rem(24px);
   align-self: flex-start;
