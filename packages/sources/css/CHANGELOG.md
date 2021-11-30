@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.34.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.34.3...@vtmn/css@0.34.4) (2021-11-30)
+
+
+### Bug Fixes
+
+* **@vtmn/css-tailwind-preset:** font-normal class has two definitions ([#760](https://github.com/Decathlon/vitamin-web/issues/760)) ([be5f392](https://github.com/Decathlon/vitamin-web/commit/be5f39296dfaa2deb89e84f2823e10108fb037a2))
+
+
+
+
+
 ## [0.34.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.34.2...@vtmn/css@0.34.3) (2021-11-30)
 
 
