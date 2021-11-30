@@ -16,7 +16,7 @@
   font-family: var(--vtmn-typo_font-family);
   font-weight: var(--vtmn-typo_font-weight--bold);
   font-size: var(--vtmn-typo_text-2-font-size);
-  letter-spacing: rem(0.34px);
+  letter-spacing: rem(0.27px);
   border-radius: rem(4px);
   color: var(--vtmn-semantic-color_content-primary-reversed);
   fill: var(--vtmn-semantic-color_content-primary-reversed);
@@ -224,18 +224,21 @@
   font-size: rem(14px);
   padding: rem(8px) rem(16px);
   height: rem(32px);
+  letter-spacing: rem(0.24px);
 }
 
 .vtmn-btn_size--medium {
   font-size: rem(16px);
   padding: rem(14px) rem(24px);
   height: rem(48px);
+  letter-spacing: rem(0.27px);
 }
 
 .vtmn-btn_size--large {
   font-size: rem(20px);
   padding: rem(20px) rem(40px);
   height: rem(64px);
+  letter-spacing: rem(0.34px);
 }
 
 .vtmn-btn_size--stretched {

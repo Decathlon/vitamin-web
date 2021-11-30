@@ -76,7 +76,7 @@
 
 .vtmn-modal_content_body--text {
   padding-bottom: rem(30px);
-  font-weight: var(--vtmn-typo_font-weight--regular);
+  font-weight: var(--vtmn-typo_font-weight--normal);
   font-size: var(--vtmn-typo_text-3-font-size);
   line-height: rem(24px);
   align-self: flex-start;
