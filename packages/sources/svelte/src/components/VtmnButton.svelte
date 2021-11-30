@@ -22,21 +22,21 @@
    * @type string
    * @defaultValue undefined
    */
-  export let iconLeft;
+  export let iconLeft = undefined;
 
   /**
    * Icon to display on the right hand side of button
    * @type string
    * @defaultValue undefined
    */
-  export let iconRight;
+  export let iconRight = undefined;
 
   /**
    * Icon to display when it is a button with icon only
    * @type string
    * @defaultValue undefined
    */
-  export let iconAlone;
+  export let iconAlone = undefined;
 
   let className;
   /**
