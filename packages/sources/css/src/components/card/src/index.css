@@ -119,13 +119,20 @@
   height: auto;
   border-radius: 8px;
   color: var(--vtmn-semantic-color_content-primary-reversed);
+}
+
+.vtmn-card_variant--full-image
+  > .vtmn-card_content:not(.vtmn-card_content--opaque) {
   background: linear-gradient(
     180deg,
-    rgb(0 16 24 / 0%) 20%,
+    color-mod(var(--vtmn-semantic-color_background-primary-reversed) alpha(0%))
+      20%,
     var(--vtmn-semantic-color_background-primary-reversed) 100%
   );
 }
 
-.vtmn-card_variant--full-image > .vtmn-card_content--opaque {
-  background: rgb(0 16 24 / 60%);
+.vtmn-card_variant--full-image > .vtmn-card_content.vtmn-card_content--opaque {
+  background: color-mod(
+    var(--vtmn-semantic-color_background-primary-reversed) alpha(60%)
+  );
 }
