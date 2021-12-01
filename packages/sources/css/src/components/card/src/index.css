@@ -93,6 +93,10 @@
   height: 100%;
 }
 
+.vtmn-card_variant--side-image .vtmn-btn {
+  width: fit-content;
+}
+
 .vtmn-card_variant--full-image > .vtmn-card_image {
   width: 100%;
   height: 100%;
