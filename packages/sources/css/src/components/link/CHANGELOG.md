@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-link@0.5.2...@vtmn/css-link@0.5.3) (2021-11-30)
+
+**Note:** Version bump only for package @vtmn/css-link
+
+
+
+
+
+## [0.5.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-link@0.5.1...@vtmn/css-link@0.5.2) (2021-11-23)
+
+**Note:** Version bump only for package @vtmn/css-link
+
+
+
+
+
+## [0.5.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-link@0.5.0...@vtmn/css-link@0.5.1) (2021-11-15)
+
+**Note:** Version bump only for package @vtmn/css-link
+
+
+
+
+
 # [0.5.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-link@0.4.5...@vtmn/css-link@0.5.0) (2021-11-14)
 
 

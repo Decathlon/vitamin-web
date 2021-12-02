@@ -23,11 +23,11 @@
 
 @keyframes fade-in {
   from {
-    opacity: 0%;
+    opacity: 0;
   }
 
   to {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 
@@ -83,11 +83,11 @@
 
 @keyframes fade-out {
   from {
-    opacity: 100%;
+    opacity: 1;
   }
 
   to {
-    opacity: 0%;
+    opacity: 0;
   }
 }
 

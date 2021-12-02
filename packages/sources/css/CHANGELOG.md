@@ -3,6 +3,71 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.34.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.34.3...@vtmn/css@0.34.4) (2021-11-30)
+
+
+### Bug Fixes
+
+* **@vtmn/css-tailwind-preset:** font-normal class has two definitions ([#760](https://github.com/Decathlon/vitamin-web/issues/760)) ([be5f392](https://github.com/Decathlon/vitamin-web/commit/be5f39296dfaa2deb89e84f2823e10108fb037a2))
+
+
+
+
+
+## [0.34.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.34.2...@vtmn/css@0.34.3) (2021-11-30)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** specify letter spacing for each size variant of the button ([#782](https://github.com/Decathlon/vitamin-web/issues/782)) ([3485ee3](https://github.com/Decathlon/vitamin-web/commit/3485ee3cd6e27795fdf54ff65576f2ca0c8d1b54))
+
+
+
+
+
+## [0.34.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.34.1...@vtmn/css@0.34.2) (2021-11-23)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+## [0.34.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.34.0...@vtmn/css@0.34.1) (2021-11-22)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+# [0.34.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.33.4...@vtmn/css@0.34.0) (2021-11-18)
+
+
+### Features
+
+* **@vtmn/css:** add chip component ([#730](https://github.com/Decathlon/vitamin-web/issues/730)) ([c2de91d](https://github.com/Decathlon/vitamin-web/commit/c2de91de8695b73c81a24c0efea587348c599947))
+
+
+
+
+
+## [0.33.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.33.3...@vtmn/css@0.33.4) (2021-11-17)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+## [0.33.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.33.2...@vtmn/css@0.33.3) (2021-11-15)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
 ## [0.33.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.33.1...@vtmn/css@0.33.2) (2021-11-15)
 
 **Note:** Version bump only for package @vtmn/css

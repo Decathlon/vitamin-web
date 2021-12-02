@@ -21,7 +21,7 @@
   background-color: var(--vtmn-semantic-color_background-primary);
   border-radius: rem(4px);
   display: block;
-  font-weight: var(--vtmn-typo_font-weight--regular);
+  font-weight: var(--vtmn-typo_font-weight--normal);
   font-size: rem(16px);
   line-height: 1;
   margin-bottom: rem(4px);
@@ -38,7 +38,8 @@ textarea.vtmn-text-input {
 }
 
 .vtmn-text-input:not(:disabled):not(:focus):not(textarea):hover {
-  box-shadow: inset 0 0 0 rem(1px) var(--vtmn-semantic-color_border-active);
+  box-shadow: inset 0 0 0 1px var(--vtmn-semantic-color_border-inactive),
+    0 0 0 3px var(--vtmn-semantic-color_hover-primary);
 }
 
 .vtmn-text-input:not(:disabled):focus-visible {
@@ -80,8 +81,7 @@ textarea.vtmn-text-input {
 .vtmn-text-input:disabled,
 .vtmn-text-input:disabled + span[class^='vtmx-'],
 .vtmn-text-input:disabled + svg,
-.vtmn-text-input:disabled + .vtmn-text-input_helper-text,
-.vtmn-text-input:disabled + .vtmn-text-input_counter {
+.vtmn-text-input:disabled + .vtmn-text-input_helper-text {
   opacity: var(--vtmn-opacity_disabled-state);
   cursor: not-allowed;
 }
@@ -131,15 +131,4 @@ textarea.vtmn-text-input {
 .vtmn-text-input--error + svg {
   color: var(--vtmn-semantic-color_content-primary);
   fill: var(--vtmn-semantic-color_content-primary);
-}
-
-textarea.vtmn-text-input + .vtmn-text-input_counter {
-  color: var(--vtmn-semantic-color_content-secondary);
-  font-size: rem(14px);
-  line-height: 1;
-}
-
-.vtmn-text-input:not(:disabled):focus-visible + .vtmn-text-input_counter,
-.vtmn-text-input--error:not(:disabled) + .vtmn-text-input_counter {
-  color: var(--vtmn-semantic-color_content-primary);
 }

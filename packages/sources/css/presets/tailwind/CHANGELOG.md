@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.33.9](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tailwind-preset@0.33.8...@vtmn/css-tailwind-preset@0.33.9) (2021-11-30)
+
+
+### Bug Fixes
+
+* **@vtmn/css-tailwind-preset:** font-normal class has two definitions ([#760](https://github.com/Decathlon/vitamin-web/issues/760)) ([be5f392](https://github.com/Decathlon/vitamin-web/commit/be5f39296dfaa2deb89e84f2823e10108fb037a2))
+
+
+
+
+
+## [0.33.8](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tailwind-preset@0.33.7...@vtmn/css-tailwind-preset@0.33.8) (2021-11-30)
+
+**Note:** Version bump only for package @vtmn/css-tailwind-preset
+
+
+
+
+
+## [0.33.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tailwind-preset@0.33.6...@vtmn/css-tailwind-preset@0.33.7) (2021-11-23)
+
+**Note:** Version bump only for package @vtmn/css-tailwind-preset
+
+
+
+
+
+## [0.33.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tailwind-preset@0.33.5...@vtmn/css-tailwind-preset@0.33.6) (2021-11-22)
+
+**Note:** Version bump only for package @vtmn/css-tailwind-preset
+
+
+
+
+
+## [0.33.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tailwind-preset@0.33.4...@vtmn/css-tailwind-preset@0.33.5) (2021-11-18)
+
+**Note:** Version bump only for package @vtmn/css-tailwind-preset
+
+
+
+
+
+## [0.33.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tailwind-preset@0.33.3...@vtmn/css-tailwind-preset@0.33.4) (2021-11-17)
+
+**Note:** Version bump only for package @vtmn/css-tailwind-preset
+
+
+
+
+
+## [0.33.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tailwind-preset@0.33.2...@vtmn/css-tailwind-preset@0.33.3) (2021-11-15)
+
+**Note:** Version bump only for package @vtmn/css-tailwind-preset
+
+
+
+
+
 ## [0.33.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tailwind-preset@0.33.1...@vtmn/css-tailwind-preset@0.33.2) (2021-11-15)
 
 **Note:** Version bump only for package @vtmn/css-tailwind-preset

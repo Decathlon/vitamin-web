@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.8.3...@vtmn/css-button@0.8.4) (2021-11-30)
+
+**Note:** Version bump only for package @vtmn/css-button
+
+
+
+
+
+## [0.8.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.8.2...@vtmn/css-button@0.8.3) (2021-11-30)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** specify letter spacing for each size variant of the button ([#782](https://github.com/Decathlon/vitamin-web/issues/782)) ([3485ee3](https://github.com/Decathlon/vitamin-web/commit/3485ee3cd6e27795fdf54ff65576f2ca0c8d1b54))
+
+
+
+
+
+## [0.8.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.8.1...@vtmn/css-button@0.8.2) (2021-11-23)
+
+**Note:** Version bump only for package @vtmn/css-button
+
+
+
+
+
+## [0.8.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.8.0...@vtmn/css-button@0.8.1) (2021-11-15)
+
+**Note:** Version bump only for package @vtmn/css-button
+
+
+
+
+
 # [0.8.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.7.1...@vtmn/css-button@0.8.0) (2021-11-14)
 
 

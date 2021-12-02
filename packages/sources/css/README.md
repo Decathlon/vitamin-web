@@ -121,7 +121,7 @@ For more details about CSS utility classes from this package, [see Tailwind CSS 
 
 ## Tailwind preset
 
-Are you already using [Tailwind CSS](https://tailwindcss.com/) in your project? Do you want to take full advantage of all its features like functions & directives by building your own classes via [`@apply`](https://tailwindcss.com/docs/functions-and-directives#apply) for example? Good news, we invit you to have a look at our package [`@vtmn/css-tailwind-preset`](https://www.npmjs.com/package/@vtmn/css-tailwind-preset) which will explain you how to use Vitamin styles in a Tailwind project.
+Are you already using [Tailwind CSS](https://tailwindcss.com/) in your project? Do you want to take full advantage of all its features like [functions & directives](https://tailwindcss.com/docs/functions-and-directives) by building your own classes via [`@apply`](https://tailwindcss.com/docs/functions-and-directives#apply) for example? Good news, we invit you to have a look at our package [`@vtmn/css-tailwind-preset`](https://www.npmjs.com/package/@vtmn/css-tailwind-preset) which will explain you how to use Vitamin styles in a Tailwind CSS project.
 
 ## Optimizing for production
 
