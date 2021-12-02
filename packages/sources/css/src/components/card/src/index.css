@@ -105,7 +105,8 @@
 
 .vtmn-card_variant--full-image img {
   height: 100%;
-  min-width: rem(200px);
+
+  /* min-width: rem(200px); */
   border-radius: 8px;
 }
 
@@ -136,7 +137,10 @@
 }
 
 .vtmn-card_variant--full-image > .vtmn-card_content.vtmn-card_content--opaque {
-  background: color-mod(
-    var(--vtmn-semantic-color_background-primary-reversed) alpha(60%)
+  background-color: hsl(
+    var(--vtmn-semantic-color_background-primary-reversed--h)
+    var(--vtmn-semantic-color_background-primary-reversed--s)
+    var(--vtmn-semantic-color_background-primary-reversed--l) /
+    60%
   );
 }
