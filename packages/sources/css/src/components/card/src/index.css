@@ -139,8 +139,7 @@
 .vtmn-card_variant--full-image > .vtmn-card_content.vtmn-card_content--opaque {
   background-color: hsl(
     var(--vtmn-semantic-color_background-primary-reversed--h)
-    var(--vtmn-semantic-color_background-primary-reversed--s)
-    var(--vtmn-semantic-color_background-primary-reversed--l) /
-    60%
+      var(--vtmn-semantic-color_background-primary-reversed--s)
+      var(--vtmn-semantic-color_background-primary-reversed--l) / 60%
   );
 }
