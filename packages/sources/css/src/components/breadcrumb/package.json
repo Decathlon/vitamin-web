@@ -1,7 +1,7 @@
 {
-  "name": "@vtmn/css-button",
-  "version": "0.8.5",
-  "description": "Decathlon Design System - Vitamin specific CSS styles for button component",
+  "name": "@vtmn/css-breadcrumb",
+  "version": "0.0.0",
+  "description": "Decathlon Design System - Vitamin specific CSS styles for breadcrumb component",
   "keywords": [
     "design-system",
     "ui-kit",
@@ -27,7 +27,7 @@
     "build": "node build.js"
   },
   "devDependencies": {
-    "@vtmn/css-design-tokens": "^0.9.2",
+    "@vtmn/css-design-tokens": "^0.9.1",
     "@vtmn/css-postcss-config": "*"
   },
   "publishConfig": {

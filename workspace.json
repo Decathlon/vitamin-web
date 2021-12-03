@@ -56,6 +56,10 @@
       "root": "packages/sources/css/src/components/button",
       "type": "library"
     },
+    "@vtmn/css-breadcrumb": {
+      "root": "packages/sources/css/src/components/breadcrumb",
+      "type": "library"
+    },
     "@vtmn/css-card": {
       "root": "packages/sources/css/src/components/card",
       "type": "library"
