@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.36.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.35.0...@vtmn/css@0.36.0) (2021-12-03)
+
+
+### Features
+
+* **@vtmn/css:** add breadcrumb component ([#750](https://github.com/Decathlon/vitamin-web/issues/750)) ([ad60d8f](https://github.com/Decathlon/vitamin-web/commit/ad60d8fd9a7317a0b691507b8369a88b97c583da))
+
+
+
+
+
 # [0.35.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.34.4...@vtmn/css@0.35.0) (2021-12-03)
 
 
