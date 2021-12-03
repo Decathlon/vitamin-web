@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-progressbar@0.2.2...@vtmn/css-progressbar@0.3.0) (2021-12-03)
+
+
+### Features
+
+* **@vtmn/css:** fix width progressbar linear ([451754b](https://github.com/Decathlon/vitamin-web/commit/451754b0d892e137fe476e5bdd7536386e296c0a))
+
+
+
+
+
 ## [0.2.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-progressbar@0.2.1...@vtmn/css-progressbar@0.2.2) (2021-11-30)
 
 
