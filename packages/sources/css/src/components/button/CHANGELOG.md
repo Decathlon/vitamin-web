@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.8.4...@vtmn/css-button@0.8.5) (2021-12-03)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** button has a min-height instead of a height ([429577a](https://github.com/Decathlon/vitamin-web/commit/429577aeee80e8e8a94d605deae074bacc32eda6))
+
+
+
+
+
 ## [0.8.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.8.3...@vtmn/css-button@0.8.4) (2021-11-30)
 
 **Note:** Version bump only for package @vtmn/css-button
