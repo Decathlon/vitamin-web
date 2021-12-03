@@ -6,7 +6,7 @@
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-3-font-size);
   font-weight: var(--vtmn-typo_font-weight--normal);
-  line-height: 20px;
+  line-height: var(--vtmn-typo_text-3-line-height);
   display: inline-flex;
   height: rem(20px);
   min-width: rem(20px);
