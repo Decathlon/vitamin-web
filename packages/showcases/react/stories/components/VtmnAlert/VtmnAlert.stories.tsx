@@ -20,21 +20,18 @@ const DemoTemplate: Story = (args) => {
   const [showAlert, setShowAlert] = useState<boolean>(false);
 
   useEffect(() => {
-    let timeout = null;
-    console.log(showAlert);
     if (showAlert) {
-      setTimeout(() => {
+      const timeout = setTimeout(() => {
         setShowAlert(false);
       }, 8000);
-    } else {
-      clearTimeout(timeout);
+      return () => clearTimeout(timeout);
     }
   }, [showAlert]);
 
   return (
     <div>
       <VtmnButton onClick={() => setShowAlert(true)}>Trigger Alert</VtmnButton>
-      <VtmnAlert onClose={() => setShowAlert(false)} {...args} />
+      {showAlert && <VtmnAlert onClose={() => setShowAlert(false)} {...args} />}
     </div>
   );
 };
@@ -71,5 +68,4 @@ export const Demo = DemoTemplate.bind({});
 Demo.args = {
   type: 'warning',
   title: 'Alert warning closable triggering test',
-  message: 'This is a test message',
 };
