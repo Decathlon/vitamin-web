@@ -10,8 +10,8 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  min-height: rem(48px);
-  min-width: max-content;
+  height: rem(48px);
+  width: max-content;
   padding: rem(14px) rem(24px);
   font-family: var(--vtmn-typo_font-family);
   font-weight: var(--vtmn-typo_font-weight--bold);
@@ -223,21 +223,21 @@
 .vtmn-btn_size--small {
   font-size: rem(14px);
   padding: rem(8px) rem(16px);
-  min-height: rem(32px);
+  height: rem(32px);
   letter-spacing: rem(0.24px);
 }
 
 .vtmn-btn_size--medium {
   font-size: rem(16px);
   padding: rem(14px) rem(24px);
-  min-height: rem(48px);
+  height: rem(48px);
   letter-spacing: rem(0.27px);
 }
 
 .vtmn-btn_size--large {
   font-size: rem(20px);
   padding: rem(20px) rem(40px);
-  min-height: rem(64px);
+  height: rem(64px);
   letter-spacing: rem(0.34px);
 }
 
@@ -247,8 +247,8 @@
 
 /* Button icons  */
 .vtmn-btn--icon-alone {
-  min-width: rem(48px);
-  min-height: rem(48px);
+  width: rem(48px);
+  height: rem(48px);
   padding: rem(14px);
 }
 
@@ -257,8 +257,8 @@
 }
 
 .vtmn-btn_size--small.vtmn-btn--icon-alone {
-  min-width: rem(32px);
-  min-height: rem(32px);
+  width: rem(32px);
+  height: rem(32px);
   padding: rem(8px);
 }
 
@@ -267,8 +267,8 @@
 }
 
 .vtmn-btn_size--medium.vtmn-btn--icon-alone {
-  min-width: rem(48px);
-  min-height: rem(48px);
+  width: rem(48px);
+  height: rem(48px);
   padding: rem(14px);
 }
 
@@ -277,8 +277,8 @@
 }
 
 .vtmn-btn_size--large.vtmn-btn--icon-alone {
-  min-width: rem(64px);
-  min-height: rem(64px);
+  width: rem(64px);
+  height: rem(64px);
   padding: rem(20px);
 }
 
