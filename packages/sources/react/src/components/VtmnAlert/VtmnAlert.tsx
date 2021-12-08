@@ -46,9 +46,7 @@ export const VtmnAlert = ({
       <article className="vtmn-alert_content">
         <div className="vtmn-alert_content-title">
           {title}
-          {onClose && (
-            <span className="vtmx-close-line" onClick={() => onClose} />
-          )}
+          {onClose && <span className="vtmx-close-line" onClick={onClose} />}
         </div>
         {message && (
           <span className="vtmn-alert_content-description">{message}</span>
