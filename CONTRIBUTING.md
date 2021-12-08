@@ -1,6 +1,6 @@
 # Contributing
 
-If you are on this page it means you are almost ready to contribute proposing changes, fixing issues or anything else about Decathlon Design System library for web application.
+If you are on this page it means you are almost ready to contribute proposing changes, fixing issues or anything else about Decathlon Design System libraries for web applications.
 So, **thanks a lot for this**!! :tada::+1:
 
 **Table of Contents**
