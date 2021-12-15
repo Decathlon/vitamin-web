@@ -1,0 +1,98 @@
+@import '@vtmn/css-design-tokens/src/base-colors';
+@import '@vtmn/css-design-tokens/src/themes/default';
+@import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/opacities';
+
+.vtmn-navbar {
+  width: 100%;
+  height: rem(64px);
+  background: var(--vtmn-semantic-color_background-primary);
+  padding: rem(12px) rem(16px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vtmn-navbar span[class^='vtmx-'] {
+  font-size: var(--vtmn-typo_title-5-font-size);
+}
+
+.vtmn-navbar_left-navigation {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--vtmn-semantic-color_content-primary);
+  fill: var(--vtmn-semantic-color_content-primary);
+}
+
+.vtmn-navbar_left-navigation > * {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: rem(8px);
+}
+
+.vtmn-navbar_logo {
+  height: 100%;
+  margin-right: rem(8px);
+  display: flex;
+  align-items: center;
+}
+
+.vtmn-navbar_logo > * {
+  height: 100%;
+}
+
+.vtmn-navbar_middle-area {
+  width: 100%;
+  margin-right: rem(8px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+
+.vtmn-navbar_middle-area .vtmn-text-input_container {
+  width: 100%;
+}
+
+.vtmn-navbar_middle-area .vtmn-text-input_container input {
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.vtmn-navbar_middle-area .vtmn-text-input_container span[class^='vtmx-'],
+.vtmn-navbar_middle-area .vtmn-text-input_container svg {
+  position: absolute;
+  top: 0;
+  bottom: initial;
+  transform: translate(0, 50%);
+  color: var(--vtmn-semantic-color_content-primary);
+}
+
+.vtmn-navbar_right-navigation {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  min-width: fit-content;
+  align-items: center;
+  margin-left: rem(4px);
+  color: var(--vtmn-semantic-color_content-primary);
+  fill: var(--vtmn-semantic-color_content-primary);
+}
+
+.vtmn-navbar_right-navigation > * {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-width: fit-content;
+}
