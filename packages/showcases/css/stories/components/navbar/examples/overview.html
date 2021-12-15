@@ -5,9 +5,42 @@
     width: 100%;
   }
 
-  .block .vtmn-navbar {
-    max-width: 1000px;
-    min-width: max-content;
+  .vtmn-navbar .vtmn-btn:not(:last-child),
+  .vtmn-navbar span[class^='vtmx-']:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+
+  @media screen and (max-width: 1800px) {
+    .vtmn-navbar_right-navigation button.vtmn-btn--icon-alone:nth-child(1),
+    .vtmn-navbar_right-navigation button.vtmn-btn--icon-alone:nth-child(2) {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .vtmn-navbar_right-navigation
+      button.vtmn-btn:not(.vtmn-btn--icon-alone):not(:last-child) {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .vtmn-navbar {
+      justify-content: space-between;
+    }
+
+    .vtmn-navbar_middle-area {
+      display: none;
+    }
+
+    .vtmn-navbar_right-navigation button.vtmn-btn--icon-alone:nth-child(3),
+    .vtmn-navbar_right-navigation button.vtmn-btn--icon-alone:nth-child(4) {
+      display: none;
+    }
+
+    .vtmn-navbar_logo > svg {
+      height: 80%;
+    }
   }
 </style>
 
@@ -133,12 +166,10 @@
       </div>
     </div>
     <div class="vtmn-navbar_right-navigation">
-      <button
-        class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--small vtmn-mr-2"
-      >
+      <button class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--small">
         Button 1
       </button>
-      <button class="vtmn-btn vtmn-btn_size--small vtmn-mr-2">Button 2</button>
+      <button class="vtmn-btn vtmn-btn_size--small">Button 2</button>
       <button
         class="vtmn-btn vtmn-btn_variant--conversion vtmn-btn_size--small"
       >
