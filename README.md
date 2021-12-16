@@ -56,7 +56,7 @@ This package provides you with a complete CSS with a huge set of utility classes
   </tr>
 </table>
 
-If you already using [Tailwind CSS](https://tailwindcss.com/) in your project or you want to take full advantage of all its features like functions & directives by building your own classes via [`@apply`](https://tailwindcss.com/docs/functions-and-directives#apply) for example. You can check our package [`@vtmn/css-tailwind-preset`](https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/presets/tailwind#readme) which will explain you how to use Vitamin styles in a Tailwind project.
+If you already using [Tailwind CSS](https://tailwindcss.com/) in your project or you want to take full advantage of all its features like [functions & directives](https://tailwindcss.com/docs/functions-and-directives) by building your own classes via [`@apply`](https://tailwindcss.com/docs/functions-and-directives#apply) for example. You can check our package [`@vtmn/css-tailwind-preset`](https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/presets/tailwind#readme) which will explain you how to use Vitamin styles in a Tailwind CSS project.
 
 ### Specific CSS styles 🖌
 
@@ -105,6 +105,14 @@ These packages allow the consumption of elements with a higher level of granular
       <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status" alt="Quality Gate Status" /></a></td>
     </tr>
     <tr>
+      <th>@vtmn/css-breadcrumb</th>
+      <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/components/breadcrumb#readme">README</a></td>
+      <td><a href="https://www.decathlon.design/726f8c765/v/0/p/95fc13-breadcrumb"><img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" /></a></td>
+      <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-breadcrumb--overview"><img src="https://img.shields.io/badge/storybook-css-d891bc?style=flat&logo=storybook" alt="storybook" /></a></td>
+      <td><a href="https://www.npmjs.com/package/@vtmn/css-breadcrumb"><img src="https://img.shields.io/npm/v/@vtmn/css-breadcrumb?style=flat&logo=npm" alt="npm version" /></a></td>
+      <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status" alt="Quality Gate Status" /></a></td>
+    </tr>
+    <tr>
       <th>@vtmn/css-card</th>
       <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/components/card#readme">README</a></td>
       <td><a href="https://www.decathlon.design/726f8c765/p/88fc2b-card-beta/b/51e109"><img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" /></a></td>
@@ -118,6 +126,14 @@ These packages allow the consumption of elements with a higher level of granular
       <td><a href="https://www.decathlon.design/726f8c765/p/953c37-checkbox"><img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" /></a></td>
       <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-checkbox--overview"><img src="https://img.shields.io/badge/storybook-css-d891bc?style=flat&logo=storybook" alt="storybook" /></a></td>
       <td><a href="https://www.npmjs.com/package/@vtmn/css-checkbox"><img src="https://img.shields.io/npm/v/@vtmn/css-checkbox?style=flat&logo=npm" alt="npm version" /></a></td>
+      <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status" alt="Quality Gate Status" /></a></td>
+    </tr>
+    <tr>
+      <th>@vtmn/css-chip</th>
+      <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/components/chip#readme">README</a></td>
+      <td><a href="https://www.decathlon.design/726f8c765/p/953c37-chip"><img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" /></a></td>
+      <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-chip--overview"><img src="https://img.shields.io/badge/storybook-css-d891bc?style=flat&logo=storybook" alt="storybook" /></a></td>
+      <td><a href="https://www.npmjs.com/package/@vtmn/css-chip"><img src="https://img.shields.io/npm/v/@vtmn/css-chip?style=flat&logo=npm" alt="npm version" /></a></td>
       <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status" alt="Quality Gate Status" /></a></td>
     </tr>
     <tr>
@@ -142,6 +158,14 @@ These packages allow the consumption of elements with a higher level of granular
       <td><a href="https://www.decathlon.design/726f8c765/p/9596dd-modal-beta/b/08a8f6"><img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" /></a></td>
       <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-modal--overview"><img src="https://img.shields.io/badge/storybook-css-d891bc?style=flat&logo=storybook" alt="storybook" /></a></td>
       <td><a href="https://www.npmjs.com/package/@vtmn/css-modal"><img src="https://img.shields.io/npm/v/@vtmn/css-modal?style=flat&logo=npm" alt="npm version" /></a></td>
+      <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status" alt="Quality Gate Status" /></a></td>
+    </tr>
+    <tr>
+      <th>@vtmn/css-navbar</th>
+      <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/components/navbar#readme">README</a></td>
+      <td><a href="https://www.decathlon.design/726f8c765/p/9596dd-navbar-beta/b/08a8f6"><img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" /></a></td>
+      <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-navbar--overview"><img src="https://img.shields.io/badge/storybook-css-d891bc?style=flat&logo=storybook" alt="storybook" /></a></td>
+      <td><a href="https://www.npmjs.com/package/@vtmn/css-navbar"><img src="https://img.shields.io/npm/v/@vtmn/css-modal?style=flat&logo=npm" alt="npm version" /></a></td>
       <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status" alt="Quality Gate Status" /></a></td>
     </tr>
     <tr>
@@ -373,4 +397,16 @@ Thank you to the [contributors](CONTRIBUTORS.md) involved in these vitamin-web l
 
 ## License
 
-Apache-2.0 © [Decathlon](https://github.com/Decathlon)
+    Copyright 2021 Decathlon.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.

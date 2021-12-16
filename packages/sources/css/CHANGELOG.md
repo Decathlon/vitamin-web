@@ -3,6 +3,115 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.37.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.36.1...@vtmn/css@0.37.0) (2021-12-15)
+
+
+### Features
+
+* **@vtmn/css:** add navbar component ([#676](https://github.com/Decathlon/vitamin-web/issues/676)) ([95fb5dc](https://github.com/Decathlon/vitamin-web/commit/95fb5dcf2b29edd7850ed51c9c008de8ade6560e))
+
+
+
+
+
+## [0.36.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.36.0...@vtmn/css@0.36.1) (2021-12-03)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+# [0.36.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.35.0...@vtmn/css@0.36.0) (2021-12-03)
+
+
+### Features
+
+* **@vtmn/css:** add breadcrumb component ([#750](https://github.com/Decathlon/vitamin-web/issues/750)) ([ad60d8f](https://github.com/Decathlon/vitamin-web/commit/ad60d8fd9a7317a0b691507b8369a88b97c583da))
+
+
+
+
+
+# [0.35.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.34.4...@vtmn/css@0.35.0) (2021-12-03)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** add aside styles for the card in the showcase ([88f2215](https://github.com/Decathlon/vitamin-web/commit/88f22150a29b1d5147f50a1d56a01f280f292f9e))
+* **@vtmn/css:** buton in side bar fit-content ([4d3064f](https://github.com/Decathlon/vitamin-web/commit/4d3064f51854f08f425db4d50b2ba87fe8b6234f))
+* **@vtmn/css:** button has a min-height instead of a height ([429577a](https://github.com/Decathlon/vitamin-web/commit/429577aeee80e8e8a94d605deae074bacc32eda6))
+* **@vtmn/css:** fix class for full opaque background ([9372c8a](https://github.com/Decathlon/vitamin-web/commit/9372c8adabdaf5b6c41fbe7aaa29f5955740dd91))
+* **@vtmn/css:** remove min-width ([ce6ee13](https://github.com/Decathlon/vitamin-web/commit/ce6ee131a7ddbc1fc43523a1c7b2fda6b6cfebb1))
+* **@vtmn/css:** token background color ([b8d676b](https://github.com/Decathlon/vitamin-web/commit/b8d676b48258a9b27f813a797035952ea572f595))
+
+
+### Features
+
+* **@vtmn/css:** fix width cards ([c0e81ca](https://github.com/Decathlon/vitamin-web/commit/c0e81ca2c7a5c6f4d9615465b1530c68e028aeae))
+* **@vtmn/css:** fix width progressbar linear ([451754b](https://github.com/Decathlon/vitamin-web/commit/451754b0d892e137fe476e5bdd7536386e296c0a))
+
+
+
+
+
+## [0.34.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.34.3...@vtmn/css@0.34.4) (2021-11-30)
+
+
+### Bug Fixes
+
+* **@vtmn/css-tailwind-preset:** font-normal class has two definitions ([#760](https://github.com/Decathlon/vitamin-web/issues/760)) ([be5f392](https://github.com/Decathlon/vitamin-web/commit/be5f39296dfaa2deb89e84f2823e10108fb037a2))
+
+
+
+
+
+## [0.34.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.34.2...@vtmn/css@0.34.3) (2021-11-30)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** specify letter spacing for each size variant of the button ([#782](https://github.com/Decathlon/vitamin-web/issues/782)) ([3485ee3](https://github.com/Decathlon/vitamin-web/commit/3485ee3cd6e27795fdf54ff65576f2ca0c8d1b54))
+
+
+
+
+
+## [0.34.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.34.1...@vtmn/css@0.34.2) (2021-11-23)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+## [0.34.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.34.0...@vtmn/css@0.34.1) (2021-11-22)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+# [0.34.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.33.4...@vtmn/css@0.34.0) (2021-11-18)
+
+
+### Features
+
+* **@vtmn/css:** add chip component ([#730](https://github.com/Decathlon/vitamin-web/issues/730)) ([c2de91d](https://github.com/Decathlon/vitamin-web/commit/c2de91de8695b73c81a24c0efea587348c599947))
+
+
+
+
+
+## [0.33.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.33.3...@vtmn/css@0.33.4) (2021-11-17)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
 ## [0.33.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.33.2...@vtmn/css@0.33.3) (2021-11-15)
 
 **Note:** Version bump only for package @vtmn/css

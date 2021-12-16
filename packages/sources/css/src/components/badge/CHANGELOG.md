@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.5.2...@vtmn/css-badge@0.6.0) (2021-12-03)
+
+
+### Features
+
+* **@vtmn/css:** add breadcrumb component ([#750](https://github.com/Decathlon/vitamin-web/issues/750)) ([ad60d8f](https://github.com/Decathlon/vitamin-web/commit/ad60d8fd9a7317a0b691507b8369a88b97c583da))
+
+
+
+
+
+## [0.5.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.5.1...@vtmn/css-badge@0.5.2) (2021-11-30)
+
+
+### Bug Fixes
+
+* **@vtmn/css-tailwind-preset:** font-normal class has two definitions ([#760](https://github.com/Decathlon/vitamin-web/issues/760)) ([be5f392](https://github.com/Decathlon/vitamin-web/commit/be5f39296dfaa2deb89e84f2823e10108fb037a2))
+
+
+
+
+
+## [0.5.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.5.0...@vtmn/css-badge@0.5.1) (2021-11-23)
+
+**Note:** Version bump only for package @vtmn/css-badge
+
+
+
+
+
+# [0.5.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.4.1...@vtmn/css-badge@0.5.0) (2021-11-18)
+
+
+### Features
+
+* **@vtmn/css:** add chip component ([#730](https://github.com/Decathlon/vitamin-web/issues/730)) ([c2de91d](https://github.com/Decathlon/vitamin-web/commit/c2de91de8695b73c81a24c0efea587348c599947))
+
+
+
+
+
 ## [0.4.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.4.0...@vtmn/css-badge@0.4.1) (2021-11-15)
 
 **Note:** Version bump only for package @vtmn/css-badge

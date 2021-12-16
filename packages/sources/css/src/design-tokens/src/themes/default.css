@@ -44,10 +44,14 @@
   --vtmn-semantic-color_content-primary--s: var(--vtmn-base-color_black--s);
   --vtmn-semantic-color_content-primary--l: var(--vtmn-base-color_black--l);
   --vtmn-semantic-color_content-primary: hsl(var(--vtmn-semantic-color_content-primary--h), var(--vtmn-semantic-color_content-primary--s), var(--vtmn-semantic-color_content-primary--l));
-  --vtmn-semantic-color_content-secondary--h: var(--vtmn-base-color_grey500--h);
-  --vtmn-semantic-color_content-secondary--s: var(--vtmn-base-color_grey500--s);
-  --vtmn-semantic-color_content-secondary--l: var(--vtmn-base-color_grey500--l);
+  --vtmn-semantic-color_content-secondary--h: var(--vtmn-base-color_grey600--h);
+  --vtmn-semantic-color_content-secondary--s: var(--vtmn-base-color_grey600--s);
+  --vtmn-semantic-color_content-secondary--l: var(--vtmn-base-color_grey600--l);
   --vtmn-semantic-color_content-secondary: hsl(var(--vtmn-semantic-color_content-secondary--h), var(--vtmn-semantic-color_content-secondary--s), var(--vtmn-semantic-color_content-secondary--l));
+  --vtmn-semantic-color_content-tertiary--h: var(--vtmn-base-color_grey500--h);
+  --vtmn-semantic-color_content-tertiary--s: var(--vtmn-base-color_grey500--s);
+  --vtmn-semantic-color_content-tertiary--l: var(--vtmn-base-color_grey500--l);
+  --vtmn-semantic-color_content-tertiary: hsl(var(--vtmn-semantic-color_content-tertiary--h), var(--vtmn-semantic-color_content-tertiary--s), var(--vtmn-semantic-color_content-tertiary--l));
   --vtmn-semantic-color_content-action--h: var(--vtmn-base-color_blue500--h);
   --vtmn-semantic-color_content-action--s: var(--vtmn-base-color_blue500--s);
   --vtmn-semantic-color_content-action--l: var(--vtmn-base-color_blue500--l);

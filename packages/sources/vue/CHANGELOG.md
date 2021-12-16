@@ -3,6 +3,89 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.8.28...@vtmn/vue@0.9.0) (2021-12-15)
+
+
+### Features
+
+* **@vtmn/css:** add navbar component ([#676](https://github.com/Decathlon/vitamin-web/issues/676)) ([95fb5dc](https://github.com/Decathlon/vitamin-web/commit/95fb5dcf2b29edd7850ed51c9c008de8ade6560e))
+
+
+
+
+
+## [0.8.28](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.8.27...@vtmn/vue@0.8.28) (2021-12-03)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+## [0.8.27](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.8.26...@vtmn/vue@0.8.27) (2021-12-03)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+## [0.8.26](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.8.25...@vtmn/vue@0.8.26) (2021-12-03)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+## [0.8.25](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.8.24...@vtmn/vue@0.8.25) (2021-11-30)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+## [0.8.24](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.8.23...@vtmn/vue@0.8.24) (2021-11-30)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+## [0.8.23](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.8.22...@vtmn/vue@0.8.23) (2021-11-30)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+## [0.8.22](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.8.21...@vtmn/vue@0.8.22) (2021-11-23)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+## [0.8.21](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.8.20...@vtmn/vue@0.8.21) (2021-11-22)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+## [0.8.20](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.8.19...@vtmn/vue@0.8.20) (2021-11-18)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
 ## [0.8.19](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.8.18...@vtmn/vue@0.8.19) (2021-11-15)
 
 **Note:** Version bump only for package @vtmn/vue

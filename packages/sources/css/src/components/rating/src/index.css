@@ -82,7 +82,7 @@
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
   color: var(--vtmn-semantic-color_content-secondary);
-  font-weight: var(--vtmn-typo_font-weight--regular);
+  font-weight: var(--vtmn-typo_font-weight--normal);
 }
 
 .vtmn-rating span[class^='vtmx-'] {

@@ -28,13 +28,13 @@ jobs:
           HUSKY: 0
 
       - name: Build sources
-        run: yarn affected:build
+        run: yarn build
 
       - name: Test
-        run: yarn affected:test
+        run: yarn test
 
       - name: Build showcases
-        run: yarn affected:build-storybook
+        run: yarn build-storybook
 # Cannot be run on pull_request, and pull_request_event is not safe with checkout.
 #  sonarcloud:
 #    name: SonarCloud analysis
@@ -46,11 +46,14 @@ jobs:
 #           'packages/sources/css/src/components/alert',
 #           'packages/sources/css/src/components/badge',
 #           'packages/sources/css/src/components/button',
+#           'packages/sources/css/src/components/breadcrumb',
 #           'packages/sources/css/src/components/card',
 #           'packages/sources/css/src/components/checkbox',
+#           'packages/sources/css/src/components/chip',
 #           'packages/sources/css/src/components/link',
 #           'packages/sources/css/src/components/loader',
 #           'packages/sources/css/src/components/modal',
+#           'packages/sources/css/src/components/navbar',
 #           'packages/sources/css/src/components/popover',
 #           'packages/sources/css/src/components/progressbar',
 #           'packages/sources/css/src/components/radio-button',

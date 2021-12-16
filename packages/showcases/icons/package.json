@@ -10,20 +10,20 @@
     "start": "start-storybook -p 6007"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^6.3.12",
-    "@storybook/addon-actions": "^6.3.12",
-    "@storybook/addon-backgrounds": "^6.3.12",
-    "@storybook/addon-docs": "^6.3.12",
-    "@storybook/addon-essentials": "^6.3.12",
-    "@storybook/addon-viewport": "^6.3.12",
-    "@storybook/html": "^6.3.12",
+    "@storybook/addon-a11y": "^6.4.9",
+    "@storybook/addon-actions": "^6.4.9",
+    "@storybook/addon-backgrounds": "^6.4.9",
+    "@storybook/addon-docs": "^6.4.9",
+    "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-viewport": "^6.4.9",
+    "@storybook/html": "^6.4.9",
     "@vtmn/css": "*",
     "@vtmn/icons": "*",
     "@vtmn/showcase-core": "*",
     "@whitespace/storybook-addon-html": "^5.0.0",
     "storybook-addon-designs": "^6.0.0",
     "storybook-addon-outline": "^1.4.0",
-    "storybook-mobile": "^0.1.29"
+    "storybook-mobile": "^1.0.0"
   },
   "licenses": [
     {

@@ -16,7 +16,7 @@
   z-index: var(--vtmn-z-index_tooltip);
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-3-font-size);
-  font-weight: var(--vtmn-typo_font-weight--regular);
+  font-weight: var(--vtmn-typo_font-weight--normal);
   line-height: var(--vtmn-typo_text-3-line-height);
   box-shadow: var(--vtmn-shadow_200);
   user-select: none;

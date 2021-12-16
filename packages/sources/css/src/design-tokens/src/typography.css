@@ -13,7 +13,7 @@
  * @presenter FontWeight
  */
 :root {
-  --vtmn-typo_font-weight--regular: 400;
+  --vtmn-typo_font-weight--normal: 400;
   --vtmn-typo_font-weight--bold: 700;
 }
 
@@ -137,4 +137,9 @@
     --vtmn-typo_title-4-line-height: 1.23;
     --vtmn-typo_title-5-line-height: 1.2;
   }
+}
+
+/* DEPRECATED (no longer maintained, use --vtmn-typo_font-weight--normal instead) */
+:root {
+  --vtmn-typo_font-weight--regular: 400;
 }
