@@ -112,6 +112,10 @@
       "root": "packages/sources/css/src/components/snackbar",
       "type": "library"
     },
+    "@vtmn/css-tabs": {
+      "root": "packages/sources/css/src/components/tabs",
+      "type": "library"
+    },
     "@vtmn/css-text-input": {
       "root": "packages/sources/css/src/components/text-input",
       "type": "library"
