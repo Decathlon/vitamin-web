@@ -3,10 +3,17 @@
     height: 400px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 599px) {
+    .block {
+      width: 50%;
+    }
   }
 </style>
 
-<div class="block full">
+<div class="block vertical-block">
   <div
     class="vtmn-divider vtmn-divider_orientation--vertical"
     role="separator"
