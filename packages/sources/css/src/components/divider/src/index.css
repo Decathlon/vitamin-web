@@ -36,6 +36,11 @@
   flex-grow: 3;
 }
 
+.vtmn-divider_text--center::before,
+.vtmn-divider_text--center::after {
+  flex-grow: 1;
+}
+
 .vtmn-divider_orientation--vertical {
   flex-direction: column;
 }
