@@ -1,6 +1,6 @@
 import '@vtmn/css-design-tokens/dist/index.css';
 
-export { VtmnAlert } from './components/VtmnAlert'
+export { VtmnAlert } from './components/VtmnAlert';
 export { VtmnBadge } from './components/VtmnBadge';
 export { VtmnButton } from './components/VtmnButton';
 export { VtmnCheckbox } from './components/VtmnCheckbox';
@@ -12,7 +12,7 @@ export { VtmnTextInput } from './components/VtmnTextInput';
 export { VtmnToggle } from './components/VtmnToggle';
 export { VtmnTooltip } from './components/VtmnTooltip';
 
-export type { VtmnAlertProps } from './components/VtmnAlert'
+export type { VtmnAlertProps } from './components/VtmnAlert';
 export type { VtmnBadgeProps } from './components/VtmnBadge';
 export type { VtmnButtonProps } from './components/VtmnButton';
 export type { VtmnCheckboxProps } from './components/VtmnCheckbox';
