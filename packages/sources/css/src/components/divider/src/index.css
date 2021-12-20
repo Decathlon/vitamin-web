@@ -24,11 +24,11 @@
 }
 
 .vtmn-divider:not(:empty):not(.vtmn-divider_orientation--vertical)::before {
-  margin-inline-end: rem(8px);
+  margin-inline-end: var(--vtmn-spacing_2);
 }
 
 .vtmn-divider:not(:empty):not(.vtmn-divider_orientation--vertical)::after {
-  margin-inline-start: rem(8px);
+  margin-inline-start: var(--vtmn-spacing_2);
 }
 
 .vtmn-divider_text--start::after,
@@ -46,9 +46,9 @@
 }
 
 .vtmn-divider_orientation--vertical:not(:empty)::before {
-  margin-block-end: rem(8px);
+  margin-block-end: var(--vtmn-spacing_2);
 }
 
 .vtmn-divider_orientation--vertical:not(:empty)::after {
-  margin-block-start: rem(8px);
+  margin-block-start: var(--vtmn-spacing_2);
 }
