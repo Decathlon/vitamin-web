@@ -50,6 +50,7 @@ jobs:
 #           'packages/sources/css/src/components/card',
 #           'packages/sources/css/src/components/checkbox',
 #           'packages/sources/css/src/components/chip',
+#           'packages/sources/css/src/components/divider',
 #           'packages/sources/css/src/components/link',
 #           'packages/sources/css/src/components/loader',
 #           'packages/sources/css/src/components/modal',
