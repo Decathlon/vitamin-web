@@ -1,5 +1,11 @@
+<style>
+  #root {
+    background-color: var(--vtmn-semantic-color_background-primary);
+  }
+</style>
+
 <div class="block">
-  <div class="vtmn-search">
+  <div class="vtmn-search vtmn-search_variant--persistent">
     <input type="search" id="my-search-1" placeholder="Search" />
     <div class="vtmn-search_buttons">
       <button
@@ -19,7 +25,7 @@
 </div>
 
 <div class="block">
-  <div class="vtmn-search">
+  <div class="vtmn-search vtmn-search_variant--persistent">
     <input type="search" id="my-search-1" placeholder="Search" disabled />
     <div class="vtmn-search_buttons">
       <button
@@ -41,7 +47,9 @@
 </div>
 
 <div class="block">
-  <div class="vtmn-search vtmn-search_size--small">
+  <div
+    class="vtmn-search vtmn-search_size--small vtmn-search_variant--persistent"
+  >
     <input type="search" id="my-search-1" placeholder="Search" />
     <div class="vtmn-search_buttons">
       <button
