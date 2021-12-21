@@ -31,31 +31,15 @@
   margin-inline-start: var(--vtmn-spacing_2);
 }
 
-.vtmn-divider_text--start:not(.vtmn-divider_orientation--vertical)::before,
-.vtmn-divider_orientation--horizontal.vtmn-divider_text--start::before {
-  width: var(--vtmn-spacing_10);
-  min-width: var(--vtmn-spacing_10);
-}
-
-.vtmn-divider_text--start:not(.vtmn-divider_orientation--vertical)::after,
-.vtmn-divider_orientation--horizontal.vtmn-divider_text--start::after {
-  width: 100%;
-}
-
-.vtmn-divider_text--end:not(.vtmn-divider_orientation--vertical)::before,
-.vtmn-divider_orientation--horizontal.vtmn-divider_text--end::before {
-  width: 100%;
-}
-
-.vtmn-divider_text--end:not(.vtmn-divider_orientation--vertical)::after,
+.vtmn-divider_orientation--horizontal.vtmn-divider_text--start::before,
 .vtmn-divider_orientation--horizontal.vtmn-divider_text--end::after {
   width: var(--vtmn-spacing_10);
   min-width: var(--vtmn-spacing_10);
 }
 
-.vtmn-divider_text--center:not(.vtmn-divider_orientation--vertical)::before,
+.vtmn-divider_orientation--horizontal.vtmn-divider_text--start::after,
+.vtmn-divider_orientation--horizontal.vtmn-divider_text--end::before,
 .vtmn-divider_orientation--horizontal.vtmn-divider_text--center::before,
-.vtmn-divider_text--center:not(.vtmn-divider_orientation--vertical)::after,
 .vtmn-divider_orientation--horizontal.vtmn-divider_text--center::after {
   width: 100%;
 }
@@ -78,24 +62,14 @@
   margin-block-start: var(--vtmn-spacing_2);
 }
 
-.vtmn-divider_orientation--vertical.vtmn-divider_text--start::before {
-  height: var(--vtmn-spacing_10);
-  min-height: var(--vtmn-spacing_10);
-}
-
-.vtmn-divider_orientation--vertical.vtmn-divider_text--start::after {
-  height: 100%;
-}
-
-.vtmn-divider_orientation--vertical.vtmn-divider_text--end::before {
-  height: 100%;
-}
-
+.vtmn-divider_orientation--vertical.vtmn-divider_text--start::before,
 .vtmn-divider_orientation--vertical.vtmn-divider_text--end::after {
   height: var(--vtmn-spacing_10);
   min-height: var(--vtmn-spacing_10);
 }
 
+.vtmn-divider_orientation--vertical.vtmn-divider_text--end::before,
+.vtmn-divider_orientation--vertical.vtmn-divider_text--start::after,
 .vtmn-divider_orientation--vertical.vtmn-divider_text--center::before,
 .vtmn-divider_orientation--vertical.vtmn-divider_text--center::after {
   height: 100%;
