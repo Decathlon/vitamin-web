@@ -1,5 +1,11 @@
+<style>
+  #root {
+    background-color: var(--vtmn-semantic-color_background-primary);
+  }
+</style>
+
 <div class="block">
-  <div class="vtmn-search">
+  <div class="vtmn-search vtmn-search_variant--on-content" role="search">
     <input type="search" id="my-search-1" placeholder="Search" />
     <div class="vtmn-search_buttons">
       <button
@@ -19,7 +25,11 @@
 </div>
 
 <div class="block">
-  <div class="vtmn-search">
+  <div
+    class="vtmn-search vtmn-search_variant--on-content vtmn-search_size--medium"
+    role="search"
+    aria-disabled="true"
+  >
     <input type="search" id="my-search-1" placeholder="Search" disabled />
     <div class="vtmn-search_buttons">
       <button
@@ -41,7 +51,10 @@
 </div>
 
 <div class="block">
-  <div class="vtmn-search vtmn-search_size--small">
+  <div
+    class="vtmn-search vtmn-search_size--small vtmn-search_variant--on-content"
+    role="search"
+  >
     <input type="search" id="my-search-1" placeholder="Search" />
     <div class="vtmn-search_buttons">
       <button
@@ -53,6 +66,32 @@
       <button
         class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--small vtmn-btn--icon-alone"
         aria-label="search"
+      >
+        <span class="vtmx-search-line"></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="block">
+  <div
+    class="vtmn-search vtmn-search_size--small vtmn-search_variant--on-content"
+    role="search"
+    aria-disabled="true"
+  >
+    <input type="search" id="my-search-1" placeholder="Search" disabled />
+    <div class="vtmn-search_buttons">
+      <button
+        class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--small vtmn-btn--icon-alone"
+        aria-label="close"
+        disabled
+      >
+        <span class="vtmx-close-line"></span>
+      </button>
+      <button
+        class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--small vtmn-btn--icon-alone"
+        aria-label="search"
+        disabled
       >
         <span class="vtmx-search-line"></span>
       </button>

@@ -1,6 +1,8 @@
 @import '@vtmn/css-design-tokens/src/base-colors';
 @import '@vtmn/css-design-tokens/src/themes/default';
 @import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/opacities';
+@import '@vtmn/css-design-tokens/src/shadows';
 
 .vtmn-search {
   display: flex;
@@ -23,7 +25,7 @@
   color: var(--vtmn-semantic-color_content-primary);
   outline: none;
   appearance: none;
-  width: fit-content;
+  width: 100%;
 }
 
 /* Remove default search input appearance */
@@ -51,10 +53,6 @@
 
 .vtmn-search > input[type='search']::placeholder {
   color: var(--vtmn-semantic-color_content-tertiary);
-}
-
-.vtmn-search > input[type='search']:not(:disabled):focus {
-  box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-active);
 }
 
 .vtmn-search > input[type='search']:disabled,
@@ -142,10 +140,34 @@
 .vtmn-search_variant--persistent > input[type='search'] {
   box-shadow: none;
   background-color: var(--vtmn-semantic-color_background-secondary);
-  color: var(--vtmn-semantic-color_content-secondary);
 }
 
 .vtmn-search_variant--persistent
   > input[type='search']:not(:disabled):not(:focus):hover {
   box-shadow: 0 0 0 3px var(--vtmn-semantic-color_hover-primary);
+}
+
+.vtmn-search_variant--persistent > input[type='search']::placeholder {
+  color: var(--vtmn-semantic-color_content-secondary);
+}
+
+/* ON CONTENT */
+.vtmn-search_variant--on-content > input[type='search'] {
+  box-shadow: var(--vtmn-shadow_100);
+}
+
+.vtmn-search_variant--on-content
+  > input[type='search']:not(:disabled):not(:focus):hover {
+  box-shadow: 0 0 0 3px var(--vtmn-semantic-color_hover-primary),
+    var(--vtmn-shadow_100);
+}
+
+.vtmn-search > input[type='search']:not(:disabled):focus-visible {
+  box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-active),
+    var(--vtmn-shadow_100);
+}
+
+.vtmn-search > input[type='search']:not(:disabled):focus {
+  box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-active),
+    var(--vtmn-shadow_100);
 }
