@@ -31,7 +31,6 @@
 
 .vtmn-tabs a:hover {
   color: var(--vtmn-semantic-color_content-primary);
-  border-bottom: 2px solid var(--vtmn-semantic-color_content-secondary);
 }
 
 .vtmn-tabs a:focus {
@@ -42,6 +41,16 @@
 .vtmn-tabs a:focus-visible {
   box-shadow: 0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
     0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
+}
+
+.vtmn-tabs .vtmn-badge {
+  margin-inline-start: var(--vtmn-spacing_2);
+}
+
+.vtmn-tabs span[class^='vtmx-'],
+.vtmn-tabs_size--medium span[class^='vtmx-'] {
+  font-size: var(--vtmn-typo_title-5-font-size);
+  margin-inline-end: var(--vtmn-spacing_2);
 }
 
 /* ALIGN */
@@ -69,8 +78,16 @@
   padding: 12px 20px;
 }
 
+.vtmn-tabs_size--medium span[class^='vtmx-'] {
+  font-size: var(--vtmn-typo_title-5-font-size);
+}
+
 /* Small */
 .vtmn-tabs_size--small a {
   font-size: var(--vtmn-typo_text-3-font-size);
   padding: 8px 16px;
+}
+
+.vtmn-tabs_size--small span[class^='vtmx-'] {
+  font-size: var(--vtmn-typo_text-2-font-size);
 }
