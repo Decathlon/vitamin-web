@@ -72,6 +72,10 @@
       "root": "packages/sources/css/src/components/chip",
       "type": "library"
     },
+    "@vtmn/css-divider": {
+      "root": "packages/sources/css/src/components/divider",
+      "type": "library"
+    },
     "@vtmn/css-link": {
       "root": "packages/sources/css/src/components/link",
       "type": "library"

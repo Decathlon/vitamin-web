@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.15.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.14.0...@vtmn/react@0.15.0) (2021-12-20)
+
+
+### Features
+
+* **@vtmn/react:** add react alert export ([#800](https://github.com/Decathlon/vitamin-web/issues/800)) ([ebf1a87](https://github.com/Decathlon/vitamin-web/commit/ebf1a8782c838adc20fe60788bf5b23d0dd97c34))
+
+
+
+
+
 # [0.14.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.13.23...@vtmn/react@0.14.0) (2021-12-16)
 
 
