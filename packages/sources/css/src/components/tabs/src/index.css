@@ -21,10 +21,10 @@
   align-items: center;
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
-  padding: 12px 20px;
+  padding: var(--vtmn-spacing_3) rem(20px);
   white-space: nowrap;
   color: var(--vtmn-semantic-color_content-secondary);
-  border-bottom: 2px solid transparent;
+  border-bottom: rem(2px) solid transparent;
   transition: border-bottom 200ms ease, color 200ms ease;
   outline: none;
 }
@@ -35,7 +35,7 @@
 
 .vtmn-tabs a:focus {
   color: var(--vtmn-semantic-color_content-active);
-  border-bottom: 2px solid var(--vtmn-semantic-color_content-active);
+  border-bottom: rem(2px) solid var(--vtmn-semantic-color_content-active);
 }
 
 .vtmn-tabs a:focus > .vtmn-badge {
@@ -76,7 +76,7 @@
 /* Medium (default) */
 .vtmn-tabs_size--medium a {
   font-size: var(--vtmn-typo_text-2-font-size);
-  padding: 12px 20px;
+  padding: var(--vtmn-spacing_3) rem(20px);
 }
 
 .vtmn-tabs_size--medium span[class^='vtmx-'] {
@@ -86,7 +86,7 @@
 /* Small */
 .vtmn-tabs_size--small a {
   font-size: var(--vtmn-typo_text-3-font-size);
-  padding: 8px 16px;
+  padding: var(--vtmn-spacing_2) var(--vtmn-spacing_4);
 }
 
 .vtmn-tabs_size--small span[class^='vtmx-'] {
