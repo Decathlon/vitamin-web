@@ -2,12 +2,10 @@
 @import '@vtmn/css-design-tokens/src/themes/default';
 @import '@vtmn/css-design-tokens/src/typography';
 
-.vtmn-tabs,
-.vtmn-tabs_size--medium {
-  min-height: 50px;
+.vtmn-tabs {
+  height: fit-content;
   width: 100%;
   background-color: var(--vtmn-semantic-color_background-primary);
-  font-family: var(--vtmn-typo_font-family);
 }
 
 .vtmn-tabs > ul,
@@ -17,9 +15,12 @@
   height: 100%;
 }
 
-.vtmn-tabs a {
+.vtmn-tabs a,
+.vtmn-tabs_size--medium a {
   display: flex;
   align-items: center;
+  font-family: var(--vtmn-typo_font-family);
+  font-size: var(--vtmn-typo_text-2-font-size);
   padding: 12px 20px;
   white-space: nowrap;
   color: var(--vtmn-semantic-color_content-secondary);
@@ -57,19 +58,13 @@
 /* SIZES */
 
 /* Medium (default) */
-.vtmn-tabs_size--medium {
-  min-height: 50px;
-}
-
 .vtmn-tabs_size--medium a {
+  font-size: var(--vtmn-typo_text-2-font-size);
   padding: 12px 20px;
 }
 
 /* Small */
-.vtmn-tabs_size--small {
-  min-height: 38px;
-}
-
 .vtmn-tabs_size--small a {
+  font-size: var(--vtmn-typo_text-3-font-size);
   padding: 8px 16px;
 }
