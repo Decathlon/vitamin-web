@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.38.0...@vtmn/css@0.39.0) (2021-12-21)
+
+
+### Features
+
+* **@vtmn/css:** add divider component ([#799](https://github.com/Decathlon/vitamin-web/issues/799)) ([38b78d7](https://github.com/Decathlon/vitamin-web/commit/38b78d7d8edd5f77b0be8a998dcf0f9b67844ed1))
+
+
+
+
+
+# [0.38.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.37.0...@vtmn/css@0.38.0) (2021-12-16)
+
+
+### Features
+
+* **@vtmn/react:** add alert component ([#791](https://github.com/Decathlon/vitamin-web/issues/791)) ([4205bfe](https://github.com/Decathlon/vitamin-web/commit/4205bfec0785462d83b71aa0a02a706eae35d046))
+
+
+
+
+
 # [0.37.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.36.1...@vtmn/css@0.37.0) (2021-12-15)
 
 

@@ -1,7 +1,7 @@
 {
-  "name": "@vtmn/css-alert",
-  "version": "0.4.0",
-  "description": "Decathlon Design System - Vitamin specific CSS styles for alert component",
+  "name": "@vtmn/css-divider",
+  "version": "0.1.0",
+  "description": "Decathlon Design System - Vitamin specific CSS styles for divider component",
   "keywords": [
     "design-system",
     "ui-kit",
@@ -9,6 +9,7 @@
     "css",
     "vitamin"
   ],
+  "homepage": "https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/components/button",
   "bugs": {
     "url": "https://github.com/Decathlon/vitamin-web/issues"
   },
