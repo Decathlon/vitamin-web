@@ -6,7 +6,6 @@
   height: fit-content;
   width: 100%;
   background-color: var(--vtmn-semantic-color_background-primary);
-  overflow-x: auto;
 }
 
 .vtmn-tabs > ul,
@@ -37,6 +36,11 @@
 .vtmn-tabs a:focus {
   color: var(--vtmn-semantic-color_content-active);
   border-bottom: rem(2px) solid var(--vtmn-semantic-color_content-active);
+}
+
+.vtmn-tabs a:focus-visible {
+  box-shadow: 0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
+    0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
 }
 
 .vtmn-tabs a:focus > .vtmn-badge {
