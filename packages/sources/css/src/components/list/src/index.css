@@ -1,0 +1,9 @@
+@import '@vtmn/css-design-tokens/src/base-colors';
+@import '@vtmn/css-design-tokens/src/themes/default';
+@import '@vtmn/css-design-tokens/src/typography';
+
+.vtmn-list {
+  font-family: var(--vtmn-typo_font-family);
+  font-weight: var(--vtmn-typo_font-weight--normal);
+  font-size: var(--vtmn-typo_text-2-font-size);
+}
