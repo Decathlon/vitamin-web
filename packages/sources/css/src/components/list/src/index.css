@@ -6,4 +6,38 @@
   font-family: var(--vtmn-typo_font-family);
   font-weight: var(--vtmn-typo_font-weight--normal);
   font-size: var(--vtmn-typo_text-2-font-size);
+  color: var(--vtmn-semantic-color_content-primary);
+  background-color: var(--vtmn-semantic-color_background-primary);
+}
+
+.vtmn-tabs > ul {
+  width: 100%;
+}
+
+.vtmn-list li,
+.vtmn-list_size--medium li {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px 11px;
+  width: 100%;
+}
+
+.vtmn-list li:hover {
+  background-color: var(--vtmn-semantic-color_hover-primary);
+}
+
+.vtmn-list li:active {
+  background-color: var(--vtmn-semantic-color_active-primary);
+}
+
+.vtmn-list_item {
+  display: flex;
+}
+
+.vtmn-list span[class^='vtmx-'],
+.vtmn-list--medium span[class^='vtmx-'] {
+  font-size: var(--vtmn-typo_title-5-font-size);
+  margin-inline-end: var(--vtmn-spacing_2);
 }
