@@ -3,7 +3,8 @@ import clsx from 'clsx';
 import '@vtmn/css-divider/dist/index-with-vars.css';
 import { VtmnDividerText } from './types';
 
-export interface VtmnDividerProps extends React.ComponentPropsWithoutRef<'hr'> {
+export interface VtmnDividerProps
+  extends React.ComponentPropsWithoutRef<'div'> {
   /**
    * The orientation of the divider
    * @defaultValue 'horizontal'
