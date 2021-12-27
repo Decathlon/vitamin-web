@@ -56,7 +56,7 @@
 }
 
 .vtmn-list_item span[class^='vtmx-'] {
-  margin-inline-end: var(--vtmn-spacing_2);
+  margin-inline-end: var(--vtmn-spacing_3);
 }
 
 .vtmn-list_slot > .vtmn-btn--icon-alone {
