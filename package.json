@@ -73,7 +73,7 @@
   "devDependencies": {
     "@babel/core": "^7.14.8",
     "@commitlint/cli": "^15.0.0",
-    "@commitlint/config-conventional": "^15.0.0",
+    "@commitlint/config-conventional": "^16.0.0",
     "@nrwl/cli": "^13.2.2",
     "@nrwl/nx-cloud": "^13.0.0",
     "@nrwl/tao": "^13.2.2",
