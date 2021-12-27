@@ -75,7 +75,7 @@
     "@vue/cli-service": "^4.5.11",
     "@vue/compiler-sfc": "^3.2.19",
     "@vue/eslint-config-prettier": "6.0.0",
-    "@vue/eslint-config-typescript": "9.1.0",
+    "@vue/eslint-config-typescript": "10.0.0",
     "babel-eslint": "^10.1.0",
     "concurrently": "^6.3.0",
     "cz-conventional-changelog": "^3.3.0",
