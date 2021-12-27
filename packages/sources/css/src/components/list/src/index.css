@@ -10,8 +10,14 @@
   background-color: var(--vtmn-semantic-color_background-primary);
 }
 
-.vtmn-tabs > ul {
+.vtmn-list > ul {
   width: 100%;
+  outline: 0;
+}
+
+.vtmn-list > ul:focus-visible {
+  box-shadow: 0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
+    0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
 }
 
 .vtmn-list li,
@@ -22,14 +28,22 @@
   justify-content: space-between;
   padding: 12px 16px 11px;
   width: 100%;
+  outline: 0;
+  cursor: pointer;
 }
 
 .vtmn-list li:hover {
   background-color: var(--vtmn-semantic-color_hover-primary);
 }
 
-.vtmn-list li:active {
+/* focus instead of active to display active state of buttons */
+.vtmn-list li:focus {
   background-color: var(--vtmn-semantic-color_active-primary);
+}
+
+.vtmn-list li:focus-visible {
+  box-shadow: 0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
+    0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
 }
 
 .vtmn-list_item {
@@ -39,5 +53,30 @@
 .vtmn-list span[class^='vtmx-'],
 .vtmn-list--medium span[class^='vtmx-'] {
   font-size: var(--vtmn-typo_title-5-font-size);
+}
+
+.vtmn-list_item span[class^='vtmx-'] {
   margin-inline-end: var(--vtmn-spacing_2);
+}
+
+.vtmn-list_slot > .vtmn-btn--icon-alone {
+  min-height: 36px;
+  min-width: 36px;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  color: var(--vtmn-semantic-color_content-primary);
+}
+
+.vtmn-list_slot > .vtmn-btn > span[class^='vtmx-'] {
+  font-size: var(--vtmn-typo_title-5-font-size);
+}
+
+.vtmn-list_item_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.vtmn-list_item_text > span:nth-child(2) {
+  color: var(--vtmn-semantic-color_content-tertiary);
 }
