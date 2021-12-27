@@ -1,6 +1,7 @@
 @import '@vtmn/css-design-tokens/src/base-colors';
 @import '@vtmn/css-design-tokens/src/themes/default';
 @import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/opacities';
 
 .vtmn-list {
   font-family: var(--vtmn-typo_font-family);
@@ -20,8 +21,7 @@
     0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
 }
 
-.vtmn-list li,
-.vtmn-list_size--medium li {
+.vtmn-list li {
   height: fit-content;
   display: flex;
   align-items: center;
@@ -49,10 +49,10 @@
 .vtmn-list_item {
   display: flex;
   align-items: center;
+  white-space: nowrap;
 }
 
-.vtmn-list span[class^='vtmx-'],
-.vtmn-list--medium span[class^='vtmx-'] {
+.vtmn-list span[class^='vtmx-'] {
   font-size: var(--vtmn-typo_title-5-font-size);
 }
 
@@ -70,7 +70,7 @@
   color: var(--vtmn-semantic-color_content-primary);
 }
 
-.vtmn-list_slot > .vtmn-btn > span[class^='vtmx-'] {
+.vtmn-list_slot > .vtmn-btn--icon-alone > span[class^='vtmx-'] {
   font-size: var(--vtmn-typo_title-5-font-size);
 }
 
@@ -104,4 +104,54 @@
 .vtmn-list .vtmn-list--disabled {
   opacity: var(--vtmn-opacity_disabled-state);
   cursor: not-allowed;
+}
+
+/* SIZES */
+
+/* Small */
+.vtmn-list_size--small {
+  font-size: var(--vtmn-typo_text-3-font-size);
+}
+
+.vtmn-list_size--small li {
+  padding: 6px 8px 5px 16px;
+}
+
+.vtmn-list_size--small span[class^='vtmx-'] {
+  font-size: var(--vtmn-typo_text-2-font-size);
+}
+
+.vtmn-list_size--small .vtmn-btn--icon-alone > span[class^='vtmx-'] {
+  font-size: var(--vtmn-typo_text-2-font-size);
+}
+
+.vtmn-list_size--small .vtmn-list_slot > .vtmn-btn--icon-alone {
+  min-height: 24px;
+  min-width: 24px;
+  height: 24px;
+  width: 24px;
+}
+
+/* Medium (default) */
+.vtmn-list_size--medium {
+  font-size: var(--vtmn-typo_text-2-font-size);
+}
+
+.vtmn-list_size--medium li {
+  padding: 12px 16px 11px;
+}
+
+.vtmn-list_size--medium span[class^='vtmx-'] {
+  font-size: var(--vtmn-typo_title-5-font-size);
+}
+
+.vtmn-list_size--medium .vtmn-btn--icon-alone > span[class^='vtmx-'] {
+  font-size: var(--vtmn-typo_title-5-font-size);
+}
+
+.vtmn-list_size--medium .vtmn-list_slot > .vtmn-btn--icon-alone {
+  min-height: 36px;
+  min-width: 36px;
+  height: 36px;
+  width: 36px;
 }
