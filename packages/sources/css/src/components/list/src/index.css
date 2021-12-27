@@ -32,16 +32,16 @@
   cursor: pointer;
 }
 
-.vtmn-list li:hover {
+.vtmn-list li:not(.vtmn-list--disabled):hover {
   background-color: var(--vtmn-semantic-color_hover-primary);
 }
 
 /* focus instead of active to display active state of buttons */
-.vtmn-list li:focus {
+.vtmn-list li:not(.vtmn-list--disabled):focus {
   background-color: var(--vtmn-semantic-color_active-primary);
 }
 
-.vtmn-list li:focus-visible {
+.vtmn-list li:not(.vtmn-list--disabled):focus-visible {
   box-shadow: 0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
     0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
 }
@@ -99,4 +99,9 @@
   max-width: 100px;
   aspect-ratio: 2 / 1;
   object-fit: cover;
+}
+
+.vtmn-list .vtmn-list--disabled {
+  opacity: var(--vtmn-opacity_disabled-state);
+  cursor: not-allowed;
 }
