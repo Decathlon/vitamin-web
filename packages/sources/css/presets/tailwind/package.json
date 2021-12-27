@@ -29,7 +29,7 @@
     "@vtmn/css-utilities": "^0.2.3"
   },
   "peerDependencies": {
-    "tailwindcss": "^2.2.19"
+    "tailwindcss": ">=1.9.0 || ^2.0.0 || ^3.0.0"
   },
   "publishConfig": {
     "access": "public"
