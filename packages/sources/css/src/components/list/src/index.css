@@ -48,6 +48,7 @@
 
 .vtmn-list_item {
   display: flex;
+  align-items: center;
 }
 
 .vtmn-list span[class^='vtmx-'],
@@ -55,7 +56,8 @@
   font-size: var(--vtmn-typo_title-5-font-size);
 }
 
-.vtmn-list_item span[class^='vtmx-'] {
+.vtmn-list_item span[class^='vtmx-'],
+.vtmn-list_item img {
   margin-inline-end: var(--vtmn-spacing_3);
 }
 
@@ -79,4 +81,22 @@
 
 .vtmn-list_item_text > span:nth-child(2) {
   color: var(--vtmn-semantic-color_content-tertiary);
+}
+
+.vtmn-list_media--round {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.vtmn-list_media--thumbnail {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.vtmn-list_media--image {
+  max-width: 100px;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
 }
