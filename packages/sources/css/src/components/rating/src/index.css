@@ -7,7 +7,6 @@
 
 .vtmn-rating {
   color: var(--vtmn-semantic-color_content-primary);
-  clear: both;
   margin: rem(10px) rem(5px);
   display: flex;
   flex-direction: row;
@@ -29,8 +28,15 @@
   color: var(--vtmn-semantic-color_content-active);
 }
 
+.vtmn-rating--interactive:focus-visible {
+  outline: none;
+  box-shadow: var(--vtmn-shadow_focus-visible);
+}
+
 .vtmn-rating--interactive > input {
-  display: none;
+  /* display: none; */
+  opacity: 0;
+  position: absolute;
 }
 
 .vtmn-rating--interactive > label {
@@ -38,6 +44,11 @@
   display: inline-block;
   font-size: var(--vtmn-typo_text-2-font-size);
   font-family: vitamix, var(--vtmn-typo_font-family);
+}
+
+.vtmn-rating--interactive > input:focus-visible + label {
+  outline: none;
+  box-shadow: var(--vtmn-shadow_focus-visible);
 }
 
 .vtmn-rating--interactive > label::before {
