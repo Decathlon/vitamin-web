@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { App as Application, Plugin } from 'vue';
 import '@vtmn/css-design-tokens';
 import * as components from './components/index';

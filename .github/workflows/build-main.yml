@@ -39,9 +39,6 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Test
-        run: yarn test
-
       - name: Publish NPM packages
         run: |
           npm whoami
@@ -78,6 +75,7 @@ jobs:
             'packages/sources/css/src/components/progressbar',
             'packages/sources/css/src/components/radio-button',
             'packages/sources/css/src/components/rating',
+            'packages/sources/css/src/components/search',
             'packages/sources/css/src/components/select',
             'packages/sources/css/src/components/skeleton',
             'packages/sources/css/src/components/snackbar',

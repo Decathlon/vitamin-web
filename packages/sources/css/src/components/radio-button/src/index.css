@@ -5,7 +5,8 @@
 
 .vtmn-radio-button[type='radio'] {
   position: absolute;
-  opacity: 0.01;
+  opacity: 0;
+  transition: all 0.275s;
 }
 
 .vtmn-radio-button[type='radio'] + label {
@@ -24,7 +25,6 @@
   content: '';
   border: rem(2px) solid;
   border-radius: 100%;
-  transition: all 0.275s;
   margin-top: rem(1px);
   margin-right: rem(11px);
   padding: rem(8px);
@@ -47,8 +47,7 @@
 }
 
 .vtmn-radio-button[type='radio']:focus-visible:not(:disabled) + label::before {
-  box-shadow: 0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
-    0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
+  box-shadow: var(--vtmn-shadow_focus-visible);
 }
 
 .vtmn-radio-button[type='radio']:checked + label::before {
@@ -96,6 +95,5 @@
 
 .vtmn-radio-button[type='radio']:focus-visible + label::before {
   outline: none;
-  box-shadow: 0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
-    0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
+  box-shadow: var(--vtmn-shadow_focus-visible);
 }
