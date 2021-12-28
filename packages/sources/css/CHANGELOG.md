@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.40.0...@vtmn/css@0.41.0) (2021-12-28)
+
+
+### Features
+
+* **@vtmn/css:** add search component ([#812](https://github.com/Decathlon/vitamin-web/issues/812)) ([d10e7d1](https://github.com/Decathlon/vitamin-web/commit/d10e7d1f70af698c8609a78bb604a405121fd544))
+
+
+
+
+
 # [0.40.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.39.3...@vtmn/css@0.40.0) (2021-12-28)
 
 
