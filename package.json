@@ -18,20 +18,26 @@
     "url": "git+https://github.com/Decathlon/vitamin-web.git"
   },
   "license": "Apache-2.0",
-  "workspaces": [
-    "packages/sources/css",
-    "packages/sources/css/config/*",
-    "packages/sources/css/presets/*",
-    "packages/sources/css/src/design-tokens",
-    "packages/sources/css/src/utilities",
-    "packages/sources/css/src/components/*",
-    "packages/sources/icons",
-    "packages/sources/web-components",
-    "packages/sources/vue",
-    "packages/sources/react",
-    "packages/sources/svelte",
-    "packages/showcases/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/sources/css",
+      "packages/sources/css/config/*",
+      "packages/sources/css/presets/*",
+      "packages/sources/css/src/design-tokens",
+      "packages/sources/css/src/utilities",
+      "packages/sources/css/src/components/*",
+      "packages/sources/icons",
+      "packages/sources/web-components",
+      "packages/sources/vue",
+      "packages/sources/react",
+      "packages/sources/svelte",
+      "packages/showcases/*"
+    ],
+    "nohoist": [
+      "**/@vue/cli-plugin-eslint",
+      "**/@vue/cli-plugin-eslint/**"
+    ]
+  },
   "scripts": {
     "affected:build": "nx affected:build",
     "affected:build-storybook": "nx affected --target=build-storybook",
