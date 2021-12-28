@@ -14,6 +14,12 @@ export default {
   parameters,
 } as Meta;
 
-const Template: Story = (args) => <div>test</div>;
+const options = [
+  <option>option</option>,
+  <option>option 2</option>,
+  <option>option 3</option>,
+];
+
+const Template: Story = (args) => <VtmnSelect options={options} {...args} />;
 
 export const Overview = Template.bind({});
