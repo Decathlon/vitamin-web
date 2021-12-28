@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-breadcrumb@0.1.1...@vtmn/css-breadcrumb@0.2.0) (2021-12-28)
+
+
+### Features
+
+* **@vtmn/css:** add token focus-visible for breadcrumb and tabs ([#829](https://github.com/Decathlon/vitamin-web/issues/829)) ([daddc0c](https://github.com/Decathlon/vitamin-web/commit/daddc0c1952e152d8cd05f74da27d1472d0c1fdc))
+
+
+
+
+
 ## [0.1.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-breadcrumb@0.1.0...@vtmn/css-breadcrumb@0.1.1) (2021-12-27)
 
 **Note:** Version bump only for package @vtmn/css-breadcrumb
