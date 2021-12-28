@@ -1,7 +1,11 @@
 <p align="center">
   <img
     width="300px"
-    src="https://user-images.githubusercontent.com/9600228/102414461-e3b92b00-3ff6-11eb-9c96-5f37c4d5e02c.png"
+    src="https://user-images.githubusercontent.com/9600228/102414461-e3b92b00-3ff6-11eb-9c96-5f37c4d5e02c.png#gh-light-mode-only"
+    alt="Vitamin Decathlon Design System logo" />
+  <img
+    width="300px"
+    src="https://user-images.githubusercontent.com/9600228/147513091-66fcc204-279b-4140-9be5-c16744c0f637.png#gh-dark-mode-only"
     alt="Vitamin Decathlon Design System logo" />
 </p>
 
