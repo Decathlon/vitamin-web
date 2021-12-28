@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/vue",
-  "version": "0.9.1",
+  "version": "0.9.4",
   "description": "Decathlon Design System - Vitamin Svelte library",
   "keywords": [
     "design-system",
@@ -27,41 +27,21 @@
   ],
   "scripts": {
     "build": "vite build && tsc --emitDeclarationOnly",
-    "lint": "vue-cli-service lint",
     "start": "concurrently \"vite build --watch\" \"tsc --emitDeclarationOnly\""
-  },
-  "eslintConfig": {
-    "env": {
-      "node": true
-    },
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "root": true
   },
   "dependencies": {
     "@vtmn/css-design-tokens": "^0.10.1",
     "core-js": "^3.18.1",
-    "vue": "^3.2.1"
+    "vue": "^3.2.26"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.14.9",
-    "@babel/preset-typescript": "7.16.5",
     "@rollup/plugin-alias": "^3.1.5",
-    "@rollup/plugin-babel": "^5.2.1",
     "@rollup/plugin-commonjs": "^21.0.0",
     "@rollup/plugin-image": "^2.0.5",
     "@rollup/plugin-node-resolve": "^13.0.5",
     "@rollup/plugin-replace": "^3.0.0",
     "@rollup/plugin-typescript": "^8.3.0",
-    "@typescript-eslint/eslint-plugin": "^5.2.0",
-    "@typescript-eslint/parser": "^5.2.0",
-    "@vitejs/plugin-vue": "^1.9.3",
+    "@vitejs/plugin-vue": "^2.0.1",
     "@vtmn/css-button": "^0.8.8",
     "@vtmn/css-checkbox": "^0.5.4",
     "@vtmn/css-link": "^0.5.5",
@@ -69,19 +49,11 @@
     "@vtmn/css-text-input": "^0.11.1",
     "@vtmn/css-toggle": "^0.4.4",
     "@vtmn/icons": "^0.6.0",
-    "@vue/cli-plugin-babel": "^4.5.11",
-    "@vue/cli-plugin-eslint": "^4.5.11",
     "@vue/cli-plugin-typescript": "^4.5.11",
     "@vue/cli-service": "^4.5.11",
     "@vue/compiler-sfc": "^3.2.19",
-    "@vue/eslint-config-prettier": "6.0.0",
-    "@vue/eslint-config-typescript": "9.1.0",
-    "babel-eslint": "^10.1.0",
     "concurrently": "^6.3.0",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.2.0",
-    "eslint-plugin-prettier": "4.0.0",
-    "eslint-plugin-vue": "^8.0.3",
     "rimraf": "^3.0.2",
     "rollup": "^2.57.0",
     "rollup-plugin-terser": "^7.0.2",

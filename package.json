@@ -18,20 +18,26 @@
     "url": "git+https://github.com/Decathlon/vitamin-web.git"
   },
   "license": "Apache-2.0",
-  "workspaces": [
-    "packages/sources/css",
-    "packages/sources/css/config/*",
-    "packages/sources/css/presets/*",
-    "packages/sources/css/src/design-tokens",
-    "packages/sources/css/src/utilities",
-    "packages/sources/css/src/components/*",
-    "packages/sources/icons",
-    "packages/sources/web-components",
-    "packages/sources/vue",
-    "packages/sources/react",
-    "packages/sources/svelte",
-    "packages/showcases/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/sources/css",
+      "packages/sources/css/config/*",
+      "packages/sources/css/presets/*",
+      "packages/sources/css/src/design-tokens",
+      "packages/sources/css/src/utilities",
+      "packages/sources/css/src/components/*",
+      "packages/sources/icons",
+      "packages/sources/web-components",
+      "packages/sources/vue",
+      "packages/sources/react",
+      "packages/sources/svelte",
+      "packages/showcases/*"
+    ],
+    "nohoist": [
+      "**/@vue/cli-plugin-eslint",
+      "**/@vue/cli-plugin-eslint/**"
+    ]
+  },
   "scripts": {
     "affected:build": "nx affected:build",
     "affected:build-storybook": "nx affected --target=build-storybook",
@@ -56,8 +62,7 @@
     "start:vue": "nx run-many --target=start --projects=@vtmn/showcase-vue,@vtmn/vue --parallel",
     "start:web-components": "nx run-many --target=start --projects=@vtmn/showcase-web-components,@vtmn/web-components --parallel",
     "stylelint": "stylelint packages/**/*.css",
-    "stylelint:fix": "yarn stylelint --fix",
-    "test": "nx run-many --target=test --all --parallel"
+    "stylelint:fix": "yarn stylelint --fix"
   },
   "lint-staged": {
     "./**/package.json": [
@@ -72,8 +77,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.14.8",
-    "@commitlint/cli": "^15.0.0",
-    "@commitlint/config-conventional": "^15.0.0",
+    "@commitlint/cli": "^16.0.0",
+    "@commitlint/config-conventional": "^16.0.0",
     "@nrwl/cli": "^13.2.2",
     "@nrwl/nx-cloud": "^13.0.0",
     "@nrwl/tao": "^13.2.2",

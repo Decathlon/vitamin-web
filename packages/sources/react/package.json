@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/react",
-  "version": "0.15.1",
+  "version": "0.15.3",
   "description": "Decathlon Design System - Vitamin React components library",
   "keywords": [
     "design-system",
@@ -29,9 +29,7 @@
     "build": "rimraf dist && rollup -c",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint src --ext .js,.jsx,.ts,.tsx --fix",
-    "start": "npm run build -- -w",
-    "test:ci": "CI=true npm run test:coverage",
-    "test:coverage": "react-scripts test --env=jsdom --coverage --watchAll=false"
+    "start": "npm run build -- -w"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -55,8 +53,8 @@
     "@types/jest": "^27.0.1",
     "@types/react": "^17.0.34",
     "@types/react-dom": "^17.0.11",
-    "@typescript-eslint/eslint-plugin": "^5.2.0",
-    "@typescript-eslint/parser": "^5.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "@typescript-eslint/parser": "^5.8.1",
     "@vtmn/css-badge": "^0.6.1",
     "@vtmn/css-button": "^0.8.8",
     "@vtmn/css-checkbox": "^0.5.4",
