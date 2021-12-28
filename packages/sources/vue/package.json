@@ -32,7 +32,7 @@
   "dependencies": {
     "@vtmn/css-design-tokens": "^0.10.1",
     "core-js": "^3.18.1",
-    "vue": "^3.2.1"
+    "vue": "^3.2.26"
   },
   "devDependencies": {
     "@rollup/plugin-alias": "^3.1.5",
@@ -41,7 +41,7 @@
     "@rollup/plugin-node-resolve": "^13.0.5",
     "@rollup/plugin-replace": "^3.0.0",
     "@rollup/plugin-typescript": "^8.3.0",
-    "@vitejs/plugin-vue": "^1.9.3",
+    "@vitejs/plugin-vue": "^2.0.1",
     "@vtmn/css-button": "^0.8.8",
     "@vtmn/css-checkbox": "^0.5.4",
     "@vtmn/css-link": "^0.5.5",
