@@ -11,6 +11,7 @@ export { VtmnRadioButton } from './components/VtmnRadioButton';
 export { VtmnTextInput } from './components/VtmnTextInput';
 export { VtmnToggle } from './components/VtmnToggle';
 export { VtmnTooltip } from './components/VtmnTooltip';
+export { VtmnSelect } from './components/VtmnSelect';
 
 export type { VtmnAlertProps } from './components/VtmnAlert';
 export type { VtmnBadgeProps } from './components/VtmnBadge';
@@ -23,3 +24,4 @@ export type { VtmnRadioProps } from './components/VtmnRadioButton';
 export type { VtmnTextInputProps } from './components/VtmnTextInput';
 export type { VtmnToggleProps } from './components/VtmnToggle';
 export type { VtmnTooltipProps } from './components/VtmnTooltip';
+export type { VtmnSelectProps } from './components/VtmnSelect';
