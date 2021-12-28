@@ -15,6 +15,14 @@ export const argTypes = {
       type: 'text',
     },
   },
+  children: {
+    type: { name: 'string', required: false },
+    description: 'The content to render inside the component',
+    defaultValue: 'My Label',
+    control: {
+      type: 'text',
+    },
+  },
 };
 
 export const parameters = {
