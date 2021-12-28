@@ -15,6 +15,7 @@ Overview.parameters = {
       code: overview,
     },
   },
+  backgrounds: { default: 'primary' },
 };
 
 export const Default = () => _default;
@@ -33,6 +34,7 @@ Persistent.parameters = {
       code: persistent,
     },
   },
+  backgrounds: { default: 'primary' },
 };
 
 export const OnContent = () => onContent;
@@ -42,4 +44,5 @@ OnContent.parameters = {
       code: onContent,
     },
   },
+  backgrounds: { default: 'primary' },
 };
