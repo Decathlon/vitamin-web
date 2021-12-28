@@ -8,15 +8,12 @@
   background-color: var(--vtmn-semantic-color_background-primary);
 }
 
-.vtmn-tabs > ul,
-.vtmn-tabs_align--start > ul {
+.vtmn-tabs > ul {
   display: flex;
-  justify-content: flex-start;
   height: 100%;
 }
 
-.vtmn-tabs a,
-.vtmn-tabs_size--medium a {
+.vtmn-tabs a {
   display: flex;
   align-items: center;
   font-family: var(--vtmn-typo_font-family);
