@@ -8,11 +8,14 @@
   background-color: var(--vtmn-semantic-color_background-primary);
 }
 
-.vtmn-tabs > ul,
-.vtmn-tabs_align--start > ul {
-  display: flex;
-  justify-content: flex-start;
-  height: 100%;
+.vtmn-tabs > ul {
+  display: block;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.vtmn-tabs li {
+  display: inline-flex;
 }
 
 .vtmn-tabs a,
@@ -63,17 +66,17 @@
 
 /* Start (default) */
 .vtmn-tabs_align--start > ul {
-  justify-content: flex-start;
+  text-align: start;
 }
 
 /* Center */
 .vtmn-tabs_align--center > ul {
-  justify-content: center;
+  text-align: center;
 }
 
 /* End */
 .vtmn-tabs_align--end > ul {
-  justify-content: flex-end;
+  text-align: end;
 }
 
 /* SIZES */
