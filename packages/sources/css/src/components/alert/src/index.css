@@ -13,7 +13,7 @@
   cursor: pointer;
   padding: rem(12px) rem(16px);
   width: fit-content;
-  max-width: 40%;
+  max-width: 65%;
   min-height: 48px;
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
@@ -96,11 +96,7 @@
 
 /* Close icon */
 .vtmn-alert_content-title span[class^='vtmx-'] {
-  padding-left: rem(24px);
-  cursor: pointer;
   font-size: rem(24px);
-  height: rem(24px);
-  color: var(--vtmn-semantic-color_content-primary-reversed);
 }
 
 .vtmn-alert.show {

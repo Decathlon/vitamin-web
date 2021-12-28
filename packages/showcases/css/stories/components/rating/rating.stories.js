@@ -1,6 +1,6 @@
 import overview from './examples/overview.html';
-import small from './examples/small.html';
-import medium from './examples/medium.html';
+import interactive from './examples/interactive.html';
+import readOnly from './examples/read-only.html';
 
 export default {
   title: 'Components / Rating ',
@@ -25,19 +25,19 @@ Overview.parameters = {
   },
 };
 
-export const Small = () => small;
-Small.parameters = {
+export const Interactive = () => interactive;
+Interactive.parameters = {
   docs: {
     source: {
-      code: small,
+      code: interactive,
     },
   },
 };
-export const Medium = () => medium;
-Medium.parameters = {
+export const ReadOnly = () => readOnly;
+ReadOnly.parameters = {
   docs: {
     source: {
-      code: medium,
+      code: readOnly,
     },
   },
 };

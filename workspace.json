@@ -108,6 +108,10 @@
       "root": "packages/sources/css/src/components/rating",
       "type": "library"
     },
+    "@vtmn/css-search": {
+      "root": "packages/sources/css/src/components/search",
+      "type": "library"
+    },
     "@vtmn/css-select": {
       "root": "packages/sources/css/src/components/select",
       "type": "library"
@@ -118,6 +122,10 @@
     },
     "@vtmn/css-snackbar": {
       "root": "packages/sources/css/src/components/snackbar",
+      "type": "library"
+    },
+    "@vtmn/css-tabs": {
+      "root": "packages/sources/css/src/components/tabs",
       "type": "library"
     },
     "@vtmn/css-text-input": {
