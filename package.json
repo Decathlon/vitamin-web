@@ -62,8 +62,7 @@
     "start:vue": "nx run-many --target=start --projects=@vtmn/showcase-vue,@vtmn/vue --parallel",
     "start:web-components": "nx run-many --target=start --projects=@vtmn/showcase-web-components,@vtmn/web-components --parallel",
     "stylelint": "stylelint packages/**/*.css",
-    "stylelint:fix": "yarn stylelint --fix",
-    "test": "nx run-many --target=test --all --parallel"
+    "stylelint:fix": "yarn stylelint --fix"
   },
   "lint-staged": {
     "./**/package.json": [
