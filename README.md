@@ -1,7 +1,11 @@
 <p align="center">
   <img
     width="300px"
-    src="https://user-images.githubusercontent.com/9600228/102414461-e3b92b00-3ff6-11eb-9c96-5f37c4d5e02c.png"
+    src="https://user-images.githubusercontent.com/9600228/102414461-e3b92b00-3ff6-11eb-9c96-5f37c4d5e02c.png#gh-light-mode-only"
+    alt="Vitamin Decathlon Design System logo" />
+  <img
+    width="300px"
+    src="https://user-images.githubusercontent.com/9600228/147513091-66fcc204-279b-4140-9be5-c16744c0f637.png#gh-dark-mode-only"
     alt="Vitamin Decathlon Design System logo" />
 </p>
 
@@ -238,6 +242,14 @@ These packages allow the consumption of elements with a higher level of granular
       <td><a href="https://www.decathlon.design/726f8c765/p/798580-snackbar-beta/b/129609"><img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" /></a></td>
       <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-snackbar--overview"><img src="https://img.shields.io/badge/storybook-css-d891bc?style=flat&logo=storybook" alt="storybook" /></a></td>
       <td><a href="https://www.npmjs.com/package/@vtmn/css-snackbar"><img src="https://img.shields.io/npm/v/@vtmn/css-snackbar?style=flat&logo=npm" alt="npm version" /></a></td>
+      <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status" alt="Quality Gate Status" /></a></td>
+    </tr>
+    <tr>
+      <th>@vtmn/css-tabs</th>
+      <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/components/tabs#readme">README</a></td>
+      <td><a href="https://www.decathlon.design/726f8c765/p/705308-tabs-beta/b/4177c3"><img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" /></a></td>
+      <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-tabs--overview"><img src="https://img.shields.io/badge/storybook-css-d891bc?style=flat&logo=storybook" alt="storybook" /></a></td>
+      <td><a href="https://www.npmjs.com/package/@vtmn/css-tabs"><img src="https://img.shields.io/npm/v/@vtmn/css-tabs?style=flat&logo=npm" alt="npm version" /></a></td>
       <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status" alt="Quality Gate Status" /></a></td>
     </tr>
     <tr>
