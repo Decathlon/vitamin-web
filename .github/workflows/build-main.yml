@@ -39,9 +39,6 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Test
-        run: yarn test
-
       - name: Publish NPM packages
         run: |
           npm whoami
