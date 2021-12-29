@@ -96,6 +96,10 @@
       "root": "packages/sources/css/src/components/progressbar",
       "type": "library"
     },
+    "@vtmn/css-quantity": {
+      "root": "packages/sources/css/src/components/quantity",
+      "type": "library"
+    },
     "@vtmn/css-radio-button": {
       "root": "packages/sources/css/src/components/radio-button",
       "type": "library"
