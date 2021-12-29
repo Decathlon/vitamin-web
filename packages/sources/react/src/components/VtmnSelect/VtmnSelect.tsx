@@ -51,8 +51,8 @@ export const VtmnSelect = ({
   );
 };
 
-const MemoVtmnBadge = React.memo(VtmnSelect);
+const MemoVtmnSelect = React.memo(VtmnSelect);
 
-MemoVtmnBadge.displayName = 'VtmnSelect';
+MemoVtmnSelect.displayName = 'VtmnSelect';
 
-export default MemoVtmnBadge;
+export default MemoVtmnSelect;
