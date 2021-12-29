@@ -9,11 +9,17 @@
 }
 
 .vtmn-tabs > ul {
-  display: flex;
-  height: 100%;
+  display: block;
+  white-space: nowrap;
+  overflow-x: auto;
 }
 
-.vtmn-tabs a {
+.vtmn-tabs li {
+  display: inline-flex;
+}
+
+.vtmn-tabs a,
+.vtmn-tabs_size--medium a {
   display: flex;
   align-items: center;
   font-family: var(--vtmn-typo_font-family);
@@ -36,8 +42,7 @@
 }
 
 .vtmn-tabs a:focus-visible {
-  box-shadow: 0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
-    0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
+  box-shadow: var(--vtmn-shadow_focus-visible);
 }
 
 .vtmn-tabs a:focus > .vtmn-badge {
@@ -60,17 +65,17 @@
 
 /* Start (default) */
 .vtmn-tabs_align--start > ul {
-  justify-content: flex-start;
+  text-align: start;
 }
 
 /* Center */
 .vtmn-tabs_align--center > ul {
-  justify-content: center;
+  text-align: center;
 }
 
 /* End */
 .vtmn-tabs_align--end > ul {
-  justify-content: flex-end;
+  text-align: end;
 }
 
 /* SIZES */

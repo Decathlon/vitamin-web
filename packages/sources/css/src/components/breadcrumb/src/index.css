@@ -48,8 +48,7 @@
 .vtmn-breadcrumb li > a:focus-visible,
 .vtmn-breadcrumb li > button:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
-    0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
+  box-shadow: var(--vtmn-shadow_focus-visible);
   text-decoration: underline;
   color: inherit;
 }
