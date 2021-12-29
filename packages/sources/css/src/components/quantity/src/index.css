@@ -64,6 +64,7 @@
   margin: 0;
 }
 
+/* Remove default number input appearance */
 .vtmn-quantity input[type='number'] {
   appearance: textfield;
 }
