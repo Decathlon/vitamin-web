@@ -37,11 +37,6 @@
     0 0 0 3px var(--vtmn-semantic-color_hover-primary);
 }
 
-.vtmn-quantity input[type='number']:not(:disabled):focus,
-.vtmn-quantity input[type='number']:not(:disabled):focus-visible {
-  box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-active);
-}
-
 .vtmn-quantity[aria-disabled='true'] {
   opacity: var(--vtmn-opacity_disabled-state);
   cursor: not-allowed;
@@ -55,6 +50,11 @@
 
 .vtmn-quantity input[type='number']:not(:disabled):invalid {
   box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-negative);
+}
+
+.vtmn-quantity input[type='number']:not(:disabled):focus,
+.vtmn-quantity input[type='number']:not(:disabled):focus-visible {
+  box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-active);
 }
 
 /* Remove default number input appearance */
