@@ -1,7 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
-
-import '@vtmn/css-select';
+import '@vtmn/css-select/dist/index-with-vars.css';
 
 export interface VtmnSelectProps extends React.ComponentPropsWithRef<'select'> {
   error?: boolean;

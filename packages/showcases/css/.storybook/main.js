@@ -13,7 +13,6 @@ module.exports = {
     '@whitespace/storybook-addon-html',
     'storybook-addon-designs',
     'storybook-mobile',
-    'storybook-addon-outline',
     'storybook-design-token',
   ],
   webpackFinal: (config) => {

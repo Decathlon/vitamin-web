@@ -1,3 +1,3 @@
-export type SvgrComponent = React.StatelessComponent<
+export type SvgrComponent = React.FunctionComponent<
   React.SVGAttributes<SVGElement>
 >;

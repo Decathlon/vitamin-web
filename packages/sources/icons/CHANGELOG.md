@@ -111,7 +111,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* use shx for unix commands like mkdir ([cfe70ab](https://github.com/Decathlon/vitamin-web/commit/cfe70ab4ce1015de9ab91412b2b828f2aa08408a))
+* use unix commands like mkdir ([cfe70ab](https://github.com/Decathlon/vitamin-web/commit/cfe70ab4ce1015de9ab91412b2b828f2aa08408a))
 
 
 

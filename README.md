@@ -393,9 +393,6 @@ yarn start:icons
 yarn start:react
 yarn start:svelte
 yarn start:vue
-
-# test packages
-yarn test
 ```
 
 > 👉 See [the contributing docs](CONTRIBUTING.md) for more information about how to contribute.

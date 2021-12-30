@@ -59,9 +59,6 @@
     "@vtmn/css-utilities": "^0.2.4",
     "chokidar-cli": "^3.0.0",
     "postcss": "^8.3.8",
-    "stylelint": "^14.0.0",
-    "stylelint-config-prettier": "^9.0.2",
-    "stylelint-config-standard": "^24.0.0",
     "tailwindcss": "^2.2.16"
   },
   "publishConfig": {

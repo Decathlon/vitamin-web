@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 import '@vtmn/css-checkbox/dist/index-with-vars.css';
 
 export interface VtmnCheckboxProps
