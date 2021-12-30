@@ -31,6 +31,6 @@ export const parameters = {
   },
   design: {
     type: 'figma',
-    url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=783%3A9869',
+    url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=359%3A30',
   },
 };
