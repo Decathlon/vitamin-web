@@ -5,27 +5,27 @@ import '@vtmn/css-checkbox/dist/index-with-vars.css';
 export interface VtmnCheckboxProps
   extends React.ComponentPropsWithoutRef<'input'> {
   /**
-   * ID of the checkbox.
+   * The id of the checkbox.
    * @type {string}
    */
   identifier: string;
 
   /**
-   * Label text linked to the checkbox.
+   * The label of the checkbox.
    * @type {string}
    * @defaultValue undefined
    */
   labelText?: string;
 
   /**
-   * Label text linked to the checkbox.
+   * The checked state of the checkbox.
    * @type {boolean}
    * @defaultValue false
    */
   checked?: boolean;
 
   /**
-   * Label text linked to the checkbox.
+   * The disabled state of the checkbox.
    * @type {boolean}
    * @defaultValue false
    */
@@ -35,8 +35,8 @@ export interface VtmnCheckboxProps
 export const VtmnCheckbox = ({
   identifier,
   labelText,
-  checked,
-  disabled,
+  checked = false,
+  disabled = false,
   ...props
 }: VtmnCheckboxProps) => {
   return (
@@ -45,7 +45,7 @@ export const VtmnCheckbox = ({
         className="vtmn-checkbox"
         type="checkbox"
         id={identifier}
-        defaultChecked={checked}
+        checked={checked}
         disabled={disabled}
         {...props}
       />

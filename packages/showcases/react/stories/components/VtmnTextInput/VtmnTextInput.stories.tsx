@@ -15,7 +15,7 @@ export default {
       type: { name: 'string', required: false },
       description: 'Called when icon is clicked',
       control: {
-        type: 'text',
+        type: 'function',
       },
     },
   },

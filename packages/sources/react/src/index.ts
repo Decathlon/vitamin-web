@@ -20,7 +20,7 @@ export type { VtmnCheckboxProps } from './components/VtmnCheckbox';
 export type { VtmnIconProps } from './components/VtmnIcon';
 export type { VtmnLinkProps } from './components/VtmnLink';
 export type { VtmnLoaderProps } from './components/VtmnLoader';
-export type { VtmnRadioProps } from './components/VtmnRadioButton';
+export type { VtmnRadioButtonProps } from './components/VtmnRadioButton';
 export type { VtmnSelectProps } from './components/VtmnSelect';
 export type { VtmnTextInputProps } from './components/VtmnTextInput';
 export type { VtmnToggleProps } from './components/VtmnToggle';
