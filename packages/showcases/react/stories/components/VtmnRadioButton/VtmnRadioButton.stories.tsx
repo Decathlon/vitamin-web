@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { VtmnRadioButton } from '@vtmn/react';
 import { Meta, Story } from '@storybook/react';
 import {
@@ -12,6 +13,16 @@ export default {
   parameters,
 } as Meta;
 
-const Template: Story = (args) => <VtmnRadioButton {...args} />;
+const Template: Story = (args) => {
+  const [checked, setChecked] = useState(false);
+
+  return (
+    <VtmnRadioButton
+      onChange={() => setChecked(!checked)}
+      checked={checked}
+      {...args}
+    />
+  );
+};
 
 export const Overview = Template.bind({});
