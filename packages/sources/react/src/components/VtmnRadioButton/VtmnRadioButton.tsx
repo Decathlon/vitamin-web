@@ -2,31 +2,32 @@ import * as React from 'react';
 
 import '@vtmn/css-radio-button/dist/index-with-vars.css';
 
-export interface VtmnRadioProps
+export interface VtmnRadioButtonProps
   extends React.ComponentPropsWithoutRef<'input'> {
   /**
-   * ID of the radio.
+   * The id of the radio.
    * @type {string}
    */
   identifier: string;
 
   /**
-   * Label text linked to the radio.
+   * The label of the radio.
    * @type {string}
    * @defaultValue undefined
    */
   labelText?: string;
 
   /**
-   * Label text linked to the radio.
+   * The checked state of the radio.
    * @type {boolean}
    * @defaultValue false
    */
   checked?: boolean;
 
   /**
-   * Disabled state of the radio.
+   * The disabled state of the radio.
    * @type {boolean}
+   * @defaultValue false
    */
   disabled?: boolean;
 }
@@ -34,17 +35,17 @@ export interface VtmnRadioProps
 export const VtmnRadioButton = ({
   identifier,
   labelText,
-  checked,
-  disabled,
+  checked = false,
+  disabled = false,
   ...props
-}: VtmnRadioProps) => {
+}: VtmnRadioButtonProps) => {
   return (
     <div>
       <input
         className="vtmn-radio-button"
         type="radio"
         id={identifier}
-        defaultChecked={checked}
+        checked={checked}
         disabled={disabled}
         {...props}
       />

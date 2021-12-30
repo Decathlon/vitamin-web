@@ -7,16 +7,17 @@ import { VtmnToggleSize } from './types';
 export interface VtmnToggleProps
   extends Omit<React.ComponentPropsWithoutRef<'input'>, 'size'> {
   /**
-   * ID of the toggle.
+   * The id of the toggle.
    * @type {string}
    */
   identifier: string;
 
   /**
-   * Label text linked to the toggle.
+   * The label of the toggle.
    * @type {string}
+   * @defaultValue undefined
    */
-  labelText: string;
+  labelText?: string;
 
   /**
    * The size of the toggle.
@@ -25,15 +26,16 @@ export interface VtmnToggleProps
   size?: VtmnToggleSize;
 
   /**
-   * Label text linked to the toggle.
+   * The checked state of the toggle.
    * @type {boolean}
    * @defaultValue false
    */
   checked?: boolean;
 
   /**
-   * Disabled state of the toggle.
+   * The disabled state of the toggle.
    * @type {boolean}
+   * @defaultValue false
    */
   disabled?: boolean;
 }
@@ -43,8 +45,8 @@ export const VtmnToggle = ({
   identifier,
   labelText,
   size = 'medium',
-  checked,
-  disabled,
+  checked = false,
+  disabled = false,
   ...props
 }: VtmnToggleProps) => {
   return (
@@ -55,7 +57,7 @@ export const VtmnToggle = ({
         <input
           type="checkbox"
           id={identifier}
-          defaultChecked={checked}
+          checked={checked}
           disabled={disabled}
           {...props}
         />
