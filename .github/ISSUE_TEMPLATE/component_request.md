@@ -24,7 +24,6 @@ Add [your component] component
 **Checklist**
 
 - [ ] CSS
-- [ ] Web-components
 - [ ] React
 - [ ] Svelte
 - [ ] Vue

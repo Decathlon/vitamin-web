@@ -35,13 +35,11 @@ vitamin-web/
       react/
       svelte/
       vue/
-      web-components/
     sources/
       css/
       react/
       svelte/
       vue/
-      web-components/
 ```
 
 ## Local development
@@ -75,7 +73,6 @@ yarn start
 # or if you need don't need to launch every packages, you can launch separately:
 yarn start:css
 yarn start:icons
-yarn start:web-components
 yarn start:react
 yarn start:svelte
 yarn start:vue
