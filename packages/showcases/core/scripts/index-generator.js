@@ -1,18 +1,5 @@
-const fs = require('fs');
-const path = require('path');
-
-const colors = [
-  'brand-digital',
-  'brand-digital-dark-1',
-  'brand-digital-dark-2',
-];
-
-const generateRow = (package, index) => `
-  <a href="${
-    package.name
-  }" target="_blank" class="vtmn-flex vtmn-justify-center vtmn-bg-${
-  colors[index % colors.length]
-} vtmn-text-white hover:vtmn-bg-brand-digital-light-1 vtmn-rounded-lg vtmn-p-5 vtmn-mb-4" style="width: 400px">
+const generateLinks = (package) => `
+  <a href="${package.name}" target="_blank" class="vtmn-btn vtmn-btn_variant--tertiary vtmn-mb-4" style="width: 300px">
     ${package.name}
   </a>
 `;
@@ -38,11 +25,11 @@ const generateHTML = (packages) => `
   <body>
     <div class="vtmn-flex vtmn-flex-col vtmn-justify-center vtmn-items-center">
       <img width="400" class="vtmn-m-8" src="https://user-images.githubusercontent.com/9600228/102414461-e3b92b00-3ff6-11eb-9c96-5f37c4d5e02c.png" alt="Decathlon Design System - Vitamin"/>
-      ${packages.map(generateRow).join('')}
+      ${packages.map(generateLinks).join('')}
   </body>
   </html>
 `;
 
-module.exports = function buildMonorepoIndex(packages, outputDir) {
+module.exports = function buildMonorepoIndex(packages) {
   return generateHTML(packages);
 };

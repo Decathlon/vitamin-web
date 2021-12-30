@@ -37,7 +37,7 @@ export const VtmnSelect = ({
         aria-describedby={hasErrorText ? errorTextId : undefined}
         {...props}
       >
-        { options.map((option) => option )}
+        {options.map((option) => option)}
       </select>
 
       {hasErrorText && (

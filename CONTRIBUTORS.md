@@ -4,7 +4,6 @@
 
   - CSS
   - React
-  - Web Components
   - TypeScript
   - Documentation
 
@@ -33,7 +32,6 @@
 - **[Gaspard Mathon](https://github.com/GaspardMathon)**
 
   - CSS
-  - Web Components
   - React
   - Svelte
   - Vue
@@ -51,7 +49,6 @@
   - CI/CD with GitHub Actions
   - CSS
   - React
-  - Web Components
   - Documentation
 
 - **[Julien Lind](https://github.com/jlind23)**
