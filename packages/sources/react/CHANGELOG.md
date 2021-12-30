@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.16.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.15.4...@vtmn/react@0.16.0) (2021-12-30)
+
+
+### Features
+
+* **@vtmn/react:** add select component ([#828](https://github.com/Decathlon/vitamin-web/issues/828)) ([34bbbaa](https://github.com/Decathlon/vitamin-web/commit/34bbbaadee74cafa1621813f046d43aa8eb90779))
+
+
+
+
+
 ## [0.15.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.15.3...@vtmn/react@0.15.4) (2021-12-30)
 
 
