@@ -15,6 +15,19 @@
   line-height: var(--vtmn-typo_text-3-line-height);
 }
 
+.vtmn-breadcrumb a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.vtmn-breadcrumb button {
+  background-color: unset;
+  color: inherit;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
 .vtmn-breadcrumb > ol,
 .vtmn-breadcrumb li {
   display: flex;
