@@ -31,7 +31,7 @@
   <a aria-label="GitHub Actions - Build main branch" href="https://github.com/Decathlon/vitamin-web/actions">
     <img src="https://github.com/Decathlon/vitamin-web/workflows/Build%20main%20branch/badge.svg" alt="">
   </a>
-  <a aria-label="license" href="https://join.slack.com/t/decathlon-design/shared_invite/zt-ou0n9qas-n_oamDSVUIqvLqNO1LETJg">
+  <a aria-label="slack" href="https://join.slack.com/t/decathlon-design/shared_invite/zt-ou0n9qas-n_oamDSVUIqvLqNO1LETJg">
     <img src="https://img.shields.io/badge/slack-Decathlon%20Design%20System-purple.svg?logo=slack" alt="">
   </a>
 </p>
@@ -324,20 +324,6 @@ This package provides you with a library of SVG icons that you can include in a 
   </tr>
 </table>
 
-### Web Components ⚫️
-
-This package provides you with a library of Web Components ([Custom Elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements)). So, you will be able to use custom `<vtmn-**>` HTML tags directly in your markup:
-
-<table>
-  <tr>
-    <th>@vtmn/web-components</th>
-    <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/web-components#readme">README</a></td>
-    <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-web-components"><img src="https://img.shields.io/badge/storybook-web%20components-1C1C1C?style=flat&logo=storybook" alt="storybook" /></a></td>
-    <td><a href="https://www.npmjs.com/package/@vtmn/web-components"><img src="https://img.shields.io/npm/v/@vtmn/web-components?style=flat&logo=npm" alt="npm version" /></a></td>
-    <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_web-components"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_web-components&metric=alert_status" alt="Quality Gate Status" /></a></td>
-  </tr>
-</table>
-
 ## Community packages
 
 In order to enhance your Developer eXperience, we give you the possibility to develop your components in React, Svelte and Vue based on our core packages just above. These libraries are developed and maintained by the community, the Vitamin core team will be there to review, and ensure the quality of your propositions, feel free to contribute!
@@ -412,7 +398,6 @@ yarn start
 # or you can launch separately (recommended)
 yarn start:css
 yarn start:icons
-yarn start:web-components
 yarn start:react
 yarn start:svelte
 yarn start:vue

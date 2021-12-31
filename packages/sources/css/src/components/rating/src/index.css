@@ -2,11 +2,14 @@
 @import '@vtmn/css-design-tokens/src/themes/default';
 @import '@vtmn/css-design-tokens/src/typography';
 @import '@vtmn/css-design-tokens/src/opacities';
+@import '@vtmn/css-design-tokens/src/shadows';
 
 /* Interactive Rating **/
 
 .vtmn-rating {
   color: var(--vtmn-semantic-color_content-primary);
+  font-family: var(--vtmn-typo_font-family);
+  font-weight: var(--vtmn-typo_font-weight--normal);
   margin: rem(10px) rem(5px);
   display: flex;
   flex-direction: row;

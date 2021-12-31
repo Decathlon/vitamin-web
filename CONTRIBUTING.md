@@ -35,13 +35,11 @@ vitamin-web/
       react/
       svelte/
       vue/
-      web-components/
     sources/
       css/
       react/
       svelte/
       vue/
-      web-components/
 ```
 
 ## Local development
@@ -75,7 +73,6 @@ yarn start
 # or if you need don't need to launch every packages, you can launch separately:
 yarn start:css
 yarn start:icons
-yarn start:web-components
 yarn start:react
 yarn start:svelte
 yarn start:vue
@@ -83,14 +80,13 @@ yarn start:vue
 
 For your information, here are the showcases' URLs:
 
-| Showcase       | URL                                     |
-| -------------- | --------------------------------------- |
-| CSS            | [localhost:6006](http://localhost:6006) |
-| Icons          | [localhost:6007](http://localhost:6007) |
-| Web Components | [localhost:6008](http://localhost:6008) |
-| React          | [localhost:6009](http://localhost:6009) |
-| Svelte         | [localhost:6010](http://localhost:6010) |
-| Vue            | [localhost:6011](http://localhost:6011) |
+| Showcase | URL                                     |
+| -------- | --------------------------------------- |
+| CSS      | [localhost:6006](http://localhost:6006) |
+| Icons    | [localhost:6007](http://localhost:6007) |
+| React    | [localhost:6008](http://localhost:6008) |
+| Svelte   | [localhost:6019](http://localhost:6009) |
+| Vue      | [localhost:6010](http://localhost:6010) |
 
 ## Code of conduct
 

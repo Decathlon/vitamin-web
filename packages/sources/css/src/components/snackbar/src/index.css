@@ -22,6 +22,7 @@
   box-shadow: var(--vtmn-shadow_200);
   border-radius: rem(4px);
   z-index: var(--vtmn-z-index_snackbar);
+  box-sizing: border-box;
 }
 
 .vtmn-snackbar.show {

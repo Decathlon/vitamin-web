@@ -7,7 +7,7 @@
   "scripts": {
     "build-storybook": "build-storybook",
     "build-storybook:docs": "build-storybook --docs",
-    "start": "start-storybook -p 6011"
+    "start": "start-storybook -p 6010"
   },
   "dependencies": {
     "core-js": "^3.18.1",

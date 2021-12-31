@@ -2,6 +2,7 @@
 @import '@vtmn/css-design-tokens/src/themes/default';
 @import '@vtmn/css-design-tokens/src/typography';
 @import '@vtmn/css-design-tokens/src/opacities';
+@import '@vtmn/css-design-tokens/src/shadows';
 
 /* Default button */
 .vtmn-btn {
@@ -11,6 +12,7 @@
   align-items: center;
   position: relative;
   height: rem(48px);
+  border: 0;
   width: max-content;
   padding: rem(14px) rem(24px);
   font-family: var(--vtmn-typo_font-family);

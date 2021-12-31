@@ -28,10 +28,6 @@
       "root": "packages/showcases/vue",
       "type": "application"
     },
-    "@vtmn/showcase-web-components": {
-      "root": "packages/showcases/web-components",
-      "type": "application"
-    },
     "@vtmn/css-postcss-config": {
       "root": "packages/sources/css/config/postcss",
       "type": "library"
@@ -90,6 +86,10 @@
     },
     "@vtmn/css-modal": {
       "root": "packages/sources/css/src/components/modal",
+      "type": "library"
+    },
+    "@vtmn/css-navbar": {
+      "root": "packages/sources/css/src/components/navbar",
       "type": "library"
     },
     "@vtmn/css-popover": {
@@ -166,10 +166,6 @@
     },
     "@vtmn/vue": {
       "root": "packages/sources/vue",
-      "type": "library"
-    },
-    "@vtmn/web-components": {
-      "root": "packages/sources/web-components",
       "type": "library"
     }
   }

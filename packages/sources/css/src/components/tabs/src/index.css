@@ -1,6 +1,8 @@
 @import '@vtmn/css-design-tokens/src/base-colors';
 @import '@vtmn/css-design-tokens/src/themes/default';
 @import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/shadows';
+@import '@vtmn/css-design-tokens/src/spacings';
 
 .vtmn-tabs {
   height: fit-content;
@@ -9,11 +11,19 @@
 }
 
 .vtmn-tabs > ul {
-  display: flex;
-  height: 100%;
+  display: block;
+  white-space: nowrap;
+  overflow-x: auto;
+  margin: 0;
+  padding: 0;
 }
 
-.vtmn-tabs a {
+.vtmn-tabs li {
+  display: inline-flex;
+}
+
+.vtmn-tabs a,
+.vtmn-tabs_size--medium a {
   display: flex;
   align-items: center;
   font-family: var(--vtmn-typo_font-family);
@@ -24,6 +34,7 @@
   border-bottom: rem(2px) solid transparent;
   transition: border-bottom 200ms ease, color 200ms ease;
   outline: none;
+  text-decoration: none;
 }
 
 .vtmn-tabs a:hover {
@@ -36,8 +47,7 @@
 }
 
 .vtmn-tabs a:focus-visible {
-  box-shadow: 0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
-    0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
+  box-shadow: var(--vtmn-shadow_focus-visible);
 }
 
 .vtmn-tabs a:focus > .vtmn-badge {
@@ -60,17 +70,17 @@
 
 /* Start (default) */
 .vtmn-tabs_align--start > ul {
-  justify-content: flex-start;
+  text-align: start;
 }
 
 /* Center */
 .vtmn-tabs_align--center > ul {
-  justify-content: center;
+  text-align: center;
 }
 
 /* End */
 .vtmn-tabs_align--end > ul {
-  justify-content: flex-end;
+  text-align: end;
 }
 
 /* SIZES */
