@@ -60,6 +60,7 @@
     "rollup-plugin-typescript2": "0.31.1",
     "rollup-plugin-vue": "^6.0.0-beta.10",
     "ts-toolbelt": "^9.6.0",
+    "tslib": "*",
     "typescript": "^4.5.4",
     "vite": "^2.6.11",
     "vue-cli-plugin-webpack-bundle-analyzer": "^4.0.0"

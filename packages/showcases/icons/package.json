@@ -21,8 +21,7 @@
     "@vtmn/icons": "*",
     "@vtmn/showcase-core": "*",
     "@whitespace/storybook-addon-html": "^5.0.0",
-    "storybook-addon-designs": "^6.0.0",
-    "storybook-mobile": "^1.0.0"
+    "storybook-addon-designs": "^6.0.0"
   },
   "licenses": [
     {
