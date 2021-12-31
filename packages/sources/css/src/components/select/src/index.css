@@ -5,6 +5,7 @@
 
 .vtmn-select_container {
   font-family: var(--vtmn-typo_font-family);
+  font-weight: var(--vtmn-typo_font-weight--normal);
   box-sizing: border-box;
   font-size: var(--vtmn-typo_text-2-font-size);
   line-height: var(--vtmn-typo_text-2-line-height);
@@ -23,6 +24,7 @@
   width: min-content;
   background-color: var(--vtmn-semantic-color_background-primary);
   cursor: pointer;
+  border: 0;
 }
 
 /* Set the dropdown arrow icon */
