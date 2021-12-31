@@ -35,7 +35,7 @@
     "@babel/core": "^7.16.5",
     "@babel/eslint-parser": "^7.16.5",
     "@rollup/plugin-commonjs": "^21.0.0",
-    "@rollup/plugin-node-resolve": "^13.0.5",
+    "@rollup/plugin-node-resolve": "^13.1.2",
     "@rollup/plugin-typescript": "^8.2.5",
     "@rollup/plugin-url": "^6.0.0",
     "@svgr/rollup": "^6.0.0",
