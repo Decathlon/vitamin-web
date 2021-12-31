@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-toast@0.3.4...@vtmn/css-toast@0.3.5) (2021-12-31)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** add missing imports + props ([#838](https://github.com/Decathlon/vitamin-web/issues/838)) ([4dc1ee8](https://github.com/Decathlon/vitamin-web/commit/4dc1ee8f9df153bbf97a2eb06ac1d7926bf7a010))
+
+
+
+
+
 ## [0.3.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-toast@0.3.3...@vtmn/css-toast@0.3.4) (2021-12-27)
 
 **Note:** Version bump only for package @vtmn/css-toast
