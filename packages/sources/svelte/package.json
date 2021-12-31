@@ -1,7 +1,7 @@
 {
   "name": "@vtmn/svelte",
   "version": "0.8.3",
-  "description": "Decathlon Design System - Vitamin Svelte library",
+  "description": "Decathlon Design System - Vitamin Svelte components library",
   "keywords": [
     "design-system",
     "ui-kit",
@@ -24,7 +24,8 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "lint": "eslint --color",
+    "lint": "eslint src --ext .js,.svelte",
+    "lint:fix": "eslint src --ext .js,.svelte --fix",
     "prestart": "yarn build",
     "start": "chokidar \"src/**\" -i \"**/dist/**\" -c \"yarn build\""
   },
@@ -37,7 +38,6 @@
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.0.5",
-    "@vtmn/icons": "^0.6.0",
     "chokidar-cli": "^3.0.0",
     "eslint": "8.5.0",
     "eslint-plugin-svelte3": "3.2.1",

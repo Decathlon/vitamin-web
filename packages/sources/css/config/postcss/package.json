@@ -23,6 +23,9 @@
     "postcss-remove-root": "^0.0.2",
     "tailwindcss": "^2.2.16"
   },
+  "devDependencies": {
+    "webpack": "^5.0.0"
+  },
   "licenses": [
     {
       "type": "Apache-2.0",
