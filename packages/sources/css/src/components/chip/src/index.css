@@ -6,7 +6,6 @@
 /* Chip component */
 
 .vtmn-chip {
-  height: rem(40px);
   min-width: max-content;
   max-width: max-content;
   display: flex;
@@ -20,9 +19,12 @@
   background-color: var(--vtmn-semantic-color_background-primary);
   position: relative;
   color: var(--vtmn-semantic-color_content-action);
+  font-family: var(--vtmn-type_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
   font-weight: var(--vtmn-typo_font-weight--bold);
   outline: none;
+  height: rem(40px);
+  box-sizing: border-box;
 }
 
 .vtmn-chip > .vtmn-badge {
@@ -43,8 +45,7 @@
 .vtmn-chip:not(.vtmn-chip--disabled):focus-visible {
   outline: none;
   box-shadow: inset 0 0 0 rem(1px) var(--vtmn-semantic-color_border-inactive),
-    0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
-    0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary);
+    var(--vtmn-shadow_focus-visible);
 }
 
 .vtmn-chip.vtmn-chip--disabled {
@@ -79,21 +80,25 @@
   background-color: var(--vtmn-semantic-color_content-primary-reversed);
 }
 
-/* Sizes (medium by default) */
+/* SIZES */
 
+/* Small */
 .vtmn-chip_size--small {
   line-height: var(--vtmn-typo_text-3-line-height);
-  height: rem(32px);
   font-size: var(--vtmn-typo_text-3-font-size);
+  padding: rem(6px) rem(12px);
+  height: rem(32px);
 }
 
 .vtmn-chip_size--small > .vtmn-badge {
   transform: translateX(rem(8px));
 }
 
+/* Medium (default) */
 .vtmn-chip_size--medium {
-  line-height: var(--vtmn-typo_text-2-line-height);
   height: rem(40px);
+  line-height: var(--vtmn-typo_text-2-line-height);
+  padding: rem(8px) rem(16px);
   font-size: var(--vtmn-typo_text-2-font-size);
 }
 
