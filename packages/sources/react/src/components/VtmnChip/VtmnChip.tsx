@@ -56,8 +56,8 @@ export const VtmnChip = ({
         'vtmn-chip',
         `vtmn-chip_size--${size}`,
         `vtmn-chip_variant--${variant}`,
-        disabled ? 'vtmn-chip--disabled' : '',
-        selected ? 'vtmn-chip--selected' : '',
+        disabled && 'vtmn-chip--disabled',
+        selected && 'vtmn-chip--selected',
         className,
       )}
       {...props}
