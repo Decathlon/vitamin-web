@@ -7,6 +7,8 @@
   max-width: 100%;
   position: relative;
   color: var(--vtmn-semantic-color_content-primary);
+  font-family: var(--vtmn-typo_font-family);
+  font-weight: var(--vtmn-typo_font-weight--normal);
 }
 
 .vtmn-progressbar_container svg {

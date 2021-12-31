@@ -9,7 +9,6 @@
   line-height: var(--vtmn-typo_text-3-line-height);
   display: inline-flex;
   height: rem(20px);
-  min-width: rem(20px);
   justify-content: center;
   align-items: center;
   border-radius: rem(10px);

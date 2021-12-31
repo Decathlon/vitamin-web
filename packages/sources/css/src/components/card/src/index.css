@@ -10,6 +10,7 @@
   border-radius: 8px;
   box-shadow: var(--vtmn-shadow_100);
   position: relative;
+  font: var(--vtmn-typo_font-family) var(--vtmn-typo_font-weight--normal);
 }
 
 .vtmn-card_content {

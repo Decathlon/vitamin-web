@@ -8,6 +8,7 @@
 .vtmn-popover {
   position: relative;
   cursor: pointer;
+  font-family: var(--vtmn-typo_font-family);
 }
 
 .vtmn-popover > [role='tooltip'] > .vtmn-popover_title {
@@ -47,6 +48,7 @@
   padding: rem(16px);
   animation: var(--vtmn-animation_fade-in);
   z-index: var(--vtmn-z-index_popover);
+  cursor: default;
 }
 
 .vtmn-popover > [role='tooltip']::after {
