@@ -8,6 +8,8 @@
 
 .vtmn-rating {
   color: var(--vtmn-semantic-color_content-primary);
+  font-family: var(--vtmn-typo_font-family);
+  font-weight: var(--vtmn-typo_font-weight--normal);
   margin: rem(10px) rem(5px);
   display: flex;
   flex-direction: row;

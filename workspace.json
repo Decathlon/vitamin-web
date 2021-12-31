@@ -84,6 +84,10 @@
       "root": "packages/sources/css/src/components/modal",
       "type": "library"
     },
+    "@vtmn/css-navbar": {
+      "root": "packages/sources/css/src/components/navbar",
+      "type": "library"
+    },
     "@vtmn/css-popover": {
       "root": "packages/sources/css/src/components/popover",
       "type": "library"

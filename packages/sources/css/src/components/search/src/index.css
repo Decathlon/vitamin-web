@@ -26,6 +26,7 @@
   outline: none;
   appearance: none;
   width: 100%;
+  border: 0;
 }
 
 /* Remove default search input appearance */

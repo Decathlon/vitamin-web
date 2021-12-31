@@ -11,8 +11,21 @@
   font-family: var(--vtmn-typo_font-family);
   color: var(--vtmn-semantic-color_content-tertiary);
   font-size: var(--vtmn-typo_text-3-font-size);
-  font-weight: var(--vtmn-typo_font-weight--regular);
+  font-weight: var(--vtmn-typo_font-weight--normal);
   line-height: var(--vtmn-typo_text-3-line-height);
+}
+
+.vtmn-breadcrumb a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.vtmn-breadcrumb button {
+  background-color: unset;
+  color: inherit;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
 }
 
 .vtmn-breadcrumb > ol,
