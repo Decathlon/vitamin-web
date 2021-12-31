@@ -14,6 +14,8 @@
   display: block;
   white-space: nowrap;
   overflow-x: auto;
+  margin: 0;
+  padding: 0;
 }
 
 .vtmn-tabs li {
@@ -32,6 +34,7 @@
   border-bottom: rem(2px) solid transparent;
   transition: border-bottom 200ms ease, color 200ms ease;
   outline: none;
+  text-decoration: none;
 }
 
 .vtmn-tabs a:hover {

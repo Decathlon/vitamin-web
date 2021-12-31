@@ -8,6 +8,9 @@
 
 .vtmn-tooltip {
   position: relative;
+  font-family: var(--vtmn-typo_font-family);
+  font-size: var(--vtmn-typo_text-3-font-size);
+  font-weight: var(--vtmn-typo_font-weight--normal);
 }
 
 /* Applies to all tooltips */
@@ -40,6 +43,7 @@
   border-radius: rem(4px);
   background-color: var(--vtmn-semantic-color_background-primary-reversed);
   color: var(--vtmn-semantic-color_content-primary-reversed);
+  box-sizing: border-box;
 }
 
 .vtmn-tooltip:focus-visible {
