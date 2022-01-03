@@ -2,7 +2,7 @@
   "env": { "browser": true, "es6": true, "node": true },
   "extends": ["eslint:recommended", "plugin:react/recommended"],
   "globals": { "Atomics": "readonly", "SharedArrayBuffer": "readonly" },
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaFeatures": { "jsx": true },
     "ecmaVersion": 2018,
@@ -16,7 +16,7 @@
   "overrides": [
     {
       "files": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
-      "env": { "browser": true, "es6": true, "node": true, "jest": true },
+      "env": { "browser": true, "es6": true, "node": true },
       "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
@@ -37,8 +37,9 @@
         "prettier/prettier": 2,
         "@typescript-eslint/explicit-module-boundary-types": 0,
         "@typescript-eslint/no-var-requires": 0,
-        "@typescript-eslint/no-unused-vars-experimental": 1,
+        "@typescript-eslint/no-unused-vars-experimental": 0,
         "@typescript-eslint/no-unused-vars": 0,
+        "react/display-name": 0,
         "react/prop-types": 0
       }
     }
