@@ -1,7 +1,7 @@
 {
-  "name": "@vtmn/css-badge",
-  "version": "0.7.0",
-  "description": "Decathlon Design System - Vitamin specific CSS styles for badge component",
+  "name": "@vtmn/css-quantity",
+  "version": "0.1.0",
+  "description": "Decathlon Design System - Vitamin specific CSS styles for quantity component",
   "keywords": [
     "design-system",
     "ui-kit",
@@ -9,6 +9,7 @@
     "css",
     "vitamin"
   ],
+  "homepage": "https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/components/button",
   "bugs": {
     "url": "https://github.com/Decathlon/vitamin-web/issues"
   },

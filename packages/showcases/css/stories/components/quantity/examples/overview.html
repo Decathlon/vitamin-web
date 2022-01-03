@@ -1,0 +1,96 @@
+<style>
+  .block {
+    margin: 20px;
+  }
+  body {
+    background-color: var(--vtmn-semantic-color_background-tertiary);
+  }
+</style>
+
+<div class="block">
+  <div class="vtmn-quantity">
+    <label for="my-quantity-1">Label</label>
+    <div class="vtmn-quantity_content">
+      <button
+        class="vtmn-btn vtmn-btn_variant--secondary vtmn-btn--icon-alone"
+        aria-label="subtract"
+      >
+        <span class="vtmx-subtract-line"></span>
+      </button>
+      <input type="number" id="my-quantity-1" />
+      <button
+        class="vtmn-btn vtmn-btn_variant--secondary vtmn-btn--icon-alone"
+        aria-label="add"
+      >
+        <span class="vtmx-add-line"></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="block">
+  <div class="vtmn-quantity">
+    <label for="my-quantity-2">Label</label>
+    <div class="vtmn-quantity_content">
+      <button
+        class="vtmn-btn vtmn-btn_variant--secondary vtmn-btn--icon-alone"
+        aria-label="subtract"
+        disabled
+      >
+        <span class="vtmx-subtract-line"></span>
+      </button>
+      <input type="number" id="my-quantity-2" />
+      <button
+        class="vtmn-btn vtmn-btn_variant--secondary vtmn-btn--icon-alone"
+        aria-label="add"
+      >
+        <span class="vtmx-add-line"></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="block">
+  <div class="vtmn-quantity" aria-disabled="true">
+    <label for="my-quantity-3" aria-disabled="true">Label</label>
+    <div class="vtmn-quantity_content">
+      <button
+        class="vtmn-btn vtmn-btn_variant--secondary vtmn-btn--icon-alone"
+        aria-label="subtract"
+        disabled
+      >
+        <span class="vtmx-subtract-line"></span>
+      </button>
+      <input type="number" id="my-quantity-3" disabled />
+      <button
+        class="vtmn-btn vtmn-btn_variant--secondary vtmn-btn--icon-alone"
+        aria-label="add"
+        disabled
+      >
+        <span class="vtmx-add-line"></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="block">
+  <div class="vtmn-quantity">
+    <label for="my-quantity-4">Label</label>
+    <div class="vtmn-quantity_content">
+      <button
+        class="vtmn-btn vtmn-btn_variant--secondary vtmn-btn--icon-alone"
+        aria-label="subtract"
+      >
+        <span class="vtmx-subtract-line"></span>
+      </button>
+      <input type="number" id="my-quantity-4" value="-2" min="0" />
+      <button
+        class="vtmn-btn vtmn-btn_variant--secondary vtmn-btn--icon-alone"
+        aria-label="add"
+      >
+        <span class="vtmx-add-line"></span>
+      </button>
+    </div>
+    <p class="vtmn-quantity_error-text">Error text goes here</p>
+  </div>
+</div>
