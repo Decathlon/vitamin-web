@@ -1,0 +1,26 @@
+@import '@vtmn/css-design-tokens/src/base-colors';
+@import '@vtmn/css-design-tokens/src/themes/default';
+@import '@vtmn/css-design-tokens/src/typography';
+
+/* .vtmn-price {
+  font: var(--vtmn-typo_font-family) var(--vtmn-typo_text-3-font-size)
+    var(--vtmn-typo_font-weight--normal);
+  line-height: var(--vtmn-typo_text-3-line-height);
+  display: inline-flex;
+  height: rem(20px);
+  justify-content: center;
+  align-items: center;
+  border-radius: rem(10px);
+  background-color: var(--vtmn-semantic-color_background-tertiary);
+  color: var(--vtmn-semantic-color_content-primary);
+  box-shadow: inset 0 0 0 rem(1px) var(--vtmn-semantic-color_border-secondary);
+  padding: 0 rem(6px);
+} */
+
+/* Variants */
+
+/* .vtmn-price_variant--default {
+  background-color: var(--vtmn-semantic-color_background-tertiary);
+  color: var(--vtmn-semantic-color_content-primary);
+  box-shadow: inset 0 0 0 rem(1px) var(--vtmn-semantic-color_border-secondary);
+} */

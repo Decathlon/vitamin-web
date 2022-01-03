@@ -92,6 +92,10 @@
       "root": "packages/sources/css/src/components/popover",
       "type": "library"
     },
+    "@vtmn/css-price": {
+      "root": "packages/sources/css/src/components/price",
+      "type": "library"
+    },
     "@vtmn/css-progressbar": {
       "root": "packages/sources/css/src/components/progressbar",
       "type": "library"
