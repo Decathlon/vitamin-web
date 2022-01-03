@@ -14,6 +14,7 @@
   background-color: var(--vtmn-semantic-color_background-primary);
   width: 100%;
   outline: 0;
+  padding: 0;
 }
 
 .vtmn-list li {
@@ -115,8 +116,8 @@
 }
 
 .vtmn-list_media--rectangle {
-  min-width: rem(103px);
-  width: rem(103px);
+  min-width: rem(112px);
+  width: rem(112px);
   aspect-ratio: 2 / 1;
   object-fit: cover;
 }
