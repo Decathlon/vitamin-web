@@ -1,0 +1,43 @@
+@import '@vtmn/css-design-tokens/src/base-colors';
+@import '@vtmn/css-design-tokens/src/themes/default';
+@import '@vtmn/css-design-tokens/src/typography';
+
+.vtmn-tag {
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 24px;
+  height: 24px;
+  width: fit-content;
+  padding: 2px 8px;
+  font: var(--vtmn-typo_font-family) var(--vtmn-typo_text-3-font-size)
+    var(--vtmn-typo_font-weight--normal);
+  line-height: var(--vtmn-typo_text-3-line-height);
+  color: var(--vtmn-semantic-color_content-accent);
+  background-color: var(--vtmn-semantic-color_background-accent);
+  text-align: center;
+  border-radius: 4px;
+}
+
+/* Variants */
+.vtmn-tag_variant--accent {
+  background-color: var(--vtmn-semantic-color_background-accent);
+  color: var(--vtmn-semantic-color_content-accent);
+}
+
+.vtmn-tag_variant--brand {
+  background-color: var(--vtmn-semantic-color_background-brand-primary);
+  color: var(--vtmn-semantic-color_content-primary-reversed);
+}
+
+.vtmn-tag_variant--alert {
+  background-color: var(--vtmn-semantic-color_background-discount);
+  color: var(--vtmn-semantic-color_content-primary-reversed);
+}
+
+/* Decoratives */
+.vtmn-tag_variant-decorative--gravel {
+  background-color: var(--vtmn-semantic-color_background-accent);
+  color: var(--vtmn-semantic-color_content-primary);
+}

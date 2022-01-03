@@ -139,6 +139,38 @@
   --vtmn-semantic-color_hover-primary--s: var(--vtmn-base-color_blue700--s);
   --vtmn-semantic-color_hover-primary--l: var(--vtmn-base-color_blue700--l);
   --vtmn-semantic-color_hover-primary: hsl(var(--vtmn-semantic-color_hover-primary--h), var(--vtmn-semantic-color_hover-primary--s), var(--vtmn-semantic-color_hover-primary--l));
+  --vtmn-semantic-color_decorative-gravel--h: var(--vtmn-base-color_grey600--h);
+  --vtmn-semantic-color_decorative-gravel--s: var(--vtmn-base-color_grey600--s);
+  --vtmn-semantic-color_decorative-gravel--l: var(--vtmn-base-color_grey600--l);
+  --vtmn-semantic-color_decorative-gravel: hsl(var(--vtmn-semantic-color_decorative-gravel--h), var(--vtmn-semantic-color_decorative-gravel--s), var(--vtmn-semantic-color_decorative-gravel--l));
+  --vtmn-semantic-color_decorative-gold--h: var(--vtmn-base-color_yellow700--h);
+  --vtmn-semantic-color_decorative-gold--s: var(--vtmn-base-color_yellow700--s);
+  --vtmn-semantic-color_decorative-gold--l: var(--vtmn-base-color_yellow700--l);
+  --vtmn-semantic-color_decorative-gold: hsl(var(--vtmn-semantic-color_decorative-gold--h), var(--vtmn-semantic-color_decorative-gold--s), var(--vtmn-semantic-color_decorative-gold--l));
+  --vtmn-semantic-color_decorative-cobalt--h: var(--vtmn-base-color_blue600--h);
+  --vtmn-semantic-color_decorative-cobalt--s: var(--vtmn-base-color_blue600--s);
+  --vtmn-semantic-color_decorative-cobalt--l: var(--vtmn-base-color_blue600--l);
+  --vtmn-semantic-color_decorative-cobalt: hsl(var(--vtmn-semantic-color_decorative-cobalt--h), var(--vtmn-semantic-color_decorative-cobalt--s), var(--vtmn-semantic-color_decorative-cobalt--l));
+  --vtmn-semantic-color_decorative-brick--h: var(--vtmn-base-color_red600--h);
+  --vtmn-semantic-color_decorative-brick--s: var(--vtmn-base-color_red600--s);
+  --vtmn-semantic-color_decorative-brick--l: var(--vtmn-base-color_red600--l);
+  --vtmn-semantic-color_decorative-brick: hsl(var(--vtmn-semantic-color_decorative-brick--h), var(--vtmn-semantic-color_decorative-brick--s), var(--vtmn-semantic-color_decorative-brick--l));
+  --vtmn-semantic-color_decorative-jade--h: var(--vtmn-base-color_conifer700--h);
+  --vtmn-semantic-color_decorative-jade--s: var(--vtmn-base-color_conifer700--s);
+  --vtmn-semantic-color_decorative-jade--l: var(--vtmn-base-color_conifer700--l);
+  --vtmn-semantic-color_decorative-jade: hsl(var(--vtmn-semantic-color_decorative-jade--h), var(--vtmn-semantic-color_decorative-jade--s), var(--vtmn-semantic-color_decorative-jade--l));
+  --vtmn-semantic-color_decorative-amethyst--h: var(--vtmn-base-color_purple600--h);
+  --vtmn-semantic-color_decorative-amethyst--s: var(--vtmn-base-color_purple600--s);
+  --vtmn-semantic-color_decorative-amethyst--l: var(--vtmn-base-color_purple600--l);
+  --vtmn-semantic-color_decorative-amethyst: hsl(var(--vtmn-semantic-color_decorative-amethyst--h), var(--vtmn-semantic-color_decorative-amethyst--s), var(--vtmn-semantic-color_decorative-amethyst--l));
+  --vtmn-semantic-color_decorative-saffron--h: var(--vtmn-base-color_orange600--h);
+  --vtmn-semantic-color_decorative-saffron--s: var(--vtmn-base-color_orange600--s);
+  --vtmn-semantic-color_decorative-saffron--l: var(--vtmn-base-color_orange600--l);
+  --vtmn-semantic-color_decorative-saffron: hsl(var(--vtmn-semantic-color_decorative-saffron--h), var(--vtmn-semantic-color_decorative-saffron--s), var(--vtmn-semantic-color_decorative-saffron--l));
+  --vtmn-semantic-color_decorative-emerald--h: var(--vtmn-base-color_green600--h);
+  --vtmn-semantic-color_decorative-emerald--s: var(--vtmn-base-color_green600--s);
+  --vtmn-semantic-color_decorative-emerald--l: var(--vtmn-base-color_green600--l);
+  --vtmn-semantic-color_decorative-emerald: hsl(var(--vtmn-semantic-color_decorative-emerald--h), var(--vtmn-semantic-color_decorative-emerald--s), var(--vtmn-semantic-color_decorative-emerald--l));
 
   /* Auto-generated */
   --vtmn-semantic-color_hover-primary-transparent--h: var(--vtmn-semantic-color_background-brand-primary--h);
