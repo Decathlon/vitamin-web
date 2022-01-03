@@ -1,3 +1,13 @@
+<style>
+  #three-columns {
+    display: flex;
+  }
+
+  #three-columns ul:not(:last-child) {
+    margin-right: 10px;
+  }
+</style>
+
 <div class="block">
   <ul class="vtmn-list" role="listbox">
     <li class="vtmn-list_item-size--medium" role="option" tabindex="0">
@@ -9,12 +19,59 @@
     <li class="vtmn-list_item-size--medium" role="option" tabindex="0">
       <div class="vtmn-list_text">
         <span>List Item</span>
-        <span>List Item</span>
       </div>
     </li>
 
     <li class="vtmn-list_item-size--medium" role="option" tabindex="0">
       <div class="vtmn-list_text">
+        <span>List Item</span>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div class="block">
+  <ul class="vtmn-list" role="listbox">
+    <li class="vtmn-list_item-size--medium" role="option" tabindex="0">
+      <div class="vtmn-list_start-visual">
+        <span class="vtmx-heart-line"></span>
+      </div>
+      <div class="vtmn-list_text">
+        <span>List Item</span>
+        <span>List Item</span>
+      </div>
+    </li>
+
+    <li class="vtmn-list_item-size--medium" role="option" tabindex="0">
+      <div class="vtmn-list_start-visual">
+        <span class="vtmx-heart-line"></span>
+      </div>
+      <div class="vtmn-list_text">
+        <span>List Item</span>
+        <span>List Item</span>
+      </div>
+    </li>
+
+    <li class="vtmn-list_item-size--medium" role="option" tabindex="0">
+      <div class="vtmn-list_start-visual">
+        <span class="vtmx-heart-line"></span>
+      </div>
+      <div class="vtmn-list_text">
+        <span>List Item</span>
+        <span>List Item</span>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div class="block">
+  <ul class="vtmn-list" role="listbox">
+    <li class="vtmn-list_item-size--medium" role="option" tabindex="0">
+      <div class="vtmn-list_start-visual">
+        <span class="vtmx-heart-line"></span>
+      </div>
+      <div class="vtmn-list_text">
+        <span>List Item</span>
         <span>List Item</span>
       </div>
       <div class="vtmn-list_end-action">
@@ -32,12 +89,85 @@
       </div>
       <div class="vtmn-list_text">
         <span>List Item</span>
+        <span>List Item</span>
+      </div>
+      <div class="vtmn-list_end-action">
+        <button
+          class="vtmn-btn vtmn-btn_variant--primary vtmn-btn_size--medium"
+        >
+          Button
+        </button>
       </div>
     </li>
 
-    <li class="vtmn-list_item-size--medium" role="option" tabindex="0">
+    <li
+      class="vtmn-list_item-size--medium"
+      aria-disabled="true"
+      role="option"
+      tabindex="0"
+    >
       <div class="vtmn-list_start-visual">
         <span class="vtmx-heart-line"></span>
+      </div>
+      <div class="vtmn-list_text">
+        <span>List Item</span>
+        <span>List Item</span>
+      </div>
+      <div class="vtmn-list_end-action">
+        <button
+          class="vtmn-btn vtmn-btn_variant--primary vtmn-btn_size--medium"
+          disabled
+        >
+          Button
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div class="block">
+  <ul class="vtmn-list" role="listbox">
+    <li
+      class="vtmn-list_item-size--medium vtmn-list_item--without-divider"
+      role="option"
+      tabindex="0"
+    >
+      <div class="vtmn-list_text">
+        <span>List Item</span>
+      </div>
+    </li>
+
+    <li
+      class="vtmn-list_item-size--medium vtmn-list_item--without-divider"
+      role="option"
+      tabindex="0"
+    >
+      <div class="vtmn-list_text">
+        <span>List Item</span>
+      </div>
+    </li>
+
+    <li
+      class="vtmn-list_item-size--medium vtmn-list_item--without-divider"
+      role="option"
+      tabindex="0"
+    >
+      <div class="vtmn-list_text">
+        <span>List Item</span>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div id="three-columns" class="block">
+  <ul class="vtmn-list" role="listbox">
+    <li role="option" tabindex="0">
+      <div class="vtmn-list_media">
+        <img
+          class="vtmn-list_media--circle"
+          src="https://storage.googleapis.com/dkt-design-cdn/images/placeholder.jpg"
+          alt="placeholder"
+        />
       </div>
       <div class="vtmn-list_text">
         <span>List Item</span>
@@ -52,7 +182,7 @@
       </div>
     </li>
 
-    <li class="vtmn-list_item-size--medium" role="option" tabindex="0">
+    <li role="option" tabindex="0">
       <div class="vtmn-list_media">
         <img
           class="vtmn-list_media--circle"
@@ -65,14 +195,38 @@
       </div>
       <div class="vtmn-list_end-action">
         <button
-          class="vtmn-btn vtmn-btn_variant--primary vtmn-btn_size--medium"
+          class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--medium vtmn-btn--icon-alone"
+          aria-label="remove"
         >
-          Button
+          <span class="vtmx-delete-bin-line"></span>
         </button>
       </div>
     </li>
 
-    <li class="vtmn-list_item-size--medium" role="option" tabindex="0">
+    <li role="option" tabindex="0">
+      <div class="vtmn-list_media">
+        <img
+          class="vtmn-list_media--circle"
+          src="https://storage.googleapis.com/dkt-design-cdn/images/placeholder.jpg"
+          alt="placeholder"
+        />
+      </div>
+      <div class="vtmn-list_text">
+        <span>List Item</span>
+      </div>
+      <div class="vtmn-list_end-action">
+        <button
+          class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--medium vtmn-btn--icon-alone"
+          aria-label="remove"
+        >
+          <span class="vtmx-delete-bin-line"></span>
+        </button>
+      </div>
+    </li>
+  </ul>
+
+  <ul class="vtmn-list" role="listbox">
+    <li role="option" tabindex="0">
       <div class="vtmn-list_media">
         <img
           class="vtmn-list_media--square"
@@ -93,7 +247,51 @@
       </div>
     </li>
 
-    <li class="vtmn-list_item-size--medium" role="option" tabindex="0">
+    <li role="option" tabindex="0">
+      <div class="vtmn-list_media">
+        <img
+          class="vtmn-list_media--square"
+          src="https://storage.googleapis.com/dkt-design-cdn/images/placeholder.jpg"
+          alt="placeholder"
+        />
+      </div>
+      <div class="vtmn-list_text">
+        <span>List Item</span>
+      </div>
+      <div class="vtmn-list_end-action">
+        <button
+          class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--medium vtmn-btn--icon-alone"
+          aria-label="remove"
+        >
+          <span class="vtmx-delete-bin-line"></span>
+        </button>
+      </div>
+    </li>
+
+    <li role="option" tabindex="0">
+      <div class="vtmn-list_media">
+        <img
+          class="vtmn-list_media--square"
+          src="https://storage.googleapis.com/dkt-design-cdn/images/placeholder.jpg"
+          alt="placeholder"
+        />
+      </div>
+      <div class="vtmn-list_text">
+        <span>List Item</span>
+      </div>
+      <div class="vtmn-list_end-action">
+        <button
+          class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--medium vtmn-btn--icon-alone"
+          aria-label="remove"
+        >
+          <span class="vtmx-delete-bin-line"></span>
+        </button>
+      </div>
+    </li>
+  </ul>
+
+  <ul class="vtmn-list" role="listbox">
+    <li role="option" tabindex="0">
       <div class="vtmn-list_media">
         <img
           class="vtmn-list_media--rectangle"
@@ -106,9 +304,52 @@
       </div>
       <div class="vtmn-list_end-action">
         <button
-          class="vtmn-btn vtmn-btn_variant--primary vtmn-btn_size--medium"
+          class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--medium vtmn-btn--icon-alone"
+          aria-label="remove"
         >
-          Button
+          <span class="vtmx-delete-bin-line"></span>
+        </button>
+      </div>
+    </li>
+
+    <li role="option" tabindex="0">
+      <div class="vtmn-list_media">
+        <img
+          class="vtmn-list_media--rectangle"
+          src="https://storage.googleapis.com/dkt-design-cdn/images/placeholder.jpg"
+          alt="placeholder"
+        />
+      </div>
+      <div class="vtmn-list_text">
+        <span>List Item</span>
+      </div>
+      <div class="vtmn-list_end-action">
+        <button
+          class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--medium vtmn-btn--icon-alone"
+          aria-label="remove"
+        >
+          <span class="vtmx-delete-bin-line"></span>
+        </button>
+      </div>
+    </li>
+
+    <li role="option" tabindex="0">
+      <div class="vtmn-list_media">
+        <img
+          class="vtmn-list_media--rectangle"
+          src="https://storage.googleapis.com/dkt-design-cdn/images/placeholder.jpg"
+          alt="placeholder"
+        />
+      </div>
+      <div class="vtmn-list_text">
+        <span>List Item</span>
+      </div>
+      <div class="vtmn-list_end-action">
+        <button
+          class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--medium vtmn-btn--icon-alone"
+          aria-label="remove"
+        >
+          <span class="vtmx-delete-bin-line"></span>
         </button>
       </div>
     </li>
