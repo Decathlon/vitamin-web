@@ -45,7 +45,7 @@
 }
 
 .vtmn-list_start-visual,
-.vtmn-list_media {
+.vtmn-list_start-media {
   width: fit-content;
   display: flex;
   align-items: center;
@@ -100,21 +100,21 @@
   font-size: var(--vtmn-typo_title-5-font-size);
 }
 
-.vtmn-list_media--circle {
+.vtmn-list_start-media--circle {
   min-width: rem(40px);
   width: rem(40px);
   aspect-ratio: 1 / 1;
   border-radius: 50%;
 }
 
-.vtmn-list_media--square {
+.vtmn-list_start-media--square {
   min-width: rem(56px);
   width: rem(56px);
   aspect-ratio: 1 / 1;
   object-fit: contain;
 }
 
-.vtmn-list_media--rectangle {
+.vtmn-list_start-media--rectangle {
   min-width: rem(103px);
   width: rem(103px);
   aspect-ratio: 2 / 1;
