@@ -11,8 +11,9 @@
   height: 24px;
   width: fit-content;
   padding: 2px 8px;
-  font: var(--vtmn-typo_font-family) var(--vtmn-typo_text-3-font-size)
-    var(--vtmn-typo_font-weight--normal);
+  font-family: var(--vtmn-typo_font-family);
+  font-size: var(--vtmn-typo_text-3-font-size);
+  font-weight: var(--vtmn-typo_font-weight--normal);
   line-height: var(--vtmn-typo_text-3-line-height);
   color: var(--vtmn-semantic-color_content-accent);
   background-color: var(--vtmn-semantic-color_background-accent);
@@ -32,7 +33,7 @@
 }
 
 .vtmn-tag_variant--alert {
-  background-color: var(--vtmn-semantic-color_background-discount);
+  background-color: var(--vtmn-semantic-color_background-alert);
   color: var(--vtmn-semantic-color_content-primary-reversed);
 }
 
