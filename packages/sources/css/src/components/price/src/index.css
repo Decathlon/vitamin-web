@@ -23,7 +23,7 @@
 }
 
 /* Variants */
-.vtmn-price_variant--accent {
+.vtmn-price_variant--default {
   background-color: transparent;
   color: var(--vtmn-semantic-color_content-primary);
 }
