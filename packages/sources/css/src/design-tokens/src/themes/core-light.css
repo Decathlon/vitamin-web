@@ -171,6 +171,12 @@
   --vtmn-semantic-color_decorative-emerald--s: var(--vtmn-base-color_green100--s);
   --vtmn-semantic-color_decorative-emerald--l: var(--vtmn-base-color_green100--l);
   --vtmn-semantic-color_decorative-emerald: hsl(var(--vtmn-semantic-color_decorative-emerald--h), var(--vtmn-semantic-color_decorative-emerald--s), var(--vtmn-semantic-color_decorative-emerald--l));
+  
+  /* DEPRECATED */
+  --vtmn-semantic-color_background-discount--h: var(--vtmn-base-color_red400--h);
+  --vtmn-semantic-color_background-discount--s: var(--vtmn-base-color_red400--s);
+  --vtmn-semantic-color_background-discount--l: var(--vtmn-base-color_red400--l);
+  --vtmn-semantic-color_background-discount: hsl(var(--vtmn-semantic-color_background-discount--h), var(--vtmn-semantic-color_background-discount--s), var(--vtmn-semantic-color_background-discount--l));
 
   /* Auto-generated */
   --vtmn-semantic-color_hover-primary-transparent--h: var(--vtmn-semantic-color_background-brand-primary--h);
