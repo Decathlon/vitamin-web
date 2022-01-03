@@ -1,16 +1,17 @@
 @import '@vtmn/css-design-tokens/src/base-colors';
 @import '@vtmn/css-design-tokens/src/themes/default';
 @import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/spacings';
 
 .vtmn-tag {
   box-sizing: border-box;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  min-height: 24px;
-  height: 24px;
+  min-height: rem(24px);
+  height: rem(24px);
   width: fit-content;
-  padding: 2px 8px;
+  padding: rem(2px) var(--vtmn-spacing_2);
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-3-font-size);
   font-weight: var(--vtmn-typo_font-weight--normal);
@@ -18,7 +19,7 @@
   color: var(--vtmn-semantic-color_content-accent);
   background-color: var(--vtmn-semantic-color_background-accent);
   text-align: center;
-  border-radius: 4px;
+  border-radius: rem(4px);
 }
 
 /* Variants */
