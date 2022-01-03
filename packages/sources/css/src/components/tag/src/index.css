@@ -38,6 +38,41 @@
 
 /* Decoratives */
 .vtmn-tag_variant-decorative--gravel {
-  background-color: var(--vtmn-semantic-color_background-accent);
+  background-color: var(--vtmn-semantic-color_decorative-gravel);
+  color: var(--vtmn-semantic-color_content-primary);
+}
+
+.vtmn-tag_variant-decorative--gold {
+  background-color: var(--vtmn-semantic-color_decorative-gold);
+  color: var(--vtmn-semantic-color_content-primary);
+}
+
+.vtmn-tag_variant-decorative--cobalt {
+  background-color: var(--vtmn-semantic-color_decorative-cobalt);
+  color: var(--vtmn-semantic-color_content-primary);
+}
+
+.vtmn-tag_variant-decorative--brick {
+  background-color: var(--vtmn-semantic-color_decorative-brick);
+  color: var(--vtmn-semantic-color_content-primary);
+}
+
+.vtmn-tag_variant-decorative--jade {
+  background-color: var(--vtmn-semantic-color_decorative-jade);
+  color: var(--vtmn-semantic-color_content-primary);
+}
+
+.vtmn-tag_variant-decorative--amethyst {
+  background-color: var(--vtmn-semantic-color_decorative-amethyst);
+  color: var(--vtmn-semantic-color_content-primary);
+}
+
+.vtmn-tag_variant-decorative--saffron {
+  background-color: var(--vtmn-semantic-color_decorative-saffron);
+  color: var(--vtmn-semantic-color_content-primary);
+}
+
+.vtmn-tag_variant-decorative--emerald {
+  background-color: var(--vtmn-semantic-color_decorative-emerald);
   color: var(--vtmn-semantic-color_content-primary);
 }
