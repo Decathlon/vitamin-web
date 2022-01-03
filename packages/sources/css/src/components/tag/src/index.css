@@ -49,32 +49,32 @@
   color: var(--vtmn-semantic-color_content-primary);
 }
 
-.vtmn-tag_variant-decorative_cobalt {
+.vtmn-tag_variant--decorative_cobalt {
   background-color: var(--vtmn-semantic-color_decorative-cobalt);
   color: var(--vtmn-semantic-color_content-primary);
 }
 
-.vtmn-tag_variant-decorative_brick {
+.vtmn-tag_variant--decorative_brick {
   background-color: var(--vtmn-semantic-color_decorative-brick);
   color: var(--vtmn-semantic-color_content-primary);
 }
 
-.vtmn-tag_variant-decorative_jade {
+.vtmn-tag_variant--decorative_jade {
   background-color: var(--vtmn-semantic-color_decorative-jade);
   color: var(--vtmn-semantic-color_content-primary);
 }
 
-.vtmn-tag_variant-decorative_amethyst {
+.vtmn-tag_variant--decorative_amethyst {
   background-color: var(--vtmn-semantic-color_decorative-amethyst);
   color: var(--vtmn-semantic-color_content-primary);
 }
 
-.vtmn-tag_variant-decorative_saffron {
+.vtmn-tag_variant--decorative_saffron {
   background-color: var(--vtmn-semantic-color_decorative-saffron);
   color: var(--vtmn-semantic-color_content-primary);
 }
 
-.vtmn-tag_variant-decorative_emerald {
+.vtmn-tag_variant--decorative_emerald {
   background-color: var(--vtmn-semantic-color_decorative-emerald);
   color: var(--vtmn-semantic-color_content-primary);
 }
