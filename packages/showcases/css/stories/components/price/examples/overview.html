@@ -2,21 +2,7 @@
   #exemple {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: fit-content;
-  }
-
-  .former-price {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: fit-content;
-  }
-
-  .former-price > span:last-child {
-    color: red;
-    font-weight: bold;
   }
 </style>
 
@@ -89,18 +75,11 @@
 
 <div class="block">
   <div id="exemple">
-    <div class="former-price">
-      <span
-        class="vtmn-price vtmn-price_size--small vtmn-price_variant--strikethrough"
-        aria-label="Former price"
-        >125€</span
-      >
-      <span
-        class="vtmn-price vtmn-price_size--small vtmn-price_variant--default"
-        aria-label="Discount"
-        >-50%</span
-      >
-    </div>
+    <span
+      class="vtmn-price vtmn-price_size--small vtmn-price_variant--strikethrough"
+      aria-label="Former price"
+      >125€</span
+    >
     <span
       class="vtmn-price vtmn-price_size--large vtmn-price_variant--alert"
       aria-label="New price"
