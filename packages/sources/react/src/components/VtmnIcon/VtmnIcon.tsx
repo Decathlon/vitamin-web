@@ -48,8 +48,8 @@ export const VtmnIcon: React.FC<VtmnIconProps> = ({
         return 'content-information';
       case 'warning':
         return 'content-warning';
-      case 'danger':
-        return 'content-danger';
+      case 'negative':
+        return 'content-negative';
       case 'neutral':
         return '';
     }
