@@ -2,6 +2,7 @@
 @import '@vtmn/css-design-tokens/src/themes/default';
 @import '@vtmn/css-design-tokens/src/typography';
 @import '@vtmn/css-design-tokens/src/spacings';
+@import '@vtmn/css-design-tokens/src/shadows';
 
 .vtmn-tag {
   box-sizing: border-box;
@@ -20,6 +21,12 @@
   background-color: var(--vtmn-semantic-color_background-accent);
   text-align: center;
   border-radius: rem(4px);
+  text-decoration: none;
+  outline: 0;
+}
+
+a.vtmn-tag:focus-visible {
+  box-shadow: var(--vtmn-shadow_focus-visible);
 }
 
 /* Variants */
