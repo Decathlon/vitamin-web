@@ -71,6 +71,7 @@
 .vtmn-accordion summary ~ * {
   background-color: var(--vtmn-semantic-color_background-primary);
   padding: 0 rem(40px) var(--vtmn-spacing_3) var(--vtmn-spacing_4);
+  margin: 0;
 }
 
 .vtmn-accordion[open] {
