@@ -1,7 +1,7 @@
 {
   "name": "@vtmn/svelte",
-  "version": "0.8.4",
-  "description": "Decathlon Design System - Vitamin Svelte library",
+  "version": "0.8.5",
+  "description": "Decathlon Design System - Vitamin Svelte components library",
   "keywords": [
     "design-system",
     "ui-kit",
@@ -24,20 +24,20 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "lint": "eslint --color",
+    "lint": "eslint src --ext .js,.svelte",
+    "lint:fix": "eslint src --ext .js,.svelte --fix",
     "prestart": "yarn build",
     "start": "chokidar \"src/**\" -i \"**/dist/**\" -c \"yarn build\""
   },
   "dependencies": {
-    "@vtmn/css-button": "^0.8.10",
-    "@vtmn/css-design-tokens": "^0.10.1",
-    "@vtmn/css-link": "^0.5.6",
-    "@vtmn/css-popover": "^0.3.5",
-    "@vtmn/css-text-input": "^0.11.1"
+    "@vtmn/css-button": "^0.8.11",
+    "@vtmn/css-design-tokens": "^0.10.2",
+    "@vtmn/css-link": "^0.5.7",
+    "@vtmn/css-popover": "^0.3.6",
+    "@vtmn/css-text-input": "^0.11.2"
   },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^13.0.5",
-    "@vtmn/icons": "^0.6.0",
+    "@rollup/plugin-node-resolve": "^13.1.2",
     "chokidar-cli": "^3.0.0",
     "eslint": "8.5.0",
     "eslint-plugin-svelte3": "3.2.1",

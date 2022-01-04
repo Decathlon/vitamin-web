@@ -59,9 +59,6 @@ yarn
 
 # build packages
 yarn build
-
-# test packages
-yarn test
 ```
 
 To develop in watch mode and run all showcases with hot reloads, just run:
@@ -87,6 +84,9 @@ For your information, here are the showcases' URLs:
 | React    | [localhost:6008](http://localhost:6008) |
 | Svelte   | [localhost:6019](http://localhost:6009) |
 | Vue      | [localhost:6010](http://localhost:6010) |
+
+For Windows users, you may errors with UNIX commands like `rm -rf` or `mkdir` used in NPM scripts. To fix this and be able to contribute, you can check "Git for Windows" or Cygwin.
+By default Windows runs NPM scripts with `cmd` but you can change the game with `npm config set script-shell <path to .exe>` and choose your executor.
 
 ## Code of conduct
 
@@ -145,6 +145,6 @@ To reach this goal we fixed some rule in our team and we would love to go ahead 
 1. Be sure your code compile: no syntax error, no missing library, ...
 2. Add comments on the code if you want to explain better what is happening in the code.
 3. Add documentation for any API, if needed, or functional explaining what changed/added with your code.
-4. After you proposed the PullRequest. If you will receive any mail or find any automatic comment on the Pull Request you opened, it means there is something which is not respecting the project defined code style or your broke any previously created test.
+4. After you proposed the PullRequest. If you will receive any mail or find any automatic comment on the Pull Request you opened, it means there is something which is not respecting the project defined code style.
 
 If you respect all these rules you will help us saving time and we will be able to check your pull request faster.

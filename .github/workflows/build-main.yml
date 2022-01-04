@@ -22,7 +22,7 @@ jobs:
 
       - uses: actions/setup-node@v1
         with:
-          node-version: '12.x'
+          node-version: '14.x'
           registry-url: 'https://registry.npmjs.org'
 
       - name: Restore/create node_modules cache
@@ -74,6 +74,7 @@ jobs:
             'packages/sources/css/src/components/navbar',
             'packages/sources/css/src/components/popover',
             'packages/sources/css/src/components/progressbar',
+            'packages/sources/css/src/components/quantity',
             'packages/sources/css/src/components/radio-button',
             'packages/sources/css/src/components/rating',
             'packages/sources/css/src/components/search',

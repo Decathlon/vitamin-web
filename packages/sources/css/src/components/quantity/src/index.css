@@ -1,0 +1,103 @@
+@import '@vtmn/css-design-tokens/src/base-colors';
+@import '@vtmn/css-design-tokens/src/themes/default';
+@import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/spacings';
+@import '@vtmn/css-design-tokens/src/opacities';
+
+.vtmn-quantity {
+  font: var(--vtmn-typo_font-family) var(--vtmn-typo_text-2-font-size)
+    var(--vtmn-typo_font-weight--normal);
+  color: var(--vtmn-semantic-color_content-primary);
+  height: fit-content;
+  width: auto;
+}
+
+.vtmn-quantity_content {
+  display: flex;
+  margin-block-start: var(--vtmn-spacing_1);
+  margin-block-end: var(--vtmn-spacing_1);
+}
+
+.vtmn-quantity input[type='number'] {
+  outline: 0;
+  width: rem(60px);
+  padding: 0 rem(2px);
+  background-color: var(--vtmn-semantic-color_background-primary);
+  box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-secondary);
+  text-align: center;
+  z-index: 1;
+  appearance: textfield;
+}
+
+.vtmn-quantity input[type='number']::placeholder {
+  color: var(--vtmn-semantic-color_content-tertiary);
+}
+
+.vtmn-quantity input[type='number']:not(:disabled):not(:focus):hover {
+  box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-secondary),
+    0 0 0 rem(3px) var(--vtmn-semantic-color_hover-primary);
+}
+
+.vtmn-quantity[aria-disabled='true'] {
+  opacity: var(--vtmn-opacity_disabled-state);
+  cursor: not-allowed;
+}
+
+/* Prevent the stack of opacity */
+.vtmn-quantity[aria-disabled='true'] *:disabled {
+  opacity: 1;
+  cursor: not-allowed;
+}
+
+.vtmn-quantity input[type='number']:not(:disabled):invalid {
+  box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-negative);
+}
+
+.vtmn-quantity input[type='number']:not(:disabled):focus,
+.vtmn-quantity input[type='number']:not(:disabled):focus-visible {
+  box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-active);
+}
+
+/* Remove default number input appearance */
+.vtmn-quantity input[type='number']::-webkit-inner-spin-button,
+.vtmn-quantity input[type='number']::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.vtmn-quantity .vtmn-btn:focus-visible {
+  z-index: 2;
+}
+
+.vtmn-quantity .vtmn-btn:last-child {
+  border-radius: 0 rem(4px) rem(4px) 0;
+  margin-inline-start: rem(-2px);
+}
+
+.vtmn-quantity .vtmn-btn:first-child {
+  border-radius: rem(4px) 0 0 rem(4px);
+  margin-inline-end: rem(-2px);
+}
+
+.vtmn-quantity .vtmn-btn:last-child {
+  border-radius: 0 rem(4px) rem(4px) 0;
+  margin-inline-start: rem(-2px);
+}
+
+.vtmn-quantity_error-text {
+  font-size: var(--vtmn-typo_text-3-font-size);
+  display: inline-flex;
+  align-items: center;
+}
+
+.vtmn-quantity_error-text::before {
+  position: relative;
+  content: '';
+  mask: url("data:image/svg+xml;charset=utf-8, <svg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M1.333 8a6.667 6.667 0 1 0 13.333 0A6.667 6.667 0 0 0 1.333 8zm12 0A5.333 5.333 0 1 1 2.667 8a5.333 5.333 0 0 1 10.666 0zm-4.666 2v1.333H7.333V10h1.334zm0-1.333v-4H7.333v4h1.334z'/></svg>");
+  mask-size: cover;
+  display: inline-block;
+  background-color: var(--vtmn-semantic-color_content-negative);
+  height: rem(16px);
+  width: rem(16px);
+  margin-right: rem(5px);
+}
