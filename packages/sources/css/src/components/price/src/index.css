@@ -15,7 +15,6 @@
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
   font-weight: var(--vtmn-typo_font-weight--bold);
-  line-height: var(--vtmn-typo_text-2-line-height);
   color: var(--vtmn-semantic-color_content-primary);
   background-color: transparent;
   text-align: center;
@@ -51,7 +50,6 @@
   min-height: rem(24px);
   height: rem(24px);
   font-size: var(--vtmn-typo_text-3-font-size);
-  line-height: var(--vtmn-typo_text-3-line-height);
 }
 
 /* SMALL */
@@ -59,7 +57,6 @@
   min-height: rem(28px);
   height: rem(28px);
   font-size: var(--vtmn-typo_text-2-font-size);
-  line-height: var(--vtmn-typo_text-2-line-height);
 }
 
 /* SMALL */
@@ -67,5 +64,4 @@
   min-height: rem(32px);
   height: rem(32px);
   font-size: var(--vtmn-typo_text-1-font-size);
-  line-height: var(--vtmn-typo_text-1-line-height);
 }
