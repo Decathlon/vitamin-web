@@ -40,6 +40,10 @@
       "root": "packages/sources/css",
       "type": "library"
     },
+    "@vtmn/css-accordion": {
+      "root": "packages/sources/css/src/components/accordion",
+      "type": "library"
+    },
     "@vtmn/css-alert": {
       "root": "packages/sources/css/src/components/alert",
       "type": "library"
