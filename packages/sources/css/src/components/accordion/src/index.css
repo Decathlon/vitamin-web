@@ -90,18 +90,18 @@
 
 /* Without Divider */
 
-.vtmn-accordion--without-divider {
+.vtmn-accordion_variant--without-divider {
   border-radius: rem(8px);
   border-bottom: 0;
   border: rem(1px) solid var(--vtmn-semantic-color_border-secondary);
   margin-block-end: var(--vtmn-spacing_3);
 }
 
-.vtmn-accordion--without-divider > summary {
+.vtmn-accordion_variant--without-divider > summary {
   border-radius: rem(8px);
 }
 
-.vtmn-accordion--without-divider[open] > *:last-child {
+.vtmn-accordion_variant--without-divider[open] > *:last-child {
   border-radius: 0 0 rem(8px) rem(8px);
   border-bottom: rem(1px) solid var(--vtmn-semantic-color_border-secondary);
 }
