@@ -2,6 +2,7 @@
 @import '@vtmn/css-design-tokens/src/themes/default';
 @import '@vtmn/css-design-tokens/src/typography';
 @import '@vtmn/css-design-tokens/src/spacings';
+@import '@vtmn/css-design-tokens/src/shadows';
 
 .vtmn-tag {
   box-sizing: border-box;
@@ -20,6 +21,12 @@
   background-color: var(--vtmn-semantic-color_background-accent);
   text-align: center;
   border-radius: rem(4px);
+  text-decoration: none;
+  outline: 0;
+}
+
+a.vtmn-tag:focus-visible {
+  box-shadow: var(--vtmn-shadow_focus-visible);
 }
 
 /* Variants */
@@ -39,42 +46,42 @@
 }
 
 /* Decoratives */
-.vtmn-tag_variant-decorative--gravel {
+.vtmn-tag_variant--decorative_gravel {
   background-color: var(--vtmn-semantic-color_decorative-gravel);
   color: var(--vtmn-semantic-color_content-primary);
 }
 
-.vtmn-tag_variant-decorative--gold {
+.vtmn-tag_variant--decorative_gold {
   background-color: var(--vtmn-semantic-color_decorative-gold);
   color: var(--vtmn-semantic-color_content-primary);
 }
 
-.vtmn-tag_variant-decorative--cobalt {
+.vtmn-tag_variant--decorative_cobalt {
   background-color: var(--vtmn-semantic-color_decorative-cobalt);
   color: var(--vtmn-semantic-color_content-primary);
 }
 
-.vtmn-tag_variant-decorative--brick {
+.vtmn-tag_variant--decorative_brick {
   background-color: var(--vtmn-semantic-color_decorative-brick);
   color: var(--vtmn-semantic-color_content-primary);
 }
 
-.vtmn-tag_variant-decorative--jade {
+.vtmn-tag_variant--decorative_jade {
   background-color: var(--vtmn-semantic-color_decorative-jade);
   color: var(--vtmn-semantic-color_content-primary);
 }
 
-.vtmn-tag_variant-decorative--amethyst {
+.vtmn-tag_variant--decorative_amethyst {
   background-color: var(--vtmn-semantic-color_decorative-amethyst);
   color: var(--vtmn-semantic-color_content-primary);
 }
 
-.vtmn-tag_variant-decorative--saffron {
+.vtmn-tag_variant--decorative_saffron {
   background-color: var(--vtmn-semantic-color_decorative-saffron);
   color: var(--vtmn-semantic-color_content-primary);
 }
 
-.vtmn-tag_variant-decorative--emerald {
+.vtmn-tag_variant--decorative_emerald {
   background-color: var(--vtmn-semantic-color_decorative-emerald);
   color: var(--vtmn-semantic-color_content-primary);
 }
