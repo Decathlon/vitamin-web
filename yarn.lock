@@ -2636,12 +2636,24 @@
     node-gyp "^7.1.0"
     read-package-json-fast "^2.0.1"
 
-"@nrwl/cli@13.4.1", "@nrwl/cli@^13.2.2":
+"@nrwl/cli@13.4.1":
   version "13.4.1"
   resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-13.4.1.tgz#f01e3442ce9c22d8d4fc4b55285000561de27f3c"
   integrity sha512-U0ik9wrumTxg+l0f17xajOLgKPQH2hFFPiDlegOupef7mR3JBxrEzadkTXjRH7wXSOWBdzYyVYsfx+6UwS9Ilw==
   dependencies:
     "@nrwl/tao" "13.4.1"
+    chalk "4.1.0"
+    enquirer "~2.3.6"
+    v8-compile-cache "2.3.0"
+    yargs "15.4.1"
+    yargs-parser "20.0.0"
+
+"@nrwl/cli@13.4.3", "@nrwl/cli@^13.2.2":
+  version "13.4.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-13.4.3.tgz#94c018bf75bc352f0db1f71a32b92a02bc2fce98"
+  integrity sha512-AdCErb7DDJ10Ow07RE0t+DGXlvwAU31J3zM56dJ3+fLtPO3myVi8JPuc4uG0bndxHrEcRd1BjAoaE3Mfkm3G+w==
+  dependencies:
+    "@nrwl/tao" "13.4.3"
     chalk "4.1.0"
     enquirer "~2.3.6"
     v8-compile-cache "2.3.0"
@@ -2703,7 +2715,7 @@
     strip-json-comments "^3.1.1"
     tar "6.1.11"
 
-"@nrwl/tao@13.4.1", "@nrwl/tao@^13.2.2":
+"@nrwl/tao@13.4.1":
   version "13.4.1"
   resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-13.4.1.tgz#914214bda8d64c61369218e7c53b4dfdcfe756e7"
   integrity sha512-bgVzHlKfY7TK0ZLlM9+yQxfw8+NGsfl1+612advLYI46NRYAOpY3yOPBWX+69M+W3SwdjKQDyTi57hHbgx1XBA==
@@ -2715,6 +2727,25 @@
     ignore "^5.0.4"
     jsonc-parser "3.0.0"
     nx "13.4.1"
+    rxjs "^6.5.4"
+    rxjs-for-await "0.0.2"
+    semver "7.3.4"
+    tmp "~0.2.1"
+    tslib "^2.3.0"
+    yargs-parser "20.0.0"
+
+"@nrwl/tao@13.4.3", "@nrwl/tao@^13.2.2":
+  version "13.4.3"
+  resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-13.4.3.tgz#103024dff0f25e1b0544a702de3fa984008840b9"
+  integrity sha512-hO2XSJf3dspfEq3qMd8nOTa8szxd5wp/JsH2ri54EI7QWVswAkzdF+v1/TsM+2lB6zFbFgrzRMioXfd1AD4y4g==
+  dependencies:
+    chalk "4.1.0"
+    enquirer "~2.3.6"
+    fast-glob "3.2.7"
+    fs-extra "^9.1.0"
+    ignore "^5.0.4"
+    jsonc-parser "3.0.0"
+    nx "13.4.3"
     rxjs "^6.5.4"
     rxjs-for-await "0.0.2"
     semver "7.3.4"
@@ -15465,6 +15496,13 @@ nx@13.4.1:
   integrity sha512-x/fbcY/mg6rHhVho2oWDKPk+ZTHCuNvaBSe959BY7OkPiGaP5yydfXfP+tuRdxrEGIL0ZD+UzsjH/1ITdnZP3w==
   dependencies:
     "@nrwl/cli" "13.4.1"
+
+nx@13.4.3:
+  version "13.4.3"
+  resolved "https://registry.yarnpkg.com/nx/-/nx-13.4.3.tgz#78f91abc4da88c485a502dc156aee8e9cdb9fd84"
+  integrity sha512-HlydHUk65tnxip9XTn7EByAh46Qp/T3QUpVoclMJFBFxDc/u6S+zcOp4kU5WTZmGj996LVFYqQvTj6Zyz78UOg==
+  dependencies:
+    "@nrwl/cli" "13.4.3"
 
 oauth-sign@~0.9.0:
   version "0.9.0"
