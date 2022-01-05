@@ -21,7 +21,7 @@
   border-radius: rem(4px);
 }
 
-/* Variants */
+/* VARIANTS */
 .vtmn-price_variant--default {
   background-color: transparent;
   color: var(--vtmn-semantic-color_content-primary);
@@ -43,23 +43,23 @@
   text-decoration: line-through;
 }
 
-/* Sizes */
+/* SIZES */
 
-/* SMALL */
+/* Small */
 .vtmn-price_size--small {
   min-height: rem(24px);
   height: rem(24px);
   font-size: var(--vtmn-typo_text-3-font-size);
 }
 
-/* SMALL */
+/* Medium */
 .vtmn-price_size--medium {
   min-height: rem(28px);
   height: rem(28px);
   font-size: var(--vtmn-typo_text-2-font-size);
 }
 
-/* SMALL */
+/* Large */
 .vtmn-price_size--large {
   min-height: rem(32px);
   height: rem(32px);
