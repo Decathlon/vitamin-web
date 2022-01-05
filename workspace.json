@@ -76,6 +76,10 @@
       "root": "packages/sources/css/src/components/link",
       "type": "library"
     },
+    "@vtmn/css-list": {
+      "root": "packages/sources/css/src/components/list",
+      "type": "library"
+    },
     "@vtmn/css-loader": {
       "root": "packages/sources/css/src/components/loader",
       "type": "library"
