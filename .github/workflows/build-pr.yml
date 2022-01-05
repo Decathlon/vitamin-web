@@ -63,6 +63,7 @@ jobs:
 #           'packages/sources/css/src/components/skeleton',
 #           'packages/sources/css/src/components/snackbar',
 #           'packages/sources/css/src/components/tabs',
+#           'packages/sources/css/src/components/tag',
 #           'packages/sources/css/src/components/text-input',
 #           'packages/sources/css/src/components/toast',
 #           'packages/sources/css/src/components/toggle',
