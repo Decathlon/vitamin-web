@@ -7,10 +7,12 @@
 @import '@vtmn/css-chip/src';
 @import '@vtmn/css-divider/src';
 @import '@vtmn/css-link/src';
+@import '@vtmn/css-list/src';
 @import '@vtmn/css-loader/src';
 @import '@vtmn/css-modal/src';
 @import '@vtmn/css-navbar/src';
 @import '@vtmn/css-popover/src';
+@import '@vtmn/css-price/src';
 @import '@vtmn/css-progressbar/src';
 @import '@vtmn/css-quantity/src';
 @import '@vtmn/css-radio-button/src';
@@ -20,6 +22,7 @@
 @import '@vtmn/css-skeleton/src';
 @import '@vtmn/css-snackbar/src';
 @import '@vtmn/css-tabs/src';
+@import '@vtmn/css-tag/src';
 @import '@vtmn/css-text-input/src';
 @import '@vtmn/css-toast/src';
 @import '@vtmn/css-toggle/src';

@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.45.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.44.0...@vtmn/css@0.45.0) (2022-01-05)
+
+
+### Features
+
+* **@vtmn/css:** add price component ([#847](https://github.com/Decathlon/vitamin-web/issues/847)) ([a30666c](https://github.com/Decathlon/vitamin-web/commit/a30666c6496330cc6dad1669032cb5f89374780c))
+
+
+
+
+
+# [0.44.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.43.1...@vtmn/css@0.44.0) (2022-01-05)
+
+
+### Features
+
+* **@vtmn/css:** add list component ([#814](https://github.com/Decathlon/vitamin-web/issues/814)) ([7fa9593](https://github.com/Decathlon/vitamin-web/commit/7fa959314f72fcfbd8a2eadeb6d55147c63ff625))
+* **@vtmn/css:** add tag component ([#846](https://github.com/Decathlon/vitamin-web/issues/846)) ([bcb461c](https://github.com/Decathlon/vitamin-web/commit/bcb461c8115e4594075b5a678e113191e13c73ac))
+
+
+
+
+
 ## [0.43.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.43.0...@vtmn/css@0.43.1) (2022-01-03)
 
 **Note:** Version bump only for package @vtmn/css

@@ -76,6 +76,10 @@
       "root": "packages/sources/css/src/components/link",
       "type": "library"
     },
+    "@vtmn/css-list": {
+      "root": "packages/sources/css/src/components/list",
+      "type": "library"
+    },
     "@vtmn/css-loader": {
       "root": "packages/sources/css/src/components/loader",
       "type": "library"
@@ -90,6 +94,10 @@
     },
     "@vtmn/css-popover": {
       "root": "packages/sources/css/src/components/popover",
+      "type": "library"
+    },
+    "@vtmn/css-price": {
+      "root": "packages/sources/css/src/components/price",
       "type": "library"
     },
     "@vtmn/css-progressbar": {
@@ -126,6 +134,10 @@
     },
     "@vtmn/css-tabs": {
       "root": "packages/sources/css/src/components/tabs",
+      "type": "library"
+    },
+    "@vtmn/css-tag": {
+      "root": "packages/sources/css/src/components/tag",
       "type": "library"
     },
     "@vtmn/css-text-input": {
