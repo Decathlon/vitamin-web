@@ -97,4 +97,5 @@
 .vtmn-radio-button[type='radio']:focus-visible + label::before {
   outline: none;
   box-shadow: var(--vtmn-shadow_focus-visible);
+  transition: box-shadow 200ms;
 }
