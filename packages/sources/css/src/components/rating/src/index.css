@@ -37,6 +37,7 @@
   background-size: rem(40px) rem(32px);
   outline: none;
   cursor: pointer;
+  transition: box-shadow 200ms ease-out;
 }
 
 .vtmn-rating--interactive label:nth-of-type(1) {
