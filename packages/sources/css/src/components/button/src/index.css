@@ -26,7 +26,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   background-color: var(--vtmn-semantic-color_background-brand-primary);
-  transition: box-shadow 200ms;
+  transition: box-shadow 200ms ease-out;
 }
 
 .vtmn-btn:not(:disabled):hover {

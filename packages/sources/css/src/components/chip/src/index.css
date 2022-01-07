@@ -12,7 +12,6 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  line-height: var(--vtmn-typo_text-2-line-height);
   align-items: center;
   padding: rem(8px) rem(16px);
   box-shadow: inset 0 0 0 rem(1px) var(--vtmn-semantic-color_border-inactive);
@@ -26,6 +25,7 @@
   outline: none;
   height: rem(40px);
   box-sizing: border-box;
+  transition: box-shadow 200ms ease-out;
 }
 
 .vtmn-chip > .vtmn-badge {
@@ -85,7 +85,6 @@
 
 /* Small */
 .vtmn-chip_size--small {
-  line-height: var(--vtmn-typo_text-3-line-height);
   font-size: var(--vtmn-typo_text-3-font-size);
   padding: rem(6px) rem(12px);
   height: rem(32px);
@@ -98,7 +97,6 @@
 /* Medium (default) */
 .vtmn-chip_size--medium {
   height: rem(40px);
-  line-height: var(--vtmn-typo_text-2-line-height);
   padding: rem(8px) rem(16px);
   font-size: var(--vtmn-typo_text-2-font-size);
 }
@@ -112,10 +110,6 @@
 .vtmn-chip_variant--filter > .vtmn-badge {
   font-weight: var(--vtmn-typo_font-weight--normal);
   transform: translateX(rem(6px));
-}
-
-.vtmn-chip_variant--filter.vtmn-chip_size--small > .vtmn-badge {
-  transform: translateX(rem(8px));
 }
 
 .vtmn-chip_variant--filter.vtmn-chip_size--medium > .vtmn-badge {
@@ -179,11 +173,6 @@
 .vtmn-chip_variant--input > span[class^='vtmx-'],
 .vtmn-chip_variant--input > svg {
   transform: translateX(rem(-6px));
-}
-
-.vtmn-chip_variant--input.vtmn-chip_size--small > span[class^='vtmx-'],
-.vtmn-chip_variant--input.vtmn-chip_size--small > svg {
-  transform: translateX(rem(-8px));
 }
 
 .vtmn-chip_variant--input.vtmn-chip_size--medium > span[class^='vtmx-'],
