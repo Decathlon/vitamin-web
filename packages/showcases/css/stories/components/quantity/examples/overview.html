@@ -83,7 +83,13 @@
       >
         <span class="vtmx-subtract-line"></span>
       </button>
-      <input type="number" id="my-quantity-4" value="-2" min="0" />
+      <input
+        type="number"
+        id="my-quantity-4"
+        value="-2"
+        min="0"
+        aria-describedby="quantity-helper-1"
+      />
       <button
         class="vtmn-btn vtmn-btn_variant--secondary vtmn-btn--icon-alone"
         aria-label="add"
@@ -91,6 +97,8 @@
         <span class="vtmx-add-line"></span>
       </button>
     </div>
-    <p class="vtmn-quantity_error-text">Error text goes here</p>
+    <p id="quantity-helper-1" class="vtmn-quantity_error-text">
+      Error text goes here
+    </p>
   </div>
 </div>
