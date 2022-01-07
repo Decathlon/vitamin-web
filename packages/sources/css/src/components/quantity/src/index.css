@@ -27,6 +27,7 @@
   text-align: center;
   z-index: 1;
   appearance: textfield;
+  transition: box-shadow 200ms ease-out;
 }
 
 .vtmn-quantity input[type='number']::placeholder {

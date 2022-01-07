@@ -7,7 +7,6 @@
 .vtmn-radio-button[type='radio'] {
   position: absolute;
   opacity: 0;
-  transition: all 0.275s;
 }
 
 .vtmn-radio-button[type='radio'] + label {
@@ -29,6 +28,7 @@
   margin-top: rem(1px);
   margin-right: rem(11px);
   padding: rem(8px);
+  transition: box-shadow 200ms ease-out;
 }
 
 .vtmn-radio-button[type='radio']:not(:checked) + label::before {
@@ -97,5 +97,4 @@
 .vtmn-radio-button[type='radio']:focus-visible + label::before {
   outline: none;
   box-shadow: var(--vtmn-shadow_focus-visible);
-  transition: box-shadow 200ms;
 }

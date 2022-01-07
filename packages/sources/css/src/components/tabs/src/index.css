@@ -32,7 +32,8 @@
   white-space: nowrap;
   color: var(--vtmn-semantic-color_content-secondary);
   border-bottom: rem(2px) solid transparent;
-  transition: border-bottom 200ms ease, color 200ms ease;
+  transition: border-bottom 200ms ease, color 200ms ease,
+    box-shadow 200ms ease-out;
   outline: none;
   text-decoration: none;
 }

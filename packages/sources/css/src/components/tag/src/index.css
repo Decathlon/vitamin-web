@@ -26,6 +26,7 @@
 
 a.vtmn-tag:focus-visible {
   box-shadow: var(--vtmn-shadow_focus-visible);
+  transition: box-shadow 200ms ease-out;
 }
 
 /* Variants */

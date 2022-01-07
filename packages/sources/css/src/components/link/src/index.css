@@ -9,7 +9,7 @@
   color: var(--vtmn-semantic-color_content-action);
   font-size: var(--vtmn-typo_text-2-font-size);
   text-decoration: underline;
-  transition: box-shadow 200ms;
+  transition: box-shadow 200ms ease-out;
 }
 
 .vtmn-link--standalone {

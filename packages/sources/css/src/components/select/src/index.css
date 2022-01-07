@@ -25,6 +25,7 @@
   background-color: var(--vtmn-semantic-color_background-primary);
   cursor: pointer;
   border: 0;
+  transition: box-shadow 200ms ease-out;
 }
 
 /* Set the dropdown arrow icon */

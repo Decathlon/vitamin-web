@@ -30,6 +30,7 @@
   color: var(--vtmn-semantic-color_content-primary);
   min-height: rem(48px);
   appearance: none;
+  transition: box-shadow 200ms ease-out;
 }
 
 textarea.vtmn-text-input {
