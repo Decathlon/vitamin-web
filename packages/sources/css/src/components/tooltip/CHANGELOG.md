@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.8](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tooltip@0.4.7...@vtmn/css-tooltip@0.4.8) (2022-01-10)
+
+**Note:** Version bump only for package @vtmn/css-tooltip
+
+
+
+
+
 ## [0.4.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tooltip@0.4.6...@vtmn/css-tooltip@0.4.7) (2022-01-05)
 
 **Note:** Version bump only for package @vtmn/css-tooltip

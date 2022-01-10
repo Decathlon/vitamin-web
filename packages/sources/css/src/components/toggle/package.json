@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-toggle",
-  "version": "0.4.7",
+  "version": "0.5.0",
   "description": "Decathlon Design System - Vitamin specific CSS styles for toggle component",
   "keywords": [
     "design-system",
@@ -26,7 +26,7 @@
     "build": "node build.js"
   },
   "devDependencies": {
-    "@vtmn/css-design-tokens": "^0.11.0",
+    "@vtmn/css-design-tokens": "^0.12.0",
     "@vtmn/css-postcss-config": "*"
   },
   "publishConfig": {

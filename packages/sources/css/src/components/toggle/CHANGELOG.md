@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-toggle@0.4.7...@vtmn/css-toggle@0.5.0) (2022-01-10)
+
+
+### Features
+
+* **@vtmn/css:** add transition on focus-visible ([#866](https://github.com/Decathlon/vitamin-web/issues/866)) ([81820b4](https://github.com/Decathlon/vitamin-web/commit/81820b4ebfcd8df223b8415885cb37a5d4ab5bd2))
+
+
+
+
+
 ## [0.4.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-toggle@0.4.6...@vtmn/css-toggle@0.4.7) (2022-01-05)
 
 **Note:** Version bump only for package @vtmn/css-toggle
