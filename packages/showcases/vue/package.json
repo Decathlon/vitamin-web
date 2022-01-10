@@ -28,7 +28,7 @@
     "@vue/compiler-sfc": "^3.2.19",
     "@whitespace/storybook-addon-html": "^5.0.0",
     "babel-loader": "^8.0.0",
-    "css-loader": "^5.2.7",
+    "css-loader": "5.2.7",
     "param-case": "^3.0.4",
     "storybook-addon-designs": "^6.0.0",
     "ts-dedent": "^2.2.0",
