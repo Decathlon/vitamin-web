@@ -3,6 +3,7 @@
 @import '@vtmn/css-design-tokens/src/typography';
 @import '@vtmn/css-design-tokens/src/shadows';
 @import '@vtmn/css-design-tokens/src/spacings';
+@import '@vtmn/css-design-tokens/src/transitions';
 
 .vtmn-tabs {
   height: fit-content;
@@ -33,7 +34,7 @@
   color: var(--vtmn-semantic-color_content-secondary);
   border-bottom: rem(2px) solid transparent;
   transition: border-bottom 200ms ease, color 200ms ease,
-    box-shadow 200ms ease-out;
+    var(--vtmn-transition_focus-visible);
   outline: none;
   text-decoration: none;
 }

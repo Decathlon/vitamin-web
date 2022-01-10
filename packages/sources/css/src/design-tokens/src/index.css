@@ -8,5 +8,6 @@
 @import './themes/default';
 @import './themes/core-light';
 @import './themes/core-dark';
+@import './transitions';
 @import './typography';
 @import './z-indexes';

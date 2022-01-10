@@ -2,6 +2,7 @@
 @import '@vtmn/css-design-tokens/src/themes/default';
 @import '@vtmn/css-design-tokens/src/typography';
 @import '@vtmn/css-design-tokens/src/opacities';
+@import '@vtmn/css-design-tokens/src/transitions';
 
 .vtmn-select_container {
   font-family: var(--vtmn-typo_font-family);
@@ -25,7 +26,7 @@
   background-color: var(--vtmn-semantic-color_background-primary);
   cursor: pointer;
   border: 0;
-  transition: box-shadow 200ms ease-out;
+  transition: var(--vtmn-transition_focus-visible);
 }
 
 /* Set the dropdown arrow icon */

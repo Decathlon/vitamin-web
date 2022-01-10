@@ -3,6 +3,7 @@
 @import '@vtmn/css-design-tokens/src/typography';
 @import '@vtmn/css-design-tokens/src/opacities';
 @import '@vtmn/css-design-tokens/src/shadows';
+@import '@vtmn/css-design-tokens/src/transitions';
 
 .vtmn-breadcrumb {
   display: block;
@@ -18,7 +19,7 @@
 .vtmn-breadcrumb a {
   text-decoration: none;
   color: inherit;
-  transition: box-shadow 200ms ease-out;
+  transition: var(--vtmn-transition_focus-visible);
 }
 
 .vtmn-breadcrumb button {

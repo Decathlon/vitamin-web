@@ -3,6 +3,7 @@
 @import '@vtmn/css-design-tokens/src/typography';
 @import '@vtmn/css-design-tokens/src/spacings';
 @import '@vtmn/css-design-tokens/src/shadows';
+@import '@vtmn/css-design-tokens/src/transitions';
 
 .vtmn-tag {
   box-sizing: border-box;
@@ -26,7 +27,7 @@
 
 a.vtmn-tag:focus-visible {
   box-shadow: var(--vtmn-shadow_focus-visible);
-  transition: box-shadow 200ms ease-out;
+  transition: var(--vtmn-transition_focus-visible);
 }
 
 /* Variants */

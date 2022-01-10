@@ -3,6 +3,7 @@
 @import '@vtmn/css-design-tokens/src/typography';
 @import '@vtmn/css-design-tokens/src/opacities';
 @import '@vtmn/css-design-tokens/src/shadows';
+@import '@vtmn/css-design-tokens/src/transitions';
 
 /* Default button */
 .vtmn-btn {
@@ -26,7 +27,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   background-color: var(--vtmn-semantic-color_background-brand-primary);
-  transition: box-shadow 200ms ease-out;
+  transition: var(--vtmn-transition_focus-visible);
 }
 
 .vtmn-btn:not(:disabled):hover {

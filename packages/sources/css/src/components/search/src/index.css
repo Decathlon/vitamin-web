@@ -3,6 +3,7 @@
 @import '@vtmn/css-design-tokens/src/typography';
 @import '@vtmn/css-design-tokens/src/opacities';
 @import '@vtmn/css-design-tokens/src/shadows';
+@import '@vtmn/css-design-tokens/src/transitions';
 
 .vtmn-search {
   display: flex;
@@ -27,7 +28,7 @@
   appearance: none;
   width: 100%;
   border: 0;
-  transition: box-shadow 200ms ease-out;
+  transition: var(--vtmn-transition_focus-visible);
 }
 
 /* Remove default search input appearance */
