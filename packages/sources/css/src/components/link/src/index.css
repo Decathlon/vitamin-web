@@ -2,6 +2,7 @@
 @import '@vtmn/css-design-tokens/src/themes/default';
 @import '@vtmn/css-design-tokens/src/typography';
 @import '@vtmn/css-design-tokens/src/shadows';
+@import '@vtmn/css-design-tokens/src/transitions';
 
 .vtmn-link {
   font-family: var(--vtmn-typo_font-family);
@@ -9,6 +10,7 @@
   color: var(--vtmn-semantic-color_content-action);
   font-size: var(--vtmn-typo_text-2-font-size);
   text-decoration: underline;
+  transition: var(--vtmn-transition_focus-visible);
 }
 
 .vtmn-link--standalone {

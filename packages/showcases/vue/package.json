@@ -15,9 +15,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.16.5",
-    "@storybook/addon-a11y": "^6.4.9",
-    "@storybook/addon-essentials": "^6.4.9",
-    "@storybook/vue3": "^6.4.9",
+    "@storybook/addon-a11y": "^6.4.10",
+    "@storybook/addon-essentials": "^6.4.10",
+    "@storybook/vue3": "^6.4.10",
     "@vtmn/css": "*",
     "@vtmn/icons": "*",
     "@vtmn/showcase-core": "*",
