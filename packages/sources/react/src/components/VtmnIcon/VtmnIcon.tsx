@@ -48,9 +48,22 @@ export const VtmnIcon: React.FC<VtmnIconProps> = ({
         return 'content-information';
       case 'warning':
         return 'content-warning';
-      case 'danger':
-        return 'content-danger';
+      case 'negative':
+        return 'content-negative';
     }
+  };
+
+  const getIconColor = () => {
+    let iconColor = undefined;
+    if (color) {
+      iconColor = `var(--vtmn-color_${color})`;
+    } else if (variant !== 'default') {
+      iconColor = `var(--vtmn-semantic-color_${retrieveSemanticColor(
+        variant,
+      )})`;
+    }
+
+    return iconColor;
   };
 
   return (
@@ -58,9 +71,7 @@ export const VtmnIcon: React.FC<VtmnIconProps> = ({
       className={`vtmx-${value} ${className ? className : ''}`}
       style={{
         fontSize: size,
-        color: color
-          ? `var(--vtmn-color_${color})`
-          : `var(--vtmn-semantic-color_${retrieveSemanticColor(variant)})`,
+        color: getIconColor(),
         ...style,
       }}
       {...props}
