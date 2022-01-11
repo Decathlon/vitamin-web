@@ -19,6 +19,7 @@ module.exports = {
       'large-desktop': { min: '1800px' },
     },
     colors: {
+      transparent: 'transparent',
       'background-primary': 'var(--vtmn-semantic-color_background-primary)',
       'background-secondary': 'var(--vtmn-semantic-color_background-secondary)',
       'background-tertiary': 'var(--vtmn-semantic-color_background-tertiary)',
