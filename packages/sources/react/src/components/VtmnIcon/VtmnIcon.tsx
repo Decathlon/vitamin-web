@@ -50,16 +50,14 @@ export const VtmnIcon: React.FC<VtmnIconProps> = ({
         return 'content-warning';
       case 'negative':
         return 'content-negative';
-      case 'neutral':
-        return '';
     }
   };
 
   const getIconColor = () => {
-    let iconColor = 'inherit';
+    let iconColor = undefined;
     if (color) {
       iconColor = `var(--vtmn-color_${color})`;
-    } else if (variant !== 'neutral') {
+    } else if (variant !== 'default') {
       iconColor = `var(--vtmn-semantic-color_${retrieveSemanticColor(
         variant,
       )})`;

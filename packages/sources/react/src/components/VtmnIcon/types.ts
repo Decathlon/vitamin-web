@@ -14,7 +14,6 @@ export type VtmnIconVariant =
   | 'positive'
   | 'information'
   | 'warning'
-  | 'negative'
-  | 'neutral';
+  | 'negative';
 
 export type VtmnIconSize = 16 | 20 | 24 | 32 | 64;

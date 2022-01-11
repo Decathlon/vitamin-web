@@ -50,7 +50,6 @@ export const argTypes = {
         'information',
         'warning',
         'negative',
-        'neutral',
       ],
     },
   },
