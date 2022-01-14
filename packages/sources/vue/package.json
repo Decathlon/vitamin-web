@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/vue",
-  "version": "0.9.10",
+  "version": "0.9.11",
   "description": "Decathlon Design System - Vitamin Vue components library",
   "keywords": [
     "design-system",
@@ -30,7 +30,7 @@
     "start": "concurrently \"vite build --watch\" \"tsc --emitDeclarationOnly\""
   },
   "dependencies": {
-    "@vtmn/css-design-tokens": "^0.12.0",
+    "@vtmn/css-design-tokens": "^0.12.1",
     "core-js": "^3.18.1",
     "vue": "^3.2.26"
   },
@@ -43,12 +43,12 @@
     "@rollup/plugin-typescript": "^8.3.0",
     "@types/bluebird": "^3.5.36",
     "@vitejs/plugin-vue": "^2.0.1",
-    "@vtmn/css-button": "^0.9.0",
-    "@vtmn/css-checkbox": "^0.6.0",
-    "@vtmn/css-link": "^0.6.0",
-    "@vtmn/css-radio-button": "^0.6.0",
-    "@vtmn/css-text-input": "^0.12.0",
-    "@vtmn/css-toggle": "^0.5.1",
+    "@vtmn/css-button": "^0.9.1",
+    "@vtmn/css-checkbox": "^0.6.1",
+    "@vtmn/css-link": "^0.6.1",
+    "@vtmn/css-radio-button": "^0.6.1",
+    "@vtmn/css-text-input": "^0.12.1",
+    "@vtmn/css-toggle": "^0.5.2",
     "@vtmn/icons": "^0.6.1",
     "@vue/cli-plugin-typescript": "^4.5.11",
     "@vue/cli-service": "^4.5.11",
