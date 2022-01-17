@@ -6,6 +6,7 @@
 <!--- If it fixes an opened issue, please link to the issue here. -->
 
 ## Checklist
+<!--- Feel free to add other steps if needed. -->
 
 - [ ] Make sure you are requesting to **pull a topic/feature/bugfix branch**. Don't request your main!
 - [ ] Check the commit's or even all commits' message styles matches our requested structure.
