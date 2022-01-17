@@ -98,9 +98,9 @@ If you are not familiar with Git and GitHub terms you can check a complete [glos
 
 ## How Can I contribute?
 
-### Reporting Bug
+### Propose an issue
 
-The first way to contribute to a project is simply reporting a Bug. If you find anything which is not working well or as expected you can [open an issue](https://github.com/decathlon/vitamin-web/issues) repository.
+The first way to contribute to a project is simply proposing an issue. If you find anything which is not working well or as expected you can [open an issue](https://github.com/Decathlon/vitamin-web/issues/new).
 
 Before to open the issue please check if there is one similar already opened. It will save us hours of work and it will allow us to answer you quickly with the desired hotfix or implementation.
 
@@ -108,7 +108,7 @@ Before to open the issue please check if there is one similar already opened. It
 
 When you are opening an issue, please be sure to report as much information as you can to allow us to replicate the problem and faster find the solution.
 
-### Code Contribution
+### Code contribution
 
 If you are a dev and you want to directly fix a problem or implement a new feature... you are the best one! :clap::clap:
 
@@ -128,7 +128,7 @@ The workflow we are using the one-pay project is:
 We will take the time to review your code, make some comments or asking information if needed. But, as you took time to help us, we will take in serious consideration what you are proposing.
 To quickly have your code available on production, please take care and read our [Contribution acceptance criteria](#contribution-acceptance-criteria)
 
-#### Commit and Push on your branch
+#### Commit and push on your branch
 
 ```bash
 git add <files>
