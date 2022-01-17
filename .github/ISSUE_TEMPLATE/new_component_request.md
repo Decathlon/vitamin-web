@@ -1,8 +1,8 @@
 ---
-name: Bug report
-about: Create a report to help us improve
-title: 'bug: '
-labels: bug 🐛
+name: New component request
+about: Suggest a component for this project
+title: 'feat: add [component name] component'
+labels: enhancement 🚀
 ---
 
 <!-- 
@@ -20,31 +20,18 @@ labels: bug 🐛
     Thanks!
 -->
 
-**Describe the bug**
-<!-- A clear and concise description of what the bug is. -->
+**New component**
+<!-- A clear and concise description of what the feature request is. Please include if your feature request is related to a problem. -->
 
-**Steps to reproduce**
-<!--
-    Steps to reproduce the behavior:
-    1. Go to '...'
-    2. Click on '....'
-    3. Scroll down to '....'
-    4. See error
--->
+**Documentation links**
 
-**Expected behavior**
-<!-- A clear and concise description of what you expected to happen. -->
+- [Documentation](https://decathlon.design/...)
+- [Figma](https://figma.com/...)
 
-**Browsers affected**
+**Checklist**
+<!-- Please, don't modify this checklist. -->
 
-<!-- Choose your browser(s):
-    - Chrome
-    - Firefox
-    - Edge
-    - Safari
--->
-
-**Version affected**
-<!--
-@vtmn/...: vX.X.X
--->
+- [ ] CSS
+- [ ] React
+- [ ] Svelte
+- [ ] Vue

@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.11](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-rating@0.2.10...@vtmn/css-rating@0.2.11) (2022-01-17)
+
+**Note:** Version bump only for package @vtmn/css-rating
+
+
+
+
+
+## [0.2.10](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-rating@0.2.9...@vtmn/css-rating@0.2.10) (2022-01-14)
+
+**Note:** Version bump only for package @vtmn/css-rating
+
+
+
+
+
+## [0.2.9](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-rating@0.2.8...@vtmn/css-rating@0.2.9) (2022-01-10)
+
+**Note:** Version bump only for package @vtmn/css-rating
+
+
+
+
+
 ## [0.2.8](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-rating@0.2.7...@vtmn/css-rating@0.2.8) (2022-01-05)
 
 **Note:** Version bump only for package @vtmn/css-rating

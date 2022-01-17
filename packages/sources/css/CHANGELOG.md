@@ -3,6 +3,60 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.46.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.46.4...@vtmn/css@0.46.5) (2022-01-17)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** animation alert disapearing ([#884](https://github.com/Decathlon/vitamin-web/issues/884)) ([0a9f92b](https://github.com/Decathlon/vitamin-web/commit/0a9f92b0b22c66d8137e05cadbb6337df322c517))
+
+
+
+
+
+## [0.46.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.46.3...@vtmn/css@0.46.4) (2022-01-14)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+## [0.46.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.46.2...@vtmn/css@0.46.3) (2022-01-11)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+## [0.46.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.46.1...@vtmn/css@0.46.2) (2022-01-11)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+## [0.46.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.46.0...@vtmn/css@0.46.1) (2022-01-10)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+# [0.46.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.45.0...@vtmn/css@0.46.0) (2022-01-10)
+
+
+### Features
+
+* **@vtmn/css:** add transition on focus-visible ([#866](https://github.com/Decathlon/vitamin-web/issues/866)) ([81820b4](https://github.com/Decathlon/vitamin-web/commit/81820b4ebfcd8df223b8415885cb37a5d4ab5bd2))
+
+
+
+
+
 # [0.45.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.44.0...@vtmn/css@0.45.0) (2022-01-05)
 
 

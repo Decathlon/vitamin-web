@@ -3,6 +3,7 @@
 @import '@vtmn/css-design-tokens/src/typography';
 @import '@vtmn/css-design-tokens/src/opacities';
 @import '@vtmn/css-design-tokens/src/shadows';
+@import '@vtmn/css-design-tokens/src/transitions';
 
 .vtmn-checkbox[type='checkbox'] {
   position: absolute;
@@ -26,7 +27,7 @@
   border-width: rem(2px);
   border-style: solid;
   border-radius: rem(1px);
-  transition: all 0.275s;
+  transition: var(--vtmn-transition_focus-visible);
   margin-top: rem(3px);
   margin-right: rem(11px);
   padding: rem(7px);

@@ -3,6 +3,7 @@
 @import '@vtmn/css-design-tokens/src/typography';
 @import '@vtmn/css-design-tokens/src/opacities';
 @import '@vtmn/css-design-tokens/src/shadows';
+@import '@vtmn/css-design-tokens/src/transitions';
 
 .vtmn-toggle {
   display: flex;
@@ -78,7 +79,8 @@
   width: 100%;
   height: 100%;
   background-color: var(--vtmn-semantic-color_content-inactive);
-  transition: background-color 0.4s, box-shadow 0.2s;
+  transition: background-color 0.2s ease-out,
+    var(--vtmn-transition_focus-visible);
   border-radius: rem(16px);
   pointer-events: none;
 }
@@ -91,7 +93,8 @@
   left: rem(4px);
   top: rem(4px);
   background-color: var(--vtmn-semantic-color_content-primary-reversed);
-  transition: box-shadow 0.2s, transform 0.2s, background-color 0.2s;
+  transition: var(--vtmn-transition_focus-visible), transform 0.2s ease-out,
+    background-color 0.2s ease-out;
   border-radius: 50%;
 }
 
@@ -100,7 +103,8 @@
   position: absolute;
   top: rem(10px);
   left: rem(9px);
-  transition: box-shadow 0.2s, transform 0.2s, background-color 0.2s;
+  transition: var(--vtmn-transition_focus-visible), transform 0.2s ease-out,
+    background-color 0.2s ease-out;
   opacity: 0;
 }
 

@@ -2,6 +2,7 @@
 @import '@vtmn/css-design-tokens/src/themes/default';
 @import '@vtmn/css-design-tokens/src/typography';
 @import '@vtmn/css-design-tokens/src/opacities';
+@import '@vtmn/css-design-tokens/src/transitions';
 
 .vtmn-text-input_label,
 .vtmn-text-input,
@@ -30,6 +31,7 @@
   color: var(--vtmn-semantic-color_content-primary);
   min-height: rem(48px);
   appearance: none;
+  transition: var(--vtmn-transition_focus-visible);
 }
 
 textarea.vtmn-text-input {
