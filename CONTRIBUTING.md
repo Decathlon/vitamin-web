@@ -96,7 +96,7 @@ This project and everyone participating in it is governed by the [following code
 
 If you are not familiar with Git and GitHub terms you can check a complete [glossary](https://help.github.com/articles/github-glossary/) on the GitHub website.
 
-## How Can I contribute?
+## How can I contribute?
 
 ### Propose an issue
 
