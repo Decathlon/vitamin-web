@@ -23,6 +23,7 @@
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
   font-weight: var(--vtmn-typo_font-weight--bold);
+  line-height: 1;
   outline: none;
   height: rem(40px);
   box-sizing: border-box;
@@ -110,11 +111,11 @@
 
 .vtmn-chip_variant--filter > .vtmn-badge {
   font-weight: var(--vtmn-typo_font-weight--normal);
-  transform: translateX(rem(6px));
+  transform: translateX(rem(5px));
 }
 
 .vtmn-chip_variant--filter.vtmn-chip_size--medium > .vtmn-badge {
-  transform: translateX(rem(6px));
+  transform: translateX(rem(5px));
 }
 
 .vtmn-chip_variant--filter.vtmn-chip--selected {
@@ -174,11 +175,19 @@
 .vtmn-chip_variant--input > span[class^='vtmx-'],
 .vtmn-chip_variant--input > svg {
   transform: translateX(rem(-6px));
+  font-size: rem(20px);
+}
+
+.vtmn-chip_variant--input.vtmn-chip_size--small > span[class^='vtmx-'],
+.vtmn-chip_variant--input.vtmn-chip_size--small > svg {
+  transform: translateX(rem(-4px));
+  font-size: rem(16px);
 }
 
 .vtmn-chip_variant--input.vtmn-chip_size--medium > span[class^='vtmx-'],
 .vtmn-chip_variant--input.vtmn-chip_size--medium > svg {
   transform: translateX(rem(-6px));
+  font-size: rem(20px);
 }
 
 .vtmn-chip_variant--input > img {
@@ -189,7 +198,7 @@
 }
 
 .vtmn-chip_variant--input.vtmn-chip_size--small > img {
-  transform: translateX(rem(-8px));
+  transform: translateX(rem(-6px));
 }
 
 .vtmn-chip_variant--input.vtmn-chip_size--medium > img {
