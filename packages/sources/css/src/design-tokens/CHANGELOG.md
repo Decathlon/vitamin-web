@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@0.12.1...@vtmn/css-design-tokens@0.12.2) (2022-01-17)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** animation alert disapearing ([#884](https://github.com/Decathlon/vitamin-web/issues/884)) ([0a9f92b](https://github.com/Decathlon/vitamin-web/commit/0a9f92b0b22c66d8137e05cadbb6337df322c517))
+
+
+
+
+
 ## [0.12.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@0.12.0...@vtmn/css-design-tokens@0.12.1) (2022-01-14)
 
 **Note:** Version bump only for package @vtmn/css-design-tokens

@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-button",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "Decathlon Design System - Vitamin specific CSS styles for button component",
   "keywords": [
     "design-system",
@@ -27,7 +27,7 @@
     "build": "node build.js"
   },
   "devDependencies": {
-    "@vtmn/css-design-tokens": "^0.12.1",
+    "@vtmn/css-design-tokens": "^0.12.2",
     "@vtmn/css-postcss-config": "*"
   },
   "publishConfig": {

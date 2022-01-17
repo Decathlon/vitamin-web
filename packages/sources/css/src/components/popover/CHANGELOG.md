@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.10](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-popover@0.3.9...@vtmn/css-popover@0.3.10) (2022-01-17)
+
+**Note:** Version bump only for package @vtmn/css-popover
+
+
+
+
+
 ## [0.3.9](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-popover@0.3.8...@vtmn/css-popover@0.3.9) (2022-01-14)
 
 **Note:** Version bump only for package @vtmn/css-popover

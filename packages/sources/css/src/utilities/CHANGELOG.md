@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.9](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-utilities@0.2.8...@vtmn/css-utilities@0.2.9) (2022-01-17)
+
+**Note:** Version bump only for package @vtmn/css-utilities
+
+
+
+
+
 ## [0.2.8](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-utilities@0.2.7...@vtmn/css-utilities@0.2.8) (2022-01-14)
 
 **Note:** Version bump only for package @vtmn/css-utilities
