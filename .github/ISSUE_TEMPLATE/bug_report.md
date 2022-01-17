@@ -2,65 +2,36 @@
 name: Bug Report
 about: Create a report to help us improve
 title: 'bug: '
-labels: 'bug \U0001F41B'
-assignees: ''
+labels: bug 🐛
 ---
 
-<!-- Before submitting an issue, please consult our docs (https://decathlon.design). -->
+<!-- Before submitting an issue, please consult our docs (https://decathlon.design). Please make sure you are posting an issue pertaining to the Decathlon Design System. -->
 
-<!-- Please make sure you are posting an issue pertaining to the Decathlon Design System. -->
-
-# Bug Report
-
-**Bug report**
-
-<!-- Describe your bug report here. -->
-
-**Current behavior**
-
-<!-- Describe how the bug manifests. -->
-
-**Expected behavior**
-
-<!-- Describe what the behavior would be without the bug. -->
+**Describe the bug**
+<!-- A clear and concise description of what the bug is. -->
 
 **Steps to reproduce**
-
-<!--  Please explain the steps required to duplicate the issue, especially if you are able to provide a sample application. -->
-
-**Related code**
-
-<!-- If you are able to illustrate the bug or feature request with an example, please provide a sample application via one of the following means:
-
-A sample application via GitHub
-StackBlitz (https://stackblitz.com)
-Plunker (http://plnkr.co)
-
+<!--
+    Steps to reproduce the behavior:
+    1. Go to '...'
+    2. Click on '....'
+    3. Scroll down to '....'
+    4. See error
 -->
 
-```
-insert short code snippets here
-```
+**Expected behavior**
+<!-- A clear and concise description of what you expected to happen. -->
 
 **Browsers affected**
 
-<!-- Choose browsers affected. -->
-
-- Chrome
-- Firefox
-- Edge
-- Safari 11
-- Safari 10
-- IE 11
-
-**Versions**
-
-<!--
-@vtmn/... version
+<!-- Choose your browser(s):
+    - Chrome
+    - Firefox
+    - Edge
+    - Safari
 -->
 
-- @vtmn/...: vX.X.X
-
-**Other information:**
-
-<!-- List any other information that is relevant to your issue. Stack traces, related issues, suggestions on how to fix, Stack Overflow links, forum links, etc. -->
+**Version affected**
+<!--
+@vtmn/...: vX.X.X
+-->
