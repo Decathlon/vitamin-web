@@ -103,7 +103,7 @@
   display: flex;
   position: fixed;
   top: rem(32px);
-  right: 0;
+  right: rem(16px);
   animation: var(--vtmn-animation_alert);
 }
 
@@ -115,7 +115,7 @@
 
   .vtmn-alert.show {
     top: initial;
-    right: 0;
+    right: rem(16px);
     bottom: rem(32px);
     left: rem(16px);
     animation: var(--vtmn-animation_alert-mobile);
