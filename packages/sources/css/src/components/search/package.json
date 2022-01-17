@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-search",
-  "version": "0.1.2",
+  "version": "0.2.2",
   "description": "Decathlon Design System - Vitamin specific CSS styles for search component",
   "keywords": [
     "design-system",
@@ -26,7 +26,7 @@
     "build": "node build.js"
   },
   "devDependencies": {
-    "@vtmn/css-design-tokens": "^0.10.2",
+    "@vtmn/css-design-tokens": "^0.12.2",
     "@vtmn/css-postcss-config": "*"
   },
   "publishConfig": {

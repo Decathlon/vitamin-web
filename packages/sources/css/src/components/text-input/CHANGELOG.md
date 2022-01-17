@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-text-input@0.12.1...@vtmn/css-text-input@0.12.2) (2022-01-17)
+
+**Note:** Version bump only for package @vtmn/css-text-input
+
+
+
+
+
+## [0.12.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-text-input@0.12.0...@vtmn/css-text-input@0.12.1) (2022-01-14)
+
+**Note:** Version bump only for package @vtmn/css-text-input
+
+
+
+
+
+# [0.12.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-text-input@0.11.3...@vtmn/css-text-input@0.12.0) (2022-01-10)
+
+
+### Features
+
+* **@vtmn/css:** add transition on focus-visible ([#866](https://github.com/Decathlon/vitamin-web/issues/866)) ([81820b4](https://github.com/Decathlon/vitamin-web/commit/81820b4ebfcd8df223b8415885cb37a5d4ab5bd2))
+
+
+
+
+
+## [0.11.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-text-input@0.11.2...@vtmn/css-text-input@0.11.3) (2022-01-05)
+
+**Note:** Version bump only for package @vtmn/css-text-input
+
+
+
+
+
 ## [0.11.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-text-input@0.11.1...@vtmn/css-text-input@0.11.2) (2022-01-03)
 
 **Note:** Version bump only for package @vtmn/css-text-input

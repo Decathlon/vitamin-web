@@ -49,7 +49,7 @@ export const argTypes = {
         'positive',
         'information',
         'warning',
-        'danger',
+        'negative',
       ],
     },
   },

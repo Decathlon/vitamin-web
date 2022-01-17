@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.7.5...@vtmn/css-badge@0.8.0) (2022-01-17)
+
+
+### Features
+
+* **@vtmn/css:** fix alignements pb + font style shortcut ([#890](https://github.com/Decathlon/vitamin-web/issues/890)) ([6b31b94](https://github.com/Decathlon/vitamin-web/commit/6b31b943acd3d159110d1b3013f687187f728cf3))
+
+
+
+
+
+## [0.7.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.7.4...@vtmn/css-badge@0.7.5) (2022-01-17)
+
+**Note:** Version bump only for package @vtmn/css-badge
+
+
+
+
+
+## [0.7.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.7.3...@vtmn/css-badge@0.7.4) (2022-01-14)
+
+**Note:** Version bump only for package @vtmn/css-badge
+
+
+
+
+
+## [0.7.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.7.2...@vtmn/css-badge@0.7.3) (2022-01-10)
+
+**Note:** Version bump only for package @vtmn/css-badge
+
+
+
+
+
+## [0.7.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.7.1...@vtmn/css-badge@0.7.2) (2022-01-05)
+
+**Note:** Version bump only for package @vtmn/css-badge
+
+
+
+
+
 ## [0.7.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.7.0...@vtmn/css-badge@0.7.1) (2022-01-03)
 
 **Note:** Version bump only for package @vtmn/css-badge
