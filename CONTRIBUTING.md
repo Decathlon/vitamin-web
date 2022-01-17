@@ -98,7 +98,7 @@ If you are not familiar with Git and GitHub terms you can check a complete [glos
 
 ## How can I contribute?
 
-### Propose an issue
+### Reporting an issue
 
 The first way to contribute to a project is simply proposing an issue. If you find anything which is not working well or as expected you can [open an issue](https://github.com/Decathlon/vitamin-web/issues/new/choose).
 
