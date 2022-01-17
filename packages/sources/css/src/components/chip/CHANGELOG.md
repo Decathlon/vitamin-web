@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-chip@0.4.2...@vtmn/css-chip@0.5.0) (2022-01-17)
+
+
+### Features
+
+* **@vtmn/css:** fix alignements pb + font style shortcut ([#890](https://github.com/Decathlon/vitamin-web/issues/890)) ([6b31b94](https://github.com/Decathlon/vitamin-web/commit/6b31b943acd3d159110d1b3013f687187f728cf3))
+
+
+
+
+
 ## [0.4.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-chip@0.4.1...@vtmn/css-chip@0.4.2) (2022-01-17)
 
 **Note:** Version bump only for package @vtmn/css-chip

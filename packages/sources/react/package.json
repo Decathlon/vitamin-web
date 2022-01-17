@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/react",
-  "version": "0.17.2",
+  "version": "0.17.3",
   "description": "Decathlon Design System - Vitamin React components library",
   "keywords": [
     "design-system",
@@ -46,7 +46,7 @@
     "@typescript-eslint/eslint-plugin": "^5.8.1",
     "@typescript-eslint/parser": "^5.8.1",
     "@vtmn/css-alert": "^0.4.6",
-    "@vtmn/css-badge": "^0.7.5",
+    "@vtmn/css-badge": "^0.8.0",
     "@vtmn/css-button": "^0.9.2",
     "@vtmn/css-checkbox": "^0.6.2",
     "@vtmn/css-link": "^0.6.2",
