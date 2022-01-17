@@ -17,39 +17,50 @@
   color: var(--vtmn-semantic-color_content-primary);
   font-weight: var(--vtmn-typo_font-weight--normal);
   background-color: var(--vtmn-semantic-color_background-primary);
-  cursor: pointer;
   border-bottom: rem(1px) solid var(--vtmn-semantic-color_border-secondary);
   outline: 0;
 }
 
-.vtmn-accordion:not([aria-disabled='true']):hover,
-.vtmn-accordion:not([aria-disabled='true']):hover > * {
-  background-color: var(--vtmn-semantic-color_hover-primary);
-}
-
-.vtmn-accordion:not([aria-disabled='true']):active,
-.vtmn-accordion:not([aria-disabled='true']):active > * {
-  background-color: var(--vtmn-semantic-color_active-primary);
-}
-
-.vtmn-accordion[aria-disabled='true'],
-.vtmn-accordion[aria-disabled='true'] > * {
-  opacity: var(--vtmn-opacity_disabled-state);
-  cursor: not-allowed;
-  pointer-events: none;
+.vtmn-accordion--icon-left summary::before {
+  content: '';
+  mask: url("data:image/svg+xml;charset=utf-8, %3csvg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.333 8a6.666 6.666 0 1 0 13.333 0A6.666 6.666 0 0 0 1.333 8Zm12 0A5.333 5.333 0 1 1 2.667 8a5.333 5.333 0 0 1 10.666 0ZM8.667 4.667V6H7.333V4.667h1.334Zm0 6.666v-4H7.333v4h1.334Z'/%3e%3c/svg%3e");
+  mask-size: cover;
+  width: rem(24px);
+  height: rem(24px);
+  position: relative;
+  display: inline-block;
+  margin-right: rem(12px);
+  background-color: var(--vtmn-semantic-color_content-primary);
 }
 
 .vtmn-accordion summary {
   display: flex;
+  cursor: pointer;
   list-style: none;
   font-weight: var(--vtmn-typo_font-weight--bold);
   position: relative;
   padding: var(--vtmn-spacing_3) var(--vtmn-spacing_4);
   outline: 0;
+  transition: background-color 400ms ease;
+}
+
+.vtmn-accordion:not([aria-disabled='true']) summary:hover {
+  background-color: var(--vtmn-semantic-color_hover-primary);
+}
+
+.vtmn-accordion:not([aria-disabled='true']) summary:active {
+  background-color: var(--vtmn-semantic-color_active-primary);
 }
 
 .vtmn-accordion:not([aria-disabled='true']) > summary:focus-visible {
   box-shadow: var(--vtmn-shadow_focus-visible);
+}
+
+.vtmn-accordion[aria-disabled='true'],
+.vtmn-accordion[aria-disabled='true'] summary,
+.vtmn-accordion[aria-disabled='true'] > * {
+  opacity: var(--vtmn-opacity_disabled-state);
+  pointer-events: none;
 }
 
 .vtmn-accordion summary > span[class^='vtmx-'] {
@@ -66,11 +77,12 @@
   right: 0;
   margin-inline-end: var(--vtmn-spacing_3);
   background-color: var(--vtmn-semantic-color_content-primary);
+  transition: transform 400ms ease;
 }
 
 .vtmn-accordion summary ~ * {
   background-color: var(--vtmn-semantic-color_background-primary);
-  padding: 0 rem(40px) var(--vtmn-spacing_3) var(--vtmn-spacing_4);
+  padding: var(--vtmn-spacing_4);
   margin: 0;
 }
 
@@ -83,25 +95,5 @@
 }
 
 .vtmn-accordion[open] summary::after {
-  transform: rotateX(180deg);
-}
-
-/* Variant */
-
-/* Without Divider */
-
-.vtmn-accordion_variant--without-divider {
-  border-radius: rem(8px);
-  border-bottom: 0;
-  border: rem(1px) solid var(--vtmn-semantic-color_border-secondary);
-  margin-block-end: var(--vtmn-spacing_3);
-}
-
-.vtmn-accordion_variant--without-divider > summary {
-  border-radius: rem(8px);
-}
-
-.vtmn-accordion_variant--without-divider[open] > *:last-child {
-  border-radius: 0 0 rem(8px) rem(8px);
-  border-bottom: rem(1px) solid var(--vtmn-semantic-color_border-secondary);
+  transform: rotateZ(-180deg);
 }
