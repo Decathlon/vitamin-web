@@ -1,5 +1,5 @@
 ---
-name: New component Request
+name: New component request
 about: Suggest a component for this project
 title: 'feat: add [component name] component'
 labels: enhancement 🚀
