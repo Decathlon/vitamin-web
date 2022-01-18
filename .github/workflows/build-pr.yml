@@ -48,6 +48,7 @@ jobs:
 #           'packages/sources/css/src/components/checkbox',
 #           'packages/sources/css/src/components/chip',
 #           'packages/sources/css/src/components/divider',
+#           'packages/sources/css/src/components/dropdown',
 #           'packages/sources/css/src/components/link',
 #           'packages/sources/css/src/components/list',
 #           'packages/sources/css/src/components/loader',
