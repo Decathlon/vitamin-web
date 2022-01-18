@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-chip@0.4.2...@vtmn/css-chip@0.5.0) (2022-01-17)
+
+
+### Features
+
+* **@vtmn/css:** fix alignements pb + font style shortcut ([#890](https://github.com/Decathlon/vitamin-web/issues/890)) ([6b31b94](https://github.com/Decathlon/vitamin-web/commit/6b31b943acd3d159110d1b3013f687187f728cf3))
+
+
+
+
+
+## [0.4.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-chip@0.4.1...@vtmn/css-chip@0.4.2) (2022-01-17)
+
+**Note:** Version bump only for package @vtmn/css-chip
+
+
+
+
+
+## [0.4.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-chip@0.4.0...@vtmn/css-chip@0.4.1) (2022-01-14)
+
+**Note:** Version bump only for package @vtmn/css-chip
+
+
+
+
+
+# [0.4.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-chip@0.3.0...@vtmn/css-chip@0.4.0) (2022-01-10)
+
+
+### Features
+
+* **@vtmn/css:** add transition on focus-visible ([#866](https://github.com/Decathlon/vitamin-web/issues/866)) ([81820b4](https://github.com/Decathlon/vitamin-web/commit/81820b4ebfcd8df223b8415885cb37a5d4ab5bd2))
+
+
+
+
+
 # [0.3.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-chip@0.2.3...@vtmn/css-chip@0.3.0) (2022-01-05)
 
 

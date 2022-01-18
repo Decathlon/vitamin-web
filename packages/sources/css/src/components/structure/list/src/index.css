@@ -4,6 +4,7 @@
 @import '@vtmn/css-design-tokens/src/opacities';
 @import '@vtmn/css-design-tokens/src/shadows';
 @import '@vtmn/css-design-tokens/src/spacings';
+@import '@vtmn/css-design-tokens/src/transitions';
 
 .vtmn-list {
   display: block;
@@ -24,6 +25,7 @@
   width: 100%;
   outline: 0;
   cursor: pointer;
+  transition: var(--vtmn-transition_focus-visible);
 }
 
 .vtmn-list li:not([aria-disabled='true']):hover {

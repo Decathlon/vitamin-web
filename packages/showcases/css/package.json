@@ -34,7 +34,7 @@
     "storybook-addon-run-script": "^0.1.4",
     "storybook-design-token": "^0.8.1",
     "typescript": "^4.5.4",
-    "webpack": "^4.3.0"
+    "webpack": "^5.0.0"
   },
   "licenses": [
     {

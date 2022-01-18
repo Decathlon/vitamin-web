@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/vue",
-  "version": "0.9.8",
+  "version": "0.9.12",
   "description": "Decathlon Design System - Vitamin Vue components library",
   "keywords": [
     "design-system",
@@ -30,7 +30,7 @@
     "start": "concurrently \"vite build --watch\" \"tsc --emitDeclarationOnly\""
   },
   "dependencies": {
-    "@vtmn/css-design-tokens": "^0.11.0",
+    "@vtmn/css-design-tokens": "^0.12.2",
     "core-js": "^3.20.3",
     "vue": "^3.2.26"
   },
@@ -53,7 +53,7 @@
     "@vue/cli-plugin-typescript": "^4.5.11",
     "@vue/cli-service": "^4.5.11",
     "@vue/compiler-sfc": "^3.2.27",
-    "concurrently": "^6.3.0",
+    "concurrently": "^7.0.0",
     "cz-conventional-changelog": "^3.3.0",
     "rollup": "^2.64.0",
     "rollup-plugin-terser": "^7.0.2",

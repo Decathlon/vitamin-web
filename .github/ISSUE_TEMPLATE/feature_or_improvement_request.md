@@ -1,8 +1,8 @@
 ---
-name: Bug report
-about: Create a report to help us improve
-title: 'bug: '
-labels: bug 🐛
+name: Feature or improvement request
+about: Suggest an idea for this project
+title: 'feat: '
+labels: enhancement 🚀
 ---
 
 <!-- 
@@ -20,31 +20,11 @@ labels: bug 🐛
     Thanks!
 -->
 
-**Describe the bug**
-<!-- A clear and concise description of what the bug is. -->
+**Is your request related to a problem? Please describe.**
+<!-- A clear and concise description of what the problem is. Ex. I'm always frustrated when [...] -->
 
-**Steps to reproduce**
-<!--
-    Steps to reproduce the behavior:
-    1. Go to '...'
-    2. Click on '....'
-    3. Scroll down to '....'
-    4. See error
--->
+**Describe the solution you'd like**
+<!-- A clear and concise description of what you want to happen. -->
 
-**Expected behavior**
-<!-- A clear and concise description of what you expected to happen. -->
-
-**Browsers affected**
-
-<!-- Choose your browser(s):
-    - Chrome
-    - Firefox
-    - Edge
-    - Safari
--->
-
-**Version affected**
-<!--
-@vtmn/...: vX.X.X
--->
+**Additional context**
+<!-- Add any other context or screenshots about the feature request here. -->
