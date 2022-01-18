@@ -10,14 +10,14 @@
     "start": "start-storybook -p 6010"
   },
   "dependencies": {
-    "core-js": "^3.18.1",
+    "core-js": "^3.20.3",
     "vue": "^3.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.16.5",
-    "@storybook/addon-a11y": "^6.4.9",
-    "@storybook/addon-essentials": "^6.4.9",
-    "@storybook/vue3": "^6.4.9",
+    "@storybook/addon-a11y": "^6.4.13",
+    "@storybook/addon-essentials": "^6.4.13",
+    "@storybook/vue3": "^6.4.13",
     "@vtmn/css": "*",
     "@vtmn/icons": "*",
     "@vtmn/showcase-core": "*",
@@ -25,7 +25,7 @@
     "@vue/cli-plugin-babel": "^4.5.11",
     "@vue/cli-plugin-typescript": "^4.5.11",
     "@vue/cli-service": "^4.5.11",
-    "@vue/compiler-sfc": "^3.2.19",
+    "@vue/compiler-sfc": "^3.2.27",
     "@whitespace/storybook-addon-html": "^5.0.0",
     "babel-loader": "^8.0.0",
     "css-loader": "^5.2.7",
