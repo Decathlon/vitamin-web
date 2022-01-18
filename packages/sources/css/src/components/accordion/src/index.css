@@ -56,8 +56,10 @@
   box-shadow: var(--vtmn-shadow_focus-visible);
 }
 
-.vtmn-accordion[aria-disabled='true'],
-.vtmn-accordion[aria-disabled='true'] summary,
+.vtmn-accordion[aria-disabled='true'] {
+  cursor: not-allowed;
+}
+
 .vtmn-accordion[aria-disabled='true'] > * {
   opacity: var(--vtmn-opacity_disabled-state);
   pointer-events: none;
