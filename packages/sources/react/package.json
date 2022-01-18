@@ -58,7 +58,7 @@
     "@vtmn/css-tooltip": "^0.4.10",
     "@vtmn/icons": "^0.6.1",
     "autoprefixer": "^10.3.6",
-    "eslint": "8.6.0",
+    "eslint": "8.7.0",
     "eslint-config-prettier": "^8.2.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.22.0",
