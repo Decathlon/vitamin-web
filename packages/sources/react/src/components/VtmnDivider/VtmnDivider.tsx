@@ -13,14 +13,14 @@ export interface VtmnDividerProps
 
   /**
    * The position of the text inside the divider
-   * @defaultValue null
+   * @defaultValue 'start'
    */
-  text?: VtmnDividerText;
+  textPosition?: VtmnDividerText;
 }
 
 export const VtmnDivider = ({
   orientation = 'horizontal',
-  text = null,
+  textPosition = 'start',
   children,
   className,
   ...props
@@ -29,7 +29,7 @@ export const VtmnDivider = ({
     <div
       className={clsx(
         'vtmn-divider',
-        `vtmn-divider_text--${text == null ? 'center' : text}`,
+        children && `vtmn-divider_text-position--${textPosition}`,
         `vtmn-divider_orientation--${orientation}`,
         className,
       )}

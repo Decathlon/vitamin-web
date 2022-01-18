@@ -1,2 +1,2 @@
-export type VtmnDividerText = 'start' | 'center' | 'end' | null;
+export type VtmnDividerText = 'start' | 'center' | 'end';
 export type VtmnDividerOrientation = 'horizontal' | 'vertical';

@@ -7,10 +7,10 @@ export const argTypes = {
       type: 'text',
     },
   },
-  text: {
+  textPosition: {
     type: { name: 'string', required: false },
     description: 'The position of the text inside the divider.',
-    defaultValue: null,
+    defaultValue: 'start',
     control: {
       type: 'text',
     },
