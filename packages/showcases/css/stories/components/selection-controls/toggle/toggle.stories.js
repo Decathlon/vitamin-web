@@ -4,7 +4,7 @@ import medium from './examples/medium.html';
 import { parameters } from '@vtmn/showcase-core/csf/components/VtmnToggle.csf';
 
 export default {
-  title: 'Components / Selection Controls / Toggle ',
+  title: 'Components / Selection controls / Toggle ',
   argTypes: { onchange: { action: 'write' } },
   parameters,
 };

@@ -3,7 +3,7 @@ import indeterminate from './examples/indeterminate.html';
 import { parameters } from '@vtmn/showcase-core/csf/components/VtmnCheckbox.csf';
 
 export default {
-  title: 'Components / Selection Controls / Checkbox ',
+  title: 'Components / Selection controls / Checkbox ',
   argTypes: { onchange: { action: 'write' } },
   parameters,
 };

@@ -2,7 +2,7 @@ import overview from './examples/overview.html';
 import { parameters } from '@vtmn/showcase-core/csf/components/VtmnRadioButton.csf';
 
 export default {
-  title: 'Components / Selection Controls / Radio button',
+  title: 'Components / Selection controls / Radio button',
   argTypes: { onChange: { action: 'write' } },
   parameters,
 };

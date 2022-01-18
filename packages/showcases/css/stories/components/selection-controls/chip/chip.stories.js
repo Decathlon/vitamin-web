@@ -5,7 +5,7 @@ import singleChoice from './examples/single-choice.html';
 import action from './examples/action.html';
 
 export default {
-  title: 'Components / Selection Controls / Chip ',
+  title: 'Components / Selection controls / Chip ',
   argTypes: { onchange: { action: 'write' } },
 };
 

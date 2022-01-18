@@ -1,7 +1,7 @@
 import overview from './examples/overview.html';
 
 export default {
-  title: 'Components / Selection Controls / Quantity',
+  title: 'Components / Selection controls / Quantity',
   argTypes: { onclick: { action: 'clicked' } },
 };
 
