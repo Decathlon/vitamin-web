@@ -5151,11 +5151,6 @@
   resolved "https://registry.yarnpkg.com/@vtmn/css-chip/-/css-chip-0.5.0.tgz#19e9a737e5bee0abc2e64e70ce9e0a561c2e7b82"
   integrity sha512-v7wtlDRuJ0HKBpbb6srfH3Bt0r0BV+9TTA0CuVo60IvAdtzqIOKaT2B6ni2K1LRbkX0nUlU932lbP/ulVYlJQA==
 
-"@vtmn/css-design-tokens@^0.11.0":
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/@vtmn/css-design-tokens/-/css-design-tokens-0.11.0.tgz#ebdb97f282887b1c9d24aa246d1a133ff409fd87"
-  integrity sha512-gImb5qnUHpqXwOl4HBTphLe5lXuayEQinuHuDL45A7je0KjuJTkKqGBTIwAe5g0FiPR8uXMJxt5bLYMy1vYQuw==
-
 "@vtmn/css-divider@^0.1.8":
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/@vtmn/css-divider/-/css-divider-0.1.8.tgz#06d4b68b9d860737774561467db0192824476552"
