@@ -4928,10 +4928,10 @@
   resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-2.0.1.tgz#db0e5eacf96358e04cc501c9008079b25a70a4ac"
   integrity sha512-wtdMnGVvys9K8tg+DxowU1ytTrdVveXr3LzdhaKakysgGXyrsfaeds2cDywtvujEASjWOwWL/OgWM+qoeM8Plg==
 
-"@vtmn/css-design-tokens@^0.10.2":
-  version "0.10.2"
-  resolved "https://registry.yarnpkg.com/@vtmn/css-design-tokens/-/css-design-tokens-0.10.2.tgz#224f40f536ae25d790bc0d33db1cb6c6412d8409"
-  integrity sha512-a8fYqOnoKHsFfVaoheyAprZUiPjd+CaEU9RD79A6kQIU+9IPt9Wisk5gOJxQf2RAVyrpHPdgWgdRW0a5zRiDLA==
+"@vtmn/css-design-tokens@^0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@vtmn/css-design-tokens/-/css-design-tokens-0.14.0.tgz#4d3cface985440e31d0838f0df3496fe7bf9cce3"
+  integrity sha512-g4m4HQ+cOJu0GCfK1lOzSpCIpjXitDyiPnYLZ1k5BFJGAINTGaPYdO9t0SUglslLE/LiTrbCaq1DGg+kqu9csg==
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.2.1":
   version "1.2.1"
