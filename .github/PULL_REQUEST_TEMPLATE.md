@@ -8,12 +8,12 @@
 ## Checklist
 <!--- Feel free to add other steps if needed. -->
 
-- [ ] Make sure you are requesting to **pull a topic/feature/bugfix branch**. Please, don't request your main!
+- [ ] Make sure you are requesting to **pull a topic/feature/bugfix branch**. Please, don't request directly from your main!
 - [ ] Check commits & PR names matches our requested structure. It must follow the https://www.conventionalcommits.org pattern.
 - [ ] Check your code additions will fail neither code linting checks.
 - [ ] I have reviewed the submitted code.
 - [ ] I have tested on related showcases.
-- [ ] If it's a new component, please ask for design review.
+- [ ] If it includes design changes, please ask for a review with a core designer.
 
 ## Does this introduce a breaking change?
 <!-- If this introduces a breaking change, please describe the impact and migration path for existing applications below. -->
