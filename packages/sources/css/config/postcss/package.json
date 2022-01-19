@@ -24,7 +24,7 @@
     "tailwindcss": "^2.2.16"
   },
   "devDependencies": {
-    "webpack": "^5.0.0"
+    "webpack": "^5.66.0"
   },
   "licenses": [
     {

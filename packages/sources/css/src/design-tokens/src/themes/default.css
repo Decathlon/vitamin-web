@@ -212,7 +212,7 @@
   --vtmn-semantic-color_hover-brand-reversed-transparent: hsla(var(--vtmn-semantic-color_hover-brand-reversed-transparent--h), var(--vtmn-semantic-color_hover-brand-reversed-transparent--s), var(--vtmn-semantic-color_hover-brand-reversed-transparent--l), 0.8);
   --vtmn-semantic-color_active-primary--h: var(--vtmn-semantic-color_hover-primary--h);
   --vtmn-semantic-color_active-primary--s: var(--vtmn-semantic-color_hover-primary--s);
-  --vtmn-semantic-color_active-primary--l: calc(var(--vtmn-semantic-color_hover-primary--l) + (100% - var(--vtmn-semantic-color_hover-primary--l)) * 0.35);
+  --vtmn-semantic-color_active-primary--l: calc(var(--vtmn-semantic-color_hover-primary--l) * 0.97);
   --vtmn-semantic-color_active-primary: hsla(var(--vtmn-semantic-color_active-primary--h), var(--vtmn-semantic-color_active-primary--s), var(--vtmn-semantic-color_active-primary--l), 1);
   --vtmn-semantic-color_active-primary-transparent--h: var(--vtmn-semantic-color_content-active--h);
   --vtmn-semantic-color_active-primary-transparent--s: var(--vtmn-semantic-color_content-active--s);
@@ -246,6 +246,10 @@
   --vtmn-semantic-color_active-secondary-reversed-transparent--s: var(--vtmn-semantic-color_content-primary-reversed--s);
   --vtmn-semantic-color_active-secondary-reversed-transparent--l: var(--vtmn-semantic-color_content-primary-reversed--l);
   --vtmn-semantic-color_active-secondary-reversed-transparent: hsla(var(--vtmn-semantic-color_active-secondary-reversed-transparent--h), var(--vtmn-semantic-color_active-secondary-reversed-transparent--s), var(--vtmn-semantic-color_active-secondary-reversed-transparent--l), 0.4);
+  --vtmn-semantic-color_active-tertiary-reversed-transparent--h: var(--vtmn-semantic-color_content-primary-reversed--h);
+  --vtmn-semantic-color_active-tertiary-reversed-transparent--s: var(--vtmn-semantic-color_content-primary-reversed--s);
+  --vtmn-semantic-color_active-tertiary-reversed-transparent--l: var(--vtmn-semantic-color_content-primary-reversed--l);
+  --vtmn-semantic-color_active-tertiary-reversed-transparent: hsla(var(--vtmn-semantic-color_active-tertiary-reversed-transparent--h), var(--vtmn-semantic-color_active-tertiary-reversed-transparent--s), var(--vtmn-semantic-color_active-tertiary-reversed-transparent--l), 0.8);
   --vtmn-semantic-color_active-brand-reversed-transparent--h: var(--vtmn-semantic-color_content-primary-reversed--h);
   --vtmn-semantic-color_active-brand-reversed-transparent--s: var(--vtmn-semantic-color_content-primary-reversed--s);
   --vtmn-semantic-color_active-brand-reversed-transparent--l: var(--vtmn-semantic-color_content-primary-reversed--l);

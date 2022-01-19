@@ -1,5 +1,5 @@
 module.exports = {
-  presets: [require('@vtmn/css-tailwind-preset')],
+  presets: [require('./presets/tailwind')],
   // Customizations specific to this project would go here
   theme: {
     extend: {
