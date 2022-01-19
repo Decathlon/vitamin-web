@@ -41,119 +41,119 @@
       "type": "library"
     },
     "@vtmn/css-alert": {
-      "root": "packages/sources/css/src/components/alert",
+      "root": "packages/sources/css/src/components/overlays/alert",
       "type": "library"
     },
     "@vtmn/css-badge": {
-      "root": "packages/sources/css/src/components/badge",
+      "root": "packages/sources/css/src/components/indicators/badge",
       "type": "library"
     },
     "@vtmn/css-button": {
-      "root": "packages/sources/css/src/components/button",
+      "root": "packages/sources/css/src/components/actions/button",
       "type": "library"
     },
     "@vtmn/css-breadcrumb": {
-      "root": "packages/sources/css/src/components/breadcrumb",
+      "root": "packages/sources/css/src/components/navigation/breadcrumb",
       "type": "library"
     },
     "@vtmn/css-card": {
-      "root": "packages/sources/css/src/components/card",
+      "root": "packages/sources/css/src/components/structure/card",
       "type": "library"
     },
     "@vtmn/css-checkbox": {
-      "root": "packages/sources/css/src/components/checkbox",
+      "root": "packages/sources/css/src/components/selection-controls/checkbox",
       "type": "library"
     },
     "@vtmn/css-chip": {
-      "root": "packages/sources/css/src/components/chip",
+      "root": "packages/sources/css/src/components/selection-controls/chip",
       "type": "library"
     },
     "@vtmn/css-divider": {
-      "root": "packages/sources/css/src/components/divider",
+      "root": "packages/sources/css/src/components/structure/divider",
       "type": "library"
     },
     "@vtmn/css-link": {
-      "root": "packages/sources/css/src/components/link",
+      "root": "packages/sources/css/src/components/actions/link",
       "type": "library"
     },
     "@vtmn/css-list": {
-      "root": "packages/sources/css/src/components/list",
+      "root": "packages/sources/css/src/components/structure/list",
       "type": "library"
     },
     "@vtmn/css-loader": {
-      "root": "packages/sources/css/src/components/loader",
+      "root": "packages/sources/css/src/components/indicators/loader",
       "type": "library"
     },
     "@vtmn/css-modal": {
-      "root": "packages/sources/css/src/components/modal",
+      "root": "packages/sources/css/src/components/overlays/modal",
       "type": "library"
     },
     "@vtmn/css-navbar": {
-      "root": "packages/sources/css/src/components/navbar",
+      "root": "packages/sources/css/src/components/navigation/navbar",
       "type": "library"
     },
     "@vtmn/css-popover": {
-      "root": "packages/sources/css/src/components/popover",
+      "root": "packages/sources/css/src/components/overlays/popover",
       "type": "library"
     },
     "@vtmn/css-price": {
-      "root": "packages/sources/css/src/components/price",
+      "root": "packages/sources/css/src/components/indicators/price",
       "type": "library"
     },
     "@vtmn/css-progressbar": {
-      "root": "packages/sources/css/src/components/progressbar",
+      "root": "packages/sources/css/src/components/indicators/progressbar",
       "type": "library"
     },
     "@vtmn/css-quantity": {
-      "root": "packages/sources/css/src/components/quantity",
+      "root": "packages/sources/css/src/components/selection-controls/quantity",
       "type": "library"
     },
     "@vtmn/css-radio-button": {
-      "root": "packages/sources/css/src/components/radio-button",
+      "root": "packages/sources/css/src/components/selection-controls/radio-button",
       "type": "library"
     },
     "@vtmn/css-rating": {
-      "root": "packages/sources/css/src/components/rating",
+      "root": "packages/sources/css/src/components/indicators/rating",
       "type": "library"
     },
     "@vtmn/css-search": {
-      "root": "packages/sources/css/src/components/search",
+      "root": "packages/sources/css/src/components/navigation/search",
       "type": "library"
     },
     "@vtmn/css-select": {
-      "root": "packages/sources/css/src/components/select",
+      "root": "packages/sources/css/src/components/forms/select",
       "type": "library"
     },
     "@vtmn/css-skeleton": {
-      "root": "packages/sources/css/src/components/skeleton",
+      "root": "packages/sources/css/src/components/structure/skeleton",
       "type": "library"
     },
     "@vtmn/css-snackbar": {
-      "root": "packages/sources/css/src/components/snackbar",
+      "root": "packages/sources/css/src/components/overlays/snackbar",
       "type": "library"
     },
     "@vtmn/css-tabs": {
-      "root": "packages/sources/css/src/components/tabs",
+      "root": "packages/sources/css/src/components/navigation/tabs",
       "type": "library"
     },
     "@vtmn/css-tag": {
-      "root": "packages/sources/css/src/components/tag",
+      "root": "packages/sources/css/src/components/indicators/tag",
       "type": "library"
     },
     "@vtmn/css-text-input": {
-      "root": "packages/sources/css/src/components/text-input",
+      "root": "packages/sources/css/src/components/forms/text-input",
       "type": "library"
     },
     "@vtmn/css-toast": {
-      "root": "packages/sources/css/src/components/toast",
+      "root": "packages/sources/css/src/components/overlays/toast",
       "type": "library"
     },
     "@vtmn/css-toggle": {
-      "root": "packages/sources/css/src/components/toggle",
+      "root": "packages/sources/css/src/components/selection-controls/toggle",
       "type": "library"
     },
     "@vtmn/css-tooltip": {
-      "root": "packages/sources/css/src/components/tooltip",
+      "root": "packages/sources/css/src/components/overlays/tooltip",
       "type": "library"
     },
     "@vtmn/css-design-tokens": {

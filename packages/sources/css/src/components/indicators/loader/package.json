@@ -1,0 +1,42 @@
+{
+  "name": "@vtmn/css-loader",
+  "version": "0.2.9",
+  "description": "Decathlon Design System - Vitamin specific CSS styles for loader component",
+  "keywords": [
+    "design-system",
+    "ui-kit",
+    "libraries",
+    "css",
+    "vitamin"
+  ],
+  "bugs": {
+    "url": "https://github.com/Decathlon/vitamin-web/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Decathlon/vitamin-web.git"
+  },
+  "license": "Apache-2.0",
+  "main": "dist/index.css",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js"
+  },
+  "devDependencies": {
+    "@vtmn/css-design-tokens": "^0.12.3",
+    "@vtmn/css-postcss-config": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "svelte": "dist/index-with-vars.css"
+}
