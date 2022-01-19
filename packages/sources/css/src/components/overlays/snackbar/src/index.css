@@ -4,6 +4,7 @@
 @import '@vtmn/css-design-tokens/src/shadows';
 @import '@vtmn/css-design-tokens/src/animations';
 @import '@vtmn/css-design-tokens/src/z-indexes';
+@import '@vtmn/css-design-tokens/src/radius';
 
 .vtmn-snackbar {
   display: flex;
@@ -20,7 +21,7 @@
   color: var(--vtmn-semantic-color_content-primary-reversed);
   background-color: var(--vtmn-semantic-color_background-primary-reversed);
   box-shadow: var(--vtmn-shadow_200);
-  border-radius: rem(4px);
+  border-radius: var(--vtmn-radius_100);
   z-index: var(--vtmn-z-index_snackbar);
   box-sizing: border-box;
 }

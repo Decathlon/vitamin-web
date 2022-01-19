@@ -4,6 +4,7 @@
 @import '@vtmn/css-design-tokens/src/spacings';
 @import '@vtmn/css-design-tokens/src/opacities';
 @import '@vtmn/css-design-tokens/src/transitions';
+@import '@vtmn/css-design-tokens/src/radius';
 
 .vtmn-quantity {
   font: var(--vtmn-typo_font-family) var(--vtmn-typo_text-2-font-size)
@@ -72,17 +73,17 @@
 }
 
 .vtmn-quantity .vtmn-btn:last-child {
-  border-radius: 0 rem(4px) rem(4px) 0;
+  border-radius: 0 var(--vtmn-radius_100) var(--vtmn-radius_100) 0;
   margin-inline-start: rem(-2px);
 }
 
 .vtmn-quantity .vtmn-btn:first-child {
-  border-radius: rem(4px) 0 0 rem(4px);
+  border-radius: var(--vtmn-radius_100) 0 0 var(--vtmn-radius_100);
   margin-inline-end: rem(-2px);
 }
 
 .vtmn-quantity .vtmn-btn:last-child {
-  border-radius: 0 rem(4px) rem(4px) 0;
+  border-radius: 0 var(--vtmn-radius_100) var(--vtmn-radius_100) 0;
   margin-inline-start: rem(-2px);
 }
 

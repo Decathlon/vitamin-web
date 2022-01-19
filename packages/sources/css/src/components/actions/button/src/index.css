@@ -4,6 +4,7 @@
 @import '@vtmn/css-design-tokens/src/opacities';
 @import '@vtmn/css-design-tokens/src/shadows';
 @import '@vtmn/css-design-tokens/src/transitions';
+@import '@vtmn/css-design-tokens/src/radius';
 
 /* Default button */
 .vtmn-btn {
@@ -20,7 +21,7 @@
   font-weight: var(--vtmn-typo_font-weight--bold);
   font-size: var(--vtmn-typo_text-2-font-size);
   letter-spacing: rem(0.27px);
-  border-radius: rem(4px);
+  border-radius: var(--vtmn-radius_100);
   color: var(--vtmn-semantic-color_content-primary-reversed);
   fill: var(--vtmn-semantic-color_content-primary-reversed);
   overflow: hidden;

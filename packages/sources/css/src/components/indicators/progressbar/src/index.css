@@ -2,6 +2,7 @@
 @import '@vtmn/css-design-tokens/src/themes/default';
 @import '@vtmn/css-design-tokens/src/typography';
 @import '@vtmn/css-design-tokens/src/animations';
+@import '@vtmn/css-design-tokens/src/radius';
 
 .vtmn-progressbar_container {
   max-width: 100%;
@@ -14,7 +15,7 @@
 .vtmn-progressbar_container svg {
   width: 100%;
   height: rem(8px);
-  border-radius: rem(32px);
+  border-radius: var(--vtmn-radius_700);
   background-color: var(--vtmn-semantic-color_background-tertiary);
 }
 

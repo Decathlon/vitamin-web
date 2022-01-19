@@ -1,6 +1,7 @@
 @import '@vtmn/css-design-tokens/src/base-colors';
 @import '@vtmn/css-design-tokens/src/themes/default';
 @import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/radius';
 
 .vtmn-badge {
   font-family: var(--vtmn-typo_font-family);
@@ -11,7 +12,7 @@
   height: rem(20px);
   justify-content: center;
   align-items: center;
-  border-radius: rem(10px);
+  border-radius: var(--vtmn-radius_700);
   background-color: var(--vtmn-semantic-color_background-tertiary);
   color: var(--vtmn-semantic-color_content-primary);
   box-shadow: inset 0 0 0 rem(1px) var(--vtmn-semantic-color_border-secondary);

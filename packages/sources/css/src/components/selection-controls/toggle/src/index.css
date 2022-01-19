@@ -4,6 +4,7 @@
 @import '@vtmn/css-design-tokens/src/opacities';
 @import '@vtmn/css-design-tokens/src/shadows';
 @import '@vtmn/css-design-tokens/src/transitions';
+@import '@vtmn/css-design-tokens/src/radius';
 
 .vtmn-toggle {
   display: flex;
@@ -81,7 +82,7 @@
   background-color: var(--vtmn-semantic-color_content-inactive);
   transition: background-color 0.2s ease-out,
     var(--vtmn-transition_focus-visible);
-  border-radius: rem(16px);
+  border-radius: var(--vtmn-radius_400);
   pointer-events: none;
 }
 

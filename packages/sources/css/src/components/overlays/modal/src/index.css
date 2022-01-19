@@ -5,6 +5,7 @@
 @import '@vtmn/css-design-tokens/src/shadows';
 @import '@vtmn/css-design-tokens/src/animations';
 @import '@vtmn/css-design-tokens/src/z-indexes';
+@import '@vtmn/css-design-tokens/src/radius';
 
 .vtmn-modal_background-overlay {
   background: hsl(
@@ -22,7 +23,7 @@
 
 .vtmn-modal_content {
   background-color: var(--vtmn-semantic-color_background-primary);
-  border-radius: rem(8px);
+  border-radius: var(--vtmn-radius_200);
   padding: rem(32px);
   font-family: var(--vtmn-typo_font-family);
   width: rem(600px);
