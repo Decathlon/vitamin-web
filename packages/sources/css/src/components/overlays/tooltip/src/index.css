@@ -5,6 +5,7 @@
 @import '@vtmn/css-design-tokens/src/shadows';
 @import '@vtmn/css-design-tokens/src/animations';
 @import '@vtmn/css-design-tokens/src/z-indexes';
+@import '@vtmn/css-design-tokens/src/radius';
 
 .vtmn-tooltip {
   position: relative;
@@ -40,7 +41,7 @@
   text-overflow: ellipsis;
   padding: rem(8px) rem(12px);
   height: rem(36px);
-  border-radius: rem(4px);
+  border-radius: var(--vtmn-radius_100);
   background-color: var(--vtmn-semantic-color_background-primary-reversed);
   color: var(--vtmn-semantic-color_content-primary-reversed);
   box-sizing: border-box;

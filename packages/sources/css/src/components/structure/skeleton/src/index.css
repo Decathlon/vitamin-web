@@ -1,6 +1,7 @@
 @import '@vtmn/css-design-tokens/src/base-colors';
 @import '@vtmn/css-design-tokens/src/themes/default';
 @import '@vtmn/css-design-tokens/src/animations';
+@import '@vtmn/css-design-tokens/src/radius';
 
 .vtmn-skeleton {
   display: inline-block;
@@ -61,7 +62,7 @@
 
 .vtmn-skeleton_line {
   height: rem(8px);
-  border-radius: rem(8px);
+  border-radius: var(--vtmn-radius_200);
 }
 
 .vtmn-skeleton_avatar {

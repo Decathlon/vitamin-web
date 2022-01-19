@@ -3,11 +3,12 @@
 @import '@vtmn/css-design-tokens/src/typography';
 @import '@vtmn/css-design-tokens/src/opacities';
 @import '@vtmn/css-design-tokens/src/shadows';
+@import '@vtmn/css-design-tokens/src/radius';
 
 .vtmn-card {
   max-width: 100%;
   min-width: min-content;
-  border-radius: 8px;
+  border-radius: var(--vtmn-radius_200);
   box-shadow: var(--vtmn-shadow_100);
   position: relative;
   font: var(--vtmn-typo_font-family) var(--vtmn-typo_font-weight--normal);
@@ -59,7 +60,7 @@
 
 .vtmn-card > .vtmn-card_image--full > img,
 .vtmn-card_variant--top-image > .vtmn-card_image--full > img {
-  border-radius: 8px 8px 0 0;
+  border-radius: var(--vtmn-radius_200) var(--vtmn-radius_200) 0 0;
 }
 
 .vtmn-card img,
@@ -106,7 +107,7 @@
 
 .vtmn-card_variant--full-image img {
   height: 100%;
-  border-radius: 8px;
+  border-radius: var(--vtmn-radius_200);
 }
 
 .vtmn-card_variant--full-image > .vtmn-card_content {
@@ -121,7 +122,7 @@
   bottom: 0;
   padding: 24px;
   height: auto;
-  border-radius: 8px;
+  border-radius: var(--vtmn-radius_200);
   color: var(--vtmn-semantic-color_content-primary-reversed);
 }
 
