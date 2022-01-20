@@ -1,14 +1,14 @@
 /**
- * @tokens Border radius
- * @presenter Border radius
+ * @tokens BorderRadius
+ * @presenter BorderRadius
  */
 :root {
-  --vtmn-radius_100: '4px';
-  --vtmn-radius_200: '8px';
-  --vtmn-radius_300: '12px';
-  --vtmn-radius_400: '16px';
-  --vtmn-radius_500: '20px';
-  --vtmn-radius_600: '24px';
-  --vtmn-radius_700: '32px';
-  --vtmn-radius_800: '48px';
+  --vtmn-radius_100: 4px;
+  --vtmn-radius_200: 8px;
+  --vtmn-radius_300: 12px;
+  --vtmn-radius_400: 16px;
+  --vtmn-radius_500: 20px;
+  --vtmn-radius_600: 24px;
+  --vtmn-radius_700: 32px;
+  --vtmn-radius_800: 48px;
 }
