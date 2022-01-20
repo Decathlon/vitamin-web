@@ -84,6 +84,14 @@ These packages allow the consumption of elements with a higher level of granular
   <summary>For each component</summary>
 
   <table>
+  <tr>
+      <th>@vtmn/css-accordion</th>
+      <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/components/accordion#readme">README</a></td>
+      <td><a href="https://www.decathlon.design/726f8c765/v/0/p/04348b-accordion-beta"><img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" /></a></td>
+      <td><a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-accordion--overview"><img src="https://img.shields.io/badge/storybook-css-d891bc?style=flat&logo=storybook" alt="storybook" /></a></td>
+      <td><a href="https://www.npmjs.com/package/@vtmn/css-accordion"><img src="https://img.shields.io/npm/v/@vtmn/css-accordion?style=flat&logo=npm" alt="npm version" /></a></td>
+      <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=accordion" alt="Quality Gate Status" /></a></td>
+    </tr>
     <tr>
       <th>@vtmn/css-alert</th>
       <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/components/alert#readme">README</a></td>

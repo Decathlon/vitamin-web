@@ -34,6 +34,7 @@
     "start": "chokidar \"src/**\" -i \"**/dist/**\" -c \"yarn build\""
   },
   "devDependencies": {
+    "@vtmn/css-accordion": "^0.0.0",
     "@vtmn/css-alert": "^0.4.6",
     "@vtmn/css-badge": "^0.8.0",
     "@vtmn/css-breadcrumb": "^0.3.2",

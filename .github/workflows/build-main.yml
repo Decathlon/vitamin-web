@@ -84,6 +84,7 @@ jobs:
             'packages/sources/css/src/components/selection-controls/quantity',
             'packages/sources/css/src/components/selection-controls/radio-button',
             'packages/sources/css/src/components/selection-controls/toggle',
+            'packages/sources/css/src/components/structure/accordion',
             'packages/sources/css/src/components/structure/card',
             'packages/sources/css/src/components/structure/divider',
             'packages/sources/css/src/components/structure/list',
