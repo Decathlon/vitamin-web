@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.49.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.49.1...@vtmn/css@0.49.2) (2022-01-20)
+
+
+### Bug Fixes
+
+* **@vtmn/css-design-tokens:** missing commas ([#917](https://github.com/Decathlon/vitamin-web/issues/917)) ([fa35ee8](https://github.com/Decathlon/vitamin-web/commit/fa35ee84b9d8e17d25c0b90db9868de6b3ef7f1c))
+
+
+
+
+
 ## [0.49.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.49.0...@vtmn/css@0.49.1) (2022-01-19)
 
 **Note:** Version bump only for package @vtmn/css
