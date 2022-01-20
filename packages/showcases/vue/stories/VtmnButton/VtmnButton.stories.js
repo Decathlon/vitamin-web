@@ -16,7 +16,7 @@ const Template = (args) => ({
   setup() {
     return { args };
   },
-  template: `<VtmnButton v-bind="args">Button</VtmnButton>`,
+  template: `<div style="width: 400px; display: flex; justify-content: center"><VtmnButton v-bind="args">Button</VtmnButton></div>`,
 });
 
 export const Overview = Template.bind({});
