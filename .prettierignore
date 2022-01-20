@@ -8,4 +8,5 @@
 **/*.d.ts
 **/*.hbs
 **/storybook-static
+packages/sources/css/src/design-tokens/src/base-colors.css
 packages/sources/css/src/design-tokens/src/themes/**/*.css
