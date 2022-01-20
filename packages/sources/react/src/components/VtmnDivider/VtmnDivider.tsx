@@ -1,21 +1,21 @@
 import * as React from 'react';
 import clsx from 'clsx';
 import '@vtmn/css-divider/dist/index-with-vars.css';
-import { VtmnDividerOrientation, VtmnDividerText } from './types';
+import { VtmnDividerOrientation, VtmnDividerTextPosition } from './types';
 
 export interface VtmnDividerProps
   extends React.ComponentPropsWithoutRef<'div'> {
   /**
-   * The orientation of the divider
+   * The orientation of the divider.
    * @defaultValue 'horizontal'
    */
   orientation?: VtmnDividerOrientation;
 
   /**
-   * The position of the text inside the divider
+   * The position of the text inside the divider.
    * @defaultValue 'start'
    */
-  textPosition?: VtmnDividerText;
+  textPosition?: VtmnDividerTextPosition;
 }
 
 export const VtmnDivider = ({

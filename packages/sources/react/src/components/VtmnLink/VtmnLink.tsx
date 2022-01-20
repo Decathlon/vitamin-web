@@ -23,6 +23,12 @@ export interface VtmnLinkProps extends React.ComponentPropsWithoutRef<'a'> {
    * @defaultValue false
    */
   iconAlong?: boolean;
+
+  /**
+   * The content to render inside the component.
+   * @defaultValue undefined
+   */
+  children: React.ReactNode;
 }
 
 export const VtmnLink = ({

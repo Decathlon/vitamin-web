@@ -4,24 +4,15 @@ export const argTypes = {
     description: 'The orientation of the divider.',
     defaultValue: 'horizontal',
     control: {
-      type: 'text',
+      type: 'select',
+      options: ['horizontal', 'vertical'],
     },
   },
   textPosition: {
     type: { name: 'string', required: false },
     description: 'The position of the text inside the divider.',
     defaultValue: 'start',
-    control: {
-      type: 'text',
-    },
-  },
-  children: {
-    type: { name: 'string', required: false },
-    description: 'The content to render inside the component',
-    defaultValue: 'My Label',
-    control: {
-      type: 'text',
-    },
+    control: { type: 'select', options: ['start', 'center', 'end'] },
   },
 };
 
