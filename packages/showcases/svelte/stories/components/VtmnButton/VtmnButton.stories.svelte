@@ -31,7 +31,9 @@
 />
 
 <Template let:args>
-  <VtmnButton {...args}>Button</VtmnButton>
+  <div style="width: 400px; display: flex; justify-content: center">
+    <VtmnButton {...args}>Button</VtmnButton>
+  </div>
 </Template>
 
 <Story name="Overview" args={buttonArgs} />
