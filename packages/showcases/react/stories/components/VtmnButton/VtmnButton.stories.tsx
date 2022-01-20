@@ -23,6 +23,10 @@ export default {
   parameters,
 } as Meta;
 
-const Template: Story = (args) => <VtmnButton {...args} />;
+const Template: Story = (args) => (
+  <div style={{ width: 400, display: 'flex', justifyContent: 'center' }}>
+    <VtmnButton {...args} />
+  </div>
+);
 
 export const Overview = Template.bind({});
