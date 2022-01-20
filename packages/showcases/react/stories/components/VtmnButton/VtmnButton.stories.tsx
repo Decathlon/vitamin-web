@@ -13,7 +13,7 @@ export default {
     ...argTypes,
     children: {
       type: { name: 'string', required: false },
-      description: 'The content to render inside the component',
+      description: 'The content to render inside the component.',
       defaultValue: 'Button',
       control: {
         type: 'text',

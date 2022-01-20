@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.9.0...@vtmn/css-badge@0.10.0) (2022-01-20)
+
+
+### Features
+
+* **@vtmn/css:** add alert variant and remove line height ([#918](https://github.com/Decathlon/vitamin-web/issues/918)) ([6576310](https://github.com/Decathlon/vitamin-web/commit/6576310208a1167743ce73df148e023bd25e2baf))
+
+
+
+
+
+# [0.9.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.8.0...@vtmn/css-badge@0.9.0) (2022-01-20)
+
+
+### Bug Fixes
+
+* bad versions of design tokens ([ecb49f3](https://github.com/Decathlon/vitamin-web/commit/ecb49f3d1e672cb3ba78c23dc64fd899ea4a08c1))
+
+
+### Features
+
+* **@vtmn/css:** add radius design tokens + imports in css ([#908](https://github.com/Decathlon/vitamin-web/issues/908)) ([26a0cd3](https://github.com/Decathlon/vitamin-web/commit/26a0cd3809792e9ea127bfaa8aa66ed3bd276990))
+
+
+
+
+
 # [0.8.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.7.5...@vtmn/css-badge@0.8.0) (2022-01-17)
 
 

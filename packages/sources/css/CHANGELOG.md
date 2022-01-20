@@ -3,6 +3,61 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.52.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.51.1...@vtmn/css@0.52.0) (2022-01-20)
+
+
+### Features
+
+* **@vtmn/css:** add alert variant and remove line height ([#918](https://github.com/Decathlon/vitamin-web/issues/918)) ([6576310](https://github.com/Decathlon/vitamin-web/commit/6576310208a1167743ce73df148e023bd25e2baf))
+
+
+
+
+
+## [0.51.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.51.0...@vtmn/css@0.51.1) (2022-01-20)
+
+
+### Bug Fixes
+
+* bad versions of design tokens ([ecb49f3](https://github.com/Decathlon/vitamin-web/commit/ecb49f3d1e672cb3ba78c23dc64fd899ea4a08c1))
+
+
+
+
+
+# [0.51.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.50.0...@vtmn/css@0.51.0) (2022-01-20)
+
+
+### Features
+
+* **@vtmn/css:** add accordion component ([#848](https://github.com/Decathlon/vitamin-web/issues/848)) ([ac06aef](https://github.com/Decathlon/vitamin-web/commit/ac06aefac5a4d33e76049303a78fcfb5014c3bcf))
+
+
+
+
+
+# [0.50.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.49.2...@vtmn/css@0.50.0) (2022-01-20)
+
+
+### Features
+
+* **@vtmn/css:** rename hoverBrandReversedTransparent into hoverTertiaryReversedTransparent ([#914](https://github.com/Decathlon/vitamin-web/issues/914)) ([09b1e8f](https://github.com/Decathlon/vitamin-web/commit/09b1e8f3d42d4da3c4376685eaaee40cba93a0f4))
+
+
+
+
+
+## [0.49.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.49.1...@vtmn/css@0.49.2) (2022-01-20)
+
+
+### Bug Fixes
+
+* **@vtmn/css-design-tokens:** missing commas ([#917](https://github.com/Decathlon/vitamin-web/issues/917)) ([fa35ee8](https://github.com/Decathlon/vitamin-web/commit/fa35ee84b9d8e17d25c0b90db9868de6b3ef7f1c))
+
+
+
+
+
 ## [0.49.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.49.0...@vtmn/css@0.49.1) (2022-01-19)
 
 **Note:** Version bump only for package @vtmn/css

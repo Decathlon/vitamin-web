@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.17.10](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.17.9...@vtmn/react@0.17.10) (2022-01-20)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.17.9](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.17.8...@vtmn/react@0.17.9) (2022-01-20)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.17.8](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.17.7...@vtmn/react@0.17.8) (2022-01-20)
+
+
+### Bug Fixes
+
+* **VtmnTooltip:** children typing ([#916](https://github.com/Decathlon/vitamin-web/issues/916)) ([a0e4213](https://github.com/Decathlon/vitamin-web/commit/a0e4213ae62560fe62819acb3326bd64d6923b59))
+
+
+
+
+
 ## [0.17.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.17.6...@vtmn/react@0.17.7) (2022-01-19)
 
 **Note:** Version bump only for package @vtmn/react

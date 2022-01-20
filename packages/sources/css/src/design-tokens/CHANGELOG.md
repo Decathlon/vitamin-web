@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.16.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@0.15.0...@vtmn/css-design-tokens@0.16.0) (2022-01-20)
+
+
+### Features
+
+* **@vtmn/css:** add accordion component ([#848](https://github.com/Decathlon/vitamin-web/issues/848)) ([ac06aef](https://github.com/Decathlon/vitamin-web/commit/ac06aefac5a4d33e76049303a78fcfb5014c3bcf))
+
+
+
+
+
+# [0.15.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@0.14.1...@vtmn/css-design-tokens@0.15.0) (2022-01-20)
+
+
+### Features
+
+* **@vtmn/css:** rename hoverBrandReversedTransparent into hoverTertiaryReversedTransparent ([#914](https://github.com/Decathlon/vitamin-web/issues/914)) ([09b1e8f](https://github.com/Decathlon/vitamin-web/commit/09b1e8f3d42d4da3c4376685eaaee40cba93a0f4))
+
+
+
+
+
+## [0.14.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@0.14.0...@vtmn/css-design-tokens@0.14.1) (2022-01-20)
+
+
+### Bug Fixes
+
+* **@vtmn/css-design-tokens:** missing commas ([#917](https://github.com/Decathlon/vitamin-web/issues/917)) ([fa35ee8](https://github.com/Decathlon/vitamin-web/commit/fa35ee84b9d8e17d25c0b90db9868de6b3ef7f1c))
+
+
+
+
+
 # [0.14.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@0.13.0...@vtmn/css-design-tokens@0.14.0) (2022-01-19)
 
 

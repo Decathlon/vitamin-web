@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-radio-button@0.6.2...@vtmn/css-radio-button@0.6.3) (2022-01-20)
+
+
+### Bug Fixes
+
+* bad versions of design tokens ([ecb49f3](https://github.com/Decathlon/vitamin-web/commit/ecb49f3d1e672cb3ba78c23dc64fd899ea4a08c1))
+
+
+
+
+
 ## [0.6.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-radio-button@0.6.1...@vtmn/css-radio-button@0.6.2) (2022-01-17)
 
 **Note:** Version bump only for package @vtmn/css-radio-button

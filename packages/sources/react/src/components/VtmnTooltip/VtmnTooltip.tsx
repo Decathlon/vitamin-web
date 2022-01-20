@@ -17,10 +17,10 @@ export interface VtmnTooltipProps
   tooltip: string;
 
   /**
-   * The tooltip children
+   * The content to render inside the component.
    * @defaultValue undefined
    */
-  children: JSX.Element;
+  children: React.ReactNode;
 }
 
 export const VtmnTooltip = ({
