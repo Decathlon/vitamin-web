@@ -82,12 +82,6 @@
   transition: transform 400ms ease;
 }
 
-.vtmn-accordion summary ~ * {
-  background-color: var(--vtmn-semantic-color_background-primary);
-  padding: var(--vtmn-spacing_4);
-  margin: 0;
-}
-
 .vtmn-accordion[open] {
   border-bottom: 0;
 }
@@ -96,17 +90,17 @@
   transform: rotateZ(-180deg);
 }
 
-.vtmn-accordion_content > *:last-child {
-  border-bottom: rem(1px) solid var(--vtmn-semantic-color_border-secondary);
-}
-
 .vtmn-accordion_content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: var(--vtmn-spacing_2);
+  padding: var(--vtmn-spacing_4);
 }
 
 .vtmn-accordion_content > * {
   margin: var(--vtmn-spacing_1) 0;
+}
+
+.vtmn-accordion_content:last-child {
+  border-bottom: rem(1px) solid var(--vtmn-semantic-color_border-secondary);
 }
