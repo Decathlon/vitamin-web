@@ -1,7 +1,6 @@
 import * as React from 'react';
-import clsx from 'clsx';
-
 import '@vtmn/css-text-input/dist/index-with-vars.css';
+import clsx from 'clsx';
 import { VtmnIcon } from '../VtmnIcon';
 import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
 

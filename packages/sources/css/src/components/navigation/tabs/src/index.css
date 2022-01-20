@@ -1,0 +1,109 @@
+@import '@vtmn/css-design-tokens/src/base-colors';
+@import '@vtmn/css-design-tokens/src/themes/default';
+@import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/shadows';
+@import '@vtmn/css-design-tokens/src/spacings';
+@import '@vtmn/css-design-tokens/src/transitions';
+
+.vtmn-tabs {
+  height: fit-content;
+  width: 100%;
+  background-color: var(--vtmn-semantic-color_background-primary);
+}
+
+.vtmn-tabs > ul {
+  display: block;
+  white-space: nowrap;
+  overflow-x: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.vtmn-tabs li {
+  display: inline-flex;
+}
+
+.vtmn-tabs a,
+.vtmn-tabs_size--medium a {
+  display: flex;
+  align-items: center;
+  font-family: var(--vtmn-typo_font-family);
+  font-size: var(--vtmn-typo_text-2-font-size);
+  padding: var(--vtmn-spacing_3) rem(20px) rem(10px) rem(20px);
+  white-space: nowrap;
+  color: var(--vtmn-semantic-color_content-secondary);
+  border-bottom: rem(2px) solid transparent;
+  transition: border-bottom 200ms ease, color 200ms ease,
+    var(--vtmn-transition_focus-visible);
+  outline: none;
+  text-decoration: none;
+}
+
+.vtmn-tabs a:hover {
+  color: var(--vtmn-semantic-color_content-primary);
+}
+
+.vtmn-tabs a:focus {
+  color: var(--vtmn-semantic-color_content-active);
+  border-bottom: rem(2px) solid var(--vtmn-semantic-color_content-active);
+}
+
+.vtmn-tabs a:focus-visible {
+  box-shadow: var(--vtmn-shadow_focus-visible);
+}
+
+.vtmn-tabs a:focus > .vtmn-badge {
+  background-color: var(--vtmn-semantic-color_background-brand-primary);
+  color: var(--vtmn-semantic-color_content-primary-reversed);
+  box-shadow: none;
+}
+
+.vtmn-tabs .vtmn-badge {
+  margin-inline-start: var(--vtmn-spacing_2);
+}
+
+.vtmn-tabs span[class^='vtmx-'],
+.vtmn-tabs_size--medium span[class^='vtmx-'] {
+  font-size: var(--vtmn-typo_title-5-font-size);
+  margin-inline-end: var(--vtmn-spacing_2);
+}
+
+/* ALIGN */
+
+/* Start (default) */
+.vtmn-tabs_align--start > ul {
+  text-align: start;
+}
+
+/* Center */
+.vtmn-tabs_align--center > ul {
+  text-align: center;
+}
+
+/* End */
+.vtmn-tabs_align--end > ul {
+  text-align: end;
+}
+
+/* SIZES */
+
+/* Medium (default) */
+.vtmn-tabs_size--medium a {
+  font-size: var(--vtmn-typo_text-2-font-size);
+  padding: var(--vtmn-spacing_3) rem(20px) rem(10px) rem(20px);
+}
+
+.vtmn-tabs_size--medium span[class^='vtmx-'] {
+  font-size: var(--vtmn-typo_title-5-font-size);
+}
+
+/* Small */
+.vtmn-tabs_size--small a {
+  font-size: var(--vtmn-typo_text-3-font-size);
+  padding: var(--vtmn-spacing_2) var(--vtmn-spacing_4) rem(6px)
+    var(--vtmn-spacing_4);
+}
+
+.vtmn-tabs_size--small span[class^='vtmx-'] {
+  font-size: var(--vtmn-typo_text-2-font-size);
+}

@@ -1,7 +1,6 @@
 import * as React from 'react';
-import clsx from 'clsx';
-
 import '@vtmn/css-link/dist/index-with-vars.css';
+import clsx from 'clsx';
 import { VtmnLinkSize } from './types';
 
 export interface VtmnLinkProps extends React.ComponentPropsWithoutRef<'a'> {

@@ -3,6 +3,219 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.49.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.49.0...@vtmn/css@0.49.1) (2022-01-19)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+# [0.49.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.48.1...@vtmn/css@0.49.0) (2022-01-19)
+
+
+### Features
+
+* **@vtmn/css:** add activeTertiaryReversedTransparent ([#913](https://github.com/Decathlon/vitamin-web/issues/913)) ([1649dba](https://github.com/Decathlon/vitamin-web/commit/1649dbaa140da9d5888284f690dd888151c7d9d3))
+
+
+
+
+
+## [0.48.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.48.0...@vtmn/css@0.48.1) (2022-01-19)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+# [0.48.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.47.3...@vtmn/css@0.48.0) (2022-01-19)
+
+
+### Features
+
+* **@vtmn/css:** add radius design tokens + imports in css ([#908](https://github.com/Decathlon/vitamin-web/issues/908)) ([26a0cd3](https://github.com/Decathlon/vitamin-web/commit/26a0cd3809792e9ea127bfaa8aa66ed3bd276990))
+* **@vtmn/css:** fix active primary colour light/dark theme ([#907](https://github.com/Decathlon/vitamin-web/issues/907)) ([9356a7b](https://github.com/Decathlon/vitamin-web/commit/9356a7b3657fd7e5ffae9af0fb4ad14c95ca8aad))
+
+
+
+
+
+## [0.47.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.47.2...@vtmn/css@0.47.3) (2022-01-19)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+## [0.47.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.47.1...@vtmn/css@0.47.2) (2022-01-18)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+## [0.47.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.47.0...@vtmn/css@0.47.1) (2022-01-18)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+# [0.47.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.46.5...@vtmn/css@0.47.0) (2022-01-17)
+
+
+### Features
+
+* **@vtmn/css:** fix alignements pb + font style shortcut ([#890](https://github.com/Decathlon/vitamin-web/issues/890)) ([6b31b94](https://github.com/Decathlon/vitamin-web/commit/6b31b943acd3d159110d1b3013f687187f728cf3))
+
+
+
+
+
+## [0.46.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.46.4...@vtmn/css@0.46.5) (2022-01-17)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** animation alert disapearing ([#884](https://github.com/Decathlon/vitamin-web/issues/884)) ([0a9f92b](https://github.com/Decathlon/vitamin-web/commit/0a9f92b0b22c66d8137e05cadbb6337df322c517))
+
+
+
+
+
+## [0.46.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.46.3...@vtmn/css@0.46.4) (2022-01-14)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+## [0.46.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.46.2...@vtmn/css@0.46.3) (2022-01-11)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+## [0.46.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.46.1...@vtmn/css@0.46.2) (2022-01-11)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+## [0.46.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.46.0...@vtmn/css@0.46.1) (2022-01-10)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+# [0.46.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.45.0...@vtmn/css@0.46.0) (2022-01-10)
+
+
+### Features
+
+* **@vtmn/css:** add transition on focus-visible ([#866](https://github.com/Decathlon/vitamin-web/issues/866)) ([81820b4](https://github.com/Decathlon/vitamin-web/commit/81820b4ebfcd8df223b8415885cb37a5d4ab5bd2))
+
+
+
+
+
+# [0.45.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.44.0...@vtmn/css@0.45.0) (2022-01-05)
+
+
+### Features
+
+* **@vtmn/css:** add price component ([#847](https://github.com/Decathlon/vitamin-web/issues/847)) ([a30666c](https://github.com/Decathlon/vitamin-web/commit/a30666c6496330cc6dad1669032cb5f89374780c))
+
+
+
+
+
+# [0.44.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.43.1...@vtmn/css@0.44.0) (2022-01-05)
+
+
+### Features
+
+* **@vtmn/css:** add list component ([#814](https://github.com/Decathlon/vitamin-web/issues/814)) ([7fa9593](https://github.com/Decathlon/vitamin-web/commit/7fa959314f72fcfbd8a2eadeb6d55147c63ff625))
+* **@vtmn/css:** add tag component ([#846](https://github.com/Decathlon/vitamin-web/issues/846)) ([bcb461c](https://github.com/Decathlon/vitamin-web/commit/bcb461c8115e4594075b5a678e113191e13c73ac))
+
+
+
+
+
+## [0.43.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.43.0...@vtmn/css@0.43.1) (2022-01-03)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+# [0.43.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.42.3...@vtmn/css@0.43.0) (2022-01-03)
+
+
+### Features
+
+* **@vtmn/css:** add quantity component ([#833](https://github.com/Decathlon/vitamin-web/issues/833)) ([e7aa8a3](https://github.com/Decathlon/vitamin-web/commit/e7aa8a35310ca912e9ccc5bf7a2795e869faec6d))
+
+
+
+
+
+## [0.42.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.42.2...@vtmn/css@0.42.3) (2021-12-31)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+## [0.42.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.42.1...@vtmn/css@0.42.2) (2021-12-31)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** add missing imports + props ([#838](https://github.com/Decathlon/vitamin-web/issues/838)) ([4dc1ee8](https://github.com/Decathlon/vitamin-web/commit/4dc1ee8f9df153bbf97a2eb06ac1d7926bf7a010))
+
+
+
+
+
+## [0.42.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.42.0...@vtmn/css@0.42.1) (2021-12-30)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+# [0.42.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.41.0...@vtmn/css@0.42.0) (2021-12-28)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** flexbox scroll bug ([#827](https://github.com/Decathlon/vitamin-web/issues/827)) ([32429e4](https://github.com/Decathlon/vitamin-web/commit/32429e4031c65d4e82e3eea7ff922c81810e81d4))
+
+
+### Features
+
+* **@vtmn/css:** add token focus-visible for breadcrumb and tabs ([#829](https://github.com/Decathlon/vitamin-web/issues/829)) ([daddc0c](https://github.com/Decathlon/vitamin-web/commit/daddc0c1952e152d8cd05f74da27d1472d0c1fdc))
+
+
+
+
+
 # [0.41.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.40.0...@vtmn/css@0.41.0) (2021-12-28)
 
 

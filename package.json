@@ -18,33 +18,30 @@
     "url": "git+https://github.com/Decathlon/vitamin-web.git"
   },
   "license": "Apache-2.0",
-  "workspaces": [
-    "packages/sources/css",
-    "packages/sources/css/config/*",
-    "packages/sources/css/presets/*",
-    "packages/sources/css/src/design-tokens",
-    "packages/sources/css/src/utilities",
-    "packages/sources/css/src/components/*",
-    "packages/sources/icons",
-    "packages/sources/web-components",
-    "packages/sources/vue",
-    "packages/sources/react",
-    "packages/sources/svelte",
-    "packages/showcases/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/sources/css",
+      "packages/sources/css/config/*",
+      "packages/sources/css/presets/*",
+      "packages/sources/css/src/design-tokens",
+      "packages/sources/css/src/utilities",
+      "packages/sources/css/src/components/*",
+      "packages/sources/icons",
+      "packages/sources/vue",
+      "packages/sources/react",
+      "packages/sources/svelte",
+      "packages/showcases/*"
+    ]
+  },
   "scripts": {
-    "affected:build": "nx affected:build",
-    "affected:build-storybook": "nx affected --target=build-storybook",
-    "affected:dep-graph": "nx affected:dep-graph",
-    "affected:test": "nx affected:test",
     "prebuild": "yarn lint:fix",
     "build": "nx run-many --target=build --all --parallel",
     "build-storybook": "nx run-many --target=build-storybook --all --parallel",
     "dep-graph": "nx dep-graph",
     "deploy-storybook": "storybook-to-ghpages --packages packages -o docs --monorepo-index-generator packages/showcases/core/scripts/index-generator.js",
     "postinstall": "is-ci || husky install",
-    "lint": "yarn prettier && yarn stylelint",
-    "lint:fix": "yarn prettier:fix && yarn stylelint:fix",
+    "lint": "yarn prettier && yarn stylelint && nx run-many --target=lint --projects=@vtmn/react,@vtmn/svelte --parallel",
+    "lint:fix": "yarn prettier:fix && yarn stylelint:fix && nx run-many --target=lint:fix --projects=@vtmn/react,@vtmn/svelte --parallel",
     "prettier": "prettier .",
     "prettier:fix": "prettier . --write",
     "release": "lerna publish --no-verify-access --no-private --no-commit-hooks --yes",
@@ -54,15 +51,10 @@
     "start:react": "nx run-many --target=start --projects=@vtmn/showcase-react,@vtmn/react --parallel",
     "start:svelte": "nx run-many --target=start --projects=@vtmn/showcase-svelte,@vtmn/svelte --parallel",
     "start:vue": "nx run-many --target=start --projects=@vtmn/showcase-vue,@vtmn/vue --parallel",
-    "start:web-components": "nx run-many --target=start --projects=@vtmn/showcase-web-components,@vtmn/web-components --parallel",
     "stylelint": "stylelint packages/**/*.css",
-    "stylelint:fix": "yarn stylelint --fix",
-    "test": "nx run-many --target=test --all --parallel"
+    "stylelint:fix": "yarn stylelint --fix"
   },
   "lint-staged": {
-    "./**/package.json": [
-      "sort-package-json && nx run-many --target=sort-package-json --all --parallel"
-    ],
     "./packages/**/*.css": [
       "yarn stylelint:fix"
     ],
@@ -71,29 +63,26 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.14.8",
-    "@commitlint/cli": "^15.0.0",
-    "@commitlint/config-conventional": "^15.0.0",
-    "@nrwl/cli": "^13.2.2",
-    "@nrwl/nx-cloud": "^13.0.0",
-    "@nrwl/tao": "^13.2.2",
-    "@nrwl/workspace": "^13.2.2",
-    "@octokit/core": "^3.2.4",
+    "@commitlint/cli": "^16.0.2",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@nrwl/cli": "^13.4.5",
+    "@nrwl/nx-cloud": "^13.0.3",
+    "@nrwl/tao": "^13.4.5",
+    "@nrwl/workspace": "^13.4.5",
     "@storybook/storybook-deployer": "^2.8.10",
-    "babel-loader": "^8.2.2",
     "cross-env": "^7.0.2",
     "husky": "^7.0.1",
     "is-ci": "^3.0.1",
     "lerna": "^4.0.0",
     "lint-staged": "^12.0.2",
     "prettier": "^2.2.1",
-    "prettier-plugin-svelte": "^2.4.0",
-    "shx": "^0.3.3",
-    "sort-package-json": "^1.52.0",
-    "typescript": "4.5.4"
+    "stylelint": "^14.0.0",
+    "stylelint-config-prettier": "^9.0.2",
+    "stylelint-config-standard": "^24.0.0",
+    "typescript": "^4.5.4"
   },
   "engines": {
-    "node": "^12 || ^14",
+    "node": "^14 || ^15 || ^16",
     "npm": "please-use-yarn",
     "yarn": ">= 1.19.1"
   },
@@ -109,7 +98,10 @@
     "commitMessage": "chore: deploy storybook"
   },
   "volta": {
-    "node": "14.17.5",
-    "yarn": "1.22.11"
+    "node": "16.3.1",
+    "yarn": "1.22.17"
+  },
+  "dependencies": {
+    "@types/node": "^17.0.9"
   }
 }

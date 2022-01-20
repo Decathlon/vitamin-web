@@ -26,14 +26,7 @@
     "isolatedModules": true,
     "noEmit": true
   },
-  "include": [
-    "*.js",
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "tests/**/*.ts",
-    "tests/**/*.tsx",
-    "scripts/**/*.js"
-  ],
+  "include": ["*.js", "src/**/*.ts", "src/**/*.tsx", "scripts/**/*.js"],
   "exclude": [
     "**/build",
     "**/dist",

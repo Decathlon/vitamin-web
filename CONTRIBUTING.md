@@ -11,9 +11,9 @@ So, **thanks a lot for this**!! :tada::+1:
   - [Local development](#local-development)
   - [Code of conduct](#code-of-conduct)
   - [What are you talking about? Pull Request? Merge? Push?](#what-are-you-talking-about-pull-request-merge-push)
-  - [How Can I contribute?](#how-can-i-contribute)
-    - [Reporting Bug](#reporting-bug)
-    - [Code Contribution](#code-contribution)
+  - [How can I contribute?](#how-can-i-contribute)
+    - [Reporting an issue](#reporting-an-issue)
+    - [Code contribution](#code-contribution)
       - [Commit and Push on your branch](#commit-and-push-on-your-branch)
     - [Pull Request guidelines](#pull-request-guidelines)
     - [Contribution acceptance criteria](#contribution-acceptance-criteria)
@@ -35,13 +35,11 @@ vitamin-web/
       react/
       svelte/
       vue/
-      web-components/
     sources/
       css/
       react/
       svelte/
       vue/
-      web-components/
 ```
 
 ## Local development
@@ -61,9 +59,6 @@ yarn
 
 # build packages
 yarn build
-
-# test packages
-yarn test
 ```
 
 To develop in watch mode and run all showcases with hot reloads, just run:
@@ -75,7 +70,6 @@ yarn start
 # or if you need don't need to launch every packages, you can launch separately:
 yarn start:css
 yarn start:icons
-yarn start:web-components
 yarn start:react
 yarn start:svelte
 yarn start:vue
@@ -83,14 +77,16 @@ yarn start:vue
 
 For your information, here are the showcases' URLs:
 
-| Showcase       | URL                                     |
-| -------------- | --------------------------------------- |
-| CSS            | [localhost:6006](http://localhost:6006) |
-| Icons          | [localhost:6007](http://localhost:6007) |
-| Web Components | [localhost:6008](http://localhost:6008) |
-| React          | [localhost:6009](http://localhost:6009) |
-| Svelte         | [localhost:6010](http://localhost:6010) |
-| Vue            | [localhost:6011](http://localhost:6011) |
+| Showcase | URL                                     |
+| -------- | --------------------------------------- |
+| CSS      | [localhost:6006](http://localhost:6006) |
+| Icons    | [localhost:6007](http://localhost:6007) |
+| React    | [localhost:6008](http://localhost:6008) |
+| Svelte   | [localhost:6019](http://localhost:6009) |
+| Vue      | [localhost:6010](http://localhost:6010) |
+
+For Windows users, you may errors with UNIX commands like `rm -rf` or `mkdir` used in NPM scripts. To fix this and be able to contribute, you can check "Git for Windows" or Cygwin.
+By default Windows runs NPM scripts with `cmd` but you can change the game with `npm config set script-shell <path to .exe>` and choose your executor.
 
 ## Code of conduct
 
@@ -100,11 +96,11 @@ This project and everyone participating in it is governed by the [following code
 
 If you are not familiar with Git and GitHub terms you can check a complete [glossary](https://help.github.com/articles/github-glossary/) on the GitHub website.
 
-## How Can I contribute?
+## How can I contribute?
 
-### Reporting Bug
+### Reporting an issue
 
-The first way to contribute to a project is simply reporting a Bug. If you find anything which is not working well or as expected you can [open an issue](https://github.com/decathlon/vitamin-web/issues) repository.
+The first way to contribute to a project is simply proposing an issue. If you find anything which is not working well or as expected you can [open an issue](https://github.com/Decathlon/vitamin-web/issues/new/choose).
 
 Before to open the issue please check if there is one similar already opened. It will save us hours of work and it will allow us to answer you quickly with the desired hotfix or implementation.
 
@@ -112,9 +108,15 @@ Before to open the issue please check if there is one similar already opened. It
 
 When you are opening an issue, please be sure to report as much information as you can to allow us to replicate the problem and faster find the solution.
 
-### Code Contribution
+### Code contribution
 
-If you are a dev and you want to directly fix a problem or implement a new feature... you are the best one ! :clap::clap:
+If you are a dev and you want to directly fix a problem or implement a new feature... you are the best one! :clap::clap:
+
+To help you, we have created project boards:
+
+- [Vitamin Web - Build V0 workflow](https://github.com/Decathlon/vitamin-web/projects/2)
+- [Vitamin Web - Run workflow](https://github.com/Decathlon/vitamin-web/projects/3)
+
 To propose any change you have to submit us a [Pull Request](https://help.github.com/articles/about-pull-requests/)
 
 The workflow we are using the one-pay project is:
@@ -126,7 +128,7 @@ The workflow we are using the one-pay project is:
 We will take the time to review your code, make some comments or asking information if needed. But, as you took time to help us, we will take in serious consideration what you are proposing.
 To quickly have your code available on production, please take care and read our [Contribution acceptance criteria](#contribution-acceptance-criteria)
 
-#### Commit and Push on your branch
+#### Commit and push on your branch
 
 ```bash
 git add <files>
@@ -149,6 +151,6 @@ To reach this goal we fixed some rule in our team and we would love to go ahead 
 1. Be sure your code compile: no syntax error, no missing library, ...
 2. Add comments on the code if you want to explain better what is happening in the code.
 3. Add documentation for any API, if needed, or functional explaining what changed/added with your code.
-4. After you proposed the PullRequest. If you will receive any mail or find any automatic comment on the Pull Request you opened, it means there is something which is not respecting the project defined code style or your broke any previously created test.
+4. After you proposed the PullRequest. If you will receive any mail or find any automatic comment on the Pull Request you opened, it means there is something which is not respecting the project defined code style.
 
 If you respect all these rules you will help us saving time and we will be able to check your pull request faster.
