@@ -4,6 +4,7 @@
 @import '@vtmn/css-design-tokens/src/shadows';
 @import '@vtmn/css-design-tokens/src/animations';
 @import '@vtmn/css-design-tokens/src/radius';
+@import '@vtmn/css-design-tokens/src/z-indexes';
 
 .vtmn-toast {
   display: flex;

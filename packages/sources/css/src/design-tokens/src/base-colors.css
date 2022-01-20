@@ -7,476 +7,544 @@
   --vtmn-base-color_white--s: 0%;
   --vtmn-base-color_white--l: 100%;
   --vtmn-base-color_white: hsl(
-    var(--vtmn-base-color_white--h) var(--vtmn-base-color_white--s)
-      var(--vtmn-base-color_white--l)
+    var(--vtmn-base-color_white--h),
+    var(--vtmn-base-color_white--s),
+    var(--vtmn-base-color_white--l)
   );
   --vtmn-base-color_grey50--h: 210;
   --vtmn-base-color_grey50--s: 14.3%;
   --vtmn-base-color_grey50--l: 97.3%;
   --vtmn-base-color_grey50: hsl(
-    var(--vtmn-base-color_grey50--h) var(--vtmn-base-color_grey50--s)
-      var(--vtmn-base-color_grey50--l)
+    var(--vtmn-base-color_grey50--h),
+    var(--vtmn-base-color_grey50--s),
+    var(--vtmn-base-color_grey50--l)
   );
   --vtmn-base-color_grey100--h: 210;
   --vtmn-base-color_grey100--s: 14.3%;
   --vtmn-base-color_grey100--l: 94.5%;
   --vtmn-base-color_grey100: hsl(
-    var(--vtmn-base-color_grey100--h) var(--vtmn-base-color_grey100--s)
-      var(--vtmn-base-color_grey100--l)
+    var(--vtmn-base-color_grey100--h),
+    var(--vtmn-base-color_grey100--s),
+    var(--vtmn-base-color_grey100--l)
   );
   --vtmn-base-color_grey200--h: 210;
   --vtmn-base-color_grey200--s: 11.8%;
   --vtmn-base-color_grey200--l: 86.7%;
   --vtmn-base-color_grey200: hsl(
-    var(--vtmn-base-color_grey200--h) var(--vtmn-base-color_grey200--s)
-      var(--vtmn-base-color_grey200--l)
+    var(--vtmn-base-color_grey200--h),
+    var(--vtmn-base-color_grey200--s),
+    var(--vtmn-base-color_grey200--l)
   );
   --vtmn-base-color_grey300--h: 214;
   --vtmn-base-color_grey300--s: 11.8%;
   --vtmn-base-color_grey300--l: 73.3%;
   --vtmn-base-color_grey300: hsl(
-    var(--vtmn-base-color_grey300--h) var(--vtmn-base-color_grey300--s)
-      var(--vtmn-base-color_grey300--l)
+    var(--vtmn-base-color_grey300--h),
+    var(--vtmn-base-color_grey300--s),
+    var(--vtmn-base-color_grey300--l)
   );
   --vtmn-base-color_grey400--h: 213;
   --vtmn-base-color_grey400--s: 10.6%;
   --vtmn-base-color_grey400--l: 59.2%;
   --vtmn-base-color_grey400: hsl(
-    var(--vtmn-base-color_grey400--h) var(--vtmn-base-color_grey400--s)
-      var(--vtmn-base-color_grey400--l)
+    var(--vtmn-base-color_grey400--h),
+    var(--vtmn-base-color_grey400--s),
+    var(--vtmn-base-color_grey400--l)
   );
   --vtmn-base-color_grey500--h: 211;
   --vtmn-base-color_grey500--s: 13%;
   --vtmn-base-color_grey500--l: 46.9%;
   --vtmn-base-color_grey500: hsl(
-    var(--vtmn-base-color_grey500--h) var(--vtmn-base-color_grey500--s)
-      var(--vtmn-base-color_grey500--l)
+    var(--vtmn-base-color_grey500--h),
+    var(--vtmn-base-color_grey500--s),
+    var(--vtmn-base-color_grey500--l)
   );
   --vtmn-base-color_grey600--h: 209;
   --vtmn-base-color_grey600--s: 15.7%;
   --vtmn-base-color_grey600--l: 36.3%;
   --vtmn-base-color_grey600: hsl(
-    var(--vtmn-base-color_grey600--h) var(--vtmn-base-color_grey600--s)
-      var(--vtmn-base-color_grey600--l)
+    var(--vtmn-base-color_grey600--h),
+    var(--vtmn-base-color_grey600--s),
+    var(--vtmn-base-color_grey600--l)
   );
   --vtmn-base-color_grey700--h: 206;
   --vtmn-base-color_grey700--s: 21.2%;
   --vtmn-base-color_grey700--l: 25.9%;
   --vtmn-base-color_grey700: hsl(
-    var(--vtmn-base-color_grey700--h) var(--vtmn-base-color_grey700--s)
-      var(--vtmn-base-color_grey700--l)
+    var(--vtmn-base-color_grey700--h),
+    var(--vtmn-base-color_grey700--s),
+    var(--vtmn-base-color_grey700--l)
   );
   --vtmn-base-color_grey800--h: 203;
   --vtmn-base-color_grey800--s: 33.3%;
   --vtmn-base-color_grey800--l: 15.3%;
   --vtmn-base-color_grey800: hsl(
-    var(--vtmn-base-color_grey800--h) var(--vtmn-base-color_grey800--s)
-      var(--vtmn-base-color_grey800--l)
+    var(--vtmn-base-color_grey800--h),
+    var(--vtmn-base-color_grey800--s),
+    var(--vtmn-base-color_grey800--l)
   );
   --vtmn-base-color_grey900--h: 203;
   --vtmn-base-color_grey900--s: 34.4%;
   --vtmn-base-color_grey900--l: 12%;
   --vtmn-base-color_grey900: hsl(
-    var(--vtmn-base-color_grey900--h) var(--vtmn-base-color_grey900--s)
-      var(--vtmn-base-color_grey900--l)
+    var(--vtmn-base-color_grey900--h),
+    var(--vtmn-base-color_grey900--s),
+    var(--vtmn-base-color_grey900--l)
   );
   --vtmn-base-color_black--h: 200;
   --vtmn-base-color_black--s: 100%;
   --vtmn-base-color_black--l: 4.7%;
   --vtmn-base-color_black: hsl(
-    var(--vtmn-base-color_black--h) var(--vtmn-base-color_black--s)
-      var(--vtmn-base-color_black--l)
+    var(--vtmn-base-color_black--h),
+    var(--vtmn-base-color_black--s),
+    var(--vtmn-base-color_black--l)
   );
   --vtmn-base-color_red50--h: 357;
   --vtmn-base-color_red50--s: 90%;
   --vtmn-base-color_red50--l: 96.1%;
   --vtmn-base-color_red50: hsl(
-    var(--vtmn-base-color_red50--h) var(--vtmn-base-color_red50--s)
-      var(--vtmn-base-color_red50--l)
+    var(--vtmn-base-color_red50--h),
+    var(--vtmn-base-color_red50--s),
+    var(--vtmn-base-color_red50--l)
   );
   --vtmn-base-color_red100--h: 358;
   --vtmn-base-color_red100--s: 96.4%;
   --vtmn-base-color_red100--l: 89.2%;
   --vtmn-base-color_red100: hsl(
-    var(--vtmn-base-color_red100--h) var(--vtmn-base-color_red100--s)
-      var(--vtmn-base-color_red100--l)
+    var(--vtmn-base-color_red100--h),
+    var(--vtmn-base-color_red100--s),
+    var(--vtmn-base-color_red100--l)
   );
   --vtmn-base-color_red200--h: 357;
   --vtmn-base-color_red200--s: 96.4%;
   --vtmn-base-color_red200--l: 78.2%;
   --vtmn-base-color_red200: hsl(
-    var(--vtmn-base-color_red200--h) var(--vtmn-base-color_red200--s)
-      var(--vtmn-base-color_red200--l)
+    var(--vtmn-base-color_red200--h),
+    var(--vtmn-base-color_red200--s),
+    var(--vtmn-base-color_red200--l)
   );
   --vtmn-base-color_red300--h: 357;
   --vtmn-base-color_red300--s: 97.2%;
   --vtmn-base-color_red300--l: 72%;
   --vtmn-base-color_red300: hsl(
-    var(--vtmn-base-color_red300--h) var(--vtmn-base-color_red300--s)
-      var(--vtmn-base-color_red300--l)
+    var(--vtmn-base-color_red300--h),
+    var(--vtmn-base-color_red300--s),
+    var(--vtmn-base-color_red300--l)
   );
   --vtmn-base-color_red400--h: 357;
   --vtmn-base-color_red400--s: 77.1%;
   --vtmn-base-color_red400--l: 52%;
   --vtmn-base-color_red400: hsl(
-    var(--vtmn-base-color_red400--h) var(--vtmn-base-color_red400--s)
-      var(--vtmn-base-color_red400--l)
+    var(--vtmn-base-color_red400--h),
+    var(--vtmn-base-color_red400--s),
+    var(--vtmn-base-color_red400--l)
   );
   --vtmn-base-color_red500--h: 357;
   --vtmn-base-color_red500--s: 100%;
   --vtmn-base-color_red500--l: 33.5%;
   --vtmn-base-color_red500: hsl(
-    var(--vtmn-base-color_red500--h) var(--vtmn-base-color_red500--s)
-      var(--vtmn-base-color_red500--l)
+    var(--vtmn-base-color_red500--h),
+    var(--vtmn-base-color_red500--s),
+    var(--vtmn-base-color_red500--l)
   );
   --vtmn-base-color_red600--h: 357;
   --vtmn-base-color_red600--s: 100%;
   --vtmn-base-color_red600--l: 26.5%;
   --vtmn-base-color_red600: hsl(
-    var(--vtmn-base-color_red600--h) var(--vtmn-base-color_red600--s)
-      var(--vtmn-base-color_red600--l)
+    var(--vtmn-base-color_red600--h),
+    var(--vtmn-base-color_red600--s),
+    var(--vtmn-base-color_red600--l)
   );
   --vtmn-base-color_red700--h: 357;
   --vtmn-base-color_red700--s: 100%;
   --vtmn-base-color_red700--l: 17.6%;
   --vtmn-base-color_red700: hsl(
-    var(--vtmn-base-color_red700--h) var(--vtmn-base-color_red700--s)
-      var(--vtmn-base-color_red700--l)
+    var(--vtmn-base-color_red700--h),
+    var(--vtmn-base-color_red700--s),
+    var(--vtmn-base-color_red700--l)
   );
   --vtmn-base-color_orange50--h: 20;
   --vtmn-base-color_orange50--s: 100%;
   --vtmn-base-color_orange50--l: 96.5%;
   --vtmn-base-color_orange50: hsl(
-    var(--vtmn-base-color_orange50--h) var(--vtmn-base-color_orange50--s)
-      var(--vtmn-base-color_orange50--l)
+    var(--vtmn-base-color_orange50--h),
+    var(--vtmn-base-color_orange50--s),
+    var(--vtmn-base-color_orange50--l)
   );
   --vtmn-base-color_orange100--h: 20;
   --vtmn-base-color_orange100--s: 100%;
   --vtmn-base-color_orange100--l: 92%;
   --vtmn-base-color_orange100: hsl(
-    var(--vtmn-base-color_orange100--h) var(--vtmn-base-color_orange100--s)
-      var(--vtmn-base-color_orange100--l)
+    var(--vtmn-base-color_orange100--h),
+    var(--vtmn-base-color_orange100--s),
+    var(--vtmn-base-color_orange100--l)
   );
   --vtmn-base-color_orange200--h: 21;
   --vtmn-base-color_orange200--s: 89.5%;
   --vtmn-base-color_orange200--l: 81.4%;
   --vtmn-base-color_orange200: hsl(
-    var(--vtmn-base-color_orange200--h) var(--vtmn-base-color_orange200--s)
-      var(--vtmn-base-color_orange200--l)
+    var(--vtmn-base-color_orange200--h),
+    var(--vtmn-base-color_orange200--s),
+    var(--vtmn-base-color_orange200--l)
   );
   --vtmn-base-color_orange300--h: 21;
   --vtmn-base-color_orange300--s: 93.5%;
   --vtmn-base-color_orange300--l: 69.6%;
   --vtmn-base-color_orange300: hsl(
-    var(--vtmn-base-color_orange300--h) var(--vtmn-base-color_orange300--s)
-      var(--vtmn-base-color_orange300--l)
+    var(--vtmn-base-color_orange300--h),
+    var(--vtmn-base-color_orange300--s),
+    var(--vtmn-base-color_orange300--l)
   );
   --vtmn-base-color_orange400--h: 21;
   --vtmn-base-color_orange400--s: 100%;
   --vtmn-base-color_orange400--l: 52%;
   --vtmn-base-color_orange400: hsl(
-    var(--vtmn-base-color_orange400--h) var(--vtmn-base-color_orange400--s)
-      var(--vtmn-base-color_orange400--l)
+    var(--vtmn-base-color_orange400--h),
+    var(--vtmn-base-color_orange400--s),
+    var(--vtmn-base-color_orange400--l)
   );
   --vtmn-base-color_orange500--h: 21;
   --vtmn-base-color_orange500--s: 65%;
   --vtmn-base-color_orange500--l: 45.9%;
   --vtmn-base-color_orange500: hsl(
-    var(--vtmn-base-color_orange500--h) var(--vtmn-base-color_orange500--s)
-      var(--vtmn-base-color_orange500--l)
+    var(--vtmn-base-color_orange500--h),
+    var(--vtmn-base-color_orange500--s),
+    var(--vtmn-base-color_orange500--l)
   );
   --vtmn-base-color_orange600--h: 21;
   --vtmn-base-color_orange600--s: 64.7%;
   --vtmn-base-color_orange600--l: 36.7%;
   --vtmn-base-color_orange600: hsl(
-    var(--vtmn-base-color_orange600--h) var(--vtmn-base-color_orange600--s)
-      var(--vtmn-base-color_orange600--l)
+    var(--vtmn-base-color_orange600--h),
+    var(--vtmn-base-color_orange600--s),
+    var(--vtmn-base-color_orange600--l)
   );
   --vtmn-base-color_orange700--h: 21;
   --vtmn-base-color_orange700--s: 64.8%;
   --vtmn-base-color_orange700--l: 24.5%;
   --vtmn-base-color_orange700: hsl(
-    var(--vtmn-base-color_orange700--h) var(--vtmn-base-color_orange700--s)
-      var(--vtmn-base-color_orange700--l)
+    var(--vtmn-base-color_orange700--h),
+    var(--vtmn-base-color_orange700--s),
+    var(--vtmn-base-color_orange700--l)
   );
   --vtmn-base-color_yellow50--h: 56;
   --vtmn-base-color_yellow50--s: 100%;
   --vtmn-base-color_yellow50--l: 97.1%;
   --vtmn-base-color_yellow50: hsl(
-    var(--vtmn-base-color_yellow50--h) var(--vtmn-base-color_yellow50--s)
-      var(--vtmn-base-color_yellow50--l)
+    var(--vtmn-base-color_yellow50--h),
+    var(--vtmn-base-color_yellow50--s),
+    var(--vtmn-base-color_yellow50--l)
   );
   --vtmn-base-color_yellow100--h: 56;
   --vtmn-base-color_yellow100--s: 100%;
   --vtmn-base-color_yellow100--l: 89%;
   --vtmn-base-color_yellow100: hsl(
-    var(--vtmn-base-color_yellow100--h) var(--vtmn-base-color_yellow100--s)
-      var(--vtmn-base-color_yellow100--l)
+    var(--vtmn-base-color_yellow100--h),
+    var(--vtmn-base-color_yellow100--s),
+    var(--vtmn-base-color_yellow100--l)
   );
   --vtmn-base-color_yellow200--h: 55;
   --vtmn-base-color_yellow200--s: 100%;
   --vtmn-base-color_yellow200--l: 77.6%;
   --vtmn-base-color_yellow200: hsl(
-    var(--vtmn-base-color_yellow200--h) var(--vtmn-base-color_yellow200--s)
-      var(--vtmn-base-color_yellow200--l)
+    var(--vtmn-base-color_yellow200--h),
+    var(--vtmn-base-color_yellow200--s),
+    var(--vtmn-base-color_yellow200--l)
   );
   --vtmn-base-color_yellow300--h: 55;
   --vtmn-base-color_yellow300--s: 100%;
   --vtmn-base-color_yellow300--l: 72%;
   --vtmn-base-color_yellow300: hsl(
-    var(--vtmn-base-color_yellow300--h) var(--vtmn-base-color_yellow300--s)
-      var(--vtmn-base-color_yellow300--l)
+    var(--vtmn-base-color_yellow300--h),
+    var(--vtmn-base-color_yellow300--s),
+    var(--vtmn-base-color_yellow300--l)
   );
   --vtmn-base-color_yellow400--h: 54;
   --vtmn-base-color_yellow400--s: 100%;
   --vtmn-base-color_yellow400--l: 57.8%;
   --vtmn-base-color_yellow400: hsl(
-    var(--vtmn-base-color_yellow400--h) var(--vtmn-base-color_yellow400--s)
-      var(--vtmn-base-color_yellow400--l)
+    var(--vtmn-base-color_yellow400--h),
+    var(--vtmn-base-color_yellow400--s),
+    var(--vtmn-base-color_yellow400--l)
   );
   --vtmn-base-color_yellow500--h: 55;
   --vtmn-base-color_yellow500--s: 62.1%;
   --vtmn-base-color_yellow500--l: 45.5%;
   --vtmn-base-color_yellow500: hsl(
-    var(--vtmn-base-color_yellow500--h) var(--vtmn-base-color_yellow500--s)
-      var(--vtmn-base-color_yellow500--l)
+    var(--vtmn-base-color_yellow500--h),
+    var(--vtmn-base-color_yellow500--s),
+    var(--vtmn-base-color_yellow500--l)
   );
   --vtmn-base-color_yellow600--h: 55;
   --vtmn-base-color_yellow600--s: 58.5%;
   --vtmn-base-color_yellow600--l: 37.8%;
   --vtmn-base-color_yellow600: hsl(
-    var(--vtmn-base-color_yellow600--h) var(--vtmn-base-color_yellow600--s)
-      var(--vtmn-base-color_yellow600--l)
+    var(--vtmn-base-color_yellow600--h),
+    var(--vtmn-base-color_yellow600--s),
+    var(--vtmn-base-color_yellow600--l)
   );
   --vtmn-base-color_yellow700--h: 55;
   --vtmn-base-color_yellow700--s: 58.5%;
   --vtmn-base-color_yellow700--l: 25.5%;
   --vtmn-base-color_yellow700: hsl(
-    var(--vtmn-base-color_yellow700--h) var(--vtmn-base-color_yellow700--s)
-      var(--vtmn-base-color_yellow700--l)
+    var(--vtmn-base-color_yellow700--h),
+    var(--vtmn-base-color_yellow700--s),
+    var(--vtmn-base-color_yellow700--l)
   );
   --vtmn-base-color_conifer50--h: 114;
   --vtmn-base-color_conifer50--s: 70.4%;
   --vtmn-base-color_conifer50--l: 94.7%;
   --vtmn-base-color_conifer50: hsl(
-    var(--vtmn-base-color_conifer50--h) var(--vtmn-base-color_conifer50--s)
-      var(--vtmn-base-color_conifer50--l)
+    var(--vtmn-base-color_conifer50--h),
+    var(--vtmn-base-color_conifer50--s),
+    var(--vtmn-base-color_conifer50--l)
   );
   --vtmn-base-color_conifer100--h: 114;
   --vtmn-base-color_conifer100--s: 57.7%;
   --vtmn-base-color_conifer100--l: 86.1%;
   --vtmn-base-color_conifer100: hsl(
-    var(--vtmn-base-color_conifer100--h) var(--vtmn-base-color_conifer100--s)
-      var(--vtmn-base-color_conifer100--l)
+    var(--vtmn-base-color_conifer100--h),
+    var(--vtmn-base-color_conifer100--s),
+    var(--vtmn-base-color_conifer100--l)
   );
   --vtmn-base-color_conifer200--h: 114;
   --vtmn-base-color_conifer200--s: 52.4%;
   --vtmn-base-color_conifer200--l: 67.1%;
   --vtmn-base-color_conifer200: hsl(
-    var(--vtmn-base-color_conifer200--h) var(--vtmn-base-color_conifer200--s)
-      var(--vtmn-base-color_conifer200--l)
+    var(--vtmn-base-color_conifer200--h),
+    var(--vtmn-base-color_conifer200--s),
+    var(--vtmn-base-color_conifer200--l)
   );
   --vtmn-base-color_conifer300--h: 114;
   --vtmn-base-color_conifer300--s: 45.4%;
   --vtmn-base-color_conifer300--l: 59.8%;
   --vtmn-base-color_conifer300: hsl(
-    var(--vtmn-base-color_conifer300--h) var(--vtmn-base-color_conifer300--s)
-      var(--vtmn-base-color_conifer300--l)
+    var(--vtmn-base-color_conifer300--h),
+    var(--vtmn-base-color_conifer300--s),
+    var(--vtmn-base-color_conifer300--l)
   );
   --vtmn-base-color_conifer400--h: 134;
   --vtmn-base-color_conifer400--s: 65.7%;
   --vtmn-base-color_conifer400--l: 40%;
   --vtmn-base-color_conifer400: hsl(
-    var(--vtmn-base-color_conifer400--h) var(--vtmn-base-color_conifer400--s)
-      var(--vtmn-base-color_conifer400--l)
+    var(--vtmn-base-color_conifer400--h),
+    var(--vtmn-base-color_conifer400--s),
+    var(--vtmn-base-color_conifer400--l)
   );
   --vtmn-base-color_conifer500--h: 114;
   --vtmn-base-color_conifer500--s: 49.5%;
   --vtmn-base-color_conifer500--l: 42%;
   --vtmn-base-color_conifer500: hsl(
-    var(--vtmn-base-color_conifer500--h) var(--vtmn-base-color_conifer500--s)
-      var(--vtmn-base-color_conifer500--l)
+    var(--vtmn-base-color_conifer500--h),
+    var(--vtmn-base-color_conifer500--s),
+    var(--vtmn-base-color_conifer500--l)
   );
   --vtmn-base-color_conifer600--h: 114;
   --vtmn-base-color_conifer600--s: 50.8%;
   --vtmn-base-color_conifer600--l: 36.7%;
   --vtmn-base-color_conifer600: hsl(
-    var(--vtmn-base-color_conifer600--h) var(--vtmn-base-color_conifer600--s)
-      var(--vtmn-base-color_conifer600--l)
+    var(--vtmn-base-color_conifer600--h),
+    var(--vtmn-base-color_conifer600--s),
+    var(--vtmn-base-color_conifer600--l)
   );
   --vtmn-base-color_conifer700--h: 114;
   --vtmn-base-color_conifer700--s: 57.7%;
   --vtmn-base-color_conifer700--l: 26.9%;
   --vtmn-base-color_conifer700: hsl(
-    var(--vtmn-base-color_conifer700--h) var(--vtmn-base-color_conifer700--s)
-      var(--vtmn-base-color_conifer700--l)
+    var(--vtmn-base-color_conifer700--h),
+    var(--vtmn-base-color_conifer700--s),
+    var(--vtmn-base-color_conifer700--l)
   );
   --vtmn-base-color_green50--h: 163;
   --vtmn-base-color_green50--s: 63.6%;
   --vtmn-base-color_green50--l: 93.5%;
   --vtmn-base-color_green50: hsl(
-    var(--vtmn-base-color_green50--h) var(--vtmn-base-color_green50--s)
-      var(--vtmn-base-color_green50--l)
+    var(--vtmn-base-color_green50--h),
+    var(--vtmn-base-color_green50--s),
+    var(--vtmn-base-color_green50--l)
   );
   --vtmn-base-color_green100--h: 164;
   --vtmn-base-color_green100--s: 60.5%;
   --vtmn-base-color_green100--l: 84.1%;
   --vtmn-base-color_green100: hsl(
-    var(--vtmn-base-color_green100--h) var(--vtmn-base-color_green100--s)
-      var(--vtmn-base-color_green100--l)
+    var(--vtmn-base-color_green100--h),
+    var(--vtmn-base-color_green100--s),
+    var(--vtmn-base-color_green100--l)
   );
   --vtmn-base-color_green200--h: 164;
   --vtmn-base-color_green200--s: 60.7%;
   --vtmn-base-color_green200--l: 68%;
   --vtmn-base-color_green200: hsl(
-    var(--vtmn-base-color_green200--h) var(--vtmn-base-color_green200--s)
-      var(--vtmn-base-color_green200--l)
+    var(--vtmn-base-color_green200--h),
+    var(--vtmn-base-color_green200--s),
+    var(--vtmn-base-color_green200--l)
   );
   --vtmn-base-color_green300--h: 163;
   --vtmn-base-color_green300--s: 72.4%;
   --vtmn-base-color_green300--l: 46.9%;
   --vtmn-base-color_green300: hsl(
-    var(--vtmn-base-color_green300--h) var(--vtmn-base-color_green300--s)
-      var(--vtmn-base-color_green300--l)
+    var(--vtmn-base-color_green300--h),
+    var(--vtmn-base-color_green300--s),
+    var(--vtmn-base-color_green300--l)
   );
   --vtmn-base-color_green400--h: 163;
   --vtmn-base-color_green400--s: 97.9%;
   --vtmn-base-color_green400--l: 37.6%;
   --vtmn-base-color_green400: hsl(
-    var(--vtmn-base-color_green400--h) var(--vtmn-base-color_green400--s)
-      var(--vtmn-base-color_green400--l)
+    var(--vtmn-base-color_green400--h),
+    var(--vtmn-base-color_green400--s),
+    var(--vtmn-base-color_green400--l)
   );
   --vtmn-base-color_green500--h: 163;
   --vtmn-base-color_green500--s: 97.5%;
   --vtmn-base-color_green500--l: 31.4%;
   --vtmn-base-color_green500: hsl(
-    var(--vtmn-base-color_green500--h) var(--vtmn-base-color_green500--s)
-      var(--vtmn-base-color_green500--l)
+    var(--vtmn-base-color_green500--h),
+    var(--vtmn-base-color_green500--s),
+    var(--vtmn-base-color_green500--l)
   );
   --vtmn-base-color_green600--h: 163;
   --vtmn-base-color_green600--s: 98.4%;
   --vtmn-base-color_green600--l: 25.1%;
   --vtmn-base-color_green600: hsl(
-    var(--vtmn-base-color_green600--h) var(--vtmn-base-color_green600--s)
-      var(--vtmn-base-color_green600--l)
+    var(--vtmn-base-color_green600--h),
+    var(--vtmn-base-color_green600--s),
+    var(--vtmn-base-color_green600--l)
   );
   --vtmn-base-color_green700--h: 156;
   --vtmn-base-color_green700--s: 100%;
   --vtmn-base-color_green700--l: 21.8%;
   --vtmn-base-color_green700: hsl(
-    var(--vtmn-base-color_green700--h) var(--vtmn-base-color_green700--s)
-      var(--vtmn-base-color_green700--l)
+    var(--vtmn-base-color_green700--h),
+    var(--vtmn-base-color_green700--s),
+    var(--vtmn-base-color_green700--l)
   );
   --vtmn-base-color_blue50--h: 200;
   --vtmn-base-color_blue50--s: 60%;
   --vtmn-base-color_blue50--l: 94.1%;
   --vtmn-base-color_blue50: hsl(
-    var(--vtmn-base-color_blue50--h) var(--vtmn-base-color_blue50--s)
-      var(--vtmn-base-color_blue50--l)
+    var(--vtmn-base-color_blue50--h),
+    var(--vtmn-base-color_blue50--s),
+    var(--vtmn-base-color_blue50--l)
   );
   --vtmn-base-color_blue100--h: 201;
   --vtmn-base-color_blue100--s: 60.5%;
   --vtmn-base-color_blue100--l: 84.1%;
   --vtmn-base-color_blue100: hsl(
-    var(--vtmn-base-color_blue100--h) var(--vtmn-base-color_blue100--s)
-      var(--vtmn-base-color_blue100--l)
+    var(--vtmn-base-color_blue100--h),
+    var(--vtmn-base-color_blue100--s),
+    var(--vtmn-base-color_blue100--l)
   );
   --vtmn-base-color_blue200--h: 201;
   --vtmn-base-color_blue200--s: 61.2%;
   --vtmn-base-color_blue200--l: 68.6%;
   --vtmn-base-color_blue200: hsl(
-    var(--vtmn-base-color_blue200--h) var(--vtmn-base-color_blue200--s)
-      var(--vtmn-base-color_blue200--l)
+    var(--vtmn-base-color_blue200--h),
+    var(--vtmn-base-color_blue200--s),
+    var(--vtmn-base-color_blue200--l)
   );
   --vtmn-base-color_blue300--h: 201;
   --vtmn-base-color_blue300--s: 58.4%;
   --vtmn-base-color_blue300--l: 52%;
   --vtmn-base-color_blue300: hsl(
-    var(--vtmn-base-color_blue300--h) var(--vtmn-base-color_blue300--s)
-      var(--vtmn-base-color_blue300--l)
+    var(--vtmn-base-color_blue300--h),
+    var(--vtmn-base-color_blue300--s),
+    var(--vtmn-base-color_blue300--l)
   );
   --vtmn-base-color_blue400--h: 200;
   --vtmn-base-color_blue400--s: 100%;
   --vtmn-base-color_blue400--l: 36.9%;
   --vtmn-base-color_blue400: hsl(
-    var(--vtmn-base-color_blue400--h) var(--vtmn-base-color_blue400--s)
-      var(--vtmn-base-color_blue400--l)
+    var(--vtmn-base-color_blue400--h),
+    var(--vtmn-base-color_blue400--s),
+    var(--vtmn-base-color_blue400--l)
   );
   --vtmn-base-color_blue500--h: 200;
   --vtmn-base-color_blue500--s: 100%;
   --vtmn-base-color_blue500--l: 30.8%;
   --vtmn-base-color_blue500: hsl(
-    var(--vtmn-base-color_blue500--h) var(--vtmn-base-color_blue500--s)
-      var(--vtmn-base-color_blue500--l)
+    var(--vtmn-base-color_blue500--h),
+    var(--vtmn-base-color_blue500--s),
+    var(--vtmn-base-color_blue500--l)
   );
   --vtmn-base-color_blue600--h: 200;
   --vtmn-base-color_blue600--s: 100%;
   --vtmn-base-color_blue600--l: 24.5%;
   --vtmn-base-color_blue600: hsl(
-    var(--vtmn-base-color_blue600--h) var(--vtmn-base-color_blue600--s)
-      var(--vtmn-base-color_blue600--l)
+    var(--vtmn-base-color_blue600--h),
+    var(--vtmn-base-color_blue600--s),
+    var(--vtmn-base-color_blue600--l)
   );
   --vtmn-base-color_blue700--h: 205;
   --vtmn-base-color_blue700--s: 97.3%;
   --vtmn-base-color_blue700--l: 14.5%;
   --vtmn-base-color_blue700: hsl(
-    var(--vtmn-base-color_blue700--h) var(--vtmn-base-color_blue700--s)
-      var(--vtmn-base-color_blue700--l)
+    var(--vtmn-base-color_blue700--h),
+    var(--vtmn-base-color_blue700--s),
+    var(--vtmn-base-color_blue700--l)
   );
   --vtmn-base-color_purple50--h: 300;
   --vtmn-base-color_purple50--s: 16.1%;
   --vtmn-base-color_purple50--l: 93.9%;
   --vtmn-base-color_purple50: hsl(
-    var(--vtmn-base-color_purple50--h) var(--vtmn-base-color_purple50--s)
-      var(--vtmn-base-color_purple50--l)
+    var(--vtmn-base-color_purple50--h),
+    var(--vtmn-base-color_purple50--s),
+    var(--vtmn-base-color_purple50--l)
   );
   --vtmn-base-color_purple100--h: 296;
   --vtmn-base-color_purple100--s: 17.1%;
   --vtmn-base-color_purple100--l: 83.9%;
   --vtmn-base-color_purple100: hsl(
-    var(--vtmn-base-color_purple100--h) var(--vtmn-base-color_purple100--s)
-      var(--vtmn-base-color_purple100--l)
+    var(--vtmn-base-color_purple100--h),
+    var(--vtmn-base-color_purple100--s),
+    var(--vtmn-base-color_purple100--l)
   );
   --vtmn-base-color_purple200--h: 295;
   --vtmn-base-color_purple200--s: 17.5%;
   --vtmn-base-color_purple200--l: 62%;
   --vtmn-base-color_purple200: hsl(
-    var(--vtmn-base-color_purple200--h) var(--vtmn-base-color_purple200--s)
-      var(--vtmn-base-color_purple200--l)
+    var(--vtmn-base-color_purple200--h),
+    var(--vtmn-base-color_purple200--s),
+    var(--vtmn-base-color_purple200--l)
   );
   --vtmn-base-color_purple300--h: 294;
   --vtmn-base-color_purple300--s: 17.6%;
   --vtmn-base-color_purple300--l: 52%;
   --vtmn-base-color_purple300: hsl(
-    var(--vtmn-base-color_purple300--h) var(--vtmn-base-color_purple300--s)
-      var(--vtmn-base-color_purple300--l)
+    var(--vtmn-base-color_purple300--h),
+    var(--vtmn-base-color_purple300--s),
+    var(--vtmn-base-color_purple300--l)
   );
   --vtmn-base-color_purple400--h: 295;
   --vtmn-base-color_purple400--s: 17.5%;
   --vtmn-base-color_purple400--l: 37.1%;
   --vtmn-base-color_purple400: hsl(
-    var(--vtmn-base-color_purple400--h) var(--vtmn-base-color_purple400--s)
-      var(--vtmn-base-color_purple400--l)
+    var(--vtmn-base-color_purple400--h),
+    var(--vtmn-base-color_purple400--s),
+    var(--vtmn-base-color_purple400--l)
   );
   --vtmn-base-color_purple500--h: 296;
   --vtmn-base-color_purple500--s: 17.7%;
   --vtmn-base-color_purple500--l: 31%;
   --vtmn-base-color_purple500: hsl(
-    var(--vtmn-base-color_purple500--h) var(--vtmn-base-color_purple500--s)
-      var(--vtmn-base-color_purple500--l)
+    var(--vtmn-base-color_purple500--h),
+    var(--vtmn-base-color_purple500--s),
+    var(--vtmn-base-color_purple500--l)
   );
   --vtmn-base-color_purple600--h: 295;
   --vtmn-base-color_purple600--s: 17.2%;
   --vtmn-base-color_purple600--l: 25.1%;
   --vtmn-base-color_purple600: hsl(
-    var(--vtmn-base-color_purple600--h) var(--vtmn-base-color_purple600--s)
-      var(--vtmn-base-color_purple600--l)
+    var(--vtmn-base-color_purple600--h),
+    var(--vtmn-base-color_purple600--s),
+    var(--vtmn-base-color_purple600--l)
   );
   --vtmn-base-color_purple700--h: 295;
   --vtmn-base-color_purple700--s: 16.9%;
   --vtmn-base-color_purple700--l: 15.1%;
   --vtmn-base-color_purple700: hsl(
-    var(--vtmn-base-color_purple700--h) var(--vtmn-base-color_purple700--s)
-      var(--vtmn-base-color_purple700--l)
+    var(--vtmn-base-color_purple700--h),
+    var(--vtmn-base-color_purple700--s),
+    var(--vtmn-base-color_purple700--l)
   );
 }

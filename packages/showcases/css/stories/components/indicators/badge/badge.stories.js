@@ -3,6 +3,7 @@ import _default from './examples/default.html';
 import brand from './examples/brand.html';
 import reversed from './examples/reversed.html';
 import accent from './examples/accent.html';
+import alert from './examples/alert.html';
 import { parameters } from '@vtmn/showcase-core/csf/components/VtmnBadge.csf';
 
 export default {
@@ -52,6 +53,15 @@ Accent.parameters = {
   docs: {
     source: {
       code: accent,
+    },
+  },
+};
+
+export const Alert = () => alert;
+Alert.parameters = {
+  docs: {
+    source: {
+      code: alert,
     },
   },
 };

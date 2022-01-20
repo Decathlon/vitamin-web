@@ -16,7 +16,7 @@
 @import './opacities';
 
 /* Radius */
-@import '/radius';
+@import './radius';
 
 /* Shadows */
 @import './shadows';

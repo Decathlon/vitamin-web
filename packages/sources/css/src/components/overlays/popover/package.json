@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-popover",
-  "version": "0.3.10",
+  "version": "0.4.0",
   "description": "Decathlon Design System - Vitamin specific CSS styles for popover component",
   "keywords": [
     "design-system",
@@ -26,7 +26,7 @@
     "build": "node build.js"
   },
   "devDependencies": {
-    "@vtmn/css-design-tokens": "^0.14.0",
+    "@vtmn/css-design-tokens": "^0.16.0",
     "@vtmn/css-postcss-config": "*"
   },
   "publishConfig": {

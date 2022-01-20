@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.10](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-loader@0.2.9...@vtmn/css-loader@0.2.10) (2022-01-20)
+
+
+### Bug Fixes
+
+* bad versions of design tokens ([ecb49f3](https://github.com/Decathlon/vitamin-web/commit/ecb49f3d1e672cb3ba78c23dc64fd899ea4a08c1))
+
+
+
+
+
 ## [0.2.9](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-loader@0.2.8...@vtmn/css-loader@0.2.9) (2022-01-17)
 
 **Note:** Version bump only for package @vtmn/css-loader
