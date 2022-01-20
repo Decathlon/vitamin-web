@@ -1,0 +1,54 @@
+<style>
+  .vertical-block {
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 599px) {
+    .block {
+      width: 50%;
+    }
+  }
+</style>
+
+<div class="block vertical-block">
+  <div
+    class="vtmn-divider vtmn-divider_orientation--vertical"
+    role="separator"
+    aria-orientation="vertical"
+  ></div>
+
+  <div
+    class="vtmn-divider vtmn-divider_orientation--vertical"
+    role="separator"
+    aria-orientation="vertical"
+  >
+    Default Label
+  </div>
+
+  <div
+    class="vtmn-divider vtmn-divider_text-position--start vtmn-divider_orientation--vertical"
+    role="separator"
+    aria-orientation="vertical"
+  >
+    Start Label
+  </div>
+
+  <div
+    class="vtmn-divider vtmn-divider_text-position--center vtmn-divider_orientation--vertical"
+    role="separator"
+    aria-orientation="vertical"
+  >
+    Center Label
+  </div>
+
+  <div
+    class="vtmn-divider vtmn-divider_text-position--end vtmn-divider_orientation--vertical"
+    role="separator"
+    aria-orientation="vertical"
+  >
+    End Label
+  </div>
+</div>

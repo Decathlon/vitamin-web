@@ -1,4 +1,5 @@
 import * as React from 'react';
+import '@vtmn/css-tooltip/dist/index-with-vars.css';
 import { VtmnTooltipPosition } from './types';
 
 export interface VtmnTooltipProps

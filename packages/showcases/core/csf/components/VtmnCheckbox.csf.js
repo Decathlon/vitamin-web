@@ -15,34 +15,10 @@ export const argTypes = {
       type: 'text',
     },
   },
-  name: {
-    type: { name: 'string', required: false },
-    description: 'The name of the checkbox.',
-    defaultValue: null,
-    control: {
-      type: 'text',
-    },
-  },
-  value: {
-    type: { name: 'string', required: false },
-    description: 'The value of the checkbox.',
-    defaultValue: null,
-    control: {
-      type: 'text',
-    },
-  },
-  checked: {
-    type: { name: 'boolean', required: false },
-    description: 'The checked state of the checkbox',
-    defaultValue: null,
-    control: {
-      type: 'boolean',
-    },
-  },
   disabled: {
     type: { name: 'boolean', required: false },
     description: 'The disabled state of the checkbox.',
-    defaultValue: null,
+    defaultValue: false,
     control: {
       type: 'boolean',
     },

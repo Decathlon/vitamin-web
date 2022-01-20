@@ -8,7 +8,6 @@ module.exports = {
     '@storybook/addon-a11y',
     '@whitespace/storybook-addon-html',
     'storybook-addon-designs',
-    'storybook-mobile'
   ],
   features: {
     postcss: false,

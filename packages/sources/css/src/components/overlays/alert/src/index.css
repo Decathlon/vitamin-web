@@ -1,0 +1,124 @@
+@import '@vtmn/css-design-tokens/src/base-colors';
+@import '@vtmn/css-design-tokens/src/themes/default';
+@import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/shadows';
+@import '@vtmn/css-design-tokens/src/animations';
+@import '@vtmn/css-design-tokens/src/z-indexes';
+@import '@vtmn/css-design-tokens/src/radius';
+
+.vtmn-alert {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  padding: rem(12px) rem(16px);
+  width: fit-content;
+  max-width: 65%;
+  min-height: 48px;
+  font-family: var(--vtmn-typo_font-family);
+  font-size: var(--vtmn-typo_text-2-font-size);
+  line-height: var(--vtmn-typo_text-2-line-height);
+  color: var(--vtmn-semantic-color_content-primary-reversed);
+  background-color: var(--vtmn-semantic-color_background-primary-reversed);
+  box-shadow: var(--vtmn-shadow_200);
+  border-radius: var(--vtmn-radius_100);
+  z-index: var(--vtmn-z-index_alert);
+}
+
+.vtmn-alert_content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.vtmn-alert_content-title {
+  margin: rem(4px) 0;
+  font-family: var(--vtmn-typo_font-family);
+  font-weight: var(--vtmn-typo_font-weight--bold);
+  font-size: rem(16px);
+  line-height: rem(20px);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vtmn-alert_content-description {
+  margin-top: rem(8px);
+  font-family: var(--vtmn-typo_font-family);
+  font-weight: var(--vtmn-typo_font-weight--normal);
+  font-size: rem(16px);
+  line-height: rem(24px);
+  align-self: flex-start;
+}
+
+/* Detailed icons */
+.vtmn-alert_variant--info,
+.vtmn-alert_variant--success,
+.vtmn-alert_variant--danger,
+.vtmn-alert_variant--warning {
+  padding-left: rem(56px);
+}
+
+.vtmn-alert_variant--info::before,
+.vtmn-alert_variant--success::before,
+.vtmn-alert_variant--warning::before,
+.vtmn-alert_variant--danger::before {
+  position: absolute;
+  top: calc(50% - rem(12px));
+  left: rem(16px);
+  width: rem(24px);
+  height: rem(24px);
+  content: '';
+}
+
+.vtmn-alert_variant--info::before {
+  background-color: var(--vtmn-semantic-color_content-information);
+  mask: url("data:image/svg+xml;charset=utf-8, <svg width='24' height='24' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M1.333 8a6.666 6.666 0 1 0 13.333 0A6.666 6.666 0 0 0 1.333 8zm12 0A5.333 5.333 0 1 1 2.667 8a5.333 5.333 0 0 1 10.666 0zM8.667 4.667V6H7.333V4.667h1.334zm0 6.666v-4H7.333v4h1.334z'/></svg>");
+}
+
+.vtmn-alert_variant--success::before {
+  background-color: var(--vtmn-semantic-color_content-positive);
+  mask: url("data:image/svg+xml;charset=utf-8, <svg width='24' height='24' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M8 14.667A6.666 6.666 0 1 1 8 1.334a6.666 6.666 0 0 1 0 13.333zm0-1.334A5.333 5.333 0 1 0 8 2.667a5.333 5.333 0 0 0 0 10.666zM4.507 7.838l2.828 2.829 4.714-4.714-.943-.943-3.77 3.771-1.887-1.886-.942.943z'/></svg>");
+}
+
+.vtmn-alert_variant--warning::before {
+  background-color: var(--vtmn-semantic-color_content-warning);
+  mask: url("data:image/svg+xml;charset=utf-8, <svg width='24' height='24' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M1.333 8a6.666 6.666 0 1 0 13.333 0A6.666 6.666 0 0 0 1.333 8zm12 0A5.333 5.333 0 1 1 2.667 8a5.333 5.333 0 0 1 10.666 0zm-4.666 2v1.333H7.333V10h1.334zm0-1.333v-4H7.333v4h1.334z'/></svg>");
+}
+
+.vtmn-alert_variant--danger::before {
+  background-color: var(--vtmn-semantic-color_content-negative);
+  mask: url("data:image/svg+xml;charset=utf-8, <svg width='24' height='24' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M1.333 8a6.666 6.666 0 1 0 13.333 0A6.666 6.666 0 0 0 1.333 8zm12 0A5.333 5.333 0 1 1 2.667 8a5.333 5.333 0 0 1 10.666 0zm-4.666 2v1.333H7.333V10h1.334zm0-1.333v-4H7.333v4h1.334z'/></svg>");
+}
+
+/* Close icon */
+.vtmn-alert_content-title span[class^='vtmx-'] {
+  font-size: rem(24px);
+}
+
+.vtmn-alert.show {
+  display: flex;
+  position: fixed;
+  top: rem(32px);
+  right: rem(16px);
+  animation: var(--vtmn-animation_alert);
+}
+
+@media screen and (max-width: 599px) {
+  .vtmn-alert {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .vtmn-alert.show {
+    top: initial;
+    right: rem(16px);
+    bottom: rem(32px);
+    left: rem(16px);
+    animation: var(--vtmn-animation_alert-mobile);
+  }
+}

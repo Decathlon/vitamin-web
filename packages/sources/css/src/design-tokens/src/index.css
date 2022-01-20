@@ -1,12 +1,31 @@
-@import './animations';
+/* Colors */
 @import './base-colors';
-@import './breakpoints';
 @import './legacy-colors';
-@import './opacities';
-@import './shadows';
-@import './spacings';
 @import './themes/default';
 @import './themes/core-light';
 @import './themes/core-dark';
+
+/* Animations */
+@import './animations';
+@import './transitions';
+
+/* Breakpoints */
+@import './breakpoints';
+
+/* Opacities */
+@import './opacities';
+
+/* Radius */
+@import '/radius';
+
+/* Shadows */
+@import './shadows';
+
+/* Spacings */
+@import './spacings';
+
+/* Typography */
 @import './typography';
+
+/* Z Indexes */
 @import './z-indexes';

@@ -14,7 +14,7 @@ jobs:
 
       - uses: actions/setup-node@v1
         with:
-          node-version: '12.x'
+          node-version: '14.x'
 
       - name: Restore/create node_modules cache
         uses: actions/cache@v2
@@ -30,9 +30,6 @@ jobs:
       - name: Build sources
         run: yarn build
 
-      - name: Test
-        run: yarn test
-
       - name: Build showcases
         run: yarn build-storybook
 # Cannot be run on pull_request, and pull_request_event is not safe with checkout.
@@ -43,33 +40,38 @@ jobs:
 #       project_base_dir:
 #         [
 #           'packages/sources/css',
-#           'packages/sources/css/src/components/alert',
-#           'packages/sources/css/src/components/badge',
-#           'packages/sources/css/src/components/button',
-#           'packages/sources/css/src/components/breadcrumb',
-#           'packages/sources/css/src/components/card',
-#           'packages/sources/css/src/components/checkbox',
-#           'packages/sources/css/src/components/chip',
-#           'packages/sources/css/src/components/divider',
-#           'packages/sources/css/src/components/link',
-#           'packages/sources/css/src/components/loader',
-#           'packages/sources/css/src/components/modal',
-#           'packages/sources/css/src/components/navbar',
-#           'packages/sources/css/src/components/popover',
-#           'packages/sources/css/src/components/progressbar',
-#           'packages/sources/css/src/components/radio-button',
-#           'packages/sources/css/src/components/rating',
-#           'packages/sources/css/src/components/select',
-#           'packages/sources/css/src/components/skeleton',
-#           'packages/sources/css/src/components/snackbar',
-#           'packages/sources/css/src/components/text-input',
-#           'packages/sources/css/src/components/toast',
-#           'packages/sources/css/src/components/toggle',
-#           'packages/sources/css/src/components/tooltip',
+#           'packages/sources/css/src/components/actions/button',
+#           'packages/sources/css/src/components/actions/link',
+#           'packages/sources/css/src/components/forms/select',
+#           'packages/sources/css/src/components/forms/text-input',
+#           'packages/sources/css/src/components/indicators/badge',
+#           'packages/sources/css/src/components/indicators/loader',
+#           'packages/sources/css/src/components/indicators/price',
+#           'packages/sources/css/src/components/indicators/progressbar',
+#           'packages/sources/css/src/components/indicators/rating',
+#           'packages/sources/css/src/components/indicators/tag',
+#           'packages/sources/css/src/components/navigation/breadcrumb',
+#           'packages/sources/css/src/components/navigation/navbar',
+#           'packages/sources/css/src/components/navigation/search',
+#           'packages/sources/css/src/components/navigation/tabs',
+#           'packages/sources/css/src/components/overlays/alert',
+#           'packages/sources/css/src/components/overlays/modal',
+#           'packages/sources/css/src/components/overlays/popover',
+#           'packages/sources/css/src/components/overlays/snackbar',
+#           'packages/sources/css/src/components/overlays/toast',
+#           'packages/sources/css/src/components/overlays/tooltip',
+#           'packages/sources/css/src/components/selection-controls/checkbox',
+#           'packages/sources/css/src/components/selection-controls/chip',
+#           'packages/sources/css/src/components/selection-controls/quantity',
+#           'packages/sources/css/src/components/selection-controls/radio-button',
+#           'packages/sources/css/src/components/selection-controls/toggle',
+#           'packages/sources/css/src/components/structure/card',
+#           'packages/sources/css/src/components/structure/divider',
+#           'packages/sources/css/src/components/structure/list',
+#           'packages/sources/css/src/components/structure/skeleton',
 #           'packages/sources/css/src/design-tokens',
 #           'packages/sources/css/src/utilities',
 #           'packages/sources/icons',
-#           'packages/sources/web-components',
 #           'packages/sources/react',
 #           'packages/sources/svelte',
 #           'packages/sources/vue',

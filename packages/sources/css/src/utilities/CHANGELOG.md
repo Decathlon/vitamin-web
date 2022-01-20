@@ -3,6 +3,78 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.12](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-utilities@0.2.11...@vtmn/css-utilities@0.2.12) (2022-01-19)
+
+**Note:** Version bump only for package @vtmn/css-utilities
+
+
+
+
+
+## [0.2.11](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-utilities@0.2.10...@vtmn/css-utilities@0.2.11) (2022-01-19)
+
+**Note:** Version bump only for package @vtmn/css-utilities
+
+
+
+
+
+## [0.2.10](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-utilities@0.2.9...@vtmn/css-utilities@0.2.10) (2022-01-18)
+
+**Note:** Version bump only for package @vtmn/css-utilities
+
+
+
+
+
+## [0.2.9](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-utilities@0.2.8...@vtmn/css-utilities@0.2.9) (2022-01-17)
+
+**Note:** Version bump only for package @vtmn/css-utilities
+
+
+
+
+
+## [0.2.8](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-utilities@0.2.7...@vtmn/css-utilities@0.2.8) (2022-01-14)
+
+**Note:** Version bump only for package @vtmn/css-utilities
+
+
+
+
+
+## [0.2.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-utilities@0.2.6...@vtmn/css-utilities@0.2.7) (2022-01-10)
+
+**Note:** Version bump only for package @vtmn/css-utilities
+
+
+
+
+
+## [0.2.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-utilities@0.2.5...@vtmn/css-utilities@0.2.6) (2022-01-05)
+
+**Note:** Version bump only for package @vtmn/css-utilities
+
+
+
+
+
+## [0.2.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-utilities@0.2.4...@vtmn/css-utilities@0.2.5) (2022-01-03)
+
+**Note:** Version bump only for package @vtmn/css-utilities
+
+
+
+
+
+## [0.2.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-utilities@0.2.3...@vtmn/css-utilities@0.2.4) (2021-12-27)
+
+**Note:** Version bump only for package @vtmn/css-utilities
+
+
+
+
+
 ## [0.2.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-utilities@0.2.2...@vtmn/css-utilities@0.2.3) (2021-12-03)
 
 **Note:** Version bump only for package @vtmn/css-utilities

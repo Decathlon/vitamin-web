@@ -1,0 +1,74 @@
+@import '@vtmn/css-design-tokens/src/base-colors';
+@import '@vtmn/css-design-tokens/src/themes/default';
+@import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/opacities';
+@import '@vtmn/css-design-tokens/src/shadows';
+@import '@vtmn/css-design-tokens/src/transitions';
+
+.vtmn-breadcrumb {
+  display: block;
+  height: fit-content;
+  width: fit-content;
+  font-family: var(--vtmn-typo_font-family);
+  color: var(--vtmn-semantic-color_content-tertiary);
+  font-size: var(--vtmn-typo_text-3-font-size);
+  font-weight: var(--vtmn-typo_font-weight--normal);
+  line-height: var(--vtmn-typo_text-3-line-height);
+}
+
+.vtmn-breadcrumb a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--vtmn-transition_focus-visible);
+}
+
+.vtmn-breadcrumb button {
+  background-color: unset;
+  color: inherit;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.vtmn-breadcrumb > ol,
+.vtmn-breadcrumb li {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.vtmn-breadcrumb li {
+  list-style-type: none;
+  user-select: none;
+}
+
+.vtmn-breadcrumb li > span {
+  margin-right: rem(4px);
+}
+
+.vtmn-breadcrumb li:not(:last-child)::after {
+  content: ' ';
+  display: inline-block;
+  transform: rotate(15deg);
+  border-right: 0.1em solid currentColor;
+  height: 0.8em;
+  margin: 0 rem(8px);
+}
+
+.vtmn-breadcrumb li > a:hover,
+.vtmn-breadcrumb li > button:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.vtmn-breadcrumb li > a:focus-visible,
+.vtmn-breadcrumb li > button:focus-visible {
+  outline: none;
+  box-shadow: var(--vtmn-shadow_focus-visible);
+  text-decoration: underline;
+  color: inherit;
+}
+
+.vtmn-breadcrumb li:last-child {
+  color: var(--vtmn-semantic-color_content-primary);
+}

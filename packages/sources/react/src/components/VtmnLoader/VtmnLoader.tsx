@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 import '@vtmn/css-loader/dist/index-with-vars.css';
 import { VtmnLoaderSize } from './types';
 

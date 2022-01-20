@@ -5,7 +5,7 @@
   "description": "Decathlon Design System - Vitamin CSS PostCSS configuration",
   "license": "Apache-2.0",
   "main": "./postcss-core.config.js",
-  "devDependencies": {
+  "dependencies": {
     "autoprefixer": "^10.3.6",
     "postcss": "^8.3.8",
     "postcss-cli": "^9.0.2",
@@ -22,6 +22,9 @@
     "postcss-rem": "^2.0.1",
     "postcss-remove-root": "^0.0.2",
     "tailwindcss": "^2.2.16"
+  },
+  "devDependencies": {
+    "webpack": "^5.66.0"
   },
   "licenses": [
     {

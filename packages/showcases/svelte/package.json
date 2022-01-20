@@ -7,21 +7,30 @@
   "scripts": {
     "build-storybook": "build-storybook",
     "build-storybook:docs": "build-storybook --docs",
-    "start": "start-storybook -p 6010"
+    "start": "start-storybook -p 6009"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^6.4.9",
-    "@storybook/addon-essentials": "^6.4.9",
+    "@babel/core": "^7.16.5",
+    "@storybook/addon-a11y": "^6.4.13",
+    "@storybook/addon-essentials": "^6.4.13",
     "@storybook/addon-svelte-csf": "^1.1.0",
-    "@storybook/svelte": "^6.4.9",
+    "@storybook/addons": "^6.4.13",
+    "@storybook/api": "^6.4.13",
+    "@storybook/client-api": "^6.4.13",
+    "@storybook/client-logger": "^6.4.13",
+    "@storybook/components": "^6.4.13",
+    "@storybook/core-events": "^6.4.13",
+    "@storybook/svelte": "^6.4.13",
+    "@storybook/theming": "^6.4.13",
     "@vtmn/css": "*",
     "@vtmn/icons": "*",
     "@vtmn/showcase-core": "*",
     "@vtmn/svelte": "*",
     "@whitespace/storybook-addon-html": "^5.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "storybook-addon-designs": "^6.0.0",
-    "storybook-mobile": "^1.0.0",
-    "svelte": "^3.43.0",
+    "svelte": "^3.46.2",
     "svelte-loader": "^3.1.2"
   },
   "licenses": [
