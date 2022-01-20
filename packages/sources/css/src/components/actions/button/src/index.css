@@ -1,0 +1,346 @@
+@import '@vtmn/css-design-tokens/src/base-colors';
+@import '@vtmn/css-design-tokens/src/themes/default';
+@import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/opacities';
+@import '@vtmn/css-design-tokens/src/shadows';
+@import '@vtmn/css-design-tokens/src/transitions';
+@import '@vtmn/css-design-tokens/src/radius';
+
+/* Default button */
+.vtmn-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: rem(48px);
+  border: 0;
+  width: max-content;
+  padding: rem(14px) rem(24px);
+  font-family: var(--vtmn-typo_font-family);
+  font-weight: var(--vtmn-typo_font-weight--bold);
+  font-size: var(--vtmn-typo_text-2-font-size);
+  letter-spacing: rem(0.27px);
+  border-radius: var(--vtmn-radius_100);
+  color: var(--vtmn-semantic-color_content-primary-reversed);
+  fill: var(--vtmn-semantic-color_content-primary-reversed);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: var(--vtmn-semantic-color_background-brand-primary);
+  transition: var(--vtmn-transition_focus-visible);
+}
+
+.vtmn-btn:not(:disabled):hover {
+  background-color: var(--vtmn-semantic-color_hover-brand);
+  cursor: pointer;
+}
+
+.vtmn-btn:not(:disabled):active {
+  background-color: var(--vtmn-semantic-color_active-brand);
+}
+
+.vtmn-btn:disabled {
+  cursor: not-allowed;
+  opacity: var(--vtmn-opacity_disabled-state);
+}
+
+.vtmn-btn:not(:disabled):focus-visible {
+  outline: none;
+  box-shadow: var(--vtmn-shadow_focus-visible);
+}
+
+.vtmn-btn:not(:disabled) {
+  outline: none;
+}
+
+/* Primary button */
+.vtmn-btn_variant--primary {
+  background-color: var(--vtmn-semantic-color_background-brand-primary);
+  color: var(--vtmn-semantic-color_content-primary-reversed);
+  fill: var(--vtmn-semantic-color_content-primary-reversed);
+}
+
+.vtmn-btn_variant--primary:not(:disabled):hover {
+  background-color: var(--vtmn-semantic-color_hover-brand);
+}
+
+.vtmn-btn_variant--primary:not(:disabled):active {
+  background-color: var(--vtmn-semantic-color_active-brand);
+}
+
+/* Primary reversed button */
+.vtmn-btn_variant--primary-reversed {
+  box-shadow: inset 0 0 0 rem(2px) transparent;
+  background-color: var(
+    --vtmn-semantic-color_background-brand-primary-reversed
+  );
+  color: var(--vtmn-semantic-color_content-primary);
+  fill: var(--vtmn-semantic-color_content-primary);
+}
+
+.vtmn-btn_variant--primary-reversed:not(:disabled):hover {
+  background-color: var(--vtmn-semantic-color_hover-brand-reversed-transparent);
+  box-shadow: inset 0 0 0 rem(2px)
+    var(--vtmn-semantic-color_border-primary-reversed);
+}
+
+.vtmn-btn_variant--primary-reversed:not(:disabled):active {
+  background-color: var(
+    --vtmn-semantic-color_active-brand-reversed-transparent
+  );
+  box-shadow: inset 0 0 0 rem(2px)
+    var(--vtmn-semantic-color_border-primary-reversed);
+}
+
+.vtmn-btn_variant--primary-reversed:not(:disabled):focus-visible {
+  outline: none;
+  box-shadow: inset 0 0 0 rem(2px)
+      var(--vtmn-semantic-color_border-primary-reversed),
+    0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary),
+    0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary-reversed);
+}
+
+/* Secondary button */
+.vtmn-btn_variant--secondary {
+  background-color: var(--vtmn-semantic-color_background-primary);
+  box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-secondary);
+  color: var(--vtmn-semantic-color_content-action);
+  fill: var(--vtmn-semantic-color_content-action);
+}
+
+.vtmn-btn_variant--secondary:not(:disabled):hover {
+  background-color: var(--vtmn-semantic-color_hover-primary);
+}
+
+.vtmn-btn_variant--secondary:not(:disabled):active {
+  background-color: var(--vtmn-semantic-color_active-primary);
+}
+
+.vtmn-btn_variant--secondary:not(:disabled):focus-visible {
+  outline: none;
+  box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-secondary),
+    var(--vtmn-shadow_focus-visible);
+}
+
+/* Tertiary button */
+.vtmn-btn_variant--tertiary {
+  background-color: var(--vtmn-semantic-color_background-brand-secondary);
+  color: var(--vtmn-semantic-color_content-action);
+  fill: var(--vtmn-semantic-color_content-action);
+}
+
+.vtmn-btn_variant--tertiary:not(:disabled):hover {
+  background-color: var(--vtmn-semantic-color_hover-tertiary);
+}
+
+.vtmn-btn_variant--tertiary:not(:disabled):active {
+  background-color: var(--vtmn-semantic-color_active-tertiary);
+}
+
+/* Conversion button */
+.vtmn-btn_variant--conversion {
+  box-shadow: inset 0 0 0 rem(2px) transparent;
+  background-color: var(--vtmn-semantic-color_background-accent);
+  color: var(--vtmn-semantic-color_content-accent);
+  fill: var(--vtmn-semantic-color_content-accent);
+}
+
+.vtmn-btn_variant--conversion:not(:disabled):hover {
+  background-color: var(--vtmn-semantic-color_hover-accent);
+}
+
+.vtmn-btn_variant--conversion:not(:disabled):active {
+  background-color: var(--vtmn-semantic-color_active-accent);
+}
+
+.vtmn-btn_variant--conversion:not(:disabled):focus-visible {
+  outline: none;
+  box-shadow: inset 0 0 0 rem(2px) transparent, var(--vtmn-shadow_focus-visible);
+}
+
+/* Ghost button */
+.vtmn-btn_variant--ghost {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 rem(2px) transparent;
+  color: var(--vtmn-semantic-color_content-action);
+  fill: var(--vtmn-semantic-color_content-action);
+}
+
+.vtmn-btn_variant--ghost:not(:disabled):hover {
+  background-color: var(--vtmn-semantic-color_hover-primary);
+}
+
+.vtmn-btn_variant--ghost:not(:disabled):active {
+  background-color: var(--vtmn-semantic-color_active-primary);
+}
+
+.vtmn-btn_variant--ghost:not(:disabled):focus-visible {
+  outline: none;
+  box-shadow: inset 0 0 0 rem(2px) transparent, var(--vtmn-shadow_focus-visible);
+}
+
+/* Ghost Reversed button */
+.vtmn-btn_variant--ghost-reversed {
+  background-color: transparent;
+  color: var(--vtmn-semantic-color_content-action-reversed);
+  fill: var(--vtmn-semantic-color_content-action-reversed);
+}
+
+.vtmn-btn_variant--ghost-reversed:not(:disabled):hover {
+  background-color: var(
+    --vtmn-semantic-color_hover-primary-reversed-transparent
+  );
+}
+
+.vtmn-btn_variant--ghost-reversed:not(:disabled):active {
+  background-color: var(
+    --vtmn-semantic-color_active-primary-reversed-transparent
+  );
+}
+
+.vtmn-btn_variant--ghost-reversed:not(:disabled):focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary),
+    0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary-reversed);
+}
+
+/* Sizes */
+.vtmn-btn_size--small {
+  font-size: rem(14px);
+  padding: rem(8px) rem(16px);
+  height: rem(32px);
+  letter-spacing: rem(0.24px);
+}
+
+.vtmn-btn_size--medium {
+  font-size: rem(16px);
+  padding: rem(14px) rem(24px);
+  height: rem(48px);
+  letter-spacing: rem(0.27px);
+}
+
+.vtmn-btn_size--large {
+  font-size: rem(20px);
+  padding: rem(20px) rem(40px);
+  height: rem(64px);
+  letter-spacing: rem(0.34px);
+}
+
+.vtmn-btn_size--stretched {
+  width: 100%;
+}
+
+/* Button icons  */
+.vtmn-btn--icon-alone {
+  width: rem(48px);
+  height: rem(48px);
+  padding: rem(14px);
+}
+
+.vtmn-btn--icon-alone span[class^='vtmx-'] {
+  font-size: var(--vtmn-typo_text-2-font-size);
+}
+
+.vtmn-btn_size--small.vtmn-btn--icon-alone {
+  width: rem(32px);
+  height: rem(32px);
+  padding: rem(8px);
+}
+
+.vtmn-btn_size--small.vtmn-btn--icon-alone span[class^='vtmx-'] {
+  font-size: var(--vtmn-typo_text-3-font-size);
+}
+
+.vtmn-btn_size--medium.vtmn-btn--icon-alone {
+  width: rem(48px);
+  height: rem(48px);
+  padding: rem(14px);
+}
+
+.vtmn-btn_size--medium.vtmn-btn--icon-alone span[class^='vtmx-'] {
+  font-size: var(--vtmn-typo_text-2-font-size);
+}
+
+.vtmn-btn_size--large.vtmn-btn--icon-alone {
+  width: rem(64px);
+  height: rem(64px);
+  padding: rem(20px);
+}
+
+.vtmn-btn_size--large.vtmn-btn--icon-alone span[class^='vtmx-'] {
+  font-size: var(--vtmn-typo_title-5-font-size);
+}
+
+.vtmn-btn--icon-left span[class^='vtmx-'],
+.vtmn-btn_size--medium.vtmn-btn--icon-left span[class^='vtmx-'] {
+  padding-right: rem(8px);
+}
+
+.vtmn-btn_size--small.vtmn-btn--icon-left span[class^='vtmx-'] {
+  padding-right: rem(6px);
+}
+
+.vtmn-btn_size--small.vtmn-btn--icon-right span[class^='vtmx-'] {
+  padding-left: rem(6px);
+}
+
+.vtmn-btn_size--small.vtmn-btn--icon-left svg {
+  margin-right: rem(6px);
+}
+
+.vtmn-btn_size--small.vtmn-btn--icon-right svg {
+  margin-left: rem(6px);
+}
+
+.vtmn-btn--icon-right span[class^='vtmx-'],
+.vtmn-btn_size--medium.vtmn-btn--icon-right span[class^='vtmx-'] {
+  padding-left: rem(8px);
+}
+
+.vtmn-btn_size--medium.vtmn-btn--icon-left svg {
+  margin-right: rem(8px);
+}
+
+.vtmn-btn_size--medium.vtmn-btn--icon-right svg {
+  margin-left: rem(8px);
+}
+
+.vtmn-btn_size--large.vtmn-btn--icon-left span[class^='vtmx-'] {
+  padding-right: rem(12px);
+}
+
+.vtmn-btn_size--large.vtmn-btn--icon-right span[class^='vtmx-'] {
+  padding-left: rem(12px);
+}
+
+.vtmn-btn_size--large.vtmn-btn--icon-left svg {
+  margin-right: rem(12px);
+}
+
+.vtmn-btn_size--large.vtmn-btn--icon-right svg {
+  margin-left: rem(12px);
+}
+
+/* Exceptions */
+.vtmn-btn--multiline {
+  white-space: normal;
+}
+
+/* DEPRECATED (no longer maintained) */
+
+/* Secondary reversed button */
+.vtmn-btn_variant--secondary-reversed {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 rem(2px) var(--vtmn-base-color_white);
+  color: var(--vtmn-base-color_white);
+  fill: var(--vtmn-base-color_white);
+}
+
+.vtmn-btn_variant--secondary-reversed:not(:disabled):hover {
+  background-color: color-mod(var(--vtmn-base-color_white) alpha(20%));
+}
+
+.vtmn-btn_variant--secondary-reversed:not(:disabled):active {
+  background-color: color-mod(var(--vtmn-base-color_white) alpha(40%));
+}
