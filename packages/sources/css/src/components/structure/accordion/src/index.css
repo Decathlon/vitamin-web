@@ -92,10 +92,21 @@
   border-bottom: 0;
 }
 
-.vtmn-accordion[open] > *:last-child {
+.vtmn-accordion[open] summary::after {
+  transform: rotateZ(-180deg);
+}
+
+.vtmn-accordion_content > *:last-child {
   border-bottom: rem(1px) solid var(--vtmn-semantic-color_border-secondary);
 }
 
-.vtmn-accordion[open] summary::after {
-  transform: rotateZ(-180deg);
+.vtmn-accordion_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--vtmn-spacing_2);
+}
+
+.vtmn-accordion_content > * {
+  margin: var(--vtmn-spacing_1) 0;
 }
