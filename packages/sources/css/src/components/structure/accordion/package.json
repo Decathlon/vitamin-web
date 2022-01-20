@@ -1,8 +1,17 @@
 {
-  "name": "@vtmn/css-utilities",
-  "version": "0.2.14",
-  "description": "Decathlon Design System - Vitamin specific CSS styles for utilities",
-  "homepage": "https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/utilities",
+  "name": "@vtmn/css-accordion",
+  "version": "0.0.0",
+  "description": "Decathlon Design System - Vitamin specific CSS styles for accordion component",
+  "keywords": [
+    "design-system",
+    "ui-kit",
+    "libraries",
+    "css",
+    "vitamin"
+  ],
+  "bugs": {
+    "url": "https://github.com/Decathlon/vitamin-web/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Decathlon/vitamin-web.git"
@@ -17,7 +26,7 @@
     "build": "node build.js"
   },
   "devDependencies": {
-    "@vtmn/css-design-tokens": "^0.15.0",
+    "@vtmn/css-design-tokens": "^0.14.0",
     "@vtmn/css-postcss-config": "*"
   },
   "publishConfig": {
