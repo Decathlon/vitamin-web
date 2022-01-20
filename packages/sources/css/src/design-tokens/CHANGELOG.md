@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.15.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@0.14.1...@vtmn/css-design-tokens@0.15.0) (2022-01-20)
+
+
+### Features
+
+* **@vtmn/css:** rename hoverBrandReversedTransparent into hoverTertiaryReversedTransparent ([#914](https://github.com/Decathlon/vitamin-web/issues/914)) ([09b1e8f](https://github.com/Decathlon/vitamin-web/commit/09b1e8f3d42d4da3c4376685eaaee40cba93a0f4))
+
+
+
+
+
 ## [0.14.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@0.14.0...@vtmn/css-design-tokens@0.14.1) (2022-01-20)
 
 
