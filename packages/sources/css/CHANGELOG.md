@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.53.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.52.0...@vtmn/css@0.53.0) (2022-01-21)
+
+
+### Features
+
+* **@vtmn/css:** remove acccordion list-type on safari browser and other non supported ([#920](https://github.com/Decathlon/vitamin-web/issues/920)) ([fff8e29](https://github.com/Decathlon/vitamin-web/commit/fff8e2913766fbd8eb82d8ad1d4b33455195119c))
+
+
+
+
+
+# [0.52.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.51.1...@vtmn/css@0.52.0) (2022-01-20)
+
+
+### Features
+
+* **@vtmn/css:** add alert variant and remove line height ([#918](https://github.com/Decathlon/vitamin-web/issues/918)) ([6576310](https://github.com/Decathlon/vitamin-web/commit/6576310208a1167743ce73df148e023bd25e2baf))
+
+
+
+
+
 ## [0.51.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.51.0...@vtmn/css@0.51.1) (2022-01-20)
 
 

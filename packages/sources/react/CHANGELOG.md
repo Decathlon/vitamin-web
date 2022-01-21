@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.18.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.17.10...@vtmn/react@0.18.0) (2022-01-20)
+
+
+### Features
+
+* **@vtmn/react:** add divider component ([#815](https://github.com/Decathlon/vitamin-web/issues/815)) ([e6b12c6](https://github.com/Decathlon/vitamin-web/commit/e6b12c6fdfd85bb339aea7634769fe1185248505))
+
+
+
+
+
+## [0.17.10](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.17.9...@vtmn/react@0.17.10) (2022-01-20)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
 ## [0.17.9](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.17.8...@vtmn/react@0.17.9) (2022-01-20)
 
 **Note:** Version bump only for package @vtmn/react

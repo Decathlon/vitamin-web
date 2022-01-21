@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-accordion@0.1.1...@vtmn/css-accordion@0.2.0) (2022-01-21)
+
+
+### Features
+
+* **@vtmn/css:** remove acccordion list-type on safari browser and other non supported ([#920](https://github.com/Decathlon/vitamin-web/issues/920)) ([fff8e29](https://github.com/Decathlon/vitamin-web/commit/fff8e2913766fbd8eb82d8ad1d4b33455195119c))
+
+
+
+
+
 ## [0.1.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-accordion@0.1.0...@vtmn/css-accordion@0.1.1) (2022-01-20)
 
 

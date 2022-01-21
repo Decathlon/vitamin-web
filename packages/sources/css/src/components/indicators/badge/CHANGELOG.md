@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.9.0...@vtmn/css-badge@0.10.0) (2022-01-20)
+
+
+### Features
+
+* **@vtmn/css:** add alert variant and remove line height ([#918](https://github.com/Decathlon/vitamin-web/issues/918)) ([6576310](https://github.com/Decathlon/vitamin-web/commit/6576310208a1167743ce73df148e023bd25e2baf))
+
+
+
+
+
 # [0.9.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.8.0...@vtmn/css-badge@0.9.0) (2022-01-20)
 
 

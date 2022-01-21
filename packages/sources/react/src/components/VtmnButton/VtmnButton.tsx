@@ -18,25 +18,31 @@ export interface VtmnButtonProps
   size?: VtmnButtonSize;
 
   /**
-   * Icon to display on the left hand side of button
+   * Icon to display on the left hand side of button.
    * @type {VitamixId}
    * @defaultValue undefined
    */
   iconLeft?: VitamixId;
 
   /**
-   * Icon to display on the right hand side of button
+   * Icon to display on the right hand side of button.
    * @type {VitamixId}
    * @defaultValue undefined
    */
   iconRight?: VitamixId;
 
   /**
-   * Icon to display when it is a button with icon only
+   * Icon to display when it is a button with icon only.
    * @type {VitamixId}
    * @defaultValue undefined
    */
   iconAlone?: VitamixId;
+
+  /**
+   * The content to render inside the component.
+   * @defaultValue undefined
+   */
+  children: React.ReactNode;
 }
 
 export const VtmnButton = React.forwardRef<HTMLButtonElement, VtmnButtonProps>(

@@ -1,20 +1,20 @@
 import React from 'react';
-import { VtmnButton } from '@vtmn/react';
+import { VtmnDivider } from '@vtmn/react';
 import { Meta, Story } from '@storybook/react';
 import {
   argTypes,
   parameters,
-} from '@vtmn/showcase-core/csf/components/VtmnButton.csf';
+} from '@vtmn/showcase-core/csf/components/VtmnDivider.csf';
 
 export default {
-  title: 'Components/VtmnButton',
-  component: VtmnButton,
+  title: 'Components/VtmnDivider',
+  component: VtmnDivider,
   argTypes: {
     ...argTypes,
     children: {
       type: { name: 'string', required: false },
       description: 'The content to render inside the component.',
-      defaultValue: 'Button',
+      defaultValue: 'Label',
       control: {
         type: 'text',
       },
@@ -24,9 +24,7 @@ export default {
 } as Meta;
 
 const Template: Story = (args) => (
-  <div style={{ width: 400, display: 'flex', justifyContent: 'center' }}>
-    <VtmnButton {...args} />
-  </div>
+  <VtmnDivider {...args} style={{ width: 400, height: 400 }} />
 );
 
 export const Overview = Template.bind({});

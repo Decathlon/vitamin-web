@@ -44,6 +44,10 @@
   transition: background-color 400ms ease;
 }
 
+.vtmn-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
 .vtmn-accordion:not([aria-disabled='true']) summary:hover {
   background-color: var(--vtmn-semantic-color_hover-primary);
 }
