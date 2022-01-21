@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css",
-  "version": "0.52.0",
+  "version": "0.53.0",
   "description": "Decathlon Design System - Vitamin global CSS styles library",
   "keywords": [
     "design-system",
@@ -34,7 +34,7 @@
     "start": "chokidar \"src/**\" -i \"**/dist/**\" -c \"yarn build\""
   },
   "devDependencies": {
-    "@vtmn/css-accordion": "^0.1.1",
+    "@vtmn/css-accordion": "^0.2.0",
     "@vtmn/css-alert": "^0.5.0",
     "@vtmn/css-badge": "^0.10.0",
     "@vtmn/css-breadcrumb": "^0.3.3",
