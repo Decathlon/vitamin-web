@@ -4911,6 +4911,11 @@
   resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-2.0.1.tgz#db0e5eacf96358e04cc501c9008079b25a70a4ac"
   integrity sha512-wtdMnGVvys9K8tg+DxowU1ytTrdVveXr3LzdhaKakysgGXyrsfaeds2cDywtvujEASjWOwWL/OgWM+qoeM8Plg==
 
+"@vtmn/css-design-tokens@^0.14.0":
+  version "0.14.1"
+  resolved "https://registry.yarnpkg.com/@vtmn/css-design-tokens/-/css-design-tokens-0.14.1.tgz#8475dcc5f2db780723502fca713f505233e6399c"
+  integrity sha512-JRz6XrtSswRPbjlX4E8LtXdHoE4ajzF2emgzdmnxp3R60ySrGKMkJqIyLzJyXtu+3CPYmsYbNvFm/MAq20kfrg==
+
 "@vue/babel-helper-vue-jsx-merge-props@^1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@vue/babel-helper-vue-jsx-merge-props/-/babel-helper-vue-jsx-merge-props-1.2.1.tgz#31624a7a505fb14da1d58023725a4c5f270e6a81"
@@ -21692,6 +21697,7 @@ vue-inbrowser-compiler-utils@^4.44.0:
     camelcase "^5.3.1"
 
 "vue-loader-v16@npm:vue-loader@^16.1.0", vue-loader@^16.0.0:
+  name vue-loader-v16
   version "16.8.3"
   resolved "https://registry.yarnpkg.com/vue-loader/-/vue-loader-16.8.3.tgz#d43e675def5ba9345d6c7f05914c13d861997087"
   integrity sha512-7vKN45IxsKxe5GcVCbc2qFU5aWzyiLrYJyUuMz4BQLKctCj/fmCa0w6fGiiQ2cLFetNcek1ppGJQDCup0c1hpA==
