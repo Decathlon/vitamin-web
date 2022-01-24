@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-quantity@0.3.1...@vtmn/css-quantity@0.4.0) (2022-01-24)
+
+
+### Features
+
+* **@vtmn/css:** fix box shadow on mobile + remove radius on mobile ([#927](https://github.com/Decathlon/vitamin-web/issues/927)) ([968e94d](https://github.com/Decathlon/vitamin-web/commit/968e94d883cdaf2137b70593aa8d8f17050c8334))
+
+
+
+
+
 ## [0.3.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-quantity@0.3.0...@vtmn/css-quantity@0.3.1) (2022-01-24)
 
 
