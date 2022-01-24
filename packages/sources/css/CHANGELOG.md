@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.54.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.54.0...@vtmn/css@0.54.1) (2022-01-24)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** min sizes for button in quantity ([#926](https://github.com/Decathlon/vitamin-web/issues/926)) ([b1249e4](https://github.com/Decathlon/vitamin-web/commit/b1249e4f4703a81694c19df50f08a4e2b380bad6))
+
+
+
+
+
 # [0.54.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.53.0...@vtmn/css@0.54.0) (2022-01-24)
 
 
