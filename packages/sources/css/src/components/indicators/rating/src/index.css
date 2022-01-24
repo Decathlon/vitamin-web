@@ -80,7 +80,7 @@
   width: 0;
 }
 
-.vtmn-rating--interactive input:focus-visible + label {
+.vtmn-rating:not([aria-disabled='true']) input:focus-visible + label {
   outline: 0;
   box-shadow: var(--vtmn-shadow_focus-visible);
 }
@@ -91,6 +91,10 @@
 
 .vtmn-rating[aria-disabled='true'] {
   opacity: var(--vtmn-opacity_disabled-state);
+  cursor: not-allowed;
+}
+
+.vtmn-rating[aria-disabled='true'] .vtmn-rating--interactive > * {
   pointer-events: none;
 }
 
