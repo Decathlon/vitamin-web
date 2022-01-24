@@ -13,6 +13,7 @@
   font-size: var(--vtmn-typo_text-2-font-size);
   line-height: var(--vtmn-typo_text-2-line-height);
   color: var(--vtmn-semantic-color_content-primary);
+  outline: 0;
 }
 
 .vtmn-dropdown details {
