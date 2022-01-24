@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.54.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.53.0...@vtmn/css@0.54.0) (2022-01-24)
+
+
+### Features
+
+* **@vtmn/css:** fix incorrect class for css props ([#923](https://github.com/Decathlon/vitamin-web/issues/923)) ([5a51eeb](https://github.com/Decathlon/vitamin-web/commit/5a51eebf54cd8cc8a38bd3c7ca3f740054bb5fb7))
+* **@vtmn/css:** remove focus visible when disabled + add cursor and no event ([#925](https://github.com/Decathlon/vitamin-web/issues/925)) ([5e71583](https://github.com/Decathlon/vitamin-web/commit/5e7158337a7a0b7931e0b14616c15d809e9f8b78))
+
+
+
+
+
 # [0.53.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.52.0...@vtmn/css@0.53.0) (2022-01-21)
 
 

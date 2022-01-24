@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-rating@0.2.13...@vtmn/css-rating@0.3.0) (2022-01-24)
+
+
+### Features
+
+* **@vtmn/css:** remove focus visible when disabled + add cursor and no event ([#925](https://github.com/Decathlon/vitamin-web/issues/925)) ([5e71583](https://github.com/Decathlon/vitamin-web/commit/5e7158337a7a0b7931e0b14616c15d809e9f8b78))
+
+
+
+
+
 ## [0.2.13](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-rating@0.2.12...@vtmn/css-rating@0.2.13) (2022-01-20)
 
 
