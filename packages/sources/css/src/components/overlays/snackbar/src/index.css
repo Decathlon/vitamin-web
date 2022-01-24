@@ -24,6 +24,7 @@
   border-radius: var(--vtmn-radius_100);
   z-index: var(--vtmn-z-index_snackbar);
   box-sizing: border-box;
+  outline: 0;
 }
 
 .vtmn-snackbar.show {

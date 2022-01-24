@@ -23,6 +23,7 @@
   border-radius: var(--vtmn-radius_100);
   z-index: var(--vtmn-z-index_toast);
   box-sizing: border-box;
+  outline: 0;
 }
 
 .vtmn-toast.show {
