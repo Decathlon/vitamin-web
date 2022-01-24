@@ -11,7 +11,7 @@
     var(--vtmn-typo_font-weight--normal);
   color: var(--vtmn-semantic-color_content-primary);
   height: fit-content;
-  width: auto;
+  width: fit-content;
 }
 
 .vtmn-quantity_content {
@@ -28,7 +28,8 @@
   box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-secondary);
   text-align: center;
   z-index: 1;
-  appearance: textfield;
+
+  /* appearance: textfield; */
   transition: var(--vtmn-transition_focus-visible);
 }
 
@@ -66,6 +67,11 @@
 .vtmn-quantity input[type='number']::-webkit-outer-spin-button {
   appearance: none;
   margin: 0;
+}
+
+.vtmn-quantity .vtmn-btn {
+  min-width: rem(48px);
+  min-height: rem(48px);
 }
 
 .vtmn-quantity .vtmn-btn:focus-visible {
