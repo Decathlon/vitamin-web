@@ -24,6 +24,7 @@
   box-shadow: var(--vtmn-shadow_200);
   border-radius: var(--vtmn-radius_100);
   z-index: var(--vtmn-z-index_alert);
+  outline: 0;
 }
 
 .vtmn-alert_content {
