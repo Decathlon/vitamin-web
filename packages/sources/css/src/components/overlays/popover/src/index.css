@@ -10,6 +10,7 @@
   position: relative;
   cursor: pointer;
   font-family: var(--vtmn-typo_font-family);
+  outline: 0;
 }
 
 .vtmn-popover > [role='tooltip'] > .vtmn-popover_title {
