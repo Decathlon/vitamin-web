@@ -26,6 +26,11 @@
   outline: 0;
 }
 
+.vtmn-dropdown > label {
+  display: inline-block;
+  margin-block-end: 4px;
+}
+
 .vtmn-dropdown summary {
   display: flex;
   cursor: pointer;
@@ -45,7 +50,6 @@
 }
 
 .vtmn-dropdown:not([aria-disabled='true']) summary:hover {
-  background-color: var(--vtmn-semantic-color_hover-secondary-transparent);
   box-shadow: inset 0 0 0 rem(1px) var(--vtmn-semantic-color_border-inactive),
     0 0 0 3px var(--vtmn-semantic-color_hover-primary);
 }
@@ -56,9 +60,8 @@
   box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-active);
 }
 
-.vtmn-dropdown[aria-disabled='true'] > label,
 .vtmn-dropdown[aria-disabled='true'] summary {
-  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .vtmn-dropdown[aria-disabled='true'] details > *,
@@ -66,8 +69,9 @@
   opacity: var(--vtmn-opacity_disabled-state);
 }
 
-.vtmn-dropdown[aria-disabled='true'] summary {
-  pointer-events: none;
+.vtmn-dropdown[aria-disabled='true'] > label,
+.vtmn-dropdown[aria-disabled='true'] details {
+  cursor: not-allowed;
 }
 
 .vtmn-dropdown summary::after {
@@ -106,7 +110,7 @@
   background-color: var(--vtmn-semantic-color_background-primary);
   padding: var(--vtmn-spacing_3);
   margin: 0;
-  width: fit-content;
+  width: 100%;
   height: 100%;
   border-radius: rem(4px);
   display: inline-flex;
@@ -140,7 +144,7 @@
   color: var(--vtmn-semantic-color_content-active);
 }
 
-.vtmn-dropdown_items > input:checked + label::after {
+.vtmn-dropdown_items > input + label::after {
   content: '';
   mask: url("data:image/svg+xml;charset=utf-8, %3csvg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='m6.667 10.115 6.128-6.129.943.943L6.667 12 2.424 7.757l.943-.942 3.3 3.3Z'/%3e%3c/svg%3e");
   width: rem(24px);
@@ -148,6 +152,10 @@
   position: relative;
   display: block;
   margin-inline-start: var(--vtmn-spacing_3);
+  background-color: transparent;
+}
+
+.vtmn-dropdown_items > input:checked + label::after {
   background-color: var(--vtmn-semantic-color_content-active);
 }
 
