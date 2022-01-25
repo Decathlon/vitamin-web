@@ -44,6 +44,7 @@
     "@vtmn/css-chip": "^0.6.0",
     "@vtmn/css-design-tokens": "^0.16.0",
     "@vtmn/css-divider": "^0.1.9",
+    "@vtmn/css-dropdown": "^0.0.0",
     "@vtmn/css-link": "^0.6.3",
     "@vtmn/css-list": "^0.2.3",
     "@vtmn/css-loader": "^0.2.11",

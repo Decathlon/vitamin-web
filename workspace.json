@@ -76,6 +76,10 @@
       "root": "packages/sources/css/src/components/structure/divider",
       "type": "library"
     },
+    "@vtmn/css-dropdown": {
+      "root": "packages/sources/css/src/components/actions/dropdown",
+      "type": "library"
+    },
     "@vtmn/css-link": {
       "root": "packages/sources/css/src/components/actions/link",
       "type": "library"
