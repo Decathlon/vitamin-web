@@ -110,7 +110,7 @@
   background-color: var(--vtmn-semantic-color_background-primary);
   padding: var(--vtmn-spacing_3);
   margin: 0;
-  width: 100%;
+  width: auto;
   height: 100%;
   border-radius: rem(4px);
   display: inline-flex;
