@@ -92,7 +92,7 @@ textarea.vtmn-text-input {
   color: var(--vtmn-semantic-color_content-secondary);
   font-size: rem(14px);
   line-height: 1;
-  margin-top: rem(4px);
+  margin-block-start: rem(4px);
   width: fit-content;
 }
 
