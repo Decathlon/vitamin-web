@@ -61,7 +61,7 @@ textarea.vtmn-text-input {
   color: var(--vtmn-semantic-color_content-primary);
   font-size: rem(16px);
   line-height: 1;
-  margin-bottom: rem(4px);
+  margin-block-end: rem(4px);
   display: block;
   width: fit-content;
 }
