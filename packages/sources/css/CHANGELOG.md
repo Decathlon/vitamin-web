@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.57.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.56.1...@vtmn/css@0.57.0) (2022-01-27)
+
+
+### Features
+
+* **@vtmn/css:** rename hober brand to hover tertiary ([#949](https://github.com/Decathlon/vitamin-web/issues/949)) ([8bbd2ea](https://github.com/Decathlon/vitamin-web/commit/8bbd2ea43e3ccacc10e9a32ab003c629aa125ae1))
+
+
+
+
+
 ## [0.56.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.56.0...@vtmn/css@0.56.1) (2022-01-26)
 
 
