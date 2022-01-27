@@ -4,7 +4,7 @@ import { Meta, Story } from '@storybook/react';
 import {
   argTypes,
   parameters,
-} from '@vtmn/showcase-core/csf/components/VtmnCheckbox.csf';
+} from '@vtmn/showcase-core/csf/components/selection-controls/checkbox.csf';
 
 export default {
   title: 'Components/VtmnCheckbox',

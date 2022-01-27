@@ -2,7 +2,7 @@ import { VtmnToggle } from '@vtmn/vue';
 import {
   argTypes,
   parameters,
-} from '@vtmn/showcase-core/csf/components/VtmnToggle.csf';
+} from '@vtmn/showcase-core/csf/components/selection-controls/toggle.csf';
 
 export default {
   title: 'Components/VtmnToggle',

@@ -4,7 +4,7 @@ import { Meta, Story } from '@storybook/react';
 import {
   argTypes,
   parameters,
-} from '@vtmn/showcase-core/csf/components/VtmnDivider.csf';
+} from '@vtmn/showcase-core/csf/components/structure/divider.csf';
 
 export default {
   title: 'Components/VtmnDivider',

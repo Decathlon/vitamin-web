@@ -2,7 +2,7 @@ import { VtmnLink } from '@vtmn/vue';
 import {
   argTypes,
   parameters,
-} from '@vtmn/showcase-core/csf/components/VtmnLink.csf';
+} from '@vtmn/showcase-core/csf/components/actions/link.csf';
 
 export default {
   title: 'Components/VtmnLink',

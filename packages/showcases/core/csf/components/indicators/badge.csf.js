@@ -1,3 +1,13 @@
+export const parameters = {
+  actions: {
+    handles: ['mouseenter', 'focusin', 'focusout'],
+  },
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=2603%3A9428',
+  },
+};
+
 export const argTypes = {
   variant: {
     type: { name: 'string', required: false },
@@ -25,15 +35,5 @@ export const argTypes = {
       defaultValue: { summary: 0 },
     },
     control: { type: 'range', min: 0, max: 100 },
-  },
-};
-
-export const parameters = {
-  actions: {
-    handles: ['mouseenter', 'focusin', 'focusout'],
-  },
-  design: {
-    type: 'figma',
-    url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=1450%3A8683',
   },
 };

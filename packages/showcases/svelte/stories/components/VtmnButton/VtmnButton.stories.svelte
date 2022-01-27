@@ -1,7 +1,7 @@
 <script>
   import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
   import { VtmnButton } from '@vtmn/svelte';
-  import { parameters } from '@vtmn/showcase-core/csf/components/VtmnButton.csf';
+  import { parameters } from '@vtmn/showcase-core/csf/components/actions/button.csf';
   import vitamixIcons from '@vtmn/icons/dist/vitamix/font/vitamix.json';
 
   const buttonArgs = {

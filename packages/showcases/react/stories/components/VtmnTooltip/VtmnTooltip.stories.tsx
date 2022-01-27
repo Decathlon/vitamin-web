@@ -4,7 +4,7 @@ import { Meta, Story } from '@storybook/react';
 import {
   argTypes,
   parameters,
-} from '@vtmn/showcase-core/csf/components/VtmnTooltip.csf';
+} from '@vtmn/showcase-core/csf/components/overlays/tooltip.csf';
 
 export default {
   title: 'Components/VtmnTooltip',

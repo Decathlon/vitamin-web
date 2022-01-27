@@ -3,18 +3,12 @@ import demoScript from './examples/demo.runscript';
 import overview from './examples/overview.html';
 import demo from './examples/demo.html';
 
+import { parameters } from '@vtmn/showcase-core/csf/components/overlays/alert.csf';
+
 export default {
   title: 'Components / Overlays / Alert',
   argTypes: { onchange: { action: 'write' } },
-  parameters: {
-    actions: {
-      handles: ['mouseenter', 'click', 'focusin', 'focusout'],
-    },
-    design: {
-      type: 'figma',
-      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vitamin---Web-UI-kit-(v0)?node-id=2983%3A15032',
-    },
-  },
+  parameters,
 };
 
 export const Overview = () => overview;

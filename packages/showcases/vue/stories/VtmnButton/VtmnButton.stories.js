@@ -2,7 +2,7 @@ import { VtmnButton } from '@vtmn/vue';
 import {
   argTypes,
   parameters,
-} from '@vtmn/showcase-core/csf/components/VtmnButton.csf';
+} from '@vtmn/showcase-core/csf/components/actions/button.csf';
 
 export default {
   title: 'Components/VtmnButton',

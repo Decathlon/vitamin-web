@@ -4,7 +4,8 @@ import brand from './examples/brand.html';
 import reversed from './examples/reversed.html';
 import accent from './examples/accent.html';
 import alert from './examples/alert.html';
-import { parameters } from '@vtmn/showcase-core/csf/components/VtmnBadge.csf';
+
+import { parameters } from '@vtmn/showcase-core/csf/components/indicators/badge.csf';
 
 export default {
   title: 'Components / Indicators / Badge ',

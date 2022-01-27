@@ -7,7 +7,7 @@ import conversion from './examples/conversion.html';
 import ghost from './examples/ghost.html';
 import ghostReversed from './examples/ghost-reversed.html';
 
-import { parameters } from '@vtmn/showcase-core/csf/components/VtmnButton.csf';
+import { parameters } from '@vtmn/showcase-core/csf/components/actions/button.csf';
 
 export default {
   title: 'Components / Actions / Button',

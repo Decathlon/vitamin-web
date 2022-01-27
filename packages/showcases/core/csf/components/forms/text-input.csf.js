@@ -1,5 +1,15 @@
 import vitamixIconsList from '@vtmn/icons/dist/vitamix/font/vitamix.json';
 
+export const parameters = {
+  actions: {
+    handles: ['mouseenter', 'click', 'focusin', 'focusout'],
+  },
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=150%3A4893',
+  },
+};
+
 export const argTypes = {
   identifier: {
     type: { name: 'string', required: true },
@@ -57,15 +67,5 @@ export const argTypes = {
     description: 'The error state of the input.',
     defaultValue: false,
     control: { type: 'boolean' },
-  },
-};
-
-export const parameters = {
-  actions: {
-    handles: ['mouseenter', 'click', 'focusin', 'focusout'],
-  },
-  design: {
-    type: 'figma',
-    url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=150%3A3410',
   },
 };
