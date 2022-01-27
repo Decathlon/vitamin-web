@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.body.appendChild(newDiv);
 
     if (snackbar === 'vtmn-snackbar-1') {
-      document.body.lastChild.innerHTML = `<div id="vtmn-snackbar-1" class="vtmn-snackbar"><div class="vtmn-snackbar_content">This is the description of a snackbar</div><button id="btn-dismiss" class="vtmn-btn vtmn-btn_variant--secondary vtmn-btn_size--small">Button</button></div>`;
+      document.body.lastChild.innerHTML = `<div id="vtmn-snackbar-1" class="vtmn-snackbar"><div class="vtmn-snackbar_content">This is the description of a snackbar</div><button id="btn-dismiss" class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small">Button</button></div>`;
       let snackbar = document.getElementById('vtmn-snackbar-1');
       document
         .getElementById('btn-dismiss')
