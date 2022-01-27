@@ -2,7 +2,7 @@ import { VtmnRadioButton } from '@vtmn/vue';
 import {
   argTypes,
   parameters,
-} from '@vtmn/showcase-core/csf/components/VtmnRadioButton.csf';
+} from '@vtmn/showcase-core/csf/components/selection-controls/radio-button.csf';
 
 export default {
   title: 'Components/VtmnRadioButton',

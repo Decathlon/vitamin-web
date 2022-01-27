@@ -2,7 +2,7 @@ import { VtmnTextInput } from '@vtmn/vue';
 import {
   argTypes,
   parameters,
-} from '@vtmn/showcase-core/csf/components/VtmnTextInput.csf';
+} from '@vtmn/showcase-core/csf/components/forms/text-input.csf';
 
 export default {
   title: 'Components/VtmnTextInput',

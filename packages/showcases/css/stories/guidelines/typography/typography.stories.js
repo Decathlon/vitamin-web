@@ -5,12 +5,6 @@ import bodyText from './examples/body-text.html';
 
 export default {
   title: 'Guidelines / Typography',
-  parameters: {
-    design: {
-      type: 'figma',
-      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=0%3A1',
-    },
-  },
 };
 
 export const Overview = () => overview;

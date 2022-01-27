@@ -1,7 +1,7 @@
 <script>
   import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
   import { VtmnTextInput } from '@vtmn/svelte';
-  import { parameters } from '@vtmn/showcase-core/csf/components/VtmnTextInput.csf';
+  import { parameters } from '@vtmn/showcase-core/csf/components/forms/text-input.csf';
   import vitamixIcons from '@vtmn/icons/dist/vitamix/font/vitamix.json';
 
   const textinputArgs = {

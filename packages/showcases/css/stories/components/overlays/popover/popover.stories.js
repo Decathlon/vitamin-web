@@ -1,17 +1,11 @@
 import overview from './examples/overview.html';
 
+import { parameters } from '@vtmn/showcase-core/csf/components/overlays/popover.csf';
+
 export default {
   title: 'Components / Overlays / Popover',
   argTypes: { onchange: { action: 'write' } },
-  parameters: {
-    actions: {
-      handles: ['mouseenter', 'click', 'focusin', 'focusout'],
-    },
-    design: {
-      type: 'figma',
-      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vitamin---Web-UI-kit-(v0)?node-id=2756%3A10788',
-    },
-  },
+  parameters,
 };
 
 export const Overview = () => overview;

@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react';
 import {
   argTypes,
   parameters,
-} from '@vtmn/showcase-core/csf/components/VtmnSelect.csf';
+} from '@vtmn/showcase-core/csf/components/forms/select.csf';
 
 export default {
   title: 'Components/VtmnSelect',

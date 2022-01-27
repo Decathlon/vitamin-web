@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react';
 import {
   argTypes,
   parameters,
-} from '@vtmn/showcase-core/csf/components/VtmnAlert.csf';
+} from '@vtmn/showcase-core/csf/components/overlays/alert.csf';
 import VtmnAlert from '@vtmn/react/src/components/VtmnAlert/VtmnAlert';
 import { VtmnButton } from '@vtmn/react';
 

@@ -4,7 +4,7 @@ import { Meta, Story } from '@storybook/react';
 import {
   argTypes,
   parameters,
-} from '@vtmn/showcase-core/csf/components/VtmnButton.csf';
+} from '@vtmn/showcase-core/csf/components/actions/button.csf';
 
 export default {
   title: 'Components/VtmnButton',

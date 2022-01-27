@@ -1,5 +1,15 @@
 import vitamixIconsList from '@vtmn/icons/dist/vitamix/font/vitamix.json';
 
+export const parameters = {
+  actions: {
+    handles: ['mouseenter', 'click', 'focusin', 'focusout'],
+  },
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=1866%3A31',
+  },
+};
+
 export const argTypes = {
   variant: {
     type: { name: 'string', required: false },
@@ -53,15 +63,5 @@ export const argTypes = {
       type: 'select',
       options: ['', ...Object.keys(vitamixIconsList)],
     },
-  },
-};
-
-export const parameters = {
-  actions: {
-    handles: ['mouseenter', 'click', 'focusin', 'focusout'],
-  },
-  design: {
-    type: 'figma',
-    url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=31%3A136',
   },
 };
