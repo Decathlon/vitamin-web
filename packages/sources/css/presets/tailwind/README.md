@@ -89,10 +89,10 @@ yarn add @vtmn/assets
 Then follow instructions in [README of @vtmn/assets](https://www.npmjs.com/package/@vtmn/assets) :
 
 ```javascript
-import '@vtmn/assets/dist/font/assets.css';
+import '@vtmn/assets/dist/assets/font/assets.css';
 ```
 
-Or you can also import it with a CDN like `unpkg.com` with [this file](https://unpkg.com/@vtmn/assets/dist/font/assets.css).
+Or you can also import it with a CDN like `unpkg.com` with [this file](https://unpkg.com/@vtmn/assets/dist/assets/font/assets.css).
 
 ## Development
 

@@ -1,6 +1,6 @@
 module.exports = {
   inputDir: './src', // (required)
-  outputDir: './dist/font', // (required)
+  outputDir: './dist/assets/font', // (required)
   fontTypes: ['ttf', 'woff', 'woff2'],
   assetTypes: ['ts', 'css', 'json', 'html'],
   name: 'assets',

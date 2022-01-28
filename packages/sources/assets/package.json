@@ -23,6 +23,8 @@
   ],
   "scripts": {
     "build": "yarn build:svg && yarn build:font && yarn build:sprite",
+    "build:font": "mkdir -p ./dist/assets/font && fantasticon",
+    "build:sprite": "mkdir -p ./dist/assets/sprite && spritesh --viewbox \"0 0 16 16\" -i src/assets/* -o dist/assets/sprite/assets.svg && node src/scripts/add-sprite-declaration.js",
     "build:svg": "node src/scripts/build-svg.js",
     "prestart": "yarn build",
     "start": "chokidar \"src/**/\" -i \"**/dist/**\" -c \"yarn build\""
