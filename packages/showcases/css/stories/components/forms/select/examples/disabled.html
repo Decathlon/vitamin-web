@@ -1,8 +1,15 @@
 <div class="block">
+  <label for="my-select" class="vtmn-select_label vtmn-select_label--disabled"
+    >Label</label
+  >
   <div class="vtmn-select_container">
-    <label for="my-select">Label</label>
-
-    <select name="sports" id="my-select" autocomplete disabled>
+    <select
+      name="sports"
+      id="my-select"
+      class="vtmn-select"
+      autocomplete
+      disabled
+    >
       <option value="" disabled selected>Select</option>
       <option value="gymnastics">Gymnastics</option>
       <option value="archery">Archery</option>
@@ -12,4 +19,10 @@
       <option value="football">Football</option>
     </select>
   </div>
+  <p
+    id="select-helper-1"
+    class="vtmn-select_helper-text vtmn-select_helper-text--disabled"
+  >
+    Helper text with error goes here
+  </p>
 </div>

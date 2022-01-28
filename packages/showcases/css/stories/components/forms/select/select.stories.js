@@ -1,4 +1,5 @@
 import overview from './examples/overview.html';
+import valid from './examples/valid.html';
 import error from './examples/error.html';
 import disabled from './examples/disabled.html';
 
@@ -15,6 +16,15 @@ Overview.parameters = {
   docs: {
     source: {
       code: overview,
+    },
+  },
+};
+
+export const Valid = () => valid;
+Valid.parameters = {
+  docs: {
+    source: {
+      code: valid,
     },
   },
 };

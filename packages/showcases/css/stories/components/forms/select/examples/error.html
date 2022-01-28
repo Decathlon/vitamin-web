@@ -1,13 +1,11 @@
 <div class="block">
+  <label for="my-select" class="vtmn-select_label">Label</label>
   <div class="vtmn-select_container">
-    <label for="my-select">Label</label>
-
     <select
       name="sports"
       id="my-select"
+      class="vtmn-select vtmn-select--error"
       autocomplete
-      class="vtmn-select--error"
-      aria-describedby="select-helper-1"
     >
       <option value="" disabled selected>Select</option>
       <option value="gymnastics">Gymnastics</option>
@@ -17,9 +15,11 @@
       <option value="badminton">Badminton</option>
       <option value="football">Football</option>
     </select>
-
-    <p id="select-helper-1" class="vtmn-select_error-text">
-      Error text goes here
-    </p>
   </div>
+  <p
+    id="select-helper-1"
+    class="vtmn-select_helper-text vtmn-select_helper-text--error"
+  >
+    Helper text with error goes here
+  </p>
 </div>
