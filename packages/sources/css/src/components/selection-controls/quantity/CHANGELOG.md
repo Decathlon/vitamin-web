@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-quantity@0.4.0...@vtmn/css-quantity@0.4.1) (2022-01-28)
+
+**Note:** Version bump only for package @vtmn/css-quantity
+
+
+
+
+
 # [0.4.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-quantity@0.3.1...@vtmn/css-quantity@0.4.0) (2022-01-24)
 
 
