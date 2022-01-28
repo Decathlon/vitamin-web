@@ -1,5 +1,7 @@
 import overview from './examples/overview.html';
 
+import { parameters } from '@vtmn/showcase-core/csf/components/structure/skeleton.csf';
+
 export default {
   title: 'Components / Structure / Skeleton',
   argTypes: { onchange: { action: 'write' } },

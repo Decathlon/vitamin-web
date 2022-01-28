@@ -1,3 +1,13 @@
+export const parameters = {
+  actions: {
+    handles: ['mouseenter', 'click', 'focusin', 'focusout'],
+  },
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=2535%3A52',
+  },
+};
+
 export const argTypes = {
   disabled: {
     type: { name: 'boolean', required: false },
@@ -28,12 +38,5 @@ export const argTypes = {
     description: 'The label of the select.',
     defaultValue: 'Label',
     control: { type: 'text' },
-  },
-};
-
-export const parameters = {
-  design: {
-    type: 'figma',
-    url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=2535%3A52',
   },
 };

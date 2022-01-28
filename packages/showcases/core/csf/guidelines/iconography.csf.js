@@ -1,5 +1,12 @@
 import vitamixIconsList from '@vtmn/icons/dist/vitamix/font/vitamix.json';
 
+export const parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/ujn50nNMfGKzZJccATv7Vk/?node-id=0%3A1',
+  },
+};
+
 export const argTypes = {
   size: {
     type: { name: 'number', required: false },
@@ -52,12 +59,5 @@ export const argTypes = {
         'negative',
       ],
     },
-  },
-};
-
-export const parameters = {
-  design: {
-    type: 'figma',
-    url: 'https://www.figma.com/file/ujn50nNMfGKzZJccATv7Vk/?node-id=0%3A1',
   },
 };

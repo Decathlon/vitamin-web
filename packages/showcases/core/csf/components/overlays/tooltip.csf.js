@@ -1,3 +1,13 @@
+export const parameters = {
+  actions: {
+    handles: ['mouseenter', 'focusin', 'focusout', 'mouseleave'],
+  },
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=2756%3A10686',
+  },
+};
+
 export const argTypes = {
   position: {
     type: { name: 'string', required: false },
@@ -29,15 +39,5 @@ export const argTypes = {
     type: { name: 'string', required: true },
     description: 'The tooltip children',
     defaultValue: null,
-  },
-};
-
-export const parameters = {
-  actions: {
-    handles: ['mouseenter', 'focusin', 'focusout', 'mouseleave'],
-  },
-  design: {
-    type: 'figma',
-    url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=612%3A1192',
   },
 };

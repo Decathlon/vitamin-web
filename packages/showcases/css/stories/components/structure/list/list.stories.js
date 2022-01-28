@@ -2,9 +2,12 @@ import overview from './examples/overview.html';
 import small from './examples/small.html';
 import medium from './examples/medium.html';
 
+import { parameters } from '@vtmn/showcase-core/csf/components/structure/list.csf';
+
 export default {
   title: 'Components / Structure / List ',
   argTypes: { onchange: { action: 'write' } },
+  parameters,
 };
 
 export const Overview = () => overview;

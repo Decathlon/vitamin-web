@@ -1,3 +1,13 @@
+export const parameters = {
+  actions: {
+    handles: ['mouseenter', 'click', 'focusin', 'focusout'],
+  },
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=783%3A9869',
+  },
+};
+
 export const argTypes = {
   identifier: {
     type: { name: 'string', required: true },
@@ -22,15 +32,5 @@ export const argTypes = {
     control: {
       type: 'boolean',
     },
-  },
-};
-
-export const parameters = {
-  actions: {
-    handles: ['mouseenter', 'click', 'focusin', 'focusout'],
-  },
-  design: {
-    type: 'figma',
-    url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=783%3A9869',
   },
 };

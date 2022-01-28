@@ -3,9 +3,12 @@ import _default from './examples/default.html';
 import persistent from './examples/persistent.html';
 import onContent from './examples/on-content.html';
 
+import { parameters } from '@vtmn/showcase-core/csf/components/navigation/search.csf';
+
 export default {
   title: 'Components / Navigation / Search',
   argTypes: { onchange: { action: 'write' } },
+  parameters,
 };
 
 export const Overview = () => overview;
