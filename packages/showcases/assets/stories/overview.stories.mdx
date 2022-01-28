@@ -1,0 +1,59 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs';
+import assets from '@vtmn/assets/dist/font/assets.json';
+
+# Overview
+
+<Meta title="Assets / Overview" />
+
+The list of assets.
+Tip: click on an asset and it will be copied to your clipboard! 📎
+
+<Canvas>
+  <div
+    style={{
+      display: 'flex',
+      flexWrap: 'wrap',
+      justifyContent: 'center',
+    }}
+  >
+    {Object.keys(assets).map((asset) => (
+      <div
+        key={asset}
+        className="asset-tile"
+        onClick={() => {
+          const textArea = document.createElement('textarea');
+          textArea.value = asset;
+          document.body.appendChild(textArea);
+          textArea.select();
+          document.execCommand('Copy');
+          textArea.remove();
+        }}
+        title={`Copy ${asset} to clipboard`}
+      >
+        <span
+          aria-label={asset}
+          className={`vtmn-asset-${asset}`}
+          style={{
+            fontSize: 32,
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'flex-end',
+            height: '100%',
+            marginBottom: 8,
+          }}
+        ></span>
+        <span
+          style={{
+            fontSize: 15,
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'flex-start',
+            height: '100%',
+          }}
+        >
+          {asset}
+        </span>
+      </div>
+    ))}
+  </div>
+</Canvas>

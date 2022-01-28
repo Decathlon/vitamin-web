@@ -74,6 +74,26 @@ import '@vtmn/icons/dist/vitamix/font/vitamix.css';
 
 Or you can also import it with a CDN like `unpkg.com` with [this file](https://unpkg.com/@vtmn/icons/dist/vitamix/font/vitamix.css).
 
+## Install assets (optional)
+
+If you need to display assets, you will need to install `@vtmn/assets` package.
+
+```sh
+# with npm
+npm i -S @vtmn/assets
+
+# with yarn
+yarn add @vtmn/assets
+```
+
+Then follow instructions in [README of @vtmn/assets](https://www.npmjs.com/package/@vtmn/assets) :
+
+```javascript
+import '@vtmn/assets/dist/font/assets.css';
+```
+
+Or you can also import it with a CDN like `unpkg.com` with [this file](https://unpkg.com/@vtmn/assets/dist/font/assets.css).
+
 ## Development
 
 If you are there, it's probably because you already use [Tailwind CSS](https://tailwindcss.com/) in your project. If you want to take full advantage of all its features like [functions & directives](https://tailwindcss.com/docs/functions-and-directives) by building your own classes via [`@apply`](https://tailwindcss.com/docs/functions-and-directives#apply) for example inherited from the Vitamin CSS styles, you are at the right place!

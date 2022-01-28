@@ -16,6 +16,10 @@
       "root": "packages/showcases/icons",
       "type": "application"
     },
+    "@vtmn/showcase-assets": {
+      "root": "packages/showcases/assets",
+      "type": "application"
+    },
     "@vtmn/showcase-react": {
       "root": "packages/showcases/react",
       "type": "application"
@@ -174,6 +178,10 @@
     },
     "@vtmn/icons": {
       "root": "packages/sources/icons",
+      "type": "library"
+    },
+    "@vtmn/assets": {
+      "root": "packages/sources/assets",
       "type": "library"
     },
     "@vtmn/react": {

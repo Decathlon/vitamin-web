@@ -39,6 +39,7 @@ jobs:
 #     matrix:
 #       project_base_dir:
 #         [
+#           'packages/sources/assets',
 #           'packages/sources/css',
 #           'packages/sources/css/src/components/actions/button',
 #           'packages/sources/css/src/components/actions/dropdown',
