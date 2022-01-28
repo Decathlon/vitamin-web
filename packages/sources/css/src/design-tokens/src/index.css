@@ -12,6 +12,9 @@
 /* Breakpoints */
 @import './breakpoints';
 
+/* Layout */
+@import './layout';
+
 /* Opacities */
 @import './opacities';
 
