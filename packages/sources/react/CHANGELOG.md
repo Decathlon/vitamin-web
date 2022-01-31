@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.18.8](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.7...@vtmn/react@0.18.8) (2022-01-31)
+
+
+### Bug Fixes
+
+* **@vtmn/react:** make children prop of VtmnButton optional ([e2a6a47](https://github.com/Decathlon/vitamin-web/commit/e2a6a47c9ba11c0c3b5e0d9aa632a5743c3b7fac))
+
+
+
+
+
 ## [0.18.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.6...@vtmn/react@0.18.7) (2022-01-28)
 
 **Note:** Version bump only for package @vtmn/react
