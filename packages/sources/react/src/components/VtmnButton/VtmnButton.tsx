@@ -42,7 +42,7 @@ export interface VtmnButtonProps
    * The content to render inside the component.
    * @defaultValue undefined
    */
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 export const VtmnButton = React.forwardRef<HTMLButtonElement, VtmnButtonProps>(
