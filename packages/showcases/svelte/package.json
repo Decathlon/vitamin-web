@@ -10,7 +10,7 @@
     "start": "start-storybook -p 6009"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.5",
+    "@babel/core": "^7.17.0",
     "@storybook/addon-a11y": "^6.4.13",
     "@storybook/addon-essentials": "^6.4.13",
     "@storybook/addon-svelte-csf": "^1.1.0",
@@ -30,7 +30,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "storybook-addon-designs": "^6.0.0",
-    "svelte": "^3.46.2",
+    "svelte": "^3.46.3",
     "svelte-loader": "^3.1.2"
   },
   "licenses": [
