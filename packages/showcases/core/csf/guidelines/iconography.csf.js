@@ -14,7 +14,7 @@ export const argTypes = {
     defaultValue: 24,
     control: {
       type: 'select',
-      options: [16, 24, 32, 64],
+      options: [16, 20, 24, 32, 64],
     },
   },
   color: {
