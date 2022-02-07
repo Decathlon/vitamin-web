@@ -26,11 +26,7 @@ export default /*#__PURE__*/ defineComponent({
       validator: (val: VtmnButtonSize) =>
         ['small', 'medium', 'large', 'stretched'].includes(val),
     },
-    type: {
-      type: String as PropType<VtmnButtonType>,
-      default: 'button',
-    },
-    isDisabled: {
+    disabled: {
       type: Boolean as PropType<boolean>,
       default: false,
     },
@@ -74,16 +70,10 @@ export default /*#__PURE__*/ defineComponent({
 </script>
 
 <template>
-  <button :type="type" :class="classes" v-bind="$attrs" :disabled="isDisabled">
-    <span
-      :v-if="!this.iconAlone && this.iconLeft"
-      :class="iconLeftClass"
-    ></span>
-    <span :v-if="this.iconAlone" :class="iconAloneClass"></span>
-    <slot :v-if="!this.iconAlone" />
-    <span
-      :v-if="!this.iconAlone && this.iconRight"
-      :class="iconRightClass"
-    ></span>
+  <button :class="classes" v-bind="$attrs" :disabled="disabled">
+    <span :v-if="!iconAlone && iconLeft" :class="iconLeftClass"></span>
+    <span :v-if="iconAlone" :class="iconAloneClass"></span>
+    <slot :v-if="!iconAlone" />
+    <span :v-if="!iconAlone && iconRight" :class="iconRightClass"></span>
   </button>
 </template>

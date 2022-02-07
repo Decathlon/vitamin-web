@@ -37,16 +37,7 @@ export const argTypes = {
       options: ['small', 'medium', 'large', 'stretched'],
     },
   },
-  type: {
-    type: { name: 'string', required: false },
-    description: 'The type of the button.',
-    defaultValue: 'button',
-    control: {
-      type: 'select',
-      options: ['button', 'submit'],
-    },
-  },
-  isDisabled: {
+  disabled: {
     type: { name: 'boolean', required: false },
     description: 'Whether the button is disabled.',
     table: {
