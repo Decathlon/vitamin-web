@@ -48,14 +48,5 @@ export const parameters = {
   controls: { expanded: true },
   viewport: {
     viewports,
-  },
-  docs: {
-    transformSource(src, ctx) {
-      const match = /\b("')?template\1:\s*`([^`]+)`/.exec(src);
-      if (match) {
-        return templateSourceCode(dedent(match[2]), ctx.args, ctx.argTypes);
-      }
-      return src;
-    },
   }
 };
