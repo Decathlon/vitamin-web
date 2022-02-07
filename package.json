@@ -99,7 +99,7 @@
     "commitMessage": "chore: deploy storybook"
   },
   "volta": {
-    "node": "16.3.1",
+    "node": "16.13.2",
     "yarn": "1.22.17"
   },
   "dependencies": {
