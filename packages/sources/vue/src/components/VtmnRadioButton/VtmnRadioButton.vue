@@ -25,6 +25,10 @@ export default /*#__PURE__*/ defineComponent({
       type: [String, Number] as PropType<string | number>,
       default: null,
     },
+    checked: {
+      type: Boolean as PropType<boolean>,
+      default: false,
+    },
     disabled: {
       type: Boolean as PropType<boolean>,
       default: false,
@@ -41,7 +45,7 @@ export default /*#__PURE__*/ defineComponent({
     :id="identifier"
     :name="name"
     :value="value"
-    :checked="modelValue === value"
+    :checked="checked"
     :disabled="disabled"
     v-bind="$attrs"
     @change="$emit('update:modelValue', value)"
