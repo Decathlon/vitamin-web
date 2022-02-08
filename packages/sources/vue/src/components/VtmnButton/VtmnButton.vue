@@ -1,14 +1,15 @@
 <script lang="ts">
 import '@vtmn/css-button/dist/index-with-vars.css';
-import { reactive, computed, defineComponent } from 'vue';
+import { reactive, computed, defineComponent, PropType } from 'vue';
+import { VtmnButtonSize, VtmnButtonType, VtmnButtonVariant } from './types';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnButton',
   props: {
     variant: {
-      type: String,
+      type: String as PropType<VtmnButtonVariant>,
       default: 'primary',
-      validator: (val: string) =>
+      validator: (val: VtmnButtonVariant) =>
         [
           'primary',
           'primary-reversed',
@@ -20,21 +21,25 @@ export default /*#__PURE__*/ defineComponent({
         ].includes(val),
     },
     size: {
-      type: String,
+      type: String as PropType<VtmnButtonSize>,
       default: 'medium',
-      validator: (val: string) =>
+      validator: (val: VtmnButtonSize) =>
         ['small', 'medium', 'large', 'stretched'].includes(val),
     },
+    disabled: {
+      type: Boolean as PropType<boolean>,
+      default: false,
+    },
     iconLeft: {
-      type: String,
+      type: String as PropType<string>,
       default: null,
     },
     iconRight: {
-      type: String,
+      type: String as PropType<string>,
       default: null,
     },
     iconAlone: {
-      type: String,
+      type: String as PropType<string>,
       default: null,
     },
   },
@@ -65,16 +70,10 @@ export default /*#__PURE__*/ defineComponent({
 </script>
 
 <template>
-  <button type="button" :class="classes" v-bind="$attrs">
-    <span
-      :v-if="!this.iconAlone && this.iconLeft"
-      :class="iconLeftClass"
-    ></span>
-    <span :v-if="this.iconAlone" :class="iconAloneClass"></span>
-    <slot :v-if="!this.iconAlone"></slot>
-    <span
-      :v-if="!this.iconAlone && this.iconRight"
-      :class="iconRightClass"
-    ></span>
+  <button :class="classes" v-bind="$attrs" :disabled="disabled">
+    <span :v-if="!iconAlone && iconLeft" :class="iconLeftClass"></span>
+    <span :v-if="iconAlone" :class="iconAloneClass"></span>
+    <slot :v-if="!iconAlone" />
+    <span :v-if="!iconAlone && iconRight" :class="iconRightClass"></span>
   </button>
 </template>
