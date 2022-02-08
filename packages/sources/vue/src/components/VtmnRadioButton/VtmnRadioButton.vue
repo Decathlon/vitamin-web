@@ -1,35 +1,40 @@
 <script lang="ts">
 import '@vtmn/css-radio-button/dist/index-with-vars.css';
-import { defineComponent } from 'vue';
+import { defineComponent, PropType } from 'vue';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnRadioButton',
   props: {
+    modelValue: {
+      type: [String, Number] as PropType<string | number>,
+      default: ''
+    },
     identifier: {
-      type: String,
+      type: String as PropType<string>,
       default: null,
     },
     labelText: {
-      type: String,
+      type: String as PropType<string>,
       default: null,
     },
     name: {
-      type: String,
+      type: String as PropType<string>,
       default: null,
     },
     value: {
-      type: String,
+      type: [String, Number] as PropType<string | number>,
       default: null,
     },
     checked: {
-      type: Boolean,
+      type: Boolean as PropType<boolean>,
       default: false,
     },
     disabled: {
-      type: Boolean,
+      type: Boolean as PropType<boolean>,
       default: false,
     },
   },
+  emits: ['update:modelValue']
 });
 </script>
 
@@ -37,12 +42,13 @@ export default /*#__PURE__*/ defineComponent({
   <input
     class="vtmn-radio-button"
     type="radio"
-    :id="this.identifier"
-    :name="this.name"
-    :value="this.value"
-    :checked="this.checked"
-    :disabled="this.disabled"
+    :id="identifier"
+    :name="name"
+    :value="value"
+    :checked="checked"
+    :disabled="disabled"
     v-bind="$attrs"
+    @change="$emit('update:modelValue', value)"
   />
-  <label :for="this.identifier">{{ this.labelText }}</label>
+  <label :for="identifier">{{ labelText }}</label>
 </template>
