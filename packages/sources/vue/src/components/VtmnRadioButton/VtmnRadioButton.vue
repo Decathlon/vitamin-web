@@ -7,7 +7,7 @@ export default /*#__PURE__*/ defineComponent({
   props: {
     modelValue: {
       type: [String, Number] as PropType<string | number>,
-      default: ''
+      default: '',
     },
     identifier: {
       type: String as PropType<string>,
@@ -34,7 +34,7 @@ export default /*#__PURE__*/ defineComponent({
       default: false,
     },
   },
-  emits: ['update:modelValue']
+  emits: ['update:modelValue'],
 });
 </script>
 
