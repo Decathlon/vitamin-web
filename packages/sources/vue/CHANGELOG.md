@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.9.29...@vtmn/vue@0.10.0) (2022-02-08)
+
+
+### Features
+
+* **@vtmn/vue:** add `VtmnIcon` component ([#955](https://github.com/Decathlon/vitamin-web/issues/955)) ([f0bb8ea](https://github.com/Decathlon/vitamin-web/commit/f0bb8ea1ef5b199fae4e9e51509b49be5c35e612))
+* **@vtmn/vue:** add types and props to`VtmnButton` component ([#954](https://github.com/Decathlon/vitamin-web/issues/954)) ([4ff9756](https://github.com/Decathlon/vitamin-web/commit/4ff9756f21a7d7c574786932e875d4b27284ba1e))
+
+
+
+
+
 ## [0.9.29](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.9.28...@vtmn/vue@0.9.29) (2022-02-03)
 
 **Note:** Version bump only for package @vtmn/vue
