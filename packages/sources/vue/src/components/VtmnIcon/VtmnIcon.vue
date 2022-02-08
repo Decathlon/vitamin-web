@@ -14,7 +14,7 @@ export default /*#__PURE__*/ defineComponent({
     size: {
       type: Number as PropType<VtmnIconSize>,
       default: 24,
-      validator: (val: VtmnIconSize) => [16, 20, 24, 32, 64].includes(val),
+      validator: (val: VtmnIconSize) => [16, 24, 32].includes(val),
     },
     variant: {
       type: String as PropType<VtmnIconVariant>,
