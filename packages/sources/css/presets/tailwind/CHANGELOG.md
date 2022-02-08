@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.33.59](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tailwind-preset@0.33.58...@vtmn/css-tailwind-preset@0.33.59) (2022-02-08)
+
+**Note:** Version bump only for package @vtmn/css-tailwind-preset
+
+
+
+
+
 ## [0.33.58](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tailwind-preset@0.33.57...@vtmn/css-tailwind-preset@0.33.58) (2022-02-03)
 
 **Note:** Version bump only for package @vtmn/css-tailwind-preset
