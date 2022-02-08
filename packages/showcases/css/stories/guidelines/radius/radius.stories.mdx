@@ -1,0 +1,81 @@
+import { Meta, Source, Canvas } from '@storybook/addon-docs';
+import tailwindPreset from '@vtmn/css-tailwind-preset';
+
+<Meta title="Guidelines / Radius" />
+
+# Radius
+
+> Radius help us to keep a sustainable & global identity by drawing corners.
+
+For more details, see our <a class="vtmn-link vtmn-link--icon-along" href="https://www.decathlon.design/726f8c765/v/0/p/533f3d-radius" target="_blank">Radius' guideline</a>.
+
+## Using [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+
+If you don't know CSS Custom Properties, you can see basic usage documentation [here](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#Basic_usage). All our CSS Custom Properties for colors are listed at "Swatches" column just below:
+
+```
+var(--vtmn-radius_100);
+var(--vtmn-radius_200);
+var(--vtmn-radius_300);
+var(--vtmn-radius_400);
+var(--vtmn-radius_500);
+var(--vtmn-radius_600);
+var(--vtmn-radius_700);
+var(--vtmn-radius_800);
+```
+
+## Using [Tailwind CSS](https://tailwindcss.com) utility classes
+
+You can use shadows with Tailwind CSS utility classes about [Border Radius](https://tailwindcss.com/docs/border-radius). Here is the list of radius extented by Vitamin:
+
+<Source
+  language="json"
+  code={JSON.stringify(tailwindPreset.theme.extend.borderRadius, null, 2)}
+/>
+
+So, here is an example with associated code:
+
+<Canvas>
+  <div class="vtmn-flex vtmn-flex-wrap vtmn-w-full vtmn-justify-between">
+    <div class="vtmn-flex vtmn-rounded-100 vtmn-bg-background-primary vtmn-shadow-400 vtmn-p-4 vtmn-mb-5 vtmn-items-center vtmn-content-center">
+      <span class="vtmn-text-center vtmn-font-semibold vtmn-text-content-primary">
+        vtmn-rounded-100
+      </span>
+    </div>
+    <div class="vtmn-flex vtmn-rounded-200 vtmn-bg-background-primary vtmn-shadow-400 vtmn-p-4 vtmn-mb-5 vtmn-items-center vtmn-content-center">
+      <span class="vtmn-text-center vtmn-font-semibold vtmn-text-content-primary">
+        vtmn-rounded-200
+      </span>
+    </div>
+    <div class="vtmn-flex vtmn-rounded-300 vtmn-bg-background-primary vtmn-shadow-400 vtmn-p-4 vtmn-mb-5 vtmn-items-center vtmn-content-center">
+      <span class="vtmn-text-center vtmn-font-semibold vtmn-text-content-primary">
+        vtmn-rounded-300
+      </span>
+    </div>
+    <div class="vtmn-flex vtmn-rounded-400 vtmn-bg-background-primary vtmn-shadow-400 vtmn-p-4 vtmn-mb-5 vtmn-items-center vtmn-content-center">
+      <span class="vtmn-text-center vtmn-font-semibold vtmn-text-content-primary">
+        vtmn-rounded-400
+      </span>
+    </div>
+    <div class="vtmn-flex vtmn-rounded-500 vtmn-bg-background-primary vtmn-shadow-400 vtmn-p-4 vtmn-mb-5 vtmn-items-center vtmn-content-center">
+      <span class="vtmn-text-center vtmn-font-semibold vtmn-text-content-primary">
+        vtmn-rounded-500
+      </span>
+    </div>
+    <div class="vtmn-flex vtmn-rounded-600 vtmn-bg-background-primary vtmn-shadow-400 vtmn-p-4 vtmn-mb-5 vtmn-items-center vtmn-content-center">
+      <span class="vtmn-text-center vtmn-font-semibold vtmn-text-content-primary">
+        vtmn-rounded-600
+      </span>
+    </div>
+    <div class="vtmn-flex vtmn-rounded-700 vtmn-bg-background-primary vtmn-shadow-400 vtmn-p-4 vtmn-mb-5 vtmn-items-center vtmn-content-center">
+      <span class="vtmn-text-center vtmn-font-semibold vtmn-text-content-primary">
+        vtmn-rounded-700
+      </span>
+    </div>
+    <div class="vtmn-flex vtmn-rounded-800 vtmn-bg-background-primary vtmn-shadow-400 vtmn-p-4 vtmn-mb-5 vtmn-items-center vtmn-content-center">
+      <span class="vtmn-text-center vtmn-font-semibold vtmn-text-content-primary">
+        vtmn-rounded-800
+      </span>
+    </div>
+  </div>
+</Canvas>
