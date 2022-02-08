@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.10.0...@vtmn/vue@0.11.0) (2022-02-08)
+
+
+### Bug Fixes
+
+* **@vtmn/vue:** lint ([53bdee8](https://github.com/Decathlon/vitamin-web/commit/53bdee84cb14fe30ac968ab7d5e9ef287b51f4a6))
+
+
+### Features
+
+* **@vtmn/vue:** add reactivity to `VtmnRadioButton` component ([#956](https://github.com/Decathlon/vitamin-web/issues/956)) ([a2d1139](https://github.com/Decathlon/vitamin-web/commit/a2d11397f9d5b2a5c687304aaa6d6cce32e0dc16))
+
+
+
+
+
 # [0.10.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.9.29...@vtmn/vue@0.10.0) (2022-02-08)
 
 
