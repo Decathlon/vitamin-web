@@ -13,6 +13,7 @@ function install(Vue: Application) {
 export default install;
 
 export { default as VtmnButton } from './components/VtmnButton';
+export { default as VtmnIcon } from './components/VtmnIcon';
 export { default as VtmnCheckbox } from './components/VtmnCheckbox';
 export { default as VtmnLink } from './components/VtmnLink';
 export { default as VtmnRadioButton } from './components/VtmnRadioButton';
