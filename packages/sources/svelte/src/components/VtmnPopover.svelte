@@ -1,5 +1,4 @@
 <script>
-  import '@vtmn/css-popover';
   import { cn } from '../utils/classnames';
   import { VTMN_POPOVER_POSITION } from '../utils/enums';
 
@@ -34,3 +33,7 @@
     <p class="vtmn-popover_text"><slot name="body" /></p>
   </div>
 </div>
+
+<style lang="css">
+  @import '@vtmn/css-popover';
+</style>

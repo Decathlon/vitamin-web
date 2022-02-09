@@ -1,5 +1,4 @@
 <script>
-  import '@vtmn/css-link';
   import { cn } from '../utils/classnames';
 
   /**
@@ -51,3 +50,7 @@
 </script>
 
 <a {href} {target} class={componentClass} {...$$restProps}><slot /></a>
+
+<style lang="css">
+  @import '@vtmn/css-link';
+</style>

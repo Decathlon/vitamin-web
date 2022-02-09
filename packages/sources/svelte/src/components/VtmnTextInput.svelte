@@ -1,5 +1,4 @@
 <script>
-  import '@vtmn/css-text-input';
   import { cn } from '../utils/classnames';
 
   /** @restProps { input | textarea } */
@@ -114,3 +113,7 @@
     {helperText}
   </p>
 {/if}
+
+<style lang="css">
+  @import '@vtmn/css-text-input';
+</style>
