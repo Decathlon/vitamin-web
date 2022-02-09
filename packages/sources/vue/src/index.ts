@@ -12,10 +12,29 @@ function install(Vue: Application) {
 
 export default install;
 
-export { default as VtmnButton } from './components/VtmnButton';
-export { default as VtmnIcon } from './components/VtmnIcon';
-export { default as VtmnCheckbox } from './components/VtmnCheckbox';
-export { default as VtmnLink } from './components/VtmnLink';
-export { default as VtmnRadioButton } from './components/VtmnRadioButton';
-export { default as VtmnTextInput } from './components/VtmnTextInput';
-export { default as VtmnToggle } from './components/VtmnToggle';
+// GUIDELINES
+
+// Iconography
+export { default as VtmnIcon } from './guidelines/iconography/VtmnIcon';
+
+// COMPONENTS
+
+// Actions
+export { default as VtmnButton } from './components/actions/VtmnButton';
+export { default as VtmnLink } from './components/actions/VtmnLink';
+
+// Forms
+export { default as VtmnTextInput } from './components/forms/VtmnTextInput';
+
+// Indicators
+
+// Navigation
+
+// Overlays
+
+// Selection controls
+export { default as VtmnCheckbox } from './components/selection-controls/VtmnCheckbox';
+export { default as VtmnRadioButton } from './components/selection-controls/VtmnRadioButton';
+export { default as VtmnToggle } from './components/selection-controls/VtmnToggle';
+
+// Structure

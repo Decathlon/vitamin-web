@@ -5,7 +5,7 @@ import {
 } from '@vtmn/showcase-core/csf/components/actions/link.csf';
 
 export default {
-  title: 'Components/VtmnLink',
+  title: 'Components / Actions / VtmnLink',
   component: VtmnLink,
   argTypes,
   parameters,

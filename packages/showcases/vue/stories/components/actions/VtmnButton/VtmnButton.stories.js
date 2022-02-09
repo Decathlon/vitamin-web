@@ -5,7 +5,7 @@ import {
 } from '@vtmn/showcase-core/csf/components/actions/button.csf';
 
 export default {
-  title: 'Components/VtmnButton',
+  title: 'Components / Actions / VtmnButton',
   component: VtmnButton,
   argTypes,
   parameters,

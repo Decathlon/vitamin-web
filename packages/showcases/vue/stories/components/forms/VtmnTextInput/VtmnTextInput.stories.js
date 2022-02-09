@@ -5,7 +5,7 @@ import {
 } from '@vtmn/showcase-core/csf/components/forms/text-input.csf';
 
 export default {
-  title: 'Components/VtmnTextInput',
+  title: 'Components / Forms / VtmnTextInput',
   component: VtmnTextInput,
   argTypes,
   parameters,
