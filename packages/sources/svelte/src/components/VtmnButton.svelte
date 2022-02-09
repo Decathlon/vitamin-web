@@ -1,5 +1,4 @@
 <script>
-  import '@vtmn/css-button';
   import { cn } from '../utils/classnames';
 
   /** @restProps { button } */
@@ -68,3 +67,7 @@
     <span class={`vtmx-${iconRight}`} />
   {/if}
 </button>
+
+<style lang="css">
+  @import '@vtmn/css-button';
+</style>
