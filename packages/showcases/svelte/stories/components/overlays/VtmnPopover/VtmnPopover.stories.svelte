@@ -12,7 +12,7 @@
 </script>
 
 <Meta
-  title="Components/VtmnPopover"
+  title="Components / Overlays / VtmnPopover"
   component={VtmnPopover}
   argTypes={{
     position: {

@@ -1,5 +1,5 @@
 <script>
-  import { cn } from '../utils/classnames';
+  import { cn } from '../../../utils/classnames';
 
   /**
    * The href of the link.

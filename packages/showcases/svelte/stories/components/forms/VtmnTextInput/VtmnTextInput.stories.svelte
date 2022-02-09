@@ -13,7 +13,7 @@
 </script>
 
 <Meta
-  title="Components/VtmnTextInput"
+  title="Components / Forms / VtmnTextInput"
   component={VtmnTextInput}
   argTypes={{
     icon: {

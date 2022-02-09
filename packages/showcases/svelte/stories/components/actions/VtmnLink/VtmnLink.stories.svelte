@@ -9,7 +9,11 @@
   };
 </script>
 
-<Meta title="Components/VtmnLink" component={VtmnLink} {parameters} />
+<Meta
+  title="Components / Actions / VtmnLink"
+  component={VtmnLink}
+  {parameters}
+/>
 
 <Template let:args>
   <VtmnLink {...args}>Link</VtmnLink>
