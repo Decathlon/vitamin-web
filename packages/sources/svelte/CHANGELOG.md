@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.27](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.8.26...@vtmn/svelte@0.8.27) (2022-02-09)
+
+
+### Bug Fixes
+
+* **style:** move import style into <style> element ([#960](https://github.com/Decathlon/vitamin-web/issues/960)) ([5c1437a](https://github.com/Decathlon/vitamin-web/commit/5c1437a9b7237402b1344eff4bf3d375eb43c21b))
+
+
+
+
+
 ## [0.8.26](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.8.25...@vtmn/svelte@0.8.26) (2022-02-08)
 
 **Note:** Version bump only for package @vtmn/svelte
