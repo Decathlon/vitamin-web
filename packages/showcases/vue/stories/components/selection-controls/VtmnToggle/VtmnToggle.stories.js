@@ -5,7 +5,7 @@ import {
 } from '@vtmn/showcase-core/csf/components/selection-controls/toggle.csf';
 
 export default {
-  title: 'Components/VtmnToggle',
+  title: 'Components / Selection controls /VtmnToggle',
   component: VtmnToggle,
   argTypes,
   parameters,

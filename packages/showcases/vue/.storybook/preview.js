@@ -48,5 +48,10 @@ export const parameters = {
   controls: { expanded: true },
   viewport: {
     viewports,
-  }
+  },
+  options: {
+    storySort: {
+      order: ['Guidelines', 'Components'],
+    },
+  },
 };

@@ -5,7 +5,7 @@ import {
 } from '@vtmn/showcase-core/csf/guidelines/iconography.csf';
 
 export default {
-  title: 'Components/VtmnIcon',
+  title: 'Guidelines / Iconography /VtmnIcon',
   component: VtmnIcon,
   argTypes,
   parameters,

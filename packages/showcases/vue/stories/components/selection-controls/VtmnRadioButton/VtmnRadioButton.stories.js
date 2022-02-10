@@ -5,7 +5,7 @@ import {
 } from '@vtmn/showcase-core/csf/components/selection-controls/radio-button.csf';
 
 export default {
-  title: 'Components/VtmnRadioButton',
+  title: 'Components / Selection controls /VtmnRadioButton',
   component: VtmnRadioButton,
   argTypes,
   parameters,
