@@ -1,5 +1,5 @@
 <script>
-  import { cn } from '../utils/classnames';
+  import { cn } from '../../../utils/classnames';
 
   /** @restProps { input | textarea } */
 

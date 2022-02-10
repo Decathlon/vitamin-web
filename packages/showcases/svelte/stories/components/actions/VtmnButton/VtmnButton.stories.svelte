@@ -11,7 +11,7 @@
 </script>
 
 <Meta
-  title="Components/VtmnButton"
+  title="Components / Actions / VtmnButton"
   component={VtmnButton}
   argTypes={{
     iconLeft: {

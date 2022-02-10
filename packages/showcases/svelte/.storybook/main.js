@@ -1,6 +1,7 @@
 module.exports = {
   stories: [
-    '../stories/**/*.stories.{js,jsx,ts,tsx,mdx,svelte}'
+    '../stories/guidelines/**/*.stories.{js,jsx,ts,tsx,mdx,svelte}',
+    '../stories/components/**/*.stories.{js,jsx,ts,tsx,mdx,svelte}'
   ],
   addons: [
     '@storybook/addon-svelte-csf',

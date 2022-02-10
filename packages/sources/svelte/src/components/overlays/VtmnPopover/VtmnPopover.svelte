@@ -1,6 +1,6 @@
 <script>
-  import { cn } from '../utils/classnames';
-  import { VTMN_POPOVER_POSITION } from '../utils/enums';
+  import { cn } from '../../../utils/classnames';
+  import { VTMN_POPOVER_POSITION } from '../../../utils/enums';
 
   /**
    * ID of the popover
