@@ -15,9 +15,7 @@ export default {
 
 const Template: Story = (args) => <VtmnTooltip {...args} />;
 
-export const TooltipText = Template.bind({});
-TooltipText.args = {
-  tooltip: 'I am a tooltip example',
-  children: 'Tooltip Example',
-  position: 'right',
+export const Overview = Template.bind({});
+Overview.args = {
+  children: 'Tooltip',
 };

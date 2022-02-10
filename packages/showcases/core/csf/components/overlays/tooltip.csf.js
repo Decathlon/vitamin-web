@@ -31,7 +31,7 @@ export const argTypes = {
   tooltip: {
     type: { name: 'string', required: true },
     description: 'The printed tooltip',
-    defaultValue: 'Tooltip example',
+    defaultValue: 'Tooltip text',
     control: { type: 'text' },
   },
 

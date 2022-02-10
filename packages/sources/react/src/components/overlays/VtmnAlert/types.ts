@@ -1,1 +1,1 @@
-export type VtmnAlertType = 'info' | 'warning' | 'success' | 'danger';
+export type VtmnAlertVariant = 'info' | 'warning' | 'success' | 'danger';
