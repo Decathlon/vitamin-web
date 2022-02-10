@@ -62,9 +62,9 @@
   "svelte": "src/index.js",
   "exports": {
     ".": "./src/components",
-    "./VtmnButton.svelte": "./dist/VtmnButton.js",
-    "./VtmnLink.svelte": "./dist/VtmnLink.js",
-    "./VtmnPopover.svelte": "./dist/VtmnPopover.js",
-    "./VtmnTextInput.svelte": "./dist/VtmnTextInput.js"
+    "./actions/VtmnButton/VtmnButton.svelte": "./dist/VtmnButton.js",
+    "./actions/VtmnLink/VtmnLink.svelte": "./dist/VtmnLink.js",
+    "./forms/VtmnTextInput/VtmnTextInput.svelte": "./dist/VtmnTextInput.js",
+    "./overlays/VtmnPopover/VtmnPopover.svelte": "./dist/VtmnPopover.js"
   }
 }
