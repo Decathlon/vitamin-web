@@ -2,9 +2,12 @@ import overview from './examples/overview.html';
 import horizontal from './examples/horizontal.html';
 import vertical from './examples/vertical.html';
 
+import { parameters } from '@vtmn/showcase-core/csf/components/structure/divider.csf';
+
 export default {
   title: 'Components / Structure / Divider',
   argTypes: { onclick: { action: 'clicked' } },
+  parameters,
 };
 
 export const Overview = () => overview;

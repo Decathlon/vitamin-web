@@ -1,0 +1,164 @@
+@import '@vtmn/css-design-tokens/src/base-colors';
+@import '@vtmn/css-design-tokens/src/themes/default';
+@import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/opacities';
+@import '@vtmn/css-design-tokens/src/shadows';
+@import '@vtmn/css-design-tokens/src/spacings';
+
+.vtmn-dropdown {
+  box-sizing: border-box;
+  width: fit-content;
+  height: fit-content;
+  font-family: var(--vtmn-typo_font-family);
+  font-size: var(--vtmn-typo_text-2-font-size);
+  line-height: var(--vtmn-typo_text-2-line-height);
+  color: var(--vtmn-semantic-color_content-primary);
+  font-weight: var(--vtmn-typo_font-weight--normal);
+  outline: 0;
+}
+
+.vtmn-dropdown details {
+  box-sizing: border-box;
+  display: block;
+  width: fit-content;
+  min-height: rem(48px);
+  height: fit-content;
+  outline: 0;
+}
+
+.vtmn-dropdown > label {
+  display: inline-block;
+  margin-block-end: 4px;
+}
+
+.vtmn-dropdown summary {
+  display: flex;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  width: fit-content;
+  border-radius: rem(4px);
+  background-color: var(--vtmn-semantic-color_background-primary);
+  padding: var(--vtmn-spacing_3) var(--vtmn-spacing_7) var(--vtmn-spacing_3)
+    var(--vtmn-spacing_4);
+  outline: 0;
+  box-shadow: inset 0 0 0 rem(1px) var(--vtmn-semantic-color_border-inactive);
+}
+
+.vtmn-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.vtmn-dropdown:not([aria-disabled='true']) summary:hover {
+  box-shadow: inset 0 0 0 rem(1px) var(--vtmn-semantic-color_border-inactive),
+    0 0 0 3px var(--vtmn-semantic-color_hover-primary);
+}
+
+.vtmn-dropdown:not([aria-disabled='true']) summary:active,
+.vtmn-dropdown:not([aria-disabled='true']) details[open] summary,
+.vtmn-dropdown:not([aria-disabled='true']) summary:focus-visible {
+  box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-active);
+}
+
+.vtmn-dropdown[aria-disabled='true'] summary {
+  pointer-events: none;
+}
+
+.vtmn-dropdown[aria-disabled='true'] details > *,
+.vtmn-dropdown[aria-disabled='true'] > label {
+  opacity: var(--vtmn-opacity_disabled-state);
+}
+
+.vtmn-dropdown[aria-disabled='true'] > label,
+.vtmn-dropdown[aria-disabled='true'] details {
+  cursor: not-allowed;
+}
+
+.vtmn-dropdown summary::after {
+  content: url("data:image/svg+xml;charset=utf-8, %3csvg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='m8 8.781 3.3-3.3.943.943L8 10.667 3.757 6.424l.943-.943 3.3 3.3z'/%3e%3c/svg%3e");
+  width: rem(24px);
+  height: rem(24px);
+  position: absolute;
+  display: block;
+  right: rem(10px);
+  transition: transform 200ms ease;
+}
+
+.vtmn-dropdown_items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  background-color: var(--vtmn-semantic-color_background-primary);
+  border-radius: rem(4px);
+  height: fit-content;
+  width: fit-content;
+  padding: var(--vtmn-spacing_2);
+  box-shadow: var(--vtmn-shadow_400);
+  z-index: 2;
+  overflow-y: auto;
+  transform: translateY(var(--vtmn-spacing_1));
+}
+
+.vtmn-dropdown_items input[type='checkbox'] {
+  position: absolute;
+  opacity: 0;
+  left: -9999px;
+}
+
+.vtmn-dropdown_items > label {
+  background-color: var(--vtmn-semantic-color_background-primary);
+  padding: var(--vtmn-spacing_3);
+  margin: 0;
+  width: auto;
+  height: 100%;
+  border-radius: rem(4px);
+  display: inline-flex;
+  position: relative;
+}
+
+.vtmn-dropdown_items > .vtmn-divider {
+  width: 100%;
+}
+
+.vtmn-dropdown_items span[class^='vtmx-'] {
+  font-size: var(--vtmn-typo_text-1-font-size);
+  margin-inline-end: var(--vtmn-spacing_2);
+}
+
+.vtmn-dropdown_items > label:hover {
+  background-color: var(--vtmn-semantic-color_hover-secondary-transparent);
+  cursor: pointer;
+}
+
+.vtmn-dropdown_items > label:active {
+  background-color: var(--vtmn-semantic-color_active-secondary-transparent);
+}
+
+.vtmn-dropdown_items > input:focus-visible + label {
+  box-shadow: var(--vtmn-shadow_focus-visible);
+  z-index: 2;
+}
+
+.vtmn-dropdown_items > input:checked + label {
+  color: var(--vtmn-semantic-color_content-active);
+}
+
+.vtmn-dropdown_items > input + label::after {
+  content: '';
+  mask: url("data:image/svg+xml;charset=utf-8, %3csvg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='m6.667 10.115 6.128-6.129.943.943L6.667 12 2.424 7.757l.943-.942 3.3 3.3Z'/%3e%3c/svg%3e");
+  width: rem(24px);
+  height: rem(24px);
+  position: relative;
+  display: block;
+  margin-inline-start: var(--vtmn-spacing_3);
+  background-color: transparent;
+}
+
+.vtmn-dropdown_items > input:checked + label::after {
+  background-color: var(--vtmn-semantic-color_content-active);
+}
+
+.vtmn-dropdown details[open] summary::after {
+  transform: rotateZ(-180deg);
+}

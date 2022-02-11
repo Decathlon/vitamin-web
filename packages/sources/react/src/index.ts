@@ -1,31 +1,49 @@
 import '@vtmn/css-design-tokens/dist/index.css';
 
-export { VtmnAlert } from './components/VtmnAlert';
-export { VtmnBadge } from './components/VtmnBadge';
-export { VtmnButton } from './components/VtmnButton';
-export { VtmnCheckbox } from './components/VtmnCheckbox';
-export { VtmnChip } from './components/VtmnChip';
-export { VtmnDivider } from './components/VtmnDivider';
-export { VtmnIcon } from './components/VtmnIcon';
-export { VtmnLink } from './components/VtmnLink';
-export { VtmnLoader } from './components/VtmnLoader';
-export { VtmnRadioButton } from './components/VtmnRadioButton';
-export { VtmnSelect } from './components/VtmnSelect';
-export { VtmnTextInput } from './components/VtmnTextInput';
-export { VtmnToggle } from './components/VtmnToggle';
-export { VtmnTooltip } from './components/VtmnTooltip';
+// GUIDELINES
 
-export type { VtmnAlertProps } from './components/VtmnAlert';
-export type { VtmnBadgeProps } from './components/VtmnBadge';
-export type { VtmnButtonProps } from './components/VtmnButton';
-export type { VtmnCheckboxProps } from './components/VtmnCheckbox';
-export type { VtmnChipProps } from './components/VtmnChip';
-export type { VtmnDividerProps } from './components/VtmnDivider';
-export type { VtmnIconProps } from './components/VtmnIcon';
-export type { VtmnLinkProps } from './components/VtmnLink';
-export type { VtmnLoaderProps } from './components/VtmnLoader';
-export type { VtmnRadioButtonProps } from './components/VtmnRadioButton';
-export type { VtmnSelectProps } from './components/VtmnSelect';
-export type { VtmnTextInputProps } from './components/VtmnTextInput';
-export type { VtmnToggleProps } from './components/VtmnToggle';
-export type { VtmnTooltipProps } from './components/VtmnTooltip';
+// Iconography
+export { VtmnIcon } from './guidelines/iconography/VtmnIcon';
+export type { VtmnIconProps } from './guidelines/iconography/VtmnIcon';
+
+// COMPONENTS
+
+// Actions
+export { VtmnButton } from './components/actions/VtmnButton';
+export type { VtmnButtonProps } from './components/actions/VtmnButton';
+export { VtmnChip } from './components/actions/VtmnChip';
+export type { VtmnChipProps } from './components/actions/VtmnChip';
+export { VtmnLink } from './components/actions/VtmnLink';
+export type { VtmnLinkProps } from './components/actions/VtmnLink';
+
+// Forms
+export { VtmnSelect } from './components/forms/VtmnSelect';
+export type { VtmnSelectProps } from './components/forms/VtmnSelect';
+export { VtmnTextInput } from './components/forms/VtmnTextInput';
+export type { VtmnTextInputProps } from './components/forms/VtmnTextInput';
+
+// Indicators
+export { VtmnBadge } from './components/indicators/VtmnBadge';
+export type { VtmnBadgeProps } from './components/indicators/VtmnBadge';
+export { VtmnLoader } from './components/indicators/VtmnLoader';
+export type { VtmnLoaderProps } from './components/indicators/VtmnLoader';
+
+// Navigation
+
+// Overlays
+export { VtmnAlert } from './components/overlays/VtmnAlert';
+export type { VtmnAlertProps } from './components/overlays/VtmnAlert';
+export { VtmnTooltip } from './components/overlays/VtmnTooltip';
+export type { VtmnTooltipProps } from './components/overlays/VtmnTooltip';
+
+// Selection controls
+export { VtmnCheckbox } from './components/selection-controls/VtmnCheckbox';
+export type { VtmnCheckboxProps } from './components/selection-controls/VtmnCheckbox';
+export { VtmnRadioButton } from './components/selection-controls/VtmnRadioButton';
+export type { VtmnRadioButtonProps } from './components/selection-controls/VtmnRadioButton';
+export { VtmnToggle } from './components/selection-controls/VtmnToggle';
+export type { VtmnToggleProps } from './components/selection-controls/VtmnToggle';
+
+// Structure
+export { VtmnDivider } from './components/structure/VtmnDivider';
+export type { VtmnDividerProps } from './components/structure/VtmnDivider';

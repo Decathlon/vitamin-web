@@ -4,9 +4,12 @@ import input from './examples/input.html';
 import singleChoice from './examples/single-choice.html';
 import action from './examples/action.html';
 
+import { parameters } from '@vtmn/showcase-core/csf/components/selection-controls/chip.csf';
+
 export default {
   title: 'Components / Selection controls / Chip ',
   argTypes: { onchange: { action: 'write' } },
+  parameters,
 };
 
 export const Overview = () => overview;

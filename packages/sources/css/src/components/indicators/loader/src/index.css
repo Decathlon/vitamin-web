@@ -17,7 +17,7 @@
   position: absolute;
   inset: 0;
   border: rem(2px) solid transparent;
-  border-top-color: currentColor;
+  border-top-color: currentcolor;
   border-radius: 50%;
   background-color: transparent;
   animation: rotate-shrink 0.75s infinite linear alternate;
@@ -102,7 +102,7 @@
   }
 
   29.41% {
-    border-left-color: currentColor;
+    border-left-color: currentcolor;
   }
 
   64.7% {
@@ -110,12 +110,12 @@
   }
 
   64.71% {
-    border-bottom-color: currentColor;
+    border-bottom-color: currentcolor;
   }
 
   100% {
-    border-left-color: currentColor;
-    border-bottom-color: currentColor;
+    border-left-color: currentcolor;
+    border-bottom-color: currentcolor;
     transform: rotate(225deg);
   }
 }

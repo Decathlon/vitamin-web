@@ -3,7 +3,7 @@ import valid from './examples/valid.html';
 import error from './examples/error.html';
 import disabled from './examples/disabled.html';
 import multiline from './examples/multiline.html';
-import { parameters } from '@vtmn/showcase-core/csf/components/VtmnTextInput.csf';
+import { parameters } from '@vtmn/showcase-core/csf/components/forms/text-input.csf';
 
 export default {
   title: 'Components / Forms / Text input',

@@ -10,14 +10,14 @@
     "start": "start-storybook -p 6010"
   },
   "dependencies": {
-    "core-js": "^3.20.3",
+    "core-js": "^3.21.0",
     "vue": "^3.2.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.5",
-    "@storybook/addon-a11y": "^6.4.13",
-    "@storybook/addon-essentials": "^6.4.13",
-    "@storybook/vue3": "^6.4.13",
+    "@babel/core": "^7.17.0",
+    "@storybook/addon-a11y": "^6.4.18",
+    "@storybook/addon-essentials": "^6.4.18",
+    "@storybook/vue3": "^6.4.18",
     "@vtmn/css": "*",
     "@vtmn/icons": "*",
     "@vtmn/showcase-core": "*",
@@ -33,7 +33,7 @@
     "storybook-addon-designs": "^6.0.0",
     "ts-dedent": "^2.2.0",
     "typescript": "^4.5.4",
-    "vue-loader": "^15.9.8",
-    "webpack": "^4.3.0"
+    "vue-loader": "^17.0.0",
+    "webpack": "4.3.0"
   }
 }

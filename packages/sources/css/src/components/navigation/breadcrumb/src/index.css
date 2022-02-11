@@ -50,7 +50,7 @@
   content: ' ';
   display: inline-block;
   transform: rotate(15deg);
-  border-right: 0.1em solid currentColor;
+  border-right: 0.1em solid currentcolor;
   height: 0.8em;
   margin: 0 rem(8px);
 }

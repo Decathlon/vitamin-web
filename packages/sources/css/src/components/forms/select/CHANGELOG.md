@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-select@0.6.3...@vtmn/css-select@0.6.4) (2022-02-08)
+
+**Note:** Version bump only for package @vtmn/css-select
+
+
+
+
+
+## [0.6.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-select@0.6.2...@vtmn/css-select@0.6.3) (2022-02-03)
+
+**Note:** Version bump only for package @vtmn/css-select
+
+
+
+
+
+## [0.6.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-select@0.6.1...@vtmn/css-select@0.6.2) (2022-02-02)
+
+**Note:** Version bump only for package @vtmn/css-select
+
+
+
+
+
+## [0.6.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-select@0.6.0...@vtmn/css-select@0.6.1) (2022-01-28)
+
+**Note:** Version bump only for package @vtmn/css-select
+
+
+
+
+
+# [0.6.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-select@0.5.0...@vtmn/css-select@0.6.0) (2022-01-25)
+
+
+### Features
+
+* **@vtmn/css:** add dropdown component ([#901](https://github.com/Decathlon/vitamin-web/issues/901)) ([97b0216](https://github.com/Decathlon/vitamin-web/commit/97b021674d25a89a51358ab5f23e07371fdca801))
+
+
+
+
+
 # [0.5.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-select@0.4.2...@vtmn/css-select@0.5.0) (2022-01-20)
 
 

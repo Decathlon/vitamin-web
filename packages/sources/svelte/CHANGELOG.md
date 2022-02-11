@@ -3,6 +3,124 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.8.30...@vtmn/svelte@0.9.0) (2022-02-11)
+
+
+### Features
+
+* **@vtmn/svelte:** add price component ([#966](https://github.com/Decathlon/vitamin-web/issues/966)) ([385fa06](https://github.com/Decathlon/vitamin-web/commit/385fa06632c2b3ab0afad54ab5ca72fd692938f9))
+
+
+
+
+
+## [0.8.30](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.8.29...@vtmn/svelte@0.8.30) (2022-02-10)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+## [0.8.29](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.8.28...@vtmn/svelte@0.8.29) (2022-02-10)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+## [0.8.28](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.8.27...@vtmn/svelte@0.8.28) (2022-02-10)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+## [0.8.27](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.8.26...@vtmn/svelte@0.8.27) (2022-02-09)
+
+
+### Bug Fixes
+
+* **style:** move import style into <style> element ([#960](https://github.com/Decathlon/vitamin-web/issues/960)) ([5c1437a](https://github.com/Decathlon/vitamin-web/commit/5c1437a9b7237402b1344eff4bf3d375eb43c21b))
+
+
+
+
+
+## [0.8.26](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.8.25...@vtmn/svelte@0.8.26) (2022-02-08)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+## [0.8.25](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.8.24...@vtmn/svelte@0.8.25) (2022-02-07)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+## [0.8.24](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.8.23...@vtmn/svelte@0.8.24) (2022-02-03)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+## [0.8.23](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.8.22...@vtmn/svelte@0.8.23) (2022-02-02)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+## [0.8.22](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.8.21...@vtmn/svelte@0.8.22) (2022-01-28)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+## [0.8.21](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.8.20...@vtmn/svelte@0.8.21) (2022-01-27)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+## [0.8.20](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.8.19...@vtmn/svelte@0.8.20) (2022-01-26)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+## [0.8.19](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.8.18...@vtmn/svelte@0.8.19) (2022-01-24)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+## [0.8.18](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.8.17...@vtmn/svelte@0.8.18) (2022-01-24)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
 ## [0.8.17](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.8.16...@vtmn/svelte@0.8.17) (2022-01-20)
 
 **Note:** Version bump only for package @vtmn/svelte

@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-search@0.4.3...@vtmn/css-search@0.4.4) (2022-02-08)
+
+**Note:** Version bump only for package @vtmn/css-search
+
+
+
+
+
+## [0.4.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-search@0.4.2...@vtmn/css-search@0.4.3) (2022-02-03)
+
+**Note:** Version bump only for package @vtmn/css-search
+
+
+
+
+
+## [0.4.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-search@0.4.1...@vtmn/css-search@0.4.2) (2022-02-02)
+
+**Note:** Version bump only for package @vtmn/css-search
+
+
+
+
+
+## [0.4.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-search@0.4.0...@vtmn/css-search@0.4.1) (2022-01-28)
+
+**Note:** Version bump only for package @vtmn/css-search
+
+
+
+
+
+# [0.4.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-search@0.3.0...@vtmn/css-search@0.4.0) (2022-01-24)
+
+
+### Features
+
+* **@vtmn/css:** fix incorrect class for css props ([#923](https://github.com/Decathlon/vitamin-web/issues/923)) ([5a51eeb](https://github.com/Decathlon/vitamin-web/commit/5a51eebf54cd8cc8a38bd3c7ca3f740054bb5fb7))
+
+
+
+
+
 # [0.3.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-search@0.2.2...@vtmn/css-search@0.3.0) (2022-01-20)
 
 

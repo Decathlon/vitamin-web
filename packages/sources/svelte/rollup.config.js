@@ -4,10 +4,31 @@ import css from 'rollup-plugin-css-only';
 import sveltePreprocess from 'svelte-preprocess';
 const preprocessOptions = require('./svelte.config').preprocessOptions;
 
-const components = ['VtmnButton', 'VtmnLink', 'VtmnPopover', 'VtmnTextInput'];
+const components = [
+  {
+    folder: 'actions',
+    name: 'VtmnButton',
+  },
+  {
+    folder: 'actions',
+    name: 'VtmnLink',
+  },
+  {
+    folder: 'forms',
+    name: 'VtmnTextInput',
+  },
+  {
+    folder: 'overlays',
+    name: 'VtmnPopover',
+  },
+  {
+    folder: 'indicators',
+    name: 'VtmnPrice',
+  },
+];
 
-export default components.map((name) => ({
-  input: `src/components/${name}.svelte`,
+export default components.map(({ folder, name }) => ({
+  input: `src/components/${folder}/${name}/${name}.svelte`,
   output: [
     { file: `dist/${name}.mjs`, format: 'es' },
     { file: `dist/${name}.js`, format: 'umd', name },
