@@ -11,6 +11,22 @@ export const parameters = {
 };
 
 export const argTypes = {
+  onClick: {
+    type: { name: 'string', required: false },
+    description: 'Called when clicking the chip',
+    control: {
+      type: 'function',
+    },
+  },
+
+  onCancel: {
+    type: { name: 'string', required: false },
+    description: 'Called when the cross is clicked when using input variant',
+    control: {
+      type: 'function',
+    },
+  },
+
   variant: {
     type: { name: 'string', required: false },
     description: 'The variant of the chip.',
@@ -57,6 +73,19 @@ export const argTypes = {
       type: 'select',
       options: ['', ...Object.keys(vitamixIconsList)],
     },
+  },
+
+  badgeValue: {
+    type: { name: 'number', required: false },
+    description: 'The value in the badge.',
+    defaultValue: 0,
+    table: {
+      type: {
+        summary: 'number',
+      },
+      defaultValue: { summary: 0 },
+    },
+    control: { type: 'range', min: 0, max: 100 },
   },
 
   children: {
