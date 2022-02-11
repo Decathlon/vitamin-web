@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.11.2...@vtmn/vue@0.12.0) (2022-02-11)
+
+
+### Features
+
+* **@vtmn/vue:** add `VtmnToggle` and `VtmnCheckbox` reactivity ([#967](https://github.com/Decathlon/vitamin-web/issues/967)) ([e2b8ff2](https://github.com/Decathlon/vitamin-web/commit/e2b8ff2579bbe955925cef0fe55c493ff5579d27))
+* **@vtmn/vue:** add VtmnLink types ([#968](https://github.com/Decathlon/vitamin-web/issues/968)) ([46c3cfc](https://github.com/Decathlon/vitamin-web/commit/46c3cfc6d28c70dcce673fe0444f65b6246a1bec))
+
+
+
+
+
 ## [0.11.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.11.1...@vtmn/vue@0.11.2) (2022-02-10)
 
 **Note:** Version bump only for package @vtmn/vue

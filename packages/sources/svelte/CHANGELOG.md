@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.8.30...@vtmn/svelte@0.9.0) (2022-02-11)
+
+
+### Features
+
+* **@vtmn/svelte:** add price component ([#966](https://github.com/Decathlon/vitamin-web/issues/966)) ([385fa06](https://github.com/Decathlon/vitamin-web/commit/385fa06632c2b3ab0afad54ab5ca72fd692938f9))
+
+
+
+
+
 ## [0.8.30](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.8.29...@vtmn/svelte@0.8.30) (2022-02-10)
 
 **Note:** Version bump only for package @vtmn/svelte
