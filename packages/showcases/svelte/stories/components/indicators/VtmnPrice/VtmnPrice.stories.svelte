@@ -4,8 +4,6 @@
   import { parameters } from '@vtmn/showcase-core/csf/components/forms/text-input.csf';
 
   const priceArgs = {
-    id: 'my-price',
-    labelText: 'Label',
     size: 'medium',
     variant: 'default',
   };
@@ -14,11 +12,18 @@
 <Meta
   title="Components / Indicators / VtmnPrice"
   component={VtmnPrice}
+  argTypes={{
+    slot: {
+      control: 'text',
+      description: 'Content of the slot',
+      defaultValue: '250,00€',
+    },
+  }}
   {parameters}
 />
 
 <Template let:args>
-  <VtmnPrice {...args}>250,00€</VtmnPrice>
+  <VtmnPrice {...args}>{args.slot}</VtmnPrice>
 </Template>
 
 <Story name="Overview" args={priceArgs} />

@@ -65,7 +65,7 @@
     "./actions/VtmnButton/VtmnButton.svelte": "./dist/VtmnButton.js",
     "./actions/VtmnLink/VtmnLink.svelte": "./dist/VtmnLink.js",
     "./forms/VtmnTextInput/VtmnTextInput.svelte": "./dist/VtmnTextInput.js",
-    "./overlays/VtmnPopover/VtmnPopover.svelte": "./dist/VtmnPopover.js",
-    "./indicators/VtmnPrice/VtmnPrice.svelte": "./dist/VtmnPrice.js"
+    "./indicators/VtmnPrice/VtmnPrice.svelte": "./dist/VtmnPrice.js",
+    "./overlays/VtmnPopover/VtmnPopover.svelte": "./dist/VtmnPopover.js"
   }
 }

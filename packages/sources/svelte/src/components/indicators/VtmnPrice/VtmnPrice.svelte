@@ -3,20 +3,6 @@
   import { VARIANT } from './enums';
 
   /**
-   * ID of the price
-   * @type {string}
-   * @defaultValue undefined
-   */
-  export let id;
-
-  /**
-   * Label apply on the component
-   * @type {string}
-   * @defaultValue undefined
-   */
-  export let label;
-
-  /**
    * Size of the price
    * @type {'small' | 'medium' | 'large' }
    * @defaultValue undefined
@@ -44,7 +30,7 @@
   );
 </script>
 
-<span {id} class={componentClass} aria-label={label}>
+<span class={componentClass} {...$$restProps}>
   <slot />
 </span>
 
