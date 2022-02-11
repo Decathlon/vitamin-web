@@ -1,21 +1,23 @@
 <script lang="ts">
 import '@vtmn/css-link/dist/index-with-vars.css';
-import { reactive, computed, defineComponent } from 'vue';
+import { reactive, computed, defineComponent, PropType } from 'vue';
+import { VtmnLinkSize } from './types';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnLink',
   props: {
     size: {
-      type: String,
+      type: String as PropType<VtmnLinkSize>,
       default: 'medium',
-      validator: (val: string) => ['small', 'medium', 'large'].includes(val),
+      validator: (val: VtmnLinkSize) =>
+        ['small', 'medium', 'large'].includes(val),
     },
     standalone: {
-      type: Boolean,
+      type: Boolean as PropType<boolean>,
       default: false,
     },
     iconAlong: {
-      type: Boolean,
+      type: Boolean as PropType<boolean>,
       default: false,
     },
   },
@@ -36,6 +38,6 @@ export default /*#__PURE__*/ defineComponent({
 
 <template>
   <a :class="classes" v-bind="$attrs">
-    <slot></slot>
+    <slot />
   </a>
 </template>
