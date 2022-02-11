@@ -61,11 +61,12 @@
   ],
   "svelte": "src/index.js",
   "exports": {
-    ".": "./src/components",
-    "./actions/VtmnButton/VtmnButton.svelte": "./dist/VtmnButton.js",
-    "./actions/VtmnLink/VtmnLink.svelte": "./dist/VtmnLink.js",
-    "./forms/VtmnTextInput/VtmnTextInput.svelte": "./dist/VtmnTextInput.js",
+    ".": "./src/",
+    "./actions/VtmnButton/VtmnButton.svelte": "./components/dist/VtmnButton.js",
+    "./actions/VtmnLink/VtmnLink.svelte": "./components/dist/VtmnLink.js",
+    "./directives/shadows/VtmnShadows.js": "./guidelines/dist/VtmnShadows.js",
+    "./forms/VtmnTextInput/VtmnTextInput.svelte": "./components/dist/VtmnTextInput.js",
     "./indicators/VtmnPrice/VtmnPrice.svelte": "./dist/VtmnPrice.js",
-    "./overlays/VtmnPopover/VtmnPopover.svelte": "./dist/VtmnPopover.js"
+    "./overlays/VtmnPopover/VtmnPopover.svelte": "./components/dist/VtmnPopover.js"
   }
 }

@@ -27,8 +27,14 @@ const components = [
   },
 ];
 
-export default components.map(({ folder, name }) => ({
-  input: `src/components/${folder}/${name}/${name}.svelte`,
+const guidelines = [
+  {
+    folder: 'shadows',
+    name: 'VtmnShadows',
+  },
+];
+
+const svelteOptions = (name) => ({
   output: [
     { file: `dist/${name}.mjs`, format: 'es' },
     { file: `dist/${name}.js`, format: 'umd', name },
@@ -40,4 +46,15 @@ export default components.map(({ folder, name }) => ({
     css({ output: `${name}.css` }),
     resolve(),
   ],
-}));
+});
+
+export default [
+  ...components.map(({ folder, name }) => ({
+    input: `src/components/${folder}/${name}/${name}.svelte`,
+    ...svelteOptions(name),
+  })),
+  ...guidelines.map(({ folder, name }) => ({
+    input: `src/guidelines/${folder}/${name}.js`,
+    ...svelteOptions(name),
+  })),
+];
