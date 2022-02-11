@@ -5,7 +5,7 @@
   /**
    * Size of the price
    * @type {'small' | 'medium' | 'large' }
-   * @defaultValue undefined
+   * @defaultValue 'medium'
    */
   export let size = SIZE.MEDIUM;
 
