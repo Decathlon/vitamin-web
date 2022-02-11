@@ -1,6 +1,6 @@
 <script>
   import { cn } from '../../../utils/classnames';
-  import { VARIANT } from './enums';
+  import { VARIANT, SIZE } from './enums';
 
   /**
    * Size of the price
