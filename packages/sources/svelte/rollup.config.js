@@ -21,6 +21,10 @@ const components = [
     folder: 'overlays',
     name: 'VtmnPopover',
   },
+  {
+    folder: 'indicators',
+    name: 'VtmnPrice',
+  },
 ];
 
 export default components.map(({ folder, name }) => ({
