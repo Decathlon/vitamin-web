@@ -7,7 +7,7 @@
    * @type {'small' | 'medium' | 'large' }
    * @defaultValue undefined
    */
-  export let size;
+  export let size = SIZE.MEDIUM;
 
   /**
    * Variant of the price
