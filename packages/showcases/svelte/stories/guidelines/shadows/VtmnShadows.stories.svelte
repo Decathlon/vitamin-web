@@ -7,8 +7,17 @@
   title="Guidelines / Shadows / VtmnShadows"
   argTypes={{
     shadow: {
+      type: { name: 'number', required: true },
       description: 'Applied shadow index for the current element',
       defaultValue: 1,
+      table: {
+        type: {
+          summary: 'number',
+        },
+        defaultValue: {
+          summary: '1',
+        },
+      },
       control: {
         type: 'number',
         min: 1,
@@ -35,7 +44,3 @@
 </Template>
 
 <Story name="Overview" />
-
-<style>
-  @import '@vtmn/css-tailwind-preset';
-</style>
