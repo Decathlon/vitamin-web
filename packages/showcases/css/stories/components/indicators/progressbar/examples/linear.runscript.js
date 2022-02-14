@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', (event) => {
+/*window.addEventListener('DOMContentLoaded', (event) => {
   let container = document.getElementById(`vtmn-progressbar-container-1`);
   let label = document.getElementById(`vtmn-progressbar-label-1`);
   let progress = document.getElementById(`vtmn-progressbar-1`);
@@ -55,3 +55,4 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
   }
 });
+*/
