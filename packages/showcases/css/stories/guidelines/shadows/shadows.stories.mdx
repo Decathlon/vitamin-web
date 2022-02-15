@@ -1,0 +1,57 @@
+import { Meta, Source, Canvas } from '@storybook/addon-docs';
+import tailwindPreset from '@vtmn/css-tailwind-preset';
+
+<Meta title="Guidelines / Shadows" />
+
+# Shadows
+
+> Shadows help us create hierarchies and emphasis. They improve understanding & user interactions.
+
+For more details, see our <a class="vtmn-link vtmn-link--icon-along" href="https://www.decathlon.design/726f8c765/p/5522fa-shadows/b/69ed0e" target="_blank">Shadows' guideline</a>.
+
+## Using [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+
+If you don't know CSS Custom Properties, you can see basic usage documentation [here](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#Basic_usage). All our CSS Custom Properties for colors are listed at "Swatches" column just below:
+
+```
+var(--vtmn-shadow_100);
+var(--vtmn-shadow_200);
+var(--vtmn-shadow_300);
+var(--vtmn-shadow_400);
+```
+
+## Using [Tailwind CSS](https://tailwindcss.com) utility classes
+
+You can use shadows with Tailwind CSS utility classes about [Box Shadow](https://tailwindcss.com/docs/box-shadow). Here is the list of shadows extented by Vitamin:
+
+<Source
+  language="json"
+  code={JSON.stringify(tailwindPreset.theme.extend.boxShadow, null, 2)}
+/>
+
+So, here is an example with associated code:
+
+<Canvas>
+  <div class="vtmn-flex vtmn-w-full vtmn-justify-between">
+    <div class="vtmn-flex vtmn-shadow-100 vtmn-bg-background-primary vtmn-rounded-lg vtmn-p-4 vtmn-mb-5 vtmn-items-center vtmn-content-center">
+      <span class="vtmn-text-center vtmn-font-semibold vtmn-text-content-primary">
+        vtmn-shadow-100
+      </span>
+    </div>
+    <div class="vtmn-flex vtmn-shadow-200 vtmn-bg-background-primary vtmn-rounded-lg vtmn-p-4 vtmn-mb-5 vtmn-items-center vtmn-content-center">
+      <span class="vtmn-text-center vtmn-font-semibold vtmn-text-content-primary">
+        vtmn-shadow-200
+      </span>
+    </div>
+    <div class="vtmn-flex vtmn-shadow-300 vtmn-bg-background-primary vtmn-rounded-lg vtmn-p-4 vtmn-mb-5 vtmn-items-center vtmn-content-center">
+      <span class="vtmn-text-center vtmn-font-semibold vtmn-text-content-primary">
+        vtmn-shadow-300
+      </span>
+    </div>
+    <div class="vtmn-flex vtmn-shadow-400 vtmn-bg-background-primary vtmn-rounded-lg vtmn-p-4 vtmn-mb-5 vtmn-items-center vtmn-content-center">
+      <span class="vtmn-text-center vtmn-font-semibold vtmn-text-content-primary">
+        vtmn-shadow-400
+      </span>
+    </div>
+  </div>
+</Canvas>

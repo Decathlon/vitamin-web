@@ -2,18 +2,12 @@ import overview from './examples/overview.html';
 import interactive from './examples/interactive.html';
 import readOnly from './examples/read-only.html';
 
+import { parameters } from '@vtmn/showcase-core/csf/components/indicators/rating.csf';
+
 export default {
   title: 'Components / Indicators / Rating ',
   argTypes: { onchange: { action: 'write' } },
-  parameters: {
-    actions: {
-      handles: ['mouseenter', 'click', 'focusin', 'focusout'],
-    },
-    design: {
-      type: 'figma',
-      url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/Vitamin---Web-UI-kit-(v0)?node-id=1434%3A8532',
-    },
-  },
+  parameters,
 };
 
 export const Overview = () => overview;
