@@ -1,4 +1,6 @@
-/*window.addEventListener('DOMContentLoaded', (event) => {
+window.addEventListener('DOMContentLoaded', initCircularProgressbarShowcase);
+
+function initCircularProgressbarShowcase() {
   for (let i = 2; i <= 3; i++) {
     let container = document.getElementById(`vtmn-progressbar-container-${i}`);
     let label = document.getElementById(`vtmn-progressbar-label-${i}`);
@@ -70,5 +72,9 @@
         break;
     }
   }
-});
-*/
+
+  window.removeEventListener(
+    'DOMContentLoaded',
+    initCircularProgressbarShowcase,
+  );
+}
