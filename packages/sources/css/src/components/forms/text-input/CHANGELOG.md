@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-text-input@0.13.4...@vtmn/css-text-input@0.13.5) (2022-02-08)
+
+**Note:** Version bump only for package @vtmn/css-text-input
+
+
+
+
+
+## [0.13.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-text-input@0.13.3...@vtmn/css-text-input@0.13.4) (2022-02-03)
+
+**Note:** Version bump only for package @vtmn/css-text-input
+
+
+
+
+
+## [0.13.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-text-input@0.13.2...@vtmn/css-text-input@0.13.3) (2022-02-02)
+
+**Note:** Version bump only for package @vtmn/css-text-input
+
+
+
+
+
+## [0.13.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-text-input@0.13.1...@vtmn/css-text-input@0.13.2) (2022-01-28)
+
+**Note:** Version bump only for package @vtmn/css-text-input
+
+
+
+
+
+## [0.13.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-text-input@0.13.0...@vtmn/css-text-input@0.13.1) (2022-01-26)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** change the text input marge holders ([#947](https://github.com/Decathlon/vitamin-web/issues/947)) ([fe51e50](https://github.com/Decathlon/vitamin-web/commit/fe51e5074dbe7a46435f06914e2008e5403baba8))
+
+
+
+
+
 # [0.13.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-text-input@0.12.2...@vtmn/css-text-input@0.13.0) (2022-01-20)
 
 

@@ -1,6 +1,7 @@
 import overview from './examples/overview.html';
 import indeterminate from './examples/indeterminate.html';
-import { parameters } from '@vtmn/showcase-core/csf/components/VtmnCheckbox.csf';
+
+import { parameters } from '@vtmn/showcase-core/csf/components/selection-controls/checkbox.csf';
 
 export default {
   title: 'Components / Selection controls / Checkbox ',

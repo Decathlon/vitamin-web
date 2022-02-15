@@ -28,4 +28,9 @@ export const parameters = {
       hideMatchingHardCodedValues: false,
     },
   },
+  options: {
+    storySort: {
+      order: ['Overview', 'Guidelines', 'Components'],
+    },
+  },
 };

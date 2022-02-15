@@ -2,18 +2,10 @@
 
 > Decathlon Design System - Vitamin specific CSS styles for tabs component
 
-<a href="https://www.decathlon.design/726f8c765/p/705308-tabs-beta/b/4177c3">
-  <img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" />
-</a>
-<a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-tabs--overview">
-  <img src="https://img.shields.io/badge/storybook-css-d891bc?style=flat&logo=storybook" alt="storybook" />
-</a>
-<a href="https://www.npmjs.com/package/@vtmn/css-tabs">
-  <img src="https://img.shields.io/npm/v/@vtmn/css-tabs?style=flat&logo=npm" alt="npm version" />
-</a>
-<a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css">
-  <img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status" alt="Quality Gate Status" />
-</a>
+<a href="https://www.decathlon.design/726f8c765/p/705308-tabs-beta/b/4177c3"><img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" /></a>
+<a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-navigation-tabs--overview"><img src="https://img.shields.io/badge/storybook-css-d891bc?style=flat&logo=storybook" alt="storybook" /></a>
+<a href="https://www.npmjs.com/package/@vtmn/css-tabs"><img src="https://img.shields.io/npm/v/@vtmn/css-tabs?style=flat&logo=npm" alt="npm version" /></a>
+<a href="https://sonarcloud.io/project/overview?id=decathlon_vitamin-web_css_components_tabs"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css_components_tabs&metric=alert_status" alt="Quality Gate Status" /></a>
 
 ## Install package
 
