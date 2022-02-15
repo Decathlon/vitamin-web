@@ -17,7 +17,7 @@ export default /*#__PURE__*/ defineComponent({
     },
     identifier: {
       type: String as PropType<string>,
-      default: null,
+      required: true,
     },
     checked: {
       type: Boolean as PropType<boolean>,

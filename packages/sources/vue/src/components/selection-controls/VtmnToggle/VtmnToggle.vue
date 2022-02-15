@@ -12,7 +12,7 @@ export default /*#__PURE__*/ defineComponent({
     },
     identifier: {
       type: String as PropType<string>,
-      default: null,
+      required: true,
     },
     labelText: {
       type: String as PropType<string>,
