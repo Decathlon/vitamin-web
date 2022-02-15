@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.18.16](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.15...@vtmn/react@0.18.16) (2022-02-15)
+
+
+### Bug Fixes
+
+* **@vtmn/react:** helper-text aria realtionshop ([#970](https://github.com/Decathlon/vitamin-web/issues/970)) ([3346670](https://github.com/Decathlon/vitamin-web/commit/33466700e5f66e718772bdc75739bdf1ec8b67f8))
+
+
+
+
+
 ## [0.18.15](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.14...@vtmn/react@0.18.15) (2022-02-15)
 
 **Note:** Version bump only for package @vtmn/react
