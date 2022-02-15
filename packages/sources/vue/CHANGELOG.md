@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.12.1...@vtmn/vue@0.13.0) (2022-02-15)
+
+
+### Features
+
+* **@vtmn/vue:** make identifier props required for selection controls components ([#974](https://github.com/Decathlon/vitamin-web/issues/974)) ([a1a1503](https://github.com/Decathlon/vitamin-web/commit/a1a1503e4648cdfa8a4b74655c20bab8b45f45b5))
+
+
+
+
+
+## [0.12.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.12.0...@vtmn/vue@0.12.1) (2022-02-15)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
 # [0.12.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.11.2...@vtmn/vue@0.12.0) (2022-02-11)
 
 

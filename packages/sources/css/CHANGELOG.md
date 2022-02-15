@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.57.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.57.5...@vtmn/css@0.57.6) (2022-02-15)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** remove blink on safari linear progressbar ([#975](https://github.com/Decathlon/vitamin-web/issues/975)) ([53422d1](https://github.com/Decathlon/vitamin-web/commit/53422d1088f23b027bb08a4f0d7ed3f6be279822))
+
+
+
+
+
 ## [0.57.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.57.4...@vtmn/css@0.57.5) (2022-02-08)
 
 **Note:** Version bump only for package @vtmn/css
