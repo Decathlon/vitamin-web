@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.12.0...@vtmn/vue@0.12.1) (2022-02-15)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
 # [0.12.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.11.2...@vtmn/vue@0.12.0) (2022-02-11)
 
 
