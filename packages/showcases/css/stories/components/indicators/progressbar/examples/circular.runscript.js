@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', (event) => {
+/*window.addEventListener('DOMContentLoaded', (event) => {
   for (let i = 2; i <= 3; i++) {
     let container = document.getElementById(`vtmn-progressbar-container-${i}`);
     let label = document.getElementById(`vtmn-progressbar-label-${i}`);
@@ -48,12 +48,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
     if (container.classList.contains('vtmn-progressbar_size--small')) {
       progress.setAttribute(
         'stroke-dashoffset',
-        `calc(200 - (200 * ${value}) / 100)`,
+        `calc(200px - (200px * ${value}) / 100)`,
       );
     } else {
       progress.setAttribute(
         'stroke-dashoffset',
-        `calc(400 - (400 * ${value}) / 100)`,
+        `calc(400px - (400px * ${value}) / 100)`,
       );
     }
   }
@@ -71,3 +71,4 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
   }
 });
+*/
