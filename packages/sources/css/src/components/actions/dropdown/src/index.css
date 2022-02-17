@@ -75,13 +75,16 @@
 }
 
 .vtmn-dropdown summary::after {
-  content: url("data:image/svg+xml;charset=utf-8, %3csvg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='m8 8.781 3.3-3.3.943.943L8 10.667 3.757 6.424l.943-.943 3.3 3.3z'/%3e%3c/svg%3e");
+  content: '';
+  mask: url("data:image/svg+xml;charset=utf-8, %3csvg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='m8 8.781 3.3-3.3.943.943L8 10.667 3.757 6.424l.943-.943 3.3 3.3z'/%3e%3c/svg%3e");
+  mask-size: cover;
   width: rem(24px);
   height: rem(24px);
   position: absolute;
   display: block;
   right: rem(10px);
   transition: transform 200ms ease;
+  background-color: var(--vtmn-semantic-color_content-primary);
 }
 
 .vtmn-dropdown_items {
