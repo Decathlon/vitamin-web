@@ -9,28 +9,35 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     if (toast === 'vtmn-toast-1') {
       let toastId = '1-' + counter;
-      document.body.lastChild.innerHTML =
-        '<div id="vtmn-toast-' +
-        toastId +
-        '" class="vtmn-toast"><div class="vtmn-toast_content">This is the description of a toast</div></div>';
+      document.body.lastChild.innerHTML = `
+        <div id="vtmn-toast-${toastId}" class="vtmn-toast">
+          <div class="vtmn-toast_content">
+            This is the description of a toast
+          </div>
+        </div>`;
       let toast = document.getElementById('vtmn-toast-' + toastId);
       timeOut(toast);
     } else if (toast === 'vtmn-toast-2') {
       let toastId = '2-' + counter;
-      document.body.lastChild.innerHTML =
-        '<div id="vtmn-toast-' +
-        toastId +
-        '" class="vtmn-toast vtmn-toast--with-icon-info"><div class="vtmn-toast_content">This is the description of a toast</div></div>';
+      document.body.lastChild.innerHTML = `
+        <div id="vtmn-toast-${toastId}" class="vtmn-toast vtmn-toast--with-icon-info">
+          <div class="vtmn-toast_content">
+            This is the description of a toast
+          </div>
+        </div>`;
       let toast = document.getElementById('vtmn-toast-' + toastId);
       timeOut(toast);
     } else if (toast === 'vtmn-toast-3') {
       let toastId = '3-' + counter;
-      document.body.lastChild.innerHTML =
-        '<div id="vtmn-toast-' +
-        toastId +
-        '" class="vtmn-toast"><div class="vtmn-toast_content">This is the description of a toast</div><span id="btn-close-toast-' +
-        toastId +
-        '" class="vtmx-close-line"></span></div>';
+      document.body.lastChild.innerHTML = `
+        <div id="vtmn-toast-${toastId}" class="vtmn-toast">
+          <div class="vtmn-toast_content">
+            This is the description of a toast
+          </div>
+          <button id="btn-close-toast-${toastId}" class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone" aria-label="Close alert">
+            <span class="vtmx-close-line" role="presentation"></span>
+          </button>
+        </div>`;
       let toast = document.getElementById('vtmn-toast-' + toastId);
       document
         .getElementById('btn-close-toast-' + toastId)
@@ -42,12 +49,15 @@ window.addEventListener('DOMContentLoaded', (event) => {
       timeOut(toast);
     } else if (toast === 'vtmn-toast-4') {
       let toastId = '4-' + counter;
-      document.body.lastChild.innerHTML =
-        '<div id="vtmn-toast-' +
-        toastId +
-        '" class="vtmn-toast vtmn-toast--with-icon-info"><div class="vtmn-toast_content">This is the description of a toast</div><span id="btn-close-toast-' +
-        toastId +
-        '" class="vtmx-close-line"></span></div>';
+      document.body.lastChild.innerHTML = `
+        <div id="vtmn-toast-${toastId}" class="vtmn-toast" vtmn-toast--with-icon-info>
+          <div class="vtmn-toast_content">
+            This is the description of a toast
+          </div>
+          <button id="btn-close-toast-${toastId}" class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone" aria-label="Close alert">
+            <span class="vtmx-close-line" role="presentation"></span>
+          </button>
+        </div>`;
       let toast = document.getElementById('vtmn-toast-' + toastId);
       document
         .getElementById('btn-close-toast-' + toastId)
@@ -60,11 +70,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
 
     function timeOut(toast) {
-      toast.classList.add('show');
       toast.style.transform =
         'translate(50%, calc(-50% - ' + 80 * nbToast + 'px)';
+      toast.classList.add('show');
       nbToast++;
       setTimeout(function () {
+        toast.classList.remove('show');
         toast.parentElement.remove();
         nbToast--;
         reorderToasts();
