@@ -254,6 +254,10 @@
   --vtmn-semantic-color_active-brand-reversed-transparent--s: var(--vtmn-semantic-color_content-primary-reversed--s);
   --vtmn-semantic-color_active-brand-reversed-transparent--l: var(--vtmn-semantic-color_content-primary-reversed--l);
   --vtmn-semantic-color_active-brand-reversed-transparent: hsla(var(--vtmn-semantic-color_active-brand-reversed-transparent--h), var(--vtmn-semantic-color_active-brand-reversed-transparent--s), var(--vtmn-semantic-color_active-brand-reversed-transparent--l), 0.6);
+  --vtmn-semantic-color_shadow--h: var(--vtmn-base-color_blue600--h);
+  --vtmn-semantic-color_shadow--s: var(--vtmn-base-color_blue600--s);
+  --vtmn-semantic-color_shadow--l: var(--vtmn-base-color_blue600--l);
+  --vtmn-semantic-color_shadow: hsla(var(--vtmn-semantic-color_shadow--h), var(--vtmn-semantic-color_shadow--s), var(--vtmn-semantic-color_shadow--l), 0.1);
 
   /* DEPRECATED */
   --vtmn-semantic-color_background-discount--h: var(--vtmn-base-color_red400--h);
