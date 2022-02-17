@@ -72,7 +72,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
         <div class="vtmn-alert_content">
           <div class="vtmn-alert_content-title">
             This is the title of the alert
-            <span id="btn-close-alert-${id}" class="vtmx-close-line"></span>
+            <button id="btn-close-alert-${id}" class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone" aria-label="Close alert">
+              <span class="vtmx-close-line" role="presentation"></span>
+            </button>
           </div>
         </div>
       </div>`;
@@ -83,9 +85,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
           <div class="vtmn-alert_content-title">
             This is the title of the alert
           </div>
-          <span class="vtmn-alert_content-description">
+          <p class="vtmn-alert_content-description">
             Alert are used to draw the users attention to an important information
-          </span>
+          </p>
         </div>
       </div>`;
 
@@ -94,11 +96,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
         <div class="vtmn-alert_content">
           <div class="vtmn-alert_content-title">
             This is the title of the alert
-            <span id="btn-close-alert-${id}" class="vtmx-close-line"></span>
+            <button id="btn-close-alert-${id}" class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone" aria-label="Close alert">
+              <span class="vtmx-close-line" role="presentation"></span>
+            </button>
           </div>
-          <span class="vtmn-alert_content-description">
+          <p class="vtmn-alert_content-description">
             Alert are used to draw the users attention to an important information
-          </span>
+          </p>
         </div>
       </div>`;
 
@@ -125,7 +129,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
       document
         .getElementById(`btn-close-alert-${uid}`)
         .addEventListener('click', function () {
-          document.getElementById(`vtmn-alert-${uid}`).remove();
+          document.getElementById(`vtmn-alert-${uid}`).parentElement.remove();
         });
     }
 
@@ -149,7 +153,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
       currentAlert.style.display = 'flex';
       currentAlert.classList.add('show');
       timeOut = setTimeout(function removeShowClass() {
-        currentAlert.remove();
+        currentAlert.parentElement.remove();
         intervalTimer = setInterval(addShowClass, 1000);
       }, 8000);
     } else {

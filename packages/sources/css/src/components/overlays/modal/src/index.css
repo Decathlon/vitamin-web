@@ -68,12 +68,6 @@
   font-size: var(--vtmn-typo_text-2-font-size);
 }
 
-/* .vtmn-modal_content_title > button > span[class^='vtmx'] {
-  white-space: nowrap;
-  font-size: rem(24px);
-  color: var(--vtmn-semantic-color_content-primary);
-} */
-
 .vtmn-modal_content_title > button:focus-visible {
   outline: none;
   box-shadow: var(--vtmn-shadow_focus-visible);
