@@ -35,7 +35,7 @@
 }
 
 .vtmn-alert_content-title {
-  margin: rem(4px) 0;
+  /* margin: rem(4px) 0; */
   font-family: var(--vtmn-typo_font-family);
   font-weight: var(--vtmn-typo_font-weight--bold);
   font-size: rem(16px);
@@ -97,8 +97,14 @@
 }
 
 /* Close icon */
-.vtmn-alert_content-title span[class^='vtmx-'] {
-  font-size: rem(24px);
+.vtmn-alert .vtmn-btn {
+  margin-inline-start: rem(12px);
+  margin-top: -6px;
+  margin-bottom: -6px;
+}
+
+.vtmn-alert .vtmn-btn span[class^='vtmx-'] {
+  font-size: var(--vtmn-typo_text-2-font-size);
 }
 
 .vtmn-alert.show {
