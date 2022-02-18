@@ -25,6 +25,10 @@ const components = [
     folder: 'indicators',
     name: 'VtmnPrice',
   },
+  {
+    folder: 'selection-controls',
+    name: 'VtmnCheckbox',
+  },
 ];
 
 export default components.map(({ folder, name }) => ({
