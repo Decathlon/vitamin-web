@@ -5,7 +5,9 @@
 
   const checkboxArgs = {
     id: 'My checkbox',
-    label: 'This is the label of the checkbox',
+    label: 'Label',
+    indeterminate: false,
+    checked: false,
     disabled: false,
   };
 </script>
@@ -17,7 +19,14 @@
 />
 
 <Template let:args>
-  <VtmnCheckbox label={args.label} id={args.id} disabled={args.disabled} />
+  <VtmnCheckbox
+    id={args.id}
+    indeterminate={args.indeterminate}
+    checked={args.checked}
+    disabled={args.disabled}
+  >
+    <svelte:fragment>{args.label}</svelte:fragment>
+  </VtmnCheckbox>
 </Template>
 
 <Story name="Overview" args={checkboxArgs} />

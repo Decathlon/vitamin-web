@@ -2,22 +2,28 @@
   import { cn } from '../../../utils/classnames';
 
   /**
-   * ID of the checkbox
+   * ID of the checkbox and associated label
    * @type {string}
    */
   export let id;
 
   /**
-   * Label of the checkbox
-   * @type {string}
+   * Whether the checkbox is indeterminate
+   * @type {boolean}
    */
-  export let label;
+  export let indeterminate = false;
 
   /**
    * Whether the checkbox is disabled
    * @type {boolean}
    */
-  export let disabled;
+  export let checked = false;
+
+  /**
+   * Whether the checkbox is disabled
+   * @type {boolean}
+   */
+  export let disabled = false;
 
   let className;
   /**
@@ -25,17 +31,22 @@
    */
   export { className as class };
 
-  $: componentClass = cn('vtmn-checkbox', className);
+  $: componentClass = cn(
+    'vtmn-checkbox',
+    indeterminate && 'vtmn-checkbox--indeterminate',
+    className,
+  );
 </script>
 
 <input
   class={componentClass}
   type="checkbox"
   {id}
+  {checked}
   {disabled}
   {...$$restProps}
 />
-<label for={id}>{label}</label>
+<label for={id}><slot /></label>
 
 <style lang="css">
   @import '@vtmn/css-checkbox';
