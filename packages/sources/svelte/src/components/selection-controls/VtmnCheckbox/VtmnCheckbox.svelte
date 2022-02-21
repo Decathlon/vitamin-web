@@ -33,7 +33,7 @@
 
   $: componentClass = cn(
     'vtmn-checkbox',
-    indeterminate && 'vtmn-checkbox--indeterminate',
+    indeterminate && checked && 'vtmn-checkbox--indeterminate',
     className,
   );
 </script>
