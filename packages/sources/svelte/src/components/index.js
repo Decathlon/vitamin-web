@@ -14,5 +14,6 @@ export { default as VtmnPrice } from './indicators/VtmnPrice/VtmnPrice.svelte';
 export { default as VtmnPopover } from './overlays/VtmnPopover/VtmnPopover.svelte';
 
 // Selection controls
+export { default as VtmnToggle } from './selection-controls/VtmnToggle/VtmnToggle.svelte';
 
 // Structure

@@ -34,7 +34,8 @@
     "@vtmn/css-design-tokens": "^0.16.5",
     "@vtmn/css-link": "^0.6.8",
     "@vtmn/css-popover": "^0.5.5",
-    "@vtmn/css-text-input": "^0.13.6"
+    "@vtmn/css-text-input": "^0.13.6",
+    "@vtmn/css-toggle": "^0.6.5"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.1.2",
@@ -66,6 +67,7 @@
     "./actions/VtmnLink/VtmnLink.svelte": "./dist/VtmnLink.js",
     "./forms/VtmnTextInput/VtmnTextInput.svelte": "./dist/VtmnTextInput.js",
     "./indicators/VtmnPrice/VtmnPrice.svelte": "./dist/VtmnPrice.js",
-    "./overlays/VtmnPopover/VtmnPopover.svelte": "./dist/VtmnPopover.js"
+    "./overlays/VtmnPopover/VtmnPopover.svelte": "./dist/VtmnPopover.js",
+    "./selection-controls/VtmnToggle/VtmnToggle.svelte": "./dist/VtmnToggle.js"
   }
 }
