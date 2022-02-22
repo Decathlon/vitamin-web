@@ -14,7 +14,7 @@
   export let indeterminate = false;
 
   /**
-   * Whether the checkbox is disabled
+   * Whether the checkbox is checked
    * @type {boolean}
    */
   export let checked = false;

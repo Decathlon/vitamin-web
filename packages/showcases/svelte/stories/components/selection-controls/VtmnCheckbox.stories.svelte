@@ -4,8 +4,8 @@
   import { parameters } from '@vtmn/showcase-core/csf/components/selection-controls/checkbox.csf';
 
   const checkboxArgs = {
-    id: 'My checkbox',
-    label: 'Label',
+    id: 'my-checkbox',
+    slot: 'Label',
     indeterminate: false,
     checked: false,
     disabled: false,
@@ -19,13 +19,8 @@
 />
 
 <Template let:args>
-  <VtmnCheckbox
-    id={args.id}
-    indeterminate={args.indeterminate}
-    checked={args.checked}
-    disabled={args.disabled}
-  >
-    <svelte:fragment>{args.label}</svelte:fragment>
+  <VtmnCheckbox {...args}>
+    {args.slot}
   </VtmnCheckbox>
 </Template>
 
