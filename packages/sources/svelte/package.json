@@ -30,6 +30,7 @@
     "start": "chokidar \"src/**\" -i \"**/dist/**\" -c \"yarn build\""
   },
   "dependencies": {
+    "@vtmn/css-badge": "^0.10.5",
     "@vtmn/css-button": "^0.11.5",
     "@vtmn/css-design-tokens": "^0.16.5",
     "@vtmn/css-link": "^0.6.8",
@@ -65,6 +66,7 @@
     "./actions/VtmnButton/VtmnButton.svelte": "./dist/VtmnButton.js",
     "./actions/VtmnLink/VtmnLink.svelte": "./dist/VtmnLink.js",
     "./forms/VtmnTextInput/VtmnTextInput.svelte": "./dist/VtmnTextInput.js",
+    "./indicators/VtmnBadge/VtmnBadge.svelte": "./dist/VtmnBadge.js",
     "./indicators/VtmnPrice/VtmnPrice.svelte": "./dist/VtmnPrice.js",
     "./overlays/VtmnPopover/VtmnPopover.svelte": "./dist/VtmnPopover.js"
   }
