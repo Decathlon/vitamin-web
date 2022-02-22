@@ -7,28 +7,28 @@
    */
   export let value;
 
-  let className;
-  /**
-   * @type {string} Custom classes to apply to the component.
-   */
-  export { className as class };
-
   /**
    * The value of the badge
    * @type {'default' | 'brand' | 'reversed' | 'accent' | 'alert'}
    */
   export let variant = VARIANT.DEFAULT;
 
-  $: computedValue = value > 99 ? '99+' : value;
+  let className;
+  /**
+   * @type {string} Custom classes to apply to the component.
+   */
+  export { className as class };
 
   $: componentClass = cn(
     'vtmn-badge',
     variant && `vtmn-badge_variant--${variant}`,
     className,
   );
+
+  $: computedValue = value > 99 ? '99+' : value || '';
 </script>
 
-<span class={componentClass} {...$$restProps}>{computedValue || ''}</span>
+<span class={componentClass} {...$$restProps}>{computedValue}</span>
 
 <style lang="css">
   @import '@vtmn/css-badge';
