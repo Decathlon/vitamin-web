@@ -24,7 +24,7 @@
   border-radius: var(--vtmn-radius_100);
   display: block;
   font-weight: var(--vtmn-typo_font-weight--normal);
-  font-size: rem(16px);
+  font-size: var(--vtmn-typo_text-2-font-size);
   line-height: 1;
   padding: rem(12px) rem(36px) rem(12px) rem(12px);
   color: var(--vtmn-semantic-color_content-primary);
@@ -59,8 +59,8 @@ textarea.vtmn-text-input {
 
 .vtmn-text-input_label {
   color: var(--vtmn-semantic-color_content-primary);
-  font-size: rem(16px);
-  line-height: 1;
+  font-size: var(--vtmn-typo_text-2-font-size);
+  line-height: var(--vtmn-typo_text-2-line-height);
   margin-block-end: rem(4px);
   display: block;
   width: fit-content;
@@ -90,8 +90,8 @@ textarea.vtmn-text-input {
 
 .vtmn-text-input_helper-text {
   color: var(--vtmn-semantic-color_content-secondary);
-  font-size: rem(14px);
-  line-height: 1;
+  font-size: var(--vtmn-typo_text-3-font-size);
+  line-height: var(--vtmn-typo_text-3-line-height);
   margin-block-start: rem(4px);
   width: fit-content;
 }
