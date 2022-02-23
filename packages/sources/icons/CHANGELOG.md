@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.10.0...@vtmn/icons@0.10.1) (2022-02-23)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** fix sun (fill/line) icons ([#983](https://github.com/Decathlon/vitamin-web/issues/983)) ([6f08ed8](https://github.com/Decathlon/vitamin-web/commit/6f08ed8b252178ccc58b6e0363c6438e1d6615c6))
+
+
+
+
+
 # [0.10.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.9.1...@vtmn/icons@0.10.0) (2022-02-03)
 
 
