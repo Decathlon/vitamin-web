@@ -1,5 +1,4 @@
 <script lang="ts">
-import '@vtmn/css-button/dist/index-with-vars.css';
 import { reactive, defineComponent, PropType, computed } from 'vue';
 import { VtmnIconSize, VtmnIconVariant } from './types';
 import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';

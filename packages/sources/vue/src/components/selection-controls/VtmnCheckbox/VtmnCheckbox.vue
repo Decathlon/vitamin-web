@@ -1,5 +1,4 @@
 <script lang="ts">
-import '@vtmn/css-checkbox/dist/index-with-vars.css';
 import { defineComponent, PropType, reactive } from 'vue';
 
 export default /*#__PURE__*/ defineComponent({

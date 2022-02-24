@@ -1,5 +1,4 @@
 <script lang="ts">
-import '@vtmn/css-link/dist/index-with-vars.css';
 import { reactive, computed, defineComponent, PropType } from 'vue';
 import { VtmnLinkSize } from './types';
 

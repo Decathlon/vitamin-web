@@ -1,5 +1,4 @@
 <script lang="ts">
-import '@vtmn/css-text-input/dist/index-with-vars.css';
 import { reactive, computed, defineComponent } from 'vue';
 
 export default /*#__PURE__*/ defineComponent({
