@@ -32,6 +32,7 @@
   --vtmn-typo_text-1-font-size: rem(18px);
   --vtmn-typo_text-2-font-size: rem(16px);
   --vtmn-typo_text-3-font-size: rem(14px);
+  --vtmn-typo_caption-1-font-size: rem(12px);
 }
 
 /**
@@ -49,6 +50,7 @@
   --vtmn-typo_text-1-line-height: 1.55;
   --vtmn-typo_text-2-line-height: 1.5;
   --vtmn-typo_text-3-line-height: 1.42;
+  --vtmn-typo_caption-1-line-height: 1.34;
 }
 
 @media screen and (min-width: 600px) and (max-width: 899px) {
