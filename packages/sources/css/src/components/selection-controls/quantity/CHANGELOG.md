@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-quantity@0.4.6...@vtmn/css-quantity@0.4.7) (2022-02-23)
+
+**Note:** Version bump only for package @vtmn/css-quantity
+
+
+
+
+
+## [0.4.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-quantity@0.4.5...@vtmn/css-quantity@0.4.6) (2022-02-23)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** change margin holders for quantity and select, optimizations on forms component ([#988](https://github.com/Decathlon/vitamin-web/issues/988)) ([2e589ae](https://github.com/Decathlon/vitamin-web/commit/2e589aeb8ce0d9d2e2487037c0cbd2ce51de9dc6))
+
+
+
+
+
+## [0.4.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-quantity@0.4.4...@vtmn/css-quantity@0.4.5) (2022-02-15)
+
+**Note:** Version bump only for package @vtmn/css-quantity
+
+
+
+
+
 ## [0.4.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-quantity@0.4.3...@vtmn/css-quantity@0.4.4) (2022-02-08)
 
 **Note:** Version bump only for package @vtmn/css-quantity

@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.17.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@0.16.5...@vtmn/css-design-tokens@0.17.0) (2022-02-23)
+
+
+### Features
+
+* **@vtmn/css:** add new font size (caption) ([#982](https://github.com/Decathlon/vitamin-web/issues/982)) ([03877ed](https://github.com/Decathlon/vitamin-web/commit/03877ed69df9d6b354ebe5ccf828751b106ce8ff))
+
+
+
+
+
+## [0.16.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@0.16.4...@vtmn/css-design-tokens@0.16.5) (2022-02-15)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** remove blink on safari linear progressbar ([#975](https://github.com/Decathlon/vitamin-web/issues/975)) ([53422d1](https://github.com/Decathlon/vitamin-web/commit/53422d1088f23b027bb08a4f0d7ed3f6be279822))
+
+
+
+
+
 ## [0.16.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@0.16.3...@vtmn/css-design-tokens@0.16.4) (2022-02-08)
 
 **Note:** Version bump only for package @vtmn/css-design-tokens

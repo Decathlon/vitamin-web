@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.58.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.57.7...@vtmn/css@0.58.0) (2022-02-23)
+
+
+### Features
+
+* **@vtmn/css:** add new font size (caption) ([#982](https://github.com/Decathlon/vitamin-web/issues/982)) ([03877ed](https://github.com/Decathlon/vitamin-web/commit/03877ed69df9d6b354ebe5ccf828751b106ce8ff))
+
+
+
+
+
+## [0.57.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.57.6...@vtmn/css@0.57.7) (2022-02-23)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** change margin holders for quantity and select, optimizations on forms component ([#988](https://github.com/Decathlon/vitamin-web/issues/988)) ([2e589ae](https://github.com/Decathlon/vitamin-web/commit/2e589aeb8ce0d9d2e2487037c0cbd2ce51de9dc6))
+
+
+
+
+
+## [0.57.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.57.5...@vtmn/css@0.57.6) (2022-02-15)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** remove blink on safari linear progressbar ([#975](https://github.com/Decathlon/vitamin-web/issues/975)) ([53422d1](https://github.com/Decathlon/vitamin-web/commit/53422d1088f23b027bb08a4f0d7ed3f6be279822))
+
+
+
+
+
 ## [0.57.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.57.4...@vtmn/css@0.57.5) (2022-02-08)
 
 **Note:** Version bump only for package @vtmn/css
