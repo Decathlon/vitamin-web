@@ -59,13 +59,5 @@
       "url": "http://www.apache.org/licenses/LICENSE-2.0"
     }
   ],
-  "svelte": "src/index.js",
-  "exports": {
-    ".": "./src/components",
-    "./actions/VtmnButton/VtmnButton.svelte": "./dist/VtmnButton.js",
-    "./actions/VtmnLink/VtmnLink.svelte": "./dist/VtmnLink.js",
-    "./forms/VtmnTextInput/VtmnTextInput.svelte": "./dist/VtmnTextInput.js",
-    "./indicators/VtmnPrice/VtmnPrice.svelte": "./dist/VtmnPrice.js",
-    "./overlays/VtmnPopover/VtmnPopover.svelte": "./dist/VtmnPopover.js"
-  }
+  "svelte": "src/index.js"
 }
