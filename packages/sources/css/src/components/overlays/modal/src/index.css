@@ -126,6 +126,7 @@
     bottom: 0;
     left: 0;
     transform: translate(0, 0);
+    border-radius: var(--vtmn-radius_200) var(--vtmn-radius_200) 0 0;
   }
 
   .vtmn-modal_content_actions {

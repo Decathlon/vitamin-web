@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.58.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.58.0...@vtmn/css@0.58.1) (2022-02-24)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** modal overview displays correctly on mobile, fix radius mobile ([#991](https://github.com/Decathlon/vitamin-web/issues/991)) ([7c9cdbd](https://github.com/Decathlon/vitamin-web/commit/7c9cdbd396df895ccf3032c6dd30bf62c5a89ae0))
+
+
+
+
+
 # [0.58.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.57.7...@vtmn/css@0.58.0) (2022-02-23)
 
 
