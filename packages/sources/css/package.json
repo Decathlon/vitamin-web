@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css",
-  "version": "0.59.0",
+  "version": "0.59.1",
   "description": "Decathlon Design System - Vitamin global CSS styles library",
   "keywords": [
     "design-system",
@@ -40,7 +40,7 @@
     "@vtmn/css-breadcrumb": "^0.3.11",
     "@vtmn/css-button": "^0.11.7",
     "@vtmn/css-card": "^0.6.7",
-    "@vtmn/css-checkbox": "^0.6.10",
+    "@vtmn/css-checkbox": "^0.6.11",
     "@vtmn/css-chip": "^0.6.7",
     "@vtmn/css-design-tokens": "^0.18.0",
     "@vtmn/css-divider": "^0.1.16",
