@@ -103,7 +103,7 @@ export default /*#__PURE__*/ defineComponent({
       v-bind="$attrs"
       @input="handleChange"
     />
-    <VtmnIcon :value="icon" />
+    <VtmnIcon v-if="icon" :value="icon" />
   </div>
   <p
     :v-if="helperText"
