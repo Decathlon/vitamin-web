@@ -6,7 +6,6 @@
   const checkboxArgs = {
     id: 'my-checkbox',
     slot: 'Label',
-    indeterminate: false,
     checked: false,
     disabled: false,
   };

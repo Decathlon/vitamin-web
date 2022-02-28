@@ -8,12 +8,6 @@
   export let id;
 
   /**
-   * Whether the checkbox is indeterminate
-   * @type {boolean}
-   */
-  export let indeterminate = false;
-
-  /**
    * Whether the checkbox is checked
    * @type {boolean}
    */
@@ -31,11 +25,7 @@
    */
   export { className as class };
 
-  $: componentClass = cn(
-    'vtmn-checkbox',
-    indeterminate && checked && 'vtmn-checkbox--indeterminate',
-    className,
-  );
+  $: componentClass = cn('vtmn-checkbox', className);
 </script>
 
 <input
