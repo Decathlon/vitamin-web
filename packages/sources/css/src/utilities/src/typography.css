@@ -82,3 +82,10 @@
   font-size: var(--vtmn-typo_text-3-font-size);
   line-height: var(--vtmn-typo_text-3-line-height);
 }
+
+.vtmn-typo_caption-1 {
+  font-family: var(--vtmn-typo_font-family);
+  color: var(--vtmn-semantic-color_content-primary);
+  font-size: var(--vtmn-typo_caption-1-font-size);
+  line-height: var(--vtmn-typo_caption-1-line-height);
+}

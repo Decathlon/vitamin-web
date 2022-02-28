@@ -15,6 +15,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  width: fit-content;
 }
 
 .vtmn-rating--interactive {
