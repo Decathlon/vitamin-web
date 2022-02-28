@@ -1,4 +1,5 @@
 <script lang="ts">
+import '@vtmn/css-toggle/dist/index-with-vars.css';
 import { computed, defineComponent, PropType, reactive } from 'vue';
 import { VtmnToggleSize } from './types';
 

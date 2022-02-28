@@ -1,4 +1,5 @@
 <script lang="ts">
+import '@vtmn/css-radio-button/dist/index-with-vars.css';
 import { defineComponent, PropType } from 'vue';
 
 export default /*#__PURE__*/ defineComponent({

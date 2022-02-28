@@ -1,4 +1,5 @@
 <script lang="ts">
+import '@vtmn/css-button/dist/index-with-vars.css';
 import { reactive, computed, defineComponent, PropType } from 'vue';
 import { VtmnButtonSize, VtmnButtonType, VtmnButtonVariant } from './types';
 
