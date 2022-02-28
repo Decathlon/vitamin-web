@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-dropdown@0.1.6...@vtmn/css-dropdown@0.2.0) (2022-02-25)
+
+
+### Features
+
+* **@vtmn/css:** refactor border color + add new shadow colors ([#980](https://github.com/Decathlon/vitamin-web/issues/980)) ([67e13ff](https://github.com/Decathlon/vitamin-web/commit/67e13ff48c922ddea167feea824e9dfdc8b18fec))
+
+
+
+
+
 ## [0.1.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-dropdown@0.1.5...@vtmn/css-dropdown@0.1.6) (2022-02-23)
 
 **Note:** Version bump only for package @vtmn/css-dropdown

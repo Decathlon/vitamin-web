@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-toast@0.5.6...@vtmn/css-toast@0.5.7) (2022-02-25)
+
+**Note:** Version bump only for package @vtmn/css-toast
+
+
+
+
+
 ## [0.5.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-toast@0.5.5...@vtmn/css-toast@0.5.6) (2022-02-23)
 
 **Note:** Version bump only for package @vtmn/css-toast

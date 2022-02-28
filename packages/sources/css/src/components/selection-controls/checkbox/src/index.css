@@ -7,7 +7,7 @@
 
 .vtmn-checkbox[type='checkbox'] {
   position: absolute;
-  opacity: 0.01;
+  opacity: 0;
 }
 
 .vtmn-checkbox[type='checkbox'] + label {
@@ -33,7 +33,7 @@
   padding: rem(7px);
 }
 
-.vtmn-checkbox[type='checkbox']:not(:checked) + label::before {
+.vtmn-checkbox[type='checkbox'] + label::before {
   border-color: var(--vtmn-semantic-color_content-inactive);
 }
 
@@ -43,19 +43,10 @@
     var(--vtmn-semantic-color_hover-secondary-transparent);
 }
 
-.vtmn-checkbox[type='checkbox']:not(:checked):not(:disabled):active
+.vtmn-checkbox[type='checkbox']:not(:focus-visible):not(:checked):not(:disabled):active
   + label::before {
   box-shadow: 0 0 0 rem(7px)
     var(--vtmn-semantic-color_active-secondary-transparent);
-}
-
-.vtmn-checkbox[type='checkbox']:not(:disabled):focus-visible + label::before {
-  box-shadow: var(--vtmn-shadow_focus-visible);
-}
-
-.vtmn-checkbox[type='checkbox']:checked + label::before {
-  background-color: var(--vtmn-semantic-color_content-active);
-  border-color: var(--vtmn-semantic-color_content-active);
 }
 
 .vtmn-checkbox[type='checkbox']:not(:focus-visible):checked:not(:disabled):hover
@@ -64,9 +55,20 @@
     var(--vtmn-semantic-color_hover-primary-transparent);
 }
 
-.vtmn-checkbox[type='checkbox']:checked:not(:disabled):active + label::before {
+.vtmn-checkbox[type='checkbox']:not(:focus-visible):checked:not(:disabled):active
+  + label::before {
   box-shadow: 0 0 0 rem(7px)
     var(--vtmn-semantic-color_active-primary-transparent);
+}
+
+.vtmn-checkbox[type='checkbox']:not(:disabled):focus-visible + label::before {
+  box-shadow: var(--vtmn-shadow_focus-visible);
+}
+
+.vtmn-checkbox[type='checkbox']:checked + label::before,
+.vtmn-checkbox[type='checkbox']:indeterminate + label::before {
+  background-color: var(--vtmn-semantic-color_content-active);
+  border-color: var(--vtmn-semantic-color_content-active);
 }
 
 .vtmn-checkbox[type='checkbox'] + label::after {
@@ -82,22 +84,26 @@
   transition: all 0.2s;
 }
 
-.vtmn-checkbox[type='checkbox'].vtmn-checkbox--indeterminate + label::after {
+.vtmn-checkbox[type='checkbox']:indeterminate + label::after {
   content: '';
-  mask: url("data:image/svg+xml;charset=utf-8, <svg width='23' height='23' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'><path d='M3.333 7.333h9.334v1.334H3.333V7.333z' stroke-width='10'/></svg>");
+  mask: url("data:image/svg+xml;charset=utf-8, <svg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path d='M3.333 7.333h9.334v1.334H3.333V7.333z' stroke-width='10'/></svg>");
   mask-size: cover;
-  height: rem(23px);
-  width: rem(23px);
-  top: rem(3px);
-  left: rem(0);
+  position: absolute;
+  height: rem(20px);
+  width: rem(20px);
+  top: rem(2px);
+  left: rem(-1px);
+  background-color: var(--vtmn-semantic-color_content-primary-reversed);
 }
 
-.vtmn-checkbox[type='checkbox']:not(:checked) + label::after {
+.vtmn-checkbox[type='checkbox']:not(:checked) + label::after,
+.vtmn-checkbox[type='checkbox']:not(:indeterminate) + label::after {
   opacity: 0;
   transform: scale(0) rotate(45deg);
 }
 
-.vtmn-checkbox[type='checkbox']:checked + label::after {
+.vtmn-checkbox[type='checkbox']:checked + label::after,
+.vtmn-checkbox[type='checkbox']:indeterminate + label::after {
   opacity: 1;
   transform: scale(1) rotate(0);
 }
