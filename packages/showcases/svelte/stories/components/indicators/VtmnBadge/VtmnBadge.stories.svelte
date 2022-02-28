@@ -26,7 +26,7 @@
 </Template>
 
 <Story
-  name="Playground"
+  name="Overview"
   args={{
     variant: 'default',
     value: 6,
