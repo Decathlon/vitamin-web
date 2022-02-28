@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.18.22](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.21...@vtmn/react@0.18.22) (2022-02-28)
+
+
+### Bug Fixes
+
+* **build:** fix build on Windows ([#992](https://github.com/Decathlon/vitamin-web/issues/992)) ([e1eac98](https://github.com/Decathlon/vitamin-web/commit/e1eac984141860462ed04a44331847c3dd13c7cb))
+
+
+
+
+
 ## [0.18.21](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.20...@vtmn/react@0.18.21) (2022-02-28)
 
 **Note:** Version bump only for package @vtmn/react
