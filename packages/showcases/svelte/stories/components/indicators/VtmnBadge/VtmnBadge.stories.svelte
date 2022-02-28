@@ -1,6 +1,5 @@
 <script>
   import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
-
   import { VtmnBadge } from '@vtmn/svelte';
   import {
     parameters,
@@ -20,7 +19,7 @@
 </Template>
 
 <Story
-  name="Overview"
+  name="Playground"
   args={{
     variant: 'default',
     value: 6,
