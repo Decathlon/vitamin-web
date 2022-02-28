@@ -7,6 +7,7 @@ import VtmnIcon from '@/guidelines/iconography/VtmnIcon/VtmnIcon.vue';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnButton',
+  components: { VtmnIcon },
   props: {
     variant: {
       type: String as PropType<VtmnButtonVariant>,
@@ -58,7 +59,6 @@ export default /*#__PURE__*/ defineComponent({
       })),
     };
   },
-  components: { VtmnIcon },
 });
 </script>
 
