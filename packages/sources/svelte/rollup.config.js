@@ -25,6 +25,10 @@ const components = [
     folder: 'indicators',
     name: 'VtmnPrice',
   },
+  {
+    folder: 'indicators',
+    name: 'VtmnBadge',
+  },
 ];
 
 export default components.map(({ folder, name }) => ({

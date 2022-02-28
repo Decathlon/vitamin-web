@@ -1,0 +1,51 @@
+import { Preview, Story } from '@storybook/addon-docs/blocks';
+
+# Badge
+
+## Installation and usage
+
+You need to add `@vtmn/svelte` on your `package.json`
+
+```sh
+npm install @vtmn/svelte
+```
+
+Now, you can use `VtmnBadge` on your svelte file with
+
+```svelte
+<script>
+  import { VtmnBadge } from '@vtmn/svelte';
+</script>
+```
+
+# Stories
+
+## Default
+
+<Preview>
+  <Story id="components-indicators-vtmnbadge--default" />
+</Preview>
+
+## Brand
+
+<Preview>
+  <Story id="components-indicators-vtmnbadge--brand" />
+</Preview>
+
+## Reversed
+
+<Preview parameters={{ backgrounds: { default: 'primary-reversed' } }}>
+  <Story id="components-indicators-vtmnbadge--reversed" />
+</Preview>
+
+## Accent
+
+<Preview>
+  <Story id="components-indicators-vtmnbadge--accent" />
+</Preview>
+
+## Alert
+
+<Preview>
+  <Story id="components-indicators-vtmnbadge--alert" />
+</Preview>
