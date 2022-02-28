@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.9.6...@vtmn/svelte@0.10.0) (2022-02-28)
+
+
+### Features
+
+* **@vtmn/svelte:** add badge component ([#987](https://github.com/Decathlon/vitamin-web/issues/987)) ([ee4e880](https://github.com/Decathlon/vitamin-web/commit/ee4e88049ba200956519324b746373fedeee0f22))
+
+
+
+
+
 ## [0.9.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.9.5...@vtmn/svelte@0.9.6) (2022-02-25)
 
 **Note:** Version bump only for package @vtmn/svelte

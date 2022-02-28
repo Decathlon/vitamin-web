@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.9](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-select@0.6.8...@vtmn/css-select@0.6.9) (2022-02-28)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** fix arrow position select ([#996](https://github.com/Decathlon/vitamin-web/issues/996)) ([2d56508](https://github.com/Decathlon/vitamin-web/commit/2d56508f52656bc071a05cfa156337796d4be1ca))
+
+
+
+
+
 ## [0.6.8](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-select@0.6.7...@vtmn/css-select@0.6.8) (2022-02-25)
 
 **Note:** Version bump only for package @vtmn/css-select

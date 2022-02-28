@@ -26,6 +26,10 @@ const components = [
     name: 'VtmnPrice',
   },
   {
+    folder: 'indicators',
+    name: 'VtmnBadge',
+  },
+  {
     folder: 'structure',
     name: 'VtmnList',
   },

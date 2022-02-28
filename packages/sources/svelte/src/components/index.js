@@ -6,6 +6,7 @@ export { default as VtmnLink } from './actions/VtmnLink/VtmnLink.svelte';
 export { default as VtmnTextInput } from './forms/VtmnTextInput/VtmnTextInput.svelte';
 
 // Indicators
+export { default as VtmnBadge } from './indicators/VtmnBadge/VtmnBadge.svelte';
 export { default as VtmnPrice } from './indicators/VtmnPrice/VtmnPrice.svelte';
 
 // Navigation
