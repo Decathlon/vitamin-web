@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.59.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.58.1...@vtmn/css@0.59.0) (2022-02-25)
+
+
+### Features
+
+* **@vtmn/css:** refactor border color + add new shadow colors ([#980](https://github.com/Decathlon/vitamin-web/issues/980)) ([67e13ff](https://github.com/Decathlon/vitamin-web/commit/67e13ff48c922ddea167feea824e9dfdc8b18fec))
+
+
+
+
+
 ## [0.58.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.58.0...@vtmn/css@0.58.1) (2022-02-24)
 
 
