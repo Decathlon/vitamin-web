@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/vue",
-  "version": "0.13.4",
+  "version": "0.13.5",
   "description": "Decathlon Design System - Vitamin Vue components library",
   "keywords": [
     "design-system",
@@ -44,7 +44,7 @@
     "@types/bluebird": "^3.5.36",
     "@vitejs/plugin-vue": "^2.0.1",
     "@vtmn/css-button": "^0.11.7",
-    "@vtmn/css-checkbox": "^0.6.10",
+    "@vtmn/css-checkbox": "^0.6.11",
     "@vtmn/css-link": "^0.6.10",
     "@vtmn/css-radio-button": "^0.6.10",
     "@vtmn/css-text-input": "^0.13.9",
