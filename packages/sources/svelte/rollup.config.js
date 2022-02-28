@@ -1,6 +1,6 @@
-import svelte from 'rollup-plugin-svelte';
 import resolve from '@rollup/plugin-node-resolve';
 import css from 'rollup-plugin-css-only';
+import svelte from 'rollup-plugin-svelte';
 import sveltePreprocess from 'svelte-preprocess';
 const preprocessOptions = require('./svelte.config').preprocessOptions;
 
@@ -24,6 +24,14 @@ const components = [
   {
     folder: 'indicators',
     name: 'VtmnPrice',
+  },
+  {
+    folder: 'structure',
+    name: 'VtmnList',
+  },
+  {
+    folder: 'structure',
+    name: 'VtmnListItem',
   },
 ];
 
