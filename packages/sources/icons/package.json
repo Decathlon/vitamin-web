@@ -22,10 +22,10 @@
     "dist"
   ],
   "scripts": {
-    "prebuild": "rm -rf dist && svgo -f src/vitamix",
+    "prebuild": "shx rm -rf dist && svgo -f src/vitamix",
     "build": "yarn build:svg && yarn build:font && yarn build:sprite",
-    "build:font": "mkdir -p ./dist/vitamix/font && fantasticon",
-    "build:sprite": "mkdir -p ./dist/vitamix/sprite && spritesh --viewbox \"0 0 16 16\" -i src/vitamix -o dist/vitamix/sprite/vitamix.svg && node src/scripts/add-sprite-declaration.js",
+    "build:font": "shx mkdir ./dist/vitamix/font && fantasticon",
+    "build:sprite": "shx mkdir ./dist/vitamix/sprite && spritesh --viewbox \"0 0 16 16\" -i src/vitamix -o dist/vitamix/sprite/vitamix.svg && node src/scripts/add-sprite-declaration.js",
     "build:svg": "node src/scripts/build-svg.js",
     "prestart": "yarn build",
     "start": "chokidar \"src/**/\" -i \"**/dist/**\" -c \"yarn build\""
@@ -34,6 +34,7 @@
     "chokidar-cli": "^3.0.0",
     "fantasticon": "^1.1.1",
     "fs-extra": "^10.0.0",
+    "shx": "^0.3.4",
     "spritesh": "^1.2.1",
     "svgo": "^2.7.0"
   },
