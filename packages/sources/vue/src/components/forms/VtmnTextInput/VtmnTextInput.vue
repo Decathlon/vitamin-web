@@ -1,50 +1,65 @@
 <script lang="ts">
 import '@vtmn/css-text-input/dist/index-with-vars.css';
-import { reactive, computed, defineComponent } from 'vue';
+import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
+import { reactive, computed, defineComponent, PropType } from 'vue';
+import VtmnIcon from '@/guidelines/iconography/VtmnIcon/VtmnIcon.vue';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnTextInput',
+  components: { VtmnIcon },
   props: {
+    modelValue: {
+      type: [String, Number] as PropType<string | number>,
+      default: '',
+    },
     identifier: {
-      type: String,
-      default: null,
+      type: String as PropType<string>,
+      required: true,
     },
     labelText: {
-      type: String,
+      type: String as PropType<string>,
       default: null,
     },
     placeholder: {
-      type: String,
+      type: String as PropType<string>,
       default: null,
     },
     helperText: {
-      type: String,
+      type: String as PropType<string>,
       default: null,
     },
     multiline: {
-      type: Boolean,
+      type: Boolean as PropType<boolean>,
       default: false,
     },
     disabled: {
-      type: Boolean,
+      type: Boolean as PropType<boolean>,
       default: false,
     },
     valid: {
-      type: Boolean,
+      type: Boolean as PropType<boolean>,
       default: false,
     },
     error: {
-      type: Boolean,
+      type: Boolean as PropType<boolean>,
       default: false,
     },
     icon: {
-      type: String,
+      type: String as PropType<VitamixId>,
       default: null,
     },
   },
-  setup(props) {
+  emits: ['update:modelValue'],
+  setup(props, { emit }) {
     props = reactive(props);
-
+    const handleChange = (event: Event) => {
+      if (event && event.target) {
+        return emit(
+          'update:modelValue',
+          (event.target as HTMLInputElement).value,
+        );
+      }
+    };
     return {
       classes: computed(() => ({
         'vtmn-text-input': true,
@@ -55,36 +70,46 @@ export default /*#__PURE__*/ defineComponent({
         'vtmn-text-input_helper-text': true,
         'vtmn-text-input_helper-text--error': props.error,
       })),
-      iconClass: computed(() => ({
-        [`vtmx-${props.icon}`]: props.icon,
-      })),
+      handleChange,
     };
   },
 });
 </script>
 
 <template>
-  <label :v-if="labelText" class="vtmn-text-input_label" :for="this.identifier">
-    {{ this.labelText }}
+  <label :v-if="labelText" class="vtmn-text-input_label" :for="identifier">
+    {{ labelText }}
   </label>
   <textarea
-    v-if="this.multiline"
+    v-if="multiline"
     :class="classes"
-    :id="this.identifier"
-    :placeholder="this.placeholder"
-    :disabled="this.disabled"
+    :id="identifier"
+    :placeholder="placeholder"
+    :disabled="disabled"
+    :aria-invalid="error && !disabled"
+    :aria-describedby="helperText ? `${identifier}-helper-text` : undefined"
+    v-bind="$attrs"
+    @input="handleChange"
   ></textarea>
   <div v-else class="vtmn-text-input_container">
     <input
       type="text"
       :class="classes"
-      :id="this.identifier"
-      :placeholder="this.placeholder"
-      :disabled="this.disabled"
+      :id="identifier"
+      :placeholder="placeholder"
+      :disabled="disabled"
+      :aria-invalid="error && !disabled"
+      :aria-describedby="helperText ? `${identifier}-helper-text` : undefined"
+      v-bind="$attrs"
+      @input="handleChange"
     />
-    <span :v-if="this.icon" :class="iconClass"></span>
+    <VtmnIcon v-if="icon" :value="icon" />
   </div>
-  <p :v-if="helperText" :class="helperClasses">
-    {{ this.helperText }}
+  <p
+    :v-if="helperText"
+    :id="`${identifier}-helper-text`"
+    :class="helperClasses"
+  >
+    {{ helperText }}
   </p>
 </template>
