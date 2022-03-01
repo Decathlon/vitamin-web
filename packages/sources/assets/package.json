@@ -22,17 +22,19 @@
     "dist"
   ],
   "scripts": {
-    "build": "yarn build:svg && yarn build:font && yarn build:sprite",
-    "build:font": "mkdir -p ./dist/assets/font && fantasticon",
-    "build:sprite": "mkdir -p ./dist/assets/sprite && spritesh --viewbox \"0 0 16 16\" -i src/assets/* -o dist/assets/sprite/assets.svg && node src/scripts/add-sprite-declaration.js",
+    "prebuild": "shx rm -rf dist && svgo -f src/assets",
+    "build": "yarn build:svg && yarn build:sprite",
+    "build:sprite": "shx rm -rf ./dist/assets/sprite && shx mkdir ./dist/assets/sprite && node src/scripts/build-sprite.js --viewbox \"0 0 16 16\" -i src/assets/* -o dist/assets/sprite/assets.svg && node src/scripts/add-sprite-declaration.js",
     "build:svg": "node src/scripts/build-svg.js",
     "prestart": "yarn build",
     "start": "chokidar \"src/**/\" -i \"**/dist/**\" -c \"yarn build\""
   },
   "devDependencies": {
+    "cheerio": "^1.0.0-rc.10",
     "chokidar-cli": "^3.0.0",
-    "fantasticon": "^1.1.1",
+    "commander": "^9.0.0",
     "fs-extra": "^10.0.0",
+    "fs-promise": "^2.0.3",
     "spritesh": "^1.2.1",
     "svgo": "^2.7.0"
   },
