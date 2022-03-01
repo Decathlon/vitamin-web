@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.14.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.13.6...@vtmn/vue@0.14.0) (2022-03-01)
+
+
+### Bug Fixes
+
+* **@vtmn/vue:** build ([0534995](https://github.com/Decathlon/vitamin-web/commit/05349959aaa88d0e292f842cdc80483444197919))
+* **@vtmn/vue:** dependencies ([38cc602](https://github.com/Decathlon/vitamin-web/commit/38cc602d6b9de6890b982719f3a00a86a5381542))
+
+
+### Features
+
+* **@vtmn/vue:** add `VtmnTextInput` reactivity and `VtmnSelect` component ([#998](https://github.com/Decathlon/vitamin-web/issues/998)) ([7506d84](https://github.com/Decathlon/vitamin-web/commit/7506d848a4ea905c4b4f20b392d02f8aa56df44c))
+
+
+
+
+
 ## [0.13.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.13.5...@vtmn/vue@0.13.6) (2022-02-28)
 
 
