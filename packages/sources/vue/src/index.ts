@@ -28,6 +28,7 @@ export { default as VtmnSelect } from './components/forms/VtmnSelect';
 export { default as VtmnTextInput } from './components/forms/VtmnTextInput';
 
 // Indicators
+export { default as VtmnLoader } from './components/indicators/VtmnLoader';
 
 // Navigation
 
