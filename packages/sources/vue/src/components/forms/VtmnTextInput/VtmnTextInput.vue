@@ -2,7 +2,7 @@
 import '@vtmn/css-text-input/dist/index-with-vars.css';
 import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
 import { reactive, computed, defineComponent, PropType } from 'vue';
-import VtmnIcon from '@/guidelines/iconography/VtmnIcon/VtmnIcon.vue';
+import VtmnIcon from '../../../guidelines/iconography/VtmnIcon/VtmnIcon.vue';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnTextInput',
