@@ -18,20 +18,20 @@ const components = [
     name: 'VtmnTextInput',
   },
   {
-    folder: 'overlays',
-    name: 'VtmnPopover',
+    folder: 'indicators',
+    name: 'VtmnBadge',
   },
   {
     folder: 'indicators',
     name: 'VtmnPrice',
   },
   {
-    folder: 'selection-controls',
-    name: 'VtmnCheckbox',
+    folder: 'overlays',
+    name: 'VtmnPopover',
   },
   {
-    folder: 'indicators',
-    name: 'VtmnBadge',
+    folder: 'selection-controls',
+    name: 'VtmnCheckbox',
   },
 ];
 
