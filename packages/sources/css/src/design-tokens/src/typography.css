@@ -1,26 +1,14 @@
-/**
- * @tokens Font Families
- * @presenter FontFamily
- */
 :root {
   --vtmn-typo_font-family: 'Roboto', 'system-ui', '-apple-system', sans-serif;
   --vtmn-typo_font-family--condensed: 'Roboto Condensed', 'system-ui',
     '-apple-system', sans-serif;
 }
 
-/**
- * @tokens Font Weights
- * @presenter FontWeight
- */
 :root {
   --vtmn-typo_font-weight--normal: 400;
   --vtmn-typo_font-weight--bold: 700;
 }
 
-/**
- * @tokens Font Sizes
- * @presenter FontSize
- */
 :root {
   --vtmn-typo_display-1-font-size: rem(60px);
   --vtmn-typo_display-2-font-size: rem(42px);
@@ -35,10 +23,6 @@
   --vtmn-typo_caption-1-font-size: rem(12px);
 }
 
-/**
- * @tokens Line Heights
- * @presenter LineHeight
- */
 :root {
   --vtmn-typo_display-1-line-height: 1;
   --vtmn-typo_display-2-line-height: 1.04;
