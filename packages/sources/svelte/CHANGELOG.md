@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.10.1...@vtmn/svelte@0.11.0) (2022-03-01)
+
+
+### Features
+
+* **@vtmn/svelte:** add checkbox component ([#984](https://github.com/Decathlon/vitamin-web/issues/984)) ([6343a51](https://github.com/Decathlon/vitamin-web/commit/6343a51a00de46cade2fddc85ad12ddb3d23d778))
+
+
+
+
+
 ## [0.10.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.10.0...@vtmn/svelte@0.10.1) (2022-03-01)
 
 **Note:** Version bump only for package @vtmn/svelte

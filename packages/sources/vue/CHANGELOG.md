@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.14.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.14.2...@vtmn/vue@0.14.3) (2022-03-01)
+
+
+### Bug Fixes
+
+* **@vtmn/vue:** sonarcloud duplications ([c973e05](https://github.com/Decathlon/vitamin-web/commit/c973e0506397c2b8684012f785d87c1c50242ba2))
+
+
+
+
+
 ## [0.14.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.14.1...@vtmn/vue@0.14.2) (2022-03-01)
 
 
