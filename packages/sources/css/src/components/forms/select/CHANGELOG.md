@@ -3,6 +3,100 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.11](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-select@0.6.10...@vtmn/css-select@0.6.11) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/css-select
+
+
+
+
+
+## [0.6.10](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-select@0.6.9...@vtmn/css-select@0.6.10) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/css-select
+
+
+
+
+
+## [0.6.9](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-select@0.6.8...@vtmn/css-select@0.6.9) (2022-02-28)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** fix arrow position select ([#996](https://github.com/Decathlon/vitamin-web/issues/996)) ([2d56508](https://github.com/Decathlon/vitamin-web/commit/2d56508f52656bc071a05cfa156337796d4be1ca))
+
+
+
+
+
+## [0.6.8](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-select@0.6.7...@vtmn/css-select@0.6.8) (2022-02-25)
+
+**Note:** Version bump only for package @vtmn/css-select
+
+
+
+
+
+## [0.6.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-select@0.6.6...@vtmn/css-select@0.6.7) (2022-02-23)
+
+**Note:** Version bump only for package @vtmn/css-select
+
+
+
+
+
+## [0.6.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-select@0.6.5...@vtmn/css-select@0.6.6) (2022-02-23)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** change margin holders for quantity and select, optimizations on forms component ([#988](https://github.com/Decathlon/vitamin-web/issues/988)) ([2e589ae](https://github.com/Decathlon/vitamin-web/commit/2e589aeb8ce0d9d2e2487037c0cbd2ce51de9dc6))
+
+
+
+
+
+## [0.6.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-select@0.6.4...@vtmn/css-select@0.6.5) (2022-02-15)
+
+**Note:** Version bump only for package @vtmn/css-select
+
+
+
+
+
+## [0.6.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-select@0.6.3...@vtmn/css-select@0.6.4) (2022-02-08)
+
+**Note:** Version bump only for package @vtmn/css-select
+
+
+
+
+
+## [0.6.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-select@0.6.2...@vtmn/css-select@0.6.3) (2022-02-03)
+
+**Note:** Version bump only for package @vtmn/css-select
+
+
+
+
+
+## [0.6.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-select@0.6.1...@vtmn/css-select@0.6.2) (2022-02-02)
+
+**Note:** Version bump only for package @vtmn/css-select
+
+
+
+
+
+## [0.6.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-select@0.6.0...@vtmn/css-select@0.6.1) (2022-01-28)
+
+**Note:** Version bump only for package @vtmn/css-select
+
+
+
+
+
 # [0.6.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-select@0.5.0...@vtmn/css-select@0.6.0) (2022-01-25)
 
 

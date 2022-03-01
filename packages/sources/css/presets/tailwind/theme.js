@@ -152,5 +152,22 @@ module.exports = {
     display: ['Roboto Condensed', 'system-ui', '-apple-system', 'sans-serif'],
     body: ['Roboto', 'system-ui', '-apple-system', 'sans-serif'],
   },
-  extend: {},
+  extend: {
+    borderRadius: {
+      100: 'var(--vtmn-radius_100)',
+      200: 'var(--vtmn-radius_200)',
+      300: 'var(--vtmn-radius_300)',
+      400: 'var(--vtmn-radius_400)',
+      500: 'var(--vtmn-radius_500)',
+      600: 'var(--vtmn-radius_600)',
+      700: 'var(--vtmn-radius_700)',
+      800: 'var(--vtmn-radius_800)',
+    },
+    boxShadow: {
+      100: 'var(--vtmn-shadow_100)',
+      200: 'var(--vtmn-shadow_200)',
+      300: 'var(--vtmn-shadow_300)',
+      400: 'var(--vtmn-shadow_400)',
+    },
+  },
 };

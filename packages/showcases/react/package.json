@@ -10,10 +10,10 @@
     "start": "start-storybook -p 6009"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.5",
-    "@storybook/addon-a11y": "^6.4.13",
-    "@storybook/addon-essentials": "^6.4.13",
-    "@storybook/react": "^6.4.13",
+    "@babel/core": "^7.17.0",
+    "@storybook/addon-a11y": "^6.4.18",
+    "@storybook/addon-essentials": "^6.4.18",
+    "@storybook/react": "^6.4.18",
     "@vtmn/css": "*",
     "@vtmn/icons": "*",
     "@vtmn/react": "*",

@@ -33,7 +33,7 @@
   bottom: 50%;
   left: 50%;
   transform: translate(-50%, 50%);
-  box-shadow: var(--vtmn-shadow_200);
+  box-shadow: var(--vtmn-shadow_300);
   color: var(--vtmn-semantic-color_content-primary);
   z-index: var(--vtmn-z-index_modal);
   display: flex;
@@ -126,6 +126,7 @@
     bottom: 0;
     left: 0;
     transform: translate(0, 0);
+    border-radius: var(--vtmn-radius_200) var(--vtmn-radius_200) 0 0;
   }
 
   .vtmn-modal_content_actions {

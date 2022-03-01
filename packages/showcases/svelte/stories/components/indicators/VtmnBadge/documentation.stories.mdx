@@ -1,0 +1,96 @@
+import {
+  Preview,
+  Canvas,
+  Props,
+  Story,
+  Meta,
+} from '@storybook/addon-docs/blocks';
+import { ArgsTable } from '@storybook/components';
+import { VtmnBadge } from '@vtmn/svelte';
+
+<Meta title="Components / Indicators / VtmnBadge / Documentation" />
+
+# Badge
+
+## Quick start
+
+You need to add `@vtmn/svelte` on your `package.json`
+
+```
+npm install @vtmn/svelte
+```
+
+Now, you can use `VtmnBadge` on your svelte file with
+
+```svelte
+<script>
+  import { VtmnBadge } from '@vtmn/svelte';
+</script>
+```
+
+## Value
+
+There are 3 different types of display
+
+- When value is undefined or 0
+- When value is between 1 and 99
+- When value is upper than 99
+
+<Canvas>
+  <Story name="No value">
+    {{
+      Component: VtmnBadge,
+      props: { value: undefined },
+    }}
+  </Story>
+  <Story name="Default">
+    {{
+      Component: VtmnBadge,
+      props: { value: 10 },
+    }}
+  </Story>
+  <Story name="More than 99">
+    {{
+      Component: VtmnBadge,
+      props: { value: 100 },
+    }}
+  </Story>
+</Canvas>
+
+## Variants
+
+Some variants are available
+
+<Canvas>
+  <Story name="Variant default">
+    {{
+      Component: VtmnBadge,
+      props: { value: 6, variant: 'default' },
+    }}
+  </Story>
+  <Story name="Variant brand">
+    {{
+      Component: VtmnBadge,
+      props: { value: 6, variant: 'brand' },
+    }}
+  </Story>
+  <Story name="Variant reversed">
+    {{
+      Component: VtmnBadge,
+      props: { value: 6, variant: 'reversed' },
+    }}
+  </Story>
+  <Story name="Variant alert">
+    {{
+      Component: VtmnBadge,
+      props: { value: 6, variant: 'alert' },
+    }}
+  </Story>
+  <Story name="Variant accent">
+    {{
+      Component: VtmnBadge,
+      props: { value: 6, variant: 'accent' },
+    }}
+    >
+  </Story>
+</Canvas>

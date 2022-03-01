@@ -92,9 +92,6 @@ For your information, here are the showcases' URLs:
 | Svelte   | [localhost:6010](http://localhost:6010) |
 | Vue      | [localhost:6011](http://localhost:6011) |
 
-For Windows users, you may errors with UNIX commands like `rm -rf` or `mkdir` used in NPM scripts. To fix this and be able to contribute, you can check "Git for Windows" or Cygwin.
-By default Windows runs NPM scripts with `cmd` but you can change the game with `npm config set script-shell <path to .exe>` and choose your executor.
-
 ## Code of conduct
 
 This project and everyone participating in it is governed by the [following code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.

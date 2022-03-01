@@ -1,0 +1,12 @@
+:root {
+  --vtmn-layout-gutter_mobile: rem(12px);
+  --vtmn-layout-gutter_tablet: rem(16px);
+  --vtmn-layout-gutter_small-desktop: rem(16px);
+  --vtmn-layout-gutter_medium-desktop: rem(24px);
+  --vtmn-layout-gutter_large-desktop: rem(32px);
+  --vtmn-layout-margin_mobile: rem(20px);
+  --vtmn-layout-margin_tablet: rem(24px);
+  --vtmn-layout-margin_small-desktop: rem(40px);
+  --vtmn-layout-margin_medium-desktop: rem(80px);
+  --vtmn-layout-margin_large-desktop: rem(160px);
+}

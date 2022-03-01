@@ -2,18 +2,10 @@
 
 > Decathlon Design System - Vitamin specific CSS styles for text input component
 
-<a href="https://www.decathlon.design/726f8c765/p/4450b2-toast-beta/b/129609">
-<img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" />
-</a>
-<a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-toast--overview">
-<img src="https://img.shields.io/badge/storybook-css-d891bc?style=flat&logo=storybook" alt="storybook" />
-</a>
-<a href="https://www.npmjs.com/package/@vtmn/css-toast">
-<img src="https://img.shields.io/npm/v/@vtmn/css-toast?style=flat&logo=npm" alt="npm version" />
-</a>
-<a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_css">
-<img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css&metric=alert_status" alt="Quality Gate Status" />
-</a>
+<a href="https://www.decathlon.design/726f8c765/p/4450b2-toast-beta/b/129609"><img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" /></a>
+<a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-overlays-toast--overview"><img src="https://img.shields.io/badge/storybook-css-d891bc?style=flat&logo=storybook" alt="storybook" /></a>
+<a href="https://www.npmjs.com/package/@vtmn/css-toast"><img src="https://img.shields.io/npm/v/@vtmn/css-toast?style=flat&logo=npm" alt="npm version" /></a>
+<a href="https://sonarcloud.io/project/overview?id=decathlon_vitamin-web_css_components_toast"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css_components_toast&metric=alert_status" alt="Quality Gate Status" /></a>
 
 ## Install package
 

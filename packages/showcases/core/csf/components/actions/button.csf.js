@@ -37,6 +37,18 @@ export const argTypes = {
       options: ['small', 'medium', 'large', 'stretched'],
     },
   },
+  disabled: {
+    type: { name: 'boolean', required: false },
+    description: 'Whether the button is disabled.',
+    table: {
+      type: {
+        summary: 'boolean',
+      },
+      defaultValue: { summary: 'false' },
+    },
+    defaultValue: false,
+    control: { type: 'boolean' },
+  },
   iconLeft: {
     type: { name: 'string', required: false },
     description: 'The icon to display on the left hand side of button.',

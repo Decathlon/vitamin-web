@@ -3,6 +3,78 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.9](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.10.8...@vtmn/css-badge@0.10.9) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/css-badge
+
+
+
+
+
+## [0.10.8](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.10.7...@vtmn/css-badge@0.10.8) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/css-badge
+
+
+
+
+
+## [0.10.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.10.6...@vtmn/css-badge@0.10.7) (2022-02-25)
+
+**Note:** Version bump only for package @vtmn/css-badge
+
+
+
+
+
+## [0.10.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.10.5...@vtmn/css-badge@0.10.6) (2022-02-23)
+
+**Note:** Version bump only for package @vtmn/css-badge
+
+
+
+
+
+## [0.10.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.10.4...@vtmn/css-badge@0.10.5) (2022-02-15)
+
+**Note:** Version bump only for package @vtmn/css-badge
+
+
+
+
+
+## [0.10.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.10.3...@vtmn/css-badge@0.10.4) (2022-02-08)
+
+**Note:** Version bump only for package @vtmn/css-badge
+
+
+
+
+
+## [0.10.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.10.2...@vtmn/css-badge@0.10.3) (2022-02-03)
+
+**Note:** Version bump only for package @vtmn/css-badge
+
+
+
+
+
+## [0.10.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.10.1...@vtmn/css-badge@0.10.2) (2022-02-02)
+
+**Note:** Version bump only for package @vtmn/css-badge
+
+
+
+
+
+## [0.10.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.10.0...@vtmn/css-badge@0.10.1) (2022-01-28)
+
+**Note:** Version bump only for package @vtmn/css-badge
+
+
+
+
+
 # [0.10.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-badge@0.9.0...@vtmn/css-badge@0.10.0) (2022-01-20)
 
 

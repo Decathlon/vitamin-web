@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.10.2...@vtmn/icons@0.10.3) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/icons
+
+
+
+
+
+## [0.10.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.10.1...@vtmn/icons@0.10.2) (2022-02-28)
+
+
+### Bug Fixes
+
+* **build:** fix build on Windows ([#992](https://github.com/Decathlon/vitamin-web/issues/992)) ([e1eac98](https://github.com/Decathlon/vitamin-web/commit/e1eac984141860462ed04a44331847c3dd13c7cb))
+
+
+
+
+
+## [0.10.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.10.0...@vtmn/icons@0.10.1) (2022-02-23)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** fix sun (fill/line) icons ([#983](https://github.com/Decathlon/vitamin-web/issues/983)) ([6f08ed8](https://github.com/Decathlon/vitamin-web/commit/6f08ed8b252178ccc58b6e0363c6438e1d6615c6))
+
+
+
+
+
+# [0.10.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.9.1...@vtmn/icons@0.10.0) (2022-02-03)
+
+
+### Features
+
+* **@vtmn/icons:** add new icons ([098da04](https://github.com/Decathlon/vitamin-web/commit/098da043be1a2d9cff7832522de2a5af6c524a6e))
+
+
+
+
+
 ## [0.9.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.9.0...@vtmn/icons@0.9.1) (2022-01-24)
 
 

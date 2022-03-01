@@ -3,6 +3,175 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.18.26](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.25...@vtmn/react@0.18.26) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.18.25](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.24...@vtmn/react@0.18.25) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.18.24](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.23...@vtmn/react@0.18.24) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.18.23](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.22...@vtmn/react@0.18.23) (2022-02-28)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.18.22](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.21...@vtmn/react@0.18.22) (2022-02-28)
+
+
+### Bug Fixes
+
+* **build:** fix build on Windows ([#992](https://github.com/Decathlon/vitamin-web/issues/992)) ([e1eac98](https://github.com/Decathlon/vitamin-web/commit/e1eac984141860462ed04a44331847c3dd13c7cb))
+
+
+
+
+
+## [0.18.21](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.20...@vtmn/react@0.18.21) (2022-02-28)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.18.20](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.19...@vtmn/react@0.18.20) (2022-02-25)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.18.19](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.18...@vtmn/react@0.18.19) (2022-02-23)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.18.18](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.17...@vtmn/react@0.18.18) (2022-02-23)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.18.17](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.16...@vtmn/react@0.18.17) (2022-02-23)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.18.16](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.15...@vtmn/react@0.18.16) (2022-02-15)
+
+
+### Bug Fixes
+
+* **@vtmn/react:** helper-text aria realtionshop ([#970](https://github.com/Decathlon/vitamin-web/issues/970)) ([3346670](https://github.com/Decathlon/vitamin-web/commit/33466700e5f66e718772bdc75739bdf1ec8b67f8))
+
+
+
+
+
+## [0.18.15](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.14...@vtmn/react@0.18.15) (2022-02-15)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.18.14](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.13...@vtmn/react@0.18.14) (2022-02-10)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.18.13](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.12...@vtmn/react@0.18.13) (2022-02-10)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.18.12](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.11...@vtmn/react@0.18.12) (2022-02-08)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.18.11](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.10...@vtmn/react@0.18.11) (2022-02-03)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.18.10](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.9...@vtmn/react@0.18.10) (2022-02-03)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.18.9](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.8...@vtmn/react@0.18.9) (2022-02-02)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.18.8](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.7...@vtmn/react@0.18.8) (2022-01-31)
+
+
+### Bug Fixes
+
+* **@vtmn/react:** make children prop of VtmnButton optional ([e2a6a47](https://github.com/Decathlon/vitamin-web/commit/e2a6a47c9ba11c0c3b5e0d9aa632a5743c3b7fac))
+
+
+
+
+
+## [0.18.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.6...@vtmn/react@0.18.7) (2022-01-28)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
 ## [0.18.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.5...@vtmn/react@0.18.6) (2022-01-27)
 
 **Note:** Version bump only for package @vtmn/react

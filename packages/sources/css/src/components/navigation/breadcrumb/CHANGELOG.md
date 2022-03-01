@@ -3,6 +3,78 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.13](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-breadcrumb@0.3.12...@vtmn/css-breadcrumb@0.3.13) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/css-breadcrumb
+
+
+
+
+
+## [0.3.12](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-breadcrumb@0.3.11...@vtmn/css-breadcrumb@0.3.12) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/css-breadcrumb
+
+
+
+
+
+## [0.3.11](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-breadcrumb@0.3.10...@vtmn/css-breadcrumb@0.3.11) (2022-02-25)
+
+**Note:** Version bump only for package @vtmn/css-breadcrumb
+
+
+
+
+
+## [0.3.10](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-breadcrumb@0.3.9...@vtmn/css-breadcrumb@0.3.10) (2022-02-23)
+
+**Note:** Version bump only for package @vtmn/css-breadcrumb
+
+
+
+
+
+## [0.3.9](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-breadcrumb@0.3.8...@vtmn/css-breadcrumb@0.3.9) (2022-02-15)
+
+**Note:** Version bump only for package @vtmn/css-breadcrumb
+
+
+
+
+
+## [0.3.8](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-breadcrumb@0.3.7...@vtmn/css-breadcrumb@0.3.8) (2022-02-08)
+
+**Note:** Version bump only for package @vtmn/css-breadcrumb
+
+
+
+
+
+## [0.3.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-breadcrumb@0.3.6...@vtmn/css-breadcrumb@0.3.7) (2022-02-03)
+
+**Note:** Version bump only for package @vtmn/css-breadcrumb
+
+
+
+
+
+## [0.3.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-breadcrumb@0.3.5...@vtmn/css-breadcrumb@0.3.6) (2022-02-02)
+
+**Note:** Version bump only for package @vtmn/css-breadcrumb
+
+
+
+
+
+## [0.3.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-breadcrumb@0.3.4...@vtmn/css-breadcrumb@0.3.5) (2022-01-28)
+
+**Note:** Version bump only for package @vtmn/css-breadcrumb
+
+
+
+
+
 ## [0.3.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-breadcrumb@0.3.3...@vtmn/css-breadcrumb@0.3.4) (2022-01-24)
 
 **Note:** Version bump only for package @vtmn/css-breadcrumb

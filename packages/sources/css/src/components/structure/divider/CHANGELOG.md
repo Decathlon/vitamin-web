@@ -3,6 +3,78 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.18](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-divider@0.1.17...@vtmn/css-divider@0.1.18) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/css-divider
+
+
+
+
+
+## [0.1.17](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-divider@0.1.16...@vtmn/css-divider@0.1.17) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/css-divider
+
+
+
+
+
+## [0.1.16](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-divider@0.1.15...@vtmn/css-divider@0.1.16) (2022-02-25)
+
+**Note:** Version bump only for package @vtmn/css-divider
+
+
+
+
+
+## [0.1.15](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-divider@0.1.14...@vtmn/css-divider@0.1.15) (2022-02-23)
+
+**Note:** Version bump only for package @vtmn/css-divider
+
+
+
+
+
+## [0.1.14](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-divider@0.1.13...@vtmn/css-divider@0.1.14) (2022-02-15)
+
+**Note:** Version bump only for package @vtmn/css-divider
+
+
+
+
+
+## [0.1.13](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-divider@0.1.12...@vtmn/css-divider@0.1.13) (2022-02-08)
+
+**Note:** Version bump only for package @vtmn/css-divider
+
+
+
+
+
+## [0.1.12](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-divider@0.1.11...@vtmn/css-divider@0.1.12) (2022-02-03)
+
+**Note:** Version bump only for package @vtmn/css-divider
+
+
+
+
+
+## [0.1.11](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-divider@0.1.10...@vtmn/css-divider@0.1.11) (2022-02-02)
+
+**Note:** Version bump only for package @vtmn/css-divider
+
+
+
+
+
+## [0.1.10](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-divider@0.1.9...@vtmn/css-divider@0.1.10) (2022-01-28)
+
+**Note:** Version bump only for package @vtmn/css-divider
+
+
+
+
+
 ## [0.1.9](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-divider@0.1.8...@vtmn/css-divider@0.1.9) (2022-01-20)
 
 

@@ -1,4 +1,20 @@
-export { default as VtmnButton } from './VtmnButton.svelte';
-export { default as VtmnLink } from './VtmnLink.svelte';
-export { default as VtmnPopover } from './VtmnPopover.svelte';
-export { default as VtmnTextInput } from './VtmnTextInput.svelte';
+// Actions
+export { default as VtmnButton } from './actions/VtmnButton/VtmnButton.svelte';
+export { default as VtmnLink } from './actions/VtmnLink/VtmnLink.svelte';
+
+// Forms
+export { default as VtmnTextInput } from './forms/VtmnTextInput/VtmnTextInput.svelte';
+
+// Indicators
+export { default as VtmnBadge } from './indicators/VtmnBadge/VtmnBadge.svelte';
+export { default as VtmnPrice } from './indicators/VtmnPrice/VtmnPrice.svelte';
+
+// Navigation
+
+// Overlays
+export { default as VtmnPopover } from './overlays/VtmnPopover/VtmnPopover.svelte';
+
+// Selection controls
+export { default as VtmnCheckbox } from './selection-controls/VtmnCheckbox/VtmnCheckbox.svelte';
+
+// Structure
