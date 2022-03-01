@@ -48,7 +48,8 @@
   box-sizing: border-box;
 }
 
-.vtmn-tooltip:focus-visible {
+.vtmn-tooltip:focus-visible,
+.vtmn-tooltip:focus-visible > * {
   outline: none;
   box-shadow: var(--vtmn-shadow_focus-visible);
 }
