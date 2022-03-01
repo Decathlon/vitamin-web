@@ -35,6 +35,7 @@
     "vue": "^3.2.26"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.0",
     "@rollup/plugin-alias": "^3.1.9",
     "@rollup/plugin-commonjs": "^21.0.0",
     "@rollup/plugin-image": "^2.0.5",

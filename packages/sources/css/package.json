@@ -71,7 +71,8 @@
     "@vtmn/css-utilities": "^0.3.3",
     "autoprefixer": "^10.3.6",
     "chokidar-cli": "^3.0.0",
-    "postcss": "^8.4.6"
+    "postcss": "^8.4.6",
+    "tailwindcss": "^2.2.16"
   },
   "publishConfig": {
     "access": "public"
