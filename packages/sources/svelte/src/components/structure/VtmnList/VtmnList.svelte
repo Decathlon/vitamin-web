@@ -1,5 +1,5 @@
 <script>
-  /** @restProps { list } */
+  /** @restProps */
 </script>
 
 <ul class="vtmn-list" role="listbox" {...$$restProps}>
@@ -7,5 +7,5 @@
 </ul>
 
 <style lang="css">
-  @import '@vtmn/vtmn-list';
+  @import '@vtmn/css-list';
 </style>

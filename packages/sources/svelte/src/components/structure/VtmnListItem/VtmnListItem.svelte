@@ -1,5 +1,5 @@
 <script>
-  /** @restProps { list } */
+  /** @restProps */
 
   const SLOTS = $$props.$$slots;
 
@@ -12,12 +12,12 @@
   export let size = 'medium';
 
   /**
-   * Hide or show list items divider.
+   * Has divider.
    *
-   * @type {boolean} [hideDivider]
-   * @defaultValue false
+   * @type {boolean} [divider]
+   * @defaultValue true
    */
-  export let hideDivider = false;
+  export let divider = true;
 
   /**
    * Index of item in list.
@@ -37,10 +37,10 @@
   /**
    * Delete slot div from de DOM if slot doesn't exist.
    *
-   * @param {'start-visual' | 'end-action'} slotName - Start or end slot name.
-   * @returns {boolean} slotExist
+   * @param {'start-visual' | 'text' | 'subtext' | 'end-action'} slotName
+   * @returns {boolean} slotExists
    */
-  const checkSlotExist = (slotName) => {
+  const checkSlotExists = (slotName) => {
     return SLOTS && SLOTS[slotName] && SLOTS[slotName].length;
   };
 </script>
@@ -48,31 +48,29 @@
 <li
   on:click
   class={`vtmn-list_item-size--${size}`}
-  class:vtmn-list_item--without-divider={hideDivider}
+  class:vtmn-list_item--without-divider={!divider}
   role="option"
   tabindex={index}
   aria-disabled={disabled}
   {...$$restProps}
 >
-  {#if checkSlotExist('start-visual')}
+  {#if checkSlotExists('start-visual')}
     <div class="vtmn-list_start-visual">
       <slot name="start-visual" />
     </div>
   {/if}
 
-  {#if checkSlotExist('text') || checkSlotExist('text-secondary')}
+  {#if checkSlotExists('text')}
     <div class="vtmn-list_text">
-      {#if checkSlotExist('text')}
-        <slot name="text" />
-      {/if}
+      <slot name="text" />
 
-      {#if checkSlotExist('text-secondary')}
-        <slot name="text-secondary" />
+      {#if checkSlotExists('subtext')}
+        <slot name="subtext" />
       {/if}
     </div>
   {/if}
 
-  {#if checkSlotExist('end-action')}
+  {#if checkSlotExists('end-action')}
     <div class="vtmn-list_end-action">
       <slot name="end-action" />
     </div>

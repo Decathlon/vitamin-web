@@ -11,8 +11,8 @@
       description: 'Sizing variant of list item.',
       defaultValue: 'medium',
     },
-    hideDivider: {
-      description: 'Hide divider.',
+    divider: {
+      description: 'Without divider.',
       defaultValue: false,
     },
     index: {
@@ -40,7 +40,7 @@
         on:click={() => console.log(`List item ${args.index} clicked !`)}
       >
         <span slot="text">Lorem ipsum</span>
-        <span slot="text-secondary">Lorem ipsum dolor sit amet</span>
+        <span slot="subtext">Lorem ipsum dolor sit amet</span>
       </VtmnListItem>
     </VtmnList>
   </div>
@@ -65,7 +65,7 @@
           />
 
           <span slot="text">Lorem ipsum</span>
-          <span slot="text-secondary">Lorem ipsum dolor sit amet</span>
+          <span slot="subtext">Lorem ipsum dolor sit amet</span>
 
           <VtmnButton
             slot="end-action"
@@ -79,7 +79,7 @@
   </div>
 </Story>
 
-<Story name="Slots with image" let:args>
+<Story name="With image and slots" let:args>
   <div style="width: 700px; display: flex; justify-content: center">
     <VtmnList>
       <VtmnListItem
@@ -94,7 +94,7 @@
         />
 
         <span slot="text">Lorem ipsum</span>
-        <span slot="text-secondary">Lorem ipsum dolor sit amet</span>
+        <span slot="subtext">Lorem ipsum dolor sit amet</span>
 
         <VtmnButton
           slot="end-action"
@@ -110,20 +110,12 @@
 
 <Story name="Small size" args={{ size: 'small' }} />
 
-<Story name="Hide divider" let:args>
+<Story name="Without divider" let:args>
   <div style="width: 700px; display: flex; justify-content: center">
     <VtmnList>
-      <VtmnListItem {...{ ...args, hideDivider: true }}>
+      <VtmnListItem {...{ ...args, divider: false }}>
         <span slot="text">Lorem ipsum</span>
-        <span slot="text-secondary">Lorem ipsum dolor sit amet</span>
-      </VtmnListItem>
-      <VtmnListItem {...{ ...args, hideDivider: true }}>
-        <span slot="text">Lorem ipsum</span>
-        <span slot="text-secondary">Lorem ipsum dolor sit amet</span>
-      </VtmnListItem>
-      <VtmnListItem {...{ ...args, hideDivider: true }}>
-        <span slot="text">Lorem ipsum</span>
-        <span slot="text-secondary">Lorem ipsum dolor sit amet</span>
+        <span slot="subtext">Lorem ipsum dolor sit amet</span>
       </VtmnListItem>
     </VtmnList>
   </div>
@@ -131,7 +123,7 @@
 
 <Story name="Disabled" args={{ disabled: true }} />
 
-<Story name="Without secondary text" let:args>
+<Story name="Without subtext" let:args>
   <div style="width: 700px; display: flex; justify-content: center">
     <VtmnList>
       <VtmnListItem {...args}>

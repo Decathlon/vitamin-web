@@ -2,16 +2,8 @@
   import { Meta, Story } from '@storybook/addon-svelte-csf';
   import { VtmnButton, VtmnList, VtmnListItem } from '@vtmn/svelte';
 
-  const basicList = () =>
-    new Array(3).fill(0).map((_) => ({
-      primaryLabel: 'Lorem ipsum',
-      secondaryLabel: 'Lorem ipsum dolor sit amet',
-    }));
-
-  const buttonList = () =>
+  const listItems = () =>
     new Array(3).fill(0).map((_, index) => ({
-      primaryLabel: 'Lorem ipsum',
-      secondaryLabel: 'Lorem ipsum dolor sit amet',
       buttonText: `button  ${index + 1}`,
     }));
 </script>
@@ -21,10 +13,10 @@
 <Story name="Overview">
   <div style="width: 700px; display: flex; justify-content: center">
     <VtmnList>
-      {#each basicList() as { primaryLabel, secondaryLabel }, index}
-        <VtmnListItem {primaryLabel} {secondaryLabel} {index}>
+      {#each listItems() as { }, index}
+        <VtmnListItem {index}>
           <span slot="text">Lorem ipsum</span>
-          <span slot="text-secondary">Lorem ipsum dolor sit amet</span>
+          <span slot="subtext">Lorem ipsum dolor sit amet</span>
         </VtmnListItem>
       {/each}
     </VtmnList>
@@ -34,8 +26,8 @@
 <Story name="With slots">
   <div style="width: 700px; display: flex; justify-content: center">
     <VtmnList>
-      {#each buttonList() as { primaryLabel, secondaryLabel, buttonText }, index}
-        <VtmnListItem {primaryLabel} {secondaryLabel} {index}>
+      {#each listItems() as { buttonText }, index}
+        <VtmnListItem {index}>
           <VtmnButton
             iconAlone="heart-line"
             variant="ghost"
@@ -45,7 +37,7 @@
           />
 
           <span slot="text">Lorem ipsum</span>
-          <span slot="text-secondary">Lorem ipsum dolor sit amet</span>
+          <span slot="subtext">Lorem ipsum dolor sit amet</span>
 
           <VtmnButton
             slot="end-action"
@@ -62,23 +54,23 @@
 <Story name="Small size" let:args>
   <div style="width: 700px; display: flex; justify-content: center">
     <VtmnList>
-      {#each basicList() as { primaryLabel, secondaryLabel }, index}
-        <VtmnListItem {primaryLabel} {secondaryLabel} {index} size="small">
+      {#each listItems() as { }, index}
+        <VtmnListItem {index} size="small">
           <span slot="text">Lorem ipsum</span>
-          <span slot="text-secondary">Lorem ipsum dolor sit amet</span>
+          <span slot="subtext">Lorem ipsum dolor sit amet</span>
         </VtmnListItem>
       {/each}
     </VtmnList>
   </div>
 </Story>
 
-<Story name="Hide divider" let:args>
+<Story name="Without dividers " let:args>
   <div style="width: 700px; display: flex; justify-content: center">
     <VtmnList>
-      {#each basicList() as { primaryLabel, secondaryLabel }, index}
-        <VtmnListItem {primaryLabel} {secondaryLabel} {index} hideDivider>
+      {#each listItems() as { }, index}
+        <VtmnListItem {index} divider={false}>
           <span slot="text">Lorem ipsum</span>
-          <span slot="text-secondary">Lorem ipsum dolor sit amet</span>
+          <span slot="subtext">Lorem ipsum dolor sit amet</span>
         </VtmnListItem>
       {/each}
     </VtmnList>
@@ -88,10 +80,10 @@
 <Story name="Disabled" let:args>
   <div style="width: 700px; display: flex; justify-content: center">
     <VtmnList>
-      {#each basicList() as { primaryLabel, secondaryLabel }, index}
-        <VtmnListItem {primaryLabel} {secondaryLabel} {index} disabled>
+      {#each listItems() as { }, index}
+        <VtmnListItem {index} disabled>
           <span slot="text">Lorem ipsum</span>
-          <span slot="text-secondary">Lorem ipsum dolor sit amet</span>
+          <span slot="subtext">Lorem ipsum dolor sit amet</span>
         </VtmnListItem>
       {/each}
     </VtmnList>
