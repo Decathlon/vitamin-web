@@ -16,7 +16,7 @@
     slot: {
       control: 'text',
       description: 'Content of the slot',
-      defaultValue: '250,00 €',
+      defaultValue: '250,00€',
     },
   }}
   {parameters}
