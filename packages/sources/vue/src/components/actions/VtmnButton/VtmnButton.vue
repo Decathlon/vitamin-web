@@ -51,7 +51,7 @@ export default /*#__PURE__*/ defineComponent({
     return {
       styleObject: {
         color: 'inherit',
-        fontSize: 'inherit'
+        fontSize: 'inherit',
       },
       classes: computed(() => ({
         'vtmn-btn': true,
@@ -68,9 +68,17 @@ export default /*#__PURE__*/ defineComponent({
 
 <template>
   <button :class="classes" v-bind="$attrs" :disabled="disabled">
-    <VtmnIcon v-if="!iconAlone && iconLeft" :value="iconLeft" :style="styleObject" />
+    <VtmnIcon
+      v-if="!iconAlone && iconLeft"
+      :value="iconLeft"
+      :style="styleObject"
+    />
     <VtmnIcon v-if="iconAlone" :value="iconAlone" :style="styleObject" />
-      <slot v-if="!iconAlone" />
-    <VtmnIcon v-if="!iconAlone && iconRight" :value="iconRight" :style="styleObject" />
+    <slot v-if="!iconAlone" />
+    <VtmnIcon
+      v-if="!iconAlone && iconRight"
+      :value="iconRight"
+      :style="styleObject"
+    />
   </button>
 </template>
