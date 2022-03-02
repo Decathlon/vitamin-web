@@ -1,7 +1,3 @@
-/**
- * @tokens Transitions
- * @presenter Animation
- */
 :root {
   --vtmn-transition_focus-visible: box-shadow 200ms ease-out;
 }
