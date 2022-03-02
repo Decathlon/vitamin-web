@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-utilities",
-  "version": "0.2.19",
+  "version": "0.3.3",
   "description": "Decathlon Design System - Vitamin specific CSS styles for utilities",
   "homepage": "https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/css/src/utilities",
   "repository": {
@@ -17,7 +17,7 @@
     "build": "node build.js"
   },
   "devDependencies": {
-    "@vtmn/css-design-tokens": "^0.16.4",
+    "@vtmn/css-design-tokens": "^0.18.2",
     "@vtmn/css-postcss-config": "*"
   },
   "publishConfig": {

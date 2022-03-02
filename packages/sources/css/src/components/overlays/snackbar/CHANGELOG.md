@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.9](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-snackbar@0.5.8...@vtmn/css-snackbar@0.5.9) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/css-snackbar
+
+
+
+
+
+## [0.5.8](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-snackbar@0.5.7...@vtmn/css-snackbar@0.5.8) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/css-snackbar
+
+
+
+
+
+## [0.5.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-snackbar@0.5.6...@vtmn/css-snackbar@0.5.7) (2022-02-25)
+
+**Note:** Version bump only for package @vtmn/css-snackbar
+
+
+
+
+
+## [0.5.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-snackbar@0.5.5...@vtmn/css-snackbar@0.5.6) (2022-02-23)
+
+**Note:** Version bump only for package @vtmn/css-snackbar
+
+
+
+
+
+## [0.5.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-snackbar@0.5.4...@vtmn/css-snackbar@0.5.5) (2022-02-15)
+
+**Note:** Version bump only for package @vtmn/css-snackbar
+
+
+
+
+
 ## [0.5.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-snackbar@0.5.3...@vtmn/css-snackbar@0.5.4) (2022-02-08)
 
 **Note:** Version bump only for package @vtmn/css-snackbar

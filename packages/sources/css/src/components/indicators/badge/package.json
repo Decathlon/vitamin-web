@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-badge",
-  "version": "0.10.4",
+  "version": "0.10.9",
   "description": "Decathlon Design System - Vitamin specific CSS styles for badge component",
   "keywords": [
     "design-system",
@@ -26,7 +26,7 @@
     "build": "node build.js"
   },
   "devDependencies": {
-    "@vtmn/css-design-tokens": "^0.16.4",
+    "@vtmn/css-design-tokens": "^0.18.2",
     "@vtmn/css-postcss-config": "*"
   },
   "publishConfig": {

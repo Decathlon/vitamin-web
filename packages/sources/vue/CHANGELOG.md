@@ -3,6 +3,185 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.16.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.15.4...@vtmn/vue@0.16.0) (2022-03-02)
+
+
+### Features
+
+* **@vtmn/vue:** display icon with `VtmnIcon`  and remove useless type in `VtmnButton` ([#999](https://github.com/Decathlon/vitamin-web/issues/999)) ([b9ab259](https://github.com/Decathlon/vitamin-web/commit/b9ab259c1a6914d61aeeb1a0e394cd6312d15e62))
+
+
+
+
+
+## [0.15.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.15.3...@vtmn/vue@0.15.4) (2022-03-02)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+## [0.15.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.15.2...@vtmn/vue@0.15.3) (2022-03-02)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+## [0.15.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.15.1...@vtmn/vue@0.15.2) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+## [0.15.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.15.0...@vtmn/vue@0.15.1) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+# [0.15.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.14.4...@vtmn/vue@0.15.0) (2022-03-01)
+
+
+### Features
+
+* **@vtmn/vue:** add `VtmnLoader` component ([#1003](https://github.com/Decathlon/vitamin-web/issues/1003)) ([2a05e77](https://github.com/Decathlon/vitamin-web/commit/2a05e776090472bf0b33c933e78cfe97bbae2c4b))
+
+
+
+
+
+## [0.14.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.14.3...@vtmn/vue@0.14.4) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+## [0.14.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.14.2...@vtmn/vue@0.14.3) (2022-03-01)
+
+
+### Bug Fixes
+
+* **@vtmn/vue:** sonarcloud duplications ([c973e05](https://github.com/Decathlon/vitamin-web/commit/c973e0506397c2b8684012f785d87c1c50242ba2))
+
+
+
+
+
+## [0.14.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.14.1...@vtmn/vue@0.14.2) (2022-03-01)
+
+
+### Bug Fixes
+
+* **@vtmn/vue:** sonarcloud duplications for forms components ([ea9a17e](https://github.com/Decathlon/vitamin-web/commit/ea9a17edd0cefd90b5faf067f6af94b06c3ff318))
+
+
+
+
+
+## [0.14.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.14.0...@vtmn/vue@0.14.1) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+# [0.14.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.13.6...@vtmn/vue@0.14.0) (2022-03-01)
+
+
+### Bug Fixes
+
+* **@vtmn/vue:** build ([0534995](https://github.com/Decathlon/vitamin-web/commit/05349959aaa88d0e292f842cdc80483444197919))
+* **@vtmn/vue:** dependencies ([38cc602](https://github.com/Decathlon/vitamin-web/commit/38cc602d6b9de6890b982719f3a00a86a5381542))
+
+
+### Features
+
+* **@vtmn/vue:** add `VtmnTextInput` reactivity and `VtmnSelect` component ([#998](https://github.com/Decathlon/vitamin-web/issues/998)) ([7506d84](https://github.com/Decathlon/vitamin-web/commit/7506d848a4ea905c4b4f20b392d02f8aa56df44c))
+
+
+
+
+
+## [0.13.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.13.5...@vtmn/vue@0.13.6) (2022-02-28)
+
+
+### Bug Fixes
+
+* **build:** fix build on Windows ([#992](https://github.com/Decathlon/vitamin-web/issues/992)) ([e1eac98](https://github.com/Decathlon/vitamin-web/commit/e1eac984141860462ed04a44331847c3dd13c7cb))
+
+
+
+
+
+## [0.13.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.13.4...@vtmn/vue@0.13.5) (2022-02-28)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+## [0.13.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.13.3...@vtmn/vue@0.13.4) (2022-02-25)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+## [0.13.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.13.2...@vtmn/vue@0.13.3) (2022-02-23)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+## [0.13.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.13.1...@vtmn/vue@0.13.2) (2022-02-23)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+## [0.13.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.13.0...@vtmn/vue@0.13.1) (2022-02-23)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+# [0.13.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.12.1...@vtmn/vue@0.13.0) (2022-02-15)
+
+
+### Features
+
+* **@vtmn/vue:** make identifier props required for selection controls components ([#974](https://github.com/Decathlon/vitamin-web/issues/974)) ([a1a1503](https://github.com/Decathlon/vitamin-web/commit/a1a1503e4648cdfa8a4b74655c20bab8b45f45b5))
+
+
+
+
+
+## [0.12.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.12.0...@vtmn/vue@0.12.1) (2022-02-15)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
 # [0.12.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.11.2...@vtmn/vue@0.12.0) (2022-02-11)
 
 

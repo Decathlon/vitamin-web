@@ -1,6 +1,6 @@
-import svelte from 'rollup-plugin-svelte';
 import resolve from '@rollup/plugin-node-resolve';
 import css from 'rollup-plugin-css-only';
+import svelte from 'rollup-plugin-svelte';
 import sveltePreprocess from 'svelte-preprocess';
 const preprocessOptions = require('./svelte.config').preprocessOptions;
 
@@ -18,12 +18,28 @@ const components = [
     name: 'VtmnTextInput',
   },
   {
-    folder: 'overlays',
-    name: 'VtmnPopover',
+    folder: 'indicators',
+    name: 'VtmnBadge',
   },
   {
     folder: 'indicators',
     name: 'VtmnPrice',
+  },
+  {
+    folder: 'overlays',
+    name: 'VtmnPopover',
+  },
+  {
+    folder: 'selection-controls',
+    name: 'VtmnCheckbox',
+  },
+  {
+    folder: 'structure',
+    name: 'VtmnList',
+  },
+  {
+    folder: 'structure',
+    name: 'VtmnListItem',
   },
 ];
 

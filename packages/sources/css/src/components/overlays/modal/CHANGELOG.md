@@ -3,6 +3,60 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-modal@0.5.1...@vtmn/css-modal@0.5.2) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/css-modal
+
+
+
+
+
+## [0.5.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-modal@0.5.0...@vtmn/css-modal@0.5.1) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/css-modal
+
+
+
+
+
+# [0.5.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-modal@0.4.7...@vtmn/css-modal@0.5.0) (2022-02-25)
+
+
+### Features
+
+* **@vtmn/css:** refactor border color + add new shadow colors ([#980](https://github.com/Decathlon/vitamin-web/issues/980)) ([67e13ff](https://github.com/Decathlon/vitamin-web/commit/67e13ff48c922ddea167feea824e9dfdc8b18fec))
+
+
+
+
+
+## [0.4.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-modal@0.4.6...@vtmn/css-modal@0.4.7) (2022-02-24)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** modal overview displays correctly on mobile, fix radius mobile ([#991](https://github.com/Decathlon/vitamin-web/issues/991)) ([7c9cdbd](https://github.com/Decathlon/vitamin-web/commit/7c9cdbd396df895ccf3032c6dd30bf62c5a89ae0))
+
+
+
+
+
+## [0.4.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-modal@0.4.5...@vtmn/css-modal@0.4.6) (2022-02-23)
+
+**Note:** Version bump only for package @vtmn/css-modal
+
+
+
+
+
+## [0.4.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-modal@0.4.4...@vtmn/css-modal@0.4.5) (2022-02-15)
+
+**Note:** Version bump only for package @vtmn/css-modal
+
+
+
+
+
 ## [0.4.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-modal@0.4.3...@vtmn/css-modal@0.4.4) (2022-02-08)
 
 **Note:** Version bump only for package @vtmn/css-modal

@@ -1,23 +1,22 @@
 <div class="block">
   <div>
-    <input
-      class="vtmn-checkbox vtmn-checkbox--indeterminate"
-      type="checkbox"
-      id="choice5"
-      checked="checked"
-    />
+    <input class="vtmn-checkbox" type="checkbox" id="choice5" />
     <label for="choice5">Gymnastics</label>
   </div>
 </div>
 <div class="block">
   <div>
     <input
-      class="vtmn-checkbox vtmn-checkbox--indeterminate"
+      class="vtmn-checkbox"
       type="checkbox"
       id="choice6"
-      checked="checked"
       disabled="disabled"
     />
     <label for="choice6">Aikido</label>
   </div>
 </div>
+
+<script>
+  document.getElementById('choice5').indeterminate = true;
+  document.getElementById('choice6').indeterminate = true;
+</script>

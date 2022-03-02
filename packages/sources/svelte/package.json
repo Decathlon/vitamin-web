@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/svelte",
-  "version": "0.9.0",
+  "version": "0.12.0",
   "description": "Decathlon Design System - Vitamin Svelte components library",
   "keywords": [
     "design-system",
@@ -30,22 +30,24 @@
     "start": "chokidar \"src/**\" -i \"**/dist/**\" -c \"yarn build\""
   },
   "dependencies": {
-    "@vtmn/css-button": "^0.11.4",
-    "@vtmn/css-design-tokens": "^0.16.4",
-    "@vtmn/css-link": "^0.6.7",
-    "@vtmn/css-popover": "^0.5.4",
-    "@vtmn/css-text-input": "^0.13.5"
+    "@vtmn/css-badge": "^0.10.9",
+    "@vtmn/css-button": "^0.11.9",
+    "@vtmn/css-design-tokens": "^0.18.2",
+    "@vtmn/css-link": "^0.6.12",
+    "@vtmn/css-list": "^0.2.10",
+    "@vtmn/css-popover": "^0.5.9",
+    "@vtmn/css-text-input": "^0.13.11"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.1.2",
     "chokidar-cli": "^3.0.0",
-    "eslint": "8.8.0",
-    "eslint-plugin-svelte3": "3.4.0",
+    "eslint": "8.10.0",
+    "eslint-plugin-svelte3": "3.4.1",
     "rollup": "^2.67.0",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-svelte": "^7.1.0",
     "svelte": "3.46.4",
-    "svelte-preprocess": "4.10.2"
+    "svelte-preprocess": "4.10.4"
   },
   "peerDependencies": {
     "svelte": "^3.34.0"
@@ -59,13 +61,5 @@
       "url": "http://www.apache.org/licenses/LICENSE-2.0"
     }
   ],
-  "svelte": "src/index.js",
-  "exports": {
-    ".": "./src/components",
-    "./actions/VtmnButton/VtmnButton.svelte": "./dist/VtmnButton.js",
-    "./actions/VtmnLink/VtmnLink.svelte": "./dist/VtmnLink.js",
-    "./forms/VtmnTextInput/VtmnTextInput.svelte": "./dist/VtmnTextInput.js",
-    "./indicators/VtmnPrice/VtmnPrice.svelte": "./dist/VtmnPrice.js",
-    "./overlays/VtmnPopover/VtmnPopover.svelte": "./dist/VtmnPopover.js"
-  }
+  "svelte": "src/index.js"
 }

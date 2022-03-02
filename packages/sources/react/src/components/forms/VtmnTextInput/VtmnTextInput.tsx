@@ -106,6 +106,10 @@ export const VtmnTextInput = ({
           id={identifier}
           placeholder={placeholder}
           disabled={disabled}
+          aria-invalid={(error && !disabled) || undefined}
+          aria-describedby={
+            (helperText && `${identifier}-helper-text`) || undefined
+          }
           {...props}
         />
       ) : (
@@ -121,6 +125,10 @@ export const VtmnTextInput = ({
             type="text"
             placeholder={placeholder}
             disabled={disabled}
+            aria-invalid={(error && !disabled) || undefined}
+            aria-describedby={
+              (helperText && `${identifier}-helper-text`) || undefined
+            }
             {...props}
           />
           {icon && <VtmnIcon value={icon} size={20} onClick={onIconClick} />}
@@ -128,6 +136,7 @@ export const VtmnTextInput = ({
       )}
       {helperText && (
         <p
+          id={`${identifier}-helper-text`}
           className={clsx('vtmn-text-input_helper-text', className, {
             'vtmn-text-input_helper-text--error': error,
           })}

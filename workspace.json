@@ -176,6 +176,10 @@
       "root": "packages/sources/icons",
       "type": "library"
     },
+    "@vtmn/assets": {
+      "root": "packages/sources/assets",
+      "type": "library"
+    },
     "@vtmn/react": {
       "root": "packages/sources/react",
       "type": "library"
