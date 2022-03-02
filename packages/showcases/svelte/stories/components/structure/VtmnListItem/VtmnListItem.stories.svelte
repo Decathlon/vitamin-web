@@ -20,19 +20,9 @@
       type: { required: true },
       defaultValue: 0,
     },
-
     disabled: {
       description: 'Disable list item.',
       defaultValue: false,
-    },
-    primaryLabel: {
-      description: 'Primary text label.',
-      defaultValue: 'Lorem ipsum',
-      type: { required: true },
-    },
-    secondaryLabel: {
-      description: 'Primary text.',
-      defaultValue: 'Lorem ipsum dolor sit amet',
     },
   }}
   parameters={{
@@ -48,7 +38,10 @@
       <VtmnListItem
         {...args}
         on:click={() => console.log(`List item ${args.index} clicked !`)}
-      />
+      >
+        <span slot="text">Lorem ipsum</span>
+        <span slot="text-secondary">Lorem ipsum dolor sit amet</span>
+      </VtmnListItem>
     </VtmnList>
   </div>
 </Template>
@@ -70,6 +63,9 @@
             on:click={() =>
               console.log(`List item button ${args.index} clicked !`)}
           />
+
+          <span slot="text">Lorem ipsum</span>
+          <span slot="text-secondary">Lorem ipsum dolor sit amet</span>
 
           <VtmnButton
             slot="end-action"
@@ -97,6 +93,9 @@
           alt="placeholder"
         />
 
+        <span slot="text">Lorem ipsum</span>
+        <span slot="text-secondary">Lorem ipsum dolor sit amet</span>
+
         <VtmnButton
           slot="end-action"
           iconAlone="heart-line"
@@ -114,13 +113,36 @@
 <Story name="Hide divider" let:args>
   <div style="width: 700px; display: flex; justify-content: center">
     <VtmnList>
-      <VtmnListItem {...{ ...args, hideDivider: true }} />
-      <VtmnListItem {...{ ...args, hideDivider: true }} />
-      <VtmnListItem {...{ ...args, hideDivider: true }} />
+      <VtmnListItem {...{ ...args, hideDivider: true }}>
+        <span slot="text">Lorem ipsum</span>
+        <span slot="text-secondary">Lorem ipsum dolor sit amet</span>
+      </VtmnListItem>
+      <VtmnListItem {...{ ...args, hideDivider: true }}>
+        <span slot="text">Lorem ipsum</span>
+        <span slot="text-secondary">Lorem ipsum dolor sit amet</span>
+      </VtmnListItem>
+      <VtmnListItem {...{ ...args, hideDivider: true }}>
+        <span slot="text">Lorem ipsum</span>
+        <span slot="text-secondary">Lorem ipsum dolor sit amet</span>
+      </VtmnListItem>
     </VtmnList>
   </div>
 </Story>
 
 <Story name="Disabled" args={{ disabled: true }} />
 
-<Story name="Without secondary text" args={{ secondaryLabel: null }} />
+<Story name="Without secondary text" let:args>
+  <div style="width: 700px; display: flex; justify-content: center">
+    <VtmnList>
+      <VtmnListItem {...args}>
+        <span slot="text">Lorem ipsum</span>
+      </VtmnListItem>
+      <VtmnListItem {...args}>
+        <span slot="text">Lorem ipsum</span>
+      </VtmnListItem>
+      <VtmnListItem {...args}>
+        <span slot="text">Lorem ipsum</span>
+      </VtmnListItem>
+    </VtmnList>
+  </div>
+</Story>

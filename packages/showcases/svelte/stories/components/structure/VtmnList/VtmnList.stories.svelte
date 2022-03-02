@@ -22,7 +22,10 @@
   <div style="width: 700px; display: flex; justify-content: center">
     <VtmnList>
       {#each basicList() as { primaryLabel, secondaryLabel }, index}
-        <VtmnListItem {primaryLabel} {secondaryLabel} {index} />
+        <VtmnListItem {primaryLabel} {secondaryLabel} {index}>
+          <span slot="text">Lorem ipsum</span>
+          <span slot="text-secondary">Lorem ipsum dolor sit amet</span>
+        </VtmnListItem>
       {/each}
     </VtmnList>
   </div>
@@ -41,6 +44,9 @@
               console.log(`List item button ${buttonText} clicked !`)}
           />
 
+          <span slot="text">Lorem ipsum</span>
+          <span slot="text-secondary">Lorem ipsum dolor sit amet</span>
+
           <VtmnButton
             slot="end-action"
             on:click={() =>
@@ -57,7 +63,10 @@
   <div style="width: 700px; display: flex; justify-content: center">
     <VtmnList>
       {#each basicList() as { primaryLabel, secondaryLabel }, index}
-        <VtmnListItem {primaryLabel} {secondaryLabel} {index} size="small" />
+        <VtmnListItem {primaryLabel} {secondaryLabel} {index} size="small">
+          <span slot="text">Lorem ipsum</span>
+          <span slot="text-secondary">Lorem ipsum dolor sit amet</span>
+        </VtmnListItem>
       {/each}
     </VtmnList>
   </div>
@@ -67,7 +76,10 @@
   <div style="width: 700px; display: flex; justify-content: center">
     <VtmnList>
       {#each basicList() as { primaryLabel, secondaryLabel }, index}
-        <VtmnListItem {primaryLabel} {secondaryLabel} {index} hideDivider />
+        <VtmnListItem {primaryLabel} {secondaryLabel} {index} hideDivider>
+          <span slot="text">Lorem ipsum</span>
+          <span slot="text-secondary">Lorem ipsum dolor sit amet</span>
+        </VtmnListItem>
       {/each}
     </VtmnList>
   </div>
@@ -77,7 +89,10 @@
   <div style="width: 700px; display: flex; justify-content: center">
     <VtmnList>
       {#each basicList() as { primaryLabel, secondaryLabel }, index}
-        <VtmnListItem {primaryLabel} {secondaryLabel} {index} disabled />
+        <VtmnListItem {primaryLabel} {secondaryLabel} {index} disabled>
+          <span slot="text">Lorem ipsum</span>
+          <span slot="text-secondary">Lorem ipsum dolor sit amet</span>
+        </VtmnListItem>
       {/each}
     </VtmnList>
   </div>

@@ -35,20 +35,6 @@
   export let disabled = false;
 
   /**
-   * Primary label of list item.
-   *
-   * @type {string} primaryLabel
-   */
-  export let primaryLabel;
-
-  /**
-   * Secondary text label.
-   *
-   * @type {string} [secondaryLabel]
-   */
-  export let secondaryLabel = null;
-
-  /**
    * Delete slot div from de DOM if slot doesn't exist.
    *
    * @param {'start-visual' | 'end-action'} slotName - Start or end slot name.
@@ -74,13 +60,17 @@
     </div>
   {/if}
 
-  <div class="vtmn-list_text">
-    <span>{primaryLabel}</span>
+  {#if checkSlotExist('text') || checkSlotExist('text-secondary')}
+    <div class="vtmn-list_text">
+      {#if checkSlotExist('text')}
+        <slot name="text" />
+      {/if}
 
-    {#if secondaryLabel}
-      <span>{secondaryLabel}</span>
-    {/if}
-  </div>
+      {#if checkSlotExist('text-secondary')}
+        <slot name="text-secondary" />
+      {/if}
+    </div>
+  {/if}
 
   {#if checkSlotExist('end-action')}
     <div class="vtmn-list_end-action">
