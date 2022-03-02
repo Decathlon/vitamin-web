@@ -404,7 +404,7 @@ This package provides you with a library of SVG assets that you can include in a
   <tr>
     <th>@vtmn/assets</th>
     <td><a href="https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/assets#readme">README</a></td>
-    <td><a href="https://decathlon.zeroheight.com/styleguide/s/35776/p/895daa-assets"><img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" /></a></td>
+    <td><a href="https://www.decathlon.design/726f8c765/p/895daa-assets"><img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" /></a></td>
     <td><a href="https://www.npmjs.com/package/@vtmn/assets"><img src="https://img.shields.io/npm/v/@vtmn/assets?style=flat&logo=npm" alt="npm version" /></a></td>
     <td><a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_assets"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_assets&metric=alert_status" alt="Quality Gate Status" /></a></td>
   </tr>
