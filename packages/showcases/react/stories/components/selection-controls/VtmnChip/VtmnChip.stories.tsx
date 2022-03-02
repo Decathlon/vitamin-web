@@ -5,10 +5,10 @@ import { Meta, Story } from '@storybook/react';
 import {
   argTypes,
   parameters,
-} from '@vtmn/showcase-core/csf/components/actions/chip.csf';
+} from '@vtmn/showcase-core/csf/components/selection-controls/chip.csf';
 
 export default {
-  title: 'Components / Actions / VtmnChip',
+  title: 'Components / Selection controls / VtmnChip',
   component: VtmnChip,
   argTypes,
   parameters,

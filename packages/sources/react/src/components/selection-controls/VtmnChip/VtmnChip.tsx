@@ -4,7 +4,7 @@ import '@vtmn/css-chip/dist/index-with-vars.css';
 import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
 import { VtmnChipSize, VtmnChipVariant } from './types';
 import { VtmnIcon } from '../../../guidelines/iconography/VtmnIcon/VtmnIcon';
-import { VtmnButton } from '../VtmnButton/VtmnButton';
+import { VtmnButton } from '../../actions/VtmnButton/VtmnButton';
 import { VtmnBadge } from '../../indicators/VtmnBadge/VtmnBadge';
 export interface VtmnChipProps extends React.ComponentPropsWithoutRef<'div'> {
   /**

@@ -11,8 +11,6 @@ export type { VtmnIconProps } from './guidelines/iconography/VtmnIcon';
 // Actions
 export { VtmnButton } from './components/actions/VtmnButton';
 export type { VtmnButtonProps } from './components/actions/VtmnButton';
-export { VtmnChip } from './components/actions/VtmnChip';
-export type { VtmnChipProps } from './components/actions/VtmnChip';
 export { VtmnLink } from './components/actions/VtmnLink';
 export type { VtmnLinkProps } from './components/actions/VtmnLink';
 
@@ -39,6 +37,8 @@ export type { VtmnTooltipProps } from './components/overlays/VtmnTooltip';
 // Selection controls
 export { VtmnCheckbox } from './components/selection-controls/VtmnCheckbox';
 export type { VtmnCheckboxProps } from './components/selection-controls/VtmnCheckbox';
+export { VtmnChip } from './components/selection-controls/VtmnChip';
+export type { VtmnChipProps } from './components/selection-controls/VtmnChip';
 export { VtmnRadioButton } from './components/selection-controls/VtmnRadioButton';
 export type { VtmnRadioButtonProps } from './components/selection-controls/VtmnRadioButton';
 export { VtmnToggle } from './components/selection-controls/VtmnToggle';
