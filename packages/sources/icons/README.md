@@ -84,7 +84,7 @@ You can also use the SVG within your CSS (**be sure to escape any characters**, 
 The `viewBox` attribute is required if you wish to resize icons with `background-size`. Note that the `xmlns` attribute is required.
 
 ```css
-.vtmx::before {
+.your-class {
   display: inline-block;
   content: '';
   vertical-align: -0.125em;

@@ -64,7 +64,7 @@ You can also use the SVG within your CSS (**be sure to escape any characters**, 
 The `viewBox` attribute is required if you wish to resize assets with `background-size`. Note that the `xmlns` attribute is required.
 
 ```css
-.vtmx::before {
+.your-class {
   display: inline-block;
   content: '';
   vertical-align: -0.125em;
@@ -100,7 +100,5 @@ Please file the issue [here](https://github.com/Decathlon/vitamin-web/issues/new
 See [the contributing docs](https://github.com/Decathlon/vitamin-web/blob/main/CONTRIBUTING.md).
 
 ## License
-
-Vitamix assets is the official Decathlon icon library based on the open-source icon library called [Remix Icon](https://remixicon.com/). This original library is under the license Apache 2.0 and has been modified by Decathlon. [Learn more](https://www.decathlon.design/726f8c765/p/76e6e0-vitamix-license).
 
 Apache-2.0 © [Decathlon](https://github.com/Decathlon)
