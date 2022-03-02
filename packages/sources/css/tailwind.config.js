@@ -1,3 +1,3 @@
 module.exports = {
-  presets: [require('./presets/tailwind')],
+  presets: [require('@vtmn/css-tailwind-preset')],
 };

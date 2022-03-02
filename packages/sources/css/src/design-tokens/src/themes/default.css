@@ -1,8 +1,3 @@
-/**
- * @tokens Default theme
- * = Core theme (Light mode)
- * @presenter Color
- */
 :root {
   --vtmn-semantic-color_background-primary--h: var(--vtmn-base-color_white--h);
   --vtmn-semantic-color_background-primary--s: var(--vtmn-base-color_white--s);
@@ -136,9 +131,9 @@
   --vtmn-semantic-color_border-information--s: var(--vtmn-base-color_blue400--s);
   --vtmn-semantic-color_border-information--l: var(--vtmn-base-color_blue400--l);
   --vtmn-semantic-color_border-information: hsl(var(--vtmn-semantic-color_border-information--h), var(--vtmn-semantic-color_border-information--s), var(--vtmn-semantic-color_border-information--l));
-  --vtmn-semantic-color_border-primary-reversed--h: var(--vtmn-base-color_white--h);
-  --vtmn-semantic-color_border-primary-reversed--s: var(--vtmn-base-color_white--s);
-  --vtmn-semantic-color_border-primary-reversed--l: var(--vtmn-base-color_white--l);
+  --vtmn-semantic-color_border-primary-reversed--h: var(--vtmn-base-color_black--h);
+  --vtmn-semantic-color_border-primary-reversed--s: var(--vtmn-base-color_black--s);
+  --vtmn-semantic-color_border-primary-reversed--l: var(--vtmn-base-color_black--l);
   --vtmn-semantic-color_border-primary-reversed: hsl(var(--vtmn-semantic-color_border-primary-reversed--h), var(--vtmn-semantic-color_border-primary-reversed--s), var(--vtmn-semantic-color_border-primary-reversed--l));
   --vtmn-semantic-color_hover-primary--h: var(--vtmn-base-color_blue50--h);
   --vtmn-semantic-color_hover-primary--s: var(--vtmn-base-color_blue50--s);

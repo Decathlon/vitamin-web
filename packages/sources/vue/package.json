@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/vue",
-  "version": "0.14.0",
+  "version": "0.15.4",
   "description": "Decathlon Design System - Vitamin Vue components library",
   "keywords": [
     "design-system",
@@ -30,11 +30,12 @@
     "start": "concurrently \"vite build --watch\" \"tsc --emitDeclarationOnly\""
   },
   "dependencies": {
-    "@vtmn/css-design-tokens": "^0.18.0",
+    "@vtmn/css-design-tokens": "^0.18.2",
     "core-js": "^3.21.0",
     "vue": "^3.2.26"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.0",
     "@rollup/plugin-alias": "^3.1.9",
     "@rollup/plugin-commonjs": "^21.0.0",
     "@rollup/plugin-image": "^2.0.5",
@@ -43,14 +44,14 @@
     "@rollup/plugin-typescript": "^8.3.0",
     "@types/bluebird": "^3.5.36",
     "@vitejs/plugin-vue": "^2.0.1",
-    "@vtmn/css-button": "^0.11.7",
-    "@vtmn/css-checkbox": "^0.6.11",
-    "@vtmn/css-link": "^0.6.10",
-    "@vtmn/css-radio-button": "^0.6.10",
-    "@vtmn/css-select": "^0.6.9",
-    "@vtmn/css-text-input": "^0.13.9",
-    "@vtmn/css-toggle": "^0.6.7",
-    "@vtmn/icons": "^0.10.2",
+    "@vtmn/css-button": "^0.11.9",
+    "@vtmn/css-checkbox": "^0.6.13",
+    "@vtmn/css-link": "^0.6.12",
+    "@vtmn/css-radio-button": "^0.6.12",
+    "@vtmn/css-select": "^0.6.11",
+    "@vtmn/css-text-input": "^0.13.11",
+    "@vtmn/css-toggle": "^0.6.9",
+    "@vtmn/icons": "^0.10.5",
     "@vue/cli-plugin-typescript": "^5.0.1",
     "@vue/cli-service": "^5.0.1",
     "@vue/compiler-sfc": "^3.2.27",

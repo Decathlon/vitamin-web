@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/icons",
-  "version": "0.10.2",
+  "version": "0.10.5",
   "description": "Decathlon Design System - Vitamin icons library",
   "keywords": [
     "design-system",
@@ -24,8 +24,8 @@
   "scripts": {
     "prebuild": "shx rm -rf dist && svgo -f src/vitamix",
     "build": "yarn build:svg && yarn build:font && yarn build:sprite",
-    "build:font": "shx mkdir ./dist/vitamix/font && fantasticon",
-    "build:sprite": "shx mkdir ./dist/vitamix/sprite && spritesh --viewbox \"0 0 16 16\" -i src/vitamix -o dist/vitamix/sprite/vitamix.svg && node src/scripts/add-sprite-declaration.js",
+    "build:font": "shx rm -rf ./dist/vitamix/font && shx mkdir ./dist/vitamix/font && fantasticon",
+    "build:sprite": "shx rm -rf ./dist/vitamix/sprite && shx mkdir ./dist/vitamix/sprite && spritesh --viewbox \"0 0 16 16\" -i src/vitamix -o dist/vitamix/sprite/vitamix.svg && node src/scripts/add-sprite-declaration.js",
     "build:svg": "node src/scripts/build-svg.js",
     "prestart": "yarn build",
     "start": "chokidar \"src/**/\" -i \"**/dist/**\" -c \"yarn build\""
