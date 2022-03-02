@@ -1,27 +1,24 @@
 <script>
   import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
-  import { VtmnBadge } from '@vtmn/svelte';
-  import {
-    parameters,
-    argTypes,
-  } from '@vtmn/showcase-core/csf/components/indicators/badge.csf';
+  import { VtmnTag } from '@vtmn/svelte';
+  import { parameters } from '@vtmn/showcase-core/csf/components/forms/text-input.csf';
 </script>
 
 <Meta
-  title="Components / Indicators / VtmnBadge"
-  component={VtmnBadge}
-  {...argTypes}
-  {...parameters}
+  title="Components / Indicators / VtmnTag"
+  component={VtmnTag}
+  argTypes={{
+    slot: {
+      control: 'text',
+      description: 'Content of the slot',
+      defaultValue: 'Tag',
+    },
+  }}
+  {parameters}
 />
 
 <Template let:args>
-  <VtmnBadge {...args} />
+  <VtmnTag {...args}>{args.slot}</VtmnTag>
 </Template>
 
-<Story
-  name="Overview"
-  args={{
-    variant: 'default',
-    value: 6,
-  }}
-/>
+<Story name="Overview" args={{ variant: 'accent' }} />

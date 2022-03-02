@@ -36,6 +36,7 @@
     "@vtmn/css-link": "^0.6.12",
     "@vtmn/css-list": "^0.2.10",
     "@vtmn/css-popover": "^0.5.9",
+    "@vtmn/css-tag": "^0.3.9",
     "@vtmn/css-text-input": "^0.13.11"
   },
   "devDependencies": {
