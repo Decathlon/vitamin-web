@@ -36,7 +36,7 @@
           <VtmnButton
             iconAlone="heart-line"
             variant="ghost"
-            slot="start-action"
+            slot="start-visual"
             on:click={() =>
               console.log(`List item button ${buttonText} clicked !`)}
           />

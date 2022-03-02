@@ -66,7 +66,7 @@
           <VtmnButton
             iconAlone="heart-line"
             variant="ghost"
-            slot="start-action"
+            slot="start-visual"
             on:click={() =>
               console.log(`List item button ${args.index} clicked !`)}
           />
@@ -91,7 +91,7 @@
         on:click={() => console.log(`List item ${args.index} clicked !`)}
       >
         <img
-          slot="start-action"
+          slot="start-visual"
           class="vtmn-list_media--circle"
           src="https://storage.googleapis.com/dkt-design-cdn/images/landscape-placeholder.jpg"
           alt="placeholder"

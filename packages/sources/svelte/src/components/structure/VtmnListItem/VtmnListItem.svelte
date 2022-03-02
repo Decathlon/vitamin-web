@@ -51,7 +51,7 @@
   /**
    * Delete slot div from de DOM if slot doesn't exist.
    *
-   * @param {'start-action' | 'end-action'} slotName - Start or end slot name.
+   * @param {'start-visual' | 'end-action'} slotName - Start or end slot name.
    * @returns {boolean} slotExist
    */
   const checkSlotExist = (slotName) => {
@@ -68,9 +68,9 @@
   aria-disabled={disabled}
   {...$$restProps}
 >
-  {#if checkSlotExist('start-action')}
+  {#if checkSlotExist('start-visual')}
     <div class="vtmn-list_start-visual">
-      <slot name="start-action" />
+      <slot name="start-visual" />
     </div>
   {/if}
 
