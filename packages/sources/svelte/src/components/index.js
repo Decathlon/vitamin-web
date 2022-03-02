@@ -18,3 +18,5 @@ export { default as VtmnPopover } from './overlays/VtmnPopover/VtmnPopover.svelt
 export { default as VtmnCheckbox } from './selection-controls/VtmnCheckbox/VtmnCheckbox.svelte';
 
 // Structure
+export { default as VtmnList } from './structure/VtmnList/VtmnList.svelte';
+export { default as VtmnListItem } from './structure/VtmnListItem/VtmnListItem.svelte';
