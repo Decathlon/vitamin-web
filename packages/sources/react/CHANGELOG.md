@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.19.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.29...@vtmn/react@0.19.0) (2022-03-02)
+
+
+### Features
+
+* **@vtmn/react:** add `VtmnChip` component ([#830](https://github.com/Decathlon/vitamin-web/issues/830)) ([e9012de](https://github.com/Decathlon/vitamin-web/commit/e9012de41e441c422cfc2ba2f9b1a73c37440f59))
+
+
+
+
+
 ## [0.18.29](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.28...@vtmn/react@0.18.29) (2022-03-02)
 
 **Note:** Version bump only for package @vtmn/react
