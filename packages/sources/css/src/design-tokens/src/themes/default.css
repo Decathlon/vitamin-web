@@ -131,9 +131,9 @@
   --vtmn-semantic-color_border-warning--s: var(--vtmn-base-color_orange400--s);
   --vtmn-semantic-color_border-warning--l: var(--vtmn-base-color_orange400--l);
   --vtmn-semantic-color_border-warning: hsl(var(--vtmn-semantic-color_border-warning--h), var(--vtmn-semantic-color_border-warning--s), var(--vtmn-semantic-color_border-warning--l));
-  --vtmn-semantic-color_border-positive--h: var(--vtmn-base-color_conifer400--h);
-  --vtmn-semantic-color_border-positive--s: var(--vtmn-base-color_conifer400--s);
-  --vtmn-semantic-color_border-positive--l: var(--vtmn-base-color_conifer400--l);
+  --vtmn-semantic-color_border-positive--h: var(--vtmn-base-color_green400--h);
+  --vtmn-semantic-color_border-positive--s: var(--vtmn-base-color_green400--s);
+  --vtmn-semantic-color_border-positive--l: var(--vtmn-base-color_green400--l);
   --vtmn-semantic-color_border-positive: hsl(var(--vtmn-semantic-color_border-positive--h), var(--vtmn-semantic-color_border-positive--s), var(--vtmn-semantic-color_border-positive--l));
   --vtmn-semantic-color_border-information--h: var(--vtmn-base-color_blue400--h);
   --vtmn-semantic-color_border-information--s: var(--vtmn-base-color_blue400--s);
@@ -193,7 +193,7 @@
   --vtmn-semantic-color_hover-tertiary-transparent--h: var(--vtmn-semantic-color_hover-primary--h);
   --vtmn-semantic-color_hover-tertiary-transparent--s: var(--vtmn-semantic-color_hover-primary--s);
   --vtmn-semantic-color_hover-tertiary-transparent--l: calc(var(--vtmn-semantic-color_hover-primary--l) * 0.98);
-  --vtmn-semantic-color_hover-tertiary-transparent: hsla(var(--vtmn-semantic-color_hover-tertiary-transparent--h), var(--vtmn-semantic-color_hover-tertiary-transparent--s), var(--vtmn-semantic-color_hover-tertiary-transparent--l), 0.05);
+  --vtmn-semantic-color_hover-tertiary-transparent: hsla(var(--vtmn-semantic-color_hover-tertiary-transparent--h), var(--vtmn-semantic-color_hover-tertiary-transparent--s), var(--vtmn-semantic-color_hover-tertiary-transparent--l), 0.8);
   --vtmn-semantic-color_hover-tertiary--h: var(--vtmn-semantic-color_background-brand-secondary--h);
   --vtmn-semantic-color_hover-tertiary--s: var(--vtmn-semantic-color_background-brand-secondary--s);
   --vtmn-semantic-color_hover-tertiary--l: calc(var(--vtmn-semantic-color_background-brand-secondary--l) * 0.95);
