@@ -1,4 +1,4 @@
-export const VARIANT = {
+export const VtmnBadgeVariant = {
   DEFAULT: 'default',
   BRAND: 'brand',
   REVERSED: 'reversed',
