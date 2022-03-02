@@ -20,6 +20,7 @@
   "license": "Apache-2.0",
   "workspaces": {
     "packages": [
+      "packages/sources/assets",
       "packages/sources/css",
       "packages/sources/css/config/*",
       "packages/sources/css/presets/*",

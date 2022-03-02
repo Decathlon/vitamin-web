@@ -31,12 +31,16 @@ vitamin-web/
   ...
   packages/
     showcases/
+      core/
       css/
+      icons/
       react/
       svelte/
       vue/
     sources/
+      assets/
       css/
+      icons/
       react/
       svelte/
       vue/
@@ -82,7 +86,7 @@ For your information, here are the showcases' URLs:
 | CSS      | [localhost:6006](http://localhost:6006) |
 | Icons    | [localhost:6007](http://localhost:6007) |
 | React    | [localhost:6008](http://localhost:6008) |
-| Svelte   | [localhost:6019](http://localhost:6009) |
+| Svelte   | [localhost:6009](http://localhost:6009) |
 | Vue      | [localhost:6010](http://localhost:6010) |
 
 ## Code of conduct
