@@ -3,7 +3,6 @@
 > Decathlon Design System - Vitamin assets library
 
 <a href="https://decathlon.zeroheight.com/styleguide/s/35776/p/895daa-assets"><img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" /></a>
-<a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-assets"><img src="https://img.shields.io/badge/storybook-assets-295573?style=flat&logo=storybook" alt="storybook" /></a>
 <a href="https://www.npmjs.com/package/@vtmn/assets"><img src="https://img.shields.io/npm/v/@vtmn/assets?style=flat&logo=npm" alt="npm version" /></a>
 <a href="https://sonarcloud.io/dashboard?id=decathlon_vitamin-web_assets"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_assets&metric=alert_status" alt="Quality Gate Status" /></a>
 
@@ -27,7 +26,6 @@ Once you have installed this package, depending on your setup, you can include `
 
 - Reference via `<img>` element
 - Use the SVG sprite
-- Use the icon font
 - Include via CSS
 - Copy-paste SVGs as embedded HTML
 
@@ -59,24 +57,6 @@ Use the SVG sprite to insert any icon through the `<use>` element. Use the iconâ
 </svg>
 ```
 
-### Icon font
-
-Icon fonts with classes for every icon are also included. Include the icon web fonts in your page via CSS (`./node_modules/@vtmn/assets/dist/vitamix/font/vitamix.css`), then reference the class names as needed (e.g. `vtmx-home-fill` for the `home-fill` icon) in your HTML.
-
-Use `font-size` and `color` to change the icon appearance.
-
-If your icon is followed by a text:
-
-```html
-<span aria-hidden="true" class="vtmx-home-fill"> </span> Homepage
-```
-
-If your icon is alone:
-
-```html
-<span aria-label="Homepage" class="vtmx-home-fill"> </span>
-```
-
 ### CSS
 
 You can also use the SVG within your CSS (**be sure to escape any characters**, such as `#` to `%23` when specifying hex color values). When no dimensions are specified via `width` and `height` on the `<svg>`, the icon will fill the available space.
@@ -106,10 +86,6 @@ Embed your assets within the HTML of your page (as opposed to an external image 
   />
 </svg>
 ```
-
-## Development
-
-To know all the use cases and their associated code, [check out the showcase here](https://decathlon.github.io/vitamin-web/@vtmn/showcase-assets).
 
 ## Changelog
 

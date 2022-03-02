@@ -16,10 +16,6 @@
       "root": "packages/showcases/icons",
       "type": "application"
     },
-    "@vtmn/showcase-assets": {
-      "root": "packages/showcases/assets",
-      "type": "application"
-    },
     "@vtmn/showcase-react": {
       "root": "packages/showcases/react",
       "type": "application"

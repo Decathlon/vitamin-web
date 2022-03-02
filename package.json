@@ -49,7 +49,6 @@
     "start": "nx run-many --target=start --all --parallel",
     "start:css": "nx run-many --target=start --projects=@vtmn/showcase-css,@vtmn/css --parallel",
     "start:icons": "nx run-many --target=start --projects=@vtmn/showcase-icons,@vtmn/icons --parallel",
-    "start:assets": "nx run-many --target=start --projects=@vtmn/showcase-assets,@vtmn/assets --parallel",
     "start:react": "nx run-many --target=start --projects=@vtmn/showcase-react,@vtmn/react --parallel",
     "start:svelte": "nx run-many --target=start --projects=@vtmn/showcase-svelte,@vtmn/svelte --parallel",
     "start:vue": "nx run-many --target=start --projects=@vtmn/showcase-vue,@vtmn/vue --parallel",

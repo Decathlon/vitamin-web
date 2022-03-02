@@ -26,9 +26,7 @@
     "build": "yarn build:svg && yarn build:json && yarn build:sprite",
     "build:json": "shx rm -rf ./dist/assets/json && shx mkdir ./dist/assets/json && fantasticon",
     "build:sprite": "shx rm -rf ./dist/assets/sprite && shx mkdir ./dist/assets/sprite && spritesh --viewbox \"0 0 16 16\" -i src/assets -o dist/assets/sprite/assets.svg && node src/scripts/add-sprite-declaration.js",
-    "build:svg": "node src/scripts/build-svg.js",
-    "prestart": "yarn build",
-    "start": "chokidar \"src/**/\" -i \"**/dist/**\" -c \"yarn build\""
+    "build:svg": "node src/scripts/build-svg.js"
   },
   "devDependencies": {
     "chokidar-cli": "^3.0.0",

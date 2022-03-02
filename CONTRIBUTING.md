@@ -31,7 +31,6 @@ vitamin-web/
   ...
   packages/
     showcases/
-      assets/
       core/
       css/
       icons/
@@ -75,7 +74,6 @@ yarn start
 # or if you need don't need to launch every packages, you can launch separately:
 yarn start:css
 yarn start:icons
-yarn start:assets
 yarn start:react
 yarn start:svelte
 yarn start:vue
@@ -87,10 +85,9 @@ For your information, here are the showcases' URLs:
 | -------- | --------------------------------------- |
 | CSS      | [localhost:6006](http://localhost:6006) |
 | Icons    | [localhost:6007](http://localhost:6007) |
-| Assets   | [localhost:6008](http://localhost:6008) |
-| React    | [localhost:6009](http://localhost:6009) |
-| Svelte   | [localhost:6010](http://localhost:6010) |
-| Vue      | [localhost:6011](http://localhost:6011) |
+| React    | [localhost:6008](http://localhost:6008) |
+| Svelte   | [localhost:6009](http://localhost:6009) |
+| Vue      | [localhost:6010](http://localhost:6010) |
 
 ## Code of conduct
 
