@@ -22,7 +22,7 @@ export default /*#__PURE__*/ defineComponent({
     return {
       classes: computed(() => ({
         'vtmn-badge': true,
-        [`vtmn-badge_variant--${props.variant}`]: true,
+        [`vtmn-badge_variant--${props.variant}`]: props.variant,
       })),
     };
   },
