@@ -8,7 +8,7 @@
   export let value;
 
   /**
-   * The value of the badge
+   * The variant of the badge
    * @type {'default' | 'brand' | 'reversed' | 'accent' | 'alert'}
    */
   export let variant = VtmnBadgeVariant.DEFAULT;
