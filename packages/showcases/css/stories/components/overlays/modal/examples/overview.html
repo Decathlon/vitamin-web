@@ -4,23 +4,31 @@
       position: static;
       transform: translate(0, 0);
     }
-  }
 </style>
 
 <div class="block">
-  <div class="vtmn-modal" id="modal-1" aria-hidden="true">
+  <div
+    class="vtmn-modal"
+    id="modal-1"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="vtmn-modal-title"
+    aria-describedby="vtmn-modal-description"
+  >
     <div class="vtmn-modal_content">
       <div class="vtmn-modal_content_title">
-        <p class="vtmn-modal_content_title--text">What is a modal?</p>
+        <span id="vtmn-modal-title" class="vtmn-modal_content_title--text"
+          >What is a modal?</span
+        >
         <button
-          class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--small vtmn-btn--icon-alone"
+          class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn--icon-alone"
           aria-label="close"
         >
           <span class="vtmx-close-line"></span>
         </button>
       </div>
       <div class="vtmn-modal_content_body">
-        <p class="vtmn-modal_content_body--text">
+        <p id="vtmn-modal-description" class="vtmn-modal_content_body--text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam,
           assumenda? Asperiores rem nulla odit saepe dolores molestias
           exercitationem accusamus perferendis est aut repudiandae optio vel

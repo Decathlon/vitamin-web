@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', (event) => {
   const templateModal = `
-    <div class="vtmn-modal" id="vtmn-modal" aria-hidden="true">
+    <div class="vtmn-modal" id="vtmn-modal" role="dialog" aria-modal="true" aria-labelledby="vtmn-modal-title" aria-describedby="vtmn-modal-description">
       <div id="vtmn-modal-background" class="vtmn-modal_background-overlay"></div>
       <div class="vtmn-modal_content">
         <div class="vtmn-modal_content_title">
@@ -10,7 +10,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
             class="
               vtmn-btn
               vtmn-btn_variant--ghost
-              vtmn-btn_size--small
               vtmn-btn--icon-alone" 
               aria-label="close">
             <span class="vtmx-close-line"></span>
@@ -65,28 +64,28 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document
       .getElementById(`btn-close-modal-1`)
       .addEventListener('click', function () {
-        document.getElementById(`vtmn-modal`).remove();
+        document.getElementById(`vtmn-modal`).parentElement.remove();
         document.getElementById('btn-modal').disabled = false;
       });
 
     document
       .getElementById(`btn-close-modal-2`)
       .addEventListener('click', function () {
-        document.getElementById(`vtmn-modal`).remove();
+        document.getElementById(`vtmn-modal`).parentElement.remove();
         document.getElementById('btn-modal').disabled = false;
       });
 
     document
       .getElementById(`btn-close-modal-3`)
       .addEventListener('click', function () {
-        document.getElementById(`vtmn-modal`).remove();
+        document.getElementById(`vtmn-modal`).parentElement.remove();
         document.getElementById('btn-modal').disabled = false;
       });
 
     document
       .getElementById(`vtmn-modal-background`)
       .addEventListener('click', function () {
-        document.getElementById(`vtmn-modal`).remove();
+        document.getElementById(`vtmn-modal`).parentElement.remove();
         document.getElementById('btn-modal').disabled = false;
       });
   }

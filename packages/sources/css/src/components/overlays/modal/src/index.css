@@ -58,10 +58,14 @@
   line-height: rem(32px);
 }
 
-.vtmn-modal_content_title > button > span[class^='vtmx'] {
-  white-space: nowrap;
-  font-size: rem(24px);
-  color: var(--vtmn-semantic-color_content-primary);
+.vtmn-modal_content_title .vtmn-btn {
+  margin-inline-start: rem(12px);
+  margin-top: -6px;
+  margin-bottom: -6px;
+}
+
+.vtmn-modal_content_title .vtmn-btn span[class^='vtmx-'] {
+  font-size: var(--vtmn-typo_text-2-font-size);
 }
 
 .vtmn-modal_content_title > button:focus-visible {

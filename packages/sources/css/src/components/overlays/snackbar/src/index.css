@@ -35,9 +35,15 @@
   animation: var(--vtmn-animation_overlay);
 }
 
-.vtmn-snackbar > .vtmn-btn {
-  margin-left: rem(16px);
-  min-width: fit-content;
+/* Close button */
+.vtmn-snackbar .vtmn-btn {
+  margin-inline-start: rem(12px);
+  margin-top: -6px;
+  margin-bottom: -6px;
+}
+
+.vtmn-snackbar .vtmn-btn span[class^='vtmx-'] {
+  font-size: var(--vtmn-typo_text-2-font-size);
 }
 
 @media screen and (max-width: 599px) {

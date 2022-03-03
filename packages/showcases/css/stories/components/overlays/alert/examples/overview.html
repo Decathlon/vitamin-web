@@ -1,26 +1,24 @@
 <div class="block">
   <div
     class="vtmn-alert vtmn-alert_variant--info"
-    role="dialog"
+    role="alert"
     tabindex="-1"
-    aria-modal="true"
     aria-labelledby="alert-title-1"
     aria-describedby="alert-text-1"
   >
     <div class="vtmn-alert_content" role="document">
-      <h3 id="alert-title-1" class="vtmn-alert_content-title">
+      <div id="alert-title-1" class="vtmn-alert_content-title">
         This is the title of the alert
         <button
           class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone"
           aria-label="Close alert"
         >
-          <span class="vtmx-add-line" role="presentation"></span>
+          <span class="vtmx-close-line" role="presentation"></span>
         </button>
-      </h3>
-      <span id="alert-text-1" class="vtmn-alert_content-description"
-        >Alert are used to draw the users attention to an important
-        information</span
-      >
+      </div>
+      <p id="alert-text-1" class="vtmn-alert_content-description">
+        Alert are used to draw the users attention to an important information
+      </p>
     </div>
   </div>
 </div>
@@ -28,16 +26,14 @@
 <div class="block">
   <div
     class="vtmn-alert vtmn-alert_variant--warning"
-    role="dialog"
+    role="alert"
     tabindex="-1"
-    aria-modal="true"
   >
     <div class="vtmn-alert_content" role="document">
-      <h3 class="vtmn-alert_content-title">This is the title of the alert</h3>
-      <span class="vtmn-alert_content-description"
-        >Alert are used to draw the users attention to an important
-        information</span
-      >
+      <div class="vtmn-alert_content-title">This is the title of the alert</div>
+      <p class="vtmn-alert_content-description">
+        Alert are used to draw the users attention to an important information
+      </p>
     </div>
   </div>
 </div>
@@ -45,28 +41,27 @@
 <div class="block">
   <div
     class="vtmn-alert vtmn-alert_variant--success"
-    role="dialog"
+    role="alert"
     tabindex="-1"
-    aria-modal="true"
   >
     <div class="vtmn-alert_content" role="document">
-      <h3 class="vtmn-alert_content-title">
+      <div class="vtmn-alert_content-title">
         This is the title of the alert
-        <span class="vtmx-close-line" role="button"></span>
-      </h3>
+        <button
+          class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone"
+          aria-label="Close alert"
+        >
+          <span class="vtmx-close-line" role="presentation"></span>
+        </button>
+      </div>
     </div>
   </div>
 </div>
 
 <div class="block">
-  <div
-    class="vtmn-alert vtmn-alert_variant--danger"
-    role="dialog"
-    tabindex="-1"
-    aria-modal="true"
-  >
+  <div class="vtmn-alert vtmn-alert_variant--danger" role="alert" tabindex="-1">
     <div class="vtmn-alert_content" role="document">
-      <h3 class="vtmn-alert_content-title">This is the title of the alert</h3>
+      <div class="vtmn-alert_content-title">This is the title of the alert</div>
     </div>
   </div>
 </div>
