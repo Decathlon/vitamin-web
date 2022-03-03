@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.20.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.19.0...@vtmn/react@0.20.0) (2022-03-03)
+
+
+### Features
+
+* **@vtmn/react:** add `VtmnPrice` component ([#1005](https://github.com/Decathlon/vitamin-web/issues/1005)) ([fe8642f](https://github.com/Decathlon/vitamin-web/commit/fe8642f7cb52ecbf701a111ac54e82892b3e03d3))
+
+
+
+
+
 # [0.19.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.29...@vtmn/react@0.19.0) (2022-03-02)
 
 
