@@ -34,6 +34,7 @@ export const VtmnTooltip = ({
     <div className="vtmn-flex">
       <span
         tabIndex={0}
+        role="tooltip"
         className={`vtmn-tooltip ${className ?? className}`}
         data-tooltip={tooltip}
         data-position={position}

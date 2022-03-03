@@ -48,7 +48,18 @@ export const VtmnAlert = ({
       <article className="vtmn-alert_content">
         <div className="vtmn-alert_content-title">
           {title}
-          <span className="vtmx-close-line" />
+          <button
+            className={clsx(
+              'vtmn-btn',
+              'vtmn-btn_variant--ghost-reversed',
+              'vtmn-btn_size--small',
+              'vtmn-btn--icon-alone',
+              className,
+            )}
+            aria-label="Close alert"
+          >
+            <span className="vtmx-close-line" role="presentation"></span>
+          </button>
         </div>
         {message && (
           <span className="vtmn-alert_content-description">{message}</span>
