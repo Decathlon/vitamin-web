@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.18.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@0.18.2...@vtmn/css-design-tokens@0.18.3) (2022-03-03)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** fix incorrect color values ([#1002](https://github.com/Decathlon/vitamin-web/issues/1002)) ([991d1ef](https://github.com/Decathlon/vitamin-web/commit/991d1efc8ee54f0f203634b98b9d60d00d7c54b6))
+
+
+
+
+
 ## [0.18.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@0.18.1...@vtmn/css-design-tokens@0.18.2) (2022-03-01)
 
 **Note:** Version bump only for package @vtmn/css-design-tokens

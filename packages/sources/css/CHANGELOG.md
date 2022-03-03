@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.59.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.59.6...@vtmn/css@0.59.7) (2022-03-03)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** fix incorrect color values ([#1002](https://github.com/Decathlon/vitamin-web/issues/1002)) ([991d1ef](https://github.com/Decathlon/vitamin-web/commit/991d1efc8ee54f0f203634b98b9d60d00d7c54b6))
+
+
+
+
+
 ## [0.59.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.59.5...@vtmn/css@0.59.6) (2022-03-01)
 
 **Note:** Version bump only for package @vtmn/css
