@@ -14,7 +14,7 @@ export default {
     children: {
       type: { name: 'string', required: false },
       description: 'The content to render inside the component.',
-      defaultValue: '250,00€',
+      defaultValue: '250,00 €',
       control: {
         type: 'text',
       },
