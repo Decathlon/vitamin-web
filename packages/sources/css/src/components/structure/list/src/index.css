@@ -20,7 +20,7 @@
 
 .vtmn-list li {
   height: fit-content;
-  min-height: rem(48px);
+  min-height: fit-content;
   display: flex;
   width: 100%;
   outline: 0;
@@ -54,8 +54,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: rem(12px) 0;
+  padding: var(--vtmn-spacing_3) 0;
+  margin-inline-start: rem(20px);
+}
+
+.vtmn-list_start-visual + .vtmn-list_text {
   margin-inline-start: var(--vtmn-spacing_3);
+  padding-inline-start: 0;
 }
 
 .vtmn-list_start-visual span[class^='vtmx-'] {
@@ -69,8 +74,7 @@
   justify-content: center;
   border-bottom: rem(1px) solid var(--vtmn-semantic-color_border-secondary);
   white-space: nowrap;
-  margin-inline-start: rem(16px);
-  padding: rem(12px) 0;
+  padding: var(--vtmn-spacing_3) rem(20px);
   line-height: var(--vtmn-typo_text-2-line-height);
 }
 
@@ -84,7 +88,7 @@
   align-items: center;
   justify-content: center;
   border-bottom: rem(1px) solid var(--vtmn-semantic-color_border-secondary);
-  padding: rem(12px) rem(16px);
+  padding: var(--vtmn-spacing_3) var(--vtmn-spacing_4);
 }
 
 .vtmn-list_item--without-divider > .vtmn-list_end-action,
@@ -131,11 +135,9 @@
 /* Small */
 .vtmn-list .vtmn-list_item-size--small {
   font-size: var(--vtmn-typo_text-3-font-size);
-  min-height: rem(32px);
 }
 
 .vtmn-list .vtmn-list_item-size--small .vtmn-list_text {
-  padding: rem(6px) 0;
   line-height: var(--vtmn-typo_text-3-line-height);
 }
 
@@ -157,11 +159,9 @@
 /* Medium */
 .vtmn-list .vtmn-list_item-size--medium {
   font-size: var(--vtmn-typo_text-2-font-size);
-  min-height: rem(48px);
 }
 
 .vtmn-list .vtmn-list_item-size--medium .vtmn-list_text {
-  padding: rem(12px) 0;
   line-height: var(--vtmn-typo_text-2-line-height);
 }
 
