@@ -35,7 +35,6 @@
 }
 
 .vtmn-alert_content-title {
-  /* margin: rem(4px) 0; */
   font-family: var(--vtmn-typo_font-family);
   font-weight: var(--vtmn-typo_font-weight--bold);
   font-size: rem(16px);
