@@ -131,9 +131,9 @@
   --vtmn-semantic-color_border-warning--s: var(--vtmn-base-color_orange400--s);
   --vtmn-semantic-color_border-warning--l: var(--vtmn-base-color_orange400--l);
   --vtmn-semantic-color_border-warning: hsl(var(--vtmn-semantic-color_border-warning--h), var(--vtmn-semantic-color_border-warning--s), var(--vtmn-semantic-color_border-warning--l));
-  --vtmn-semantic-color_border-positive--h: var(--vtmn-base-color_green400--h);
-  --vtmn-semantic-color_border-positive--s: var(--vtmn-base-color_green400--s);
-  --vtmn-semantic-color_border-positive--l: var(--vtmn-base-color_green400--l);
+  --vtmn-semantic-color_border-positive--h: var(--vtmn-base-color_conifer400--h);
+  --vtmn-semantic-color_border-positive--s: var(--vtmn-base-color_conifer400--s);
+  --vtmn-semantic-color_border-positive--l: var(--vtmn-base-color_conifer400--l);
   --vtmn-semantic-color_border-positive: hsl(var(--vtmn-semantic-color_border-positive--h), var(--vtmn-semantic-color_border-positive--s), var(--vtmn-semantic-color_border-positive--l));
   --vtmn-semantic-color_border-information--h: var(--vtmn-base-color_blue400--h);
   --vtmn-semantic-color_border-information--s: var(--vtmn-base-color_blue400--s);
