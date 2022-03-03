@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.18.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.17.0...@vtmn/vue@0.18.0) (2022-03-03)
+
+
+### Features
+
+* **@vtmn/vue:** add `VtmnBadge` component ([#1007](https://github.com/Decathlon/vitamin-web/issues/1007)) ([b535717](https://github.com/Decathlon/vitamin-web/commit/b535717c4584d5649d4fa600f538fd8ce7ac47ca))
+
+
+
+
+
 # [0.17.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.16.1...@vtmn/vue@0.17.0) (2022-03-03)
 
 

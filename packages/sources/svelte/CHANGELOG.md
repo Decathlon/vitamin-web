@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.12.1...@vtmn/svelte@0.13.0) (2022-03-03)
+
+
+### Features
+
+* **@vtmn/svelte:** add tag component ([#1008](https://github.com/Decathlon/vitamin-web/issues/1008)) ([a4fcb3e](https://github.com/Decathlon/vitamin-web/commit/a4fcb3ee7f9babc6be775565382b99895158a795))
+
+
+
+
+
 ## [0.12.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.12.0...@vtmn/svelte@0.12.1) (2022-03-02)
 
 **Note:** Version bump only for package @vtmn/svelte
