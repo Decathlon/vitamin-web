@@ -28,7 +28,7 @@ export default /*#__PURE__*/ defineComponent({
       },
       classes: computed(() => ({
         'vtmn-price': true,
-        [`vtmn-price_variant--${props.variant}`]: true,
+        [`vtmn-price_variant--${props.variant}`]: props.variant,
         [`vtmn-price_size--${props.size}`]: true,
       })),
     };
