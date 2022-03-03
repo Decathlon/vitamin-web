@@ -31,6 +31,6 @@ export default /*#__PURE__*/ defineComponent({
 
 <template>
   <span :class="classes" v-bind="$attrs">
-    {{ value > 99 ? '99+' : value }}
+    {{ value > 99 ? '99+' : value || '' }}
   </span>
 </template>

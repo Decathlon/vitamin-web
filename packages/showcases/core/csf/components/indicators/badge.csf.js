@@ -27,7 +27,7 @@ export const argTypes = {
   value: {
     type: { name: 'number', required: false },
     description: 'The value in the badge.',
-    defaultValue: 0,
+    defaultValue: 6,
     table: {
       type: {
         summary: 'number',
