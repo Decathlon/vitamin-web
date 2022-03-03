@@ -1,8 +1,5 @@
-/**
- * @tokens Core theme (Light mode)
- * @presenter Color
- */
 .vtmn-theme_core--light {
+  /* Background */
   --vtmn-semantic-color_background-primary--h: var(--vtmn-base-color_white--h);
   --vtmn-semantic-color_background-primary--s: var(--vtmn-base-color_white--s);
   --vtmn-semantic-color_background-primary--l: var(--vtmn-base-color_white--l);
@@ -39,6 +36,7 @@
   --vtmn-semantic-color_background-brand-primary-reversed--s: var(--vtmn-base-color_white--s);
   --vtmn-semantic-color_background-brand-primary-reversed--l: var(--vtmn-base-color_white--l);
   --vtmn-semantic-color_background-brand-primary-reversed: hsl(var(--vtmn-semantic-color_background-brand-primary-reversed--h), var(--vtmn-semantic-color_background-brand-primary-reversed--s), var(--vtmn-semantic-color_background-brand-primary-reversed--l));
+  /* Content */
   --vtmn-semantic-color_content-primary--h: var(--vtmn-base-color_black--h);
   --vtmn-semantic-color_content-primary--s: var(--vtmn-base-color_black--s);
   --vtmn-semantic-color_content-primary--l: var(--vtmn-base-color_black--l);
@@ -99,14 +97,19 @@
   --vtmn-semantic-color_content-visited-reversed--s: var(--vtmn-base-color_purple200--s);
   --vtmn-semantic-color_content-visited-reversed--l: var(--vtmn-base-color_purple200--l);
   --vtmn-semantic-color_content-visited-reversed: hsl(var(--vtmn-semantic-color_content-visited-reversed--h), var(--vtmn-semantic-color_content-visited-reversed--s), var(--vtmn-semantic-color_content-visited-reversed--l));
-  --vtmn-semantic-color_border-primary--h: var(--vtmn-base-color_black--h);
-  --vtmn-semantic-color_border-primary--s: var(--vtmn-base-color_black--s);
-  --vtmn-semantic-color_border-primary--l: var(--vtmn-base-color_black--l);
+  /* Border */
+  --vtmn-semantic-color_border-primary--h: var(--vtmn-base-color_white--h);
+  --vtmn-semantic-color_border-primary--s: var(--vtmn-base-color_white--s);
+  --vtmn-semantic-color_border-primary--l: var(--vtmn-base-color_white--l);
   --vtmn-semantic-color_border-primary: hsl(var(--vtmn-semantic-color_border-primary--h), var(--vtmn-semantic-color_border-primary--s), var(--vtmn-semantic-color_border-primary--l));
   --vtmn-semantic-color_border-secondary--h: var(--vtmn-base-color_grey200--h);
   --vtmn-semantic-color_border-secondary--s: var(--vtmn-base-color_grey200--s);
   --vtmn-semantic-color_border-secondary--l: var(--vtmn-base-color_grey200--l);
   --vtmn-semantic-color_border-secondary: hsl(var(--vtmn-semantic-color_border-secondary--h), var(--vtmn-semantic-color_border-secondary--s), var(--vtmn-semantic-color_border-secondary--l));
+  --vtmn-semantic-color_border-tertiary--h: var(--vtmn-base-color_grey100--h);
+  --vtmn-semantic-color_border-tertiary--s: var(--vtmn-base-color_grey100--s);
+  --vtmn-semantic-color_border-tertiary--l: var(--vtmn-base-color_grey100--l);
+  --vtmn-semantic-color_border-tertiary: hsl(var(--vtmn-semantic-color_border-tertiary--h), var(--vtmn-semantic-color_border-tertiary--s), var(--vtmn-semantic-color_border-tertiary--l));
   --vtmn-semantic-color_border-active--h: var(--vtmn-base-color_blue400--h);
   --vtmn-semantic-color_border-active--s: var(--vtmn-base-color_blue400--s);
   --vtmn-semantic-color_border-active--l: var(--vtmn-base-color_blue400--l);
@@ -131,48 +134,49 @@
   --vtmn-semantic-color_border-information--s: var(--vtmn-base-color_blue400--s);
   --vtmn-semantic-color_border-information--l: var(--vtmn-base-color_blue400--l);
   --vtmn-semantic-color_border-information: hsl(var(--vtmn-semantic-color_border-information--h), var(--vtmn-semantic-color_border-information--s), var(--vtmn-semantic-color_border-information--l));
-  --vtmn-semantic-color_border-primary-reversed--h: var(--vtmn-base-color_white--h);
-  --vtmn-semantic-color_border-primary-reversed--s: var(--vtmn-base-color_white--s);
-  --vtmn-semantic-color_border-primary-reversed--l: var(--vtmn-base-color_white--l);
+  --vtmn-semantic-color_border-primary-reversed--h: var(--vtmn-base-color_black--h);
+  --vtmn-semantic-color_border-primary-reversed--s: var(--vtmn-base-color_black--s);
+  --vtmn-semantic-color_border-primary-reversed--l: var(--vtmn-base-color_black--l);
   --vtmn-semantic-color_border-primary-reversed: hsl(var(--vtmn-semantic-color_border-primary-reversed--h), var(--vtmn-semantic-color_border-primary-reversed--s), var(--vtmn-semantic-color_border-primary-reversed--l));
-  --vtmn-semantic-color_hover-primary--h: var(--vtmn-base-color_blue50--h);
-  --vtmn-semantic-color_hover-primary--s: var(--vtmn-base-color_blue50--s);
-  --vtmn-semantic-color_hover-primary--l: var(--vtmn-base-color_blue50--l);
-  --vtmn-semantic-color_hover-primary: hsl(var(--vtmn-semantic-color_hover-primary--h), var(--vtmn-semantic-color_hover-primary--s), var(--vtmn-semantic-color_hover-primary--l));
+  /* Decorative */
   --vtmn-semantic-color_decorative-gravel--h: var(--vtmn-base-color_grey100--h);
   --vtmn-semantic-color_decorative-gravel--s: var(--vtmn-base-color_grey100--s);
   --vtmn-semantic-color_decorative-gravel--l: var(--vtmn-base-color_grey100--l);
   --vtmn-semantic-color_decorative-gravel: hsl(var(--vtmn-semantic-color_decorative-gravel--h), var(--vtmn-semantic-color_decorative-gravel--s), var(--vtmn-semantic-color_decorative-gravel--l));
-  --vtmn-semantic-color_decorative-gold--h: var(--vtmn-base-color_yellow100--h);
-  --vtmn-semantic-color_decorative-gold--s: var(--vtmn-base-color_yellow100--s);
-  --vtmn-semantic-color_decorative-gold--l: var(--vtmn-base-color_yellow100--l);
-  --vtmn-semantic-color_decorative-gold: hsl(var(--vtmn-semantic-color_decorative-gold--h), var(--vtmn-semantic-color_decorative-gold--s), var(--vtmn-semantic-color_decorative-gold--l));
-  --vtmn-semantic-color_decorative-cobalt--h: var(--vtmn-base-color_blue100--h);
-  --vtmn-semantic-color_decorative-cobalt--s: var(--vtmn-base-color_blue100--s);
-  --vtmn-semantic-color_decorative-cobalt--l: var(--vtmn-base-color_blue100--l);
-  --vtmn-semantic-color_decorative-cobalt: hsl(var(--vtmn-semantic-color_decorative-cobalt--h), var(--vtmn-semantic-color_decorative-cobalt--s), var(--vtmn-semantic-color_decorative-cobalt--l));
   --vtmn-semantic-color_decorative-brick--h: var(--vtmn-base-color_red100--h);
   --vtmn-semantic-color_decorative-brick--s: var(--vtmn-base-color_red100--s);
   --vtmn-semantic-color_decorative-brick--l: var(--vtmn-base-color_red100--l);
   --vtmn-semantic-color_decorative-brick: hsl(var(--vtmn-semantic-color_decorative-brick--h), var(--vtmn-semantic-color_decorative-brick--s), var(--vtmn-semantic-color_decorative-brick--l));
-  --vtmn-semantic-color_decorative-jade--h: var(--vtmn-base-color_conifer100--h);
-  --vtmn-semantic-color_decorative-jade--s: var(--vtmn-base-color_conifer100--s);
-  --vtmn-semantic-color_decorative-jade--l: var(--vtmn-base-color_conifer100--l);
-  --vtmn-semantic-color_decorative-jade: hsl(var(--vtmn-semantic-color_decorative-jade--h), var(--vtmn-semantic-color_decorative-jade--s), var(--vtmn-semantic-color_decorative-jade--l));
-  --vtmn-semantic-color_decorative-amethyst--h: var(--vtmn-base-color_purple100--h);
-  --vtmn-semantic-color_decorative-amethyst--s: var(--vtmn-base-color_purple100--s);
-  --vtmn-semantic-color_decorative-amethyst--l: var(--vtmn-base-color_purple100--l);
-  --vtmn-semantic-color_decorative-amethyst: hsl(var(--vtmn-semantic-color_decorative-amethyst--h), var(--vtmn-semantic-color_decorative-amethyst--s), var(--vtmn-semantic-color_decorative-amethyst--l));
   --vtmn-semantic-color_decorative-saffron--h: var(--vtmn-base-color_orange100--h);
   --vtmn-semantic-color_decorative-saffron--s: var(--vtmn-base-color_orange100--s);
   --vtmn-semantic-color_decorative-saffron--l: var(--vtmn-base-color_orange100--l);
   --vtmn-semantic-color_decorative-saffron: hsl(var(--vtmn-semantic-color_decorative-saffron--h), var(--vtmn-semantic-color_decorative-saffron--s), var(--vtmn-semantic-color_decorative-saffron--l));
+  --vtmn-semantic-color_decorative-gold--h: var(--vtmn-base-color_yellow100--h);
+  --vtmn-semantic-color_decorative-gold--s: var(--vtmn-base-color_yellow100--s);
+  --vtmn-semantic-color_decorative-gold--l: var(--vtmn-base-color_yellow100--l);
+  --vtmn-semantic-color_decorative-gold: hsl(var(--vtmn-semantic-color_decorative-gold--h), var(--vtmn-semantic-color_decorative-gold--s), var(--vtmn-semantic-color_decorative-gold--l));
+  --vtmn-semantic-color_decorative-jade--h: var(--vtmn-base-color_conifer100--h);
+  --vtmn-semantic-color_decorative-jade--s: var(--vtmn-base-color_conifer100--s);
+  --vtmn-semantic-color_decorative-jade--l: var(--vtmn-base-color_conifer100--l);
+  --vtmn-semantic-color_decorative-jade: hsl(var(--vtmn-semantic-color_decorative-jade--h), var(--vtmn-semantic-color_decorative-jade--s), var(--vtmn-semantic-color_decorative-jade--l));
   --vtmn-semantic-color_decorative-emerald--h: var(--vtmn-base-color_green100--h);
   --vtmn-semantic-color_decorative-emerald--s: var(--vtmn-base-color_green100--s);
   --vtmn-semantic-color_decorative-emerald--l: var(--vtmn-base-color_green100--l);
   --vtmn-semantic-color_decorative-emerald: hsl(var(--vtmn-semantic-color_decorative-emerald--h), var(--vtmn-semantic-color_decorative-emerald--s), var(--vtmn-semantic-color_decorative-emerald--l));
-
-  /* Auto-generated */
+  --vtmn-semantic-color_decorative-cobalt--h: var(--vtmn-base-color_blue100--h);
+  --vtmn-semantic-color_decorative-cobalt--s: var(--vtmn-base-color_blue100--s);
+  --vtmn-semantic-color_decorative-cobalt--l: var(--vtmn-base-color_blue100--l);
+  --vtmn-semantic-color_decorative-cobalt: hsl(var(--vtmn-semantic-color_decorative-cobalt--h), var(--vtmn-semantic-color_decorative-cobalt--s), var(--vtmn-semantic-color_decorative-cobalt--l));
+  --vtmn-semantic-color_decorative-amethyst--h: var(--vtmn-base-color_purple100--h);
+  --vtmn-semantic-color_decorative-amethyst--s: var(--vtmn-base-color_purple100--s);
+  --vtmn-semantic-color_decorative-amethyst--l: var(--vtmn-base-color_purple100--l);
+  --vtmn-semantic-color_decorative-amethyst: hsl(var(--vtmn-semantic-color_decorative-amethyst--h), var(--vtmn-semantic-color_decorative-amethyst--s), var(--vtmn-semantic-color_decorative-amethyst--l));
+  /* Hover */
+  --vtmn-semantic-color_hover-primary--h: var(--vtmn-base-color_blue50--h);
+  --vtmn-semantic-color_hover-primary--s: var(--vtmn-base-color_blue50--s);
+  --vtmn-semantic-color_hover-primary--l: var(--vtmn-base-color_blue50--l);
+  --vtmn-semantic-color_hover-primary: hsl(var(--vtmn-semantic-color_hover-primary--h), var(--vtmn-semantic-color_hover-primary--s), var(--vtmn-semantic-color_hover-primary--l));
+  /* Hover (Auto-generated) */
   --vtmn-semantic-color_hover-primary-transparent--h: var(--vtmn-semantic-color_background-brand-primary--h);
   --vtmn-semantic-color_hover-primary-transparent--s: var(--vtmn-semantic-color_background-brand-primary--s);
   --vtmn-semantic-color_hover-primary-transparent--l: var(--vtmn-semantic-color_background-brand-primary--l);
@@ -184,7 +188,7 @@
   --vtmn-semantic-color_hover-tertiary-transparent--h: var(--vtmn-semantic-color_hover-primary--h);
   --vtmn-semantic-color_hover-tertiary-transparent--s: var(--vtmn-semantic-color_hover-primary--s);
   --vtmn-semantic-color_hover-tertiary-transparent--l: calc(var(--vtmn-semantic-color_hover-primary--l) * 0.98);
-  --vtmn-semantic-color_hover-tertiary-transparent: hsla(var(--vtmn-semantic-color_hover-tertiary-transparent--h), var(--vtmn-semantic-color_hover-tertiary-transparent--s), var(--vtmn-semantic-color_hover-tertiary-transparent--l), 0.05);
+  --vtmn-semantic-color_hover-tertiary-transparent: hsla(var(--vtmn-semantic-color_hover-tertiary-transparent--h), var(--vtmn-semantic-color_hover-tertiary-transparent--s), var(--vtmn-semantic-color_hover-tertiary-transparent--l), 0.8);
   --vtmn-semantic-color_hover-tertiary--h: var(--vtmn-semantic-color_background-brand-secondary--h);
   --vtmn-semantic-color_hover-tertiary--s: var(--vtmn-semantic-color_background-brand-secondary--s);
   --vtmn-semantic-color_hover-tertiary--l: calc(var(--vtmn-semantic-color_background-brand-secondary--l) * 0.95);
@@ -209,6 +213,8 @@
   --vtmn-semantic-color_hover-tertiary-reversed-transparent--s: var(--vtmn-semantic-color_content-primary-reversed--s);
   --vtmn-semantic-color_hover-tertiary-reversed-transparent--l: var(--vtmn-semantic-color_content-primary-reversed--l);
   --vtmn-semantic-color_hover-tertiary-reversed-transparent: hsla(var(--vtmn-semantic-color_hover-tertiary-reversed-transparent--h), var(--vtmn-semantic-color_hover-tertiary-reversed-transparent--s), var(--vtmn-semantic-color_hover-tertiary-reversed-transparent--l), 0.8);
+  /* Active */
+  /* Active (Auto-generated) */
   --vtmn-semantic-color_active-primary--h: var(--vtmn-semantic-color_hover-primary--h);
   --vtmn-semantic-color_active-primary--s: var(--vtmn-semantic-color_hover-primary--s);
   --vtmn-semantic-color_active-primary--l: calc(var(--vtmn-semantic-color_hover-primary--l) * 0.97);
@@ -253,6 +259,11 @@
   --vtmn-semantic-color_active-brand-reversed-transparent--s: var(--vtmn-semantic-color_content-primary-reversed--s);
   --vtmn-semantic-color_active-brand-reversed-transparent--l: var(--vtmn-semantic-color_content-primary-reversed--l);
   --vtmn-semantic-color_active-brand-reversed-transparent: hsla(var(--vtmn-semantic-color_active-brand-reversed-transparent--h), var(--vtmn-semantic-color_active-brand-reversed-transparent--s), var(--vtmn-semantic-color_active-brand-reversed-transparent--l), 0.6);
+  /* Shadow */
+  --vtmn-semantic-color_shadow--h: var(--vtmn-base-color_blue600--h);
+  --vtmn-semantic-color_shadow--s: var(--vtmn-base-color_blue600--s);
+  --vtmn-semantic-color_shadow--l: var(--vtmn-base-color_blue600--l);
+  --vtmn-semantic-color_shadow: hsla(var(--vtmn-semantic-color_shadow--h), var(--vtmn-semantic-color_shadow--s), var(--vtmn-semantic-color_shadow--l), 0.1);
 
   /* DEPRECATED */
   --vtmn-semantic-color_background-discount--h: var(--vtmn-base-color_red400--h);

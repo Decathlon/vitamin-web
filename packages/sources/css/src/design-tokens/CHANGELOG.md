@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.18.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@0.18.2...@vtmn/css-design-tokens@0.18.3) (2022-03-03)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** fix incorrect color values ([#1002](https://github.com/Decathlon/vitamin-web/issues/1002)) ([991d1ef](https://github.com/Decathlon/vitamin-web/commit/991d1efc8ee54f0f203634b98b9d60d00d7c54b6))
+
+
+
+
+
+## [0.18.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@0.18.1...@vtmn/css-design-tokens@0.18.2) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/css-design-tokens
+
+
+
+
+
+## [0.18.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@0.18.0...@vtmn/css-design-tokens@0.18.1) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/css-design-tokens
+
+
+
+
+
+# [0.18.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@0.17.0...@vtmn/css-design-tokens@0.18.0) (2022-02-25)
+
+
+### Features
+
+* **@vtmn/css:** refactor border color + add new shadow colors ([#980](https://github.com/Decathlon/vitamin-web/issues/980)) ([67e13ff](https://github.com/Decathlon/vitamin-web/commit/67e13ff48c922ddea167feea824e9dfdc8b18fec))
+
+
+
+
+
+# [0.17.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@0.16.5...@vtmn/css-design-tokens@0.17.0) (2022-02-23)
+
+
+### Features
+
+* **@vtmn/css:** add new font size (caption) ([#982](https://github.com/Decathlon/vitamin-web/issues/982)) ([03877ed](https://github.com/Decathlon/vitamin-web/commit/03877ed69df9d6b354ebe5ccf828751b106ce8ff))
+
+
+
+
+
 ## [0.16.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@0.16.4...@vtmn/css-design-tokens@0.16.5) (2022-02-15)
 
 

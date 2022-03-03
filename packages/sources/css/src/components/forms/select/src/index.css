@@ -15,6 +15,12 @@
   width: min-content;
 }
 
+.vtmn-select_container > label {
+  margin-block-end: rem(4px);
+  display: inline-block;
+  width: fit-content;
+}
+
 .vtmn-select_container select {
   appearance: none;
   padding: rem(12px) rem(40px) rem(12px) rem(12px);
@@ -22,7 +28,6 @@
   box-shadow: inset 0 0 0 rem(1px) var(--vtmn-semantic-color_border-inactive);
   border-radius: var(--vtmn-radius_100);
   height: rem(48px);
-  margin-bottom: rem(5px);
   width: min-content;
   background-color: var(--vtmn-semantic-color_background-primary);
   cursor: pointer;
@@ -36,7 +41,7 @@
   display: block;
   position: relative;
   float: right;
-  top: rem(36px);
+  top: rem(40px);
   right: rem(12px);
   width: rem(24px);
   height: rem(24px);
@@ -46,6 +51,9 @@
 
 .vtmn-select_container .vtmn-select_error-text {
   font-size: var(--vtmn-typo_text-3-font-size);
+  line-height: var(--vtmn-typo_text-3-line-height);
+  margin-block-start: rem(4px);
+  display: inline-block;
 }
 
 .vtmn-select_container .vtmn-select_error-text::before {

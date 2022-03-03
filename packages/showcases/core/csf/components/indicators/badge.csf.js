@@ -20,14 +20,14 @@ export const argTypes = {
     },
     defaultValue: 'default',
     control: {
-      type: 'radio',
-      options: ['default', 'brand', 'reversed', 'accent'],
+      type: 'select',
+      options: ['default', 'brand', 'reversed', 'accent', 'alert'],
     },
   },
   value: {
     type: { name: 'number', required: false },
     description: 'The value in the badge.',
-    defaultValue: 0,
+    defaultValue: 6,
     table: {
       type: {
         summary: 'number',

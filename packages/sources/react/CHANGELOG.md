@@ -3,6 +3,154 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.21.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.21.0...@vtmn/react@0.21.1) (2022-03-03)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+# [0.21.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.20.0...@vtmn/react@0.21.0) (2022-03-03)
+
+
+### Features
+
+* **@vtmn/vue:** add `VtmnBadge` component ([#1007](https://github.com/Decathlon/vitamin-web/issues/1007)) ([b535717](https://github.com/Decathlon/vitamin-web/commit/b535717c4584d5649d4fa600f538fd8ce7ac47ca))
+
+
+
+
+
+# [0.20.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.19.0...@vtmn/react@0.20.0) (2022-03-03)
+
+
+### Features
+
+* **@vtmn/react:** add `VtmnPrice` component ([#1005](https://github.com/Decathlon/vitamin-web/issues/1005)) ([fe8642f](https://github.com/Decathlon/vitamin-web/commit/fe8642f7cb52ecbf701a111ac54e82892b3e03d3))
+
+
+
+
+
+# [0.19.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.29...@vtmn/react@0.19.0) (2022-03-02)
+
+
+### Features
+
+* **@vtmn/react:** add `VtmnChip` component ([#830](https://github.com/Decathlon/vitamin-web/issues/830)) ([e9012de](https://github.com/Decathlon/vitamin-web/commit/e9012de41e441c422cfc2ba2f9b1a73c37440f59))
+
+
+
+
+
+## [0.18.29](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.28...@vtmn/react@0.18.29) (2022-03-02)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.18.28](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.27...@vtmn/react@0.18.28) (2022-03-02)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.18.27](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.26...@vtmn/react@0.18.27) (2022-03-02)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.18.26](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.25...@vtmn/react@0.18.26) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.18.25](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.24...@vtmn/react@0.18.25) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.18.24](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.23...@vtmn/react@0.18.24) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.18.23](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.22...@vtmn/react@0.18.23) (2022-02-28)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.18.22](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.21...@vtmn/react@0.18.22) (2022-02-28)
+
+
+### Bug Fixes
+
+* **build:** fix build on Windows ([#992](https://github.com/Decathlon/vitamin-web/issues/992)) ([e1eac98](https://github.com/Decathlon/vitamin-web/commit/e1eac984141860462ed04a44331847c3dd13c7cb))
+
+
+
+
+
+## [0.18.21](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.20...@vtmn/react@0.18.21) (2022-02-28)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.18.20](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.19...@vtmn/react@0.18.20) (2022-02-25)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.18.19](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.18...@vtmn/react@0.18.19) (2022-02-23)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.18.18](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.17...@vtmn/react@0.18.18) (2022-02-23)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.18.17](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.16...@vtmn/react@0.18.17) (2022-02-23)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
 ## [0.18.16](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.18.15...@vtmn/react@0.18.16) (2022-02-15)
 
 

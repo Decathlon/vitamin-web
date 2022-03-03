@@ -1,12 +1,12 @@
-export const SIZE = {
-  SMALL: 'small',
-  MEDIUM: 'medium',
-  LARGE: 'large',
-};
-
-export const VARIANT = {
+export const VtmnPriceVariant = {
   DEFAULT: 'default',
   ACCENT: 'accent',
   ALERT: 'alert',
   STRIKETHROUGH: 'strikethrough',
+};
+
+export const VtmnPriceSize = {
+  SMALL: 'small',
+  MEDIUM: 'medium',
+  LARGE: 'large',
 };

@@ -8,5 +8,3 @@ export type VtmnButtonVariant =
   | 'conversion';
 
 export type VtmnButtonSize = 'small' | 'medium' | 'large' | 'stretched';
-
-export type VtmnButtonType = 'button' | 'submit';

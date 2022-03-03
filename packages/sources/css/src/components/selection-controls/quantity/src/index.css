@@ -7,17 +7,24 @@
 @import '@vtmn/css-design-tokens/src/radius';
 
 .vtmn-quantity {
-  font: var(--vtmn-typo_font-family) var(--vtmn-typo_text-2-font-size)
-    var(--vtmn-typo_font-weight--normal);
+  font-family: var(--vtmn-typo_font-family);
+  font-size: var(--vtmn-typo_text-2-font-size);
+  font-weight: var(--vtmn-typo_font-weight--normal);
   color: var(--vtmn-semantic-color_content-primary);
   height: fit-content;
   width: fit-content;
 }
 
+.vtmn-quantity > label {
+  font-size: var(--vtmn-typo_text-2-font-size);
+  line-height: var(--vtmn-typo_text-2-line-height);
+  margin-block-end: rem(4px);
+  display: inline-block;
+  width: fit-content;
+}
+
 .vtmn-quantity_content {
   display: flex;
-  margin-block-start: var(--vtmn-spacing_1);
-  margin-block-end: var(--vtmn-spacing_1);
 }
 
 .vtmn-quantity input[type='number'] {
@@ -95,6 +102,8 @@
 
 .vtmn-quantity_error-text {
   font-size: var(--vtmn-typo_text-3-font-size);
+  line-height: var(--vtmn-typo_text-3-line-height);
+  margin-block-start: rem(4px);
   display: inline-flex;
   align-items: center;
 }

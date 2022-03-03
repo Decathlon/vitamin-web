@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.13](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tabs@0.3.12...@vtmn/css-tabs@0.3.13) (2022-03-03)
+
+**Note:** Version bump only for package @vtmn/css-tabs
+
+
+
+
+
+## [0.3.12](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tabs@0.3.11...@vtmn/css-tabs@0.3.12) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/css-tabs
+
+
+
+
+
+## [0.3.11](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tabs@0.3.10...@vtmn/css-tabs@0.3.11) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/css-tabs
+
+
+
+
+
+## [0.3.10](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tabs@0.3.9...@vtmn/css-tabs@0.3.10) (2022-02-25)
+
+**Note:** Version bump only for package @vtmn/css-tabs
+
+
+
+
+
+## [0.3.9](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tabs@0.3.8...@vtmn/css-tabs@0.3.9) (2022-02-23)
+
+**Note:** Version bump only for package @vtmn/css-tabs
+
+
+
+
+
 ## [0.3.8](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tabs@0.3.7...@vtmn/css-tabs@0.3.8) (2022-02-15)
 
 **Note:** Version bump only for package @vtmn/css-tabs

@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.21](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-loader@0.2.20...@vtmn/css-loader@0.2.21) (2022-03-03)
+
+**Note:** Version bump only for package @vtmn/css-loader
+
+
+
+
+
+## [0.2.20](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-loader@0.2.19...@vtmn/css-loader@0.2.20) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/css-loader
+
+
+
+
+
+## [0.2.19](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-loader@0.2.18...@vtmn/css-loader@0.2.19) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/css-loader
+
+
+
+
+
+## [0.2.18](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-loader@0.2.17...@vtmn/css-loader@0.2.18) (2022-02-25)
+
+**Note:** Version bump only for package @vtmn/css-loader
+
+
+
+
+
+## [0.2.17](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-loader@0.2.16...@vtmn/css-loader@0.2.17) (2022-02-23)
+
+**Note:** Version bump only for package @vtmn/css-loader
+
+
+
+
+
 ## [0.2.16](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-loader@0.2.15...@vtmn/css-loader@0.2.16) (2022-02-15)
 
 **Note:** Version bump only for package @vtmn/css-loader

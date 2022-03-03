@@ -25,6 +25,8 @@ export { VtmnBadge } from './components/indicators/VtmnBadge';
 export type { VtmnBadgeProps } from './components/indicators/VtmnBadge';
 export { VtmnLoader } from './components/indicators/VtmnLoader';
 export type { VtmnLoaderProps } from './components/indicators/VtmnLoader';
+export { VtmnPrice } from './components/indicators/VtmnPrice';
+export type { VtmnPriceProps } from './components/indicators/VtmnPrice';
 
 // Navigation
 
@@ -37,6 +39,8 @@ export type { VtmnTooltipProps } from './components/overlays/VtmnTooltip';
 // Selection controls
 export { VtmnCheckbox } from './components/selection-controls/VtmnCheckbox';
 export type { VtmnCheckboxProps } from './components/selection-controls/VtmnCheckbox';
+export { VtmnChip } from './components/selection-controls/VtmnChip';
+export type { VtmnChipProps } from './components/selection-controls/VtmnChip';
 export { VtmnRadioButton } from './components/selection-controls/VtmnRadioButton';
 export type { VtmnRadioButtonProps } from './components/selection-controls/VtmnRadioButton';
 export { VtmnToggle } from './components/selection-controls/VtmnToggle';

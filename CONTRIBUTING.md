@@ -14,7 +14,7 @@ So, **thanks a lot for this**!! :tada::+1:
   - [How can I contribute?](#how-can-i-contribute)
     - [Reporting an issue](#reporting-an-issue)
     - [Code contribution](#code-contribution)
-      - [Commit and Push on your branch](#commit-and-push-on-your-branch)
+      - [Commit and push on your branch](#commit-and-push-on-your-branch)
     - [Pull Request guidelines](#pull-request-guidelines)
     - [Contribution acceptance criteria](#contribution-acceptance-criteria)
 
@@ -31,12 +31,16 @@ vitamin-web/
   ...
   packages/
     showcases/
+      core/
       css/
+      icons/
       react/
       svelte/
       vue/
     sources/
+      assets/
       css/
+      icons/
       react/
       svelte/
       vue/
@@ -82,11 +86,8 @@ For your information, here are the showcases' URLs:
 | CSS      | [localhost:6006](http://localhost:6006) |
 | Icons    | [localhost:6007](http://localhost:6007) |
 | React    | [localhost:6008](http://localhost:6008) |
-| Svelte   | [localhost:6019](http://localhost:6009) |
+| Svelte   | [localhost:6009](http://localhost:6009) |
 | Vue      | [localhost:6010](http://localhost:6010) |
-
-For Windows users, you may errors with UNIX commands like `rm -rf` or `mkdir` used in NPM scripts. To fix this and be able to contribute, you can check "Git for Windows" or Cygwin.
-By default Windows runs NPM scripts with `cmd` but you can change the game with `npm config set script-shell <path to .exe>` and choose your executor.
 
 ## Code of conduct
 
