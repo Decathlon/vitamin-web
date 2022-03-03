@@ -16,7 +16,7 @@ const Template = (args) => ({
   setup() {
     return { args };
   },
-  template: `<div style="width: 400px; display: flex; justify-content: center"><VtmnPrice v-bind="args">250,00€</VtmnPrice></div>`,
+  template: `<div style="width: 400px; display: flex; justify-content: center"><VtmnPrice v-bind="args">250,00 €</VtmnPrice></div>`,
 });
 
 export const Overview = Template.bind({});
