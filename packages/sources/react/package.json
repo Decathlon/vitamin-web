@@ -52,6 +52,7 @@
     "@vtmn/css-chip": "^0.6.9",
     "@vtmn/css-link": "^0.6.12",
     "@vtmn/css-loader": "^0.2.20",
+    "@vtmn/css-price": "^0.2.9",
     "@vtmn/css-radio-button": "^0.6.12",
     "@vtmn/css-select": "^0.6.11",
     "@vtmn/css-text-input": "^0.13.11",

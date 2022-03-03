@@ -25,6 +25,8 @@ export { VtmnBadge } from './components/indicators/VtmnBadge';
 export type { VtmnBadgeProps } from './components/indicators/VtmnBadge';
 export { VtmnLoader } from './components/indicators/VtmnLoader';
 export type { VtmnLoaderProps } from './components/indicators/VtmnLoader';
+export { VtmnPrice } from './components/indicators/VtmnPrice';
+export type { VtmnPriceProps } from './components/indicators/VtmnPrice';
 
 // Navigation
 
