@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.18](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-divider@0.1.17...@vtmn/css-divider@0.1.18) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/css-divider
+
+
+
+
+
 ## [0.1.17](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-divider@0.1.16...@vtmn/css-divider@0.1.17) (2022-03-01)
 
 **Note:** Version bump only for package @vtmn/css-divider

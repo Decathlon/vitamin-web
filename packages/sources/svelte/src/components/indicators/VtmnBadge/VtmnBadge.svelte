@@ -1,6 +1,6 @@
 <script>
   import { cn } from '../../../utils/classnames';
-  import { VARIANT } from './enums';
+  import { VtmnBadgeVariant } from './enums';
   /**
    * The value of the badge
    * @type {number}
@@ -8,10 +8,10 @@
   export let value;
 
   /**
-   * The value of the badge
+   * The variant of the badge
    * @type {'default' | 'brand' | 'reversed' | 'accent' | 'alert'}
    */
-  export let variant = VARIANT.DEFAULT;
+  export let variant = VtmnBadgeVariant.DEFAULT;
 
   let className;
   /**

@@ -24,12 +24,12 @@ export const VtmnBadge = ({
 }: VtmnBadgeProps) => {
   return (
     <span
-      className={`vtmn-badge vtmn-badge_variant--${variant} ${
-        !value && value !== 0 ? 'vtmn-badge_size--without-value' : ''
-      } ${className ? className : ''}`}
+      className={`vtmn-badge vtmn-badge_variant--${variant}  ${
+        className ? className : ''
+      }`}
       {...props}
     >
-      {value && value > 99 ? '99+' : value}
+      {value && value > 99 ? '99+' : value || ''}
     </span>
   );
 };

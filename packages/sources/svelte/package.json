@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/svelte",
-  "version": "0.10.1",
+  "version": "0.13.0",
   "description": "Decathlon Design System - Vitamin Svelte components library",
   "keywords": [
     "design-system",
@@ -30,17 +30,19 @@
     "start": "chokidar \"src/**\" -i \"**/dist/**\" -c \"yarn build\""
   },
   "dependencies": {
-    "@vtmn/css-badge": "^0.10.8",
-    "@vtmn/css-button": "^0.11.8",
-    "@vtmn/css-design-tokens": "^0.18.1",
-    "@vtmn/css-link": "^0.6.11",
-    "@vtmn/css-popover": "^0.5.8",
-    "@vtmn/css-text-input": "^0.13.10"
+    "@vtmn/css-badge": "^0.10.9",
+    "@vtmn/css-button": "^0.11.9",
+    "@vtmn/css-design-tokens": "^0.18.2",
+    "@vtmn/css-link": "^0.6.12",
+    "@vtmn/css-list": "^0.2.10",
+    "@vtmn/css-popover": "^0.5.9",
+    "@vtmn/css-tag": "^0.3.9",
+    "@vtmn/css-text-input": "^0.13.11"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.1.2",
     "chokidar-cli": "^3.0.0",
-    "eslint": "8.9.0",
+    "eslint": "8.10.0",
     "eslint-plugin-svelte3": "3.4.1",
     "rollup": "^2.67.0",
     "rollup-plugin-css-only": "^3.1.0",

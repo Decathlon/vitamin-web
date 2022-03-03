@@ -1,8 +1,3 @@
-/**
- * @tokens Default theme
- * = Core theme (Light mode)
- * @presenter Color
- */
 :root {
   /* Background */
   --vtmn-semantic-color_background-primary--h: var(--vtmn-base-color_white--h);

@@ -1,7 +1,3 @@
-/**
- * @tokens Shadows
- * @presenter Shadow
- */
 :root {
   --vtmn-shadow_100: rem(0) rem(6px) rem(6px) rem(0)
     var(--vtmn-semantic-color_shadow);

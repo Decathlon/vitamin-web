@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.10.5...@vtmn/icons@0.10.6) (2022-03-02)
+
+**Note:** Version bump only for package @vtmn/icons
+
+
+
+
+
+## [0.10.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.10.4...@vtmn/icons@0.10.5) (2022-03-02)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** add recycle icon (fill/line), remove extra icon ([#1004](https://github.com/Decathlon/vitamin-web/issues/1004)) ([72da19a](https://github.com/Decathlon/vitamin-web/commit/72da19af8d3aacd4b368732aa1f70433037ad9ed))
+
+
+
+
+
+## [0.10.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.10.3...@vtmn/icons@0.10.4) (2022-03-02)
+
+
+### Bug Fixes
+
+* **@vtmn/icons:** sprite ([af0c8b6](https://github.com/Decathlon/vitamin-web/commit/af0c8b6eab31d5084a982ef1e9e259e8117413dc))
+
+
+
+
+
+## [0.10.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.10.2...@vtmn/icons@0.10.3) (2022-03-01)
+
+**Note:** Version bump only for package @vtmn/icons
+
+
+
+
+
 ## [0.10.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.10.1...@vtmn/icons@0.10.2) (2022-02-28)
 
 
