@@ -4,6 +4,10 @@ module.exports = {
     '../stories/components/**/*.stories.{js,jsx,ts,tsx,mdx,svelte}'
   ],
   addons: [
+    '@storybook/addon-docs',
+    '@storybook/addon-viewport',
+    '@storybook/addon-backgrounds',
+    '@storybook/addon-actions',
     '@storybook/addon-svelte-csf',
     '@storybook/addon-essentials',
     '@storybook/addon-a11y',
