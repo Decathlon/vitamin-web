@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.10.6...@vtmn/icons@0.11.0) (2022-03-04)
+
+
+### Features
+
+* **@vtmn/icons:** add icon forbid (line/fill) ([#1012](https://github.com/Decathlon/vitamin-web/issues/1012)) ([1e4769e](https://github.com/Decathlon/vitamin-web/commit/1e4769e6d50ccc535fd1c814b1edc476a73996f0))
+
+
+
+
+
 ## [0.10.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.10.5...@vtmn/icons@0.10.6) (2022-03-02)
 
 **Note:** Version bump only for package @vtmn/icons
