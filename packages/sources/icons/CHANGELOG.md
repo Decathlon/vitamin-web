@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.11.0...@vtmn/icons@0.12.0) (2022-03-04)
+
+
+### Features
+
+* **@vtmn/icons:** add icon wallet (line/fill) ([#1013](https://github.com/Decathlon/vitamin-web/issues/1013)) ([cc31521](https://github.com/Decathlon/vitamin-web/commit/cc31521162a24898135712be75cf16cb7f8a727b))
+
+
+
+
+
 # [0.11.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.10.6...@vtmn/icons@0.11.0) (2022-03-04)
 
 
