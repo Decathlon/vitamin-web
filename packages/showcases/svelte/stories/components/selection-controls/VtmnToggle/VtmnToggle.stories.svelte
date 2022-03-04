@@ -5,8 +5,6 @@
     argTypes,
     parameters,
   } from '@vtmn/showcase-core/csf/components/selection-controls/toggle.csf';
-
-  delete argTypes.identifier;
 </script>
 
 <Meta
@@ -19,14 +17,6 @@
       type: { name: 'string', required: true },
       description: 'The id of the toggle.',
       defaultValue: 'my-toggle',
-      control: {
-        type: 'text',
-      },
-    },
-    labelText: {
-      type: { name: 'string', required: false },
-      description: 'The label of the toggle.',
-      defaultValue: 'My label',
       control: {
         type: 'text',
       },
