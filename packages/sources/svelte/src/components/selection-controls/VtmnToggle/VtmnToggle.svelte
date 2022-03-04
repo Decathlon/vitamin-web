@@ -11,7 +11,7 @@
   /**
    * Define if the toggle is checked or not
    */
-  export let checked = fase;
+  export let checked = false;
 
   /**
    * The disabled state of the toggle
