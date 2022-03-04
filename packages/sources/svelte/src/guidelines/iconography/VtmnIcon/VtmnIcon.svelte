@@ -46,8 +46,8 @@
 
   $: componentClass = cn(`vtmx-${value}`, className);
   $: componentStyle = objectToStyle({
-    'font-size': `${size}px`,
     color: `var(--vtmn-semantic-color_${retrieveSemanticColor(variant)})`,
+    'font-size': `${size}px`,
   });
 </script>
 
