@@ -17,6 +17,7 @@ export { default as VtmnPopover } from './overlays/VtmnPopover/VtmnPopover.svelt
 
 // Selection controls
 export { default as VtmnCheckbox } from './selection-controls/VtmnCheckbox/VtmnCheckbox.svelte';
+export { default as VtmnChip } from './selection-controls/VtmnChip/VtmnChip.svelte';
 export { default as VtmnToggle } from './selection-controls/VtmnToggle/VtmnToggle.svelte';
 
 // Structure

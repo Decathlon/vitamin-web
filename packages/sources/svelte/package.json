@@ -32,6 +32,7 @@
   "dependencies": {
     "@vtmn/css-badge": "^0.10.10",
     "@vtmn/css-button": "^0.11.10",
+    "@vtmn/css-chip": "^0.6.10",
     "@vtmn/css-design-tokens": "^0.18.3",
     "@vtmn/css-link": "^0.6.13",
     "@vtmn/css-list": "^0.2.14",

@@ -39,6 +39,10 @@ const components = [
   },
   {
     folder: 'selection-controls',
+    name: 'VtmnChip',
+  },
+  {
+    folder: 'selection-controls',
     name: 'VtmnToggle',
   },
   {
