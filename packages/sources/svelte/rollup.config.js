@@ -38,6 +38,10 @@ const components = [
     name: 'VtmnCheckbox',
   },
   {
+    folder: 'selection-controls',
+    name: 'VtmnToggle',
+  },
+  {
     folder: 'structure',
     name: 'VtmnList',
   },
