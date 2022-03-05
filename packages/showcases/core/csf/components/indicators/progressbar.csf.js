@@ -49,33 +49,7 @@ export const argTypes = {
       },
       defaultValue: { summary: 0 },
     },
-    control: { type: 'range', min: -100, max: 100 },
-  },
-
-  minValue: {
-    type: { name: 'number', required: false },
-    description: 'The minimum value of the progress bar.',
-    defaultValue: 0,
-    table: {
-      type: {
-        summary: 'number',
-      },
-      defaultValue: { summary: 0 },
-    },
-    control: { type: 'range', min: -100, max: 100 },
-  },
-
-  maxValue: {
-    type: { name: 'number', required: false },
-    description: 'The maximum value of the progress bar.',
-    defaultValue: 100,
-    table: {
-      type: {
-        summary: 'number',
-      },
-      defaultValue: { summary: 0 },
-    },
-    control: { type: 'range', min: -100, max: 100 },
+    control: { type: 'range', min: 0, max: 100 },
   },
 
   imageSrc: {

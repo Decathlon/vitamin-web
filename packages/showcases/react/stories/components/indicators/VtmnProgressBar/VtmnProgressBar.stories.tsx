@@ -1,5 +1,5 @@
 import React from 'react';
-import { VtmnProgressBar } from '@vtmn/react';
+import { VtmnProgressbar } from '@vtmn/react';
 import { Meta, Story } from '@storybook/react';
 import {
   argTypes,
@@ -7,12 +7,12 @@ import {
 } from '@vtmn/showcase-core/csf/components/indicators/progressbar.csf';
 
 export default {
-  title: 'Components / Indicators / VtmnProgressBar',
-  component: VtmnProgressBar,
+  title: 'Components / Indicators / VtmnProgressbar',
+  component: VtmnProgressbar,
   argTypes: argTypes,
   parameters,
 } as Meta;
 
-const Template: Story = (args) => <VtmnProgressBar {...args} />;
+const Template: Story = (args) => <VtmnProgressbar {...args} />;
 
 export const Overview = Template.bind({});

@@ -1,2 +1,2 @@
-export { default as VtmnProgressBar } from './VtmnProgressBar';
-export * from './VtmnProgressBar';
+export { default as VtmnProgressbar } from './VtmnProgressbar';
+export * from './VtmnProgressbar';

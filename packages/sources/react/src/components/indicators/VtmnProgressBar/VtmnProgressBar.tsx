@@ -2,32 +2,32 @@ import * as React from 'react';
 import '@vtmn/css-button/dist/index-with-vars.css';
 import clsx from 'clsx';
 import {
-  VtmnProgressBarVariant,
-  VtmnProgressBarSize,
-  VtmnProgressBarStatus,
+  VtmnProgressbarVariant,
+  VtmnProgressbarSize,
+  VtmnProgressbarStatus,
 } from './types';
 
-export interface VtmnProgressBarProps {
+export interface VtmnProgressbarProps {
   /**
    * The variant of the progress bar.
-   * @type {VtmnProgressBarVariant}
+   * @type {VtmnProgressbarVariant}
    * @defaultValue 'linear'
    */
-  variant?: VtmnProgressBarVariant;
+  variant?: VtmnProgressbarVariant;
 
   /**
    * The size of the progress bar.
-   * @type {VtmnProgressBarSize}
+   * @type {VtmnProgressbarSize}
    * @defaultValue 'medium'
    */
-  size?: VtmnProgressBarSize;
+  size?: VtmnProgressbarSize;
 
   /**
    * The status of the progress bar.
-   * @type {VtmnProgressBarStatus}
+   * @type {VtmnProgressbarStatus}
    * @defaultValue 'determinate'
    */
-  status?: VtmnProgressBarStatus;
+  status?: VtmnProgressbarStatus;
 
   /**
    * The current value of the progress bar.
@@ -35,20 +35,6 @@ export interface VtmnProgressBarProps {
    * @defaultValue 0
    */
   value?: number;
-
-  /**
-   * The minimum value of the progress bar.
-   * @type {number}
-   * @defaultValue 0
-   */
-  minValue?: number;
-
-  /**
-   * The maximum value of the progress bar.
-   * @type {number}
-   * @defaultValue 100
-   */
-  maxValue?: number;
 
   /**
    * The image src of the progress bar.
@@ -72,17 +58,15 @@ export interface VtmnProgressBarProps {
   loadingText?: string;
 }
 
-export const VtmnProgressBar = ({
+export const VtmnProgressbar = ({
   variant = 'linear',
   status = 'determinate',
   size = 'medium',
   value = 0,
-  minValue = 0,
-  maxValue = 100,
   imageSrc = undefined,
   imageAlt = undefined,
   loadingText = 'Loading',
-}: VtmnProgressBarProps) => {
+}: VtmnProgressbarProps) => {
   return (
     <div
       className={clsx(
@@ -95,8 +79,8 @@ export const VtmnProgressBar = ({
       )}
       role="progressbar"
       aria-label="progress bar"
-      aria-valuemin={minValue}
-      aria-valuemax={maxValue}
+      aria-valuemin={0}
+      aria-valuemax={100}
     >
       {/**
        * Linear Progress Bar
@@ -107,7 +91,7 @@ export const VtmnProgressBar = ({
           className="vtmn-progressbar_label"
           // Clamp the value between minValue and maxValue
 
-          data-value={Math.min(Math.max(value, minValue), maxValue)}
+          data-value={Math.min(Math.max(value, 0), 100)}
         >
           {loadingText}
         </span>
@@ -120,7 +104,7 @@ export const VtmnProgressBar = ({
             x1={0}
             x2={
               status == 'determinate'
-                ? `${Math.min(Math.max(value, minValue), maxValue)}%`
+                ? `${Math.min(Math.max(value, 0), 100)}%`
                 : '100%'
             }
             y1="50%"
@@ -136,7 +120,7 @@ export const VtmnProgressBar = ({
       {variant == 'circular' && status == 'determinate' && (
         <span
           className="vtmn-progressbar_label"
-          data-value={Math.min(Math.max(value, minValue), maxValue)}
+          data-value={Math.min(Math.max(value, 0), 100)}
         />
       )}
 
@@ -154,15 +138,15 @@ export const VtmnProgressBar = ({
           />
           <circle
             className="vtmn-progressbar_indicator"
-            stroke-dashoffset={
+            strokeDashoffset={
               size == 'small'
                 ? `calc(200px - (200px * ${Math.min(
-                    Math.max(value, minValue),
-                    maxValue,
+                    Math.max(value, 0),
+                    100,
                   )} / 100)`
                 : `calc(400px - (400px * ${Math.min(
-                    Math.max(value, minValue),
-                    maxValue,
+                    Math.max(value, 0),
+                    100,
                   )} ) / 100)`
             }
             cx="50%"
@@ -175,8 +159,8 @@ export const VtmnProgressBar = ({
   );
 };
 
-const MemoVtmnProgressBar = React.memo(VtmnProgressBar);
+const MemoVtmnProgressbar = React.memo(VtmnProgressbar);
 
-MemoVtmnProgressBar.displayName = 'VtmnProgressBar';
+MemoVtmnProgressbar.displayName = 'VtmnProgressbar';
 
-export default MemoVtmnProgressBar;
+export default MemoVtmnProgressbar;

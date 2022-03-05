@@ -1,8 +1,5 @@
-export type VtmnProgressBarVariant = 'linear' | 'circular';
+export type VtmnProgressbarVariant = 'linear' | 'circular';
 
-export type VtmnProgressBarSize = 'small' | 'medium' | 'large';
+export type VtmnProgressbarSize = 'small' | 'medium' | 'large';
 
-export type VtmnProgressBarStatus =
-  | 'determinate'
-  | 'indeterminate'
-  | 'circular';
+export type VtmnProgressbarStatus = 'determinate' | 'indeterminate';

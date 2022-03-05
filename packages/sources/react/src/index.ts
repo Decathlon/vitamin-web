@@ -27,8 +27,8 @@ export { VtmnLoader } from './components/indicators/VtmnLoader';
 export type { VtmnLoaderProps } from './components/indicators/VtmnLoader';
 export { VtmnPrice } from './components/indicators/VtmnPrice';
 export type { VtmnPriceProps } from './components/indicators/VtmnPrice';
-export { VtmnProgressBar } from './components/indicators/VtmnProgressBar';
-export type { VtmnProgressBarProps } from './components/indicators/VtmnProgressBar';
+export { VtmnProgressbar } from './components/indicators/VtmnProgressbar';
+export type { VtmnProgressbarProps } from './components/indicators/VtmnProgressbar';
 
 // Navigation
 
