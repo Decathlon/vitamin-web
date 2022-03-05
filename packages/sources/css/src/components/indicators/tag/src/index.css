@@ -31,6 +31,11 @@ a.vtmn-tag:focus-visible {
   transition: var(--vtmn-transition_focus-visible);
 }
 
+.vtmn-tag > span[class^='vtmx-'] {
+  margin-inline-start: rem(-4px);
+  margin-inline-end: rem(4px);
+}
+
 /* Variants */
 .vtmn-tag_variant--accent {
   background-color: var(--vtmn-semantic-color_background-accent);

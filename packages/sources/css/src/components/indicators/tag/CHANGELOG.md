@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tag@0.3.10...@vtmn/css-tag@0.4.0) (2022-03-04)
+
+
+### Features
+
+* **@vtmn/css:** add icon leading for tag ([#1014](https://github.com/Decathlon/vitamin-web/issues/1014)) ([53d19c2](https://github.com/Decathlon/vitamin-web/commit/53d19c23a6f69a0994c90d343aa64528aad9a304))
+
+
+
+
+
 ## [0.3.10](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tag@0.3.9...@vtmn/css-tag@0.3.10) (2022-03-03)
 
 **Note:** Version bump only for package @vtmn/css-tag
