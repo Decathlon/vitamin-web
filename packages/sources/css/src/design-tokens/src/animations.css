@@ -11,7 +11,7 @@
   --vtmn-animation_linear-indeterminate: 1.5s ease-in-out infinite
     linear-indeterminate;
   --vtmn-animation_circle-indeterminate: 4s linear infinite circle-indeterminate;
-  --vtmn-animation_circle-indeterminate-small: 4s ease-in-out infinite
+  --vtmn-animation_circle-indeterminate-small: 4s linear infinite
     circle-indeterminate-small;
   --vtmn-animation_shimmer: shimmer 1.5s ease-in-out infinite;
 }
@@ -113,11 +113,11 @@
 @keyframes circle-indeterminate {
   0% {
     stroke-dashoffset: 400;
-    transform: rotate(-90deg);
+    transform: rotate(-0.25turn);
   }
 
   50% {
-    transform: rotate(270deg);
+    transform: rotate(0.75turn);
     stroke-dashoffset: 0;
   }
 
@@ -130,11 +130,11 @@
 @keyframes circle-indeterminate-small {
   0% {
     stroke-dashoffset: 200;
-    transform: rotate(-90deg);
+    transform: rotate(-0.25turn);
   }
 
   50% {
-    transform: rotate(270deg);
+    transform: rotate(0.75turn);
     stroke-dashoffset: 0;
   }
 
