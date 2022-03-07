@@ -68,6 +68,7 @@ export const VtmnProgressbar = ({
   imageAlt = undefined,
   loadingText = 'Loading',
   className,
+  ...props
 }: VtmnProgressbarProps) => {
   return (
     <div
@@ -84,6 +85,7 @@ export const VtmnProgressbar = ({
       aria-label="progress bar"
       aria-valuemin={0}
       aria-valuemax={100}
+      {...props}
     >
       {/**
        * Linear Progress Bar
