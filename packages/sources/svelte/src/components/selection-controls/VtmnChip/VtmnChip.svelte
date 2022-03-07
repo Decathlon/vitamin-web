@@ -1,4 +1,5 @@
 <script>
+  import { VtmnBadge, VtmnButton } from '../../index';
   import { createEventDispatcher } from 'svelte';
   import { VARIANTS, SIZES } from './enums';
   import { cn } from '../../../utils/classnames';
@@ -18,26 +19,26 @@
   /**
    * The disabled state of the chip
    */
-  export let disabled;
+  export let disabled = false;
 
   /**
    * The selected state of the chip
    */
-  export let selected;
+  export let selected = false;
 
   /**
    * The icon to display on the left side of the chip.
    * Only for 'input' variant
    */
-  export let icon;
+  export let icon = undefined;
 
   /**
    * The value in the badge.
-   * Only for 'filter' variant
+   * Only for `filter` variant
    */
-  export let badgeValue;
+  export let badgeValue = 0;
 
-  let className;
+  let className = '';
   /**
    * @type {string} Custom classes to apply to the component.
    */
@@ -47,28 +48,22 @@
     'vtmn-chip',
     `vtmn-chip_variant--${variant}`,
     `vtmn-chip_size--${size}`,
-    selected ? 'vtmn-chip--selected' : '',
+    selected && variant !== VARIANTS.ACTION ? 'vtmn-chip--selected' : '',
     disabled ? 'vtmn-chip--disabled' : '',
     className,
   );
 
-  $: buttonClass = cn(
-    'vtmn-btn',
-    'vtmn-btn--icon-alone',
-    `vtmn-btn_size--${size}`,
-    'vtmn-btn_variant--ghost-reversed',
-  );
-
   $: displayInputButton = variant === VARIANTS.INPUT && selected;
-  $: displayFilterBadge = variant === VARIANTS.FILTER && badgeValue;
-  $: displayLeftIcon = variant === VARIANTS.INPUT && icon;
-  $: disableTableIndex = VARIANTS.INPUT && selected;
+  $: displayFilterBadge = variant === VARIANTS.FILTER && badgeValue > 0;
+  $: displayLeftIcon =
+    [VARIANTS.INPUT, VARIANTS.ACTION].includes(variant) && icon;
+  $: disableTableIndex = (variant === VARIANTS.INPUT && selected) || disabled;
 
-  const buttonClickHandler = (event) => {
+  const cancelClickHandler = () => {
     dispatch('cancel');
   };
-  const componentClickHandler = (event) => {
-    if (variant === VARIANTS.INPUT && selected) {
+  const selectClickHandler = () => {
+    if (disabled || (variant === VARIANTS.INPUT && selected)) {
       return;
     }
     dispatch('click');
@@ -77,25 +72,25 @@
 
 <div
   class={componentClass}
-  on:click={componentClickHandler}
-  tabindex={disableTableIndex ? '' : 0}
+  on:click={selectClickHandler}
+  tabindex={disableTableIndex ? undefined : 0}
 >
   {#if displayLeftIcon}
     <span class={`vtmx-${icon}`} aria-hidden="true" />
   {/if}
   <slot />
   {#if displayInputButton}
-    <button
-      {disabled}
-      on:click={buttonClickHandler}
-      class={buttonClass}
+    <VtmnButton
+      variant="ghost-reversed"
+      iconAlone="close-line"
       aria-label={$$restProps['aria-label']}
-    >
-      <span class="vtmx-close-line" />
-    </button>
+      {size}
+      on:click={cancelClickHandler}
+      {disabled}
+    />
   {/if}
   {#if displayFilterBadge}
-    <span class="vtmn-badge">{badgeValue}</span>
+    <VtmnBadge value={badgeValue} />
   {/if}
 </div>
 
