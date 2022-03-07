@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.22.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.22.0...@vtmn/react@0.22.1) (2022-03-07)
+
+
+### Bug Fixes
+
+* **@vtmn/react:** add missing className, {...props} props in `VtmnProgressbar` ([#1022](https://github.com/Decathlon/vitamin-web/issues/1022)) ([652932d](https://github.com/Decathlon/vitamin-web/commit/652932d7171fcd3aa13f3bfbc43b90bf6c7b0f4f))
+
+
+
+
+
 # [0.22.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.21.4...@vtmn/react@0.22.0) (2022-03-06)
 
 
