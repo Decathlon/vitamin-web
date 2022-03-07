@@ -1,7 +1,7 @@
 module.exports = {
   inputDir: './src/vitamix', // (required)
   outputDir: './dist/vitamix/font', // (required)
-  fontTypes: ['ttf', 'woff', 'woff2'],
+  fontTypes: ['woff', 'woff2'],
   assetTypes: ['ts', 'css', 'json', 'html'],
   name: 'vitamix',
   prefix: 'vtmx',
