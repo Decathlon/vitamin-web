@@ -7,7 +7,8 @@ import {
   VtmnProgressbarStatus,
 } from './types';
 
-export interface VtmnProgressbarProps {
+export interface VtmnProgressbarProps
+  extends React.ComponentPropsWithoutRef<'div'> {
   /**
    * The variant of the progress bar.
    * @type {VtmnProgressbarVariant}
@@ -66,6 +67,7 @@ export const VtmnProgressbar = ({
   imageSrc = undefined,
   imageAlt = undefined,
   loadingText = 'Loading',
+  className,
 }: VtmnProgressbarProps) => {
   return (
     <div
@@ -76,6 +78,7 @@ export const VtmnProgressbar = ({
         // Only add size attribute when variant is linear or size is small in circular mode
         (variant == 'linear' || size == 'small') &&
           `vtmn-progressbar_size--${size}`,
+        className,
       )}
       role="progressbar"
       aria-label="progress bar"
