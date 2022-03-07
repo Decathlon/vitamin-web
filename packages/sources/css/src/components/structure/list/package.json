@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-list",
-  "version": "0.2.14",
+  "version": "0.2.15",
   "description": "Decathlon Design System - Vitamin specific CSS styles for list component",
   "keywords": [
     "design-system",
@@ -26,7 +26,7 @@
     "build": "node build.js"
   },
   "devDependencies": {
-    "@vtmn/css-design-tokens": "^0.18.3",
+    "@vtmn/css-design-tokens": "^0.18.4",
     "@vtmn/css-postcss-config": "*"
   },
   "publishConfig": {

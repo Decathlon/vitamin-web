@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.13](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-select@0.6.12...@vtmn/css-select@0.6.13) (2022-03-07)
+
+**Note:** Version bump only for package @vtmn/css-select
+
+
+
+
+
 ## [0.6.12](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-select@0.6.11...@vtmn/css-select@0.6.12) (2022-03-03)
 
 **Note:** Version bump only for package @vtmn/css-select
