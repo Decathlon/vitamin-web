@@ -21,6 +21,14 @@
         type: 'boolean',
       },
     },
+    contentOpaque: {
+      type: { name: 'boolean', required: false },
+      description: 'Define if image is opaque. Only on variant full-image',
+      defaultValue: false,
+      control: {
+        type: 'boolean',
+      },
+    },
     title: {
       type: { name: 'string', required: true },
       description: 'Title of the card.',
@@ -31,7 +39,7 @@
     },
     img: {
       type: { name: 'string', required: false },
-      description: 'Image url insered on the card',
+      description: 'Image url inserted on the card',
       defaultValue:
         'https://storage.googleapis.com/dkt-design-cdn/images/landscape-placeholder.jpg',
       control: {
@@ -93,6 +101,14 @@
   name="Full image"
   args={{
     variant: 'full-image',
+  }}
+/>
+
+<Story
+  name="Full image with content opaque"
+  args={{
+    variant: 'full-image',
+    contentOpaque: true,
   }}
 />
 

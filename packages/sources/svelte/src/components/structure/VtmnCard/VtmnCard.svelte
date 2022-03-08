@@ -1,11 +1,13 @@
 <script>
+  import { VARIANTS } from './enums';
   import { cn } from '../../../utils/classnames';
 
   export let img = '';
   export let title = '';
 
-  export let variant = 'top-image'; // side-image | full-image
+  export let variant = VARIANTS.TOP_IMAGE;
   export let fullImage = false;
+  export let contentOpaque = false;
 
   let className;
   /**
@@ -21,7 +23,14 @@
 
   $: componentImageClass = cn(
     'vtmn-card_image',
-    variant === 'top-image' && fullImage && 'vtmn-card_image--full',
+    variant === VARIANTS.TOP_IMAGE && fullImage && 'vtmn-card_image--full',
+  );
+
+  $: componentContentClass = cn(
+    'vtmn-card_content',
+    variant === VARIANTS.FULL_IMAGE &&
+      contentOpaque &&
+      'vtmn-card_content--opaque',
   );
 </script>
 
@@ -31,7 +40,7 @@
       <img src={img} alt="" />
     </div>
   {/if}
-  <div class="vtmn-card_content">
+  <div class={componentContentClass}>
     {#if title}
       <span class="vtmn-card_content--title">{title}</span>
     {/if}
