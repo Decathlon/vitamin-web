@@ -30,6 +30,10 @@ const components = [
     name: 'VtmnTag',
   },
   {
+    folder: 'navigation',
+    name: 'VtmnSearch',
+  },
+  {
     folder: 'overlays',
     name: 'VtmnPopover',
   },

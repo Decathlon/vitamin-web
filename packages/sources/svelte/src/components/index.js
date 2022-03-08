@@ -11,6 +11,7 @@ export { default as VtmnPrice } from './indicators/VtmnPrice/VtmnPrice.svelte';
 export { default as VtmnTag } from './indicators/VtmnTag/VtmnTag.svelte';
 
 // Navigation
+export { default as VtmnSearch } from './navigation/VtmnSearch/VtmnSearch.svelte';
 
 // Overlays
 export { default as VtmnPopover } from './overlays/VtmnPopover/VtmnPopover.svelte';
