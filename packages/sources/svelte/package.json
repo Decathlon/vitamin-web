@@ -35,6 +35,7 @@
     "@vtmn/css-accordion": "^0.2.11",
     "@vtmn/css-badge": "^0.10.12",
     "@vtmn/css-button": "^0.11.14",
+    "@vtmn/css-card": "^0.6.11",
     "@vtmn/css-chip": "^0.6.13",
     "@vtmn/css-design-tokens": "^0.18.5",
     "@vtmn/css-divider": "^0.1.21",
