@@ -95,5 +95,5 @@
 </div>
 
 <style lang="css">
-  @import '@vtmn/css-chips';
+  @import '@vtmn/css-chip';
 </style>
