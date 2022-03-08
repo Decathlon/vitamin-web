@@ -3,7 +3,7 @@
 
   import { VtmnButton } from '@vtmn/svelte';
   import { createEventDispatcher } from 'svelte';
-  import { VtmnSearchVariant, VtmnSearchSize } from './enums';
+  import { VARIANTS, SIZES } from './enums';
 
   /** @restProps { button } */
 
@@ -12,7 +12,7 @@
    * @type {'default' | 'ghost' | 'persistent' | 'on-content'}
    * @defaultValue 'default'
    */
-  export let variant = VtmnSearchVariant.VTMN_DEFAUT;
+  export let variant = VARIANTS.VTMN_DEFAUT;
 
   /**
    * @type {boolean} disabled.
@@ -24,7 +24,7 @@
    * @type {'small' | 'medium'}
    * @defaultValue 'medium'
    */
-  export let size = VtmnSearchSize.VTMN_MEDIUM;
+  export let size = SIZES.VTMN_MEDIUM;
 
   /**
    * The value of the input
