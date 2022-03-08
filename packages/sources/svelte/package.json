@@ -32,6 +32,7 @@
     "test:watch": "npm run test -- --watch"
   },
   "dependencies": {
+    "@vtmn/css-accordion": "^0.2.11",
     "@vtmn/css-badge": "^0.10.10",
     "@vtmn/css-button": "^0.11.12",
     "@vtmn/css-chip": "^0.6.10",
