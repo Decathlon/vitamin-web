@@ -38,7 +38,8 @@
     "@vtmn/css-popover": "^0.5.11",
     "@vtmn/css-tag": "^0.4.1",
     "@vtmn/css-text-input": "^0.13.13",
-    "@vtmn/css-toggle": "^0.6.11"
+    "@vtmn/css-toggle": "^0.6.11",
+    "@vtmn/css-search": "^0.4.11"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.1.2",
