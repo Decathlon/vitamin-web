@@ -12,7 +12,7 @@
    * @type {'default' | 'ghost' | 'persistent' | 'on-content'}
    * @defaultValue 'default'
    */
-  export let variant = VARIANTS.VTMN_DEFAUT;
+  export let variant = VARIANTS.DEFAULT;
 
   /**
    * @type {boolean} disabled.
@@ -24,7 +24,7 @@
    * @type {'small' | 'medium'}
    * @defaultValue 'medium'
    */
-  export let size = SIZES.VTMN_MEDIUM;
+  export let size = SIZES.MEDIUM;
 
   /**
    * The value of the input
