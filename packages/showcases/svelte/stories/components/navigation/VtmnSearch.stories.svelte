@@ -42,3 +42,11 @@
 <Story name="Disabled" args={{ disabled: true }} />
 
 <Story name="Small size" args={{ size: 'small' }} />
+
+<Story name="Search events">
+  <VtmnSearch
+    let:args
+    on:input={(e) => console.log(e.target.value)}
+    on:search={(event) => alert('Search event fired ! :' + event.detail.text)}
+  />
+</Story>

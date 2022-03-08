@@ -53,6 +53,7 @@
     type="search"
     {...$$restProps}
     on:click
+    on:input
     on:mouseover
     on:mouseenter
     on:mouseout
