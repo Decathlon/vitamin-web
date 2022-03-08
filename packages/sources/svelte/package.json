@@ -33,6 +33,7 @@
     "@vtmn/css-badge": "^0.10.11",
     "@vtmn/css-button": "^0.11.11",
     "@vtmn/css-design-tokens": "^0.18.4",
+    "@vtmn/css-divider": "^0.1.20",
     "@vtmn/css-link": "^0.6.14",
     "@vtmn/css-list": "^0.2.15",
     "@vtmn/css-popover": "^0.5.11",

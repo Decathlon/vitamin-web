@@ -43,6 +43,10 @@ const components = [
   },
   {
     folder: 'structure',
+    name: 'VtmnDivider',
+  },
+  {
+    folder: 'structure',
     name: 'VtmnList',
   },
   {

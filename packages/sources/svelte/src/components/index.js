@@ -20,5 +20,6 @@ export { default as VtmnCheckbox } from './selection-controls/VtmnCheckbox/VtmnC
 export { default as VtmnToggle } from './selection-controls/VtmnToggle/VtmnToggle.svelte';
 
 // Structure
+export { default as VtmnDivider } from './structure/VtmnDivider/VtmnDivider.svelte';
 export { default as VtmnList } from './structure/VtmnList/VtmnList.svelte';
 export { default as VtmnListItem } from './structure/VtmnListItem/VtmnListItem.svelte';
