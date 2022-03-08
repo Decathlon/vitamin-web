@@ -1,6 +1,9 @@
 <script>
+  import { cn } from '../../../utils/classnames';
+
   import { VtmnButton } from '@vtmn/svelte';
   import { createEventDispatcher } from 'svelte';
+  import { VtmnSearchVariant, VtmnSearchSize } from './enums';
 
   /** @restProps { button } */
 
@@ -9,7 +12,7 @@
    * @type {'default' | 'ghost' | 'persistent' | 'on-content'}
    * @defaultValue 'default'
    */
-  export let variant = 'default';
+  export let variant = VtmnSearchVariant.VTMN_DEFAUT;
 
   /**
    * @type {boolean} disabled.
@@ -21,13 +24,19 @@
    * @type {'small' | 'medium'}
    * @defaultValue 'medium'
    */
-  export let size = 'medium';
+  export let size = VtmnSearchSize.VTMN_MEDIUM;
 
   /**
    * The value of the input
    * @type {string}
    */
   export let value;
+
+  /**
+   * Custom classes to apply to the component.
+   * @type {string}
+   */
+  export let className;
 
   const dispatch = createEventDispatcher();
 
@@ -40,10 +49,17 @@
       text: value,
     });
   };
+
+  $: componentClass = cn(
+    'vtmn-search',
+    variant && `vtmn-search_variant--${variant}`,
+    size && `vtmn-search_size--${size}`,
+    className,
+  );
 </script>
 
 <form
-  class={`vtmn-search vtmn-search_size--${size} vtmn-search_variant--${variant}`}
+  class={componentClass}
   action=""
   role="search"
   aria-controls="search-result"
