@@ -1,20 +1,20 @@
 <script>
   import { cn } from '../../../utils/classnames';
-  import { VtmnPriceVariant, VtmnPriceSize } from './enums';
+  import { VTMN_PRICE_VARIANT, VTMN_PRICE_SIZE } from './enums';
 
   /**
    * Size of the price
    * @type {'small' | 'medium' | 'large' }
    * @defaultValue 'medium'
    */
-  export let size = VtmnPriceSize.MEDIUM;
+  export let size = VTMN_PRICE_SIZE.MEDIUM;
 
   /**
    * Variant of the price
    * @type {'default' | 'accent' | 'alert' | 'strikethrough'}
    * @defaultValue 'default'
    */
-  export let variant = VtmnPriceVariant.DEFAULT;
+  export let variant = VTMN_PRICE_VARIANT.DEFAULT;
 
   let className;
   /**

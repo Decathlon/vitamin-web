@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.15.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.15.0...@vtmn/svelte@0.15.1) (2022-03-09)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+# [0.15.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.14.2...@vtmn/svelte@0.15.0) (2022-03-09)
+
+
+### Features
+
+* **@vtmn/svelte:** add `VtmnIcon` component ([#1015](https://github.com/Decathlon/vitamin-web/issues/1015)) ([d3c1591](https://github.com/Decathlon/vitamin-web/commit/d3c1591722c6dca3d798259d79f575ab1765aea7))
+
+
+
+
+
+## [0.14.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.14.1...@vtmn/svelte@0.14.2) (2022-03-07)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
 ## [0.14.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.14.0...@vtmn/svelte@0.14.1) (2022-03-05)
 
 **Note:** Version bump only for package @vtmn/svelte
