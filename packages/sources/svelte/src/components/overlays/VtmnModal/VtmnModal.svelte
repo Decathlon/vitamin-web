@@ -13,7 +13,7 @@
   /**
    * Display or hide the modal
    */
-  export let visible = false;
+  export let show = false;
 
   let className;
   /**
@@ -28,7 +28,7 @@
   };
 </script>
 
-{#if visible}
+{#if show}
   <div class={componentClass} role="dialog" aria-modal="true" {...$$restProps}>
     <div
       id="vtmn-modal-background"

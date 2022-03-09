@@ -9,16 +9,16 @@
       defaultValue: 'Modal title',
       control: { type: 'text' },
     },
-    visible: {
+    show: {
       type: { name: 'boolean', required: true },
       description: 'Display the modal',
       defaultValue: 'false',
       control: {
-        visible: 'boolean',
+        type: 'boolean',
       },
     },
   };
-  let visible = false;
+  let show = false;
 </script>
 
 <Meta
@@ -31,16 +31,16 @@
 <Story name="Overview">
   <VtmnButton
     on:click={() => {
-      visible = true;
+      show = true;
     }}>Display modal</VtmnButton
   >
   <VtmnModal
     title="Modal title"
     aria-labelledby="vtmn-modal-title"
     aria-describedby="vtmn-modal-description"
-    {visible}
+    {show}
     on:cancel={() => {
-      visible = false;
+      show = false;
     }}
   >
     <p
@@ -90,16 +90,16 @@
 <Story name="Without actions">
   <VtmnButton
     on:click={() => {
-      visible = true;
+      show = true;
     }}>Display modal</VtmnButton
   >
   <VtmnModal
     title="Modal title"
     aria-labelledby="vtmn-modal-title"
     aria-describedby="vtmn-modal-description"
-    {visible}
+    {show}
     on:cancel={() => {
-      visible = false;
+      show = false;
     }}
   >
     <div
