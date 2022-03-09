@@ -1,7 +1,7 @@
 <script>
   import { VtmnBadge, VtmnButton } from '../../index';
   import { createEventDispatcher } from 'svelte';
-  import { VARIANTS, SIZES } from './enums';
+  import { VTMN_CHIP_VARIANT, VTMN_CHIP_SIZE } from './enums';
   import { cn } from '../../../utils/classnames';
 
   const dispatch = createEventDispatcher();
@@ -9,12 +9,12 @@
   /**
    * The variant of the chip.
    */
-  export let variant = VARIANTS.SINGLE_CHOICE;
+  export let variant = VTMN_CHIP_VARIANT.SINGLE_CHOICE;
 
   /**
    * The size of the chip.
    */
-  export let size = SIZES.MEDIUM;
+  export let size = VTMN_CHIP_SIZE.MEDIUM;
 
   /**
    * The disabled state of the chip
@@ -48,22 +48,27 @@
     'vtmn-chip',
     `vtmn-chip_variant--${variant}`,
     `vtmn-chip_size--${size}`,
-    selected && variant !== VARIANTS.ACTION ? 'vtmn-chip--selected' : '',
+    selected && variant !== VTMN_CHIP_VARIANT.ACTION
+      ? 'vtmn-chip--selected'
+      : '',
     disabled ? 'vtmn-chip--disabled' : '',
     className,
   );
 
-  $: displayInputButton = variant === VARIANTS.INPUT && selected;
-  $: displayFilterBadge = variant === VARIANTS.FILTER && badgeValue > 0;
+  $: displayInputButton = variant === VTMN_CHIP_VARIANT.INPUT && selected;
+  $: displayFilterBadge =
+    variant === VTMN_CHIP_VARIANT.FILTER && badgeValue > 0;
   $: displayLeftIcon =
-    [VARIANTS.INPUT, VARIANTS.ACTION].includes(variant) && icon;
-  $: disableTableIndex = (variant === VARIANTS.INPUT && selected) || disabled;
+    [VTMN_CHIP_VARIANT.INPUT, VTMN_CHIP_VARIANT.ACTION].includes(variant) &&
+    icon;
+  $: disableTableIndex =
+    (variant === VTMN_CHIP_VARIANT.INPUT && selected) || disabled;
 
   const cancelClickHandler = () => {
     dispatch('cancel');
   };
   const selectClickHandler = () => {
-    if (disabled || (variant === VARIANTS.INPUT && selected)) {
+    if (disabled || (variant === VTMN_CHIP_VARIANT.INPUT && selected)) {
       return;
     }
     dispatch('click');
