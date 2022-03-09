@@ -1,6 +1,6 @@
-export const VARIANT = {
+export const VTMN_ICON_VARIANT = {
   DEFAULT: 'default',
-  BRAND: 'brand',
+  BRAND_PRIMARY: 'brand-primary',
   REVERSED: 'reversed',
   POSITIVE: 'positive',
   INFORMATION: 'information',

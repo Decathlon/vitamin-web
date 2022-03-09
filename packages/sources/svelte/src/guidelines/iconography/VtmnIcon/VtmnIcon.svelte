@@ -1,7 +1,7 @@
 <script>
   import { cn } from '../../../utils/classnames';
   import { objectToStyle } from '../../../utils/style';
-  import { VARIANT } from './enums';
+  import { VTMN_ICON_VARIANT } from './enums';
 
   /**
    * The size of the icon in pixels.
@@ -16,7 +16,7 @@
   /**
    * The variant of the icon.
    */
-  export let variant = VARIANT.DEFAULT;
+  export let variant = VTMN_ICON_VARIANT.DEFAULT;
 
   let className;
   /**
@@ -26,19 +26,19 @@
 
   const retrieveSemanticColor = (variant) => {
     switch (variant) {
-      case VARIANT.BRAND:
+      case VTMN_ICON_VARIANT.BRAND_PRIMARY:
         return 'background-brand-primary';
-      case VARIANT.REVERSED:
+      case VTMN_ICON_VARIANT.REVERSED:
         return 'content-primary-reversed';
-      case VARIANT.POSITIVE:
+      case VTMN_ICON_VARIANT.POSITIVE:
         return 'content-positive';
-      case VARIANT.INFORMATION:
+      case VTMN_ICON_VARIANT.INFORMATION:
         return 'content-information';
-      case VARIANT.WARNING:
+      case VTMN_ICON_VARIANT.WARNING:
         return 'content-warning';
-      case VARIANT.NEGATIVE:
+      case VTMN_ICON_VARIANT.NEGATIVE:
         return 'content-negative';
-      case VARIANT.DEFAULT:
+      case VTMN_ICON_VARIANT.DEFAULT:
       default:
         return 'content-primary';
     }
