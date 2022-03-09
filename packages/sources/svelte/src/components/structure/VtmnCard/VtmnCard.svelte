@@ -1,11 +1,10 @@
 <script>
-  import { VARIANTS } from './enums';
+  import { VTMN_CARD_VARIANTS } from './enums';
   import { cn } from '../../../utils/classnames';
 
-  export let img = '';
   export let title = '';
 
-  export let variant = VARIANTS.TOP_IMAGE;
+  export let variant = VTMN_CARD_VARIANTS.TOP_IMAGE;
   export let fullImage = false;
   export let contentOpaque = false;
 
@@ -23,21 +22,23 @@
 
   $: componentImageClass = cn(
     'vtmn-card_image',
-    variant === VARIANTS.TOP_IMAGE && fullImage && 'vtmn-card_image--full',
+    variant === VTMN_CARD_VARIANTS.TOP_IMAGE &&
+      fullImage &&
+      'vtmn-card_image--full',
   );
 
   $: componentContentClass = cn(
     'vtmn-card_content',
-    variant === VARIANTS.FULL_IMAGE &&
+    variant === VTMN_CARD_VARIANTS.FULL_IMAGE &&
       contentOpaque &&
       'vtmn-card_content--opaque',
   );
 </script>
 
 <div class={componentClass}>
-  {#if img}
+  {#if $$slots.img}
     <div class={componentImageClass}>
-      <img src={img} alt="" />
+      <slot name="img" />
     </div>
   {/if}
   <div class={componentContentClass}>

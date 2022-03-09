@@ -15,7 +15,7 @@
     fullImage: {
       type: { name: 'boolean', required: false },
       description:
-        'Define if image take full screen. Only on variant top-image',
+        'Define if image takes full screen. Only on variant top-image',
       defaultValue: false,
       control: {
         type: 'boolean',
@@ -37,27 +37,27 @@
         type: 'text',
       },
     },
-    img: {
-      type: { name: 'string', required: false },
-      description: 'Image url inserted on the card',
-      defaultValue:
-        'https://storage.googleapis.com/dkt-design-cdn/images/landscape-placeholder.jpg',
-      control: {
-        type: 'text',
-      },
-    },
   };
+
+  const src =
+    'https://storage.googleapis.com/dkt-design-cdn/images/landscape-placeholder.jpg';
 </script>
 
 <Meta
   title="Components / Structure / VtmnCard"
   component={VtmnCard}
-  {parameters}
+  parameters={{
+    ...parameters,
+    docs: {
+      inlineStories: true,
+    },
+  }}
   {argTypes}
 />
 
 <Template let:args>
   <VtmnCard {...args}>
+    <img slot="img" alt="" {src} />
     <p slot="content">
       A container for content representing a single entity. e.g. a contact,
       article, or task.
@@ -114,6 +114,7 @@
 
 <Story name="With actions" let:args>
   <VtmnCard {...args}>
+    <img slot="img" alt="" {src} />
     <p slot="content">
       A container for content representing a single entity. e.g. a contact,
       article, or task.
@@ -125,5 +126,38 @@
 <style>
   :global(.vtmn-card) {
     max-width: 400px;
+  }
+  :global(#anchor--components-structure-vtmncard--overview .docs-story),
+  :global(#anchor--components-structure-vtmncard--overview
+      .docs-story
+      > div:first-child),
+  :global(#anchor--components-structure-vtmncard--top-image .docs-story),
+  :global(#anchor--components-structure-vtmncard--top-image
+      .docs-story
+      > div:first-child),
+  :global(#anchor--components-structure-vtmncard--top-image-full-image
+      .docs-story),
+  :global(#anchor--components-structure-vtmncard--top-image-full-image
+      .docs-story
+      > div:first-child),
+  :global(#anchor--components-structure-vtmncard--top-image-without-image
+      .docs-story),
+  :global(#anchor--components-structure-vtmncard--top-image-without-image
+      .docs-story
+      > div:first-child),
+  :global(#anchor--components-structure-vtmncard--full-image .docs-story),
+  :global(#anchor--components-structure-vtmncard--full-image
+      .docs-story
+      > div:first-child),
+  :global(#anchor--components-structure-vtmncard--full-image-with-content-opaque
+      .docs-story),
+  :global(#anchor--components-structure-vtmncard--full-image-with-content-opaque
+      .docs-story
+      > div:first-child),
+  :global(#anchor--components-structure-vtmncard--with-actions .docs-story),
+  :global(#anchor--components-structure-vtmncard--with-actions
+      .docs-story
+      > div:first-child) {
+    height: 600px;
   }
 </style>
