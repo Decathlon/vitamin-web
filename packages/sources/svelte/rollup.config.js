@@ -28,7 +28,7 @@ const src = {
     },
     {
       folder: 'structure',
-      components: ['VtmnList', 'VtmnListItem'],
+      components: ['VtmnDivider', 'VtmnList', 'VtmnListItem'],
     },
   ],
   guidelines: [

@@ -21,5 +21,6 @@ export { default as VtmnChip } from './selection-controls/VtmnChip/VtmnChip.svel
 export { default as VtmnToggle } from './selection-controls/VtmnToggle/VtmnToggle.svelte';
 
 // Structure
+export { default as VtmnDivider } from './structure/VtmnDivider/VtmnDivider.svelte';
 export { default as VtmnList } from './structure/VtmnList/VtmnList.svelte';
 export { default as VtmnListItem } from './structure/VtmnListItem/VtmnListItem.svelte';
