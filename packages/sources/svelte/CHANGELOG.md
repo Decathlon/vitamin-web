@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.17.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.16.0...@vtmn/svelte@0.17.0) (2022-03-09)
+
+
+### Features
+
+* **@vtmn/svelte:** add `VtmnDivider` component ([#1029](https://github.com/Decathlon/vitamin-web/issues/1029)) ([eb8f707](https://github.com/Decathlon/vitamin-web/commit/eb8f707d344fc1bb942673d4df3b750bddf4d6ca))
+
+
+
+
+
 # [0.16.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.15.1...@vtmn/svelte@0.16.0) (2022-03-09)
 
 
