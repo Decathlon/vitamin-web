@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.16.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.15.1...@vtmn/svelte@0.16.0) (2022-03-09)
+
+
+### Features
+
+* **@vtmn/svelte:** add `VtmnChip` component ([#1017](https://github.com/Decathlon/vitamin-web/issues/1017)) ([dcad15f](https://github.com/Decathlon/vitamin-web/commit/dcad15fe121cb670e255be5ea677e4ba7691ce8f))
+
+
+
+
+
 ## [0.15.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.15.0...@vtmn/svelte@0.15.1) (2022-03-09)
 
 **Note:** Version bump only for package @vtmn/svelte
