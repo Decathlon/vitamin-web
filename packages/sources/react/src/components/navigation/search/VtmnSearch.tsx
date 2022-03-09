@@ -33,6 +33,13 @@ export interface VtmnSearchProps
    * @defaultValue 'Search'
    */
   placeholder?: string;
+
+  /**
+   * The value of the search bar.
+   * @type {string}
+   * @defaultValue undefined
+   */
+  value?: string;
 }
 
 export const VtmnSearch = ({
@@ -40,10 +47,11 @@ export const VtmnSearch = ({
   size = 'medium',
   disabled = false,
   placeholder = 'Search',
+  value = undefined,
   className,
   ...props
 }: VtmnSearchProps) => {
-  const [search, setSearch] = React.useState('');
+  const [search, setSearch] = React.useState(value);
 
   return (
     <div

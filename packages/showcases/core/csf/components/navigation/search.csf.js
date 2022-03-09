@@ -45,4 +45,10 @@ export const argTypes = {
     defaultValue: 'Search',
     control: { type: 'text' },
   },
+  value: {
+    type: { name: 'string', required: false },
+    description: 'The value of the search bar.',
+    defaultValue: undefined,
+    control: { type: 'text' },
+  },
 };
