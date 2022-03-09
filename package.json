@@ -53,7 +53,8 @@
     "start:svelte": "nx run-many --target=start --projects=@vtmn/showcase-svelte,@vtmn/svelte --parallel",
     "start:vue": "nx run-many --target=start --projects=@vtmn/showcase-vue,@vtmn/vue --parallel",
     "stylelint": "stylelint packages/**/*.css",
-    "stylelint:fix": "yarn stylelint --fix"
+    "stylelint:fix": "yarn stylelint --fix",
+    "test": "nx run-many --target=test --all --parallel"
   },
   "lint-staged": {
     "./packages/**/*.css": [
