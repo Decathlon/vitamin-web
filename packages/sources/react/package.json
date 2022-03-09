@@ -31,6 +31,9 @@
     "lint:fix": "eslint src --ext .js,.jsx,.ts,.tsx --fix",
     "start": "npm run build -- -w"
   },
+  "dependencies": {
+    "@vtmn/icons": "^0.12.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.17.0",
     "@babel/eslint-parser": "^7.17.0",
@@ -58,7 +61,6 @@
     "@vtmn/css-text-input": "^0.13.13",
     "@vtmn/css-toggle": "^0.6.11",
     "@vtmn/css-tooltip": "^0.6.11",
-    "@vtmn/icons": "^0.12.0",
     "autoprefixer": "^10.3.6",
     "eslint": "8.10.0",
     "eslint-config-prettier": "^8.2.0",

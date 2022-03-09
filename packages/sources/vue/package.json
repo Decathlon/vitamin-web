@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "@vtmn/css-design-tokens": "^0.18.4",
+    "@vtmn/icons": "^0.12.0",
     "core-js": "^3.21.0",
     "vue": "^3.2.26"
   },

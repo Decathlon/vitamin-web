@@ -61,26 +61,6 @@ import 'typeface-roboto';
 import 'typeface-roboto-condensed';
 ```
 
-## Install icons (optional)
-
-If you need to display icons, you will need to install `@vtmn/icons` package.
-
-```sh
-# with npm
-npm i -S @vtmn/icons
-
-# with yarn
-yarn add @vtmn/icons
-```
-
-Then follow instructions in [README of @vtmn/icons](https://www.npmjs.com/package/@vtmn/icons) :
-
-```javascript
-import '@vtmn/icons/dist/vitamix/font/vitamix.css';
-```
-
-Or you can also import it with a CDN like `unpkg.com` with [this file](https://unpkg.com/@vtmn/icons/dist/vitamix/font/vitamix.css).
-
 ## Usage
 
 Once you have installed this package, you just have to import CSS styles!
