@@ -23,6 +23,5 @@ export { default as VtmnToggle } from './selection-controls/VtmnToggle/VtmnToggl
 // Structure
 export { default as VtmnDivider } from './structure/VtmnDivider/VtmnDivider.svelte';
 export { default as VtmnAccordion } from './structure/VtmnAccordion/VtmnAccordion.svelte';
-export { default as VtmnDivider } from './structure/VtmnDivider/VtmnDivider.svelte';
 export { default as VtmnList } from './structure/VtmnList/VtmnList.svelte';
 export { default as VtmnListItem } from './structure/VtmnListItem/VtmnListItem.svelte';
