@@ -2,13 +2,29 @@
   import { VTMN_CARD_VARIANTS } from './enums';
   import { cn } from '../../../utils/classnames';
 
+  /**
+   * @type {string} title of the card
+   */
   export let title = '';
 
+  /**
+   * @type {'top-image' | 'side-image' | 'full-image' } variant of the card
+   */
   export let variant = VTMN_CARD_VARIANTS.TOP_IMAGE;
+
+  /**
+   * @type {boolean} display image on full screen.
+   * Only for variant 'top-image'
+   */
   export let fullImage = false;
+
+  /**
+   * @type {boolean} display the content with opaque style
+   * Only for variant 'full-image'
+   */
   export let contentOpaque = false;
 
-  let className;
+  let className = '';
   /**
    * @type {string} Custom classes to apply to the component.
    */
