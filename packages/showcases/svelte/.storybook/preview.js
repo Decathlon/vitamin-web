@@ -12,6 +12,11 @@ export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   backgrounds,
   controls: { expanded: true },
+  options: {
+    storySort: {
+      order: ['Guidelines', 'Components'],
+    },
+  },
   viewport: {
     viewports,
   },

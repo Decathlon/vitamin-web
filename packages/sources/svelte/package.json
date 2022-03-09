@@ -30,15 +30,16 @@
     "start": "chokidar \"src/**\" -i \"**/dist/**\" -c \"yarn build\""
   },
   "dependencies": {
-    "@vtmn/css-badge": "^0.10.11",
-    "@vtmn/css-button": "^0.11.11",
-    "@vtmn/css-design-tokens": "^0.18.4",
-    "@vtmn/css-link": "^0.6.14",
-    "@vtmn/css-list": "^0.2.15",
-    "@vtmn/css-popover": "^0.5.11",
-    "@vtmn/css-tag": "^0.4.1",
-    "@vtmn/css-text-input": "^0.13.13",
-    "@vtmn/css-toggle": "^0.6.11"
+    "@vtmn/css-badge": "^0.10.10",
+    "@vtmn/css-button": "^0.11.10",
+    "@vtmn/css-design-tokens": "^0.18.3",
+    "@vtmn/css-link": "^0.6.13",
+    "@vtmn/css-list": "^0.2.14",
+    "@vtmn/css-popover": "^0.5.10",
+    "@vtmn/css-tag": "^0.3.10",
+    "@vtmn/css-text-input": "^0.13.12",
+    "@vtmn/css-toggle": "^0.6.11",
+    "@vtmn/icons": "^0.12.0"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.1.2",
