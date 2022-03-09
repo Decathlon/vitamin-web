@@ -51,7 +51,7 @@ export const argTypes = {
       type: 'select',
       options: [
         'default',
-        'brand',
+        'brand-primary',
         'reversed',
         'positive',
         'information',

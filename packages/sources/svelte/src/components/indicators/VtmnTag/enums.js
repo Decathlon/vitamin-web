@@ -1,4 +1,4 @@
-export const VtmnTagVariant = {
+export const VTMN_TAG_VARIANT = {
   ACCENT: 'accent',
   ALERT: 'alert',
   BRAND: 'brand',
