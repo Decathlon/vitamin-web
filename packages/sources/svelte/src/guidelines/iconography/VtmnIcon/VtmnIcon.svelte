@@ -52,7 +52,3 @@
 </script>
 
 <span class={componentClass} style={componentStyle} />
-
-<style>
-  @import '@vtmn/icons/dist/vitamix/font/vitamix.css';
-</style>
