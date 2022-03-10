@@ -1,12 +1,12 @@
 <script>
   import { cn } from '../../../utils/classnames';
-  import { VtmnTagVariant } from './enums';
+  import { VTMN_TAG_VARIANT } from './enums';
 
   /**
    * The variant of the tag
    * @type {'accent' | 'alert' | 'brand' | 'decorative_gravel' | 'decorative_brick' |'decorative_saffron' | 'decorative_gold' | 'decorative_jade' | 'decorative_emerald' | 'decorative_cobalt' | 'decorative_amethyst'}
    */
-  export let variant = VtmnTagVariant.ACCENT;
+  export let variant = VTMN_TAG_VARIANT.ACCENT;
 
   /**
    * The href that makes the tag interactive.

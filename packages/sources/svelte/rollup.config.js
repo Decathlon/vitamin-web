@@ -4,64 +4,64 @@ import svelte from 'rollup-plugin-svelte';
 import sveltePreprocess from 'svelte-preprocess';
 const preprocessOptions = require('./svelte.config').preprocessOptions;
 
-const components = [
-  {
-    folder: 'actions',
-    name: 'VtmnButton',
-  },
-  {
-    folder: 'actions',
-    name: 'VtmnLink',
-  },
-  {
-    folder: 'forms',
-    name: 'VtmnTextInput',
-  },
-  {
-    folder: 'indicators',
-    name: 'VtmnBadge',
-  },
-  {
-    folder: 'indicators',
-    name: 'VtmnPrice',
-  },
-  {
-    folder: 'indicators',
-    name: 'VtmnTag',
-  },
-  {
-    folder: 'overlays',
-    name: 'VtmnPopover',
-  },
-  {
-    folder: 'selection-controls',
-    name: 'VtmnCheckbox',
-  },
-  {
-    folder: 'selection-controls',
-    name: 'VtmnToggle',
-  },
-  {
-    folder: 'structure',
-    name: 'VtmnList',
-  },
-  {
-    folder: 'structure',
-    name: 'VtmnListItem',
-  },
-];
+const src = {
+  components: [
+    {
+      folder: 'actions',
+      components: ['VtmnButton', 'VtmnLink'],
+    },
+    {
+      folder: 'forms',
+      components: ['VtmnTextInput'],
+    },
+    {
+      folder: 'indicators',
+      components: ['VtmnBadge', 'VtmnPrice', 'VtmnTag'],
+    },
+    {
+      folder: 'overlays',
+      components: ['VtmnPopover'],
+    },
+    {
+      folder: 'selection-controls',
+      components: ['VtmnCheckbox', 'VtmnChip', 'VtmnToggle'],
+    },
+    {
+      folder: 'structure',
+      components: ['VtmnDivider', 'VtmnList', 'VtmnListItem'],
+    },
+  ],
+  guidelines: [
+    {
+      folder: 'iconography',
+      components: ['VtmnIcon'],
+    },
+  ],
+};
 
-export default components.map(({ folder, name }) => ({
-  input: `src/components/${folder}/${name}/${name}.svelte`,
+const svelteOptions = (component) => ({
   output: [
-    { file: `dist/${name}.mjs`, format: 'es' },
-    { file: `dist/${name}.js`, format: 'umd', name },
+    { file: `dist/${component}.mjs`, format: 'es' },
+    { file: `dist/${component}.js`, format: 'umd', name: component },
   ],
   plugins: [
     svelte({
       preprocess: sveltePreprocess(preprocessOptions),
     }),
-    css({ output: `${name}.css` }),
+    css({ output: `${component}.css` }),
     resolve(),
   ],
-}));
+});
+
+const predicate =
+  (baseDir) =>
+  ({ folder, components }) =>
+    components.map((component) => ({
+      input: `src/${baseDir}/${folder}/${component}/${component}.svelte`,
+      ...svelteOptions(component),
+    }));
+
+export default [
+  ...src.components.flatMap(predicate('components')),
+  ...src.guidelines.flatMap(predicate('guidelines')),
+];

@@ -1,5 +1,5 @@
 <script>
-  import { SIZE } from './enums';
+  import { VTMN_TOGGLE_SIZE } from './enums';
   import { cn } from '../../../utils/classnames';
 
   /**
@@ -21,7 +21,7 @@
   /**
    * Size of the component
    */
-  export let size = SIZE.MEDIUM;
+  export let size = VTMN_TOGGLE_SIZE.MEDIUM;
 
   let className;
   /**

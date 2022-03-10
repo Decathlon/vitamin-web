@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-accordion",
-  "version": "0.2.11",
+  "version": "0.2.12",
   "description": "Decathlon Design System - Vitamin specific CSS styles for accordion component",
   "keywords": [
     "design-system",
@@ -24,6 +24,9 @@
   ],
   "scripts": {
     "build": "node build.js"
+  },
+  "dependencies": {
+    "@vtmn/icons": "^0.12.0"
   },
   "devDependencies": {
     "@vtmn/css-design-tokens": "^0.18.4",
