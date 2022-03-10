@@ -97,10 +97,6 @@
   gap: rem(4px);
 }
 
-.vtmn-card_variant--side-image .vtmn-card_icons .vtmn-btn {
-  width: rem(32px);
-}
-
 .vtmn-card_variant--side-image .vtmn-card_icons .vtmn-btn span[class^='vtmx-'] {
   font-size: var(--vtmn-typo_title-5-font-size);
 }
@@ -108,23 +104,21 @@
 .vtmn-card_variant--side-image .vtmn-card_content_body {
   display: flex;
   flex-direction: column;
-  flex-grow: 2;
   margin: 0;
   padding: 0 rem(16px) rem(16px) 0;
 }
 
 .vtmn-card_variant--side-image .vtmn-card_content_image {
-  flex-grow: 1;
-  align-self: center;
+  align-self: flex-start;
   height: max-content;
   margin: 0 rem(16px) rem(16px) rem(16px);
 }
 
 .vtmn-card_variant--side-image .vtmn-card_content_image img {
-  height: 100%;
+  min-width: rem(96px);
 }
 
-.vtmn-card_variant--side-image .vtmn-btn {
+.vtmn-card_variant--side-image .vtmn-card_content_body .vtmn-btn {
   width: fit-content;
 }
 
