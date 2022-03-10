@@ -38,7 +38,7 @@
    */
   export let rating = 0;
 
-  let className;
+  let className = '';
   /**
    * @type {string} Custom classes to apply to the component.
    */
@@ -50,19 +50,16 @@
     emphasis && 'vtmn-rating_variant--brand',
     className,
   );
-  $: starsCnt = compact ? 1 : 5;
-
-  // Need to be computed because on radio button mode, rating must be an integer
-  $: computedRating = readOnly ? rating : Math.floor(rating);
+  $: starsCnt = compact && readOnly ? 1 : 5;
 
   const computeRatingFill = (currentRatingStar) => {
-    if (currentRatingStar <= computedRating) {
+    if (currentRatingStar <= rating) {
       return 'fill';
     }
     if (
-      computedRating < currentRatingStar &&
-      isFloat(computedRating) &&
-      Math.ceil(computedRating) === currentRatingStar
+      rating < currentRatingStar &&
+      isFloat(rating) &&
+      Math.ceil(rating) === currentRatingStar
     ) {
       return 'half-fill';
     }
@@ -84,7 +81,7 @@
       {#each Array(starsCnt) as _, i}
         <input
           type="radio"
-          bind:group={computedRating}
+          bind:group={rating}
           {name}
           value={i + 1}
           id={`${name}-${i + 1}`}
@@ -102,12 +99,19 @@
         role="presentation"
       />
     {/each}
-    <span class="vtmn-rating_comment--primary" aria-label="article rating">
-      <slot name="primary" />
-    </span>
-    <span class="vtmn-rating_comment--secondary" aria-label="number of ratings">
-      <slot name="secondary" />
-    </span>
+    {#if $$slots.primary}
+      <span class="vtmn-rating_comment--primary" aria-label="article rating">
+        <slot name="primary" />
+      </span>
+    {/if}
+    {#if $$slots.secondary}
+      <span
+        class="vtmn-rating_comment--secondary"
+        aria-label="number of ratings"
+      >
+        <slot name="secondary" />
+      </span>
+    {/if}
   {/if}
 </div>
 

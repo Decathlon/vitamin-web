@@ -50,7 +50,7 @@
       type: { name: 'boolean', required: false },
       description: 'How many stars are filled.',
       defaultValue: 0,
-      control: { type: 'range', min: 0, max: 5, step: 0.5 },
+      control: { type: 'range', min: 0, max: 5, step: 0.25 },
     },
   };
 </script>
@@ -81,20 +81,23 @@
     name="story-interfactive-2"
     emphasis
     size="small"
-    rating={2}
+    rating={0}
   />
   <VtmnRating
     class="rating-stories"
     name="story-interfactive-3"
     emphasis
     disabled
-    rating={4}
+    rating={0}
   />
 </Story>
 
 <Story name="Read Only with text">
   <VtmnRating class="rating-stories" readOnly="true" compact rating={1}>
     <span slot="primary">4.1/5</span>
+  </VtmnRating>
+  <VtmnRating class="rating-stories" readOnly="true" compact rating={0.1}>
+    <span slot="primary">1/5</span>
   </VtmnRating>
   <VtmnRating
     class="rating-stories"
@@ -114,6 +117,10 @@
     rating={1}
   >
     <span slot="primary">74 ratings</span>
+  </VtmnRating>
+  <VtmnRating class="rating-stories" emphasis readOnly="true" rating={2.3}>
+    <span slot="primary">2.3/5</span>
+    <span slot="secondary">(74)</span>
   </VtmnRating>
 </Story>
 
