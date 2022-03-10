@@ -343,5 +343,21 @@ describe('VtmnRating', () => {
       expect(getCommentPrimary(container)).toBeUndefined();
       expect(getPrimarySlot(container)).toBeNull();
     });
+    test('Should radio inputs reactive to rating variable', async () => {
+      const { container } = render(VtmnRatingWithSlots, {
+        name: 'rating',
+        readOnly: false,
+      });
+
+      expect(getInteractive(container)).toHaveAttribute('data-rating', '0');
+
+      const inputs = getRadioInputs(container);
+      for (let i = 0, ii = inputs.length; i < ii; i++) {
+        expect(inputs[i].checked).toEqual(false);
+      }
+      await fireEvent.click(inputs[1]);
+      expect(inputs[1].checked).toEqual(true);
+      expect(getInteractive(container)).toHaveAttribute('data-rating', '2');
+    });
   });
 });

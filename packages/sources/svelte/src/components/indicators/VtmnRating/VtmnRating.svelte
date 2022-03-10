@@ -77,6 +77,7 @@
       class="vtmn-rating--interactive"
       aria-label="Rate the article"
       role="radiogroup"
+      data-rating={rating}
     >
       {#each Array(starsCnt) as _, i}
         <input
