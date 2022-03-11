@@ -66,7 +66,7 @@ The `viewBox` attribute is required if you wish to resize assets with `backgroun
 ```css
 .your-class {
   content: '';
-  background-image: url('data:image/svg+xml,%3Csvg width='28' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.25' y='0.25' width='27.5' height='19.5' rx='1.75' fill='#fff' stroke='#f5f5f5' stroke-width='0.5'/%3E%3Cmask id='a' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='28' height='20'%3E%3Crect x='0.25' y='0.25' width='27.5' height='19.5' rx='1.75' fill='#fff' stroke='#fff' stroke-width='0.5'/%3E%3C/mask%3E%3Cg mask='url(#a)'%3E%3Cpath fill='#f44653' d='M18.6670h28v20h-9.333z'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M020h9.333v0h0v20z' fill='#1035bb'/%3E%3C/g%3E%3C/svg%3E');
+  background-image: url("data:image/svg+xml,%3Csvg width='28' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.25' y='0.25' width='27.5' height='19.5' rx='1.75' fill='#fff' stroke='#f5f5f5' stroke-width='0.5'/%3E%3Cmask id='a' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='28' height='20'%3E%3Crect x='0.25' y='0.25' width='27.5' height='19.5' rx='1.75' fill='#fff' stroke='#fff' stroke-width='0.5'/%3E%3C/mask%3E%3Cg mask='url(#a)'%3E%3Cpath fill='#f44653' d='M18.6670h28v20h-9.333z'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M020h9.333v0h0v20z' fill='#1035bb'/%3E%3C/g%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-size: 1rem 1rem;
 }
