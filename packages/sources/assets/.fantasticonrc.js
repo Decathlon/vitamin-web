@@ -1,5 +1,5 @@
 module.exports = {
-  inputDir: './src/assets', // (required)
+  inputDir: './dist/assets/svg', // (required)
   outputDir: './dist/assets/json', // (required)
   fontTypes: [],
   assetTypes: ['json'],
