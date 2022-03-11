@@ -5,6 +5,7 @@ import { VtmnPriceSize, VtmnPriceVariant } from './types';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnPrice',
+  inheritAttrs: false,
   props: {
     variant: {
       type: String as PropType<VtmnPriceVariant>,

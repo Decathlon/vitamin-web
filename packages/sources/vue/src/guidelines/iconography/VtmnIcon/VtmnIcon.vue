@@ -5,6 +5,7 @@ import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnIcon',
+  inheritAttrs: false,
   props: {
     value: {
       type: String as PropType<VitamixId>,

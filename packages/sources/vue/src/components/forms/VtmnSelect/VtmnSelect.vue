@@ -5,6 +5,7 @@ import { VtmnSelectOption } from './types';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnSelect',
+  inheritAttrs: false,
   props: {
     modelValue: {
       type: [String, Number, Boolean] as PropType<string | number | boolean>,
