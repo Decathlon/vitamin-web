@@ -68,7 +68,7 @@ export default /*#__PURE__*/ defineComponent({
 </script>
 
 <template>
-  <div className="vtmn-select_container">
+  <div class="vtmn-select_container">
     <label :v-if="labelText" class="vtmn-text-input_label" :for="identifier">
       {{ labelText }}
     </label>

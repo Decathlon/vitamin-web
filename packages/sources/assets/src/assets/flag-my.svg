@@ -1,1 +1,11 @@
-<svg width="28" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="20" rx="2" fill="#fff"/><mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20"><rect width="28" height="20" rx="2" fill="#fff"/></mask><g mask="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M28 0H13.333v1.333H28V0Zm0 2.667H13.333V4H28V2.667ZM13.333 5.333H28v1.334H13.333V5.333ZM28 8H13.333v1.333H28V8ZM0 10.667h28V12H0v-1.333Zm28 2.666H0v1.334h28v-1.334ZM0 16h28v1.333H0V16Zm28 2.667H0V20h28v-1.333Z" fill="#E1244A"/><path fill="#0C3F8E" d="M0 0h16v10.667H0z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M6.667 9.333c.945 0 1.813-.327 2.498-.876a3.333 3.333 0 1 1 0-6.248 4 4 0 1 0-2.498 7.124ZM9.51 7.736l1.157-1.31 1.157 1.31-.303-1.721 1.745-.088-1.533-.837 1.018-1.42-1.61.678-.474-1.681-.475 1.681-1.61-.677L9.6 5.09l-1.534.837 1.745.088-.302 1.72Z" fill="#FFD34F"/></g></svg>
+<svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="28" height="20" rx="2" fill="white"/>
+<mask id="mask0_503_3033" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20">
+<rect width="28" height="20" rx="2" fill="white"/>
+</mask>
+<g mask="url(#mask0_503_3033)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M28 0H13.3333V1.33333H28V0ZM28 2.66667H13.3333V4H28V2.66667ZM13.3333 5.33333H28V6.66667H13.3333V5.33333ZM28 8H13.3333V9.33333H28V8ZM0 10.6667H28V12H0V10.6667ZM28 13.3333H0V14.6667H28V13.3333ZM0 16H28V17.3333H0V16ZM28 18.6667H0V20H28V18.6667Z" fill="#E1244A"/>
+<rect width="16" height="10.6667" fill="#0C3F8E"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.66666 9.33333C7.61177 9.33333 8.48032 9.00555 9.16484 8.45747C8.80223 8.59273 8.40974 8.66666 7.99999 8.66666C6.15904 8.66666 4.66666 7.17428 4.66666 5.33333C4.66666 3.49238 6.15904 1.99999 7.99999 1.99999C8.40974 1.99999 8.80223 2.07393 9.16484 2.20918C8.48032 1.66111 7.61177 1.33333 6.66666 1.33333C4.45752 1.33333 2.66666 3.12419 2.66666 5.33333C2.66666 7.54247 4.45752 9.33333 6.66666 9.33333ZM9.50963 7.73591L10.6667 6.42666L11.8237 7.73591L11.5215 6.01501L13.2665 5.92672L11.7326 5.09004L12.7515 3.67069L11.141 4.34827L10.6667 2.66666L10.1923 4.34827L8.58177 3.67069L9.60074 5.09004L8.06685 5.92672L9.81185 6.01501L9.50963 7.73591Z" fill="#FFD34F"/>
+</g>
+</svg>

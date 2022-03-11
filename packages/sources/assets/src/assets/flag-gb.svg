@@ -1,1 +1,15 @@
-<svg width="28" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="20" rx="2" fill="#fff"/><mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20"><rect width="28" height="20" rx="2" fill="#fff"/></mask><g mask="url(#a)"><path fill="#0A17A7" d="M0 0h28v20H0z"/><path fill-rule="evenodd" clip-rule="evenodd" d="m-1.282-1.916 11.949 8.06v-7.477h6.666v7.476l11.95-8.06 1.49 2.211-9.447 6.373H28v6.666h-6.674l9.448 6.373-1.492 2.21-11.949-8.06v7.477h-6.666v-7.476l-11.95 8.06-1.49-2.211 9.447-6.373H0V6.667h6.674L-2.774.294l1.492-2.21Z" fill="#fff"/><path d="M18.668 6.332 31.333-2m-11.32 15.697 11.354 7.653M8.006 6.31-3.837-1.67M9.29 13.605-3.837 22.31" stroke="#DB1F35" stroke-width=".667" stroke-linecap="round"/><path fill-rule="evenodd" clip-rule="evenodd" d="M0 12h12v8h4v-8h12V8H16V0h-4v8H0v4Z" fill="#E6273E"/></g></svg>
+<svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="28" height="20" rx="2" fill="white"/>
+<mask id="mask0_503_2952" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20">
+<rect width="28" height="20" rx="2" fill="white"/>
+</mask>
+<g mask="url(#mask0_503_2952)">
+<rect width="28" height="20" fill="#0A17A7"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-1.28247 -1.91644L10.6667 6.14335V-1.33333H17.3333V6.14335L29.2825 -1.91644L30.7737 0.294324L21.3263 6.66667H28V13.3333H21.3263L30.7737 19.7057L29.2825 21.9165L17.3333 13.8567V21.3333H10.6667V13.8567L-1.28247 21.9165L-2.77365 19.7057L6.67374 13.3333H-9.53674e-07V6.66667H6.67374L-2.77365 0.294324L-1.28247 -1.91644Z" fill="white"/>
+<path d="M18.668 6.33219L31.3333 -2" stroke="#DB1F35" stroke-width="0.666667" stroke-linecap="round"/>
+<path d="M20.0128 13.6975L31.3666 21.3503" stroke="#DB1F35" stroke-width="0.666667" stroke-linecap="round"/>
+<path d="M8.00553 6.31047L-3.83749 -1.67097" stroke="#DB1F35" stroke-width="0.666667" stroke-linecap="round"/>
+<path d="M9.29004 13.6049L-3.83749 22.3105" stroke="#DB1F35" stroke-width="0.666667" stroke-linecap="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 12H12V20H16V12H28V8H16V0H12V8H0V12Z" fill="#E6273E"/>
+</g>
+</svg>

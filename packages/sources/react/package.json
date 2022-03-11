@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/react",
-  "version": "0.22.4",
+  "version": "0.22.5",
   "description": "Decathlon Design System - Vitamin React components library",
   "keywords": [
     "design-system",
@@ -32,7 +32,7 @@
     "start": "npm run build -- -w"
   },
   "dependencies": {
-    "@vtmn/icons": "^0.12.0"
+    "@vtmn/icons": "^0.12.1"
   },
   "devDependencies": {
     "@babel/core": "^7.17.0",
@@ -48,19 +48,19 @@
     "@types/react-dom": "^17.0.11",
     "@typescript-eslint/eslint-plugin": "^5.10.2",
     "@typescript-eslint/parser": "^5.10.2",
-    "@vtmn/css-alert": "^0.6.12",
-    "@vtmn/css-badge": "^0.10.11",
-    "@vtmn/css-button": "^0.11.13",
-    "@vtmn/css-checkbox": "^0.6.15",
-    "@vtmn/css-chip": "^0.6.12",
-    "@vtmn/css-link": "^0.6.14",
-    "@vtmn/css-loader": "^0.2.22",
-    "@vtmn/css-price": "^0.2.11",
-    "@vtmn/css-radio-button": "^0.6.14",
-    "@vtmn/css-select": "^0.6.14",
-    "@vtmn/css-text-input": "^0.13.13",
-    "@vtmn/css-toggle": "^0.6.11",
-    "@vtmn/css-tooltip": "^0.6.12",
+    "@vtmn/css-alert": "^0.6.13",
+    "@vtmn/css-badge": "^0.10.12",
+    "@vtmn/css-button": "^0.11.14",
+    "@vtmn/css-checkbox": "^0.6.16",
+    "@vtmn/css-chip": "^0.6.13",
+    "@vtmn/css-link": "^0.6.15",
+    "@vtmn/css-loader": "^0.2.23",
+    "@vtmn/css-price": "^0.2.12",
+    "@vtmn/css-radio-button": "^0.6.15",
+    "@vtmn/css-select": "^0.6.15",
+    "@vtmn/css-text-input": "^0.13.14",
+    "@vtmn/css-toggle": "^0.6.12",
+    "@vtmn/css-tooltip": "^0.6.13",
     "autoprefixer": "^10.3.6",
     "eslint": "8.10.0",
     "eslint-config-prettier": "^8.2.0",
