@@ -17,6 +17,7 @@ export { default as VtmnTag } from './indicators/VtmnTag/VtmnTag.svelte';
 export { default as VtmnAlert } from './overlays/VtmnAlert/VtmnAlert.svelte';
 export { vtmnAlertStore } from './overlays/VtmnAlert/vtmnAlertStore';
 export { default as VtmnPopover } from './overlays/VtmnPopover/VtmnPopover.svelte';
+export { default as VtmnSnackbar } from './overlays/VtmnSnackbar/VtmnSnackbar.svelte';
 
 // Selection controls
 export { default as VtmnCheckbox } from './selection-controls/VtmnCheckbox/VtmnCheckbox.svelte';
