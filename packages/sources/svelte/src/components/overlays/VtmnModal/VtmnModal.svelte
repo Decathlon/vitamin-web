@@ -6,30 +6,30 @@
   const dispatch = createEventDispatcher();
 
   /**
-   * Title of the modal
+   * @type {string} Title of the modal
    */
   export let title;
 
   /**
-   * Display or hide the modal
+   * @type {boolean} Display or hide the modal
    */
   export let show = false;
 
-  let className;
+  let className = '';
   /**
    * @type {string} Custom classes to apply to the component.
    */
   export { className as class };
 
-  $: componentClass = cn('vtmn-modal', className);
+  $: componentClass = cn('vtmn-modal', 'show', className);
 
   const handleCancel = () => {
-    dispatch('cancel');
+    dispatch('cancel', { show });
   };
 </script>
 
 {#if show}
-  <div class={componentClass} role="dialog" aria-modal="true" {...$$restProps}>
+  <div class={componentClass} role="dialog" aria-modal="true">
     <div
       id="vtmn-modal-background"
       class="vtmn-modal_background-overlay"
