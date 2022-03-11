@@ -1,1 +1,12 @@
-<svg width="28" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x=".25" y=".25" width="27.5" height="19.5" rx="1.75" fill="#fff" stroke="#F5F5F5" stroke-width=".5"/><mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20"><rect x=".25" y=".25" width="27.5" height="19.5" rx="1.75" fill="#fff" stroke="#fff" stroke-width=".5"/></mask><g mask="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 6.667h28V0H0v6.667Z" fill="#0C33B8"/><path fill-rule="evenodd" clip-rule="evenodd" d="M0 20h28v-6.667H0V20Z" fill="#1DB158"/><path fill-rule="evenodd" clip-rule="evenodd" d="m13.333 10 .034-.103c.203-.607 1.063-.607 1.265 0l.035.103 1.181 1.773c.089.132.07.306-.063.395-.293.197-.889.499-1.785.499-.896 0-1.492-.302-1.785-.5-.132-.088-.152-.262-.063-.394L13.333 10Z" fill="#262626"/><path d="M15 8.667a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z" stroke="#262626" stroke-width=".667"/></g></svg>
+<svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.25" y="0.25" width="27.5" height="19.5" rx="1.75" fill="white" stroke="#F5F5F5" stroke-width="0.5"/>
+<mask id="mask0_503_3938" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20">
+<rect x="0.25" y="0.25" width="27.5" height="19.5" rx="1.75" fill="white" stroke="white" stroke-width="0.5"/>
+</mask>
+<g mask="url(#mask0_503_3938)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 6.66667H28V0H0V6.66667Z" fill="#0C33B8"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 20H28V13.3333H0V20Z" fill="#1DB158"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.3333 9.99998L13.3675 9.89735C13.5701 9.28955 14.4299 9.28955 14.6325 9.89735L14.6667 9.99998L15.8484 11.7726C15.9366 11.9048 15.9172 12.0791 15.7853 12.1678C15.4916 12.3653 14.8965 12.6667 14 12.6667C13.1035 12.6667 12.5084 12.3653 12.2147 12.1678C12.0828 12.0791 12.0634 11.9048 12.1516 11.7726L13.3333 9.99998Z" fill="#262626"/>
+<path d="M15 8.66668C15 9.21896 14.5523 9.66668 14 9.66668C13.4477 9.66668 13 9.21896 13 8.66668C13 8.11439 13.4477 7.66668 14 7.66668C14.5523 7.66668 15 8.11439 15 8.66668Z" stroke="#262626" stroke-width="0.666667"/>
+</g>
+</svg>

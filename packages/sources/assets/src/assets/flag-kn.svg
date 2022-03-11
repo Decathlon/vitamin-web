@@ -1,1 +1,14 @@
-<svg width="28" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="20" rx="2" fill="#fff"/><mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20"><rect width="28" height="20" rx="2" fill="#fff"/></mask><g mask="url(#a)" fill-rule="evenodd" clip-rule="evenodd"><path d="M0 13.333 28 0H0v13.333Z" fill="#1EC160"/><path d="M0 20h28V6.667L0 20Z" fill="#DF2A40"/><path d="m.784 25.333 32.791-20.49-6.359-10.176-32.791 20.49L.784 25.333Z" fill="#FFD956"/><path d="m-.63 23.072 32.792-20.49-3.533-5.654-32.791 20.49 3.533 5.654Z" fill="#262626"/><path d="m20.31 7.797-.946 1.498-.614-1.661-1.716-.437 1.39-1.097-.115-1.767 1.473.984 1.645-.656-.48 1.705 1.132 1.361-1.77.07ZM9.643 14.264l-.946 1.498-.613-1.662-1.716-.436 1.39-1.097-.115-1.767 1.472.983 1.645-.655-.48 1.704 1.132 1.362-1.77.07Z" fill="#fff"/></g></svg>
+<svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="28" height="20" rx="2" fill="white"/>
+<mask id="mask0_503_4214" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20">
+<rect width="28" height="20" rx="2" fill="white"/>
+</mask>
+<g mask="url(#mask0_503_4214)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 13.3333L28 0H0V13.3333Z" fill="#1EC160"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 20H28V6.66666L0 20Z" fill="#DF2A40"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.783927 25.3334L33.5751 4.84317L27.2161 -5.3334L-5.5751 15.1568L0.783927 25.3334Z" fill="#FFD956"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-0.629314 23.072L32.1619 2.58175L28.6291 -3.0719L-4.16211 17.4183L-0.629314 23.072Z" fill="#262626"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.3092 7.79741L19.3638 9.29477L18.7504 7.63357L17.0342 7.19715L18.4245 6.1004L18.3092 4.33331L19.7819 5.31668L21.4269 4.66099L20.9468 6.3655L22.0787 7.72735L20.3092 7.79741Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.64274 14.2641L8.69733 15.7615L8.0839 14.1003L6.36768 13.6639L7.75801 12.5671L7.64274 10.8L9.11544 11.7834L10.7604 11.1277L10.2803 12.8322L11.4122 14.1941L9.64274 14.2641Z" fill="white"/>
+</g>
+</svg>

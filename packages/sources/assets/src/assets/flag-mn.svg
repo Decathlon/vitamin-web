@@ -1,1 +1,18 @@
-<svg width="28" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="28" height="20" rx="2" fill="#fff"/><mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20"><rect width="28" height="20" rx="2" fill="#fff"/></mask><g mask="url(#a)" fill-rule="evenodd" clip-rule="evenodd"><path d="M9.334 20h9.333V0H9.333v20Z" fill="#146BBC"/><path d="M0 20h9.333V0H0v20Zm18.666 0H28V0h-9.334v20Z" fill="#E43642"/><path d="m4.667 10 .666.667H4L4.667 10Zm.666 4.021v.646H4L4.667 16l.666-1.333V16h1.333v-4H4.672a.667.667 0 1 0-.01 0H4l.667 1.333a.667.667 0 1 0 .666.688Zm0-.042V12l-.666 1.332c.36 0 .655.287.666.646ZM2.666 12H4v4H2.667v-4Z" fill="url(#b)"/></g><defs><linearGradient id="b" x1="2.667" y1="10" x2="2.667" y2="16" gradientUnits="userSpaceOnUse"><stop stop-color="#F8D246"/><stop offset="1" stop-color="#F9CE2F"/></linearGradient></defs></svg>
+<svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="28" height="20" rx="2" fill="white"/>
+<mask id="mask0_503_4063" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20">
+<rect width="28" height="20" rx="2" fill="white"/>
+</mask>
+<g mask="url(#mask0_503_4063)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.3335 20H18.6668V0H9.3335V20Z" fill="#146BBC"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 20H9.33333V0H0V20Z" fill="#E43642"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.6665 20H27.9998V0H18.6665V20Z" fill="#E43642"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.66667 10L5.33333 10.6667H4.66667H4L4.66667 10ZM5.33301 14.021V14.6667H4L4.66667 16L5.33301 14.6673V16H6.66634V12H5.33333H5.33301H4.67195C5.03771 11.9971 5.33333 11.6998 5.33333 11.3333C5.33333 10.9651 5.03486 10.6667 4.66667 10.6667C4.29848 10.6667 4 10.9651 4 11.3333C4 11.6998 4.29563 11.9971 4.66138 12H4L4.66666 13.3333C4.29847 13.3333 4 13.6318 4 14C4 14.3681 4.29848 14.6666 4.66667 14.6666C5.02782 14.6666 5.3219 14.3795 5.33301 14.021ZM5.33301 13.9789V12.0006L4.66668 13.3333C5.02782 13.3333 5.3219 13.6205 5.33301 13.9789ZM2.6665 12H3.99984V16H2.6665V12Z" fill="url(#paint0_linear_503_4063)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_503_4063" x1="2.6665" y1="10" x2="2.6665" y2="16" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F8D246"/>
+<stop offset="1" stop-color="#F9CE2F"/>
+</linearGradient>
+</defs>
+</svg>
