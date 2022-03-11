@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.13](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-chip@0.6.12...@vtmn/css-chip@0.6.13) (2022-03-11)
+
+**Note:** Version bump only for package @vtmn/css-chip
+
+
+
+
+
 ## [0.6.12](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-chip@0.6.11...@vtmn/css-chip@0.6.12) (2022-03-09)
 
 **Note:** Version bump only for package @vtmn/css-chip

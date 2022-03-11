@@ -1,8 +1,10 @@
 <script>
   import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
   import { VtmnTextInput } from '@vtmn/svelte';
-  import { parameters } from '@vtmn/showcase-core/csf/components/forms/text-input.csf';
-  import vitamixIcons from '@vtmn/icons/dist/vitamix/font/vitamix.json';
+  import {
+    parameters,
+    argTypes,
+  } from '@vtmn/showcase-core/csf/components/forms/text-input.csf';
 
   const textinputArgs = {
     id: 'my-text-input',
@@ -16,9 +18,19 @@
   title="Components / Forms / VtmnTextInput"
   component={VtmnTextInput}
   argTypes={{
-    icon: {
-      control: 'select',
-      options: ['', ...Object.keys(vitamixIcons)],
+    ...argTypes,
+    identifier: null,
+    id: {
+      type: { name: 'string', required: true },
+      description: 'The id of the input.',
+      defaultValue: 'vtmn-input',
+      control: { type: 'text' },
+    },
+    value: {
+      type: { name: 'string', required: true },
+      description: 'Value of the input.',
+      defaultValue: 'Hello world',
+      control: { type: 'text' },
     },
   }}
   {parameters}

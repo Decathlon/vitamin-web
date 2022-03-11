@@ -10,8 +10,8 @@
 <Meta
   title="Components / Indicators / VtmnBadge"
   component={VtmnBadge}
-  {...argTypes}
-  {...parameters}
+  {argTypes}
+  {parameters}
 />
 
 <Template let:args>

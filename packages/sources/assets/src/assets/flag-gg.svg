@@ -1,1 +1,16 @@
-<svg width="28" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x=".25" y=".25" width="27.5" height="19.5" rx="1.75" fill="#fff" stroke="#F5F5F5" stroke-width=".5"/><mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20"><rect x=".25" y=".25" width="27.5" height="19.5" rx="1.75" fill="#fff" stroke="#fff" stroke-width=".5"/></mask><g mask="url(#a)"><path fill="#E8112D" d="M10.666 0h6.667v20h-6.667z"/><path fill="#E8112D" d="M0 6.667h28v6.667H0z"/><path fill="#F9DD16" d="M13.333 2.667h1.333v14.667h-1.333z"/><path fill-rule="evenodd" clip-rule="evenodd" d="m14 16 1.333 1.333h-2.667L14 16Z" fill="#F9DD16"/><path fill="#F9DD16" d="M6.667 9.333h14.667v1.333H6.667z"/><path fill-rule="evenodd" clip-rule="evenodd" d="m14 4 1.333-1.333h-2.667L14 4Zm-6 6L6.667 8.667v2.666L8 10Zm12 0 1.333-1.333v2.666L20 10Z" fill="#F9DD16"/></g></svg>
+<svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.25" y="0.25" width="27.5" height="19.5" rx="1.75" fill="white" stroke="#F5F5F5" stroke-width="0.5"/>
+<mask id="mask0_503_4695" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20">
+<rect x="0.25" y="0.25" width="27.5" height="19.5" rx="1.75" fill="white" stroke="white" stroke-width="0.5"/>
+</mask>
+<g mask="url(#mask0_503_4695)">
+<rect x="10.6665" width="6.66667" height="20" fill="#E8112D"/>
+<rect y="6.66666" width="28" height="6.66667" fill="#E8112D"/>
+<rect x="13.333" y="2.66669" width="1.33333" height="14.6667" fill="#F9DD16"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.9998 16L15.3332 17.3333H12.6665L13.9998 16Z" fill="#F9DD16"/>
+<rect x="6.6665" y="9.33334" width="14.6667" height="1.33333" fill="#F9DD16"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.9998 4.00003L15.3332 2.6667H12.6665L13.9998 4.00003Z" fill="#F9DD16"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8 10L6.66667 8.66671V11.3334L8 10Z" fill="#F9DD16"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20 10L21.3333 8.66671V11.3334L20 10Z" fill="#F9DD16"/>
+</g>
+</svg>

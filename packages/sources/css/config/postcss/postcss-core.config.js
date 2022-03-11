@@ -8,6 +8,7 @@ const postcssRem = require('postcss-rem');
 const postcssCssVarToSassVar = require('postcss-css-var-to-sass-var');
 const postcssCssVarToLessVar = require('postcss-css-var-to-less-var');
 const postcssPrettify = require('postcss-prettify');
+const postcssEncodeBackgroundSvgs = require('postcss-encode-background-svgs');
 
 const postcssRemOptions =
   process.env.FONT_SIZE_BASE === '10' ? { baseline: 10 } : { baseline: 16 };
@@ -20,6 +21,7 @@ let plugins = [
   postcssCombineMediaQuery,
   postcssCombineDuplicatedSelectors,
   postcssRem(postcssRemOptions),
+  postcssEncodeBackgroundSvgs,
 ];
 
 if (process.env.SCSS_FORMAT === 'true') {
