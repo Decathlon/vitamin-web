@@ -1,5 +1,5 @@
 module.exports = {
-  inputDir: './src/vitamix', // (required)
+  inputDir: './dist/vitamix/svg', // (required)
   outputDir: './dist/vitamix/font', // (required)
   fontTypes: ['ttf', 'woff', 'woff2'],
   assetTypes: ['ts', 'css', 'json', 'html'],
