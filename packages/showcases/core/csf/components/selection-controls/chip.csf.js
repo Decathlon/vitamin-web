@@ -67,7 +67,8 @@ export const argTypes = {
 
   icon: {
     type: { name: 'string', required: false },
-    description: 'The icon to display on the left side of the chip.',
+    description:
+      'The icon to display on the left side of the chip. Only for `input` variant',
     defaultValue: null,
     control: {
       type: 'select',
@@ -77,7 +78,7 @@ export const argTypes = {
 
   badgeValue: {
     type: { name: 'number', required: false },
-    description: 'The value in the badge.',
+    description: 'The value in the badge. Only for `filter` variant',
     defaultValue: 0,
     table: {
       type: {

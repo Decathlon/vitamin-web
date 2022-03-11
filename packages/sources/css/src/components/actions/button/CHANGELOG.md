@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.13](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.11.12...@vtmn/css-button@0.11.13) (2022-03-11)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** line-height on buttons with icons + fix border on primary-reversed ([#1034](https://github.com/Decathlon/vitamin-web/issues/1034)) ([8b3fb4c](https://github.com/Decathlon/vitamin-web/commit/8b3fb4c0406bacb2762a149e449ed41a0679761a))
+
+
+
+
+
+## [0.11.12](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.11.11...@vtmn/css-button@0.11.12) (2022-03-09)
+
+**Note:** Version bump only for package @vtmn/css-button
+
+
+
+
+
+## [0.11.11](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.11.10...@vtmn/css-button@0.11.11) (2022-03-07)
+
+**Note:** Version bump only for package @vtmn/css-button
+
+
+
+
+
 ## [0.11.10](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.11.9...@vtmn/css-button@0.11.10) (2022-03-03)
 
 **Note:** Version bump only for package @vtmn/css-button

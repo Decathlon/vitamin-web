@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/svelte",
-  "version": "0.14.1",
+  "version": "0.17.2",
   "description": "Decathlon Design System - Vitamin Svelte components library",
   "keywords": [
     "design-system",
@@ -23,33 +23,57 @@
     "dist"
   ],
   "scripts": {
-    "build": "rollup -c",
+    "build": "npm run test && rollup -c",
     "lint": "eslint src --ext .js,.svelte",
     "lint:fix": "eslint src --ext .js,.svelte --fix",
     "prestart": "yarn build",
-    "start": "chokidar \"src/**\" -i \"**/dist/**\" -c \"yarn build\""
+    "start": "chokidar \"src/**\" -i \"**/dist/**\" -c \"yarn build\"",
+    "test": "jest src",
+    "test:watch": "npm run test -- --watch"
   },
   "dependencies": {
     "@vtmn/css-badge": "^0.10.10",
-    "@vtmn/css-button": "^0.11.10",
+    "@vtmn/css-button": "^0.11.13",
+    "@vtmn/css-chip": "^0.6.10",
     "@vtmn/css-design-tokens": "^0.18.3",
+    "@vtmn/css-divider": "^0.1.20",
     "@vtmn/css-link": "^0.6.13",
-    "@vtmn/css-list": "^0.2.14",
-    "@vtmn/css-popover": "^0.5.10",
-    "@vtmn/css-tag": "^0.4.0",
+    "@vtmn/css-list": "^0.2.16",
+    "@vtmn/css-popover": "^0.5.12",
+    "@vtmn/css-tag": "^0.3.10",
     "@vtmn/css-text-input": "^0.13.12",
-    "@vtmn/css-toggle": "^0.6.10"
+    "@vtmn/css-toggle": "^0.6.11",
+    "@vtmn/icons": "^0.12.0"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.1.2",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/svelte": "^3.0.3",
+    "babel-jest": "^27.5.1",
     "chokidar-cli": "^3.0.0",
     "eslint": "8.10.0",
     "eslint-plugin-svelte3": "3.4.1",
+    "jest": "^27.5.1",
     "rollup": "^2.67.0",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-svelte": "^7.1.0",
     "svelte": "3.46.4",
+    "svelte-jester": "^2.3.2",
     "svelte-preprocess": "4.10.4"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      "^.+\\.svelte$": "svelte-jester"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "svelte"
+    ],
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-dom/extend-expect"
+    ]
   },
   "peerDependencies": {
     "svelte": "^3.34.0"
@@ -63,5 +87,17 @@
       "url": "http://www.apache.org/licenses/LICENSE-2.0"
     }
   ],
-  "svelte": "src/index.js"
+  "svelte": "src/index.js",
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
+  }
 }
