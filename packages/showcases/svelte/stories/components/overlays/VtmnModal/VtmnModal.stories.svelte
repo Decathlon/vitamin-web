@@ -1,23 +1,10 @@
 <script>
-  import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
+  import { Meta, Story } from '@storybook/addon-svelte-csf';
   import { VtmnModal, VtmnButton } from '@vtmn/svelte';
-  import { parameters } from '@vtmn/showcase-core/csf/components/overlays/modal.csf';
-  const argTypes = {
-    title: {
-      type: { name: 'string', required: true },
-      description: 'The printed title',
-      defaultValue: 'Modal title',
-      control: { type: 'text' },
-    },
-    show: {
-      type: { name: 'boolean', required: true },
-      description: 'Display the modal',
-      defaultValue: 'false',
-      control: {
-        type: 'boolean',
-      },
-    },
-  };
+  import {
+    parameters,
+    argTypes,
+  } from '@vtmn/showcase-core/csf/components/overlays/modal.csf';
   let show = false;
 </script>
 
@@ -28,14 +15,15 @@
   {parameters}
 />
 
-<Story name="Overview">
+<Story name="Overview" let:args>
   <VtmnButton
     on:click={() => {
       show = true;
     }}>Display modal</VtmnButton
   >
   <VtmnModal
-    title="Modal title"
+    title={args.title}
+    disableAnimation={args.disableAnimation}
     aria-labelledby="vtmn-modal-title"
     aria-describedby="vtmn-modal-description"
     {show}
@@ -87,16 +75,17 @@
   </VtmnModal>
 </Story>
 
-<Story name="Without actions">
+<Story name="Without actions" let:args>
   <VtmnButton
     on:click={() => {
       show = true;
     }}>Display modal</VtmnButton
   >
   <VtmnModal
-    title="Modal title"
+    title={args.title}
     aria-labelledby="vtmn-modal-title"
     aria-describedby="vtmn-modal-description"
+    disableAnimation={args.disableAnimation}
     {show}
     on:cancel={() => {
       show = false;

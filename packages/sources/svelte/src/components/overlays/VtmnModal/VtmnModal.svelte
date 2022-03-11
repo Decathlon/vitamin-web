@@ -12,8 +12,15 @@
 
   /**
    * @type {boolean} Display or hide the modal
+   * Default false
    */
   export let show = false;
+
+  /**
+   * @type {boolean} Enable the show animation.
+   * Default true
+   */
+  export let disableAnimation = false;
 
   let className = '';
   /**
@@ -21,7 +28,7 @@
    */
   export { className as class };
 
-  $: componentClass = cn('vtmn-modal', 'show', className);
+  $: componentClass = cn('vtmn-modal', !disableAnimation && 'show', className);
 
   const handleCancel = () => {
     dispatch('cancel', { show });
@@ -29,7 +36,18 @@
 </script>
 
 {#if show}
-  <div class={componentClass} role="dialog" aria-modal="true">
+  <style>
+    body {
+      overflow: hidden;
+    }
+  </style>
+  <div
+    class={componentClass}
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby={$$restProps['aria-labelledby']}
+    aria-describedby={$$restProps['aria-describedby']}
+  >
     <div
       id="vtmn-modal-background"
       class="vtmn-modal_background-overlay"
