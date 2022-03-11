@@ -1,44 +1,10 @@
 <script>
   import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
   import { VtmnCard, VtmnButton } from '@vtmn/svelte';
-  import { parameters } from '@vtmn/showcase-core/csf/components/structure/card.csf';
-  const argTypes = {
-    variant: {
-      type: { name: 'string', required: true },
-      description: 'The variant of the card.',
-      defaultValue: 'top-image',
-      control: {
-        type: 'select',
-        options: ['top-image', 'side-image', 'full-image'],
-      },
-    },
-    fullImage: {
-      type: { name: 'boolean', required: false },
-      description:
-        'Define if image takes full screen. Only on variant top-image',
-      defaultValue: false,
-      control: {
-        type: 'boolean',
-      },
-    },
-    contentOpaque: {
-      type: { name: 'boolean', required: false },
-      description: 'Define if image is opaque. Only on variant full-image',
-      defaultValue: false,
-      control: {
-        type: 'boolean',
-      },
-    },
-    title: {
-      type: { name: 'string', required: true },
-      description: 'Title of the card.',
-      defaultValue: 'Card title',
-      control: {
-        type: 'text',
-      },
-    },
-  };
-
+  import {
+    parameters,
+    argTypes,
+  } from '@vtmn/showcase-core/csf/components/structure/card.csf';
   const src =
     'https://storage.googleapis.com/dkt-design-cdn/images/landscape-placeholder.jpg';
 </script>
@@ -46,12 +12,7 @@
 <Meta
   title="Components / Structure / VtmnCard"
   component={VtmnCard}
-  parameters={{
-    ...parameters,
-    docs: {
-      inlineStories: true,
-    },
-  }}
+  {parameters}
   {argTypes}
 />
 
