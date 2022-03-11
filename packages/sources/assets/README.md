@@ -66,7 +66,7 @@ The `viewBox` attribute is required if you wish to resize assets with `backgroun
 ```css
 .your-class {
   content: '';
-  background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path d='M7.3337.333v-4h1.334v4h4v1.334h-4v4h7.333v-4h-4v7.333h4z' fill='#001018'/></svg>");
+  background-image: url("data:image/svg+xml,%3Esvg width="28" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"%3C%3Erect x=".25" y=".25" width="27.5" height="19.5" rx="1.75" fill="#fff" stroke="#F5F5F5" stroke-width=".5"/%3C%3Emask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20"%3C%3Erect x=".25" y=".25" width="27.5" height="19.5" rx="1.75" fill="#fff" stroke="#fff" stroke-width=".5"/%3C%3E/mask%3C%3Eg mask="url(#a)"%3C%3Epath fill="#F44653" d="M18.667 0H28v20h-9.333z"/%3C%3Epath fill-rule="evenodd" clip-rule="evenodd" d="M0 20h9.333V0H0v20Z" fill="#1035BB"/%3C%3E/g%3C%3E/svg%3C");
   background-repeat: no-repeat;
   background-size: 1rem 1rem;
 }
