@@ -1,7 +1,7 @@
 <script>
   import { cn } from '../../../utils/classnames';
   import { isFloat } from '../../../utils/math';
-  import { SIZE } from './enum';
+  import { VTMN_RATING_SIZE } from './enum';
 
   /**
    * @type {string} name used on interactive mode to name the inputs
@@ -16,7 +16,7 @@
   /**
    * @type {boolean} size of the component
    */
-  export let size = SIZE.MEDIUM;
+  export let size = VTMN_RATING_SIZE.MEDIUM;
 
   /**
    * @type {boolean} disable the component
