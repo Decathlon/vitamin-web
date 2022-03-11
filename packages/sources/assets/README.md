@@ -65,10 +65,8 @@ The `viewBox` attribute is required if you wish to resize assets with `backgroun
 
 ```css
 .your-class {
-  display: inline-block;
   content: '';
-  vertical-align: -0.125em;
-  background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path d="M7.3337.333v-4h1.334v4h4v1.334h-4v4h7.333v-4h-4v7.333h4z' fill='#001018'/></svg>');
+  background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path d='M7.3337.333v-4h1.334v4h4v1.334h-4v4h7.333v-4h-4v7.333h4z' fill='#001018'/></svg>");
   background-repeat: no-repeat;
   background-size: 1rem 1rem;
 }
@@ -79,7 +77,13 @@ The `viewBox` attribute is required if you wish to resize assets with `backgroun
 Embed your assets within the HTML of your page (as opposed to an external image file, not really recommended). Here we’ve used a custom `width` and `height`.
 
 ```html
-<svg width="16" height="16" fill="#001018" xmlns="http://www.w3.org/2000/svg">
+<svg
+  width="16"
+  height="16"
+  fill="#001018"
+  viewbox="0 0 16 16"
+  xmlns="http://www.w3.org/2000/svg"
+>
   <path
     d="M7.333 7.333v-4h1.334v4h4v1.334h-4v4H7.333v-4h-4V7.333h4z"
     fill="#001018"
