@@ -20,6 +20,8 @@ export { default as VtmnModal } from './overlays/VtmnModal/VtmnModal.svelte';
 export { default as VtmnPopover } from './overlays/VtmnPopover/VtmnPopover.svelte';
 export { default as VtmnSnackbar } from './overlays/VtmnSnackbar/VtmnSnackbar.svelte';
 export { vtmnSnackbarStore } from './overlays/VtmnSnackbar/vtmnSnackbarStore';
+export { default as VtmnToast } from './overlays/VtmnToast/VtmnToast.svelte';
+export { vtmnToastStore } from './overlays/VtmnToast/vtmnToast';
 
 // Selection controls
 export { default as VtmnCheckbox } from './selection-controls/VtmnCheckbox/VtmnCheckbox.svelte';

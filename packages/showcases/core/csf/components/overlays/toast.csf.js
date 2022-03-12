@@ -7,3 +7,45 @@ export const parameters = {
     url: 'https://www.figma.com/file/zDZIyayUlr1yTWrsi7cFoo/?node-id=2790%3A10831',
   },
 };
+
+export const argTypes = {
+  content: {
+    type: { name: 'string', required: true },
+    description: 'Text display on the toast',
+    defaultValue: 'This is the content of a toast',
+    control: { type: 'text' },
+  },
+  show: {
+    type: { name: 'boolean', required: true },
+    description: 'Display the toast',
+    defaultValue: false,
+    control: {
+      type: 'boolean',
+    },
+  },
+  timeout: {
+    type: { name: 'number', require: false },
+    description: 'Timeout before the toast disappear',
+    defaultValue: 5000,
+    control: {
+      type: 'number',
+      min: 0,
+    },
+  },
+  withCloseButton: {
+    type: { name: 'boolean', required: true },
+    description: 'Show close button',
+    defaultValue: false,
+    control: {
+      type: 'boolean',
+    },
+  },
+  withIcon: {
+    type: { name: 'boolean', required: false },
+    description: 'Display left icon',
+    defaultValue: false,
+    control: {
+      type: 'boolean',
+    },
+  },
+};
