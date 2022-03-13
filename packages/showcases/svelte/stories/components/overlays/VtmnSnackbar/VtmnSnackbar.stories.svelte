@@ -1,11 +1,10 @@
 <script>
-  import { Meta, Story } from '@storybook/addon-svelte-csf';
-  import { VtmnSnackbar, VtmnButton } from '@vtmn/svelte';
+  import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
+  import { vtmnSnackbarStore, VtmnSnackbar, VtmnButton } from '@vtmn/svelte';
   import {
     parameters,
     argTypes,
   } from '@vtmn/showcase-core/csf/components/overlays/snackbar.csf';
-  let show = false;
 </script>
 
 <Meta
@@ -15,31 +14,22 @@
   {parameters}
 />
 
-<Story name="Overview" let:args>
+<Template let:args>
   <VtmnButton
     on:click={() => {
-      show = true;
+      console.log('Display snackbar');
+      vtmnSnackbarStore.send({
+        ...args,
+        action: {
+          label: args.actionLabel,
+          execute: () => {
+            console.log('Execute action');
+          },
+        },
+      });
     }}>Display snackbar</VtmnButton
   >
-  <VtmnSnackbar {...args} bind:show />
-</Story>
+  <VtmnSnackbar />
+</Template>
 
-<Story name="With close button" let:args>
-  <VtmnButton
-    on:click={() => {
-      show = true;
-    }}>Display snackbar</VtmnButton
-  >
-  <VtmnSnackbar {...args} bind:show displayCloseButton />
-</Story>
-
-<Story name="With action button" let:args>
-  <VtmnButton
-    on:click={() => {
-      show = true;
-    }}>Display snackbar</VtmnButton
-  >
-  <VtmnSnackbar {...args} bind:show displayCloseButton>
-    <VtmnButton variant="ghost-reversed" size="small">Action</VtmnButton>
-  </VtmnSnackbar>
-</Story>
+<Story name="Overview" />

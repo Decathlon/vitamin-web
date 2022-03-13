@@ -15,29 +15,20 @@ export const argTypes = {
     defaultValue: 'This is the content of a snackbar',
     control: { type: 'text' },
   },
-  show: {
-    type: { name: 'boolean', required: true },
-    description: 'Display the snackbar',
-    defaultValue: false,
-    control: {
-      type: 'boolean',
-    },
-  },
-  timeout: {
-    type: { name: 'number', require: false },
-    description: 'Timeout before the snackbar disappear',
-    defaultValue: 5000,
-    control: {
-      type: 'number',
-      min: 0,
-    },
-  },
-  displayCloseButton: {
+  withCloseButton: {
     type: { name: 'boolean', required: true },
     description: 'Show close button',
     defaultValue: false,
     control: {
       type: 'boolean',
+    },
+  },
+  actionLabel: {
+    type: { name: 'string', required: false },
+    describe: 'Label of the action. If set, it display action button',
+    defaultValue: 'Action',
+    control: {
+      type: 'text',
     },
   },
 };
