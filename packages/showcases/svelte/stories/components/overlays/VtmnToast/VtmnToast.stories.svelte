@@ -5,8 +5,6 @@
     parameters,
     argTypes,
   } from '@vtmn/showcase-core/csf/components/overlays/toast.csf';
-  let show = false;
-  let count = 0;
 </script>
 
 <Meta
@@ -19,13 +17,10 @@
 <Template let:args>
   <VtmnButton
     on:click={() => {
-      vtmnToastStore.send({
-        ...args,
-        content: `${args.content} - ${++count}`,
-      });
+      vtmnToastStore.send(args);
     }}>Display toast</VtmnButton
   >
-  <VtmnToast {...args} bind:show />
+  <VtmnToast {...args} />
 </Template>
 
 <Story name="Overview" />

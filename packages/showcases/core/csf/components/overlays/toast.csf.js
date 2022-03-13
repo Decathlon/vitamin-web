@@ -15,23 +15,6 @@ export const argTypes = {
     defaultValue: 'This is the content of a toast',
     control: { type: 'text' },
   },
-  show: {
-    type: { name: 'boolean', required: true },
-    description: 'Display the toast',
-    defaultValue: false,
-    control: {
-      type: 'boolean',
-    },
-  },
-  timeout: {
-    type: { name: 'number', require: false },
-    description: 'Timeout before the toast disappear',
-    defaultValue: 5000,
-    control: {
-      type: 'number',
-      min: 0,
-    },
-  },
   withCloseButton: {
     type: { name: 'boolean', required: true },
     description: 'Show close button',
