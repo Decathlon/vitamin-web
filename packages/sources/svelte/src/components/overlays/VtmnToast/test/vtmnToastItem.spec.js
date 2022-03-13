@@ -1,7 +1,9 @@
 import '@testing-library/jest-dom';
 
-import { fireEvent, render } from '@testing-library/svelte';
+import { fireEvent, render, waitFor } from '@testing-library/svelte';
 import VtmnToastItem from '../VtmnToastItem.svelte';
+
+const timeout = 5000;
 
 describe('VtmnToastItem', () => {
   const getToast = (container) =>
@@ -20,48 +22,68 @@ describe('VtmnToastItem', () => {
     expect(handleClick).toHaveBeenCalledTimes(expectedClickCount);
   };
 
-  // Doit être affiché avec une classe vtmn-toast et show
   test("Should be visible with a class 'vtmn-toast' and 'show'", () => {
-    const { container } = render(VtmnToastItem, { content: 'Unit-test Toast' });
+    const { container } = render(VtmnToastItem, {
+      content: 'Unit-test Toast',
+      timeout,
+    });
     expect(getToast(container)).toHaveClass('vtmn-toast', 'show');
   });
-  // Si on lui donne un content, celui-ci doit être affiché dans le toast
   test('Should display the content of the toast', () => {
-    const { getByText } = render(VtmnToastItem, { content: 'Unit-test Toast' });
+    const { getByText } = render(VtmnToastItem, {
+      content: 'Unit-test Toast',
+      timeout,
+    });
     expect(getByText('Unit-test Toast')).toBeVisible();
   });
-  // par défaut il n'y a pas d'icon (vtmn-toast--with-icon-info) sur l'élément base
   test('Should not have a icon info by default', () => {
-    const { container } = render(VtmnToastItem, { content: 'Unit-test Toast' });
+    const { container } = render(VtmnToastItem, {
+      content: 'Unit-test Toast',
+      timeout,
+    });
     expect(getToast(container)).not.toHaveClass('vtmn-toast--with-icon-info');
   });
-  // si withIcon alors la class 'vtmn-toast--with-icon-info' doit être présente
   test('Should have a icon info if withIcon = true', () => {
     const { container } = render(VtmnToastItem, {
       content: 'Unit-test Toast',
       withIcon: true,
+      timeout,
     });
     expect(getToast(container)).toHaveClass('vtmn-toast--with-icon-info');
   });
-  // il ne doit pas y avoir de bouton 'Close alert'
   test('Should not have a close button by default', () => {
-    const { container } = render(VtmnToastItem, { content: 'Unit-test Toast' });
+    const { container } = render(VtmnToastItem, {
+      content: 'Unit-test Toast',
+      timeout,
+    });
     expect(getCloseButton(container)).toBeUndefined();
   });
-  // Si withCloseButton est présent, il doit y avoir un bouton
   test('Should have a close button if withCloseButton = true', () => {
     const { getByLabelText } = render(VtmnToastItem, {
       content: 'Unit-test Toast',
       withCloseButton: true,
+      timeout,
     });
     expect(getByLabelText('Close alert')).toBeVisible();
   });
-  // Si on click sur le bouton close, un évènement close doit se déclancher
   test('Should trigger event close if you click on the close button', async () => {
     const { getByLabelText, component } = render(VtmnToastItem, {
       content: 'Unit-test Toast',
       withCloseButton: true,
+      timeout,
     });
     await expectedCancelOnElement(getByLabelText('Close alert'), component, 1);
+  });
+  test('Should trigger event close after the timeout expire', async () => {
+    const handleClick = jest.fn();
+    const { component } = render(VtmnToastItem, {
+      content: 'Unit-test Toast',
+      timeout: 50,
+    });
+    component.$on('close', handleClick);
+    expect(handleClick).toHaveBeenCalledTimes(0);
+    await waitFor(() => expect(handleClick).toHaveBeenCalledTimes(1), {
+      timeout: 100,
+    });
   });
 });

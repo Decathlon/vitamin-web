@@ -1,4 +1,5 @@
 <script>
+  import { VTMN_TOAST_TIMEOUT } from './enums';
   import { vtmnToastStore } from './vtmnToastStore';
   import VtmnToastItem from './VtmnToastItem.svelte';
   const closeHandler = (id) => {
@@ -13,6 +14,7 @@
         closeHandler(toast.id);
       }}
       style={`--toast-position:${index}`}
+      timeout={VTMN_TOAST_TIMEOUT}
       {...toast}
     />
   {/each}

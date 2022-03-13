@@ -1,9 +1,6 @@
 <script>
-  import { tweened } from 'svelte/motion';
-  import { linear } from 'svelte/easing';
   import { VtmnButton } from '../../..';
-  import { createEventDispatcher } from 'svelte';
-  import { VTMN_TOAST_TIMEOUT } from './enums';
+  import { createEventDispatcher, onDestroy, onMount } from 'svelte';
 
   /**
    * @type {boolean} display the toast with a left icon
@@ -16,18 +13,25 @@
   export let content;
 
   /**
-   * @type {string} diplay a close button on right
+   * @type {string} display a close button on right
    */
   export let withCloseButton = false;
 
+  /**
+   * @type {number} timeout before the component execute the close action
+   */
+  export let timeout;
+  let timeoutId;
+
   const dispatch = createEventDispatcher();
-  const handleClose = () => {
+  const closeHandler = () => {
     dispatch('close');
   };
 
-  let timeout = VTMN_TOAST_TIMEOUT;
-  let progress = tweened(0, { duration: timeout, easing: linear });
-  progress.set(1).then(handleClose);
+  const _clearTimeout = () => timeoutId && clearTimeout(timeoutId);
+  const _setTimeout = () => (timeoutId = setTimeout(closeHandler, timeout));
+  onDestroy(_clearTimeout);
+  onMount(_setTimeout);
 </script>
 
 <div
@@ -39,7 +43,7 @@
   <div class="vtmn-toast_content">{content}</div>
   {#if withCloseButton}
     <VtmnButton
-      on:click={handleClose}
+      on:click={closeHandler}
       aria-label="Close alert"
       variant="ghost-reversed"
       size="small"
