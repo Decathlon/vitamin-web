@@ -18,8 +18,11 @@ export { default as VtmnPopover } from './overlays/VtmnPopover/VtmnPopover.svelt
 
 // Selection controls
 export { default as VtmnCheckbox } from './selection-controls/VtmnCheckbox/VtmnCheckbox.svelte';
+export { default as VtmnChip } from './selection-controls/VtmnChip/VtmnChip.svelte';
 export { default as VtmnToggle } from './selection-controls/VtmnToggle/VtmnToggle.svelte';
 
 // Structure
+export { default as VtmnAccordion } from './structure/VtmnAccordion/VtmnAccordion.svelte';
+export { default as VtmnDivider } from './structure/VtmnDivider/VtmnDivider.svelte';
 export { default as VtmnList } from './structure/VtmnList/VtmnList.svelte';
 export { default as VtmnListItem } from './structure/VtmnListItem/VtmnListItem.svelte';

@@ -4,6 +4,7 @@ import { defineComponent, PropType } from 'vue';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnRadioButton',
+  inheritAttrs: false,
   props: {
     modelValue: {
       type: [String, Number] as PropType<string | number>,

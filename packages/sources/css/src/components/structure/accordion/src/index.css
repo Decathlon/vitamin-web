@@ -23,7 +23,7 @@
 
 .vtmn-accordion--with-icon-left summary::before {
   content: '';
-  mask: url("data:image/svg+xml;charset=utf-8, %3csvg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.333 8a6.666 6.666 0 1 0 13.333 0A6.666 6.666 0 0 0 1.333 8Zm12 0A5.333 5.333 0 1 1 2.667 8a5.333 5.333 0 0 1 10.666 0ZM8.667 4.667V6H7.333V4.667h1.334Zm0 6.666v-4H7.333v4h1.334Z'/%3e%3c/svg%3e");
+  mask: url("data:image/svg+xml;charset=utf-8, <svg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M1.333 8a6.666 6.666 0 1 0 13.333 0A6.666 6.666 0 0 0 1.333 8Zm12 0A5.333 5.333 0 1 1 2.667 8a5.333 5.333 0 0 1 10.666 0ZM8.667 4.667V6H7.333V4.667h1.334Zm0 6.666v-4H7.333v4h1.334Z'/></svg>");
   mask-size: cover;
   width: rem(24px);
   height: rem(24px);
