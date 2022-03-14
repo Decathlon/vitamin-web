@@ -3,7 +3,7 @@
 
   import { VtmnButton } from '@vtmn/svelte';
   import { createEventDispatcher } from 'svelte';
-  import { VARIANTS, SIZES } from './enums';
+  import { VTMN_SEARCH_VARIANT, VTMN_SEARCH_SIZE } from './enums';
 
   /** @restProps { button } */
 
@@ -12,7 +12,7 @@
    * @type {'default' | 'ghost' | 'persistent' | 'on-content'}
    * @defaultValue 'default'
    */
-  export let variant = VARIANTS.DEFAULT;
+  export let variant = VTMN_SEARCH_VARIANT.DEFAULT;
 
   /**
    * @type {boolean} disabled.
@@ -24,7 +24,7 @@
    * @type {'small' | 'medium'}
    * @defaultValue 'medium'
    */
-  export let size = SIZES.MEDIUM;
+  export let size = VTMN_SEARCH_SIZE.MEDIUM;
 
   /**
    * The value of the input
@@ -58,13 +58,7 @@
   );
 </script>
 
-<form
-  class={componentClass}
-  action=""
-  role="search"
-  aria-controls="search-result"
-  on:submit|preventDefault={onSearch}
->
+<div class={componentClass} role="search">
   <input
     type="search"
     {...$$restProps}
@@ -98,11 +92,12 @@
       variant="ghost"
       {disabled}
       {size}
+      on:click={onSearch}
       type="submit"
       aria-label="search"
     />
   </div>
-</form>
+</div>
 
 <style lang="css">
   @import '@vtmn/css-search';
