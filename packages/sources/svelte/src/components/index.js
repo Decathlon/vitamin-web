@@ -13,6 +13,8 @@ export { default as VtmnTag } from './indicators/VtmnTag/VtmnTag.svelte';
 // Navigation
 
 // Overlays
+export { default as VtmnAlert } from './overlays/VtmnAlert/VtmnAlert.svelte';
+export { vtmnAlertStore } from './overlays/VtmnAlert/vtmnAlertStore';
 export { default as VtmnPopover } from './overlays/VtmnPopover/VtmnPopover.svelte';
 
 // Selection controls
