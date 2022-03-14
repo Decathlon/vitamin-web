@@ -10,7 +10,7 @@
 
   /**
    * @type {boolean} display close button
-   * Default false
+   * @defaultValue 'false'
    */
   export let withCloseButton = false;
 

@@ -17,7 +17,6 @@
 <Template let:args>
   <VtmnButton
     on:click={() => {
-      console.log('Display snackbar');
       vtmnSnackbarStore.send({
         ...args,
         action: {
