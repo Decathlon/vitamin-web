@@ -1,42 +1,17 @@
 <script>
   import { Meta, Story, Template } from '@storybook/addon-svelte-csf';
   import { VtmnSearch } from '@vtmn/svelte';
+  import {
+    parameters,
+    argTypes,
+  } from '@vtmn/showcase-core/csf/components/navigation/search.csf';
 </script>
 
 <Meta
   title="Components / Navigation / VtmnSearch"
   component={VtmnSearch}
-  argTypes={{
-    variant: {
-      type: { name: 'string', required: true },
-      description: 'Color variant of search component.',
-      control: {
-        type: 'select',
-        options: ['default', 'ghost', 'persistent', 'on-content'],
-      },
-      defaultValue: 'default',
-    },
-    disabled: {
-      type: { name: 'boolean', required: false },
-      description: 'Disabled state',
-      defaultValue: false,
-      control: { type: 'boolean' },
-    },
-    size: {
-      type: { name: 'string', required: false },
-      description: 'Size of input.',
-      defaultValue: 'medium',
-      control: {
-        type: 'select',
-        options: ['small', 'medium'],
-      },
-    },
-  }}
-  parameters={{
-    actions: {
-      handles: ['mouseover', 'click', 'focus', 'keypress', 'keydown'],
-    },
-  }}
+  {argTypes}
+  {parameters}
 />
 
 <Template let:args>
@@ -48,8 +23,6 @@
 </Template>
 
 <Story name="Overview" />
-
-<Story name="Ghost variant" args={{ variant: 'ghost' }} />
 
 <Story name="Persistent variant" args={{ variant: 'persistent' }} />
 

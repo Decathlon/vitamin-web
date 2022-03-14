@@ -1,7 +1,7 @@
 <script>
   import { cn } from '../../../utils/classnames';
 
-  import { VtmnButton } from '@vtmn/svelte';
+  import VtmnButton from '../../actions/VtmnButton/VtmnButton.svelte';
   import { createEventDispatcher } from 'svelte';
   import { VTMN_SEARCH_VARIANT, VTMN_SEARCH_SIZE } from './enums';
 
@@ -9,7 +9,7 @@
 
   /**
    * The variant of the button.
-   * @type {'default' | 'ghost' | 'persistent' | 'on-content'}
+   * @type {'default' | 'persistent' | 'on-content'}
    * @defaultValue 'default'
    */
   export let variant = VTMN_SEARCH_VARIANT.DEFAULT;
@@ -30,13 +30,13 @@
    * The value of the input
    * @type {string}
    */
-  export let value;
+  export let value = '';
 
   /**
    * Custom classes to apply to the component.
    * @type {string}
    */
-  export let className;
+  export let className = '';
 
   const dispatch = createEventDispatcher();
 
