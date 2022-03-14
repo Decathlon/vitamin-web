@@ -1,6 +1,7 @@
 # Quick start
 
-You need to add `@vtmn/svelte` on your `package.json`
+You need to add `@vtmn/svelte` and `@vtmn/icon` on your `package.json`.
+For `@vtmn/icon` please refer to its Readme.
 
 ```
 npm install @vtmn/svelte
@@ -10,7 +11,7 @@ Now, you can use `VtmnToast` on your app.
 
 # How it works
 
-First, you need to place the `VtmnToast` component preferably at your
+First, you need to place the `VtmnToast` component on the top of your application
 
 `app.svelte`
 

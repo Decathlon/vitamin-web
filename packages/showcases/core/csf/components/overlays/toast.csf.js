@@ -11,7 +11,7 @@ export const parameters = {
 export const argTypes = {
   content: {
     type: { name: 'string', required: true },
-    description: 'Text display on the toast',
+    description: 'Text displayed on the toast',
     defaultValue: 'This is the content of a toast',
     control: { type: 'text' },
   },

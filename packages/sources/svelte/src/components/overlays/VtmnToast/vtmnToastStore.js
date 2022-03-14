@@ -7,8 +7,7 @@ class VtmnToastStore {
   }
 
   get newId() {
-    this._id++;
-    return this._id;
+    return ++this._id;
   }
 
   send({ content, withCloseButton, withIcon }) {

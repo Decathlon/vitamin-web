@@ -1,9 +1,11 @@
 <script>
   import { VtmnButton } from '../../..';
   import { createEventDispatcher, onDestroy, onMount } from 'svelte';
+  import { cn } from '../../../utils/classnames';
 
   /**
-   * @type {boolean} display the toast with a left icon
+   * @type {boolean} display the toast with an icon
+   * @defaultValue 'false'
    */
   export let withIcon = false;
 
@@ -13,14 +15,22 @@
   export let content;
 
   /**
-   * @type {string} display a close button on right
+   * @type {string} display a close button
+   * @defaultValue 'false'
    */
   export let withCloseButton = false;
 
   /**
-   * @type {number} timeout before the component execute the close action
+   * @type {number} Time (ms) before the component dispatch automatically 'close'
    */
   export let timeout;
+
+  let className = '';
+  /**
+   * @type {string} Custom classes to apply to the component.
+   */
+  export { className as class };
+
   let timeoutId;
 
   const dispatch = createEventDispatcher();
@@ -32,14 +42,16 @@
   const _setTimeout = () => (timeoutId = setTimeout(closeHandler, timeout));
   onDestroy(_clearTimeout);
   onMount(_setTimeout);
+
+  $: componentClass = cn(
+    'vtmn-toast',
+    'show',
+    withIcon && 'vtmn-toast--with-icon-info',
+    className,
+  );
 </script>
 
-<div
-  class="vtmn-toast show"
-  class:vtmn-toast--with-icon-info={withIcon}
-  role="status"
-  {...$$props}
->
+<div class={componentClass} role="status">
   <div class="vtmn-toast_content">{content}</div>
   {#if withCloseButton}
     <VtmnButton
