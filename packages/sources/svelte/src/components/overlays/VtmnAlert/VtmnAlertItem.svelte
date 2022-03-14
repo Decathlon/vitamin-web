@@ -5,7 +5,7 @@
   import { VTMN_ALERT_VARIANT } from './enums';
 
   /**
-   * @type {'info' | 'success' | 'danger' | 'warning' } variant of the alert
+   * @type {'info'|'success'|'danger'|'warning'} variant of the alert
    * @defaultValue info
    */
   export let variant = VTMN_ALERT_VARIANT.INFO;
