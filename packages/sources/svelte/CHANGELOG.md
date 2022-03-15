@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.19.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.18.0...@vtmn/svelte@0.19.0) (2022-03-15)
+
+
+### Features
+
+* **@vtmn/svelte:** add `VtmnCard` component ([#1028](https://github.com/Decathlon/vitamin-web/issues/1028)) ([994f286](https://github.com/Decathlon/vitamin-web/commit/994f286c34880fb55144447a5f69717585efbe9d))
+
+
+
+
+
 # [0.18.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.17.3...@vtmn/svelte@0.18.0) (2022-03-11)
 
 
