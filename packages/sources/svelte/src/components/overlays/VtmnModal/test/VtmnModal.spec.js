@@ -53,11 +53,11 @@ describe('VtmnModal', () => {
       expect(getModal(container)).toBeVisible();
       expect(getModal(container)).toHaveClass('show');
     });
-    test('Should not have class show if disableAnimation is true', () => {
+    test('Should not have class show if animationDisabled is true', () => {
       const { container } = render(VtmnModal, {
         show: true,
         title: 'Unit-test',
-        disableAnimation: true,
+        animationDisabled: true,
       });
       expect(getModal(container)).toBeVisible();
       expect(getModal(container)).not.toHaveClass('show');

@@ -20,7 +20,7 @@
    * @type {boolean} Enable the show animation.
    * Default true
    */
-  export let disableAnimation = false;
+  export let animationDisabled = false;
 
   let className = '';
   /**
@@ -28,7 +28,7 @@
    */
   export { className as class };
 
-  $: componentClass = cn('vtmn-modal', !disableAnimation && 'show', className);
+  $: componentClass = cn('vtmn-modal', !animationDisabled && 'show', className);
 
   const handleCancel = () => {
     dispatch('cancel', { show });

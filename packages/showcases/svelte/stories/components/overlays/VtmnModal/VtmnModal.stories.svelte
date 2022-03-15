@@ -23,7 +23,7 @@
   >
   <VtmnModal
     title={args.title}
-    disableAnimation={args.disableAnimation}
+    animationDisabled={args.animationDisabled}
     aria-labelledby="vtmn-modal-title"
     aria-describedby="vtmn-modal-description"
     {show}
@@ -96,7 +96,7 @@
     title={args.title}
     aria-labelledby="vtmn-modal-title"
     aria-describedby="vtmn-modal-description"
-    disableAnimation={args.disableAnimation}
+    animationDisabled={args.animationDisabled}
     {show}
     on:cancel={() => {
       show = false;
