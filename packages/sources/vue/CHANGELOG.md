@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.19.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.18.8...@vtmn/vue@0.19.0) (2022-03-11)
+
+
+### Features
+
+* **@vtmn/vue:** disable inheritAttrs to components using attrs binding ([#1037](https://github.com/Decathlon/vitamin-web/issues/1037)) ([fd46460](https://github.com/Decathlon/vitamin-web/commit/fd46460ce878b6a9e6cddc42e6ebec5c17141fe1))
+
+
+
+
+
 ## [0.18.8](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.18.7...@vtmn/vue@0.18.8) (2022-03-11)
 
 

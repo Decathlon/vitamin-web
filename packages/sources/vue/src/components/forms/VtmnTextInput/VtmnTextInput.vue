@@ -6,6 +6,7 @@ import VtmnIcon from '../../../guidelines/iconography/VtmnIcon/VtmnIcon.vue';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnTextInput',
+  inheritAttrs: false,
   components: { VtmnIcon },
   props: {
     modelValue: {

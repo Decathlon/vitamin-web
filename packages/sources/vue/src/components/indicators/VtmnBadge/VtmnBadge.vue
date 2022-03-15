@@ -5,6 +5,7 @@ import { VtmnBadgeVariant } from './types';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnBadge',
+  inheritAttrs: false,
   props: {
     variant: {
       type: String as PropType<VtmnBadgeVariant>,
