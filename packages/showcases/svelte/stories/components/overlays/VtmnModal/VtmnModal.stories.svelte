@@ -69,8 +69,19 @@
       in quia?
     </p>
     <div slot="actions" class="vtmn-modal_content_actions">
-      <VtmnButton variant="secondary">Go Back</VtmnButton>
-      <VtmnButton variant="primary">Yes, I understand</VtmnButton>
+      <VtmnButton
+        variant="secondary"
+        on:click={() => {
+          console.log('Go back');
+          show = false;
+        }}>Go Back</VtmnButton
+      >
+      <VtmnButton
+        variant="primary"
+        on:click={() => {
+          console.log('Yes, I understand'), (show = false);
+        }}>Yes, I understand</VtmnButton
+      >
     </div>
   </VtmnModal>
 </Story>
