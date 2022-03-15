@@ -1,5 +1,5 @@
 <script>
-  import { VTMN_CARD_VARIANTS } from './enums';
+  import { VTMN_CARD_VARIANT } from './enums';
   import { cn } from '../../../utils/classnames';
 
   /**
@@ -10,7 +10,7 @@
   /**
    * @type {'top-image' | 'side-image' | 'full-image' } variant of the card
    */
-  export let variant = VTMN_CARD_VARIANTS.TOP_IMAGE;
+  export let variant = VTMN_CARD_VARIANT.TOP_IMAGE;
 
   /**
    * @type {boolean} display image on full screen.
@@ -38,14 +38,14 @@
 
   $: componentImageClass = cn(
     'vtmn-card_image',
-    variant === VTMN_CARD_VARIANTS.TOP_IMAGE &&
+    variant === VTMN_CARD_VARIANT.TOP_IMAGE &&
       fullImage &&
       'vtmn-card_image--full',
   );
 
   $: componentContentClass = cn(
     'vtmn-card_content',
-    variant === VTMN_CARD_VARIANTS.FULL_IMAGE &&
+    variant === VTMN_CARD_VARIANT.FULL_IMAGE &&
       contentOpaque &&
       'vtmn-card_content--opaque',
   );
