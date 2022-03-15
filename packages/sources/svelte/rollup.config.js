@@ -20,7 +20,13 @@ const src = {
     },
     {
       folder: 'overlays',
-      components: ['VtmnAlert', 'VtmnModal', 'VtmnPopover', 'VtmnSnackbar', 'VtmnToast'],
+      components: [
+        'VtmnAlert',
+        'VtmnModal',
+        'VtmnPopover',
+        'VtmnSnackbar',
+        'VtmnToast',
+      ],
     },
     {
       folder: 'selection-controls',

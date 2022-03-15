@@ -48,7 +48,7 @@
   );
 </script>
 
-<div class={componentClass} role="status">
+<div class={componentClass} role="status" {...$$restProps}>
   <div class="vtmn-toast_content">{content}</div>
   {#if withCloseButton}
     <VtmnButton
