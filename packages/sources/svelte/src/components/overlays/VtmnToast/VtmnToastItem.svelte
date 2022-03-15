@@ -34,10 +34,7 @@
   let timeoutId;
 
   const dispatch = createEventDispatcher();
-  const closeHandler = () => {
-    dispatch('close');
-  };
-
+  const closeHandler = () => dispatch('close');
   const _clearTimeout = () => timeoutId && clearTimeout(timeoutId);
   const _setTimeout = () => (timeoutId = setTimeout(closeHandler, timeout));
   onDestroy(_clearTimeout);

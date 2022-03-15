@@ -11,7 +11,7 @@ describe('VtmnToastItem', () => {
   const getCloseButton = (container) =>
     container.getElementsByClassName('vtmn-btn')[0];
 
-  const expectedCancelOnElement = async (
+  const expectedCloseOnElement = async (
     element,
     component,
     expectedClickCount,
@@ -81,7 +81,7 @@ describe('VtmnToastItem', () => {
       withCloseButton: true,
       timeout,
     });
-    await expectedCancelOnElement(getByLabelText('Close alert'), component, 1);
+    await expectedCloseOnElement(getByLabelText('Close alert'), component, 1);
   });
   test('Should trigger event close after the timeout expire', async () => {
     const handleClick = jest.fn();
