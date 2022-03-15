@@ -20,7 +20,7 @@ const src = {
     },
     {
       folder: 'overlays',
-      components: ['VtmnPopover'],
+      components: ['VtmnAlert', 'VtmnPopover'],
     },
     {
       folder: 'selection-controls',
