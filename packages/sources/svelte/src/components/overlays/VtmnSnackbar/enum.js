@@ -1,0 +1,1 @@
+export const VTMN_SNACKBAR_TIMEOUT = 5000;

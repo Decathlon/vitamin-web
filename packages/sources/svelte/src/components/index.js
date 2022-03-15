@@ -18,6 +18,8 @@ export { default as VtmnAlert } from './overlays/VtmnAlert/VtmnAlert.svelte';
 export { vtmnAlertStore } from './overlays/VtmnAlert/vtmnAlertStore';
 export { default as VtmnModal } from './overlays/VtmnModal/VtmnModal.svelte';
 export { default as VtmnPopover } from './overlays/VtmnPopover/VtmnPopover.svelte';
+export { default as VtmnSnackbar } from './overlays/VtmnSnackbar/VtmnSnackbar.svelte';
+export { vtmnSnackbarStore } from './overlays/VtmnSnackbar/vtmnSnackbarStore';
 
 // Selection controls
 export { default as VtmnCheckbox } from './selection-controls/VtmnCheckbox/VtmnCheckbox.svelte';
