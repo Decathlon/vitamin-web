@@ -20,7 +20,7 @@ const src = {
     },
     {
       folder: 'navigation',
-      components: ['VtmnSearch'],
+      components: ['VtmnSearch', 'VtmnNavbar'],
     },
     {
       folder: 'overlays',
