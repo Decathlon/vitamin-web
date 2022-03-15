@@ -8,6 +8,7 @@ export { default as VtmnTextInput } from './forms/VtmnTextInput/VtmnTextInput.sv
 // Indicators
 export { default as VtmnBadge } from './indicators/VtmnBadge/VtmnBadge.svelte';
 export { default as VtmnPrice } from './indicators/VtmnPrice/VtmnPrice.svelte';
+export { default as VtmnRating } from './indicators/VtmnRating/VtmnRating.svelte';
 export { default as VtmnTag } from './indicators/VtmnTag/VtmnTag.svelte';
 
 // Navigation
