@@ -21,7 +21,7 @@
    * @returns {boolean} slotExists
    */
   const checkSlotExists = (slotName) => {
-    return SLOTS && SLOTS[slotName] && SLOTS[slotName].length;
+    return $$slots[slotName];
   };
 </script>
 
