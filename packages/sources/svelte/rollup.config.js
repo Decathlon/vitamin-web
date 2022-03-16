@@ -19,6 +19,10 @@ const src = {
       components: ['VtmnBadge', 'VtmnPrice', 'VtmnRating', 'VtmnTag'],
     },
     {
+      folder: 'navigation',
+      components: ['VtmnSearch'],
+    },
+    {
       folder: 'overlays',
       components: [
         'VtmnAlert',
