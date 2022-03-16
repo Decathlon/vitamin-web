@@ -14,6 +14,7 @@ export { default as VtmnRating } from './indicators/VtmnRating/VtmnRating.svelte
 export { default as VtmnTag } from './indicators/VtmnTag/VtmnTag.svelte';
 
 // Navigation
+export { default as VtmnSearch } from './navigation/VtmnSearch/VtmnSearch.svelte';
 
 // Overlays
 export { default as VtmnAlert } from './overlays/VtmnAlert/VtmnAlert.svelte';

@@ -46,6 +46,7 @@
     "@vtmn/css-modal": "^0.5.4",
     "@vtmn/css-popover": "^0.5.13",
     "@vtmn/css-rating": "^0.3.11",
+    "@vtmn/css-search": "^0.4.11",
     "@vtmn/css-snackbar": "^0.5.13",
     "@vtmn/css-tag": "^0.3.10",
     "@vtmn/css-text-input": "^0.13.14",
