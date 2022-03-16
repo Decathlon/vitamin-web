@@ -13,7 +13,7 @@ describe('VtmnRating', () => {
     container.getElementsByClassName('vtmn-rating_comment--primary')[0];
   const getCommentSecondary = (container) =>
     container.getElementsByClassName('vtmn-rating_comment--secondary')[0];
-  const getReadOnlyPresentations = (container) =>
+  const getReadonlyPresentations = (container) =>
     container.querySelectorAll('span[role="presentation"]');
   const getRadioInputs = (container) =>
     container.querySelectorAll('input[type="radio"]');
@@ -89,18 +89,18 @@ describe('VtmnRating', () => {
     });
   });
 
-  describe('ReadOnly', () => {
-    test("Should not have 'vtmn-rating--interactive' if readOnly = true", () => {
+  describe('readonly', () => {
+    test("Should not have 'vtmn-rating--interactive' if readonly = true", () => {
       const { container } = render(VtmnRatingWithSlots, {
         name: 'rating',
-        readOnly: true,
+        readonly: true,
       });
       expect(getInteractive(container)).toBeUndefined();
     });
     test("Should display primary slot and class 'vtmn-rating_comment--primary' if slot primary are set", () => {
       const { container } = render(VtmnRatingWithSlots, {
         name: 'rating',
-        readOnly: true,
+        readonly: true,
       });
       expect(getCommentPrimary(container)).toBeVisible();
       expect(getPrimarySlot(container)).toBeVisible();
@@ -108,7 +108,7 @@ describe('VtmnRating', () => {
     test("Should display secondary slot and class 'vtmn-rating_comment--secondary' if slot secondary are set", () => {
       const { container } = render(VtmnRatingWithSlots, {
         name: 'rating',
-        readOnly: true,
+        readonly: true,
       });
       expect(getCommentSecondary(container)).toBeVisible();
       expect(getSecondarySlot(container)).toBeVisible();
@@ -117,21 +117,21 @@ describe('VtmnRating', () => {
     test("Should have 1 span role 'presentation' if compact is true", () => {
       const { container } = render(VtmnRatingWithSlots, {
         name: 'rating',
-        readOnly: true,
+        readonly: true,
         compact: true,
       });
-      const spans = getReadOnlyPresentations(container);
+      const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(1);
       expect(spans[0]).toBeVisible();
     });
     test("Should have 1 span with class 'vtmx-star-line' if rating = 0 and compact mode", () => {
       const { container } = render(VtmnRatingWithSlots, {
         name: 'rating',
-        readOnly: true,
+        readonly: true,
         compact: true,
         rating: 0,
       });
-      const spans = getReadOnlyPresentations(container);
+      const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(1);
       expect(spans[0]).toBeVisible();
       expect(spans[0]).toHaveClass('vtmx-star-line');
@@ -139,11 +139,11 @@ describe('VtmnRating', () => {
     test("Should have 1 span with class 'vtmx-star-half-fill' if rating = 0.1 and compact mode", () => {
       const { container } = render(VtmnRatingWithSlots, {
         name: 'rating',
-        readOnly: true,
+        readonly: true,
         compact: true,
         rating: 0.1,
       });
-      const spans = getReadOnlyPresentations(container);
+      const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(1);
       expect(spans[0]).toBeVisible();
       expect(spans[0]).toHaveClass('vtmx-star-half-fill');
@@ -151,11 +151,11 @@ describe('VtmnRating', () => {
     test("Should have 1 span with class 'vtmx-star-half-fill' if rating = 0.9 and compact mode", () => {
       const { container } = render(VtmnRatingWithSlots, {
         name: 'rating',
-        readOnly: true,
+        readonly: true,
         compact: true,
         rating: 0.9,
       });
-      const spans = getReadOnlyPresentations(container);
+      const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(1);
       expect(spans[0]).toBeVisible();
       expect(spans[0]).toHaveClass('vtmx-star-half-fill');
@@ -163,11 +163,11 @@ describe('VtmnRating', () => {
     test("Should have 1 span with class 'vtmx-star-fill' if rating = 1 and compact mode", () => {
       const { container } = render(VtmnRatingWithSlots, {
         name: 'rating',
-        readOnly: true,
+        readonly: true,
         compact: true,
         rating: 1,
       });
-      const spans = getReadOnlyPresentations(container);
+      const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(1);
       expect(spans[0]).toBeVisible();
       expect(spans[0]).toHaveClass('vtmx-star-fill');
@@ -176,10 +176,10 @@ describe('VtmnRating', () => {
     test("Should have 5 span with class 'vtmx-star-line' and compact = false by default", () => {
       const { container } = render(VtmnRatingWithSlots, {
         name: 'rating',
-        readOnly: true,
+        readonly: true,
         compact: false,
       });
-      const spans = getReadOnlyPresentations(container);
+      const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(5);
       for (let i = 0, ii = spans.length; i < ii; i++) {
         expect(spans[i]).toBeVisible();
@@ -189,11 +189,11 @@ describe('VtmnRating', () => {
     test("Should have 5 span with class 'vtmx-star-line' if rating = 0 and compact = false", () => {
       const { container } = render(VtmnRatingWithSlots, {
         name: 'rating',
-        readOnly: true,
+        readonly: true,
         compact: false,
         rating: 0,
       });
-      const spans = getReadOnlyPresentations(container);
+      const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(5);
       for (let i = 0, ii = spans.length; i < ii; i++) {
         expect(spans[i]).toBeVisible();
@@ -203,11 +203,11 @@ describe('VtmnRating', () => {
     test("Should have 2 span with class 'vtmx-star-fill' and 3 span with class 'vtmx-star-line' if rating = 2 and compact = false", () => {
       const { container } = render(VtmnRatingWithSlots, {
         name: 'rating',
-        readOnly: true,
+        readonly: true,
         compact: false,
         rating: 2,
       });
-      const spans = getReadOnlyPresentations(container);
+      const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(5);
       for (let i = 0, ii = spans.length; i < ii; i++) {
         expect(spans[i]).toBeVisible();
@@ -221,11 +221,11 @@ describe('VtmnRating', () => {
     test("Should have 2 span with class 'vtmx-star-fill' and 1 with class 'vtmx-star-half-fill' and 2 span with class 'vtmx-star-line' if rating = 2.1 and compact = false", () => {
       const { container } = render(VtmnRatingWithSlots, {
         name: 'rating',
-        readOnly: true,
+        readonly: true,
         compact: false,
         rating: 2.1,
       });
-      const spans = getReadOnlyPresentations(container);
+      const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(5);
       for (let i = 0, ii = spans.length; i < ii; i++) {
         expect(spans[i]).toBeVisible();
@@ -239,11 +239,11 @@ describe('VtmnRating', () => {
     test("Should have 2 span with class 'vtmx-star-fill' and 1 with class 'vtmx-star-half-fill' and 2 span with class 'vtmx-star-line' if rating = 2.9 and compact = false", () => {
       const { container } = render(VtmnRatingWithSlots, {
         name: 'rating',
-        readOnly: true,
+        readonly: true,
         compact: false,
         rating: 2.9,
       });
-      const spans = getReadOnlyPresentations(container);
+      const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(5);
       for (let i = 0, ii = spans.length; i < ii; i++) {
         expect(spans[i]).toBeVisible();
@@ -257,11 +257,11 @@ describe('VtmnRating', () => {
     test("Should have 5 span with class 'vtmx-star-fill' if rating = 5 and compact = false", () => {
       const { container } = render(VtmnRatingWithSlots, {
         name: 'rating',
-        readOnly: true,
+        readonly: true,
         compact: false,
         rating: 5,
       });
-      const spans = getReadOnlyPresentations(container);
+      const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(5);
       for (let i = 0, ii = spans.length; i < ii; i++) {
         expect(spans[i]).toBeVisible();
@@ -271,17 +271,17 @@ describe('VtmnRating', () => {
   });
 
   describe('Interactive', () => {
-    test("Should not have 'vtmn-rating--interactive' if readOnly = false", () => {
+    test("Should not have 'vtmn-rating--interactive' if readonly = false", () => {
       const { container } = render(VtmnRatingWithSlots, {
         name: 'rating',
-        readOnly: false,
+        readonly: false,
       });
       expect(getInteractive(container)).toBeVisible();
     });
-    test('Should have 5 input type radio if readOnly = false', () => {
+    test('Should have 5 input type radio if readonly = false', () => {
       const { container } = render(VtmnRatingWithSlots, {
         name: 'rating',
-        readOnly: false,
+        readonly: false,
       });
       const inputs = getRadioInputs(container);
       expect(inputs.length).toEqual(5);
@@ -289,10 +289,10 @@ describe('VtmnRating', () => {
         expect(inputs[i]).toBeVisible();
       }
     });
-    test('Should have 5 input type radio if readOnly = false and compact = true', () => {
+    test('Should have 5 input type radio if readonly = false and compact = true', () => {
       const { container } = render(VtmnRatingWithSlots, {
         name: 'rating',
-        readOnly: false,
+        readonly: false,
         compact: true,
       });
       const inputs = getRadioInputs(container);
@@ -301,10 +301,10 @@ describe('VtmnRating', () => {
         expect(inputs[i]).toBeVisible();
       }
     });
-    test('Should have 5 input type radio disabled if readOnly = false and disabled = true', () => {
+    test('Should have 5 input type radio disabled if readonly = false and disabled = true', () => {
       const { container } = render(VtmnRatingWithSlots, {
         name: 'rating',
-        readOnly: false,
+        readonly: false,
         disabled: true,
       });
       const inputs = getRadioInputs(container);
@@ -314,10 +314,10 @@ describe('VtmnRating', () => {
         expect(inputs[i]).toHaveAttribute('disabled');
       }
     });
-    test('Should have 5 input type radio with name if readOnly = false and name are set', () => {
+    test('Should have 5 input type radio with name if readonly = false and name are set', () => {
       const { container } = render(VtmnRatingWithSlots, {
         name: 'rating',
-        readOnly: false,
+        readonly: false,
         disabled: true,
       });
       const inputs = getRadioInputs(container);
@@ -330,7 +330,7 @@ describe('VtmnRating', () => {
     test('Should not have a slot primary if slot are defined', () => {
       const { container } = render(VtmnRatingWithSlots, {
         name: 'rating',
-        readOnly: false,
+        readonly: false,
       });
       expect(getCommentPrimary(container)).toBeUndefined();
       expect(getPrimarySlot(container)).toBeNull();
@@ -338,7 +338,7 @@ describe('VtmnRating', () => {
     test('Should not have a slot secondary if slot are defined', () => {
       const { container } = render(VtmnRatingWithSlots, {
         name: 'rating',
-        readOnly: false,
+        readonly: false,
       });
       expect(getCommentPrimary(container)).toBeUndefined();
       expect(getPrimarySlot(container)).toBeNull();
@@ -346,7 +346,7 @@ describe('VtmnRating', () => {
     test('Should radio inputs reactive to rating variable', async () => {
       const { container } = render(VtmnRatingWithSlots, {
         name: 'rating',
-        readOnly: false,
+        readonly: false,
       });
 
       expect(getInteractive(container)).toHaveAttribute('data-rating', '0');
