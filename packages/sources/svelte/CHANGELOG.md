@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.23.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.23.0...@vtmn/svelte@0.23.1) (2022-03-16)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** rating attribute + css-price import ([#1045](https://github.com/Decathlon/vitamin-web/issues/1045)) ([b8a55c0](https://github.com/Decathlon/vitamin-web/commit/b8a55c00dfdedc26664aec6700f09d5ed6671cbe))
+
+
+
+
+
 # [0.23.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.22.0...@vtmn/svelte@0.23.0) (2022-03-16)
 
 
