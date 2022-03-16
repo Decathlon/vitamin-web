@@ -30,6 +30,14 @@ describe('VtmnToastItem', () => {
     expect(getToast(container)).toBeVisible();
     expect(getToast(container)).toHaveClass('vtmn-toast', 'show');
   });
+  test('Should apply attributes on the component', () => {
+    const { container } = render(VtmnToastItem, {
+      content: 'Unit-test Toast',
+      timeout,
+      style: '--position: 1;',
+    });
+    expect(getToast(container)).toHaveAttribute('style', '--position: 1;');
+  });
   test('Should pass custom class to the toast', () => {
     const { container } = render(VtmnToastItem, {
       content: 'Unit-test Toast',
