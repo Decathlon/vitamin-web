@@ -35,3 +35,4 @@ export { default as VtmnCard } from './structure/VtmnCard/VtmnCard.svelte';
 export { default as VtmnDivider } from './structure/VtmnDivider/VtmnDivider.svelte';
 export { default as VtmnList } from './structure/VtmnList/VtmnList.svelte';
 export { default as VtmnListItem } from './structure/VtmnListItem/VtmnListItem.svelte';
+export { default as VtmnSkeleton } from './structure/VtmnSkeleton/VtmnSkeleton.svelte';
