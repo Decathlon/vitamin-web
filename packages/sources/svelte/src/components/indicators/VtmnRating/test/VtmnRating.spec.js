@@ -13,7 +13,7 @@ describe('VtmnRating', () => {
     container.getElementsByClassName('vtmn-rating_comment--primary')[0];
   const getCommentSecondary = (container) =>
     container.getElementsByClassName('vtmn-rating_comment--secondary')[0];
-  const getreadonlyPresentations = (container) =>
+  const getReadonlyPresentations = (container) =>
     container.querySelectorAll('span[role="presentation"]');
   const getRadioInputs = (container) =>
     container.querySelectorAll('input[type="radio"]');
@@ -120,7 +120,7 @@ describe('VtmnRating', () => {
         readonly: true,
         compact: true,
       });
-      const spans = getreadonlyPresentations(container);
+      const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(1);
       expect(spans[0]).toBeVisible();
     });
@@ -131,7 +131,7 @@ describe('VtmnRating', () => {
         compact: true,
         rating: 0,
       });
-      const spans = getreadonlyPresentations(container);
+      const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(1);
       expect(spans[0]).toBeVisible();
       expect(spans[0]).toHaveClass('vtmx-star-line');
@@ -143,7 +143,7 @@ describe('VtmnRating', () => {
         compact: true,
         rating: 0.1,
       });
-      const spans = getreadonlyPresentations(container);
+      const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(1);
       expect(spans[0]).toBeVisible();
       expect(spans[0]).toHaveClass('vtmx-star-half-fill');
@@ -155,7 +155,7 @@ describe('VtmnRating', () => {
         compact: true,
         rating: 0.9,
       });
-      const spans = getreadonlyPresentations(container);
+      const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(1);
       expect(spans[0]).toBeVisible();
       expect(spans[0]).toHaveClass('vtmx-star-half-fill');
@@ -167,7 +167,7 @@ describe('VtmnRating', () => {
         compact: true,
         rating: 1,
       });
-      const spans = getreadonlyPresentations(container);
+      const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(1);
       expect(spans[0]).toBeVisible();
       expect(spans[0]).toHaveClass('vtmx-star-fill');
@@ -179,7 +179,7 @@ describe('VtmnRating', () => {
         readonly: true,
         compact: false,
       });
-      const spans = getreadonlyPresentations(container);
+      const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(5);
       for (let i = 0, ii = spans.length; i < ii; i++) {
         expect(spans[i]).toBeVisible();
@@ -193,7 +193,7 @@ describe('VtmnRating', () => {
         compact: false,
         rating: 0,
       });
-      const spans = getreadonlyPresentations(container);
+      const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(5);
       for (let i = 0, ii = spans.length; i < ii; i++) {
         expect(spans[i]).toBeVisible();
@@ -207,7 +207,7 @@ describe('VtmnRating', () => {
         compact: false,
         rating: 2,
       });
-      const spans = getreadonlyPresentations(container);
+      const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(5);
       for (let i = 0, ii = spans.length; i < ii; i++) {
         expect(spans[i]).toBeVisible();
@@ -225,7 +225,7 @@ describe('VtmnRating', () => {
         compact: false,
         rating: 2.1,
       });
-      const spans = getreadonlyPresentations(container);
+      const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(5);
       for (let i = 0, ii = spans.length; i < ii; i++) {
         expect(spans[i]).toBeVisible();
@@ -243,7 +243,7 @@ describe('VtmnRating', () => {
         compact: false,
         rating: 2.9,
       });
-      const spans = getreadonlyPresentations(container);
+      const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(5);
       for (let i = 0, ii = spans.length; i < ii; i++) {
         expect(spans[i]).toBeVisible();
@@ -261,7 +261,7 @@ describe('VtmnRating', () => {
         compact: false,
         rating: 5,
       });
-      const spans = getreadonlyPresentations(container);
+      const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(5);
       for (let i = 0, ii = spans.length; i < ii; i++) {
         expect(spans[i]).toBeVisible();
