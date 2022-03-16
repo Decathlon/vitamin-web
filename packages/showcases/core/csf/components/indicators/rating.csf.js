@@ -40,10 +40,10 @@ export const argTypes = {
     defaultValue: false,
     control: { type: 'boolean' },
   },
-  readOnly: {
+  readonly: {
     type: { name: 'boolean', required: false },
     description: 'Whether the rating is read only.',
-    defaultValue: true,
+    defaultValue: false,
     control: { type: 'boolean' },
   },
   compact: {
