@@ -1,6 +1,7 @@
 <script>
   import { cn } from '../../../utils/classnames';
   import { createEventDispatcher } from 'svelte';
+  import { clickOutside } from '../../../utils/clickOutside';
 
   /** @restProps */
 
@@ -27,6 +28,14 @@
   export { className as class };
 
   /**
+   * Set disabled state of list item.
+   *
+   * @type {boolean} [disabled]
+   * @defaultValue false
+   */
+  export let disabled = false;
+
+  /**
    * Custom classes to apply to the component.
    * @type {array} options
    */
@@ -38,29 +47,46 @@
 
   let selectedOptions = [];
 
-  const onClick = (value) => {
-    selectedOptions = [...selectedOptions, value];
+  const onSelectItem = (value) => {
+    if (selectedOptions.includes(value))
+      selectedOptions = selectedOptions.filter((option) => option !== value);
+    else selectedOptions = [...selectedOptions, value];
 
     dispatch('item-selected', {
       selectedOptions,
     });
+
+    closeMenu();
   };
+
+  let details;
+
+  function closeMenu() {
+    details.open = false;
+  }
 </script>
 
-<div class={componentClass} {...$$restProps}>
+<div
+  class={componentClass}
+  {...$$restProps}
+  aria-disabled={disabled}
+  use:clickOutside
+  on:click_outside={closeMenu}
+>
   {#if label}
-    <div class="vtmn-dropdown_label">{label}</div>
+    <label id={options[0].id}>{label}</label>
   {/if}
 
-  <details>
-    <summary aria-labelledby="dropdown-label-1">{defaultOption}</summary>
+  <details bind:this={details}>
+    <summary aria-labelledby={options[0].id}>{defaultOption}</summary>
 
     <div class="vtmn-dropdown_items">
       {#each options as option (option.label)}
         <input type="checkbox" name={option.label} id={option.label} />
-        <label for={option.label} on:click={() => onClick(option.value)}
-          >{option.label}</label
-        >
+
+        <label for={option.label} on:click={() => onSelectItem(option.value)}>
+          {option.label}
+        </label>
       {/each}
     </div>
   </details>

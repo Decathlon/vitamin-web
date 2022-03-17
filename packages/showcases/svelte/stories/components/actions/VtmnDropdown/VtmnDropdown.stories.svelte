@@ -19,7 +19,7 @@
     <VtmnDropdown
       {...args}
       on:item-selected={(event) =>
-        alert(JSON.stringify(event.detail.selectedOptions))}
+        console.log(JSON.stringify(event.detail.selectedOptions))}
     />
   </div>
 </Template>

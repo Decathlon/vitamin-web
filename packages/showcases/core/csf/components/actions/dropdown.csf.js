@@ -21,7 +21,7 @@ export const argTypes = {
   defaultOption: {
     type: { name: 'string' },
     description: 'Default dropdown label.',
-    defaultValue: 'Default option',
+    defaultValue: 'Default label',
     control: {
       type: 'text',
     },
@@ -30,10 +30,19 @@ export const argTypes = {
   options: {
     description: 'Default dropdown label.',
     defaultValue: [
-      { label: 'Option 1', value: 'option-1' },
-      { label: 'Option 2', value: 'option-2' },
-      { label: 'Option 3', value: 'option-3' },
-      { label: 'Option 4', value: 'option-4' },
+      { label: 'Option Option 1', value: 'option-1' },
+      { label: 'Option Option 2', value: 'option-2' },
+      { label: 'Option Option 3', value: 'option-3' },
+      { label: 'Option Option 4', value: 'option-4' },
     ],
+  },
+
+  disabled: {
+    type: { name: 'boolean' },
+    description: 'Disabled state',
+    defaultValue: false,
+    control: {
+      type: 'boolean',
+    },
   },
 };
