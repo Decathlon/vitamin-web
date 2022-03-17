@@ -5,12 +5,19 @@
     parameters,
     argTypes,
   } from '@vtmn/showcase-core/csf/components/selection-controls/chip.csf';
+  import README from '@vtmn/svelte/src/components/selection-controls/VtmnChip/README.md';
 </script>
 
 <Meta
   title="Components / Selection controls / VtmnChip"
   component={VtmnChip}
-  {parameters}
+  parameters={{
+    ...parameters,
+    readme: {
+      sidebar: README,
+      readme: README,
+    },
+  }}
   {argTypes}
 />
 
