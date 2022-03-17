@@ -2,6 +2,8 @@
   import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
   import { vtmnAlertStore, VtmnAlert, VtmnButton } from '@vtmn/svelte';
   import { parameters } from '@vtmn/showcase-core/csf/components/overlays/alert.csf';
+  import README from '@vtmn/svelte/src/components/overlays/VtmnAlert/README.md';
+
   const argTypes = {
     title: {
       type: { name: 'string', required: true },
@@ -40,7 +42,13 @@
   title="Components / Overlays / VtmnAlert"
   component={VtmnAlert}
   {argTypes}
-  {parameters}
+  parameters={{
+    ...parameters,
+    readme: {
+      sidebar: README,
+      readme: README,
+    },
+  }}
 />
 
 <Template let:args>

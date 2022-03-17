@@ -30,6 +30,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "storybook-addon-designs": "^6.0.0",
+    "storybook-readme": "^5.0.9",
     "svelte": "^3.46.3",
     "svelte-loader": "^3.1.2"
   },
