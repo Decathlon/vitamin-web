@@ -14,40 +14,70 @@ const props = {
   class: 'test-class',
   divider: false,
   icon: null,
+  menuMaxHeight: null,
 };
 
 describe('<VtmnDropdown />', () => {
-  test('Renders correctly', () => {
+  test('Render correctly', () => {
     const { container } = render(VtmnDropdown, { props });
 
     expect(container).toBeInTheDocument();
   });
 
-  test('Renders menu items correctly', () => {
+  test('Render menu items correctly', () => {
     const { getAllByTestId } = render(VtmnDropdown, { props });
 
     expect(getAllByTestId('dropdown-items')).toHaveLength(4);
   });
 
-  test('Renders correctly the main label', () => {
+  test('Render divider correctly', () => {
+    const { getAllByRole } = render(VtmnDropdown, {
+      ...props,
+      divider: true,
+    });
+
+    expect(getAllByRole('separator')).toHaveLength(3);
+  });
+
+  test('Render menu icons correctly', () => {
+    const { container } = render(VtmnDropdown, {
+      ...props,
+      icon: 'vtmx-user-line',
+    });
+
+    expect(container.getElementsByClassName('vtmx-user-line')).toHaveLength(4);
+  });
+
+  test('Render fixed menu height correctly', () => {
+    const { container } = render(VtmnDropdown, {
+      ...props,
+      menuMaxHeight: 100,
+    });
+
+    expect(
+      container.getElementsByClassName('vtmn-dropdown_items')[0],
+    ).toHaveStyle('height: 100px');
+  });
+
+  test('Render correctly the main label', () => {
     const { getByText } = render(VtmnDropdown, { props });
 
     expect(getByText('Label')).toBeInTheDocument();
   });
 
-  test('Renders correctly defaultOption', () => {
+  test('Render correctly defaultOption', () => {
     const { getByText } = render(VtmnDropdown, { props });
 
     expect(getByText('Default label')).toBeInTheDocument();
   });
 
-  test('Renders correctly custom css class', () => {
+  test('Render correctly custom css class', () => {
     const { container } = render(VtmnDropdown, { props });
 
     expect(container.getElementsByClassName('test-class')).toHaveLength(1);
   });
 
-  test('Renders correctly disabled state', () => {
+  test('Render correctly disabled state', () => {
     const { container } = render(VtmnDropdown, { ...props, disabled: true });
 
     expect(container.querySelector('[aria-disabled="true"]')).toBeTruthy();

@@ -60,7 +60,7 @@
    * Max height of menu, this enable scroll.
    * @type {number} [menuMaxHeight]
    */
-  export let menuMaxHeight;
+  export let menuMaxHeight = null;
 
   $: componentClass = cn('vtmn-dropdown', className);
 
@@ -68,6 +68,11 @@
 
   let selectedOptions = [];
 
+  /**
+   * Add or remove elements in options array.
+   *
+   * @param {string} value Selected value
+   */
   const onSelectItem = (value) => {
     if (selectedOptions.includes(value))
       selectedOptions = selectedOptions.filter((option) => option !== value);
@@ -82,6 +87,9 @@
 
   let details;
 
+  /**
+   * Close dropdown menu.
+   */
   function closeMenu() {
     details.open = false;
   }
