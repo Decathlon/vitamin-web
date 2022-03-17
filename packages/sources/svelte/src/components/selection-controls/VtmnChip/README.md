@@ -9,7 +9,5 @@ npm install @vtmn/svelte
 Now, you can use `VtmnChip` on your svelte file with
 
 ```javascript
-<script>
-  import { VtmnChip } from '@vtmn/svelte';
-</script>
+<script>import {VtmnChip} from '@vtmn/svelte';</script>
 ```
