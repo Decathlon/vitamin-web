@@ -3,14 +3,13 @@
 
   /** @restProps { button } */
 
-  const SLOTS = $$props.$$slots;
-
+  let className = '';
   /**
    * Custom classes to apply to the component.
    *
    * @type {string}
    */
-  export let className = '';
+  export { className as class };
 
   $: componentClass = cn('vtmn-navbar', className);
 

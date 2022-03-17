@@ -58,6 +58,8 @@
         >
           <span class="vtmx-menu-line" />
         </button>
+
+        <VtmnButton iconAlone="vtmx-menu-line" variant="ghost" />
       </svelte:fragment>
 
       <svelte:fragment slot="logo">
@@ -107,12 +109,7 @@
   <div style="width: 800px; display: flex; justify-content: center">
     <VtmnNavbar {...args}>
       <svelte:fragment slot="left-nav">
-        <button
-          class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_variant--ghost"
-          aria-label="Go to menu"
-        >
-          <span class="vtmx-menu-line" />
-        </button>
+        <VtmnButton iconAlone="vtmx-menu-line" variant="ghost" />
       </svelte:fragment>
 
       <svelte:fragment slot="logo">

@@ -63,7 +63,7 @@ describe('<VtmnNavbar />', () => {
 
   test('Can add custom css classes', () => {
     const { container } = render(VtmnNavbar, {
-      className: 'test-class',
+      class: 'test-class',
     });
 
     expect(container.getElementsByClassName(`test-class`).length).toBe(1);
