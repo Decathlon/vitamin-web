@@ -15,7 +15,7 @@ First, you need to place the `VtmnToast` component on the top of your applicatio
 
 `app.svelte`
 
-```svelte
+```javascript
 <script>
   import { VtmnToast } from '@vtmn/svelte';
 </script>
@@ -27,7 +27,7 @@ Once the initialization is done, it is now possible to pass toasts to the compon
 
 `component.svelte`
 
-```svelte
+```javascript
 <script>
   import { vtmnToastStore, VtmnButton } from '@vtmn/svelte';
 
