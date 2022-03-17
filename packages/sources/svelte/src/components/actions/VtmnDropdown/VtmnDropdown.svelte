@@ -82,7 +82,12 @@
 
     <div class="vtmn-dropdown_items">
       {#each options as option (option.label)}
-        <input type="checkbox" name={option.label} id={option.label} />
+        <input
+          type="checkbox"
+          name={option.label}
+          id={option.label}
+          data-testid="dropdown-items"
+        />
 
         <label for={option.label} on:click={() => onSelectItem(option.value)}>
           {option.label}
