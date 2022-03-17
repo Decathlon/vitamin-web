@@ -9,6 +9,16 @@ export const parameters = {
 };
 
 export const argTypes = {
+  options: {
+    description: 'Default dropdown label.',
+    defaultValue: [
+      { label: 'Option Option 1', value: 'option-1' },
+      { label: 'Option Option 2', value: 'option-2' },
+      { label: 'Option Option 3', value: 'option-3' },
+      { label: 'Option Option 4', value: 'option-4' },
+    ],
+  },
+
   label: {
     type: { name: 'string', required: false },
     description: 'The main label. If not set the label is not displayed.',
@@ -27,14 +37,21 @@ export const argTypes = {
     },
   },
 
-  options: {
-    description: 'Default dropdown label.',
-    defaultValue: [
-      { label: 'Option Option 1', value: 'option-1' },
-      { label: 'Option Option 2', value: 'option-2' },
-      { label: 'Option Option 3', value: 'option-3' },
-      { label: 'Option Option 4', value: 'option-4' },
-    ],
+  divider: {
+    type: { name: 'boolean' },
+    description: 'Menu item divider',
+    defaultValue: false,
+    control: {
+      type: 'boolean',
+    },
+  },
+
+  icon: {
+    type: { name: 'string' },
+    description: 'Icon for each menu item',
+    control: {
+      type: 'text',
+    },
   },
 
   disabled: {

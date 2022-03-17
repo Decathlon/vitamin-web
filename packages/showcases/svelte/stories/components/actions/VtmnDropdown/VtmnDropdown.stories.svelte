@@ -25,3 +25,21 @@
 </Template>
 
 <Story name="Overview" />
+
+<Story
+  name="With divider"
+  args={{
+    divider: true,
+  }}
+/>
+
+<Story
+  name="With icons"
+  args={{
+    icon: 'vtmx-user-line',
+  }}
+/>
+
+<Story name="Disabled" args={{ disabled: true }} />
+
+<Story name="Fixed height" args={{ menuMaxHeight: 200 }} />

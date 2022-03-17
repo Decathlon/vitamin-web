@@ -6,6 +6,12 @@
   /** @restProps */
 
   /**
+   * Custom classes to apply to the component.
+   * @type {array} options
+   */
+  export let options;
+
+  /**
    * The main label. If not set the label is not displayed
    *
    * @type {string} [label]
@@ -28,6 +34,14 @@
   export { className as class };
 
   /**
+   * Menu item divider.
+   *
+   * @type {boolean} [divider]
+   * @defaultValue false
+   */
+  export let divider = false;
+
+  /**
    * Set disabled state of list item.
    *
    * @type {boolean} [disabled]
@@ -36,10 +50,17 @@
   export let disabled = false;
 
   /**
-   * Custom classes to apply to the component.
-   * @type {array} options
+   * Icon for each menu item.
+   *
+   * @type {string} [icon]
    */
-  export let options;
+  export let icon;
+
+  /**
+   * Max height of menu, this enable scroll.
+   * @type {number} [menuMaxHeight]
+   */
+  export let menuMaxHeight;
 
   $: componentClass = cn('vtmn-dropdown', className);
 
@@ -80,8 +101,20 @@
   <details bind:this={details}>
     <summary aria-labelledby={options[0].id}>{defaultOption}</summary>
 
-    <div class="vtmn-dropdown_items">
-      {#each options as option (option.label)}
+    <div
+      class="vtmn-dropdown_items"
+      style={`height: ${
+        menuMaxHeight && menuMaxHeight > 1 ? menuMaxHeight + 'px' : 'auto'
+      }`}
+    >
+      {#each options as option, index (option.label)}
+        {#if divider && index !== 0}
+          <div
+            class="vtmn-divider vtmn-divider_orientation--horizontal"
+            role="separator"
+          />
+        {/if}
+
         <input
           type="checkbox"
           name={option.label}
@@ -90,6 +123,10 @@
         />
 
         <label for={option.label} on:click={() => onSelectItem(option.value)}>
+          {#if icon}
+            <span class={icon} />
+          {/if}
+
           {option.label}
         </label>
       {/each}

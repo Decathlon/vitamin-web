@@ -12,6 +12,8 @@ const props = {
   ],
   disabled: false,
   class: 'test-class',
+  divider: false,
+  icon: null,
 };
 
 describe('<VtmnDropdown />', () => {
