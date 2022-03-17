@@ -15,7 +15,7 @@
 />
 <Story name="Overview" let:args>
   <div
-    class="card-example_body vtmn-flex vtmn-shadow-200 vtmn-bg-background-primary vtmn-rounded-lg vtmn-p-4 vtmn-mb-5 vtmn-items-center vtmn-content-center"
+    class="vtmn-flex vtmn-shadow-200 vtmn-bg-background-primary vtmn-rounded-lg vtmn-p-4 vtmn-mb-5 vtmn-items-center vtmn-content-center"
     style="width:200px;"
   >
     <VtmnSkeleton {...args} />
@@ -23,7 +23,7 @@
 </Story>
 
 <Story name="With avatar" let:args>
-  <li class="post-example">
+  <div class="post-example">
     <VtmnSkeleton shape="avatar" />
     <div class="post-example_body">
       <VtmnSkeleton shape="line" width="55" />
@@ -34,7 +34,7 @@
         <VtmnSkeleton shape="line" width="60" />
       </p>
     </div>
-  </li>
+  </div>
 </Story>
 
 <Story name="With card" let:args>
@@ -53,20 +53,6 @@
 </Story>
 
 <style>
-  .card-example {
-    display: flex;
-    flex-direction: column;
-    width: 220px;
-    box-shadow: var(--vtmn-shadow_100);
-    border-radius: var(--vtmn-radius_200);
-    height: 200px;
-    margin-bottom: var(--vtmn-spacing_6);
-    background-color: var(--vtmn-semantic-color_background-primary);
-  }
-  .card-example_body {
-    padding: var(--vtmn-spacing_4);
-    width: 100%;
-  }
   .post-example {
     display: flex;
     width: 400px;
@@ -87,5 +73,12 @@
   #skeleton-card-container :global(.skeleton-card .vtmn-card_image) {
     aspect-ratio: 1;
     width: calc(100% - 32px);
+  }
+
+  :global(#anchor--components-structure-vtmnskeleton--with-card .docs-story),
+  :global(#anchor--components-structure-vtmnskeleton--with-card
+      .docs-story
+      > div:first-child) {
+    height: 500px;
   }
 </style>

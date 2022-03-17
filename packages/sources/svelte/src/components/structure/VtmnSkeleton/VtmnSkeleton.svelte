@@ -3,14 +3,23 @@
   import { VTMN_SKELETON_SHAPE } from './enums';
   import { objectToStyle } from '../../../utils/style';
 
-  // width
+  /**
+   * @type {number} width to apply to the skeleton
+   * @defaultValue 0
+   */
   export let width = 0;
+
+  /**
+   * @type {'line' | 'avatar' }  variant of the shape.
+   * @defaultValue line
+   */
   export let shape = VTMN_SKELETON_SHAPE.LINE;
 
-  let className;
   /**
    * @type {string} Custom classes to apply to the component.
    */
+  let className = '';
+
   export { className as class };
   $: componentClass = cn(
     'vtmn-skeleton',
