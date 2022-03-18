@@ -63,9 +63,9 @@ export const argTypes = {
     defaultValue: false,
     control: { type: 'boolean' },
   },
-  withIcon: {
+  iconAlong: {
     type: { name: 'boolean', required: false },
-    description: 'Whether the component has an icon.',
+    description: 'Whether the component has an icon. Only if standalone.',
     table: {
       type: {
         summary: 'boolean',

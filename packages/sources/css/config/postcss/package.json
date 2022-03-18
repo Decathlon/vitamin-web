@@ -16,6 +16,7 @@
     "postcss-css-var-to-sass-var": "^1.0.0",
     "postcss-css-variables": "^0.18.0",
     "postcss-discard-comments": "^5.0.1",
+    "postcss-encode-background-svgs": "^1.0.4",
     "postcss-import": "^14.0.0",
     "postcss-loader": "^6.1.0",
     "postcss-prettify": "^0.3.4",

@@ -1,6 +1,6 @@
 export const parameters = {
   actions: {
-    handles: ['mouseenter', 'focusin', 'focusout'],
+    handles: ['mouseover', 'click', 'focus', 'keypress', 'keydown'],
   },
   design: {
     type: 'figma',
@@ -51,4 +51,5 @@ export const argTypes = {
     defaultValue: undefined,
     control: { type: 'text' },
   },
+
 };

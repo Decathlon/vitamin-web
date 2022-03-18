@@ -4,6 +4,7 @@ import { defineComponent, PropType, reactive } from 'vue';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnCheckbox',
+  inheritAttrs: false,
   props: {
     modelValue: {
       type: [String, Number, Boolean, Array] as PropType<

@@ -15,6 +15,7 @@
   position: relative;
   height: rem(48px);
   border: 0;
+  line-height: 1;
   width: max-content;
   padding: rem(14px) rem(24px);
   font-family: var(--vtmn-typo_font-family);
@@ -71,7 +72,7 @@
 
 /* Primary reversed button */
 .vtmn-btn_variant--primary-reversed {
-  box-shadow: inset 0 0 0 rem(2px) transparent;
+  box-shadow: none;
   background-color: var(
     --vtmn-semantic-color_background-brand-primary-reversed
   );
@@ -83,22 +84,19 @@
   background-color: var(
     --vtmn-semantic-color_hover-tertiary-reversed-transparent
   );
-  box-shadow: inset 0 0 0 rem(2px)
-    var(--vtmn-semantic-color_border-primary-reversed);
+  box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-primary);
 }
 
 .vtmn-btn_variant--primary-reversed:not(:disabled):active {
   background-color: var(
     --vtmn-semantic-color_active-brand-reversed-transparent
   );
-  box-shadow: inset 0 0 0 rem(2px)
-    var(--vtmn-semantic-color_border-primary-reversed);
+  box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-primary);
 }
 
 .vtmn-btn_variant--primary-reversed:not(:disabled):focus-visible {
   outline: none;
-  box-shadow: inset 0 0 0 rem(2px)
-      var(--vtmn-semantic-color_border-primary-reversed),
+  box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-primary),
     0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary),
     0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary-reversed);
 }
