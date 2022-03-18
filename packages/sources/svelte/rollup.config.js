@@ -49,6 +49,7 @@ const src = {
         'VtmnDivider',
         'VtmnList',
         'VtmnListItem',
+        'VtmnSkeleton',
       ],
     },
   ],
