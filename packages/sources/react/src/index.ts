@@ -31,6 +31,8 @@ export { VtmnProgressbar } from './components/indicators/VtmnProgressbar';
 export type { VtmnProgressbarProps } from './components/indicators/VtmnProgressbar';
 
 // Navigation
+export { VtmnSearch } from './components/navigation/VtmnSearch/VtmnSearch';
+export type { VtmnSearchProps } from './components/navigation/VtmnSearch/VtmnSearch';
 
 // Overlays
 export { VtmnAlert } from './components/overlays/VtmnAlert';
