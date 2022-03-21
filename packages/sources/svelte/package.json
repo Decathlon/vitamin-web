@@ -42,7 +42,7 @@
     "@vtmn/css-design-tokens": "^0.18.5",
     "@vtmn/css-divider": "^0.1.21",
     "@vtmn/css-link": "^0.6.15",
-    "@vtmn/css-loader": "^0.2.23",
+    "@vtmn/css-progressbar": "^0.4.12",
     "@vtmn/css-list": "^0.2.17",
     "@vtmn/css-modal": "^0.5.4",
     "@vtmn/css-popover": "^0.5.13",

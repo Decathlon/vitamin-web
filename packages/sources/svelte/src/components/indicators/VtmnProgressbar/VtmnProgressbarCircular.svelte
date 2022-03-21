@@ -8,6 +8,7 @@
   export let indeterminate = false;
   export let size; // small | medium
   export let img;
+  export let imgAlt;
 
   const DEFAULT_RADIUS = 32;
   const DEFAULT_DASHOFFSET = 200;
@@ -44,7 +45,7 @@
   aria-valuenow={progress}
 >
   {#if img}
-    <img class="vtmn-progressbar_image" src={img} alt="Black and white grid" />
+    <img class="vtmn-progressbar_image" src={img} alt={imgAlt} />
   {/if}
   {#if progressIndicator && !indeterminate}
     <span class="vtmn-progressbar_label" data-value={progress} />
