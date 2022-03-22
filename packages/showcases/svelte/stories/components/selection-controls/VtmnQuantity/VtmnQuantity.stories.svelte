@@ -34,13 +34,3 @@
 </Template>
 
 <Story name="Overview" />
-
-<Story
-  name="Disable max value"
-  args={{
-    label: 'unit-test',
-    id: 'unit-id',
-    value: 11,
-    max: 10,
-  }}
-/>
