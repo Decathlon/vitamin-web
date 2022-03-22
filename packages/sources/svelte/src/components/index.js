@@ -27,6 +27,7 @@ export { vtmnToastStore } from './overlays/VtmnToast/vtmnToastStore';
 // Selection controls
 export { default as VtmnCheckbox } from './selection-controls/VtmnCheckbox/VtmnCheckbox.svelte';
 export { default as VtmnChip } from './selection-controls/VtmnChip/VtmnChip.svelte';
+export { default as VtmnQuantity } from './selection-controls/VtmnQuantity/VtmnQuantity.svelte';
 export { default as VtmnToggle } from './selection-controls/VtmnToggle/VtmnToggle.svelte';
 
 // Structure
