@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.62.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.61.0...@vtmn/css@0.62.0) (2022-03-22)
+
+
+### Features
+
+* **@vtmn/css:** tag, overload font-size for icon ([#1058](https://github.com/Decathlon/vitamin-web/issues/1058)) ([7501eec](https://github.com/Decathlon/vitamin-web/commit/7501eec11e04a6266af6680be4dec0913e540671))
+
+
+
+
+
+# [0.61.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.60.5...@vtmn/css@0.61.0) (2022-03-22)
+
+
+### Features
+
+* **@vtmn/css-card:** add tag showcase + css class ([#1054](https://github.com/Decathlon/vitamin-web/issues/1054)) ([64789df](https://github.com/Decathlon/vitamin-web/commit/64789df67d22db97df18a1176f520340cdf18df3))
+
+
+
+
+
+## [0.60.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.60.4...@vtmn/css@0.60.5) (2022-03-18)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
 ## [0.60.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.60.3...@vtmn/css@0.60.4) (2022-03-11)
 
 **Note:** Version bump only for package @vtmn/css

@@ -24,8 +24,18 @@ const src = {
       components: ['VtmnBadge', 'VtmnPrice', 'VtmnRating', 'VtmnTag'],
     },
     {
+      folder: 'navigation',
+      components: ['VtmnSearch'],
+    },
+    {
       folder: 'overlays',
-      components: ['VtmnAlert', 'VtmnModal', 'VtmnPopover', 'VtmnSnackbar'],
+      components: [
+        'VtmnAlert',
+        'VtmnModal',
+        'VtmnPopover',
+        'VtmnSnackbar',
+        'VtmnToast',
+      ],
     },
     {
       folder: 'selection-controls',
@@ -39,6 +49,7 @@ const src = {
         'VtmnDivider',
         'VtmnList',
         'VtmnListItem',
+        'VtmnSkeleton',
       ],
     },
   ],

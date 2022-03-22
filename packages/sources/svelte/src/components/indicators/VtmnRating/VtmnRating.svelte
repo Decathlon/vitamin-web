@@ -24,9 +24,9 @@
   export let disabled = false;
 
   /**
-   * @type {boolean} is readOnly component
+   * @type {boolean} is readonly component
    */
-  export let readOnly = false;
+  export let readonly = false;
 
   /**
    * @type {boolean} enable the compact mode
@@ -50,7 +50,7 @@
     emphasis && 'vtmn-rating_variant--brand',
     className,
   );
-  $: starsCnt = compact && readOnly ? 1 : 5;
+  $: starsCnt = compact && readonly ? 1 : 5;
 
   const computeRatingFill = (currentRatingStar) => {
     if (currentRatingStar <= rating) {
@@ -72,7 +72,7 @@
   aria-disabled={disabled}
   aria-label={$$restProps['aria-label']}
 >
-  {#if !readOnly}
+  {#if !readonly}
     <div
       class="vtmn-rating--interactive"
       aria-label="Rate the article"
@@ -93,7 +93,7 @@
       {/each}
     </div>
   {/if}
-  {#if readOnly}
+  {#if readonly}
     {#each Array(starsCnt) as _, i}
       <span
         class={`vtmx-star-${computeRatingFill(i + 1)}`}

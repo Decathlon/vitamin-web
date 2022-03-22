@@ -77,5 +77,5 @@
 {/if}
 
 <style>
-  @import '@vtmn/modal';
+  @import '@vtmn/css-modal';
 </style>

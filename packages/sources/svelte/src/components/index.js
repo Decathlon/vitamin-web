@@ -14,6 +14,7 @@ export { default as VtmnRating } from './indicators/VtmnRating/VtmnRating.svelte
 export { default as VtmnTag } from './indicators/VtmnTag/VtmnTag.svelte';
 
 // Navigation
+export { default as VtmnSearch } from './navigation/VtmnSearch/VtmnSearch.svelte';
 
 // Overlays
 export { default as VtmnAlert } from './overlays/VtmnAlert/VtmnAlert.svelte';
@@ -22,6 +23,8 @@ export { default as VtmnModal } from './overlays/VtmnModal/VtmnModal.svelte';
 export { default as VtmnPopover } from './overlays/VtmnPopover/VtmnPopover.svelte';
 export { default as VtmnSnackbar } from './overlays/VtmnSnackbar/VtmnSnackbar.svelte';
 export { vtmnSnackbarStore } from './overlays/VtmnSnackbar/vtmnSnackbarStore';
+export { default as VtmnToast } from './overlays/VtmnToast/VtmnToast.svelte';
+export { vtmnToastStore } from './overlays/VtmnToast/vtmnToastStore';
 
 // Selection controls
 export { default as VtmnCheckbox } from './selection-controls/VtmnCheckbox/VtmnCheckbox.svelte';
@@ -34,3 +37,4 @@ export { default as VtmnCard } from './structure/VtmnCard/VtmnCard.svelte';
 export { default as VtmnDivider } from './structure/VtmnDivider/VtmnDivider.svelte';
 export { default as VtmnList } from './structure/VtmnList/VtmnList.svelte';
 export { default as VtmnListItem } from './structure/VtmnListItem/VtmnListItem.svelte';
+export { default as VtmnSkeleton } from './structure/VtmnSkeleton/VtmnSkeleton.svelte';
