@@ -44,10 +44,12 @@
     }
   };
 
-  $: componentClass = cn(`vtmx-${value}`, className);
+  $: componentClass = cn(`vtmx-${value}`, 'vtmn-icon-size', className);
   $: componentStyle = objectToStyle({
-    color: `var(--vtmn-semantic-color_${retrieveSemanticColor(variant)})`,
-    'font-size': `${size}px`,
+    '--vtmn-icon-semantic-color': `var(--vtmn-semantic-color_${retrieveSemanticColor(
+      variant,
+    )})`,
+    '--vtmn-icon-size': `${size}px`,
   });
 </script>
 
@@ -55,4 +57,8 @@
 
 <style>
   @import '@vtmn/icons/dist/vitamix/font/vitamix.css';
+  .vtmn-icon-size {
+    color: var(--vtmn-icon-semantic-color);
+    font-size: var(--vtmn-icon-size);
+  }
 </style>

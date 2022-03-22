@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.24.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.24.1...@vtmn/svelte@0.24.2) (2022-03-22)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** apply font-size on class + story tag with icon ([#1059](https://github.com/Decathlon/vitamin-web/issues/1059)) ([1525807](https://github.com/Decathlon/vitamin-web/commit/1525807b3dc37dacc51f4128306071ed33c0f84e))
+
+
+
+
+
+## [0.24.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.24.0...@vtmn/svelte@0.24.1) (2022-03-22)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
 # [0.24.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.23.2...@vtmn/svelte@0.24.0) (2022-03-18)
 
 
