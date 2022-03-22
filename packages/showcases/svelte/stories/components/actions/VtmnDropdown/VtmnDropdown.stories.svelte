@@ -29,7 +29,7 @@
       {...{ ...args, ...{ defaultOption: dropdownItems()[0].label } }}
       on:change={testChangeEvent}
     >
-      {#each dropdownItems() as { label, value }, index}
+      {#each dropdownItems() as { label, value }}
         <VtmnDropdownItem {label} {value} />
       {/each}
     </VtmnDropdown>
