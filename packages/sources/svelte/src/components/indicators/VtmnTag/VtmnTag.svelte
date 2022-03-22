@@ -14,7 +14,7 @@
    */
   export let href;
 
-  let className;
+  let className = '';
   /**
    * @type {string} Custom classes to apply to the component.
    */
