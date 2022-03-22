@@ -5,8 +5,9 @@ import VtmnRadioButton from '../VtmnRadioButton.svelte';
 const id = 'id';
 const name = 'name';
 const label = 'label';
+const value = 'value';
 
-const params = { id, name, label };
+const params = { id, name, label, value };
 
 describe('VtmnRadioButton', () => {
   test('Radio Button Should be visible', () => {

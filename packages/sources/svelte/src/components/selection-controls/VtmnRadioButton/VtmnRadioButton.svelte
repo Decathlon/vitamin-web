@@ -8,17 +8,23 @@
 
   /**
    * Name of input
-   * @type {string} input name
+   * @type {string}
    * @requires
    */
   export let name;
 
   /**
-   * Label of input
+   * Value of input
    * @type {string}
    * @requires
    */
-  export let label;
+  export let value;
+
+  /**
+   * Binding group to retrieve value in parent
+   * @type {string}
+   */
+  export let group;
 
   /**
    * Whether the input is checked
@@ -39,12 +45,17 @@
   <input
     class="vtmn-radio-button"
     type="radio"
+    bind:group
     {id}
     {name}
+    {value}
     {checked}
     {disabled}
+    {...$$restProps}
   />
-  <label for={id}>{label}</label>
+  <label for={id}>
+    <slot />
+  </label>
 </div>
 
 <style lang="css">
