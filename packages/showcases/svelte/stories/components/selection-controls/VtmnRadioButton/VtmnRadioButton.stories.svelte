@@ -62,15 +62,8 @@
   </VtmnRadioButton>
 </Template>
 
-<Story
-  name="Overview"
-  args={{
-    id: 'id',
-    name: 'name',
-    value: 'value',
-  }}
->
-  label example
+<Story name="Overview">
+  <VtmnRadioButton id="id" name="name" value="value">Label</VtmnRadioButton>
 </Story>
 
 <Story name="Multi Radio Buttons">
