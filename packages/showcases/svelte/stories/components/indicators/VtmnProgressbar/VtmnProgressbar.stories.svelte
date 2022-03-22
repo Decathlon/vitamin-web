@@ -2,6 +2,8 @@
   import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
   import { VtmnProgressbar } from '@vtmn/svelte';
   import { parameters } from '@vtmn/showcase-core/csf/components/indicators/progressbar.csf';
+  import README from '@vtmn/svelte/src/components/indicators/VtmnProgressbar/README.md';
+
   const img =
     'https://storage.googleapis.com/dkt-design-cdn/images/landscape-placeholder.jpg';
   export const argTypes = {
@@ -84,7 +86,13 @@
   title="Components / Indicators / VtmnProgressbar"
   component={VtmnProgressbar}
   {argTypes}
-  {parameters}
+  parameters={{
+    ...parameters,
+    readme: {
+      sidebar: README,
+      readme: README,
+    },
+  }}
 />
 
 <Template let:args>

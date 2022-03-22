@@ -1,12 +1,33 @@
 <script>
   import { cn } from '../../../utils/classnames';
+  import { VTMN_LOADER_SIZE } from './enums';
 
+  /**
+   * @type {string} label display above the progress bar.
+   * Hidden when indeterminate is true
+   * @requires
+   */
   export let label;
-  export let size;
-  export let progress;
-  export let indeterminate;
 
-  let className;
+  /**
+   * @type {'small'|'medium'|'large'} size of the progressbar
+   * @default medium
+   */
+  export let size = VTMN_LOADER_SIZE.MEDIUM;
+
+  /**
+   * @type {number} progress value
+   * @default 0
+   */
+  export let progress = 0;
+
+  /**
+   * @type {boolean} Set the progressbar to indeterminate
+   * @default false
+   */
+  export let indeterminate = false;
+
+  let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */

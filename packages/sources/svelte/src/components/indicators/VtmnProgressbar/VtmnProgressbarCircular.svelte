@@ -2,22 +2,54 @@
   import { cn } from '../../../utils/classnames';
   import { VTMN_LOADER_SIZE } from './enums';
 
-  export let progressIndicator = false;
-  export let progress;
+  /**
+   * @type {number} progress value
+   * @default 0
+   */
+  export let progress = 0;
+
+  /**
+   * @type {boolean} display progress value under the circle
+   * @default false
+   */
+  export let displayIndicator = false;
+
+  /**
+   * @type {boolean} enable track circle around the circle
+   * @default false
+   */
   export let withTrack = false;
+
+  /**
+   * @type {boolean} set the progressbar to intermediate
+   * @default false
+   */
   export let indeterminate = false;
-  export let size; // small | medium
-  export let img;
-  export let imgAlt;
 
-  const DEFAULT_RADIUS = 32;
-  const DEFAULT_DASHOFFSET = 200;
+  /**
+   * @type {'small'|'medium'} size of the progressbar
+   * @default medium
+   */
+  export let size = VTMN_LOADER_SIZE.MEDIUM;
 
-  let className;
+  /**
+   * @type {string} image src displayed on the progressbar
+   */
+  export let img = undefined;
+
+  /**
+   * @type {string} alt applied on the image
+   */
+  export let imgAlt = undefined;
+
+  let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */
   export { className as class };
+
+  const DEFAULT_RADIUS = 32;
+  const DEFAULT_DASHOFFSET = 200;
 
   $: componentClass = cn(
     'vtmn-progressbar_container',
@@ -47,7 +79,7 @@
   {#if img}
     <img class="vtmn-progressbar_image" src={img} alt={imgAlt} />
   {/if}
-  {#if progressIndicator && !indeterminate}
+  {#if displayIndicator && !indeterminate}
     <span class="vtmn-progressbar_label" data-value={progress} />
   {/if}
   <svg>
