@@ -1,5 +1,6 @@
 <script>
   import { createEventDispatcher } from 'svelte';
+  import { cn } from '../../../utils/classnames';
   import VtmnDivider from '../../structure/VtmnDivider/VtmnDivider.svelte';
   import { selectedOptions } from '../VtmnDropdown/vtmnDropDownStore.js';
 
@@ -34,6 +35,16 @@
    */
   export let icon;
 
+  /**
+   * Custom classes to apply to the component.
+   * @type {string} className
+   */
+  let className = '';
+
+  export { className as class };
+
+  $: componentClass = cn(className);
+
   let currentOptions;
 
   selectedOptions.subscribe((options) => {
@@ -53,7 +64,14 @@
   };
 </script>
 
-<input type="checkbox" name={label} id={label} data-testid="dropdown-items" />
+<input
+  class={componentClass}
+  type="checkbox"
+  name={label}
+  id={label}
+  data-testid="dropdown-item"
+  {...$$restProps}
+/>
 
 <label for={label} on:click={() => onSelectItem(value)}>
   {#if icon}

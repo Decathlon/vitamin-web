@@ -63,10 +63,10 @@
 
 <div
   class={componentClass}
-  {...$$restProps}
   aria-disabled={disabled}
   use:clickOutside
   on:click_outside={closeMenu}
+  {...$$restProps}
 >
   {#if label}
     <label id={label}>{label}</label>
