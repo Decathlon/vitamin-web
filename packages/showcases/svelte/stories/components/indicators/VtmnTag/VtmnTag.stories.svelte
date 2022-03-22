@@ -1,6 +1,6 @@
 <script>
   import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
-  import { VtmnTag } from '@vtmn/svelte';
+  import { VtmnTag, VtmnIcon } from '@vtmn/svelte';
   import {
     parameters,
     argTypes,
@@ -26,3 +26,10 @@
 </Template>
 
 <Story name="Overview" args={{ variant: 'accent' }} />
+
+<Story name="With icon" let:args>
+  <VtmnTag {...args}>
+    <VtmnIcon value="leaf-fill" />
+    {args.slot}
+  </VtmnTag>
+</Story>
