@@ -6,7 +6,13 @@ export const parameters = {
 };
 
 export const argTypes = {
-  className: {
+  href: {
+    type: { name: 'string', required: false },
+    description: 'Logo anchor',
+    defaultValue: '#',
+    control: { type: 'text' },
+  },
+  class: {
     type: { name: 'string', required: false },
     description: 'Custom classes to apply to the component',
     defaultValue: false,

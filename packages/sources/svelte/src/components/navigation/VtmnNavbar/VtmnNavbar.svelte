@@ -3,6 +3,13 @@
 
   /** @restProps { button } */
 
+  /**
+   * Logo anchor.
+   *
+   * @type {string} [href]
+   */
+  export let href = '#';
+
   let className = '';
   /**
    * Custom classes to apply to the component.
@@ -33,7 +40,9 @@
 
   {#if checkSlotExists('logo')}
     <div class="vtmn-navbar_right-navigation">
-      <slot name="logo" />
+      <a class="vtmn-navbar_logo" {href}>
+        <slot name="logo" />
+      </a>
     </div>
   {/if}
 
