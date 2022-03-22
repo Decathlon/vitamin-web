@@ -5,6 +5,7 @@ import { exec } from 'child_process';
 import { tick } from 'svelte';
 
 import VtmnQuantity from '../VtmnQuantity.svelte';
+const wait = (ms) => new Promise((res) => setTimeout(res, ms));
 
 describe('VtmnQuantity', () => {
   const getQuantity = (container) =>
@@ -123,49 +124,45 @@ describe('VtmnQuantity', () => {
     ).toHaveAttribute('aria-disabled', 'true');
   });
   test('Should not click on add button if disabled is true', async () => {
-    const { container, component } = render(VtmnQuantity, {
+    const { container } = render(VtmnQuantity, {
       label: 'unit-test',
       id: 'unit-id',
       disabled: true,
     });
     const [, addBtn] = getButtons(container);
-    await expectedEventClickOnElement('add', addBtn, component, 0);
+    expect(addBtn.disabled).toBe(true);
   });
-  test('Should not click on subtract button if disabled is true', async () => {
-    const { container, component } = render(VtmnQuantity, {
+  test('Should not click on subtract button if disabled is true', () => {
+    const { container } = render(VtmnQuantity, {
       label: 'unit-test',
       id: 'unit-id',
       disabled: true,
     });
     const [subtractBtn] = getButtons(container);
-    await expectedEventClickOnElement('subtract', subtractBtn, component, 0);
+    expect(subtractBtn.disabled).toBe(true);
   });
 
-  test('Should disabled subtract button when value < min', async () => {
-    const { container, component } = render(VtmnQuantity, {
+  test('Should disabled subtract button when value < min', () => {
+    const { container } = render(VtmnQuantity, {
       label: 'unit-test',
       id: 'unit-id',
       value: 0,
       min: 1,
     });
-    const [subtractBtn] = getButtons(container);
+    const [subtractBtn, addBtn] = getButtons(container);
     expect(subtractBtn.disabled).toBe(true);
-    await expectedEventClickOnElement('subtract', subtractBtn, component, 0);
+    expect(addBtn.disabled).toBe(false);
   });
-  test('Should disabled add button when value > max', async () => {
-    const handleClick = jest.fn();
-    const { container, component } = render(VtmnQuantity, {
+  test('Should disabled add button when value > max', () => {
+    const { container } = render(VtmnQuantity, {
       label: 'unit-test',
       id: 'unit-id',
       value: 11,
       max: 10,
     });
-    component.$on('add', handleClick);
-    expect(handleClick).toHaveBeenCalledTimes(0);
-    const [, addBtn] = getButtons(container);
+    const [subtractBtn, addBtn] = getButtons(container);
     expect(addBtn.disabled).toBe(true);
-    await fireEvent.click(addBtn);
-    expect(handleClick).toHaveBeenCalledTimes(0);
+    expect(subtractBtn.disabled).toBe(false);
   });
 
   test("Should display error message 'vtmn-quantity_error-text' if error are display", async () => {
