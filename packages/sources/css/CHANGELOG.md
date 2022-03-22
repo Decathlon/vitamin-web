@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.62.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.61.0...@vtmn/css@0.62.0) (2022-03-22)
+
+
+### Features
+
+* **@vtmn/css:** tag, overload font-size for icon ([#1058](https://github.com/Decathlon/vitamin-web/issues/1058)) ([7501eec](https://github.com/Decathlon/vitamin-web/commit/7501eec11e04a6266af6680be4dec0913e540671))
+
+
+
+
+
 # [0.61.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.60.5...@vtmn/css@0.61.0) (2022-03-22)
 
 
