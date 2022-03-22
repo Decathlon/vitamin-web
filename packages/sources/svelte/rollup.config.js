@@ -16,7 +16,11 @@ const src = {
     },
     {
       folder: 'indicators',
-      components: ['VtmnBadge', 'VtmnPrice', 'VtmnTag'],
+      components: ['VtmnBadge', 'VtmnPrice', 'VtmnRating', 'VtmnTag'],
+    },
+    {
+      folder: 'navigation',
+      components: ['VtmnSearch'],
     },
     {
       folder: 'navigation',
@@ -24,7 +28,13 @@ const src = {
     },
     {
       folder: 'overlays',
-      components: ['VtmnPopover'],
+      components: [
+        'VtmnAlert',
+        'VtmnModal',
+        'VtmnPopover',
+        'VtmnSnackbar',
+        'VtmnToast',
+      ],
     },
     {
       folder: 'selection-controls',
@@ -32,7 +42,14 @@ const src = {
     },
     {
       folder: 'structure',
-      components: ['VtmnAccordion', 'VtmnDivider', 'VtmnList', 'VtmnListItem'],
+      components: [
+        'VtmnAccordion',
+        'VtmnCard',
+        'VtmnDivider',
+        'VtmnList',
+        'VtmnListItem',
+        'VtmnSkeleton',
+      ],
     },
   ],
   guidelines: [
