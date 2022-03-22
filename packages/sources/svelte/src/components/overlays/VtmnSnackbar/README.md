@@ -15,7 +15,7 @@ First, you need to place the `VtmnSnackbar` component on the top of your applica
 
 `app.svelte`
 
-```svelte
+```javascript
 <script>
   import { VtmnSnackbar } from '@vtmn/svelte';
 </script>
@@ -27,7 +27,7 @@ Once the initialization is done, it is now possible to pass snackbar to the comp
 
 `component.svelte`
 
-```svelte
+```javascript
 <script>
   import { vtmnSnackbarStore, VtmnButton } from '@vtmn/svelte';
   const handleClick = () => {

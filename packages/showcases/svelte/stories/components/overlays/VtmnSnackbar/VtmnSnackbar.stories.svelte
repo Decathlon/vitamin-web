@@ -5,13 +5,20 @@
     parameters,
     argTypes,
   } from '@vtmn/showcase-core/csf/components/overlays/snackbar.csf';
+  import README from '@vtmn/svelte/src/components/overlays/VtmnSnackbar/README.md';
 </script>
 
 <Meta
   title="Components / Overlays / VtmnSnackbar"
   component={VtmnSnackbar}
   {argTypes}
-  {parameters}
+  parameters={{
+    ...parameters,
+    readme: {
+      sidebar: README,
+      readme: README,
+    },
+  }}
 />
 
 <Template let:args>

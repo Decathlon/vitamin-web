@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.24.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.24.1...@vtmn/svelte@0.24.2) (2022-03-22)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** apply font-size on class + story tag with icon ([#1059](https://github.com/Decathlon/vitamin-web/issues/1059)) ([1525807](https://github.com/Decathlon/vitamin-web/commit/1525807b3dc37dacc51f4128306071ed33c0f84e))
+
+
+
+
+
+## [0.24.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.24.0...@vtmn/svelte@0.24.1) (2022-03-22)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+# [0.24.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.23.2...@vtmn/svelte@0.24.0) (2022-03-18)
+
+
+### Features
+
+* **@vtmn/svelte:** add `VtmnSkeleton` component ([#1047](https://github.com/Decathlon/vitamin-web/issues/1047)) ([c962ec7](https://github.com/Decathlon/vitamin-web/commit/c962ec7ece9615335be7aec9b5aac43499e1a4dc))
+
+
+
+
+
+## [0.23.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.23.1...@vtmn/svelte@0.23.2) (2022-03-17)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** missing import + fix style ([#1050](https://github.com/Decathlon/vitamin-web/issues/1050)) ([8e7c237](https://github.com/Decathlon/vitamin-web/commit/8e7c23735ecd1121959c9177b17b7de4ec844054))
+
+
+
+
+
+## [0.23.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.23.0...@vtmn/svelte@0.23.1) (2022-03-16)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** rating attribute + css-price import ([#1045](https://github.com/Decathlon/vitamin-web/issues/1045)) ([b8a55c0](https://github.com/Decathlon/vitamin-web/commit/b8a55c00dfdedc26664aec6700f09d5ed6671cbe))
+
+
+
+
+
+# [0.23.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.22.0...@vtmn/svelte@0.23.0) (2022-03-16)
+
+
+### Features
+
+* **@vtmn/svelte:** add `VtmnSearch` component ([#1027](https://github.com/Decathlon/vitamin-web/issues/1027)) ([4b1f411](https://github.com/Decathlon/vitamin-web/commit/4b1f411f26833c466e10cde8946d549ad214b2a4))
+* **@vtmn/svelte:** add `VtmnToast` component ([#1042](https://github.com/Decathlon/vitamin-web/issues/1042)) ([3cc518c](https://github.com/Decathlon/vitamin-web/commit/3cc518c90184cc831ae9b6d1160947ec04d4fc82))
+
+
+
+
+
 # [0.22.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.21.0...@vtmn/svelte@0.22.0) (2022-03-15)
 
 

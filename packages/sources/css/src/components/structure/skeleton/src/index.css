@@ -67,6 +67,7 @@
 
 .vtmn-skeleton_avatar {
   width: rem(32px);
-  height: rem(32px);
+  height: 100%;
+  aspect-ratio: 1;
   border-radius: 50%;
 }
