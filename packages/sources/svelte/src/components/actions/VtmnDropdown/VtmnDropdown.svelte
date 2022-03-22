@@ -1,7 +1,9 @@
 <script>
-  import { cn } from '../../../utils/classnames';
   import { createEventDispatcher } from 'svelte';
+  import VtmnDivider from '../../../components/structure/VtmnDivider/VtmnDivider.svelte';
+  import { cn } from '../../../utils/classnames';
   import { clickOutside } from '../../../utils/clickOutside';
+  import { objectToStyle } from '../../../utils/style';
 
   /** @restProps */
 
@@ -63,6 +65,9 @@
   export let menuMaxHeight = null;
 
   $: componentClass = cn('vtmn-dropdown', className);
+  $: menuStyles = objectToStyle({
+    height: `${menuMaxHeight}px`,
+  });
 
   const dispatch = createEventDispatcher();
 
@@ -109,18 +114,10 @@
   <details bind:this={details}>
     <summary aria-labelledby={options[0].id}>{defaultOption}</summary>
 
-    <div
-      class="vtmn-dropdown_items"
-      style={`height: ${
-        menuMaxHeight && menuMaxHeight > 1 ? menuMaxHeight + 'px' : 'auto'
-      }`}
-    >
+    <div class="vtmn-dropdown_items" style={menuStyles}>
       {#each options as option, index (option.label)}
         {#if divider && index !== 0}
-          <div
-            class="vtmn-divider vtmn-divider_orientation--horizontal"
-            role="separator"
-          />
+          <VtmnDivider orientation="horizontal" />
         {/if}
 
         <input
