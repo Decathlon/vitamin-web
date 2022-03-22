@@ -1,7 +1,7 @@
 <script>
   import { createEventDispatcher } from 'svelte';
   import { cn } from '../../../utils/classnames';
-  import { clickOutside } from '../../../utils/clickOutside';
+  import { clickOutside } from '../../../directives/clickOutside';
   import { objectToStyle } from '../../../utils/style';
   import { selectedOptions } from './vtmnDropDownStore.js';
 
