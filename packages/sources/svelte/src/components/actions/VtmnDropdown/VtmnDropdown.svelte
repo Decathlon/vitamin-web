@@ -1,17 +1,11 @@
 <script>
   import { createEventDispatcher } from 'svelte';
-  import VtmnDivider from '../../../components/structure/VtmnDivider/VtmnDivider.svelte';
   import { cn } from '../../../utils/classnames';
   import { clickOutside } from '../../../utils/clickOutside';
   import { objectToStyle } from '../../../utils/style';
+  import { selectedOptions } from './vtmnDropDownStore.js';
 
   /** @restProps */
-
-  /**
-   * Custom classes to apply to the component.
-   * @type {array} options
-   */
-  export let options;
 
   /**
    * The main label. If not set the label is not displayed
@@ -21,27 +15,11 @@
   export let label;
 
   /**
-   * Default dromdown label
+   * Default dropdown label
    *
    * @type {string} defaultOption
    */
   export let defaultOption;
-
-  /**
-   * Custom classes to apply to the component.
-   * @type {string} className
-   */
-  let className = '';
-
-  export { className as class };
-
-  /**
-   * Menu item divider.
-   *
-   * @type {boolean} [divider]
-   * @defaultValue false
-   */
-  export let divider = false;
 
   /**
    * Set disabled state of list item.
@@ -52,52 +30,35 @@
   export let disabled = false;
 
   /**
-   * Icon for each menu item.
-   *
-   * @type {string} [icon]
-   */
-  export let icon;
-
-  /**
    * Max height of menu, this enable scroll.
    * @type {number} [menuMaxHeight]
    */
   export let menuMaxHeight = null;
 
+  /**
+   * Custom classes to apply to the component.
+   * @type {string} className
+   */
+  let className = '';
+
+  export { className as class };
+
   $: componentClass = cn('vtmn-dropdown', className);
   $: menuStyles = objectToStyle({
-    height: `${menuMaxHeight}px`,
+    'min-height': `${menuMaxHeight}px`,
   });
 
   const dispatch = createEventDispatcher();
 
-  let selectedOptions = [];
-
-  /**
-   * Add or remove elements in options array.
-   *
-   * @param {string} value Selected value
-   */
-  const onSelectItem = (value) => {
-    if (selectedOptions.includes(value))
-      selectedOptions = selectedOptions.filter((option) => option !== value);
-    else selectedOptions = [...selectedOptions, value];
-
-    dispatch('item-selected', {
-      selectedOptions,
-    });
-
-    closeMenu();
-  };
-
   let details;
 
-  /**
-   * Close dropdown menu.
-   */
-  function closeMenu() {
-    details.open = false;
-  }
+  const closeMenu = () => (details.open = false);
+
+  selectedOptions.subscribe((selectedOptions) => {
+    dispatch('change', { selectedOptions });
+
+    if (details) closeMenu();
+  });
 </script>
 
 <div
@@ -108,33 +69,14 @@
   on:click_outside={closeMenu}
 >
   {#if label}
-    <label id={options[0].id}>{label}</label>
+    <label id={label}>{label}</label>
   {/if}
 
   <details bind:this={details}>
-    <summary aria-labelledby={options[0].id}>{defaultOption}</summary>
+    <summary aria-labelledby={label}>{defaultOption}</summary>
 
     <div class="vtmn-dropdown_items" style={menuStyles}>
-      {#each options as option, index (option.label)}
-        {#if divider && index !== 0}
-          <VtmnDivider orientation="horizontal" />
-        {/if}
-
-        <input
-          type="checkbox"
-          name={option.label}
-          id={option.label}
-          data-testid="dropdown-items"
-        />
-
-        <label for={option.label} on:click={() => onSelectItem(option.value)}>
-          {#if icon}
-            <span class={icon} />
-          {/if}
-
-          {option.label}
-        </label>
-      {/each}
+      <slot />
     </div>
   </details>
 </div>

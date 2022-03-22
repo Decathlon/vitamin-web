@@ -11,34 +11,34 @@ export const parameters = {
 export const argTypes = {
   label: {
     type: { name: 'string', required: false },
-    description: 'The main label. If not set the label is not displayed.',
-    defaultValue: 'Label',
+    description: 'Dropdown item label.',
+    defaultValue: 'Lorem ipsum',
     control: {
       type: 'text',
     },
   },
 
-  defaultOption: {
+  value: {
     type: { name: 'string' },
-    description: 'Default dropdown label.',
+    description: 'banana',
     defaultValue: 'Default label',
     control: {
       type: 'text',
     },
   },
 
-  disabled: {
+  divider: {
     type: { name: 'boolean' },
-    description: 'Disabled state',
+    description: 'Dropdown item divider',
     defaultValue: false,
     control: {
       type: 'boolean',
     },
   },
 
-  menuMaxHeight: {
-    type: { name: 'number' },
-    description: 'Max height of menu, this enable scroll',
+  icon: {
+    type: { name: 'string' },
+    description: 'Dropdown item icon',
     defaultValue: null,
     control: {
       type: 'text',

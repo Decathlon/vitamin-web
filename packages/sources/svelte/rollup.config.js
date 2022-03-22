@@ -8,7 +8,12 @@ const src = {
   components: [
     {
       folder: 'actions',
-      components: ['VtmnButton', 'VtmnDropdown', 'VtmnLink'],
+      components: [
+        'VtmnButton',
+        'VtmnDropdownItem',
+        'VtmnDropdown',
+        'VtmnLink',
+      ],
     },
     {
       folder: 'forms',

@@ -1,10 +1,19 @@
 <script>
-  import { Meta, Story, Template } from '@storybook/addon-svelte-csf';
+  import { Meta, Story } from '@storybook/addon-svelte-csf';
   import {
-    parameters,
     argTypes,
+    parameters,
   } from '@vtmn/showcase-core/csf/components/actions/dropdown.csf';
-  import { VtmnDropdown } from '@vtmn/svelte';
+  import { VtmnDropdown, VtmnDropdownItem } from '@vtmn/svelte';
+
+  const dropdownItems = () =>
+    new Array(3).fill(0).map((_, index) => ({
+      label: `Option Option ${index + 1}`,
+      value: `option-${index + 1}`,
+    }));
+
+  const testChangeEvent = (event) =>
+    console.log(JSON.stringify(event.detail.selectedOptions));
 </script>
 
 <Meta
@@ -14,32 +23,70 @@
   {argTypes}
 />
 
-<Template let:args>
+<Story name="Overview" let:args>
   <div style="width: 400px; display: flex; justify-content: center">
     <VtmnDropdown
-      {...args}
-      on:item-selected={(event) =>
-        console.log(JSON.stringify(event.detail.selectedOptions))}
-    />
+      {...{ ...args, ...{ defaultOption: dropdownItems()[0].label } }}
+      on:change={testChangeEvent}
+    >
+      {#each dropdownItems() as { label, value }, index}
+        <VtmnDropdownItem {label} {value} />
+      {/each}
+    </VtmnDropdown>
   </div>
-</Template>
+</Story>
 
-<Story name="Overview" />
+<Story name="With divider" let:args>
+  <div style="width: 400px; display: flex; justify-content: center">
+    <VtmnDropdown
+      {...{
+        ...args,
+        ...{ divider: true },
+      }}
+      on:change={testChangeEvent}
+    >
+      {#each dropdownItems() as { label, value }, index}
+        <VtmnDropdownItem
+          {label}
+          {value}
+          divider={index < dropdownItems().length}
+        />
+      {/each}
+    </VtmnDropdown>
+  </div>
+</Story>
 
-<Story
-  name="With divider"
-  args={{
-    divider: true,
-  }}
-/>
+<Story name="With icons" let:args>
+  <div style="width: 400px; display: flex; justify-content: center">
+    <VtmnDropdown {...args} on:change={testChangeEvent}>
+      {#each dropdownItems() as { label, value }, index}
+        <VtmnDropdownItem
+          {label}
+          {value}
+          position={index}
+          icon="vtmx-user-line"
+        />
+      {/each}
+    </VtmnDropdown>
+  </div>
+</Story>
 
-<Story
-  name="With icons"
-  args={{
-    icon: 'vtmx-user-line',
-  }}
-/>
+<Story name="Disabled" args={{ disabled: true }} let:args>
+  <div style="width: 400px; display: flex; justify-content: center">
+    <VtmnDropdown {...args} on:change={testChangeEvent}>
+      {#each dropdownItems() as { label, value }, index}
+        <VtmnDropdownItem {label} {value} position={index} />
+      {/each}
+    </VtmnDropdown>
+  </div>
+</Story>
 
-<Story name="Disabled" args={{ disabled: true }} />
-
-<Story name="Fixed height" args={{ menuMaxHeight: 200 }} />
+<Story name="Fixed height" args={{ menuMaxHeight: 200 }} let:args>
+  <div style="width: 400px; display: flex; justify-content: center">
+    <VtmnDropdown {...args} on:change={testChangeEvent}>
+      {#each dropdownItems() as { label, value }, index}
+        <VtmnDropdownItem {label} {value} position={index} />
+      {/each}
+    </VtmnDropdown>
+  </div>
+</Story>
