@@ -34,6 +34,7 @@ a.vtmn-tag:focus-visible {
 .vtmn-tag > span[class^='vtmx-'] {
   margin-inline-start: rem(-4px);
   margin-inline-end: rem(4px);
+  font-size: var(--vtmn-typo_text-2-font-size);
 }
 
 /* Variants */
