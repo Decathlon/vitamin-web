@@ -39,6 +39,7 @@
     "@vtmn/css-card": "^0.6.11",
     "@vtmn/css-checkbox": "^0.6.16",
     "@vtmn/css-chip": "^0.6.13",
+    "@vtmn/css-radio-button": "0.6.15",
     "@vtmn/css-design-tokens": "^0.18.5",
     "@vtmn/css-divider": "^0.1.21",
     "@vtmn/css-link": "^0.6.15",
