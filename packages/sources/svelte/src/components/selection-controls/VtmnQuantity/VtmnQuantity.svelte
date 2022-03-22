@@ -3,31 +3,62 @@
   import { cn } from '../../../utils/classnames';
   import VtmnButton from '../../actions/VtmnButton/VtmnButton.svelte';
 
+  /**
+   * @type {string} id of the input
+   */
   export let id;
+
+  /**
+   * @type {string} label displayed for the input
+   */
   export let label;
+
+  /**
+   * @type {number} current value of the input
+   */
   export let value = 0;
+
+  /**
+   * @type {boolean} disable the input
+   */
   export let disabled = false;
-  export let error;
-  export let min = 0;
-  export let max;
+
+  /**
+   * @type {string} error text displayed under the input
+   */
+  export let error = '';
+
+  /**
+   * @type {number} minimum value of the input
+   */
+  export let min = -Infinity;
+
+  /**
+   * @type {number} maximum value of the input
+   */
+  export let max = Infinity;
+
+  /**
+   * @type {number} step of the input. Will be add on the value when subtract or add event.
+   * @default 1
+   */
   export let step = 1;
 
-  let className;
+  let className = '';
   /**
    * @type {string} Custom classes to apply to the component.
    */
   export { className as class };
 
   const dispatch = createEventDispatcher();
-  const handleClickSubstract = () => {
+  const handleClickSubtract = () => {
     value -= step;
-    dispatch('substract', value);
+    dispatch('subtract', value);
   };
   const handleClickAdd = () => {
     value += step;
     dispatch('add', value);
   };
-  const handleInputBlur = () => dispatch('blur', value);
 
   let disabledMin, disabledMax;
   $: {
@@ -42,23 +73,23 @@
   <label aria-disabled={disabled} for={id}>{label}</label>
   <div aria-disabled={disabled} class="vtmn-quantity_content">
     <VtmnButton
-      on:click={handleClickSubstract}
+      on:click={handleClickSubtract}
       disabled={disabled || disabledMin}
       variant="secondary"
       iconAlone="subtract-line"
       aria-label="subtract"
     />
     <input
-      {disabled}
       type="number"
-      {id}
       bind:value
+      {id}
+      {disabled}
       {min}
       {max}
       {step}
-      aria-invalid={!!error}
-      aria-describedby={error ? `quantity-helper-${id}` : false}
-      on:blur={handleInputBlur}
+      aria-invalid={error ? true : undefined}
+      aria-describedby={error ? `quantity-helper-${id}` : undefined}
+      on:blur
     />
     <VtmnButton
       on:click={handleClickAdd}

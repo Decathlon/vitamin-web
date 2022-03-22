@@ -1,0 +1,201 @@
+import '@testing-library/jest-dom';
+
+import { fireEvent, render } from '@testing-library/svelte';
+import { exec } from 'child_process';
+import { tick } from 'svelte';
+
+import VtmnQuantity from '../VtmnQuantity.svelte';
+
+describe('VtmnQuantity', () => {
+  const getQuantity = (container) =>
+    container.getElementsByClassName('vtmn-quantity')[0];
+  const getButtons = (container) =>
+    container.getElementsByClassName('vtmn-btn');
+  const getInput = (container) => container.querySelector('input');
+  const getError = (container) =>
+    container.getElementsByClassName('vtmn-quantity_error-text')[0];
+  const expectedEventClickOnElement = async (
+    event,
+    element,
+    component,
+    expectedClickCount,
+  ) => {
+    const handleClick = jest.fn();
+    component.$on(event, handleClick);
+    await fireEvent.click(element);
+    expect(handleClick).toHaveBeenCalledTimes(expectedClickCount);
+  };
+
+  test("Should display the 'vtmn-quantity' with 2 buttons", () => {
+    const { container } = render(VtmnQuantity, {
+      label: 'unit-test',
+      id: 'unit-id',
+    });
+    const [subtractBtn, addBtn] = getButtons(container);
+    const input = getInput(container);
+    const error = getError(container);
+    expect(getQuantity(container)).toBeVisible();
+    expect(subtractBtn).toBeVisible();
+    expect(addBtn).toBeVisible();
+    expect(subtractBtn.disabled).toBe(false);
+    expect(addBtn.disabled).toBe(false);
+    expect(input.disabled).toBe(false);
+    expect(input).not.toHaveAttribute('aria-invalid');
+    expect(input).not.toHaveAttribute('aria-describedby');
+    expect(error).toBeUndefined();
+  });
+  test('Should display the label', () => {
+    const { getByText } = render(VtmnQuantity, {
+      label: 'unit-test',
+      id: 'unit-id',
+    });
+    expect(getByText('unit-test')).toBeVisible();
+  });
+  test('Should set the id on the input and for label', () => {
+    const { getByText, container } = render(VtmnQuantity, {
+      label: 'unit-test',
+      id: 'unit-id',
+    });
+    expect(getByText('unit-test')).toHaveAttribute('for', 'unit-id');
+    expect(getInput(container)).toHaveAttribute('id', 'unit-id');
+  });
+  test('Should display the value on the input', () => {
+    const { container } = render(VtmnQuantity, {
+      value: 40,
+      label: 'unit-test',
+      id: 'unit-id',
+    });
+    expect(getInput(container).value).toBe('40');
+  });
+
+  test('Should trigger add when click on add button', async () => {
+    const { container, component } = render(VtmnQuantity, {
+      label: 'unit-test',
+      id: 'unit-id',
+    });
+    const [, addBtn] = getButtons(container);
+    await expectedEventClickOnElement('add', addBtn, component, 1);
+  });
+  test('Should trigger subtract when click on subtract button', async () => {
+    const { container, component } = render(VtmnQuantity, {
+      label: 'unit-test',
+      id: 'unit-id',
+    });
+    const [subtractBtn] = getButtons(container);
+    await expectedEventClickOnElement('subtract', subtractBtn, component, 1);
+  });
+  test('Should add step on value when click on add button', async () => {
+    const { container } = render(VtmnQuantity, {
+      label: 'unit-test',
+      id: 'unit-id',
+      value: 20,
+      step: 5,
+    });
+    const [, addBtn] = getButtons(container);
+    await fireEvent.click(addBtn);
+    expect(getInput(container).value).toBe('25');
+  });
+  test('Should remove step on value when click on subtract button', async () => {
+    const { container } = render(VtmnQuantity, {
+      label: 'unit-test',
+      id: 'unit-id',
+      value: 20,
+      step: 5,
+    });
+    const [subtractBtn] = getButtons(container);
+    await fireEvent.click(subtractBtn);
+    expect(getInput(container).value).toBe('15');
+  });
+  test('Should disabled all element when disabled is true', async () => {
+    const { container, getByText } = render(VtmnQuantity, {
+      label: 'unit-test',
+      id: 'unit-id',
+      disabled: true,
+    });
+    const [subtractBtn, addBtn] = getButtons(container);
+    const input = getInput(container);
+    expect(subtractBtn.disabled).toBe(true);
+    expect(addBtn.disabled).toBe(true);
+    expect(input.disabled).toBe(true);
+    expect(getByText('unit-test')).toHaveAttribute('aria-disabled', 'true');
+    expect(
+      container.getElementsByClassName('vtmn-quantity_content')[0],
+    ).toHaveAttribute('aria-disabled', 'true');
+  });
+  test('Should not click on add button if disabled is true', async () => {
+    const { container, component } = render(VtmnQuantity, {
+      label: 'unit-test',
+      id: 'unit-id',
+      disabled: true,
+    });
+    const [, addBtn] = getButtons(container);
+    await expectedEventClickOnElement('add', addBtn, component, 0);
+  });
+  test('Should not click on subtract button if disabled is true', async () => {
+    const { container, component } = render(VtmnQuantity, {
+      label: 'unit-test',
+      id: 'unit-id',
+      disabled: true,
+    });
+    const [subtractBtn] = getButtons(container);
+    await expectedEventClickOnElement('subtract', subtractBtn, component, 0);
+  });
+
+  test('Should disabled subtract button when value < min', async () => {
+    const { container, component } = render(VtmnQuantity, {
+      label: 'unit-test',
+      id: 'unit-id',
+      value: 0,
+      min: 1,
+    });
+    const [subtractBtn] = getButtons(container);
+    expect(subtractBtn.disabled).toBe(true);
+    await expectedEventClickOnElement('subtract', subtractBtn, component, 0);
+  });
+  test('Should disabled add button when value > max', async () => {
+    const handleClick = jest.fn();
+    const { container, component } = render(VtmnQuantity, {
+      label: 'unit-test',
+      id: 'unit-id',
+      value: 11,
+      max: 10,
+    });
+    component.$on('add', handleClick);
+    expect(handleClick).toHaveBeenCalledTimes(0);
+    const [, addBtn] = getButtons(container);
+    expect(addBtn.disabled).toBe(true);
+    await fireEvent.click(addBtn);
+    expect(handleClick).toHaveBeenCalledTimes(0);
+  });
+
+  test("Should display error message 'vtmn-quantity_error-text' if error are display", async () => {
+    const { getByText, container } = render(VtmnQuantity, {
+      label: 'unit-test',
+      id: 'unit-id',
+      error: 'unit test error',
+    });
+    const error = getByText('unit test error');
+    const input = getInput(container);
+    expect(error).toBeVisible();
+    expect(error).toHaveAttribute('id', 'quantity-helper-unit-id');
+    expect(input).toHaveAttribute('aria-invalid', 'true');
+    expect(input).toHaveAttribute(
+      'aria-describedby',
+      'quantity-helper-unit-id',
+    );
+  });
+
+  test('Should trigger blur when blur event on input', async () => {
+    const { component, container } = render(VtmnQuantity, {
+      label: 'unit-test',
+      id: 'unit-id',
+      error: 'unit test error',
+    });
+    const input = getInput(container);
+    input.focus();
+    const handleEvent = jest.fn();
+    component.$on('blur', handleEvent);
+    input.blur();
+    expect(handleEvent).toHaveBeenCalledTimes(1);
+  });
+});

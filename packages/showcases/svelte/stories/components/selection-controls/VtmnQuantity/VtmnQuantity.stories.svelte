@@ -20,7 +20,7 @@
     {...args}
     {error}
     on:add={() => console.log('Add')}
-    on:substract={() => console.log('Substract')}
+    on:subtract={() => console.log('Subtract')}
     on:blur={({ detail: value }) => {
       if (value < args.min) {
         error = `Quantity must be upper than ${args.min}`;
@@ -34,3 +34,13 @@
 </Template>
 
 <Story name="Overview" />
+
+<Story
+  name="Disable max value"
+  args={{
+    label: 'unit-test',
+    id: 'unit-id',
+    value: 11,
+    max: 10,
+  }}
+/>
