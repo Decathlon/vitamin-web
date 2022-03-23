@@ -12,7 +12,7 @@
     },
     name: {
       type: { name: 'string', required: true },
-      description: 'Label of the input',
+      description: 'Name of the input',
       control: {
         type: 'text',
       },
@@ -55,9 +55,7 @@
   </VtmnRadioButton>
 </Template>
 
-<Story name="Overview">
-  <VtmnRadioButton id="id" name="name" value="value">Label</VtmnRadioButton>
-</Story>
+<Story name="Overview" />
 
 <Story name="Multi Radio Buttons">
   <form action="#">

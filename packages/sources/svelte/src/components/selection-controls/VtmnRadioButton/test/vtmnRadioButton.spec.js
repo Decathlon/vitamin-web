@@ -26,11 +26,11 @@ describe('VtmnRadioButton', () => {
     expect(getByText(label)).toBeInTheDocument();
   });
 
-  test('Radio Button Should be selectable', () => {
+  test('Radio Button Should be selectable', async () => {
     const { getByLabelText } = render(VtmnRadioButtonWithSlot, { ...params });
     const radioButton = getByLabelText(label);
     expect(radioButton).not.toBeChecked();
-    fireEvent.click(radioButton);
+    await fireEvent.click(radioButton);
     expect(radioButton).toBeChecked();
   });
 
