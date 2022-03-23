@@ -76,6 +76,7 @@
 .vtmn-modal_content_body {
   margin: rem(16px) 0;
   overflow: auto;
+  position: relative;
 }
 
 .vtmn-modal_content_body--text {
@@ -88,25 +89,26 @@
 }
 
 .vtmn-modal_content_body--overflow-indicator {
-  position: absolute;
-  bottom: 5.5rem;
-  left: rem(32px);
-  right: rem(32px);
-  height: 4rem;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background: linear-gradient(
     180deg,
     hsl(
-      var(--vtmn-semantic-color_background-primary--h)
-        var(--vtmn-semantic-color_background-primary--s)
-        var(--vtmn-semantic-color_background-primary--l) / 0%
-    ),
+        var(--vtmn-semantic-color_background-primary--h)
+          var(--vtmn-semantic-color_background-primary--s)
+          var(--vtmn-semantic-color_background-primary--l) / 0%
+      )
+      80%,
     hsl(
-      var(--vtmn-semantic-color_background-primary--h)
-        var(--vtmn-semantic-color_background-primary--s)
-        var(--vtmn-semantic-color_background-primary--l) / 80%
-    )
+        var(--vtmn-semantic-color_background-primary--h)
+          var(--vtmn-semantic-color_background-primary--s)
+          var(--vtmn-semantic-color_background-primary--l) / 95%
+      )
+      100%
   );
-  overflow: auto;
   pointer-events: none;
 }
 
