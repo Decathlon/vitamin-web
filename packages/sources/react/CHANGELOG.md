@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.23.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.22.5...@vtmn/react@0.23.0) (2022-03-21)
+
+
+### Features
+
+* **@vtmn/react:** add `VtmnSearch` component ([#1031](https://github.com/Decathlon/vitamin-web/issues/1031)) ([7cc6b0b](https://github.com/Decathlon/vitamin-web/commit/7cc6b0b3b77a74522b457cc124179bf4df825403))
+
+
+
+
+
 ## [0.22.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.22.4...@vtmn/react@0.22.5) (2022-03-11)
 
 **Note:** Version bump only for package @vtmn/react
