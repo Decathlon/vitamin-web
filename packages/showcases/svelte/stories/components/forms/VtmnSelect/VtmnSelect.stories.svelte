@@ -14,11 +14,7 @@
 />
 
 <Template let:args>
-  <VtmnSelect
-    {...args}
-    bind:value
-    on:change={() => console.log('change event')}
-  >
+  <VtmnSelect {...args} bind:value>
     <option value="" disabled selected>Select</option>
     <option value="gymnastics">Gymnastics</option>
     <option value="archery">Archery</option>
