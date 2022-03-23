@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.23.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.23.0...@vtmn/react@0.23.1) (2022-03-23)
+
+
+### Bug Fixes
+
+* **text-input:** bad props type given to DOM ([#1063](https://github.com/Decathlon/vitamin-web/issues/1063)) ([947174b](https://github.com/Decathlon/vitamin-web/commit/947174b3680d62a0c22f9f9ac14923a148d4441b))
+
+
+
+
+
 # [0.23.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.22.5...@vtmn/react@0.23.0) (2022-03-21)
 
 
