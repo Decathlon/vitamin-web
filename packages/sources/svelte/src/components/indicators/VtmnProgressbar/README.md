@@ -10,7 +10,7 @@ Now, you can use `VtmnProgressbar` on your app.
 
 # How it works
 
-First, you need to place the `VtmnAlert` component on the top of your application
+First, you need to place the `VtmnProgressbar` component on the top of your application
 
 `app.svelte`
 

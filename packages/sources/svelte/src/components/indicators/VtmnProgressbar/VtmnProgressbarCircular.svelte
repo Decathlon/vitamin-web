@@ -1,6 +1,6 @@
 <script>
   import { cn } from '../../../utils/classnames';
-  import { VTMN_LOADER_SIZE } from './enums';
+  import { VTMN_PROGRESSBAR_SIZE } from './enums';
 
   /**
    * @type {number} progress value
@@ -30,7 +30,7 @@
    * @type {'small'|'medium'} size of the progressbar
    * @default medium
    */
-  export let size = VTMN_LOADER_SIZE.MEDIUM;
+  export let size = VTMN_PROGRESSBAR_SIZE.MEDIUM;
 
   /**
    * @type {string} image src displayed on the progressbar
@@ -55,13 +55,13 @@
     'vtmn-progressbar_container',
     'vtmn-progressbar_variant--circular',
     indeterminate && 'vtmn-progressbar--indeterminate',
-    size === VTMN_LOADER_SIZE.SMALL && `vtmn-progressbar_size--small`,
+    size === VTMN_PROGRESSBAR_SIZE.SMALL && `vtmn-progressbar_size--small`,
     className,
   );
 
   let sizeMultiplier = 1;
   $: {
-    sizeMultiplier = VTMN_LOADER_SIZE.SMALL === size ? 1 : 2;
+    sizeMultiplier = VTMN_PROGRESSBAR_SIZE.SMALL === size ? 1 : 2;
   }
   const computeDashoffset = () =>
     DEFAULT_DASHOFFSET * sizeMultiplier -

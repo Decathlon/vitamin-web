@@ -1,5 +1,5 @@
 <script>
-  import { VTMN_LOADER_VARIANT, VTMN_LOADER_SIZE } from './enums';
+  import { VTMN_PROGRESSBAR_VARIANT, VTMN_PROGRESSBAR_SIZE } from './enums';
   import VtmnProgressbarCircular from './VtmnProgressbarCircular.svelte';
   import VtmnProgressbarLinear from './VtmnProgressbarLinear.svelte';
 
@@ -8,7 +8,7 @@
    * @default linear
    * @requires
    */
-  export let variant = VTMN_LOADER_VARIANT.LINEAR;
+  export let variant = VTMN_PROGRESSBAR_VARIANT.LINEAR;
 
   /**
    * @type {'small'|'medium'|'large'} size of the progressbar
@@ -17,7 +17,7 @@
    * @default medium
    * @requires
    */
-  export let size = VTMN_LOADER_SIZE.MEDIUM;
+  export let size = VTMN_PROGRESSBAR_SIZE.MEDIUM;
 
   /**
    * @type {string|boolean} label of the progressbar
@@ -55,7 +55,7 @@
   export let imgAlt = undefined;
 </script>
 
-{#if variant === VTMN_LOADER_VARIANT.LINEAR}
+{#if variant === VTMN_PROGRESSBAR_VARIANT.LINEAR}
   <VtmnProgressbarLinear
     {label}
     {size}
@@ -63,7 +63,7 @@
     {indeterminate}
     {...$$restProps}
   />
-{:else if variant === VTMN_LOADER_VARIANT.CIRCULAR}
+{:else if variant === VTMN_PROGRESSBAR_VARIANT.CIRCULAR}
   <VtmnProgressbarCircular
     {progress}
     {label}
