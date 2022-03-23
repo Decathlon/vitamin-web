@@ -1,6 +1,14 @@
 export const parameters = {
   actions: {
-    handles: ['mouseenter', 'click', 'focusin', 'focusout'],
+    handles: [
+      'mouseenter',
+      'click',
+      'focusin',
+      'focusout',
+      'add',
+      'subtract',
+      'blur',
+    ],
   },
   design: {
     type: 'figma',

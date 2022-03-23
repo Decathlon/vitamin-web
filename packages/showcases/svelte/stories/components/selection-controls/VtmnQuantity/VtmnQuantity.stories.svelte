@@ -1,5 +1,6 @@
 <script>
   import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
+  import { action } from '@storybook/addon-actions';
   import { VtmnQuantity } from '@vtmn/svelte';
   import {
     parameters,
@@ -19,11 +20,11 @@
   <VtmnQuantity
     {...args}
     {error}
-    on:add={() => console.log('Add')}
-    on:subtract={() => console.log('Subtract')}
+    on:add={action('add')}
+    on:subtract={action('subtract')}
     on:blur={({ detail: value }) => {
       if (value < args.min) {
-        error = `Quantity must be upper than ${args.min}`;
+        error = `Quantity must be greater than ${args.min}`;
       } else if (value > args.max) {
         error = `Quantity must be lower than ${args.max}`;
       } else {
