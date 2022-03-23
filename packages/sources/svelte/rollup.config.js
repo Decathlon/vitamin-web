@@ -18,6 +18,7 @@ const src = {
       folder: 'indicators',
       components: [
         'VtmnBadge',
+        'VtmnLoader',
         'VtmnPrice',
         'VtmnProgressbar',
         'VtmnRating',

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-card@0.6.12...@vtmn/css-card@0.7.0) (2022-03-22)
+
+
+### Features
+
+* **@vtmn/css-card:** add tag showcase + css class ([#1054](https://github.com/Decathlon/vitamin-web/issues/1054)) ([64789df](https://github.com/Decathlon/vitamin-web/commit/64789df67d22db97df18a1176f520340cdf18df3))
+
+
+
+
+
 ## [0.6.12](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-card@0.6.11...@vtmn/css-card@0.6.12) (2022-03-11)
 
 **Note:** Version bump only for package @vtmn/css-card
