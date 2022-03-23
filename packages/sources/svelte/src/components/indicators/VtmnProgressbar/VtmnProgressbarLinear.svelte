@@ -1,6 +1,6 @@
 <script>
   import { cn } from '../../../utils/classnames';
-  import { VTMN_LOADER_SIZE } from './enums';
+  import { VTMN_PROGRESSBAR_SIZE } from './enums';
 
   /**
    * @type {string} label display above the progress bar.
@@ -13,7 +13,7 @@
    * @type {'small'|'medium'|'large'} size of the progressbar
    * @default medium
    */
-  export let size = VTMN_LOADER_SIZE.MEDIUM;
+  export let size = VTMN_PROGRESSBAR_SIZE.MEDIUM;
 
   /**
    * @type {number} progress value
