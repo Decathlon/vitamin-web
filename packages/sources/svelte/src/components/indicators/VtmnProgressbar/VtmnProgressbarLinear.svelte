@@ -19,7 +19,7 @@
    * @type {number} progress value
    * @default 0
    */
-  export let progress = 0;
+  export let progress;
 
   /**
    * @type {boolean} Set the progressbar to indeterminate
@@ -44,10 +44,10 @@
 <div
   class={componentClass}
   role="progressbar"
-  aria-label="progress bar"
   aria-valuemin="0"
   aria-valuemax="100"
-  aria-valuenow={progress}
+  aria-valuenow={indeterminate ? undefined : progress}
+  {...$$restProps}
 >
   {#if label && !indeterminate}
     <span class="vtmn-progressbar_label" data-value={progress}>{label}</span>

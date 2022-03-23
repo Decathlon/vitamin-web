@@ -12,13 +12,13 @@
    * @type {boolean} display progress value under the circle
    * @default false
    */
-  export let displayIndicator = false;
+  export let label = false;
 
   /**
    * @type {boolean} enable track circle around the circle
    * @default false
    */
-  export let withTrack = false;
+  export let track = false;
 
   /**
    * @type {boolean} set the progressbar to intermediate
@@ -65,25 +65,26 @@
   }
   const computeDashoffset = () =>
     DEFAULT_DASHOFFSET * sizeMultiplier -
-    (DEFAULT_DASHOFFSET * sizeMultiplier * progress) / 100;
+    (DEFAULT_DASHOFFSET * sizeMultiplier * (indeterminate ? 100 : progress)) /
+      100;
 </script>
 
 <div
   class={componentClass}
   role="progressbar"
-  aria-label="progress bar"
   aria-valuemin="0"
   aria-valuemax="100"
-  aria-valuenow={progress}
+  aria-valuenow={indeterminate ? undefined : progress}
+  {...$$restProps}
 >
   {#if img}
     <img class="vtmn-progressbar_image" src={img} alt={imgAlt} />
   {/if}
-  {#if displayIndicator && !indeterminate}
+  {#if label && !indeterminate}
     <span class="vtmn-progressbar_label" data-value={progress} />
   {/if}
   <svg>
-    {#if withTrack}
+    {#if track}
       <circle
         class="vtmn-progressbar_track"
         cx="50%"
