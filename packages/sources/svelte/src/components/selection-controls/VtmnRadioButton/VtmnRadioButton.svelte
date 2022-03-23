@@ -22,16 +22,11 @@
 
   /**
    * Binding group to retrieve value in parent
+   * to check input by default, group value should be equal to input value
    * @type {string}
+   * @requires
    */
   export let group;
-
-  /**
-   * Whether the input is checked
-   * @type {boolean}
-   * @default false
-   */
-  export let checked = false;
 
   /**
    * Whether the input is disabled
@@ -49,7 +44,6 @@
     {id}
     {name}
     {value}
-    {checked}
     {disabled}
     {...$$restProps}
   />

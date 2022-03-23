@@ -25,17 +25,10 @@
       },
     },
     group: {
-      type: { name: 'string' },
-      description: 'Binding group variable to retrieve selected',
+      type: { name: 'string', required: true },
+      description:
+        'Binding group to retrieve value in parent. To check input, group value should be equal to input value',
       control: false,
-    },
-    checked: {
-      type: { name: 'boolean' },
-      description: 'Whether the input is checked',
-      defaultValue: false,
-      control: {
-        type: 'boolean',
-      },
     },
     disabled: {
       type: { name: 'boolean' },
@@ -47,7 +40,7 @@
     },
   };
 
-  let preferedSport;
+  let preferedSport = '1';
 </script>
 
 <Meta
@@ -73,7 +66,6 @@
       name="favorite-choice"
       value="1"
       bind:group={preferedSport}
-      checked
     >
       Ski
     </VtmnRadioButton>

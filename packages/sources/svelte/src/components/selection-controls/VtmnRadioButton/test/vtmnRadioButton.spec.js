@@ -1,23 +1,33 @@
 import '@testing-library/jest-dom';
 import { render, fireEvent } from '@testing-library/svelte';
 import VtmnRadioButton from '../VtmnRadioButton.svelte';
+import VtmnRadioButtonWithSlot from './VtmnRadioButtonWithSlot.svelte';
 
 const id = 'id';
 const name = 'name';
-const label = 'label';
 const value = 'value';
+const label = 'label';
 
-const params = { id, name, label, value };
+let selected;
+
+const params = { id, name, value, group: selected };
 
 describe('VtmnRadioButton', () => {
-  test('Radio Button Should be visible', () => {
-    const { getByLabelText, getByText } = render(VtmnRadioButton, params);
+  test('Radio Button should be visible', () => {
+    const { getByRole } = render(VtmnRadioButton, { ...params });
+    expect(getByRole('radio')).toBeInTheDocument();
+  });
+
+  test('Radio Button with label should be visible', () => {
+    const { getByLabelText, getByText } = render(VtmnRadioButtonWithSlot, {
+      ...params,
+    });
     expect(getByLabelText(label)).toBeInTheDocument();
     expect(getByText(label)).toBeInTheDocument();
   });
 
   test('Radio Button Should be selectable', () => {
-    const { getByLabelText } = render(VtmnRadioButton, params);
+    const { getByLabelText } = render(VtmnRadioButtonWithSlot, { ...params });
     const radioButton = getByLabelText(label);
     expect(radioButton).not.toBeChecked();
     fireEvent.click(radioButton);
@@ -25,18 +35,18 @@ describe('VtmnRadioButton', () => {
   });
 
   test('Radio Button Should be checked', () => {
-    const { getByLabelText } = render(VtmnRadioButton, {
+    const { getByRole } = render(VtmnRadioButtonWithSlot, {
       ...params,
-      checked: true,
+      group: value,
     });
-    expect(getByLabelText(label)).toBeChecked();
+    expect(getByRole('radio')).toBeChecked();
   });
 
   test('Radio Button Should be disabled', () => {
-    const { getByLabelText } = render(VtmnRadioButton, {
+    const { getByRole } = render(VtmnRadioButton, {
       ...params,
       disabled: true,
     });
-    expect(getByLabelText(label)).toBeDisabled();
+    expect(getByRole('radio')).toBeDisabled();
   });
 });
