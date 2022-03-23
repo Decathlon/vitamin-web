@@ -21,12 +21,12 @@ describe('VtmnLoader', () => {
     expect(getLoader(container)).toHaveClass('vtmn-loader_size--small');
   });
 
-  test("Loader Should have class 'vtmn-loader_size--small' when size is medium", () => {
+  test("Loader Should have class 'vtmn-loader_size--medium' when size is medium", () => {
     const { container } = render(VtmnLoader, { size: 'medium' });
     expect(getLoader(container)).toHaveClass('vtmn-loader_size--medium');
   });
 
-  test("Loader Should have class 'vtmn-loader_size--small' when size is large", () => {
+  test("Loader Should have class 'vtmn-loader_size--large' when size is large", () => {
     const { container } = render(VtmnLoader, { size: 'large' });
     expect(getLoader(container)).toHaveClass('vtmn-loader_size--large');
   });
