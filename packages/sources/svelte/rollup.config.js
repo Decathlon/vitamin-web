@@ -16,7 +16,13 @@ const src = {
     },
     {
       folder: 'indicators',
-      components: ['VtmnBadge', 'VtmnPrice', 'VtmnRating', 'VtmnTag'],
+      components: [
+        'VtmnBadge',
+        'VtmnLoader',
+        'VtmnPrice',
+        'VtmnRating',
+        'VtmnTag',
+      ],
     },
     {
       folder: 'navigation',
