@@ -35,6 +35,7 @@
     "@vtmn/css-accordion": "^0.2.11",
     "@vtmn/css-alert": "^0.6.13",
     "@vtmn/css-badge": "^0.10.12",
+    "@vtmn/css-breadcrumb": "^0.3.16",
     "@vtmn/css-button": "^0.11.14",
     "@vtmn/css-card": "^0.7.1",
     "@vtmn/css-checkbox": "^0.6.16",
