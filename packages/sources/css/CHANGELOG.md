@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.62.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.62.0...@vtmn/css@0.62.1) (2022-03-23)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** `toggle`, incorrect checked icon color ([#1066](https://github.com/Decathlon/vitamin-web/issues/1066)) ([34df2a8](https://github.com/Decathlon/vitamin-web/commit/34df2a833a38d19b22a2c5ad6990f9f94af9d56a))
+
+
+
+
+
 # [0.62.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.61.0...@vtmn/css@0.62.0) (2022-03-22)
 
 
