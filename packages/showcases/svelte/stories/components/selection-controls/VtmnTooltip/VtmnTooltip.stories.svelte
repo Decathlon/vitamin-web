@@ -8,7 +8,7 @@
 </script>
 
 <Meta
-  title="Components / Overlay / VtmnTooltip"
+  title="Components / Overlays / VtmnTooltip"
   component={VtmnTooltip}
   {parameters}
   {argTypes}
