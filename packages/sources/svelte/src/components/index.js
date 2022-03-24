@@ -7,6 +7,7 @@ export { default as VtmnTextInput } from './forms/VtmnTextInput/VtmnTextInput.sv
 
 // Indicators
 export { default as VtmnBadge } from './indicators/VtmnBadge/VtmnBadge.svelte';
+export { default as VtmnLoader } from './indicators/VtmnLoader/VtmnLoader.svelte';
 export { default as VtmnPrice } from './indicators/VtmnPrice/VtmnPrice.svelte';
 export { default as VtmnRating } from './indicators/VtmnRating/VtmnRating.svelte';
 export { default as VtmnTag } from './indicators/VtmnTag/VtmnTag.svelte';
@@ -24,6 +25,7 @@ export { default as VtmnSnackbar } from './overlays/VtmnSnackbar/VtmnSnackbar.sv
 export { vtmnSnackbarStore } from './overlays/VtmnSnackbar/vtmnSnackbarStore';
 export { default as VtmnToast } from './overlays/VtmnToast/VtmnToast.svelte';
 export { vtmnToastStore } from './overlays/VtmnToast/vtmnToastStore';
+export { default as VtmnTooltip } from './overlays/VtmnTooltip/VtmnTooltip.svelte';
 
 // Selection controls
 export { default as VtmnCheckbox } from './selection-controls/VtmnCheckbox/VtmnCheckbox.svelte';
