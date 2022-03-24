@@ -3,6 +3,7 @@ import '@vtmn/css-button/dist/index-with-vars.css';
 import clsx from 'clsx';
 import { VtmnSearchVariant, VtmnSearchSize } from './types';
 import { VtmnButton } from '../../actions/VtmnButton/VtmnButton';
+import { objectValuesToString } from '../../../utils/object';
 
 export interface VtmnSearchProps
   extends Omit<React.ComponentPropsWithoutRef<'input'>, 'size'> {
@@ -68,7 +69,7 @@ export const VtmnSearch = ({
         value={search}
         disabled={disabled}
         type="search"
-        {...props}
+        {...objectValuesToString(props)}
         onChange={(event) => {
           // Overwrite previously defined onChange then call it back once search is set
           setSearch(event.target.value);

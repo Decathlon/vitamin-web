@@ -6,6 +6,7 @@ import {
   VtmnProgressbarSize,
   VtmnProgressbarStatus,
 } from './types';
+import { objectValuesToString } from '../../../utils/object';
 
 export interface VtmnProgressbarProps
   extends React.ComponentPropsWithoutRef<'div'> {
@@ -85,7 +86,7 @@ export const VtmnProgressbar = ({
       aria-label="progress bar"
       aria-valuemin={0}
       aria-valuemax={100}
-      {...props}
+      {...objectValuesToString(props)}
     >
       {/**
        * Linear Progress Bar
