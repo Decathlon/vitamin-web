@@ -41,6 +41,7 @@ const src = {
         'VtmnPopover',
         'VtmnSnackbar',
         'VtmnToast',
+        'VtmnTooltip',
       ],
     },
     {

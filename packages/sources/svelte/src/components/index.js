@@ -26,6 +26,7 @@ export { default as VtmnSnackbar } from './overlays/VtmnSnackbar/VtmnSnackbar.sv
 export { vtmnSnackbarStore } from './overlays/VtmnSnackbar/vtmnSnackbarStore';
 export { default as VtmnToast } from './overlays/VtmnToast/VtmnToast.svelte';
 export { vtmnToastStore } from './overlays/VtmnToast/vtmnToastStore';
+export { default as VtmnTooltip } from './overlays/VtmnTooltip/VtmnTooltip.svelte';
 
 // Selection controls
 export { default as VtmnCheckbox } from './selection-controls/VtmnCheckbox/VtmnCheckbox.svelte';
