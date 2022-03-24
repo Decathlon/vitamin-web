@@ -48,6 +48,7 @@
     "@vtmn/css-navbar": "^0.1.19",
     "@vtmn/css-popover": "^0.5.13",
     "@vtmn/css-price": "^0.2.12",
+    "@vtmn/css-quantity": "^0.4.13",
     "@vtmn/css-rating": "^0.3.11",
     "@vtmn/css-search": "^0.4.11",
     "@vtmn/css-skeleton": "^0.3.14",
