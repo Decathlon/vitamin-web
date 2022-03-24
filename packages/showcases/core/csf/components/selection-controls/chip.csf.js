@@ -88,13 +88,4 @@ export const argTypes = {
     },
     control: { type: 'range', min: 0, max: 100 },
   },
-
-  children: {
-    type: { name: 'string', required: false },
-    description: 'The content to render inside the component',
-    defaultValue: 'Chip',
-    control: {
-      type: 'text',
-    },
-  },
 };
