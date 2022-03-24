@@ -34,10 +34,4 @@ export const argTypes = {
     defaultValue: 'Tooltip text',
     control: { type: 'text' },
   },
-
-  children: {
-    type: { name: 'string', required: true },
-    description: 'The tooltip children',
-    defaultValue: null,
-  },
 };
