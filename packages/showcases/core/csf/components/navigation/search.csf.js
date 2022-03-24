@@ -33,4 +33,16 @@ export const argTypes = {
       options: ['small', 'medium'],
     },
   },
+  placeholder: {
+    type: { name: 'string', required: false },
+    description: 'The placeholder of the search bar.',
+    defaultValue: 'Search',
+    control: { type: 'text' },
+  },
+  value: {
+    type: { name: 'string', required: false },
+    description: 'The value of the search bar.',
+    defaultValue: undefined,
+    control: { type: 'text' },
+  },
 };
