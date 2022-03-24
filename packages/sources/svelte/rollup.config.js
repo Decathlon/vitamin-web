@@ -46,7 +46,7 @@ const src = {
     },
     {
       folder: 'selection-controls',
-      components: ['VtmnCheckbox', 'VtmnChip', 'VtmnToggle'],
+      components: ['VtmnCheckbox', 'VtmnChip', 'VtmnQuantity', 'VtmnToggle'],
     },
     {
       folder: 'structure',
