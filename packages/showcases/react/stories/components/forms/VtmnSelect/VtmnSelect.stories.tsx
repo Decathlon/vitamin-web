@@ -9,9 +9,7 @@ import {
 export default {
   title: 'Components / Forms / VtmnSelect',
   component: VtmnSelect,
-  argTypes: {
-    ...argTypes,
-  },
+  argTypes,
   parameters,
 } as Meta;
 

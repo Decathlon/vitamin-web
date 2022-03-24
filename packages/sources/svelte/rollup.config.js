@@ -17,15 +17,22 @@ const src = {
     },
     {
       folder: 'forms',
-      components: ['VtmnTextInput'],
+      components: ['VtmnSelect', 'VtmnTextInput'],
     },
     {
       folder: 'indicators',
-      components: ['VtmnBadge', 'VtmnPrice', 'VtmnRating', 'VtmnTag'],
+      components: [
+        'VtmnBadge',
+        'VtmnLoader',
+        'VtmnPrice',
+        'VtmnProgressbar',
+        'VtmnRating',
+        'VtmnTag',
+      ],
     },
     {
       folder: 'navigation',
-      components: ['VtmnSearch'],
+      components: ['VtmnNavbar', 'VtmnSearch'],
     },
     {
       folder: 'overlays',
@@ -35,11 +42,18 @@ const src = {
         'VtmnPopover',
         'VtmnSnackbar',
         'VtmnToast',
+        'VtmnTooltip',
       ],
     },
     {
       folder: 'selection-controls',
-      components: ['VtmnCheckbox', 'VtmnChip', 'VtmnToggle'],
+      components: [
+        'VtmnCheckbox',
+        'VtmnChip',
+        'VtmnQuantity',
+        'VtmnRadioButton',
+        'VtmnToggle',
+      ],
     },
     {
       folder: 'structure',

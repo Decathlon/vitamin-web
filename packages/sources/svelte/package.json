@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/svelte",
-  "version": "0.24.2",
+  "version": "0.30.0",
   "description": "Decathlon Design System - Vitamin Svelte components library",
   "keywords": [
     "design-system",
@@ -44,17 +44,24 @@
     "@vtmn/css-dropdown": "^0.2.6",
     "@vtmn/css-link": "^0.6.15",
     "@vtmn/css-list": "^0.2.17",
-    "@vtmn/css-modal": "^0.5.4",
+    "@vtmn/css-loader": "^0.2.23",
+    "@vtmn/css-modal": "^0.5.7",
+    "@vtmn/css-navbar": "^0.1.19",
     "@vtmn/css-popover": "^0.5.13",
     "@vtmn/css-price": "^0.2.12",
+    "@vtmn/css-progressbar": "^0.4.12",
+    "@vtmn/css-quantity": "^0.4.13",
+    "@vtmn/css-radio-button": "^0.6.15",
     "@vtmn/css-rating": "^0.3.11",
     "@vtmn/css-search": "^0.4.11",
+    "@vtmn/css-select": "^0.6.15",
     "@vtmn/css-skeleton": "^0.3.14",
     "@vtmn/css-snackbar": "^0.5.13",
     "@vtmn/css-tag": "^0.3.10",
     "@vtmn/css-text-input": "^0.13.14",
     "@vtmn/css-toast": "^0.5.13",
     "@vtmn/css-toggle": "^0.6.12",
+    "@vtmn/css-tooltip": "^0.6.13",
     "@vtmn/icons": "^0.12.1"
   },
   "devDependencies": {

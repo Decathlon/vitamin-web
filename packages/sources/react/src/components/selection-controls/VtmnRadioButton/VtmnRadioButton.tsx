@@ -1,5 +1,6 @@
 import * as React from 'react';
 import '@vtmn/css-radio-button/dist/index-with-vars.css';
+import { objectValuesToString } from '../../../utils/object';
 
 export interface VtmnRadioButtonProps
   extends React.ComponentPropsWithoutRef<'input'> {
@@ -46,7 +47,7 @@ export const VtmnRadioButton = ({
         id={identifier}
         checked={checked}
         disabled={disabled}
-        {...props}
+        {...objectValuesToString(props)}
       />
       <label htmlFor={identifier}>{labelText}</label>
     </div>

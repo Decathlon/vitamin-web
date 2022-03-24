@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
 import { VtmnIconColor, VtmnIconSize, VtmnIconVariant } from './types';
+import { objectValuesToString } from '../../../utils/object';
 
 export interface VtmnIconProps extends React.HTMLAttributes<HTMLElement> {
   /**
@@ -74,7 +75,7 @@ export const VtmnIcon: React.FC<VtmnIconProps> = ({
         color: getIconColor(),
         ...style,
       }}
-      {...props}
+      {...objectValuesToString(props)}
     ></span>
   );
 };

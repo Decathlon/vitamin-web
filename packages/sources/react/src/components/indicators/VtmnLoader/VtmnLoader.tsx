@@ -1,6 +1,7 @@
 import * as React from 'react';
 import '@vtmn/css-loader/dist/index-with-vars.css';
 import { VtmnLoaderSize } from './types';
+import { objectValuesToString } from '../../../utils/object';
 
 export interface VtmnLoaderProps extends React.ComponentPropsWithoutRef<'div'> {
   /**
@@ -18,7 +19,7 @@ export const VtmnLoader = ({
   return (
     <div
       className={`vtmn-loader vtmn-loader_size--${size} ${className}`}
-      {...props}
+      {...objectValuesToString(props)}
     ></div>
   );
 };

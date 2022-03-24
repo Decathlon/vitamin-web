@@ -3,6 +3,7 @@ import '@vtmn/css-text-input/dist/index-with-vars.css';
 import clsx from 'clsx';
 import { VtmnIcon } from '../../../guidelines/iconography/VtmnIcon';
 import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
+import { objectValuesToString } from '../../../utils/object';
 
 type VtmnTextInputAdditionalProps = {
   /**
@@ -110,7 +111,7 @@ export const VtmnTextInput = ({
           aria-describedby={
             (helperText && `${identifier}-helper-text`) || undefined
           }
-          {...props}
+          {...objectValuesToString(props)}
         />
       ) : (
         <div className="vtmn-text-input_container">
@@ -129,7 +130,7 @@ export const VtmnTextInput = ({
             aria-describedby={
               (helperText && `${identifier}-helper-text`) || undefined
             }
-            {...props}
+            {...objectValuesToString(props)}
           />
           {icon && <VtmnIcon value={icon} size={20} onClick={onIconClick} />}
         </div>
