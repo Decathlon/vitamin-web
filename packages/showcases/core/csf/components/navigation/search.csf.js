@@ -11,7 +11,7 @@ export const parameters = {
 export const argTypes = {
   variant: {
     type: { name: 'string', required: true },
-    description: 'Color variant of search component.',
+    description: 'Variant of search component.',
     control: {
       type: 'select',
       options: ['default', 'persistent', 'on-content'],
