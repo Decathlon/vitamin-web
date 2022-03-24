@@ -42,7 +42,13 @@ const src = {
     },
     {
       folder: 'selection-controls',
-      components: ['VtmnCheckbox', 'VtmnChip', 'VtmnQuantity', 'VtmnToggle'],
+      components: [
+        'VtmnCheckbox',
+        'VtmnChip',
+        'VtmnQuantity',
+        'VtmnRadioButton',
+        'VtmnToggle',
+      ],
     },
     {
       folder: 'structure',
