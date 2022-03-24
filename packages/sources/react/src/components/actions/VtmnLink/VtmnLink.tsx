@@ -2,6 +2,7 @@ import * as React from 'react';
 import '@vtmn/css-link/dist/index-with-vars.css';
 import clsx from 'clsx';
 import { VtmnLinkSize } from './types';
+import { objectValuesToString } from '../../../utils/object';
 
 export interface VtmnLinkProps extends React.ComponentPropsWithoutRef<'a'> {
   /**
@@ -48,7 +49,7 @@ export const VtmnLink = ({
         { 'vtmn-link--icon-along': standalone && iconAlong },
         className,
       )}
-      {...props}
+      {...objectValuesToString(props)}
     >
       {children}
     </a>

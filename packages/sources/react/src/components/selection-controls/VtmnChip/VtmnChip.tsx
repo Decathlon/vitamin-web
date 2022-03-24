@@ -6,6 +6,7 @@ import { VtmnChipSize, VtmnChipVariant } from './types';
 import { VtmnIcon } from '../../../guidelines/iconography/VtmnIcon/VtmnIcon';
 import { VtmnButton } from '../../actions/VtmnButton/VtmnButton';
 import { VtmnBadge } from '../../indicators/VtmnBadge/VtmnBadge';
+import { objectValuesToString } from '../../../utils/object';
 export interface VtmnChipProps extends React.ComponentPropsWithoutRef<'div'> {
   /**
    * Called when clicking the chip
@@ -86,7 +87,7 @@ export const VtmnChip = ({
         className,
       )}
       onClick={onClick}
-      {...props}
+      {...objectValuesToString(props)}
     >
       {icon && (
         <VtmnIcon variant={selected ? 'reversed' : 'default'} value={icon} />
