@@ -10,34 +10,28 @@ export const parameters = {
 
 export const argTypes = {
   variant: {
-    type: { name: 'string', required: false },
-    description: 'The variant of the search bar.',
-    defaultValue: 'default',
+    type: { name: 'string', required: true },
+    description: 'Variant of search component.',
     control: {
       type: 'select',
       options: ['default', 'persistent', 'on-content'],
     },
+    defaultValue: 'default',
+  },
+  disabled: {
+    type: { name: 'boolean', required: false },
+    description: 'Disabled state',
+    defaultValue: false,
+    control: { type: 'boolean' },
   },
   size: {
     type: { name: 'string', required: false },
-    description: 'The size of the search bar.',
+    description: 'Size of input.',
     defaultValue: 'medium',
     control: {
       type: 'select',
       options: ['small', 'medium'],
     },
-  },
-  disabled: {
-    type: { name: 'boolean', required: false },
-    description: 'Whether the search bar is disabled.',
-    table: {
-      type: {
-        summary: 'boolean',
-      },
-      defaultValue: { summary: 'false' },
-    },
-    defaultValue: false,
-    control: { type: 'boolean' },
   },
   placeholder: {
     type: { name: 'string', required: false },
