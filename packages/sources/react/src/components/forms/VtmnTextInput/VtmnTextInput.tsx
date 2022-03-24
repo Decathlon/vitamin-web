@@ -90,6 +90,9 @@ export const VtmnTextInput = ({
   onIconClick,
   ...props
 }: VtmnTextInputProps) => {
+  const propsToString = Object.keys(props).map((propKey) =>
+    props[propKey].toString(),
+  );
   return (
     <>
       {labelText && (
@@ -110,7 +113,7 @@ export const VtmnTextInput = ({
           aria-describedby={
             (helperText && `${identifier}-helper-text`) || undefined
           }
-          {...props}
+          {...propsToString}
         />
       ) : (
         <div className="vtmn-text-input_container">
@@ -129,7 +132,7 @@ export const VtmnTextInput = ({
             aria-describedby={
               (helperText && `${identifier}-helper-text`) || undefined
             }
-            {...props}
+            {...propsToString}
           />
           {icon && <VtmnIcon value={icon} size={20} onClick={onIconClick} />}
         </div>
