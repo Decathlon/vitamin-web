@@ -26,11 +26,7 @@ const src = {
     },
     {
       folder: 'navigation',
-      components: ['VtmnSearch'],
-    },
-    {
-      folder: 'navigation',
-      components: ['VtmnSearch', 'VtmnNavbar'],
+      components: ['VtmnNavbar', 'VtmnSearch'],
     },
     {
       folder: 'overlays',

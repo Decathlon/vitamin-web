@@ -6,16 +6,10 @@ export const parameters = {
 };
 
 export const argTypes = {
-  href: {
+  logoHref: {
     type: { name: 'string', required: false },
     description: 'Logo anchor',
     defaultValue: '#',
-    control: { type: 'text' },
-  },
-  class: {
-    type: { name: 'string', required: false },
-    description: 'Custom classes to apply to the component',
-    defaultValue: false,
     control: { type: 'text' },
   },
 };

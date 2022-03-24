@@ -6,9 +6,9 @@
   /**
    * Logo anchor.
    *
-   * @type {string} [href]
+   * @type {string} [logoHref]
    */
-  export let href = '#';
+  export let logoHref = '#';
 
   let className = '';
   /**
@@ -40,7 +40,7 @@
 
   {#if checkSlotExists('logo')}
     <div class="vtmn-navbar_right-navigation">
-      <a class="vtmn-navbar_logo" {href}>
+      <a class="vtmn-navbar_logo" href={logoHref}>
         <slot name="logo" />
       </a>
     </div>
