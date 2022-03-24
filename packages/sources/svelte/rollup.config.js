@@ -27,7 +27,7 @@ const src = {
     },
     {
       folder: 'navigation',
-      components: ['VtmnSearch'],
+      components: ['VtmnNavbar', 'VtmnSearch'],
     },
     {
       folder: 'overlays',
@@ -37,11 +37,12 @@ const src = {
         'VtmnPopover',
         'VtmnSnackbar',
         'VtmnToast',
+        'VtmnTooltip',
       ],
     },
     {
       folder: 'selection-controls',
-      components: ['VtmnCheckbox', 'VtmnChip', 'VtmnToggle'],
+      components: ['VtmnCheckbox', 'VtmnChip', 'VtmnQuantity', 'VtmnToggle'],
     },
     {
       folder: 'structure',

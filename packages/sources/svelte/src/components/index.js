@@ -15,6 +15,7 @@ export { default as VtmnTag } from './indicators/VtmnTag/VtmnTag.svelte';
 
 // Navigation
 export { default as VtmnSearch } from './navigation/VtmnSearch/VtmnSearch.svelte';
+export { default as VtmnNavbar } from './navigation/VtmnNavbar/VtmnNavbar.svelte';
 
 // Overlays
 export { default as VtmnAlert } from './overlays/VtmnAlert/VtmnAlert.svelte';
@@ -25,10 +26,12 @@ export { default as VtmnSnackbar } from './overlays/VtmnSnackbar/VtmnSnackbar.sv
 export { vtmnSnackbarStore } from './overlays/VtmnSnackbar/vtmnSnackbarStore';
 export { default as VtmnToast } from './overlays/VtmnToast/VtmnToast.svelte';
 export { vtmnToastStore } from './overlays/VtmnToast/vtmnToastStore';
+export { default as VtmnTooltip } from './overlays/VtmnTooltip/VtmnTooltip.svelte';
 
 // Selection controls
 export { default as VtmnCheckbox } from './selection-controls/VtmnCheckbox/VtmnCheckbox.svelte';
 export { default as VtmnChip } from './selection-controls/VtmnChip/VtmnChip.svelte';
+export { default as VtmnQuantity } from './selection-controls/VtmnQuantity/VtmnQuantity.svelte';
 export { default as VtmnToggle } from './selection-controls/VtmnToggle/VtmnToggle.svelte';
 
 // Structure
