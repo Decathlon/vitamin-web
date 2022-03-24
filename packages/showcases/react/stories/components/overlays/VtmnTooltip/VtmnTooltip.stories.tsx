@@ -9,7 +9,17 @@ import {
 export default {
   title: 'Components / Overlays / VtmnTooltip',
   component: VtmnTooltip,
-  argTypes: { ...argTypes },
+  argTypes: {
+    ...argTypes,
+    children: {
+      type: { name: 'string', required: false },
+      description: 'The content to render inside the component.',
+      defaultValue: 'Button',
+      control: {
+        type: 'text',
+      },
+    },
+  },
   parameters,
 } as Meta;
 
