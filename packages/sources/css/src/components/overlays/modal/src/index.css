@@ -76,7 +76,6 @@
 .vtmn-modal_content_body {
   margin: rem(16px) 0;
   overflow-y: auto;
-  position: relative;
 }
 
 .vtmn-modal_content_body--text {
