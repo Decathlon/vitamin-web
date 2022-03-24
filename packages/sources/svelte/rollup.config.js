@@ -20,6 +20,7 @@ const src = {
         'VtmnBadge',
         'VtmnLoader',
         'VtmnPrice',
+        'VtmnProgressbar',
         'VtmnRating',
         'VtmnTag',
       ],
