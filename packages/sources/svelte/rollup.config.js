@@ -31,7 +31,7 @@ const src = {
     },
     {
       folder: 'navigation',
-      components: ['VtmnSearch'],
+      components: ['VtmnNavbar', 'VtmnSearch'],
     },
     {
       folder: 'overlays',
