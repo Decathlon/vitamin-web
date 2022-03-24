@@ -75,7 +75,7 @@
 
 .vtmn-modal_content_body {
   margin: rem(16px) 0;
-  overflow: auto;
+  overflow-y: auto;
   position: relative;
 }
 
@@ -86,30 +86,6 @@
   line-height: rem(24px);
   align-self: flex-start;
   text-align: left;
-}
-
-.vtmn-modal_content_body--overflow-indicator {
-  position: sticky;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(
-    180deg,
-    hsl(
-        var(--vtmn-semantic-color_background-primary--h)
-          var(--vtmn-semantic-color_background-primary--s)
-          var(--vtmn-semantic-color_background-primary--l) / 0%
-      )
-      80%,
-    hsl(
-        var(--vtmn-semantic-color_background-primary--h)
-          var(--vtmn-semantic-color_background-primary--s)
-          var(--vtmn-semantic-color_background-primary--l) / 95%
-      )
-      100%
-  );
-  pointer-events: none;
 }
 
 .vtmn-modal_content_actions {

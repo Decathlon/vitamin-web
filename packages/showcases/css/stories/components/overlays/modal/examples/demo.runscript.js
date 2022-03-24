@@ -38,7 +38,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
             exercitationem accusamus perferendis est aut repudiandae optio vel dicta
             reprehenderit ad, repellendus officiis cumque omnis labore in quia?
           </p>
-          <div class="vtmn-modal_content_body--overflow-indicator"></div>
         </div>
         <div class="vtmn-modal_content_actions">
           <button id="btn-close-modal-2" class="vtmn-btn vtmn-btn_variant--secondary">Got Back</button>
