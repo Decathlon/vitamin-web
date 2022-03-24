@@ -46,7 +46,7 @@
   </div>
 </Story>
 
-<Story name="With menu and cta" let:args>
+<Story name="With menu and buttons" let:args>
   <div style="width: 800px; display: flex; justify-content: center">
     <VtmnNavbar {...args}>
       <svelte:fragment slot="left-nav">
