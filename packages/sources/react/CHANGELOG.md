@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.24.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.23.2...@vtmn/react@0.24.0) (2022-03-24)
+
+
+### Features
+
+* **@vtmn/react:** cast props to string in every components ([#1069](https://github.com/Decathlon/vitamin-web/issues/1069)) ([06b00b7](https://github.com/Decathlon/vitamin-web/commit/06b00b790dc251767bba099229dc7373b5b7ed41))
+
+
+
+
+
+## [0.23.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.23.1...@vtmn/react@0.23.2) (2022-03-23)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
 ## [0.23.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.23.0...@vtmn/react@0.23.1) (2022-03-23)
 
 

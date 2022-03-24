@@ -10,7 +10,7 @@ import { VtmnButton } from '@vtmn/react';
 export default {
   title: 'Components / Overlays / VtmnAlert',
   component: VtmnAlert,
-  argTypes: { ...argTypes },
+  argTypes,
   parameters,
 } as Meta;
 

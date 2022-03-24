@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import '@vtmn/css-select/dist/index-with-vars.css';
+import { objectValuesToString } from '../../../utils/object';
 
 export interface VtmnSelectProps extends React.ComponentPropsWithRef<'select'> {
   error?: boolean;
@@ -34,7 +35,7 @@ export const VtmnSelect = ({
           'vtmn-select--error': error,
         })}
         aria-describedby={hasErrorText ? errorTextId : undefined}
-        {...props}
+        {...objectValuesToString(props)}
       >
         {options.map((option) => option)}
       </select>

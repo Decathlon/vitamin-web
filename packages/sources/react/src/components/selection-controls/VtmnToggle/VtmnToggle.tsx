@@ -2,6 +2,7 @@ import * as React from 'react';
 import '@vtmn/css-toggle/dist/index-with-vars.css';
 import clsx from 'clsx';
 import { VtmnToggleSize } from './types';
+import { objectValuesToString } from '../../../utils/object';
 
 export interface VtmnToggleProps
   extends Omit<React.ComponentPropsWithoutRef<'input'>, 'size'> {
@@ -58,7 +59,7 @@ export const VtmnToggle = ({
           id={identifier}
           checked={checked}
           disabled={disabled}
-          {...props}
+          {...objectValuesToString(props)}
         />
         <span aria-hidden="true"></span>
       </div>
