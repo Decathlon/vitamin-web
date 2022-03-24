@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.30.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.29.0...@vtmn/svelte@0.30.0) (2022-03-24)
+
+
+### Features
+
+* **@vtmn/svelte:** add `VtmnRadioButton` component ([#1057](https://github.com/Decathlon/vitamin-web/issues/1057)) ([d07b3e4](https://github.com/Decathlon/vitamin-web/commit/d07b3e4180aa86eb0819bda5fb9cd53e4435590e))
+* **@vtmn/svelte:** add `VtmnSelect` component ([#1065](https://github.com/Decathlon/vitamin-web/issues/1065)) ([5651c21](https://github.com/Decathlon/vitamin-web/commit/5651c2182a0934d32087f3fa8412f44b178f0bf8))
+
+
+
+
+
 # [0.29.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.28.0...@vtmn/svelte@0.29.0) (2022-03-24)
 
 
