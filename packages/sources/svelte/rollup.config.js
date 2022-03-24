@@ -17,7 +17,7 @@ const src = {
     },
     {
       folder: 'forms',
-      components: ['VtmnTextInput'],
+      components: ['VtmnSelect', 'VtmnTextInput'],
     },
     {
       folder: 'indicators',
