@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-modal@0.5.6...@vtmn/css-modal@0.5.7) (2022-03-24)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** modal indicator overflow ([#1068](https://github.com/Decathlon/vitamin-web/issues/1068)) ([6338cd2](https://github.com/Decathlon/vitamin-web/commit/6338cd2c0450ecdb32e7d7fb2b6ae2d81847fa4b))
+
+
+
+
+
 ## [0.5.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-modal@0.5.5...@vtmn/css-modal@0.5.6) (2022-03-11)
 
 **Note:** Version bump only for package @vtmn/css-modal
