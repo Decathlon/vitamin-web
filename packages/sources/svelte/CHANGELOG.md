@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.28.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.27.0...@vtmn/svelte@0.28.0) (2022-03-24)
+
+
+### Features
+
+* **@vtmn/svelte:** add `VtmnQuantity` component ([#1055](https://github.com/Decathlon/vitamin-web/issues/1055)) ([134fa8a](https://github.com/Decathlon/vitamin-web/commit/134fa8a79f7a0edae885a3ea391be6f282ff987b))
+
+
+
+
+
 # [0.27.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.26.0...@vtmn/svelte@0.27.0) (2022-03-24)
 
 
