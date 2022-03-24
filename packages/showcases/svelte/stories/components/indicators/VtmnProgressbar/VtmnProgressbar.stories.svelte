@@ -6,7 +6,7 @@
   const argTypes = {
     variant: {
       type: { name: 'string', required: true },
-      description: 'Variant of the loader.',
+      description: 'Variant of the progressbar.',
       defaultValue: 'linear',
       control: {
         type: 'radio',
@@ -15,7 +15,7 @@
     },
     size: {
       type: { name: 'string', required: false },
-      description: 'The size of the loader.',
+      description: 'The size of the progressbar.',
       defaultValue: 'medium',
       table: {
         type: {
@@ -30,7 +30,7 @@
     },
     label: {
       type: { name: 'string', required: false },
-      description: 'Label displayed for the loader',
+      description: 'Label displayed for the progressbar',
       control: {
         type: 'text',
       },
@@ -47,7 +47,7 @@
     },
     indeterminate: {
       type: { name: 'boolean', required: false },
-      description: 'Set the loader to indeterminate',
+      description: 'Set the progressbar to indeterminate',
       defaultValue: false,
       control: {
         type: 'boolean',
@@ -63,7 +63,7 @@
     },
     img: {
       type: { name: 'string', required: false },
-      description: 'Image source for circle loader',
+      description: 'Image source for circle progressbar',
       defaultValue: '',
       control: {
         type: 'text',
@@ -133,30 +133,30 @@
 </Story>
 
 <Story name="Circular">
-  <div class="story-loader-circular">
+  <div class="story-progressbar-circular">
     <div>
       <VtmnProgressbar
-        class="story-loader-circular-content"
+        class="story-progressbar-circular-content"
         size="small"
         progress="10"
         variant="circular"
       />
       <VtmnProgressbar
-        class="story-loader-circular-content"
+        class="story-progressbar-circular-content"
         size="small"
         progress="20"
         variant="circular"
         track
       />
       <VtmnProgressbar
-        class="story-loader-circular-content"
+        class="story-progressbar-circular-content"
         size="small"
         progress="30"
         variant="circular"
         label
       />
       <VtmnProgressbar
-        class="story-loader-circular-content"
+        class="story-progressbar-circular-content"
         size="small"
         progress="40"
         variant="circular"
@@ -164,7 +164,7 @@
         track
       />
       <VtmnProgressbar
-        class="story-loader-circular-content"
+        class="story-progressbar-circular-content"
         size="small"
         progress="50"
         variant="circular"
@@ -172,7 +172,7 @@
         imgAlt="storybook progress image"
       />
       <VtmnProgressbar
-        class="story-loader-circular-content"
+        class="story-progressbar-circular-content"
         size="small"
         progress="60"
         variant="circular"
@@ -181,14 +181,14 @@
         imgAlt="storybook progress image"
       />
       <VtmnProgressbar
-        class="story-loader-circular-content"
+        class="story-progressbar-circular-content"
         size="small"
         progress="70"
         variant="circular"
         indeterminate
       />
       <VtmnProgressbar
-        class="story-loader-circular-content"
+        class="story-progressbar-circular-content"
         size="small"
         progress="80"
         variant="circular"
@@ -196,30 +196,30 @@
         track
       />
     </div>
-    <div class="story-loader-circular">
+    <div class="story-progressbar-circular">
       <div>
         <VtmnProgressbar
-          class="story-loader-circular-content"
+          class="story-progressbar-circular-content"
           size="medium"
           progress="10"
           variant="circular"
         />
         <VtmnProgressbar
-          class="story-loader-circular-content"
+          class="story-progressbar-circular-content"
           size="medium"
           progress="20"
           variant="circular"
           track
         />
         <VtmnProgressbar
-          class="story-loader-circular-content"
+          class="story-progressbar-circular-content"
           size="medium"
           progress="30"
           variant="circular"
           label
         />
         <VtmnProgressbar
-          class="story-loader-circular-content"
+          class="story-progressbar-circular-content"
           size="medium"
           progress="40"
           variant="circular"
@@ -229,7 +229,7 @@
       </div>
       <div>
         <VtmnProgressbar
-          class="story-loader-circular-content"
+          class="story-progressbar-circular-content"
           size="medium"
           progress="50"
           variant="circular"
@@ -237,7 +237,7 @@
           imgAlt="storybook progress image"
         />
         <VtmnProgressbar
-          class="story-loader-circular-content"
+          class="story-progressbar-circular-content"
           size="medium"
           progress="60"
           variant="circular"
@@ -246,14 +246,14 @@
           imgAlt="storybook progress image"
         />
         <VtmnProgressbar
-          class="story-loader-circular-content"
+          class="story-progressbar-circular-content"
           size="medium"
           progress="70"
           variant="circular"
           indeterminate
         />
         <VtmnProgressbar
-          class="story-loader-circular-content"
+          class="story-progressbar-circular-content"
           size="medium"
           progress="80"
           variant="circular"
@@ -266,7 +266,7 @@
 </Story>
 
 <style>
-  .story-loader-circular {
+  .story-progressbar-circular {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -274,7 +274,7 @@
     justify-content: center;
     align-items: flex-start;
   }
-  :global(.story-loader-circular-content) {
+  :global(.story-progressbar-circular-content) {
     margin: 8px;
   }
 
