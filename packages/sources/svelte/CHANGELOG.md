@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.27.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.26.0...@vtmn/svelte@0.27.0) (2022-03-24)
+
+
+### Features
+
+* **@vtmn/svelte:** add `VtmnNavbar` component ([#1044](https://github.com/Decathlon/vitamin-web/issues/1044)) ([f042102](https://github.com/Decathlon/vitamin-web/commit/f042102d61bb8c7a8efc61c5bbc0cf6506d75734))
+
+
+
+
+
 # [0.26.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.25.2...@vtmn/svelte@0.26.0) (2022-03-24)
 
 
