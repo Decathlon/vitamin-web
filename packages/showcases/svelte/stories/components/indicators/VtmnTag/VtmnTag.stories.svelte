@@ -26,10 +26,3 @@
 </Template>
 
 <Story name="Overview" args={{ variant: 'accent' }} />
-
-<Story name="With icon" let:args>
-  <VtmnTag {...args}>
-    <VtmnIcon value="leaf-fill" />
-    {args.slot}
-  </VtmnTag>
-</Story>
