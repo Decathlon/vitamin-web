@@ -55,9 +55,9 @@ export default /*#__PURE__*/ defineComponent({
 
 <template>
   <a v-if="href" :href="href" :class="classes" v-bind="$attrs"
-    ><VtmnIcon v-if="icon" :value="icon" /><slot
+    ><VtmnIcon v-if="icon" :value="icon" :style="styleObject" /><slot
   /></a>
   <span v-else :class="classes" v-bind="$attrs"
-    ><VtmnIcon v-if="icon" :value="icon" /><slot
+    ><VtmnIcon v-if="icon" :value="icon" :style="styleObject" /><slot
   /></span>
 </template>
