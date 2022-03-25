@@ -56,6 +56,7 @@ export const VtmnButton = React.forwardRef<HTMLButtonElement, VtmnButtonProps>(
       iconAlone,
       children,
       className,
+      disabled = false,
       ...props
     },
     ref,
@@ -68,6 +69,7 @@ export const VtmnButton = React.forwardRef<HTMLButtonElement, VtmnButtonProps>(
         } ${!iconAlone && iconLeft ? 'vtmn-btn--icon-left' : ''} ${
           !iconAlone && iconRight ? 'vtmn-btn--icon-right' : ''
         } ${iconAlone ? 'vtmn-btn--icon-alone' : ''}`}
+        disabled={disabled}
         {...objectValuesToString(props)}
       >
         {!iconAlone && iconLeft && (
