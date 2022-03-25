@@ -24,7 +24,9 @@ export default {
 } as Meta;
 
 const Template: Story = (args) => (
-  <VtmnDivider {...args} style={{ width: 400, height: 400 }} />
+  <div style={{ width: 400 }}>
+    <VtmnDivider {...args} />
+  </div>
 );
 
 export const Overview = Template.bind({});

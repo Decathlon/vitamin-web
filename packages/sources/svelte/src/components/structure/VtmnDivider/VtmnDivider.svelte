@@ -1,7 +1,10 @@
 <script>
   import { cn } from '../../../utils/classnames';
 
-  import { VTMN_DIVIDER_ORIENTATION, VTMN_DIVIDER_POSITION } from './enums';
+  import {
+    VTMN_DIVIDER_ORIENTATION,
+    VTMN_DIVIDER_TEXT_POSITION,
+  } from './enums';
 
   /**
    * @type {string} Orientation of the divider
@@ -11,7 +14,7 @@
   /**
    * @type {string} Position of the text
    */
-  export let textPosition = VTMN_DIVIDER_POSITION.START;
+  export let textPosition = VTMN_DIVIDER_TEXT_POSITION.START;
 
   let className;
   /**
