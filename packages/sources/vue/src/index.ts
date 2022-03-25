@@ -42,3 +42,4 @@ export { default as VtmnRadioButton } from './components/selection-controls/Vtmn
 export { default as VtmnToggle } from './components/selection-controls/VtmnToggle';
 
 // Structure
+export { default as VtmnDivider } from './components/structure/VtmnDivider';

@@ -12,6 +12,7 @@
   font-size: var(--vtmn-typo_text-3-font-size);
   line-height: var(--vtmn-typo_text-3-line-height);
   color: var(--vtmn-semantic-color_content-primary);
+  width: 100%;
 }
 
 .vtmn-divider::before,
@@ -47,6 +48,7 @@
 
 .vtmn-divider_orientation--vertical {
   flex-direction: column;
+  height: 100%;
 }
 
 .vtmn-divider_orientation--vertical::before,

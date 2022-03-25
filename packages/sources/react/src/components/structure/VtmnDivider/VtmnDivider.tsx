@@ -29,8 +29,8 @@ export const VtmnDivider = ({
     <div
       className={clsx(
         'vtmn-divider',
-        children && `vtmn-divider_text-position--${textPosition}`,
         `vtmn-divider_orientation--${orientation}`,
+        children && `vtmn-divider_text-position--${textPosition}`,
         className,
       )}
       {...props}

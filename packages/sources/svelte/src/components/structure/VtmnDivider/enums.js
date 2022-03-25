@@ -1,9 +1,9 @@
 export const VTMN_DIVIDER_ORIENTATION = {
-  VERTICAL: 'vertical',
   HORIZONTAL: 'horizontal',
+  VERTICAL: 'vertical',
 };
 
-export const VTMN_DIVIDER_POSITION = {
+export const VTMN_DIVIDER_TEXT_POSITION = {
   START: 'start',
   CENTER: 'center',
   END: 'end',
