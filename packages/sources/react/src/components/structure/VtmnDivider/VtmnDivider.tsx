@@ -2,7 +2,6 @@ import * as React from 'react';
 import clsx from 'clsx';
 import '@vtmn/css-divider/dist/index-with-vars.css';
 import { VtmnDividerOrientation, VtmnDividerTextPosition } from './types';
-import { objectValuesToString } from '../../../utils/object';
 
 export interface VtmnDividerProps
   extends React.ComponentPropsWithoutRef<'div'> {
@@ -34,7 +33,7 @@ export const VtmnDivider = ({
         children && `vtmn-divider_text-position--${textPosition}`,
         className,
       )}
-      {...objectValuesToString(props)}
+      {...props}
       role="separator"
       aria-orientation={orientation}
     >

@@ -3,7 +3,6 @@ import '@vtmn/css-button/dist/index-with-vars.css';
 import { VtmnButtonVariant, VtmnButtonSize } from './types';
 import { VtmnIcon } from '../../../guidelines/iconography/VtmnIcon';
 import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
-import { objectValuesToString } from '../../../utils/object';
 
 export interface VtmnButtonProps
   extends React.ComponentPropsWithoutRef<'button'> {
@@ -68,7 +67,7 @@ export const VtmnButton = React.forwardRef<HTMLButtonElement, VtmnButtonProps>(
         } ${!iconAlone && iconLeft ? 'vtmn-btn--icon-left' : ''} ${
           !iconAlone && iconRight ? 'vtmn-btn--icon-right' : ''
         } ${iconAlone ? 'vtmn-btn--icon-alone' : ''}`}
-        {...objectValuesToString(props)}
+        {...props}
       >
         {!iconAlone && iconLeft && (
           <VtmnIcon
