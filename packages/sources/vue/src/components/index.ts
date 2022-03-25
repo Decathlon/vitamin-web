@@ -8,6 +8,7 @@ import VtmnPrice from './indicators/VtmnPrice';
 import VtmnCheckbox from './selection-controls/VtmnCheckbox';
 import VtmnRadioButton from './selection-controls/VtmnRadioButton';
 import VtmnToggle from './selection-controls/VtmnToggle';
+import VtmnDivider from './structure/VtmnDivider';
 
 export {
   VtmnButton,
@@ -20,4 +21,5 @@ export {
   VtmnCheckbox,
   VtmnRadioButton,
   VtmnToggle,
+  VtmnDivider,
 };
