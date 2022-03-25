@@ -31,6 +31,7 @@ export { default as VtmnTextInput } from './components/forms/VtmnTextInput';
 export { default as VtmnBadge } from './components/indicators/VtmnBadge';
 export { default as VtmnLoader } from './components/indicators/VtmnLoader';
 export { default as VtmnPrice } from './components/indicators/VtmnPrice';
+export { default as VtmnTag } from './components/indicators/VtmnTag';
 
 // Navigation
 
