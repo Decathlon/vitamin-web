@@ -1,15 +1,15 @@
 <script lang="ts">
-import '@vtmn/css-toggle/dist/index-with-vars.css';
+import '@vtmn/css-chip/dist/index-with-vars.css';
 import { computed, defineComponent, PropType, reactive } from 'vue';
 import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
-import { VtmnBadge } from '../../index';
 import { VtmnChipVariant, VtmnChipSize } from './types';
+import { VtmnBadge, VtmnButton } from '../../index';
 import VtmnIcon from '../../../guidelines/iconography/VtmnIcon/VtmnIcon.vue';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnChip',
   inheritAttrs: false,
-  components: { VtmnIcon },
+  components: { VtmnBadge, VtmnButton, VtmnIcon },
   props: {
     modelValue: {
       type: Boolean as PropType<boolean>,
@@ -27,11 +27,11 @@ export default /*#__PURE__*/ defineComponent({
       validator: (val: VtmnChipSize) => ['small', 'medium'].includes(val),
     },
     disabled: {
-      type: Boolean as PropType<Boolean>,
+      type: Boolean as PropType<boolean>,
       default: false,
     },
     selected: {
-      type: Boolean as PropType<Boolean>,
+      type: Boolean as PropType<boolean>,
       default: false,
     },
     icon: {
@@ -39,7 +39,7 @@ export default /*#__PURE__*/ defineComponent({
       default: null,
     },
     badgeValue: {
-      type: Number as PropType<Number>,
+      type: Number,
       default: 0,
     },
   },
@@ -57,6 +57,10 @@ export default /*#__PURE__*/ defineComponent({
     };
 
     return {
+      styleObject: {
+        color: 'inherit',
+        fontSize: 'inherit',
+      },
       classes: computed(() => ({
         'vtmn-chip': true,
         [`vtmn-chip_variant--${props.variant}`]: props.variant,
@@ -71,13 +75,27 @@ export default /*#__PURE__*/ defineComponent({
 </script>
 
 <template>
-  <div :class="classes">
-    <span :v-if="displayLeftIcon" class="{`vtmx-${icon}`}" aria-hidden="true" />
+  <div
+    :class="classes"
+    :tabindex="(variant === 'input' && selected) || disabled ? undefined : 0"
+  >
+    <VtmnIcon
+      :v-if="['input', 'action'].includes(variant) && icon"
+      :value="icon"
+      :style="styleObject"
+      aria-hidden="true"
+    />
     <slot />
-    {#if displayInputButton} <VtmnButton variant="ghost-reversed"
-    iconAlone="close-line" aria-label={$$restProps['aria-label']} {size}
-    on:click={cancelClickHandler} {disabled} /> {/if} {#if displayFilterBadge}
-    <VtmnBadge value="{badgeValue}" />
-    {/if}
+    <VtmnButton
+      :v-if="variant === 'input' && selected"
+      :variant="'ghost-reversed'"
+      :iconAlone="'close-line'"
+      :size="size"
+      :disabled="disabled"
+    />
+    <VtmnBadge
+      :v-if="variant === 'filter' && badgeValue > 0"
+      :value="badgeValue"
+    />
   </div>
 </template>

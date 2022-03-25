@@ -16,7 +16,7 @@ const Template = (args) => ({
   setup() {
     return { args };
   },
-  template: `<VtmnChip v-bind="args"/>`,
+  template: `<VtmnChip v-bind="args">Chip</VtmnChip>`,
 });
 
 export const Overview = Template.bind({});
