@@ -16,7 +16,7 @@ const Template = (args) => ({
   setup() {
     return { args };
   },
-  template: `<div style="width: 400px;"><VtmnDivider v-bind="args">Label</VtmnDivider></div>`,
+  template: `<div style="width: 400px; height: 250px;"><VtmnDivider v-bind="args">Label</VtmnDivider></div>`,
 });
 
 export const Overview = Template.bind({});
