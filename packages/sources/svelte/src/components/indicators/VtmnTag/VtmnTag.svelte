@@ -9,6 +9,12 @@
   export let variant = VTMN_TAG_VARIANT.ACCENT;
 
   /**
+   * The icon to display on the left side of the chip.
+   * Only for 'input' variant
+   */
+  export let icon = undefined;
+
+  /**
    * The href that makes the tag interactive.
    * @type {string}
    */
@@ -28,9 +34,19 @@
 </script>
 
 {#if href}
-  <a {href} class={componentClass} {...$$restProps}><slot /></a>
+  <a {href} class={componentClass} {...$$restProps}>
+    {#if icon}
+      <span class={`vtmx-${icon}`} aria-hidden="true" />
+    {/if}
+    <slot /></a
+  >
 {:else}
-  <span class={componentClass} {...$$restProps}><slot /></span>
+  <span class={componentClass} {...$$restProps}>
+    {#if icon}
+      <span class={`vtmx-${icon}`} aria-hidden="true" />
+    {/if}
+    <slot /></span
+  >
 {/if}
 
 <style lang="css">
