@@ -1,8 +1,8 @@
 import { App as Application } from 'vue';
-import VtmnToggle from './VtmnToggle.vue';
+import VtmnChip from './VtmnChip.vue';
 
-VtmnToggle.install = (Vue: Application) => {
-  Vue.component(VtmnToggle.name, VtmnToggle);
+VtmnChip.install = (Vue: Application) => {
+  Vue.component(VtmnChip.name, VtmnChip);
 };
 
-export default VtmnToggle;
+export default VtmnChip;
