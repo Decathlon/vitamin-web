@@ -1,5 +1,5 @@
 <script lang="ts">
-import '@vtmn/css-link/dist/index-with-vars.css';
+import '@vtmn/css-loader/dist/index-with-vars.css';
 import { reactive, computed, defineComponent, PropType } from 'vue';
 import { VtmnLoaderSize } from './types';
 
