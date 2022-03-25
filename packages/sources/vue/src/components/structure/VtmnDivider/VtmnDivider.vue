@@ -1,5 +1,5 @@
 <script lang="ts">
-import '@vtmn/css-price/dist/index-with-vars.css';
+import '@vtmn/css-divider/dist/index-with-vars.css';
 import { reactive, computed, defineComponent, PropType } from 'vue';
 import { VtmnDividerOrientation, VtmnDividerTextPosition } from './types';
 
