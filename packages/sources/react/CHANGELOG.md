@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.24.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.24.1...@vtmn/react@0.24.2) (2022-03-25)
+
+
+### Bug Fixes
+
+* **@vtmn/react:** remove utils usage everywhere ([#1075](https://github.com/Decathlon/vitamin-web/issues/1075)) ([79f88b1](https://github.com/Decathlon/vitamin-web/commit/79f88b17c125744f36ec5280c245a745c4d1dacd))
+
+
+
+
+
 ## [0.24.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.24.0...@vtmn/react@0.24.1) (2022-03-25)
 
 
