@@ -1,5 +1,6 @@
 <script>
   import { cn } from '../../../utils/classnames';
+  import VtmnDivider from '../../structure/VtmnDivider/VtmnDivider.svelte';
   import { VTMN_TABS_ALIGN, VTMN_TABS_SIZE } from './enums';
 
   /**
@@ -28,11 +29,11 @@
   );
 </script>
 
-<nav aria-label="Tabs list" class={componentClass}>
-  <ul {...$$restProps}>
+<nav class={componentClass} {...$$restProps}>
+  <ul>
     <slot />
   </ul>
-  <div class="vtmn-divider" role="separator" />
+  <VtmnDivider />
 </nav>
 
 <style lang="css">

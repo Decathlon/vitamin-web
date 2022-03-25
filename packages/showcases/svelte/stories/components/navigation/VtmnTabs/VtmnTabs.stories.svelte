@@ -1,6 +1,7 @@
 <script>
+  import { action } from '@storybook/addon-actions';
   import { Meta, Story, Template } from '@storybook/addon-svelte-csf';
-  import { VtmnTabs, VtmnTabsItem, VtmnBadge } from '@vtmn/svelte';
+  import { VtmnTabs, VtmnTabsItem } from '@vtmn/svelte';
   import {
     parameters,
     argTypes,
@@ -23,7 +24,7 @@
   <div class="block">
     <VtmnTabs {...args}>
       {#each tabItems() as { tabText }, index}
-        <VtmnTabsItem {index}>
+        <VtmnTabsItem on:click={() => action('click')(index.toString())}>
           {tabText}
         </VtmnTabsItem>
       {/each}
@@ -35,8 +36,10 @@
   <div class="block">
     <VtmnTabs {...args}>
       {#each tabItems() as { tabText }, index}
-        <VtmnTabsItem {index}>
-          <span aria-hidden="true" class="vtmx-heart-line" />
+        <VtmnTabsItem
+          on:click={() => action('click')(index.toString())}
+          icon="heart-line"
+        >
           {tabText}
         </VtmnTabsItem>
       {/each}
@@ -48,10 +51,12 @@
   <div class="block">
     <VtmnTabs {...args}>
       {#each tabItems() as { tabText }, index}
-        <VtmnTabsItem {index}>
-          <span aria-hidden="true" class="vtmx-heart-line" />
+        <VtmnTabsItem
+          on:click={() => action('click')(index.toString())}
+          icon="heart-line"
+          badge={6}
+        >
           {tabText}
-          <VtmnBadge value={6} />
         </VtmnTabsItem>
       {/each}
     </VtmnTabs>
@@ -61,29 +66,36 @@
 <Template let:args>
   <div class="block">
     <VtmnTabs {...args}>
-      <VtmnTabsItem>
-        <span aria-hidden="true" class="vtmx-heart-line" />
+      <VtmnTabsItem
+        on:click={() => action('click')('1')}
+        icon="calendar-date-fill"
+      >
         Tab Name 1
       </VtmnTabsItem>
-      <VtmnTabsItem>
+      <VtmnTabsItem on:click={() => action('click')('2')} badge={6}>
         Tab Name 2
-        <VtmnBadge value={6} />
       </VtmnTabsItem>
-      <VtmnTabsItem>Tab Name 3</VtmnTabsItem>
-      <VtmnTabsItem>
-        <span aria-hidden="true" class="vtmx-heart-line" />
-        Tab Name 4
-        <VtmnBadge value={99} />
-      </VtmnTabsItem>
-      <VtmnTabsItem>
-        <span aria-hidden="true" class="vtmx-heart-line" />
+      <VtmnTabsItem on:click={() => action('click')('3')}
+        >Tab Name 3</VtmnTabsItem
+      >
+      <VtmnTabsItem
+        on:click={() => action('click')('4')}
+        icon="checkbox-circle-line"
+        badge={99}>Tab Name 4</VtmnTabsItem
+      >
+      <VtmnTabsItem
+        on:click={() => action('click')('5')}
+        icon="close-circle-line"
+        badge={99}
+      >
         Tab Name 5
-        <VtmnBadge value={99} />
       </VtmnTabsItem>
-      <VtmnTabsItem>
-        <span aria-hidden="true" class="vtmx-heart-line" />
+      <VtmnTabsItem
+        on:click={() => action('click')('6')}
+        icon="error-warning-line"
+        badge={99}
+      >
         Tab Name 6
-        <VtmnBadge value={99} />
       </VtmnTabsItem>
     </VtmnTabs>
   </div>

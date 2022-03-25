@@ -1,25 +1,29 @@
 <script>
-  /** @restProps */
-
-  // const SLOTS = $$props.$$slots;
-
-  /**
-   * Delete slot div from de DOM if slot doesn't exist.
-   *
-   * @param {'text'} slotName
-   * @returns {boolean} slotExists
-   */
-  /* const checkSlotExists = (slotName) => {
-    return SLOTS && SLOTS[slotName] && SLOTS[slotName].length;
-  }; */
+  import VtmnBadge from './../../indicators/VtmnBadge/VtmnBadge.svelte';
+  import VtmnIcon from './../../../guidelines/iconography/VtmnIcon/VtmnIcon.svelte';
+  export let href = '#';
+  export let badge = undefined;
+  export let icon = undefined;
 </script>
 
 <li>
-  <!-- {#if checkSlotExists('text')} -->
-  <!-- svelte-ignore a11y-invalid-attribute -->
-  <a href="">
-    <!-- <slot name="text" /> -->
+  <a
+    {...$$restProps}
+    {href}
+    on:click|preventDefault
+    on:mouseover
+    on:mouseenter
+    on:mouseout
+    on:focus
+    on:blur
+    on:keydown
+  >
+    {#if icon}
+      <VtmnIcon value={icon} />
+    {/if}
     <slot />
+    {#if badge}
+      <VtmnBadge value={badge} />
+    {/if}
   </a>
-  <!-- {/if} -->
 </li>
