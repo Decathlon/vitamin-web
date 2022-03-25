@@ -3,7 +3,6 @@ import '@vtmn/css-text-input/dist/index-with-vars.css';
 import clsx from 'clsx';
 import { VtmnIcon } from '../../../guidelines/iconography/VtmnIcon';
 import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
-import { objectValuesToString } from '../../../utils/object';
 
 type VtmnTextInputAdditionalProps = {
   /**
@@ -67,16 +66,9 @@ type VtmnTextInputAdditionalProps = {
   onIconClick?: React.MouseEventHandler;
 };
 
-type VtmnTextInputMultiline = VtmnTextInputAdditionalProps & {
-  multiline: true;
-} & React.ComponentPropsWithoutRef<'textarea'>;
-type VtmnTextInputSingleLine = VtmnTextInputAdditionalProps & {
-  multiline?: false;
-} & React.ComponentPropsWithoutRef<'input'>;
-
-export type VtmnTextInputProps =
-  | VtmnTextInputMultiline
-  | VtmnTextInputSingleLine;
+export type VtmnTextInputProps = React.ComponentPropsWithoutRef<'textarea'> &
+  React.ComponentPropsWithoutRef<'input'> &
+  VtmnTextInputAdditionalProps;
 
 export const VtmnTextInput = ({
   className,
@@ -91,6 +83,7 @@ export const VtmnTextInput = ({
   onIconClick,
   ...props
 }: VtmnTextInputProps) => {
+  const { multiline, ...rest } = props;
   return (
     <>
       {labelText && (
@@ -98,7 +91,7 @@ export const VtmnTextInput = ({
           {labelText}
         </label>
       )}
-      {props.multiline ? (
+      {multiline ? (
         <textarea
           className={clsx('vtmn-text-input', className, {
             'vtmn-text-input--error': error,
@@ -111,7 +104,7 @@ export const VtmnTextInput = ({
           aria-describedby={
             (helperText && `${identifier}-helper-text`) || undefined
           }
-          {...objectValuesToString(props)}
+          {...rest}
         />
       ) : (
         <div className="vtmn-text-input_container">
@@ -130,7 +123,7 @@ export const VtmnTextInput = ({
             aria-describedby={
               (helperText && `${identifier}-helper-text`) || undefined
             }
-            {...objectValuesToString(props)}
+            {...rest}
           />
           {icon && <VtmnIcon value={icon} size={20} onClick={onIconClick} />}
         </div>
