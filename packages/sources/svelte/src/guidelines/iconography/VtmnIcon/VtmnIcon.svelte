@@ -18,7 +18,7 @@
    */
   export let variant = VTMN_ICON_VARIANT.DEFAULT;
 
-  let className;
+  let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */

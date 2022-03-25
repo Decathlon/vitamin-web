@@ -1,5 +1,5 @@
 import { render } from '@testing-library/svelte';
-import VtmnNavbar from './VtmnNavbar.svelte';
+import VtmnNavbar from '../VtmnNavbar.svelte';
 
 describe('<VtmnNavbar />', () => {
   test('Renders correctly', () => {
