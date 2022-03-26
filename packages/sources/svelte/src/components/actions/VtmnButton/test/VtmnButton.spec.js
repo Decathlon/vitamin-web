@@ -72,4 +72,8 @@ describe('VtmnButton', () => {
     await fireEvent.click(getBtn(container));
     expect(handleClick).toHaveBeenCalledTimes(1);
   });
+  test('Should disable the button', () => {
+    const { container } = render(VtmnButton, { disabled: true });
+    expect(getBtn(container)).toHaveAttribute('disabled');
+  });
 });
