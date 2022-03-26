@@ -1,4 +1,3 @@
-/** @enum */
 export const VTMN_POPOVER_POSITION = {
   TOP_LEFT: 'top-left',
   TOP: 'top',
