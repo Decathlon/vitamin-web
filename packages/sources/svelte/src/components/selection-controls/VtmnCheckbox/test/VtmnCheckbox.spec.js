@@ -44,4 +44,11 @@ describe('VtmnCheckbox', () => {
     });
     expect(getCheckbox(container)).toHaveAttribute('disabled');
   });
+  test('Should check the input if checked is true', () => {
+    const { container } = render(VtmnCheckbox, {
+      id: 'test-checkbox',
+      checked: true,
+    });
+    expect(getCheckbox(container).checked).toBeTruthy();
+  });
 });

@@ -5,25 +5,29 @@
   /**
    * ID of the toggle and associated label
    * @type {string}
+   * @requires
    */
   export let id;
 
   /**
-   * Define if the toggle is checked or not
+   * @type {boolean} Define if the toggle is checked or not
+   * @default false
    */
   export let checked = false;
 
   /**
-   * The disabled state of the toggle
+   * @type {boolean} The disabled state of the toggle
+   * @default false
    */
-  export let disabled;
+  export let disabled = false;
 
   /**
-   * Size of the component
+   * @type {'small'|'medium'} Size of the component
+   * @default medium
    */
   export let size = VTMN_TOGGLE_SIZE.MEDIUM;
 
-  let className;
+  let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */
@@ -34,7 +38,7 @@
 
 <div class={componentClass}>
   <div class="vtmn-toggle_switch">
-    <input type="checkbox" {id} {disabled} {checked} />
+    <input type="checkbox" {id} {disabled} bind:checked />
     <span aria-hidden="true" />
   </div>
   <label for={id}>
