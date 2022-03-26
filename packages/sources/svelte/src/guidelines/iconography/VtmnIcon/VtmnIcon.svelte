@@ -53,7 +53,7 @@
   });
 </script>
 
-<span class={componentClass} style={componentStyle} />
+<span class={componentClass} style={componentStyle} {...$$restProps} />
 
 <style>
   @import '@vtmn/icons/dist/vitamix/font/vitamix.css';
