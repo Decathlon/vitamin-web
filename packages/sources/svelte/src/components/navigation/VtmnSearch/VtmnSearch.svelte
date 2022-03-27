@@ -30,13 +30,13 @@
    * The value of the input
    * @type {string}
    */
-  export let value = '';
+  export let value;
 
   /**
    * Custom classes to apply to the component.
    * @type {string}
    */
-  export let className = '';
+  export let className = undefined;
 
   const dispatch = createEventDispatcher();
 

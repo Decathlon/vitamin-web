@@ -38,7 +38,7 @@
    */
   export let iconAlone = undefined;
 
-  let className = '';
+  let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */

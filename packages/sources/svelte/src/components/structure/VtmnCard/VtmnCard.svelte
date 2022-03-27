@@ -5,7 +5,7 @@
   /**
    * @type {string} title of the card
    */
-  export let title = '';
+  export let title = undefined;
 
   /**
    * @type {'top-image' | 'side-image' | 'full-image' } variant of the card
@@ -24,7 +24,7 @@
    */
   export let contentOpaque = false;
 
-  let className = '';
+  let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */

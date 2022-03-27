@@ -38,7 +38,7 @@
    */
   export let badgeValue = 0;
 
-  let className = '';
+  let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */

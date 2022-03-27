@@ -26,7 +26,7 @@
   /**
    * @type {string} error text displayed under the input
    */
-  export let error = '';
+  export let error = undefined;
 
   /**
    * @type {number} minimum value of the input
@@ -44,7 +44,7 @@
    */
   export let step = 1;
 
-  let className = '';
+  let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */
