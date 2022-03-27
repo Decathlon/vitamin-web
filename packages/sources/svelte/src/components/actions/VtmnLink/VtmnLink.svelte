@@ -14,7 +14,7 @@
    * @type {string}
    * @requires
    */
-  export let target;
+  export let target = undefined;
 
   /**
    * The size of the link.

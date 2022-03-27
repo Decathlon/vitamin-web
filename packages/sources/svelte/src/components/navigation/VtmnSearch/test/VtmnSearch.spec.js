@@ -3,14 +3,16 @@ import VtmnSearch from '../VtmnSearch.svelte';
 import { VTMN_SEARCH_VARIANT, VTMN_SEARCH_SIZE } from '../enums';
 
 describe('<VtmnSearch />', () => {
+  const props = { value: 'input value unit test' };
   test('Renders correctly', () => {
-    const { container } = render(VtmnSearch);
+    const { container } = render(VtmnSearch, { ...props });
 
     expect(container).toBeInTheDocument();
   });
 
   test('Renders correctly persistent variant', () => {
     const { container } = render(VtmnSearch, {
+      ...props,
       variant: VTMN_SEARCH_VARIANT.PERSISTENT,
     });
 
@@ -23,6 +25,7 @@ describe('<VtmnSearch />', () => {
 
   test('Renders correctly on-content variant', () => {
     const { container } = render(VtmnSearch, {
+      ...props,
       variant: VTMN_SEARCH_VARIANT.ON_CONTENT,
     });
 
@@ -35,6 +38,7 @@ describe('<VtmnSearch />', () => {
 
   test('Renders correctly small size variant', () => {
     const { container } = render(VtmnSearch, {
+      ...props,
       size: VTMN_SEARCH_SIZE.SMALL,
     });
 
@@ -47,6 +51,7 @@ describe('<VtmnSearch />', () => {
 
   test('Renders correctly disabled state', () => {
     const { container } = render(VtmnSearch, {
+      ...props,
       disabled: true,
     });
 
@@ -55,6 +60,7 @@ describe('<VtmnSearch />', () => {
 
   test('Can add custom css classes', () => {
     const { container } = render(VtmnSearch, {
+      ...props,
       className: 'test-class',
     });
 
@@ -63,6 +69,7 @@ describe('<VtmnSearch />', () => {
 
   test('Can reset input value', async () => {
     const { container, getAllByLabelText } = render(VtmnSearch, {
+      ...props,
       value: 'test',
     });
     const closeButton = getAllByLabelText('close')[0];
@@ -75,7 +82,7 @@ describe('<VtmnSearch />', () => {
 
   test('Search event is dispatched', async () => {
     const handleClick = jest.fn();
-    const { component, getAllByLabelText } = render(VtmnSearch);
+    const { component, getAllByLabelText } = render(VtmnSearch, { ...props });
 
     component.$on('search', handleClick);
 
@@ -84,7 +91,7 @@ describe('<VtmnSearch />', () => {
   });
 
   test('Can have custom props', async () => {
-    const { container } = render(VtmnSearch, { alt: 'test' });
+    const { container } = render(VtmnSearch, { ...props, alt: 'test' });
 
     expect(container.getElementsByTagName('input')[0].alt).toBe('test');
   });

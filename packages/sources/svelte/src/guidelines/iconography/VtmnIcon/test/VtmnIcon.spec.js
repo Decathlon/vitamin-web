@@ -14,7 +14,7 @@ describe('VtmnIcon', () => {
     expect(icon).toHaveClass('vtmn-icon-size');
     expect(icon.style.getPropertyValue('--vtmn-icon-size')).toEqual('24px');
     expect(icon.style.getPropertyValue('--vtmn-icon-semantic-color')).toEqual(
-      'var(--vtmn-semantic-color_content-primary)',
+      '',
     );
   });
   test('Should change the variant', () => {
