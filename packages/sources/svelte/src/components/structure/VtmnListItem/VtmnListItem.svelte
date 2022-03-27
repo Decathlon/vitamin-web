@@ -1,4 +1,7 @@
 <script>
+  import { VTMN_LISTITEM_SIZE } from './enums';
+  import { cn } from '../../../utils/classnames';
+
   /** @restProps */
 
   const SLOTS = $$props.$$slots;
@@ -9,7 +12,7 @@
    * @type {'small' | 'medium'} [medium]
    * @defaultValue 'medium'
    */
-  export let size = 'medium';
+  export let size = VTMN_LISTITEM_SIZE.MEDIUM;
 
   /**
    * Has divider.
@@ -34,6 +37,18 @@
    */
   export let disabled = false;
 
+  let className = undefined;
+  /**
+   * @type {string} Custom classes to apply to the component.
+   */
+  export { className as class };
+
+  $: componentClass = cn(
+    `vtmn-list_item-size--${size}`,
+    !divider && 'vtmn-list_item--without-divider',
+    className,
+  );
+
   /**
    * Delete slot div from de DOM if slot doesn't exist.
    *
@@ -47,8 +62,7 @@
 
 <li
   on:click
-  class={`vtmn-list_item-size--${size}`}
-  class:vtmn-list_item--without-divider={!divider}
+  class={componentClass}
   role="option"
   tabindex={index}
   aria-disabled={disabled}
