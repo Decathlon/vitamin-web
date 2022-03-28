@@ -7,12 +7,12 @@ import { VtmnTagVariant } from './types';
 type VtmnTagAdditionalProps = {
   /**
    * The variant of the tag.
-   * @defaultValue 'default'
+   * @defaultValue 'accent'
    */
   variant?: VtmnTagVariant;
 
   /**
-   * The icon to display on the left side of the tag.
+   * The icon to display at the start  of the tag.
    * Only for 'input' variant
    */
   icon?: VitamixId;
@@ -29,7 +29,7 @@ export type VtmnTagProps = React.ComponentPropsWithoutRef<'span'> &
   VtmnTagAdditionalProps;
 
 export const VtmnTag = ({
-  variant = 'default',
+  variant = 'accent',
   icon,
   href,
   className,

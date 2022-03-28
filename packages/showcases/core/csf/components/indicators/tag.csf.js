@@ -18,7 +18,7 @@ export const argTypes = {
       type: {
         summary: 'string',
       },
-      defaultValue: { summary: 'default' },
+      defaultValue: { summary: 'accent' },
     },
     defaultValue: 'accent',
     control: {
