@@ -17,6 +17,8 @@ export { default as VtmnTag } from './indicators/VtmnTag/VtmnTag.svelte';
 // Navigation
 export { default as VtmnSearch } from './navigation/VtmnSearch/VtmnSearch.svelte';
 export { default as VtmnNavbar } from './navigation/VtmnNavbar/VtmnNavbar.svelte';
+export { default as VtmnTabs } from './navigation/VtmnTabs/VtmnTabs.svelte';
+export { default as VtmnTabsItem } from './navigation/VtmnTabsItem/VtmnTabsItem.svelte';
 
 // Overlays
 export { default as VtmnAlert } from './overlays/VtmnAlert/VtmnAlert.svelte';
