@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.26.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.25.1...@vtmn/react@0.26.0) (2022-03-28)
+
+
+### Features
+
+* **@vtmn/react:** add `VtmnTag` component ([#1080](https://github.com/Decathlon/vitamin-web/issues/1080)) ([6c6c072](https://github.com/Decathlon/vitamin-web/commit/6c6c072fb4570c96bfcc5e1f7ce5257b2e70e92e))
+
+
+
+
+
 ## [0.25.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.25.0...@vtmn/react@0.25.1) (2022-03-28)
 
 **Note:** Version bump only for package @vtmn/react
