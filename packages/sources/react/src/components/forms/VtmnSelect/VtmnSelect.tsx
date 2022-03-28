@@ -5,7 +5,6 @@ import '@vtmn/css-select/dist/index-with-vars.css';
 export interface VtmnSelectProps extends React.ComponentPropsWithRef<'select'> {
   error?: boolean;
   errorText?: string;
-  helperText?: string; // this props is not used.
   id: string;
   labelText?: string;
   options: React.ComponentPropsWithoutRef<'option'>[];
@@ -24,7 +23,6 @@ export const VtmnSelect = ({
 }: VtmnSelectProps) => {
   const errorTextId = `error-text-${id}`;
   const hasErrorText = error && errorText;
-  const { helperText, ...rest } = props;
 
   return (
     <div className="vtmn-select_container">
@@ -35,7 +33,7 @@ export const VtmnSelect = ({
           'vtmn-select--error': error,
         })}
         aria-describedby={hasErrorText ? errorTextId : undefined}
-        {...rest}
+        {...props}
       >
         {options.map((option) => option)}
       </select>
