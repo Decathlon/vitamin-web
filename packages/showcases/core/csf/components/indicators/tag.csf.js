@@ -1,3 +1,5 @@
+import vitamixIconsList from '@vtmn/icons/dist/vitamix/font/vitamix.json';
+
 export const parameters = {
   actions: {
     handles: ['mouseenter', 'focusin', 'focusout'],
@@ -47,5 +49,14 @@ export const argTypes = {
     },
     defaultValue: '#',
     control: { type: 'text' },
+  },
+  icon: {
+    type: { name: 'string', required: false },
+    description: 'The start icon of the tag.',
+    defaultValue: 'leaf-fill',
+    control: {
+      type: 'select',
+      options: ['', ...Object.keys(vitamixIconsList)],
+    },
   },
 };

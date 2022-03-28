@@ -16,9 +16,9 @@
   /**
    * The variant of the icon.
    */
-  export let variant = VTMN_ICON_VARIANT.DEFAULT;
+  export let variant = undefined;
 
-  let className;
+  let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */
@@ -39,21 +39,28 @@
       case VTMN_ICON_VARIANT.NEGATIVE:
         return 'content-negative';
       case VTMN_ICON_VARIANT.DEFAULT:
-      default:
         return 'content-primary';
+      default:
+        return undefined;
     }
   };
 
+  let componentStyle;
   $: componentClass = cn(`vtmx-${value}`, 'vtmn-icon-size', className);
-  $: componentStyle = objectToStyle({
-    '--vtmn-icon-semantic-color': `var(--vtmn-semantic-color_${retrieveSemanticColor(
-      variant,
-    )})`,
-    '--vtmn-icon-size': `${size}px`,
-  });
+  $: {
+    const style = {
+      '--vtmn-icon-size': `${size}px`,
+    };
+    if (variant) {
+      style[
+        '--vtmn-icon-semantic-color'
+      ] = `var(--vtmn-semantic-color_${retrieveSemanticColor(variant)})`;
+    }
+    componentStyle = objectToStyle(style);
+  }
 </script>
 
-<span class={componentClass} style={componentStyle} />
+<span class={componentClass} style={componentStyle} {...$$restProps} />
 
 <style>
   @import '@vtmn/icons/dist/vitamix/font/vitamix.css';

@@ -43,6 +43,10 @@
   color: var(--vtmn-semantic-color_content-primary);
 }
 
+.vtmn-tabs a:active {
+  color: var(--vtmn-semantic-color_content-action);
+}
+
 .vtmn-tabs a:focus {
   color: var(--vtmn-semantic-color_content-active);
   border-bottom: rem(2px) solid var(--vtmn-semantic-color_content-active);
@@ -66,6 +70,7 @@
 .vtmn-tabs_size--medium span[class^='vtmx-'] {
   font-size: var(--vtmn-typo_title-5-font-size);
   margin-inline-end: var(--vtmn-spacing_2);
+  color: inherit;
 }
 
 /* ALIGN */

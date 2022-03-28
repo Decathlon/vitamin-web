@@ -1,7 +1,10 @@
 <script>
   import { cn } from '../../../utils/classnames';
 
-  import { VTMN_DIVIDER_ORIENTATION, VTMN_DIVIDER_POSITION } from './enums';
+  import {
+    VTMN_DIVIDER_ORIENTATION,
+    VTMN_DIVIDER_TEXT_POSITION,
+  } from './enums';
 
   /**
    * @type {string} Orientation of the divider
@@ -11,9 +14,9 @@
   /**
    * @type {string} Position of the text
    */
-  export let textPosition = VTMN_DIVIDER_POSITION.START;
+  export let textPosition = VTMN_DIVIDER_TEXT_POSITION.START;
 
-  let className;
+  let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */
@@ -22,12 +25,17 @@
   $: componentClass = cn(
     'vtmn-divider',
     `vtmn-divider_orientation--${orientation}`,
-    textPosition && `vtmn-divider_text-position--${textPosition}`,
+    `vtmn-divider_text-position--${textPosition}`,
     className,
   );
 </script>
 
-<div class={componentClass} role="separator" aria-orientation={orientation}>
+<div
+  class={componentClass}
+  role="separator"
+  aria-orientation={orientation}
+  {...$$restProps}
+>
   <slot />
 </div>
 

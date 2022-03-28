@@ -1,7 +1,6 @@
 import * as React from 'react';
 import '@vtmn/css-price/dist/index-with-vars.css';
 import { VtmnPriceVariant, VtmnPriceSize } from './types';
-import { objectValuesToString } from '../../../utils/object';
 
 export interface VtmnPriceProps extends React.ComponentPropsWithoutRef<'span'> {
   /**
@@ -34,7 +33,7 @@ export const VtmnPrice = React.forwardRef<HTMLButtonElement, VtmnPriceProps>(
         className={`vtmn-price vtmn-price_variant--${variant} vtmn-price_size--${size} ${
           className ? className : ''
         }`}
-        {...objectValuesToString(props)}
+        {...props}
       >
         {children}
       </span>

@@ -16,7 +16,7 @@
    */
   export let variant = VTMN_PRICE_VARIANT.DEFAULT;
 
-  let className;
+  let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */

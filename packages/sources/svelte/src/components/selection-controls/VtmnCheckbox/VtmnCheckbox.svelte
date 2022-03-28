@@ -19,7 +19,7 @@
    */
   export let disabled = false;
 
-  let className;
+  let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */
@@ -32,7 +32,7 @@
   class={componentClass}
   type="checkbox"
   {id}
-  {checked}
+  bind:checked
   {disabled}
   {...$$restProps}
 />

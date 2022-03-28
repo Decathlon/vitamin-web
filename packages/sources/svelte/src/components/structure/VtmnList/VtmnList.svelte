@@ -1,8 +1,16 @@
 <script>
-  /** @restProps */
+  import { cn } from '../../../utils/classnames';
+
+  let className = undefined;
+  /**
+   * @type {string} Custom classes to apply to the component.
+   */
+  export { className as class };
+
+  $: componentClass = cn('vtmn-list', className);
 </script>
 
-<ul class="vtmn-list" role="listbox" {...$$restProps}>
+<ul class={componentClass} role="listbox" {...$$restProps}>
   <slot />
 </ul>
 

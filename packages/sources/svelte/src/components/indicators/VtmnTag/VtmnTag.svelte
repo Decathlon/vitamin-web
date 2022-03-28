@@ -1,6 +1,7 @@
 <script>
   import { cn } from '../../../utils/classnames';
   import { VTMN_TAG_VARIANT } from './enums';
+  import { VtmnIcon } from '../../..';
 
   /**
    * The variant of the tag
@@ -9,12 +10,18 @@
   export let variant = VTMN_TAG_VARIANT.ACCENT;
 
   /**
+   * The icon to display on the left side of the chip.
+   * Only for 'input' variant
+   */
+  export let icon = undefined;
+
+  /**
    * The href that makes the tag interactive.
    * @type {string}
    */
-  export let href;
+  export let href = undefined;
 
-  let className = '';
+  let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */
@@ -28,9 +35,19 @@
 </script>
 
 {#if href}
-  <a {href} class={componentClass} {...$$restProps}><slot /></a>
+  <a {href} class={componentClass} {...$$restProps}>
+    {#if icon}
+      <VtmnIcon value={icon} aria-hidden="true" />
+    {/if}
+    <slot />
+  </a>
 {:else}
-  <span class={componentClass} {...$$restProps}><slot /></span>
+  <span class={componentClass} {...$$restProps}>
+    {#if icon}
+      <VtmnIcon value={icon} aria-hidden="true" />
+    {/if}
+    <slot />
+  </span>
 {/if}
 
 <style lang="css">

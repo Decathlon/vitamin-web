@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.63.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.62.3...@vtmn/css@0.63.0) (2022-03-25)
+
+
+### Features
+
+* **@vtmn/vue:** add `VtmnDivider` component ([#1074](https://github.com/Decathlon/vitamin-web/issues/1074)) ([205c7b6](https://github.com/Decathlon/vitamin-web/commit/205c7b6494707be47fb2ddbc83e0f6481ca3b1b0))
+
+
+
+
+
+## [0.62.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.62.2...@vtmn/css@0.62.3) (2022-03-24)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
 ## [0.62.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.62.1...@vtmn/css@0.62.2) (2022-03-24)
 
 
