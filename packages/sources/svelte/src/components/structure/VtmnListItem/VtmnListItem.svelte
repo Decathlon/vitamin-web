@@ -23,13 +23,6 @@
   export let divider = true;
 
   /**
-   * Index of item in list.
-   *
-   * @type {number} item
-   */
-  export let index;
-
-  /**
    * Set disabled state of list item.
    *
    * @type {boolean} [disabled]
@@ -64,7 +57,7 @@
   on:click
   class={componentClass}
   role="option"
-  tabindex={index}
+  tabindex="0"
   aria-disabled={disabled}
   {...$$restProps}
 >

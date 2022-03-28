@@ -17,7 +17,7 @@ Now, you can use `VtmnChip` on your svelte file with
 
 | Props      | Description              | Type    | Required | Available values   | default value |
 |------------|--------------------------|---------|----------|--------------------|---------------|
-| selected   | If the chip are selected | boolean | true     |                    |               |
+| selected   | If the chip is selected | boolean | true     |                    |               |
 | disabled   | Disable the chip         | boolean |          |                    | false         |
 | size       | Size of the chip         | string  |          | 'small' \| 'medium' | medium        |
 
@@ -25,7 +25,7 @@ Now, you can use `VtmnChip` on your svelte file with
 
 | Props      | Description              | Type    | Required | Available values   | default value |
 |------------|--------------------------|---------|----------|--------------------|---------------|
-| selected   | If the chip are selected | boolean | true     |                    |               |
+| selected   | If the chip is selected | boolean | true     |                    |               |
 | disabled   | Disable the chip         | boolean |          |                    | false         |
 | size       | Size of the chip         | string  |          | 'small' \| 'medium' | medium        |
 | icon       | Name of the icon         | string  |          |                    |               |
@@ -34,7 +34,7 @@ Now, you can use `VtmnChip` on your svelte file with
 
 | Props      | Description              | Type    | Required | Available values   | default value |
 |------------|--------------------------|---------|----------|--------------------|---------------|
-| selected   | If the chip are selected | boolean | true     |                    |               |
+| selected   | If the chip is selected | boolean | true     |                    |               |
 | disabled   | Disable the chip         | boolean |          |                    | false         |
 | size       | Size of the chip         | string  |          | 'small' \| 'medium' | medium        |
 | badgeValue | Value of the badge       | number  |          |                    |               |

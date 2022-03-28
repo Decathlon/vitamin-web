@@ -4,10 +4,10 @@
 </script>
 
 <VtmnList {...$$restProps}>
-  <VtmnListItem index="1">
+  <VtmnListItem>
     <svelte:fragment slot="text">Item 1</svelte:fragment>
   </VtmnListItem>
-  <VtmnListItem index="2">
+  <VtmnListItem>
     <svelte:fragment slot="text">Item 2</svelte:fragment>
   </VtmnListItem>
 </VtmnList>

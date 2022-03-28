@@ -47,6 +47,6 @@ describe('VtmnPrice', () => {
   });
   test('Should display the slot', () => {
     const { getByText } = render(VtmnPrice);
-    expect(getByText('100€')).toBeVisible();
+    expect(getByText('100 €')).toBeVisible();
   });
 });
