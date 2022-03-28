@@ -10,7 +10,7 @@
   export let variant = VTMN_TAG_VARIANT.ACCENT;
 
   /**
-   * The icon to display on the left side of the tag.
+   * The icon to display at the start side of the tag.
    * Only for 'input' variant
    */
   export let icon = undefined;
