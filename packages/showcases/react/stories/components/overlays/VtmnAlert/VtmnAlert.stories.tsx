@@ -38,3 +38,6 @@ const DemoTemplate: Story = (args) => {
 
 export const Overview = OverviewTemplate.bind({});
 Overview.args = {};
+
+export const Demo = DemoTemplate.bind({});
+Demo.args = {};
