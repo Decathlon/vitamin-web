@@ -5,7 +5,6 @@ import '@vtmn/css-select/dist/index-with-vars.css';
 export interface VtmnSelectProps extends React.ComponentPropsWithRef<'select'> {
   error?: boolean;
   errorText?: string;
-  helperText?: string;
   id: string;
   labelText?: string;
   options: React.ComponentPropsWithoutRef<'option'>[];
