@@ -80,7 +80,7 @@ export default /*#__PURE__*/ defineComponent({
     :tabindex="(variant === 'input' && selected) || disabled ? undefined : 0"
   >
     <VtmnIcon
-      :v-if="['input', 'action'].includes(variant) && icon"
+      :v-if="(variant === 'input' || variant === 'action') && icon"
       :value="icon"
       :style="styleObject"
       aria-hidden="true"
