@@ -29,6 +29,8 @@ export { VtmnPrice } from './components/indicators/VtmnPrice';
 export type { VtmnPriceProps } from './components/indicators/VtmnPrice';
 export { VtmnProgressbar } from './components/indicators/VtmnProgressbar';
 export type { VtmnProgressbarProps } from './components/indicators/VtmnProgressbar';
+export { VtmnTag } from './components/indicators/VtmnTag';
+export type { VtmnTagProps } from './components/indicators/VtmnTag';
 
 // Navigation
 export { VtmnSearch } from './components/navigation/VtmnSearch/VtmnSearch';

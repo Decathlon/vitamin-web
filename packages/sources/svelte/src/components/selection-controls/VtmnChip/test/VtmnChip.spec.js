@@ -1,9 +1,9 @@
 import '@testing-library/jest-dom';
 
 import { fireEvent, render } from '@testing-library/svelte';
-import { VTMN_CHIP_VARIANT, VTMN_CHIP_SIZE } from './enums';
+import { VTMN_CHIP_VARIANT, VTMN_CHIP_SIZE } from '../enums';
 
-import VtmnChip from './VtmnChip.svelte';
+import VtmnChip from '../VtmnChip.svelte';
 
 describe('VtmnChip', () => {
   const getChip = (container) =>

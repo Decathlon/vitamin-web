@@ -13,7 +13,7 @@
    */
   export let variant = VTMN_BADGE_VARIANT.DEFAULT;
 
-  let className;
+  let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */
