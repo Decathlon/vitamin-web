@@ -1,5 +1,5 @@
 <script>
-  import { VtmnBadge, VtmnButton } from '../../index';
+  import { VtmnBadge, VtmnButton, VtmnIcon } from '../../..';
   import { createEventDispatcher } from 'svelte';
   import { VTMN_CHIP_VARIANT, VTMN_CHIP_SIZE } from './enums';
   import { cn } from '../../../utils/classnames';
@@ -38,7 +38,7 @@
    */
   export let badgeValue = 0;
 
-  let className = '';
+  let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */
@@ -81,7 +81,7 @@
   tabindex={disableTableIndex ? undefined : 0}
 >
   {#if displayLeftIcon}
-    <span class={`vtmx-${icon}`} aria-hidden="true" />
+    <VtmnIcon value={icon} aria-hidden="true" />
   {/if}
   <slot />
   {#if displayInputButton}

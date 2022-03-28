@@ -16,7 +16,7 @@
    */
   export let textPosition = VTMN_DIVIDER_TEXT_POSITION.START;
 
-  let className;
+  let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */
@@ -25,12 +25,17 @@
   $: componentClass = cn(
     'vtmn-divider',
     `vtmn-divider_orientation--${orientation}`,
-    textPosition && `vtmn-divider_text-position--${textPosition}`,
+    `vtmn-divider_text-position--${textPosition}`,
     className,
   );
 </script>
 
-<div class={componentClass} role="separator" aria-orientation={orientation}>
+<div
+  class={componentClass}
+  role="separator"
+  aria-orientation={orientation}
+  {...$$restProps}
+>
   <slot />
 </div>
 

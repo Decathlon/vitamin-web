@@ -10,7 +10,7 @@
    */
   export let logoHref = '#';
 
-  let className = '';
+  let className = undefined;
   /**
    * Custom classes to apply to the component.
    *

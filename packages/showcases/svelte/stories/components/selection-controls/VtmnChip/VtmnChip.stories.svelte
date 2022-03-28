@@ -31,7 +31,7 @@
       console.log('on:cancel');
     }}
   >
-    {args.children}
+    Chip
   </VtmnChip>
 </Template>
 

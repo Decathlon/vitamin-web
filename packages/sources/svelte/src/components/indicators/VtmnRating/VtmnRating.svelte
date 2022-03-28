@@ -2,6 +2,7 @@
   import { cn } from '../../../utils/classnames';
   import { isFloat } from '../../../utils/math';
   import { VTMN_RATING_SIZE } from './enum';
+  import { VtmnIcon } from '../../..';
 
   /**
    * @type {string} name used on interactive mode to name the inputs
@@ -38,7 +39,7 @@
    */
   export let rating = 0;
 
-  let className = '';
+  let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */
@@ -95,8 +96,8 @@
   {/if}
   {#if readonly}
     {#each Array(starsCnt) as _, i}
-      <span
-        class={`vtmx-star-${computeRatingFill(i + 1)}`}
+      <VtmnIcon
+        value={`star-${computeRatingFill(i + 1)}`}
         role="presentation"
       />
     {/each}

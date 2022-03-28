@@ -15,11 +15,6 @@
       description: 'Without divider.',
       defaultValue: false,
     },
-    index: {
-      description: 'Index of item in list.',
-      type: { required: true },
-      defaultValue: 0,
-    },
     disabled: {
       description: 'Disable list item.',
       defaultValue: false,
@@ -37,7 +32,7 @@
     <VtmnList>
       <VtmnListItem
         {...args}
-        on:click={() => console.log(`List item ${args.index} clicked !`)}
+        on:click={() => console.log(`List item 1 clicked !`)}
       >
         <span slot="text">Lorem ipsum</span>
         <span slot="subtext">Lorem ipsum dolor sit amet</span>
@@ -53,15 +48,14 @@
     <VtmnList>
       {#each [0, 1, 2] as item}
         <VtmnListItem
-          {...{ ...args, index: item }}
-          on:click={() => console.log(`List item ${args.index} clicked !`)}
+          {...args}
+          on:click={() => console.log(`List item ${item} clicked !`)}
         >
           <VtmnButton
             iconAlone="heart-line"
             variant="ghost"
             slot="start-visual"
-            on:click={() =>
-              console.log(`List item button ${args.index} clicked !`)}
+            on:click={() => console.log(`List item button ${item} clicked !`)}
           />
 
           <span slot="text">Lorem ipsum</span>
@@ -69,8 +63,7 @@
 
           <VtmnButton
             slot="end-action"
-            on:click={() =>
-              console.log(`List item button ${args.index} clicked !`)}
+            on:click={() => console.log(`List item button ${item} clicked !`)}
             >Button</VtmnButton
           >
         </VtmnListItem>
@@ -84,7 +77,7 @@
     <VtmnList>
       <VtmnListItem
         {...args}
-        on:click={() => console.log(`List item ${args.index} clicked !`)}
+        on:click={() => console.log(`List item 1 clicked !`)}
       >
         <img
           slot="start-visual"
@@ -100,8 +93,7 @@
           slot="end-action"
           iconAlone="heart-line"
           variant="ghost"
-          on:click={() =>
-            console.log(`List item button ${args.index} clicked !`)}
+          on:click={() => console.log(`List item button 1 clicked !`)}
         />
       </VtmnListItem>
     </VtmnList>
