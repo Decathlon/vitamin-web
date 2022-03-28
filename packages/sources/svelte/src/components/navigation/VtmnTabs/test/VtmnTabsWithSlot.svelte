@@ -4,5 +4,7 @@
 </script>
 
 <VtmnTabs {...$$restProps}>
-  <VtmnTabsItem icon="checkbox-circle-line" badge={99}>Tab Name</VtmnTabsItem>
+  <VtmnTabsItem icon="checkbox-circle-line" badgeValue={99}
+    >Tab Name</VtmnTabsItem
+  >
 </VtmnTabs>

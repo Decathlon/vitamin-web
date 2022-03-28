@@ -54,7 +54,7 @@ describe('VtmnTabsItem', () => {
   });
 
   test('Should be have a badge', () => {
-    const { container } = render(VtmnTabsItem, { badge: 6 });
+    const { container } = render(VtmnTabsItem, { badgeValue: 6 });
     expect(container.getElementsByClassName('vtmn-badge')[0]).toBeVisible();
   });
 });
