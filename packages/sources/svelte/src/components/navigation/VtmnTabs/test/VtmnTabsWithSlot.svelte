@@ -1,6 +1,6 @@
 <script>
   import VtmnTabs from '../VtmnTabs.svelte';
-  import VtmnTabsItem from '../VtmnTabsItem.svelte';
+  import VtmnTabsItem from '../../VtmnTabsItem/VtmnTabsItem.svelte';
 </script>
 
 <VtmnTabs {...$$restProps}>
