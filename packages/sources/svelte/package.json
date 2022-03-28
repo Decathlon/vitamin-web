@@ -106,6 +106,7 @@
       "url": "http://www.apache.org/licenses/LICENSE-2.0"
     }
   ],
+  "main": "src/index.js",
   "svelte": "src/index.js",
   "babel": {
     "presets": [
