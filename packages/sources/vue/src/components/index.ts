@@ -6,6 +6,7 @@ import VtmnBadge from './indicators/VtmnBadge';
 import VtmnLoader from './indicators/VtmnLoader';
 import VtmnPrice from './indicators/VtmnPrice';
 import VtmnTag from './indicators/VtmnTag';
+import VtmnSearch from './navigation/VtmnSearch';
 import VtmnCheckbox from './selection-controls/VtmnCheckbox';
 import VtmnRadioButton from './selection-controls/VtmnRadioButton';
 import VtmnToggle from './selection-controls/VtmnToggle';
@@ -19,9 +20,10 @@ export {
   VtmnBadge,
   VtmnLoader,
   VtmnPrice,
+  VtmnTag,
+  VtmnSearch,
   VtmnCheckbox,
   VtmnRadioButton,
-  VtmnTag,
   VtmnToggle,
   VtmnDivider,
 };
