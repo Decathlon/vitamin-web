@@ -8,9 +8,9 @@ export default /*#__PURE__*/ defineComponent({
   name: 'VtmnSearch',
   components: { VtmnButton },
   props: {
-    value: {
-      type: String as PropType<string>,
-      default: undefined,
+    modelValue: {
+      type: [String, Number] as PropType<string | number>,
+      default: '',
     },
     variant: {
       type: String as PropType<VtmnSearchVariant>,
@@ -29,8 +29,12 @@ export default /*#__PURE__*/ defineComponent({
       default: 'medium',
     },
   },
-  setup(props) {
+  emits: ['update:modelValue'],
+  setup(props, { emit }) {
     props = reactive(props);
+    const handleReset = () => {
+      return emit('update:modelValue', '');
+    };
 
     return {
       classes: computed(() => ({
@@ -38,6 +42,7 @@ export default /*#__PURE__*/ defineComponent({
         [`vtmn-search_variant--${props.variant}`]: props.variant,
         [`vtmn-search_size--${props.size}`]: props.size,
       })),
+      handleReset,
     };
   },
 });
@@ -47,9 +52,10 @@ export default /*#__PURE__*/ defineComponent({
   <div :class="classes" role="search">
     <input
       type="search"
-      :value="value"
       :placeholder="placeholder"
       :disabled="disabled"
+      v-model="modelValue"
+      v-bind="$attrs"
     />
 
     <div class="vtmn-search_buttons">
@@ -60,6 +66,8 @@ export default /*#__PURE__*/ defineComponent({
         :size="size"
         aria-label="close"
         :aria-disabled="disabled"
+        @click="handleReset"
+        v-bind="$attrs"
       />
 
       <VtmnButton
@@ -69,6 +77,7 @@ export default /*#__PURE__*/ defineComponent({
         :size="size"
         type="submit"
         aria-label="search"
+        v-bind="$attrs"
       />
     </div>
   </div>
