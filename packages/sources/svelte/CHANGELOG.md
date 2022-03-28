@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.32.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.32.0...@vtmn/svelte@0.32.1) (2022-03-28)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** lint readme file of chip component ([8048ab2](https://github.com/Decathlon/vitamin-web/commit/8048ab2ac3af60ea2affe03355d3ed3743ec15f1))
+
+
+
+
+
 # [0.32.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.31.0...@vtmn/svelte@0.32.0) (2022-03-28)
 
 
