@@ -17,14 +17,14 @@
   /**
    * @type {string} label of the action. If defined, it display an action button.
    */
-  export let actionLabel = '';
+  export let actionLabel = undefined;
 
   /**
    * @type {number} timeout before the component execute the close action.
    */
   export let timeout;
 
-  let className = '';
+  let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */

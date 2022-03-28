@@ -18,7 +18,7 @@
   /**
    * @type {string} Custom classes to apply to the component.
    */
-  let className = '';
+  let className = undefined;
 
   export { className as class };
   $: componentClass = cn(

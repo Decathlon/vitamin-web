@@ -1,5 +1,6 @@
 <script>
   import { cn } from '../../../utils/classnames';
+  import { VtmnIcon } from '../../../guidelines';
 
   /** @restProps { button } */
 
@@ -37,7 +38,7 @@
    */
   export let iconAlone = undefined;
 
-  let className = '';
+  let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */
@@ -56,15 +57,15 @@
 
 <button on:click type="button" class={componentClass} {...$$restProps}>
   {#if !iconAlone && iconLeft}
-    <span class={`vtmx-${iconLeft}`} />
+    <VtmnIcon value={iconLeft} />
   {/if}
   {#if iconAlone}
-    <span class={`vtmx-${iconAlone}`} />
+    <VtmnIcon value={iconAlone} />
   {:else}
     <slot />
   {/if}
   {#if !iconAlone && iconRight}
-    <span class={`vtmx-${iconRight}`} />
+    <VtmnIcon value={iconRight} />
   {/if}
 </button>
 

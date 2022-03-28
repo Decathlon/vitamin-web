@@ -14,7 +14,7 @@
   <div style="width: 700px; display: flex; justify-content: center">
     <VtmnList>
       {#each listItems() as { }, index}
-        <VtmnListItem {index}>
+        <VtmnListItem>
           <span slot="text">Lorem ipsum</span>
           <span slot="subtext">Lorem ipsum dolor sit amet</span>
         </VtmnListItem>
@@ -27,7 +27,7 @@
   <div style="width: 700px; display: flex; justify-content: center">
     <VtmnList>
       {#each listItems() as { buttonText }, index}
-        <VtmnListItem {index}>
+        <VtmnListItem>
           <VtmnButton
             iconAlone="heart-line"
             variant="ghost"
@@ -55,7 +55,7 @@
   <div style="width: 700px; display: flex; justify-content: center">
     <VtmnList>
       {#each listItems() as { }, index}
-        <VtmnListItem {index} size="small">
+        <VtmnListItem size="small">
           <span slot="text">Lorem ipsum</span>
           <span slot="subtext">Lorem ipsum dolor sit amet</span>
         </VtmnListItem>
@@ -68,7 +68,7 @@
   <div style="width: 700px; display: flex; justify-content: center">
     <VtmnList>
       {#each listItems() as { }, index}
-        <VtmnListItem {index} divider={false}>
+        <VtmnListItem divider={false}>
           <span slot="text">Lorem ipsum</span>
           <span slot="subtext">Lorem ipsum dolor sit amet</span>
         </VtmnListItem>
@@ -81,7 +81,7 @@
   <div style="width: 700px; display: flex; justify-content: center">
     <VtmnList>
       {#each listItems() as { }, index}
-        <VtmnListItem {index} disabled>
+        <VtmnListItem disabled>
           <span slot="text">Lorem ipsum</span>
           <span slot="subtext">Lorem ipsum dolor sit amet</span>
         </VtmnListItem>

@@ -1,6 +1,7 @@
 <script>
   import { cn } from '../../../utils/classnames';
   import { VTMN_TAG_VARIANT } from './enums';
+  import { VtmnIcon } from '../../..';
 
   /**
    * The variant of the tag
@@ -18,9 +19,9 @@
    * The href that makes the tag interactive.
    * @type {string}
    */
-  export let href;
+  export let href = undefined;
 
-  let className = '';
+  let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */
@@ -36,17 +37,17 @@
 {#if href}
   <a {href} class={componentClass} {...$$restProps}>
     {#if icon}
-      <span class={`vtmx-${icon}`} aria-hidden="true" />
+      <VtmnIcon value={icon} aria-hidden="true" />
     {/if}
-    <slot /></a
-  >
+    <slot />
+  </a>
 {:else}
   <span class={componentClass} {...$$restProps}>
     {#if icon}
-      <span class={`vtmx-${icon}`} aria-hidden="true" />
+      <VtmnIcon value={icon} aria-hidden="true" />
     {/if}
-    <slot /></span
-  >
+    <slot />
+  </span>
 {/if}
 
 <style lang="css">
