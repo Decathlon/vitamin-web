@@ -16,7 +16,7 @@ export const argTypes = {
     control: { type: 'text' },
   },
 
-  type: {
+  variant: {
     type: { name: 'string', required: true },
     description: 'The alert type',
     defaultValue: 'info',
