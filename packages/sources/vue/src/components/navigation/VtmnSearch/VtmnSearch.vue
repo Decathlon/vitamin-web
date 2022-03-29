@@ -32,7 +32,19 @@ export default /*#__PURE__*/ defineComponent({
   emits: ['update:modelValue'],
   setup(props, { emit }) {
     props = reactive(props);
+
+    const handleChange = (event: Event) => {
+      console.log('Change');
+      if (event && event.target) {
+        return emit(
+          'update:modelValue',
+          (event.target as HTMLInputElement).value,
+        );
+      }
+    };
+
     const handleReset = () => {
+      console.log('Reset');
       return emit('update:modelValue', '');
     };
 
@@ -43,6 +55,7 @@ export default /*#__PURE__*/ defineComponent({
         [`vtmn-search_size--${props.size}`]: props.size,
       })),
       handleReset,
+      handleChange,
     };
   },
 });
@@ -54,8 +67,8 @@ export default /*#__PURE__*/ defineComponent({
       type="search"
       :placeholder="placeholder"
       :disabled="disabled"
-      v-model="modelValue"
       v-bind="$attrs"
+      @input="handleChange"
     />
 
     <div class="vtmn-search_buttons">
@@ -66,7 +79,7 @@ export default /*#__PURE__*/ defineComponent({
         :size="size"
         aria-label="close"
         :aria-disabled="disabled"
-        @click="handleReset"
+        @click.prevent="handleReset"
         v-bind="$attrs"
       />
 
