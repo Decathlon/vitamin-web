@@ -2,7 +2,7 @@
   import { cn } from '../../../utils/classnames';
   import { isFloat } from '../../../utils/math';
   import { VTMN_RATING_SIZE } from './enum';
-  import { VtmnIcon } from '../../..';
+  import VtmnIcon from '../../../guidelines/iconography/VtmnIcon/VtmnIcon.svelte';
 
   /**
    * @type {string} name used on interactive mode to name the inputs

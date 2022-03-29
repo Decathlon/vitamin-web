@@ -1,7 +1,7 @@
 <script>
   import { cn } from '../../../utils/classnames';
   import { VTMN_TAG_VARIANT } from './enums';
-  import { VtmnIcon } from '../../..';
+  import VtmnIcon from '../../../guidelines/iconography/VtmnIcon/VtmnIcon.svelte';
 
   /**
    * The variant of the tag

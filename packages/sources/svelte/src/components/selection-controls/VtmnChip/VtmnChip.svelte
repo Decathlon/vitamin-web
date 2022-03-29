@@ -1,5 +1,7 @@
 <script>
-  import { VtmnBadge, VtmnButton, VtmnIcon } from '../../..';
+  import VtmnBadge from '../../indicators/VtmnBadge/VtmnBadge.svelte';
+  import VtmnButton from '../../actions/VtmnButton/VtmnButton.svelte';
+  import VtmnIcon from '../../../guidelines/iconography/VtmnIcon/VtmnIcon.svelte';
   import { createEventDispatcher } from 'svelte';
   import { VTMN_CHIP_VARIANT, VTMN_CHIP_SIZE } from './enums';
   import { cn } from '../../../utils/classnames';
