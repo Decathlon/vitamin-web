@@ -28,7 +28,7 @@ export interface VtmnAlertProps
 }
 
 export const VtmnAlert = ({
-  variant,
+  variant = 'info',
   title,
   message,
   onClose,

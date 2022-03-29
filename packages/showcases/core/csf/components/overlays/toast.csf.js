@@ -16,7 +16,7 @@ export const argTypes = {
     control: { type: 'text' },
   },
   withCloseButton: {
-    type: { name: 'boolean', required: true },
+    type: { name: 'boolean', required: false },
     description: 'Show close button',
     defaultValue: false,
     control: {
