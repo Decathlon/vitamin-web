@@ -10,8 +10,8 @@ const src = {
       folder: 'actions',
       components: [
         'VtmnButton',
-        'VtmnDropdownItem',
         'VtmnDropdown',
+        'VtmnDropdownItem',
         'VtmnLink',
       ],
     },
