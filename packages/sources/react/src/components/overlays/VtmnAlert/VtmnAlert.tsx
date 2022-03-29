@@ -2,7 +2,6 @@ import * as React from 'react';
 import '@vtmn/css-alert/dist/index-with-vars.css';
 import { VtmnAlertVariant } from './types';
 import clsx from 'clsx';
-import { VtmnButton } from '../../actions/VtmnButton';
 
 export interface VtmnAlertProps
   extends React.ComponentPropsWithoutRef<'dialog'> {

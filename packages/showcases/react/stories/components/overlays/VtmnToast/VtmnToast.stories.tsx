@@ -4,7 +4,8 @@ import {
   argTypes,
   parameters,
 } from '@vtmn/showcase-core/csf/components/overlays/toast.csf';
-import { VtmnToast } from '@vtmn/react/src/components/overlays/VtmnToast/VtmnToast';
+import { VtmnToast } from '@vtmn/react';
+import { VtmnButton } from '@vtmn/react';
 
 export default {
   title: 'Components / Overlays / VtmnToast',
@@ -13,17 +14,7 @@ export default {
   parameters,
 } as Meta;
 
-const OverviewTemplate: Story = (args) => (
-  <VtmnToast
-    content={''}
-    onClose={function (): void {
-      throw new Error('Function not implemented.');
-    }}
-    {...args}
-  />
-);
-
-const DemoTemplate: Story = (args) => {
+const OverviewTemplate: Story = (args) => {
   const [showToast, setshowToast] = useState<boolean>(false);
 
   useEffect(() => {
@@ -36,13 +27,12 @@ const DemoTemplate: Story = (args) => {
   }, [showToast]);
 
   return (
-    showToast && (
-      <VtmnToast content={''} onClose={() => setshowToast(false)} {...args} />
-    )
+    <div>
+      <VtmnButton onClick={() => setshowToast(true)}>Trigger Toast</VtmnButton>
+      {showToast && <VtmnToast onClose={() => setshowToast(false)} {...args} />}
+    </div>
   );
 };
 
 export const Overview = OverviewTemplate.bind({});
-export const Demo = DemoTemplate.bind({});
 Overview.args = {};
-Demo.args = {};
