@@ -1,6 +1,7 @@
 import * as React from 'react';
 import '@vtmn/css-alert/dist/index-with-vars.css';
 import clsx from 'clsx';
+import { VtmnButton } from '../../actions/VtmnButton';
 
 export interface VtmnToastProps
   extends React.ComponentPropsWithoutRef<'dialog'> {
@@ -46,19 +47,13 @@ export const VtmnToast = ({
     >
       <div className="vtmn-toast_content">{content}</div>
       {onClose && withCloseButton && (
-        <button
-          className={clsx(
-            'vtmn-btn',
-            'vtmn-btn_variant--ghost-reversed',
-            'vtmn-btn_size--small',
-            'vtmn-btn--icon-alone',
-            className,
-          )}
+        <VtmnButton
+          size="small"
+          variant="ghost-reversed"
+          iconAlone="close-line"
           aria-label="Close toast"
           onClick={onClose}
-        >
-          <span className="vtmx-close-line" role="presentation"></span>
-        </button>
+        ></VtmnButton>
       )}
     </div>
   );
