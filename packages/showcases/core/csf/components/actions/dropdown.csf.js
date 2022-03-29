@@ -9,7 +9,7 @@ export const parameters = {
 };
 
 export const argTypes = {
-  label: {
+  labelText: {
     type: { name: 'string', required: false },
     description: 'The main label. If not set the label is not displayed.',
     defaultValue: 'Label',

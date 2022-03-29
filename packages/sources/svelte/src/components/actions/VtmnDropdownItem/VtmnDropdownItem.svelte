@@ -7,11 +7,11 @@
   /** @restProps */
 
   /**
-   * Label of the dropdown item
+   * labelText of the dropdown item
    *
-   * @type {string} label
+   * @type {string} labelText
    */
-  export let label;
+  export let labelText;
 
   /**
    * Value of the dropdown item
@@ -67,18 +67,18 @@
 <input
   class={componentClass}
   type="checkbox"
-  name={label}
-  id={label}
+  name={labelText}
+  id={labelText}
   data-testid="dropdown-item"
   {...$$restProps}
 />
 
-<label for={label} on:click={() => onSelectItem(value)}>
+<label for={labelText} on:click={() => onSelectItem(value)}>
   {#if icon}
     <span class={icon} />
   {/if}
 
-  {label}
+  {labelText}
 </label>
 
 {#if divider}

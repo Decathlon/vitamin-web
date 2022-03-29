@@ -8,14 +8,14 @@
   /** @restProps */
 
   /**
-   * The main label. If not set the label is not displayed
+   * The main labelText. If not set the labelText is not displayed
    *
-   * @type {string} [label]
+   * @type {string} [labelText]
    */
-  export let label;
+  export let labelText;
 
   /**
-   * Default dropdown label
+   * Default dropdown labelText
    *
    * @type {string} defaultOption
    */
@@ -68,12 +68,12 @@
   on:click_outside={closeMenu}
   {...$$restProps}
 >
-  {#if label}
-    <label id={label}>{label}</label>
+  {#if labelText}
+    <labelText id={labelText}>{labelText}</labelText>
   {/if}
 
   <details bind:this={details}>
-    <summary aria-labelledby={label}>{defaultOption}</summary>
+    <summary aria-labelTextledby={labelText}>{defaultOption}</summary>
 
     <div class="vtmn-dropdown_items" style={menuStyles}>
       <slot />

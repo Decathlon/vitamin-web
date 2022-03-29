@@ -11,7 +11,7 @@
 </script>
 
 <VtmnDropdown {...$$restProps} on:change={handleChange}>
-  <VtmnDropdownItem label="Option 1" value="Option-1" />
-  <VtmnDropdownItem label="Option 2" value="Option-2" />
-  <VtmnDropdownItem label="Option 3" value="Option-3" />
+  <VtmnDropdownItem labelText="Option 1" value="Option-1" />
+  <VtmnDropdownItem labelText="Option 2" value="Option-2" />
+  <VtmnDropdownItem labelText="Option 3" value="Option-3" />
 </VtmnDropdown>

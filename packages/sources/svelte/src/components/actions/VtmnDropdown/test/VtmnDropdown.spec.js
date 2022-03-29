@@ -2,7 +2,7 @@ import { fireEvent, render } from '@testing-library/svelte';
 import VtmnDropdownWithSlot from './VtmnDropdownWithSlot.svelte';
 
 const props = {
-  label: 'Label',
+  labelText: 'Label',
   defaultOption: 'Default label',
   disabled: false,
   class: 'test-class',

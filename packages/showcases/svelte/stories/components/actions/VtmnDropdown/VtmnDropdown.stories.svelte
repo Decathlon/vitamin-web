@@ -8,7 +8,7 @@
 
   const dropdownItems = () =>
     new Array(3).fill(0).map((_, index) => ({
-      label: `Option Option ${index + 1}`,
+      labelText: `Option ${index + 1}`,
       value: `option-${index + 1}`,
     }));
 
@@ -26,11 +26,11 @@
 <Story name="Overview" let:args>
   <div style="width: 400px; display: flex; justify-content: center">
     <VtmnDropdown
-      {...{ ...args, ...{ defaultOption: dropdownItems()[0].label } }}
+      {...{ ...args, ...{ defaultOption: dropdownItems()[0].labelText } }}
       on:change={testChangeEvent}
     >
-      {#each dropdownItems() as { label, value }}
-        <VtmnDropdownItem {label} {value} />
+      {#each dropdownItems() as { labelText, value }}
+        <VtmnDropdownItem {labelText} {value} />
       {/each}
     </VtmnDropdown>
   </div>
@@ -45,9 +45,9 @@
       }}
       on:change={testChangeEvent}
     >
-      {#each dropdownItems() as { label, value }, index}
+      {#each dropdownItems() as { labelText, value }, index}
         <VtmnDropdownItem
-          {label}
+          {labelText}
           {value}
           divider={index < dropdownItems().length}
         />
@@ -59,9 +59,9 @@
 <Story name="With icons" let:args>
   <div style="width: 400px; display: flex; justify-content: center">
     <VtmnDropdown {...args} on:change={testChangeEvent}>
-      {#each dropdownItems() as { label, value }, index}
+      {#each dropdownItems() as { labelText, value }, index}
         <VtmnDropdownItem
-          {label}
+          {labelText}
           {value}
           position={index}
           icon="vtmx-user-line"
@@ -74,8 +74,8 @@
 <Story name="Disabled" args={{ disabled: true }} let:args>
   <div style="width: 400px; display: flex; justify-content: center">
     <VtmnDropdown {...args} on:change={testChangeEvent}>
-      {#each dropdownItems() as { label, value }, index}
-        <VtmnDropdownItem {label} {value} position={index} />
+      {#each dropdownItems() as { labelText, value }, index}
+        <VtmnDropdownItem {labelText} {value} position={index} />
       {/each}
     </VtmnDropdown>
   </div>
@@ -84,8 +84,8 @@
 <Story name="Fixed height" args={{ menuMaxHeight: 200 }} let:args>
   <div style="width: 400px; display: flex; justify-content: center">
     <VtmnDropdown {...args} on:change={testChangeEvent}>
-      {#each dropdownItems() as { label, value }, index}
-        <VtmnDropdownItem {label} {value} position={index} />
+      {#each dropdownItems() as { labelText, value }, index}
+        <VtmnDropdownItem {labelText} {value} position={index} />
       {/each}
     </VtmnDropdown>
   </div>
