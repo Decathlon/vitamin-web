@@ -10,6 +10,7 @@
   justify-content: center;
   align-items: center;
   min-height: rem(28px);
+  line-height: 1;
   height: rem(28px);
   width: fit-content;
   padding: rem(2px) var(--vtmn-spacing_2);
