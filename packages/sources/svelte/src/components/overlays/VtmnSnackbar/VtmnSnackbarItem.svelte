@@ -1,6 +1,6 @@
 <script>
   import { cn } from '../../../utils/classnames';
-  import { VtmnButton } from '../../..';
+  import VtmnButton from '../../actions/VtmnButton/VtmnButton.svelte';
   import { createEventDispatcher, onDestroy, onMount } from 'svelte';
 
   /**

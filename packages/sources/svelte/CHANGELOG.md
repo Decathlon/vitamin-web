@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.34.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.34.1...@vtmn/svelte@0.34.2) (2022-03-29)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+## [0.34.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.34.0...@vtmn/svelte@0.34.1) (2022-03-29)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** switch js ref to svelte ref ([#1086](https://github.com/Decathlon/vitamin-web/issues/1086)) ([291d02b](https://github.com/Decathlon/vitamin-web/commit/291d02b769bcb6a2a2cae2ad1dad33c3c8146ef2))
+
+
+
+
+
 # [0.34.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.33.0...@vtmn/svelte@0.34.0) (2022-03-28)
 
 
