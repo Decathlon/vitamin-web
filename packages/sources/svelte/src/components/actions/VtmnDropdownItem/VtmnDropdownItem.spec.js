@@ -2,7 +2,7 @@ import VtmnDropdownItem from '../VtmnDropdownItem/VtmnDropdownItem.svelte';
 import { fireEvent, render } from '@testing-library/svelte';
 
 const props = {
-  label: 'Label',
+  labelText: 'Label',
   value: 'test-value',
   icon: 'vtmx-user-line',
   class: 'test-class',

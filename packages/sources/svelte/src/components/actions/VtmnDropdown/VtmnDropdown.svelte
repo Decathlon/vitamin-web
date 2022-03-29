@@ -69,11 +69,11 @@
   {...$$restProps}
 >
   {#if labelText}
-    <labelText id={labelText}>{labelText}</labelText>
+    <label id={labelText}>{labelText}</label>
   {/if}
 
   <details bind:this={details}>
-    <summary aria-labelTextledby={labelText}>{defaultOption}</summary>
+    <summary aria-label={labelText}>{defaultOption}</summary>
 
     <div class="vtmn-dropdown_items" style={menuStyles}>
       <slot />
