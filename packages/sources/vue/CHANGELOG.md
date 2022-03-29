@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.21.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.20.1...@vtmn/vue@0.21.0) (2022-03-29)
+
+
+### Features
+
+* **@vtmn/vue:** add disabled attr to options ([#1090](https://github.com/Decathlon/vitamin-web/issues/1090)) ([4552022](https://github.com/Decathlon/vitamin-web/commit/45520229a2f86975977b1287604e37941f0e4405))
+* **@vtmn/vue:** fix text input binding ([#1091](https://github.com/Decathlon/vitamin-web/issues/1091)) ([1f895ac](https://github.com/Decathlon/vitamin-web/commit/1f895ac93fffaba9c177daeebc510975cbabb199))
+
+
+
+
+
 ## [0.20.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.20.0...@vtmn/vue@0.20.1) (2022-03-29)
 
 **Note:** Version bump only for package @vtmn/vue
