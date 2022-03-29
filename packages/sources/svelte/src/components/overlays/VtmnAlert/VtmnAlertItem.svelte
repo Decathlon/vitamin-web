@@ -1,5 +1,5 @@
 <script>
-  import { VtmnButton } from '../../..';
+  import VtmnButton from '../../actions/VtmnButton/VtmnButton.svelte';
   import { createEventDispatcher, onDestroy, onMount } from 'svelte';
   import { cn } from '../../../utils/classnames';
   import { VTMN_ALERT_VARIANT } from './enums';
