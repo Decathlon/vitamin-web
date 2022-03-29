@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.28.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.27.0...@vtmn/react@0.28.0) (2022-03-29)
+
+
+### Features
+
+* **@vtmn/react:** use of VtmnButton in overlays ([#1088](https://github.com/Decathlon/vitamin-web/issues/1088)) ([ee24077](https://github.com/Decathlon/vitamin-web/commit/ee240774923129d347ad4f0cf37007e9765e41af))
+
+
+
+
+
 # [0.27.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.26.1...@vtmn/react@0.27.0) (2022-03-29)
 
 
