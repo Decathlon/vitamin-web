@@ -85,6 +85,7 @@ export default /*#__PURE__*/ defineComponent({
         :value="option.value"
         :key="index"
         :selected="option.value === modelValue"
+        :disabled="option.disabled"
       >
         {{ option.label }}
       </option>
