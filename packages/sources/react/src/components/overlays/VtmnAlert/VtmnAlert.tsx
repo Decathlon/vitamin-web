@@ -2,6 +2,7 @@ import * as React from 'react';
 import '@vtmn/css-alert/dist/index-with-vars.css';
 import { VtmnAlertVariant } from './types';
 import clsx from 'clsx';
+import { VtmnButton } from '../../actions/VtmnButton';
 
 export interface VtmnAlertProps
   extends React.ComponentPropsWithoutRef<'dialog'> {
@@ -18,7 +19,7 @@ export interface VtmnAlertProps
   /**
    * The alert's variant
    */
-  variant: VtmnAlertVariant;
+  type: VtmnAlertVariant;
 
   /**
    * The alert callback close function
@@ -28,7 +29,7 @@ export interface VtmnAlertProps
 }
 
 export const VtmnAlert = ({
-  variant,
+  type = 'info',
   title,
   message,
   onClose,
@@ -39,7 +40,7 @@ export const VtmnAlert = ({
       role="dialog"
       className={clsx(
         'vtmn-alert',
-        `vtmn-alert_variant--${variant}`,
+        `vtmn-alert_variant--${type}`,
         'show',
         className,
       )}

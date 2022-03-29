@@ -36,9 +36,13 @@ const DemoTemplate: Story = (args) => {
   }, [showToast]);
 
   return (
-    <VtmnToast content={''} onClose={() => setshowToast(false)} {...args} />
+    showToast && (
+      <VtmnToast content={''} onClose={() => setshowToast(false)} {...args} />
+    )
   );
 };
 
 export const Overview = OverviewTemplate.bind({});
+export const Demo = DemoTemplate.bind({});
 Overview.args = {};
+Demo.args = {};
