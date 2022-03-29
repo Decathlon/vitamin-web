@@ -18,7 +18,7 @@ export interface VtmnAlertProps
   /**
    * The alert's variant
    */
-  type: VtmnAlertVariant;
+  variant: VtmnAlertVariant;
 
   /**
    * The alert callback close function
@@ -28,7 +28,7 @@ export interface VtmnAlertProps
 }
 
 export const VtmnAlert = ({
-  type = 'info',
+  variant = 'info',
   title,
   message,
   onClose,
@@ -39,7 +39,7 @@ export const VtmnAlert = ({
       role="dialog"
       className={clsx(
         'vtmn-alert',
-        `vtmn-alert_variant--${type}`,
+        `vtmn-alert_variant--${variant}`,
         'show',
         className,
       )}
