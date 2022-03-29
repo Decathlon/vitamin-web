@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.27.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.26.1...@vtmn/react@0.27.0) (2022-03-29)
+
+
+### Features
+
+* **@vtmn/react:** add `VtmnToast` component ([#1082](https://github.com/Decathlon/vitamin-web/issues/1082)) ([3216d65](https://github.com/Decathlon/vitamin-web/commit/3216d65bc281d7e429049f773c8f07b1b26b3a28))
+
+
+
+
+
 ## [0.26.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.26.0...@vtmn/react@0.26.1) (2022-03-28)
 
 **Note:** Version bump only for package @vtmn/react
