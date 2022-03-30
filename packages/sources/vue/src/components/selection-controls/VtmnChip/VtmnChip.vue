@@ -75,26 +75,24 @@ export default /*#__PURE__*/ defineComponent({
 </script>
 
 <template>
-  <div
-    :class="classes"
-    :tabindex="(variant === 'input' && selected) || disabled ? undefined : 0"
-  >
+  <div :class="classes" :value="modelValue">
     <VtmnIcon
-      :v-if="(variant === 'input' || variant === 'action') && icon"
+      v-if="(variant === 'input' || variant === 'action') && icon"
       :value="icon"
       :style="styleObject"
       aria-hidden="true"
     />
     <slot />
     <VtmnButton
-      :v-if="variant === 'input' && selected"
+      v-if="variant === 'input' && selected"
       :variant="'ghost-reversed'"
       :iconAlone="'close-line'"
       :size="size"
       :disabled="disabled"
+      aria-label="Unselect the selection"
     />
     <VtmnBadge
-      :v-if="variant === 'filter' && badgeValue > 0"
+      v-if="variant === 'filter' && badgeValue > 0"
       :value="badgeValue"
     />
   </div>
