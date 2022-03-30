@@ -1,26 +1,16 @@
 <script>
   import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
   import { VtmnPopover, VtmnLink } from '@vtmn/svelte';
-  import { VTMN_POPOVER_POSITION } from '@vtmn/svelte/src/components/overlays/VtmnPopover/enums';
-  import { parameters } from '@vtmn/showcase-core/csf/components/overlays/popover.csf';
-
-  const popoverArgs = {
-    id: 'My popover',
-    title: 'This is the title of the popover',
-    body: 'A popover can appear when users click or focus an element.',
-    position: VTMN_POPOVER_POSITION.BOTTOM,
-  };
+  import {
+    parameters,
+    argTypes,
+  } from '@vtmn/showcase-core/csf/components/overlays/popover.csf';
 </script>
 
 <Meta
   title="Components / Overlays / VtmnPopover"
   component={VtmnPopover}
-  argTypes={{
-    position: {
-      control: 'select',
-      options: Object.values(VTMN_POPOVER_POSITION),
-    },
-  }}
+  {argTypes}
   {parameters}
 />
 
@@ -32,4 +22,4 @@
   </VtmnPopover>
 </Template>
 
-<Story name="Overview" args={popoverArgs} />
+<Story name="Overview" args={{ id: 'my-popover' }} />
