@@ -1,16 +1,17 @@
 <script>
   import { cn } from '../../../utils/classnames';
-  import { VTMN_POPOVER_POSITION } from '../../../utils/enums';
+  import { VTMN_POPOVER_POSITION } from './enums';
 
   /**
    * ID of the popover
    * @type {string}
    */
   export let id;
+
   /** @type {VTMN_POPOVER_POSITION} */
   export let position = VTMN_POPOVER_POSITION.BOTTOM;
 
-  let className;
+  let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */

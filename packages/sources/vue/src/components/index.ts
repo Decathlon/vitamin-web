@@ -8,9 +8,11 @@ import VtmnPrice from './indicators/VtmnPrice';
 import VtmnTag from './indicators/VtmnTag';
 import VtmnSearch from './navigation/VtmnSearch';
 import VtmnCheckbox from './selection-controls/VtmnCheckbox';
+import VtmnChip from './selection-controls/VtmnChip';
 import VtmnRadioButton from './selection-controls/VtmnRadioButton';
 import VtmnToggle from './selection-controls/VtmnToggle';
 import VtmnDivider from './structure/VtmnDivider';
+import VtmnSkeleton from './structure/VtmnSkeleton';
 
 export {
   VtmnButton,
@@ -23,7 +25,9 @@ export {
   VtmnTag,
   VtmnSearch,
   VtmnCheckbox,
+  VtmnChip,
   VtmnRadioButton,
   VtmnToggle,
   VtmnDivider,
+  VtmnSkeleton,
 };

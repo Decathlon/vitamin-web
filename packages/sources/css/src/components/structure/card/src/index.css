@@ -70,7 +70,8 @@
   aspect-ratio: 1 / 1;
 }
 
-.vtmn-card_variant--top-image .vtmn-tag {
+.vtmn-card_variant--top-image .vtmn-tag,
+.vtmn-card_variant--full-image .vtmn-tag {
   position: absolute;
   top: var(--vtmn-spacing_4);
   left: var(--vtmn-spacing_4);

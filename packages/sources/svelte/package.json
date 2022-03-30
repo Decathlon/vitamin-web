@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/svelte",
-  "version": "0.31.0",
+  "version": "0.35.0",
   "description": "Decathlon Design System - Vitamin Svelte components library",
   "keywords": [
     "design-system",
@@ -36,7 +36,7 @@
     "@vtmn/css-alert": "^0.6.13",
     "@vtmn/css-badge": "^0.10.12",
     "@vtmn/css-button": "^0.11.14",
-    "@vtmn/css-card": "^0.7.0",
+    "@vtmn/css-card": "^0.7.1",
     "@vtmn/css-checkbox": "^0.6.16",
     "@vtmn/css-chip": "^0.6.13",
     "@vtmn/css-design-tokens": "^0.18.5",
@@ -47,7 +47,7 @@
     "@vtmn/css-modal": "^0.5.7",
     "@vtmn/css-navbar": "^0.1.19",
     "@vtmn/css-popover": "^0.5.13",
-    "@vtmn/css-price": "^0.2.12",
+    "@vtmn/css-price": "^0.3.0",
     "@vtmn/css-progressbar": "^0.4.12",
     "@vtmn/css-quantity": "^0.4.13",
     "@vtmn/css-radio-button": "^0.6.15",
@@ -56,6 +56,7 @@
     "@vtmn/css-select": "^0.6.15",
     "@vtmn/css-skeleton": "^0.3.14",
     "@vtmn/css-snackbar": "^0.5.13",
+    "@vtmn/css-tabs": "^0.3.16",
     "@vtmn/css-tag": "^0.3.10",
     "@vtmn/css-text-input": "^0.13.14",
     "@vtmn/css-toast": "^0.5.13",
@@ -105,6 +106,7 @@
       "url": "http://www.apache.org/licenses/LICENSE-2.0"
     }
   ],
+  "main": "src/index.js",
   "svelte": "src/index.js",
   "babel": {
     "presets": [

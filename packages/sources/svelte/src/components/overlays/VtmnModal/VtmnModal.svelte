@@ -1,6 +1,6 @@
 <script>
   import { cn } from '../../../utils/classnames';
-  import { VtmnButton } from '../../../index';
+  import VtmnButton from '../../actions/VtmnButton/VtmnButton.svelte';
   import { createEventDispatcher } from 'svelte';
 
   const dispatch = createEventDispatcher();
@@ -22,7 +22,7 @@
    */
   export let animationDisabled = false;
 
-  let className = '';
+  let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */

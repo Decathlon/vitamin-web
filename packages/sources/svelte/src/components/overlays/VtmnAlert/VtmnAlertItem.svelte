@@ -1,5 +1,5 @@
 <script>
-  import { VtmnButton } from '../../..';
+  import VtmnButton from '../../actions/VtmnButton/VtmnButton.svelte';
   import { createEventDispatcher, onDestroy, onMount } from 'svelte';
   import { cn } from '../../../utils/classnames';
   import { VTMN_ALERT_VARIANT } from './enums';
@@ -18,7 +18,7 @@
   /**
    * @type {string} description of the alert
    */
-  export let description = '';
+  export let description = undefined;
 
   /**
    * @type {boolean} display with a close button
@@ -30,7 +30,7 @@
    */
   export let timeout;
 
-  let className = '';
+  let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */

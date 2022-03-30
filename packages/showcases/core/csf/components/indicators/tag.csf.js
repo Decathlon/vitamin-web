@@ -18,7 +18,7 @@ export const argTypes = {
       type: {
         summary: 'string',
       },
-      defaultValue: { summary: 'default' },
+      defaultValue: { summary: 'accent' },
     },
     defaultValue: 'accent',
     control: {
@@ -39,15 +39,13 @@ export const argTypes = {
     },
   },
   href: {
-    type: { name: 'string', required: true },
+    type: { name: 'string', required: false },
     description: 'The href that makes the tag interactive.',
     table: {
       type: {
         summary: 'string',
       },
-      defaultValue: { summary: '#' },
     },
-    defaultValue: '#',
     control: { type: 'text' },
   },
   icon: {

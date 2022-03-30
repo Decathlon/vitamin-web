@@ -14,9 +14,7 @@ export default {
   parameters,
 } as Meta;
 
-const OverviewTemplate: Story = (args) => <VtmnAlert {...args} />;
-
-const DemoTemplate: Story = (args) => {
+const OverviewTemplate: Story = (args) => {
   const [showAlert, setShowAlert] = useState<boolean>(false);
 
   useEffect(() => {

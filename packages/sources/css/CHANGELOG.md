@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.64.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.64.0...@vtmn/css@0.64.1) (2022-03-30)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+# [0.64.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.63.0...@vtmn/css@0.64.0) (2022-03-29)
+
+
+### Features
+
+* **@vtmn/css:** fix line-height ([#1089](https://github.com/Decathlon/vitamin-web/issues/1089)) ([560a2c3](https://github.com/Decathlon/vitamin-web/commit/560a2c36c1a3aa337959af2396f5663de7c8924b))
+
+
+
+
+
 # [0.63.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.62.3...@vtmn/css@0.63.0) (2022-03-25)
 
 

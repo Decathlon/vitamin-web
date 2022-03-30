@@ -11,8 +11,8 @@ export const parameters = {
 export const argTypes = {
   width: {
     type: { name: 'number', required: false },
-    description: 'Width of the skeleton',
-    defaultValue: 30,
+    description: 'Width of the skeleton (in percentage).',
+    defaultValue: 100,
     control: {
       type: 'range',
       min: 0,
@@ -21,7 +21,7 @@ export const argTypes = {
   },
   shape: {
     type: { name: 'string', required: false },
-    description: 'Define the type of shape',
+    description: 'Define the type of shape.',
     defaultValue: 'line',
     control: {
       type: 'select',

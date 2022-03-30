@@ -32,13 +32,12 @@ describe('VtmnSkeleton', () => {
     );
   });
 
-  test('Should not have a class skeleton-width if width is not defined', () => {
+  test('Should have a width 100% if width is not defined', () => {
     const { container } = render(VtmnSkeleton);
     expect(getSkeleton(container)).toHaveAttribute(
       'style',
-      '--skeleton-width:0%',
+      '--skeleton-width:100%',
     );
-    expect(getSkeleton(container)).not.toHaveClass('skeleton-width');
   });
 
   test("Should have a class 'test' if class = 'test'", () => {

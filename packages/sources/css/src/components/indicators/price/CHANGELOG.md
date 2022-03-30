@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-price@0.2.12...@vtmn/css-price@0.3.0) (2022-03-29)
+
+
+### Features
+
+* **@vtmn/css:** fix line-height ([#1089](https://github.com/Decathlon/vitamin-web/issues/1089)) ([560a2c3](https://github.com/Decathlon/vitamin-web/commit/560a2c36c1a3aa337959af2396f5663de7c8924b))
+
+
+
+
+
 ## [0.2.12](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-price@0.2.11...@vtmn/css-price@0.2.12) (2022-03-11)
 
 **Note:** Version bump only for package @vtmn/css-price

@@ -1,5 +1,6 @@
 <script>
   import { cn } from '../../../utils/classnames';
+  import VtmnIcon from '../../../guidelines/iconography/VtmnIcon/VtmnIcon.svelte';
 
   /** @restProps { input | textarea } */
 
@@ -31,7 +32,7 @@
    * Helper text to help the user
    * @type {string}
    */
-  export let helperText;
+  export let helperText = undefined;
 
   /**
    * Whether input is multiline or not
@@ -55,7 +56,7 @@
    * Icon to be displayed
    * @type {string}
    */
-  export let icon;
+  export let icon = undefined;
 
   /**
    * The value of the input
@@ -63,7 +64,7 @@
    */
   export let value;
 
-  let className;
+  let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */
@@ -100,7 +101,9 @@
       {placeholder}
       {...$$restProps}
     />
-    <span class={icon && `vtmx-${icon}`} />
+    {#if icon}
+      <VtmnIcon value={icon} />
+    {/if}
   </div>
 {/if}
 {#if helperText}

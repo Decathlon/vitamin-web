@@ -24,7 +24,7 @@ export const VtmnBadge = ({
 }: VtmnBadgeProps) => {
   return (
     <span
-      className={`vtmn-badge vtmn-badge_variant--${variant}  ${
+      className={`vtmn-badge vtmn-badge_variant--${variant} ${
         className ? className : ''
       }`}
       {...props}

@@ -1,6 +1,7 @@
 <script>
   import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
-  import { VtmnPopover, VtmnLink, VTMN_POPOVER_POSITION } from '@vtmn/svelte';
+  import { VtmnPopover, VtmnLink } from '@vtmn/svelte';
+  import { VTMN_POPOVER_POSITION } from '@vtmn/svelte/src/components/overlays/VtmnPopover/enums';
   import { parameters } from '@vtmn/showcase-core/csf/components/overlays/popover.csf';
 
   const popoverArgs = {

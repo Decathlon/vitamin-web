@@ -1,24 +1,27 @@
 <script>
   import { cn } from '../../../utils/classnames';
+  import { VTMN_LINK_SIZE } from './enums';
 
   /**
    * The href of the link.
    * @type {string}
+   * @requires
    */
   export let href;
 
   /**
    * The target of the link.
    * @type {string}
+   * @requires
    */
-  export let target;
+  export let target = undefined;
 
   /**
    * The size of the link.
    * @type {string}
    * @defaultValue 'medium'
    */
-  export let size = 'medium';
+  export let size = VTMN_LINK_SIZE.MEDIUM;
 
   /**
    * Whether link is standalone or not.
@@ -34,7 +37,7 @@
    */
   export let iconAlong = false;
 
-  let className;
+  let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */

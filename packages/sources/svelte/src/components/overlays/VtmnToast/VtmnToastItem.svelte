@@ -1,5 +1,5 @@
 <script>
-  import { VtmnButton } from '../../..';
+  import VtmnButton from '../../actions/VtmnButton/VtmnButton.svelte';
   import { createEventDispatcher, onDestroy, onMount } from 'svelte';
   import { cn } from '../../../utils/classnames';
 
@@ -25,7 +25,7 @@
    */
   export let timeout;
 
-  let className = '';
+  let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */

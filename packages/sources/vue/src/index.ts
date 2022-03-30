@@ -37,11 +37,14 @@ export { default as VtmnTag } from './components/indicators/VtmnTag';
 export { default as VtmnSearch } from './components/navigation/VtmnSearch';
 
 // Overlays
+export { default as VtmnTooltip } from './components/overlays/VtmnTooltip';
 
 // Selection controls
 export { default as VtmnCheckbox } from './components/selection-controls/VtmnCheckbox';
+export { default as VtmnChip } from './components/selection-controls/VtmnChip';
 export { default as VtmnRadioButton } from './components/selection-controls/VtmnRadioButton';
 export { default as VtmnToggle } from './components/selection-controls/VtmnToggle';
 
 // Structure
 export { default as VtmnDivider } from './components/structure/VtmnDivider';
+export { default as VtmnSkeleton } from './components/structure/VtmnSkeleton';
