@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.24.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.23.0...@vtmn/vue@0.24.0) (2022-03-30)
+
+
+### Features
+
+* **@vtmn/vue:** add `VtmnChip` component ([#1076](https://github.com/Decathlon/vitamin-web/issues/1076)) ([55c483e](https://github.com/Decathlon/vitamin-web/commit/55c483eff9c7054647b538bf8e6df96a7e231adf))
+
+
+
+
+
 # [0.23.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.22.0...@vtmn/vue@0.23.0) (2022-03-30)
 
 
