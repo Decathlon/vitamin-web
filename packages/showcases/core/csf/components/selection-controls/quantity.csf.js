@@ -17,6 +17,14 @@ export const parameters = {
 };
 
 export const argTypes = {
+  onQuantityChange: {
+    type: { name: 'string', required: false },
+    description: 'Called when value has changed',
+    control: {
+      type: 'function',
+    },
+  },
+
   id: {
     type: { name: 'string', required: true },
     description: 'Id of the input.',
