@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.29.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.28.1...@vtmn/react@0.29.0) (2022-03-30)
+
+
+### Features
+
+* **@vtmn/react:** add skeleton component ([#1095](https://github.com/Decathlon/vitamin-web/issues/1095)) ([cd4bc30](https://github.com/Decathlon/vitamin-web/commit/cd4bc30e4d832d82b853384538cfad7994326e44))
+
+
+
+
+
 ## [0.28.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.28.0...@vtmn/react@0.28.1) (2022-03-29)
 
 **Note:** Version bump only for package @vtmn/react

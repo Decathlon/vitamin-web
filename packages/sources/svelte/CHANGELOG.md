@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.35.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.34.3...@vtmn/svelte@0.35.0) (2022-03-30)
+
+
+### Features
+
+* **@vtmn/vue:** add skeleton component ([#1094](https://github.com/Decathlon/vitamin-web/issues/1094)) ([4c36184](https://github.com/Decathlon/vitamin-web/commit/4c3618462d8125ff97c60025c88cba5b43df6db2))
+
+
+
+
+
 ## [0.34.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.34.2...@vtmn/svelte@0.34.3) (2022-03-30)
 
 **Note:** Version bump only for package @vtmn/svelte
