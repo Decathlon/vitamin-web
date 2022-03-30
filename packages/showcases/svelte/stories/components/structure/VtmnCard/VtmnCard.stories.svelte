@@ -1,6 +1,6 @@
 <script>
   import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
-  import { VtmnCard, VtmnButton } from '@vtmn/svelte';
+  import { VtmnCard, VtmnButton, VtmnTag, VtmnPrice } from '@vtmn/svelte';
   import {
     parameters,
     argTypes,
@@ -18,7 +18,9 @@
 
 <Template let:args>
   <VtmnCard {...args}>
-    <img slot="img" alt="" {src} />
+    <svelte:fragment slot="img">
+      <img alt="" {src} />
+    </svelte:fragment>
     <p slot="content">
       A container for content representing a single entity. e.g. a contact,
       article, or task.
@@ -73,14 +75,39 @@
   }}
 />
 
-<Story name="With actions" let:args>
+<Story name="Top image with actions" let:args>
   <VtmnCard {...args}>
-    <img slot="img" alt="" {src} />
+    <svelte:fragment slot="img">
+      <img alt="" {src} />
+      <VtmnTag variant="decorative_jade">Tag</VtmnTag>
+    </svelte:fragment>
     <p slot="content">
       A container for content representing a single entity. e.g. a contact,
       article, or task.
     </p>
-    <VtmnButton slot="actions" variant="primary">Button 1</VtmnButton>
+    <svelte:fragment slot="actions">
+      <VtmnPrice variant="accent">150,00 €</VtmnPrice>
+      <VtmnButton variant="primary" size="stretched">Button 1</VtmnButton>
+    </svelte:fragment>
+  </VtmnCard>
+</Story>
+
+<Story name="Full image with actions" let:args>
+  <VtmnCard {...args} variant="full-image">
+    <svelte:fragment slot="img">
+      <img alt="" {src} />
+      <VtmnTag variant="decorative_jade">Tag</VtmnTag>
+    </svelte:fragment>
+    <p slot="content">
+      A container for content representing a single entity. e.g. a contact,
+      article, or task.
+    </p>
+    <svelte:fragment slot="actions">
+      <VtmnPrice variant="accent">150,00 €</VtmnPrice>
+      <VtmnButton variant="primary-reversed" size="stretched"
+        >Button 1</VtmnButton
+      >
+    </svelte:fragment>
   </VtmnCard>
 </Story>
 
@@ -115,10 +142,19 @@
   :global(#anchor--components-structure-vtmncard--full-image-with-content-opaque
       .docs-story
       > div:first-child),
-  :global(#anchor--components-structure-vtmncard--with-actions .docs-story),
-  :global(#anchor--components-structure-vtmncard--with-actions
+  :global(#anchor--components-structure-vtmncard--full-image-with-actions
+      .docs-story),
+  :global(#anchor--components-structure-vtmncard--full-image-with-actions
       .docs-story
       > div:first-child) {
     height: 600px;
+  }
+
+  :global(#anchor--components-structure-vtmncard--top-image-with-actions
+      .docs-story),
+  :global(#anchor--components-structure-vtmncard--top-image-with-actions
+      .docs-story
+      > div:first-child) {
+    height: 700px;
   }
 </style>
