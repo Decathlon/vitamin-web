@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.22.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.21.0...@vtmn/vue@0.22.0) (2022-03-30)
+
+
+### Features
+
+* **@vtmn/vue:** add tooltip component ([#1092](https://github.com/Decathlon/vitamin-web/issues/1092)) ([d309dd2](https://github.com/Decathlon/vitamin-web/commit/d309dd299c1ccf646bedaab95cf7b1d3b473a1ed))
+
+
+
+
+
 # [0.21.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.20.1...@vtmn/vue@0.21.0) (2022-03-29)
 
 
