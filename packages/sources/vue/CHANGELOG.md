@@ -3,6 +3,48 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.23.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.22.0...@vtmn/vue@0.23.0) (2022-03-30)
+
+
+### Features
+
+* **@vtmn/vue:** add skeleton component ([#1094](https://github.com/Decathlon/vitamin-web/issues/1094)) ([4c36184](https://github.com/Decathlon/vitamin-web/commit/4c3618462d8125ff97c60025c88cba5b43df6db2))
+
+
+
+
+
+# [0.22.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.21.0...@vtmn/vue@0.22.0) (2022-03-30)
+
+
+### Features
+
+* **@vtmn/vue:** add tooltip component ([#1092](https://github.com/Decathlon/vitamin-web/issues/1092)) ([d309dd2](https://github.com/Decathlon/vitamin-web/commit/d309dd299c1ccf646bedaab95cf7b1d3b473a1ed))
+
+
+
+
+
+# [0.21.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.20.1...@vtmn/vue@0.21.0) (2022-03-29)
+
+
+### Features
+
+* **@vtmn/vue:** add disabled attr to options ([#1090](https://github.com/Decathlon/vitamin-web/issues/1090)) ([4552022](https://github.com/Decathlon/vitamin-web/commit/45520229a2f86975977b1287604e37941f0e4405))
+* **@vtmn/vue:** fix text input binding ([#1091](https://github.com/Decathlon/vitamin-web/issues/1091)) ([1f895ac](https://github.com/Decathlon/vitamin-web/commit/1f895ac93fffaba9c177daeebc510975cbabb199))
+
+
+
+
+
+## [0.20.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.20.0...@vtmn/vue@0.20.1) (2022-03-29)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
 # [0.20.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.19.1...@vtmn/vue@0.20.0) (2022-03-25)
 
 

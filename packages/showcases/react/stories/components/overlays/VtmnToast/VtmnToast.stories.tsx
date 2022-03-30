@@ -3,33 +3,33 @@ import { Meta, Story } from '@storybook/react';
 import {
   argTypes,
   parameters,
-} from '@vtmn/showcase-core/csf/components/overlays/alert.csf';
-import { VtmnAlert } from '@vtmn/react';
+} from '@vtmn/showcase-core/csf/components/overlays/toast.csf';
+import { VtmnToast } from '@vtmn/react';
 import { VtmnButton } from '@vtmn/react';
 
 export default {
-  title: 'Components / Overlays / VtmnAlert',
-  component: VtmnAlert,
+  title: 'Components / Overlays / VtmnToast',
+  component: VtmnToast,
   argTypes,
   parameters,
 } as Meta;
 
 const OverviewTemplate: Story = (args) => {
-  const [showAlert, setShowAlert] = useState<boolean>(false);
+  const [showToast, setshowToast] = useState<boolean>(false);
 
   useEffect(() => {
-    if (showAlert) {
+    if (showToast) {
       const timeout = setTimeout(() => {
-        setShowAlert(false);
+        setshowToast(false);
       }, 8000);
       return () => clearTimeout(timeout);
     }
-  }, [showAlert]);
+  }, [showToast]);
 
   return (
     <div>
-      <VtmnButton onClick={() => setShowAlert(true)}>Trigger Alert</VtmnButton>
-      {showAlert && <VtmnAlert onClose={() => setShowAlert(false)} {...args} />}
+      <VtmnButton onClick={() => setshowToast(true)}>Trigger Toast</VtmnButton>
+      {showToast && <VtmnToast onClose={() => setshowToast(false)} {...args} />}
     </div>
   );
 };

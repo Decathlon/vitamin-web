@@ -39,6 +39,8 @@ export type { VtmnSearchProps } from './components/navigation/VtmnSearch/VtmnSea
 // Overlays
 export { VtmnAlert } from './components/overlays/VtmnAlert';
 export type { VtmnAlertProps } from './components/overlays/VtmnAlert';
+export { VtmnToast } from './components/overlays/VtmnToast';
+export type { VtmnToastProps } from './components/overlays/VtmnToast';
 export { VtmnTooltip } from './components/overlays/VtmnTooltip';
 export type { VtmnTooltipProps } from './components/overlays/VtmnTooltip';
 
@@ -55,3 +57,5 @@ export type { VtmnToggleProps } from './components/selection-controls/VtmnToggle
 // Structure
 export { VtmnDivider } from './components/structure/VtmnDivider';
 export type { VtmnDividerProps } from './components/structure/VtmnDivider';
+export { VtmnSkeleton } from './components/structure/VtmnSkeleton';
+export type { VtmnSkeletonProps } from './components/structure/VtmnSkeleton';

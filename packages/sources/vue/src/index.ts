@@ -36,6 +36,7 @@ export { default as VtmnTag } from './components/indicators/VtmnTag';
 // Navigation
 
 // Overlays
+export { default as VtmnTooltip } from './components/overlays/VtmnTooltip';
 
 // Selection controls
 export { default as VtmnCheckbox } from './components/selection-controls/VtmnCheckbox';
@@ -45,3 +46,4 @@ export { default as VtmnToggle } from './components/selection-controls/VtmnToggl
 
 // Structure
 export { default as VtmnDivider } from './components/structure/VtmnDivider';
+export { default as VtmnSkeleton } from './components/structure/VtmnSkeleton';
