@@ -40,6 +40,7 @@ export { default as VtmnTooltip } from './components/overlays/VtmnTooltip';
 
 // Selection controls
 export { default as VtmnCheckbox } from './components/selection-controls/VtmnCheckbox';
+export { default as VtmnChip } from './components/selection-controls/VtmnChip';
 export { default as VtmnRadioButton } from './components/selection-controls/VtmnRadioButton';
 export { default as VtmnToggle } from './components/selection-controls/VtmnToggle';
 
