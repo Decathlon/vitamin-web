@@ -34,7 +34,6 @@ export default /*#__PURE__*/ defineComponent({
     props = reactive(props);
 
     const handleChange = (event: Event) => {
-      console.log('Change');
       if (event && event.target) {
         return emit(
           'update:modelValue',
@@ -44,7 +43,6 @@ export default /*#__PURE__*/ defineComponent({
     };
 
     const handleReset = () => {
-      console.log('Reset');
       return emit('update:modelValue', '');
     };
 
@@ -66,6 +64,7 @@ export default /*#__PURE__*/ defineComponent({
     <input
       type="search"
       :placeholder="placeholder"
+      :value="modelValue"
       :disabled="disabled"
       v-bind="$attrs"
       @input="handleChange"
@@ -80,7 +79,6 @@ export default /*#__PURE__*/ defineComponent({
         aria-label="close"
         :aria-disabled="disabled"
         @click.prevent="handleReset"
-        v-bind="$attrs"
       />
 
       <VtmnButton
@@ -90,7 +88,6 @@ export default /*#__PURE__*/ defineComponent({
         :size="size"
         type="submit"
         aria-label="search"
-        v-bind="$attrs"
       />
     </div>
   </div>
