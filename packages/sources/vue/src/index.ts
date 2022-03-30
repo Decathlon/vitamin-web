@@ -45,3 +45,4 @@ export { default as VtmnToggle } from './components/selection-controls/VtmnToggl
 
 // Structure
 export { default as VtmnDivider } from './components/structure/VtmnDivider';
+export { default as VtmnSkeleton } from './components/structure/VtmnSkeleton';

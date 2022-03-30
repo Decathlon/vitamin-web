@@ -4,10 +4,10 @@
   import { objectToStyle } from '../../../utils/style';
 
   /**
-   * @type {number} width to apply to the skeleton
-   * @defaultValue 0
+   * @type {number} width to apply to the skeleton (in percentage).
+   * @defaultValue 100
    */
-  export let width = 0;
+  export let width = 100;
 
   /**
    * @type {'line' | 'avatar' }  variant of the shape.
