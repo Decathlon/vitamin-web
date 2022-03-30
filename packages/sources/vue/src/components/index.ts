@@ -10,6 +10,7 @@ import VtmnCheckbox from './selection-controls/VtmnCheckbox';
 import VtmnRadioButton from './selection-controls/VtmnRadioButton';
 import VtmnToggle from './selection-controls/VtmnToggle';
 import VtmnDivider from './structure/VtmnDivider';
+import VtmnSkeleton from './structure/VtmnSkeleton';
 
 export {
   VtmnButton,
@@ -24,4 +25,5 @@ export {
   VtmnTag,
   VtmnToggle,
   VtmnDivider,
+  VtmnSkeleton,
 };
