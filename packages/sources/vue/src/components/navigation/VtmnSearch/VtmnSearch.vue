@@ -28,6 +28,7 @@ export default /*#__PURE__*/ defineComponent({
       type: String as PropType<VtmnSearchSize>,
       default: 'medium',
     },
+    handleSearch: {},
   },
   emits: ['update:modelValue'],
   setup(props, { emit }) {
@@ -42,6 +43,10 @@ export default /*#__PURE__*/ defineComponent({
       }
     };
 
+    const handleAsyncSearch = (query: string) => {
+      return props.fetchOptions(query);
+    };
+
     const handleReset = () => {
       return emit('update:modelValue', '');
     };
@@ -54,6 +59,7 @@ export default /*#__PURE__*/ defineComponent({
       })),
       handleReset,
       handleChange,
+      handleAsyncSearch,
     };
   },
 });
@@ -88,6 +94,7 @@ export default /*#__PURE__*/ defineComponent({
         :size="size"
         type="submit"
         aria-label="search"
+        :handleSearch="handleAsyncSearch"
       />
     </div>
   </div>
