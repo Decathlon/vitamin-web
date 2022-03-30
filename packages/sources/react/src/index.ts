@@ -55,6 +55,8 @@ export { VtmnToggle } from './components/selection-controls/VtmnToggle';
 export type { VtmnToggleProps } from './components/selection-controls/VtmnToggle';
 
 // Structure
+export { VtmnAccordion } from './components/structure/VtmnAccordion';
+export type { VtmnAccordionProps } from './components/structure/VtmnAccordion';
 export { VtmnDivider } from './components/structure/VtmnDivider';
 export type { VtmnDividerProps } from './components/structure/VtmnDivider';
 export { VtmnSkeleton } from './components/structure/VtmnSkeleton';
