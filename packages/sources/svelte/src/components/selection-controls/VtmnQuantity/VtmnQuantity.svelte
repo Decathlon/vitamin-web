@@ -91,7 +91,7 @@
       {step}
       aria-invalid={error ? true : undefined}
       aria-describedby={error ? `quantity-helper-${id}` : undefined}
-      on:blur
+      on:change
     />
     <VtmnButton
       on:click={handleClickAdd}

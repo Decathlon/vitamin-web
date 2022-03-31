@@ -178,17 +178,17 @@ describe('VtmnQuantity', () => {
     );
   });
 
-  test('Should trigger blur when blur event on input', async () => {
+  test('Should trigger on:change when change event on input', async () => {
     const { component, container } = render(VtmnQuantity, {
       label: 'unit-test',
       id: 'unit-id',
       error: 'unit test error',
     });
     const input = getInput(container);
-    input.focus();
     const handleEvent = jest.fn();
-    component.$on('blur', handleEvent);
-    input.blur();
+    component.$on('change', handleEvent);
+    await fireEvent.change(input, { target: { value: 10 } });
+    expect(input.value).toBe('10');
     expect(handleEvent).toHaveBeenCalledTimes(1);
   });
 

@@ -22,8 +22,7 @@
     {error}
     on:add={action('add')}
     on:subtract={action('subtract')}
-    on:change={action('change')}
-    on:blur={({ detail: value }) => {
+    on:change={({ detail: value }) => {
       if (value < args.min) {
         error = `Quantity must be greater than ${args.min}`;
       } else if (value > args.max) {

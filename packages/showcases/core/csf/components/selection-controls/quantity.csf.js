@@ -8,7 +8,6 @@ export const parameters = {
       'add',
       'subtract',
       'change',
-      'blur',
     ],
   },
   design: {
