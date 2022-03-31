@@ -7,6 +7,7 @@ export const parameters = {
       'focusout',
       'add',
       'subtract',
+      'change',
       'blur',
     ],
   },
