@@ -1,11 +1,7 @@
 import '@testing-library/jest-dom';
 
 import { fireEvent, render } from '@testing-library/svelte';
-import { exec } from 'child_process';
-import { tick } from 'svelte';
-
 import VtmnQuantity from '../VtmnQuantity.svelte';
-const wait = (ms) => new Promise((res) => setTimeout(res, ms));
 
 describe('VtmnQuantity', () => {
   const getQuantity = (container) =>
@@ -194,5 +190,23 @@ describe('VtmnQuantity', () => {
     component.$on('blur', handleEvent);
     input.blur();
     expect(handleEvent).toHaveBeenCalledTimes(1);
+  });
+
+  test('Should trigger on:change when click on add button', async () => {
+    const { container, component } = render(VtmnQuantity, {
+      label: 'unit-test',
+      id: 'unit-id',
+    });
+    const [, addBtn] = getButtons(container);
+    await expectedEventClickOnElement('change', addBtn, component, 1);
+  });
+
+  test('Should trigger on:change when click on subtract button', async () => {
+    const { container, component } = render(VtmnQuantity, {
+      label: 'unit-test',
+      id: 'unit-id',
+    });
+    const [subtractBtn] = getButtons(container);
+    await expectedEventClickOnElement('change', subtractBtn, component, 1);
   });
 });
