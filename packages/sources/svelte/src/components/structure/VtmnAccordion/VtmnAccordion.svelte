@@ -2,16 +2,16 @@
   import { cn } from '../../../utils/classnames';
 
   /**
-   * @type {boolean} Display left icon on summary.
-   * @default false
-   */
-  export let withIconLeft = false;
-
-  /**
    * @type {string} Summary of the accordion.
    * @requires
    */
   export let summary;
+
+  /**
+   * @type {boolean} Display left icon on summary.
+   * @default false
+   */
+  export let withIconLeft = false;
 
   /**
    * @type {boolean} Disable the accordion.

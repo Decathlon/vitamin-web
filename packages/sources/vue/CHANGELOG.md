@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.25.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.24.0...@vtmn/vue@0.25.0) (2022-03-31)
+
+
+### Features
+
+* **@vtmn/vue:** add accordion component ([#1100](https://github.com/Decathlon/vitamin-web/issues/1100)) ([ee05d88](https://github.com/Decathlon/vitamin-web/commit/ee05d8809cc2edba7d68ba0b59c1cfbe89bdc3e2))
+
+
+
+
+
 # [0.24.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.23.0...@vtmn/vue@0.24.0) (2022-03-30)
 
 
