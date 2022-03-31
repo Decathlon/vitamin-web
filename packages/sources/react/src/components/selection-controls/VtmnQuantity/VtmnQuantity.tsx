@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import { VtmnButton } from '../../actions/VtmnButton/VtmnButton';
 
 export interface VtmnQuantityProps
-  extends React.ComponentPropsWithoutRef<'div'> {
+  extends Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
   /**
    * The id of the quantity.
    * @type {string}
@@ -64,7 +64,7 @@ export interface VtmnQuantityProps
    * @type {void}
    * @defaultValue undefined
    */
-  onQuantityChange?: (newQuantity: number) => void;
+  onChange?: (newQuantity: number, action: string) => void;
 }
 
 export const VtmnQuantity = ({
@@ -76,15 +76,12 @@ export const VtmnQuantity = ({
   min = 0,
   max = Infinity,
   error = undefined,
-  onQuantityChange = undefined,
+  onChange = undefined,
   className,
   ...props
 }: VtmnQuantityProps) => {
   const [quantity, setQuantity] = React.useState(value);
 
-  React.useEffect(() => {
-    onQuantityChange && onQuantityChange(quantity);
-  }, [quantity]);
   return (
     <div className={clsx('vtmn-quantity', className)} {...props}>
       {label && <label htmlFor={id}>{label}</label>}
@@ -95,7 +92,13 @@ export const VtmnQuantity = ({
           disabled={disabled || quantity <= min}
           iconAlone={'subtract-fill'}
           onClick={() =>
-            setQuantity((quantity) => Math.max(min, quantity - step))
+            setQuantity((oldQuantity) => {
+              const newQuantity = Math.max(min, oldQuantity - step);
+
+              onChange && onChange(newQuantity, 'subtract');
+
+              return newQuantity;
+            })
           }
           aria-label="subtract"
         />
@@ -108,13 +111,15 @@ export const VtmnQuantity = ({
           step={step}
           value={quantity}
           aria-describedby={`quantity-helper-${id}`}
-          onChange={(event) =>
-            setQuantity(
-              isNaN(event.target.valueAsNumber)
-                ? min
-                : event.target.valueAsNumber,
-            )
-          }
+          onChange={(event) => {
+            const newQuantity = isNaN(event.target.valueAsNumber)
+              ? min
+              : event.target.valueAsNumber;
+
+            onChange && onChange(newQuantity, 'edit');
+
+            setQuantity(newQuantity);
+          }}
           aria-invalid={error ? true : undefined}
         />
         <VtmnButton
@@ -122,7 +127,13 @@ export const VtmnQuantity = ({
           disabled={disabled || quantity >= max}
           iconAlone={'add-fill'}
           onClick={() =>
-            setQuantity((quantity) => Math.min(max, quantity + step))
+            setQuantity((oldQuantity) => {
+              const newQuantity = Math.min(max, oldQuantity + step);
+
+              onChange && onChange(newQuantity, 'add');
+
+              return newQuantity;
+            })
           }
           aria-label="add"
         />
