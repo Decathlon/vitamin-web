@@ -24,7 +24,7 @@ export default /*#__PURE__*/ defineComponent({
       type: String as PropType<VtmnSearchSize>,
       default: 'medium',
     },
-    handleSearch: {
+    searchCallback: {
       type: Function as PropType<Function>,
       required: true,
     },
@@ -42,8 +42,8 @@ export default /*#__PURE__*/ defineComponent({
       }
     };
 
-    const handleSearchFunction = () => {
-      return props.handleSearch(props.modelValue);
+    const handleSearch = () => {
+      return props.searchCallback(props.modelValue);
     };
 
     const handleReset = () => {
@@ -58,7 +58,7 @@ export default /*#__PURE__*/ defineComponent({
       })),
       handleReset,
       handleChange,
-      handleSearchFunction,
+      handleSearch,
     };
   },
 });
@@ -92,7 +92,7 @@ export default /*#__PURE__*/ defineComponent({
         :size="size"
         type="submit"
         aria-label="search"
-        @click.prevent="handleSearchFunction"
+        @click.prevent="handleSearch"
       />
     </div>
   </div>
