@@ -1,7 +1,6 @@
 import * as React from 'react';
 import '@vtmn/css-popover/dist/index-with-vars.css';
 import { VtmnPopoverPosition } from './types';
-import { VtmnLink } from '../../actions/VtmnLink';
 
 export interface VtmnPopoverProps
   extends React.ComponentPropsWithoutRef<'div'> {
@@ -54,7 +53,7 @@ export const VtmnPopover = ({
       tabIndex={0}
       {...props}
     >
-      <VtmnLink>{placeholder}</VtmnLink>
+      {children}
 
       <div id={identifier} role="tooltip">
         <p className="vtmn-popover_title">{title}</p>

@@ -9,7 +9,7 @@
   export let id;
 
   /** @type {VTMN_POPOVER_POSITION} */
-  export let position = VTMN_POPOVER_POSITION.BOTTOM;
+  export let position = VTMN_POPOVER_POSITION.TOP;
 
   let className = undefined;
   /**
@@ -27,7 +27,7 @@
   tabindex="0"
   {...$$restProps}
 >
-  <slot name="placeholder" />
+  <slot />
 
   <div {id} role="tooltip">
     <p class="vtmn-popover_title"><slot name="title" /></p>

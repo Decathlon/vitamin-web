@@ -1,5 +1,5 @@
 import React from 'react';
-import { VtmnPopover } from '@vtmn/react';
+import { VtmnPopover, VtmnLink } from '@vtmn/react';
 import { Meta, Story } from '@storybook/react';
 import {
   argTypes,
@@ -15,7 +15,9 @@ export default {
 
 const Template: Story = (args) => (
   <div style={{ width: 400, height: 250, textAlign: 'center' }}>
-    <VtmnPopover identifier="my-popover" {...args} />
+    <VtmnPopover identifier="my-popover" {...args}>
+      <VtmnLink>Popover on the {args.position}</VtmnLink>
+    </VtmnPopover>
   </div>
 );
 
