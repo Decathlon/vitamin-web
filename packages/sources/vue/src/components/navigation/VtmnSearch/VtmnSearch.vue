@@ -16,10 +16,6 @@ export default /*#__PURE__*/ defineComponent({
       type: String as PropType<VtmnSearchVariant>,
       default: 'medium',
     },
-    placeholder: {
-      type: String as PropType<string>,
-      default: undefined,
-    },
     disabled: {
       type: Boolean as PropType<boolean>,
       default: false,
@@ -28,7 +24,10 @@ export default /*#__PURE__*/ defineComponent({
       type: String as PropType<VtmnSearchSize>,
       default: 'medium',
     },
-    handleSearch: {},
+    handleSearch: {
+      type: Function as PropType<Function>,
+      required: true,
+    },
   },
   emits: ['update:modelValue'],
   setup(props, { emit }) {
@@ -43,8 +42,8 @@ export default /*#__PURE__*/ defineComponent({
       }
     };
 
-    const handleAsyncSearch = (query: string) => {
-      return props.fetchOptions(query);
+    const handleSearchFunction = () => {
+      return props.handleSearch(props.modelValue);
     };
 
     const handleReset = () => {
@@ -59,7 +58,7 @@ export default /*#__PURE__*/ defineComponent({
       })),
       handleReset,
       handleChange,
-      handleAsyncSearch,
+      handleSearchFunction,
     };
   },
 });
@@ -69,7 +68,6 @@ export default /*#__PURE__*/ defineComponent({
   <div :class="classes" role="search">
     <input
       type="search"
-      :placeholder="placeholder"
       :value="modelValue"
       :disabled="disabled"
       v-bind="$attrs"
@@ -94,7 +92,7 @@ export default /*#__PURE__*/ defineComponent({
         :size="size"
         type="submit"
         aria-label="search"
-        :handleSearch="handleAsyncSearch"
+        @click.prevent="handleSearchFunction"
       />
     </div>
   </div>
