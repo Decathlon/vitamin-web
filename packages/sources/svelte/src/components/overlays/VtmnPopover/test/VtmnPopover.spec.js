@@ -51,8 +51,4 @@ describe('VtmnPopover', () => {
     const { getByText } = render(VtmnPopover, { id: 'unit-test-id' });
     expect(getByText('unit-test body')).toBeVisible();
   });
-  test('Should display placeholder', () => {
-    const { getByText } = render(VtmnPopover, { id: 'unit-test-id' });
-    expect(getByText('unit-test placeholder')).toBeVisible();
-  });
 });
