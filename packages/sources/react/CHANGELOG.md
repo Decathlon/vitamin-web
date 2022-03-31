@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.30.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.29.0...@vtmn/react@0.30.0) (2022-03-31)
+
+
+### Features
+
+* **@vtmn/react:** add accordion component ([#1096](https://github.com/Decathlon/vitamin-web/issues/1096)) ([30e5667](https://github.com/Decathlon/vitamin-web/commit/30e566702143a469c24f929f8eb5d452662529cc))
+
+
+
+
+
 # [0.29.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.28.1...@vtmn/react@0.29.0) (2022-03-30)
 
 
