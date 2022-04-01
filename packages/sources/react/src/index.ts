@@ -51,6 +51,8 @@ export { VtmnCheckbox } from './components/selection-controls/VtmnCheckbox';
 export type { VtmnCheckboxProps } from './components/selection-controls/VtmnCheckbox';
 export { VtmnChip } from './components/selection-controls/VtmnChip';
 export type { VtmnChipProps } from './components/selection-controls/VtmnChip';
+export { VtmnQuantity } from './components/selection-controls/VtmnQuantity';
+export type { VtmnQuantityProps } from './components/selection-controls/VtmnQuantity';
 export { VtmnRadioButton } from './components/selection-controls/VtmnRadioButton';
 export type { VtmnRadioButtonProps } from './components/selection-controls/VtmnRadioButton';
 export { VtmnToggle } from './components/selection-controls/VtmnToggle';
