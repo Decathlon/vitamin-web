@@ -5,5 +5,5 @@
 <VtmnPopover {...$$restProps}>
   <svelte:fragment slot="title">Unit-test title</svelte:fragment>
   <svelte:fragment slot="body">unit-test body</svelte:fragment>
-  <svelte:fragment slot="placeholder">unit-test placeholder</svelte:fragment>
+  <svelte:fragment>unit-test placeholder</svelte:fragment>
 </VtmnPopover>
