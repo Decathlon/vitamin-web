@@ -72,3 +72,7 @@
 .vtmn-breadcrumb li:last-child {
   color: var(--vtmn-semantic-color_content-primary);
 }
+
+.vtmn-breadcrumb li > span[class^='vtmx-'] {
+  font-size: var(--vtmn-typo_text-2-font-size);
+}
