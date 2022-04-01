@@ -3,10 +3,10 @@
   import { cn } from '../../../utils/classnames';
   import { clickOutside } from '../../../directives/clickOutside';
   import { objectToStyle } from '../../../utils/style';
-  import { selectedOptions } from './vtmnDropDownStore.js';
 
   /** @restProps */
 
+  export let id;
   /**
    * The main labelText. If not set the labelText is not displayed
    *
@@ -43,9 +43,11 @@
 
   export { className as class };
 
-  $: componentClass = cn('vtmn-dropdown', className);
+  export let group = [];
+
+  $: componentClass = cn('vtmn-dropdown', 'toto', className);
   $: menuStyles = objectToStyle({
-    'min-height': `${menuMaxHeight}px`,
+    '--toto-var': `${menuMaxHeight}px`,
   });
 
   const dispatch = createEventDispatcher();
@@ -53,34 +55,25 @@
   let details;
 
   const closeMenu = () => (details.open = false);
-
-  selectedOptions.subscribe((selectedOptions) => {
-    dispatch('change', { selectedOptions });
-
-    if (details) closeMenu();
-  });
 </script>
 
-<div
-  class={componentClass}
-  aria-disabled={disabled}
-  use:clickOutside
-  on:click_outside={closeMenu}
-  {...$$restProps}
->
+<div class={componentClass} aria-disabled={disabled} {...$$restProps}>
   {#if labelText}
     <label id={labelText}>{labelText}</label>
   {/if}
 
-  <details bind:this={details}>
-    <summary aria-label={labelText}>{defaultOption}</summary>
-
+  <details bind:this={details} on:change>
+    <summary aria-labelledby={id}>{defaultOption}</summary>
     <div class="vtmn-dropdown_items" style={menuStyles}>
       <slot />
     </div>
+    aria-labelledbyid
   </details>
 </div>
 
 <style lang="css">
   @import '@vtmn/css-dropdown';
+  .toto {
+    min-height: var(--toto-var, 0);
+  }
 </style>

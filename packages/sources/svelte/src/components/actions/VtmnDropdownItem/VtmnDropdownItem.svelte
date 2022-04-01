@@ -2,16 +2,10 @@
   import { createEventDispatcher } from 'svelte';
   import { cn } from '../../../utils/classnames';
   import VtmnDivider from '../../structure/VtmnDivider/VtmnDivider.svelte';
-  import { selectedOptions } from '../VtmnDropdown/vtmnDropDownStore.js';
 
   /** @restProps */
 
-  /**
-   * labelText of the dropdown item
-   *
-   * @type {string} labelText
-   */
-  export let labelText;
+  export let id;
 
   /**
    * Value of the dropdown item
@@ -41,44 +35,30 @@
    */
   let className = '';
 
+  export let group = [];
+
   export { className as class };
 
   $: componentClass = cn(className);
 
   let currentOptions;
-
-  selectedOptions.subscribe((options) => {
-    currentOptions = options;
-  });
-
-  const dispatch = createEventDispatcher();
-
-  const onSelectItem = (value) => {
-    const updatedOptions = currentOptions.includes(value)
-      ? currentOptions.filter((option) => option !== value)
-      : [...currentOptions, value];
-
-    selectedOptions.update(() => updatedOptions);
-
-    dispatch('item-selected', { value });
-  };
 </script>
 
 <input
-  class={componentClass}
+  bind:group
   type="checkbox"
-  name={labelText}
-  id={labelText}
+  {id}
+  {value}
   data-testid="dropdown-item"
   {...$$restProps}
 />
 
-<label for={labelText} on:click={() => onSelectItem(value)}>
+<label for={id}>
   {#if icon}
     <span class={icon} />
   {/if}
 
-  {labelText}
+  <slot />
 </label>
 
 {#if divider}
