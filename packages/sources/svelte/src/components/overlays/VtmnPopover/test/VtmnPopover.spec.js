@@ -11,7 +11,7 @@ describe('VtmnPopover', () => {
     const { container, getByRole } = render(VtmnPopover, {
       id: 'unit-test-id',
     });
-    expect(getPopover(container)).toHaveAttribute('data-position', 'bottom');
+    expect(getPopover(container)).toHaveAttribute('data-position', 'top');
     expect(getPopover(container)).toHaveAttribute(
       'aria-describedby',
       'unit-test-id',
