@@ -27,7 +27,14 @@ const src = {
     },
     {
       folder: 'navigation',
-      components: ['VtmnBreadcrumb', 'VtmnBreadcrumbItem', 'VtmnNavbar', 'VtmnSearch', 'VtmnTabs', 'VtmnTabsItem'],
+      components: [
+        'VtmnBreadcrumb',
+        'VtmnBreadcrumbItem',
+        'VtmnNavbar',
+        'VtmnSearch',
+        'VtmnTabs',
+        'VtmnTabsItem',
+      ],
     },
     {
       folder: 'overlays',
