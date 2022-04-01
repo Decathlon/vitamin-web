@@ -1,5 +1,5 @@
 <script>
-  import { VtmnIcon } from '../../..';
+  import VtmnIcon from '../../../guideline/VtmnIcon/VtmnIcon.svelte';
 
   /**
    * The icon to display on the left side of the breadcrumb.

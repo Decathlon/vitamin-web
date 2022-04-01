@@ -1,6 +1,6 @@
 <script>
   import VtmnBreadcrumbItem from '../VtmnBreadcrumbItem.svelte';
-  import { VtmnIcon } from '../../../guidelines';
+  import VtmnIcon from '../../../guideline/VtmnIcon/VtmnIcon.svelte';
 </script>
 
 <VtmnBreadcrumbItem {...$$restProps}>
