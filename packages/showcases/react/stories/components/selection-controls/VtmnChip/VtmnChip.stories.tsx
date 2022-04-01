@@ -15,7 +15,7 @@ export default {
     children: {
       type: { name: 'string', required: false },
       description: 'The content to render inside the component.',
-      defaultValue: 'Button',
+      defaultValue: 'Chip',
       control: {
         type: 'text',
       },

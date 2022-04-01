@@ -35,7 +35,7 @@
   box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-secondary);
   text-align: center;
   z-index: 1;
-  appearance: none;
+  appearance: textfield;
   transition: var(--vtmn-transition_focus-visible);
   border-radius: 0;
 }

@@ -54,10 +54,12 @@
   const handleClickSubtract = () => {
     value -= step;
     dispatch('subtract', value);
+    dispatch('change', { value, action: 'subtract' });
   };
   const handleClickAdd = () => {
     value += step;
     dispatch('add', value);
+    dispatch('change', { value, action: 'add' });
   };
 
   let disabledMin, disabledMax;
@@ -89,7 +91,7 @@
       {step}
       aria-invalid={error ? true : undefined}
       aria-describedby={error ? `quantity-helper-${id}` : undefined}
-      on:blur
+      on:change
     />
     <VtmnButton
       on:click={handleClickAdd}

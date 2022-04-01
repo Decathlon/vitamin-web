@@ -14,7 +14,7 @@ export default {
     children: {
       type: { name: 'string', required: false },
       description: 'The content to render inside the component.',
-      defaultValue: 'Button',
+      defaultValue: 'Tooltip',
       control: {
         type: 'text',
       },
@@ -26,6 +26,4 @@ export default {
 const Template: Story = (args) => <VtmnTooltip {...args} />;
 
 export const Overview = Template.bind({});
-Overview.args = {
-  children: 'Tooltip',
-};
+Overview.args = {};

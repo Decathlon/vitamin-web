@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.31.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.30.0...@vtmn/react@0.31.0) (2022-04-01)
+
+
+### Features
+
+* **@vtmn/react:** add `VtmnPopover` component ([#1101](https://github.com/Decathlon/vitamin-web/issues/1101)) ([7fb72ec](https://github.com/Decathlon/vitamin-web/commit/7fb72ecaf634770aa810ea69e075071c1ce6ac1e))
+
+
+
+
+
+# [0.30.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.29.0...@vtmn/react@0.30.0) (2022-03-31)
+
+
+### Features
+
+* **@vtmn/react:** add accordion component ([#1096](https://github.com/Decathlon/vitamin-web/issues/1096)) ([30e5667](https://github.com/Decathlon/vitamin-web/commit/30e566702143a469c24f929f8eb5d452662529cc))
+
+
+
+
+
 # [0.29.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.28.1...@vtmn/react@0.29.0) (2022-03-30)
 
 
