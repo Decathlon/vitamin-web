@@ -22,13 +22,7 @@ export const argTypes = {
       'left',
     ],
     description: 'The position of the popover.',
-    defaultValue: 'bottom',
-  },
-  placeholder: {
-    type: { name: 'string', required: false },
-    description: 'The placeholder of the popover.',
-    defaultValue: 'Placeholder Text',
-    control: { type: 'text' },
+    defaultValue: 'top',
   },
   title: {
     type: { name: 'string', required: false },
