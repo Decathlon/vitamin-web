@@ -10,6 +10,7 @@ export default {
   title: 'Components / Selection controls / VtmnQuantity',
   component: VtmnQuantity,
   argTypes: {
+    ...argTypes,
     onChange: {
       type: { name: 'string', required: false },
       description: 'Called when value has changed',
@@ -17,7 +18,6 @@ export default {
         type: 'function',
       },
     },
-    ...argTypes,
   },
   parameters,
 } as Meta;
