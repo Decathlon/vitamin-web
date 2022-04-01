@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.38.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.37.0...@vtmn/svelte@0.38.0) (2022-04-01)
+
+
+### Features
+
+* **@vtmn/svelte:** add `on:change` handle ([#1103](https://github.com/Decathlon/vitamin-web/issues/1103)) ([3160592](https://github.com/Decathlon/vitamin-web/commit/31605922228fffae5152d6f56d3b8063893db10d)), closes [#1101](https://github.com/Decathlon/vitamin-web/issues/1101)
+
+
+
+
+
 # [0.37.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.36.0...@vtmn/svelte@0.37.0) (2022-04-01)
 
 
