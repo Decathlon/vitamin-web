@@ -1,6 +1,6 @@
 <script>
   import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
-  import { VtmnBreadcrumb } from '@vtmn/svelte';
+  import { VtmnBreadcrumb, VtmnBreadcrumbItem } from '@vtmn/svelte';
   import {
     argTypes,
     parameters,
@@ -14,18 +14,34 @@
   {argTypes}
 />
 
-<Template let:args>
-  <VtmnBreadcrumb {...args} />
-</Template>
-
 <Story name="Overview" let:args>
-  <div class="block">
-    <nav aria-label="Breadcrumb" class="vtmn-breadcrumb">
-      <ol>
-        <VtmnBreadcrumb {...args} />
-        <VtmnBreadcrumb item="Store" href="Store" icon="vtmx-store-line" />
-        <VtmnBreadcrumb item="Page 2" href="Page 2" />
-      </ol>
-    </nav>
-  </div>
+  <VtmnBreadcrumb {...args}>
+    <VtmnBreadcrumbItem href="#">Home</VtmnBreadcrumbItem>
+    <VtmnBreadcrumbItem href="#">Page 2</VtmnBreadcrumbItem>
+    <VtmnBreadcrumbItem aria-label="Current page title"
+      >Current</VtmnBreadcrumbItem
+    >
+  </VtmnBreadcrumb>
+</Story>
+
+<Story name="With icons" let:args>
+  <VtmnBreadcrumb {...args}>
+    <VtmnBreadcrumbItem icon="home-line" href="#">Home</VtmnBreadcrumbItem>
+    <VtmnBreadcrumbItem icon="store-line" href="#">Store</VtmnBreadcrumbItem>
+    <VtmnBreadcrumbItem icon="gift-line" href="#">New</VtmnBreadcrumbItem>
+    <VtmnBreadcrumbItem icon="user-line" href="#">Children</VtmnBreadcrumbItem>
+    <VtmnBreadcrumbItem icon="shirt-line" aria-label="Current page title"
+      >Tee-shirt</VtmnBreadcrumbItem
+    >
+  </VtmnBreadcrumb>
+</Story>
+
+<Story name="With custom link" let:args>
+  <VtmnBreadcrumb {...args}>
+    <VtmnBreadcrumbItem icon="home" href="#">Home</VtmnBreadcrumbItem>
+    <VtmnBreadcrumbItem><button>...</button></VtmnBreadcrumbItem>
+    <VtmnBreadcrumbItem aria-label="Current page title"
+      >Tee-shirt</VtmnBreadcrumbItem
+    >
+  </VtmnBreadcrumb>
 </Story>

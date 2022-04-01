@@ -1,8 +1,17 @@
 <script>
+  import { cn } from '../../../utils/classnames';
   /** @restProps */
+
+  /**
+   * Custom classes to apply to the component.
+   * @type {string}
+   */
+  export let className = undefined;
+
+  $: componentClass = cn('vtmn-breadcrumb', className);
 </script>
 
-<nav class="vtmn-breadcrumb" {...$$restProps}>
+<nav class={componentClass} {...$$restProps}>
   <ol>
     <slot />
   </ol>

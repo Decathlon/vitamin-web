@@ -1,5 +1,5 @@
 <script>
-  import VtmnIcon from '../../../guideline/VtmnIcon/VtmnIcon.svelte';
+  import VtmnIcon from '../../../guidelines/iconography/VtmnIcon/VtmnIcon.svelte';
 
   /**
    * The icon to display on the left side of the breadcrumb.
@@ -11,7 +11,7 @@
    * The href that makes the tag interactive.
    * @type {string}
    */
-  export let href;
+  export let href = undefined;
 </script>
 
 <li {...$$restProps}>
@@ -20,7 +20,9 @@
   {/if}
 
   {#if href}
-    <slot name="link" />
+    <a {href}>
+      <slot />
+    </a>
   {:else}
     <slot />
   {/if}

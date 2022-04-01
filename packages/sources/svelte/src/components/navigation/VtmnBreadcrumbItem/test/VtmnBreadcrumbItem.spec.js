@@ -2,23 +2,27 @@ import '@testing-library/jest-dom';
 
 import { render } from '@testing-library/svelte';
 
-import VtmnBreadcrumbItem from './VtmnBreadcrumbWithSlot.svelte';
+import VtmnBreadcrumbItem from './VtmnBreadcrumbItemWithSlot.svelte';
 
 describe('VtmnBreadcrumbItem', () => {
-  const getSlotIcon = (container) => container.querySelector('[slot="icon"]');
-  const getSlotLink = (container) => container.querySelector('[slot="link"]');
+  test('Should display the item', () => {
+    const { container } = render(VtmnBreadcrumbItem, {});
+    expect(container.querySelector('li')).toBeVisible();
+  });
 
-  test('Should pass class from parameters', () => {
+  test('Should display the icon if parameter icon are defined', () => {
     const { container } = render(VtmnBreadcrumbItem, { class: 'unit-test' });
-    expect(container).toHaveClass('unit-test');
+    expect(container.querySelector('li')).toHaveClass('unit-test');
   });
-  test('Should display the icon slot', () => {
-    const { container } = render(VtmnBreadcrumbItem, {});
-    expect(getSlotIcon(container)).toBeVisible();
+  test('Should display the slot under the item', () => {
+    const { getByText } = render(VtmnBreadcrumbItem, {});
+    expect(getByText('Test breadcrumb item')).toBeVisible();
   });
 
-  test('Should display link slot', () => {
-    const { container } = render(VtmnBreadcrumbItem, {});
-    expect(getSlotLink(container)).toBeVisible();
+  test('Should apply class from parameters', () => {
+    const { container } = render(VtmnBreadcrumbItem, { icon: 'home-line' });
+    expect(container.getElementsByClassName('vtmx-home-line')[0]).toBeVisible();
   });
+
+  test('Should apply an tag <a> if href are set', () => {});
 });
