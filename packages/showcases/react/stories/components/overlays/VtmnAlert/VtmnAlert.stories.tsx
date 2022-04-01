@@ -28,7 +28,7 @@ const OverviewTemplate: Story = (args) => {
 
   return (
     <div>
-      <VtmnButton onClick={() => setShowAlert(true)}>Trigger Alert</VtmnButton>
+      <VtmnButton onClick={() => setShowAlert(true)}>Display alert</VtmnButton>
       {showAlert && <VtmnAlert onClose={() => setShowAlert(false)} {...args} />}
     </div>
   );
