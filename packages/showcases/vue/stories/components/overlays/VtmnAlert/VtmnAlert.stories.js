@@ -1,4 +1,5 @@
-import { VtmnAlert } from '@vtmn/vue';
+import { ref } from 'vue';
+import { VtmnAlert, VtmnButton } from '@vtmn/vue';
 import {
   argTypes,
   parameters,
@@ -12,11 +13,22 @@ export default {
 };
 
 const Template = (args) => ({
-  components: { VtmnAlert },
+  components: { VtmnAlert, VtmnButton },
   setup() {
-    return { args };
+    let showAlert = ref(false);
+
+    return {
+      showAlert,
+      handleShowAlertClick: () => {
+        showAlert.value = true;
+        setTimeout(() => {
+          showAlert.value = false;
+        }, 8000);
+      },
+      args,
+    };
   },
-  template: `<VtmnAlert v-bind="args" />`,
+  template: `<VtmnButton @click="handleShowAlertClick()">Display alert</VtmnButton><VtmnAlert v-if="showAlert" v-bind="args" />`,
 });
 
 export const Overview = Template.bind({});
