@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.26.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.25.0...@vtmn/vue@0.26.0) (2022-04-01)
+
+
+### Features
+
+* **@vtmn/vue:** add `VtmnAlert` component ([#1104](https://github.com/Decathlon/vitamin-web/issues/1104)) ([96668ff](https://github.com/Decathlon/vitamin-web/commit/96668ffdd692e3036b9c47906f0468e4bd27072a))
+
+
+
+
+
 # [0.25.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.24.0...@vtmn/vue@0.25.0) (2022-03-31)
 
 
