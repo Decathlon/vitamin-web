@@ -24,6 +24,9 @@ export default /*#__PURE__*/ defineComponent({
       type: Number,
       default: 8000,
     },
+    closeCallBack: {
+      type: Function as PropType<Function>,
+    },
   },
   setup(props) {
     props = reactive(props);
@@ -45,8 +48,8 @@ export default /*#__PURE__*/ defineComponent({
 </script>
 
 <template>
-  <div :class="classes" role="status" v-bind="$attrs">
-    <div class="vtmn-toast_content">{{ content }}</div>
+  <div className="classes" role="status" v-bind="$attrs">
+    <div className="vtmn-toast_content">{{ content }}</div>
     <VtmnButton
       v-if="withCloseButton"
       iconAlone="close-line"

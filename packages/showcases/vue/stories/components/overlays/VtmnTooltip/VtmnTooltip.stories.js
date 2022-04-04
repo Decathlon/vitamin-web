@@ -5,7 +5,7 @@ import {
 } from '@vtmn/showcase-core/csf/components/overlays/tooltip.csf';
 
 export default {
-  title: 'Components / Overlays / Tooltip',
+  title: 'Components / Overlays / VtmnTooltip',
   component: VtmnTooltip,
   argTypes,
   parameters,
