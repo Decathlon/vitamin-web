@@ -12,6 +12,10 @@ export default /*#__PURE__*/ defineComponent({
       type: String,
       default: undefined,
     },
+    description: {
+      type: String,
+      default: undefined,
+    },
     timeout: {
       type: Number,
       default: 8000,
@@ -48,9 +52,9 @@ export default /*#__PURE__*/ defineComponent({
     />
     <div class="vtmn-modal_content">
       <div class="vtmn-modal_content_title">
-        <span id="vtmn-modal-title" class="vtmn-modal_content_title--text">{{
-          title
-        }}</span>
+        <span id="vtmn-modal-title" class="vtmn-modal_content_title--text">
+          {{ title }}
+        </span>
         <VtmnButton
           aria-label="close"
           variant="ghost"
@@ -59,8 +63,14 @@ export default /*#__PURE__*/ defineComponent({
           @click.prevent="handleClose"
         />
       </div>
-      <slot name="description" />
-      <slot name="actions" />
+
+      <div v-if="$slots.description" class="vtmn-modal_content_body">
+        <slot name="description" />
+      </div>
+
+      <div v-if="$slots.actions" class="vtmn-modal_content_actions">
+        <slot name="actions" />
+      </div>
     </div>
   </div>
 </template>

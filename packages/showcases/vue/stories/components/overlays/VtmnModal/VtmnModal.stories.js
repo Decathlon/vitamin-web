@@ -29,7 +29,6 @@ const Template = (args) => ({
   <VtmnButton @click="handleShowModalClick()">Display modal</VtmnButton>
   <VtmnModal v-if="showModal" v-bind="args">
     <template v-slot:description>
-      <div class="vtmn-modal_content_body">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam,
         assumenda? Asperiores rem nulla odit saepe dolores molestias
         exercitationem accusamus perferendis est aut repudiandae optio vel dicta
@@ -46,14 +45,11 @@ const Template = (args) => ({
         dolores molestias exercitationem accusamus perferendis est aut repudiandae
         optio vel dicta reprehenderit ad, repellendus officiis cumque omnis labore
         in quia? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-      </div>
     </template>
     
     <template v-slot:actions>
-      <div class="vtmn-modal_content_actions">
-        <VtmnButton variant="secondary">Action 1</VtmnButton>
-        <VtmnButton variant="primary">Action 2</VtmnButton>
-      </div>
+      <VtmnButton variant="secondary">Action 1</VtmnButton>
+      <VtmnButton variant="primary">Action 2</VtmnButton>
     </template>
   </VtmnModal>`,
 });
