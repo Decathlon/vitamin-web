@@ -52,7 +52,7 @@ export default /*#__PURE__*/ defineComponent({
 </script>
 
 <template>
-  <div class="vtmn-snackbar" role="status" v-bind="$attrs">
+  <div :class="classes" role="status" v-bind="$attrs">
     <div class="vtmn-snackbar_content">
       {{ content }}
     </div>
@@ -62,7 +62,8 @@ export default /*#__PURE__*/ defineComponent({
       size="small"
       :aria-label="actionLabel"
       @click.prevent="handleAction"
-    >{{ actionLabel }}</VtmnButton>
+      >{{ actionLabel }}</VtmnButton
+    >
     <VtmnButton
       v-if="withCloseButton"
       iconAlone="close-line"

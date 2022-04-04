@@ -8,6 +8,7 @@ import VtmnPrice from './indicators/VtmnPrice';
 import VtmnTag from './indicators/VtmnTag';
 import VtmnAlert from './overlays/VtmnAlert';
 import VtmnPopover from './overlays/VtmnPopover';
+import VtmnSnackbar from './overlays/VtmnSnackbar';
 import VtmnTooltip from './overlays/VtmnTooltip';
 import VtmnCheckbox from './selection-controls/VtmnCheckbox';
 import VtmnChip from './selection-controls/VtmnChip';
@@ -31,6 +32,7 @@ export {
   VtmnTag,
   VtmnAlert,
   VtmnPopover,
+  VtmnSnackbar,
   VtmnTooltip,
   VtmnToggle,
   VtmnAccordion,
