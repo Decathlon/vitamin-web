@@ -57,6 +57,7 @@
     "@vtmn/css-radio-button": "^0.6.15",
     "@vtmn/css-select": "^0.6.15",
     "@vtmn/css-skeleton": "^0.3.14",
+    "@vtmn/css-snackbar": "^0.5.13",
     "@vtmn/css-tag": "^0.5.0",
     "@vtmn/css-text-input": "^0.13.14",
     "@vtmn/css-toggle": "^0.6.13",
