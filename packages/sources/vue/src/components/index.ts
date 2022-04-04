@@ -34,7 +34,6 @@ export {
   VtmnCheckbox,
   VtmnChip,
   VtmnRadioButton,
-  VtmnTag,
   VtmnToggle,
   VtmnAccordion,
   VtmnDivider,
