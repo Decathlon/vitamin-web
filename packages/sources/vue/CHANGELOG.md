@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.27.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.26.0...@vtmn/vue@0.27.0) (2022-04-04)
+
+
+### Features
+
+* **@vtmn/vue:** add `VtmnPopover` component ([#1102](https://github.com/Decathlon/vitamin-web/issues/1102)) ([94009e6](https://github.com/Decathlon/vitamin-web/commit/94009e6e15fdccbaef3eb8f5b3153dda87a13b61))
+
+
+
+
+
 # [0.26.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.25.0...@vtmn/vue@0.26.0) (2022-04-01)
 
 
