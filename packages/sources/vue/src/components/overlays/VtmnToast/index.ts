@@ -1,8 +1,8 @@
 import { App as Application } from 'vue';
-import VtmnTooltip from './Vtmntoast.vue';
+import VtmnToast from './VtmnToast.vue';
 
-VtmnTooltip.install = (Vue: Application) => {
-  Vue.component(VtmnTooltip.name, VtmnTooltip);
+VtmnToast.install = (Vue: Application) => {
+  Vue.component(VtmnToast.name, VtmnToast);
 };
 
-export default VtmnTooltip;
+export default VtmnToast;

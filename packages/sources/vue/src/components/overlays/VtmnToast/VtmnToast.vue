@@ -27,9 +27,11 @@ export default /*#__PURE__*/ defineComponent({
   },
   setup(props) {
     props = reactive(props);
+
     const handleClose = () => {
       return props.closeCallback();
     };
+
     return {
       classes: computed(() => ({
         'vtmn-toast': true,
