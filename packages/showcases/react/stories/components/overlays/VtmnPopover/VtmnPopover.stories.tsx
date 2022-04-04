@@ -14,11 +14,9 @@ export default {
 } as Meta;
 
 const Template: Story = (args) => (
-  <div style={{ width: 400, height: 250, textAlign: 'center' }}>
-    <VtmnPopover identifier="my-popover" {...args}>
-      <VtmnLink>Popover on the {args.position}</VtmnLink>
-    </VtmnPopover>
-  </div>
+  <VtmnPopover identifier="my-popover" {...args}>
+    <VtmnLink>Popover on the {args.position}</VtmnLink>
+  </VtmnPopover>
 );
 
 export const Overview = Template.bind({});
