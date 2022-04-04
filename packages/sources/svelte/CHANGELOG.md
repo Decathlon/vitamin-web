@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.38.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.38.1...@vtmn/svelte@0.38.2) (2022-04-04)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+## [0.38.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.38.0...@vtmn/svelte@0.38.1) (2022-04-02)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+# [0.38.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.37.0...@vtmn/svelte@0.38.0) (2022-04-01)
+
+
+### Features
+
+* **@vtmn/svelte:** add `on:change` handle ([#1103](https://github.com/Decathlon/vitamin-web/issues/1103)) ([3160592](https://github.com/Decathlon/vitamin-web/commit/31605922228fffae5152d6f56d3b8063893db10d)), closes [#1101](https://github.com/Decathlon/vitamin-web/issues/1101)
+
+
+
+
+
+# [0.37.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.36.0...@vtmn/svelte@0.37.0) (2022-04-01)
+
+
+### Features
+
+* **@vtmn/react:** add `VtmnPopover` component ([#1101](https://github.com/Decathlon/vitamin-web/issues/1101)) ([7fb72ec](https://github.com/Decathlon/vitamin-web/commit/7fb72ecaf634770aa810ea69e075071c1ce6ac1e))
+
+
+
+
+
 # [0.36.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.35.0...@vtmn/svelte@0.36.0) (2022-03-31)
 
 

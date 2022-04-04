@@ -39,6 +39,8 @@ export type { VtmnSearchProps } from './components/navigation/VtmnSearch/VtmnSea
 // Overlays
 export { VtmnAlert } from './components/overlays/VtmnAlert';
 export type { VtmnAlertProps } from './components/overlays/VtmnAlert';
+export { VtmnPopover } from './components/overlays/VtmnPopover';
+export type { VtmnPopoverProps } from './components/overlays/VtmnPopover';
 export { VtmnToast } from './components/overlays/VtmnToast';
 export type { VtmnToastProps } from './components/overlays/VtmnToast';
 export { VtmnTooltip } from './components/overlays/VtmnTooltip';
@@ -49,6 +51,8 @@ export { VtmnCheckbox } from './components/selection-controls/VtmnCheckbox';
 export type { VtmnCheckboxProps } from './components/selection-controls/VtmnCheckbox';
 export { VtmnChip } from './components/selection-controls/VtmnChip';
 export type { VtmnChipProps } from './components/selection-controls/VtmnChip';
+export { VtmnQuantity } from './components/selection-controls/VtmnQuantity';
+export type { VtmnQuantityProps } from './components/selection-controls/VtmnQuantity';
 export { VtmnRadioButton } from './components/selection-controls/VtmnRadioButton';
 export type { VtmnRadioButtonProps } from './components/selection-controls/VtmnRadioButton';
 export { VtmnToggle } from './components/selection-controls/VtmnToggle';

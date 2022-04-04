@@ -36,6 +36,8 @@ export { default as VtmnTag } from './components/indicators/VtmnTag';
 // Navigation
 
 // Overlays
+export { default as VtmnAlert } from './components/overlays/VtmnAlert';
+export { default as VtmnPopover } from './components/overlays/VtmnPopover';
 export { default as VtmnToast } from './components/overlays/VtmnToast';
 export { default as VtmnTooltip } from './components/overlays/VtmnTooltip';
 
