@@ -1,4 +1,5 @@
-import { VtmnToast } from '@vtmn/vue';
+import { ref } from 'vue';
+import { VtmnToast, VtmnButton } from '@vtmn/vue';
 import {
   argTypes,
   parameters,
@@ -12,11 +13,22 @@ export default {
 };
 
 const Template = (args) => ({
-  components: { VtmnToast },
+  components: { VtmnToast, VtmnButton },
   setup() {
-    return { args };
+    let showToast = ref(false);
+
+    return {
+      showToast,
+      handleShowToastClick: () => {
+        showToast.value = true;
+        setTimeout(() => {
+          showToast.value = false;
+        }, 8000);
+      },
+      args,
+    };
   },
-  template: `<div style="width: 400px; display: flex; justify-content: center"><VtmnToast v-bind="args"/></div>`,
+  template: `<VtmnButton @click="handleShowToastClick()">Display toast</VtmnButton><VtmnToast v-if="showToast" v-bind="args" />`,
 });
 
 export const Overview = Template.bind({});
