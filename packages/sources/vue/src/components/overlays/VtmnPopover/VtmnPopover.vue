@@ -41,7 +41,7 @@ export default /*#__PURE__*/ defineComponent({
     class="vtmn-popover"
     :data-position="position"
     :aria-describedby="id"
-    tab-index="0"
+    tabindex="0"
     v-bind="$attrs"
   >
     <slot />

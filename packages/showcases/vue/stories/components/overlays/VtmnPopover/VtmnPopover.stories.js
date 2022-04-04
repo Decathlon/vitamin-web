@@ -16,7 +16,7 @@ const Template = (args) => ({
   setup() {
     return { args };
   },
-  template: `<div style="width: 400px; height: 250px; text-align: center;"><VtmnPopover id="my-popover" v-bind="args"><VtmnLink>Popover on the {{ args.position }}</VtmnLink></VtmnPopover></div>`,
+  template: `<VtmnPopover id="my-popover" v-bind="args"><VtmnLink>Popover on the {{ args.position }}</VtmnLink></VtmnPopover>`,
 });
 
 export const Overview = Template.bind({});
