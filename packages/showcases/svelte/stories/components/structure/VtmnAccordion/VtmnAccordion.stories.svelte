@@ -11,7 +11,17 @@
   title="Components / Structure / VtmnAccordion"
   component={VtmnAccordion}
   {parameters}
-  {argTypes}
+  argTypes={{
+    ...argTypes,
+    slot: {
+      type: { name: 'string', required: false },
+      description: 'Description of the accordion',
+      defaultValue: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
+      control: {
+        type: 'text',
+      },
+    },
+  }}
 />
 <Story name="Overview" let:args>
   <VtmnAccordion class="accordion-stories" {...args}>
@@ -20,53 +30,23 @@
     </p>
   </VtmnAccordion>
 </Story>
-<Story name="Default">
+<Story name="Simple">
   <VtmnAccordion summary="Item 1" class="accordion-stories" open>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse
-      aliquam vel quia beatae facere veniam eos dolorum consequatur rem unde
-      molestiae sequi saepe iste nostrum dolore, nam voluptate recusandae autem
-      alias enim. Eos minus error temporibus hic quidem obcaecati vel, odit
-      adipisci autem. Molestiae, harum odio. Tempora, quo numquam.
-    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
   </VtmnAccordion>
   <VtmnAccordion summary="Item 2" class="accordion-stories">
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse
-      aliquam vel quia beatae facere veniam eos dolorum consequatur rem unde
-      molestiae sequi saepe iste nostrum dolore, nam voluptate recusandae autem
-      alias enim. Eos minus error temporibus hic quidem obcaecati vel, odit
-      adipisci autem. Molestiae, harum odio. Tempora, quo numquam.
-    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
   </VtmnAccordion>
   <VtmnAccordion summary="Item 3" disabled class="accordion-stories">
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse
-      aliquam vel quia beatae facere veniam eos dolorum consequatur rem unde
-      molestiae sequi saepe iste nostrum dolore, nam voluptate recusandae autem
-      alias enim. Eos minus error temporibus hic quidem obcaecati vel, odit
-      adipisci autem. Molestiae, harum odio. Tempora, quo numquam.
-    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
   </VtmnAccordion>
 </Story>
-<Story name="With left icon">
+<Story name="With left icons">
   <VtmnAccordion summary="Item 1" withIconLeft class="accordion-stories" open>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse
-      aliquam vel quia beatae facere veniam eos dolorum consequatur rem unde
-      molestiae sequi saepe iste nostrum dolore, nam voluptate recusandae autem
-      alias enim. Eos minus error temporibus hic quidem obcaecati vel, odit
-      adipisci autem. Molestiae, harum odio. Tempora, quo numquam.
-    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
   </VtmnAccordion>
   <VtmnAccordion summary="Item 2" withIconLeft class="accordion-stories">
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse
-      aliquam vel quia beatae facere veniam eos dolorum consequatur rem unde
-      molestiae sequi saepe iste nostrum dolore, nam voluptate recusandae autem
-      alias enim. Eos minus error temporibus hic quidem obcaecati vel, odit
-      adipisci autem. Molestiae, harum odio. Tempora, quo numquam.
-    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
   </VtmnAccordion>
   <VtmnAccordion
     summary="Item 3"
@@ -74,13 +54,7 @@
     withIconLeft
     class="accordion-stories"
   >
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse
-      aliquam vel quia beatae facere veniam eos dolorum consequatur rem unde
-      molestiae sequi saepe iste nostrum dolore, nam voluptate recusandae autem
-      alias enim. Eos minus error temporibus hic quidem obcaecati vel, odit
-      adipisci autem. Molestiae, harum odio. Tempora, quo numquam.
-    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
   </VtmnAccordion>
 </Story>
 <Story name="Custom content">

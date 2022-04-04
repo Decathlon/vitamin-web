@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.64.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.64.2...@vtmn/css@0.64.3) (2022-04-04)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+## [0.64.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.64.1...@vtmn/css@0.64.2) (2022-03-31)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** quantity inner and outer spin buttons ([#1099](https://github.com/Decathlon/vitamin-web/issues/1099)) ([1f6c80b](https://github.com/Decathlon/vitamin-web/commit/1f6c80b8562a6cd520e5c48ae6c21bcaa6d5ec0f))
+
+
+
+
+
 ## [0.64.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.64.0...@vtmn/css@0.64.1) (2022-03-30)
 
 **Note:** Version bump only for package @vtmn/css

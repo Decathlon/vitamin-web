@@ -41,21 +41,4 @@ export const argTypes = {
       type: 'boolean',
     },
   },
-  class: {
-    type: { name: 'string', required: true },
-    description: 'list of classes of the accordion',
-    defaultValue: 'accordion-stories',
-    control: {
-      type: 'text',
-    },
-  },
-  slot: {
-    type: { name: 'string', required: false },
-    description: 'Description of the accordion',
-    defaultValue: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse
-                  aliquam vel quia beatae facere veniam`,
-    control: {
-      type: 'text',
-    },
-  },
 };
