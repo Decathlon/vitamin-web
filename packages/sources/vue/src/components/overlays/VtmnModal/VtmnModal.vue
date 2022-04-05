@@ -8,34 +8,27 @@ export default /*#__PURE__*/ defineComponent({
   components: { VtmnButton },
   inheritAttrs: false,
   props: {
-    title: {
-      type: String,
-      default: undefined,
+    show: {
+      type: Boolean as PropType<Boolean>,
+      default: false,
     },
-    description: {
-      type: String,
-      default: undefined,
-    },
-    timeout: {
-      type: Number,
-      default: 8000,
-    },
-    closeCallback: {
-      type: Function as PropType<Function>,
-      required: true,
+    animationDisabled: {
+      type: Boolean as PropType<Boolean>,
+      default: false,
     },
   },
-
-  setup(props) {
+  emits: ['close'],
+  setup(props, { emit }) {
     props = reactive(props);
 
-    const handleClose = () => {
-      return props.closeCallback();
+    const handleClose = (event: Event) => {
+      return emit('close', (event.target as HTMLInputElement).value);
     };
+
     return {
       classes: computed(() => ({
         'vtmn-modal': true,
-        show: true,
+        show: !props.animationDisabled,
       })),
       handleClose,
     };
@@ -43,7 +36,7 @@ export default /*#__PURE__*/ defineComponent({
 });
 </script>
 
-<template>
+<template v-if="show">
   <div :class="classes" role="dialog" aria-modal="true" v-bind="$attrs">
     <div
       id="vtmn-modal-background"
@@ -52,8 +45,12 @@ export default /*#__PURE__*/ defineComponent({
     />
     <div class="vtmn-modal_content">
       <div class="vtmn-modal_content_title">
-        <span id="vtmn-modal-title" class="vtmn-modal_content_title--text">
-          {{ title }}
+        <span
+          v-if="$slots.title"
+          id="vtmn-modal-title"
+          class="vtmn-modal_content_title--text"
+        >
+          <slot name="title" />
         </span>
         <VtmnButton
           aria-label="close"

@@ -8,7 +8,24 @@ import {
 export default {
   title: 'Components / Overlays / VtmnModal',
   component: VtmnModal,
-  argTypes,
+  argTypes: {
+    show: {
+      type: { name: 'boolean', required: true },
+      description: 'Display the modal',
+      defaultValue: false,
+      control: {
+        type: 'boolean',
+      },
+    },
+    animationDisabled: {
+      type: { name: 'boolean', require: false },
+      description: 'Disable the fade animation on show',
+      defaultValue: true,
+      control: {
+        type: 'boolean',
+      },
+    },
+  },
   parameters,
 };
 
@@ -28,6 +45,10 @@ const Template = (args) => ({
   template: `
   <VtmnButton @click="handleShowModalClick()">Display modal</VtmnButton>
   <VtmnModal v-if="showModal" v-bind="args">
+    <template v-slot:title>
+      This is the title
+    </template>
+    
     <template v-slot:description>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam,
         assumenda? Asperiores rem nulla odit saepe dolores molestias
