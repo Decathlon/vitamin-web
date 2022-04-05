@@ -7,10 +7,6 @@ export default /*#__PURE__*/ defineComponent({
   inheritAttrs: false,
   components: { VtmnButton },
   props: {
-    content: {
-      type: String as PropType<String>,
-      required: true,
-    },
     withCloseButton: {
       type: Boolean as PropType<Boolean>,
       default: false,
@@ -19,24 +15,17 @@ export default /*#__PURE__*/ defineComponent({
       type: String as PropType<String>,
       default: undefined,
     },
-    closeCallBack: {
-      type: Function as PropType<Function>,
-      required: true,
-    },
-    actionCallBack: {
-      type: Function as PropType<Function>,
-      required: true,
-    },
   },
-  setup(props) {
+  emits: ['close', 'action'],
+  setup(props, { emit }) {
     props = reactive(props);
 
-    const handleClose = () => {
-      return props.closeCallBack;
+    const handleClose = (event: Event) => {
+      return emit('close', (event.target as HTMLInputElement).value);
     };
 
-    const handleAction = () => {
-      return props.actionCallBack;
+    const handleAction = (event: Event) => {
+      return emit('action', (event.target as HTMLInputElement).value);
     };
 
     return {
@@ -53,15 +42,15 @@ export default /*#__PURE__*/ defineComponent({
 
 <template>
   <div :class="classes" role="status" v-bind="$attrs">
-    <div class="vtmn-snackbar_content">
-      {{ content }}
+    <div v-if="$slots.content" class="vtmn-snackbar_content">
+      <slot name="content" />
     </div>
     <VtmnButton
       v-if="actionLabel"
       variant="ghost-reversed"
       size="small"
       :aria-label="actionLabel"
-      @click.prevent="handleAction"
+      @click="handleAction"
       >{{ actionLabel }}</VtmnButton
     >
     <VtmnButton
@@ -70,7 +59,7 @@ export default /*#__PURE__*/ defineComponent({
       variant="ghost-reversed"
       size="small"
       aria-label="close"
-      @click.prevent="handleClose"
+      @click="handleClose"
     />
   </div>
 </template>
