@@ -26,6 +26,7 @@ export const argTypes = {
   actionLabel: {
     type: { name: 'string', required: false },
     describe: 'Label of the action. If set, it displays action button',
+    defaultValue: 'Action',
     control: {
       type: 'text',
     },
