@@ -1,17 +1,11 @@
 <script>
-  import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
+  import { Meta, Story } from '@storybook/addon-svelte-csf';
   import { VtmnBreadcrumb, VtmnBreadcrumbItem } from '@vtmn/svelte';
-  import {
-    argTypes,
-    parameters,
-  } from '@vtmn/showcase-core/csf/components/navigation/breadcrumb.csf';
 </script>
 
 <Meta
   title="Components / Navigation / VtmnBreadcrumb"
   component={VtmnBreadcrumb}
-  {parameters}
-  {argTypes}
 />
 
 <Story name="Overview" let:args>

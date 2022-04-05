@@ -24,5 +24,18 @@ describe('VtmnBreadcrumbItem', () => {
     expect(container.getElementsByClassName('vtmx-home-line')[0]).toBeVisible();
   });
 
-  test('Should apply an tag <a> if href are set', () => {});
+  test('Should apply an tag <a> if href are set', () => {
+    const { container } = render(VtmnBreadcrumbItem, { href: '#' });
+    expect(container.querySelector('a')).toHaveAttribute('href', '#');
+  });
+
+  test('Should apply an aria-label', () => {
+    const { container } = render(VtmnBreadcrumbItem, {
+      'aria-label': 'Current page title',
+    });
+    expect(container.querySelector('li')).toHaveAttribute(
+      'aria-label',
+      'Current page title',
+    );
+  });
 });
