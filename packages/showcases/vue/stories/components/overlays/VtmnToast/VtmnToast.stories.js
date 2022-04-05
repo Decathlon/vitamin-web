@@ -28,7 +28,12 @@ const Template = (args) => ({
       args,
     };
   },
-  template: `<VtmnButton @click="handleShowToastClick()">Display toast</VtmnButton><VtmnToast v-if="showToast" v-bind="args" />`,
+  template: `<VtmnButton @click="handleShowToastClick()">Display toast</VtmnButton>
+  <VtmnToast v-if="showToast" v-bind="args">
+    <template v-slot:content>
+      This is the content of the toast component
+    </template>
+  </VtmnToast>`,
 });
 
 export const Overview = Template.bind({});

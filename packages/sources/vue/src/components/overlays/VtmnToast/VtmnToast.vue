@@ -9,31 +9,20 @@ export default /*#__PURE__*/ defineComponent({
   components: { VtmnButton },
   props: {
     withIcon: {
-      type: Boolean,
+      type: Boolean as PropType<Boolean>,
       default: false,
-    },
-    content: {
-      type: String,
-      required: true,
     },
     withCloseButton: {
-      type: Boolean,
+      type: Boolean as PropType<Boolean>,
       default: false,
     },
-    timeout: {
-      type: Number,
-      default: 8000,
-    },
-    closeCallBack: {
-      type: Function as PropType<Function>,
-      required: true,
-    },
   },
-  setup(props) {
+  emits: ['close'],
+  setup(props, { emit }) {
     props = reactive(props);
 
-    const handleClose = () => {
-      return props.closeCallBack;
+    const handleClose = (event: Event) => {
+      return emit('close', (event.target as HTMLInputElement).value);
     };
 
     return {
@@ -50,14 +39,16 @@ export default /*#__PURE__*/ defineComponent({
 
 <template>
   <div :class="classes" role="status" v-bind="$attrs">
-    <div class="vtmn-toast_content">{{ content }}</div>
+    <div v-if="$slots.content" class="vtmn-toast_content">
+      <slot name="content" />
+    </div>
     <VtmnButton
       v-if="withCloseButton"
-      iconAlone="close-line"
+      icon-alone="close-line"
       variant="ghost-reversed"
       size="small"
       aria-label="close"
-      @click.prevent="handleClose"
+      @close.prevent="handleClose"
     />
   </div>
 </template>
