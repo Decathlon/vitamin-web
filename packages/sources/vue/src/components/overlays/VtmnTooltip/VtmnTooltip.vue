@@ -8,7 +8,7 @@ export default /*#__PURE__*/ defineComponent({
   inheritAttrs: false,
   props: {
     tooltip: {
-      type: String,
+      type: String as PropType<string>,
     },
     position: {
       type: String as PropType<VtmnTooltipPosition>,

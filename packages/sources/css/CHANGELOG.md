@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.65.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.64.3...@vtmn/css@0.65.0) (2022-04-05)
+
+
+### Features
+
+* **@vtmn/css:** improve dropdown a11y + fix bug scrolltop ([#1113](https://github.com/Decathlon/vitamin-web/issues/1113)) ([17a5b1b](https://github.com/Decathlon/vitamin-web/commit/17a5b1b65741f780d4fa3a3668daddcb426e6fb4))
+
+
+
+
+
 ## [0.64.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.64.2...@vtmn/css@0.64.3) (2022-04-04)
 
 **Note:** Version bump only for package @vtmn/css

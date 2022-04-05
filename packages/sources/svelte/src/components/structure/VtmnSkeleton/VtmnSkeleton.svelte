@@ -33,7 +33,7 @@
   });
 </script>
 
-<span class={componentClass} style={componentStyle} />
+<span class={componentClass} style={componentStyle} {...$$restProps} />
 
 <style lang="css">
   @import '@vtmn/css-skeleton';
