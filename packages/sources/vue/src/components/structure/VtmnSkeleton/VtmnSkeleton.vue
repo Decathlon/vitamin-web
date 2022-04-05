@@ -1,6 +1,6 @@
 <script lang="ts">
 import '@vtmn/css-skeleton/dist/index-with-vars.css';
-import { reactive, computed, defineComponent, PropType } from 'vue';
+import { reactive, computed, defineComponent, PropType, Prop } from 'vue';
 import { VtmnSkeletonShape } from './types';
 
 export default /*#__PURE__*/ defineComponent({
@@ -8,7 +8,7 @@ export default /*#__PURE__*/ defineComponent({
   inheritAttrs: false,
   props: {
     width: {
-      type: Number,
+      type: Number as PropType<number>,
       default: 0,
       validator: (val: number) => val >= 0 && val <= 100,
     },

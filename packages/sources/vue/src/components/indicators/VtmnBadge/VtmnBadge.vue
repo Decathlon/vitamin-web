@@ -14,7 +14,7 @@ export default /*#__PURE__*/ defineComponent({
         ['default', 'brand', 'reversed', 'accent', 'alert'].includes(val),
     },
     value: {
-      type: Number,
+      type: Number as PropType<number>,
       default: undefined,
     },
   },
