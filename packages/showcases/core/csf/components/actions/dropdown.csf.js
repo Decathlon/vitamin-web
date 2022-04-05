@@ -45,7 +45,7 @@ export const argTypes = {
 
   menuMaxHeight: {
     type: { name: 'number', required: false },
-    description: 'Max height of menu, this enable scroll',
+    description: 'Max height of menu, this enables scroll',
     defaultValue: 0,
     control: {
       type: 'number',
