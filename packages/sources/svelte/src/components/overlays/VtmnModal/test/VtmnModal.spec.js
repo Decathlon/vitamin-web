@@ -28,18 +28,17 @@ describe('VtmnModal', () => {
     container.getElementsByClassName(
       'vtmn-modal_content_body--overflow-indicator',
     )[0];
-
-  const getSlotTitle = (container) => container.querySelector('[slot="title"]');
-  const getSlotDescription = (container) =>
-    container.querySelector('[slot="description"]');
-  const getSlotActions = (container) =>
-    container.querySelector('[slot="actions"]');
+  const getContentActions = (container) =>
+    container.getElementsByClassName('vtmn-modal_content_actions')[0];
+  const getContentDescription = (container) =>
+    container.querySelector('#vtmn-modal-description');
+  const getContentTitle = (container) =>
+    container.querySelector('#vtmn-modal-title');
 
   describe('show = false', () => {
     test('Should have no content', () => {
       const { container } = render(VtmnModal, {
         show: false,
-        title: 'Unit-test',
       });
       expect(getModal(container)).toBeUndefined();
     });
@@ -49,7 +48,6 @@ describe('VtmnModal', () => {
     test('Should have no content', () => {
       const { container } = render(VtmnModal, {
         show: true,
-        title: 'Unit-test',
       });
       expect(getModal(container)).toBeVisible();
       expect(getModal(container)).toHaveClass('show');
@@ -57,7 +55,6 @@ describe('VtmnModal', () => {
     test('Should not have class show if animationDisabled is true', () => {
       const { container } = render(VtmnModal, {
         show: true,
-        title: 'Unit-test',
         animationDisabled: true,
       });
       expect(getModal(container)).toBeVisible();
@@ -66,7 +63,6 @@ describe('VtmnModal', () => {
     test('Should pass custom class to modal', () => {
       const { container } = render(VtmnModal, {
         show: true,
-        title: 'Unit-test',
         class: 'unit-test',
       });
       expect(getModal(container)).toHaveClass('unit-test');
@@ -74,7 +70,6 @@ describe('VtmnModal', () => {
     test('Should trigger cancel if user click on overlay', async () => {
       const { container, component } = render(VtmnModal, {
         show: true,
-        title: 'Unit-test',
       });
       await expectedCancelOnElement(getOverlay(container), component, 1);
     });
@@ -82,68 +77,62 @@ describe('VtmnModal', () => {
     test('Should have a cancel button', () => {
       const { container } = render(VtmnModal, {
         show: true,
-        title: 'Unit-test',
       });
       expect(getCloseButton(container)).toBeVisible();
     });
     test('Should trigger cancel on click close button', async () => {
       const { container, component } = render(VtmnModal, {
         show: true,
-        title: 'Unit-test',
       });
       await expectedCancelOnElement(getCloseButton(container), component, 1);
     });
 
-    test('Should have a slot title', () => {
+    test('Should not have a slot title', () => {
       const { container } = render(VtmnModal, {
         show: true,
-        title: 'Unit-test',
       });
-      expect(getSlotTitle(container)).toBeVisible();
+      expect(getContentTitle(container)).toBeNull();
     });
 
     test('Should not have a slot description', () => {
       const { container } = render(VtmnModal, {
         show: true,
-        title: 'Unit-test',
       });
-      expect(getSlotDescription(container)).toBeNull();
+      expect(getContentDescription(container)).toBeNull();
     });
 
     test('Should not have a slot actions', () => {
       const { container } = render(VtmnModal, {
         show: true,
-        title: 'Unit-test',
       });
-      expect(getSlotActions(container)).toBeNull();
+      expect(getContentActions(container)).toBeUndefined();
     });
 
     describe('With slot description', () => {
       test('Should have a slot title', () => {
         const { container } = render(VtmnModalWithDescription, {
           show: true,
-          title: 'Unit-test',
         });
-        expect(getSlotTitle(container)).toBeVisible();
+        expect(getContentTitle(container)).toBeVisible();
+        expect(getContentTitle(container)).toHaveClass(
+          'vtmn-modal_content_title--text',
+        );
       });
       test('Should have a slot description', () => {
         const { container } = render(VtmnModalWithDescription, {
           show: true,
-          title: 'Unit-test',
         });
-        expect(getSlotDescription(container)).toBeVisible();
+        expect(getContentDescription(container)).toBeVisible();
       });
       test('Should not have a slot description', () => {
         const { container } = render(VtmnModalWithDescription, {
           show: true,
-          title: 'Unit-test',
         });
-        expect(getSlotActions(container)).toBeNull();
+        expect(getContentActions(container)).toBeUndefined();
       });
       test("Should not have a class 'vtmn-modal_content_body--overflow-indicator'", () => {
         const { container } = render(VtmnModalWithDescription, {
           show: true,
-          title: 'Unit-test',
         });
         expect(getOverFlow(container)).toBeUndefined();
       });
@@ -153,16 +142,14 @@ describe('VtmnModal', () => {
       test("Should have a class 'vtmn-modal_content_body--overflow-indicator'", () => {
         const { container } = render(VtmnModalWithSlots, {
           show: true,
-          title: 'Unit-test',
         });
         expect(getOverFlow(container)).toBeVisible();
       });
       test('Should have a slot actions', () => {
         const { container } = render(VtmnModalWithSlots, {
           show: true,
-          title: 'Unit-test',
         });
-        expect(getSlotActions(container)).toBeVisible();
+        expect(getContentActions(container)).toBeVisible();
       });
     });
   });

@@ -31,8 +31,8 @@
       show = false;
     }}
   >
-    <slot slot="title">This is the title</slot>
-    <slot slot="description">
+    <svelte:fragment slot="title">This is the title</svelte:fragment>
+    <svelte:fragment slot="description">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam,
       assumenda? Asperiores rem nulla odit saepe dolores molestias
       exercitationem accusamus perferendis est aut repudiandae optio vel dicta
@@ -64,8 +64,8 @@
       dolores molestias exercitationem accusamus perferendis est aut repudiandae
       optio vel dicta reprehenderit ad, repellendus officiis cumque omnis labore
       in quia?
-    </slot>
-    <slot slot="actions">
+    </svelte:fragment>
+    <svelte:fragment slot="actions">
       <VtmnButton
         variant="secondary"
         on:click={() => {
@@ -79,7 +79,7 @@
           console.log('Yes, I understand'), (show = false);
         }}>Yes, I understand</VtmnButton
       >
-    </slot>
+    </svelte:fragment>
   </VtmnModal>
 </Story>
 
@@ -99,8 +99,8 @@
       show = false;
     }}
   >
-    <slot slot="title">This is the title</slot>
-    <slot slot="description">
+    <svelte:fragment slot="title">This is the title</svelte:fragment>
+    <svelte:fragment slot="description">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam,
       assumenda? Asperiores rem nulla odit saepe dolores molestias
       exercitationem accusamus perferendis est aut repudiandae optio vel dicta
@@ -132,6 +132,6 @@
       dolores molestias exercitationem accusamus perferendis est aut repudiandae
       optio vel dicta reprehenderit ad, repellendus officiis cumque omnis labore
       in quia?
-    </slot>
+    </svelte:fragment>
   </VtmnModal>
 </Story>

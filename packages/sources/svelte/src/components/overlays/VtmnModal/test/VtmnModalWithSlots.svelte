@@ -3,7 +3,7 @@
 </script>
 
 <VtmnModal {...$$restProps}>
-  <p slot="title">title</p>
-  <p slot="description">description</p>
-  <div slot="actions">actions</div>
+  <svelte:fragment slot="title">title</svelte:fragment>
+  <svelte:fragment slot="description">description</svelte:fragment>
+  <svelte:fragment slot="actions">actions</svelte:fragment>
 </VtmnModal>
