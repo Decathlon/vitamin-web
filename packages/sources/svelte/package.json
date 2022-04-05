@@ -78,7 +78,7 @@
     "rollup-plugin-svelte": "^7.1.0",
     "svelte": "3.46.6",
     "svelte-jester": "^2.3.2",
-    "svelte-preprocess": "4.10.4"
+    "svelte-preprocess": "4.10.5"
   },
   "jest": {
     "testEnvironment": "jsdom",
