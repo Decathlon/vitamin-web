@@ -24,12 +24,8 @@ export default /*#__PURE__*/ defineComponent({
       type: String as PropType<VtmnSearchSize>,
       default: 'medium',
     },
-    searchCallback: {
-      type: Function as PropType<Function>,
-      required: true,
-    },
   },
-  emits: ['update:modelValue'],
+  emits: ['update:modelValue', 'search'],
   setup(props, { emit }) {
     props = reactive(props);
 
@@ -43,7 +39,7 @@ export default /*#__PURE__*/ defineComponent({
     };
 
     const handleSearch = () => {
-      return props.searchCallback(props.modelValue);
+      return emit('search', props.modelValue);
     };
 
     const handleReset = () => {
@@ -76,7 +72,7 @@ export default /*#__PURE__*/ defineComponent({
 
     <div class="vtmn-search_buttons">
       <VtmnButton
-        iconAlone="close-line"
+        icon-alone="close-line"
         variant="ghost"
         :disabled="disabled"
         :size="size"
@@ -86,7 +82,7 @@ export default /*#__PURE__*/ defineComponent({
       />
 
       <VtmnButton
-        iconAlone="search-line"
+        icon-alone="search-line"
         variant="ghost"
         :disabled="disabled"
         :size="size"
