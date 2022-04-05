@@ -18,6 +18,7 @@
 
 .vtmn-breadcrumb a {
   text-decoration: none;
+  line-height: 1;
   color: inherit;
   transition: var(--vtmn-transition_focus-visible);
 }
