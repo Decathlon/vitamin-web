@@ -28,7 +28,7 @@ const OverviewTemplate: Story = (args) => {
 
   return (
     <div>
-      <VtmnButton onClick={() => setshowToast(true)}>Trigger Toast</VtmnButton>
+      <VtmnButton onClick={() => setshowToast(true)}>Display toast</VtmnButton>
       {showToast && <VtmnToast onClose={() => setshowToast(false)} {...args} />}
     </div>
   );

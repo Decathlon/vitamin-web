@@ -12,33 +12,24 @@ export interface VtmnPopoverProps
 
   /**
    * The position of the popover.
-   * @defaultValue 'bottom'
+   * @defaultValue 'top'
    */
   position?: VtmnPopoverPosition;
 
   /**
-   * The placeholder of the popover.
-   * @defaultValue 'bottom'
-   */
-  placeholder?: string;
-
-  /**
    * The title of the popover.
-   * @defaultValue 'bottom'
    */
   title?: string;
 
   /**
    * The text of the popover.
-   * @defaultValue 'bottom'
    */
   body?: string;
 }
 
 export const VtmnPopover = ({
   identifier,
-  position = 'bottom',
-  placeholder,
+  position = 'top',
   title,
   body,
   children,

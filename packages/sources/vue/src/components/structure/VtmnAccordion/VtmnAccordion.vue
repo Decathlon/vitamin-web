@@ -1,24 +1,24 @@
 <script lang="ts">
 import '@vtmn/css-accordion/dist/index-with-vars.css';
-import { reactive, computed, defineComponent } from 'vue';
+import { reactive, computed, defineComponent, PropType } from 'vue';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnAccordion',
   inheritAttrs: false,
   props: {
     summary: {
-      type: String,
+      type: String as PropType<string>,
     },
     withIconLeft: {
-      type: Boolean,
+      type: Boolean as PropType<boolean>,
       default: false,
     },
     disabled: {
-      type: Boolean,
+      type: Boolean as PropType<boolean>,
       default: false,
     },
     open: {
-      type: Boolean,
+      type: Boolean as PropType<boolean>,
       default: false,
     },
   },
