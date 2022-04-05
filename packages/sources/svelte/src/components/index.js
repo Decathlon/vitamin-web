@@ -1,5 +1,7 @@
 // Actions
 export { default as VtmnButton } from './actions/VtmnButton/VtmnButton.svelte';
+export { default as VtmnDropdown } from './actions/VtmnDropdown/VtmnDropdown.svelte';
+export { default as VtmnDropdownItem } from './actions/VtmnDropdownItem/VtmnDropdownItem.svelte';
 export { default as VtmnLink } from './actions/VtmnLink/VtmnLink.svelte';
 
 // Forms
