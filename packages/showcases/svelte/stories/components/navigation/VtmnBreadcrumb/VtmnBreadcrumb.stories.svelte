@@ -24,7 +24,7 @@
     <VtmnBreadcrumbItem icon="store-line" href="#">Store</VtmnBreadcrumbItem>
     <VtmnBreadcrumbItem icon="gift-line" href="#">New</VtmnBreadcrumbItem>
     <VtmnBreadcrumbItem icon="user-line" href="#">Children</VtmnBreadcrumbItem>
-    <VtmnBreadcrumbItem icon="shirt-line" aria-label="Current page title"
+    <VtmnBreadcrumbItem icon="t-shirt-line" aria-label="Current page title"
       >Tee-shirt</VtmnBreadcrumbItem
     >
   </VtmnBreadcrumb>
