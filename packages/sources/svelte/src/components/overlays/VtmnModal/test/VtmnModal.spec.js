@@ -29,6 +29,7 @@ describe('VtmnModal', () => {
       'vtmn-modal_content_body--overflow-indicator',
     )[0];
 
+  const getSlotTitle = (container) => container.querySelector('[slot="title"]');
   const getSlotDescription = (container) =>
     container.querySelector('[slot="description"]');
   const getSlotActions = (container) =>
@@ -78,16 +79,6 @@ describe('VtmnModal', () => {
       await expectedCancelOnElement(getOverlay(container), component, 1);
     });
 
-    test('Should have title if propertie title are defined', () => {
-      const { getByText } = render(VtmnModal, {
-        show: true,
-        title: 'Unit-test',
-      });
-      expect(getByText('Unit-test')).toBeVisible();
-      expect(getByText('Unit-test')).toHaveClass(
-        'vtmn-modal_content_title--text',
-      );
-    });
     test('Should have a cancel button', () => {
       const { container } = render(VtmnModal, {
         show: true,
@@ -101,6 +92,14 @@ describe('VtmnModal', () => {
         title: 'Unit-test',
       });
       await expectedCancelOnElement(getCloseButton(container), component, 1);
+    });
+
+    test('Should have a slot title', () => {
+      const { container } = render(VtmnModal, {
+        show: true,
+        title: 'Unit-test',
+      });
+      expect(getSlotTitle(container)).toBeVisible();
     });
 
     test('Should not have a slot description', () => {
@@ -120,6 +119,13 @@ describe('VtmnModal', () => {
     });
 
     describe('With slot description', () => {
+      test('Should have a slot title', () => {
+        const { container } = render(VtmnModalWithDescription, {
+          show: true,
+          title: 'Unit-test',
+        });
+        expect(getSlotTitle(container)).toBeVisible();
+      });
       test('Should have a slot description', () => {
         const { container } = render(VtmnModalWithDescription, {
           show: true,

@@ -31,11 +31,8 @@
       show = false;
     }}
   >
-    <p
-      slot="description"
-      id="vtmn-modal-description"
-      class="vtmn-modal_content_body--text"
-    >
+    <slot slot="title">This is the title</slot>
+    <slot slot="description">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam,
       assumenda? Asperiores rem nulla odit saepe dolores molestias
       exercitationem accusamus perferendis est aut repudiandae optio vel dicta
@@ -67,8 +64,8 @@
       dolores molestias exercitationem accusamus perferendis est aut repudiandae
       optio vel dicta reprehenderit ad, repellendus officiis cumque omnis labore
       in quia?
-    </p>
-    <div slot="actions" class="vtmn-modal_content_actions">
+    </slot>
+    <slot slot="actions">
       <VtmnButton
         variant="secondary"
         on:click={() => {
@@ -82,7 +79,7 @@
           console.log('Yes, I understand'), (show = false);
         }}>Yes, I understand</VtmnButton
       >
-    </div>
+    </slot>
   </VtmnModal>
 </Story>
 
@@ -102,11 +99,8 @@
       show = false;
     }}
   >
-    <div
-      slot="description"
-      id="vtmn-modal-description"
-      class="vtmn-modal_content_body--text"
-    >
+    <slot slot="title">This is the title</slot>
+    <slot slot="description">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam,
       assumenda? Asperiores rem nulla odit saepe dolores molestias
       exercitationem accusamus perferendis est aut repudiandae optio vel dicta
@@ -138,6 +132,6 @@
       dolores molestias exercitationem accusamus perferendis est aut repudiandae
       optio vel dicta reprehenderit ad, repellendus officiis cumque omnis labore
       in quia?
-    </div>
+    </slot>
   </VtmnModal>
 </Story>

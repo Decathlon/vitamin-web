@@ -6,11 +6,6 @@
   const dispatch = createEventDispatcher();
 
   /**
-   * @type {string} Title of the modal
-   */
-  export let title;
-
-  /**
    * @type {boolean} Display or hide the modal
    * Default false
    */
@@ -55,9 +50,11 @@
     />
     <div class="vtmn-modal_content">
       <div class="vtmn-modal_content_title">
-        <span id="vtmn-modal-title" class="vtmn-modal_content_title--text"
-          >{title}</span
-        >
+        {#if $$slots.title}
+          <span id="vtmn-modal-title" class="vtmn-modal_content_title--text"
+            ><slot name="title" /></span
+          >
+        {/if}
         <VtmnButton
           aria-label="close"
           variant="ghost"
@@ -66,12 +63,20 @@
         />
       </div>
       <div class="vtmn-modal_content_body">
-        <slot name="description" />
+        {#if $$slots.description}
+          <p id="vtmn-modal-description" class="vtmn-modal_content_body--text">
+            <slot name="description" />
+          </p>
+        {/if}
         {#if $$slots.actions}
           <div class="vtmn-modal_content_body--overflow-indicator" />
         {/if}
       </div>
-      <slot name="actions" />
+      {#if $$slots.actions}
+        <div class="vtmn-modal_content_actions">
+          <slot name="actions" />
+        </div>
+      {/if}
     </div>
   </div>
 {/if}

@@ -9,12 +9,6 @@ export const parameters = {
 };
 
 export const argTypes = {
-  title: {
-    type: { name: 'string', required: true },
-    description: 'The printed title',
-    defaultValue: 'Modal title',
-    control: { type: 'text' },
-  },
   show: {
     type: { name: 'boolean', required: true },
     description: 'Display the modal',
