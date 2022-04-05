@@ -8,7 +8,7 @@ export default /*#__PURE__*/ defineComponent({
   inheritAttrs: false,
   props: {
     id: {
-      type: String,
+      type: String as PropType<string>,
       required: true,
     },
     position: {
@@ -27,10 +27,10 @@ export default /*#__PURE__*/ defineComponent({
         ].includes(val),
     },
     title: {
-      type: String,
+      type: String as PropType<string>,
     },
     body: {
-      type: String,
+      type: String as PropType<string>,
     },
   },
 });

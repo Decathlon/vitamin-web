@@ -16,18 +16,18 @@ export default /*#__PURE__*/ defineComponent({
         ['info', 'success', 'warning', 'danger'].includes(val),
     },
     title: {
-      type: String,
+      type: String as PropType<string>,
       required: true,
     },
     message: {
-      type: String,
+      type: String as PropType<string>,
     },
     withCloseButton: {
-      type: Boolean,
+      type: Boolean as PropType<boolean>,
       default: false,
     },
     timeout: {
-      type: Number,
+      type: Number as PropType<number>,
       default: 8000,
     },
     closeCallback: {

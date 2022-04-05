@@ -26,22 +26,21 @@ describe('VtmnSkeleton', () => {
   test("Should have a width 100% if width = '100'", () => {
     const { container } = render(VtmnSkeleton, { width: '100' });
     expect(getSkeleton(container)).toHaveClass('skeleton-width');
-    expect(getSkeleton(container)).toHaveAttribute(
-      'style',
-      '--skeleton-width:100%',
-    );
+    expect(getSkeleton(container)).toHaveStyle('--skeleton-width:100%');
   });
 
   test('Should have a width 100% if width is not defined', () => {
     const { container } = render(VtmnSkeleton);
-    expect(getSkeleton(container)).toHaveAttribute(
-      'style',
-      '--skeleton-width:100%',
-    );
+    expect(getSkeleton(container)).toHaveStyle('--skeleton-width:100%');
   });
 
   test("Should have a class 'test' if class = 'test'", () => {
     const { container } = render(VtmnSkeleton, { class: 'test' });
     expect(getSkeleton(container)).toHaveClass('test');
+  });
+
+  test('Should apply custom attribute to the skeleton', () => {
+    const { container } = render(VtmnSkeleton, { 'data-nrt': 'test' });
+    expect(getSkeleton(container)).toHaveAttribute('data-nrt', 'test');
   });
 });
