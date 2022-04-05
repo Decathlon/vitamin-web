@@ -1,14 +1,28 @@
 import { ref } from 'vue';
 import { VtmnToast, VtmnButton } from '@vtmn/vue';
-import {
-  argTypes,
-  parameters,
-} from '@vtmn/showcase-core/csf/components/overlays/toast.csf';
+import { parameters } from '@vtmn/showcase-core/csf/components/overlays/toast.csf';
 
 export default {
   title: 'Components / Overlays / VtmnToast',
   component: VtmnToast,
-  argTypes,
+  argTypes: {
+    withCloseButton: {
+      type: { name: 'boolean', required: false },
+      description: 'Show close button',
+      defaultValue: false,
+      control: {
+        type: 'boolean',
+      },
+    },
+    withIcon: {
+      type: { name: 'boolean', required: false },
+      description: 'Display left icon',
+      defaultValue: false,
+      control: {
+        type: 'boolean',
+      },
+    },
+  },
   parameters,
 };
 
