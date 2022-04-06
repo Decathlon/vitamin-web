@@ -56,6 +56,7 @@
 </script>
 
 <div class={componentClass} aria-disabled={disabled} {...$$restProps}>
+  <!-- svelte-ignore a11y-label-has-associated-control -->
   <label {id}>{label}</label>
   <details
     bind:this={detail}
@@ -63,7 +64,12 @@
     on:clickOutside={handleClickOutside}
   >
     <summary aria-labelledby={id}>{summary}</summary>
-    <div class={componentItemClass} style={menuStyles}>
+    <div
+      class={componentItemClass}
+      style={menuStyles}
+      role="group"
+      aria-labelledby={id}
+    >
       <slot />
     </div>
   </details>
