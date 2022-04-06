@@ -6,13 +6,13 @@ import VtmnModal from '../VtmnModal.svelte';
 import VtmnModalWithoutActions from './VtmnModalWithoutActions.svelte';
 import VtmnModalWithActions from './VtmnModalWithActions.svelte';
 
-const expectedCancelOnElement = async (
+const expectedCloseOnElement = async (
   element,
   component,
   expectedClickCount,
 ) => {
   const handleClick = jest.fn();
-  component.$on('cancel', handleClick);
+  component.$on('close', handleClick);
   await fireEvent.click(element);
   expect(handleClick).toHaveBeenCalledTimes(expectedClickCount);
 };
@@ -35,73 +35,66 @@ describe('VtmnModal', () => {
   const getContentTitle = (container) =>
     container.querySelector('#vtmn-modal-title');
 
-  describe('show = false', () => {
+  describe('open = false', () => {
     test('Should have no content', () => {
       const { container } = render(VtmnModal, {
-        show: false,
+        open: false,
       });
       expect(getModal(container)).toBeUndefined();
     });
   });
 
-  describe('show = true', () => {
+  describe('open = true', () => {
     test('Should have no content', () => {
       const { container } = render(VtmnModal, {
-        show: true,
+        open: true,
       });
       expect(getModal(container)).toBeVisible();
-    });
-    test('Should not have class show if animationDisabled is true', () => {
-      const { container } = render(VtmnModal, {
-        show: true,
-      });
-      expect(getModal(container)).toBeVisible();
-      expect(getModal(container)).not.toHaveClass('show');
     });
     test('Should pass custom class to modal', () => {
       const { container } = render(VtmnModal, {
-        show: true,
+        open: true,
         class: 'unit-test',
       });
       expect(getModal(container)).toHaveClass('unit-test');
     });
-    test('Should trigger cancel if user click on overlay', async () => {
+    test('Should trigger close if user click on overlay', async () => {
       const { container, component } = render(VtmnModal, {
-        show: true,
+        open: true,
       });
-      await expectedCancelOnElement(getOverlay(container), component, 1);
+      await expectedCloseOnElement(getOverlay(container), component, 1);
     });
 
-    test('Should have a cancel button', () => {
+    test('Should have a close button', () => {
       const { container } = render(VtmnModal, {
-        show: true,
+        open: true,
       });
       expect(getCloseButton(container)).toBeVisible();
     });
-    test('Should trigger cancel on click close button', async () => {
+    test('Should trigger close on click close button', async () => {
       const { container, component } = render(VtmnModal, {
-        show: true,
+        open: true,
       });
-      await expectedCancelOnElement(getCloseButton(container), component, 1);
+      await expectedCloseOnElement(getCloseButton(container), component, 1);
     });
 
     test('Should not have a slot title', () => {
       const { container } = render(VtmnModal, {
-        show: true,
+        open: true,
       });
       expect(getContentTitle(container)).toBeNull();
     });
 
     test('Should not have a slot description', () => {
       const { container } = render(VtmnModal, {
-        show: true,
+        open: true,
       });
       expect(getContentDescription(container)).toBeNull();
     });
 
     test('Should not have a slot actions', () => {
       const { container } = render(VtmnModal, {
-        show: true,
+        open: true,
       });
       expect(getContentActions(container)).toBeUndefined();
     });
@@ -109,7 +102,7 @@ describe('VtmnModal', () => {
     describe('With slot description', () => {
       test('Should have a slot title', () => {
         const { container } = render(VtmnModalWithoutActions, {
-          show: true,
+          open: true,
         });
         expect(getContentTitle(container)).toBeVisible();
         expect(getContentTitle(container)).toHaveClass(
@@ -118,19 +111,19 @@ describe('VtmnModal', () => {
       });
       test('Should have a slot description', () => {
         const { container } = render(VtmnModalWithoutActions, {
-          show: true,
+          open: true,
         });
         expect(getContentDescription(container)).toBeVisible();
       });
       test('Should not have a slot description', () => {
         const { container } = render(VtmnModalWithoutActions, {
-          show: true,
+          open: true,
         });
         expect(getContentActions(container)).toBeUndefined();
       });
       test("Should not have a class 'vtmn-modal_content_body--overflow-indicator'", () => {
         const { container } = render(VtmnModalWithoutActions, {
-          show: true,
+          open: true,
         });
         expect(getOverFlow(container)).toBeUndefined();
       });
@@ -139,13 +132,13 @@ describe('VtmnModal', () => {
     describe('With slot description and actions', () => {
       test("Should have a class 'vtmn-modal_content_body--overflow-indicator'", () => {
         const { container } = render(VtmnModalWithActions, {
-          show: true,
+          open: true,
         });
         expect(getOverFlow(container)).toBeVisible();
       });
       test('Should have a slot actions', () => {
         const { container } = render(VtmnModalWithActions, {
-          show: true,
+          open: true,
         });
         expect(getContentActions(container)).toBeVisible();
       });

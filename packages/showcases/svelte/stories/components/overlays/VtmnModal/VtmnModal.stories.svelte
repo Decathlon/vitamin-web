@@ -4,7 +4,7 @@
   import {
     parameters,
     argTypes,
-  } from '@vtmn/opencase-core/csf/components/overlays/modal.csf';
+  } from '@vtmn/showcase-core/csf/components/overlays/modal.csf';
   let open = false;
 </script>
 
