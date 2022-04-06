@@ -9,7 +9,7 @@ export default /*#__PURE__*/ defineComponent({
   props: {
     modelValue: {
       type: Number as PropType<number>,
-      default: false,
+      default: 0,
     },
     id: {
       type: String as PropType<string>,
@@ -36,8 +36,8 @@ export default /*#__PURE__*/ defineComponent({
       default: 1,
     },
     error: {
-      type: Boolean as PropType<boolean>,
-      default: false,
+      type: String as PropType<string>,
+      default: undefined,
     },
   },
   emits: ['update:modelValue'],
@@ -47,29 +47,41 @@ export default /*#__PURE__*/ defineComponent({
       if (event && event.target) {
         return emit(
           'update:modelValue',
-          (event.target as HTMLInputElement).checked,
+          (event.target as HTMLInputElement).value,
         );
       }
     };
+
+    const handleSubstract = () => {
+      return emit('update:modelValue', props.modelValue - props.step);
+    };
+
+    const handleAdd = () => {
+      return emit('update:modelValue', props.modelValue + props.step);
+    };
+
     return {
       classes: computed(() => ({
         'vtmn-quantity': true,
       })),
       handleChange,
+      handleSubstract,
+      handleAdd,
     };
   },
 });
 </script>
 
 <template>
-  <div :class="classes" v-bind="$attrs">
-    <label :v-if="label" :aria-disabled="disabled" :for="id">{{ label }}</label>
+  <div :class="classes" :aria-disabled="disabled" v-bind="$attrs">
+    <label :v-if="label" :for="id">{{ label }}</label>
     <div :aria-disabled="disabled" class="vtmn-quantity_content">
       <VtmnButton
         :disabled="disabled || modelValue <= min"
         variant="secondary"
         icon-alone="subtract-line"
         aria-label="substract"
+        @click="handleSubstract"
       />
       <input
         type="number"
@@ -88,6 +100,7 @@ export default /*#__PURE__*/ defineComponent({
         variant="secondary"
         icon-alone="add-line"
         aria-label="add"
+        @click="handleAdd"
       />
     </div>
     <p
