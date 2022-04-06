@@ -16,7 +16,7 @@
 
 <li {...$$restProps}>
   {#if icon}
-    <VtmnIcon value={icon} aria-hidden="true" />
+    <VtmnIcon value={icon} aria-hidden="true" size="16" />
   {/if}
 
   {#if href}
