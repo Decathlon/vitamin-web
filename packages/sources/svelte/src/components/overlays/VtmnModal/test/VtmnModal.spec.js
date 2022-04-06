@@ -3,8 +3,8 @@ import '@testing-library/jest-dom';
 import { fireEvent, render } from '@testing-library/svelte';
 
 import VtmnModal from '../VtmnModal.svelte';
-import VtmnModalWithDescription from './VtmnModalWithDescription.svelte';
-import VtmnModalWithSlots from './VtmnModalWithSlots.svelte';
+import VtmnModalWithoutActions from './VtmnModalWithoutActions.svelte';
+import VtmnModalWithActions from './VtmnModalWithActions.svelte';
 
 const expectedCancelOnElement = async (
   element,
@@ -50,12 +50,10 @@ describe('VtmnModal', () => {
         show: true,
       });
       expect(getModal(container)).toBeVisible();
-      expect(getModal(container)).toHaveClass('show');
     });
     test('Should not have class show if animationDisabled is true', () => {
       const { container } = render(VtmnModal, {
         show: true,
-        animationDisabled: true,
       });
       expect(getModal(container)).toBeVisible();
       expect(getModal(container)).not.toHaveClass('show');
@@ -110,7 +108,7 @@ describe('VtmnModal', () => {
 
     describe('With slot description', () => {
       test('Should have a slot title', () => {
-        const { container } = render(VtmnModalWithDescription, {
+        const { container } = render(VtmnModalWithoutActions, {
           show: true,
         });
         expect(getContentTitle(container)).toBeVisible();
@@ -119,19 +117,19 @@ describe('VtmnModal', () => {
         );
       });
       test('Should have a slot description', () => {
-        const { container } = render(VtmnModalWithDescription, {
+        const { container } = render(VtmnModalWithoutActions, {
           show: true,
         });
         expect(getContentDescription(container)).toBeVisible();
       });
       test('Should not have a slot description', () => {
-        const { container } = render(VtmnModalWithDescription, {
+        const { container } = render(VtmnModalWithoutActions, {
           show: true,
         });
         expect(getContentActions(container)).toBeUndefined();
       });
       test("Should not have a class 'vtmn-modal_content_body--overflow-indicator'", () => {
-        const { container } = render(VtmnModalWithDescription, {
+        const { container } = render(VtmnModalWithoutActions, {
           show: true,
         });
         expect(getOverFlow(container)).toBeUndefined();
@@ -140,13 +138,13 @@ describe('VtmnModal', () => {
 
     describe('With slot description and actions', () => {
       test("Should have a class 'vtmn-modal_content_body--overflow-indicator'", () => {
-        const { container } = render(VtmnModalWithSlots, {
+        const { container } = render(VtmnModalWithActions, {
           show: true,
         });
         expect(getOverFlow(container)).toBeVisible();
       });
       test('Should have a slot actions', () => {
-        const { container } = render(VtmnModalWithSlots, {
+        const { container } = render(VtmnModalWithActions, {
           show: true,
         });
         expect(getContentActions(container)).toBeVisible();

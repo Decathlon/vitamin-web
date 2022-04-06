@@ -17,12 +17,4 @@ export const argTypes = {
       type: 'boolean',
     },
   },
-  animationDisabled: {
-    type: { name: 'boolean', require: false },
-    description: 'Disable the fade animation on show',
-    defaultValue: true,
-    control: {
-      type: 'boolean',
-    },
-  },
 };
