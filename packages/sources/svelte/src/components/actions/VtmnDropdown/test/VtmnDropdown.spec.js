@@ -60,19 +60,4 @@ describe('VtmnDropdown', () => {
 
     expect(container.querySelector('[aria-disabled="true"]')).toBeTruthy();
   });
-
-  test('Should apply maxHeight', () => {
-    const { container } = render(VtmnDropdownWithSlots, {
-      label: 'Label',
-      summary: 'Default label',
-      id: 'dropdown-unit-test',
-      menuMaxHeight: 100,
-    });
-    expect(
-      container.getElementsByClassName('vtmn-dropdown-max-height'),
-    ).toHaveLength(1);
-    expect(
-      container.getElementsByClassName('vtmn-dropdown-max-height')[0],
-    ).toHaveAttribute('style', '--vtmn-dropdown-max-height:100px');
-  });
 });

@@ -8,7 +8,6 @@
   let groupOverview = [];
   let groupWithIcon = [];
   let groupDisabled = [];
-  let groupWithDivider = [];
 </script>
 
 <Meta
@@ -20,7 +19,7 @@
 
 <Story name="Overview" let:args>
   <VtmnDropdown {...args} on:change>
-    {#each Array(args.iteration || 5) as _, index}
+    {#each Array(20) as _, index}
       <VtmnDropdownItem
         id={`overview-opt-${index}`}
         bind:group={groupOverview}
@@ -50,25 +49,11 @@
   <VtmnDropdown {...args} on:change disabled>
     {#each Array(5) as _, index}
       <VtmnDropdownItem
-        id={`opt-${index}`}
+        id={`disabled-${index}`}
         bind:group={groupDisabled}
         value={index}
         icon="user-line"
         divider={index !== 4}>Dropdown Option {index}</VtmnDropdownItem
-      >
-    {/each}
-  </VtmnDropdown>
-</Story>
-
-<Story name="With max height" let:args>
-  <VtmnDropdown {...args} on:change menuMaxHeight="200">
-    {#each Array(20) as _, index}
-      <VtmnDropdownItem
-        id={`with-max-height-opt-${index}`}
-        bind:group={groupWithDivider}
-        value={index}
-        icon="user-line"
-        divider={index !== 19}>Dropdown Option {index}</VtmnDropdownItem
       >
     {/each}
   </VtmnDropdown>
@@ -81,11 +66,6 @@
       > div:first-child),
   :global(#anchor--components-actions-vtmndropdown--with-icons .docs-story),
   :global(#anchor--components-actions-vtmndropdown--with-icons
-      .docs-story
-      > div:first-child),
-  :global(#anchor--components-actions-vtmndropdown--with-max-height
-      .docs-story),
-  :global(#anchor--components-actions-vtmndropdown--with-max-height
       .docs-story
       > div:first-child) {
     height: 500px;

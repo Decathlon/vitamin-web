@@ -40,7 +40,6 @@ describe('VtmnDropdownItem', () => {
       value: 1,
       group: [],
     });
-    console.log(getByText('Unit test 1').tagName);
     expect(getByText('Unit test 1')).toBeVisible();
     expect(getByText('Unit test 1')).toHaveAttribute('for', 'dropdown-item');
   });

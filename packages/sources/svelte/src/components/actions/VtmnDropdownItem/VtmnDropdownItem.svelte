@@ -22,9 +22,9 @@
   export let group;
 
   /**
-   * @type {boolean} If the dropdown item are checked
+   * @type {boolean} If the dropdown item are selected
    */
-  export let checked = false;
+  export let selected = false;
 
   /**
    * @type {boolean} Apply divider on the item
@@ -45,11 +45,11 @@
   export { className as class };
   $: componentClass = cn(className);
 
-  const updateChekbox = (group) => (checked = group.indexOf(value) >= 0);
+  const updateChekbox = (group) => (selected = group.indexOf(value) >= 0);
 
-  const updateGroup = (checked) => {
+  const updateGroup = (selected) => {
     const index = group.indexOf(value);
-    if (checked) {
+    if (selected) {
       if (index < 0) {
         group.push(value);
         group = group;
@@ -63,14 +63,14 @@
   };
 
   $: group && updateChekbox(group);
-  $: group && updateGroup(checked);
+  $: group && updateGroup(selected);
 </script>
 
 <input
   type="checkbox"
   {id}
   class={componentClass}
-  bind:checked
+  bind:checked={selected}
   on:change
   {value}
   {...$$restProps}

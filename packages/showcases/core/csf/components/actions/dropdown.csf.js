@@ -42,13 +42,4 @@ export const argTypes = {
       type: 'boolean',
     },
   },
-
-  menuMaxHeight: {
-    type: { name: 'number', required: false },
-    description: 'Max height of menu, this enables scroll',
-    defaultValue: 0,
-    control: {
-      type: 'number',
-    },
-  },
 };

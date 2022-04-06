@@ -1,6 +1,5 @@
 <script>
   import { cn } from '../../../utils/classnames';
-  import { objectToStyle } from '../../../utils/style';
   import { clickOutsideOpenDropdown } from './directives/clickOutsideOpenDropdown';
 
   /** @restProps */
@@ -30,11 +29,6 @@
   export let disabled = false;
 
   /**
-   * @type {number} Max height of menu, this enable scroll.
-   */
-  export let menuMaxHeight = null;
-
-  /**
    * Custom classes to apply to the component.
    * @type {string} className
    */
@@ -42,13 +36,7 @@
   export { className as class };
 
   $: componentClass = cn('vtmn-dropdown', className);
-  $: componentItemClass = cn(
-    'vtmn-dropdown_items',
-    menuMaxHeight && 'vtmn-dropdown-max-height',
-  );
-  $: menuStyles = objectToStyle({
-    '--vtmn-dropdown-max-height': `${menuMaxHeight}px`,
-  });
+  $: componentItemClass = cn('vtmn-dropdown_items');
 
   let detail;
 
@@ -64,12 +52,7 @@
     on:clickOutside={handleClickOutside}
   >
     <summary aria-labelledby={id}>{summary}</summary>
-    <div
-      class={componentItemClass}
-      style={menuStyles}
-      role="group"
-      aria-labelledby={id}
-    >
+    <div class={componentItemClass} role="group" aria-labelledby={id}>
       <slot />
     </div>
   </details>
@@ -77,7 +60,4 @@
 
 <style lang="css">
   @import '@vtmn/css-dropdown';
-  .vtmn-dropdown-max-height {
-    max-height: var(--vtmn-dropdown-max-height, 0);
-  }
 </style>
