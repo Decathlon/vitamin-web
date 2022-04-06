@@ -8,24 +8,7 @@ import {
 export default {
   title: 'Components / Overlays / VtmnModal',
   component: VtmnModal,
-  argTypes: {
-    show: {
-      type: { name: 'boolean', required: true },
-      description: 'Display the modal',
-      defaultValue: false,
-      control: {
-        type: 'boolean',
-      },
-    },
-    animationDisabled: {
-      type: { name: 'boolean', require: false },
-      description: 'Disable the fade animation on show',
-      defaultValue: true,
-      control: {
-        type: 'boolean',
-      },
-    },
-  },
+  argTypes,
   parameters,
 };
 

@@ -4,15 +4,11 @@ import { computed, defineComponent, PropType, reactive } from 'vue';
 import { VtmnButton } from '../../index';
 
 export default /*#__PURE__*/ defineComponent({
-  name: 'VtmnAlert',
+  name: 'VtmnModal',
   components: { VtmnButton },
   inheritAttrs: false,
   props: {
     show: {
-      type: Boolean as PropType<Boolean>,
-      default: false,
-    },
-    animationDisabled: {
       type: Boolean as PropType<Boolean>,
       default: false,
     },
@@ -21,14 +17,13 @@ export default /*#__PURE__*/ defineComponent({
   setup(props, { emit }) {
     props = reactive(props);
 
-    const handleClose = (event: Event) => {
-      return emit('close', (event.target as HTMLInputElement).value);
+    const handleClose = () => {
+      return emit('close');
     };
 
     return {
       classes: computed(() => ({
         'vtmn-modal': true,
-        show: !props.animationDisabled,
       })),
       handleClose,
     };
