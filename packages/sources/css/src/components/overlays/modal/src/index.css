@@ -40,10 +40,6 @@
   flex-direction: column;
 }
 
-.vtmn-modal.show {
-  animation: var(--vtmn-animation_fade-in);
-}
-
 .vtmn-modal_content_title {
   display: flex;
   width: 100%;

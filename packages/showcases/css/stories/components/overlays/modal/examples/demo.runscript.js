@@ -58,7 +58,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   function instanciateModal() {
     document.body.lastChild.innerHTML = templateModal;
-    document.getElementById(`vtmn-modal`).classList.add('show');
 
     document
       .getElementById(`btn-close-modal-1`)
