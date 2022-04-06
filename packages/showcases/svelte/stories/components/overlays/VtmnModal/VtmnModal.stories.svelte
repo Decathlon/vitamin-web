@@ -4,8 +4,8 @@
   import {
     parameters,
     argTypes,
-  } from '@vtmn/showcase-core/csf/components/overlays/modal.csf';
-  let show = false;
+  } from '@vtmn/opencase-core/csf/components/overlays/modal.csf';
+  let open = false;
 </script>
 
 <Meta
@@ -18,7 +18,7 @@
 <Story name="Overview" let:args>
   <VtmnButton
     on:click={() => {
-      show = true;
+      open = true;
     }}>Display modal</VtmnButton
   >
   <VtmnModal
@@ -26,9 +26,9 @@
     animationDisabled={args.animationDisabled}
     aria-labelledby="vtmn-modal-title"
     aria-describedby="vtmn-modal-description"
-    {show}
-    on:cancel={() => {
-      show = false;
+    {open}
+    on:close={() => {
+      open = false;
     }}
   >
     <svelte:fragment slot="title">This is the title</svelte:fragment>
@@ -70,13 +70,13 @@
         variant="secondary"
         on:click={() => {
           console.log('Go back');
-          show = false;
+          open = false;
         }}>Go Back</VtmnButton
       >
       <VtmnButton
         variant="primary"
         on:click={() => {
-          console.log('Yes, I understand'), (show = false);
+          console.log('Yes, I understand'), (open = false);
         }}>Yes, I understand</VtmnButton
       >
     </svelte:fragment>
@@ -86,7 +86,7 @@
 <Story name="Without actions" let:args>
   <VtmnButton
     on:click={() => {
-      show = true;
+      open = true;
     }}>Display modal</VtmnButton
   >
   <VtmnModal
@@ -94,9 +94,9 @@
     aria-labelledby="vtmn-modal-title"
     aria-describedby="vtmn-modal-description"
     animationDisabled={args.animationDisabled}
-    {show}
-    on:cancel={() => {
-      show = false;
+    {open}
+    on:close={() => {
+      open = false;
     }}
   >
     <svelte:fragment slot="title">This is the title</svelte:fragment>

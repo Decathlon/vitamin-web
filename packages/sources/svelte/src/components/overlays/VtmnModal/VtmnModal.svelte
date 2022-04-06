@@ -9,7 +9,7 @@
    * @type {boolean} Display or hide the modal
    * Default false
    */
-  export let show = false;
+  export let open = false;
 
   let className = undefined;
   /**
@@ -19,12 +19,12 @@
 
   $: componentClass = cn('vtmn-modal', className);
 
-  const handleCancel = () => {
-    dispatch('cancel', { show });
+  const handleClose = () => {
+    dispatch('close', { open });
   };
 </script>
 
-{#if show}
+{#if open}
   <style>
     body {
       overflow: hidden;
@@ -40,7 +40,7 @@
     <div
       id="vtmn-modal-background"
       class="vtmn-modal_background-overlay"
-      on:click={handleCancel}
+      on:click={handleClose}
     />
     <div class="vtmn-modal_content">
       <div class="vtmn-modal_content_title">
@@ -53,7 +53,7 @@
           aria-label="close"
           variant="ghost"
           iconAlone="close-line"
-          on:click={handleCancel}
+          on:click={handleClose}
         />
       </div>
       <div class="vtmn-modal_content_body">
