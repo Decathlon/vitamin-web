@@ -8,7 +8,7 @@ export default /*#__PURE__*/ defineComponent({
   components: { VtmnButton },
   inheritAttrs: false,
   props: {
-    show: {
+    open: {
       type: Boolean as PropType<Boolean>,
       default: false,
     },
@@ -33,7 +33,7 @@ export default /*#__PURE__*/ defineComponent({
 
 <template>
   <div
-    v-if="show"
+    v-if="open"
     :class="classes"
     role="dialog"
     aria-modal="true"
