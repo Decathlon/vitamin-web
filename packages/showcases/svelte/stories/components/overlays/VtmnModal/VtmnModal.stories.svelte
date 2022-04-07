@@ -5,7 +5,7 @@
     parameters,
     argTypes,
   } from '@vtmn/showcase-core/csf/components/overlays/modal.csf';
-  let show = false;
+  let open = false;
 </script>
 
 <Meta
@@ -18,7 +18,7 @@
 <Story name="Overview" let:args>
   <VtmnButton
     on:click={() => {
-      show = true;
+      open = true;
     }}>Display modal</VtmnButton
   >
   <VtmnModal
@@ -26,16 +26,13 @@
     animationDisabled={args.animationDisabled}
     aria-labelledby="vtmn-modal-title"
     aria-describedby="vtmn-modal-description"
-    {show}
-    on:cancel={() => {
-      show = false;
+    {open}
+    on:close={() => {
+      open = false;
     }}
   >
-    <p
-      slot="description"
-      id="vtmn-modal-description"
-      class="vtmn-modal_content_body--text"
-    >
+    <svelte:fragment slot="title">This is the title</svelte:fragment>
+    <svelte:fragment slot="description">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam,
       assumenda? Asperiores rem nulla odit saepe dolores molestias
       exercitationem accusamus perferendis est aut repudiandae optio vel dicta
@@ -67,29 +64,29 @@
       dolores molestias exercitationem accusamus perferendis est aut repudiandae
       optio vel dicta reprehenderit ad, repellendus officiis cumque omnis labore
       in quia?
-    </p>
-    <div slot="actions" class="vtmn-modal_content_actions">
+    </svelte:fragment>
+    <svelte:fragment slot="actions">
       <VtmnButton
         variant="secondary"
         on:click={() => {
           console.log('Go back');
-          show = false;
+          open = false;
         }}>Go Back</VtmnButton
       >
       <VtmnButton
         variant="primary"
         on:click={() => {
-          console.log('Yes, I understand'), (show = false);
+          console.log('Yes, I understand'), (open = false);
         }}>Yes, I understand</VtmnButton
       >
-    </div>
+    </svelte:fragment>
   </VtmnModal>
 </Story>
 
 <Story name="Without actions" let:args>
   <VtmnButton
     on:click={() => {
-      show = true;
+      open = true;
     }}>Display modal</VtmnButton
   >
   <VtmnModal
@@ -97,16 +94,13 @@
     aria-labelledby="vtmn-modal-title"
     aria-describedby="vtmn-modal-description"
     animationDisabled={args.animationDisabled}
-    {show}
-    on:cancel={() => {
-      show = false;
+    {open}
+    on:close={() => {
+      open = false;
     }}
   >
-    <div
-      slot="description"
-      id="vtmn-modal-description"
-      class="vtmn-modal_content_body--text"
-    >
+    <svelte:fragment slot="title">This is the title</svelte:fragment>
+    <svelte:fragment slot="description">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam,
       assumenda? Asperiores rem nulla odit saepe dolores molestias
       exercitationem accusamus perferendis est aut repudiandae optio vel dicta
@@ -138,6 +132,6 @@
       dolores molestias exercitationem accusamus perferendis est aut repudiandae
       optio vel dicta reprehenderit ad, repellendus officiis cumque omnis labore
       in quia?
-    </div>
+    </svelte:fragment>
   </VtmnModal>
 </Story>

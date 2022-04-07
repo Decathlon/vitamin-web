@@ -6,9 +6,12 @@ import VtmnBadge from './indicators/VtmnBadge';
 import VtmnLoader from './indicators/VtmnLoader';
 import VtmnPrice from './indicators/VtmnPrice';
 import VtmnTag from './indicators/VtmnTag';
+import VtmnSearch from './navigation/VtmnSearch';
 import VtmnAlert from './overlays/VtmnAlert';
 import VtmnModal from './overlays/VtmnModal';
 import VtmnPopover from './overlays/VtmnPopover';
+import VtmnSnackbar from './overlays/VtmnSnackbar';
+import VtmnToast from './overlays/VtmnToast';
 import VtmnTooltip from './overlays/VtmnTooltip';
 import VtmnCheckbox from './selection-controls/VtmnCheckbox';
 import VtmnChip from './selection-controls/VtmnChip';
@@ -26,14 +29,17 @@ export {
   VtmnBadge,
   VtmnLoader,
   VtmnPrice,
-  VtmnCheckbox,
-  VtmnChip,
-  VtmnRadioButton,
   VtmnTag,
+  VtmnSearch,
   VtmnAlert,
   VtmnModal,
   VtmnPopover,
+  VtmnSnackbar,
+  VtmnToast,
   VtmnTooltip,
+  VtmnCheckbox,
+  VtmnChip,
+  VtmnRadioButton,
   VtmnToggle,
   VtmnAccordion,
   VtmnDivider,

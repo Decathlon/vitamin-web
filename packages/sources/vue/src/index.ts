@@ -34,11 +34,14 @@ export { default as VtmnPrice } from './components/indicators/VtmnPrice';
 export { default as VtmnTag } from './components/indicators/VtmnTag';
 
 // Navigation
+export { default as VtmnSearch } from './components/navigation/VtmnSearch';
 
 // Overlays
 export { default as VtmnAlert } from './components/overlays/VtmnAlert';
 export { default as VtmnModal } from './components/overlays/VtmnModal';
 export { default as VtmnPopover } from './components/overlays/VtmnPopover';
+export { default as VtmnSnackbar } from './components/overlays/VtmnSnackbar';
+export { default as VtmnToast } from './components/overlays/VtmnToast';
 export { default as VtmnTooltip } from './components/overlays/VtmnTooltip';
 
 // Selection controls

@@ -9,9 +9,9 @@ export const parameters = {
 };
 
 export const argTypes = {
-  show: {
+  open: {
     type: { name: 'boolean', required: true },
-    description: 'Display the modal',
+    description: 'Opens the modal',
     defaultValue: false,
     control: {
       type: 'boolean',

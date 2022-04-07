@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.40.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.39.0...@vtmn/svelte@0.40.0) (2022-04-06)
+
+
+### Features
+
+* **@vtmn/svelte:** optimization of `VtmnModal` component ([#1111](https://github.com/Decathlon/vitamin-web/issues/1111)) ([847bb32](https://github.com/Decathlon/vitamin-web/commit/847bb32de470ee7434206e45d1fabf449287908e))
+
+
+
+
+
+# [0.39.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.38.4...@vtmn/svelte@0.39.0) (2022-04-06)
+
+
+### Features
+
+* **@vtmn/svelte:** add `VtmnBreadcrumb` component ([#1064](https://github.com/Decathlon/vitamin-web/issues/1064)) ([4a18ec5](https://github.com/Decathlon/vitamin-web/commit/4a18ec59e0cd2360a59e1666452644a99d180323))
+
+
+
+
+
 ## [0.38.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.38.3...@vtmn/svelte@0.38.4) (2022-04-05)
 
 
