@@ -31,20 +31,18 @@ export default /*#__PURE__*/ defineComponent({
 });
 </script>
 
-<template v-if="show">
-  <div :class="classes" role="dialog" aria-modal="true" v-bind="$attrs">
-    <div
-      id="vtmn-modal-background"
-      class="vtmn-modal_background-overlay"
-      @click.prevent="handleClose"
-    />
+<template>
+  <div
+    v-if="show"
+    :class="classes"
+    role="dialog"
+    aria-modal="true"
+    v-bind="$attrs"
+  >
+    <div class="vtmn-modal_background-overlay" @click.prevent="handleClose" />
     <div class="vtmn-modal_content">
       <div class="vtmn-modal_content_title">
-        <span
-          v-if="$slots.title"
-          id="vtmn-modal-title"
-          class="vtmn-modal_content_title--text"
-        >
+        <span v-if="$slots.title" class="vtmn-modal_content_title--text">
           <slot name="title" />
         </span>
         <VtmnButton
