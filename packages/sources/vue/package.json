@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/vue",
-  "version": "0.27.1",
+  "version": "0.28.0",
   "description": "Decathlon Design System - Vitamin Vue components library",
   "keywords": [
     "design-system",
@@ -55,10 +55,13 @@
     "@vtmn/css-popover": "^0.5.14",
     "@vtmn/css-price": "^0.3.0",
     "@vtmn/css-radio-button": "^0.6.15",
+    "@vtmn/css-search": "^0.4.13",
     "@vtmn/css-select": "^0.6.15",
     "@vtmn/css-skeleton": "^0.3.14",
+    "@vtmn/css-snackbar": "^0.5.13",
     "@vtmn/css-tag": "^0.5.0",
     "@vtmn/css-text-input": "^0.13.14",
+    "@vtmn/css-toast": "^0.5.13",
     "@vtmn/css-toggle": "^0.6.13",
     "@vtmn/css-tooltip": "^0.6.13",
     "@vtmn/icons": "^0.12.1",
