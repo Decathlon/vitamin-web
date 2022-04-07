@@ -39,7 +39,7 @@ export default /*#__PURE__*/ defineComponent({
       default: null,
     },
     badgeValue: {
-      type: Number,
+      type: Number as PropType<number>,
       default: 0,
     },
   },
