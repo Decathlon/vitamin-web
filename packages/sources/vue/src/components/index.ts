@@ -9,6 +9,7 @@ import VtmnTag from './indicators/VtmnTag';
 import VtmnSearch from './navigation/VtmnSearch';
 import VtmnAlert from './overlays/VtmnAlert';
 import VtmnPopover from './overlays/VtmnPopover';
+import VtmnToast from './overlays/VtmnToast';
 import VtmnTooltip from './overlays/VtmnTooltip';
 import VtmnCheckbox from './selection-controls/VtmnCheckbox';
 import VtmnChip from './selection-controls/VtmnChip';
@@ -30,6 +31,7 @@ export {
   VtmnSearch,
   VtmnAlert,
   VtmnPopover,
+  VtmnToast,
   VtmnTooltip,
   VtmnCheckbox,
   VtmnChip,
