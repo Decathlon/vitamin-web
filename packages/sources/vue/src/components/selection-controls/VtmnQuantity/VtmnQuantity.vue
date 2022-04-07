@@ -11,7 +11,7 @@ export default /*#__PURE__*/ defineComponent({
       type: Number as PropType<number>,
       default: 0,
     },
-    id: {
+    identifier: {
       type: String as PropType<string>,
       default: undefined,
     },
@@ -74,7 +74,7 @@ export default /*#__PURE__*/ defineComponent({
 
 <template>
   <div :class="classes" :aria-disabled="disabled" v-bind="$attrs">
-    <label :v-if="label" :for="id">{{ label }}</label>
+    <label :v-if="label" :for="identifier">{{ label }}</label>
     <div :aria-disabled="disabled" class="vtmn-quantity_content">
       <VtmnButton
         :disabled="disabled || modelValue <= min"
@@ -86,13 +86,13 @@ export default /*#__PURE__*/ defineComponent({
       <input
         type="number"
         :value="modelValue"
-        :id="id"
+        :id="identifier"
         :disabled="disabled"
         :min="min"
         :max="max"
         :step="step"
         :aria-invalid="error ? true : undefined"
-        :aria-describedby="error ? `quantity-helper-${id}` : undefined"
+        :aria-describedby="error ? `quantity-helper-${identifier}` : undefined"
         @change="handleChange"
       />
       <VtmnButton
@@ -105,7 +105,7 @@ export default /*#__PURE__*/ defineComponent({
     </div>
     <p
       v-if="error"
-      :id="`quantity-helper-${id}`"
+      :id="`quantity-helper-${identifier}`"
       class="vtmn-quantity_error-text"
     >
       {{ error }}

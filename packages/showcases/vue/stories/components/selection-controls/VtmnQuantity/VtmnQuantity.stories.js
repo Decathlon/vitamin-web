@@ -5,7 +5,7 @@ export default {
   title: 'Components / Selection controls / VtmnQuantity',
   component: VtmnQuantity,
   argTypes: {
-    id: {
+    identifier: {
       type: { name: 'string', required: true },
       description: 'Id of the input.',
       defaultValue: 'quantity-story',
