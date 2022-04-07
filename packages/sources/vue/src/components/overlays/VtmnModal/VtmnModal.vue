@@ -9,7 +9,7 @@ export default /*#__PURE__*/ defineComponent({
   inheritAttrs: false,
   props: {
     open: {
-      type: Boolean as PropType<Boolean>,
+      type: Boolean as PropType<boolean>,
       default: false,
     },
   },

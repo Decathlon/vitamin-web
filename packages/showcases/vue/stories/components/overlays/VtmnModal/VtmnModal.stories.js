@@ -27,7 +27,7 @@ const Template = (args) => ({
   },
   template: `
   <VtmnButton @click="handleShowModalClick()">Display modal</VtmnButton>
-  <VtmnModal v-if="showModal" v-bind="args">
+  <VtmnModal v-bind="args" :open="showModal">
     <template v-slot:title>
       This is the title
     </template>
