@@ -119,7 +119,6 @@
   border-radius: rem(4px);
   display: inline-flex;
   position: relative;
-  justify-content: space-between;
 }
 
 .vtmn-dropdown_items > .vtmn-divider {
@@ -147,6 +146,7 @@
 
 .vtmn-dropdown_items > input:checked + label {
   color: var(--vtmn-semantic-color_content-active);
+  margin-inline-end: rem(36px);
 }
 
 .vtmn-dropdown_items > input + label::after {
@@ -162,6 +162,9 @@
 
 .vtmn-dropdown_items > input:checked + label::after {
   background-color: var(--vtmn-semantic-color_content-active);
+  position: absolute;
+  right: 0;
+  margin: 0 rem(12px);
 }
 
 .vtmn-dropdown details[open] summary::after {
