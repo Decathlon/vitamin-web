@@ -32,7 +32,14 @@ const src = {
     },
     {
       folder: 'navigation',
-      components: ['VtmnNavbar', 'VtmnSearch', 'VtmnTabs', 'VtmnTabsItem'],
+      components: [
+        'VtmnBreadcrumb',
+        'VtmnBreadcrumbItem',
+        'VtmnNavbar',
+        'VtmnSearch',
+        'VtmnTabs',
+        'VtmnTabsItem',
+      ],
     },
     {
       folder: 'overlays',
