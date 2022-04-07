@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/svelte",
-  "version": "0.40.0",
+  "version": "0.40.1",
   "description": "Decathlon Design System - Vitamin Svelte components library",
   "keywords": [
     "design-system",
@@ -37,7 +37,7 @@
     "@vtmn/css-badge": "^0.10.12",
     "@vtmn/css-breadcrumb": "^0.4.0",
     "@vtmn/css-button": "^0.11.14",
-    "@vtmn/css-card": "^0.7.1",
+    "@vtmn/css-card": "^0.7.2",
     "@vtmn/css-checkbox": "^0.6.16",
     "@vtmn/css-chip": "^0.6.13",
     "@vtmn/css-design-tokens": "^0.18.5",
