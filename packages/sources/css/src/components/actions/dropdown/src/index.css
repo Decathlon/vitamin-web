@@ -146,7 +146,7 @@
 
 .vtmn-dropdown_items > input:checked + label {
   color: var(--vtmn-semantic-color_content-active);
-  margin-inline-end: rem(36px);
+  padding-inline-end: rem(48px);
 }
 
 .vtmn-dropdown_items > input + label::after {
