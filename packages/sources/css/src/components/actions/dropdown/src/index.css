@@ -167,3 +167,7 @@
 .vtmn-dropdown details[open] summary::after {
   transform: rotateZ(-180deg);
 }
+
+.vtmn-dropdown_items > .vtmn-divider:last-child {
+  display: none;
+}
