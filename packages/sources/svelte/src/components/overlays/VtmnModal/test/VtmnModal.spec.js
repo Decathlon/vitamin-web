@@ -28,6 +28,8 @@ describe('VtmnModal', () => {
     container.getElementsByClassName(
       'vtmn-modal_content_body--overflow-indicator',
     )[0];
+  const getModalContent = (container) =>
+    container.getElementsByClassName('vtmn-modal_content')[0];
   const getContentActions = (container) =>
     container.getElementsByClassName('vtmn-modal_content_actions')[0];
   const getContentDescription = (container) =>
@@ -51,12 +53,12 @@ describe('VtmnModal', () => {
       });
       expect(getModal(container)).toBeVisible();
     });
-    test('Should pass custom class to modal', () => {
+    test('Should pass custom class to modal content', () => {
       const { container } = render(VtmnModal, {
         open: true,
         class: 'unit-test',
       });
-      expect(getModal(container)).toHaveClass('unit-test');
+      expect(getModalContent(container)).toHaveClass('unit-test');
     });
     test('Should trigger close if user click on overlay', async () => {
       const { container, component } = render(VtmnModal, {
