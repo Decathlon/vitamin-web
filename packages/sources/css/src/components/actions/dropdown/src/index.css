@@ -168,6 +168,6 @@
   transform: rotateZ(-180deg);
 }
 
-.vtmn-dropdown_items > .vtmn-divider:last-child {
+.vtmn-dropdown_items > input:last-of-type ~ .vtmn-divider {
   display: none;
 }
