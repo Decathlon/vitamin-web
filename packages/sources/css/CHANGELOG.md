@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.68.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.67.2...@vtmn/css@0.68.0) (2022-04-08)
+
+
+### Features
+
+* **@vtmn/svelte:** add `VtmnDropdown` component ([#1112](https://github.com/Decathlon/vitamin-web/issues/1112)) ([758b971](https://github.com/Decathlon/vitamin-web/commit/758b971c5154e6fee6f48edde4fef3d3ad613db6))
+
+
+
+
+
 ## [0.67.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.67.1...@vtmn/css@0.67.2) (2022-04-08)
 
 
