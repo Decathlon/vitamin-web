@@ -70,6 +70,14 @@ const MyComponent = () => (
 );
 ```
 
+If you need to display icons, you will need to import `@vtmn/icons` icon font like this:
+
+```javascript
+import '@vtmn/icons/dist/vitamix/font/vitamix.css';
+```
+
+Or you can also import it with a CDN like `unpkg.com` with [this file](https://unpkg.com/@vtmn/icons/dist/vitamix/font/vitamix.css).
+
 ### Overriding styles & behaviors
 
 This library is made to give you a standard. However, it is quite possible to modify components by passing them new props & styles.
