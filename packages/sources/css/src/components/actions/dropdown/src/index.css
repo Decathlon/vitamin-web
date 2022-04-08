@@ -115,7 +115,7 @@
   background-color: var(--vtmn-semantic-color_background-primary);
   padding: var(--vtmn-spacing_3);
   margin: 0;
-  width: auto;
+  width: 100%;
   height: 100%;
   border-radius: rem(4px);
   display: inline-flex;
@@ -147,6 +147,7 @@
 
 .vtmn-dropdown_items > input:checked + label {
   color: var(--vtmn-semantic-color_content-active);
+  padding-inline-end: rem(48px);
 }
 
 .vtmn-dropdown_items > input + label::after {
@@ -162,8 +163,15 @@
 
 .vtmn-dropdown_items > input:checked + label::after {
   background-color: var(--vtmn-semantic-color_content-active);
+  position: absolute;
+  right: 0;
+  margin: 0 rem(12px);
 }
 
 .vtmn-dropdown details[open] summary::after {
   transform: rotateZ(-180deg);
+}
+
+.vtmn-dropdown_items > input:last-of-type ~ .vtmn-divider {
+  display: none;
 }
