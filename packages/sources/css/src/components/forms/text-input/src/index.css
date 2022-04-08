@@ -25,7 +25,6 @@
   display: block;
   font-weight: var(--vtmn-typo_font-weight--normal);
   font-size: var(--vtmn-typo_text-2-font-size);
-  line-height: 1;
   padding: rem(12px) rem(36px) rem(12px) rem(12px);
   color: var(--vtmn-semantic-color_content-primary);
   min-height: rem(48px);
