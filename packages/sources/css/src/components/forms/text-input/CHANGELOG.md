@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.14.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-text-input@0.13.14...@vtmn/css-text-input@0.14.0) (2022-04-08)
+
+
+### Features
+
+* **@vtmn/css:** remove useless textInput line-height ([#1119](https://github.com/Decathlon/vitamin-web/issues/1119)) ([86e0997](https://github.com/Decathlon/vitamin-web/commit/86e099737ab88b4078e5ef1a0d65a47bca4e971b))
+
+
+
+
+
 ## [0.13.14](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-text-input@0.13.13...@vtmn/css-text-input@0.13.14) (2022-03-11)
 
 **Note:** Version bump only for package @vtmn/css-text-input
