@@ -17,7 +17,7 @@
    */
   export { className as class };
 
-  $: componentClass = cn('vtmn-modal', className);
+  $: componentClass = cn('vtmn-modal_content', className);
 
   const handleClose = () => {
     dispatch('close', { open });
@@ -31,7 +31,7 @@
     }
   </style>
   <div
-    class={componentClass}
+    class="vtmn-modal"
     role="dialog"
     aria-modal="true"
     aria-labelledby={$$restProps['aria-labelledby']}
@@ -42,7 +42,7 @@
       class="vtmn-modal_background-overlay"
       on:click={handleClose}
     />
-    <div class="vtmn-modal_content">
+    <div class={componentClass}>
       <div class="vtmn-modal_content_title">
         {#if $$slots.title}
           <span id="vtmn-modal-title" class="vtmn-modal_content_title--text"

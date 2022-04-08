@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.40.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.40.1...@vtmn/svelte@0.40.2) (2022-04-08)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** custom class should be apply on the modal content ([#1117](https://github.com/Decathlon/vitamin-web/issues/1117)) ([d0b7d61](https://github.com/Decathlon/vitamin-web/commit/d0b7d61e98b48d1ebda485e5948eb3204f8d2d3c))
+
+
+
+
+
+## [0.40.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.40.0...@vtmn/svelte@0.40.1) (2022-04-07)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
 # [0.40.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.39.0...@vtmn/svelte@0.40.0) (2022-04-06)
 
 

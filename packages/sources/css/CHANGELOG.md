@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.67.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.67.1...@vtmn/css@0.67.2) (2022-04-08)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** `dropdown` adjustments ([#1115](https://github.com/Decathlon/vitamin-web/issues/1115)) ([5e2aadf](https://github.com/Decathlon/vitamin-web/commit/5e2aadf5127e65dc65e143514556b354db628b74))
+
+
+
+
+
+## [0.67.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.67.0...@vtmn/css@0.67.1) (2022-04-07)
+
+
+### Bug Fixes
+
+* **@vtmn/css-card:** missing import of spacings ([#1116](https://github.com/Decathlon/vitamin-web/issues/1116)) ([43d2b6d](https://github.com/Decathlon/vitamin-web/commit/43d2b6d9f137730147642e022e93ce9c8d9700c9))
+
+
+
+
+
 # [0.67.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.66.0...@vtmn/css@0.67.0) (2022-04-06)
 
 
