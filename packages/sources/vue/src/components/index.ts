@@ -8,6 +8,7 @@ import VtmnPrice from './indicators/VtmnPrice';
 import VtmnTag from './indicators/VtmnTag';
 import VtmnSearch from './navigation/VtmnSearch';
 import VtmnAlert from './overlays/VtmnAlert';
+import VtmnModal from './overlays/VtmnModal';
 import VtmnPopover from './overlays/VtmnPopover';
 import VtmnSnackbar from './overlays/VtmnSnackbar';
 import VtmnToast from './overlays/VtmnToast';
@@ -31,6 +32,7 @@ export {
   VtmnTag,
   VtmnSearch,
   VtmnAlert,
+  VtmnModal,
   VtmnPopover,
   VtmnSnackbar,
   VtmnToast,
