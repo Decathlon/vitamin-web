@@ -177,8 +177,8 @@ export const VtmnRating = ({
   );
 };
 
-const MemoVtmnChip = React.memo(VtmnRating);
+const MemoVtmnRating = React.memo(VtmnRating);
 
-MemoVtmnChip.displayName = 'VtmnRating';
+MemoVtmnRating.displayName = 'VtmnRating';
 
-export default MemoVtmnChip;
+export default MemoVtmnRating;
