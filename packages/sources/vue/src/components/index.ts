@@ -15,6 +15,7 @@ import VtmnToast from './overlays/VtmnToast';
 import VtmnTooltip from './overlays/VtmnTooltip';
 import VtmnCheckbox from './selection-controls/VtmnCheckbox';
 import VtmnChip from './selection-controls/VtmnChip';
+import VtmnQuantity from './selection-controls/VtmnQuantity';
 import VtmnRadioButton from './selection-controls/VtmnRadioButton';
 import VtmnToggle from './selection-controls/VtmnToggle';
 import VtmnAccordion from './structure/VtmnAccordion';
@@ -39,6 +40,7 @@ export {
   VtmnTooltip,
   VtmnCheckbox,
   VtmnChip,
+  VtmnQuantity,
   VtmnRadioButton,
   VtmnToggle,
   VtmnAccordion,
