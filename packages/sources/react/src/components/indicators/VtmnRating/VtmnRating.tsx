@@ -118,7 +118,7 @@ export const VtmnRating = ({
                 }
                 type="radio"
                 name={name}
-                id={`rating-${index + 1}`}
+                id={`${name}-${index + 1}`}
                 value={index + 1}
                 aria-label={`${index + 1} star out of 5`}
                 disabled={disabled}
