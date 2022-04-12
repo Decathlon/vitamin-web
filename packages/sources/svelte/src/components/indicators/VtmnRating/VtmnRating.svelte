@@ -6,38 +6,56 @@
 
   /**
    * @type {string} name used on interactive mode to name the inputs
+   * @required
    */
   export let name;
 
   /**
-   * @type {boolean} use the emphasis mode
+   * @type {boolean} use the emphasis mode. Only if readonly is true.
+   * @default false
    */
   export let emphasis = false;
 
   /**
    * @type {boolean} size of the component
+   * @default medium
    */
   export let size = VTMN_RATING_SIZE.MEDIUM;
 
   /**
    * @type {boolean} disable the component
+   * @default false
    */
   export let disabled = false;
 
   /**
    * @type {boolean} is readonly component
+   * @default false
    */
   export let readonly = false;
 
   /**
-   * @type {boolean} enable the compact mode
+   * @type {boolean} enable the compact mode. Only if readonly is true.
+   * @default false
    */
   export let compact = false;
 
   /**
    * @type {number} rating to display on the component
+   * @requires
    */
-  export let rating = 0;
+  export let value;
+
+  /**
+   * @type {boolean} display the rating value. Only if readonly is true.
+   * default false
+   */
+  export let showValue = false;
+
+  /**
+   * @type {number} Comments displayed after the rating. Only if readonly is true.
+   */
+  export let comments = undefined;
 
   let className = undefined;
   /**
@@ -54,13 +72,16 @@
   $: starsCnt = compact && readonly ? 1 : 5;
 
   const computeRatingFill = (currentRatingStar) => {
-    if (currentRatingStar <= rating) {
+    if (starsCnt === 1) {
+      return value === 0 ? 'line' : 'fill';
+    }
+    if (currentRatingStar <= value) {
       return 'fill';
     }
     if (
-      rating < currentRatingStar &&
-      isFloat(rating) &&
-      Math.ceil(rating) === currentRatingStar
+      value < currentRatingStar &&
+      isFloat(value) &&
+      Math.ceil(value) === currentRatingStar
     ) {
       return 'half-fill';
     }
@@ -68,50 +89,48 @@
   };
 </script>
 
-<div
-  class={componentClass}
-  aria-disabled={disabled}
-  aria-label={$$restProps['aria-label']}
->
+<div class={componentClass} aria-disabled={disabled} {...$$restProps}>
   {#if !readonly}
     <div
       class="vtmn-rating--interactive"
       aria-label="Rate the article"
       role="radiogroup"
-      data-rating={rating}
+      data-rating={value}
     >
-      {#each Array(starsCnt) as _, i}
+      {#each Array(starsCnt) as _, index}
+        {@const position = index + 1}
         <input
           type="radio"
-          bind:group={rating}
+          bind:group={value}
           {name}
-          value={i + 1}
-          id={`${name}-${i + 1}`}
-          aria-label={`${i + 1} star out of 5`}
+          value={position}
+          id={`${name}-${position}`}
+          aria-label={`${position} star out of 5`}
           {disabled}
         />
-        <label for={`${name}-${i + 1}`} />
+        <label for={`${name}-${position}`} />
       {/each}
     </div>
   {/if}
   {#if readonly}
-    {#each Array(starsCnt) as _, i}
+    {#each Array(starsCnt) as _, index}
+      {@const position = index + 1}
       <VtmnIcon
-        value={`star-${computeRatingFill(i + 1)}`}
+        value={`star-${computeRatingFill(position)}`}
         role="presentation"
       />
     {/each}
-    {#if $$slots.primary}
+    {#if showValue}
       <span class="vtmn-rating_comment--primary" aria-label="article rating">
-        <slot name="primary" />
+        {value}/5
       </span>
     {/if}
-    {#if $$slots.secondary}
+    {#if comments}
       <span
         class="vtmn-rating_comment--secondary"
         aria-label="number of ratings"
       >
-        <slot name="secondary" />
+        {comments}
       </span>
     {/if}
   {/if}

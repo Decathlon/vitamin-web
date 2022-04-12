@@ -26,60 +26,70 @@
     name="story-interfactive-1"
     emphasis
     size="medium"
-    rating={0}
+    value={0}
   />
   <VtmnRating
     class="rating-stories"
     name="story-interfactive-2"
     emphasis
     size="small"
-    rating={0}
+    value={0}
   />
   <VtmnRating
     class="rating-stories"
     name="story-interfactive-3"
     emphasis
     disabled
-    rating={0}
+    value={0}
   />
 </Story>
 
-<Story name="Read Only with text">
-  <VtmnRating class="rating-stories" readonly compact rating={1}>
-    <span slot="primary">4.1/5</span>
-  </VtmnRating>
-  <VtmnRating class="rating-stories" readonly compact rating={0.1}>
-    <span slot="primary">1/5</span>
-  </VtmnRating>
-  <VtmnRating class="rating-stories" size="small" readonly compact rating={1}>
-    <span slot="primary">2.9/5</span>
-    <span slot="secondary">(74)</span>
-  </VtmnRating>
-  <VtmnRating class="rating-stories" emphasis readonly compact rating={1}>
-    <span slot="primary">74 ratings</span>
-  </VtmnRating>
-  <VtmnRating class="rating-stories" emphasis readonly rating={2.3}>
-    <span slot="primary">2.3/5</span>
-    <span slot="secondary">(74)</span>
-  </VtmnRating>
+<Story name="Read only with comments">
+  <VtmnRating class="rating-stories" readonly compact value={4.1} showValue />
+  <VtmnRating class="rating-stories" readonly compact value={1} showValue />
+  <VtmnRating
+    class="rating-stories"
+    size="small"
+    readonly
+    compact
+    value={2.9}
+    comments="(74)"
+    showValue
+  />
+  <VtmnRating
+    class="rating-stories"
+    emphasis
+    readonly
+    compact
+    value={5}
+    comments="(74)"
+  />
+  <VtmnRating
+    class="rating-stories"
+    emphasis
+    readonly
+    value={2.3}
+    showValue
+    comments="(74)"
+  />
 </Story>
 
 <Story name="Read only">
   <div class="rating-story-align">
     <div>
-      <VtmnRating class="rating-stories" readonly size="small" rating={0} />
-      <VtmnRating class="rating-stories" readonly size="small" rating={0.5} />
-      <VtmnRating class="rating-stories" readonly size="small" rating={1} />
-      <VtmnRating class="rating-stories" readonly size="small" rating={1.5} />
-      <VtmnRating class="rating-stories" readonly size="small" rating={2} />
-      <VtmnRating class="rating-stories" readonly size="small" rating={2.5} />
+      <VtmnRating class="rating-stories" readonly size="small" value={0} />
+      <VtmnRating class="rating-stories" readonly size="small" value={0.5} />
+      <VtmnRating class="rating-stories" readonly size="small" value={1} />
+      <VtmnRating class="rating-stories" readonly size="small" value={1.5} />
+      <VtmnRating class="rating-stories" readonly size="small" value={2} />
+      <VtmnRating class="rating-stories" readonly size="small" value={2.5} />
     </div>
     <div>
-      <VtmnRating class="rating-stories" readonly emphasis rating={3} />
-      <VtmnRating class="rating-stories" readonly emphasis rating={3.5} />
-      <VtmnRating class="rating-stories" readonly emphasis rating={4} />
-      <VtmnRating class="rating-stories" readonly emphasis rating={4.5} />
-      <VtmnRating class="rating-stories" readonly emphasis rating={5} />
+      <VtmnRating class="rating-stories" readonly emphasis value={3} />
+      <VtmnRating class="rating-stories" readonly emphasis value={3.5} />
+      <VtmnRating class="rating-stories" readonly emphasis value={4} />
+      <VtmnRating class="rating-stories" readonly emphasis value={4.5} />
+      <VtmnRating class="rating-stories" readonly emphasis value={5} />
     </div>
   </div>
 </Story>
