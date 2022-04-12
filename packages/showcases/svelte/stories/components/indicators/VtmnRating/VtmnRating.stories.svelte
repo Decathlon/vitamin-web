@@ -44,7 +44,7 @@
   />
 </Story>
 
-<Story name="Read Only with text">
+<Story name="Read only with comments">
   <VtmnRating class="rating-stories" readonly compact value={4.1} showValue />
   <VtmnRating class="rating-stories" readonly compact value={1} showValue />
   <VtmnRating

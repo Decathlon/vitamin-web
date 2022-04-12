@@ -11,7 +11,7 @@ export const parameters = {
 export const argTypes = {
   name: {
     type: { name: 'string', required: false },
-    description: 'Name used on the input radio',
+    description: 'Name used on the input radio.',
     defaultValue: 'rating',
     control: {
       type: 'text',
@@ -19,7 +19,7 @@ export const argTypes = {
   },
   emphasis: {
     type: { name: 'boolean', required: false },
-    description: 'The variant of the rating. Only if readonly is true',
+    description: 'The variant of the rating. Only if readonly is true.',
     defaultValue: false,
     control: {
       type: 'boolean',
@@ -48,7 +48,7 @@ export const argTypes = {
   },
   compact: {
     type: { name: 'number', required: false },
-    description: 'Display compact mode, only if readonly is true.',
+    description: 'Display compact mode. Only if readonly is true.',
     defaultValue: false,
     control: { type: 'boolean' },
   },
@@ -61,12 +61,12 @@ export const argTypes = {
   comments: {
     type: { name: 'string', required: false },
     description:
-      'Comments displayed after the rating. Only if readonly is true',
+      'Comments displayed after the rating. Only if readonly is true.',
     control: { type: 'text' },
   },
   showValue: {
     type: { name: 'boolean', required: false },
-    description: 'Display the rating value. Only if readonly is true',
+    description: 'Display the rating value. Only if readonly is true.',
     defaultValue: false,
     control: { type: 'boolean' },
   },
