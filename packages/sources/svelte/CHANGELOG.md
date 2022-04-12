@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.41.1...@vtmn/svelte@0.41.2) (2022-04-12)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** rework `VtmnRating` component ([#1121](https://github.com/Decathlon/vitamin-web/issues/1121)) ([c611b97](https://github.com/Decathlon/vitamin-web/commit/c611b97c1c7c1c2abec3200933ed9d04a039de20))
+
+
+
+
+
 ## [0.41.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.41.0...@vtmn/svelte@0.41.1) (2022-04-08)
 
 **Note:** Version bump only for package @vtmn/svelte
