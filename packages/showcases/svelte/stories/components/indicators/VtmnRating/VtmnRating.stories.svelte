@@ -53,7 +53,7 @@
     readonly
     compact
     value={2.9}
-    comments={74}
+    comments="(74)"
     showValue
   />
   <VtmnRating
@@ -62,7 +62,7 @@
     readonly
     compact
     value={5}
-    comments={74}
+    comments="(74)"
   />
   <VtmnRating
     class="rating-stories"
@@ -70,7 +70,7 @@
     readonly
     value={2.3}
     showValue
-    comments={74}
+    comments="(74)"
   />
 </Story>
 

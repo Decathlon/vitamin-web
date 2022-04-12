@@ -11,7 +11,7 @@
   export let name;
 
   /**
-   * @type {boolean} use the emphasis mode
+   * @type {boolean} use the emphasis mode. Only if readonly is true.
    * @default false
    */
   export let emphasis = false;
@@ -35,7 +35,7 @@
   export let readonly = false;
 
   /**
-   * @type {boolean} enable the compact mode, only for readonly
+   * @type {boolean} enable the compact mode. Only if readonly is true.
    * @default false
    */
   export let compact = false;
@@ -47,13 +47,13 @@
   export let value;
 
   /**
-   * @type {boolean} display the rating value
+   * @type {boolean} display the rating value. Only if readonly is true.
    * default false
    */
   export let showValue = false;
 
   /**
-   * @type {number} Review number
+   * @type {number} Comments displayed after the rating. Only if readonly is true.
    */
   export let comments = undefined;
 
@@ -125,12 +125,12 @@
         {value}/5
       </span>
     {/if}
-    {#if typeof comments === 'number'}
+    {#if comments}
       <span
         class="vtmn-rating_comment--secondary"
         aria-label="number of ratings"
       >
-        ({comments})
+        {comments}
       </span>
     {/if}
   {/if}
