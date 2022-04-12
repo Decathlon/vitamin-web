@@ -48,14 +48,25 @@ export const argTypes = {
   },
   compact: {
     type: { name: 'number', required: false },
-    description: 'How many stars to display.',
+    description: 'Display compact mode (only if readonly is true).',
     defaultValue: false,
     control: { type: 'boolean' },
   },
-  rating: {
+  value: {
     type: { name: 'boolean', required: false },
-    description: 'How many stars are filled.',
+    description: 'Rating value.',
     defaultValue: 0,
     control: { type: 'range', min: 0, max: 5, step: 0.25 },
+  },
+  comments: {
+    type: { name: 'number', required: false },
+    description: 'Review number.',
+    control: { type: 'number', min: 0, step: 1 },
+  },
+  showValue: {
+    type: { name: 'boolean', required: false },
+    description: 'Display the rating value.',
+    defaultValue: false,
+    control: { type: 'boolean' },
   },
 };
