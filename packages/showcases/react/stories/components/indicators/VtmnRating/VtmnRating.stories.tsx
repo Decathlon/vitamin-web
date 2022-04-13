@@ -11,14 +11,6 @@ export default {
   component: VtmnRating,
   argTypes: {
     ...argTypes,
-    comment: {
-      type: { name: 'number', required: false },
-      description:
-        'Comment displayed on the right side of the rating when using compact mode.',
-      defaultValue: false,
-      control: { type: 'number' },
-    },
-
     onChange: {
       type: { name: 'string', required: false },
       description: 'Called when value has changed',

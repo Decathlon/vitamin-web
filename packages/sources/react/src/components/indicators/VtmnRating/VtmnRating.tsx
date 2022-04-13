@@ -47,18 +47,23 @@ export interface VtmnRatingProps
   compact?: boolean;
 
   /**
-   * The comment next to the rating when using compact mode.
+   * Comments next to the rating when using compact mode.
    * @type {number}
    * @defaultValue 0
    */
-  comment?: number;
+  comments?: number;
 
   /**
    * The value of the rating.
    * @type {number}
    * @defaultValue 0
    */
-  rating?: number;
+  value?: number;
+
+  /**
+   * Whether the value is shown next to the rating (requires readonly to be true)
+   */
+  showValue?: boolean;
 
   /**
    * Called when the rating value changes
@@ -75,19 +80,20 @@ export const VtmnRating = ({
   disabled = false,
   readonly = false,
   compact = false,
-  comment = undefined,
-  rating = 0,
+  comments = undefined,
+  value = 0,
+  showValue = false,
   onChange = undefined,
   children,
   className,
   ...props
 }: VtmnRatingProps) => {
-  const [value, setValue] = React.useState(rating);
+  const [position, setPosition] = React.useState(value);
 
-  // Update value when rating prop changes
-  React.useEffect(() => setValue(rating), [rating]);
+  // Update rating when value prop changes
+  React.useEffect(() => setPosition(value), [value]);
 
-  React.useEffect(() => onChange && onChange(value), [value]);
+  React.useEffect(() => onChange && onChange(position), [position]);
 
   return (
     <div
@@ -108,13 +114,13 @@ export const VtmnRating = ({
           className="vtmn-rating--interactive"
           aria-label="Rate the article"
           role="radiogroup"
-          data-rating={rating}
+          data-rating={position}
         >
           {Array.from(Array(5).keys()).map((index) => (
             <React.Fragment key={`rating-${index + 1}`}>
               <input
                 onChange={(event: React.FormEvent<HTMLInputElement>) =>
-                  setValue(parseInt(event.currentTarget.value))
+                  setPosition(parseInt(event.currentTarget.value))
                 }
                 type="radio"
                 name={name}
@@ -122,7 +128,7 @@ export const VtmnRating = ({
                 value={index + 1}
                 aria-label={`${index + 1} star out of 5`}
                 disabled={disabled}
-                checked={Math.floor(value) == index + 1}
+                checked={Math.floor(position) == index + 1}
               />
               <label htmlFor={`${name}-${index + 1}`} />
             </React.Fragment>
@@ -133,44 +139,57 @@ export const VtmnRating = ({
       {/**
        * Read-Only mode
        */}
-      {readonly &&
-        !compact &&
-        Array.from(Array(5).keys()).map((index) => (
-          <span
-            key={`rating-readonly-${index + 1}`}
-            className={
-              index <= rating && rating - index >= 0.5
-                ? rating - index < 1 && rating - index >= 0.5
-                  ? 'vtmx-star-half-fill'
-                  : 'vtmx-star-fill'
-                : 'vtmx-star-line'
-            }
-            role="presentation"
-          />
-        ))}
+      {readonly && (
+        <React.Fragment>
+          {/**
+           * Compact rendering
+           */}
 
-      {/**
-       * Read-Only and Compact mode
-       */}
-      {readonly && compact && (
-        <>
-          <span className="vtmx-star-fill" role="presentation" />
-          <span
-            className="vtmn-rating_comment--primary"
-            aria-label="article rating"
-          >
-            {rating}/5
-          </span>
+          {compact ? (
+            <span
+              className={`vtmx-star-${!position ? 'line' : 'fill'}`}
+              role="presentation"
+            />
+          ) : (
+            Array.from(Array(5).keys()).map((index) => (
+              <span
+                key={`rating-readonly-${index + 1}`}
+                className={
+                  index <= position && position - index >= 0.5
+                    ? position - index < 1 && position - index >= 0.5
+                      ? 'vtmx-star-half-fill'
+                      : 'vtmx-star-fill'
+                    : 'vtmx-star-line'
+                }
+                role="presentation"
+              />
+            ))
+          )}
 
-          {comment && (
+          {/**
+           * Value rendering
+           */}
+          {showValue && (
+            <span
+              className="vtmn-rating_comment--primary"
+              aria-label="article rating"
+            >
+              {position}/5
+            </span>
+          )}
+
+          {/**
+           * Comments rendering
+           */}
+          {comments && (
             <span
               className="vtmn-rating_comment--secondary"
               aria-label="number of ratings"
             >
-              ({comment})
+              {comments}
             </span>
           )}
-        </>
+        </React.Fragment>
       )}
     </div>
   );
