@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.11.14...@vtmn/css-button@0.12.0) (2022-04-14)
+
+
+### Features
+
+* **@vtmn/css:** use logical properties in btn spacings ([#1122](https://github.com/Decathlon/vitamin-web/issues/1122)) ([6b8f6b3](https://github.com/Decathlon/vitamin-web/commit/6b8f6b38732c36ab815c44f005bcccc58effebf8))
+
+
+
+
+
 ## [0.11.14](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.11.13...@vtmn/css-button@0.11.14) (2022-03-11)
 
 **Note:** Version bump only for package @vtmn/css-button
