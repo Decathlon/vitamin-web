@@ -274,52 +274,52 @@
 
 .vtmn-btn--icon-left span[class^='vtmx-'],
 .vtmn-btn_size--medium.vtmn-btn--icon-left span[class^='vtmx-'] {
-  padding-right: rem(8px);
+  padding-inline-end: rem(8px);
 }
 
 .vtmn-btn_size--small.vtmn-btn--icon-left span[class^='vtmx-'] {
-  padding-right: rem(6px);
+  padding-inline-end: rem(6px);
 }
 
 .vtmn-btn_size--small.vtmn-btn--icon-right span[class^='vtmx-'] {
-  padding-left: rem(6px);
+  padding-inline-start: rem(6px);
 }
 
 .vtmn-btn_size--small.vtmn-btn--icon-left svg {
-  margin-right: rem(6px);
+  margin-inline-end: rem(6px);
 }
 
 .vtmn-btn_size--small.vtmn-btn--icon-right svg {
-  margin-left: rem(6px);
+  margin-inline-start: rem(6px);
 }
 
 .vtmn-btn--icon-right span[class^='vtmx-'],
 .vtmn-btn_size--medium.vtmn-btn--icon-right span[class^='vtmx-'] {
-  padding-left: rem(8px);
+  padding-inline-start: rem(8px);
 }
 
 .vtmn-btn_size--medium.vtmn-btn--icon-left svg {
-  margin-right: rem(8px);
+  margin-inline-end: rem(8px);
 }
 
 .vtmn-btn_size--medium.vtmn-btn--icon-right svg {
-  margin-left: rem(8px);
+  margin-inline-start: rem(8px);
 }
 
 .vtmn-btn_size--large.vtmn-btn--icon-left span[class^='vtmx-'] {
-  padding-right: rem(12px);
+  padding-inline-end: rem(12px);
 }
 
 .vtmn-btn_size--large.vtmn-btn--icon-right span[class^='vtmx-'] {
-  padding-left: rem(12px);
+  padding-inline-start: rem(12px);
 }
 
 .vtmn-btn_size--large.vtmn-btn--icon-left svg {
-  margin-right: rem(12px);
+  margin-inline-end: rem(12px);
 }
 
 .vtmn-btn_size--large.vtmn-btn--icon-right svg {
-  margin-left: rem(12px);
+  margin-inline-start: rem(12px);
 }
 
 /* Exceptions */

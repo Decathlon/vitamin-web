@@ -58,7 +58,7 @@ import 'typeface-roboto-condensed';
 
 To use this package, you need to use the source files and compile on your side. To do so, you can start with [+SvelteKit](https://kit.svelte.dev/) for example.
 
-Then, you just need to import components you need. Example with `VtmnButton` :
+Then, you just need to import components you need. Example with `VtmnButton`:
 
 ```js
 // App.svelte
@@ -68,6 +68,14 @@ Then, you just need to import components you need. Example with `VtmnButton` :
 
 <VtmnButton>Button</VtmnButton>
 ```
+
+If you need to display icons, you will need to import `@vtmn/icons` icon font like this:
+
+```javascript
+import '@vtmn/icons/dist/vitamix/font/vitamix.css';
+```
+
+Or you can also import it with a CDN like `unpkg.com` with [this file](https://unpkg.com/@vtmn/icons/dist/vitamix/font/vitamix.css).
 
 ## Development
 

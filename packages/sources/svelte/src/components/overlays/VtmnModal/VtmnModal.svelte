@@ -6,21 +6,10 @@
   const dispatch = createEventDispatcher();
 
   /**
-   * @type {string} Title of the modal
-   */
-  export let title;
-
-  /**
    * @type {boolean} Display or hide the modal
    * Default false
    */
-  export let show = false;
-
-  /**
-   * @type {boolean} Enable the show animation.
-   * Default true
-   */
-  export let animationDisabled = false;
+  export let open = false;
 
   let className = undefined;
   /**
@@ -28,21 +17,21 @@
    */
   export { className as class };
 
-  $: componentClass = cn('vtmn-modal', !animationDisabled && 'show', className);
+  $: componentClass = cn('vtmn-modal_content', className);
 
-  const handleCancel = () => {
-    dispatch('cancel', { show });
+  const handleClose = () => {
+    dispatch('close', { open });
   };
 </script>
 
-{#if show}
+{#if open}
   <style>
     body {
       overflow: hidden;
     }
   </style>
   <div
-    class={componentClass}
+    class="vtmn-modal"
     role="dialog"
     aria-modal="true"
     aria-labelledby={$$restProps['aria-labelledby']}
@@ -51,27 +40,37 @@
     <div
       id="vtmn-modal-background"
       class="vtmn-modal_background-overlay"
-      on:click={handleCancel}
+      on:click={handleClose}
     />
-    <div class="vtmn-modal_content">
+    <div class={componentClass}>
       <div class="vtmn-modal_content_title">
-        <span id="vtmn-modal-title" class="vtmn-modal_content_title--text"
-          >{title}</span
-        >
+        {#if $$slots.title}
+          <span id="vtmn-modal-title" class="vtmn-modal_content_title--text"
+            ><slot name="title" /></span
+          >
+        {/if}
         <VtmnButton
           aria-label="close"
           variant="ghost"
           iconAlone="close-line"
-          on:click={handleCancel}
+          on:click={handleClose}
         />
       </div>
       <div class="vtmn-modal_content_body">
-        <slot name="description" />
+        {#if $$slots.description}
+          <p id="vtmn-modal-description" class="vtmn-modal_content_body--text">
+            <slot name="description" />
+          </p>
+        {/if}
         {#if $$slots.actions}
           <div class="vtmn-modal_content_body--overflow-indicator" />
         {/if}
       </div>
-      <slot name="actions" />
+      {#if $$slots.actions}
+        <div class="vtmn-modal_content_actions">
+          <slot name="actions" />
+        </div>
+      {/if}
     </div>
   </div>
 {/if}

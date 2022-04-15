@@ -8,7 +8,12 @@ const src = {
   components: [
     {
       folder: 'actions',
-      components: ['VtmnButton', 'VtmnLink'],
+      components: [
+        'VtmnButton',
+        'VtmnDropdown',
+        'VtmnDropdownItem',
+        'VtmnLink',
+      ],
     },
     {
       folder: 'forms',
@@ -27,7 +32,14 @@ const src = {
     },
     {
       folder: 'navigation',
-      components: ['VtmnNavbar', 'VtmnSearch', 'VtmnTabs', 'VtmnTabsItem'],
+      components: [
+        'VtmnBreadcrumb',
+        'VtmnBreadcrumbItem',
+        'VtmnNavbar',
+        'VtmnSearch',
+        'VtmnTabs',
+        'VtmnTabsItem',
+      ],
     },
     {
       folder: 'overlays',

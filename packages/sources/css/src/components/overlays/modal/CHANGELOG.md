@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-modal@0.5.7...@vtmn/css-modal@0.6.0) (2022-04-06)
+
+
+### Features
+
+* **@vtmn/svelte:** optimization of `VtmnModal` component ([#1111](https://github.com/Decathlon/vitamin-web/issues/1111)) ([847bb32](https://github.com/Decathlon/vitamin-web/commit/847bb32de470ee7434206e45d1fabf449287908e))
+
+
+
+
+
 ## [0.5.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-modal@0.5.6...@vtmn/css-modal@0.5.7) (2022-03-24)
 
 

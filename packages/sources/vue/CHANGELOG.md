@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.30.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.30.0...@vtmn/vue@0.30.1) (2022-04-14)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+# [0.30.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.29.1...@vtmn/vue@0.30.0) (2022-04-11)
+
+
+### Features
+
+* **@vtmn/vue:** add `VtmnQuantity` component ([#1109](https://github.com/Decathlon/vitamin-web/issues/1109)) ([84e3578](https://github.com/Decathlon/vitamin-web/commit/84e3578f00109f921ef5f8ccf6a46eaf4e017ac9))
+
+
+
+
+
+## [0.29.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.29.0...@vtmn/vue@0.29.1) (2022-04-08)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+# [0.29.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.28.1...@vtmn/vue@0.29.0) (2022-04-08)
+
+
+### Features
+
+* **@vtmn/vue:** add `VtmnModal` component ([#1108](https://github.com/Decathlon/vitamin-web/issues/1108)) ([e7a3f9b](https://github.com/Decathlon/vitamin-web/commit/e7a3f9b45d43f4f6964c0e1092a4491f375cb2dd))
+
+
+
+
+
+## [0.28.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.28.0...@vtmn/vue@0.28.1) (2022-04-08)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+# [0.28.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.27.1...@vtmn/vue@0.28.0) (2022-04-07)
+
+
+### Features
+
+* **@vtmn/vue:** add `VtmnSearch` component ([#1078](https://github.com/Decathlon/vitamin-web/issues/1078)) ([5388d86](https://github.com/Decathlon/vitamin-web/commit/5388d860cb73c35f3cd18b6cd439aaad047024ed))
+* **@vtmn/vue:** add `VtmnSnackbar` component ([#1107](https://github.com/Decathlon/vitamin-web/issues/1107)) ([36074e4](https://github.com/Decathlon/vitamin-web/commit/36074e445ec7ea644de6887bc45b5c6ee892c3bc))
+* **@vtmn/vue:** add `VtmnToast` component ([#1106](https://github.com/Decathlon/vitamin-web/issues/1106)) ([c521670](https://github.com/Decathlon/vitamin-web/commit/c521670d6062140acaf636b598ecd2ab17228b6b))
+
+
+
+
+
 ## [0.27.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.27.0...@vtmn/vue@0.27.1) (2022-04-05)
 
 **Note:** Version bump only for package @vtmn/vue

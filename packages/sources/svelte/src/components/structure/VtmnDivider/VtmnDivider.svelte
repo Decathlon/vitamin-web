@@ -25,7 +25,7 @@
   $: componentClass = cn(
     'vtmn-divider',
     `vtmn-divider_orientation--${orientation}`,
-    `vtmn-divider_text-position--${textPosition}`,
+    $$slots.default && `vtmn-divider_text-position--${textPosition}`,
     className,
   );
 </script>
