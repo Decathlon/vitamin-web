@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.34.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.33.5...@vtmn/react@0.34.0) (2022-04-15)
+
+
+### Features
+
+* **@vtmn/react:** add `VtmnRating` component ([#1120](https://github.com/Decathlon/vitamin-web/issues/1120)) ([254e51b](https://github.com/Decathlon/vitamin-web/commit/254e51b0f1f5b0d4b7807e46f84c5976070d3a68))
+
+
+
+
+
 ## [0.33.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.33.4...@vtmn/react@0.33.5) (2022-04-15)
 
 **Note:** Version bump only for package @vtmn/react
