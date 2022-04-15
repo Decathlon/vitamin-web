@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-dropdown@0.3.1...@vtmn/css-dropdown@0.4.0) (2022-04-08)
+
+
+### Features
+
+* **@vtmn/svelte:** add `VtmnDropdown` component ([#1112](https://github.com/Decathlon/vitamin-web/issues/1112)) ([758b971](https://github.com/Decathlon/vitamin-web/commit/758b971c5154e6fee6f48edde4fef3d3ad613db6))
+
+
+
+
+
+## [0.3.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-dropdown@0.3.0...@vtmn/css-dropdown@0.3.1) (2022-04-08)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** `dropdown` adjustments ([#1115](https://github.com/Decathlon/vitamin-web/issues/1115)) ([5e2aadf](https://github.com/Decathlon/vitamin-web/commit/5e2aadf5127e65dc65e143514556b354db628b74))
+
+
+
+
+
 # [0.3.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-dropdown@0.2.6...@vtmn/css-dropdown@0.3.0) (2022-04-05)
 
 

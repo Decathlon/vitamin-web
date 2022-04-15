@@ -3,6 +3,61 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.70.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.69.0...@vtmn/css@0.70.0) (2022-04-14)
+
+
+### Features
+
+* **@vtmn/css:** use logical properties in btn spacings ([#1122](https://github.com/Decathlon/vitamin-web/issues/1122)) ([6b8f6b3](https://github.com/Decathlon/vitamin-web/commit/6b8f6b38732c36ab815c44f005bcccc58effebf8))
+
+
+
+
+
+# [0.69.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.68.0...@vtmn/css@0.69.0) (2022-04-08)
+
+
+### Features
+
+* **@vtmn/css:** remove useless textInput line-height ([#1119](https://github.com/Decathlon/vitamin-web/issues/1119)) ([86e0997](https://github.com/Decathlon/vitamin-web/commit/86e099737ab88b4078e5ef1a0d65a47bca4e971b))
+
+
+
+
+
+# [0.68.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.67.2...@vtmn/css@0.68.0) (2022-04-08)
+
+
+### Features
+
+* **@vtmn/svelte:** add `VtmnDropdown` component ([#1112](https://github.com/Decathlon/vitamin-web/issues/1112)) ([758b971](https://github.com/Decathlon/vitamin-web/commit/758b971c5154e6fee6f48edde4fef3d3ad613db6))
+
+
+
+
+
+## [0.67.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.67.1...@vtmn/css@0.67.2) (2022-04-08)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** `dropdown` adjustments ([#1115](https://github.com/Decathlon/vitamin-web/issues/1115)) ([5e2aadf](https://github.com/Decathlon/vitamin-web/commit/5e2aadf5127e65dc65e143514556b354db628b74))
+
+
+
+
+
+## [0.67.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.67.0...@vtmn/css@0.67.1) (2022-04-07)
+
+
+### Bug Fixes
+
+* **@vtmn/css-card:** missing import of spacings ([#1116](https://github.com/Decathlon/vitamin-web/issues/1116)) ([43d2b6d](https://github.com/Decathlon/vitamin-web/commit/43d2b6d9f137730147642e022e93ce9c8d9700c9))
+
+
+
+
+
 # [0.67.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.66.0...@vtmn/css@0.67.0) (2022-04-06)
 
 
