@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.41.3...@vtmn/svelte@0.41.4) (2022-04-15)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** prevent flickering VtmnDivider ([#1123](https://github.com/Decathlon/vitamin-web/issues/1123)) ([1ae4fd0](https://github.com/Decathlon/vitamin-web/commit/1ae4fd0173a137ec9ccf5ed2243ee7e1de36d278))
+
+
+
+
+
 ## [0.41.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.41.2...@vtmn/svelte@0.41.3) (2022-04-14)
 
 **Note:** Version bump only for package @vtmn/svelte
