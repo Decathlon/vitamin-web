@@ -27,7 +27,7 @@ export const VtmnSkeleton = ({
   return (
     <span
       className={clsx('vtmn-skeleton', `vtmn-skeleton_${shape}`, className)}
-      style={{ width: `${width}%`, height: 'inherit' }}
+      style={{ width: `${width}%` }}
       {...props}
     ></span>
   );

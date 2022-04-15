@@ -24,7 +24,7 @@
 
 <Story name="With avatar" let:args>
   <div class="post-example">
-    <VtmnSkeleton shape="avatar" />
+    <VtmnSkeleton shape="avatar" width="20" />
     <div class="post-example_body">
       <VtmnSkeleton shape="line" width="55" />
       <p class="vtmn-mt-2">
