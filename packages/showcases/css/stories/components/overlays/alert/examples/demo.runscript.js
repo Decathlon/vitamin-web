@@ -59,7 +59,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   let alertQueue = new Queue();
 
   const templateAlert1 = (id) => `
-      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_variant--danger">
+      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_variant--danger" role="alert" tabindex="-1" aria-live="assertive">
         <div class="vtmn-alert_content">
           <div class="vtmn-alert_content-title">
             This is the title of the alert
@@ -68,7 +68,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
       </div>`;
 
   const templateAlert2 = (id) => `
-      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_variant--success">
+      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_variant--success" role="alert" tabindex="-1" aria-live="assertive">
         <div class="vtmn-alert_content">
           <div class="vtmn-alert_content-title">
             This is the title of the alert
@@ -80,7 +80,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
       </div>`;
 
   const templateAlert3 = (id) => `
-      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_variant--warning">
+      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_variant--warning" role="alert" tabindex="-1" aria-live="assertive">
         <div class="vtmn-alert_content">
           <div class="vtmn-alert_content-title">
             This is the title of the alert
@@ -92,7 +92,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
       </div>`;
 
   const templateAlert4 = (id) => `
-      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_variant--info">
+      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_variant--info" role="alert" tabindex="-1" aria-live="assertive">
         <div class="vtmn-alert_content">
           <div class="vtmn-alert_content-title">
             This is the title of the alert

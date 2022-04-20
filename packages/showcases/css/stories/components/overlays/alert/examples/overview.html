@@ -3,6 +3,7 @@
     class="vtmn-alert vtmn-alert_variant--info"
     role="alert"
     tabindex="-1"
+    aria-live="assertive"
     aria-labelledby="alert-title-1"
     aria-describedby="alert-text-1"
   >
@@ -11,8 +12,8 @@
         This is the title of the alert
         <button
           class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone"
-          aria-label="Close alert"
         >
+          <span class="vtmn-sr-only">Close alert</span>
           <span class="vtmx-close-line" role="presentation"></span>
         </button>
       </div>
@@ -27,6 +28,7 @@
   <div
     class="vtmn-alert vtmn-alert_variant--warning"
     role="alert"
+    aria-live="assertive"
     tabindex="-1"
   >
     <div class="vtmn-alert_content" role="document">
@@ -42,6 +44,7 @@
   <div
     class="vtmn-alert vtmn-alert_variant--success"
     role="alert"
+    aria-live="assertive"
     tabindex="-1"
   >
     <div class="vtmn-alert_content" role="document">
@@ -49,8 +52,8 @@
         This is the title of the alert
         <button
           class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone"
-          aria-label="Close alert"
         >
+          <span class="vtmn-sr-only">Close alert</span>
           <span class="vtmx-close-line" role="presentation"></span>
         </button>
       </div>
@@ -59,7 +62,12 @@
 </div>
 
 <div class="block">
-  <div class="vtmn-alert vtmn-alert_variant--danger" role="alert" tabindex="-1">
+  <div
+    class="vtmn-alert vtmn-alert_variant--danger"
+    role="alert"
+    aria-live="assertive"
+    tabindex="-1"
+  >
     <div class="vtmn-alert_content" role="document">
       <div class="vtmn-alert_content-title">This is the title of the alert</div>
     </div>
