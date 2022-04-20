@@ -17,15 +17,17 @@ window.addEventListener('DOMContentLoaded', (event) => {
     //Create the block div container
     let newDiv = document.createElement('div');
     newDiv.classList.add('block');
+    newDiv.setAttribute('role', 'status');
     document.body.appendChild(newDiv);
 
     if (snackbar === 'vtmn-snackbar-1') {
       document.body.lastChild.innerHTML = `
-        <div id="vtmn-snackbar-1" class="vtmn-snackbar" role="status">
+        <div id="vtmn-snackbar-1" class="vtmn-snackbar">
           <div class="vtmn-snackbar_content">
             This is the description of a snackbar
           </div>
-          <button id="btn-dismiss-1" class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone" aria-label="Close alert">
+          <button id="btn-dismiss-1" class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone">
+            <span class="vtmn-sr-only">Close snackbar</span>
             <span class="vtmx-close-line" role="presentation"></span>
           </button>
         </div>`;
@@ -38,7 +40,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
       timeOut(snackbar);
     } else if (snackbar === 'vtmn-snackbar-2') {
       document.body.lastChild.innerHTML = `
-        <div id="vtmn-snackbar-2" class="vtmn-snackbar" role="status">
+        <div id="vtmn-snackbar-2" class="vtmn-snackbar">
           <div class="vtmn-snackbar_content">
             This is the description of a snackbar
           </div>
@@ -47,14 +49,15 @@ window.addEventListener('DOMContentLoaded', (event) => {
       timeOut(snackbar);
     } else if (snackbar === 'vtmn-snackbar-3') {
       document.body.lastChild.innerHTML = `
-        <div id="vtmn-snackbar-3" class="vtmn-snackbar" role="status">
+        <div id="vtmn-snackbar-3" class="vtmn-snackbar">
           <div class="vtmn-snackbar_content">
             This is the description of a snackbar
           </div>
           <button class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small">
             Action
           </button>
-          <button id="btn-dismiss-3" class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone" aria-label="Close alert">
+          <button id="btn-dismiss-3" class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone">
+            <span class="vtmn-sr-only">Close snackbar</span>
             <span class="vtmx-close-line" role="presentation"></span>
           </button>
         </div>`;
@@ -67,7 +70,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
       timeOut(snackbar);
     } else if (snackbar === 'vtmn-snackbar-4') {
       document.body.lastChild.innerHTML = `
-        <div id="vtmn-snackbar-4" class="vtmn-snackbar" role="status">
+        <div id="vtmn-snackbar-4" class="vtmn-snackbar">
           <div class="vtmn-snackbar_content">
             This is the description of a snackbar
           </div>

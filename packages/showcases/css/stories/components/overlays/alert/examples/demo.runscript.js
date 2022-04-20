@@ -59,20 +59,21 @@ window.addEventListener('DOMContentLoaded', (event) => {
   let alertQueue = new Queue();
 
   const templateAlert1 = (id) => `
-      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_variant--danger" role="alert" tabindex="-1" aria-live="assertive">
+      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_variant--danger" aria-labelledby="alert-title-${id}">
         <div class="vtmn-alert_content">
-          <div class="vtmn-alert_content-title">
+          <div id="alert-title-${id}" class="vtmn-alert_content-title">
             This is the title of the alert
           </div>
         </div>
       </div>`;
 
   const templateAlert2 = (id) => `
-      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_variant--success" role="alert" tabindex="-1" aria-live="assertive">
+      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_variant--success" aria-labelledby="alert-title-${id}">
         <div class="vtmn-alert_content">
-          <div class="vtmn-alert_content-title">
+          <div id="alert-title-${id}" class="vtmn-alert_content-title">
             This is the title of the alert
-            <button id="btn-close-alert-${id}" class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone" aria-label="Close alert">
+            <button id="btn-close-alert-${id}" class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone">
+              <span class="vtmn-sr-only">Close alert</span>
               <span class="vtmx-close-line" role="presentation"></span>
             </button>
           </div>
@@ -80,27 +81,28 @@ window.addEventListener('DOMContentLoaded', (event) => {
       </div>`;
 
   const templateAlert3 = (id) => `
-      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_variant--warning" role="alert" tabindex="-1" aria-live="assertive">
+      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_variant--warning" aria-labelledby="alert-title-${id}" aria-describedby="alert-text-${id}">
         <div class="vtmn-alert_content">
-          <div class="vtmn-alert_content-title">
+          <div id="alert-title-${id}" class="vtmn-alert_content-title">
             This is the title of the alert
           </div>
-          <p class="vtmn-alert_content-description">
+          <p id="alert-text-${id}" class="vtmn-alert_content-description">
             Alert are used to draw the users attention to an important information
           </p>
         </div>
       </div>`;
 
   const templateAlert4 = (id) => `
-      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_variant--info" role="alert" tabindex="-1" aria-live="assertive">
+      <div id="vtmn-alert-${id}" class="vtmn-alert vtmn-alert_variant--info" aria-labelledby="alert-title-${id}" aria-describedby="alert-text-${id}">
         <div class="vtmn-alert_content">
-          <div class="vtmn-alert_content-title">
+          <div id="alert-title-${id}" class="vtmn-alert_content-title">
             This is the title of the alert
-            <button id="btn-close-alert-${id}" class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone" aria-label="Close alert">
+            <button id="btn-close-alert-${id}" class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone">
+              <span class="vtmn-sr-only">Close alert</span>
               <span class="vtmx-close-line" role="presentation"></span>
             </button>
           </div>
-          <p class="vtmn-alert_content-description">
+          <p id="alert-text-${id}" class="vtmn-alert_content-description">
             Alert are used to draw the users attention to an important information
           </p>
         </div>
@@ -141,6 +143,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
     //Create the block div container
     let newDiv = document.createElement('div');
     newDiv.classList.add('block');
+    newDiv.setAttribute('role', 'alert');
+    newDiv.setAttribute('aria-live', 'assertive');
     document.body.appendChild(newDiv);
     instanciateAlert(type);
   }
