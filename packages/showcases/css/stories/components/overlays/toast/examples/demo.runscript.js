@@ -5,12 +5,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
     //Create the block div container
     let newDiv = document.createElement('div');
     newDiv.classList.add('block');
+    newDiv.setAttribute('role', 'status');
     document.body.appendChild(newDiv);
 
     if (toast === 'vtmn-toast-1') {
       let toastId = '1-' + counter;
       document.body.lastChild.innerHTML = `
-        <div id="vtmn-toast-${toastId}" class="vtmn-toast" role="status">
+        <div id="vtmn-toast-${toastId}" class="vtmn-toast">
           <div class="vtmn-toast_content">
             This is the description of a toast
           </div>
@@ -20,7 +21,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     } else if (toast === 'vtmn-toast-2') {
       let toastId = '2-' + counter;
       document.body.lastChild.innerHTML = `
-        <div id="vtmn-toast-${toastId}" class="vtmn-toast vtmn-toast--with-icon-info" role="status">
+        <div id="vtmn-toast-${toastId}" class="vtmn-toast vtmn-toast--with-icon-info">
           <div class="vtmn-toast_content">
             This is the description of a toast
           </div>
@@ -30,11 +31,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
     } else if (toast === 'vtmn-toast-3') {
       let toastId = '3-' + counter;
       document.body.lastChild.innerHTML = `
-        <div id="vtmn-toast-${toastId}" class="vtmn-toast" role="status">
+        <div id="vtmn-toast-${toastId}" class="vtmn-toast">
           <div class="vtmn-toast_content">
             This is the description of a toast
           </div>
-          <button id="btn-close-toast-${toastId}" class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone" aria-label="Close alert">
+          <button id="btn-close-toast-${toastId}" class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone">
+            <span class="vtmn-sr-only">Close toast</span>
             <span class="vtmx-close-line" role="presentation"></span>
           </button>
         </div>`;
@@ -50,11 +52,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
     } else if (toast === 'vtmn-toast-4') {
       let toastId = '4-' + counter;
       document.body.lastChild.innerHTML = `
-        <div id="vtmn-toast-${toastId}" class="vtmn-toast vtmn-toast--with-icon-info" role="status">
+        <div id="vtmn-toast-${toastId}" class="vtmn-toast vtmn-toast--with-icon-info">
           <div class="vtmn-toast_content">
             This is the description of a toast
           </div>
-          <button id="btn-close-toast-${toastId}" class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone" aria-label="Close alert">
+          <button id="btn-close-toast-${toastId}" class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone">
+            <span class="vtmn-sr-only">Close toast</span>
             <span class="vtmx-close-line" role="presentation"></span>
           </button>
         </div>`;
