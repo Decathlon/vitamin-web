@@ -3,15 +3,15 @@
   --vtmn-semantic-color_background-primary--h: var(--vtmn-base-color_grey900--h);
   --vtmn-semantic-color_background-primary--s: var(--vtmn-base-color_grey900--s);
   --vtmn-semantic-color_background-primary--l: var(--vtmn-base-color_grey900--l);
-  --vtmn-semantic-color_background-primary: hsl(var(--vtmn-semantic-color_background-secondary--h), var(--vtmn-semantic-color_background-secondary--s), var(--vtmn-semantic-color_background-secondary--l));
+  --vtmn-semantic-color_background-primary: hsl(var(--vtmn-semantic-color_background-primary--h), var(--vtmn-semantic-color_background-primary--s), var(--vtmn-semantic-color_background-primary--l));
   --vtmn-semantic-color_background-secondary--h: var(--vtmn-base-color_black--h);
   --vtmn-semantic-color_background-secondary--s: var(--vtmn-base-color_black--s);
   --vtmn-semantic-color_background-secondary--l: var(--vtmn-base-color_black--l);
-  --vtmn-semantic-color_background-secondary: hsl(var(--vtmn-semantic-color_background-tertiary--h), var(--vtmn-semantic-color_background-tertiary--s), var(--vtmn-semantic-color_background-tertiary--l));
+  --vtmn-semantic-color_background-secondary: hsl(var(--vtmn-semantic-color_background-secondary--h), var(--vtmn-semantic-color_background-secondary--s), var(--vtmn-semantic-color_background-secondary--l));
   --vtmn-semantic-color_background-tertiary--h: var(--vtmn-base-color_grey800--h);
   --vtmn-semantic-color_background-tertiary--s: var(--vtmn-base-color_grey800--s);
   --vtmn-semantic-color_background-tertiary--l: var(--vtmn-base-color_grey800--l);
-  --vtmn-semantic-color_background-tertiary: hsl(var(--vtmn-semantic-color_background-primary--h), var(--vtmn-semantic-color_background-primary--s), var(--vtmn-semantic-color_background-primary--l));
+  --vtmn-semantic-color_background-tertiary: hsl(var(--vtmn-semantic-color_background-tertiary--h), var(--vtmn-semantic-color_background-tertiary--s), var(--vtmn-semantic-color_background-tertiary--l));
   --vtmn-semantic-color_background-brand-primary--h: var(--vtmn-base-color_blue300--h);
   --vtmn-semantic-color_background-brand-primary--s: var(--vtmn-base-color_blue300--s);
   --vtmn-semantic-color_background-brand-primary--l: var(--vtmn-base-color_blue300--l);
