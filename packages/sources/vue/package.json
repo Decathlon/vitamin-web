@@ -52,7 +52,7 @@
     "@vtmn/css-chip": "^0.6.13",
     "@vtmn/css-divider": "^0.2.0",
     "@vtmn/css-link": "^0.6.15",
-    "@vtmn/css-modal": "^0.5.7",
+    "@vtmn/css-modal": "^0.6.0",
     "@vtmn/css-popover": "^0.5.14",
     "@vtmn/css-price": "^0.3.0",
     "@vtmn/css-quantity": "^0.4.14",

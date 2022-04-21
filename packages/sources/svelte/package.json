@@ -72,15 +72,15 @@
     "@testing-library/svelte": "^3.0.3",
     "babel-jest": "^27.5.1",
     "chokidar-cli": "^3.0.0",
-    "eslint": "8.12.0",
+    "eslint": "8.13.0",
     "eslint-plugin-svelte3": "3.4.1",
     "jest": "^27.5.1",
     "rollup": "^2.67.0",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-svelte": "^7.1.0",
-    "svelte": "3.46.6",
+    "svelte": "3.47.0",
     "svelte-jester": "^2.3.2",
-    "svelte-preprocess": "4.10.5"
+    "svelte-preprocess": "4.10.6"
   },
   "jest": {
     "testEnvironment": "jsdom",
