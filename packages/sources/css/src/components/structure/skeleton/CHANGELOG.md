@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.15](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-skeleton@0.3.14...@vtmn/css-skeleton@0.3.15) (2022-04-21)
+
+**Note:** Version bump only for package @vtmn/css-skeleton
+
+
+
+
+
 ## [0.3.14](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-skeleton@0.3.13...@vtmn/css-skeleton@0.3.14) (2022-03-18)
 
 **Note:** Version bump only for package @vtmn/css-skeleton
