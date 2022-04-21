@@ -2,8 +2,10 @@ window.addEventListener('DOMContentLoaded', initLinearProgressbarShowcase);
 
 function initLinearProgressbarShowcase() {
   let container = document.getElementById(`vtmn-progressbar-container-1`);
-  let label = document.getElementById(`vtmn-progressbar-label-1`);
+  let label = document.getElementById('vtmn-progressbar-label-1');
   let progress = document.getElementById(`vtmn-progressbar-1`);
+
+  console.log('label', label);
 
   let type = 'linear';
 
@@ -13,7 +15,7 @@ function initLinearProgressbarShowcase() {
   function launchProgress(container, progress, label, type) {
     setInterval(() => {
       let random = getRandom(1, 15);
-      let currentLabelValue = Number(label.getAttribute('data-value'));
+      let currentLabelValue = label.textContent;
       let newValue = Number(currentLabelValue + random);
       if (newValue >= 100) {
         newValue = 100;
@@ -32,7 +34,7 @@ function initLinearProgressbarShowcase() {
   }
 
   function addProgress(container, progress, label, type, value) {
-    label.setAttribute('data-value', `${value}`);
+    label.textContent = String(value);
     container.setAttribute('aria-valuenow', `${value}`);
     switch (type) {
       case 'linear':
@@ -45,7 +47,7 @@ function initLinearProgressbarShowcase() {
   }
 
   function resetProgress(container, progress, label, type) {
-    label.setAttribute('data-value', '0');
+    label.textContent = '0%';
     container.setAttribute('aria-valuenow', '0');
     switch (type) {
       case 'linear':
