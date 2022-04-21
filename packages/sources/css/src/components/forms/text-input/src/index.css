@@ -71,8 +71,8 @@ textarea.vtmn-text-input {
   display: inline-block;
 }
 
-.vtmn-text-input + span[class^='vtmx-'],
-.vtmn-text-input + svg {
+.vtmn-text-input ~ span[class^='vtmx-'],
+.vtmn-text-input ~ svg {
   position: absolute;
   font-size: var(--vtmn-typo_title-4-font-size);
   right: var(--vtmn-spacing_3);
@@ -81,7 +81,7 @@ textarea.vtmn-text-input {
 }
 
 .vtmn-text-input:disabled,
-.vtmn-text-input:disabled + span[class^='vtmx-'],
+.vtmn-text-input:disabled ~ span[class^='vtmx-'],
 .vtmn-text-input:disabled + svg,
 .vtmn-text-input:disabled + .vtmn-text-input_helper-text {
   opacity: var(--vtmn-opacity_disabled-state);
@@ -118,8 +118,8 @@ textarea.vtmn-text-input {
   box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-positive);
 }
 
-.vtmn-text-input--valid + span[class^='vtmx-'],
-.vtmn-text-input--valid + svg {
+.vtmn-text-input--valid ~ span[class^='vtmx-'],
+.vtmn-text-input--valid ~ svg {
   color: var(--vtmn-semantic-color_content-positive);
   fill: var(--vtmn-semantic-color_content-positive);
 }
@@ -128,8 +128,8 @@ textarea.vtmn-text-input {
   box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-negative);
 }
 
-.vtmn-text-input--error + span[class^='vtmx-'],
-.vtmn-text-input--error + svg {
+.vtmn-text-input--error ~ span[class^='vtmx-'],
+.vtmn-text-input--error ~ svg {
   color: var(--vtmn-semantic-color_content-primary);
   fill: var(--vtmn-semantic-color_content-primary);
 }
