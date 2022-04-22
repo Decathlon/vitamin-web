@@ -21,16 +21,21 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.body.appendChild(newDiv);
 
     if (snackbar === 'vtmn-snackbar-1') {
-      document.body.lastChild.innerHTML = `
-        <div id="vtmn-snackbar-1" class="vtmn-snackbar">
-          <div class="vtmn-snackbar_content">
-            This is the description of a snackbar
-          </div>
-          <button id="btn-dismiss-1" class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone">
-            <span class="vtmn-sr-only">Close snackbar</span>
-            <span class="vtmx-close-line" role="presentation"></span>
-          </button>
-        </div>`;
+      document.body.lastChild.innerHTML = html` <div
+        id="vtmn-snackbar-1"
+        class="vtmn-snackbar"
+      >
+        <div class="vtmn-snackbar_content">
+          This is the description of a snackbar
+        </div>
+        <button
+          id="btn-dismiss-1"
+          class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone"
+        >
+          <span class="vtmn-sr-only">Close snackbar</span>
+          <span class="vtmx-close-line" aria-hidden="true"></span>
+        </button>
+      </div>`;
       let snackbar = document.getElementById('vtmn-snackbar-1');
       document
         .getElementById('btn-dismiss-1')
@@ -39,28 +44,37 @@ window.addEventListener('DOMContentLoaded', (event) => {
         });
       timeOut(snackbar);
     } else if (snackbar === 'vtmn-snackbar-2') {
-      document.body.lastChild.innerHTML = `
-        <div id="vtmn-snackbar-2" class="vtmn-snackbar">
-          <div class="vtmn-snackbar_content">
-            This is the description of a snackbar
-          </div>
-        </div>`;
+      document.body.lastChild.innerHTML = html` <div
+        id="vtmn-snackbar-2"
+        class="vtmn-snackbar"
+      >
+        <div class="vtmn-snackbar_content">
+          This is the description of a snackbar
+        </div>
+      </div>`;
       let snackbar = document.getElementById('vtmn-snackbar-2');
       timeOut(snackbar);
     } else if (snackbar === 'vtmn-snackbar-3') {
-      document.body.lastChild.innerHTML = `
-        <div id="vtmn-snackbar-3" class="vtmn-snackbar">
-          <div class="vtmn-snackbar_content">
-            This is the description of a snackbar
-          </div>
-          <button class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small">
-            Action
-          </button>
-          <button id="btn-dismiss-3" class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone">
-            <span class="vtmn-sr-only">Close snackbar</span>
-            <span class="vtmx-close-line" role="presentation"></span>
-          </button>
-        </div>`;
+      document.body.lastChild.innerHTML = html` <div
+        id="vtmn-snackbar-3"
+        class="vtmn-snackbar"
+      >
+        <div class="vtmn-snackbar_content">
+          This is the description of a snackbar
+        </div>
+        <button
+          class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small"
+        >
+          Action
+        </button>
+        <button
+          id="btn-dismiss-3"
+          class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone"
+        >
+          <span class="vtmn-sr-only">Close snackbar</span>
+          <span class="vtmx-close-line" aria-hidden="true"></span>
+        </button>
+      </div>`;
       let snackbar = document.getElementById('vtmn-snackbar-3');
       document
         .getElementById('btn-dismiss-3')
@@ -69,15 +83,19 @@ window.addEventListener('DOMContentLoaded', (event) => {
         });
       timeOut(snackbar);
     } else if (snackbar === 'vtmn-snackbar-4') {
-      document.body.lastChild.innerHTML = `
-        <div id="vtmn-snackbar-4" class="vtmn-snackbar">
-          <div class="vtmn-snackbar_content">
-            This is the description of a snackbar
-          </div>
-          <button class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small">
-            Action
-          </button>
-        </div>`;
+      document.body.lastChild.innerHTML = html` <div
+        id="vtmn-snackbar-4"
+        class="vtmn-snackbar"
+      >
+        <div class="vtmn-snackbar_content">
+          This is the description of a snackbar
+        </div>
+        <button
+          class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small"
+        >
+          Action
+        </button>
+      </div>`;
       let snackbar = document.getElementById('vtmn-snackbar-4');
       timeOut(snackbar);
     }
