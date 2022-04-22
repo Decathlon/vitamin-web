@@ -5,26 +5,26 @@ function initLinearProgressbarShowcase() {
   let label = document.getElementById('vtmn-progressbar-label-1');
   let progress = document.getElementById(`vtmn-progressbar-1`);
 
-  console.log('label', label);
+  resetProgress(container, progress, label);
+  launchProgress(container, progress, label);
 
-  let type = 'linear';
-
-  resetProgress(container, progress, label, type);
-  launchProgress(container, progress, label, type);
-
-  function launchProgress(container, progress, label, type) {
+  function launchProgress(container, progress, label) {
     setInterval(() => {
       let random = getRandom(1, 15);
-      let currentLabelValue = label.textContent;
+      let textLabel = label.textContent;
+      let currentLabelValue = Number(
+        textLabel.substring(0, textLabel.length - 1),
+      );
+
       let newValue = Number(currentLabelValue + random);
       if (newValue >= 100) {
         newValue = 100;
-        addProgress(container, progress, label, type, newValue);
+        addProgress(container, progress, label, newValue);
         setTimeout(() => {
-          resetProgress(container, progress, label, type);
+          resetProgress(container, progress, label);
         }, 2000);
       } else {
-        addProgress(container, progress, label, type, newValue);
+        addProgress(container, progress, label, newValue);
       }
     }, 1000);
   }
@@ -33,30 +33,16 @@ function initLinearProgressbarShowcase() {
     return Math.ceil(Math.random() * (max - min) + min);
   }
 
-  function addProgress(container, progress, label, type, value) {
-    label.textContent = String(value);
+  function addProgress(container, progress, label, value) {
+    label.textContent = `${value}%`;
     container.setAttribute('aria-valuenow', `${value}`);
-    switch (type) {
-      case 'linear':
-        progress.style.transform = `translateX(calc(-100% + ${value}%))`;
-        break;
-      case 'circular':
-        setCircularProgress(container, progress, value);
-        break;
-    }
+    progress.style.transform = `translateX(calc(-100% + ${value}%))`;
   }
 
-  function resetProgress(container, progress, label, type) {
+  function resetProgress(container, progress, label) {
     label.textContent = '0%';
     container.setAttribute('aria-valuenow', '0');
-    switch (type) {
-      case 'linear':
-        progress.style.transform = `translateX(-105%)`;
-        break;
-      case 'circular':
-        setCircularProgress(container, progress, 0);
-        break;
-    }
+    progress.style.transform = `translateX(-105%)`;
   }
 
   window.removeEventListener('DOMContentLoaded', initLinearProgressbarShowcase);
