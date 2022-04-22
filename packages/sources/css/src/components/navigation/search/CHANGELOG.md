@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-search@0.4.14...@vtmn/css-search@0.5.0) (2022-04-22)
+
+
+### Features
+
+* **@vtmn/css:** add screen readers support with `.sr-only` ([#1118](https://github.com/Decathlon/vitamin-web/issues/1118)) ([4a8ae38](https://github.com/Decathlon/vitamin-web/commit/4a8ae3825b50245813eacb88a88b06abc86e11a5))
+
+
+
+
+
 ## [0.4.14](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-search@0.4.13...@vtmn/css-search@0.4.14) (2022-04-21)
 
 **Note:** Version bump only for package @vtmn/css-search
