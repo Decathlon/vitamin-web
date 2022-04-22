@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.72.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.71.0...@vtmn/css@0.72.0) (2022-04-22)
+
+
+### Features
+
+* **@vtmn/css:** breadcrumb, add a11y aria-current ([#1130](https://github.com/Decathlon/vitamin-web/issues/1130)) ([01c033c](https://github.com/Decathlon/vitamin-web/commit/01c033c7eced1cf5fcd681cc1907856baa2766be))
+
+
+
+
+
+# [0.71.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.70.1...@vtmn/css@0.71.0) (2022-04-21)
+
+
+### Features
+
+* **@vtmn/css:** text-input & its showcases ([#1128](https://github.com/Decathlon/vitamin-web/issues/1128)) ([8c50684](https://github.com/Decathlon/vitamin-web/commit/8c5068470e97f8c542f336ea10aaf98c7070b1d5))
+
+
+
+
+
+## [0.70.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.70.0...@vtmn/css@0.70.1) (2022-04-21)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
 # [0.70.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.69.0...@vtmn/css@0.70.0) (2022-04-14)
 
 
