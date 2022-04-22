@@ -41,9 +41,8 @@
 
 <div class="block">
   <nav class="vtmn-navbar" aria-label="Simple navbar">
-    <a class="vtmn-navbar_logo" href="#">
+    <a class="vtmn-navbar_logo" href="#" title="Decathlon Home Page">
       <svg viewBox="0 0 200 50" aria-label="Decathlon logo" role="img">
-        <title>Decathlon</title>
         <g
           id="decathlon-logo"
           stroke="none"
@@ -72,61 +71,60 @@
 <div class="block">
   <nav class="vtmn-navbar" aria-label="Navbar with icons">
     <div class="vtmn-navbar_left-navigation">
-      <button
-        class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_variant--ghost"
-        aria-label="Go to menu"
-      >
-        <span class="vtmx-menu-line" role="presentation"></span>
+      <button class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_variant--ghost">
+        <span class="vtmn-sr-only">Menu</span>
+        <span class="vtmx-menu-line" aria-hidden="true"></span>
       </button>
     </div>
 
-    <a class="vtmn-navbar_logo" href="#">
+    <a class="vtmn-navbar_logo" href="#" title="Decathlon Home Page">
       <svg viewBox="0 0 200 50" aria-label="Decathlon logo" role="img">
         <use href="#decathlon-logo" />
       </svg>
     </a>
 
     <div class="vtmn-navbar_middle-area">
-      <div class="vtmn-text-input_container">
-        <input
-          type="text"
-          class="vtmn-text-input"
-          id="my-search-navbar1"
-          placeholder="Search a sport product..."
-        />
-        <span class="vtmx-search-line"></span>
+      <div class="vtmn-search vtmn-search_variant--default" role="search">
+        <label class="vtmn-sr-only" for="my-navbar-search-1"
+          >Search input</label
+        >
+        <input type="search" id="my-navbar-search-1" placeholder="Search" />
+        <div class="vtmn-search_buttons">
+          <button
+            class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--medium vtmn-btn--icon-alone"
+          >
+            <span class="vtmn-sr-only">Clean input</span>
+            <span class="vtmx-close-line" aria-hidden="true"></span>
+          </button>
+          <button
+            class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--medium vtmn-btn--icon-alone"
+          >
+            <span class="vtmn-sr-only">Search</span>
+            <span class="vtmx-search-line" aria-hidden="true"></span>
+          </button>
+        </div>
       </div>
     </div>
     <div class="vtmn-navbar_right-navigation">
-      <button
-        class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_variant--ghost"
-        aria-label="Go to account"
-      >
-        <span class="vtmx-user-line"></span>
+      <button class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_variant--ghost">
+        <span class="vtmn-sr-only">Profile</span>
+        <span class="vtmx-user-line" aria-hidden="true"></span>
       </button>
-      <button
-        class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_variant--ghost"
-        aria-label="Go to cart"
-      >
-        <span class="vtmx-shopping-cart-line"></span>
+      <button class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_variant--ghost">
+        <span class="vtmn-sr-only">My cart</span>
+        <span class="vtmx-shopping-cart-line" aria-hidden="true"></span>
       </button>
-      <button
-        class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_variant--ghost"
-        aria-label="Go to favorites"
-      >
-        <span class="vtmx-heart-line"></span>
+      <button class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_variant--ghost">
+        <span class="vtmn-sr-only">My favorites</span>
+        <span class="vtmx-heart-line" aria-hidden="true"></span>
       </button>
-      <button
-        class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_variant--ghost"
-        aria-label="Go to awards"
-      >
-        <span class="vtmx-award-fill"></span>
+      <button class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_variant--ghost">
+        <span class="vtmn-sr-only">My awards</span>
+        <span class="vtmx-award-fill" aria-hidden="true"></span>
       </button>
-      <button
-        class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_variant--ghost"
-        aria-label="Disconnect"
-      >
-        <span class="vtmx-shut-down-line"></span>
+      <button class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_variant--ghost">
+        <span class="vtmn-sr-only">Disconnect</span>
+        <span class="vtmx-shut-down-line" aria-hidden="true"></span>
       </button>
     </div>
   </nav>
@@ -135,29 +133,38 @@
 <div class="block">
   <nav class="vtmn-navbar" aria-label="Navbar with buttons">
     <div class="vtmn-navbar_left-navigation">
-      <button
-        class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_variant--ghost"
-        aria-label="Go to menu"
-      >
-        <span class="vtmx-menu-line"></span>
+      <button class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_variant--ghost">
+        <span class="vtmn-sr-only">Menu</span>
+        <span class="vtmx-menu-line" aria-hidden="true"></span>
       </button>
     </div>
 
-    <a class="vtmn-navbar_logo" href="#">
+    <a class="vtmn-navbar_logo" href="#" title="Decathlon Home Page">
       <svg viewBox="0 0 200 50" aria-label="Decathlon logo" role="img">
         <use href="#decathlon-logo" />
       </svg>
     </a>
 
     <div class="vtmn-navbar_middle-area">
-      <div class="vtmn-text-input_container">
-        <input
-          type="text"
-          class="vtmn-text-input"
-          id="my-search-navbar2"
-          placeholder="Search a sport product..."
-        />
-        <span class="vtmx-search-line"></span>
+      <div class="vtmn-search vtmn-search_variant--default" role="search">
+        <label class="vtmn-sr-only" for="my-navbar-search-2"
+          >Search input</label
+        >
+        <input type="search" id="my-navbar-search-2" placeholder="Search" />
+        <div class="vtmn-search_buttons">
+          <button
+            class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--medium vtmn-btn--icon-alone"
+          >
+            <span class="vtmn-sr-only">Clean input</span>
+            <span class="vtmx-close-line"></span>
+          </button>
+          <button
+            class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--medium vtmn-btn--icon-alone"
+          >
+            <span class="vtmn-sr-only">Search</span>
+            <span class="vtmx-search-line"></span>
+          </button>
+        </div>
       </div>
     </div>
     <div class="vtmn-navbar_right-navigation">
@@ -166,13 +173,10 @@
       </button>
       <button class="vtmn-btn vtmn-btn_size--small">Button 2</button>
       <button
-        class="vtmn-btn vtmn-btn_variant--conversion vtmn-btn_size--small"
+        class="vtmn-btn vtmn-btn--icon-right vtmn-btn_variant--conversion vtmn-btn_size--small"
       >
         Button 3
-        <span
-          aria-hidden="true"
-          class="vtmx-shopping-cart-line vtmn-ml-2"
-        ></span>
+        <span aria-hidden="true" class="vtmx-shopping-cart-line"></span>
       </button>
     </div>
   </nav>
