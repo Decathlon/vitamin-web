@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     if (toast === 'vtmn-toast-1') {
       let toastId = '1-' + counter;
-      document.body.lastChild.innerHTML = html` <div
+      document.body.lastChild.innerHTML = ` <div
         id="vtmn-toast-${toastId}"
         class="vtmn-toast"
       >
@@ -20,7 +20,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
       timeOut(toast);
     } else if (toast === 'vtmn-toast-2') {
       let toastId = '2-' + counter;
-      document.body.lastChild.innerHTML = html` <div
+      document.body.lastChild.innerHTML = ` <div
         id="vtmn-toast-${toastId}"
         class="vtmn-toast vtmn-toast--with-icon-info"
       >
@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
       timeOut(toast);
     } else if (toast === 'vtmn-toast-3') {
       let toastId = '3-' + counter;
-      document.body.lastChild.innerHTML = html` <div
+      document.body.lastChild.innerHTML = ` <div
         id="vtmn-toast-${toastId}"
         class="vtmn-toast"
       >
@@ -54,7 +54,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
       timeOut(toast);
     } else if (toast === 'vtmn-toast-4') {
       let toastId = '4-' + counter;
-      document.body.lastChild.innerHTML = html` <div
+      document.body.lastChild.innerHTML = ` <div
         id="vtmn-toast-${toastId}"
         class="vtmn-toast vtmn-toast--with-icon-info"
       >

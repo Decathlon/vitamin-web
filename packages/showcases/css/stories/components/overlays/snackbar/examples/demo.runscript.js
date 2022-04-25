@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.body.appendChild(newDiv);
 
     if (snackbar === 'vtmn-snackbar-1') {
-      document.body.lastChild.innerHTML = html` <div
+      document.body.lastChild.innerHTML = ` <div
         id="vtmn-snackbar-1"
         class="vtmn-snackbar"
       >
@@ -44,7 +44,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         });
       timeOut(snackbar);
     } else if (snackbar === 'vtmn-snackbar-2') {
-      document.body.lastChild.innerHTML = html` <div
+      document.body.lastChild.innerHTML = ` <div
         id="vtmn-snackbar-2"
         class="vtmn-snackbar"
       >
@@ -55,7 +55,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
       let snackbar = document.getElementById('vtmn-snackbar-2');
       timeOut(snackbar);
     } else if (snackbar === 'vtmn-snackbar-3') {
-      document.body.lastChild.innerHTML = html` <div
+      document.body.lastChild.innerHTML = ` <div
         id="vtmn-snackbar-3"
         class="vtmn-snackbar"
       >
@@ -83,7 +83,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         });
       timeOut(snackbar);
     } else if (snackbar === 'vtmn-snackbar-4') {
-      document.body.lastChild.innerHTML = html` <div
+      document.body.lastChild.innerHTML = ` <div
         id="vtmn-snackbar-4"
         class="vtmn-snackbar"
       >

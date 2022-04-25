@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-  const templateModal = html` <div
+  const templateModal = ` <div
     class="vtmn-modal"
     id="vtmn-modal"
     role="dialog"
