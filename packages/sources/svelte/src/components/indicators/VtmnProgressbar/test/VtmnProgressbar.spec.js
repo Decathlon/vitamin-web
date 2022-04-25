@@ -59,7 +59,6 @@ describe('VtmnProgressbar', () => {
         label: 'unit-test',
       });
       expect(getByText('unit-test')).toBeVisible();
-      expect(getByText('unit-test')).toHaveClass('vtmn-progressbar_label');
     });
     test('Should apply the correct progress value', () => {
       const { container, getByText } = render(VtmnProgressbar, {
@@ -75,7 +74,6 @@ describe('VtmnProgressbar', () => {
         'x2',
         '30%',
       );
-      expect(getByText('unit-test')).toHaveAttribute('data-value', '30');
     });
     test('Should apply an indeterminate value', () => {
       const { container } = render(VtmnProgressbar, {
@@ -195,10 +193,6 @@ describe('VtmnProgressbar', () => {
         label: true,
       });
       expect(getProgressCircularLabel(container)).toBeVisible();
-      expect(getProgressCircularLabel(container)).toHaveAttribute(
-        'data-value',
-        '30',
-      );
     });
     test('Should display a track if track are true', () => {
       const { container } = render(VtmnProgressbar, {
@@ -249,10 +243,6 @@ describe('VtmnProgressbar', () => {
       });
       expect(getProgressCircular(container)).toHaveAttribute(
         'aria-valuenow',
-        '30',
-      );
-      expect(getProgressCircularLabel(container)).toHaveAttribute(
-        'data-value',
         '30',
       );
       expect(getProgressCircularIndicator(container)).toHaveAttribute(
