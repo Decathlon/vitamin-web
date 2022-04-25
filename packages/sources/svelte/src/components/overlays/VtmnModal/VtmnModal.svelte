@@ -24,12 +24,17 @@
   };
 </script>
 
+<svelte:head>
+  {#if open}
+    <style type="text/css">
+      body {
+        overflow: hidden;
+      }
+    </style>
+  {/if}
+</svelte:head>
+
 {#if open}
-  <style>
-    body {
-      overflow: hidden;
-    }
-  </style>
   <div
     class="vtmn-modal"
     role="dialog"
