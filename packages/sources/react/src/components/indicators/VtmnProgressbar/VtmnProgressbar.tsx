@@ -92,14 +92,10 @@ export const VtmnProgressbar = ({
        */}
 
       {variant == 'linear' && status == 'determinate' && (
-        <span
-          className="vtmn-progressbar_label"
-          // Clamp the value between minValue and maxValue
-
-          data-value={Math.min(Math.max(value, 0), 100)}
-        >
-          {loadingText}
-        </span>
+        <div className="vtmn-progressbar_label">
+          <span>{loadingText}</span>
+          <span aria-live="assertive">{Math.min(Math.max(value, 0), 100)}</span>
+        </div>
       )}
 
       {variant == 'linear' && (
@@ -123,10 +119,9 @@ export const VtmnProgressbar = ({
        */}
 
       {variant == 'circular' && status == 'determinate' && (
-        <span
-          className="vtmn-progressbar_label"
-          data-value={Math.min(Math.max(value, 0), 100)}
-        />
+        <span className="vtmn-progressbar_label" aria-live="assertive">
+          {Math.min(Math.max(value, 0), 100)}
+        </span>
       )}
 
       {variant == 'circular' && imageSrc !== undefined && (
