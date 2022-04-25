@@ -81,7 +81,8 @@
     <img class="vtmn-progressbar_image" src={img} alt={imgAlt} />
   {/if}
   {#if label && !indeterminate}
-    <span class="vtmn-progressbar_label" data-value={progress} />
+    <span class="vtmn-progressbar_label" aria-live="assertive">{progress}%</span
+    >
   {/if}
   <svg>
     {#if track}

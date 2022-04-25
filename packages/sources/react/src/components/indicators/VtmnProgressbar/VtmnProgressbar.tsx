@@ -94,7 +94,9 @@ export const VtmnProgressbar = ({
       {variant == 'linear' && status == 'determinate' && (
         <div className="vtmn-progressbar_label">
           <span>{loadingText}</span>
-          <span aria-live="assertive">{Math.min(Math.max(value, 0), 100)}</span>
+          <span aria-live="assertive">
+            {Math.min(Math.max(value, 0), 100)}%
+          </span>
         </div>
       )}
 
@@ -120,7 +122,7 @@ export const VtmnProgressbar = ({
 
       {variant == 'circular' && status == 'determinate' && (
         <span className="vtmn-progressbar_label" aria-live="assertive">
-          {Math.min(Math.max(value, 0), 100)}
+          {Math.min(Math.max(value, 0), 100)}%
         </span>
       )}
 

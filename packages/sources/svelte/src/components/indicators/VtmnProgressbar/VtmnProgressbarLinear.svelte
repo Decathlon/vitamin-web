@@ -50,7 +50,10 @@
   {...$$restProps}
 >
   {#if label && !indeterminate}
-    <span class="vtmn-progressbar_label" data-value={progress}>{label}</span>
+    <div class="vtmn-progressbar_label">
+      <span>{label}</span>
+      <span aria-live="assertive">{progress}%</span>
+    </div>
   {/if}
   <svg>
     <line
