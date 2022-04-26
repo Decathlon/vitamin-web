@@ -154,7 +154,7 @@
 
 .vtmn-chip_variant--action.vtmn-chip_size--small > span[class^='vtmx-'],
 .vtmn-chip_variant--action.vtmn-chip_size--small > svg {
-  transform: translateX(rem(-6px));
+  transform: translateX(rem(-4px));
 }
 
 .vtmn-chip_variant--action.vtmn-chip_size--medium > span[class^='vtmx-'],
@@ -175,19 +175,19 @@
 
 .vtmn-chip_variant--input > span[class^='vtmx-'],
 .vtmn-chip_variant--input > svg {
-  transform: translateX(rem(-4px));
+  transform: translateX(rem(-6px));
   font-size: rem(20px);
 }
 
 .vtmn-chip_variant--input.vtmn-chip_size--small > span[class^='vtmx-'],
 .vtmn-chip_variant--input.vtmn-chip_size--small > svg {
-  transform: translateX(rem(-6px));
+  transform: translateX(rem(-4px));
   font-size: rem(16px);
 }
 
 .vtmn-chip_variant--input.vtmn-chip_size--medium > span[class^='vtmx-'],
 .vtmn-chip_variant--input.vtmn-chip_size--medium > svg {
-  transform: translateX(rem(-4px));
+  transform: translateX(rem(-6px));
   font-size: rem(20px);
 }
 
