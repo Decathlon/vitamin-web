@@ -75,5 +75,16 @@ export { VtmnAccordion } from './components/structure/VtmnAccordion';
 export type { VtmnAccordionProps } from './components/structure/VtmnAccordion';
 export { VtmnDivider } from './components/structure/VtmnDivider';
 export type { VtmnDividerProps } from './components/structure/VtmnDivider';
+export {
+  VtmnList,
+  VtmnListItem,
+  VtmnListItemStartVisual,
+  VtmnListItemText,
+  VtmnListItemEndAction,
+} from './components/structure/VtmnList';
+export type {
+  VtmnListProps,
+  VtmnListItemProps,
+} from './components/structure/VtmnList';
 export { VtmnSkeleton } from './components/structure/VtmnSkeleton';
 export type { VtmnSkeletonProps } from './components/structure/VtmnSkeleton';
