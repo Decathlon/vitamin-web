@@ -83,19 +83,28 @@ export const VtmnChip = ({
         `vtmn-chip_size--${size}`,
         `vtmn-chip_variant--${variant}`,
         disabled && 'vtmn-chip--disabled',
-        selected && 'vtmn-chip--selected',
+        selected && variant !== 'action' && 'vtmn-chip--selected',
         className,
       )}
+      role="button"
+      aria-disabled={disabled}
+      aria-pressed={selected && variant !== 'action'}
       onClick={onClick}
       {...props}
     >
-      {icon && (
-        <VtmnIcon variant={selected ? 'reversed' : 'default'} value={icon} />
+      {icon && (variant == 'input' || variant == 'action') && (
+        <VtmnIcon
+          variant={selected && variant !== 'action' ? 'reversed' : 'default'}
+          value={icon}
+          aria-hidden="true"
+        />
       )}
 
       {children}
 
-      {badgeValue != 0 && <VtmnBadge variant="default" value={badgeValue} />}
+      {variant == 'filter' && badgeValue != 0 && (
+        <VtmnBadge variant="default" value={badgeValue} />
+      )}
 
       {variant == 'input' && selected && (
         <VtmnButton
