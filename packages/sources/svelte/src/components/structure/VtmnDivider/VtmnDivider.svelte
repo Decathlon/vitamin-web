@@ -16,6 +16,11 @@
    */
   export let textPosition = VTMN_DIVIDER_TEXT_POSITION.START;
 
+  /**
+   * @type {string} Id of the labelText
+   */
+  export let ariaLabelId = undefined;
+
   let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
@@ -34,9 +39,10 @@
   class={componentClass}
   role="separator"
   aria-orientation={orientation}
+  aria-labelledby={ariaLabelId}
   {...$$restProps}
 >
-  <slot />
+  <span id={ariaLabelId}><slot /></span>
 </div>
 
 <style>
