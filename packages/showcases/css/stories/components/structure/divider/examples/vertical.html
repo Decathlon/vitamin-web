@@ -1,14 +1,19 @@
 <style>
   .vertical-block {
-    height: 400px;
+    height: 500px;
     display: flex;
-    justify-content: space-around;
+    gap: 20px;
     flex-wrap: wrap;
   }
 
-  @media screen and (min-width: 599px) {
-    .block {
-      width: 50%;
+  .vertical-block > .vtmn-divider {
+    width: 200px;
+    height: 300px;
+  }
+
+  @media screen and (max-width: 599px) {
+    .vertical-block > .vtmn-divider {
+      height: 200px;
     }
   }
 </style>
@@ -24,35 +29,35 @@
     class="vtmn-divider vtmn-divider_orientation--vertical"
     role="separator"
     aria-orientation="vertical"
-    aria-label="Default Label"
+    aria-labelledby="title-header-7"
   >
-    Default Label
+    <span id="title-header-7">Default Label</span>
   </div>
 
   <div
     class="vtmn-divider vtmn-divider_text-position--start vtmn-divider_orientation--vertical"
     role="separator"
     aria-orientation="vertical"
-    aria-label="Start Label"
+    aria-labelledby="title-header-8"
   >
-    Start Label
+    <span id="title-header-8">Start Label</span>
   </div>
 
   <div
     class="vtmn-divider vtmn-divider_text-position--center vtmn-divider_orientation--vertical"
     role="separator"
     aria-orientation="vertical"
-    aria-label="Center Label"
+    aria-labelledby="title-header-9"
   >
-    Center Label
+    <span id="title-header-9">Center Label</span>
   </div>
 
   <div
     class="vtmn-divider vtmn-divider_text-position--end vtmn-divider_orientation--vertical"
     role="separator"
     aria-orientation="vertical"
-    aria-label="End Label"
+    aria-labelledby="title-header-10"
   >
-    End Label
+    <span id="title-header-10">End Label</span>
   </div>
 </div>
