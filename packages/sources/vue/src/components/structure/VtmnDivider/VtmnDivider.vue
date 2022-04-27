@@ -19,6 +19,10 @@ export default /*#__PURE__*/ defineComponent({
       validator: (val: VtmnDividerTextPosition) =>
         ['start', 'center', 'end'].includes(val),
     },
+    ariaLabelId: {
+      type: String as PropType<string>,
+      default: undefined,
+    },
   },
   setup(props) {
     props = reactive(props);
@@ -40,7 +44,8 @@ export default /*#__PURE__*/ defineComponent({
     v-bind="$attrs"
     role="separator"
     :aria-orientation="orientation"
+    :aria-labelledby="ariaLabelId"
   >
-    <slot />
+    <span :id="ariaLabelId"><slot /></span>
   </div>
 </template>
