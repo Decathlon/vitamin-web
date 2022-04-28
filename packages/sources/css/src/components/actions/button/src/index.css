@@ -317,7 +317,7 @@
 
 .vtmn-btn_size--large.vtmn-btn--icon-right span[class^='vtmx-'] {
   padding-inline-start: rem(12px);
-  rem(24px)
+  font-size: rem(24px);
 }
 
 .vtmn-btn_size--large.vtmn-btn--icon-left svg {
