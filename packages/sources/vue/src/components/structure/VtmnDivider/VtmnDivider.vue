@@ -1,11 +1,11 @@
 <script lang="ts">
 import '@vtmn/css-divider/dist/index-with-vars.css';
-import { reactive, computed, defineComponent, PropType } from 'vue';
+import { reactive, computed, defineComponent, PropType, useAttrs } from 'vue';
 import { VtmnDividerOrientation, VtmnDividerTextPosition } from './types';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnDivider',
-  inheritAttrs: false,
+  inheritAttrs: true,
   props: {
     orientation: {
       type: String as PropType<VtmnDividerOrientation>,
@@ -19,12 +19,9 @@ export default /*#__PURE__*/ defineComponent({
       validator: (val: VtmnDividerTextPosition) =>
         ['start', 'center', 'end'].includes(val),
     },
-    ariaLabelId: {
-      type: String as PropType<string>,
-      default: undefined,
-    },
   },
-  setup(props) {
+  setup(props, { attrs }) {
+    const ariaLabelledBy = String(attrs['aria-labelledby']);
     props = reactive(props);
     return {
       classes: computed(() => ({
@@ -33,6 +30,7 @@ export default /*#__PURE__*/ defineComponent({
         [`vtmn-divider_text-position--${props.textPosition}`]:
           props.textPosition,
       })),
+      ariaLabelledBy,
     };
   },
 });
@@ -44,8 +42,7 @@ export default /*#__PURE__*/ defineComponent({
     v-bind="$attrs"
     role="separator"
     :aria-orientation="orientation"
-    :aria-labelledby="ariaLabelId"
   >
-    <span :id="ariaLabelId"><slot /></span>
+    <span :id="ariaLabelledBy"><slot /></span>
   </div>
 </template>
