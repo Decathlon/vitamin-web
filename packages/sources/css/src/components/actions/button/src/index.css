@@ -239,7 +239,7 @@
 }
 
 .vtmn-btn--icon-alone span[class^='vtmx-'] {
-  font-size: var(--vtmn-typo_text-2-font-size);
+  font-size: var(--vtmn-typo_title-5-font-size);
 }
 
 .vtmn-btn_size--small.vtmn-btn--icon-alone {
@@ -249,7 +249,7 @@
 }
 
 .vtmn-btn_size--small.vtmn-btn--icon-alone span[class^='vtmx-'] {
-  font-size: var(--vtmn-typo_text-3-font-size);
+  font-size: var(--vtmn-typo_text-2-font-size);
 }
 
 .vtmn-btn_size--medium.vtmn-btn--icon-alone {
@@ -259,7 +259,7 @@
 }
 
 .vtmn-btn_size--medium.vtmn-btn--icon-alone span[class^='vtmx-'] {
-  font-size: var(--vtmn-typo_text-2-font-size);
+  font-size: var(--vtmn-typo_title-5-font-size);
 }
 
 .vtmn-btn_size--large.vtmn-btn--icon-alone {
@@ -269,7 +269,7 @@
 }
 
 .vtmn-btn_size--large.vtmn-btn--icon-alone span[class^='vtmx-'] {
-  font-size: var(--vtmn-typo_title-5-font-size);
+  font-size: var(--vtmn-typo_title-4-font-size);
 }
 
 .vtmn-btn--icon-left span[class^='vtmx-'],
