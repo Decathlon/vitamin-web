@@ -1,11 +1,11 @@
 <script lang="ts">
 import '@vtmn/css-divider/dist/index-with-vars.css';
-import { reactive, computed, defineComponent, PropType, useAttrs } from 'vue';
+import { reactive, computed, defineComponent, PropType } from 'vue';
 import { VtmnDividerOrientation, VtmnDividerTextPosition } from './types';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnDivider',
-  inheritAttrs: true,
+  inheritAttrs: false,
   props: {
     orientation: {
       type: String as PropType<VtmnDividerOrientation>,
