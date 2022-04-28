@@ -25,7 +25,7 @@ export default {
 
 const Template: Story = (args) => (
   <div style={{ width: 400, height: 250 }}>
-    <VtmnDivider {...args} />
+    <VtmnDivider aria-labelledby="title-example" {...args} />
   </div>
 );
 

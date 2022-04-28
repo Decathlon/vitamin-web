@@ -43,9 +43,8 @@ export const VtmnDivider = ({
       {...props}
       role="separator"
       aria-orientation={orientation}
-      aria-labelledby={ariaLabelId}
     >
-      <span id={ariaLabelId}>{children}</span>
+      <span id={String(props['aria-labelledby'])}>{children}</span>
     </div>
   );
 };
