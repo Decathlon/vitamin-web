@@ -27,6 +27,7 @@
 <Story class="block" name="Overview" let:args>
   <VtmnDivider
     class="story-divider-horizontal story-divider-vertical"
+    aria-labelledby="title-header-0"
     {...args}
   >
     {args.slot}
@@ -40,19 +41,19 @@
       class="story-divider-horizontal"
       orientation="horizontal"
       textPosition="start"
-      ariaLabelId="title-header-1">Start label</VtmnDivider
+      aria-labelledby="title-header-1">Start label</VtmnDivider
     >
     <VtmnDivider
       class="story-divider-horizontal"
       orientation="horizontal"
       textPosition="center"
-      ariaLabelId="title-header-2">Center label</VtmnDivider
+      aria-labelledby="title-header-2">Center label</VtmnDivider
     >
     <VtmnDivider
       class="story-divider-horizontal"
       orientation="horizontal"
       textPosition="end"
-      ariaLabelId="title-header-3">End label</VtmnDivider
+      aria-labelledby="title-header-3">End label</VtmnDivider
     >
   </div>
 </Story>
@@ -64,19 +65,19 @@
       class="story-divider-vertical"
       orientation="vertical"
       textPosition="start"
-      ariaLabelId="title-header-4">Start label</VtmnDivider
+      aria-labelledby="title-header-4">Start label</VtmnDivider
     >
     <VtmnDivider
       class="story-divider-vertical"
       orientation="vertical"
       textPosition="center"
-      ariaLabelId="title-header-5">Center label</VtmnDivider
+      aria-labelledby="title-header-5">Center label</VtmnDivider
     >
     <VtmnDivider
       class="story-divider-vertical"
       orientation="vertical"
       textPosition="end"
-      ariaLabelId="title-header-6">End label</VtmnDivider
+      aria-labelledby="title-header-6">End label</VtmnDivider
     >
   </div>
 </Story>
