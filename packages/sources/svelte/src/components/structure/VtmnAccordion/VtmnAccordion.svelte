@@ -40,6 +40,7 @@
 <details
   class={componentClass}
   aria-disabled={disabled}
+  aria-expanded={open}
   {open}
   {...$$restProps}
 >
