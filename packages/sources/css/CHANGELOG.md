@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.73.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.73.0...@vtmn/css@0.73.1) (2022-05-02)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** edit `button` icon sizes, increase icon sizes for `icon-alone` variant, a11y  ([#1138](https://github.com/Decathlon/vitamin-web/issues/1138)) ([ecf7b25](https://github.com/Decathlon/vitamin-web/commit/ecf7b25799fd24f1b114837258b866032b4c5d6d))
+
+
+
+
+
 # [0.73.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.72.0...@vtmn/css@0.73.0) (2022-04-22)
 
 
