@@ -11,10 +11,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: rem(8px) rem(16px);
-  min-height: rem(48px);
-  width: fit-content;
-  min-width: fit-content;
+  padding-block: rem(8px);
+  padding-inline: rem(16px);
+  min-block-size: rem(48px);
+  inline-size: fit-content;
+  min-inline-size: fit-content;
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
   line-height: var(--vtmn-typo_text-2-line-height);
@@ -29,8 +30,8 @@
 
 .vtmn-snackbar.show {
   position: fixed;
-  right: 50%;
-  bottom: 0;
+  inset-inline-end: 50%;
+  inset-block-end: 0;
   transform: translate(50%, -50%);
   animation: var(--vtmn-animation_overlay);
 }
@@ -38,8 +39,8 @@
 /* Close button */
 .vtmn-snackbar .vtmn-btn {
   margin-inline-start: rem(12px);
-  margin-top: -6px;
-  margin-bottom: -6px;
+  margin-block-start: rem(-6px);
+  margin-block-end: rem(-6px);
 }
 
 .vtmn-snackbar .vtmn-btn span[class^='vtmx-'] {
@@ -48,8 +49,9 @@
 
 @media screen and (max-width: 599px) {
   .vtmn-snackbar {
-    width: 90%;
-    margin: 0 auto;
+    inline-size: 90%;
+    margin-block: 0;
+    margin-inline: auto;
   }
 
   .vtmn-snackbar.show {
