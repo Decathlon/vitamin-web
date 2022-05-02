@@ -99,7 +99,7 @@
   padding: var(--vtmn-spacing_2);
   box-shadow: var(--vtmn-shadow_300);
   z-index: 2;
-  overflow-block: auto;
+  overflow-y: auto;
   transform: translateY(var(--vtmn-spacing_1));
   max-block-size: rem(260px);
 }
