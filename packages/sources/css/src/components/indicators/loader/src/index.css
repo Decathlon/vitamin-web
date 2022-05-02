@@ -2,8 +2,8 @@
 @import '@vtmn/css-design-tokens/src/themes/default';
 
 .vtmn-loader {
-  width: rem(32px);
-  height: rem(32px);
+  inline-size: rem(32px);
+  block-size: rem(32px);
   background-color: #c4000000;
   mask-image: linear-gradient(transparent 50%, white 50%),
     linear-gradient(to right, transparent 50%, white 50%);
@@ -24,8 +24,8 @@
 }
 
 .vtmn-loader_size--small.vtmn-loader {
-  width: rem(16px);
-  height: rem(16px);
+  inline-size: rem(16px);
+  block-size: rem(16px);
 }
 
 .vtmn-loader_size--small.vtmn-loader::before {
@@ -33,8 +33,8 @@
 }
 
 .vtmn-loader_size--medium.vtmn-loader {
-  width: rem(32px);
-  height: rem(32px);
+  inline-size: rem(32px);
+  block-size: rem(32px);
 }
 
 .vtmn-loader_size--medium.vtmn-loader::before {
@@ -42,8 +42,8 @@
 }
 
 .vtmn-loader_size--large.vtmn-loader {
-  width: rem(64px);
-  height: rem(64px);
+  inline-size: rem(64px);
+  block-size: rem(64px);
 }
 
 .vtmn-loader_size--large.vtmn-loader::before {
@@ -98,24 +98,24 @@
   }
 
   29.4% {
-    border-left-color: transparent;
+    border-inline-start-color: transparent;
   }
 
   29.41% {
-    border-left-color: currentcolor;
+    border-inline-start-color: currentcolor;
   }
 
   64.7% {
-    border-bottom-color: transparent;
+    border-block-end-color: transparent;
   }
 
   64.71% {
-    border-bottom-color: currentcolor;
+    border-block-end-color: currentcolor;
   }
 
   100% {
-    border-left-color: currentcolor;
-    border-bottom-color: currentcolor;
+    border-inline-start-color: currentcolor;
+    border-block-end-color: currentcolor;
     transform: rotate(225deg);
   }
 }
