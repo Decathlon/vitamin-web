@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.36.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.35.1...@vtmn/react@0.36.0) (2022-05-02)
+
+
+### Features
+
+* **@vtmn/svelte, @vtmn/react, @vtmn/css:** accordion, change `button` variant ([#1135](https://github.com/Decathlon/vitamin-web/issues/1135)) ([d326114](https://github.com/Decathlon/vitamin-web/commit/d326114fd8c349bbf51f92b40ae9c5793ef42ab5))
+
+
+
+
+
 ## [0.35.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.35.0...@vtmn/react@0.35.1) (2022-05-02)
 
 **Note:** Version bump only for package @vtmn/react
