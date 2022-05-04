@@ -59,9 +59,9 @@
 </Story>
 <Story name="Custom content">
   <VtmnAccordion summary="Item 1" withIconLeft class="accordion-stories" open>
-    <VtmnButton variant="secondary" size="small">Button 1</VtmnButton>
-    <VtmnButton variant="secondary" size="small">Button 2</VtmnButton>
-    <VtmnButton variant="secondary" size="small">Button 3</VtmnButton>
+    <VtmnButton variant="primary" size="small">Button 1</VtmnButton>
+    <VtmnButton variant="primary" size="small">Button 2</VtmnButton>
+    <VtmnButton variant="primary" size="small">Button 3</VtmnButton>
   </VtmnAccordion>
 </Story>
 
