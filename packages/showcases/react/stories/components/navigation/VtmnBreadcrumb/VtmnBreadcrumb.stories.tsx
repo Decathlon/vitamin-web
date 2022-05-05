@@ -1,15 +1,11 @@
 import React from 'react';
 import { VtmnBreadcrumb, VtmnBreadcrumbItem } from '@vtmn/react';
 import { Meta, Story } from '@storybook/react';
-import {
-  argTypes,
-  parameters,
-} from '@vtmn/showcase-core/csf/components/navigation/breadcrumb.csf';
+import { parameters } from '@vtmn/showcase-core/csf/components/navigation/breadcrumb.csf';
 
 export default {
   title: 'Components / Navigation / VtmnBreadcrumb',
   component: VtmnBreadcrumb,
-  argTypes: argTypes,
   parameters,
 } as Meta;
 
