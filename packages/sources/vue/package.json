@@ -47,6 +47,7 @@
     "@vitejs/plugin-vue": "^2.0.1",
     "@vtmn/css-accordion": "^0.2.14",
     "@vtmn/css-badge": "^0.10.13",
+    "@vtmn/css-breadcrumb": "^0.5.0",
     "@vtmn/css-button": "^0.12.2",
     "@vtmn/css-checkbox": "^0.6.17",
     "@vtmn/css-chip": "^0.6.14",
