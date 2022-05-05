@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.74.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.74.0...@vtmn/css@0.74.1) (2022-05-05)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** add flex auto + remove overflow indicator ([#1143](https://github.com/Decathlon/vitamin-web/issues/1143)) ([3082378](https://github.com/Decathlon/vitamin-web/commit/3082378ea90cae7c48e29a5f69c73afe6b568bcb))
+
+
+
+
+
 # [0.74.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.73.1...@vtmn/css@0.74.0) (2022-05-04)
 
 
