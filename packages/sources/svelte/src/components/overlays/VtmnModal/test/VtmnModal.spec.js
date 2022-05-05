@@ -123,21 +123,9 @@ describe('VtmnModal', () => {
         });
         expect(getContentActions(container)).toBeUndefined();
       });
-      test("Should not have a class 'vtmn-modal_content_body--overflow-indicator'", () => {
-        const { container } = render(VtmnModalWithoutActions, {
-          open: true,
-        });
-        expect(getOverFlow(container)).toBeUndefined();
-      });
     });
 
     describe('With slot description and actions', () => {
-      test("Should have a class 'vtmn-modal_content_body--overflow-indicator'", () => {
-        const { container } = render(VtmnModalWithActions, {
-          open: true,
-        });
-        expect(getOverFlow(container)).toBeVisible();
-      });
       test('Should have a slot actions', () => {
         const { container } = render(VtmnModalWithActions, {
           open: true,
