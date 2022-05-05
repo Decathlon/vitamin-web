@@ -1,19 +1,19 @@
 import * as React from 'react';
-import '@vtmn/css-toast/dist/index-with-vars.css';
+import '@vtmn/css-snackbar/dist/index-with-vars.css';
 import clsx from 'clsx';
 import { VtmnButton } from '../../actions/VtmnButton';
 
-export interface VtmnToastProps
+export interface VtmnSnackbarProps
   extends React.ComponentPropsWithoutRef<'dialog'> {
   /**
-   * The toast's content
+   * The snackbar's content
    */
   content: string;
 
   /**
-   * Whether there is an info icon
+   * The label of the action button
    */
-  withIcon?: boolean;
+  actionLabel?: string;
 
   /**
    * Whether there is a close button
@@ -27,31 +27,31 @@ export interface VtmnToastProps
   onClose?: (event: React.MouseEvent | undefined) => void;
 }
 
-export const VtmnToast = ({
+export const VtmnSnackbar = ({
   content = '',
-  withIcon = false,
+  actionLabel = 'Action',
   withCloseButton = false,
   onClose,
   className,
-}: VtmnToastProps) => {
+}: VtmnSnackbarProps) => {
   return (
     <div
       role="status"
-      className={clsx(
-        'vtmn-toast',
-        'show',
-        withIcon && 'vtmn-toast--with-icon-info',
-        className,
-      )}
+      className={clsx('vtmn-snackbar', 'show', className)}
       onClick={onClose}
     >
-      <div className="vtmn-toast_content">{content}</div>
+      <div className="vtmn-snackbar_content">{content}</div>
+      {onClose && actionLabel && (
+        <VtmnButton size="small" variant="ghost-reversed" onClick={onClose}>
+          {actionLabel}
+        </VtmnButton>
+      )}
       {onClose && withCloseButton && (
         <VtmnButton
           size="small"
           variant="ghost-reversed"
           iconAlone="close-line"
-          aria-label="Close toast"
+          aria-label="Close snackbar"
           onClick={onClose}
         ></VtmnButton>
       )}
@@ -59,8 +59,8 @@ export const VtmnToast = ({
   );
 };
 
-const MemoVtmnToast = React.memo(VtmnToast);
+const MemoVtmnSnackbar = React.memo(VtmnSnackbar);
 
-MemoVtmnToast.displayName = 'VtmnToast';
+MemoVtmnSnackbar.displayName = 'VtmnSnackbar';
 
-export default MemoVtmnToast;
+export default MemoVtmnSnackbar;
