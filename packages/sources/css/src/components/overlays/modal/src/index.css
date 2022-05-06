@@ -73,6 +73,7 @@
 .vtmn-modal_content_body {
   margin: rem(16px) 0;
   overflow-y: auto;
+  flex: auto;
 }
 
 .vtmn-modal_content_body--text {
@@ -81,7 +82,6 @@
   line-height: rem(24px);
   align-self: flex-start;
   text-align: left;
-  flex: auto;
 }
 
 .vtmn-modal_content_actions {
