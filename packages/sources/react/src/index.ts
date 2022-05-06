@@ -35,8 +35,10 @@ export { VtmnTag } from './components/indicators/VtmnTag';
 export type { VtmnTagProps } from './components/indicators/VtmnTag';
 
 // Navigation
-export { VtmnSearch } from './components/navigation/VtmnSearch/VtmnSearch';
-export type { VtmnSearchProps } from './components/navigation/VtmnSearch/VtmnSearch';
+export { VtmnNavbar } from './components/navigation/VtmnNavbar/';
+export type { VtmnNavbarProps } from './components/navigation/VtmnNavbar/';
+export { VtmnSearch } from './components/navigation/VtmnSearch/';
+export type { VtmnSearchProps } from './components/navigation/VtmnSearch/';
 
 // Overlays
 export { VtmnAlert } from './components/overlays/VtmnAlert';
