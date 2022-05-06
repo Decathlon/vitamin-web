@@ -17,10 +17,10 @@
   export let emphasis = false;
 
   /**
-   * @type {boolean} size of the component
-   * @default medium
+   * @type {string} size of the component
+   * @default small
    */
-  export let size = VTMN_RATING_SIZE.MEDIUM;
+  export let size = VTMN_RATING_SIZE.SMALL;
 
   /**
    * @type {boolean} disable the component

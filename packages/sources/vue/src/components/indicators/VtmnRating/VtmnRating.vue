@@ -1,10 +1,12 @@
 <script lang="ts">
+import VtmnIcon from '@/guidelines/iconography/VtmnIcon';
 import '@vtmn/css-rating/dist/index-with-vars.css';
 import { reactive, computed, defineComponent, PropType } from 'vue';
 import { VtmnRatingSize } from './types';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnRating',
+  components: { VtmnIcon },
   inheritAttrs: false,
   props: {
     name: {
@@ -16,7 +18,7 @@ export default /*#__PURE__*/ defineComponent({
     },
     size: {
       type: String as PropType<VtmnRatingSize>,
-      default: 'medium',
+      default: 'small',
       validator: (val: VtmnRatingSize) => ['small', 'medium'].includes(val),
     },
     disabled: {
@@ -46,15 +48,16 @@ export default /*#__PURE__*/ defineComponent({
   },
   setup(props) {
     props = reactive(props);
+
     return {
       styleObject: {
         color: 'inherit',
-        fontSize: 'inherit',
+        fontSize: 'none',
       },
       classes: computed(() => ({
         'vtmn-rating': true,
-        [`vtmn-rating_size--${props.size}`]: true,
-        ['vtmn-rating_variant--brand']: props.emphasis,
+        [`vtmn-rating_size--${props.size}`]: props.size,
+        'vtmn-rating_variant--brand': props.emphasis,
       })),
     };
   },
@@ -62,5 +65,67 @@ export default /*#__PURE__*/ defineComponent({
 </script>
 
 <template>
-  <div :class="classes" :aria-disabled="disabled" v-bind="$attrs"></div>
+  <div :class="classes" :aria-disabled="disabled" v-bind="$attrs">
+    <div
+      v-if="!readonly"
+      class="vtmn-rating--interactive"
+      aria-label="Rate this"
+      role="radiogroup"
+    >
+      <template v-for="i in 5" :key="i">
+        <input
+          type="radio"
+          :group="value"
+          :name="name"
+          :value="i"
+          :id="`${name}-${i}`"
+          :aria-label="`${i} star out of 5`"
+          :disabled="disabled"
+        />
+        <label :for="`${name}-${i}`" />
+      </template>
+    </div>
+    <template v-else>
+      <template v-if="!compact" v-for="i in 5" :key="i">
+        <VtmnIcon
+          :value="
+            i <= value
+              ? 'star-fill'
+              : i > value && i - 0.5 <= value
+              ? 'star-half-fill'
+              : 'star-line'
+          "
+          :style="styleObject"
+          role="presentation"
+        />
+      </template>
+      <template v-else>
+        <VtmnIcon
+          :value="
+            value <= 2
+              ? 'star-line'
+              : value < 4
+              ? 'star-half-fill'
+              : 'star-fill'
+          "
+          :style="styleObject"
+          role="presentation"
+        />
+      </template>
+      <span
+        v-if="showValue"
+        class="vtmn-rating_comment--primary"
+        aria-label="rate"
+      >
+        {{ value }}/5
+      </span>
+      <span
+        v-if="comments"
+        class="vtmn-rating_comment--secondary"
+        aria-label="number of ratings"
+      >
+        {{ comments }}
+      </span>
+    </template>
+  </div>
 </template>
