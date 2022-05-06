@@ -53,5 +53,6 @@ export { default as VtmnToggle } from './components/selection-controls/VtmnToggl
 
 // Structure
 export { default as VtmnAccordion } from './components/structure/VtmnAccordion';
+export { default as VtmnCard } from './components/structure/VtmnCard';
 export { default as VtmnDivider } from './components/structure/VtmnDivider';
 export { default as VtmnSkeleton } from './components/structure/VtmnSkeleton';
