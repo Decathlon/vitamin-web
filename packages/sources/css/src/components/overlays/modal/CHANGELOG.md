@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-modal@0.6.2...@vtmn/css-modal@0.6.3) (2022-05-06)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** move flex auto to body ([#1150](https://github.com/Decathlon/vitamin-web/issues/1150)) ([f8ebfbf](https://github.com/Decathlon/vitamin-web/commit/f8ebfbf4f32b797c3dafa6caf457bd44c1ea56c0))
+
+
+
+
+
 ## [0.6.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-modal@0.6.1...@vtmn/css-modal@0.6.2) (2022-05-05)
 
 
