@@ -92,7 +92,7 @@ export const VtmnChip = ({
       onClick={onClick}
       {...props}
     >
-      {icon && (variant == 'input' || variant == 'action') && (
+      {icon && (variant === 'input' || variant === 'action') && (
         <VtmnIcon
           variant={selected && variant !== 'action' ? 'reversed' : 'default'}
           value={icon}
