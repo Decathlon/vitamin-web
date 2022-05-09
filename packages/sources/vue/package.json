@@ -54,6 +54,7 @@
     "@vtmn/css-divider": "^0.2.1",
     "@vtmn/css-link": "^0.6.16",
     "@vtmn/css-modal": "^0.6.3",
+    "@vtmn/css-navbar": "^0.1.20",
     "@vtmn/css-popover": "^0.5.15",
     "@vtmn/css-price": "^0.3.1",
     "@vtmn/css-quantity": "^0.5.0",
