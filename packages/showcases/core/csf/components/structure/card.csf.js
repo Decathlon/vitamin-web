@@ -10,7 +10,7 @@ export const parameters = {
 
 export const argTypes = {
   variant: {
-    type: { name: 'string', required: true },
+    type: { name: 'string', required: false },
     description: 'The variant of the card.',
     defaultValue: 'top-image',
     control: {

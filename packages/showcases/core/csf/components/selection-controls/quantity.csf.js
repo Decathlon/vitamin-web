@@ -26,7 +26,7 @@ export const argTypes = {
     },
   },
   label: {
-    type: { name: 'string', required: true },
+    type: { name: 'string', required: false },
     description: 'Label of the quantity input',
     defaultValue: 'Label',
     control: {
@@ -63,6 +63,7 @@ export const argTypes = {
     control: {
       type: 'number',
     },
+    defaultValue: undefined,
   },
   error: {
     type: { name: 'string', required: false },
@@ -70,6 +71,7 @@ export const argTypes = {
     control: {
       type: 'text',
     },
+    defaultValue: 'Error text of the quantity',
   },
   step: {
     type: { name: 'number', required: false },

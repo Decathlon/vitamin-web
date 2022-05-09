@@ -17,7 +17,7 @@ export const argTypes = {
   },
 
   variant: {
-    type: { name: 'string', required: true },
+    type: { name: 'string', required: false },
     description: 'The alert type',
     defaultValue: 'info',
     control: {
@@ -29,7 +29,7 @@ export const argTypes = {
   message: {
     type: { name: 'string', required: true },
     description: 'The printed message',
-    defaultValue: '',
+    defaultValue: undefined,
     control: { type: 'text' },
   },
 };
