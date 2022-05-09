@@ -19,7 +19,7 @@ export const argTypes = {
   },
   emphasis: {
     type: { name: 'boolean', required: false },
-    description: 'The variant of the rating. Only if readonly is true.',
+    description: 'The variant of the rating.',
     defaultValue: false,
     control: {
       type: 'boolean',
@@ -47,21 +47,22 @@ export const argTypes = {
     control: { type: 'boolean' },
   },
   compact: {
-    type: { name: 'number', required: false },
+    type: { name: 'boolean', required: false },
     description: 'Display compact mode. Only if readonly is true.',
     defaultValue: false,
     control: { type: 'boolean' },
   },
   value: {
-    type: { name: 'boolean', required: false },
+    type: { name: 'number', required: false },
     description: 'Rating value.',
     defaultValue: 0,
-    control: { type: 'range', min: 0, max: 5, step: 0.25 },
+    control: { type: 'range', min: 0, max: 5, step: 0.5 },
   },
   comments: {
     type: { name: 'string', required: false },
     description:
       'Comments displayed after the rating. Only if readonly is true.',
+    defaultValue: undefined,
     control: { type: 'text' },
   },
   showValue: {

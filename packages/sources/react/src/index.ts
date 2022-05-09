@@ -53,6 +53,8 @@ export type {
 } from './components/overlays/VtmnModal';
 export { VtmnPopover } from './components/overlays/VtmnPopover';
 export type { VtmnPopoverProps } from './components/overlays/VtmnPopover';
+export { VtmnSnackbar } from './components/overlays/VtmnSnackbar';
+export type { VtmnSnackbarProps } from './components/overlays/VtmnSnackbar';
 export { VtmnToast } from './components/overlays/VtmnToast';
 export type { VtmnToastProps } from './components/overlays/VtmnToast';
 export { VtmnTooltip } from './components/overlays/VtmnTooltip';
