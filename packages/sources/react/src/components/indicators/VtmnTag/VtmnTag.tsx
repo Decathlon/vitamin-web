@@ -39,7 +39,7 @@ export const VtmnTag = ({
   return href ? (
     <a
       className={`vtmn-tag vtmn-tag_variant--${variant} ${
-        className && className
+        className ? className : ''
       }`}
       href={href}
       {...props}
@@ -56,7 +56,7 @@ export const VtmnTag = ({
   ) : (
     <span
       className={`vtmn-tag vtmn-tag_variant--${variant} ${
-        className && className
+        className ? className : ''
       }`}
       {...props}
     >
