@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.38.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.37.0...@vtmn/react@0.38.0) (2022-05-09)
+
+
+### Features
+
+* **@vtmn/react:** add snackbar component ([#1145](https://github.com/Decathlon/vitamin-web/issues/1145)) ([a13ff49](https://github.com/Decathlon/vitamin-web/commit/a13ff496344bd10ab003e2bf837c575feac43c9d))
+
+
+
+
+
 # [0.37.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.36.2...@vtmn/react@0.37.0) (2022-05-09)
 
 
