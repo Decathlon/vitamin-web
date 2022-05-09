@@ -17,8 +17,7 @@ export default /*#__PURE__*/ defineComponent({
       default: '#',
     },
   },
-  setup(props) {
-    props = reactive(props);
+  setup() {
     return {
       styleObject: {
         color: 'inherit',

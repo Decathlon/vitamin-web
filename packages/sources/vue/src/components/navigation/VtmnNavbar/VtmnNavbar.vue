@@ -1,6 +1,6 @@
 <script lang="ts">
 import '@vtmn/css-search/dist/index-with-vars.css';
-import { computed, defineComponent, PropType, reactive } from 'vue';
+import { defineComponent, PropType } from 'vue';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnNavbar',
@@ -10,9 +10,6 @@ export default /*#__PURE__*/ defineComponent({
       type: String as PropType<string>,
       default: '#',
     },
-  },
-  setup(props) {
-    props = reactive(props);
   },
 });
 </script>

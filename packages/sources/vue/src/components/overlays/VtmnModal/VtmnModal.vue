@@ -14,9 +14,7 @@ export default /*#__PURE__*/ defineComponent({
     },
   },
   emits: ['close'],
-  setup(props, { emit }) {
-    props = reactive(props);
-
+  setup(_, { emit }) {
     const handleClose = () => {
       return emit('close');
     };
