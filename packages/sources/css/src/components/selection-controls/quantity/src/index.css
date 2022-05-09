@@ -29,6 +29,7 @@
 
 .vtmn-quantity input[type='number'] {
   outline: 0;
+  border: 0;
   width: rem(60px);
   padding: 0 rem(2px);
   background-color: var(--vtmn-semantic-color_background-primary);

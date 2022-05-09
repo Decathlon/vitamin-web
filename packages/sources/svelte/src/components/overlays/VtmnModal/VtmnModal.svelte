@@ -24,12 +24,17 @@
   };
 </script>
 
+<svelte:head>
+  {#if open}
+    <style type="text/css">
+      body {
+        overflow: hidden;
+      }
+    </style>
+  {/if}
+</svelte:head>
+
 {#if open}
-  <style>
-    body {
-      overflow: hidden;
-    }
-  </style>
   <div
     class="vtmn-modal"
     role="dialog"
@@ -61,9 +66,6 @@
           <p id="vtmn-modal-description" class="vtmn-modal_content_body--text">
             <slot name="description" />
           </p>
-        {/if}
-        {#if $$slots.actions}
-          <div class="vtmn-modal_content_body--overflow-indicator" />
         {/if}
       </div>
       {#if $$slots.actions}
