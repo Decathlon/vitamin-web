@@ -35,6 +35,10 @@ export { VtmnTag } from './components/indicators/VtmnTag';
 export type { VtmnTagProps } from './components/indicators/VtmnTag';
 
 // Navigation
+export { VtmnBreadcrumb } from './components/navigation/VtmnBreadcrumb';
+export type { VtmnBreadcrumbProps } from './components/navigation/VtmnBreadcrumb';
+export { VtmnBreadcrumbItem } from './components/navigation/VtmnBreadcrumb';
+export type { VtmnBreadcrumbItemProps } from './components/navigation/VtmnBreadcrumb';
 export { VtmnSearch } from './components/navigation/VtmnSearch/VtmnSearch';
 export type { VtmnSearchProps } from './components/navigation/VtmnSearch/VtmnSearch';
 
@@ -53,6 +57,8 @@ export type {
 } from './components/overlays/VtmnModal';
 export { VtmnPopover } from './components/overlays/VtmnPopover';
 export type { VtmnPopoverProps } from './components/overlays/VtmnPopover';
+export { VtmnSnackbar } from './components/overlays/VtmnSnackbar';
+export type { VtmnSnackbarProps } from './components/overlays/VtmnSnackbar';
 export { VtmnToast } from './components/overlays/VtmnToast';
 export type { VtmnToastProps } from './components/overlays/VtmnToast';
 export { VtmnTooltip } from './components/overlays/VtmnTooltip';

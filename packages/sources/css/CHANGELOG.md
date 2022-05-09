@@ -3,6 +3,61 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.75.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.74.2...@vtmn/css@0.75.0) (2022-05-09)
+
+
+### Features
+
+* **@vtmn/css & @vtmn/vue & @vtmn/react & @vtmn/svelte:** chip, add role button + a11y attribute, improve css ([#1134](https://github.com/Decathlon/vitamin-web/issues/1134)) ([cef64c9](https://github.com/Decathlon/vitamin-web/commit/cef64c9a368824a9dd55bd0ad3a25e958d15aba3))
+
+
+
+
+
+## [0.74.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.74.1...@vtmn/css@0.74.2) (2022-05-06)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** move flex auto to body ([#1150](https://github.com/Decathlon/vitamin-web/issues/1150)) ([f8ebfbf](https://github.com/Decathlon/vitamin-web/commit/f8ebfbf4f32b797c3dafa6caf457bd44c1ea56c0))
+
+
+
+
+
+## [0.74.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.74.0...@vtmn/css@0.74.1) (2022-05-05)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** add flex auto + remove overflow indicator ([#1143](https://github.com/Decathlon/vitamin-web/issues/1143)) ([3082378](https://github.com/Decathlon/vitamin-web/commit/3082378ea90cae7c48e29a5f69c73afe6b568bcb))
+
+
+
+
+
+# [0.74.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.73.1...@vtmn/css@0.74.0) (2022-05-04)
+
+
+### Features
+
+* **@vtmn/css-quantity:** no default border ([#1141](https://github.com/Decathlon/vitamin-web/issues/1141)) ([bc8664c](https://github.com/Decathlon/vitamin-web/commit/bc8664c029a67d8d314faf259d7c83538e15f057))
+
+
+
+
+
+## [0.73.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.73.0...@vtmn/css@0.73.1) (2022-05-02)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** edit `button` icon sizes, increase icon sizes for `icon-alone` variant, a11y  ([#1138](https://github.com/Decathlon/vitamin-web/issues/1138)) ([ecf7b25](https://github.com/Decathlon/vitamin-web/commit/ecf7b25799fd24f1b114837258b866032b4c5d6d))
+
+
+
+
+
 # [0.73.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.72.0...@vtmn/css@0.73.0) (2022-04-22)
 
 

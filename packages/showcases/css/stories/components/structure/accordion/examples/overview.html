@@ -11,7 +11,7 @@
 </style>
 
 <div class="block">
-  <details class="vtmn-accordion">
+  <details class="vtmn-accordion" aria-expanded="false">
     <summary>Item 1</summary>
     <div class="vtmn-accordion_content">
       <p>
@@ -24,7 +24,7 @@
     </div>
   </details>
 
-  <details class="vtmn-accordion">
+  <details class="vtmn-accordion" aria-expanded="false">
     <summary>Item 2</summary>
     <div class="vtmn-accordion_content">
       <p>
@@ -37,7 +37,7 @@
     </div>
   </details>
 
-  <details class="vtmn-accordion" aria-disabled="true">
+  <details class="vtmn-accordion" aria-expanded="false" aria-disabled="true">
     <summary>Item 3</summary>
     <div class="vtmn-accordion_content">
       <p>
@@ -96,18 +96,18 @@
 </div>
 
 <div class="block">
-  <details open class="vtmn-accordion">
+  <details open class="vtmn-accordion" aria-expanded="true">
     <summary>Item 1</summary>
     <div class="vtmn-accordion_content">
-      <button class="vtmn-btn vtmn-btn_variant--secondary vtmn-btn_size--small">
+      <button class="vtmn-btn vtmn-btn_variant--primary vtmn-btn_size--small">
         Button 1
       </button>
 
-      <button class="vtmn-btn vtmn-btn_variant--secondary vtmn-btn_size--small">
+      <button class="vtmn-btn vtmn-btn_variant--primary vtmn-btn_size--small">
         Button 2
       </button>
 
-      <button class="vtmn-btn vtmn-btn_variant--secondary vtmn-btn_size--small">
+      <button class="vtmn-btn vtmn-btn_variant--primary vtmn-btn_size--small">
         Button 3
       </button>
     </div>
