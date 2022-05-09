@@ -34,6 +34,8 @@ export { default as VtmnPrice } from './components/indicators/VtmnPrice';
 export { default as VtmnTag } from './components/indicators/VtmnTag';
 
 // Navigation
+export { default as VtmnBreadcrumb } from './components/navigation/VtmnBreadcrumb';
+export { default as VtmnBreadcrumbItem } from './components/navigation/VtmnBreadcrumbItem';
 export { default as VtmnNavbar } from './components/navigation/VtmnNavbar';
 export { default as VtmnSearch } from './components/navigation/VtmnSearch';
 
