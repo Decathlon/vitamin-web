@@ -1,7 +1,5 @@
 import '@testing-library/jest-dom';
-
-import { fireEvent, render } from '@testing-library/svelte';
-
+import { render } from '@testing-library/svelte';
 import VtmnCard from '../VtmnCard.svelte';
 import VtmnCardWithSlot from './VtmnCardWithSlot.svelte';
 
@@ -16,8 +14,6 @@ describe('VtmnCard', () => {
     container.getElementsByClassName('vtmn-card_content')[0];
   const getContentBody = (container) =>
     container.getElementsByClassName('vtmn-card_content--body')[0];
-  const getSlotContent = (container) =>
-    container.querySelector('[slot="content"]');
   const getSlotActions = (container) =>
     container.querySelector('[slot="actions"]');
   const getSlotImg = (container) => container.querySelector('[slot="img"]');

@@ -19,8 +19,7 @@ class VtmnToastStore {
 
   close(toastId) {
     this._toasts.update((n) => {
-      const removedToast = n.filter((i) => i.id !== toastId);
-      return removedToast;
+      return n.filter((i) => i.id !== toastId);
     });
   }
 
