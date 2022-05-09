@@ -96,11 +96,6 @@
   margin-inline-end: rem(-2px);
 }
 
-.vtmn-quantity .vtmn-btn:last-child {
-  border-radius: 0 var(--vtmn-radius_100) var(--vtmn-radius_100) 0;
-  margin-inline-start: rem(-2px);
-}
-
 .vtmn-quantity_error-text {
   font-size: var(--vtmn-typo_text-3-font-size);
   line-height: var(--vtmn-typo_text-3-line-height);

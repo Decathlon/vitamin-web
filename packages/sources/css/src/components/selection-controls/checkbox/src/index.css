@@ -31,9 +31,6 @@
   margin-top: rem(3px);
   margin-right: rem(11px);
   padding: rem(7px);
-}
-
-.vtmn-checkbox[type='checkbox'] + label::before {
   border-color: var(--vtmn-semantic-color_content-inactive);
 }
 
