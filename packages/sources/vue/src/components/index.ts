@@ -6,6 +6,8 @@ import VtmnBadge from './indicators/VtmnBadge';
 import VtmnLoader from './indicators/VtmnLoader';
 import VtmnPrice from './indicators/VtmnPrice';
 import VtmnTag from './indicators/VtmnTag';
+import VtmnBreadcrumb from './navigation/VtmnBreadcrumb';
+import VtmnBreadcrumbItem from './navigation/VtmnBreadcrumbItem';
 import VtmnSearch from './navigation/VtmnSearch';
 import VtmnAlert from './overlays/VtmnAlert';
 import VtmnModal from './overlays/VtmnModal';
@@ -31,6 +33,8 @@ export {
   VtmnLoader,
   VtmnPrice,
   VtmnTag,
+  VtmnBreadcrumb,
+  VtmnBreadcrumbItem,
   VtmnSearch,
   VtmnAlert,
   VtmnModal,
