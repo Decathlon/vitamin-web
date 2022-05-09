@@ -1,6 +1,6 @@
 <script lang="ts">
 import '@vtmn/css-modal/dist/index-with-vars.css';
-import { computed, defineComponent, PropType, reactive } from 'vue';
+import { computed, defineComponent, PropType } from 'vue';
 import { VtmnButton } from '../../index';
 
 export default /*#__PURE__*/ defineComponent({

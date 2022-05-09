@@ -12,10 +12,6 @@ function install(Vue: Application) {
 
 export default install;
 
-// GUIDELINES
-
-// Iconography
-// COMPONENTS
 // Actions
 export { default as VtmnButton } from './components/actions/VtmnButton';
 export { default as VtmnLink } from './components/actions/VtmnLink';
