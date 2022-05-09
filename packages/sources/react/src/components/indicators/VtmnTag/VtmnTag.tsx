@@ -1,7 +1,7 @@
-import * as React from 'react';
-import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
-import { VtmnIcon } from '../../../guidelines/iconography/VtmnIcon';
 import '@vtmn/css-tag/dist/index-with-vars.css';
+import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
+import * as React from 'react';
+import { VtmnIcon } from '../../../guidelines/iconography/VtmnIcon';
 import { VtmnTagVariant } from './types';
 
 type VtmnTagAdditionalProps = {
@@ -39,7 +39,7 @@ export const VtmnTag = ({
   return href ? (
     <a
       className={`vtmn-tag vtmn-tag_variant--${variant} ${
-        className ? className : ''
+        className && className
       }`}
       href={href}
       {...props}
@@ -56,7 +56,7 @@ export const VtmnTag = ({
   ) : (
     <span
       className={`vtmn-tag vtmn-tag_variant--${variant} ${
-        className ? className : ''
+        className && className
       }`}
       {...props}
     >

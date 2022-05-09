@@ -1,5 +1,5 @@
-import * as React from 'react';
 import clsx from 'clsx';
+import * as React from 'react';
 import { VtmnRatingSize } from './types';
 
 export interface VtmnRatingProps
@@ -84,7 +84,6 @@ export const VtmnRating = ({
   value = 0,
   showValue = false,
   onChange = undefined,
-  children,
   className,
   ...props
 }: VtmnRatingProps) => {

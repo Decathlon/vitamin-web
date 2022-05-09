@@ -1,7 +1,7 @@
-import * as React from 'react';
 import '@vtmn/css-breadcrumb/dist/index-with-vars.css';
-import { VtmnIcon } from '../../../guidelines/iconography/VtmnIcon';
 import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
+import * as React from 'react';
+import { VtmnIcon } from '../../../guidelines/iconography/VtmnIcon';
 
 export interface VtmnBreadcrumbItemProps
   extends React.ComponentPropsWithoutRef<'nav'> {
@@ -28,7 +28,6 @@ export const VtmnBreadcrumbItem = ({
   icon,
   href,
   children,
-  className,
   ...props
 }: VtmnBreadcrumbItemProps) => {
   return (

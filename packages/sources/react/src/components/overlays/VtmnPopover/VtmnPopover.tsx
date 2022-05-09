@@ -1,5 +1,5 @@
-import * as React from 'react';
 import '@vtmn/css-popover/dist/index-with-vars.css';
+import * as React from 'react';
 import { VtmnPopoverPosition } from './types';
 
 export interface VtmnPopoverProps
@@ -33,7 +33,6 @@ export const VtmnPopover = ({
   title,
   body,
   children,
-  className,
   ...props
 }: VtmnPopoverProps) => {
   return (
