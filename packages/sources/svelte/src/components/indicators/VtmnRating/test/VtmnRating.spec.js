@@ -309,7 +309,7 @@ describe('VtmnRating', () => {
         readonly: false,
         value: 2,
       });
-      expect(getCommentPrimary(container)).toBeUndefined();
+      expect(getCommentSecondary(container)).toBeUndefined();
     });
     test('Should radio inputs reactive to rating variable', async () => {
       const { container } = render(VtmnRating, {
