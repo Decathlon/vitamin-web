@@ -6,49 +6,79 @@
 
 <div class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap">
   <div
-    class="vtmn-chip vtmn-chip_variant--filter vtmn-chip--selected"
+    class="vtmn-chip vtmn-chip_variant--filter"
+    role="button"
     tabindex="0"
+    aria-pressed="true"
   >
     Nature hiking
   </div>
 
-  <div class="vtmn-chip vtmn-chip_variant--filter" tabindex="0">
+  <div
+    class="vtmn-chip vtmn-chip_variant--filter"
+    role="button"
+    tabindex="0"
+    aria-pressed="false"
+  >
     Snow hiking
   </div>
 
   <div
-    class="vtmn-chip vtmn-chip_variant--filter vtmn-chip--selected vtmn-chip--disabled"
+    class="vtmn-chip vtmn-chip_variant--filter"
+    role="button"
+    aria-pressed="true"
+    aria-disabled="true"
   >
     Mountain hiking
   </div>
 
-  <div class="vtmn-chip vtmn-chip_variant--filter" tabindex="0">
+  <div
+    class="vtmn-chip vtmn-chip_variant--filter"
+    role="button"
+    aria-pressed="false"
+    aria-disabled="true"
+  >
     Fast hiking
   </div>
 </div>
 
 <div class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap">
   <div
-    class="vtmn-chip vtmn-chip_variant--filter vtmn-chip--selected"
+    class="vtmn-chip vtmn-chip_variant--filter"
+    role="button"
     tabindex="0"
+    aria-pressed="true"
   >
     Nature hiking
     <span class="vtmn-badge">63</span>
   </div>
 
   <div
-    class="vtmn-chip vtmn-chip_variant--filter vtmn-chip--selected vtmn-chip--disabled"
+    class="vtmn-chip vtmn-chip_variant--filter"
+    role="button"
+    tabindex="0"
+    aria-pressed="false"
+  >
+    Mountain hiking
+    <span class="vtmn-badge">41</span>
+  </div>
+
+  <div
+    class="vtmn-chip vtmn-chip_variant--filter"
+    role="button"
+    aria-pressed="true"
+    aria-disabled="true"
   >
     Snow hiking
     <span class="vtmn-badge">32</span>
   </div>
 
-  <div class="vtmn-chip vtmn-chip_variant--filter vtmn-chip--disabled">
-    Mountain hiking
-    <span class="vtmn-badge">41</span>
-  </div>
-
-  <div class="vtmn-chip vtmn-chip_variant--filter" tabindex="0">
+  <div
+    class="vtmn-chip vtmn-chip_variant--filter"
+    role="button"
+    aria-pressed="false"
+    aria-disabled="true"
+  >
     Fast hiking
     <span class="vtmn-badge">8</span>
   </div>
@@ -56,22 +86,20 @@
 
 <div class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap">
   <div
-    class="vtmn-chip vtmn-chip_variant--filter vtmn-chip--selected vtmn-chip_size--small"
+    class="vtmn-chip vtmn-chip_variant--filter vtmn-chip_size--small"
+    role="button"
     tabindex="0"
+    aria-pressed="true"
   >
     Nature hiking
     <span class="vtmn-badge">63</span>
   </div>
 
   <div
-    class="vtmn-chip vtmn-chip_variant--filter vtmn-chip_size--small vtmn-chip--selected vtmn-chip--disabled"
-  >
-    Snow hiking
-    <span class="vtmn-badge">32</span>
-  </div>
-
-  <div
-    class="vtmn-chip vtmn-chip_variant--filter vtmn-chip_size--small vtmn-chip--disabled"
+    class="vtmn-chip vtmn-chip_variant--filter vtmn-chip_size--small"
+    role="button"
+    tabindex="0"
+    aria-pressed="false"
   >
     Mountain hiking
     <span class="vtmn-badge">41</span>
@@ -79,7 +107,19 @@
 
   <div
     class="vtmn-chip vtmn-chip_variant--filter vtmn-chip_size--small"
-    tabindex="0"
+    role="button"
+    aria-pressed="true"
+    aria-disabled="true"
+  >
+    Snow hiking
+    <span class="vtmn-badge">32</span>
+  </div>
+
+  <div
+    class="vtmn-chip vtmn-chip_variant--filter vtmn-chip_size--small"
+    role="button"
+    aria-pressed="false"
+    aria-disabled="true"
   >
     Fast hiking
     <span class="vtmn-badge">8</span>

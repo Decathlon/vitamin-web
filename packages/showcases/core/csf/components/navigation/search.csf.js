@@ -10,8 +10,8 @@ export const parameters = {
 
 export const argTypes = {
   variant: {
-    type: { name: 'string', required: true },
-    description: 'Variant of search component.',
+    type: { name: 'string', required: false },
+    description: 'The variant of the search component.',
     control: {
       type: 'select',
       options: ['default', 'persistent', 'on-content'],

@@ -50,7 +50,11 @@
   <div style="width: 800px; display: flex; justify-content: center">
     <VtmnNavbar {...args}>
       <svelte:fragment slot="left-nav">
-        <VtmnButton iconAlone="menu-line" variant="ghost" />
+        <VtmnButton
+          iconAlone="menu-line"
+          variant="ghost"
+          aria-expanded="false"
+        />
       </svelte:fragment>
 
       <svelte:fragment slot="logo">
@@ -98,7 +102,11 @@
   <div style="width: 800px; display: flex; justify-content: center">
     <VtmnNavbar {...args}>
       <svelte:fragment slot="left-nav">
-        <VtmnButton iconAlone="menu-line" variant="ghost" />
+        <VtmnButton
+          iconAlone="menu-line"
+          variant="ghost"
+          aria-expanded="false"
+        />
       </svelte:fragment>
 
       <svelte:fragment slot="logo">
