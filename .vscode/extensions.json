@@ -13,6 +13,6 @@
     "bradlc.vscode-tailwindcss",
     "octref.vetur",
     "nrwl.angular-console",
-    "johnsoncodehk.volar",
+    "Vue.volar",
   ]
 }
