@@ -28,7 +28,7 @@ export const argTypes = {
   size: {
     type: { name: 'string', required: false },
     description: 'Size of the rating.',
-    defaultValue: 'small',
+    defaultValue: 'medium',
     control: {
       type: 'select',
       options: ['small', 'medium'],

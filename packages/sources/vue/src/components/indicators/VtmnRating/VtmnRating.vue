@@ -1,7 +1,7 @@
 <script lang="ts">
 import VtmnIcon from '@/guidelines/iconography/VtmnIcon';
 import '@vtmn/css-rating/dist/index-with-vars.css';
-import { reactive, computed, defineComponent, PropType } from 'vue';
+import { computed, defineComponent, PropType, reactive } from 'vue';
 import { VtmnRatingSize } from './types';
 
 export default /*#__PURE__*/ defineComponent({
@@ -18,7 +18,7 @@ export default /*#__PURE__*/ defineComponent({
     },
     size: {
       type: String as PropType<VtmnRatingSize>,
-      default: 'small',
+      default: 'medium',
       validator: (val: VtmnRatingSize) => ['small', 'medium'].includes(val),
     },
     disabled: {
