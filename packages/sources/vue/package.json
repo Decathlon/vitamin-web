@@ -53,6 +53,7 @@
     "@vtmn/css-chip": "^0.7.1",
     "@vtmn/css-divider": "^0.2.2",
     "@vtmn/css-link": "^0.6.17",
+    "@vtmn/css-list": "^0.2.19",
     "@vtmn/css-modal": "^0.6.4",
     "@vtmn/css-navbar": "^0.1.21",
     "@vtmn/css-popover": "^0.5.17",
