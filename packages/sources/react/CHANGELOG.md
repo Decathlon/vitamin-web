@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.40.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.39.3...@vtmn/react@0.40.0) (2022-05-10)
+
+
+### Features
+
+* **@vtmn/vue:** add progressbar component ([#1154](https://github.com/Decathlon/vitamin-web/issues/1154)) ([77a817c](https://github.com/Decathlon/vitamin-web/commit/77a817cbe9571d6a1f287d69dbec0454b720ecec))
+
+
+
+
+
 ## [0.39.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.39.2...@vtmn/react@0.39.3) (2022-05-09)
 
 **Note:** Version bump only for package @vtmn/react
