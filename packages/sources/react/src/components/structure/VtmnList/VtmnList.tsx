@@ -1,4 +1,5 @@
 import * as React from 'react';
+import '@vtmn/css-list/dist/index-with-vars.css';
 import clsx from 'clsx';
 import { VtmnListSize } from './types';
 

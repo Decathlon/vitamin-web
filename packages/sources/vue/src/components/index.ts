@@ -5,6 +5,7 @@ import VtmnSelect from './forms/VtmnSelect';
 import VtmnBadge from './indicators/VtmnBadge';
 import VtmnLoader from './indicators/VtmnLoader';
 import VtmnPrice from './indicators/VtmnPrice';
+import VtmnProgressbar from './indicators/VtmnProgressbar';
 import VtmnTag from './indicators/VtmnTag';
 import VtmnRating from './indicators/VtmnRating';
 import VtmnBreadcrumb from './navigation/VtmnBreadcrumb';
@@ -34,6 +35,7 @@ export {
   VtmnBadge,
   VtmnLoader,
   VtmnPrice,
+  VtmnProgressbar,
   VtmnTag,
   VtmnRating,
   VtmnBreadcrumb,
