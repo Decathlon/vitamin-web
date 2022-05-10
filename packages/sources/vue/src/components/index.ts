@@ -25,6 +25,8 @@ import VtmnRadioButton from './selection-controls/VtmnRadioButton';
 import VtmnToggle from './selection-controls/VtmnToggle';
 import VtmnAccordion from './structure/VtmnAccordion';
 import VtmnDivider from './structure/VtmnDivider';
+import VtmnList from './structure/VtmnList';
+import VtmnListItem from './structure/VtmnListItem';
 import VtmnSkeleton from './structure/VtmnSkeleton';
 
 export {
@@ -55,5 +57,7 @@ export {
   VtmnToggle,
   VtmnAccordion,
   VtmnDivider,
+  VtmnList,
+  VtmnListItem,
   VtmnSkeleton,
 };

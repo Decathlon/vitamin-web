@@ -46,5 +46,7 @@ export { default as VtmnToggle } from './components/selection-controls/VtmnToggl
 // Structure
 export { default as VtmnAccordion } from './components/structure/VtmnAccordion';
 export { default as VtmnDivider } from './components/structure/VtmnDivider';
+export { default as VtmnList } from './components/structure/VtmnList';
+export { default as VtmnListItem } from './components/structure/VtmnListItem';
 export { default as VtmnSkeleton } from './components/structure/VtmnSkeleton';
 export { default as VtmnIcon } from './guidelines/iconography/VtmnIcon';
