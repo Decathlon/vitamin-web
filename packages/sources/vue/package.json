@@ -59,6 +59,7 @@
     "@vtmn/css-price": "^0.3.2",
     "@vtmn/css-quantity": "^0.5.1",
     "@vtmn/css-radio-button": "^0.6.17",
+    "@vtmn/css-rating": "^0.3.14",
     "@vtmn/css-search": "^0.5.1",
     "@vtmn/css-select": "^0.6.17",
     "@vtmn/css-skeleton": "^0.3.16",
