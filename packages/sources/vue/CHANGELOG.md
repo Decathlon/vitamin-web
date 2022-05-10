@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.36.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.35.0...@vtmn/vue@0.36.0) (2022-05-10)
+
+
+### Features
+
+* **@vtmn/vue:** add `VtmnList` component ([#1155](https://github.com/Decathlon/vitamin-web/issues/1155)) ([1c20a03](https://github.com/Decathlon/vitamin-web/commit/1c20a03cb40a7db45faea2cdbc1fb62d7331ba34))
+
+
+
+
+
 # [0.35.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.34.0...@vtmn/vue@0.35.0) (2022-05-10)
 
 
