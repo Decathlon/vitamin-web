@@ -7,4 +7,8 @@ export default /*#__PURE__*/ defineComponent({
 });
 </script>
 
-<template></template>
+<template>
+  <ul class="vtmn-list" role="listbox" v-bind="$attrs">
+    <slot />
+  </ul>
+</template>
