@@ -35,6 +35,10 @@ export { VtmnTag } from './components/indicators/VtmnTag';
 export type { VtmnTagProps } from './components/indicators/VtmnTag';
 
 // Navigation
+export { VtmnBreadcrumb } from './components/navigation/VtmnBreadcrumb';
+export type { VtmnBreadcrumbProps } from './components/navigation/VtmnBreadcrumb';
+export { VtmnBreadcrumbItem } from './components/navigation/VtmnBreadcrumb';
+export type { VtmnBreadcrumbItemProps } from './components/navigation/VtmnBreadcrumb';
 export { VtmnSearch } from './components/navigation/VtmnSearch/VtmnSearch';
 export type { VtmnSearchProps } from './components/navigation/VtmnSearch/VtmnSearch';
 
@@ -77,5 +81,16 @@ export { VtmnAccordion } from './components/structure/VtmnAccordion';
 export type { VtmnAccordionProps } from './components/structure/VtmnAccordion';
 export { VtmnDivider } from './components/structure/VtmnDivider';
 export type { VtmnDividerProps } from './components/structure/VtmnDivider';
+export {
+  VtmnList,
+  VtmnListItem,
+  VtmnListItemStartVisual,
+  VtmnListItemText,
+  VtmnListItemEndAction,
+} from './components/structure/VtmnList';
+export type {
+  VtmnListProps,
+  VtmnListItemProps,
+} from './components/structure/VtmnList';
 export { VtmnSkeleton } from './components/structure/VtmnSkeleton';
 export type { VtmnSkeletonProps } from './components/structure/VtmnSkeleton';

@@ -1,10 +1,8 @@
 import '@testing-library/jest-dom';
-
 import { fireEvent, render } from '@testing-library/svelte';
-
 import VtmnModal from '../VtmnModal.svelte';
-import VtmnModalWithoutActions from './VtmnModalWithoutActions.svelte';
 import VtmnModalWithActions from './VtmnModalWithActions.svelte';
+import VtmnModalWithoutActions from './VtmnModalWithoutActions.svelte';
 
 const expectedCloseOnElement = async (
   element,
@@ -24,10 +22,6 @@ describe('VtmnModal', () => {
     container.getElementsByClassName('vtmn-modal_background-overlay')[0];
   const getCloseButton = (container) =>
     container.querySelector('button[aria-label="close"]');
-  const getOverFlow = (container) =>
-    container.getElementsByClassName(
-      'vtmn-modal_content_body--overflow-indicator',
-    )[0];
   const getModalContent = (container) =>
     container.getElementsByClassName('vtmn-modal_content')[0];
   const getContentActions = (container) =>

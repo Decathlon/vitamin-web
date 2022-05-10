@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.17](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-popover@0.5.16...@vtmn/css-popover@0.5.17) (2022-05-09)
+
+
+### Bug Fixes
+
+* **@vtmn/css-popover:** bottom position ([e307b3f](https://github.com/Decathlon/vitamin-web/commit/e307b3f2157353ad523eb64913870c9cbc629dfa))
+
+
+
+
+
+## [0.5.16](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-popover@0.5.15...@vtmn/css-popover@0.5.16) (2022-05-09)
+
+**Note:** Version bump only for package @vtmn/css-popover
+
+
+
+
+
 ## [0.5.15](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-popover@0.5.14...@vtmn/css-popover@0.5.15) (2022-04-21)
 
 **Note:** Version bump only for package @vtmn/css-popover

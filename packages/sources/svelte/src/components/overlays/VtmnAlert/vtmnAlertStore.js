@@ -26,8 +26,7 @@ class VtmnAlertStore {
 
   close(alertId) {
     this._alerts.update((n) => {
-      const removedToast = n.filter((i) => i.id !== alertId);
-      return removedToast;
+      return n.filter((i) => i.id !== alertId);
     });
   }
 

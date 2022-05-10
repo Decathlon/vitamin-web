@@ -1,5 +1,5 @@
-import * as React from 'react';
 import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
+import * as React from 'react';
 import { VtmnIconColor, VtmnIconSize, VtmnIconVariant } from './types';
 
 export interface VtmnIconProps extends React.HTMLAttributes<HTMLElement> {
@@ -34,8 +34,8 @@ export const VtmnIcon: React.FC<VtmnIconProps> = ({
   style,
   ...props
 }) => {
-  const retrieveSemanticColor = (variant: VtmnIconVariant) => {
-    switch (variant) {
+  const retrieveSemanticColor = (iconVariant: VtmnIconVariant) => {
+    switch (iconVariant) {
       case 'default':
         return 'content-primary';
       case 'brand':

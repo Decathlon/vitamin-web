@@ -1,6 +1,6 @@
 <script lang="ts">
 import '@vtmn/css-snackbar/dist/index-with-vars.css';
-import { reactive, computed, defineComponent, PropType } from 'vue';
+import { computed, defineComponent, PropType } from 'vue';
 import { VtmnButton } from '../../index';
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnSnackbar',
@@ -8,18 +8,16 @@ export default /*#__PURE__*/ defineComponent({
   components: { VtmnButton },
   props: {
     withCloseButton: {
-      type: Boolean as PropType<Boolean>,
+      type: Boolean as PropType<boolean>,
       default: false,
     },
     actionLabel: {
-      type: String as PropType<String>,
+      type: String as PropType<string>,
       default: undefined,
     },
   },
   emits: ['close', 'action'],
-  setup(props, { emit }) {
-    props = reactive(props);
-
+  setup(_, { emit }) {
     const handleClose = (event: Event) => {
       return emit('close', (event.target as HTMLInputElement).value);
     };

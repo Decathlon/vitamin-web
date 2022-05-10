@@ -3,6 +3,50 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.33.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.33.3...@vtmn/vue@0.33.4) (2022-05-09)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+## [0.33.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.33.2...@vtmn/vue@0.33.3) (2022-05-09)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+## [0.33.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.33.1...@vtmn/vue@0.33.2) (2022-05-09)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+## [0.33.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.33.0...@vtmn/vue@0.33.1) (2022-05-09)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+# [0.33.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.32.0...@vtmn/vue@0.33.0) (2022-05-09)
+
+
+### Features
+
+* **@vtmn/vue:** add breadcrumb component ([#1147](https://github.com/Decathlon/vitamin-web/issues/1147)) ([3e9f56a](https://github.com/Decathlon/vitamin-web/commit/3e9f56a1e236454d7ada4adc60f693d6cc4f5266))
+* **@vtmn/vue:** add navbar component ([#1148](https://github.com/Decathlon/vitamin-web/issues/1148)) ([30b0686](https://github.com/Decathlon/vitamin-web/commit/30b0686a53fa067f6ae336f923d4f0f7f5721401))
+
+
+
+
+
 # [0.32.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.31.3...@vtmn/vue@0.32.0) (2022-05-09)
 
 
