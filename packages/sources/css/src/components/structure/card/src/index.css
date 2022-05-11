@@ -7,8 +7,8 @@
 @import '@vtmn/css-design-tokens/src/radius';
 
 .vtmn-card {
-  max-width: 100%;
-  min-width: min-content;
+  max-inline-size: 100%;
+  min-inline-size: min-content;
   border-radius: var(--vtmn-radius_200);
   box-shadow: var(--vtmn-shadow_100);
   position: relative;
@@ -24,13 +24,13 @@
 
 .vtmn-card_content
   > *:not(.vtmn-card_content--title, .vtmn-card_content--body) {
-  margin-top: var(--vtmn-spacing_3);
+  margin-block-start: var(--vtmn-spacing_3);
 }
 
 .vtmn-card_content--title {
   font-size: var(--vtmn-typo_title-5-font-size);
   font-weight: var(--vtmn-typo_font-weight--bold);
-  min-width: max-content;
+  min-inline-size: max-content;
 }
 
 .vtmn-card_content--body {
@@ -41,22 +41,22 @@
 .vtmn-card_variant--top-image {
   display: flex;
   flex-direction: column;
-  height: fit-content;
+  block-size: fit-content;
   background-color: var(--vtmn-semantic-color_background-primary);
 }
 
 .vtmn-card > .vtmn-card_image,
 .vtmn-card_variant--top-image > .vtmn-card_image {
-  width: fit-content;
-  height: 100%;
+  inline-size: fit-content;
+  block-size: 100%;
   margin: var(--vtmn-spacing_4);
   position: relative;
 }
 
 .vtmn-card > .vtmn-card_image--full,
 .vtmn-card_variant--top-image > .vtmn-card_image--full {
-  width: fit-content;
-  height: 100%;
+  inline-size: fit-content;
+  block-size: 100%;
   margin: 0;
 }
 
@@ -67,15 +67,15 @@
 
 .vtmn-card img,
 .vtmn-card_variant--top-image img {
-  width: 100%;
+  inline-size: 100%;
   aspect-ratio: 1 / 1;
 }
 
 .vtmn-card_variant--top-image .vtmn-tag,
 .vtmn-card_variant--full-image .vtmn-tag {
   position: absolute;
-  top: var(--vtmn-spacing_4);
-  left: var(--vtmn-spacing_4);
+  inset-block-start: var(--vtmn-spacing_4);
+  inset-inline-start: var(--vtmn-spacing_4);
 }
 
 .vtmn-card_image--full > img {
@@ -84,38 +84,38 @@
 
 .vtmn-card_variant--side-image {
   display: flex;
-  height: min-content;
+  block-size: min-content;
   flex-direction: row;
   background-color: var(--vtmn-semantic-color_background-primary);
 }
 
 .vtmn-card_variant--side-image > .vtmn-card_content {
-  margin-left: 0;
-  width: 67%;
+  margin-inline-start: 0;
+  inline-size: 67%;
 }
 
 .vtmn-card_variant--side-image > .vtmn-card_image {
-  width: 33%;
-  height: max-content;
+  inline-size: 33%;
+  block-size: max-content;
   margin: var(--vtmn-spacing_4);
 }
 
 .vtmn-card_variant--side-image img {
-  height: 100%;
+  block-size: 100%;
 }
 
 .vtmn-card_variant--side-image .vtmn-btn {
-  width: fit-content;
+  inline-size: fit-content;
 }
 
 .vtmn-card_variant--full-image > .vtmn-card_image {
-  width: 100%;
-  height: 100%;
+  inline-size: 100%;
+  block-size: 100%;
   margin: 0;
 }
 
 .vtmn-card_variant--full-image img {
-  height: 100%;
+  block-size: 100%;
   border-radius: var(--vtmn-radius_200);
 }
 
@@ -125,12 +125,12 @@
   flex-direction: column;
   justify-content: flex-end;
   margin: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+  inset-block-end: 0;
   padding: var(--vtmn-spacing_5);
-  height: auto;
+  block-size: auto;
   border-radius: var(--vtmn-radius_200);
   color: var(--vtmn-semantic-color_content-primary-reversed);
 }
