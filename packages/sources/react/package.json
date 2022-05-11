@@ -59,6 +59,7 @@
     "@vtmn/css-list": "^0.2.19",
     "@vtmn/css-loader": "^0.2.25",
     "@vtmn/css-modal": "^0.6.4",
+    "@vtmn/css-navbar": "^0.1.21",
     "@vtmn/css-popover": "^0.5.17",
     "@vtmn/css-price": "^0.3.2",
     "@vtmn/css-progressbar": "^0.4.14",
