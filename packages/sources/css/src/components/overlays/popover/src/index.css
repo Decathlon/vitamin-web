@@ -115,19 +115,26 @@
 .vtmn-popover[data-position^='bottom'] > [role='tooltip'] {
   bottom: 100%;
   left: 50%;
-  transform: translate(-50%, 120%);
+  transform: translate(-50%, 100%);
+}
+
+.vtmn-popover[data-position^='bottom']
+  > .vtmn-btn_size--small
+  + [role='tooltip'] {
+  bottom: -40%;
 }
 
 .vtmn-popover[data-position^='bottom']
   > .vtmn-btn_size--medium
-  + [role='tooltip'] {
-  bottom: 70%;
+  + [role='tooltip'],
+.vtmn-popover[data-position^='bottom'] > .vtmn-btn + [role='tooltip'] {
+  bottom: -40%;
 }
 
 .vtmn-popover[data-position^='bottom']
   > .vtmn-btn_size--large
   + [role='tooltip'] {
-  bottom: 50%;
+  bottom: -20%;
 }
 
 .vtmn-popover[data-position^='bottom'] > [role='tooltip']::after {

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.12.2...@vtmn/css-button@0.12.3) (2022-05-09)
+
+**Note:** Version bump only for package @vtmn/css-button
+
+
+
+
+
 ## [0.12.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.12.1...@vtmn/css-button@0.12.2) (2022-05-02)
 
 

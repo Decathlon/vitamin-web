@@ -1,5 +1,5 @@
+import { fireEvent, render } from '@testing-library/svelte';
 import VtmnDropdownItem from './VtmnDropdownItemWithSlots.svelte';
-import { render, fireEvent } from '@testing-library/svelte';
 
 describe('VtmnDropdownItem', () => {
   test('Should display the dropdown item', () => {
@@ -67,7 +67,6 @@ describe('VtmnDropdownItem', () => {
   });
 
   test('Should trigger on:change on click', async () => {
-    const handleClick = jest.fn();
     const group = [];
     const { container } = render(VtmnDropdownItem, {
       id: 'dropdown-item',

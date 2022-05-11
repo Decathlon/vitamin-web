@@ -75,7 +75,13 @@ export default /*#__PURE__*/ defineComponent({
 </script>
 
 <template>
-  <div :class="classes" :value="modelValue">
+  <div
+    :class="classes"
+    :value="modelValue"
+    role="button"
+    :aria-disabled="disabled"
+    :aria-pressed="selected && variant !== 'action'"
+  >
     <VtmnIcon
       v-if="(variant === 'input' || variant === 'action') && icon"
       :value="icon"

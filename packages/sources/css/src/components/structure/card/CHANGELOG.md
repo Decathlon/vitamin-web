@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-card@0.7.3...@vtmn/css-card@0.7.4) (2022-05-09)
+
+**Note:** Version bump only for package @vtmn/css-card
+
+
+
+
+
 ## [0.7.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-card@0.7.2...@vtmn/css-card@0.7.3) (2022-04-21)
 
 **Note:** Version bump only for package @vtmn/css-card

@@ -67,9 +67,6 @@
             <slot name="description" />
           </p>
         {/if}
-        {#if $$slots.actions}
-          <div class="vtmn-modal_content_body--overflow-indicator" />
-        {/if}
       </div>
       {#if $$slots.actions}
         <div class="vtmn-modal_content_actions">

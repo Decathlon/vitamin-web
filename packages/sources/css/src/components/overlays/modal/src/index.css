@@ -49,6 +49,7 @@
   font-weight: var(--vtmn-typo_font-weight--bold);
   font-size: rem(26px);
   line-height: rem(32px);
+  flex: auto;
 }
 
 .vtmn-modal_content_title .vtmn-btn {
@@ -69,6 +70,7 @@
 .vtmn-modal_content_body {
   margin: rem(16px) 0;
   overflow-y: auto;
+  flex: auto;
 }
 
 .vtmn-modal_content_body--text {

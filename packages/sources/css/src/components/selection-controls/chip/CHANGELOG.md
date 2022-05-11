@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-chip@0.7.0...@vtmn/css-chip@0.7.1) (2022-05-09)
+
+**Note:** Version bump only for package @vtmn/css-chip
+
+
+
+
+
+# [0.7.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-chip@0.6.14...@vtmn/css-chip@0.7.0) (2022-05-09)
+
+
+### Features
+
+* **@vtmn/css & @vtmn/vue & @vtmn/react & @vtmn/svelte:** chip, add role button + a11y attribute, improve css ([#1134](https://github.com/Decathlon/vitamin-web/issues/1134)) ([cef64c9](https://github.com/Decathlon/vitamin-web/commit/cef64c9a368824a9dd55bd0ad3a25e958d15aba3))
+
+
+
+
+
 ## [0.6.14](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-chip@0.6.13...@vtmn/css-chip@0.6.14) (2022-04-21)
 
 **Note:** Version bump only for package @vtmn/css-chip

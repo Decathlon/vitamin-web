@@ -32,6 +32,7 @@
   inline-size: rem(60px);
   padding-block: 0;
   padding-inline: rem(2px);
+  border: 0;
   background-color: var(--vtmn-semantic-color_background-primary);
   box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-secondary);
   text-align: center;
@@ -94,11 +95,6 @@
 .vtmn-quantity .vtmn-btn:first-child {
   border-radius: var(--vtmn-radius_100) 0 0 var(--vtmn-radius_100);
   margin-inline-end: rem(-2px);
-}
-
-.vtmn-quantity .vtmn-btn:last-child {
-  border-radius: 0 var(--vtmn-radius_100) var(--vtmn-radius_100) 0;
-  margin-inline-start: rem(-2px);
 }
 
 .vtmn-quantity_error-text {
