@@ -1,5 +1,5 @@
 <script lang="ts">
-import VtmnIcon from '@/guidelines/iconography/VtmnIcon';
+import VtmnIcon from '../../../guidelines/iconography/VtmnIcon';
 import '@vtmn/css-rating/dist/index-with-vars.css';
 import { computed, defineComponent, PropType, reactive } from 'vue';
 import { VtmnRatingSize } from './types';
@@ -85,8 +85,8 @@ export default /*#__PURE__*/ defineComponent({
         <label :for="`${name}-${i}`" />
       </template>
     </div>
-    <template v-else>
-      <template v-if="!compact" v-for="i in 5" :key="i">
+    <template v-else-if="!compact">
+      <template v-for="i in 5" :key="i">
         <VtmnIcon
           :value="
             i <= value
@@ -94,19 +94,6 @@ export default /*#__PURE__*/ defineComponent({
               : i > value && i - 0.5 <= value
               ? 'star-half-fill'
               : 'star-line'
-          "
-          :style="styleObject"
-          role="presentation"
-        />
-      </template>
-      <template v-else>
-        <VtmnIcon
-          :value="
-            value <= 2
-              ? 'star-line'
-              : value < 4
-              ? 'star-half-fill'
-              : 'star-fill'
           "
           :style="styleObject"
           role="presentation"
@@ -126,6 +113,15 @@ export default /*#__PURE__*/ defineComponent({
       >
         {{ comments }}
       </span>
+    </template>
+    <template v-else>
+      <VtmnIcon
+        :value="
+          value <= 2 ? 'star-line' : value < 4 ? 'star-half-fill' : 'star-fill'
+        "
+        :style="styleObject"
+        role="presentation"
+      />
     </template>
   </div>
 </template>
