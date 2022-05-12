@@ -45,6 +45,7 @@ export { default as VtmnRadioButton } from './components/selection-controls/Vtmn
 export { default as VtmnToggle } from './components/selection-controls/VtmnToggle';
 // Structure
 export { default as VtmnAccordion } from './components/structure/VtmnAccordion';
+export { default as VtmnCard } from './components/structure/VtmnCard';
 export { default as VtmnDivider } from './components/structure/VtmnDivider';
 export { default as VtmnList } from './components/structure/VtmnList';
 export { default as VtmnListItem } from './components/structure/VtmnListItem';
