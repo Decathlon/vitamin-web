@@ -3,6 +3,18 @@ import '@vtmn/css-button/dist/index-with-vars.css';
 
 export interface VtmnNavbarProps extends React.ComponentPropsWithoutRef<'nav'> {
   /**
+   * The left navigation of the navbar.
+   * @defaultValue undefined
+   */
+  leftNav?: React.ReactNode;
+
+  /**
+   * The logo of the navbar.
+   * @defaultValue undefined
+   */
+  logo?: React.ReactNode;
+
+  /**
    * The logo anchor of the navbar.
    * @type {string}
    * @defaultValue 'default'
@@ -10,20 +22,35 @@ export interface VtmnNavbarProps extends React.ComponentPropsWithoutRef<'nav'> {
   logoHref?: string;
 
   /**
-   * The content to render inside the component.
+   * The middle area of the navbar.
    * @defaultValue undefined
    */
-  children?: React.ReactNode;
+  middleArea?: React.ReactNode;
+
+  /**
+   * The right navigation of the navbar.
+   * @defaultValue undefined
+   */
+  rightNav?: React.ReactNode;
 }
 
 export const VtmnNavbar = ({
+  leftNav,
+  logo,
   logoHref = '#',
-  children,
-  ...props
+  middleArea,
+  rightNav,
 }: VtmnNavbarProps) => {
   return (
-    <nav className="vtmn-navbar" aria-label="navbar" {...props}>
-      {children}
+    <nav className="vtmn-navbar" aria-label="navbar">
+      {leftNav && <div className="navbar_left-navigation">{leftNav}</div>}
+      {logo && (
+        <div className="navbar_logo">
+          <a href={logoHref}>{logo}</a>
+        </div>
+      )}
+      {middleArea && <div className="navbar_middle-area">{middleArea}</div>}
+      {rightNav && <div className="navbar_right-navigation">{rightNav}</div>}
     </nav>
   );
 };
