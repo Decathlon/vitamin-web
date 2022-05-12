@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-snackbar",
-  "version": "0.5.15",
+  "version": "0.6.0",
   "description": "Decathlon Design System - Vitamin specific CSS styles for snackbar component",
   "keywords": [
     "design-system",

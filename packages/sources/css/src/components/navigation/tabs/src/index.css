@@ -6,8 +6,8 @@
 @import '@vtmn/css-design-tokens/src/transitions';
 
 .vtmn-tabs {
-  height: fit-content;
-  width: 100%;
+  block-size: fit-content;
+  inline-size: 100%;
   background-color: var(--vtmn-semantic-color_background-primary);
 }
 
@@ -29,11 +29,13 @@
   align-items: center;
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
-  padding: var(--vtmn-spacing_3) rem(20px) rem(10px) rem(20px);
+  padding-inline: rem(20px);
+  padding-block-start: var(--vtmn-spacing_3);
+  padding-block-end: rem(10px);
   white-space: nowrap;
   color: var(--vtmn-semantic-color_content-secondary);
-  border-bottom: rem(2px) solid transparent;
-  transition: border-bottom 200ms ease, color 200ms ease,
+  border-block-end: rem(2px) solid transparent;
+  transition: border-block-end 200ms ease, color 200ms ease,
     var(--vtmn-transition_focus-visible);
   outline: none;
   text-decoration: none;
@@ -49,7 +51,7 @@
 
 .vtmn-tabs a:focus {
   color: var(--vtmn-semantic-color_content-active);
-  border-bottom: rem(2px) solid var(--vtmn-semantic-color_content-active);
+  border-block-end: rem(2px) solid var(--vtmn-semantic-color_content-active);
 }
 
 .vtmn-tabs a:focus-visible {
@@ -95,7 +97,9 @@
 /* Medium (default) */
 .vtmn-tabs_size--medium a {
   font-size: var(--vtmn-typo_text-2-font-size);
-  padding: var(--vtmn-spacing_3) rem(20px) rem(10px) rem(20px);
+  padding-inline: rem(20px);
+  padding-block-start: var(--vtmn-spacing_3);
+  padding-block-end: rem(10px);
 }
 
 .vtmn-tabs_size--medium span[class^='vtmx-'] {
@@ -105,8 +109,9 @@
 /* Small */
 .vtmn-tabs_size--small a {
   font-size: var(--vtmn-typo_text-3-font-size);
-  padding: var(--vtmn-spacing_2) var(--vtmn-spacing_4) rem(6px)
-    var(--vtmn-spacing_4);
+  padding-inline: var(--vtmn-spacing_4);
+  padding-block-start: var(--vtmn-spacing_2);
+  padding-block-end: rem(6px);
 }
 
 .vtmn-tabs_size--small span[class^='vtmx-'] {

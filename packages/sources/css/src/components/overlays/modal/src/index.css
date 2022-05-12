@@ -14,10 +14,7 @@
       var(--vtmn-semantic-color_background-primary-reversed--l) / 80%
   );
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   z-index: calc(var(--vtmn-z-index_modal) - 1);
 }
 
@@ -26,12 +23,12 @@
   border-radius: var(--vtmn-radius_200);
   padding: rem(32px);
   font-family: var(--vtmn-typo_font-family);
-  width: rem(600px);
-  max-height: 90vh;
-  height: fit-content;
+  inline-size: rem(600px);
+  max-block-size: 90vh;
+  block-size: fit-content;
   position: fixed;
-  bottom: 50%;
-  left: 50%;
+  inset-block-end: 50%;
+  inset-inline-start: 50%;
   transform: translate(-50%, 50%);
   box-shadow: var(--vtmn-shadow_300);
   color: var(--vtmn-semantic-color_content-primary);
@@ -42,7 +39,7 @@
 
 .vtmn-modal_content_title {
   display: flex;
-  width: 100%;
+  inline-size: 100%;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -57,8 +54,8 @@
 
 .vtmn-modal_content_title .vtmn-btn {
   margin-inline-start: rem(12px);
-  margin-top: -6px;
-  margin-bottom: -6px;
+  margin-block-start: rem(-6px);
+  margin-block-end: rem(-6px);
 }
 
 .vtmn-modal_content_title .vtmn-btn span[class^='vtmx-'] {
@@ -77,11 +74,12 @@
 }
 
 .vtmn-modal_content_body--text {
+  padding-block-end: rem(30px);
   font-weight: var(--vtmn-typo_font-weight--normal);
   font-size: var(--vtmn-typo_text-3-font-size);
   line-height: rem(24px);
   align-self: flex-start;
-  text-align: left;
+  text-align: start;
 }
 
 .vtmn-modal_content_actions {
@@ -89,20 +87,21 @@
   margin: 0;
   display: flex;
   justify-content: flex-end;
-  width: 100%;
+  inline-size: 100%;
 }
 
 .vtmn-modal_content_actions > * {
-  margin: 0 rem(12px);
+  margin-block: 0;
+  margin-inline: rem(12px);
 }
 
 @media screen and (max-width: 599px) {
   .vtmn-modal_content {
-    width: 100%;
+    inline-size: 100%;
     padding: rem(24px);
-    max-height: 60%;
-    bottom: 0;
-    left: 0;
+    max-block-size: 60%;
+    inset-block-end: 0;
+    inset-inline-start: 0;
     transform: translate(0, 0);
     border-radius: var(--vtmn-radius_200) var(--vtmn-radius_200) 0 0;
   }
@@ -112,20 +111,21 @@
   }
 
   .vtmn-modal_content_actions > * {
-    margin: rem(6px) 0;
-    width: 100%;
+    margin-block: rem(6px);
+    margin-inline: 0;
+    inline-size: 100%;
   }
 
   .vtmn-modal_content_body--overflow-indicator {
-    bottom: 10rem;
-    left: rem(24px);
-    right: rem(24px);
-    height: 4rem;
+    inset-block-end: 10rem;
+    inset-inline-start: rem(24px);
+    inset-inline-end: rem(24px);
+    block-size: 4rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .vtmn-modal_content {
-    width: rem(900px);
+    inline-size: rem(900px);
   }
 }
