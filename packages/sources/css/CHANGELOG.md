@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.76.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.75.3...@vtmn/css@0.76.0) (2022-05-11)
+
+
+### Features
+
+* **@vtmn/css:** replace physical properties by logical properties ([#1140](https://github.com/Decathlon/vitamin-web/issues/1140)) ([71d13a8](https://github.com/Decathlon/vitamin-web/commit/71d13a8163fec6e3fc3c29647fbeadf46071b6ee))
+
+
+
+
+
+## [0.75.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.75.2...@vtmn/css@0.75.3) (2022-05-09)
+
+
+### Bug Fixes
+
+* **@vtmn/css-popover:** bottom position ([e307b3f](https://github.com/Decathlon/vitamin-web/commit/e307b3f2157353ad523eb64913870c9cbc629dfa))
+
+
+
+
+
+## [0.75.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.75.1...@vtmn/css@0.75.2) (2022-05-09)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+## [0.75.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.75.0...@vtmn/css@0.75.1) (2022-05-09)
+
+**Note:** Version bump only for package @vtmn/css
+
+
+
+
+
+# [0.75.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.74.2...@vtmn/css@0.75.0) (2022-05-09)
+
+
+### Features
+
+* **@vtmn/css & @vtmn/vue & @vtmn/react & @vtmn/svelte:** chip, add role button + a11y attribute, improve css ([#1134](https://github.com/Decathlon/vitamin-web/issues/1134)) ([cef64c9](https://github.com/Decathlon/vitamin-web/commit/cef64c9a368824a9dd55bd0ad3a25e958d15aba3))
+
+
+
+
+
 ## [0.74.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.74.1...@vtmn/css@0.74.2) (2022-05-06)
 
 

@@ -17,7 +17,8 @@
   border: 0;
   line-height: 1;
   inline-size: max-content;
-  padding: rem(14px) rem(24px);
+  padding-block: rem(14px);
+  padding-inline: rem(24px);
   font-family: var(--vtmn-typo_font-family);
   font-weight: var(--vtmn-typo_font-weight--bold);
   font-size: var(--vtmn-typo_text-2-font-size);
@@ -208,21 +209,24 @@
 /* Sizes */
 .vtmn-btn_size--small {
   font-size: rem(14px);
-  padding: rem(8px) rem(16px);
+  padding-block: rem(8px);
+  padding-inline: rem(16px);
   block-size: rem(32px);
   letter-spacing: rem(0.24px);
 }
 
 .vtmn-btn_size--medium {
   font-size: rem(16px);
-  padding: rem(14px) rem(24px);
+  padding-block: rem(14px);
+  padding-inline: rem(24px);
   block-size: rem(48px);
   letter-spacing: rem(0.27px);
 }
 
 .vtmn-btn_size--large {
   font-size: rem(20px);
-  padding: rem(20px) rem(40px);
+  padding-block: rem(20px);
+  padding-inline: rem(40px);
   block-size: rem(64px);
   letter-spacing: rem(0.34px);
 }

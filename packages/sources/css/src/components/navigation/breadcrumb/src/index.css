@@ -7,8 +7,8 @@
 
 .vtmn-breadcrumb {
   display: block;
-  height: fit-content;
-  width: fit-content;
+  block-size: fit-content;
+  inline-size: fit-content;
   font-family: var(--vtmn-typo_font-family);
   color: var(--vtmn-semantic-color_content-tertiary);
   font-size: var(--vtmn-typo_text-3-font-size);
@@ -44,16 +44,17 @@
 }
 
 .vtmn-breadcrumb li > span {
-  margin-right: rem(4px);
+  margin-inline-end: rem(4px);
 }
 
 .vtmn-breadcrumb li:not(:last-child)::after {
   content: ' ';
   display: inline-block;
   transform: rotate(15deg);
-  border-right: 0.1em solid currentcolor;
+  border-inline-end: 0.1em solid currentcolor;
   height: 0.8em;
-  margin: 0 rem(8px);
+  margin-block: 0;
+  margin-inline: rem(8px);
 }
 
 .vtmn-breadcrumb li > a:hover,

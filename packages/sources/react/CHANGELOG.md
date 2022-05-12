@@ -3,6 +3,94 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.40.1...@vtmn/react@0.41.0) (2022-05-12)
+
+
+### Features
+
+* **@vtmn/react:** add `VtmnNavbar` component ([#1156](https://github.com/Decathlon/vitamin-web/issues/1156)) ([5ddf7a8](https://github.com/Decathlon/vitamin-web/commit/5ddf7a833c1ef877209008ec71d59b98e9579d9a))
+
+
+
+
+
+## [0.40.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.40.0...@vtmn/react@0.40.1) (2022-05-11)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+# [0.40.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.39.3...@vtmn/react@0.40.0) (2022-05-10)
+
+
+### Features
+
+* **@vtmn/vue:** add progressbar component ([#1154](https://github.com/Decathlon/vitamin-web/issues/1154)) ([77a817c](https://github.com/Decathlon/vitamin-web/commit/77a817cbe9571d6a1f287d69dbec0454b720ecec))
+
+
+
+
+
+## [0.39.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.39.2...@vtmn/react@0.39.3) (2022-05-09)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.39.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.39.1...@vtmn/react@0.39.2) (2022-05-09)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.39.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.39.0...@vtmn/react@0.39.1) (2022-05-09)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+# [0.39.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.38.0...@vtmn/react@0.39.0) (2022-05-09)
+
+
+### Features
+
+* **@vtmn/react:** add `VtmnBreadcrumb` component ([#1146](https://github.com/Decathlon/vitamin-web/issues/1146)) ([e0b58c1](https://github.com/Decathlon/vitamin-web/commit/e0b58c1d5006a7eb31295650a648fce97b556beb))
+* **@vtmn/react:** add `VtmnList` component ([#1136](https://github.com/Decathlon/vitamin-web/issues/1136)) ([8ea2285](https://github.com/Decathlon/vitamin-web/commit/8ea22858a1177af22827f1fafab184beebc2ee90))
+
+
+
+
+
+# [0.38.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.37.0...@vtmn/react@0.38.0) (2022-05-09)
+
+
+### Features
+
+* **@vtmn/react:** add snackbar component ([#1145](https://github.com/Decathlon/vitamin-web/issues/1145)) ([a13ff49](https://github.com/Decathlon/vitamin-web/commit/a13ff496344bd10ab003e2bf837c575feac43c9d))
+
+
+
+
+
+# [0.37.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.36.2...@vtmn/react@0.37.0) (2022-05-09)
+
+
+### Features
+
+* **@vtmn/css & @vtmn/vue & @vtmn/react & @vtmn/svelte:** chip, add role button + a11y attribute, improve css ([#1134](https://github.com/Decathlon/vitamin-web/issues/1134)) ([cef64c9](https://github.com/Decathlon/vitamin-web/commit/cef64c9a368824a9dd55bd0ad3a25e958d15aba3))
+
+
+
+
+
 ## [0.36.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.36.1...@vtmn/react@0.36.2) (2022-05-06)
 
 **Note:** Version bump only for package @vtmn/react

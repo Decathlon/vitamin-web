@@ -1,6 +1,6 @@
 <script lang="ts">
 import '@vtmn/css-skeleton/dist/index-with-vars.css';
-import { reactive, computed, defineComponent, PropType, Prop } from 'vue';
+import { computed, defineComponent, PropType, reactive } from 'vue';
 import { VtmnSkeletonShape } from './types';
 
 export default /*#__PURE__*/ defineComponent({

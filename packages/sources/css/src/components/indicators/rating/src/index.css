@@ -15,14 +15,14 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  width: fit-content;
+  inline-size: fit-content;
 }
 
 .vtmn-rating--interactive {
   position: relative;
-  height: 32px;
-  width: calc(rem(40px) * 5);
-  min-width: calc(rem(40px) * 5);
+  block-size: rem(32px);
+  inline-size: calc(rem(40px) * 5);
+  min-inline-size: calc(rem(40px) * 5);
   background-image: url("data:image/svg+xml;charset=utf-8, <svg width='32' height='32' viewBox='0 0 16 16' fill='%23007DBC' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M3.298 14.805 8 12.173l4.702 2.632-1.05-5.285 3.957-3.659-5.352-.634L8 .333 5.743 5.227.39 5.86l3.958 3.66-1.05 5.285zm7.533-2.575L8 10.645 5.169 12.23 5.8 9.048 3.42 6.845l3.222-.382L8 3.517l1.359 2.946 3.222.382-2.382 2.203.632 3.182z'/></svg>");
   background-size: rem(40px) rem(32px);
   outline: 0;
@@ -34,7 +34,7 @@
 
 .vtmn-rating--interactive label {
   position: absolute;
-  height: 100%;
+  block-size: 100%;
   background-size: rem(40px) rem(32px);
   outline: none;
   cursor: pointer;
@@ -43,27 +43,27 @@
 
 .vtmn-rating--interactive label:nth-of-type(1) {
   z-index: 5;
-  width: rem(40px);
+  inline-size: rem(40px);
 }
 
 .vtmn-rating--interactive label:nth-of-type(2) {
   z-index: 4;
-  width: calc(rem(40px) * 2);
+  inline-size: calc(rem(40px) * 2);
 }
 
 .vtmn-rating--interactive label:nth-of-type(3) {
   z-index: 3;
-  width: calc(rem(40px) * 3);
+  inline-size: calc(rem(40px) * 3);
 }
 
 .vtmn-rating--interactive label:nth-of-type(4) {
   z-index: 2;
-  width: calc(rem(40px) * 4);
+  inline-size: calc(rem(40px) * 4);
 }
 
 .vtmn-rating--interactive label:nth-of-type(5) {
   z-index: 1;
-  width: calc(rem(40px) * 5);
+  inline-size: calc(rem(40px) * 5);
 }
 
 .vtmn-rating--interactive input:checked + label,
@@ -77,8 +77,8 @@
   padding: 0;
   margin: 0;
   position: absolute;
-  height: 0;
-  width: 0;
+  block-size: 0;
+  inline-size: 0;
 }
 
 .vtmn-rating:not([aria-disabled='true']) input:focus-visible + label {
@@ -143,9 +143,9 @@
 }
 
 .vtmn-rating_size--small > .vtmn-rating--interactive {
-  height: 16px;
-  width: calc(rem(20px) * 5);
-  min-width: calc(rem(20px) * 5);
+  block-size: rem(16px);
+  inline-size: calc(rem(20px) * 5);
+  min-inline-size: calc(rem(20px) * 5);
   background-image: url("data:image/svg+xml;charset=utf-8, <svg width='16' height='16' viewBox='0 0 16 16' fill='%23007DBC' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M3.298 14.805 8 12.173l4.702 2.632-1.05-5.285 3.957-3.659-5.352-.634L8 .333 5.743 5.227.39 5.86l3.958 3.66-1.05 5.285zm7.533-2.575L8 10.645 5.169 12.23 5.8 9.048 3.42 6.845l3.222-.382L8 3.517l1.359 2.946 3.222.382-2.382 2.203.632 3.182z'/></svg>");
   background-size: rem(20px) rem(16px);
 }
@@ -155,23 +155,23 @@
 }
 
 .vtmn-rating_size--small > .vtmn-rating--interactive label:nth-of-type(1) {
-  width: rem(20px);
+  inline-size: rem(20px);
 }
 
 .vtmn-rating_size--small > .vtmn-rating--interactive label:nth-of-type(2) {
-  width: calc(rem(20px) * 2);
+  inline-size: calc(rem(20px) * 2);
 }
 
 .vtmn-rating_size--small > .vtmn-rating--interactive label:nth-of-type(3) {
-  width: calc(rem(20px) * 3);
+  inline-size: calc(rem(20px) * 3);
 }
 
 .vtmn-rating_size--small > .vtmn-rating--interactive label:nth-of-type(4) {
-  width: calc(rem(20px) * 4);
+  inline-size: calc(rem(20px) * 4);
 }
 
 .vtmn-rating_size--small > .vtmn-rating--interactive label:nth-of-type(5) {
-  width: calc(rem(20px) * 5);
+  inline-size: calc(rem(20px) * 5);
 }
 
 .vtmn-rating_size--small > .vtmn-rating--interactive input:checked + label,
@@ -193,9 +193,9 @@
 }
 
 .vtmn-rating_size--medium > .vtmn-rating--interactive {
-  height: 32px;
-  width: calc(rem(40px) * 5);
-  min-width: calc(rem(40px) * 5);
+  block-size: rem(32px);
+  inline-size: calc(rem(40px) * 5);
+  min-inline-size: calc(rem(40px) * 5);
   background-image: url("data:image/svg+xml;charset=utf-8, <svg width='32' height='32' viewBox='0 0 16 16' fill='%23007DBC' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M3.298 14.805 8 12.173l4.702 2.632-1.05-5.285 3.957-3.659-5.352-.634L8 .333 5.743 5.227.39 5.86l3.958 3.66-1.05 5.285zm7.533-2.575L8 10.645 5.169 12.23 5.8 9.048 3.42 6.845l3.222-.382L8 3.517l1.359 2.946 3.222.382-2.382 2.203.632 3.182z'/></svg>");
   background-size: rem(40px) rem(32px);
 }
@@ -205,23 +205,23 @@
 }
 
 .vtmn-rating_size--medium > .vtmn-rating--interactive label:nth-of-type(1) {
-  width: rem(40px);
+  inline-size: rem(40px);
 }
 
 .vtmn-rating_size--medium > .vtmn-rating--interactive label:nth-of-type(2) {
-  width: calc(rem(40px) * 2);
+  inline-size: calc(rem(40px) * 2);
 }
 
 .vtmn-rating_size--medium > .vtmn-rating--interactive label:nth-of-type(3) {
-  width: calc(rem(40px) * 3);
+  inline-size: calc(rem(40px) * 3);
 }
 
 .vtmn-rating_size--medium > .vtmn-rating--interactive label:nth-of-type(4) {
-  width: calc(rem(40px) * 4);
+  inline-size: calc(rem(40px) * 4);
 }
 
 .vtmn-rating_size--medium > .vtmn-rating--interactive label:nth-of-type(5) {
-  width: calc(rem(40px) * 5);
+  inline-size: calc(rem(40px) * 5);
 }
 
 .vtmn-rating_size--medium > .vtmn-rating--interactive input:checked + label,

@@ -7,8 +7,8 @@
 
 .vtmn-dropdown {
   box-sizing: border-box;
-  width: fit-content;
-  height: fit-content;
+  inline-size: fit-content;
+  block-size: fit-content;
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
   line-height: var(--vtmn-typo_text-2-line-height);
@@ -20,15 +20,15 @@
 .vtmn-dropdown details {
   box-sizing: border-box;
   display: block;
-  width: fit-content;
-  min-height: rem(48px);
-  height: fit-content;
+  inline-size: fit-content;
+  min-block-size: rem(48px);
+  block-size: fit-content;
   outline: 0;
 }
 
 .vtmn-dropdown > label {
   display: inline-block;
-  margin-block-end: 4px;
+  margin-block-end: rem(4px);
 }
 
 .vtmn-dropdown summary {
@@ -36,7 +36,7 @@
   cursor: pointer;
   list-style: none;
   position: relative;
-  width: fit-content;
+  inline-size: fit-content;
   border-radius: rem(4px);
   background-color: var(--vtmn-semantic-color_background-primary);
   padding: var(--vtmn-spacing_3) var(--vtmn-spacing_7) var(--vtmn-spacing_3)
@@ -78,11 +78,11 @@
   content: '';
   mask: url("data:image/svg+xml;charset=utf-8, <svg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m8 8.781 3.3-3.3.943.943L8 10.667 3.757 6.424l.943-.943 3.3 3.3z'/></svg>");
   mask-size: cover;
-  width: rem(24px);
-  height: rem(24px);
+  inline-size: rem(24px);
+  block-size: rem(24px);
   position: absolute;
   display: block;
-  right: rem(10px);
+  inset-inline-end: rem(10px);
   transition: transform 200ms ease;
   background-color: var(--vtmn-semantic-color_content-primary);
 }
@@ -94,21 +94,21 @@
   position: absolute;
   background-color: var(--vtmn-semantic-color_background-primary);
   border-radius: rem(4px);
-  height: fit-content;
-  width: fit-content;
+  block-size: fit-content;
+  inline-size: fit-content;
   padding: var(--vtmn-spacing_2);
   box-shadow: var(--vtmn-shadow_300);
   z-index: 2;
   overflow-y: auto;
   transform: translateY(var(--vtmn-spacing_1));
-  max-height: rem(260px);
+  max-block-size: rem(260px);
 }
 
 .vtmn-dropdown_items input[type='checkbox'] {
   position: relative;
   opacity: 0;
-  width: 0;
-  height: 0;
+  inline-size: 0;
+  block-size: 0;
 }
 
 .vtmn-dropdown_items > label {
@@ -116,7 +116,7 @@
   padding: var(--vtmn-spacing_3);
   margin: 0;
   width: 100%;
-  height: 100%;
+  block-size: 100%;
   border-radius: rem(4px);
   display: inline-flex;
   position: relative;
@@ -154,7 +154,7 @@
   content: '';
   mask: url("data:image/svg+xml;charset=utf-8, <svg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='m6.667 10.115 6.128-6.129.943.943L6.667 12 2.424 7.757l.943-.942 3.3 3.3Z'/></svg>");
   width: rem(24px);
-  height: rem(24px);
+  block-size: rem(24px);
   position: relative;
   display: block;
   margin-inline-start: var(--vtmn-spacing_3);
@@ -164,8 +164,9 @@
 .vtmn-dropdown_items > input:checked + label::after {
   background-color: var(--vtmn-semantic-color_content-active);
   position: absolute;
-  right: 0;
-  margin: 0 rem(12px);
+  inset-inline-end: 0;
+  margin-block: 0;
+  margin-inline: rem(12px);
 }
 
 .vtmn-dropdown details[open] summary::after {

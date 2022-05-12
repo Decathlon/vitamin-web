@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '@vtmn/css-button/dist/index-with-vars.css';
+import '@vtmn/css-search/dist/index-with-vars.css';
 import clsx from 'clsx';
 import { VtmnSearchVariant, VtmnSearchSize } from './types';
 import { VtmnButton } from '../../actions/VtmnButton/VtmnButton';

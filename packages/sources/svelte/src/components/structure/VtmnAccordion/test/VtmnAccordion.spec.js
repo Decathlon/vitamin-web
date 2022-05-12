@@ -1,6 +1,5 @@
 import '@testing-library/jest-dom';
-
-import { render, fireEvent } from '@testing-library/svelte';
+import { render } from '@testing-library/svelte';
 import VtmnAccordion from './VtmnAccordionWithSlots.svelte';
 
 describe('VtmnAccordion', () => {
