@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.42.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.41.0...@vtmn/react@0.42.0) (2022-05-12)
+
+
+### Features
+
+* **@vtmn/vue:** add `VtmnCard` component ([#1152](https://github.com/Decathlon/vitamin-web/issues/1152)) ([181b607](https://github.com/Decathlon/vitamin-web/commit/181b60782f06743c7e0ac33e05a8b41a1b1dcc36))
+
+
+
+
+
 # [0.41.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.40.1...@vtmn/react@0.41.0) (2022-05-12)
 
 
