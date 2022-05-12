@@ -7,7 +7,7 @@ export interface VtmnSelectProps extends React.ComponentPropsWithRef<'select'> {
   errorText?: string;
   id: string;
   labelText?: string;
-  options: React.ComponentPropsWithoutRef<'option'>[];
+  options: React.ReactNode[];
   valid?: boolean;
 }
 
