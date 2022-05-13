@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.45.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.45.0...@vtmn/svelte@0.45.1) (2022-05-13)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** add id to modal ([#1157](https://github.com/Decathlon/vitamin-web/issues/1157)) ([80c0add](https://github.com/Decathlon/vitamin-web/commit/80c0add3c1acd77a375aa58f73ee01f5a045bed6))
+
+
+
+
+
 # [0.45.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.44.1...@vtmn/svelte@0.45.0) (2022-05-12)
 
 
