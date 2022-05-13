@@ -11,6 +11,11 @@
    */
   export let open = false;
 
+  /**
+   * @type {string} Id of the modal
+   */
+  export let id = undefined;
+
   let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
@@ -47,7 +52,7 @@
       class="vtmn-modal_background-overlay"
       on:click={handleClose}
     />
-    <div class={componentClass}>
+    <div {id} class={componentClass}>
       <div class="vtmn-modal_content_title">
         {#if $$slots.title}
           <span id="vtmn-modal-title" class="vtmn-modal_content_title--text"

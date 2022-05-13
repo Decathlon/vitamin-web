@@ -47,6 +47,13 @@ describe('VtmnModal', () => {
       });
       expect(getModal(container)).toBeVisible();
     });
+    test('Should have an id', () => {
+      const { container } = render(VtmnModal, {
+        open: true,
+        id: 'unit-test',
+      });
+      expect(getModalContent(container)).toHaveAttribute('id', 'unit-test');
+    });
     test('Should pass custom class to modal content', () => {
       const { container } = render(VtmnModal, {
         open: true,
