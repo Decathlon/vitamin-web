@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-navbar@0.1.21...@vtmn/css-navbar@0.2.0) (2022-05-11)
+
+
+### Features
+
+* **@vtmn/css:** replace physical properties by logical properties ([#1140](https://github.com/Decathlon/vitamin-web/issues/1140)) ([71d13a8](https://github.com/Decathlon/vitamin-web/commit/71d13a8163fec6e3fc3c29647fbeadf46071b6ee))
+
+
+
+
+
+## [0.1.21](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-navbar@0.1.20...@vtmn/css-navbar@0.1.21) (2022-05-09)
+
+**Note:** Version bump only for package @vtmn/css-navbar
+
+
+
+
+
+## [0.1.20](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-navbar@0.1.19...@vtmn/css-navbar@0.1.20) (2022-04-21)
+
+**Note:** Version bump only for package @vtmn/css-navbar
+
+
+
+
+
 ## [0.1.19](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-navbar@0.1.18...@vtmn/css-navbar@0.1.19) (2022-03-11)
 
 **Note:** Version bump only for package @vtmn/css-navbar

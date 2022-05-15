@@ -5,51 +5,77 @@
 </style>
 
 <div class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap">
-  <div class="vtmn-chip vtmn-chip_variant--single-choice" tabindex="0">
+  <div
+    class="vtmn-chip vtmn-chip_variant--single-choice"
+    role="button"
+    tabindex="0"
+    aria-pressed="false"
+  >
     Single choice
   </div>
 
   <div
-    class="vtmn-chip vtmn-chip_variant--single-choice vtmn-chip--selected"
+    class="vtmn-chip vtmn-chip_variant--single-choice"
+    role="button"
     tabindex="0"
+    aria-pressed="true"
   >
     Single choice selected
   </div>
 
-  <div class="vtmn-chip vtmn-chip_variant--single-choice" tabindex="0">
-    Single choice
+  <div
+    class="vtmn-chip vtmn-chip_variant--single-choice"
+    role="button"
+    aria-pressed="false"
+    aria-disabled="true"
+  >
+    Single choice disabled
   </div>
 
-  <div class="vtmn-chip vtmn-chip_variant--single-choice vtmn-chip--disabled">
-    Single choice disabled
+  <div
+    class="vtmn-chip vtmn-chip_variant--single-choice"
+    role="button"
+    aria-pressed="true"
+    aria-disabled="true"
+  >
+    Single choice selected and disabled
   </div>
 </div>
 
 <div class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap">
   <div
     class="vtmn-chip vtmn-chip_variant--single-choice vtmn-chip_size--small"
+    role="button"
     tabindex="0"
+    aria-pressed="false"
   >
     Single choice
   </div>
 
   <div
-    class="vtmn-chip vtmn-chip_variant--single-choice vtmn-chip_size--small vtmn-chip--selected"
+    class="vtmn-chip vtmn-chip_variant--single-choice vtmn-chip_size--small"
+    role="button"
     tabindex="0"
+    aria-pressed="true"
   >
     Single choice selected
   </div>
 
   <div
     class="vtmn-chip vtmn-chip_variant--single-choice vtmn-chip_size--small"
-    tabindex="0"
+    role="button"
+    aria-pressed="false"
+    aria-disabled="true"
   >
-    Single choice
+    Single choice disabled
   </div>
 
   <div
-    class="vtmn-chip vtmn-chip_variant--single-choice vtmn-chip_size--small vtmn-chip--disabled"
+    class="vtmn-chip vtmn-chip_variant--single-choice vtmn-chip_size--small"
+    role="button"
+    aria-pressed="true"
+    aria-disabled="true"
   >
-    Single choice disabled
+    Single choice selected and disabled
   </div>
 </div>

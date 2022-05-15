@@ -11,6 +11,11 @@
    */
   export let open = false;
 
+  /**
+   * @type {string} Id of the modal
+   */
+  export let id = undefined;
+
   let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
@@ -24,12 +29,17 @@
   };
 </script>
 
+<svelte:head>
+  {#if open}
+    <style type="text/css">
+      body {
+        overflow: hidden;
+      }
+    </style>
+  {/if}
+</svelte:head>
+
 {#if open}
-  <style>
-    body {
-      overflow: hidden;
-    }
-  </style>
   <div
     class="vtmn-modal"
     role="dialog"
@@ -42,7 +52,7 @@
       class="vtmn-modal_background-overlay"
       on:click={handleClose}
     />
-    <div class={componentClass}>
+    <div {id} class={componentClass}>
       <div class="vtmn-modal_content_title">
         {#if $$slots.title}
           <span id="vtmn-modal-title" class="vtmn-modal_content_title--text"
@@ -61,9 +71,6 @@
           <p id="vtmn-modal-description" class="vtmn-modal_content_body--text">
             <slot name="description" />
           </p>
-        {/if}
-        {#if $$slots.actions}
-          <div class="vtmn-modal_content_body--overflow-indicator" />
         {/if}
       </div>
       {#if $$slots.actions}

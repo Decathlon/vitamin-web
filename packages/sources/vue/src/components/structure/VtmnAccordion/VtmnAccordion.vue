@@ -39,6 +39,7 @@ export default /*#__PURE__*/ defineComponent({
     :class="classes"
     :aria-disabled="disabled"
     :open="open"
+    :aria-expanded="open"
     v-bind="$attrs"
   >
     <summary>{{ summary }}</summary>

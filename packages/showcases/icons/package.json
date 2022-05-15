@@ -27,7 +27,7 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "storybook-addon-designs": "^6.0.0",
-    "webpack": "5.71.0"
+    "webpack": "5.72.1"
   },
   "licenses": [
     {

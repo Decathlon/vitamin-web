@@ -1,8 +1,8 @@
 <script>
+  import VtmnIcon from '../../../guidelines/iconography/VtmnIcon/VtmnIcon.svelte';
   import { cn } from '../../../utils/classnames';
   import { isFloat } from '../../../utils/math';
   import { VTMN_RATING_SIZE } from './enum';
-  import VtmnIcon from '../../../guidelines/iconography/VtmnIcon/VtmnIcon.svelte';
 
   /**
    * @type {string} name used on interactive mode to name the inputs
@@ -17,7 +17,7 @@
   export let emphasis = false;
 
   /**
-   * @type {boolean} size of the component
+   * @type {string} size of the component
    * @default medium
    */
   export let size = VTMN_RATING_SIZE.MEDIUM;

@@ -12,7 +12,7 @@
   font-size: var(--vtmn-typo_text-3-font-size);
   line-height: var(--vtmn-typo_text-3-line-height);
   color: var(--vtmn-semantic-color_content-primary);
-  width: 100%;
+  inline-size: 100%;
 }
 
 .vtmn-divider::before,
@@ -20,9 +20,9 @@
 .vtmn-divider_orientation--horizontal::before,
 .vtmn-divider_orientation--horizontal::after {
   content: '';
-  height: rem(1px);
+  block-size: rem(1px);
   background-color: var(--vtmn-semantic-color_border-secondary);
-  width: 100%;
+  inline-size: 100%;
 }
 
 .vtmn-divider:not(:empty):not(.vtmn-divider_orientation--vertical)::before {
@@ -35,26 +35,26 @@
 
 .vtmn-divider_orientation--horizontal.vtmn-divider_text-position--start::before,
 .vtmn-divider_orientation--horizontal.vtmn-divider_text-position--end::after {
-  width: var(--vtmn-spacing_10);
-  min-width: var(--vtmn-spacing_10);
+  inline-size: var(--vtmn-spacing_10);
+  min-inline-size: var(--vtmn-spacing_10);
 }
 
 .vtmn-divider_orientation--horizontal.vtmn-divider_text-position--start::after,
 .vtmn-divider_orientation--horizontal.vtmn-divider_text-position--end::before,
 .vtmn-divider_orientation--horizontal.vtmn-divider_text-position--center::before,
 .vtmn-divider_orientation--horizontal.vtmn-divider_text-position--center::after {
-  width: 100%;
+  inline-size: 100%;
 }
 
 .vtmn-divider_orientation--vertical {
   flex-direction: column;
-  height: 100%;
+  block-size: 100%;
 }
 
 .vtmn-divider_orientation--vertical::before,
 .vtmn-divider_orientation--vertical::after {
-  width: rem(1px);
-  height: 100%;
+  inline-size: rem(1px);
+  block-size: 100%;
 }
 
 .vtmn-divider_orientation--vertical:not(:empty)::before {
@@ -67,13 +67,13 @@
 
 .vtmn-divider_orientation--vertical.vtmn-divider_text-position--start::before,
 .vtmn-divider_orientation--vertical.vtmn-divider_text-position--end::after {
-  height: var(--vtmn-spacing_10);
-  min-height: var(--vtmn-spacing_10);
+  block-size: var(--vtmn-spacing_10);
+  min-block-size: var(--vtmn-spacing_10);
 }
 
 .vtmn-divider_orientation--vertical.vtmn-divider_text-position--end::before,
 .vtmn-divider_orientation--vertical.vtmn-divider_text-position--start::after,
 .vtmn-divider_orientation--vertical.vtmn-divider_text-position--center::before,
 .vtmn-divider_orientation--vertical.vtmn-divider_text-position--center::after {
-  height: 100%;
+  block-size: 100%;
 }

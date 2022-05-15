@@ -5,23 +5,40 @@
 </style>
 
 <div class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap">
-  <div class="vtmn-chip vtmn-chip_variant--single-choice" tabindex="0">
+  <div
+    class="vtmn-chip vtmn-chip_variant--single-choice"
+    role="button"
+    tabindex="0"
+    aria-pressed="false"
+  >
     Single choice
   </div>
 
   <div
-    class="vtmn-chip vtmn-chip_variant--single-choice vtmn-chip--selected"
+    class="vtmn-chip vtmn-chip_variant--single-choice"
+    role="button"
     tabindex="0"
+    aria-pressed="true"
   >
     Single choice selected
   </div>
 
-  <div class="vtmn-chip vtmn-chip_variant--single-choice" tabindex="0">
-    Single choice
+  <div
+    class="vtmn-chip vtmn-chip_variant--single-choice"
+    role="button"
+    aria-pressed="false"
+    aria-disabled="true"
+  >
+    Single choice disabled
   </div>
 
-  <div class="vtmn-chip vtmn-chip_variant--single-choice vtmn-chip--disabled">
-    Single choice disabled
+  <div
+    class="vtmn-chip vtmn-chip_variant--single-choice"
+    role="button"
+    aria-pressed="true"
+    aria-disabled="true"
+  >
+    Single choice selected and disabled
   </div>
 </div>
 
@@ -29,25 +46,31 @@
   <div
     class="vtmn-chip vtmn-chip_variant--input vtmn-chip_size--small"
     tabindex="0"
+    role="button"
+    aria-pressed="false"
   >
     HTML
   </div>
 
   <div
-    class="vtmn-chip vtmn-chip_variant--input vtmn-chip_size--small vtmn-chip--selected"
+    class="vtmn-chip vtmn-chip_variant--input vtmn-chip_size--small"
+    role="button"
+    aria-pressed="true"
   >
-    <span class="vtmx-ruler-line"></span>
+    <span class="vtmx-ruler-line" aria-hidden="true"></span>
     CSS
     <button
       class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_size--small vtmn-btn_variant--ghost-reversed"
-      aria-label="Unselect CSS"
     >
-      <span class="vtmx-close-line"></span>
+      <span class="vtmn-sr-only">Unselect this chip</span>
+      <span class="vtmx-close-line" aria-hidden="true"></span>
     </button>
   </div>
 
   <div
-    class="vtmn-chip vtmn-chip_variant--input vtmn-chip_size--small vtmn-chip--selected"
+    class="vtmn-chip vtmn-chip_variant--input vtmn-chip_size--small"
+    role="button"
+    aria-pressed="true"
   >
     <img
       src="https://storage.googleapis.com/dkt-design-cdn/images/landscape-placeholder.jpg"
@@ -56,45 +79,63 @@
     JavaScript
     <button
       class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_size--small vtmn-btn_variant--ghost-reversed"
-      aria-label="Unselect JavaScript"
     >
-      <span class="vtmx-close-line"></span>
+      <span class="vtmn-sr-only">Unselect this chip</span>
+      <span class="vtmx-close-line" aria-hidden="true"></span>
     </button>
   </div>
 
   <div
-    class="vtmn-chip vtmn-chip_variant--input vtmn-chip_size--small vtmn-chip--selected vtmn-chip--disabled"
+    class="vtmn-chip vtmn-chip_variant--input vtmn-chip_size--small"
+    role="button"
+    aria-pressed="true"
+    aria-disabled="true"
   >
     WASM
     <button
       class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_size--small vtmn-btn_variant--ghost-reversed"
-      aria-label="Unselect WASM"
       disabled
     >
-      <span class="vtmx-close-line"></span>
+      <span class="vtmn-sr-only">Unselect this chip</span>
+      <span class="vtmx-close-line" aria-hidden="true"></span>
     </button>
   </div>
 </div>
 
 <div class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap">
   <div
-    class="vtmn-chip vtmn-chip_variant--filter vtmn-chip--selected"
+    class="vtmn-chip vtmn-chip_variant--filter"
+    role="button"
     tabindex="0"
+    aria-pressed="true"
   >
     Nature hiking
   </div>
 
-  <div class="vtmn-chip vtmn-chip_variant--filter" tabindex="0">
+  <div
+    class="vtmn-chip vtmn-chip_variant--filter"
+    role="button"
+    tabindex="0"
+    aria-pressed="false"
+  >
     Snow hiking
   </div>
 
   <div
-    class="vtmn-chip vtmn-chip_variant--filter vtmn-chip--selected vtmn-chip--disabled"
+    class="vtmn-chip vtmn-chip_variant--filter"
+    role="button"
+    aria-pressed="true"
+    aria-disabled="true"
   >
     Mountain hiking
   </div>
 
-  <div class="vtmn-chip vtmn-chip_variant--filter" tabindex="0">
+  <div
+    class="vtmn-chip vtmn-chip_variant--filter"
+    role="button"
+    aria-pressed="false"
+    aria-disabled="true"
+  >
     Fast hiking
   </div>
 </div>
@@ -102,6 +143,7 @@
 <div class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap">
   <div
     class="vtmn-chip vtmn-chip_variant--action vtmn-chip_size--small"
+    role="button"
     tabindex="0"
   >
     <span class="vtmx-settings-line" aria-hidden="true"></span>
@@ -110,6 +152,7 @@
 
   <div
     class="vtmn-chip vtmn-chip_variant--action vtmn-chip_size--small"
+    role="button"
     tabindex="0"
   >
     <span class="vtmx-add-line" aria-hidden="true"></span>
@@ -117,7 +160,9 @@
   </div>
 
   <div
-    class="vtmn-chip vtmn-chip_variant--action vtmn-chip_size--small vtmn-chip--disabled"
+    class="vtmn-chip vtmn-chip_variant--action vtmn-chip_size--small"
+    role="button"
+    aria-disabled="true"
   >
     <span class="vtmx-phone-line" aria-hidden="true"></span>
     Call the help desk

@@ -60,13 +60,13 @@ const WithLeftIconsTemplate: Story = (args) => (
 const CustomContentTemplate: Story = (args) => (
   <div style={{ width: 400, height: 250 }}>
     <VtmnAccordion summary="Item 1" withIconLeft open>
-      <VtmnButton variant="secondary" size="small">
+      <VtmnButton variant="primary" size="small">
         Button 1
       </VtmnButton>
-      <VtmnButton variant="secondary" size="small">
+      <VtmnButton variant="primary" size="small">
         Button 2
       </VtmnButton>
-      <VtmnButton variant="secondary" size="small">
+      <VtmnButton variant="primary" size="small">
         Button 3
       </VtmnButton>
     </VtmnAccordion>

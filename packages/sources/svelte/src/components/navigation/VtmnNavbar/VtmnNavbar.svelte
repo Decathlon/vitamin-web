@@ -39,11 +39,9 @@
   {/if}
 
   {#if checkSlotExists('logo')}
-    <div class="vtmn-navbar_right-navigation">
-      <a class="vtmn-navbar_logo" href={logoHref}>
-        <slot name="logo" />
-      </a>
-    </div>
+    <a class="vtmn-navbar_logo" href={logoHref}>
+      <slot name="logo" />
+    </a>
   {/if}
 
   {#if checkSlotExists('middle-area')}

@@ -82,10 +82,25 @@ If you don't have Tailwind CSS and you are interested, you can install it by fol
 
 In order to use our Tailwind preset, simply add this line inside your `tailwind.config.js` file:
 
+### TailwindCSS v2
+
 ```js
 module.exports = {
   presets: [require('@vtmn/css-tailwind-preset')],
   // ...
+};
+```
+
+### TailwindCSS v3
+
+```js
+module.exports = {
+  presets: [require('@vtmn/css-tailwind-preset')],
+  theme: {
+    colors: {
+      current: 'currentColor',
+    },
+  },
 };
 ```
 

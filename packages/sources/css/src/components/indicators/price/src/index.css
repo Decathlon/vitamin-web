@@ -9,11 +9,12 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  min-height: rem(28px);
+  min-block-size: rem(28px);
   line-height: 1;
-  height: rem(28px);
-  width: fit-content;
-  padding: rem(2px) var(--vtmn-spacing_2);
+  block-size: rem(28px);
+  inline-size: fit-content;
+  padding-block: rem(2px);
+  padding-inline: var(--vtmn-spacing_2);
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
   font-weight: var(--vtmn-typo_font-weight--bold);
@@ -49,21 +50,21 @@
 
 /* Small */
 .vtmn-price_size--small {
-  min-height: rem(24px);
-  height: rem(24px);
+  min-block-size: rem(24px);
+  block-size: rem(24px);
   font-size: var(--vtmn-typo_text-3-font-size);
 }
 
 /* Medium */
 .vtmn-price_size--medium {
-  min-height: rem(28px);
-  height: rem(28px);
+  min-block-size: rem(28px);
+  block-size: rem(28px);
   font-size: var(--vtmn-typo_text-2-font-size);
 }
 
 /* Large */
 .vtmn-price_size--large {
-  min-height: rem(32px);
-  height: rem(32px);
+  min-block-size: rem(32px);
+  block-size: rem(32px);
   font-size: var(--vtmn-typo_text-1-font-size);
 }

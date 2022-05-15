@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-skeleton@0.3.16...@vtmn/css-skeleton@0.4.0) (2022-05-11)
+
+
+### Features
+
+* **@vtmn/css:** replace physical properties by logical properties ([#1140](https://github.com/Decathlon/vitamin-web/issues/1140)) ([71d13a8](https://github.com/Decathlon/vitamin-web/commit/71d13a8163fec6e3fc3c29647fbeadf46071b6ee))
+
+
+
+
+
+## [0.3.16](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-skeleton@0.3.15...@vtmn/css-skeleton@0.3.16) (2022-05-09)
+
+**Note:** Version bump only for package @vtmn/css-skeleton
+
+
+
+
+
+## [0.3.15](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-skeleton@0.3.14...@vtmn/css-skeleton@0.3.15) (2022-04-21)
+
+**Note:** Version bump only for package @vtmn/css-skeleton
+
+
+
+
+
 ## [0.3.14](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-skeleton@0.3.13...@vtmn/css-skeleton@0.3.14) (2022-03-18)
 
 **Note:** Version bump only for package @vtmn/css-skeleton

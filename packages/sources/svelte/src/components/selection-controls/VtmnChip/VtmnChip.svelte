@@ -79,6 +79,9 @@
 
 <div
   class={componentClass}
+  role="button"
+  aria-disabled={disabled}
+  aria-pressed={selected && variant !== 'action'}
   on:click={selectClickHandler}
   tabindex={disableTableIndex ? undefined : 0}
 >

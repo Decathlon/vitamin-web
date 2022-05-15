@@ -4,6 +4,7 @@
 @import '@vtmn/css-design-tokens/src/opacities';
 @import '@vtmn/css-design-tokens/src/transitions';
 @import '@vtmn/css-design-tokens/src/radius';
+@import '@vtmn/css-design-tokens/src/spacings';
 
 .vtmn-text-input_label,
 .vtmn-text-input,
@@ -25,15 +26,17 @@
   display: block;
   font-weight: var(--vtmn-typo_font-weight--normal);
   font-size: var(--vtmn-typo_text-2-font-size);
-  padding: rem(12px) rem(36px) rem(12px) rem(12px);
+  padding-block: rem(12px);
+  padding-inline-start: rem(12px);
+  padding-inline-end: rem(36px);
   color: var(--vtmn-semantic-color_content-primary);
-  min-height: rem(48px);
+  min-block-size: rem(48px);
   appearance: none;
   transition: var(--vtmn-transition_focus-visible);
 }
 
 textarea.vtmn-text-input {
-  min-width: rem(48px);
+  min-inline-size: rem(48px);
   resize: both;
 }
 
@@ -62,7 +65,7 @@ textarea.vtmn-text-input {
   line-height: var(--vtmn-typo_text-2-line-height);
   margin-block-end: rem(4px);
   display: block;
-  width: fit-content;
+  inline-size: fit-content;
 }
 
 .vtmn-text-input_container {
@@ -70,17 +73,17 @@ textarea.vtmn-text-input {
   display: inline-block;
 }
 
-.vtmn-text-input + span[class^='vtmx-'],
-.vtmn-text-input + svg {
+.vtmn-text-input ~ span[class^='vtmx-'],
+.vtmn-text-input ~ svg {
   position: absolute;
-  font-size: var(--vtmn-typo_title-5-font-size);
-  right: rem(11px);
-  bottom: rem(15px);
+  font-size: var(--vtmn-typo_title-4-font-size);
+  inset-inline-end: var(--vtmn-spacing_3);
+  inset-block-end: var(--vtmn-spacing_3);
   color: var(--vtmn-semantic-color_content-primary);
 }
 
 .vtmn-text-input:disabled,
-.vtmn-text-input:disabled + span[class^='vtmx-'],
+.vtmn-text-input:disabled ~ span[class^='vtmx-'],
 .vtmn-text-input:disabled + svg,
 .vtmn-text-input:disabled + .vtmn-text-input_helper-text {
   opacity: var(--vtmn-opacity_disabled-state);
@@ -92,12 +95,12 @@ textarea.vtmn-text-input {
   font-size: var(--vtmn-typo_text-3-font-size);
   line-height: var(--vtmn-typo_text-3-line-height);
   margin-block-start: rem(4px);
-  width: fit-content;
+  inline-size: fit-content;
 }
 
 .vtmn-text-input_helper-text--error {
   color: var(--vtmn-semantic-color_content-primary);
-  width: fit-content;
+  inline-size: fit-content;
 }
 
 .vtmn-text-input_helper-text--error::before {
@@ -107,9 +110,9 @@ textarea.vtmn-text-input {
   mask-size: cover;
   display: inline-block;
   background-color: var(--vtmn-semantic-color_content-negative);
-  height: rem(16px);
-  width: rem(16px);
-  margin-right: rem(5px);
+  block-size: rem(16px);
+  inline-size: rem(16px);
+  margin-inline-end: rem(5px);
   transform: translateY(rem(2px));
 }
 
@@ -117,8 +120,8 @@ textarea.vtmn-text-input {
   box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-positive);
 }
 
-.vtmn-text-input--valid + span[class^='vtmx-'],
-.vtmn-text-input--valid + svg {
+.vtmn-text-input--valid ~ span[class^='vtmx-'],
+.vtmn-text-input--valid ~ svg {
   color: var(--vtmn-semantic-color_content-positive);
   fill: var(--vtmn-semantic-color_content-positive);
 }
@@ -127,8 +130,8 @@ textarea.vtmn-text-input {
   box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-negative);
 }
 
-.vtmn-text-input--error + span[class^='vtmx-'],
-.vtmn-text-input--error + svg {
+.vtmn-text-input--error ~ span[class^='vtmx-'],
+.vtmn-text-input--error ~ svg {
   color: var(--vtmn-semantic-color_content-primary);
   fill: var(--vtmn-semantic-color_content-primary);
 }

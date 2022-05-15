@@ -1,6 +1,6 @@
 <script lang="ts">
 import '@vtmn/css-popover/dist/index-with-vars.css';
-import { reactive, computed, defineComponent, PropType } from 'vue';
+import { defineComponent, PropType } from 'vue';
 import { VtmnPopoverPosition } from './types';
 
 export default /*#__PURE__*/ defineComponent({

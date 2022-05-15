@@ -35,14 +35,32 @@ export { VtmnTag } from './components/indicators/VtmnTag';
 export type { VtmnTagProps } from './components/indicators/VtmnTag';
 
 // Navigation
+export { VtmnBreadcrumb } from './components/navigation/VtmnBreadcrumb';
+export type { VtmnBreadcrumbProps } from './components/navigation/VtmnBreadcrumb';
+export { VtmnBreadcrumbItem } from './components/navigation/VtmnBreadcrumb';
+export type { VtmnBreadcrumbItemProps } from './components/navigation/VtmnBreadcrumb';
+export { VtmnNavbar } from './components/navigation/VtmnNavbar/VtmnNavbar';
+export type { VtmnNavbarProps } from './components/navigation/VtmnNavbar/VtmnNavbar';
 export { VtmnSearch } from './components/navigation/VtmnSearch/VtmnSearch';
 export type { VtmnSearchProps } from './components/navigation/VtmnSearch/VtmnSearch';
 
 // Overlays
 export { VtmnAlert } from './components/overlays/VtmnAlert';
 export type { VtmnAlertProps } from './components/overlays/VtmnAlert';
+export {
+  VtmnModal,
+  VtmnModalTitle,
+  VtmnModalDescription,
+  VtmnModalActions,
+} from './components/overlays/VtmnModal';
+export type {
+  VtmnModalProps,
+  VtmnModalTitleProps,
+} from './components/overlays/VtmnModal';
 export { VtmnPopover } from './components/overlays/VtmnPopover';
 export type { VtmnPopoverProps } from './components/overlays/VtmnPopover';
+export { VtmnSnackbar } from './components/overlays/VtmnSnackbar';
+export type { VtmnSnackbarProps } from './components/overlays/VtmnSnackbar';
 export { VtmnToast } from './components/overlays/VtmnToast';
 export type { VtmnToastProps } from './components/overlays/VtmnToast';
 export { VtmnTooltip } from './components/overlays/VtmnTooltip';
@@ -65,5 +83,16 @@ export { VtmnAccordion } from './components/structure/VtmnAccordion';
 export type { VtmnAccordionProps } from './components/structure/VtmnAccordion';
 export { VtmnDivider } from './components/structure/VtmnDivider';
 export type { VtmnDividerProps } from './components/structure/VtmnDivider';
+export {
+  VtmnList,
+  VtmnListItem,
+  VtmnListItemStartVisual,
+  VtmnListItemText,
+  VtmnListItemEndAction,
+} from './components/structure/VtmnList';
+export type {
+  VtmnListProps,
+  VtmnListItemProps,
+} from './components/structure/VtmnList';
 export { VtmnSkeleton } from './components/structure/VtmnSkeleton';
 export type { VtmnSkeletonProps } from './components/structure/VtmnSkeleton';

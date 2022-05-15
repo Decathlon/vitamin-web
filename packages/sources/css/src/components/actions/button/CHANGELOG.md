@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.12.3...@vtmn/css-button@0.13.0) (2022-05-11)
+
+
+### Features
+
+* **@vtmn/css:** replace physical properties by logical properties ([#1140](https://github.com/Decathlon/vitamin-web/issues/1140)) ([71d13a8](https://github.com/Decathlon/vitamin-web/commit/71d13a8163fec6e3fc3c29647fbeadf46071b6ee))
+
+
+
+
+
+## [0.12.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.12.2...@vtmn/css-button@0.12.3) (2022-05-09)
+
+**Note:** Version bump only for package @vtmn/css-button
+
+
+
+
+
+## [0.12.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.12.1...@vtmn/css-button@0.12.2) (2022-05-02)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** edit `button` icon sizes, increase icon sizes for `icon-alone` variant, a11y  ([#1138](https://github.com/Decathlon/vitamin-web/issues/1138)) ([ecf7b25](https://github.com/Decathlon/vitamin-web/commit/ecf7b25799fd24f1b114837258b866032b4c5d6d))
+
+
+
+
+
+## [0.12.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.12.0...@vtmn/css-button@0.12.1) (2022-04-21)
+
+**Note:** Version bump only for package @vtmn/css-button
+
+
+
+
+
 # [0.12.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-button@0.11.14...@vtmn/css-button@0.12.0) (2022-04-14)
 
 
