@@ -1,13 +1,13 @@
-import React from 'react';
-import clsx from 'clsx';
 import '@vtmn/css-select/dist/index-with-vars.css';
+import clsx from 'clsx';
+import React from 'react';
 
 export interface VtmnSelectProps extends React.ComponentPropsWithRef<'select'> {
   error?: boolean;
   errorText?: string;
   id: string;
   labelText?: string;
-  options: React.ComponentPropsWithoutRef<'option'>[];
+  options: React.ReactNode[];
   valid?: boolean;
 }
 
@@ -18,7 +18,6 @@ export const VtmnSelect = ({
   id,
   labelText,
   options = [],
-  ref,
   ...props
 }: VtmnSelectProps) => {
   const errorTextId = `error-text-${id}`;

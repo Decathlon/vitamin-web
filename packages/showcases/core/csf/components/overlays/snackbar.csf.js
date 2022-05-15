@@ -16,7 +16,7 @@ export const argTypes = {
     control: { type: 'text' },
   },
   withCloseButton: {
-    type: { name: 'boolean', required: true },
+    type: { name: 'boolean', required: false },
     description: 'Show close button',
     defaultValue: false,
     control: {
@@ -25,7 +25,7 @@ export const argTypes = {
   },
   actionLabel: {
     type: { name: 'string', required: false },
-    describe: 'Label of the action. If set, it displays action button',
+    describe: 'Label of the action. If set, it displays action button.',
     defaultValue: 'Action',
     control: {
       type: 'text',

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import '@vtmn/css-modal/dist/index-with-vars.css';
 import clsx from 'clsx';
 import { VtmnButton } from '../../actions/VtmnButton/VtmnButton';
 

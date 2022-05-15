@@ -26,8 +26,8 @@
   content: '';
   border: rem(2px) solid;
   border-radius: 100%;
-  margin-top: rem(1px);
-  margin-right: rem(11px);
+  margin-block-start: rem(1px);
+  margin-inline-end: rem(11px);
   padding: rem(8px);
   transition: var(--vtmn-transition_focus-visible);
 }
@@ -73,10 +73,10 @@
   mask-size: cover;
   background-color: var(--vtmn-semantic-color_content-active);
   position: absolute;
-  height: rem(20px);
-  width: rem(20px);
-  top: rem(1px);
-  left: 0;
+  block-size: rem(20px);
+  inline-size: rem(20px);
+  inset-block-start: rem(1px);
+  inset-inline-start: 0;
   transition: all 0.2s;
 }
 

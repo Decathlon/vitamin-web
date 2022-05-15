@@ -11,8 +11,8 @@
   flex-direction: row;
   align-items: center;
   padding: rem(8px) rem(16px);
-  min-height: rem(48px);
-  width: fit-content;
+  min-block-size: rem(48px);
+  inline-size: fit-content;
   justify-content: space-between;
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
@@ -28,8 +28,8 @@
 
 .vtmn-toast.show {
   position: fixed;
-  right: 50%;
-  bottom: 0;
+  inset-inline-end: 50%;
+  inset-block-end: 0;
   transform: translate(50%, -50%);
   animation: var(--vtmn-animation_overlay);
 }
@@ -38,22 +38,19 @@
   display: inline-block;
   vertical-align: middle;
   white-space: nowrap;
-  width: rem(24px);
-  height: rem(24px);
+  inline-size: rem(24px);
+  block-size: rem(24px);
   content: '';
   background-color: var(--vtmn-semantic-color_content-primary-reversed);
-}
-
-.vtmn-toast--with-icon-info > .vtmn-toast_content::before {
-  margin-right: rem(16px);
+  margin-inline-end: rem(16px);
   mask: url("data:image/svg+xml;charset=utf-8, <svg width='24' height='24' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M1.333 8a6.666 6.666 0 1 0 13.333 0A6.666 6.666 0 0 0 1.333 8zm12 0A5.333 5.333 0 1 1 2.667 8a5.333 5.333 0 0 1 10.666 0zM8.667 4.667V6H7.333V4.667h1.334zm0 6.666v-4H7.333v4h1.334z'/></svg>");
 }
 
 /* Close button */
 .vtmn-toast .vtmn-btn {
   margin-inline-start: rem(12px);
-  margin-top: -6px;
-  margin-bottom: -6px;
+  margin-block-start: -6px;
+  margin-block-end: -6px;
 }
 
 .vtmn-toast .vtmn-btn span[class^='vtmx-'] {
@@ -62,7 +59,7 @@
 
 @media screen and (max-width: 599px) {
   .vtmn-toast {
-    width: 90%;
+    inline-size: 90%;
     margin: 0 auto;
   }
 }

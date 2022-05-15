@@ -113,7 +113,7 @@
 
 <style>
   :global(.vtmn-card) {
-    max-width: 400px;
+    max-width: 300px;
   }
   :global(#anchor--components-structure-vtmncard--overview .docs-story),
   :global(#anchor--components-structure-vtmncard--overview

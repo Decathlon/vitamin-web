@@ -1,6 +1,6 @@
 <script lang="ts">
 import '@vtmn/css-toast/dist/index-with-vars.css';
-import { reactive, computed, defineComponent, PropType } from 'vue';
+import { computed, defineComponent, PropType, reactive } from 'vue';
 import { VtmnButton } from '../../index';
 
 export default /*#__PURE__*/ defineComponent({
@@ -9,11 +9,11 @@ export default /*#__PURE__*/ defineComponent({
   components: { VtmnButton },
   props: {
     withIcon: {
-      type: Boolean as PropType<Boolean>,
+      type: Boolean as PropType<boolean>,
       default: false,
     },
     withCloseButton: {
-      type: Boolean as PropType<Boolean>,
+      type: Boolean as PropType<boolean>,
       default: false,
     },
   },
