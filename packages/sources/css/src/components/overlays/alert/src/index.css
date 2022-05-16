@@ -111,7 +111,7 @@
   display: flex;
   position: fixed;
   inset-block-start: rem(32px);
-  inset-block-end: rem(16px);
+  inset-inline-end: rem(16px);
   animation: var(--vtmn-animation_alert);
 }
 
