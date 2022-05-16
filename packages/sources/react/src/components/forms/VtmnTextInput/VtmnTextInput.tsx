@@ -64,6 +64,18 @@ type VtmnTextInputAdditionalProps = {
    * @defaultValue undefined
    */
   onIconClick?: React.MouseEventHandler;
+
+  /**
+   * Classes to be applied to the label
+   * @type {string}
+   */
+  labelClassName?: string;
+
+  /**
+   * Props to be spreaded to the label
+   * @type {object}
+   */
+  labelProps?: string;
 };
 
 export type VtmnTextInputProps = React.ComponentPropsWithoutRef<'textarea'> &
@@ -81,13 +93,19 @@ export const VtmnTextInput = ({
   placeholder,
   valid = false,
   onIconClick,
+  labelClassName,
+  labelProps,
   ...props
 }: VtmnTextInputProps) => {
   const { multiline, ...rest } = props;
   return (
     <>
       {labelText && (
-        <label className="vtmn-text-input_label" htmlFor={identifier}>
+        <label
+          className={`vtmn-text-input_label ${labelClassName || ''}`}
+          htmlFor={identifier}
+          {...labelProps}
+        >
           {labelText}
         </label>
       )}

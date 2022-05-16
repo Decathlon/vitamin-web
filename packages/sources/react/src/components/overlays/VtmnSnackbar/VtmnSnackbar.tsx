@@ -4,9 +4,9 @@ import clsx from 'clsx';
 import { VtmnButton } from '../../actions/VtmnButton';
 
 export interface VtmnSnackbarProps
-  extends React.ComponentPropsWithoutRef<'dialog'> {
+  extends Omit<React.ComponentPropsWithoutRef<'dialog'>, 'onClose'> {
   /**
-   * The snackbar's content
+   * The snackbaOmit<React.ComponentPropsWithoutRef<'dialog'>, 'onClose'>r's content
    */
   content: string;
 
