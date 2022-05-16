@@ -23,11 +23,10 @@ const Template = (args) => ({
       <template #img>
         <img alt="" :src="src" />
       </template>
-      <template #content">
-        A container for content representing a single entity. e.g. a contact,
-        article, or task.
+      <template #content>
+        A container.
       </template>
-      <template #actions">
+      <template #actions>
         <VtmnPrice variant="accent">150,00 €</VtmnPrice>
         <VtmnButton variant="primary" size="stretched">Button</VtmnButton>
       </template>
