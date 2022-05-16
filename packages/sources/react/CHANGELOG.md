@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.42.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.42.1...@vtmn/react@0.42.2) (2022-05-16)
+
+
+### Bug Fixes
+
+* **@vtmn/react:** error build of typings ([2eead8c](https://github.com/Decathlon/vitamin-web/commit/2eead8c97165ffc8380a5d9d232400d0e71cf569))
+
+
+
+
+
 ## [0.42.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.42.0...@vtmn/react@0.42.1) (2022-05-16)
 
 **Note:** Version bump only for package @vtmn/react
