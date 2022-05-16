@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.43.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.42.2...@vtmn/react@0.43.0) (2022-05-16)
+
+
+### Features
+
+* **@vtmn/react:** add props on text input and select to control their label ([#1163](https://github.com/Decathlon/vitamin-web/issues/1163)) ([101484e](https://github.com/Decathlon/vitamin-web/commit/101484effb2ff7480137113e2dece1a5cbca666e))
+
+
+
+
+
 ## [0.42.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.42.1...@vtmn/react@0.42.2) (2022-05-16)
 
 
