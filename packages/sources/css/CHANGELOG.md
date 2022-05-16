@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.76.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.76.0...@vtmn/css@0.76.1) (2022-05-16)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** visual regression of alert component ([#1162](https://github.com/Decathlon/vitamin-web/issues/1162)) ([3c2623f](https://github.com/Decathlon/vitamin-web/commit/3c2623f6ba399ad58ff154449f0660a61f6a16c2))
+
+
+
+
+
 # [0.76.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.75.3...@vtmn/css@0.76.0) (2022-05-11)
 
 
