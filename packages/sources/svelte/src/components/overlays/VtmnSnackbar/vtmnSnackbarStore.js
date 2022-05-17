@@ -1,17 +1,15 @@
 import { writable } from 'svelte/store';
+import { uuid } from '../../../utils/math';
 
 class VtmnSnackbarStore {
   constructor() {
     this._snackbar = writable([]);
-    this._id = 0;
-  }
-
-  get newId() {
-    return ++this._id;
   }
 
   send({ content, withCloseButton, action }) {
-    this._snackbar.set([{ content, withCloseButton, action, id: this.newId }]);
+    this._snackbar.set([
+      { content, withCloseButton, action, id: `vtmn-snackbar-${uuid()}` },
+    ]);
   }
 
   close() {
