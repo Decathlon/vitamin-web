@@ -1,19 +1,15 @@
 import { writable } from 'svelte/store';
+import { uuid } from '../../../utils/math';
 
 class VtmnToastStore {
   constructor() {
     this._toasts = writable([]);
-    this._id = 0;
-  }
-
-  get newId() {
-    return ++this._id;
   }
 
   send({ content, withCloseButton, withIcon }) {
     this._toasts.update((state) => [
       ...state,
-      { content, withCloseButton, withIcon, id: this.newId },
+      { content, withCloseButton, withIcon, id: `vtmn-toast-${uuid()}` },
     ]);
   }
 
