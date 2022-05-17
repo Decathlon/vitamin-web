@@ -98,7 +98,9 @@
 @media screen and (max-width: 599px) {
   .vtmn-modal_content {
     inline-size: 100%;
-    padding: rem(24px) 0 rem(24px) rem(24px);
+    padding-block: rem(24px);
+    padding-inline-start: rem(24px);
+    padding-inline-end: 0;
     max-block-size: 60%;
     inset-block-end: 0;
     inset-inline-start: 0;
@@ -124,15 +126,15 @@
   }
   
   .vtmn-modal_content_body {
-    padding-right: rem(24px);
+    padding-inline-end: rem(24px);
   }
 
   .vtmn-modal_content_actions {
-    padding-right: rem(24px);
+    padding-inline-end: rem(24px);
   }
 
   .vtmn-modal_content_title {
-    padding-right: rem(24px);
+    padding-inline-end: rem(24px);
   }
 }
 
