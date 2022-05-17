@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.45.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.45.3...@vtmn/svelte@0.45.4) (2022-05-17)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** move overlay id to uuid ([#1164](https://github.com/Decathlon/vitamin-web/issues/1164)) ([dea6c02](https://github.com/Decathlon/vitamin-web/commit/dea6c02107917db0b957d668cc8180a009551318))
+
+
+
+
+
 ## [0.45.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.45.2...@vtmn/svelte@0.45.3) (2022-05-16)
 
 
