@@ -21,7 +21,9 @@ export default /*#__PURE__*/ defineComponent({
     },
   },
   setup(props, { attrs }) {
-    const ariaLabelledBy = String(attrs['aria-labelledby']);
+    const ariaLabelledBy = attrs['aria-labelledby']
+      ? String(attrs['aria-labelledby'])
+      : undefined;
     props = reactive(props);
     return {
       classes: computed(() => ({

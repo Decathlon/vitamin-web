@@ -24,10 +24,4 @@ export const argTypes = {
     defaultValue: 'start',
     control: { type: 'select', options: ['start', 'center', 'end'] },
   },
-  ariaLabelId: {
-    type: { name: 'string', required: false },
-    description: 'The id of the aria-labelledby attribute.',
-    defaultValue: undefined,
-    control: { type: 'text' },
-  },
 };

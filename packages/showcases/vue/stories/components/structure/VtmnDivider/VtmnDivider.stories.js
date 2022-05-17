@@ -16,7 +16,7 @@ const Template = (args) => ({
   setup() {
     return { args };
   },
-  template: `<div style="width: 400px; height: 250px;"><VtmnDivider v-bind="args" aria-labelledby="title-test">Label</VtmnDivider></div>`,
+  template: `<div style="width: 400px; height: 250px;"><VtmnDivider v-bind="args" aria-labelledby="title-test-0">Label</VtmnDivider></div>`,
 });
 
 export const Overview = Template.bind({});
