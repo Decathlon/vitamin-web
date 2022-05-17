@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.76.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.76.1...@vtmn/css@0.76.2) (2022-05-17)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** add modal padding ([#1166](https://github.com/Decathlon/vitamin-web/issues/1166)) ([979273d](https://github.com/Decathlon/vitamin-web/commit/979273d68829573c20333f829f3aaacc35d5d208))
+* **@vtmn/css:** fix scroll padding mobile ([#1165](https://github.com/Decathlon/vitamin-web/issues/1165)) ([3ee15ba](https://github.com/Decathlon/vitamin-web/commit/3ee15bac64639c3021e0cde49ea64cd8dc5dfad1))
+* **@vtmn/css:** lint modal component ([a18a3ff](https://github.com/Decathlon/vitamin-web/commit/a18a3ffdf3dca2895aef87c3ea26be400c629a01))
+
+
+
+
+
 ## [0.76.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.76.0...@vtmn/css@0.76.1) (2022-05-16)
 
 
