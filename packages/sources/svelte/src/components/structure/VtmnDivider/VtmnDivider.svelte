@@ -26,7 +26,7 @@
   $: componentClass = cn(
     'vtmn-divider',
     `vtmn-divider_orientation--${orientation}`,
-    $$slots.default && `vtmn-divider_text-position--${textPosition}`,
+    $$restProps['slot'] && `vtmn-divider_text-position--${textPosition}`,
     className,
   );
 </script>
@@ -37,9 +37,11 @@
   aria-orientation={orientation}
   {...$$restProps}
 >
-  <span id={$$restProps['aria-labelledby']}>
-    <slot />
-  </span>
+  {#if $$restProps['slot']}
+    <span id={$$restProps['aria-labelledby']}>
+      {$$restProps['slot']}
+    </span>
+  {/if}
 </div>
 
 <style>

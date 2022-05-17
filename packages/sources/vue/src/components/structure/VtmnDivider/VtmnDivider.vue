@@ -43,6 +43,6 @@ export default /*#__PURE__*/ defineComponent({
     role="separator"
     :aria-orientation="orientation"
   >
-    <span :id="ariaLabelledBy"><slot /></span>
+    <span v-if="$slots['default']" :id="ariaLabelledBy"><slot /></span>
   </div>
 </template>

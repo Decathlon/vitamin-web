@@ -41,20 +41,23 @@
       class="story-divider-horizontal"
       orientation="horizontal"
       textPosition="start"
-      aria-labelledby="title-header-1">Start label</VtmnDivider
-    >
+      aria-labelledby="title-header-1"
+      slot="Start label"
+    />
     <VtmnDivider
       class="story-divider-horizontal"
       orientation="horizontal"
       textPosition="center"
-      aria-labelledby="title-header-2">Center label</VtmnDivider
-    >
+      aria-labelledby="title-header-2"
+      slot="Center label"
+    />
     <VtmnDivider
       class="story-divider-horizontal"
       orientation="horizontal"
       textPosition="end"
-      aria-labelledby="title-header-3">End label</VtmnDivider
-    >
+      aria-labelledby="title-header-3"
+      slot="End label"
+    />
   </div>
 </Story>
 
@@ -65,20 +68,23 @@
       class="story-divider-vertical"
       orientation="vertical"
       textPosition="start"
-      aria-labelledby="title-header-4">Start label</VtmnDivider
-    >
+      aria-labelledby="title-header-4"
+      slot="Start label"
+    />
     <VtmnDivider
       class="story-divider-vertical"
       orientation="vertical"
       textPosition="center"
-      aria-labelledby="title-header-5">Center label</VtmnDivider
-    >
+      aria-labelledby="title-header-5"
+      slot="Center label"
+    />
     <VtmnDivider
       class="story-divider-vertical"
       orientation="vertical"
       textPosition="end"
-      aria-labelledby="title-header-6">End label</VtmnDivider
-    >
+      aria-labelledby="title-header-6"
+      slot="End label"
+    />
   </div>
 </Story>
 

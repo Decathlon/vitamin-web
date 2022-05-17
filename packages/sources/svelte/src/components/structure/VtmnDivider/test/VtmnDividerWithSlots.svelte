@@ -2,4 +2,8 @@
   import VtmnDivider from '../VtmnDivider.svelte';
 </script>
 
-<VtmnDivider {...$$restProps}>unit test divider</VtmnDivider>
+<VtmnDivider
+  aria-labelledby="title-test"
+  slot="unit test divider"
+  {...$$restProps}
+/>
