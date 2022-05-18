@@ -2,4 +2,4 @@
   import VtmnLink from '../VtmnLink.svelte';
 </script>
 
-<VtmnLink {...$$restProps}>Unit-test</VtmnLink>
+<VtmnLink on:click {...$$restProps}>Unit-test</VtmnLink>

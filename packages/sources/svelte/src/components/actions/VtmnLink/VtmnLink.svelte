@@ -52,7 +52,7 @@
   );
 </script>
 
-<a {href} {target} class={componentClass} {...$$restProps}><slot /></a>
+<a {href} {target} class={componentClass} on:click {...$$restProps}><slot /></a>
 
 <style lang="css">
   @import '@vtmn/css-link';
