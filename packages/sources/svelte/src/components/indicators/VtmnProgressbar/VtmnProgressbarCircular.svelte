@@ -84,6 +84,11 @@
     <span class="vtmn-progressbar_label" aria-live="assertive">{progress}%</span
     >
   {/if}
+  {#if indeterminate}
+    <span id={$$restProps['aria-labelledby'] || undefined} class="vtmn-sr-only"
+      >Loading</span
+    >
+  {/if}
   <svg>
     {#if track}
       <circle
