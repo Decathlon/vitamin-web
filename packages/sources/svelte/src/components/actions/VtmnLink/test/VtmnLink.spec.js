@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
 
-import { render } from '@testing-library/svelte';
+import { render, fireEvent } from '@testing-library/svelte';
 import VtmnLink from './VtmnLinkWithSlots.svelte';
 
 const links = { href: 'http://example.com' };
@@ -49,5 +49,12 @@ describe('VtmnLink', () => {
   test('Should display the slot under the vtmn-link', () => {
     const { getByText } = render(VtmnLink, { ...links });
     expect(getByText('Unit-test')).toBeVisible();
+  });
+  test('Should trigger on:click', async () => {
+    const { component, getByText } = render(VtmnLink, { ...links });
+    const handleClick = jest.fn();
+    component.$on('click', handleClick);
+    await fireEvent.click(getByText('Unit-test'));
+    expect(handleClick).toHaveBeenCalledTimes(1);
   });
 });
