@@ -501,7 +501,7 @@ Thank you to the [contributors](CONTRIBUTORS.md) involved in these vitamin-web l
 
 ## License
 
-    Copyright 2021-2022 Decathlon.
+    Copyright 2021 Decathlon.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
