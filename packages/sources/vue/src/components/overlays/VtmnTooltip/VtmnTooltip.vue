@@ -1,6 +1,6 @@
 <script lang="ts">
 import '@vtmn/css-tooltip/dist/index-with-vars.css';
-import { reactive, computed, defineComponent, PropType } from 'vue';
+import { defineComponent, PropType } from 'vue';
 import { VtmnTooltipPosition } from './types';
 
 export default /*#__PURE__*/ defineComponent({

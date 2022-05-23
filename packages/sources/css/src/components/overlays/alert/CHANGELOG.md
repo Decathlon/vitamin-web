@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-alert@0.7.0...@vtmn/css-alert@0.7.1) (2022-05-16)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** visual regression of alert component ([#1162](https://github.com/Decathlon/vitamin-web/issues/1162)) ([3c2623f](https://github.com/Decathlon/vitamin-web/commit/3c2623f6ba399ad58ff154449f0660a61f6a16c2))
+
+
+
+
+
+# [0.7.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-alert@0.6.15...@vtmn/css-alert@0.7.0) (2022-05-11)
+
+
+### Features
+
+* **@vtmn/css:** replace physical properties by logical properties ([#1140](https://github.com/Decathlon/vitamin-web/issues/1140)) ([71d13a8](https://github.com/Decathlon/vitamin-web/commit/71d13a8163fec6e3fc3c29647fbeadf46071b6ee))
+
+
+
+
+
+## [0.6.15](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-alert@0.6.14...@vtmn/css-alert@0.6.15) (2022-05-09)
+
+**Note:** Version bump only for package @vtmn/css-alert
+
+
+
+
+
 ## [0.6.14](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-alert@0.6.13...@vtmn/css-alert@0.6.14) (2022-04-21)
 
 **Note:** Version bump only for package @vtmn/css-alert

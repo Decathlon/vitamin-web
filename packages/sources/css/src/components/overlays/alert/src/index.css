@@ -12,10 +12,11 @@
   flex-direction: row;
   align-items: center;
   cursor: pointer;
-  padding: rem(12px) rem(16px);
-  width: fit-content;
-  max-width: 65%;
-  min-height: 48px;
+  padding-block: rem(12px);
+  padding-inline: rem(16px);
+  inline-size: fit-content;
+  max-inline-size: 65%;
+  min-block-size: 48px;
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
   line-height: var(--vtmn-typo_text-2-line-height);
@@ -31,7 +32,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 100%;
+  inline-size: 100%;
 }
 
 .vtmn-alert_content-title {
@@ -39,7 +40,7 @@
   font-weight: var(--vtmn-typo_font-weight--bold);
   font-size: rem(16px);
   line-height: rem(20px);
-  width: 100%;
+  inline-size: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -47,7 +48,7 @@
 }
 
 .vtmn-alert_content-description {
-  margin-top: rem(8px);
+  margin-block-start: rem(8px);
   font-family: var(--vtmn-typo_font-family);
   font-weight: var(--vtmn-typo_font-weight--normal);
   font-size: rem(16px);
@@ -60,7 +61,7 @@
 .vtmn-alert_variant--success,
 .vtmn-alert_variant--danger,
 .vtmn-alert_variant--warning {
-  padding-left: rem(56px);
+  padding-inline-start: rem(56px);
 }
 
 .vtmn-alert_variant--info::before,
@@ -68,10 +69,10 @@
 .vtmn-alert_variant--warning::before,
 .vtmn-alert_variant--danger::before {
   position: absolute;
-  top: calc(50% - rem(12px));
-  left: rem(16px);
-  width: rem(24px);
-  height: rem(24px);
+  inset-block-start: calc(50% - rem(12px));
+  inset-inline-start: rem(16px);
+  inline-size: rem(24px);
+  block-size: rem(24px);
   content: '';
 }
 
@@ -98,8 +99,8 @@
 /* Close button */
 .vtmn-alert .vtmn-btn {
   margin-inline-start: rem(12px);
-  margin-top: -6px;
-  margin-bottom: -6px;
+  margin-block-start: rem(-6px);
+  margin-block-end: rem(-6px);
 }
 
 .vtmn-alert .vtmn-btn span[class^='vtmx-'] {
@@ -109,22 +110,23 @@
 .vtmn-alert.show {
   display: flex;
   position: fixed;
-  top: rem(32px);
-  right: rem(16px);
+  inset-block-start: rem(32px);
+  inset-inline-end: rem(16px);
   animation: var(--vtmn-animation_alert);
 }
 
 @media screen and (max-width: 599px) {
   .vtmn-alert {
-    max-width: 90%;
-    margin: 0 auto;
+    max-inline-size: 90%;
+    margin-block: 0;
+    margin-inline: auto;
   }
 
   .vtmn-alert.show {
-    top: initial;
-    right: rem(16px);
-    bottom: rem(32px);
-    left: rem(16px);
+    inset-block-start: initial;
+    inset-inline-end: rem(16px);
+    inset-block-end: rem(32px);
+    inset-inline-start: rem(16px);
     animation: var(--vtmn-animation_alert-mobile);
   }
 }

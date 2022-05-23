@@ -1,5 +1,4 @@
 import '@testing-library/jest-dom';
-
 import { fireEvent, render } from '@testing-library/svelte';
 import VtmnRating from '../VtmnRating.svelte';
 
@@ -149,20 +148,6 @@ describe('VtmnRating', () => {
       expect(spans.length).toEqual(1);
       expect(spans[0]).toBeVisible();
       expect(spans[0]).toHaveClass('vtmx-star-fill');
-    });
-    test("Should have 5 span with class 'vtmx-star-line' and compact = false by default", () => {
-      const { container } = render(VtmnRating, {
-        name: 'rating',
-        readonly: true,
-        compact: false,
-        value: 0,
-      });
-      const spans = getReadonlyPresentations(container);
-      expect(spans.length).toEqual(5);
-      for (let i = 0, ii = spans.length; i < ii; i++) {
-        expect(spans[i]).toBeVisible();
-        expect(spans[i]).toHaveClass('vtmx-star-line');
-      }
     });
     test("Should have 5 span with class 'vtmx-star-line' if rating = 0 and compact = false", () => {
       const { container } = render(VtmnRating, {
@@ -324,7 +309,7 @@ describe('VtmnRating', () => {
         readonly: false,
         value: 2,
       });
-      expect(getCommentPrimary(container)).toBeUndefined();
+      expect(getCommentSecondary(container)).toBeUndefined();
     });
     test('Should radio inputs reactive to rating variable', async () => {
       const { container } = render(VtmnRating, {

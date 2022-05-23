@@ -5,10 +5,21 @@
 </style>
 
 <div class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap">
-  <div class="vtmn-chip vtmn-chip_variant--input" tabindex="0">HTML</div>
+  <div
+    class="vtmn-chip vtmn-chip_variant--input"
+    role="button"
+    tabindex="0"
+    aria-pressed="false"
+  >
+    HTML
+  </div>
 
-  <div class="vtmn-chip vtmn-chip_variant--input vtmn-chip--selected">
-    <span class="vtmx-ruler-line"></span>
+  <div
+    class="vtmn-chip vtmn-chip_variant--input"
+    role="button"
+    aria-pressed="true"
+  >
+    <span class="vtmx-ruler-line" aria-hidden="true"></span>
     CSS
     <button
       class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_size--small vtmn-btn_variant--ghost-reversed"
@@ -18,7 +29,11 @@
     </button>
   </div>
 
-  <div class="vtmn-chip vtmn-chip_variant--input vtmn-chip--selected">
+  <div
+    class="vtmn-chip vtmn-chip_variant--input"
+    role="button"
+    aria-pressed="true"
+  >
     <img
       src="https://storage.googleapis.com/dkt-design-cdn/images/landscape-placeholder.jpg"
       alt="Black and white grid"
@@ -33,7 +48,10 @@
   </div>
 
   <div
-    class="vtmn-chip vtmn-chip_variant--input vtmn-chip--selected vtmn-chip--disabled"
+    class="vtmn-chip vtmn-chip_variant--input"
+    role="button"
+    aria-pressed="true"
+    aria-disabled="true"
   >
     WASM
     <button
@@ -49,15 +67,19 @@
 <div class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap">
   <div
     class="vtmn-chip vtmn-chip_variant--input vtmn-chip_size--small"
+    role="button"
     tabindex="0"
+    aria-pressed="false"
   >
     HTML
   </div>
 
   <div
-    class="vtmn-chip vtmn-chip_variant--input vtmn-chip_size--small vtmn-chip--selected"
+    class="vtmn-chip vtmn-chip_variant--input vtmn-chip_size--small"
+    role="button"
+    aria-pressed="true"
   >
-    <span class="vtmx-ruler-line"></span>
+    <span class="vtmx-ruler-line" aria-hidden="true"></span>
     CSS
     <button
       class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_size--small vtmn-btn_variant--ghost-reversed"
@@ -68,7 +90,9 @@
   </div>
 
   <div
-    class="vtmn-chip vtmn-chip_variant--input vtmn-chip_size--small vtmn-chip--selected"
+    class="vtmn-chip vtmn-chip_variant--input vtmn-chip_size--small"
+    role="button"
+    aria-pressed="true"
   >
     <img
       src="https://storage.googleapis.com/dkt-design-cdn/images/landscape-placeholder.jpg"
@@ -84,7 +108,10 @@
   </div>
 
   <div
-    class="vtmn-chip vtmn-chip_variant--input vtmn-chip_size--small vtmn-chip--selected vtmn-chip--disabled"
+    class="vtmn-chip vtmn-chip_variant--input vtmn-chip_size--small"
+    role="button"
+    aria-pressed="true"
+    aria-disabled="true"
   >
     WASM
     <button

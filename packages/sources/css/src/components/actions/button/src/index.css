@@ -13,11 +13,12 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  height: rem(48px);
+  block-size: rem(48px);
   border: 0;
   line-height: 1;
-  width: max-content;
-  padding: rem(14px) rem(24px);
+  inline-size: max-content;
+  padding-block: rem(14px);
+  padding-inline: rem(24px);
   font-family: var(--vtmn-typo_font-family);
   font-weight: var(--vtmn-typo_font-weight--bold);
   font-size: var(--vtmn-typo_text-2-font-size);
@@ -208,81 +209,87 @@
 /* Sizes */
 .vtmn-btn_size--small {
   font-size: rem(14px);
-  padding: rem(8px) rem(16px);
-  height: rem(32px);
+  padding-block: rem(8px);
+  padding-inline: rem(16px);
+  block-size: rem(32px);
   letter-spacing: rem(0.24px);
 }
 
 .vtmn-btn_size--medium {
   font-size: rem(16px);
-  padding: rem(14px) rem(24px);
-  height: rem(48px);
+  padding-block: rem(14px);
+  padding-inline: rem(24px);
+  block-size: rem(48px);
   letter-spacing: rem(0.27px);
 }
 
 .vtmn-btn_size--large {
   font-size: rem(20px);
-  padding: rem(20px) rem(40px);
-  height: rem(64px);
+  padding-block: rem(20px);
+  padding-inline: rem(40px);
+  block-size: rem(64px);
   letter-spacing: rem(0.34px);
 }
 
 .vtmn-btn_size--stretched {
-  width: 100%;
+  inline-size: 100%;
 }
 
 /* Button icons  */
 .vtmn-btn--icon-alone {
-  width: rem(48px);
-  height: rem(48px);
+  inline-size: rem(48px);
+  block-size: rem(48px);
   padding: rem(14px);
 }
 
 .vtmn-btn--icon-alone span[class^='vtmx-'] {
-  font-size: var(--vtmn-typo_text-2-font-size);
+  font-size: rem(24px);
 }
 
 .vtmn-btn_size--small.vtmn-btn--icon-alone {
-  width: rem(32px);
-  height: rem(32px);
+  inline-size: rem(32px);
+  block-size: rem(32px);
   padding: rem(8px);
 }
 
 .vtmn-btn_size--small.vtmn-btn--icon-alone span[class^='vtmx-'] {
-  font-size: var(--vtmn-typo_text-3-font-size);
+  font-size: rem(20px);
 }
 
 .vtmn-btn_size--medium.vtmn-btn--icon-alone {
-  width: rem(48px);
-  height: rem(48px);
+  inline-size: rem(48px);
+  block-size: rem(48px);
   padding: rem(14px);
 }
 
 .vtmn-btn_size--medium.vtmn-btn--icon-alone span[class^='vtmx-'] {
-  font-size: var(--vtmn-typo_text-2-font-size);
+  font-size: rem(24px);
 }
 
 .vtmn-btn_size--large.vtmn-btn--icon-alone {
-  width: rem(64px);
-  height: rem(64px);
+  inline-size: rem(64px);
+  block-size: rem(64px);
   padding: rem(20px);
 }
 
 .vtmn-btn_size--large.vtmn-btn--icon-alone span[class^='vtmx-'] {
-  font-size: var(--vtmn-typo_title-5-font-size);
+  font-size: rem(32px);
 }
 
 .vtmn-btn--icon-left span[class^='vtmx-'],
 .vtmn-btn_size--medium.vtmn-btn--icon-left span[class^='vtmx-'] {
   padding-inline-end: rem(8px);
+  font-size: rem(20px);
 }
 
 .vtmn-btn_size--small.vtmn-btn--icon-left span[class^='vtmx-'] {
   padding-inline-end: rem(6px);
+  font-size: rem(16px);
 }
 
 .vtmn-btn_size--small.vtmn-btn--icon-right span[class^='vtmx-'] {
   padding-inline-start: rem(6px);
+  font-size: rem(16px);
 }
 
 .vtmn-btn_size--small.vtmn-btn--icon-left svg {
@@ -296,6 +303,7 @@
 .vtmn-btn--icon-right span[class^='vtmx-'],
 .vtmn-btn_size--medium.vtmn-btn--icon-right span[class^='vtmx-'] {
   padding-inline-start: rem(8px);
+  font-size: rem(20px);
 }
 
 .vtmn-btn_size--medium.vtmn-btn--icon-left svg {
@@ -308,10 +316,12 @@
 
 .vtmn-btn_size--large.vtmn-btn--icon-left span[class^='vtmx-'] {
   padding-inline-end: rem(12px);
+  font-size: rem(24px);
 }
 
 .vtmn-btn_size--large.vtmn-btn--icon-right span[class^='vtmx-'] {
   padding-inline-start: rem(12px);
+  font-size: rem(24px);
 }
 
 .vtmn-btn_size--large.vtmn-btn--icon-left svg {

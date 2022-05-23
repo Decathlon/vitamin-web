@@ -1,7 +1,5 @@
 import '@testing-library/jest-dom';
-
-import { fireEvent, waitFor, render } from '@testing-library/svelte';
-
+import { fireEvent, render, waitFor } from '@testing-library/svelte';
 import VtmnAlertItem from '../VtmnAlertItem.svelte';
 
 const timeout = 5000;
@@ -156,7 +154,7 @@ describe('VtmnAlertItem', () => {
 
   test('Should trigger automatically close action when the timeout are done', async () => {
     const handleClick = jest.fn();
-    const { getByLabelText, component } = render(VtmnAlertItem, {
+    const { component } = render(VtmnAlertItem, {
       title: 'Alert unit-test',
       timeout: 50,
       withCloseButton: true,

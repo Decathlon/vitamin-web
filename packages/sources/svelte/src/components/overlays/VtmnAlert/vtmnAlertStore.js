@@ -1,13 +1,9 @@
 import { writable } from 'svelte/store';
+import { uuid } from '../../../utils/math';
 
 class VtmnAlertStore {
   constructor() {
     this._alerts = writable([]);
-    this._id = 0;
-  }
-
-  get newId() {
-    return ++this._id;
   }
 
   send({ variant, title, description, withCloseButton, ...attributes }) {
@@ -19,15 +15,14 @@ class VtmnAlertStore {
         title,
         description,
         withCloseButton,
-        id: this.newId,
+        id: `vtmn-alert-${uuid()}`,
       },
     ]);
   }
 
   close(alertId) {
     this._alerts.update((n) => {
-      const removedToast = n.filter((i) => i.id !== alertId);
-      return removedToast;
+      return n.filter((i) => i.id !== alertId);
     });
   }
 

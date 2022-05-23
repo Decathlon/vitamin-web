@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-quantity@0.5.1...@vtmn/css-quantity@0.6.0) (2022-05-11)
+
+
+### Features
+
+* **@vtmn/css:** replace physical properties by logical properties ([#1140](https://github.com/Decathlon/vitamin-web/issues/1140)) ([71d13a8](https://github.com/Decathlon/vitamin-web/commit/71d13a8163fec6e3fc3c29647fbeadf46071b6ee))
+
+
+
+
+
+## [0.5.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-quantity@0.5.0...@vtmn/css-quantity@0.5.1) (2022-05-09)
+
+**Note:** Version bump only for package @vtmn/css-quantity
+
+
+
+
+
+# [0.5.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-quantity@0.4.15...@vtmn/css-quantity@0.5.0) (2022-05-04)
+
+
+### Features
+
+* **@vtmn/css-quantity:** no default border ([#1141](https://github.com/Decathlon/vitamin-web/issues/1141)) ([bc8664c](https://github.com/Decathlon/vitamin-web/commit/bc8664c029a67d8d314faf259d7c83538e15f057))
+
+
+
+
+
 ## [0.4.15](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-quantity@0.4.14...@vtmn/css-quantity@0.4.15) (2022-04-21)
 
 **Note:** Version bump only for package @vtmn/css-quantity

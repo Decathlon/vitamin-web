@@ -5,7 +5,7 @@ import clsx from 'clsx';
 import { VtmnButton } from '../../actions/VtmnButton';
 
 export interface VtmnAlertProps
-  extends React.ComponentPropsWithoutRef<'dialog'> {
+  extends Omit<React.ComponentPropsWithoutRef<'dialog'>, 'onClose'> {
   /**
    * The alert's title
    */

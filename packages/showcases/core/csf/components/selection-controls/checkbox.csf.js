@@ -20,7 +20,7 @@ export const argTypes = {
   labelText: {
     type: { name: 'string', required: false },
     description: 'The label of the checkbox.',
-    defaultValue: 'My label',
+    defaultValue: 'Label',
     control: {
       type: 'text',
     },

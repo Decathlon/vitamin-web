@@ -1,10 +1,10 @@
 import * as React from 'react';
-import '@vtmn/css-alert/dist/index-with-vars.css';
+import '@vtmn/css-toast/dist/index-with-vars.css';
 import clsx from 'clsx';
 import { VtmnButton } from '../../actions/VtmnButton';
 
 export interface VtmnToastProps
-  extends React.ComponentPropsWithoutRef<'dialog'> {
+  extends Omit<React.ComponentPropsWithoutRef<'dialog'>, 'onClose'> {
   /**
    * The toast's content
    */

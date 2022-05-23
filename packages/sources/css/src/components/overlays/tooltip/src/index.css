@@ -36,12 +36,13 @@
 
 .vtmn-tooltip::after {
   content: attr(data-tooltip);
-  width: fit-content;
+  inline-size: fit-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: rem(8px) rem(12px);
-  height: rem(36px);
+  padding-block: rem(8px);
+  padding-inline: rem(12px);
+  block-size: rem(36px);
   border-radius: var(--vtmn-radius_100);
   background-color: var(--vtmn-semantic-color_background-primary-reversed);
   color: var(--vtmn-semantic-color_content-primary-reversed);

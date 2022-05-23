@@ -46,6 +46,7 @@ export const VtmnAccordion = ({
         className,
       )}
       aria-disabled={disabled}
+      aria-expanded={open}
       open={open}
       {...props}
     >

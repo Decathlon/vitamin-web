@@ -1,6 +1,6 @@
 <script lang="ts">
 import '@vtmn/css-modal/dist/index-with-vars.css';
-import { computed, defineComponent, PropType, reactive } from 'vue';
+import { computed, defineComponent, PropType } from 'vue';
 import { VtmnButton } from '../../index';
 
 export default /*#__PURE__*/ defineComponent({
@@ -14,9 +14,7 @@ export default /*#__PURE__*/ defineComponent({
     },
   },
   emits: ['close'],
-  setup(props, { emit }) {
-    props = reactive(props);
-
+  setup(_, { emit }) {
     const handleClose = () => {
       return emit('close');
     };

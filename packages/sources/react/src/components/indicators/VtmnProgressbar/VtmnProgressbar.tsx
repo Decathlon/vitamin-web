@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '@vtmn/css-button/dist/index-with-vars.css';
+import '@vtmn/css-progressbar/dist/index-with-vars.css';
 import clsx from 'clsx';
 import {
   VtmnProgressbarVariant,
@@ -77,7 +77,7 @@ export const VtmnProgressbar = ({
         `vtmn-progressbar_variant--${variant}`,
         `vtmn-progressbar--${status}`,
         // Only add size attribute when variant is linear or size is small in circular mode
-        (variant == 'linear' || size == 'small') &&
+        (variant === 'linear' || size === 'small') &&
           `vtmn-progressbar_size--${size}`,
         className,
       )}
@@ -88,7 +88,7 @@ export const VtmnProgressbar = ({
       {...props}
     >
       {/**
-       * Linear Progress Bar
+       * Linear Progressbar
        */}
 
       {variant == 'linear' && status == 'determinate' && (
@@ -111,13 +111,13 @@ export const VtmnProgressbar = ({
         </span>
       )}
 
-      {variant == 'linear' && (
+      {variant === 'linear' && (
         <svg>
           <line
             className="vtmn-progressbar_indicator"
             x1={0}
             x2={
-              status == 'determinate'
+              status === 'determinate'
                 ? `${Math.min(Math.max(value, 0), 100)}%`
                 : '100%'
             }
@@ -128,7 +128,7 @@ export const VtmnProgressbar = ({
       )}
 
       {/**
-       * Circular Progress Bar
+       * Circular Progressbar
        */}
 
       {variant == 'circular' && status == 'determinate' && (
@@ -137,7 +137,7 @@ export const VtmnProgressbar = ({
         </span>
       )}
 
-      {variant == 'circular' && imageSrc !== undefined && (
+      {variant === 'circular' && imageSrc !== undefined && (
         <img className="vtmn-progressbar_image" src={imageSrc} alt={imageAlt} />
       )}
 
@@ -156,12 +156,12 @@ export const VtmnProgressbar = ({
             className="vtmn-progressbar_track"
             cx="50%"
             cy="50%"
-            r={size == 'small' ? 32 : 64}
+            r={size === 'small' ? 32 : 64}
           />
           <circle
             className="vtmn-progressbar_indicator"
             strokeDashoffset={
-              size == 'small'
+              size === 'small'
                 ? `calc(200px - (200px * ${Math.min(
                     Math.max(value, 0),
                     100,
@@ -173,7 +173,7 @@ export const VtmnProgressbar = ({
             }
             cx="50%"
             cy="50%"
-            r={size == 'small' ? 32 : 64}
+            r={size === 'small' ? 32 : 64}
           />
         </svg>
       )}
