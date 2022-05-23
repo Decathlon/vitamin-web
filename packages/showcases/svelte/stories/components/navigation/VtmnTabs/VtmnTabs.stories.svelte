@@ -22,7 +22,7 @@
 
 <Template let:args>
   <div class="block">
-    <VtmnTabs {...args}>
+    <VtmnTabs aria-label="Tabs list" {...args}>
       {#each tabItems() as { tabText }, index}
         <VtmnTabsItem on:click={() => action('click')(index.toString())}>
           {tabText}
@@ -34,7 +34,7 @@
 
 <Template let:args>
   <div class="block">
-    <VtmnTabs {...args}>
+    <VtmnTabs aria-label="Tabs list" {...args}>
       {#each tabItems() as { tabText }, index}
         <VtmnTabsItem
           on:click={() => action('click')(index.toString())}
@@ -49,7 +49,7 @@
 
 <Template let:args>
   <div class="block">
-    <VtmnTabs {...args}>
+    <VtmnTabs aria-label="Tabs list" {...args}>
       {#each tabItems() as { tabText }, index}
         <VtmnTabsItem
           on:click={() => action('click')(index.toString())}
@@ -65,7 +65,7 @@
 
 <Template let:args>
   <div class="block">
-    <VtmnTabs {...args}>
+    <VtmnTabs aria-label="Tabs list" {...args}>
       <VtmnTabsItem
         on:click={() => action('click')('1')}
         icon="calendar-date-fill"

@@ -17,7 +17,7 @@ export default /*#__PURE__*/ defineComponent({
       type: String as PropType<VitamixId>,
       default: undefined,
     },
-    badgeValue: {
+    badge: {
       type: Number as PropType<number>,
       default: undefined,
     },
@@ -34,7 +34,7 @@ export default /*#__PURE__*/ defineComponent({
 </script>
 
 <template>
-  <li>
+  <li role="tab">
     <a :href="href" v-bind="$attrs">
       <VtmnIcon
         v-if="icon"
@@ -43,7 +43,7 @@ export default /*#__PURE__*/ defineComponent({
         aria-hidden="true"
       />
       <slot />
-      <VtmnBadge v-if="badgeValue" :value="badgeValue" />
+      <VtmnBadge v-if="badge" :value="badge" />
     </a>
   </li>
 </template>

@@ -2,11 +2,11 @@
   import VtmnBadge from '../../indicators/VtmnBadge/VtmnBadge.svelte';
   import VtmnIcon from '../../../guidelines/iconography/VtmnIcon/VtmnIcon.svelte';
   export let href = '#';
-  export let badgeValue = undefined;
+  export let badge = undefined;
   export let icon = undefined;
 </script>
 
-<li>
+<li role="tab">
   <a
     {...$$restProps}
     {href}
@@ -19,11 +19,11 @@
     on:keydown
   >
     {#if icon}
-      <VtmnIcon value={icon} />
+      <VtmnIcon value={icon} aria-hidden="true" />
     {/if}
     <slot />
-    {#if badgeValue}
-      <VtmnBadge value={badgeValue} />
+    {#if badge}
+      <VtmnBadge value={badge} />
     {/if}
   </a>
 </li>

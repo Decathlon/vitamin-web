@@ -37,7 +37,7 @@ export default /*#__PURE__*/ defineComponent({
 
 <template>
   <nav :class="classes" v-bind="$attrs">
-    <ul>
+    <ul role="tablist">
       <slot />
     </ul>
     <VtmnDivider />

@@ -17,7 +17,7 @@ const Template = (args) => ({
     return { args };
   },
   template: `<div style="width: 800px; display: flex; justify-content: center">
-      <VtmnTabs v-bind="args">
+      <VtmnTabs aria-label="Tabs list" v-bind="args">
         <VtmnTabsItem href="">Tab Item 1</VtmnTabsItem>
         <VtmnTabsItem icon="heart-line" href="">Tab Item 2</VtmnTabsItem>
         <VtmnTabsItem badge="99" href="">Tab Item 3</VtmnTabsItem>
