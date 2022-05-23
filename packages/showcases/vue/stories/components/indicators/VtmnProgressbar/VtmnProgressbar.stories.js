@@ -16,7 +16,10 @@ const Template = (args) => ({
   setup() {
     return { args };
   },
-  template: `<div style="width: 300px; display:flex; justify-content: center;"><VtmnProgressbar v-bind="args" /></div>`,
+  template: `
+  <div style="width: 300px; display:flex; justify-content: center;">
+    <VtmnProgressbar aria-labelledby="progress-bar-text" v-bind="args" />
+  </div>`,
 });
 
 export const Overview = Template.bind({});
