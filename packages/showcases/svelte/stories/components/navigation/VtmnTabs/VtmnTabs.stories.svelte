@@ -54,7 +54,7 @@
         <VtmnTabsItem
           on:click={() => action('click')(index.toString())}
           icon="heart-line"
-          badge={6}
+          badgeValue={6}
         >
           {tabText}
         </VtmnTabsItem>
@@ -72,7 +72,7 @@
       >
         Tab Name 1
       </VtmnTabsItem>
-      <VtmnTabsItem on:click={() => action('click')('2')} badge={6}>
+      <VtmnTabsItem on:click={() => action('click')('2')} badgeValue={6}>
         Tab Name 2
       </VtmnTabsItem>
       <VtmnTabsItem on:click={() => action('click')('3')}
@@ -81,19 +81,19 @@
       <VtmnTabsItem
         on:click={() => action('click')('4')}
         icon="checkbox-circle-line"
-        badge={99}>Tab Name 4</VtmnTabsItem
+        badgeValue={99}>Tab Name 4</VtmnTabsItem
       >
       <VtmnTabsItem
         on:click={() => action('click')('5')}
         icon="close-circle-line"
-        badge={99}
+        badgeValue={99}
       >
         Tab Name 5
       </VtmnTabsItem>
       <VtmnTabsItem
         on:click={() => action('click')('6')}
         icon="error-warning-line"
-        badge={99}
+        badgeValue={99}
       >
         Tab Name 6
       </VtmnTabsItem>
