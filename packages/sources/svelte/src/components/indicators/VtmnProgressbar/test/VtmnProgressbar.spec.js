@@ -12,6 +12,8 @@ describe('VtmnProgressbar', () => {
       container.getElementsByClassName('vtmn-progressbar_indicator')[0];
     const getProgressLinearLabel = (container) =>
       container.getElementsByClassName('vtmn-progressbar_label')[0];
+    const getProgressLinearSpan = (container) =>
+      container.querySelector('.vtmn-progressbar_label > span');
     test('Should display a linear progressbar medium', () => {
       const { container } = render(VtmnProgressbar, {
         variant: 'linear',
@@ -92,16 +94,20 @@ describe('VtmnProgressbar', () => {
       );
       expect(getProgressLinearLabel(container)).toBeUndefined();
     });
-    test('Should display the aria-label', () => {
+    test('Should have an aria-labelledby linked with the id of the text', () => {
       const { container } = render(VtmnProgressbar, {
         variant: 'linear',
         progress: 30,
         label: 'unit-test',
-        'aria-label': 'aria label unit-test',
+        'aria-labelledby': 'aria-label-unit-test',
       });
       expect(getProgressLinear(container)).toHaveAttribute(
-        'aria-label',
-        'aria label unit-test',
+        'aria-labelledby',
+        'aria-label-unit-test',
+      );
+      expect(getProgressLinearSpan(container)).toHaveAttribute(
+        'id',
+        'aria-label-unit-test',
       );
     });
   });
