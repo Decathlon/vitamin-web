@@ -58,14 +58,6 @@
   font-weight: var(--vtmn-typo_font-weight--bold);
 }
 
-/* .vtmn-progressbar_variant--circular .vtmn-progressbar_label::after {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: var(--vtmn-typo_title-3-font-size);
-  font-weight: var(--vtmn-typo_font-weight--bold);
-} */
-
 .vtmn-progressbar_variant--circular .vtmn-progressbar_image {
   max-inline-size: rem(112px);
   inset-block-start: 50%;
