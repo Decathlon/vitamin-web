@@ -90,7 +90,7 @@ export default /*#__PURE__*/ defineComponent({
     </div>
 
     <span
-      v-if="variant == 'linear' && status == 'indeterminate'"
+      v-if="variant === 'linear' && status === 'indeterminate'"
       :id="
         $attrs['aria-labelledby']
           ? String($attrs['aria-labelledby'])

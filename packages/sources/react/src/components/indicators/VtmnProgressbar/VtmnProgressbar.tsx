@@ -91,7 +91,7 @@ export const VtmnProgressbar = ({
        * Linear Progressbar
        */}
 
-      {variant == 'linear' && status == 'determinate' && (
+      {variant === 'linear' && status === 'determinate' && (
         <div className="vtmn-progressbar_label">
           <span id={...props['aria-labelledby'] || undefined}>
             {loadingText}
@@ -102,7 +102,7 @@ export const VtmnProgressbar = ({
         </div>
       )}
 
-      {variant == 'linear' && status == 'indeterminate' && (
+      {variant === 'linear' && status === 'indeterminate' && (
         <span
           id={...props['aria-labelledby'] || undefined}
           className="vtmn-sr-only"
@@ -131,7 +131,7 @@ export const VtmnProgressbar = ({
        * Circular Progressbar
        */}
 
-      {variant == 'circular' && status == 'determinate' && (
+      {variant === 'circular' && status === 'determinate' && (
         <span className="vtmn-progressbar_label" aria-live="assertive">
           {Math.min(Math.max(value, 0), 100)}%
         </span>
@@ -141,7 +141,7 @@ export const VtmnProgressbar = ({
         <img className="vtmn-progressbar_image" src={imageSrc} alt={imageAlt} />
       )}
 
-      {variant == 'circular' && status == 'indeterminate' && (
+      {variant === 'circular' && status === 'indeterminate' && (
         <span
           id={...props['aria-labelledby'] || undefined}
           className="vtmn-sr-only"
@@ -150,7 +150,7 @@ export const VtmnProgressbar = ({
         </span>
       )}
 
-      {variant == 'circular' && (
+      {variant === 'circular' && (
         <svg>
           <circle
             className="vtmn-progressbar_track"
