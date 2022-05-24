@@ -70,6 +70,7 @@
     "@vtmn/css-select": "^0.7.0",
     "@vtmn/css-skeleton": "^0.4.0",
     "@vtmn/css-snackbar": "^0.6.0",
+    "@vtmn/css-tabs": "^0.4.0",
     "@vtmn/css-tag": "^0.6.0",
     "@vtmn/css-text-input": "^0.16.0",
     "@vtmn/css-toast": "^0.6.0",

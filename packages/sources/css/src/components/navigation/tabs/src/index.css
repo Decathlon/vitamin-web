@@ -25,8 +25,7 @@
 
 .vtmn-tabs a,
 .vtmn-tabs_size--medium a {
-  display: flex;
-  align-items: center;
+  display: inline-block;
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
   padding-inline: rem(20px);
