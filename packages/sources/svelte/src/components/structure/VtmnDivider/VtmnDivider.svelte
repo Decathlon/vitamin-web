@@ -38,7 +38,7 @@
   {...$$restProps}
 >
   {#if $$restProps['slot']}
-    <span id={$$restProps['aria-labelledby'] || undefined}>
+    <span id={$$restProps['aria-labelledby']}>
       {$$restProps['slot']}
     </span>
   {/if}
