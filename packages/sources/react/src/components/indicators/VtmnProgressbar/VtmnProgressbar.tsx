@@ -93,9 +93,7 @@ export const VtmnProgressbar = ({
 
       {variant === 'linear' && status === 'determinate' && (
         <div className="vtmn-progressbar_label">
-          <span id={...props['aria-labelledby'] || undefined}>
-            {loadingText}
-          </span>
+          <span id={props['aria-labelledby'] ?? undefined}>{loadingText}</span>
           <span aria-live="assertive">
             {Math.min(Math.max(value, 0), 100)}%
           </span>
@@ -104,7 +102,7 @@ export const VtmnProgressbar = ({
 
       {variant === 'linear' && status === 'indeterminate' && (
         <span
-          id={...props['aria-labelledby'] || undefined}
+          id={props['aria-labelledby'] ?? undefined}
           className="vtmn-sr-only"
         >
           {loadingText}
@@ -143,7 +141,7 @@ export const VtmnProgressbar = ({
 
       {variant === 'circular' && status === 'indeterminate' && (
         <span
-          id={...props['aria-labelledby'] || undefined}
+          id={props['aria-labelledby'] ?? undefined}
           className="vtmn-sr-only"
         >
           {loadingText}
