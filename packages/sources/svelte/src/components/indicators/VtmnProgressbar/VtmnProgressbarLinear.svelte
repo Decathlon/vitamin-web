@@ -51,13 +51,12 @@
 >
   {#if label && !indeterminate}
     <div class="vtmn-progressbar_label">
-      <span id={$$restProps['aria-labelledby'] || undefined}>{label}</span>
+      <span id={$$restProps['aria-labelledby']}>{label}</span>
       <span aria-live="assertive">{progress}%</span>
     </div>
   {/if}
   {#if indeterminate}
-    <span id={$$restProps['aria-labelledby'] || undefined} class="vtmn-sr-only"
-      >{label}</span
+    <span id={$$restProps['aria-labelledby']} class="vtmn-sr-only">{label}</span
     >
   {/if}
   <svg>

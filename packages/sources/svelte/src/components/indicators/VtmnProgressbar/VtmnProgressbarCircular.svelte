@@ -85,8 +85,7 @@
     >
   {/if}
   {#if indeterminate}
-    <span id={$$restProps['aria-labelledby'] || undefined} class="vtmn-sr-only"
-      >{label}</span
+    <span id={$$restProps['aria-labelledby']} class="vtmn-sr-only">{label}</span
     >
   {/if}
   <svg>
