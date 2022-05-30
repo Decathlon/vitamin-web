@@ -38,15 +38,7 @@ export const VtmnDivider = ({
       aria-orientation={orientation}
     >
       {children ? (
-        <span
-          id={
-            props['aria-labelledby']
-              ? String(props['aria-labelledby'])
-              : undefined
-          }
-        >
-          {children}
-        </span>
+        <span id={props['aria-labelledby'] ?? undefined}>{children}</span>
       ) : null}
     </div>
   );
