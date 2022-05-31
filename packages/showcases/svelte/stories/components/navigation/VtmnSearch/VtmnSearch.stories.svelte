@@ -10,7 +10,26 @@
 <Meta
   title="Components / Navigation / VtmnSearch"
   component={VtmnSearch}
-  {argTypes}
+  argTypes={{
+    ...argTypes,
+    ariaLabels: {
+      type: 'object',
+      description: 'Aria labels of the component.',
+      control: {
+        type: 'object',
+        properties: {
+          clearButton: {
+            type: 'string',
+            description: 'Aria label of the clear button.',
+          },
+          searchButton: {
+            type: 'string',
+            description: 'Aria label of the search button.',
+          },
+        },
+      },
+    },
+  }}
   {parameters}
 />
 
