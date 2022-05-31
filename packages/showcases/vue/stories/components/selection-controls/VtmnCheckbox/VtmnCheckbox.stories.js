@@ -5,7 +5,7 @@ import {
 } from '@vtmn/showcase-core/csf/components/selection-controls/checkbox.csf';
 
 export default {
-  title: 'Components / Selection controls /VtmnCheckbox',
+  title: 'Components / Selection controls / VtmnCheckbox',
   component: VtmnCheckbox,
   argTypes,
   parameters,

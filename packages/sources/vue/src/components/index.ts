@@ -1,4 +1,6 @@
 import VtmnButton from './actions/VtmnButton';
+import VtmnDropdown from './actions/VtmnDropdown';
+import VtmnDropdownItem from './actions/VtmnDropdownItem';
 import VtmnLink from './actions/VtmnLink';
 import VtmnTextInput from './forms/VtmnTextInput';
 import VtmnSelect from './forms/VtmnSelect';
@@ -32,6 +34,8 @@ import VtmnSkeleton from './structure/VtmnSkeleton';
 
 export {
   VtmnButton,
+  VtmnDropdown,
+  VtmnDropdownItem,
   VtmnLink,
   VtmnTextInput,
   VtmnSelect,

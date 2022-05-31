@@ -14,6 +14,8 @@ export default install;
 
 // Actions
 export { default as VtmnButton } from './components/actions/VtmnButton';
+export { default as VtmnDropdown } from './components/actions/VtmnDropdown';
+export { default as VtmnDropdownItem } from './components/actions/VtmnDropdownItem';
 export { default as VtmnLink } from './components/actions/VtmnLink';
 // Forms
 export { default as VtmnSelect } from './components/forms/VtmnSelect';
