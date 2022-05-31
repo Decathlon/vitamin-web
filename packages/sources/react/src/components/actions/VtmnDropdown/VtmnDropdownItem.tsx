@@ -32,46 +32,37 @@ export interface VtmnDropdownItemProps
   onChange?: () => void;
 }
 
-export const VtmnDropdownItem = React.forwardRef<
-  HTMLInputElement,
-  VtmnDropdownItemProps
->(
-  (
-    {
-      divider = false,
-      icon,
-      children,
-      onChange = undefined,
-      ...props
-    }: VtmnDropdownItemProps,
-    ref,
-  ) => {
-    const [checked, setChecked] = React.useState(false);
+export const VtmnDropdownItem = ({
+  divider = false,
+  icon,
+  children,
+  onChange = undefined,
+  ...props
+}: VtmnDropdownItemProps) => {
+  const [checked, setChecked] = React.useState(false);
 
-    return (
-      <React.Fragment>
-        <input
-          type="checkbox"
-          ref={ref}
-          checked={checked}
-          onChange={() =>
-            setChecked(() => {
-              return !checked;
-            })
-          }
-          {...props}
-        />
-        <label htmlFor={props['id'] ?? undefined}>
-          {icon ? <VtmnIcon value={icon} /> : null}
-          {children}
-        </label>
-        {divider ? (
-          <VtmnDivider orientation="horizontal" role="separator" />
-        ) : null}
-      </React.Fragment>
-    );
-  },
-);
+  return (
+    <React.Fragment>
+      <input
+        type="checkbox"
+        checked={checked}
+        onChange={() =>
+          setChecked(() => {
+            return !checked;
+          })
+        }
+        {...props}
+      />
+      <label htmlFor={props['id'] ?? undefined}>
+        {icon ? <VtmnIcon value={icon} /> : null}
+        {children}
+      </label>
+      {divider ? (
+        <VtmnDivider orientation="horizontal" role="separator" />
+      ) : null}
+    </React.Fragment>
+  );
+};
 
 const MemoVtmnDropdownItem = React.memo(VtmnDropdownItem);
 
