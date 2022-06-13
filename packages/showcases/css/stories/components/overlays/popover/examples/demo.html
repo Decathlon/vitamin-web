@@ -1,0 +1,44 @@
+<style>
+  .block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+  }
+</style>
+
+<div class="block">
+  <div
+    id="popover-demo-container"
+    class="vtmn-popover"
+    data-position="left"
+    aria-labelledby="my-popover--title-demo"
+    aria-describedby="my-popover-description-demo"
+  >
+    <button
+      id="btn-popover-demo"
+      class="vtmn-btn vtmn-btn_size--small"
+      aria-pressed="false"
+    >
+      Click me
+    </button>
+    <div id="popover-demo" role="tooltip">
+      <span id="my-popover--title-demo" class="vtmn-popover_title"
+        >This is the title of the popover</span
+      >
+      <span id="my-popover-description-demo" class="vtmn-popover_text">
+        A popover can appear when users click or focus an element to provide his
+        description in details, and often also with a link or button inside.
+        Popovers will automatically close when clicking outside the popover
+        bounds.
+      </span>
+      <button
+        id="btn-close-popover-demo"
+        class="vtmn-btn vtmn-btn_variant--primary-reversed vtmn-btn_size--small"
+      >
+        Got it
+      </button>
+    </div>
+  </div>
+</div>

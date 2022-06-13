@@ -64,17 +64,17 @@
   box-shadow: none;
 }
 
-.vtmn-popover:focus-within > [role='tooltip'] {
+.vtmn-popover.show > [role='tooltip'] {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   pointer-events: auto;
 }
 
-.vtmn-popover:focus-visible {
+/* .vtmn-popover:focus-visible {
   outline: none;
   box-shadow: var(--vtmn-shadow_focus-visible);
-}
+} */
 
 /* POSITION: TOP */
 .vtmn-popover[data-position^='top'] > [role='tooltip'] {
