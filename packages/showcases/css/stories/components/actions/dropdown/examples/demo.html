@@ -1,16 +1,19 @@
 <div class="block">
   <div id="dropdown-demo" class="vtmn-dropdown">
     <label id="dropdown-demo-label">Favorite Sports</label>
-    <details>
+    <details id="dropdown-details">
       <summary aria-labelledby="dropdown-demo-label">
         Choose your favorite sports
       </summary>
       <div
+        id="dropdown-items"
         class="vtmn-dropdown_items"
         style="height: 200px"
         role="group"
         aria-labelledby="dropdown-demo-label"
       >
+        <span id="block-focus-trap-start" tabindex="0"></span>
+
         <input type="checkbox" name="dropdown-demo" id="dropdown-demo-opt-1" />
         <label for="dropdown-demo-opt-1">
           <span class="vtmx-emotion-laugh-line"></span>
@@ -76,6 +79,8 @@
           class="vtmn-divider vtmn-divider_orientation--horizontal"
           role="separator"
         ></div>
+
+        <span id="block-focus-trap-end" tabindex="0"></span>
       </div>
     </details>
   </div>

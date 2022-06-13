@@ -1,77 +1,40 @@
-window.addEventListener('DOMContentLoaded', (event) => {
-  const menu = document.querySelectorAll('#dropdown-demo > details > summary');
-  const menuItems = document.querySelectorAll(
-    '#dropdown-demo > details > div.vtmn-dropdown_items > label',
-  );
-  const keys = {
-    tab: 9,
-    enter: 13,
-    esc: 27,
-    space: 32,
-    left: 37,
-    up: 38,
-    right: 39,
-    down: 40,
-  };
+window.addEventListener('DOMContentLoaded', () => {
+  let firstItem = document.querySelector('#dropdown-demo-opt-1');
+  let lastItem = document.querySelector('#dropdown-demo-opt-6');
 
-  const goToMenuItem = function (idx) {
-    if (idx == menuItems.length) {
-      idx = 0;
-    } else if (idx < 0) {
-      idx = menuItems.length - 1;
+  console.log('firstItem', firstItem);
+  console.log('lastItem', lastItem);
+
+  let groupItem = document.querySelector('#dropdown-items');
+
+  console.log('groupItem', groupItem);
+
+  let firstFocusTrap = document.querySelector('#block-focus-trap-start');
+  let lastFocusTrap = document.querySelector('#block-focus-trap-end');
+
+  console.log('firstFocusTrap', firstFocusTrap);
+  console.log('lastFocusTrap', lastFocusTrap);
+
+  groupItem.addEventListener('focus', () => {
+    console.log('groupItem focus');
+    firstItem.focus();
+  });
+
+  groupItem.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      console.log('groupItem keydown Escape');
+      document.querySelector('#dropdown-details').open = false;
+      document.querySelector('#dropdown-details > summary').focus();
     }
-    menuItems[idx].focus();
-    currentIndex = idx;
-  };
+  });
 
-  Array.prototype.forEach.call(menuItems, function (el, i) {
-    // el.setAttribute('tabindex', '-1');
-    el.addEventListener('keydown', function (event) {
-      switch (event.keyCode) {
-        case keys.tab:
-          if (event.shiftKey) {
-            gotoIndex(currentIndex - 1);
-          } else {
-            gotoIndex(currentIndex + 1);
-          }
-          prevdef = true;
-          break;
-        case keys.right:
-          gotoIndex(currentIndex + 1);
-          prevdef = true;
-          break;
-        case keys.left:
-          gotoIndex(currentIndex - 1);
-          prevdef = true;
-          break;
-        case keys.esc:
-          gotoIndex(currentIndex);
-          prevdef = true;
-          break;
-        case keys.down:
-          gotoIndex(currentIndex + 1);
-          prevdef = true;
-          break;
-        case keys.up:
-          gotoIndex(currentIndex - 1);
-          prevdef = true;
-          break;
-        case keys.enter:
-        case keys.space:
-          alert(this.innerText);
-          prevdef = true;
-          break;
-      }
-      if (prevdef) {
-        event.preventDefault();
-        event.stopPropagation();
-      }
-      return false;
-    });
-    el.addEventListener('click', function (event) {
-      event.preventDefault();
-      event.stopPropagation();
-      return false;
-    });
+  firstFocusTrap.addEventListener('focus', () => {
+    console.log('firstFocusTrap focused');
+    lastItem.focus();
+  });
+
+  lastFocusTrap.addEventListener('focus', () => {
+    console.log('lastFocusTrap focused');
+    firstItem.focus();
   });
 });
