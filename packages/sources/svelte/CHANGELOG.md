@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.45.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.45.5...@vtmn/svelte@0.45.6) (2022-06-05)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** hide clear btn if not value set ([#1170](https://github.com/Decathlon/vitamin-web/issues/1170)) ([2f863d3](https://github.com/Decathlon/vitamin-web/commit/2f863d36b8210b14749d7479a29bcd7828f2ae0f))
+
+
+
+
+
 ## [0.45.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.45.4...@vtmn/svelte@0.45.5) (2022-05-18)
 
 

@@ -85,6 +85,7 @@ export const VtmnSearch = ({
             iconAlone="close-line"
             onClick={() => setSearch('')}
             aria-label="close"
+            type="button"
           />
         )}
 
