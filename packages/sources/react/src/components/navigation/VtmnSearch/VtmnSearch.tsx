@@ -40,6 +40,13 @@ export interface VtmnSearchProps
    * @defaultValue undefined
    */
   value?: string;
+
+  /**
+   * Called when user action should close the modal
+   * @type {void}
+   * @default undefined
+   */
+  onSearch?: (search: string) => void;
 }
 
 export const VtmnSearch = ({
@@ -49,9 +56,15 @@ export const VtmnSearch = ({
   placeholder = 'Search',
   value = undefined,
   className,
+  onSearch,
+
   ...props
 }: VtmnSearchProps) => {
   const [search, setSearch] = React.useState(value);
+
+  const searchValue = () => {
+    if (onSearch && search) onSearch(search);
+  };
 
   return (
     <div
@@ -90,6 +103,7 @@ export const VtmnSearch = ({
         )}
 
         <VtmnButton
+          onClick={searchValue}
           variant="ghost"
           size={size}
           disabled={disabled}
