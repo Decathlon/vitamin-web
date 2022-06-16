@@ -42,7 +42,7 @@ export interface VtmnSearchProps
   value?: string;
 
   /**
-   * Called when user action should close the modal
+   * Called when user click on search icon
    * @type {void}
    * @default undefined
    */
