@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.77.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.76.4...@vtmn/css@0.77.0) (2022-06-21)
+
+
+### Features
+
+* **@vtmn/css:** add demo for `dropdown` and script ([#1126](https://github.com/Decathlon/vitamin-web/issues/1126)) ([d5dc35e](https://github.com/Decathlon/vitamin-web/commit/d5dc35e16a2a0da29ece17507b0cec9199fddf46))
+
+
+
+
+
 ## [0.76.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.76.2...@vtmn/css@0.76.4) (2022-06-21)
 
 **Note:** Version bump only for package @vtmn/css
