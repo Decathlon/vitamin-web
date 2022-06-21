@@ -30,7 +30,7 @@
     "storybook-addon-run-script": "^0.1.4",
     "tailwindcss": "^2.2.16",
     "typescript": "^4.5.4",
-    "webpack": "^5.68.0"
+    "webpack": "^5.73.0"
   },
   "licenses": [
     {
