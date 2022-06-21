@@ -75,7 +75,7 @@ type VtmnTextInputAdditionalProps = {
    * Props to be spreaded to the label
    * @type {object}
    */
-  labelProps?: string;
+  labelProps?: React.ComponentPropsWithoutRef<'label'>;
 };
 
 export type VtmnTextInputProps = React.ComponentPropsWithoutRef<'textarea'> &
