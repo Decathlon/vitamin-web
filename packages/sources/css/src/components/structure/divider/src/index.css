@@ -25,11 +25,11 @@
   inline-size: 100%;
 }
 
-.vtmn-divider:not(:empty):not(.vtmn-divider_orientation--vertical)::before {
+.vtmn-divider:not(:empty, .vtmn-divider_orientation--vertical)::before {
   margin-inline-end: var(--vtmn-spacing_2);
 }
 
-.vtmn-divider:not(:empty):not(.vtmn-divider_orientation--vertical)::after {
+.vtmn-divider:not(:empty, .vtmn-divider_orientation--vertical)::after {
   margin-inline-start: var(--vtmn-spacing_2);
 }
 
