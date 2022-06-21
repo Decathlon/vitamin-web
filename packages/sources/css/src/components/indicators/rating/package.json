@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-rating",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Decathlon Design System - Vitamin specific CSS styles for rating component",
   "keywords": [
     "design-system",
@@ -29,7 +29,7 @@
     "@vtmn/icons": "^0.12.1"
   },
   "devDependencies": {
-    "@vtmn/css-design-tokens": "^0.19.0",
+    "@vtmn/css-design-tokens": "^0.19.1",
     "@vtmn/css-postcss-config": "*"
   },
   "publishConfig": {
