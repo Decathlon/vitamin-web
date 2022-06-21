@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-price",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Decathlon Design System - Vitamin specific CSS styles for price component",
   "keywords": [
     "design-system",
@@ -26,7 +26,7 @@
     "build": "node build.js"
   },
   "devDependencies": {
-    "@vtmn/css-design-tokens": "^0.18.7",
+    "@vtmn/css-design-tokens": "^0.18.8",
     "@vtmn/css-postcss-config": "*"
   },
   "publishConfig": {

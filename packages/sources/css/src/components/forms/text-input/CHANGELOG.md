@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.16.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-text-input@0.16.0...@vtmn/css-text-input@0.16.1) (2022-06-21)
+
+**Note:** Version bump only for package @vtmn/css-text-input
+
+
+
+
+
 # [0.16.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-text-input@0.15.1...@vtmn/css-text-input@0.16.0) (2022-05-11)
 
 
