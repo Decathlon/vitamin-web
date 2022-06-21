@@ -34,13 +34,13 @@
   border-color: var(--vtmn-semantic-color_content-inactive);
 }
 
-.vtmn-checkbox[type='checkbox']:not(:focus-visible):not(:checked):not(:disabled):hover
+.vtmn-checkbox[type='checkbox']:not(:focus-visible, :checked, :disabled):hover
   + label::before {
   box-shadow: 0 0 0 rem(7px)
     var(--vtmn-semantic-color_hover-secondary-transparent);
 }
 
-.vtmn-checkbox[type='checkbox']:not(:focus-visible):not(:checked):not(:disabled):active
+.vtmn-checkbox[type='checkbox']:not(:focus-visible, :checked, :disabled):active
   + label::before {
   box-shadow: 0 0 0 rem(7px)
     var(--vtmn-semantic-color_active-secondary-transparent);
