@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.46.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.46.0...@vtmn/svelte@0.46.1) (2022-06-21)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+# [0.46.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.45.6...@vtmn/svelte@0.46.0) (2022-06-21)
+
+
+### Features
+
+* dropdown focus loop ([#1184](https://github.com/Decathlon/vitamin-web/issues/1184)) ([f4a73de](https://github.com/Decathlon/vitamin-web/commit/f4a73de326af16a3e0265db87a21237ad7817b0d)), closes [#1177](https://github.com/Decathlon/vitamin-web/issues/1177)
+* modal focus loop ([#1185](https://github.com/Decathlon/vitamin-web/issues/1185)) ([f4b5244](https://github.com/Decathlon/vitamin-web/commit/f4b52445e0e632de608a73c470d9c1212f563b41))
+
+
+
+
+
+## [0.45.8](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.45.6...@vtmn/svelte@0.45.8) (2022-06-21)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
 ## [0.45.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.45.5...@vtmn/svelte@0.45.6) (2022-06-05)
 
 

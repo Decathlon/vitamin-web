@@ -46,7 +46,7 @@
   color: var(--vtmn-semantic-color_content-tertiary);
 }
 
-.vtmn-quantity input[type='number']:not(:disabled):not(:focus):hover {
+.vtmn-quantity input[type='number']:not(:disabled, :focus):hover {
   box-shadow: inset 0 0 0 rem(2px) var(--vtmn-semantic-color_border-secondary),
     0 0 0 rem(3px) var(--vtmn-semantic-color_hover-primary);
 }
