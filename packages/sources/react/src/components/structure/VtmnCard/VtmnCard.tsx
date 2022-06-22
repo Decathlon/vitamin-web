@@ -1,6 +1,6 @@
 import * as React from 'react';
 import clsx from 'clsx';
-import '@vtmn/css-divider/dist/index-with-vars.css';
+import '@vtmn/css-card/dist/index-with-vars.css';
 import { VtmnCardVariant } from './types';
 
 export interface VtmnCardProps extends React.ComponentPropsWithoutRef<'div'> {
@@ -9,6 +9,11 @@ export interface VtmnCardProps extends React.ComponentPropsWithoutRef<'div'> {
    * @defaultValue 'top-image'
    */
   variant?: VtmnCardVariant;
+
+  /**
+   * The media source
+   */
+  mediaSource: string;
 
   /**
    * The title of the card
@@ -37,6 +42,7 @@ export interface VtmnCardProps extends React.ComponentPropsWithoutRef<'div'> {
 
 export const VtmnCard = ({
   variant = 'top-image',
+  mediaSource,
   title,
   fullImage = false,
   contentOpaque = false,
@@ -57,10 +63,7 @@ export const VtmnCard = ({
             'vtmn-card_image--full': fullImage && variant === 'top-image',
           })}
         >
-          <img
-            alt=""
-            src="https://storage.googleapis.com/dkt-design-cdn/images/landscape-placeholder.jpg"
-          />
+          <img alt="" src={mediaSource} />
         </div>
         <div
           className={clsx('vtmn-card_content', {
