@@ -3,6 +3,53 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.44.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.44.0...@vtmn/react@0.44.1) (2022-06-21)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+# [0.44.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.43.3...@vtmn/react@0.44.0) (2022-06-21)
+
+
+### Features
+
+* dropdown focus loop ([#1184](https://github.com/Decathlon/vitamin-web/issues/1184)) ([f4a73de](https://github.com/Decathlon/vitamin-web/commit/f4a73de326af16a3e0265db87a21237ad7817b0d)), closes [#1177](https://github.com/Decathlon/vitamin-web/issues/1177)
+* modal focus loop ([#1185](https://github.com/Decathlon/vitamin-web/issues/1185)) ([f4b5244](https://github.com/Decathlon/vitamin-web/commit/f4b52445e0e632de608a73c470d9c1212f563b41))
+
+
+
+
+
+## [0.43.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.43.3...@vtmn/react@0.43.5) (2022-06-21)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.43.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.43.2...@vtmn/react@0.43.3) (2022-06-20)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.43.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.43.1...@vtmn/react@0.43.2) (2022-06-05)
+
+
+### Bug Fixes
+
+* **@vtmn/react:** `VtmnSearch` enter key inside form tag ([#1171](https://github.com/Decathlon/vitamin-web/issues/1171)) ([7bc5bc0](https://github.com/Decathlon/vitamin-web/commit/7bc5bc0e8a521a3935d779b83aabc1683495ce48))
+
+
+
+
+
 ## [0.43.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.43.0...@vtmn/react@0.43.1) (2022-05-17)
 
 **Note:** Version bump only for package @vtmn/react

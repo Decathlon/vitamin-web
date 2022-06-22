@@ -36,13 +36,13 @@
   border-color: var(--vtmn-semantic-color_content-inactive);
 }
 
-.vtmn-radio-button[type='radio']:not(:focus-visible):not(:checked):not(:disabled):hover
+.vtmn-radio-button[type='radio']:not(:focus-visible, :checked, :disabled):hover
   + label::before {
   box-shadow: 0 0 0 rem(7px)
     var(--vtmn-semantic-color_hover-secondary-transparent);
 }
 
-.vtmn-radio-button[type='radio']:not(:checked):not(:disabled):active
+.vtmn-radio-button[type='radio']:not(:checked, :disabled):active
   + label::before {
   box-shadow: 0 0 0 rem(7px)
     var(--vtmn-semantic-color_active-secondary-transparent);

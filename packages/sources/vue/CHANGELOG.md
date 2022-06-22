@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.38.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.38.0...@vtmn/vue@0.38.1) (2022-06-21)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
+# [0.38.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.37.2...@vtmn/vue@0.38.0) (2022-06-21)
+
+
+### Features
+
+* dropdown focus loop ([#1184](https://github.com/Decathlon/vitamin-web/issues/1184)) ([f4a73de](https://github.com/Decathlon/vitamin-web/commit/f4a73de326af16a3e0265db87a21237ad7817b0d)), closes [#1177](https://github.com/Decathlon/vitamin-web/issues/1177)
+
+
+
+
+
+## [0.37.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.37.2...@vtmn/vue@0.37.4) (2022-06-21)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
 ## [0.37.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.37.1...@vtmn/vue@0.37.2) (2022-05-17)
 
 **Note:** Version bump only for package @vtmn/vue
