@@ -1,14 +1,14 @@
-window.addEventListener('DOMContentLoaded', (event) => {
+window.addEventListener('DOMContentLoaded', () => {
   const templateModal = ` <div
     class="vtmn-modal"
     id="vtmn-modal"
     role="dialog"
     aria-modal="true"
     aria-labelledby="vtmn-modal-title"
-    aria-describedby="vtmn-modal-description"
   >
     <div id="vtmn-modal-background" class="vtmn-modal_background-overlay"></div>
     <div class="vtmn-modal_content">
+    <span id="block-focus-trap-start" tabindex="0"></span>
       <div class="vtmn-modal_content_title">
         <p class="vtmn-modal_content_title--text">What is a modal?</p>
         <button
@@ -62,6 +62,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
           Yes, I understand
         </button>
       </div>
+       <span id="block-focus-trap-end" tabindex="0"></span>
     </div>
   </div>`;
 
@@ -76,39 +77,48 @@ window.addEventListener('DOMContentLoaded', (event) => {
   function instanciateModal() {
     document.body.lastChild.innerHTML = templateModal;
 
+    document.getElementById('btn-close-modal-1').focus();
+
     document
-      .getElementById(`btn-close-modal-1`)
-      .addEventListener('click', function () {
-        document.getElementById(`vtmn-modal`).parentElement.remove();
-        document.getElementById('btn-modal').disabled = false;
+      .getElementById('btn-close-modal-1')
+      .addEventListener('click', handleClose);
+    document
+      .getElementById('btn-close-modal-2')
+      .addEventListener('click', handleClose);
+    document
+      .getElementById('btn-close-modal-3')
+      .addEventListener('click', handleClose);
+    document
+      .getElementById('vtmn-modal-background')
+      .addEventListener('click', handleClose);
+
+    document
+      .getElementById('block-focus-trap-start')
+      .addEventListener('focus', () => {
+        document.getElementById('btn-close-modal-3').focus();
       });
 
     document
-      .getElementById(`btn-close-modal-2`)
-      .addEventListener('click', function () {
-        document.getElementById(`vtmn-modal`).parentElement.remove();
-        document.getElementById('btn-modal').disabled = false;
+      .getElementById('block-focus-trap-end')
+      .addEventListener('focus', () => {
+        document.getElementById('btn-close-modal-1').focus();
       });
 
-    document
-      .getElementById(`btn-close-modal-3`)
-      .addEventListener('click', function () {
-        document.getElementById(`vtmn-modal`).parentElement.remove();
-        document.getElementById('btn-modal').disabled = false;
-      });
-
-    document
-      .getElementById(`vtmn-modal-background`)
-      .addEventListener('click', function () {
-        document.getElementById(`vtmn-modal`).parentElement.remove();
-        document.getElementById('btn-modal').disabled = false;
-      });
+    document.getElementById('vtmn-modal').addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        handleClose();
+      }
+    });
   }
 
-  document.getElementById('btn-modal').addEventListener('click', function () {
+  document.getElementById('open-modal').addEventListener('click', () => {
     if (!document.getElementById('vtmn-modal')) {
-      document.getElementById('btn-modal').disabled = true;
       createModal();
     }
   });
+
+  function handleClose() {
+    document.getElementById('vtmn-modal').parentElement.remove();
+    document.getElementById('open-modal').focus();
+  }
 });
