@@ -33,6 +33,18 @@
   export let value;
 
   /**
+   * @typedef AriaLabels
+   * @type {object}
+   * @property {string} clearButton - Aria label of the clear button.
+   * @property {string} searchButton - Aria label of the search button.
+   */
+
+  /**
+   * @type {AriaLabels} Aria labels of the component.
+   */
+  export let ariaLabels = {};
+
+  /**
    * Custom classes to apply to the component.
    * @type {string}
    */
@@ -77,15 +89,17 @@
   />
 
   <div class="vtmn-search_buttons">
-    <VtmnButton
-      iconAlone="close-line"
-      variant="ghost"
-      {disabled}
-      {size}
-      on:click={resetInputValue}
-      aria-label="close"
-      aria-disabled={disabled}
-    />
+    {#if value}
+      <VtmnButton
+        iconAlone="close-line"
+        variant="ghost"
+        {disabled}
+        {size}
+        on:click={resetInputValue}
+        aria-label={ariaLabels.clearButton}
+        aria-disabled={disabled}
+      />
+    {/if}
 
     <VtmnButton
       iconAlone="search-line"
@@ -94,7 +108,7 @@
       {size}
       on:click={onSearch}
       type="submit"
-      aria-label="search"
+      aria-label={ariaLabels.searchButton}
     />
   </div>
 </div>

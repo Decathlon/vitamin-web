@@ -15,9 +15,11 @@
   },
   "devDependencies": {
     "@babel/core": "^7.17.12",
-    "@storybook/addon-a11y": "^6.4.19",
-    "@storybook/addon-essentials": "^6.4.19",
-    "@storybook/vue3": "^6.4.19",
+    "@storybook/addon-a11y": "^6.5.9",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/builder-webpack5": "^6.5.9",
+    "@storybook/manager-webpack5": "^6.5.9",
+    "@storybook/vue3": "^6.5.9",
     "@vtmn/css": "*",
     "@vtmn/icons": "*",
     "@vtmn/showcase-core": "*",
@@ -34,6 +36,6 @@
     "ts-dedent": "^2.2.0",
     "typescript": "^4.5.4",
     "vue-loader": "^17.0.0",
-    "webpack": "5.72.1"
+    "webpack": "5.73.0"
   }
 }

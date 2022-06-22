@@ -3,7 +3,13 @@ import VtmnSearch from '../VtmnSearch.svelte';
 import { VTMN_SEARCH_VARIANT, VTMN_SEARCH_SIZE } from '../enums';
 
 describe('<VtmnSearch />', () => {
-  const props = { value: 'input value unit test' };
+  const props = {
+    value: 'input value unit test',
+    ariaLabels: {
+      clearButton: 'clear',
+      searchButton: 'search',
+    },
+  };
   test('Renders correctly', () => {
     const { container } = render(VtmnSearch, { ...props });
 
@@ -21,6 +27,26 @@ describe('<VtmnSearch />', () => {
         `vtmn-search_variant--${VTMN_SEARCH_VARIANT.PERSISTENT}`,
       ).length,
     ).toBe(1);
+  });
+
+  test('Should not display clear button', () => {
+    const { queryByLabelText } = render(VtmnSearch, {
+      value: '',
+      ariaLabels: {
+        clearButton: 'clear button',
+      },
+    });
+    expect(queryByLabelText('clear button')).toBeNull();
+  });
+
+  test('Should display clear button if value are defined', () => {
+    const { getByLabelText } = render(VtmnSearch, {
+      ...props,
+      ariaLabels: {
+        clearButton: 'clear button',
+      },
+    });
+    expect(getByLabelText('clear button')).toBeVisible();
   });
 
   test('Renders correctly on-content variant', () => {
@@ -72,10 +98,10 @@ describe('<VtmnSearch />', () => {
       ...props,
       value: 'test',
     });
-    const closeButton = getAllByLabelText('close')[0];
+    const clearButton = getAllByLabelText('clear')[0];
     const input = container.getElementsByTagName('input')[0];
 
-    await fireEvent.click(closeButton);
+    await fireEvent.click(clearButton);
 
     expect(input.value).toBe('');
   });

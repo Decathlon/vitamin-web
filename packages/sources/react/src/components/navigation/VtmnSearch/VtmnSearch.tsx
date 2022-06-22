@@ -40,6 +40,13 @@ export interface VtmnSearchProps
    * @defaultValue undefined
    */
   value?: string;
+
+  /**
+   * Called when user click on search icon
+   * @type {void}
+   * @default undefined
+   */
+  onSearch?: (search: string) => void;
 }
 
 export const VtmnSearch = ({
@@ -49,9 +56,19 @@ export const VtmnSearch = ({
   placeholder = 'Search',
   value = undefined,
   className,
+  onSearch,
+
   ...props
 }: VtmnSearchProps) => {
   const [search, setSearch] = React.useState(value);
+
+  const searchValue = () => {
+    if (onSearch && search) onSearch(search);
+  };
+
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === 'Enter') searchValue();
+  };
 
   return (
     <div
@@ -69,6 +86,7 @@ export const VtmnSearch = ({
         disabled={disabled}
         type="search"
         {...props}
+        onKeyDown={handleKeyDown}
         onChange={(event) => {
           // Overwrite previously defined onChange then call it back once search is set
           setSearch(event.target.value);
@@ -85,10 +103,12 @@ export const VtmnSearch = ({
             iconAlone="close-line"
             onClick={() => setSearch('')}
             aria-label="close"
+            type="button"
           />
         )}
 
         <VtmnButton
+          onClick={searchValue}
           variant="ghost"
           size={size}
           disabled={disabled}
