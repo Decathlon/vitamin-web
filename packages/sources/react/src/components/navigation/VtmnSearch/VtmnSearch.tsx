@@ -66,6 +66,10 @@ export const VtmnSearch = ({
     if (onSearch && search) onSearch(search);
   };
 
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === 'Enter') searchValue();
+  };
+
   return (
     <div
       className={clsx(
@@ -82,6 +86,7 @@ export const VtmnSearch = ({
         disabled={disabled}
         type="search"
         {...props}
+        onKeyDown={handleKeyDown}
         onChange={(event) => {
           // Overwrite previously defined onChange then call it back once search is set
           setSearch(event.target.value);
