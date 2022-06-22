@@ -13,6 +13,12 @@ export default {
   parameters,
 } as Meta;
 
-const Template: Story = (args) => <VtmnSearch {...args} />;
+const Template: Story = (args) => {
+  const onSearch = (search: string) => {
+    console.log('search value is: ' + search);
+  };
+
+  return <VtmnSearch onSearch={onSearch} {...args} />;
+};
 
 export const Overview = Template.bind({});
