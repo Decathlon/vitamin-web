@@ -17,6 +17,12 @@ export interface VtmnTooltipProps
   tooltip: string;
 
   /**
+   * Whether the Tooltip is disabled
+   * @defaultValue false
+   */
+  isDisabled: boolean;
+
+  /**
    * The content to render inside the component.
    * @defaultValue undefined
    */
@@ -27,22 +33,29 @@ export const VtmnTooltip = ({
   children,
   position = 'top',
   tooltip,
+  isDisabled = false,
   className,
   ...props
 }: VtmnTooltipProps) => {
   return (
-    <div className="vtmn-flex">
-      <span
-        tabIndex={0}
-        role="tooltip"
-        className={`vtmn-tooltip ${className ?? className}`}
-        data-tooltip={tooltip}
-        data-position={position}
-        {...props}
-      >
-        {children}
-      </span>
-    </div>
+    <>
+      {isDisabled ? (
+        children
+      ) : (
+        <div className="vtmn-flex">
+          <span
+            tabIndex={0}
+            role="tooltip"
+            className={`vtmn-tooltip ${className ?? className}`}
+            data-tooltip={tooltip}
+            data-position={position}
+            {...props}
+          >
+            {children}
+          </span>
+        </div>
+      )}
+    </>
   );
 };
 

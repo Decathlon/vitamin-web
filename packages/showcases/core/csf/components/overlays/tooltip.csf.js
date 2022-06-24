@@ -34,4 +34,11 @@ export const argTypes = {
     defaultValue: 'Tooltip text',
     control: { type: 'text' },
   },
+
+  isDisabled: {
+    type: { name: 'string', required: false },
+    description: 'Whether the tooltip is disabled',
+    defaultValue: false,
+    control: { type: 'boolean' },
+  },
 };
