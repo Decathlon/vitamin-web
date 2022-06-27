@@ -139,9 +139,8 @@
   > .vtmn-card_content:not(.vtmn-card_content--opaque) {
   background: linear-gradient(
     180deg,
-    color-mod(var(--vtmn-semantic-color_background-primary-reversed) alpha(0%))
-      20%,
-    var(--vtmn-semantic-color_background-primary-reversed) 100%
+    color-mod(var(--vtmn-semantic-color_background-primary-reversed) alpha(0%)),
+    var(--vtmn-semantic-color_background-primary-reversed)
   );
 }
 

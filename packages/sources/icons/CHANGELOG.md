@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.14.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.13.0...@vtmn/icons@0.14.0) (2022-06-23)
+
+
+### Features
+
+* **@vtmn/css:** add tiktok icon ([#1190](https://github.com/Decathlon/vitamin-web/issues/1190)) ([e0a23f6](https://github.com/Decathlon/vitamin-web/commit/e0a23f6d8f88ce871ba7e1f56b5405338471d3c7))
+
+
+
+
+
+# [0.13.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.12.1...@vtmn/icons@0.13.0) (2022-06-23)
+
+
+### Features
+
+* **@vtmn/css:** add zoom-in and zoom-out icons ([#1189](https://github.com/Decathlon/vitamin-web/issues/1189)) ([4773292](https://github.com/Decathlon/vitamin-web/commit/4773292e9f8577f4df7ff980d576c2b39feb84c2))
+
+
+
+
+
 ## [0.12.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.12.0...@vtmn/icons@0.12.1) (2022-03-11)
 
 **Note:** Version bump only for package @vtmn/icons
