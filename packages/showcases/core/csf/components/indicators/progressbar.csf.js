@@ -76,4 +76,11 @@ export const argTypes = {
     defaultValue: 'Loading',
     control: { type: 'text' },
   },
+
+  loadingText: {
+    type: { name: 'string', required: false },
+    description: 'Id of the label.',
+    defaultValue: undefined,
+    control: { type: 'text' },
+  },
 };
