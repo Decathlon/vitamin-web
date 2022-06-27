@@ -17,7 +17,7 @@
   color: var(--vtmn-semantic-color_content-primary);
   font-weight: var(--vtmn-typo_font-weight--normal);
   background-color: var(--vtmn-semantic-color_background-primary);
-  border-block-end: rem(1px) solid var(--vtmn-semantic-color_border-secondary);
+  border-block-end: rem(1px) solid var(--vtmn-semantic-color_border-primary);
   outline: 0;
 }
 
@@ -108,5 +108,5 @@
 }
 
 .vtmn-accordion_content:last-child {
-  border-block-end: rem(1px) solid var(--vtmn-semantic-color_border-secondary);
+  border-block-end: rem(1px) solid var(--vtmn-semantic-color_border-primary);
 }

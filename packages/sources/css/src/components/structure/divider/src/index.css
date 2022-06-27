@@ -21,7 +21,7 @@
 .vtmn-divider_orientation--horizontal::after {
   content: '';
   block-size: rem(1px);
-  background-color: var(--vtmn-semantic-color_border-secondary);
+  background-color: var(--vtmn-semantic-color_border-primary);
   inline-size: 100%;
 }
 

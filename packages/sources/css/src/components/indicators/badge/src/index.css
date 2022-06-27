@@ -15,7 +15,7 @@
   border-radius: var(--vtmn-radius_700);
   background-color: var(--vtmn-semantic-color_background-tertiary);
   color: var(--vtmn-semantic-color_content-primary);
-  box-shadow: inset 0 0 0 rem(1px) var(--vtmn-semantic-color_border-secondary);
+  box-shadow: inset 0 0 0 rem(1px) var(--vtmn-semantic-color_border-primary);
   padding-block: 0;
   padding-inline: rem(6px);
 }
@@ -24,7 +24,7 @@
 .vtmn-badge_variant--default {
   background-color: var(--vtmn-semantic-color_background-tertiary);
   color: var(--vtmn-semantic-color_content-primary);
-  box-shadow: inset 0 0 0 rem(1px) var(--vtmn-semantic-color_border-secondary);
+  box-shadow: inset 0 0 0 rem(1px) var(--vtmn-semantic-color_border-primary);
 }
 
 .vtmn-badge_variant--brand {
