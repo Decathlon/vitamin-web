@@ -8,6 +8,6 @@
   --vtmn-shadow_400: rem(0) rem(48px) rem(48px) rem(0)
     var(--vtmn-semantic-color_shadow);
   --vtmn-shadow_focus-visible: 0 0 0 rem(4px)
-      var(--vtmn-semantic-color_border-primary),
+      var(--vtmn-semantic-color_border-secondary),
     0 0 0 rem(6px) var(--vtmn-semantic-color_border-primary-reversed);
 }
