@@ -38,7 +38,7 @@ describe('VtmnDivider', () => {
   });
   test('Should be accessible', () => {
     const { container } = render(VtmnDivider, {
-      'aria-labelledby': 'idForTest',
+      labelId: 'idForTest',
     });
     expect(getDivider(container)).toHaveAttribute(
       'aria-labelledby',

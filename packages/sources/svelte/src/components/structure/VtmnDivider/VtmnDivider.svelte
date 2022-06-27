@@ -16,6 +16,11 @@
    */
   export let textPosition = VTMN_DIVIDER_TEXT_POSITION.START;
 
+  /**
+   * @type {string} Id of the label
+   */
+  export let labelId;
+
   let className = undefined;
 
   /**
@@ -35,10 +40,11 @@
   class={componentClass}
   role="separator"
   aria-orientation={orientation}
+  aria-labelledby={labelId}
   {...$$restProps}
 >
   {#if $$restProps['slot']}
-    <span id={$$restProps['aria-labelledby']}>
+    <span id={labelId}>
       {$$restProps['slot']}
     </span>
   {/if}

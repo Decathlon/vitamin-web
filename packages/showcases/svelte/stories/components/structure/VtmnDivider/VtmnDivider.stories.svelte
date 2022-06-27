@@ -27,7 +27,6 @@
 <Story class="block" name="Overview" let:args>
   <VtmnDivider
     class="story-divider-horizontal story-divider-vertical"
-    aria-labelledby="title-header-0"
     {...args}
   >
     {args.slot}
@@ -41,21 +40,21 @@
       class="story-divider-horizontal"
       orientation="horizontal"
       textPosition="start"
-      aria-labelledby="title-header-1"
+      labelId="title-header-1"
       slot="Start label"
     />
     <VtmnDivider
       class="story-divider-horizontal"
       orientation="horizontal"
       textPosition="center"
-      aria-labelledby="title-header-2"
+      labelId="title-header-2"
       slot="Center label"
     />
     <VtmnDivider
       class="story-divider-horizontal"
       orientation="horizontal"
       textPosition="end"
-      aria-labelledby="title-header-3"
+      labelId="title-header-3"
       slot="End label"
     />
   </div>
@@ -68,21 +67,21 @@
       class="story-divider-vertical"
       orientation="vertical"
       textPosition="start"
-      aria-labelledby="title-header-4"
+      labelId="title-header-4"
       slot="Start label"
     />
     <VtmnDivider
       class="story-divider-vertical"
       orientation="vertical"
       textPosition="center"
-      aria-labelledby="title-header-5"
+      labelId="title-header-5"
       slot="Center label"
     />
     <VtmnDivider
       class="story-divider-vertical"
       orientation="vertical"
       textPosition="end"
-      aria-labelledby="title-header-6"
+      labelId="title-header-6"
       slot="End label"
     />
   </div>
