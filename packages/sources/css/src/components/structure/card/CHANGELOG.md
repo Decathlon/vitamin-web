@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-card@0.9.1...@vtmn/css-card@0.10.0) (2022-06-23)
+
+
+### Features
+
+* **@vtmn/css:** fix linear grident full image card ([#1188](https://github.com/Decathlon/vitamin-web/issues/1188)) ([a18641b](https://github.com/Decathlon/vitamin-web/commit/a18641bf2d29d5d5832cee1bd70840d0c5d7b976))
+
+
+
+
+
 ## [0.9.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-card@0.9.0...@vtmn/css-card@0.9.1) (2022-06-21)
 
 **Note:** Version bump only for package @vtmn/css-card
