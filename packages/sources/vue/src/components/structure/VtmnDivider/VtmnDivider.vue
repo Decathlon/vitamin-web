@@ -19,11 +19,12 @@ export default /*#__PURE__*/ defineComponent({
       validator: (val: VtmnDividerTextPosition) =>
         ['start', 'center', 'end'].includes(val),
     },
+    labelId: {
+      type: String as PropType<string>,
+      default: undefined,
+    },
   },
-  setup(props, { attrs }) {
-    const ariaLabelledBy = attrs['aria-labelledby']
-      ? String(attrs['aria-labelledby'])
-      : undefined;
+  setup(props) {
     props = reactive(props);
     return {
       classes: computed(() => ({
@@ -32,7 +33,6 @@ export default /*#__PURE__*/ defineComponent({
         [`vtmn-divider_text-position--${props.textPosition}`]:
           props.textPosition,
       })),
-      ariaLabelledBy,
     };
   },
 });
@@ -44,7 +44,8 @@ export default /*#__PURE__*/ defineComponent({
     v-bind="$attrs"
     role="separator"
     :aria-orientation="orientation"
+    :aria-labelledby="labelId"
   >
-    <span v-if="$slots['default']" :id="ariaLabelledBy"><slot /></span>
+    <span v-if="$slots['default']" :id="labelId"><slot /></span>
   </div>
 </template>

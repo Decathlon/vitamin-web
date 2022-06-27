@@ -24,4 +24,10 @@ export const argTypes = {
     defaultValue: 'start',
     control: { type: 'select', options: ['start', 'center', 'end'] },
   },
+  labelId: {
+    type: { name: 'string', required: false },
+    description: 'The id of divider label.',
+    defaultValue: undefined,
+    control: { type: 'text' },
+  },
 };
