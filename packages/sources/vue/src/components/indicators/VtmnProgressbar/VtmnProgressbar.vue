@@ -44,6 +44,10 @@ export default /*#__PURE__*/ defineComponent({
       type: String as PropType<string>,
       default: 'Loading',
     },
+    labelId: {
+      type: String as PropType<string>,
+      default: undefined,
+    },
   },
   setup(props) {
     props = reactive(props);
@@ -68,6 +72,7 @@ export default /*#__PURE__*/ defineComponent({
     :aria-valuemin="0"
     :aria-valuemax="100"
     :aria-valuenow="value"
+    :aria-labelledby="labelId ? labelId : undefined"
     v-bind="$attrs"
   >
     <!-- Linear Progressbar -->
@@ -75,13 +80,7 @@ export default /*#__PURE__*/ defineComponent({
       v-if="variant === 'linear' && status === 'determinate'"
       class="vtmn-progressbar_label"
     >
-      <span
-        :id="
-          $attrs['aria-labelledby']
-            ? String($attrs['aria-labelledby'])
-            : undefined
-        "
-      >
+      <span :id="labelId ? labelId : undefined">
         {{ loadingText }}
       </span>
       <span aria-live="assertive">
@@ -91,11 +90,7 @@ export default /*#__PURE__*/ defineComponent({
 
     <span
       v-if="variant === 'linear' && status === 'indeterminate'"
-      :id="
-        $attrs['aria-labelledby']
-          ? String($attrs['aria-labelledby'])
-          : undefined
-      "
+      :id="labelId ? labelId : undefined"
       class="vtmn-sr-only"
       >{{ loadingText }}</span
     >
@@ -132,11 +127,7 @@ export default /*#__PURE__*/ defineComponent({
 
     <span
       v-if="variant === 'circular' && status === 'indeterminate'"
-      :id="
-        $attrs['aria-labelledby']
-          ? String($attrs['aria-labelledby'])
-          : undefined
-      "
+      :id="labelId ? labelId : undefined"
       class="vtmn-sr-only"
     >
       {{ loadingText }}

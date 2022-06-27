@@ -18,7 +18,7 @@ const Template = (args) => ({
   },
   template: `
   <div style="width: 300px; display:flex; justify-content: center;">
-    <VtmnProgressbar aria-labelledby="progress-bar-text" v-bind="args" />
+    <VtmnProgressbar v-bind="args" />
   </div>`,
 });
 
