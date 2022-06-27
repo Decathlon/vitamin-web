@@ -2,13 +2,13 @@
   <div
     class="vtmn-progressbar_container"
     role="progressbar"
-    aria-label="progress bar"
+    aria-labelledby="progress-bar-overview-1"
     aria-valuemin="0"
     aria-valuemax="100"
     aria-valuenow="60"
   >
     <div class="vtmn-progressbar_label">
-      <span>Loading</span>
+      <span id="progress-bar-overview-1">Loading</span>
       <span aria-live="assertive">60%</span>
     </div>
     <svg>
@@ -27,12 +27,17 @@
   <div
     class="vtmn-progressbar_container vtmn-progressbar_variant--circular"
     role="progressbar"
-    aria-label="progress bar"
+    aria-labelledby="progress-bar-overview-2"
     aria-valuemin="0"
     aria-valuemax="100"
     aria-valuenow="65"
   >
-    <span class="vtmn-progressbar_label" aria-live="assertive">65%</span>
+    <span
+      id="progress-bar-overview-2"
+      class="vtmn-progressbar_label"
+      aria-live="assertive"
+      >65%</span
+    >
     <svg>
       <circle
         class="vtmn-progressbar_indicator"
