@@ -77,6 +77,12 @@
         type: 'text',
       },
     },
+    labelId: {
+      type: { name: 'string', required: false },
+      description: 'Id of the label.',
+      defaultValue: undefined,
+      control: { type: 'text' },
+    },
   };
 
   const img =
@@ -97,7 +103,7 @@
 />
 
 <Template let:args>
-  <VtmnProgressbar aria-labelledby="label-text-0" {...args} />
+  <VtmnProgressbar labelId="label-text-0" {...args} />
 </Template>
 
 <Story name="Overview" />
@@ -105,49 +111,37 @@
 <Story name="Linear">
   <div class="block">
     <VtmnProgressbar
-      aria-labelledby="label-text-1"
+      labelId="label-text-1"
       label="loading"
       progress="60"
       size="small"
     />
   </div>
   <div class="block">
-    <VtmnProgressbar
-      aria-labelledby="label-text-3"
-      size="small"
-      indeterminate
-    />
+    <VtmnProgressbar labelId="label-text-3" size="small" indeterminate />
   </div>
 
   <div class="block">
     <VtmnProgressbar
-      aria-labelledby="label-text-4"
+      labelId="label-text-4"
       label="loading"
       progress="25"
       size="medium"
     />
   </div>
   <div class="block">
-    <VtmnProgressbar
-      aria-labelledby="label-text-6"
-      size="medium"
-      indeterminate
-    />
+    <VtmnProgressbar labelId="label-text-6" size="medium" indeterminate />
   </div>
   <div class="block">
     <VtmnProgressbar
-      aria-labelledby="label-text-7"
+      labelId="label-text-7"
       label="loading"
       progress="35"
       size="large"
     />
   </div>
   <div class="block">
-    <VtmnProgressbar
-      aria-labelledby="label-text-9"
-      size="large"
-      indeterminate
-    />
+    <VtmnProgressbar labelId="label-text-9" size="large" indeterminate />
   </div>
 </Story>
 
@@ -159,7 +153,7 @@
         size="small"
         progress="10"
         variant="circular"
-        aria-labelledby="label-text-10"
+        labelId="label-text-10"
       />
       <VtmnProgressbar
         class="story-progressbar-circular-content"
@@ -167,7 +161,7 @@
         progress="30"
         variant="circular"
         label
-        aria-labelledby="label-text-12"
+        labelId="label-text-12"
       />
       <VtmnProgressbar
         class="story-progressbar-circular-content"
@@ -176,7 +170,7 @@
         variant="circular"
         label
         track
-        aria-labelledby="label-text-13"
+        labelId="label-text-13"
       />
       <VtmnProgressbar
         class="story-progressbar-circular-content"
@@ -185,7 +179,7 @@
         variant="circular"
         {img}
         imgAlt="storybook progress image"
-        aria-labelledby="label-text-14"
+        labelId="label-text-14"
       />
       <VtmnProgressbar
         class="story-progressbar-circular-content"
@@ -195,7 +189,7 @@
         track
         {img}
         imgAlt="storybook progress image"
-        aria-labelledby="label-text-15"
+        labelId="label-text-15"
       />
       <VtmnProgressbar
         class="story-progressbar-circular-content"
@@ -203,7 +197,7 @@
         progress="70"
         variant="circular"
         indeterminate
-        aria-labelledby="label-text-16"
+        labelId="label-text-16"
       />
       <VtmnProgressbar
         class="story-progressbar-circular-content"
@@ -212,7 +206,7 @@
         variant="circular"
         indeterminate
         track
-        aria-labelledby="label-text-17"
+        labelId="label-text-17"
       />
     </div>
     <div class="story-progressbar-circular">
@@ -223,7 +217,7 @@
           progress="30"
           variant="circular"
           label
-          aria-labelledby="label-text-20"
+          labelId="label-text-20"
         />
         <VtmnProgressbar
           class="story-progressbar-circular-content"
@@ -232,7 +226,7 @@
           variant="circular"
           label
           track
-          aria-labelledby="label-text-21"
+          labelId="label-text-21"
         />
       </div>
       <div>
@@ -243,7 +237,7 @@
           variant="circular"
           {img}
           imgAlt="storybook progress image"
-          aria-labelledby="label-text-22"
+          labelId="label-text-22"
         />
         <VtmnProgressbar
           class="story-progressbar-circular-content"
@@ -253,7 +247,7 @@
           track
           {img}
           imgAlt="storybook progress image"
-          aria-labelledby="label-text-23"
+          labelId="label-text-23"
         />
         <VtmnProgressbar
           class="story-progressbar-circular-content"
@@ -261,7 +255,7 @@
           progress="70"
           variant="circular"
           indeterminate
-          aria-labelledby="label-text-24"
+          labelId="label-text-24"
         />
         <VtmnProgressbar
           class="story-progressbar-circular-content"
@@ -270,7 +264,7 @@
           variant="circular"
           indeterminate
           track
-          aria-labelledby="label-text-25"
+          labelId="label-text-25"
         />
       </div>
     </div>

@@ -99,7 +99,7 @@ describe('VtmnProgressbar', () => {
         variant: 'linear',
         progress: 30,
         label: 'unit-test',
-        'aria-labelledby': 'aria-label-unit-test',
+        labelId: 'aria-label-unit-test',
       });
       expect(getProgressLinear(container)).toHaveAttribute(
         'aria-labelledby',

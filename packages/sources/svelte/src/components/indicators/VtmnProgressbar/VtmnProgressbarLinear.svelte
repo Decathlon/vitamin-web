@@ -27,6 +27,12 @@
    */
   export let indeterminate = false;
 
+  /**
+   * @type {string} Id of the label
+   * @default undefined
+   */
+  export let labelId;
+
   let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
@@ -47,17 +53,17 @@
   aria-valuemin="0"
   aria-valuemax="100"
   aria-valuenow={indeterminate ? undefined : progress}
+  aria-labelledby={labelId ? labelId : undefined}
   {...$$restProps}
 >
   {#if label && !indeterminate}
     <div class="vtmn-progressbar_label">
-      <span id={$$restProps['aria-labelledby']}>{label}</span>
+      <span id={labelId ? labelId : undefined}>{label}</span>
       <span aria-live="assertive">{progress}%</span>
     </div>
   {/if}
   {#if indeterminate}
-    <span id={$$restProps['aria-labelledby']} class="vtmn-sr-only">{label}</span
-    >
+    <span id={labelId ? labelId : undefined} class="vtmn-sr-only">{label}</span>
   {/if}
   <svg>
     <line
