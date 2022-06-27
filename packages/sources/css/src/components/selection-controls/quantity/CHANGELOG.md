@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-quantity@0.7.1...@vtmn/css-quantity@0.8.0) (2022-06-23)
+
+
+### Features
+
+* **@vtmn/css:** changre borders quantity component ([#1187](https://github.com/Decathlon/vitamin-web/issues/1187)) ([c0c368d](https://github.com/Decathlon/vitamin-web/commit/c0c368d50e6dde37133225ba97de6ff447b16616))
+
+
+
+
+
 ## [0.7.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-quantity@0.7.0...@vtmn/css-quantity@0.7.1) (2022-06-21)
 
 **Note:** Version bump only for package @vtmn/css-quantity
