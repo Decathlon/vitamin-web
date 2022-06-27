@@ -14,7 +14,7 @@ export default {
 } as Meta;
 
 const Template: Story = (args) => (
-  <VtmnProgressbar aria-labelledby="progress-bar-text" {...args} />
+  <VtmnProgressbar labelId="progress-bar-text" {...args} />
 );
 
 export const Overview = Template.bind({});
