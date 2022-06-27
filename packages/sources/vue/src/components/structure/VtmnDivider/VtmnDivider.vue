@@ -44,8 +44,10 @@ export default /*#__PURE__*/ defineComponent({
     v-bind="$attrs"
     role="separator"
     :aria-orientation="orientation"
-    :aria-labelledby="labelId"
+    :aria-labelledby="labelId ? labelId : undefined"
   >
-    <span v-if="$slots['default']" :id="labelId"><slot /></span>
+    <span v-if="$slots['default']" :id="labelId ? labelId : undefined"
+      ><slot
+    /></span>
   </div>
 </template>
