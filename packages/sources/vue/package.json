@@ -73,7 +73,6 @@
     "@vtmn/css-toast": "^0.7.2",
     "@vtmn/css-toggle": "^0.8.2",
     "@vtmn/css-tooltip": "^0.8.2",
-    "@vtmn/icons": "^0.12.1",
     "@vue/cli-plugin-typescript": "^5.0.1",
     "@vue/cli-service": "^5.0.1",
     "@vue/compiler-sfc": "^3.2.27",

@@ -58,7 +58,7 @@
    * @type {string} Id of the label
    * @default undefined
    */
-  export let labelId;
+  export let labelId = undefined;
 </script>
 
 {#if variant === VTMN_PROGRESSBAR_VARIANT.LINEAR}
