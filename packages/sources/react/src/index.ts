@@ -13,6 +13,10 @@ export { VtmnButton } from './components/actions/VtmnButton';
 export type { VtmnButtonProps } from './components/actions/VtmnButton';
 export { VtmnLink } from './components/actions/VtmnLink';
 export type { VtmnLinkProps } from './components/actions/VtmnLink';
+export { VtmnDropdown } from './components/actions/VtmnDropdown';
+export type { VtmnDropdownProps } from './components/actions/VtmnDropdown';
+export { VtmnDropdownItem } from './components/actions/VtmnDropdown';
+export type { VtmnDropdownItemProps } from './components/actions/VtmnDropdown';
 
 // Forms
 export { VtmnSelect } from './components/forms/VtmnSelect';
