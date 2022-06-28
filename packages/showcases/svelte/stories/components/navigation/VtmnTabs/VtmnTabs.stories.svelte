@@ -63,42 +63,4 @@
   </div>
 </Template>
 
-<Template let:args>
-  <div class="block">
-    <VtmnTabs aria-label="Tabs list" {...args}>
-      <VtmnTabsItem
-        on:click={() => action('click')('1')}
-        icon="calendar-date-fill"
-      >
-        Tab Name 1
-      </VtmnTabsItem>
-      <VtmnTabsItem on:click={() => action('click')('2')} badgeValue={6}>
-        Tab Name 2
-      </VtmnTabsItem>
-      <VtmnTabsItem on:click={() => action('click')('3')}
-        >Tab Name 3</VtmnTabsItem
-      >
-      <VtmnTabsItem
-        on:click={() => action('click')('4')}
-        icon="checkbox-circle-line"
-        badgeValue={99}>Tab Name 4</VtmnTabsItem
-      >
-      <VtmnTabsItem
-        on:click={() => action('click')('5')}
-        icon="close-circle-line"
-        badgeValue={99}
-      >
-        Tab Name 5
-      </VtmnTabsItem>
-      <VtmnTabsItem
-        on:click={() => action('click')('6')}
-        icon="error-warning-line"
-        badgeValue={99}
-      >
-        Tab Name 6
-      </VtmnTabsItem>
-    </VtmnTabs>
-  </div>
-</Template>
-
 <Story name="Overview" />
