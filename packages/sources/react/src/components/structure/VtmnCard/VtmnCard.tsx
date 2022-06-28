@@ -24,6 +24,12 @@ export interface VtmnCardProps extends React.ComponentPropsWithoutRef<'div'> {
    * The fullscreen property of the image
    * @defaultValue false
    */
+  img?: React.ReactNode;
+
+  /**
+   * The fullscreen property of the image
+   * @defaultValue false
+   */
   fullImage?: boolean;
 
   /**
@@ -44,6 +50,7 @@ export const VtmnCard = ({
   variant = 'top-image',
   mediaSource,
   title,
+  img,
   fullImage = false,
   contentOpaque = false,
   children,
@@ -63,7 +70,7 @@ export const VtmnCard = ({
             'vtmn-card_image--full': fullImage && variant === 'top-image',
           })}
         >
-          <img alt="" src={mediaSource} />
+          {img && img}
         </div>
         <div
           className={clsx('vtmn-card_content', {
