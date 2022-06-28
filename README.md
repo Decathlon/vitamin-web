@@ -499,6 +499,8 @@ Thank you to the [contributors](CONTRIBUTORS.md) involved in these vitamin-web l
   <img src="https://contrib.rocks/image?repo=decathlon/vitamin-web" />
 </a>
 
+Thank you also [Remix Icon](https://remixicon.com) because Vitamix Icons is the official Decathlon icon library based on their [open-source icon library](https://github.com/Remix-Design/RemixIcon) (Remix Design © 2020). This original library is under the license Apache 2.0 and has been modified by Decathlon. [Learn more](https://www.decathlon.design/726f8c765/p/58575f-vitamix-license).
+
 ## License
 
     Copyright 2021 Decathlon.
