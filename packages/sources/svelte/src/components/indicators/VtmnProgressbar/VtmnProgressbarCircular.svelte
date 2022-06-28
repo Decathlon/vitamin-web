@@ -42,6 +42,12 @@
    */
   export let imgAlt = undefined;
 
+  /**
+   * @type {string} Id of the label
+   * @default undefined
+   */
+  export let labelId;
+
   let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
@@ -75,13 +81,18 @@
   aria-valuemin="0"
   aria-valuemax="100"
   aria-valuenow={indeterminate ? undefined : progress}
+  aria-labelledby={labelId ? labelId : undefined}
   {...$$restProps}
 >
   {#if img}
     <img class="vtmn-progressbar_image" src={img} alt={imgAlt} />
   {/if}
   {#if label && !indeterminate}
-    <span class="vtmn-progressbar_label" data-value={progress} />
+    <span class="vtmn-progressbar_label" aria-live="assertive">{progress}%</span
+    >
+  {/if}
+  {#if indeterminate}
+    <span id={labelId ? labelId : undefined} class="vtmn-sr-only">{label}</span>
   {/if}
   <svg>
     {#if track}

@@ -53,11 +53,18 @@
    * @type {string} alt text displayed for the image
    */
   export let imgAlt = undefined;
+
+  /**
+   * @type {string} Id of the label
+   * @default undefined
+   */
+  export let labelId = undefined;
 </script>
 
 {#if variant === VTMN_PROGRESSBAR_VARIANT.LINEAR}
   <VtmnProgressbarLinear
     {label}
+    {labelId}
     {size}
     {progress}
     {indeterminate}
@@ -67,6 +74,7 @@
   <VtmnProgressbarCircular
     {progress}
     {label}
+    {labelId}
     {track}
     {indeterminate}
     {size}

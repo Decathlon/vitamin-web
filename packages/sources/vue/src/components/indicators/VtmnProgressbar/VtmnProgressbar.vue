@@ -44,6 +44,10 @@ export default /*#__PURE__*/ defineComponent({
       type: String as PropType<string>,
       default: 'Loading',
     },
+    labelId: {
+      type: String as PropType<string>,
+      default: undefined,
+    },
   },
   setup(props) {
     props = reactive(props);
@@ -65,19 +69,31 @@ export default /*#__PURE__*/ defineComponent({
   <div
     :class="classes"
     role="progressbar"
-    aria-label="progress bar"
     :aria-valuemin="0"
     :aria-valuemax="100"
     :aria-valuenow="value"
+    :aria-labelledby="labelId ? labelId : undefined"
+    v-bind="$attrs"
   >
     <!-- Linear Progressbar -->
-    <span
+    <div
       v-if="variant === 'linear' && status === 'determinate'"
       class="vtmn-progressbar_label"
-      :data-value="Math.min(Math.max(value, 0), 100)"
     >
-      {{ loadingText }}
-    </span>
+      <span :id="labelId ? labelId : undefined">
+        {{ loadingText }}
+      </span>
+      <span aria-live="assertive">
+        {{ Math.min(Math.max(value, 0), 100) }}%
+      </span>
+    </div>
+
+    <span
+      v-if="variant === 'linear' && status === 'indeterminate'"
+      :id="labelId ? labelId : undefined"
+      class="vtmn-sr-only"
+      >{{ loadingText }}</span
+    >
 
     <svg v-if="variant === 'linear'">
       <line
@@ -97,8 +113,10 @@ export default /*#__PURE__*/ defineComponent({
     <span
       v-if="variant === 'circular' && status === 'determinate'"
       class="vtmn-progressbar_label"
-      :data-value="Math.min(Math.max(value, 0), 100)"
-    />
+      aria-live="assertive"
+    >
+      {{ Math.min(Math.max(value, 0), 100) }}%
+    </span>
 
     <img
       v-if="variant === 'circular' && imageSrc !== undefined"
@@ -106,6 +124,14 @@ export default /*#__PURE__*/ defineComponent({
       :src="imageSrc"
       :alt="imageAlt"
     />
+
+    <span
+      v-if="variant === 'circular' && status === 'indeterminate'"
+      :id="labelId ? labelId : undefined"
+      class="vtmn-sr-only"
+    >
+      {{ loadingText }}
+    </span>
 
     <svg v-if="variant === 'circular'">
       <circle
