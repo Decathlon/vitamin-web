@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.48.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.48.0...@vtmn/svelte@0.48.1) (2022-06-28)
+
+
+### Bug Fixes
+
+* **svelte:** add correct types for Svelte popover component ([#1199](https://github.com/Decathlon/vitamin-web/issues/1199)) ([e510ac8](https://github.com/Decathlon/vitamin-web/commit/e510ac8241a23d907ded71087598b5c8cf5090c4))
+
+
+
+
+
 # [0.48.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.47.0...@vtmn/svelte@0.48.0) (2022-06-28)
 
 
