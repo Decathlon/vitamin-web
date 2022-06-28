@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.47.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.46.0...@vtmn/react@0.47.0) (2022-06-28)
+
+
+### Features
+
+* **@vtmn/css, @vtmn/react, @vtmn/svelte:** `progressbar`, add a11y requirements ([#1129](https://github.com/Decathlon/vitamin-web/issues/1129)) ([69829e8](https://github.com/Decathlon/vitamin-web/commit/69829e88f2cdc5f80b242cc4c5c2819d8c83d610))
+* **@vtmn/react:** add `onClear` prop on `VtmnSearch` component ([#1198](https://github.com/Decathlon/vitamin-web/issues/1198)) ([775ebf2](https://github.com/Decathlon/vitamin-web/commit/775ebf24901e1cae0a58bf3aeb9415abc78964dc))
+
+
+
+
+
 # [0.46.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.45.4...@vtmn/react@0.46.0) (2022-06-28)
 
 

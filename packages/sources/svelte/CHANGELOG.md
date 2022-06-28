@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.48.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.47.0...@vtmn/svelte@0.48.0) (2022-06-28)
+
+
+### Features
+
+* **@vtmn/css, @vtmn/react, @vtmn/svelte:** `progressbar`, add a11y requirements ([#1129](https://github.com/Decathlon/vitamin-web/issues/1129)) ([69829e8](https://github.com/Decathlon/vitamin-web/commit/69829e88f2cdc5f80b242cc4c5c2819d8c83d610))
+
+
+
+
+
 # [0.47.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.46.5...@vtmn/svelte@0.47.0) (2022-06-28)
 
 
