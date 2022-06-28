@@ -22,13 +22,14 @@ module.exports = {
     'background-brand-secondary':
       'var(--vtmn-semantic-color_background-brand-secondary)',
     'background-accent': 'var(--vtmn-semantic-color_background-accent)',
-    'background-discount': 'var(--vtmn-semantic-color_background-discount)',
+    'background-alert': 'var(--vtmn-semantic-color_background-alert)',
     'background-primary-reversed':
       'var(--vtmn-semantic-color_background-primary-reversed)',
     'background-brand-primary-reversed':
       'var(--vtmn-semantic-color_background-brand-primary-reversed)',
     'content-primary': 'var(--vtmn-semantic-color_content-primary)',
     'content-secondary': 'var(--vtmn-semantic-color_content-secondary)',
+    'content-tertiary': 'var(--vtmn-semantic-color_content-tertiary)',
     'content-action': 'var(--vtmn-semantic-color_content-action)',
     'content-active': 'var(--vtmn-semantic-color_content-active)',
     'content-inactive': 'var(--vtmn-semantic-color_content-inactive)',
@@ -36,12 +37,17 @@ module.exports = {
     'content-warning': 'var(--vtmn-semantic-color_content-warning)',
     'content-positive': 'var(--vtmn-semantic-color_content-positive)',
     'content-information': 'var(--vtmn-semantic-color_content-information)',
+    'content-accent': 'var(--vtmn-semantic-color_content-accent)',
+    'content-visited': 'var(--vtmn-semantic-color_content-visited)',
     'content-primary-reversed':
       'var(--vtmn-semantic-color_content-primary-reversed)',
     'content-action-reversed':
       'var(--vtmn-semantic-color_content-action-reversed)',
+    'content-visited-reversed':
+      'var(--vtmn-semantic-color_content-visited-reversed)',
     'border-primary': 'var(--vtmn-semantic-color_border-primary)',
     'border-secondary': 'var(--vtmn-semantic-color_border-secondary)',
+    'border-tertiary': 'var(--vtmn-semantic-color_border-tertiary)',
     'border-active': 'var(--vtmn-semantic-color_border-active)',
     'border-inactive': 'var(--vtmn-semantic-color_border-inactive)',
     'border-negative': 'var(--vtmn-semantic-color_border-negative)',
@@ -50,6 +56,14 @@ module.exports = {
     'border-information': 'var(--vtmn-semantic-color_border-information)',
     'border-primary-reversed':
       'var(--vtmn-semantic-color_border-primary-reversed)',
+    'decorative-gravel': 'var(--vtmn-semantic-color_decorative-gravel)',
+    'decorative-brick': 'var(--vtmn-semantic-color_decorative-brick)',
+    'decorative-saffron': 'var(--vtmn-semantic-color_decorative-saffron)',
+    'decorative-gold': 'var(--vtmn-semantic-color_decorative-gold)',
+    'decorative-jade': 'var(--vtmn-semantic-color_decorative-jade)',
+    'decorative-emerald': 'var(--vtmn-semantic-color_decorative-emerald)',
+    'decorative-cobalt': 'var(--vtmn-semantic-color_decorative-cobalt)',
+    'decorative-amethyst': 'var(--vtmn-semantic-color_decorative-amethyst)',
     'hover-primary': 'var(--vtmn-semantic-color_hover-primary)',
     'hover-primary-transparent':
       'var(--vtmn-semantic-color_hover-primary-transparent)',
@@ -64,8 +78,8 @@ module.exports = {
       'var(--vtmn-semantic-color_hover-primary-reversed-transparent)',
     'hover-secondary-reversed-transparent':
       'var(--vtmn-semantic-color_hover-secondary-reversed-transparent)',
-    'hover-brand-reversed-transparent':
-      'var(--vtmn-semantic-color_hover-brand-reversed-transparent)',
+    'hover-tertiary-reversed-transparent':
+      'var(--vtmn-semantic-color_hover-tertiary-reversed-transparent)',
     'active-primary': 'var(--vtmn-semantic-color_active-primary)',
     'active-primary-transparent':
       'var(--vtmn-semantic-color_active-primary-transparent)',
@@ -80,8 +94,11 @@ module.exports = {
       'var(--vtmn-semantic-color_active-primary-reversed-transparent)',
     'active-secondary-reversed-transparent':
       'var(--vtmn-semantic-color_active-secondary-reversed-transparent)',
+    'active-tertiary-reversed-transparent':
+      'var(--vtmn-semantic-color_active-tertiary-reversed-transparent)',
     'active-brand-reversed-transparent':
       'var(--vtmn-semantic-color_active-brand-reversed-transparent)',
+    shadow: 'var(--vtmn-semantic-color_shadow)',
     /* DEPRECATED legacy colors below (no longer maintained) */
     brand: { DEFAULT: 'var(--vtmn-color_brand)' },
     'brand-pro': { DEFAULT: 'var(--vtmn-color_brand-pro)' },
