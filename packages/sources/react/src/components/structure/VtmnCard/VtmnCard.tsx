@@ -11,11 +11,6 @@ export interface VtmnCardProps extends React.ComponentPropsWithoutRef<'div'> {
   variant?: VtmnCardVariant;
 
   /**
-   * The media source
-   */
-  mediaSource: string;
-
-  /**
    * The title of the card
    */
   title: string;
@@ -48,7 +43,6 @@ export interface VtmnCardProps extends React.ComponentPropsWithoutRef<'div'> {
 
 export const VtmnCard = ({
   variant = 'top-image',
-  mediaSource,
   title,
   img,
   fullImage = false,

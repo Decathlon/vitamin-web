@@ -63,7 +63,7 @@ describe('VtmnProgressbar', () => {
       expect(getByText('unit-test')).toBeVisible();
     });
     test('Should apply the correct progress value', () => {
-      const { container, getByText } = render(VtmnProgressbar, {
+      const { container } = render(VtmnProgressbar, {
         variant: 'linear',
         progress: 30,
         label: 'unit-test',

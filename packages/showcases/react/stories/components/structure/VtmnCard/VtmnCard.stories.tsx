@@ -11,15 +11,6 @@ export default {
   component: VtmnCard,
   argTypes: {
     ...argTypes,
-    mediaSource: {
-      type: { name: 'string', required: true },
-      description: 'The source of the media to render inside the card',
-      defaultValue:
-        'https://storage.googleapis.com/dkt-design-cdn/images/landscape-placeholder.jpg',
-      control: {
-        type: 'text',
-      },
-    },
     children: {
       type: { name: 'string', required: false },
       description: 'The content to render inside the component.',

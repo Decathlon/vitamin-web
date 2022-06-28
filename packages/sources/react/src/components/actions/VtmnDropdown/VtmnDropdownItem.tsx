@@ -29,14 +29,14 @@ export interface VtmnDropdownItemProps
    * @type {void}
    * @defaultValue undefined
    */
-  onChange?: () => void;
+  onChange?: (event: React.ChangeEvent) => void;
 }
 
 export const VtmnDropdownItem = ({
   divider = false,
   icon,
   children,
-  onChange = undefined,
+  onChange,
   ...props
 }: VtmnDropdownItemProps) => {
   const [selected, setSelected] = React.useState(false);
@@ -46,8 +46,9 @@ export const VtmnDropdownItem = ({
       <input
         type="checkbox"
         checked={selected}
-        onChange={() =>
+        onChange={(e) =>
           setSelected(() => {
+            if (onChange) onChange(e);
             return !selected;
           })
         }
