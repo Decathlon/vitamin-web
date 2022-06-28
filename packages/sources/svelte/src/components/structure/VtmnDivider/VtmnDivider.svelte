@@ -19,7 +19,7 @@
   /**
    * @type {string} Id of the label
    */
-  export let labelId;
+  export let labelId = undefined;
 
   let className = undefined;
 
@@ -31,7 +31,7 @@
   $: componentClass = cn(
     'vtmn-divider',
     `vtmn-divider_orientation--${orientation}`,
-    $$restProps['slot'] && `vtmn-divider_text-position--${textPosition}`,
+    `vtmn-divider_text-position--${textPosition}`,
     className,
   );
 </script>

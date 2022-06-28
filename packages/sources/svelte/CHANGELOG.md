@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.47.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.46.5...@vtmn/svelte@0.47.0) (2022-06-28)
+
+
+### Features
+
+* **@vtmn/css, @vtmn/react, @vtmn/svelte, @vtmn/vue:** `divider`, add a11y requirements ([#1137](https://github.com/Decathlon/vitamin-web/issues/1137)) ([d651cd2](https://github.com/Decathlon/vitamin-web/commit/d651cd2afbd5b4381865d04e5c5c27f671812ae8))
+
+
+
+
+
 ## [0.46.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.46.4...@vtmn/svelte@0.46.5) (2022-06-27)
 
 **Note:** Version bump only for package @vtmn/svelte
