@@ -8,7 +8,7 @@
    */
   export let id;
 
-  /** @type {VTMN_POPOVER_POSITION} */
+  /** @type {'top' | 'bottom' | 'left' | 'right' | 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right'} */
   export let position = VTMN_POPOVER_POSITION.TOP;
 
   let className = undefined;
