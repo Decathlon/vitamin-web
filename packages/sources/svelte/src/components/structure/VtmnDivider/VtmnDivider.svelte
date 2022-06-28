@@ -43,9 +43,9 @@
   aria-labelledby={labelId}
   {...$$restProps}
 >
-  {#if $$restProps['slot']}
+  {#if $$restProps['slot'] !== ''}
     <span id={labelId}>
-      {$$restProps['slot']}
+      <slot />
     </span>
   {/if}
 </div>

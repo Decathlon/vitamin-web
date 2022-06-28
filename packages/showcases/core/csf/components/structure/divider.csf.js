@@ -27,7 +27,7 @@ export const argTypes = {
   labelId: {
     type: { name: 'string', required: false },
     description: 'The id of divider label.',
-    defaultValue: undefined,
+    defaultValue: 'divider-label-id',
     control: { type: 'text' },
   },
 };

@@ -15,7 +15,7 @@
     slot: {
       type: { name: 'string', required: false },
       description: 'Text inserted on the slot.',
-      defaultValue: '',
+      defaultValue: 'label',
       control: {
         type: 'text',
       },
@@ -40,23 +40,20 @@
       class="story-divider-horizontal"
       orientation="horizontal"
       textPosition="start"
-      labelId="title-header-1"
-      slot="Start label"
-    />
+      labelId="title-header-1">Start label</VtmnDivider
+    >
     <VtmnDivider
       class="story-divider-horizontal"
       orientation="horizontal"
       textPosition="center"
-      labelId="title-header-2"
-      slot="Center label"
-    />
+      labelId="title-header-2">Center label</VtmnDivider
+    >
     <VtmnDivider
       class="story-divider-horizontal"
       orientation="horizontal"
       textPosition="end"
-      labelId="title-header-3"
-      slot="End label"
-    />
+      labelId="title-header-3">End label</VtmnDivider
+    >
   </div>
 </Story>
 
@@ -67,23 +64,20 @@
       class="story-divider-vertical"
       orientation="vertical"
       textPosition="start"
-      labelId="title-header-4"
-      slot="Start label"
-    />
+      labelId="title-header-4">Start label</VtmnDivider
+    >
     <VtmnDivider
       class="story-divider-vertical"
       orientation="vertical"
       textPosition="center"
-      labelId="title-header-5"
-      slot="Center label"
-    />
+      labelId="title-header-5">Center label</VtmnDivider
+    >
     <VtmnDivider
       class="story-divider-vertical"
       orientation="vertical"
       textPosition="end"
-      labelId="title-header-6"
-      slot="End label"
-    />
+      labelId="title-header-6">End label</VtmnDivider
+    >
   </div>
 </Story>
 
