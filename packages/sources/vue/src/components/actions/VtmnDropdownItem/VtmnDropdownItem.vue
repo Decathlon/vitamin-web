@@ -23,9 +23,7 @@ export default /*#__PURE__*/ defineComponent({
     },
   },
   emits: ['update:modelValue'],
-  setup(props, { attrs, emit }) {
-    props = reactive(props);
-
+  setup(_, { attrs, emit }) {
     const labelId = attrs['id'] ? String(attrs['id']) : undefined;
 
     const handleChange = (event: Event) => {

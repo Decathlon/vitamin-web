@@ -18,9 +18,7 @@ export default /*#__PURE__*/ defineComponent({
       default: false,
     },
   },
-  setup(props, { attrs }) {
-    props = reactive(props);
-
+  setup(_, { attrs }) {
     const labelId = attrs['id'] ? String(attrs['id']) : undefined;
 
     return {
