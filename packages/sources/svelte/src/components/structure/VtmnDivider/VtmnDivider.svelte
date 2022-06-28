@@ -16,7 +16,13 @@
    */
   export let textPosition = VTMN_DIVIDER_TEXT_POSITION.START;
 
+  /**
+   * @type {string} Id of the label
+   */
+  export let labelId;
+
   let className = undefined;
+
   /**
    * @type {string} Custom classes to apply to the component.
    */
@@ -25,7 +31,7 @@
   $: componentClass = cn(
     'vtmn-divider',
     `vtmn-divider_orientation--${orientation}`,
-    $$slots.default && `vtmn-divider_text-position--${textPosition}`,
+    $$restProps['slot'] && `vtmn-divider_text-position--${textPosition}`,
     className,
   );
 </script>
@@ -34,9 +40,14 @@
   class={componentClass}
   role="separator"
   aria-orientation={orientation}
+  aria-labelledby={labelId}
   {...$$restProps}
 >
-  <slot />
+  {#if $$restProps['slot'] !== ''}
+    <span id={labelId}>
+      <slot />
+    </span>
+  {/if}
 </div>
 
 <style>
