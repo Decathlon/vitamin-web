@@ -39,7 +39,7 @@ export const VtmnDropdown = ({
   return (
     <div className="vtmn-dropdown" aria-disabled={disabled}>
       <label htmlFor={props['id']}>{label}</label>
-      <details>
+      <details open={disabled ? false : undefined}>
         <summary aria-labelledby={props['id']}>{summary}</summary>
         <div
           className="vtmn-dropdown_items"
