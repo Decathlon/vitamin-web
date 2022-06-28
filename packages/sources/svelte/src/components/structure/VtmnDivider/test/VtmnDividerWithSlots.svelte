@@ -2,4 +2,6 @@
   import VtmnDivider from '../VtmnDivider.svelte';
 </script>
 
-<VtmnDivider labelId="title-test" slot="unit test divider" {...$$restProps} />
+<VtmnDivider labelId="title-test" {...$$restProps}>
+  unit test divider
+</VtmnDivider>
