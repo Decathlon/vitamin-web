@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.49.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.49.0...@vtmn/react@0.49.1) (2022-06-28)
+
+
+### Bug Fixes
+
+* **@vtmn/react, @vtmn/svelte:** sonarcloud code smells ([07a126d](https://github.com/Decathlon/vitamin-web/commit/07a126d38e81fadd0878cb62f83c8cdceeb7238d))
+
+
+
+
+
 # [0.49.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.48.0...@vtmn/react@0.49.0) (2022-06-28)
 
 
