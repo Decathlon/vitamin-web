@@ -24,6 +24,13 @@ export interface VtmnCheckboxProps
   checked?: boolean;
 
   /**
+   * The default checked state of the checkbox (for uncontrolled mode combined with a "name" attribute).
+   * @type {boolean}
+   * @defaultValue undefined
+   */
+  defaultChecked?: boolean;
+
+  /**
    * The disabled state of the checkbox.
    * @type {boolean}
    * @defaultValue false
@@ -35,6 +42,7 @@ export const VtmnCheckbox = ({
   identifier,
   labelText,
   checked = false,
+  defaultChecked = undefined,
   disabled = false,
   ...props
 }: VtmnCheckboxProps) => {
@@ -44,7 +52,9 @@ export const VtmnCheckbox = ({
         className="vtmn-checkbox"
         type="checkbox"
         id={identifier}
-        checked={checked}
+        {...(typeof defaultChecked !== 'undefined'
+          ? { defaultChecked }
+          : { checked })}
         disabled={disabled}
         {...props}
       />
