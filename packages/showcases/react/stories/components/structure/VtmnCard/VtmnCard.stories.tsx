@@ -36,7 +36,6 @@ const Template: Story = (args) => (
   <div style={{ width: 300, height: 200 }}>
     <VtmnCard
       {...args}
-      title="Card Title"
       img={
         <img
           src="https://storage.googleapis.com/dkt-design-cdn/images/landscape-placeholder.jpg"
