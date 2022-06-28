@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.50.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.49.2...@vtmn/react@0.50.0) (2022-06-28)
+
+
+### Features
+
+* **@vtmn/react:** enhance radio button and checkbox to be used in uncontrolled mode ([4462504](https://github.com/Decathlon/vitamin-web/commit/44625044ab8409c115503622c694470305298b7a))
+
+
+
+
+
 ## [0.49.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.49.1...@vtmn/react@0.49.2) (2022-06-28)
 
 **Note:** Version bump only for package @vtmn/react
