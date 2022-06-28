@@ -20,7 +20,7 @@ const Template: Story = (args) => {
 
   const onClear = () => {
     console.log('search field is cleared');
-  }
+  };
 
   return <VtmnSearch onSearch={onSearch} onClear={onClear} {...args} />;
 };

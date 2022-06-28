@@ -49,10 +49,10 @@ export interface VtmnSearchProps
   onSearch?: (search: string) => void;
 
   /**
- * Called when user click on clear icon
- * @type {void}
- * @default undefined
- */
+   * Called when user click on clear icon
+   * @type {void}
+   * @default undefined
+   */
   onClear?: () => void;
 }
 
