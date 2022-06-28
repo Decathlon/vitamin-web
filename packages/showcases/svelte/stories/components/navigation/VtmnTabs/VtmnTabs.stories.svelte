@@ -22,7 +22,7 @@
 
 <Template let:args>
   <div class="block">
-    <VtmnTabs {...args}>
+    <VtmnTabs aria-label="Tabs list" {...args}>
       {#each tabItems() as { tabText }, index}
         <VtmnTabsItem on:click={() => action('click')(index.toString())}>
           {tabText}
@@ -34,7 +34,7 @@
 
 <Template let:args>
   <div class="block">
-    <VtmnTabs {...args}>
+    <VtmnTabs aria-label="Tabs list" {...args}>
       {#each tabItems() as { tabText }, index}
         <VtmnTabsItem
           on:click={() => action('click')(index.toString())}
@@ -49,54 +49,16 @@
 
 <Template let:args>
   <div class="block">
-    <VtmnTabs {...args}>
+    <VtmnTabs aria-label="Tabs list" {...args}>
       {#each tabItems() as { tabText }, index}
         <VtmnTabsItem
           on:click={() => action('click')(index.toString())}
           icon="heart-line"
-          badge={6}
+          badgeValue={6}
         >
           {tabText}
         </VtmnTabsItem>
       {/each}
-    </VtmnTabs>
-  </div>
-</Template>
-
-<Template let:args>
-  <div class="block">
-    <VtmnTabs {...args}>
-      <VtmnTabsItem
-        on:click={() => action('click')('1')}
-        icon="calendar-date-fill"
-      >
-        Tab Name 1
-      </VtmnTabsItem>
-      <VtmnTabsItem on:click={() => action('click')('2')} badge={6}>
-        Tab Name 2
-      </VtmnTabsItem>
-      <VtmnTabsItem on:click={() => action('click')('3')}
-        >Tab Name 3</VtmnTabsItem
-      >
-      <VtmnTabsItem
-        on:click={() => action('click')('4')}
-        icon="checkbox-circle-line"
-        badge={99}>Tab Name 4</VtmnTabsItem
-      >
-      <VtmnTabsItem
-        on:click={() => action('click')('5')}
-        icon="close-circle-line"
-        badge={99}
-      >
-        Tab Name 5
-      </VtmnTabsItem>
-      <VtmnTabsItem
-        on:click={() => action('click')('6')}
-        icon="error-warning-line"
-        badge={99}
-      >
-        Tab Name 6
-      </VtmnTabsItem>
     </VtmnTabs>
   </div>
 </Template>

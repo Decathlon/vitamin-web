@@ -43,6 +43,10 @@ export { VtmnNavbar } from './components/navigation/VtmnNavbar/VtmnNavbar';
 export type { VtmnNavbarProps } from './components/navigation/VtmnNavbar/VtmnNavbar';
 export { VtmnSearch } from './components/navigation/VtmnSearch/VtmnSearch';
 export type { VtmnSearchProps } from './components/navigation/VtmnSearch/VtmnSearch';
+export { VtmnTabs } from './components/navigation/VtmnTabs';
+export type { VtmnTabsProps } from './components/navigation/VtmnTabs';
+export { VtmnTabsItem } from './components/navigation/VtmnTabs';
+export type { VtmnTabsItemProps } from './components/navigation/VtmnTabs';
 
 // Overlays
 export { VtmnAlert } from './components/overlays/VtmnAlert';

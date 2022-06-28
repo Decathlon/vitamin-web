@@ -6,7 +6,7 @@
   export let icon = undefined;
 </script>
 
-<li>
+<li role="tab">
   <a
     {...$$restProps}
     {href}
@@ -19,7 +19,7 @@
     on:keydown
   >
     {#if icon}
-      <VtmnIcon value={icon} />
+      <VtmnIcon value={icon} aria-hidden="true" />
     {/if}
     <slot />
     {#if badgeValue}

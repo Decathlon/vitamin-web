@@ -30,6 +30,9 @@ export { default as VtmnBreadcrumb } from './components/navigation/VtmnBreadcrum
 export { default as VtmnBreadcrumbItem } from './components/navigation/VtmnBreadcrumbItem';
 export { default as VtmnNavbar } from './components/navigation/VtmnNavbar';
 export { default as VtmnSearch } from './components/navigation/VtmnSearch';
+export { default as VtmnTabs } from './components/navigation/VtmnTabs';
+export { default as VtmnTabsItem } from './components/navigation/VtmnTabsItem';
+
 // Overlays
 export { default as VtmnAlert } from './components/overlays/VtmnAlert';
 export { default as VtmnModal } from './components/overlays/VtmnModal';
