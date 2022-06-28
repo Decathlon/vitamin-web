@@ -2,12 +2,15 @@
   <div
     class="vtmn-progressbar_container vtmn-progressbar_size--small"
     role="progressbar"
-    aria-label="progress bar"
+    aria-labelledby="progress-bar-linear-1"
     aria-valuemin="0"
     aria-valuemax="100"
     aria-valuenow="60"
   >
-    <span class="vtmn-progressbar_label" data-value="60">Loading</span>
+    <div class="vtmn-progressbar_label">
+      <span id="progress-bar-linear-1">Loading</span>
+      <span>60%</span>
+    </div>
     <svg>
       <line
         class="vtmn-progressbar_indicator"
@@ -24,11 +27,12 @@
   <div
     class="vtmn-progressbar_container vtmn-progressbar_size--small"
     role="progressbar"
-    aria-label="progress bar"
+    aria-labelledby="progress-bar-linear-2"
     aria-valuemin="0"
     aria-valuemax="100"
     aria-valuenow="40"
   >
+    <span id="progress-bar-linear-2" class="vtmn-sr-only">Loading</span>
     <svg>
       <line
         class="vtmn-progressbar_indicator"
@@ -45,9 +49,9 @@
   <div
     class="vtmn-progressbar_container vtmn-progressbar_size--small vtmn-progressbar--indeterminate"
     role="progressbar"
-    aria-label="progress bar loading"
+    aria-labelledby="progress-bar-linear-3"
   >
-    <span class="vtmn-sr-only">Loading</span>
+    <span id="progress-bar-linear-3" class="vtmn-sr-only">Loading</span>
     <svg>
       <line
         class="vtmn-progressbar_indicator"
@@ -64,12 +68,15 @@
   <div
     class="vtmn-progressbar_container vtmn-progressbar_size--medium"
     role="progressbar"
-    aria-label="progress bar"
+    aria-labelledby="progress-bar-linear-4"
     aria-valuemin="0"
     aria-valuemax="100"
     aria-valuenow="25"
   >
-    <span class="vtmn-progressbar_label" data-value="25">Loading</span>
+    <div class="vtmn-progressbar_label">
+      <span id="progress-bar-linear-4">Loading</span>
+      <span>25%</span>
+    </div>
     <svg>
       <line
         class="vtmn-progressbar_indicator"
@@ -86,11 +93,12 @@
   <div
     class="vtmn-progressbar_container vtmn-progressbar_size--medium"
     role="progressbar"
-    aria-label="progress bar"
+    aria-labelledby="progress-bar-linear-5"
     aria-valuemin="0"
     aria-valuemax="100"
     aria-valuenow="90"
   >
+    <span id="progress-bar-linear-5" class="vtmn-sr-only">Loading</span>
     <svg>
       <line
         class="vtmn-progressbar_indicator"
@@ -107,9 +115,9 @@
   <div
     class="vtmn-progressbar_container vtmn-progressbar_size--medium vtmn-progressbar--indeterminate"
     role="progressbar"
-    aria-label="progress bar loading"
+    aria-labelledby="progress-bar-linear-6"
   >
-    <span class="vtmn-sr-only">Loading</span>
+    <span id="progress-bar-linear-6" class="vtmn-sr-only">Loading</span>
     <svg>
       <line
         class="vtmn-progressbar_indicator"
@@ -126,12 +134,15 @@
   <div
     class="vtmn-progressbar_container vtmn-progressbar_size--large"
     role="progressbar"
-    aria-label="progress bar"
+    aria-labelledby="progress-bar-linear-7"
     aria-valuemin="0"
     aria-valuemax="100"
     aria-valuenow="35"
   >
-    <span class="vtmn-progressbar_label" data-value="35">Loading</span>
+    <div class="vtmn-progressbar_label">
+      <span id="progress-bar-linear-7">Loading</span>
+      <span>35%</span>
+    </div>
     <svg>
       <line
         class="vtmn-progressbar_indicator"
@@ -148,11 +159,12 @@
   <div
     class="vtmn-progressbar_container vtmn-progressbar_size--large"
     role="progressbar"
-    aria-label="progress bar"
+    aria-labelledby="progress-bar-linear-8"
     aria-valuemin="0"
     aria-valuemax="100"
     aria-valuenow="65"
   >
+    <span id="progress-bar-linear-8" class="vtmn-sr-only">Loading</span>
     <svg>
       <line
         class="vtmn-progressbar_indicator"
@@ -169,9 +181,9 @@
   <div
     class="vtmn-progressbar_container vtmn-progressbar_size--large vtmn-progressbar--indeterminate"
     role="progressbar"
-    aria-label="progress bar loading"
+    aria-labelledby="progress-bar-linear-9"
   >
-    <span class="vtmn-sr-only">Loading</span>
+    <span id="progress-bar-linear-9" class="vtmn-sr-only">Loading</span>
     <svg>
       <line
         class="vtmn-progressbar_indicator"
@@ -189,17 +201,16 @@
     id="vtmn-progressbar-container-1"
     class="vtmn-progressbar_container"
     role="progressbar"
-    aria-label="progress bar"
+    aria-labelledby="progress-bar-linear-demo"
     aria-valuemin="0"
     aria-valuemax="100"
     aria-valuenow="0"
+    aria-live="assertive"
   >
-    <span
-      id="vtmn-progressbar-label-1"
-      class="vtmn-progressbar_label"
-      data-value="0"
-      >Loading</span
-    >
+    <div class="vtmn-progressbar_label">
+      <span id="progress-bar-linear-demo">Loading</span>
+      <span id="vtmn-progressbar-label-1">0%</span>
+    </div>
     <svg>
       <line
         id="vtmn-progressbar-1"
