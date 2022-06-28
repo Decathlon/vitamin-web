@@ -1,4 +1,5 @@
 import * as React from 'react';
+import ReactDOM from 'react-dom';
 import '@vtmn/css-tooltip/dist/index-with-vars.css';
 import { VtmnTooltipPosition } from './types';
 
@@ -21,6 +22,12 @@ export interface VtmnTooltipProps
    * @defaultValue undefined
    */
   children: React.ReactNode;
+
+  /**
+   * The container ref where the tooltip will be rendered.
+   * @defaultValue undefined
+   */
+  containerRef: React.RefObject<HTMLElement>;
 }
 
 export const VtmnTooltip = ({
@@ -28,22 +35,36 @@ export const VtmnTooltip = ({
   position = 'top',
   tooltip,
   className,
+  containerRef,
   ...props
 }: VtmnTooltipProps) => {
-  return (
-    <div className="vtmn-flex">
-      <span
-        tabIndex={0}
-        role="tooltip"
-        className={`vtmn-tooltip ${className ?? className}`}
-        data-tooltip={tooltip}
-        data-position={position}
-        {...props}
-      >
-        {children}
-      </span>
-    </div>
-  );
+  const divEl = React.useRef() as React.MutableRefObject<HTMLDivElement>;
+
+  const [mount, setMount] = React.useState(false);
+
+  React.useEffect(() => {
+    setMount(true);
+  }, []);
+
+  return mount
+    ? ReactDOM.createPortal(
+        <div className="vtmn-flex" ref={divEl}>
+          <span
+            tabIndex={0}
+            role="tooltip"
+            className={`vtmn-tooltip ${className ?? className}`}
+            data-tooltip={tooltip}
+            data-position={position}
+            {...props}
+          >
+            {children}
+          </span>
+        </div>,
+        containerRef && containerRef.current
+          ? containerRef.current
+          : divEl.current,
+      )
+    : null;
 };
 
 const MemoVtmnTooltip = React.memo(VtmnTooltip);
