@@ -47,13 +47,6 @@ export interface VtmnSearchProps
    * @default undefined
    */
   onSearch?: (search: string) => void;
-
-  /**
- * Called when user click on clear icon
- * @type {void}
- * @default undefined
- */
-  onClear?: () => void;
 }
 
 export const VtmnSearch = ({
@@ -64,7 +57,7 @@ export const VtmnSearch = ({
   value = undefined,
   className,
   onSearch,
-  onClear,
+
   ...props
 }: VtmnSearchProps) => {
   const [search, setSearch] = React.useState(value);
@@ -108,10 +101,7 @@ export const VtmnSearch = ({
             size={size}
             disabled={disabled}
             iconAlone="close-line"
-            onClick={() => {
-              setSearch('');
-              onClear && onClear();
-            }}
+            onClick={() => setSearch('')}
             aria-label="close"
             type="button"
           />
