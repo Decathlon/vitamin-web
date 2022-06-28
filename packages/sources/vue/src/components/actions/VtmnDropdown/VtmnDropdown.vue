@@ -1,6 +1,6 @@
 <script lang="ts">
 import '@vtmn/css-dropdown/dist/index-with-vars.css';
-import { defineComponent, PropType, reactive } from 'vue';
+import { defineComponent, PropType } from 'vue';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnDropdown',

@@ -1,7 +1,7 @@
 <script lang="ts">
 import '@vtmn/css-dropdown/dist/index-with-vars.css';
 import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
-import { defineComponent, PropType, reactive } from 'vue';
+import { defineComponent, PropType } from 'vue';
 import VtmnIcon from '../../../guidelines/iconography/VtmnIcon/VtmnIcon.vue';
 import VtmnDivider from '../../structure/VtmnDivider/VtmnDivider.vue';
 
