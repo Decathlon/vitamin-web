@@ -18,7 +18,11 @@ const Template: Story = (args) => {
     console.log('search value is: ' + search);
   };
 
-  return <VtmnSearch onSearch={onSearch} {...args} />;
+  const onClear = () => {
+    console.log('search field is cleared');
+  }
+
+  return <VtmnSearch onSearch={onSearch} onClear={onClear} {...args} />;
 };
 
 export const Overview = Template.bind({});
