@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.40.0...@vtmn/vue@0.41.0) (2022-06-28)
+
+
+### Features
+
+* **@vtmn/css, @vtmn/react, @vtmn/svelte, @vtmn/vue:** add or improve `VtmnTabs` component ([#1168](https://github.com/Decathlon/vitamin-web/issues/1168)) ([5c22816](https://github.com/Decathlon/vitamin-web/commit/5c22816a19a9e60e33080eec65bad02492b9dd39))
+* **@vtmn/react, @vtmn/vue:** add `VtmnDropdown` component ([#1169](https://github.com/Decathlon/vitamin-web/issues/1169)) ([4e88194](https://github.com/Decathlon/vitamin-web/commit/4e881948598a7c0acda21d89f3db03d39becaeb6))
+
+
+
+
+
 # [0.40.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.39.0...@vtmn/vue@0.40.0) (2022-06-28)
 
 

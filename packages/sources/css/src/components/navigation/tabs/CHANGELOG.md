@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tabs@0.5.2...@vtmn/css-tabs@0.6.0) (2022-06-28)
+
+
+### Features
+
+* **@vtmn/css, @vtmn/react, @vtmn/svelte, @vtmn/vue:** add or improve `VtmnTabs` component ([#1168](https://github.com/Decathlon/vitamin-web/issues/1168)) ([5c22816](https://github.com/Decathlon/vitamin-web/commit/5c22816a19a9e60e33080eec65bad02492b9dd39))
+
+
+
+
+
 ## [0.5.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tabs@0.5.1...@vtmn/css-tabs@0.5.2) (2022-06-27)
 
 **Note:** Version bump only for package @vtmn/css-tabs
