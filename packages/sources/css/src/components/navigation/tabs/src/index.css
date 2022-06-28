@@ -21,11 +21,14 @@
 
 .vtmn-tabs li {
   display: inline-flex;
+  padding-inline: rem(2px);
+  padding-block-start: rem(2px);
 }
 
 .vtmn-tabs a,
 .vtmn-tabs_size--medium a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
   padding-inline: rem(20px);
@@ -54,7 +57,7 @@
 }
 
 .vtmn-tabs a:focus-visible {
-  box-shadow: var(--vtmn-shadow_focus-visible);
+  box-shadow: 0 0 0 rem(2px) var(--vtmn-semantic-color_content-primary);
 }
 
 .vtmn-tabs a:focus > .vtmn-badge {
