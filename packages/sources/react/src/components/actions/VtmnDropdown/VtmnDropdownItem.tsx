@@ -45,7 +45,7 @@ export const VtmnDropdownItem = ({
     <React.Fragment>
       <input
         type="checkbox"
-        selected={selected}
+        checked={selected}
         onChange={() =>
           setSelected(() => {
             return !selected;

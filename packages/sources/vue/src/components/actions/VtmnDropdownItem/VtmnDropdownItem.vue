@@ -9,7 +9,7 @@ export default /*#__PURE__*/ defineComponent({
   name: 'VtmnDropdownItem',
   components: { VtmnIcon, VtmnDivider },
   props: {
-    checked: {
+    selected: {
       type: Boolean as PropType<boolean>,
       default: false,
     },
@@ -48,7 +48,7 @@ export default /*#__PURE__*/ defineComponent({
 <template>
   <input
     type="checkbox"
-    :checked="checked"
+    :cheched="selected"
     @change="handleChange"
     v-bind="$attrs"
   />
