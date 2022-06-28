@@ -16,6 +16,12 @@ export interface VtmnDividerProps
    * @defaultValue 'start'
    */
   textPosition?: VtmnDividerTextPosition;
+
+  /**
+   * The id of divider label.
+   * @defaultValue undefined
+   */
+  labelId?: string;
 }
 
 export const VtmnDivider = ({
@@ -23,6 +29,7 @@ export const VtmnDivider = ({
   textPosition = 'start',
   children,
   className,
+  labelId,
   ...props
 }: VtmnDividerProps) => {
   return (
@@ -36,8 +43,11 @@ export const VtmnDivider = ({
       {...props}
       role="separator"
       aria-orientation={orientation}
+      aria-labelledBy={labelId ? labelId : undefined}
     >
-      {children}
+      {children ? (
+        <span id={labelId ? labelId : undefined}>{children}</span>
+      ) : null}
     </div>
   );
 };
