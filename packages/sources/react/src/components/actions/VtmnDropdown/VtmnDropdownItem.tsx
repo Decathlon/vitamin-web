@@ -39,16 +39,16 @@ export const VtmnDropdownItem = ({
   onChange = undefined,
   ...props
 }: VtmnDropdownItemProps) => {
-  const [checked, setChecked] = React.useState(false);
+  const [selected, setSelected] = React.useState(false);
 
   return (
     <React.Fragment>
       <input
         type="checkbox"
-        checked={checked}
+        selected={selected}
         onChange={() =>
-          setChecked(() => {
-            return !checked;
+          setSelected(() => {
+            return !selected;
           })
         }
         {...props}
