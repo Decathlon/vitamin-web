@@ -57,6 +57,7 @@
 }
 
 .vtmn-tabs a:focus-visible {
+  border-block-end: rem(2px) solid var(--vtmn-semantic-color_content-primary);
   box-shadow: 0 0 0 rem(2px) var(--vtmn-semantic-color_content-primary);
 }
 
