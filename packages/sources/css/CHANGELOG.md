@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.83.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.83.0...@vtmn/css@0.83.1) (2022-06-28)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** sonarcloud code smells ([f95800e](https://github.com/Decathlon/vitamin-web/commit/f95800e71b58cd015ad6bf6f0ad64283f2193df0))
+
+
+
+
+
 # [0.83.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.82.0...@vtmn/css@0.83.0) (2022-06-28)
 
 
