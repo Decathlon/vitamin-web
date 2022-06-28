@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.40.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.39.0...@vtmn/vue@0.40.0) (2022-06-28)
+
+
+### Features
+
+* **@vtmn/css, @vtmn/react, @vtmn/svelte:** `progressbar`, add a11y requirements ([#1129](https://github.com/Decathlon/vitamin-web/issues/1129)) ([69829e8](https://github.com/Decathlon/vitamin-web/commit/69829e88f2cdc5f80b242cc4c5c2819d8c83d610))
+
+
+
+
+
+# [0.39.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.38.5...@vtmn/vue@0.39.0) (2022-06-28)
+
+
+### Features
+
+* **@vtmn/css, @vtmn/react, @vtmn/svelte, @vtmn/vue:** `divider`, add a11y requirements ([#1137](https://github.com/Decathlon/vitamin-web/issues/1137)) ([d651cd2](https://github.com/Decathlon/vitamin-web/commit/d651cd2afbd5b4381865d04e5c5c27f671812ae8))
+
+
+
+
+
+## [0.38.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.38.4...@vtmn/vue@0.38.5) (2022-06-27)
+
+**Note:** Version bump only for package @vtmn/vue
+
+
+
+
+
 ## [0.38.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.38.3...@vtmn/vue@0.38.4) (2022-06-23)
 
 **Note:** Version bump only for package @vtmn/vue

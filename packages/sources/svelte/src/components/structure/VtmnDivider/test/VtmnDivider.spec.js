@@ -6,6 +6,8 @@ import VtmnDivider from './VtmnDividerWithSlots.svelte';
 describe('VtmnDivider', () => {
   const getDivider = (container) =>
     container.getElementsByClassName('vtmn-divider')[0];
+  const getDividerSpan = (container) =>
+    container.getElementsByClassName('vtmn-divider')[0].childNodes[0];
 
   test('Should display the divider with horizontal orientation, start text position by default', () => {
     const { container } = render(VtmnDivider);
@@ -33,5 +35,15 @@ describe('VtmnDivider', () => {
   test('Should display text position', () => {
     const { getByText } = render(VtmnDivider, { textPosition: 'end' });
     expect(getByText('unit test divider')).toBeVisible();
+  });
+  test('Should be accessible', () => {
+    const { container } = render(VtmnDivider, {
+      labelId: 'idForTest',
+    });
+    expect(getDivider(container)).toHaveAttribute(
+      'aria-labelledby',
+      'idForTest',
+    );
+    expect(getDividerSpan(container)).toHaveAttribute('id', 'idForTest');
   });
 });

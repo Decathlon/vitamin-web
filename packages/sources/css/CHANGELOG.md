@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.82.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.81.0...@vtmn/css@0.82.0) (2022-06-28)
+
+
+### Features
+
+* **@vtmn/css, @vtmn/react, @vtmn/svelte:** `progressbar`, add a11y requirements ([#1129](https://github.com/Decathlon/vitamin-web/issues/1129)) ([69829e8](https://github.com/Decathlon/vitamin-web/commit/69829e88f2cdc5f80b242cc4c5c2819d8c83d610))
+
+
+
+
+
+# [0.81.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.80.1...@vtmn/css@0.81.0) (2022-06-27)
+
+
+### Features
+
+* **@vtmn/css:** change border colors, add missing colors in color themes ([#1194](https://github.com/Decathlon/vitamin-web/issues/1194)) ([95f0329](https://github.com/Decathlon/vitamin-web/commit/95f032995684e909ad7aa868ea86717bbfc2786d))
+
+
+
+
+
 ## [0.80.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.80.0...@vtmn/css@0.80.1) (2022-06-23)
 
 **Note:** Version bump only for package @vtmn/css

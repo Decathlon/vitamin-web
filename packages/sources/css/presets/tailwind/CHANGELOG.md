@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.35.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tailwind-preset@0.35.0...@vtmn/css-tailwind-preset@0.35.1) (2022-06-28)
+
+**Note:** Version bump only for package @vtmn/css-tailwind-preset
+
+
+
+
+
+# [0.35.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tailwind-preset@0.34.4...@vtmn/css-tailwind-preset@0.35.0) (2022-06-27)
+
+
+### Features
+
+* **@vtmn/css:** change border colors, add missing colors in color themes ([#1194](https://github.com/Decathlon/vitamin-web/issues/1194)) ([95f0329](https://github.com/Decathlon/vitamin-web/commit/95f032995684e909ad7aa868ea86717bbfc2786d))
+
+
+
+
+
 ## [0.34.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tailwind-preset@0.34.3...@vtmn/css-tailwind-preset@0.34.4) (2022-06-23)
 
 **Note:** Version bump only for package @vtmn/css-tailwind-preset

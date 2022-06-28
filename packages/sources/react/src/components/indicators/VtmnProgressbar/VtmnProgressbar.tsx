@@ -57,6 +57,13 @@ export interface VtmnProgressbarProps
    * @defaultValue 'Loading'
    */
   loadingText?: string;
+
+  /**
+   * Id of the labelId
+   * @type {string}
+   * @defaultValue 'Loading'
+   */
+  labelId?: string;
 }
 
 export const VtmnProgressbar = ({
@@ -67,6 +74,7 @@ export const VtmnProgressbar = ({
   imageSrc = undefined,
   imageAlt = undefined,
   loadingText = 'Loading',
+  labelId,
   className,
   ...props
 }: VtmnProgressbarProps) => {
@@ -82,9 +90,10 @@ export const VtmnProgressbar = ({
         className,
       )}
       role="progressbar"
-      aria-label="progress bar"
       aria-valuemin={0}
       aria-valuemax={100}
+      aria-valuenow={value}
+      aria-labelledby={labelId ?? undefined}
       {...props}
     >
       {/**
@@ -92,12 +101,16 @@ export const VtmnProgressbar = ({
        */}
 
       {variant === 'linear' && status === 'determinate' && (
-        <span
-          className="vtmn-progressbar_label"
-          // Clamp the value between minValue and maxValue
+        <div className="vtmn-progressbar_label">
+          <span id={labelId ?? undefined}>{loadingText}</span>
+          <span aria-live="assertive">
+            {Math.min(Math.max(value, 0), 100)}%
+          </span>
+        </div>
+      )}
 
-          data-value={Math.min(Math.max(value, 0), 100)}
-        >
+      {variant === 'linear' && status === 'indeterminate' && (
+        <span id={labelId ?? undefined} className="vtmn-sr-only">
           {loadingText}
         </span>
       )}
@@ -123,14 +136,19 @@ export const VtmnProgressbar = ({
        */}
 
       {variant === 'circular' && status === 'determinate' && (
-        <span
-          className="vtmn-progressbar_label"
-          data-value={Math.min(Math.max(value, 0), 100)}
-        />
+        <span className="vtmn-progressbar_label" aria-live="assertive">
+          {Math.min(Math.max(value, 0), 100)}%
+        </span>
       )}
 
       {variant === 'circular' && imageSrc !== undefined && (
         <img className="vtmn-progressbar_image" src={imageSrc} alt={imageAlt} />
+      )}
+
+      {variant === 'circular' && status === 'indeterminate' && (
+        <span id={labelId ?? undefined} className="vtmn-sr-only">
+          {loadingText}
+        </span>
       )}
 
       {variant === 'circular' && (
