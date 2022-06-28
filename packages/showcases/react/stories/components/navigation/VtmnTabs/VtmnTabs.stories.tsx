@@ -16,14 +16,16 @@ export default {
 const Template: Story = (args) => (
   <div style={{ width: '800px', display: 'flex', justifyContent: 'center' }}>
     <VtmnTabs {...args} aria-label="Tabs list">
-      <VtmnTabsItem href="">Tab Item 1</VtmnTabsItem>
-      <VtmnTabsItem icon="heart-line" href="">
+      <VtmnTabsItem icon="heart-line" href="#">
+        Tab Item 1
+      </VtmnTabsItem>
+      <VtmnTabsItem icon="heart-line" href="#">
         Tab Item 2
       </VtmnTabsItem>
-      <VtmnTabsItem badgeValue="99" href="">
+      <VtmnTabsItem icon="heart-line" badgeValue="99" href="#">
         Tab Item 3
       </VtmnTabsItem>
-      <VtmnTabsItem icon="heart-line" badgeValue="99" href="">
+      <VtmnTabsItem icon="heart-line" badgeValue="99" href="#">
         Tab Item 4
       </VtmnTabsItem>
     </VtmnTabs>
