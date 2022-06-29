@@ -119,11 +119,22 @@
   background-color: var(--vtmn-semantic-color_background-primary);
   padding: var(--vtmn-spacing_3);
   margin: 0;
-  width: 100%;
+  inline-size: 100%;
   block-size: 100%;
   border-radius: rem(4px);
   display: inline-flex;
   position: relative;
+  white-space: nowrap;
+}
+
+.vtmn-dropdown .vtmn-dropdown_item_label--secondary-text {
+  display: flex;
+  align-self: center;
+  margin-inline-start: var(--vtmn-spacing_5);
+  font-family: var(--vtmn-typo_font-family);
+  font-size: var(--vtmn-typo_text-3-font-size);
+  color: var(--vtmn-semantic-color_content-secondary);
+  font-weight: var(--vtmn-typo_font-weight--normal);
 }
 
 .vtmn-dropdown_items > .vtmn-divider {
