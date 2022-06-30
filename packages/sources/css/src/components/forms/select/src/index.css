@@ -13,6 +13,7 @@
   line-height: var(--vtmn-typo_text-2-line-height);
   color: var(--vtmn-semantic-color_content-primary);
   inline-size: min-content;
+  white-space: nowrap;
 }
 
 .vtmn-select_container > label {
