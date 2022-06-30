@@ -13,9 +13,10 @@
   line-height: var(--vtmn-typo_text-2-line-height);
   color: var(--vtmn-semantic-color_content-primary);
   inline-size: min-content;
+  white-space: nowrap;
 }
 
-.vtmn-select_container > label {
+.vtmn-select_container>label {
   margin-block-end: rem(4px);
   display: inline-block;
   inline-size: fit-content;
@@ -82,7 +83,7 @@
 }
 
 .vtmn-select_container select:disabled,
-.vtmn-select_container select:disabled + label {
+.vtmn-select_container select:disabled+label {
   opacity: var(--vtmn-opacity_disabled-state);
   cursor: not-allowed;
 }
