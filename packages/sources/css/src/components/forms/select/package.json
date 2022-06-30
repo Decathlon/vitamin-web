@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-select",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "description": "Decathlon Design System - Vitamin specific CSS styles for select component",
   "keywords": [
     "design-system",

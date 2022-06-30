@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-select@0.8.2...@vtmn/css-select@0.8.3) (2022-06-30)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** select wrap property ([#1202](https://github.com/Decathlon/vitamin-web/issues/1202)) ([a2f5603](https://github.com/Decathlon/vitamin-web/commit/a2f56036b7d448ec9ea45e9c071a9df986ff4b84))
+
+
+
+
+
 ## [0.8.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-select@0.8.1...@vtmn/css-select@0.8.2) (2022-06-27)
 
 **Note:** Version bump only for package @vtmn/css-select

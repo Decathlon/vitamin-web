@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.83.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.83.1...@vtmn/css@0.83.2) (2022-06-30)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** select wrap property ([#1202](https://github.com/Decathlon/vitamin-web/issues/1202)) ([a2f5603](https://github.com/Decathlon/vitamin-web/commit/a2f56036b7d448ec9ea45e9c071a9df986ff4b84))
+
+
+
+
+
 ## [0.83.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.83.0...@vtmn/css@0.83.1) (2022-06-28)
 
 
