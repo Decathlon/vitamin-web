@@ -59,6 +59,25 @@
   </VtmnDropdown>
 </Story>
 
+<Story name="With end text" let:args>
+  <VtmnDropdown {...args} on:change>
+    {#each Array(5) as _, index}
+      <VtmnDropdownItem
+        id={`disabled-${index}`}
+        bind:group={groupDisabled}
+        value={index}
+        icon="user-line"
+        divider={index !== 4}
+      >
+        Dropdown Option {index}
+        <svelte:fragment slot="endText">
+          {`End text ${index}`}
+        </svelte:fragment>
+      </VtmnDropdownItem>
+    {/each}
+  </VtmnDropdown>
+</Story>
+
 <style>
   :global(#anchor--components-actions-vtmndropdown--overview .docs-story),
   :global(#anchor--components-actions-vtmndropdown--overview

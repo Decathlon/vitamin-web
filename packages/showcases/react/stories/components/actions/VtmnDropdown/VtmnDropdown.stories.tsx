@@ -18,6 +18,14 @@ export default {
         type: 'function',
       },
     },
+    endText: {
+      type: { name: 'string', required: false },
+      description: 'End text of a dropdown option',
+      defaultValue: undefined,
+      control: {
+        type: 'text',
+      },
+    },
   },
   parameters,
 } as Meta;

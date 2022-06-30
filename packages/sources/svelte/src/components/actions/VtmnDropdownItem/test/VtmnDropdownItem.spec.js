@@ -66,6 +66,18 @@ describe('VtmnDropdownItem', () => {
     expect(getByRole('separator')).toBeVisible();
   });
 
+  test('Should display an end text', () => {
+    const { container } = render(VtmnDropdownItem, {
+      id: 'dropdown-item',
+      value: 1,
+      group: [],
+    });
+
+    expect(container.querySelector('label > span')).toHaveClass(
+      'vtmn-dropdown_item_label--end-text',
+    );
+  });
+
   test('Should trigger on:change on click', async () => {
     const group = [];
     const { container } = render(VtmnDropdownItem, {

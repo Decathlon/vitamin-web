@@ -3,6 +3,10 @@
   import VtmnDivider from '../../structure/VtmnDivider/VtmnDivider.svelte';
   import VtmnIcon from '../../../guidelines/iconography/VtmnIcon/VtmnIcon.svelte';
 
+  /** @restProps */
+
+  const SLOTS = $$props.$$slots;
+
   /**
    * @type {string} if of the item
    * @requires
@@ -36,6 +40,7 @@
    * @type {string} Icon of menu item.
    */
   export let icon = undefined;
+
   /**
    * Custom classes to apply to the component.
    * @type {string} className
@@ -64,6 +69,16 @@
 
   $: group && updateChekbox(group);
   $: group && updateGroup(selected);
+
+  /**
+   * Delete slot div from de DOM if slot doesn't exist.
+   *
+   * @param {'start-visual' | 'text' | 'subtext' | 'end-action'} slotName
+   * @returns {boolean} slotExists
+   */
+  const checkSlotExists = (slotName) => {
+    return SLOTS && SLOTS[slotName] && SLOTS[slotName].length;
+  };
 </script>
 
 <input
@@ -82,6 +97,11 @@
   {/if}
 
   <slot />
+  {#if checkSlotExists('endText')}
+    <span class="vtmn-dropdown_item_label--end-text">
+      <slot name="endText" />
+    </span>
+  {/if}
 </label>
 
 {#if divider}

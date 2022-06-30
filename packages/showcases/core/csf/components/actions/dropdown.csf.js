@@ -42,13 +42,4 @@ export const argTypes = {
       type: 'boolean',
     },
   },
-
-  endText: {
-    type: { name: 'string', required: false },
-    description: 'End text of a dropdown option',
-    defaultValue: undefined,
-    control: {
-      type: 'text',
-    },
-  },
 };
