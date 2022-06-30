@@ -47,7 +47,7 @@ const Template: Story = (args) => {
           id="dropdown-0-opt-3"
           name="dropdown-0"
           value="item 3"
-          divider="true"
+          divider
         >
           Dropdown Item 3
         </VtmnDropdownItem>
