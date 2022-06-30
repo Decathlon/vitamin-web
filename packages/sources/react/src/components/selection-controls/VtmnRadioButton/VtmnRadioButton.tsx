@@ -24,6 +24,13 @@ export interface VtmnRadioButtonProps
   checked?: boolean;
 
   /**
+   * The default checked state of the radio (for uncontrolled mode combined with a "name" attribute).
+   * @type {boolean}
+   * @defaultValue undefined
+   */
+  defaultChecked?: boolean;
+
+  /**
    * The disabled state of the radio.
    * @type {boolean}
    * @defaultValue false
@@ -35,6 +42,7 @@ export const VtmnRadioButton = ({
   identifier,
   labelText,
   checked = false,
+  defaultChecked = undefined,
   disabled = false,
   ...props
 }: VtmnRadioButtonProps) => {
@@ -44,7 +52,9 @@ export const VtmnRadioButton = ({
         className="vtmn-radio-button"
         type="radio"
         id={identifier}
-        checked={checked}
+        {...(typeof defaultChecked !== 'undefined'
+          ? { defaultChecked }
+          : { checked })}
         disabled={disabled}
         {...props}
       />

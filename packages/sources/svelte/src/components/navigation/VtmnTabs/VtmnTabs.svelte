@@ -30,7 +30,7 @@
 </script>
 
 <nav class={componentClass} {...$$restProps}>
-  <ul>
+  <ul role="tablist">
     <slot />
   </ul>
   <VtmnDivider />

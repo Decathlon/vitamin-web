@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.83.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.83.0...@vtmn/css@0.83.1) (2022-06-28)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** sonarcloud code smells ([f95800e](https://github.com/Decathlon/vitamin-web/commit/f95800e71b58cd015ad6bf6f0ad64283f2193df0))
+
+
+
+
+
+# [0.83.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.82.0...@vtmn/css@0.83.0) (2022-06-28)
+
+
+### Features
+
+* **@vtmn/css, @vtmn/react, @vtmn/svelte, @vtmn/vue:** add or improve `VtmnTabs` component ([#1168](https://github.com/Decathlon/vitamin-web/issues/1168)) ([5c22816](https://github.com/Decathlon/vitamin-web/commit/5c22816a19a9e60e33080eec65bad02492b9dd39))
+
+
+
+
+
+# [0.82.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.81.0...@vtmn/css@0.82.0) (2022-06-28)
+
+
+### Features
+
+* **@vtmn/css, @vtmn/react, @vtmn/svelte:** `progressbar`, add a11y requirements ([#1129](https://github.com/Decathlon/vitamin-web/issues/1129)) ([69829e8](https://github.com/Decathlon/vitamin-web/commit/69829e88f2cdc5f80b242cc4c5c2819d8c83d610))
+
+
+
+
+
 # [0.81.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.80.1...@vtmn/css@0.81.0) (2022-06-27)
 
 

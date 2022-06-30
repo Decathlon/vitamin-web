@@ -3,6 +3,82 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.50.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.49.2...@vtmn/react@0.50.0) (2022-06-28)
+
+
+### Features
+
+* **@vtmn/react:** enhance radio button and checkbox to be used in uncontrolled mode ([4462504](https://github.com/Decathlon/vitamin-web/commit/44625044ab8409c115503622c694470305298b7a))
+
+
+
+
+
+## [0.49.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.49.1...@vtmn/react@0.49.2) (2022-06-28)
+
+**Note:** Version bump only for package @vtmn/react
+
+
+
+
+
+## [0.49.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.49.0...@vtmn/react@0.49.1) (2022-06-28)
+
+
+### Bug Fixes
+
+* **@vtmn/react, @vtmn/svelte:** sonarcloud code smells ([07a126d](https://github.com/Decathlon/vitamin-web/commit/07a126d38e81fadd0878cb62f83c8cdceeb7238d))
+
+
+
+
+
+# [0.49.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.48.0...@vtmn/react@0.49.0) (2022-06-28)
+
+
+### Features
+
+* **@vtmn/css, @vtmn/react, @vtmn/svelte, @vtmn/vue:** add or improve `VtmnTabs` component ([#1168](https://github.com/Decathlon/vitamin-web/issues/1168)) ([5c22816](https://github.com/Decathlon/vitamin-web/commit/5c22816a19a9e60e33080eec65bad02492b9dd39))
+* **@vtmn/react, @vtmn/vue:** add `VtmnDropdown` component ([#1169](https://github.com/Decathlon/vitamin-web/issues/1169)) ([4e88194](https://github.com/Decathlon/vitamin-web/commit/4e881948598a7c0acda21d89f3db03d39becaeb6))
+
+
+
+
+
+# [0.48.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.47.0...@vtmn/react@0.48.0) (2022-06-28)
+
+
+### Features
+
+* **@vtmn/react:** add `VtmnCard` component ([#1186](https://github.com/Decathlon/vitamin-web/issues/1186)) ([72417ef](https://github.com/Decathlon/vitamin-web/commit/72417ef2e10d8f0005bd75a030eda5cef155db05))
+
+
+
+
+
+# [0.47.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.46.0...@vtmn/react@0.47.0) (2022-06-28)
+
+
+### Features
+
+* **@vtmn/css, @vtmn/react, @vtmn/svelte:** `progressbar`, add a11y requirements ([#1129](https://github.com/Decathlon/vitamin-web/issues/1129)) ([69829e8](https://github.com/Decathlon/vitamin-web/commit/69829e88f2cdc5f80b242cc4c5c2819d8c83d610))
+* **@vtmn/react:** add `onClear` prop on `VtmnSearch` component ([#1198](https://github.com/Decathlon/vitamin-web/issues/1198)) ([775ebf2](https://github.com/Decathlon/vitamin-web/commit/775ebf24901e1cae0a58bf3aeb9415abc78964dc))
+
+
+
+
+
+# [0.46.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.45.4...@vtmn/react@0.46.0) (2022-06-28)
+
+
+### Features
+
+* **@vtmn/css, @vtmn/react, @vtmn/svelte, @vtmn/vue:** `divider`, add a11y requirements ([#1137](https://github.com/Decathlon/vitamin-web/issues/1137)) ([d651cd2](https://github.com/Decathlon/vitamin-web/commit/d651cd2afbd5b4381865d04e5c5c27f671812ae8))
+
+
+
+
+
 ## [0.45.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.45.3...@vtmn/react@0.45.4) (2022-06-27)
 
 **Note:** Version bump only for package @vtmn/react

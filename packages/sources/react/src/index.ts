@@ -13,6 +13,10 @@ export { VtmnButton } from './components/actions/VtmnButton';
 export type { VtmnButtonProps } from './components/actions/VtmnButton';
 export { VtmnLink } from './components/actions/VtmnLink';
 export type { VtmnLinkProps } from './components/actions/VtmnLink';
+export { VtmnDropdown } from './components/actions/VtmnDropdown';
+export type { VtmnDropdownProps } from './components/actions/VtmnDropdown';
+export { VtmnDropdownItem } from './components/actions/VtmnDropdown';
+export type { VtmnDropdownItemProps } from './components/actions/VtmnDropdown';
 
 // Forms
 export { VtmnSelect } from './components/forms/VtmnSelect';
@@ -43,6 +47,10 @@ export { VtmnNavbar } from './components/navigation/VtmnNavbar/VtmnNavbar';
 export type { VtmnNavbarProps } from './components/navigation/VtmnNavbar/VtmnNavbar';
 export { VtmnSearch } from './components/navigation/VtmnSearch/VtmnSearch';
 export type { VtmnSearchProps } from './components/navigation/VtmnSearch/VtmnSearch';
+export { VtmnTabs } from './components/navigation/VtmnTabs';
+export type { VtmnTabsProps } from './components/navigation/VtmnTabs';
+export { VtmnTabsItem } from './components/navigation/VtmnTabs';
+export type { VtmnTabsItemProps } from './components/navigation/VtmnTabs';
 
 // Overlays
 export { VtmnAlert } from './components/overlays/VtmnAlert';
@@ -81,6 +89,8 @@ export type { VtmnToggleProps } from './components/selection-controls/VtmnToggle
 // Structure
 export { VtmnAccordion } from './components/structure/VtmnAccordion';
 export type { VtmnAccordionProps } from './components/structure/VtmnAccordion';
+export { VtmnCard } from './components/structure/VtmnCard';
+export type { VtmnCardProps } from './components/structure/VtmnCard';
 export { VtmnDivider } from './components/structure/VtmnDivider';
 export type { VtmnDividerProps } from './components/structure/VtmnDivider';
 export {
