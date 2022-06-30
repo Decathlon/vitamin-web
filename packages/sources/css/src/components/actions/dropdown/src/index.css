@@ -130,7 +130,8 @@
 .vtmn-dropdown .vtmn-dropdown_item_label--secondary-text {
   display: flex;
   align-self: center;
-  margin-inline-start: var(--vtmn-spacing_5);
+  margin-inline-start: auto;
+  padding-inline-start: var(--vtmn-spacing_5);
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-3-font-size);
   color: var(--vtmn-semantic-color_content-secondary);
