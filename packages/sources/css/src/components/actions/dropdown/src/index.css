@@ -127,7 +127,7 @@
   white-space: nowrap;
 }
 
-.vtmn-dropdown .vtmn-dropdown_item_label--secondary-text {
+.vtmn-dropdown .vtmn-dropdown_item_label--end-text {
   display: flex;
   align-self: center;
   margin-inline-start: auto;
