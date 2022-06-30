@@ -53,6 +53,11 @@ export default /*#__PURE__*/ defineComponent({
   <label :for="labelId">
     <VtmnIcon v-if="icon" :value="icon" aria-hidden="true" />
     <slot />
+    <template v-if="$slots['endText']">
+      <span class="vtmn-dropdown_item_label--end-text">
+        <slot name="endText" />
+      </span>
+    </template>
   </label>
   <VtmnDivider v-if="divider" orientation="horizontal" role="separator" />
 </template>

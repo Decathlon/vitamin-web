@@ -40,6 +40,7 @@ const Template = (args) => ({
           divider="true"
         >
           Dropdown Item 3
+          <template v-slot:endText>End Text</template>
         </VtmnDropdownItem>
         <VtmnDropdownItem
           id="dropdown-0-opt-4"
