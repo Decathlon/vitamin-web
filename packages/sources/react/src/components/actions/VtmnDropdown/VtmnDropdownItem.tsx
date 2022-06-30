@@ -19,6 +19,12 @@ export interface VtmnDropdownItemProps
   icon?: VitamixId;
 
   /**
+   * End text of a dropdown option.
+   * @defaultValue undefined
+   */
+  endText?: string;
+
+  /**
    * The content to render inside the component.
    * @defaultValue undefined
    */
@@ -35,6 +41,7 @@ export interface VtmnDropdownItemProps
 export const VtmnDropdownItem = ({
   divider = false,
   icon,
+  endText,
   children,
   onChange,
   ...props
@@ -57,6 +64,9 @@ export const VtmnDropdownItem = ({
       <label htmlFor={props['id'] ?? undefined}>
         {icon ? <VtmnIcon value={icon} /> : null}
         {children}
+        {endText ? (
+          <span className="vtmn-dropdown_item_label--end-text">{endText}</span>
+        ) : null}
       </label>
       {divider ? (
         <VtmnDivider orientation="horizontal" role="separator" />

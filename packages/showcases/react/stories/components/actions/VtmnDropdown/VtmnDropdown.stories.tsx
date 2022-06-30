@@ -30,6 +30,7 @@ const Template: Story = (args) => {
           id="dropdown-0-opt-1"
           name="dropdown-0"
           value="item 1"
+          endText="End Text"
         >
           Dropdown Item 1
         </VtmnDropdownItem>
@@ -38,6 +39,7 @@ const Template: Story = (args) => {
           name="dropdown-0"
           value="item 2"
           icon="user-line"
+          endText="End Text"
         >
           Dropdown Item 2
         </VtmnDropdownItem>
