@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.50.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.50.1...@vtmn/react@0.50.2) (2022-07-04)
+
+
+### Bug Fixes
+
+* **@vtmn/react:** icon size in text input component ([#1205](https://github.com/Decathlon/vitamin-web/issues/1205)) ([1679f7a](https://github.com/Decathlon/vitamin-web/commit/1679f7aa7a3e253ed05547089d04581e642ed135))
+
+
+
+
+
 ## [0.50.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.50.0...@vtmn/react@0.50.1) (2022-06-30)
 
 **Note:** Version bump only for package @vtmn/react
