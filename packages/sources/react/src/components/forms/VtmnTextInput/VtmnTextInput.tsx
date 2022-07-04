@@ -143,7 +143,7 @@ export const VtmnTextInput = ({
             }
             {...rest}
           />
-          {icon && <VtmnIcon value={icon} size={20} onClick={onIconClick} />}
+          {icon && <VtmnIcon value={icon} onClick={onIconClick} />}
         </div>
       )}
       {helperText && (
