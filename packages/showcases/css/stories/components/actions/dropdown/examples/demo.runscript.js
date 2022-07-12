@@ -11,11 +11,19 @@ window.addEventListener('DOMContentLoaded', () => {
     firstItem.focus();
   });
 
+  groupItem.addEventListener('focusout', () => {
+    firstFocusTrap.setAttribute('tabindex', '-1');
+  });
+
   groupItem.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
       document.querySelector('#dropdown-details').open = false;
       document.querySelector('#dropdown-details > summary').focus();
     }
+  });
+
+  firstItem.addEventListener('focus', () => {
+    firstFocusTrap.setAttribute('tabindex', '0');
   });
 
   firstFocusTrap.addEventListener('focus', () => {
