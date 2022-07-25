@@ -16,6 +16,10 @@ export default /*#__PURE__*/ defineComponent({
       type: Boolean as PropType<boolean>,
       default: false,
     },
+    reversed: {
+      type: Boolean as PropType<boolean>,
+      default: false,
+    },
     iconAlong: {
       type: Boolean as PropType<boolean>,
       default: false,
@@ -29,6 +33,7 @@ export default /*#__PURE__*/ defineComponent({
         'vtmn-link': true,
         [`vtmn-link_size--${props.size}`]: true,
         'vtmn-link--standalone': props.standalone,
+        'vtmn-link--reversed': props.reversed,
         'vtmn-link--icon-along': props.iconAlong && props.standalone,
       })),
     };

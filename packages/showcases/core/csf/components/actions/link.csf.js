@@ -53,7 +53,19 @@ export const argTypes = {
   },
   standalone: {
     type: { name: 'boolean', required: false },
-    description: 'Whether the component is standalone.',
+    description: 'Whether the component is standalone or not.',
+    table: {
+      type: {
+        summary: 'boolean',
+      },
+      defaultValue: { summary: 'false' },
+    },
+    defaultValue: false,
+    control: { type: 'boolean' },
+  },
+  reversed: {
+    type: { name: 'boolean', required: false },
+    description: 'Whether the component is standalone or not.',
     table: {
       type: {
         summary: 'boolean',

@@ -53,16 +53,16 @@
   background-color: var(--vtmn-semantic-color_content-action);
 }
 
-.vtmn-link--icon-along:visited::after {
-  background-color: var(--vtmn-semantic-color_content-visited);
-}
-
 .vtmn-link--icon-along:hover::after {
   background-color: var(--vtmn-semantic-color_hover-brand);
 }
 
 .vtmn-link--icon-along:active::after {
   background-color: var(--vtmn-semantic-color_active-brand);
+}
+
+.vtmn-link--icon-along:visited::after {
+  background-color: var(--vtmn-semantic-color_content-visited);
 }
 
 .vtmn-link_size--small {
@@ -75,4 +75,41 @@
 
 .vtmn-link_size--large {
   font-size: var(--vtmn-typo_text-1-font-size);
+}
+
+/* Reversed */
+
+.vtmn-link.vtmn-link--reversed {
+  color: var(--vtmn-semantic-color_content-action-reversed);
+}
+
+.vtmn-link.vtmn-link--reversed:hover,
+.vtmn-link--standalone.vtmn-link--reversed:hover {
+  color: var(--vtmn-base-color_grey50);
+}
+
+.vtmn-link.vtmn-link--reversed:active,
+.vtmn-link--standalone.vtmn-link--reversed:active {
+  color: var(--vtmn-base-color_grey100);
+}
+
+.vtmn-link.vtmn-link--reversed:visited,
+.vtmn-link--standalone.vtmn-link--reversed:visited {
+  color: var(--vtmn-semantic-color_content-visited-reversed);
+}
+
+.vtmn-link--icon-along.vtmn-link--reversed::after {
+  background-color: var(--vtmn-semantic-color_content-action-reversed);
+}
+
+.vtmn-link--icon-along.vtmn-link--reversed:hover::after {
+  background-color: var(--vtmn-base-color_grey50);
+}
+
+.vtmn-link--icon-along.vtmn-link--reversed:active::after {
+  background-color: var(--vtmn-base-color_grey100);
+}
+
+.vtmn-link--icon-along.vtmn-link--reversed:visited::after {
+  background-color: var(--vtmn-semantic-color_content-visited-reversed);
 }

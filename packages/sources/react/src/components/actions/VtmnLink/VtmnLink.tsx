@@ -18,6 +18,13 @@ export interface VtmnLinkProps extends React.ComponentPropsWithoutRef<'a'> {
   standalone?: boolean;
 
   /**
+   * Whether link is reversed or not.
+   * @type {boolean}
+   * @defaultValue false
+   */
+  reversed?: boolean;
+
+  /**
    * Whether link has an icon or not.
    * @type {boolean}
    * @defaultValue false
@@ -34,6 +41,7 @@ export interface VtmnLinkProps extends React.ComponentPropsWithoutRef<'a'> {
 export const VtmnLink = ({
   iconAlong = false,
   standalone = false,
+  reversed = false,
   size = 'medium',
   children,
   className,
@@ -45,6 +53,7 @@ export const VtmnLink = ({
         'vtmn-link',
         `vtmn-link_size--${size}`,
         { 'vtmn-link--standalone': standalone },
+        { 'vtmn-link--reversed': reversed },
         { 'vtmn-link--icon-along': standalone && iconAlong },
         className,
       )}

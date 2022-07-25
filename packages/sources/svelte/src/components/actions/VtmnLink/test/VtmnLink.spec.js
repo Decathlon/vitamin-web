@@ -24,6 +24,10 @@ describe('VtmnLink', () => {
     const { container } = render(VtmnLink, { ...links, standalone: true });
     expect(getLink(container)).toHaveClass('vtmn-link--standalone');
   });
+  test('Should apply reversed', () => {
+    const { container } = render(VtmnLink, { ...links, reversed: true });
+    expect(getLink(container)).toHaveClass('vtmn-link--reversed');
+  });
   test('Should apply icon along if standalone are set', () => {
     const { container } = render(VtmnLink, {
       ...links,

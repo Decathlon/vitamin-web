@@ -2,6 +2,7 @@ import overview from './examples/overview.html';
 import small from './examples/small.html';
 import medium from './examples/medium.html';
 import large from './examples/large.html';
+import reversed from './examples/reversed.html';
 import { parameters } from '@vtmn/showcase-core/csf/components/actions/link.csf';
 
 export default {
@@ -43,5 +44,17 @@ Large.parameters = {
     source: {
       code: large,
     },
+  },
+};
+
+export const Reversed = () => reversed;
+Reversed.parameters = {
+  docs: {
+    source: {
+      code: reversed,
+    },
+  },
+  backgrounds: {
+    default: 'primary-reversed',
   },
 };
