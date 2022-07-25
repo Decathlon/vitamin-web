@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.51.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.50.2...@vtmn/react@0.51.0) (2022-07-25)
+
+
+### Features
+
+* **@vtmn/css-link, @vtmn/react, @vtmn/vue, @vtmn/svelte:** add reversed variant for `VtmnLink` component ([#1213](https://github.com/Decathlon/vitamin-web/issues/1213)) ([1ce650e](https://github.com/Decathlon/vitamin-web/commit/1ce650e31dab5dde18185393437219f388801890))
+
+
+
+
+
 ## [0.50.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.50.1...@vtmn/react@0.50.2) (2022-07-04)
 
 

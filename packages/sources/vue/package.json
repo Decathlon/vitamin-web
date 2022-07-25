@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/vue",
-  "version": "0.41.3",
+  "version": "0.42.0",
   "description": "Decathlon Design System - Vitamin Vue components library",
   "keywords": [
     "design-system",
@@ -54,7 +54,7 @@
     "@vtmn/css-checkbox": "^0.8.2",
     "@vtmn/css-chip": "^0.9.2",
     "@vtmn/css-divider": "^0.5.0",
-    "@vtmn/css-link": "^0.8.2",
+    "@vtmn/css-link": "^0.9.0",
     "@vtmn/css-list": "^0.5.0",
     "@vtmn/css-modal": "^0.8.3",
     "@vtmn/css-navbar": "^0.3.2",
