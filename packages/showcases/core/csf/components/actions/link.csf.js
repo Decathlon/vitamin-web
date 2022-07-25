@@ -65,7 +65,7 @@ export const argTypes = {
   },
   reversed: {
     type: { name: 'boolean', required: false },
-    description: 'Whether the component is standalone or not.',
+    description: 'Whether the component is reversed or not.',
     table: {
       type: {
         summary: 'boolean',
