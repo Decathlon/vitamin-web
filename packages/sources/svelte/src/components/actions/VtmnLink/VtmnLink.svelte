@@ -31,6 +31,13 @@
   export let standalone = false;
 
   /**
+   * Whether link is reversed or not.
+   * @type {boolean}
+   * @defaultValue false
+   */
+  export let reversed = false;
+
+  /**
    * Whether link has an icon or not.
    * @type {boolean}
    * @defaultValue false
@@ -47,6 +54,7 @@
     'vtmn-link',
     size && `vtmn-link_size--${size}`,
     standalone && 'vtmn-link--standalone',
+    reversed && 'vtmn-link--reversed',
     standalone && iconAlong && 'vtmn-link--icon-along',
     className,
   );

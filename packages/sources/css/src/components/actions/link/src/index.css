@@ -53,16 +53,16 @@
   background-color: var(--vtmn-semantic-color_content-action);
 }
 
-.vtmn-link--icon-along:visited::after {
-  background-color: var(--vtmn-semantic-color_content-visited);
-}
-
 .vtmn-link--icon-along:hover::after {
   background-color: var(--vtmn-semantic-color_hover-brand);
 }
 
 .vtmn-link--icon-along:active::after {
   background-color: var(--vtmn-semantic-color_active-brand);
+}
+
+.vtmn-link--icon-along:visited::after {
+  background-color: var(--vtmn-semantic-color_content-visited);
 }
 
 .vtmn-link_size--small {
@@ -75,4 +75,44 @@
 
 .vtmn-link_size--large {
   font-size: var(--vtmn-typo_text-1-font-size);
+}
+
+/* Reversed */
+
+.vtmn-link--reversed {
+  color: var(--vtmn-semantic-color_content-action-reversed);
+}
+
+.vtmn-link--reversed:hover {
+  color: var(--vtmn-base-color_grey50);
+}
+
+.vtmn-link--reversed:active {
+  color: var(--vtmn-base-color_grey100);
+}
+
+.vtmn-link--reversed:visited {
+  color: var(--vtmn-semantic-color_content-visited-reversed);
+}
+
+.vtmn-link--reversed::after {
+  background-color: var(--vtmn-semantic-color_content-action-reversed);
+}
+
+.vtmn-link--reversed:hover::after {
+  background-color: var(--vtmn-base-color_grey50);
+}
+
+.vtmn-link--reversed:active::after {
+  background-color: var(--vtmn-base-color_grey100);
+}
+
+.vtmn-link--reversed:visited::after {
+  background-color: var(--vtmn-semantic-color_content-visited-reversed);
+}
+
+.vtmn-link--reversed:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
+    0 0 0 rem(6px) var(--vtmn-semantic-color_border-secondary);
 }
