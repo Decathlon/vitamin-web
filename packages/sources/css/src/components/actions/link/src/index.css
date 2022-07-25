@@ -79,37 +79,40 @@
 
 /* Reversed */
 
-.vtmn-link.vtmn-link--reversed {
+.vtmn-link--reversed {
   color: var(--vtmn-semantic-color_content-action-reversed);
 }
 
-.vtmn-link.vtmn-link--reversed:hover,
-.vtmn-link--standalone.vtmn-link--reversed:hover {
+.vtmn-link--reversed:hover {
   color: var(--vtmn-base-color_grey50);
 }
 
-.vtmn-link.vtmn-link--reversed:active,
-.vtmn-link--standalone.vtmn-link--reversed:active {
+.vtmn-link--reversed:active {
   color: var(--vtmn-base-color_grey100);
 }
 
-.vtmn-link.vtmn-link--reversed:visited,
-.vtmn-link--standalone.vtmn-link--reversed:visited {
+.vtmn-link--reversed:visited {
   color: var(--vtmn-semantic-color_content-visited-reversed);
 }
 
-.vtmn-link--icon-along.vtmn-link--reversed::after {
+.vtmn-link--reversed::after {
   background-color: var(--vtmn-semantic-color_content-action-reversed);
 }
 
-.vtmn-link--icon-along.vtmn-link--reversed:hover::after {
+.vtmn-link--reversed:hover::after {
   background-color: var(--vtmn-base-color_grey50);
 }
 
-.vtmn-link--icon-along.vtmn-link--reversed:active::after {
+.vtmn-link--reversed:active::after {
   background-color: var(--vtmn-base-color_grey100);
 }
 
-.vtmn-link--icon-along.vtmn-link--reversed:visited::after {
+.vtmn-link--reversed:visited::after {
   background-color: var(--vtmn-semantic-color_content-visited-reversed);
+}
+
+.vtmn-link--reversed:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 rem(4px) var(--vtmn-semantic-color_border-primary-reversed),
+    0 0 0 rem(6px) var(--vtmn-semantic-color_border-secondary);
 }
