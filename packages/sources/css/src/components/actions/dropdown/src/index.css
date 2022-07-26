@@ -124,6 +124,7 @@
   border-radius: rem(4px);
   display: inline-flex;
   position: relative;
+  height: auto;
 }
 
 .vtmn-dropdown_items > .vtmn-divider {
