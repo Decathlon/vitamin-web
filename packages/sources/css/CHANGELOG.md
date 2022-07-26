@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.84.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.84.0...@vtmn/css@0.84.1) (2022-07-26)
+
+
+### Bug Fixes
+
+* height:auto in VtmnDropdown component ([#1219](https://github.com/Decathlon/vitamin-web/issues/1219)) ([1da2003](https://github.com/Decathlon/vitamin-web/commit/1da2003879d0c0f0bca0f1e9fb98480ad613b3c1))
+
+
+
+
+
 # [0.84.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.83.2...@vtmn/css@0.84.0) (2022-07-25)
 
 
