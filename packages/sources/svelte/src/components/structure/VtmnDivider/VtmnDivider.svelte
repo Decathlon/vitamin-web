@@ -1,5 +1,7 @@
 <script>
+  import { onMount } from 'svelte';
   import { cn } from '../../../utils/classnames';
+  import { uuid } from '../../../utils/math';
 
   import {
     VTMN_DIVIDER_ORIENTATION,
@@ -28,6 +30,12 @@
    */
   export { className as class };
 
+  onMount(async () => {
+    if (labelId === undefined) {
+      labelId = uuid();
+    }
+  });
+
   $: componentClass = cn(
     'vtmn-divider',
     `vtmn-divider_orientation--${orientation}`,
@@ -43,7 +51,7 @@
   aria-labelledby={labelId}
   {...$$restProps}
 >
-  {#if $$restProps['slot'] !== ''}
+  {#if $$restProps['slot'] !== undefined && $$restProps['slot'] !== ''}
     <span id={labelId}>
       <slot />
     </span>

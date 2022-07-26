@@ -33,12 +33,16 @@ describe('VtmnDivider', () => {
     );
   });
   test('Should display text position', () => {
-    const { getByText } = render(VtmnDivider, { textPosition: 'end' });
+    const { getByText } = render(VtmnDivider, {
+      textPosition: 'end',
+      slot: 'unit test divider',
+    });
     expect(getByText('unit test divider')).toBeVisible();
   });
   test('Should be accessible', () => {
     const { container } = render(VtmnDivider, {
       labelId: 'idForTest',
+      slot: 'unit test divider',
     });
     expect(getDivider(container)).toHaveAttribute(
       'aria-labelledby',
