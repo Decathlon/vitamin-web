@@ -3,7 +3,7 @@ import '@vtmn/css-tabs/dist/index-with-vars.css';
 import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
 import VtmnIcon from '../../../guidelines/iconography/VtmnIcon/VtmnIcon.vue';
 import VtmnBadge from '../../indicators/VtmnBadge/VtmnBadge.vue';
-import { defineComponent, PropType } from 'vue';
+import { reactive, computed, defineComponent, PropType } from 'vue';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnTabs',
@@ -21,13 +21,21 @@ export default /*#__PURE__*/ defineComponent({
       type: Number as PropType<number>,
       default: undefined,
     },
+    selected: {
+      type: Boolean as PropType<boolean>,
+      default: false,
+    },
   },
-  setup() {
+  setup(props) {
+    props = reactive(props);
     return {
       styleObject: {
         color: 'inherit',
         fontSize: 'inherit',
       },
+      classes: computed(() => ({
+        selected: props.selected,
+      })),
     };
   },
 });
@@ -35,7 +43,7 @@ export default /*#__PURE__*/ defineComponent({
 
 <template>
   <li role="tab">
-    <a :href="href" v-bind="$attrs">
+    <a :href="href" :class="classes" v-bind="$attrs">
       <VtmnIcon
         v-if="icon"
         :value="icon"

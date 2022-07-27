@@ -24,7 +24,10 @@
   <div class="block">
     <VtmnTabs aria-label="Tabs list" {...args}>
       {#each tabItems() as { tabText }, index}
-        <VtmnTabsItem on:click={() => action('click')(index.toString())}>
+        <VtmnTabsItem
+          on:click={() => action('click')(index.toString())}
+          selected={index === 0 ? true : false}
+        >
           {tabText}
         </VtmnTabsItem>
       {/each}
@@ -39,6 +42,7 @@
         <VtmnTabsItem
           on:click={() => action('click')(index.toString())}
           icon="heart-line"
+          selected={index === 2 ? true : false}
         >
           {tabText}
         </VtmnTabsItem>
@@ -55,6 +59,7 @@
           on:click={() => action('click')(index.toString())}
           icon="heart-line"
           badgeValue={6}
+          selected={index === 3 ? true : false}
         >
           {tabText}
         </VtmnTabsItem>

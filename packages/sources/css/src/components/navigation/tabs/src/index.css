@@ -44,16 +44,11 @@
 }
 
 .vtmn-tabs a:hover {
-  color: var(--vtmn-semantic-color_content-primary);
+  color: var(--vtmn-semantic-color_hover-brand);
 }
 
 .vtmn-tabs a:active {
-  color: var(--vtmn-semantic-color_content-action);
-}
-
-.vtmn-tabs a:focus {
-  color: var(--vtmn-semantic-color_content-active);
-  border-block-end: rem(2px) solid var(--vtmn-semantic-color_content-active);
+  color: var(--vtmn-semantic-color_active-brand);
 }
 
 .vtmn-tabs a:focus-visible {
@@ -61,7 +56,16 @@
   box-shadow: 0 0 0 rem(2px) var(--vtmn-semantic-color_content-primary);
 }
 
-.vtmn-tabs a:focus > .vtmn-badge {
+.vtmn-tabs a.selected {
+  color: var(--vtmn-semantic-color_content-active);
+  border-block-end: rem(2px) solid var(--vtmn-semantic-color_content-active);
+}
+
+.vtmn-tabs a.selected:focus-visible {
+  border-block-end: rem(2px) solid var(--vtmn-semantic-color_content-primary);
+}
+
+.vtmn-tabs-item--selected > .vtmn-badge {
   background-color: var(--vtmn-semantic-color_background-brand-primary);
   color: var(--vtmn-semantic-color_content-primary-reversed);
   box-shadow: none;

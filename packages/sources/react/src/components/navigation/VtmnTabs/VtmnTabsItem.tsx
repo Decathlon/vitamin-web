@@ -25,6 +25,14 @@ export interface VtmnTabsItemProps
   badgeValue?: number;
 
   /**
+   * Check whether the tabs item is currently selected or not.
+   * @defaultValue null
+   */
+  selected?: boolean;
+
+  onClick?: React.MouseEventHandler;
+
+  /**
    * The content to render inside the component.
    * @defaultValue undefined
    */
@@ -35,12 +43,26 @@ export const VtmnTabsItem = ({
   icon,
   href = '#',
   badgeValue,
+  selected = false,
   children,
+  onClick,
   ...props
 }: VtmnTabsItemProps) => {
+  const handleClick = (e: React.MouseEvent<HTMLElement>) => {
+    e.preventDefault();
+    if (onClick) {
+      onClick();
+    }
+  };
+
   return (
     <li role="tab">
-      <a href={href} {...props}>
+      <a
+        href={href}
+        className={selected ? 'selected' : ''}
+        onClick={handleClick}
+        {...props}
+      >
         {icon ? (
           <VtmnIcon
             value={icon}
