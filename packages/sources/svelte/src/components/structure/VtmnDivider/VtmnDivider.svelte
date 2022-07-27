@@ -1,5 +1,6 @@
 <script>
   import { cn } from '../../../utils/classnames';
+  import { uuid } from '../../../utils/math';
 
   import {
     VTMN_DIVIDER_ORIENTATION,
@@ -19,7 +20,7 @@
   /**
    * @type {string} Id of the label
    */
-  export let labelId = undefined;
+  export let labelId = uuid();
 
   let className = undefined;
 
@@ -43,7 +44,7 @@
   aria-labelledby={labelId}
   {...$$restProps}
 >
-  {#if $$restProps['slot'] !== ''}
+  {#if $$restProps['slot']}
     <span id={labelId}>
       <slot />
     </span>
