@@ -19,15 +19,22 @@
     "url": "git+https://github.com/Decathlon/vitamin-web.git"
   },
   "license": "Apache-2.0",
-  "main": "./index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "prebuild": "tsc"
+  },
   "files": [
-    "index.js",
-    "theme.js"
+    "src",
+    "dist",
+    "package.json",
+    "tsconfig.json"
   ],
-  "dependencies": {
+  "devDependencies": {
     "@vtmn/css": "^0.84.1",
     "@vtmn/css-design-tokens": "^0.20.0",
-    "@vtmn/css-utilities": "^0.4.2"
+    "@vtmn/css-utilities": "^0.4.2",
+    "typescript": "^4.7.4"
   },
   "peerDependencies": {
     "tailwindcss": ">=1.9.0 || ^2.0.0 || ^3.0.0"
