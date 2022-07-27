@@ -1,6 +1,6 @@
-import theme from './theme';
+const theme = require('./theme');
 
-export default {
+module.exports = {
   prefix: 'vtmn-',
   corePlugins: {
     preflight:
