@@ -20,14 +20,14 @@
   },
   "license": "Apache-2.0",
   "main": "index.js",
-  "types": "./dist/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "prebuild": "tsc"
   },
   "files": [
     "index.js",
     "theme.js",
-    "types",
+    "dist",
     "package.json",
     "tsconfig.json"
   ],
