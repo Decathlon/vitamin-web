@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.50.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.50.2...@vtmn/svelte@0.50.3) (2022-07-27)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** `VtmnDivider` component `labelId` & default `<slot></slot>` ([#1220](https://github.com/Decathlon/vitamin-web/issues/1220)) ([d4e89fd](https://github.com/Decathlon/vitamin-web/commit/d4e89fdaebe95185c6d616e84831e324feb23616))
+
+
+
+
+
 ## [0.50.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.50.1...@vtmn/svelte@0.50.2) (2022-07-26)
 
 
