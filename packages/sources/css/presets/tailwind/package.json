@@ -22,7 +22,7 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "prebuild": "tsc"
   },
   "files": [
     "src",
@@ -31,6 +31,9 @@
     "tsconfig.json"
   ],
   "devDependencies": {
+    "@vtmn/css": "^0.84.1",
+    "@vtmn/css-design-tokens": "^0.20.0",
+    "@vtmn/css-utilities": "^0.4.2",
     "typescript": "^4.7.4"
   },
   "peerDependencies": {

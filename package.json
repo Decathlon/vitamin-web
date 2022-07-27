@@ -35,7 +35,7 @@
     ]
   },
   "scripts": {
-    "prebuild": "yarn lint:fix",
+    "prebuild": "yarn lint:fix && nx run-many --target=prebuild --all --parallel",
     "build": "nx run-many --target=build --all --parallel",
     "build-storybook": "nx run-many --target=build-storybook --all --parallel",
     "dep-graph": "nx dep-graph",
