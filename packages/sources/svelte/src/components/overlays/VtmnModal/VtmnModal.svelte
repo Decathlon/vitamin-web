@@ -31,6 +31,7 @@
 
 <svelte:head>
   {#if open}
+    // eslint-disable-next-line
     <style type="text/css">
       body {
         overflow: hidden;
