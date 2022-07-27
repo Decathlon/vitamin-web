@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.35.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tailwind-preset@0.35.6...@vtmn/css-tailwind-preset@0.35.7) (2022-07-27)
+
+
+### Bug Fixes
+
+* **@vtmn/css-tailwind-preset:** add types ([#1218](https://github.com/Decathlon/vitamin-web/issues/1218)) ([1605e93](https://github.com/Decathlon/vitamin-web/commit/1605e933711d682898f120177df01b47a3426ca3))
+* **@vtmn/css-tailwind-preset:** add types ([#1222](https://github.com/Decathlon/vitamin-web/issues/1222)) ([608e874](https://github.com/Decathlon/vitamin-web/commit/608e8749b0a8a9817a8c203ef927b1780cf65e8b))
+
+
+### Reverts
+
+* Revert "fix(@vtmn/css-tailwind-preset): add types (#1218)" (#1221) ([cc4080d](https://github.com/Decathlon/vitamin-web/commit/cc4080d5e219623537a41ab1c65ae50ed6de970b)), closes [#1218](https://github.com/Decathlon/vitamin-web/issues/1218) [#1221](https://github.com/Decathlon/vitamin-web/issues/1221)
+
+
+
+
+
 ## [0.35.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tailwind-preset@0.35.5...@vtmn/css-tailwind-preset@0.35.6) (2022-07-26)
 
 **Note:** Version bump only for package @vtmn/css-tailwind-preset
