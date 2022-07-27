@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.43.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.42.0...@vtmn/vue@0.43.0) (2022-07-27)
+
+
+### Features
+
+* **@vtmn/css, @vtmn/react, @vtmn/svelte, @vtmn/vue:** add selected prop on VtmnTabsItem component ([29d9583](https://github.com/Decathlon/vitamin-web/commit/29d9583fe7146c9a392b231d258c4d9e3f644975))
+
+
+
+
+
 # [0.42.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.41.3...@vtmn/vue@0.42.0) (2022-07-25)
 
 
