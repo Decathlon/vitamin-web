@@ -1,5 +1,4 @@
 <script>
-  import { onMount } from 'svelte';
   import { cn } from '../../../utils/classnames';
   import { uuid } from '../../../utils/math';
 
@@ -21,7 +20,7 @@
   /**
    * @type {string} Id of the label
    */
-  export let labelId = undefined;
+  export let labelId = uuid();
 
   let className = undefined;
 
@@ -29,12 +28,6 @@
    * @type {string} Custom classes to apply to the component.
    */
   export { className as class };
-
-  onMount(async () => {
-    if (labelId === undefined) {
-      labelId = uuid();
-    }
-  });
 
   $: componentClass = cn(
     'vtmn-divider',
@@ -51,7 +44,7 @@
   aria-labelledby={labelId}
   {...$$restProps}
 >
-  {#if $$restProps['slot'] !== undefined && $$restProps['slot'] !== ''}
+  {#if $$restProps['slot']}
     <span id={labelId}>
       <slot />
     </span>
