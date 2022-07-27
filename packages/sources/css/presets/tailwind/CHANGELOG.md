@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.35.9](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tailwind-preset@0.35.8...@vtmn/css-tailwind-preset@0.35.9) (2022-07-27)
+
+
+### Bug Fixes
+
+* **@vtmn/css-tailwind-preset:** expose dist folder to retrieve types ([000599a](https://github.com/Decathlon/vitamin-web/commit/000599afced3bd9c5fc28932f5d88ce8597509cd))
+
+
+
+
+
 ## [0.35.8](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tailwind-preset@0.35.7...@vtmn/css-tailwind-preset@0.35.8) (2022-07-27)
 
 
