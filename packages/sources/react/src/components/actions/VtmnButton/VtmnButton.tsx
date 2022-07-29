@@ -18,14 +18,14 @@ export interface VtmnButtonProps
   size?: VtmnButtonSize;
 
   /**
-   * Icon to display on the left hand side of button.
+   * Icon to display on the left hand side of the button.
    * @type {VitamixId}
    * @defaultValue undefined
    */
   iconLeft?: VitamixId;
 
   /**
-   * Icon to display on the right hand side of button.
+   * Icon to display on the right hand side of the button.
    * @type {VitamixId}
    * @defaultValue undefined
    */

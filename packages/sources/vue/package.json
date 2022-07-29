@@ -9,7 +9,7 @@
     "vue",
     "vitamin"
   ],
-  "homepage": "https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/svelte",
+  "homepage": "https://github.com/Decathlon/vitamin-web/tree/main/packages/sources/vue",
   "bugs": {
     "url": "https://github.com/Decathlon/vitamin-web/issues"
   },
