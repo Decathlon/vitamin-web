@@ -32,9 +32,11 @@
 <svelte:head>
   {#if open}
     // eslint-disable-next-line
-    <style type="text/css">
+    <style lang="css">
       body {
         overflow: hidden;
+        touch-action: none;
+        -ms-touch-action: none;
       }
     </style>
   {/if}
