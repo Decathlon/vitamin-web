@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.51.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.51.0...@vtmn/svelte@0.51.1) (2022-07-29)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** prevent body scroll on mobile for VtmnModal ([#1224](https://github.com/Decathlon/vitamin-web/issues/1224)) ([89a720d](https://github.com/Decathlon/vitamin-web/commit/89a720d817c5dc255d519a944f439ebe888f1fd2))
+
+
+
+
+
 # [0.51.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.50.3...@vtmn/svelte@0.51.0) (2022-07-27)
 
 
