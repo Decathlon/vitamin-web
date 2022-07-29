@@ -1,6 +1,6 @@
 # `@vtmn/react`
 
-> Decathlon Design System - Vitamin React components library
+> Decathlon Design System - Vitamin React components library 
 
 <a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-react"><img src="https://img.shields.io/badge/storybook-react-61DAFB?style=flat&logo=storybook" alt="storybook" /></a></a>
 <a href="https://www.npmjs.com/package/@vtmn/react"><img src="https://img.shields.io/npm/v/@vtmn/react?style=flat&logo=npm" alt="npm version" /></a>
