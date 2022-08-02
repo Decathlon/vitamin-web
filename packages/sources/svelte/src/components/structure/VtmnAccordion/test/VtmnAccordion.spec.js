@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom';
-import { render } from '@testing-library/svelte';
+import { render, fireEvent } from '@testing-library/svelte';
 import VtmnAccordion from './VtmnAccordionWithSlots.svelte';
 
 describe('VtmnAccordion', () => {
@@ -65,5 +65,35 @@ describe('VtmnAccordion', () => {
       summary: 'Unit test summary',
     });
     expect(getByText('Unit test summary')).toBeVisible();
+  });
+
+  test('Should fire on:close callback whenever the user closes the accordion', async () => {
+    const onOpen = jest.fn();
+    const onClose = jest.fn();
+    const { component, getByText } = render(VtmnAccordion, {
+      summary: 'Unit test summary',
+      open: true,
+    });
+    component.$on('close', onClose);
+    component.$on('open', onOpen);
+    const nodeElement = getByText('Unit test summary');
+    await fireEvent.click(nodeElement);
+    expect(onClose).toHaveBeenCalledTimes(1);
+    expect(onOpen).toHaveBeenCalledTimes(0);
+  });
+
+  test('Should fire on:open callback whenever the user opens the accordion', async () => {
+    const onOpen = jest.fn();
+    const onClose = jest.fn();
+    const { component, getByText } = render(VtmnAccordion, {
+      summary: 'Unit test summary',
+      open: false,
+    });
+    component.$on('close', onClose);
+    component.$on('open', onOpen);
+    const nodeElement = getByText('Unit test summary');
+    await fireEvent.click(nodeElement);
+    expect(onClose).toHaveBeenCalledTimes(0);
+    expect(onOpen).toHaveBeenCalledTimes(1);
   });
 });

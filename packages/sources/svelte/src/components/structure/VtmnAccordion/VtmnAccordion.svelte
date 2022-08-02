@@ -1,4 +1,5 @@
 <script>
+  import { createEventDispatcher } from 'svelte';
   import { cn } from '../../../utils/classnames';
 
   /**
@@ -30,6 +31,14 @@
    * @type {string} Custom classes to apply to the component.
    */
   export { className as class };
+
+  const dispatch = createEventDispatcher();
+
+  const toggle = () => {
+    open = !open;
+    dispatch(open ? 'open' : 'close');
+  };
+
   $: componentClass = cn(
     'vtmn-accordion',
     withIconLeft && 'vtmn-accordion--with-icon-left',
@@ -44,7 +53,7 @@
   {open}
   {...$$restProps}
 >
-  <summary>{summary}</summary>
+  <summary on:click|preventDefault={toggle}>{summary}</summary>
   <div class="vtmn-accordion_content">
     <slot />
   </div>

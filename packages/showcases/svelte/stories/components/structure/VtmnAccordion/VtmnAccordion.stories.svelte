@@ -57,8 +57,16 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
   </VtmnAccordion>
 </Story>
-<Story name="Custom content">
-  <VtmnAccordion summary="Item 1" withIconLeft class="accordion-stories" open>
+<Story name="Custom content" let:args>
+  <VtmnAccordion
+    summary="Item 1"
+    withIconLeft
+    class="accordion-stories"
+    open
+    on:close={() => alert('on close callback')}
+    on:open={() => alert('on open callback')}
+    {...args}
+  >
     <VtmnButton variant="primary" size="small">Button 1</VtmnButton>
     <VtmnButton variant="primary" size="small">Button 2</VtmnButton>
     <VtmnButton variant="primary" size="small">Button 3</VtmnButton>

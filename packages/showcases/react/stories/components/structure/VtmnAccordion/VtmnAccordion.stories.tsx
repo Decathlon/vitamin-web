@@ -59,7 +59,13 @@ const WithLeftIconsTemplate: Story = (args) => (
 
 const CustomContentTemplate: Story = (args) => (
   <div style={{ width: 400, height: 250 }}>
-    <VtmnAccordion summary="Item 1" withIconLeft open>
+    <VtmnAccordion
+      summary="Item 1"
+      withIconLeft
+      open
+      onOpen={(e) => console.log('onOpen callback', e)}
+      onClose={(e) => console.log('onClose callback', e)}
+    >
       <VtmnButton variant="primary" size="small">
         Button 1
       </VtmnButton>

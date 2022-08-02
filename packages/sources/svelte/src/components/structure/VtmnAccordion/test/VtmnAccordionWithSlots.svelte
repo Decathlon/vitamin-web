@@ -2,4 +2,6 @@
   import VtmnAccordion from '../VtmnAccordion.svelte';
 </script>
 
-<VtmnAccordion {...$$restProps}>Unit test content</VtmnAccordion>
+<VtmnAccordion on:close on:open {...$$restProps}>
+  Unit test content
+</VtmnAccordion>

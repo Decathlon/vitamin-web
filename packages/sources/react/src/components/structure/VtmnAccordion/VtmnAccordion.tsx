@@ -27,6 +27,16 @@ export interface VtmnAccordionProps
    * @default false
    */
   open?: boolean;
+
+  /**
+   * @type {function} The accordion callback open function
+   */
+  onOpen?: (event: React.MouseEvent | undefined) => void;
+
+  /**
+   * @type {function} The accordion callback close function
+   */
+  onClose?: (event: React.MouseEvent | undefined) => void;
 }
 
 export const VtmnAccordion = ({
@@ -36,8 +46,22 @@ export const VtmnAccordion = ({
   open,
   children,
   className,
+  onOpen,
+  onClose,
   ...props
 }: VtmnAccordionProps) => {
+  const ref = React.useRef<HTMLDetailsElement>(null);
+  const toggleAccordion = React.useCallback(
+    (e: React.MouseEvent): void => {
+      const element = ref.current;
+      if (element) {
+        if (element.open && onClose) onClose(e);
+        if (!element.open && onOpen) onOpen(e);
+      }
+    },
+    [onOpen, onClose],
+  );
+
   return (
     <details
       className={clsx(
@@ -48,9 +72,10 @@ export const VtmnAccordion = ({
       aria-disabled={disabled}
       aria-expanded={open}
       open={open}
+      ref={ref}
       {...props}
     >
-      <summary>{summary}</summary>
+      <summary onClick={toggleAccordion}>{summary}</summary>
       <div className="vtmn-accordion_content">{children}</div>
     </details>
   );
