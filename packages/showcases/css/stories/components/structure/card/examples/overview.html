@@ -7,6 +7,14 @@
   .block .vtmn-card {
     max-width: 400px;
   }
+
+  .accessibility-warning {
+    color: var(--vtmn-semantic-color_content-negative);
+    font-style: italic;
+    font-weight: 700;
+    font-size: var(--vtmn-typo_text-3-font-size);
+    max-inline-size: 50%;
+  }
 </style>
 
 <div class="block">
@@ -47,4 +55,12 @@
       </span>
     </div>
   </div>
+</div>
+
+<div class="block accessibility-warning">
+  <p>
+    In order to deliver an accessible component, you must be aware that the
+    header tags inside your cards must follow a numerical order. This is to
+    ensure that the screen reader will read the content in the correct order.
+  </p>
 </div>
