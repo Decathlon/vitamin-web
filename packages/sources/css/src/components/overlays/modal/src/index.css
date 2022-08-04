@@ -91,8 +91,8 @@
 }
 
 .vtmn-modal_content_actions > * {
-  margin-inline: 0;
-  margin-block: rem(12px);
+  margin-inline: rem(12px);
+  margin-block: 0;
 }
 
 @media screen and (max-width: 599px) {
