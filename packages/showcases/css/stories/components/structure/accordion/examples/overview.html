@@ -119,13 +119,8 @@
     detail.addEventListener('click', (event) => {
       if (detail.open === true) {
         detail.setAttribute('aria-expanded', 'false');
-        console.log(
-          'aria-expanded false',
-          detail.getAttribute('aria-expanded'),
-        );
       } else {
         detail.setAttribute('aria-expanded', 'true');
-        console.log('aria-expanded true', detail.getAttribute('aria-expanded'));
       }
     });
   });
