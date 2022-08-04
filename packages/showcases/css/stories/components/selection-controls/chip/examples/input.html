@@ -2,6 +2,14 @@
   .block > * {
     margin: 0.5rem 0.3rem;
   }
+
+  .accessibility-warning {
+    color: var(--vtmn-semantic-color_content-negative);
+    font-style: italic;
+    font-weight: 700;
+    font-size: var(--vtmn-typo_text-3-font-size);
+    max-inline-size: 50%;
+  }
 </style>
 
 <div class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap">
@@ -45,6 +53,14 @@
       <span class="vtmn-sr-only">Unselect this chip</span>
       <span class="vtmx-close-line" aria-hidden="true"></span>
     </button>
+  </div>
+
+  <div class="block accessibility-warning">
+    <p>
+      In order to deliver an accessible component, you must be aware that an img
+      element must have a non-empty "alt" attribute ONLY if the image is
+      informative. Otherwise, the "alt" attribute must exist be remain empty.
+    </p>
   </div>
 
   <div
@@ -105,6 +121,14 @@
       <span class="vtmn-sr-only">Unselect this chip</span>
       <span class="vtmx-close-line" aria-hidden="true"></span>
     </button>
+  </div>
+
+  <div class="block accessibility-warning">
+    <p>
+      In order to deliver an accessible component, you must be aware that an img
+      element must have a non-empty "alt" attribute ONLY if the image is
+      informative. Otherwise, the "alt" attribute must exist be remain empty.
+    </p>
   </div>
 
   <div

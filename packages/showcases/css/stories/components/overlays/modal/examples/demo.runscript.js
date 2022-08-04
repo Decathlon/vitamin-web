@@ -4,13 +4,13 @@ window.addEventListener('DOMContentLoaded', () => {
     id="vtmn-modal"
     role="dialog"
     aria-modal="true"
-    aria-labelledby="vtmn-modal-title"
+    aria-labelledby="vtmn-modal-title-demo"
   >
     <div id="vtmn-modal-background" class="vtmn-modal_background-overlay"></div>
     <div class="vtmn-modal_content">
     <span id="block-focus-trap-start" tabindex="0"></span>
       <div class="vtmn-modal_content_title">
-        <span id="vtmn-modal-title" class="vtmn-modal_content_title--text"
+        <span id="vtmn-modal-title-demo" class="vtmn-modal_content_title--text"
           >What is a modal?</span
         >
         <button
