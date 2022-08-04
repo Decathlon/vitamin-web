@@ -5,6 +5,14 @@
   body {
     background-color: var(--vtmn-semantic-color_background-tertiary);
   }
+
+  .accessibility-warning {
+    color: var(--vtmn-semantic-color_content-negative);
+    font-style: italic;
+    font-weight: 700;
+    font-size: var(--vtmn-typo_text-3-font-size);
+    max-inline-size: 50%;
+  }
 </style>
 
 <div class="block">
@@ -100,4 +108,12 @@
       Error text goes here
     </p>
   </div>
+</div>
+
+<div class="block accessibility-warning">
+  <p>
+    In order to deliver an accessible component, you must replace "this article"
+    by the actual article in question in sentences like "substract one quantity
+    of this article" and "add one quantity of this article".
+  </p>
 </div>
