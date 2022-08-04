@@ -10,14 +10,15 @@ window.addEventListener('DOMContentLoaded', () => {
     <div class="vtmn-modal_content">
     <span id="block-focus-trap-start" tabindex="0"></span>
       <div class="vtmn-modal_content_title">
-        <p class="vtmn-modal_content_title--text">What is a modal?</p>
+        <span id="vtmn-modal-title" class="vtmn-modal_content_title--text"
+          >What is a modal?</span
+        >
         <button
           id="btn-close-modal-1"
           class="
               vtmn-btn
               vtmn-btn_variant--ghost
               vtmn-btn--icon-alone"
-          aria-label="close"
         >
           <span class="vtmx-close-line" aria-hidden="true"></span>
           <span class="vtmn-sr-only">Close modal</span>
