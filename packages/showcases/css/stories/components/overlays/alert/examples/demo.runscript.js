@@ -160,11 +160,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
   }
 
   function createAlert(type) {
+    document.body.setAttribute('aria-live', 'assertive');
     //Create the block div container
     let newDiv = document.createElement('div');
     newDiv.classList.add('block');
     newDiv.setAttribute('role', 'alert');
-    newDiv.setAttribute('aria-live', 'assertive');
     document.body.appendChild(newDiv);
     instanciateAlert(type);
   }
