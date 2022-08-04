@@ -37,7 +37,8 @@
   <VtmnSearch
     {...args}
     on:input={(e) => console.log(e.target.value)}
-    on:search={(event) => alert('Search event fired ! :' + event.detail.text)}
+    on:search={(event) =>
+      console.log('Search event fired ! :' + event.detail.text)}
   />
 </Template>
 

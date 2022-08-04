@@ -63,8 +63,8 @@
     withIconLeft
     class="accordion-stories"
     open
-    on:close={() => alert('on close callback')}
-    on:open={() => alert('on open callback')}
+    on:close={() => console.log('on close callback')}
+    on:open={() => console.log('on open callback')}
     {...args}
   >
     <VtmnButton variant="primary" size="small">Button 1</VtmnButton>
