@@ -31,13 +31,13 @@ const OverviewTemplate: Story = (args) => (
 
 const SimpleTemplate: Story = (args) => (
   <div style={{ width: 400, height: 250 }}>
-    <VtmnAccordion summary="Item 1" open>
+    <VtmnAccordion {...args} summary="Item 1" open>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </VtmnAccordion>
-    <VtmnAccordion summary="Item 2">
+    <VtmnAccordion {...args} summary="Item 2">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </VtmnAccordion>
-    <VtmnAccordion summary="Item 3" disabled>
+    <VtmnAccordion {...args} summary="Item 3" disabled>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </VtmnAccordion>
   </div>
@@ -45,13 +45,13 @@ const SimpleTemplate: Story = (args) => (
 
 const WithLeftIconsTemplate: Story = (args) => (
   <div style={{ width: 400, height: 250 }}>
-    <VtmnAccordion summary="Item 1" withIconLeft open>
+    <VtmnAccordion {...args} summary="Item 1" withIconLeft open>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </VtmnAccordion>
-    <VtmnAccordion summary="Item 2" withIconLeft>
+    <VtmnAccordion {...args} summary="Item 2" withIconLeft>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </VtmnAccordion>
-    <VtmnAccordion summary="Item 3" disabled withIconLeft>
+    <VtmnAccordion {...args} summary="Item 3" disabled withIconLeft>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </VtmnAccordion>
   </div>
@@ -59,13 +59,7 @@ const WithLeftIconsTemplate: Story = (args) => (
 
 const CustomContentTemplate: Story = (args) => (
   <div style={{ width: 400, height: 250 }}>
-    <VtmnAccordion
-      summary="Item 1"
-      withIconLeft
-      open
-      onOpen={(e) => console.log('onOpen callback', e)}
-      onClose={(e) => console.log('onClose callback', e)}
-    >
+    <VtmnAccordion {...args} summary="Item 1" withIconLeft open>
       <VtmnButton variant="primary" size="small">
         Button 1
       </VtmnButton>

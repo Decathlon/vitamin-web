@@ -23,6 +23,7 @@
     },
   }}
 />
+
 <Story name="Overview" let:args>
   <VtmnAccordion class="accordion-stories" {...args}>
     <p>
@@ -30,6 +31,7 @@
     </p>
   </VtmnAccordion>
 </Story>
+
 <Story name="Simple">
   <VtmnAccordion summary="Item 1" class="accordion-stories" open>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -41,6 +43,7 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
   </VtmnAccordion>
 </Story>
+
 <Story name="With left icons">
   <VtmnAccordion summary="Item 1" withIconLeft class="accordion-stories" open>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -57,19 +60,31 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
   </VtmnAccordion>
 </Story>
+
 <Story name="Custom content" let:args>
   <VtmnAccordion
     summary="Item 1"
     withIconLeft
     class="accordion-stories"
     open
-    on:close={() => console.log('on close callback')}
-    on:open={() => console.log('on open callback')}
     {...args}
   >
     <VtmnButton variant="primary" size="small">Button 1</VtmnButton>
     <VtmnButton variant="primary" size="small">Button 2</VtmnButton>
     <VtmnButton variant="primary" size="small">Button 3</VtmnButton>
+  </VtmnAccordion>
+</Story>
+
+<Story name="Callback on toggle" let:args>
+  <VtmnAccordion
+    summary="Item 1"
+    class="accordion-stories"
+    open
+    on:close={args.onClose}
+    on:open={args.onOpen}
+    {...args}
+  >
+    {args.slot}
   </VtmnAccordion>
 </Story>
 

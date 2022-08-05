@@ -41,4 +41,14 @@ export const argTypes = {
       type: 'boolean',
     },
   },
+  onOpen: {
+    type: { name: 'function', required: false },
+    description: 'Callback fired when the accordion is opening',
+    action: 'onOpen',
+  },
+  onClose: {
+    type: { name: 'function', required: false },
+    description: 'Callback fired when the accordion is closing',
+    action: 'onClose',
+  },
 };
