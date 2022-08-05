@@ -38,6 +38,47 @@
     margin-bottom: 1rem;
   }
 
+  .accessibility-highlight {
+    inline-size: 100%;
+    block-size: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .accessibility-highlight_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    inline-size: 100%;
+    min-inline-size: fit-content;
+    block-size: fit-content;
+    gap: var(--vtmn-spacing_4);
+    padding: var(--vtmn-spacing_6);
+  }
+
+  .accessibility-highlight_container_component {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    block-size: 100%;
+    max-inline-size: 45%;
+    gap: var(--vtmn-spacing_4);
+  }
+
+  .accessibility-highlight_container_alert {
+    background-color: var(--vtmn-semantic-color_decorative-saffron);
+    border: 2px solid var(--vtmn-semantic-color_border-warning);
+    border-radius: var(--vtmn-radius_200);
+    padding: var(--vtmn-spacing_3);
+    inline-size: clamp(300px, 50%, 600px);
+    min-inline-size: 300px;
+    color: var(--vtmn-semantic-color_content-primary);
+  }
+
   /* Docs preview */
   .sbdocs {
     background-color: var(--vtmn-semantic-color_background-secondary)!important;

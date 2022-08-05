@@ -113,3 +113,15 @@
     </div>
   </details>
 </div>
+
+<script>
+  document.querySelectorAll('details').forEach((detail) => {
+    detail.addEventListener('click', (event) => {
+      if (detail.open === true) {
+        detail.setAttribute('aria-expanded', 'false');
+      } else {
+        detail.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>

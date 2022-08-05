@@ -71,24 +71,6 @@
     class="vtmn-chip vtmn-chip_variant--input vtmn-chip_size--small"
     role="button"
     aria-pressed="true"
-  >
-    <img
-      src="https://storage.googleapis.com/dkt-design-cdn/images/landscape-placeholder.jpg"
-      alt="Black and white grid"
-    />
-    JavaScript
-    <button
-      class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_size--small vtmn-btn_variant--ghost-reversed"
-    >
-      <span class="vtmn-sr-only">Unselect this chip</span>
-      <span class="vtmx-close-line" aria-hidden="true"></span>
-    </button>
-  </div>
-
-  <div
-    class="vtmn-chip vtmn-chip_variant--input vtmn-chip_size--small"
-    role="button"
-    aria-pressed="true"
     aria-disabled="true"
   >
     WASM
@@ -166,5 +148,45 @@
   >
     <span class="vtmx-phone-line" aria-hidden="true"></span>
     Call the help desk
+  </div>
+</div>
+
+<div class="accessibility-highlight">
+  <div
+    class="vtmn-divider vtmn-divider_orientation--horizontal vtmn-divider_text-position--start"
+    role="separator"
+    aria-labelledby="title-header-4"
+  >
+    <span id="title-header-4">Accessibility highlight</span>
+  </div>
+
+  <div class="accessibility-highlight_container">
+    <div class="accessibility-highlight_container_component">
+      <div
+        class="vtmn-chip vtmn-chip_variant--input"
+        role="button"
+        aria-pressed="true"
+      >
+        <img
+          src="https://storage.googleapis.com/dkt-design-cdn/images/landscape-placeholder.jpg"
+          alt="Black and white grid"
+        />
+        JavaScript
+        <button
+          class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_size--small vtmn-btn_variant--ghost-reversed"
+        >
+          <span class="vtmn-sr-only">Unselect this chip</span>
+          <span class="vtmx-close-line" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="accessibility-highlight_container_alert">
+      <p>
+        In order to deliver an accessible component, you must be aware that an
+        img element must have a non-empty "alt" attribute ONLY if the image is
+        informative. Otherwise, the "alt" attribute must exist be remain empty.
+      </p>
+    </div>
   </div>
 </div>
