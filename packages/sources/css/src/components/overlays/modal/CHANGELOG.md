@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-modal@0.8.3...@vtmn/css-modal@0.8.4) (2022-08-04)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** fix modal bug from sonarcloud ([#1231](https://github.com/Decathlon/vitamin-web/issues/1231)) ([41efb25](https://github.com/Decathlon/vitamin-web/commit/41efb2534910819f95cc1a8ad7238efa3c08a9bd))
+
+
+
+
+
 ## [0.8.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-modal@0.8.2...@vtmn/css-modal@0.8.3) (2022-06-28)
 
 

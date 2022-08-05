@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-select@0.8.3...@vtmn/css-select@0.8.4) (2022-08-02)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** fix min-width and wrap behaviour to correctly display the arrow ([#1226](https://github.com/Decathlon/vitamin-web/issues/1226)) ([aafcd3a](https://github.com/Decathlon/vitamin-web/commit/aafcd3a1fb1f885a5d2ac36e75a06e6da16fb4dd))
+
+
+
+
+
 ## [0.8.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-select@0.8.2...@vtmn/css-select@0.8.3) (2022-06-30)
 
 

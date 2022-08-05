@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.85.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.85.2...@vtmn/css@0.85.3) (2022-08-04)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** fix modal bug from sonarcloud ([#1231](https://github.com/Decathlon/vitamin-web/issues/1231)) ([41efb25](https://github.com/Decathlon/vitamin-web/commit/41efb2534910819f95cc1a8ad7238efa3c08a9bd))
+
+
+
+
+
+## [0.85.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.85.1...@vtmn/css@0.85.2) (2022-08-02)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** fix min-width and wrap behaviour to correctly display the arrow ([#1226](https://github.com/Decathlon/vitamin-web/issues/1226)) ([aafcd3a](https://github.com/Decathlon/vitamin-web/commit/aafcd3a1fb1f885a5d2ac36e75a06e6da16fb4dd))
+
+
+
+
+
 ## [0.85.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.85.0...@vtmn/css@0.85.1) (2022-07-29)
 
 **Note:** Version bump only for package @vtmn/css
