@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-alert@0.8.2...@vtmn/css-alert@0.8.3) (2022-08-05)
+
+
+### Bug Fixes
+
+* **@vtmn/css:** corrections of a11y from second audit check ([#1230](https://github.com/Decathlon/vitamin-web/issues/1230)) ([2c3846b](https://github.com/Decathlon/vitamin-web/commit/2c3846b5220e402c8b404ff481fdb6173bb0edea))
+
+
+
+
+
 ## [0.8.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-alert@0.8.1...@vtmn/css-alert@0.8.2) (2022-06-27)
 
 **Note:** Version bump only for package @vtmn/css-alert
