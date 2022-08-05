@@ -1,5 +1,3 @@
-import { withRunScript } from 'storybook-addon-run-script/html';
-import demoScript from './examples/demo.runscript';
 import overview from './examples/overview.html';
 import demo from './examples/demo.html';
 
@@ -21,7 +19,6 @@ Overview.parameters = {
 };
 
 export const Demo = () => demo;
-Demo.decorators = [withRunScript(demoScript)];
 Demo.parameters = {
   docs: {
     source: {

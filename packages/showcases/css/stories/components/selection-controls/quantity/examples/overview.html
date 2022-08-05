@@ -101,3 +101,46 @@
     </p>
   </div>
 </div>
+
+<div class="accessibility-highlight">
+  <div
+    class="vtmn-divider vtmn-divider_orientation--horizontal vtmn-divider_text-position--start"
+    role="separator"
+    aria-labelledby="title-header-4"
+  >
+    <span id="title-header-4">Accessibility highlight</span>
+  </div>
+
+  <div class="accessibility-highlight_container">
+    <div class="accessibility-highlight_container_component">
+      <div class="vtmn-quantity">
+        <label for="my-quantity-4">Label</label>
+        <div class="vtmn-quantity_content">
+          <button
+            class="vtmn-btn vtmn-btn_variant--secondary vtmn-btn--icon-alone"
+          >
+            <span class="vtmn-sr-only">
+              substract one quantity of this article
+            </span>
+            <span class="vtmx-subtract-line" aria-hidden="true"></span>
+          </button>
+          <input type="number" id="my-quantity-4" />
+          <button
+            class="vtmn-btn vtmn-btn_variant--secondary vtmn-btn--icon-alone"
+          >
+            <span class="vtmn-sr-only"> add one quantity of this article </span>
+            <span class="vtmx-add-line" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="accessibility-highlight_container_alert">
+      <p>
+        In order to deliver an accessible component, you must replace "this
+        article" by the actual article in question in sentences like "substract
+        one quantity of this article" and "add one quantity of this article".
+      </p>
+    </div>
+  </div>
+</div>

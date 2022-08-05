@@ -1,6 +1,3 @@
-import { withRunScript } from 'storybook-addon-run-script/html';
-import linearScript from './examples/circular.runscript';
-import circularScript from './examples/linear.runscript';
 import overview from './examples/overview.html';
 import linear from './examples/linear.html';
 import circular from './examples/circular.html';
@@ -24,7 +21,6 @@ Overview.parameters = {
 };
 
 export const Linear = () => linear;
-Linear.decorators = [withRunScript(linearScript)];
 Linear.parameters = {
   docs: {
     source: {
@@ -35,7 +31,6 @@ Linear.parameters = {
 };
 
 export const Circular = () => circular;
-Circular.decorators = [withRunScript(circularScript)];
 Circular.parameters = {
   docs: {
     source: {

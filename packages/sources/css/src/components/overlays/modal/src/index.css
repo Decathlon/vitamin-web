@@ -110,6 +110,7 @@
 
   .vtmn-modal_content_actions {
     flex-direction: column;
+    padding-inline-end: rem(24px);
   }
 
   .vtmn-modal_content_actions > * {
@@ -126,10 +127,6 @@
   }
 
   .vtmn-modal_content_body {
-    padding-inline-end: rem(24px);
-  }
-
-  .vtmn-modal_content_actions {
     padding-inline-end: rem(24px);
   }
 
