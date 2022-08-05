@@ -132,7 +132,7 @@
 
 <div class="block">
   <div
-    id="vtmn-progressbar-container-1"
+    id="vtmn-progressbar-demo-container-1"
     class="vtmn-progressbar_container"
     role="progressbar"
     aria-labelledby="progress-bar-linear-demo"
@@ -143,11 +143,11 @@
   >
     <div class="vtmn-progressbar_label">
       <span id="progress-bar-linear-demo">Loading</span>
-      <span id="vtmn-progressbar-label-1">0%</span>
+      <span id="vtmn-progressbar-label-demo-1">0%</span>
     </div>
     <svg>
       <line
-        id="vtmn-progressbar-1"
+        id="vtmn-progressbar-demo-1"
         class="vtmn-progressbar_indicator"
         x1="0"
         x2="100%"
@@ -157,3 +157,63 @@
     </svg>
   </div>
 </div>
+
+<div class="block">
+  <button id="btn-launch-demo" class="vtmn-btn vtmn-btn_variant--primary">
+    Launch demo
+  </button>
+</div>
+
+<script>
+  document
+    .getElementById('btn-launch-demo')
+    .addEventListener('click', initLinearProgressbarShowcase, { once: true });
+
+  function initLinearProgressbarShowcase() {
+    let container = document.getElementById(
+      `vtmn-progressbar-demo-container-1`,
+    );
+    let label = document.getElementById('vtmn-progressbar-label-demo-1');
+    let progress = document.getElementById(`vtmn-progressbar-demo-1`);
+
+    resetProgress(container, progress, label);
+    launchProgress(container, progress, label);
+
+    function launchProgress(container, progress, label) {
+      setInterval(() => {
+        let random = getRandom(1, 15);
+        let textLabel = label.textContent;
+        let currentLabelValue = Number(
+          textLabel.substring(0, textLabel.length - 1),
+        );
+
+        let newValue = Number(currentLabelValue + random);
+        if (newValue >= 100) {
+          newValue = 100;
+          addProgress(container, progress, label, newValue);
+          setTimeout(() => {
+            resetProgress(container, progress, label);
+          }, 2000);
+        } else {
+          addProgress(container, progress, label, newValue);
+        }
+      }, 1000);
+    }
+
+    function getRandom(min, max) {
+      return Math.ceil(Math.random() * (max - min) + min);
+    }
+
+    function addProgress(container, progress, label, value) {
+      label.textContent = `${value}%`;
+      container.setAttribute('aria-valuenow', `${value}`);
+      progress.style.transform = `translateX(calc(-100% + ${value}%))`;
+    }
+
+    function resetProgress(container, progress, label) {
+      label.textContent = '0%';
+      container.setAttribute('aria-valuenow', '0');
+      progress.style.transform = `translateX(-105%)`;
+    }
+  }
+</script>

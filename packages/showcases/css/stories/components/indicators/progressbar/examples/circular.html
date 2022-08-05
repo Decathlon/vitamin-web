@@ -2,12 +2,12 @@
   <div
     class="vtmn-progressbar_container vtmn-progressbar_variant--circular vtmn-progressbar_size--small"
     role="progressbar"
-    aria-labelledby="progress-bar-circular-3"
+    aria-labelledby="progress-bar-circular-1"
     aria-valuemin="0"
     aria-valuemax="100"
     aria-valuenow="50"
   >
-    <span id="progress-bar-circular-3" class="vtmn-sr-only">Loading</span>
+    <span id="progress-bar-circular-1" class="vtmn-sr-only">Loading</span>
     <span class="vtmn-progressbar_label">50%</span>
     <svg>
       <circle
@@ -25,12 +25,12 @@
   <div
     class="vtmn-progressbar_container vtmn-progressbar_variant--circular"
     role="progressbar"
-    aria-labelledby="progress-bar-circular-4"
+    aria-labelledby="progress-bar-circular-2"
     aria-valuemin="0"
     aria-valuemax="100"
     aria-valuenow="60"
   >
-    <span id="progress-bar-circular-4" class="vtmn-sr-only">Loading</span>
+    <span id="progress-bar-circular-2" class="vtmn-sr-only">Loading</span>
     <span class="vtmn-progressbar_label">60%</span>
     <svg>
       <circle class="vtmn-progressbar_track" cx="50%" cy="50%" r="64" />
@@ -49,9 +49,9 @@
   <div
     class="vtmn-progressbar_container vtmn-progressbar_variant--circular vtmn-progressbar--indeterminate vtmn-progressbar_size--small"
     role="progressbar"
-    aria-labelledby="progress-bar-circular-7"
+    aria-labelledby="progress-bar-circular-3"
   >
-    <span id="progress-bar-circular-7" class="vtmn-sr-only">Loading</span>
+    <span id="progress-bar-circular-3" class="vtmn-sr-only">Loading</span>
     <svg>
       <circle class="vtmn-progressbar_track" cx="50%" cy="50%" r="32" />
       <circle class="vtmn-progressbar_indicator" cx="50%" cy="50%" r="32" />
@@ -63,9 +63,9 @@
   <div
     class="vtmn-progressbar_container vtmn-progressbar_variant--circular vtmn-progressbar--indeterminate"
     role="progressbar"
-    aria-labelledby="progress-bar-circular-8"
+    aria-labelledby="progress-bar-circular-4"
   >
-    <span id="progress-bar-circular-8" class="vtmn-sr-only">Loading</span>
+    <span id="progress-bar-circular-4" class="vtmn-sr-only">Loading</span>
     <svg>
       <circle class="vtmn-progressbar_track" cx="50%" cy="50%" r="64" />
       <circle class="vtmn-progressbar_indicator" cx="50%" cy="50%" r="64" />
@@ -75,17 +75,17 @@
 
 <div class="block">
   <div
-    id="vtmn-progressbar-container-2"
+    id="vtmn-progressbar-container-demo-1"
     class="vtmn-progressbar_container vtmn-progressbar_variant--circular"
     role="progressbar"
-    aria-labelledby="progress-bar-circular-9"
+    aria-labelledby="progress-bar-demo-1"
     aria-valuemin="0"
     aria-valuemax="100"
     aria-valuenow="0"
   >
-    <span id="progress-bar-circular-9" class="vtmn-sr-only">Loading</span>
+    <span id="progress-bar-demo-1" class="vtmn-sr-only">Loading</span>
     <span
-      id="vtmn-progressbar-label-2"
+      id="vtmn-progressbar-label-demo-1"
       class="vtmn-progressbar_label"
       aria-live="assertive"
       >0%</span
@@ -93,7 +93,7 @@
     <svg>
       <circle class="vtmn-progressbar_track" cx="50%" cy="50%" r="64" />
       <circle
-        id="vtmn-progressbar-2"
+        id="vtmn-progressbar-demo-1"
         class="vtmn-progressbar_indicator"
         stroke-dashoffset="calc(400 - (400 * 0) / 100)"
         cx="50%"
@@ -106,24 +106,24 @@
 
 <div class="block">
   <div
-    id="vtmn-progressbar-container-3"
+    id="vtmn-progressbar-container-demo-2"
     class="vtmn-progressbar_container vtmn-progressbar_variant--circular vtmn-progressbar_size--small"
     role="progressbar"
-    aria-labelledby="progress-bar-circular-10"
+    aria-labelledby="progress-bar-circular-demo-2"
     aria-valuemin="0"
     aria-valuemax="100"
     aria-valuenow="50"
   >
-    <span id="progress-bar-circular-10" class="vtmn-sr-only">Loading</span>
+    <span id="progress-bar-circular-demo-2" class="vtmn-sr-only">Loading</span>
     <span
-      id="vtmn-progressbar-label-3"
+      id="vtmn-progressbar-label-demo-2"
       class="vtmn-progressbar_label"
       aria-live="assertive"
       >0%</span
     >
     <svg>
       <circle
-        id="vtmn-progressbar-3"
+        id="vtmn-progressbar-demo-2"
         class="vtmn-progressbar_indicator"
         stroke-dashoffset="calc(200 - (200 * 0) / 100)"
         cx="50%"
@@ -132,6 +132,12 @@
       />
     </svg>
   </div>
+</div>
+
+<div class="block">
+  <button id="btn-launch-demo" class="vtmn-btn vtmn-btn_variant--primary">
+    Launch demo
+  </button>
 </div>
 
 <div class="accessibility-highlight">
@@ -207,3 +213,72 @@
     </div>
   </div>
 </div>
+
+<script>
+  document
+    .getElementById('btn-launch-demo')
+    .addEventListener('click', initCircularProgressbarShowcase, { once: true });
+
+  function initCircularProgressbarShowcase() {
+    for (let i = 1; i <= 2; i++) {
+      let container = document.getElementById(
+        `vtmn-progressbar-container-demo-${i}`,
+      );
+      let label = document.getElementById(`vtmn-progressbar-label-demo-${i}`);
+      let progress = document.getElementById(`vtmn-progressbar-demo-${i}`);
+
+      resetProgress(container, progress, label);
+      launchProgress(container, progress, label);
+    }
+
+    function launchProgress(container, progress, label) {
+      setInterval(() => {
+        let random = getRandom(1, 15);
+        let textLabel = label.textContent;
+        let currentLabelValue = Number(
+          textLabel.substring(0, textLabel.length - 1),
+        );
+        let newValue = Number(currentLabelValue + random);
+        if (newValue >= 100) {
+          newValue = 100;
+          addProgress(container, progress, label, newValue);
+          setTimeout(() => {
+            resetProgress(container, progress, label);
+          }, 2000);
+        } else {
+          addProgress(container, progress, label, newValue);
+        }
+      }, 1000);
+    }
+
+    function getRandom(min, max) {
+      return Math.ceil(Math.random() * (max - min) + min);
+    }
+
+    function addProgress(container, progress, label, value) {
+      label.textContent = `${value}%`;
+      container.setAttribute('aria-valuenow', `${value}`);
+      setCircularProgress(container, progress, value);
+    }
+
+    function setCircularProgress(container, progress, value) {
+      if (container.classList.contains('vtmn-progressbar_size--small')) {
+        progress.setAttribute(
+          'stroke-dashoffset',
+          `calc(200px - (200px * ${value}) / 100)`,
+        );
+      } else {
+        progress.setAttribute(
+          'stroke-dashoffset',
+          `calc(400px - (400px * ${value}) / 100)`,
+        );
+      }
+    }
+
+    function resetProgress(container, progress, label) {
+      label.textContent = '0%';
+      container.setAttribute('aria-valuenow', '0');
+      setCircularProgress(container, progress, 0);
+    }
+  }
+</script>
