@@ -15,7 +15,6 @@
   padding-block: rem(12px);
   padding-inline: rem(16px);
   inline-size: fit-content;
-  max-inline-size: 65%;
   min-block-size: 48px;
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);

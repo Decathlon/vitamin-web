@@ -1,13 +1,3 @@
-<style>
-  .accessibility-warning {
-    color: var(--vtmn-semantic-color_content-negative);
-    font-style: italic;
-    font-weight: 700;
-    font-size: var(--vtmn-typo_text-3-font-size);
-    max-inline-size: 50%;
-  }
-</style>
-
 <div class="block">
   <div
     class="vtmn-progressbar_container vtmn-progressbar_variant--circular vtmn-progressbar_size--small"
@@ -82,15 +72,6 @@
   </div>
 </div>
 
-<div class="block accessibility-warning">
-  <p>
-    In order to deliver an accessible component, you must be aware that the
-    pourcentage of the progression must be displayed and visible. <br />This
-    example doesn't embed the pourcentage to let you display it how you want
-    (according to the Design System guildelines).
-  </p>
-</div>
-
 <div class="block">
   <div
     class="vtmn-progressbar_container vtmn-progressbar_variant--circular"
@@ -118,7 +99,7 @@
     </svg>
   </div>
 </div>
-
+<!-- 
 <div class="block accessibility-warning">
   <p>
     In order to deliver an accessible component, you must be aware that the
@@ -126,7 +107,7 @@
     example doesn't embed the pourcentage to let you display it how you want
     (according to the Design System guildelines).
   </p>
-</div>
+</div> -->
 
 <div class="block">
   <div
@@ -214,5 +195,79 @@
         r="32"
       />
     </svg>
+  </div>
+</div>
+
+<div class="accessibility-highlight">
+  <div
+    class="vtmn-divider vtmn-divider_orientation--horizontal vtmn-divider_text-position--start"
+    role="separator"
+    aria-labelledby="title-header-4"
+  >
+    <span id="title-header-4">Accessibility highlight</span>
+  </div>
+
+  <div class="accessibility-highlight_container">
+    <div class="accessibility-highlight_container_component">
+      <div
+        class="vtmn-progressbar_container vtmn-progressbar_variant--circular vtmn-progressbar_size--small"
+        role="progressbar"
+        aria-labelledby="progress-bar-circular-5"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        aria-valuenow="70"
+      >
+        <span id="progress-bar-circular-5" class="vtmn-sr-only">Loading</span>
+        <img
+          class="vtmn-progressbar_image"
+          src="https://storage.googleapis.com/dkt-design-cdn/images/landscape-placeholder.jpg"
+          alt="Black and white grid"
+        />
+        <svg>
+          <circle
+            class="vtmn-progressbar_indicator"
+            stroke-dashoffset="calc(200px - (200px * 70) / 100)"
+            cx="50%"
+            cy="50%"
+            r="32"
+          />
+        </svg>
+      </div>
+
+      <div
+        class="vtmn-progressbar_container vtmn-progressbar_variant--circular"
+        role="progressbar"
+        aria-labelledby="progress-bar-circular-6"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        aria-valuenow="80"
+      >
+        <span id="progress-bar-circular-6" class="vtmn-sr-only">Loading</span>
+        <img
+          class="vtmn-progressbar_image"
+          src="https://storage.googleapis.com/dkt-design-cdn/images/landscape-placeholder.jpg"
+          alt="Black and white grid"
+        />
+        <svg>
+          <circle class="vtmn-progressbar_track" cx="50%" cy="50%" r="64" />
+          <circle
+            class="vtmn-progressbar_indicator"
+            stroke-dashoffset="calc(400px - (400px * 80) / 100)"
+            cx="50%"
+            cy="50%"
+            r="64"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <div class="accessibility-highlight_container_alert">
+      <p>
+        In order to deliver an accessible component, you must be aware that the
+        pourcentage of the progression must be displayed and visible.
+        <br />This example doesn't embed the pourcentage to let you display it
+        how you want (according to the Design System guildelines).
+      </p>
+    </div>
   </div>
 </div>
