@@ -3,19 +3,68 @@
     <ul id="demo-tabs-tablist" role="tablist">
       <span id="block-focus-trap-start" tabindex="-1"></span>
       <li id="tab-demo-1" role="tab" aria-selected="false">
-        <a href="" class="selected">Tab Name</a>
+        <a href=" " class="selected">Tab Name</a>
       </li>
       <li id="tab-demo-2" role="tab" aria-selected="false">
-        <a href="">Tab Name</a>
+        <a href=" ">Tab Name</a>
       </li>
       <li id="tab-demo-3" role="tab" aria-selected="false">
-        <a href="">Tab Name</a>
+        <a href=" ">Tab Name</a>
       </li>
       <li id="tab-demo-4" role="tab" aria-selected="false">
-        <a href="">Tab Name</a>
+        <a href=" ">Tab Name</a>
       </li>
       <span id="block-focus-trap-end" tabindex="-1"></span>
     </ul>
     <div class="vtmn-divider" role="separator"></div>
   </nav>
 </div>
+
+<script>
+  let navContainer = document.querySelector('#demo-tabs-nav');
+  let tabListContainer = document.querySelector('#demo-tabs-tablist');
+
+  let firstTab = document.getElementById('tab-demo-1').firstElementChild;
+  let lastTab = document.getElementById('tab-demo-4').firstElementChild;
+
+  tabListContainer.childNodes.forEach((tab) => {
+    tab.childNodes.forEach((child) => {
+      child.addEventListener('keydown', (e) => {
+        switch (e.key) {
+          case 'Tab':
+            e.preventDefault();
+
+            child.blur();
+            navContainer.nextElementSibling.focus();
+            break;
+          case 'ArrowLeft':
+            if (child === firstTab) {
+              lastTab.focus();
+            } else {
+              child.parentElement.previousElementSibling.firstElementChild.focus();
+            }
+            break;
+          case 'ArrowRight':
+            if (child === lastTab) {
+              firstTab.focus();
+            } else {
+              child.parentElement.nextElementSibling.firstElementChild.focus();
+            }
+            break;
+          default:
+            break;
+        }
+      });
+
+      child.addEventListener('focus', () => {
+        child.classList.add('selected');
+        child.setAttribute('aria-selected', 'true');
+      });
+
+      child.addEventListener('blur', () => {
+        child.classList.remove('selected');
+        child.setAttribute('aria-selected', 'false');
+      });
+    });
+  });
+</script>
