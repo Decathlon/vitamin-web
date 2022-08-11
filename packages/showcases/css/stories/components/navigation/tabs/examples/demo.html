@@ -29,10 +29,6 @@
     tab.childNodes.forEach((child) => {
       child.addEventListener('keydown', (e) => {
         switch (e.key) {
-          case 'Tab':
-            e.preventDefault();
-            document.getElementById('demo-tabs-nav').nextElementSibling.focus();
-            break;
           case 'ArrowLeft':
             if (child === firstTab) {
               lastTab.focus();
@@ -55,6 +51,38 @@
             break;
           default:
             break;
+        }
+
+        if (e.shiftKey && e.key === 'Tab') {
+          e.preventDefault();
+          console.log('shift + tab');
+
+          document.getElementById('demo-tabs-nav').previousElementSibling
+            ? document
+                .getElementById('demo-tabs-nav')
+                .previousElementSibling.focus()
+            : document.getElementById('demo-tabs-nav').parentElement
+                .previousElementSibling
+            ? document
+                .getElementById('demo-tabs-nav')
+                .parentElement.previousElementSibling.focus()
+            : e.target.blur();
+        }
+        if (!e.shiftKey && e.key === 'Tab') {
+          e.preventDefault();
+          console.log('tab');
+
+          document.getElementById('demo-tabs-nav').nextElementSibling
+            ? document
+                .getElementById('demo-tabs-nav')
+                .nextElementSibling.focus()
+            : document.getElementById('demo-tabs-nav').parentElement
+                .nextElementSibling
+            ? document
+                .getElementById('demo-tabs-nav')
+                .parentElement.nextElementSibling.focus()
+            : lastTab.focus();
+          lastTab.blur();
         }
       });
 
