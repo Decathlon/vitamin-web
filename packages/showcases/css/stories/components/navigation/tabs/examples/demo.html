@@ -1,7 +1,6 @@
 <div class="block">
   <nav id="demo-tabs-nav" aria-label="Tabs list" class="vtmn-tabs">
     <ul id="demo-tabs-tablist" role="tablist">
-      <span id="block-focus-trap-start" tabindex="-1"></span>
       <li id="tab-demo-1" role="tab" aria-selected="false">
         <a href="" class="selected">Tab Name</a>
       </li>
@@ -14,7 +13,6 @@
       <li id="tab-demo-4" role="tab" aria-selected="false">
         <a href="">Tab Name</a>
       </li>
-      <span id="block-focus-trap-end" tabindex="-1"></span>
     </ul>
     <div class="vtmn-divider" role="separator"></div>
   </nav>
@@ -33,9 +31,7 @@
         switch (e.key) {
           case 'Tab':
             e.preventDefault();
-
-            child.blur();
-            navContainer.nextElementSibling.focus();
+            document.getElementById('demo-tabs-nav').nextElementSibling.focus();
             break;
           case 'ArrowLeft':
             if (child === firstTab) {
