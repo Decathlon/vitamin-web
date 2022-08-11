@@ -3,16 +3,16 @@
     <ul id="demo-tabs-tablist" role="tablist">
       <span id="block-focus-trap-start" tabindex="-1"></span>
       <li id="tab-demo-1" role="tab" aria-selected="false">
-        <a href=" " class="selected">Tab Name</a>
+        <a href="" class="selected">Tab Name</a>
       </li>
       <li id="tab-demo-2" role="tab" aria-selected="false">
-        <a href=" ">Tab Name</a>
+        <a href="">Tab Name</a>
       </li>
       <li id="tab-demo-3" role="tab" aria-selected="false">
-        <a href=" ">Tab Name</a>
+        <a href="">Tab Name</a>
       </li>
       <li id="tab-demo-4" role="tab" aria-selected="false">
-        <a href=" ">Tab Name</a>
+        <a href="">Tab Name</a>
       </li>
       <span id="block-focus-trap-end" tabindex="-1"></span>
     </ul>
@@ -50,6 +50,12 @@
             } else {
               child.parentElement.nextElementSibling.firstElementChild.focus();
             }
+            break;
+          case 'Home':
+            firstTab.focus();
+            break;
+          case 'End':
+            lastTab.focus();
             break;
           default:
             break;
