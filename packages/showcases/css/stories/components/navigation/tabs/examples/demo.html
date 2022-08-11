@@ -2,7 +2,7 @@
   <nav id="demo-tabs-nav" aria-label="Tabs list" class="vtmn-tabs">
     <ul id="demo-tabs-tablist" role="tablist">
       <li id="tab-demo-1" role="tab" aria-selected="false">
-        <a href="" class="selected">Tab Name</a>
+        <a href="">Tab Name</a>
       </li>
       <li id="tab-demo-2" role="tab" aria-selected="false">
         <a href="">Tab Name</a>
@@ -19,82 +19,57 @@
 </div>
 
 <script>
-  let navContainer = document.querySelector('#demo-tabs-nav');
-  let tabListContainer = document.querySelector('#demo-tabs-tablist');
+  let listTabs = document.querySelectorAll('#demo-tabs-tablist li > a');
+  let nav = document.getElementById('demo-tabs-nav');
 
-  let firstTab = document.getElementById('tab-demo-1').firstElementChild;
-  let lastTab = document.getElementById('tab-demo-4').firstElementChild;
-
-  tabListContainer.childNodes.forEach((tab) => {
-    tab.childNodes.forEach((child) => {
-      child.addEventListener('keydown', (e) => {
-        switch (e.key) {
-          case 'ArrowLeft':
-            if (child === firstTab) {
-              lastTab.focus();
-            } else {
-              child.parentElement.previousElementSibling.firstElementChild.focus();
-            }
-            break;
-          case 'ArrowRight':
-            if (child === lastTab) {
-              firstTab.focus();
-            } else {
-              child.parentElement.nextElementSibling.firstElementChild.focus();
-            }
-            break;
-          case 'Home':
-            firstTab.focus();
-            break;
-          case 'End':
-            lastTab.focus();
-            break;
-          default:
-            break;
-        }
-
-        if (e.shiftKey && e.key === 'Tab') {
+  listTabs.forEach((child, index, parent) => {
+    child.addEventListener('keydown', (e) => {
+      switch (e.key) {
+        case 'ArrowLeft':
+          if (index <= 0) {
+            listTabs[listTabs.length - 1].focus();
+          } else {
+            listTabs[index - 1].focus();
+          }
+          break;
+        case 'ArrowRight':
+          if (index >= listTabs.length - 1) {
+            listTabs[0].focus();
+          } else {
+            listTabs[index + 1].focus();
+          }
+          break;
+        case 'Home':
+          listTabs[0].focus();
+          break;
+        case 'End':
+          listTabs[listTabs.length - 1].focus();
+          break;
+        case 'Tab':
           e.preventDefault();
-          console.log('shift + tab');
+          if (e.shiftKey) {
+            console.log('shift');
+            listTabs[0].focus();
+            listTabs[0].blur();
+          } else {
+            console.log('no shift');
+            listTabs[listTabs.length - 1].focus();
+            listTabs[listTabs.length - 1].blur();
+          }
+          break;
+        default:
+          break;
+      }
+    });
 
-          document.getElementById('demo-tabs-nav').previousElementSibling
-            ? document
-                .getElementById('demo-tabs-nav')
-                .previousElementSibling.focus()
-            : document.getElementById('demo-tabs-nav').parentElement
-                .previousElementSibling
-            ? document
-                .getElementById('demo-tabs-nav')
-                .parentElement.previousElementSibling.focus()
-            : e.target.blur();
-        }
-        if (!e.shiftKey && e.key === 'Tab') {
-          e.preventDefault();
-          console.log('tab');
+    child.addEventListener('focus', () => {
+      child.classList.add('selected');
+      child.setAttribute('aria-selected', 'true');
+    });
 
-          document.getElementById('demo-tabs-nav').nextElementSibling
-            ? document
-                .getElementById('demo-tabs-nav')
-                .nextElementSibling.focus()
-            : document.getElementById('demo-tabs-nav').parentElement
-                .nextElementSibling
-            ? document
-                .getElementById('demo-tabs-nav')
-                .parentElement.nextElementSibling.focus()
-            : lastTab.focus();
-          lastTab.blur();
-        }
-      });
-
-      child.addEventListener('focus', () => {
-        child.classList.add('selected');
-        child.setAttribute('aria-selected', 'true');
-      });
-
-      child.addEventListener('blur', () => {
-        child.classList.remove('selected');
-        child.setAttribute('aria-selected', 'false');
-      });
+    child.addEventListener('blur', () => {
+      child.classList.remove('selected');
+      child.setAttribute('aria-selected', 'false');
     });
   });
 </script>
