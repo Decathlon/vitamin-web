@@ -16,6 +16,7 @@ So, **thanks a lot for this**!! :tada::+1:
     - [Code contribution](#code-contribution)
       - [Commit and push on your branch](#commit-and-push-on-your-branch)
     - [Pull Request guidelines](#pull-request-guidelines)
+      - [Publish canary version](#publish-canary-version)
     - [Contribution acceptance criteria](#contribution-acceptance-criteria)
 
 ## Overview
@@ -144,6 +145,13 @@ When you open your Pull Request provide as much information as possible.
 - For an issue, describe what you are fixing with your pull request and how you had found the defect.
 - If you are proposing an enhancement, describe what you are adding to the code (new function, performance enhancement, documentation update, changing an existing function, ...).
 
+
+#### Publish canary version
+
+On your newest pull request, it is possible to publish a canary version in order to test it on your project before the final publish.
+Why this ? Is to avoid all side effects on the components / css. You can make changes and test it before on your application before the release.
+
+To do that, you can apply the label "Publish canary :hatched_chick:" on your PR. A new github action will execute to publish a canary.
 ### Contribution acceptance criteria
 
 We love maintenable software and we are happy when some else than us is able to take the code, **understand it** and be able to change it.
