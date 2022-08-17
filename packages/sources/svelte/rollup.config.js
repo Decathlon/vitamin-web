@@ -6,6 +6,8 @@ import postcssImport from 'postcss-import';
 import postcssUrl from 'postcss-url';
 import fs from 'fs';
 import path from 'path';
+import pkg from './package.json';
+import { terser } from 'rollup-plugin-terser';
 
 const preprocessOptions = require('./svelte.config').preprocessOptions;
 
@@ -40,17 +42,38 @@ const postcssProcess = (component, variant = '') =>
     ],
   });
 
+const globals = {
+  'svelte/internal': 'svelte/internal',
+  svelte: 'svelte',
+};
+
 const svelteOptions = (component, variant) => ({
+  external: /^svelte.*$/,
   output: [
-    { file: `dist/index.mjs`, format: 'es' },
-    { file: `dist/index.js`, format: 'umd', name: 'index' },
+    {
+      file: pkg.module,
+      format: 'es',
+      sourcemap: true,
+      globals,
+    },
+    {
+      file: pkg.main,
+      format: 'umd',
+      name: 'index',
+      sourcemap: true,
+      globals,
+    },
   ],
   plugins: [
     svelte({
       preprocess: sveltePreprocess(preprocessOptions),
     }),
     postcssProcess(component, variant),
-    resolve(),
+    resolve({
+      // Exclude all svelte related stuff
+      resolveOnly: [/^(?!svelte.*$)/],
+    }),
+    terser(),
   ],
 });
 
