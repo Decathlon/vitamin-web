@@ -45,6 +45,7 @@ jobs:
       - name: Publish canary
         id: publish-canary
         run: |
+          npm whoami
           lerna publish --canary --preid $PR_NUMBER --no-verify-access --no-private --no-commit-hooks --yes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
