@@ -1,0 +1,80 @@
+name: Build Pull Request
+
+on:
+  pull_request:
+    types: [labeled]
+
+env:
+  PR_NUMBER: ${{ github.event.pull_request.number }}
+
+jobs:
+  build-canary:
+    if: github.event.action == 'labeled' && github.event.label.name == 'Publish canary'
+    name: Build canary
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+
+      - name: Restore/create node_modules cache
+        uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+        env:
+          HUSKY: 0
+
+      - name: Build sources
+        run: yarn build
+
+      - name: Publish canary
+        id: publish-canary
+        run:
+          lerna publish --canary --preid $PR_NUMBER --no-verify-access --no-private --no-commit-hooks --yes
+
+      - name: Manage pull request labels
+        uses: actions/github-script@v4
+        if: github.event_name == 'pull_request'
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const name = 'Publish canary';
+            const { issue: { number: issue_number }, repo: { owner, repo }  } = context;
+            try {
+              await github.issues.removeLabel({
+                owner,
+                repo,
+                issue_number,
+                name,
+              });
+            } catch (e) { console.log(`Problem when trying to remove the "${name}" label : no big deal`); }
+
+      - name: 'New canary release: comment PR'
+        uses: actions/github-script@v4
+        if: github.event_name == 'pull_request'
+        id: build-canary-success-body
+        with:
+          github-token: ${{ github.token }}
+          result-encoding: string
+          script: |
+            const comment = [
+              ':hatched_chick: **Canary published successfully** !',
+              '${{ steps.publish-canary.output.result }}'
+            ];
+            return comment.join('\n');
+
+      - name: Update Pull Request with canary version
+        uses: thollander/actions-comment-pull-request@v1
+        if: github.event_name == 'pull_request'
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          comment_includes: 'Canary published successfully'
+          message: ${{ steps.build-canary-success-body.outputs.result }}
