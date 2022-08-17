@@ -152,6 +152,7 @@ On your newest pull request, it is possible to publish a canary version in order
 Why this ? Is to avoid all side effects on the components / css. You can make changes and test it before on your application before the release.
 
 To do that, you can apply the label "Publish canary :hatched_chick:" on your PR. A new github action will execute to publish a canary.
+
 ### Contribution acceptance criteria
 
 We love maintenable software and we are happy when some else than us is able to take the code, **understand it** and be able to change it.
