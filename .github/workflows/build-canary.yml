@@ -16,6 +16,13 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+          ssh-key: ${{ secrets.DEPLOY_KEY }}
+          ssh-strict: false
+
+      - name: Set git configuration
+        run: |
+          git config --global user.name "$GITHUB_ACTOR"
+          git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"
 
       - uses: actions/setup-node@v1
         with:
@@ -37,7 +44,7 @@ jobs:
 
       - name: Publish canary
         id: publish-canary
-        run:
+        run: |
           lerna publish --canary --preid $PR_NUMBER --no-verify-access --no-private --no-commit-hooks --yes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
