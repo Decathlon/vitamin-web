@@ -32,7 +32,6 @@ jobs:
 
       - name: Build showcases
         run: yarn build-storybook
-
 # Cannot be run on pull_request, and pull_request_event is not safe with checkout.
 #  sonarcloud:
 #    name: SonarCloud analysis

@@ -9,7 +9,7 @@
    * @type {'primary' | 'primary-reversed' | 'secondary' | 'tertiary' | 'ghost' | 'ghost-reversed' | 'conversion'}
    * @defaultValue 'primary'
    */
-  export let variant = 'primary-reversed';
+  export let variant = 'primary';
   /**
    * The size of the button.
    * @type {'small' | 'medium' | 'large' | 'stretched'}

@@ -9,7 +9,7 @@ describe('VtmnButton', () => {
     const { container } = render(VtmnButton);
     expect(getBtn(container)).toBeVisible();
     expect(getBtn(container)).toHaveClass(
-      'vtmn-btn_variant--primary-reversed',
+      'vtmn-btn_variant--primary',
       'vtmn-btn_size--medium',
     );
   });
