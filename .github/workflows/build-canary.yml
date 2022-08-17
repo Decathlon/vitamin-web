@@ -44,7 +44,7 @@ jobs:
         id: publish-canary
         run: |
           npm whoami
-          lerna publish --canary --preid $PR_NUMBER --no-verify-access --no-private --no-commit-hooks --yes
+          lerna publish from-git --canary --preid $PR_NUMBER --no-verify-access --no-private --no-commit-hooks --yes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
