@@ -9,7 +9,7 @@ env:
 
 jobs:
   build-canary:
-    if: github.event.action == 'labeled' && github.event.label.name == 'Publish canary'
+    if: github.event.action == 'labeled' && contains(github.event.label.name, 'Publish canary')
     name: Build canary
     runs-on: ubuntu-latest
     steps:
