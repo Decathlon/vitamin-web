@@ -44,7 +44,7 @@
   aria-labelledby={labelId}
   {...$$restProps}
 >
-  {#if $$restProps['slot']}
+  {#if $$slots.default}
     <span id={labelId}>
       <slot />
     </span>
