@@ -15,9 +15,10 @@
       <line
         class="vtmn-progressbar_indicator"
         x1="0"
-        x2="60%"
+        x2="100%"
         y1="50%"
         y2="50%"
+        style="transform: translateX(-40%)"
       />
     </svg>
   </div>
@@ -59,9 +60,10 @@
       <line
         class="vtmn-progressbar_indicator"
         x1="0"
-        x2="25%"
+        x2="100%"
         y1="50%"
         y2="50%"
+        style="transform: translateX(-75%)"
       />
     </svg>
   </div>
@@ -103,9 +105,10 @@
       <line
         class="vtmn-progressbar_indicator"
         x1="0"
-        x2="35%"
+        x2="100%"
         y1="50%"
         y2="50%"
+        style="transform: translateX(-65%)"
       />
     </svg>
   </div>
@@ -153,6 +156,7 @@
         x2="100%"
         y1="50%"
         y2="50%"
+        style="transform: translateX(-100%)"
       />
     </svg>
   </div>
@@ -207,13 +211,13 @@
     function addProgress(container, progress, label, value) {
       label.textContent = `${value}%`;
       container.setAttribute('aria-valuenow', `${value}`);
-      progress.style.transform = `translateX(calc(-100% + ${value}%))`;
+      progress.style.transform = `translateX(calc(${value}% - 100%))`;
     }
 
     function resetProgress(container, progress, label) {
       label.textContent = '0%';
       container.setAttribute('aria-valuenow', '0');
-      progress.style.transform = `translateX(-105%)`;
+      progress.style.transform = `translateX(-100%)`;
     }
   }
 </script>
