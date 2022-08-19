@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.51.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.51.4...@vtmn/svelte@0.51.5) (2022-08-18)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** fix display label ([#1237](https://github.com/Decathlon/vitamin-web/issues/1237)) ([8a08648](https://github.com/Decathlon/vitamin-web/commit/8a08648ac9c6c6c0f4c1f5e20d5afff2a28e4601))
+
+
+
+
+
 ## [0.51.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.51.3...@vtmn/svelte@0.51.4) (2022-08-05)
 
 **Note:** Version bump only for package @vtmn/svelte
