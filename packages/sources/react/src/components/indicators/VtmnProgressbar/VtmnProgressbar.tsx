@@ -7,6 +7,12 @@ import {
   VtmnProgressbarStatus,
 } from './types';
 
+const VtmnProgressbarMappedSize: { [key in VtmnProgressbarSize]: number } = {
+  small: 32,
+  medium: 64,
+  large: 128,
+};
+
 export interface VtmnProgressbarProps
   extends React.ComponentPropsWithoutRef<'div'> {
   /**
@@ -78,6 +84,30 @@ export const VtmnProgressbar = ({
   className,
   ...props
 }: VtmnProgressbarProps) => {
+  const progress = Math.min(Math.max(value, 0), 100);
+  const circlePerimeter = `${Math.round(
+    2 * Math.PI * VtmnProgressbarMappedSize[size],
+  )}px`;
+
+  // Progressbar states
+  const isLinear = variant === 'linear';
+  const isCircular = variant === 'circular';
+  const isDeterminate = status === 'determinate';
+  const isIndeterminate = status === 'indeterminate';
+  const isSmall = size === 'small';
+
+  // Progressbar a11y props
+  const ariaProps = {
+    'aria-labelledby': labelId ?? undefined,
+    ...(isDeterminate
+      ? {
+          'aria-valuenow': progress,
+          'aria-valuemin': 0,
+          'aria-valuemax': 100,
+        }
+      : {}),
+  };
+
   return (
     <div
       className={clsx(
@@ -85,98 +115,93 @@ export const VtmnProgressbar = ({
         `vtmn-progressbar_variant--${variant}`,
         `vtmn-progressbar--${status}`,
         // Only add size attribute when variant is linear or size is small in circular mode
-        (variant === 'linear' || size === 'small') &&
-          `vtmn-progressbar_size--${size}`,
+        (isLinear || isSmall) && `vtmn-progressbar_size--${size}`,
         className,
       )}
       role="progressbar"
-      aria-valuemin={0}
-      aria-valuemax={100}
-      aria-valuenow={value}
-      aria-labelledby={labelId ?? undefined}
+      {...ariaProps}
       {...props}
     >
       {/**
        * Linear Progressbar
        */}
 
-      {variant === 'linear' && status === 'determinate' && (
-        <div className="vtmn-progressbar_label">
-          <span id={labelId ?? undefined}>{loadingText}</span>
-          <span aria-live="assertive">
-            {Math.min(Math.max(value, 0), 100)}%
-          </span>
-        </div>
-      )}
+      {isLinear && (
+        <>
+          {isDeterminate && (
+            <div className="vtmn-progressbar_label">
+              <span id={labelId ?? undefined}>{loadingText}</span>
+              <span aria-live="assertive">{progress}%</span>
+            </div>
+          )}
 
-      {variant === 'linear' && status === 'indeterminate' && (
-        <span id={labelId ?? undefined} className="vtmn-sr-only">
-          {loadingText}
-        </span>
-      )}
+          {isIndeterminate && (
+            <span id={labelId ?? undefined} className="vtmn-sr-only">
+              {loadingText}
+            </span>
+          )}
 
-      {variant === 'linear' && (
-        <svg>
-          <line
-            className="vtmn-progressbar_indicator"
-            x1={0}
-            x2={
-              status === 'determinate'
-                ? `${Math.min(Math.max(value, 0), 100)}%`
-                : '100%'
-            }
-            y1="50%"
-            y2="50%"
-          />
-        </svg>
+          <svg>
+            <line
+              className="vtmn-progressbar_indicator"
+              x1="0"
+              x2="100%"
+              y1="50%"
+              y2="50%"
+              style={
+                isDeterminate
+                  ? {
+                      transform: `translateX(${progress - 100}%)`,
+                    }
+                  : {}
+              }
+            />
+          </svg>
+        </>
       )}
 
       {/**
        * Circular Progressbar
        */}
 
-      {variant === 'circular' && status === 'determinate' && (
-        <span className="vtmn-progressbar_label" aria-live="assertive">
-          {Math.min(Math.max(value, 0), 100)}%
-        </span>
-      )}
+      {isCircular && (
+        <>
+          {isDeterminate && (
+            <span className="vtmn-progressbar_label" aria-live="assertive">
+              {progress}%
+            </span>
+          )}
 
-      {variant === 'circular' && imageSrc !== undefined && (
-        <img className="vtmn-progressbar_image" src={imageSrc} alt={imageAlt} />
-      )}
+          {imageSrc !== undefined && (
+            <img
+              className="vtmn-progressbar_image"
+              src={imageSrc}
+              alt={imageAlt ?? ''}
+            />
+          )}
 
-      {variant === 'circular' && status === 'indeterminate' && (
-        <span id={labelId ?? undefined} className="vtmn-sr-only">
-          {loadingText}
-        </span>
-      )}
+          {isIndeterminate && (
+            <span id={labelId ?? undefined} className="vtmn-sr-only">
+              {loadingText}
+            </span>
+          )}
 
-      {variant === 'circular' && (
-        <svg>
-          <circle
-            className="vtmn-progressbar_track"
-            cx="50%"
-            cy="50%"
-            r={size === 'small' ? 32 : 64}
-          />
-          <circle
-            className="vtmn-progressbar_indicator"
-            strokeDashoffset={
-              size === 'small'
-                ? `calc(200px - (200px * ${Math.min(
-                    Math.max(value, 0),
-                    100,
-                  )} / 100)`
-                : `calc(400px - (400px * ${Math.min(
-                    Math.max(value, 0),
-                    100,
-                  )} ) / 100)`
-            }
-            cx="50%"
-            cy="50%"
-            r={size === 'small' ? 32 : 64}
-          />
-        </svg>
+          <svg>
+            <circle
+              className="vtmn-progressbar_track"
+              cx="50%"
+              cy="50%"
+              r={VtmnProgressbarMappedSize[size]}
+            />
+            <circle
+              className="vtmn-progressbar_indicator"
+              strokeDashoffset={`calc(${circlePerimeter} - ${circlePerimeter} * ${progress} / 100)`}
+              cx="50%"
+              cy="50%"
+              r={VtmnProgressbarMappedSize[size]}
+            />
+          </svg>
+        </>
       )}
     </div>
   );

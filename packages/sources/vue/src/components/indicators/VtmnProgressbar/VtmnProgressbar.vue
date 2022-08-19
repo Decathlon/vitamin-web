@@ -7,6 +7,12 @@ import {
   VtmnProgressbarStatus,
 } from './types';
 
+const VtmnProgressbarMappedSize: { [key in VtmnProgressbarSize]: number } = {
+  small: 32,
+  medium: 64,
+  large: 128,
+};
+
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnProgressbar',
   props: {
@@ -51,8 +57,14 @@ export default /*#__PURE__*/ defineComponent({
   },
   setup(props) {
     props = reactive(props);
-
+    const progress = Math.min(Math.max(props.value, 0), 100);
+    const circlePerimeter = `${Math.round(
+      2 * Math.PI * VtmnProgressbarMappedSize[props.size],
+    )}px`;
     return {
+      VtmnProgressbarMappedSize,
+      progress,
+      circlePerimeter,
       classes: computed(() => ({
         'vtmn-progressbar_container': true,
         [`vtmn-progressbar_variant--${props.variant}`]: true,
@@ -69,9 +81,9 @@ export default /*#__PURE__*/ defineComponent({
   <div
     :class="classes"
     role="progressbar"
-    :aria-valuemin="0"
-    :aria-valuemax="100"
-    :aria-valuenow="value"
+    :aria-valuemin="status === 'determinate' ? 0 : undefined"
+    :aria-valuemax="status === 'determinate' ? 100 : undefined"
+    :aria-valuenow="status === 'determinate' ? value : undefined"
     :aria-labelledby="labelId ? labelId : undefined"
     v-bind="$attrs"
   >
@@ -83,9 +95,7 @@ export default /*#__PURE__*/ defineComponent({
       <span :id="labelId ? labelId : undefined">
         {{ loadingText }}
       </span>
-      <span aria-live="assertive">
-        {{ Math.min(Math.max(value, 0), 100) }}%
-      </span>
+      <span aria-live="assertive"> {{ progress }}% </span>
     </div>
 
     <span
@@ -98,14 +108,15 @@ export default /*#__PURE__*/ defineComponent({
     <svg v-if="variant === 'linear'">
       <line
         class="vtmn-progressbar_indicator"
-        :x1="0"
-        :x2="
-          status === 'determinate'
-            ? `${Math.min(Math.max(value, 0), 100)}%`
-            : '100%'
-        "
+        x1="0"
+        x2="100%"
         y1="50%"
         y2="50%"
+        :style="
+          status === 'determinate'
+            ? { transform: `translateX(${progress - 100}%)` }
+            : {}
+        "
       />
     </svg>
 
@@ -115,7 +126,7 @@ export default /*#__PURE__*/ defineComponent({
       class="vtmn-progressbar_label"
       aria-live="assertive"
     >
-      {{ Math.min(Math.max(value, 0), 100) }}%
+      {{ progress }}%
     </span>
 
     <img
@@ -138,24 +149,14 @@ export default /*#__PURE__*/ defineComponent({
         class="vtmn-progressbar_track"
         cx="50%"
         cy="50%"
-        :r="size === 'small' ? 32 : 64"
+        :r="VtmnProgressbarMappedSize[size]"
       />
       <circle
         class="vtmn-progressbar_indicator"
-        :strokeDashoffset="
-          size === 'small'
-            ? `calc(200px - (200px * ${Math.min(
-                Math.max(value, 0),
-                100,
-              )} / 100)`
-            : `calc(400px - (400px * ${Math.min(
-                Math.max(value, 0),
-                100,
-              )} ) / 100)`
-        "
+        :strokeDashoffset="`calc(${circlePerimeter} - ${circlePerimeter} * ${progress} / 100)`"
         cx="50%"
         cy="50%"
-        :r="size === 'small' ? 32 : 64"
+        :r="VtmnProgressbarMappedSize[size]"
       />
     </svg>
   </div>
