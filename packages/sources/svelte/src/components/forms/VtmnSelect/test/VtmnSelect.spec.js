@@ -19,7 +19,7 @@ describe('VtmnSelect', () => {
     expect(getSelectContainer(container)).toBeVisible();
     expect(getSelect(container)).toHaveAttribute('name', 'sports');
     expect(getSelect(container)).toHaveAttribute('id', 'my-select');
-    expect(getSelect(container)).toHaveAttribute('autocomplete', 'false');
+    expect(getSelect(container)).toHaveAttribute('autocomplete', 'off');
     expect(getSelect(container)).not.toHaveClass('vtmn-select--error');
     expect(getSelect(container)).not.toHaveAttribute('aria-invalid');
     expect(getSelect(container)).not.toHaveAttribute('aria-describedby');

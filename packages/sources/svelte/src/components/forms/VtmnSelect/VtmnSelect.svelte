@@ -56,7 +56,7 @@
   <select
     {name}
     {id}
-    {autocomplete}
+    autocomplete={autocomplete ? 'on' : 'off'}
     {disabled}
     bind:value
     on:change
