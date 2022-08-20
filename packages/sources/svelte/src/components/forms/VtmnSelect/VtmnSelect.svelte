@@ -31,12 +31,6 @@
   export let label;
 
   /**
-   * @type {boolean} set autocomplete to the select
-   * @default false
-   */
-  export let autocomplete = false;
-
-  /**
    * @type {object} selected value under the select
    * @requires
    */
@@ -56,7 +50,6 @@
   <select
     {name}
     {id}
-    autocomplete={autocomplete ? 'on' : 'off'}
     {disabled}
     bind:value
     on:change

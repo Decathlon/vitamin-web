@@ -19,7 +19,6 @@ describe('VtmnSelect', () => {
     expect(getSelectContainer(container)).toBeVisible();
     expect(getSelect(container)).toHaveAttribute('name', 'sports');
     expect(getSelect(container)).toHaveAttribute('id', 'my-select');
-    expect(getSelect(container)).toHaveAttribute('autocomplete', 'off');
     expect(getSelect(container)).not.toHaveClass('vtmn-select--error');
     expect(getSelect(container)).not.toHaveAttribute('aria-invalid');
     expect(getSelect(container)).not.toHaveAttribute('aria-describedby');
@@ -53,16 +52,6 @@ describe('VtmnSelect', () => {
       value: '',
     });
     expect(getSelect(container)).toHaveAttribute('disabled');
-  });
-  test('Should apply autocomplete on select', () => {
-    const { container } = render(VtmnSelect, {
-      id: 'my-select',
-      name: 'sports',
-      label: 'Label',
-      autocomplete: true,
-      value: '',
-    });
-    expect(getSelect(container)).toHaveAttribute('autocomplete');
   });
   test('Should display the error', () => {
     const { container, getByText } = render(VtmnSelect, {
