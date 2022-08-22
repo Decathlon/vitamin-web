@@ -46,7 +46,7 @@
    * @type {string} Id of the label
    * @default undefined
    */
-  export let labelId;
+  export let labelId = undefined;
 
   let className = undefined;
   /**
@@ -81,7 +81,7 @@
   aria-valuemin="0"
   aria-valuemax="100"
   aria-valuenow={indeterminate ? undefined : progress}
-  aria-labelledby={labelId ? labelId : undefined}
+  aria-labelledby={labelId}
   {...$$restProps}
 >
   {#if img}
@@ -92,7 +92,7 @@
     >
   {/if}
   {#if indeterminate}
-    <span id={labelId ? labelId : undefined} class="vtmn-sr-only">{label}</span>
+    <span id={labelId} class="vtmn-sr-only">{label}</span>
   {/if}
   <svg>
     {#if track}

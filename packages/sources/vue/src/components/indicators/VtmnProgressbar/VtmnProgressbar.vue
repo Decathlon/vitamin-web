@@ -1,6 +1,6 @@
 <script lang="ts">
 import '@vtmn/css-progressbar/dist/index-with-vars.css';
-import { reactive, computed, defineComponent, PropType } from 'vue';
+import { reactive, computed, defineComponent, PropType, mergeProps } from 'vue';
 import {
   VtmnProgressbarVariant,
   VtmnProgressbarSize,
@@ -55,23 +55,47 @@ export default /*#__PURE__*/ defineComponent({
       default: undefined,
     },
   },
-  setup(props) {
+  setup(props, { attrs }) {
     props = reactive(props);
     const progress = Math.min(Math.max(props.value, 0), 100);
     const circlePerimeter = `${Math.round(
       2 * Math.PI * VtmnProgressbarMappedSize[props.size],
     )}px`;
+
+    // Progressbar states
+    const isLinear = props.variant === 'linear';
+    const isCircular = props.variant === 'circular';
+    const isDeterminate = props.status === 'determinate';
+    const isIndeterminate = props.status === 'indeterminate';
+    const isSmall = props.size === 'small';
+
+    // Progressbar a11y props
+    const ariaProps = {
+      'aria-labelledby': props.labelId,
+      ...(isDeterminate
+        ? {
+            'aria-valuenow': progress,
+            'aria-valuemin': 0,
+            'aria-valuemax': 100,
+          }
+        : {}),
+    }
     return {
       VtmnProgressbarMappedSize,
       progress,
       circlePerimeter,
+      isLinear,
+      isCircular,
+      isDeterminate,
+      isIndeterminate,
       classes: computed(() => ({
         'vtmn-progressbar_container': true,
         [`vtmn-progressbar_variant--${props.variant}`]: true,
         [`vtmn-progressbar--${props.status}`]: true,
-        [`vtmn-progressbar_size--${props.size}`]:
-          props.variant == 'linear' || props.size == 'small',
+        // Only add size attribute when variant is linear or size is small in circular mode
+        [`vtmn-progressbar_size--${props.size}`]: isLinear || isSmall,
       })),
+      mergedAttrs: mergeProps(attrs, ariaProps)
     };
   },
 });
@@ -81,48 +105,44 @@ export default /*#__PURE__*/ defineComponent({
   <div
     :class="classes"
     role="progressbar"
-    :aria-valuemin="status === 'determinate' ? 0 : undefined"
-    :aria-valuemax="status === 'determinate' ? 100 : undefined"
-    :aria-valuenow="status === 'determinate' ? value : undefined"
-    :aria-labelledby="labelId ? labelId : undefined"
-    v-bind="$attrs"
+    v-bind="mergedAttrs"
   >
     <!-- Linear Progressbar -->
     <div
-      v-if="variant === 'linear' && status === 'determinate'"
+      v-if="isLinear && isDeterminate"
       class="vtmn-progressbar_label"
     >
-      <span :id="labelId ? labelId : undefined">
+      <span :id="labelId">
         {{ loadingText }}
       </span>
       <span aria-live="assertive"> {{ progress }}% </span>
     </div>
 
     <span
-      v-if="variant === 'linear' && status === 'indeterminate'"
-      :id="labelId ? labelId : undefined"
+      v-if="isLinear && isIndeterminate"
+      :id="labelId"
       class="vtmn-sr-only"
       >{{ loadingText }}</span
     >
 
-    <svg v-if="variant === 'linear'">
+    <svg v-if="isLinear">
       <line
         class="vtmn-progressbar_indicator"
         x1="0"
         x2="100%"
         y1="50%"
         y2="50%"
-        :style="
-          status === 'determinate'
-            ? { transform: `translateX(${progress - 100}%)` }
-            : {}
-        "
+        :style="{
+          '--vtmn-progressbar_progress-transform': isDeterminate
+            ? `translateX(${progress - 100}%)`
+            : 'unset'
+        }"
       />
     </svg>
 
     <!-- Circular Progressbar -->
     <span
-      v-if="variant === 'circular' && status === 'determinate'"
+      v-if="isCircular && isDeterminate"
       class="vtmn-progressbar_label"
       aria-live="assertive"
     >
@@ -130,21 +150,21 @@ export default /*#__PURE__*/ defineComponent({
     </span>
 
     <img
-      v-if="variant === 'circular' && imageSrc !== undefined"
+      v-if="isCircular && imageSrc !== undefined"
       class="vtmn-progressbar_image"
       :src="imageSrc"
       :alt="imageAlt"
     />
 
     <span
-      v-if="variant === 'circular' && status === 'indeterminate'"
-      :id="labelId ? labelId : undefined"
+      v-if="isCircular && isIndeterminate"
+      :id="labelId"
       class="vtmn-sr-only"
     >
       {{ loadingText }}
     </span>
 
-    <svg v-if="variant === 'circular'">
+    <svg v-if="isCircular">
       <circle
         class="vtmn-progressbar_track"
         cx="50%"
@@ -153,7 +173,7 @@ export default /*#__PURE__*/ defineComponent({
       />
       <circle
         class="vtmn-progressbar_indicator"
-        :strokeDashoffset="`calc(${circlePerimeter} - ${circlePerimeter} * ${progress} / 100)`"
+        :stroke-dashoffset="`calc(${circlePerimeter} - ${circlePerimeter} * ${progress} / 100)`"
         cx="50%"
         cy="50%"
         :r="VtmnProgressbarMappedSize[size]"

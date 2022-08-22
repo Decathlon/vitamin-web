@@ -80,7 +80,7 @@ export const VtmnProgressbar = ({
   imageSrc = undefined,
   imageAlt = undefined,
   loadingText = 'Loading',
-  labelId,
+  labelId = undefined,
   className,
   ...props
 }: VtmnProgressbarProps) => {
@@ -98,7 +98,7 @@ export const VtmnProgressbar = ({
 
   // Progressbar a11y props
   const ariaProps = {
-    'aria-labelledby': labelId ?? undefined,
+    'aria-labelledby': labelId,
     ...(isDeterminate
       ? {
           'aria-valuenow': progress,
@@ -130,13 +130,13 @@ export const VtmnProgressbar = ({
         <>
           {isDeterminate && (
             <div className="vtmn-progressbar_label">
-              <span id={labelId ?? undefined}>{loadingText}</span>
+              <span id={labelId}>{loadingText}</span>
               <span aria-live="assertive">{progress}%</span>
             </div>
           )}
 
           {isIndeterminate && (
-            <span id={labelId ?? undefined} className="vtmn-sr-only">
+            <span id={labelId} className="vtmn-sr-only">
               {loadingText}
             </span>
           )}
@@ -149,11 +149,11 @@ export const VtmnProgressbar = ({
               y1="50%"
               y2="50%"
               style={
-                isDeterminate
-                  ? {
-                      transform: `translateX(${progress - 100}%)`,
-                    }
-                  : {}
+                {
+                  '--vtmn-progressbar_progress-transform': isDeterminate
+                    ? `translateX(${progress - 100}%)`
+                    : 'unset',
+                } as React.CSSProperties
               }
             />
           </svg>
@@ -181,7 +181,7 @@ export const VtmnProgressbar = ({
           )}
 
           {isIndeterminate && (
-            <span id={labelId ?? undefined} className="vtmn-sr-only">
+            <span id={labelId} className="vtmn-sr-only">
               {loadingText}
             </span>
           )}

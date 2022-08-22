@@ -1,7 +1,7 @@
 <div style="width: 300px">
   <div class="block">
     <div
-      class="vtmn-progressbar_container vtmn-progressbar_size--small"
+      class="vtmn-progressbar_container vtmn-progressbar_variant--linear vtmn-progressbar_size--small"
       role="progressbar"
       aria-labelledby="progress-bar-linear-1"
       aria-valuemin="0"
@@ -19,7 +19,7 @@
           x2="100%"
           y1="50%"
           y2="50%"
-          style="transform: translateX(-40%)"
+          style="--vtmn-progressbar_progress-transform: translateX(-40%);"
         />
       </svg>
     </div>
@@ -27,7 +27,7 @@
 
   <div class="block">
     <div
-      class="vtmn-progressbar_container vtmn-progressbar_size--small vtmn-progressbar--indeterminate"
+      class="vtmn-progressbar_container vtmn-progressbar_variant--linear vtmn-progressbar_size--small vtmn-progressbar--indeterminate"
       role="progressbar"
       aria-labelledby="progress-bar-linear-2"
     >
@@ -46,7 +46,7 @@
 
   <div class="block">
     <div
-      class="vtmn-progressbar_container vtmn-progressbar_size--medium"
+      class="vtmn-progressbar_container vtmn-progressbar_variant--linear vtmn-progressbar_size--medium"
       role="progressbar"
       aria-labelledby="progress-bar-linear-3"
       aria-valuemin="0"
@@ -64,7 +64,7 @@
           x2="100%"
           y1="50%"
           y2="50%"
-          style="transform: translateX(-75%)"
+          style="--vtmn-progressbar_progress-transform: translateX(-75%);"
         />
       </svg>
     </div>
@@ -72,7 +72,7 @@
 
   <div class="block">
     <div
-      class="vtmn-progressbar_container vtmn-progressbar_size--medium vtmn-progressbar--indeterminate"
+      class="vtmn-progressbar_container vtmn-progressbar_variant--linear vtmn-progressbar_size--medium vtmn-progressbar--indeterminate"
       role="progressbar"
       aria-labelledby="progress-bar-linear-4"
     >
@@ -91,7 +91,7 @@
 
   <div class="block">
     <div
-      class="vtmn-progressbar_container vtmn-progressbar_size--large"
+      class="vtmn-progressbar_container vtmn-progressbar_variant--linear vtmn-progressbar_size--large"
       role="progressbar"
       aria-labelledby="progress-bar-linear-5"
       aria-valuemin="0"
@@ -109,7 +109,7 @@
           x2="100%"
           y1="50%"
           y2="50%"
-          style="transform: translateX(-65%)"
+          style="--vtmn-progressbar_progress-transform: translateX(-65%);"
         />
       </svg>
     </div>
@@ -117,7 +117,7 @@
 
   <div class="block">
     <div
-      class="vtmn-progressbar_container vtmn-progressbar_size--large vtmn-progressbar--indeterminate"
+      class="vtmn-progressbar_container vtmn-progressbar_variant--linear vtmn-progressbar_size--large vtmn-progressbar--indeterminate"
       role="progressbar"
       aria-labelledby="progress-bar-linear-6"
     >
@@ -137,7 +137,7 @@
   <div class="block">
     <div
       id="vtmn-progressbar-demo-container-1"
-      class="vtmn-progressbar_container"
+      class="vtmn-progressbar_container vtmn-progressbar_variant--linear"
       role="progressbar"
       aria-labelledby="progress-bar-linear-demo"
       aria-valuemin="0"
@@ -157,7 +157,7 @@
           x2="100%"
           y1="50%"
           y2="50%"
-          style="transform: translateX(-100%)"
+          style="--vtmn-progressbar_progress-transform: translateX(-100%);"
         />
       </svg>
     </div>
@@ -213,13 +213,13 @@
     function addProgress(container, progress, label, value) {
       label.textContent = `${value}%`;
       container.setAttribute('aria-valuenow', `${value}`);
-      progress.style.transform = `translateX(calc(${value}% - 100%))`;
+      progress.style.setProperty("--vtmn-progressbar_progress-transform", `translateX(calc(${value}% - 100%))`);
     }
 
     function resetProgress(container, progress, label) {
       label.textContent = '0%';
       container.setAttribute('aria-valuenow', '0');
-      progress.style.transform = `translateX(-100%)`;
+      progress.style.setProperty("--vtmn-progressbar_progress-transform", `translateX(-100%)`);
     }
   }
 </script>

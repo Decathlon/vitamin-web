@@ -31,7 +31,7 @@
    * @type {string} Id of the label
    * @default undefined
    */
-  export let labelId;
+  export let labelId = undefined;
 
   let className = undefined;
   /**
@@ -41,13 +41,14 @@
 
   $: componentClass = cn(
     'vtmn-progressbar_container',
+    'vtmn-progressbar_variant--linear',
     size && `vtmn-progressbar_size--${size}`,
     indeterminate && `vtmn-progressbar--indeterminate`,
     className,
   );
 
   $: ariaProps = {
-    'aria-labelledby': labelId ? labelId : undefined,
+    'aria-labelledby': labelId,
     ...(!indeterminate
       ? {
           'aria-valuenow': progress,
@@ -61,12 +62,12 @@
 <div class={componentClass} role="progressbar" {...ariaProps} {...$$restProps}>
   {#if label && !indeterminate}
     <div class="vtmn-progressbar_label">
-      <span id={labelId ? labelId : undefined}>{label}</span>
+      <span id={labelId}>{label}</span>
       <span aria-live="assertive">{progress}%</span>
     </div>
   {/if}
   {#if indeterminate}
-    <span id={labelId ? labelId : undefined} class="vtmn-sr-only">{label}</span>
+    <span id={labelId} class="vtmn-sr-only">{label}</span>
   {/if}
   <svg>
     <line
@@ -75,7 +76,8 @@
       x2="100%"
       y1="50%"
       y2="50%"
-      style:transform={indeterminate ? null : `translateX(${progress - 100}%)`}
+      style={'--vtmn-progressbar_progress-transform:' +
+        (indeterminate ? 'unset' : `translateX(${progress - 100}%)`)}
     />
   </svg>
 </div>
