@@ -79,7 +79,7 @@ export default /*#__PURE__*/ defineComponent({
             'aria-valuemax': 100,
           }
         : {}),
-    }
+    };
     return {
       VtmnProgressbarMappedSize,
       progress,
@@ -95,23 +95,16 @@ export default /*#__PURE__*/ defineComponent({
         // Only add size attribute when variant is linear or size is small in circular mode
         [`vtmn-progressbar_size--${props.size}`]: isLinear || isSmall,
       })),
-      mergedAttrs: mergeProps(attrs, ariaProps)
+      mergedAttrs: mergeProps(attrs, ariaProps),
     };
   },
 });
 </script>
 
 <template>
-  <div
-    :class="classes"
-    role="progressbar"
-    v-bind="mergedAttrs"
-  >
+  <div :class="classes" role="progressbar" v-bind="mergedAttrs">
     <!-- Linear Progressbar -->
-    <div
-      v-if="isLinear && isDeterminate"
-      class="vtmn-progressbar_label"
-    >
+    <div v-if="isLinear && isDeterminate" class="vtmn-progressbar_label">
       <span :id="labelId">
         {{ loadingText }}
       </span>
@@ -135,7 +128,7 @@ export default /*#__PURE__*/ defineComponent({
         :style="{
           '--vtmn-progressbar_progress-transform': isDeterminate
             ? `translateX(${progress - 100}%)`
-            : 'unset'
+            : 'unset',
         }"
       />
     </svg>

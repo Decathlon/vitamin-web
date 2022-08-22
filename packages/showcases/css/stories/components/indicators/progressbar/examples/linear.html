@@ -19,7 +19,7 @@
           x2="100%"
           y1="50%"
           y2="50%"
-          style="--vtmn-progressbar_progress-transform: translateX(-40%);"
+          style="--vtmn-progressbar_progress-transform: translateX(-40%)"
         />
       </svg>
     </div>
@@ -64,7 +64,7 @@
           x2="100%"
           y1="50%"
           y2="50%"
-          style="--vtmn-progressbar_progress-transform: translateX(-75%);"
+          style="--vtmn-progressbar_progress-transform: translateX(-75%)"
         />
       </svg>
     </div>
@@ -109,7 +109,7 @@
           x2="100%"
           y1="50%"
           y2="50%"
-          style="--vtmn-progressbar_progress-transform: translateX(-65%);"
+          style="--vtmn-progressbar_progress-transform: translateX(-65%)"
         />
       </svg>
     </div>
@@ -157,7 +157,7 @@
           x2="100%"
           y1="50%"
           y2="50%"
-          style="--vtmn-progressbar_progress-transform: translateX(-100%);"
+          style="--vtmn-progressbar_progress-transform: translateX(-100%)"
         />
       </svg>
     </div>
@@ -213,13 +213,19 @@
     function addProgress(container, progress, label, value) {
       label.textContent = `${value}%`;
       container.setAttribute('aria-valuenow', `${value}`);
-      progress.style.setProperty("--vtmn-progressbar_progress-transform", `translateX(calc(${value}% - 100%))`);
+      progress.style.setProperty(
+        '--vtmn-progressbar_progress-transform',
+        `translateX(calc(${value}% - 100%))`,
+      );
     }
 
     function resetProgress(container, progress, label) {
       label.textContent = '0%';
       container.setAttribute('aria-valuenow', '0');
-      progress.style.setProperty("--vtmn-progressbar_progress-transform", `translateX(-100%)`);
+      progress.style.setProperty(
+        '--vtmn-progressbar_progress-transform',
+        `translateX(-100%)`,
+      );
     }
   }
 </script>
