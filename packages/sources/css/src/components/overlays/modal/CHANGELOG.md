@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-modal@0.8.5...@vtmn/css-modal@0.8.6) (2022-08-22)
+
+**Note:** Version bump only for package @vtmn/css-modal
+
+
+
+
+
 ## [0.8.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-modal@0.8.4...@vtmn/css-modal@0.8.5) (2022-08-05)
 
 
