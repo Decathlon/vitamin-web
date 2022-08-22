@@ -33,12 +33,6 @@
       defaultValue: 'Label',
       control: { type: 'text' },
     },
-    autocomplete: {
-      type: { name: 'boolean', required: false },
-      description: 'Enable autocompletion on select',
-      defaultValue: false,
-      control: { type: 'boolean' },
-    },
     value: {
       type: { name: 'object', required: true },
       description: 'Selected value',
