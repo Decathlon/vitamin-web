@@ -2,7 +2,7 @@ import vitamixIconsList from '@vtmn/icons/dist/vitamix/font/vitamix.json';
 
 export const parameters = {
   actions: {
-    handles: ['mouseenter', 'click', 'focusin', 'focusout'],
+    handles: ['mouseenter', 'click', 'focusin', 'focusout', 'input', 'change'],
   },
   design: {
     type: 'figma',

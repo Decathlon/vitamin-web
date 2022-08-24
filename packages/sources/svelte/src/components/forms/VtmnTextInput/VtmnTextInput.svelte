@@ -84,6 +84,8 @@
 {#if multiline}
   <textarea
     bind:value
+    on:input
+    on:change
     class={componentClass}
     {id}
     {disabled}
@@ -94,6 +96,8 @@
   <div class="vtmn-text-input_container">
     <input
       bind:value
+      on:input
+      on:change
       class={componentClass}
       type="text"
       {id}
