@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.52.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.52.5...@vtmn/react@0.52.6) (2022-08-25)
+
+
+### Bug Fixes
+
+* **@vtmn/react:** aria prop typo in VtmnDivider ([#1246](https://github.com/Decathlon/vitamin-web/issues/1246)) ([b6aeaef](https://github.com/Decathlon/vitamin-web/commit/b6aeaefad3518e9d007e5aedcd01a123b0411b2a))
+
+
+
+
+
 ## [0.52.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.52.4...@vtmn/react@0.52.5) (2022-08-22)
 
 **Note:** Version bump only for package @vtmn/react
