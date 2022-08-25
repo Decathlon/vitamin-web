@@ -5,6 +5,8 @@
     parameters,
     argTypes,
   } from '@vtmn/showcase-core/csf/components/indicators/rating.csf';
+
+  const ariaLabel = '{0} star out of 5';
 </script>
 
 <Meta
@@ -45,8 +47,22 @@
 </Story>
 
 <Story name="Read only with comments">
-  <VtmnRating class="rating-stories" readonly compact value={4.1} showValue />
-  <VtmnRating class="rating-stories" readonly compact value={1} showValue />
+  <VtmnRating
+    class="rating-stories"
+    readonly
+    compact
+    value={4.1}
+    showValue
+    {ariaLabel}
+  />
+  <VtmnRating
+    class="rating-stories"
+    readonly
+    compact
+    value={1}
+    showValue
+    {ariaLabel}
+  />
   <VtmnRating
     class="rating-stories"
     size="small"
@@ -55,6 +71,7 @@
     value={2.9}
     comments="(74)"
     showValue
+    {ariaLabel}
   />
   <VtmnRating
     class="rating-stories"
@@ -63,6 +80,7 @@
     compact
     value={5}
     comments="(74)"
+    {ariaLabel}
   />
   <VtmnRating
     class="rating-stories"
@@ -71,6 +89,7 @@
     value={2.3}
     showValue
     comments="(74)"
+    {ariaLabel}
   />
 </Story>
 

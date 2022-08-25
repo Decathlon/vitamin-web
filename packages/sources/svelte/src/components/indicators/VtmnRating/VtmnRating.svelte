@@ -57,6 +57,12 @@
    */
   export let comments = undefined;
 
+  /**
+   * @type {string} Aria label for accessibility
+   * (ex: {0} star out of 5).
+   */
+  export let ariaLabel = undefined;
+
   let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
@@ -89,29 +95,12 @@
   };
 </script>
 
-<div class={componentClass} aria-disabled={disabled} {...$$restProps}>
-  {#if !readonly}
-    <div
-      class="vtmn-rating--interactive"
-      aria-label="Rate the article"
-      role="radiogroup"
-      data-rating={value}
-    >
-      {#each Array(starsCnt) as _, index}
-        {@const position = index + 1}
-        <input
-          type="radio"
-          bind:group={value}
-          {name}
-          value={position}
-          id={`${name}-${position}`}
-          aria-label={`${position} star out of 5`}
-          {disabled}
-        />
-        <label for={`${name}-${position}`} />
-      {/each}
-    </div>
-  {/if}
+<div
+  class={componentClass}
+  aria-disabled={disabled}
+  {...$$restProps}
+  aria-label={ariaLabel && ariaLabel.replace('{0}', value || 0)}
+>
   {#if readonly}
     {#each Array(starsCnt) as _, index}
       {@const position = index + 1}
@@ -133,6 +122,27 @@
         {comments}
       </span>
     {/if}
+  {:else}
+    <div
+      class="vtmn-rating--interactive"
+      aria-label="Rate the article"
+      role="radiogroup"
+      data-rating={value}
+    >
+      {#each Array(starsCnt) as _, index}
+        {@const position = index + 1}
+        <input
+          type="radio"
+          bind:group={value}
+          {name}
+          value={position}
+          id={`${name}-${position}`}
+          aria-label={ariaLabel && ariaLabel.replace('{0}', position)}
+          {disabled}
+        />
+        <label for={`${name}-${position}`} />
+      {/each}
+    </div>
   {/if}
 </div>
 
