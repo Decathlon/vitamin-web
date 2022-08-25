@@ -1,37 +1,101 @@
 <div class="block">
-  <nav id="demo-tabs-nav" aria-label="Tabs nav" class="vtmn-tabs">
-    <ul id="demo-tabs-tablist" role="tablist">
+  <nav id="demo-tabs-nav" class="vtmn-tabs">
+    <ul id="demo-tabs-tablist" role="tablist" aria-label="Tabs navigation">
       <li>
-        <a href="#tabpanel-demo-1" role="tab" class="tab" id="tab-demo-1">Tab Name 1</a>
+        <a
+          href="#tabpanel-demo-1"
+          role="tab"
+          class="tab"
+          id="tab-demo-1"
+          aria-controls="tabpanel-demo-1"
+          >Tab Name 1</a
+        >
       </li>
       <li>
-        <a href="#tabpanel-demo-2" role="tab" class="tab" id="tab-demo-2">Tab Name 2 </a>
+        <a
+          href="#tabpanel-demo-2"
+          role="tab"
+          class="tab"
+          id="tab-demo-2"
+          aria-controls="tabpanel-demo-2"
+          >Tab Name 2
+        </a>
       </li>
       <li>
-        <a href="#tabpanel-demo-3" role="tab" class="tab" id="tab-demo-3">Tab Name 3</a>
+        <a
+          href="#tabpanel-demo-3"
+          role="tab"
+          class="tab"
+          id="tab-demo-3"
+          aria-controls="tabpanel-demo-3"
+          >Tab Name 3</a
+        >
       </li>
       <li>
-        <a href="#tabpanel-demo-4" role="tab" class="tab" id="tab-demo-4">Tab Name 4</a>
+        <a
+          href="#tabpanel-demo-4"
+          role="tab"
+          class="tab"
+          id="tab-demo-4"
+          aria-controls="tabpanel-demo-4"
+          >Tab Name 4</a
+        >
       </li>
     </ul>
     <div class="vtmn-divider" role="separator"></div>
   </nav>
-  <div class="">
-    <section role="tabpanel" class="tabpanel" id="tabpanel-demo-1" aria-labelledby="tab-demo-1" tabindex="0">
+  <div class="vtmn-w-full vtmn-p-5 vtmn-bg-background-primary">
+    <section
+      role="tabpanel"
+      class="tabpanel"
+      id="tabpanel-demo-1"
+      aria-labelledby="tab-demo-1"
+      tabindex="0"
+    >
       Tab Name 1 <br />
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum necessitatibus? Sequi?
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur
+      voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam
+      cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum
+      necessitatibus? Sequi?
     </section>
-    <section role="tabpanel" class="tabpanel" id="tabpanel-demo-2" aria-labelledby="tab-demo-2" tabindex="0">
+    <section
+      role="tabpanel"
+      class="tabpanel"
+      id="tabpanel-demo-2"
+      aria-labelledby="tab-demo-2"
+      tabindex="0"
+    >
       Tab Name 2 <br />
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum necessitatibus? Sequi?
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur
+      voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam
+      cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum
+      necessitatibus? Sequi?
     </section>
-    <section role="tabpanel" class="tabpanel" id="tabpanel-demo-3" aria-labelledby="tab-demo-3" tabindex="0">
+    <section
+      role="tabpanel"
+      class="tabpanel"
+      id="tabpanel-demo-3"
+      aria-labelledby="tab-demo-3"
+      tabindex="0"
+    >
       Tab Name 3 <br />
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum necessitatibus? Sequi?
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur
+      voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam
+      cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum
+      necessitatibus? Sequi?
     </section>
-    <section role="tabpanel" class="tabpanel" id="tabpanel-demo-4" aria-labelledby="tab-demo-4" tabindex="0">
+    <section
+      role="tabpanel"
+      class="tabpanel"
+      id="tabpanel-demo-4"
+      aria-labelledby="tab-demo-4"
+      tabindex="0"
+    >
       Tab Name 4 <br />
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum necessitatibus? Sequi?
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur
+      voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam
+      cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum
+      necessitatibus? Sequi?
     </section>
   </div>
 </div>
@@ -42,69 +106,74 @@
   const tabPanels = document.querySelectorAll('[role=tabpanel].tabpanel');
 
   const showActivePanel = (element) => {
-    const selectedId = element.getAttribute("id");
+    const selectedId = element.getAttribute('id');
     // Hide all panels
-    tabPanels.forEach((panel) => panel.classList.add("vtmn-hidden"));
+    tabPanels.forEach((panel) => panel.classList.add('vtmn-hidden'));
     // Only show active panel
-    const activePanel = document.querySelector(`[aria-labelledby="${selectedId}"]`);
-    activePanel.classList.remove("vtmn-hidden");
+    const activePanel = document.querySelector(
+      `[aria-labelledby="${selectedId}"]`,
+    );
+    activePanel.classList.remove('vtmn-hidden');
   };
 
   const setSelectedTab = (element, setFocus) => {
     if (typeof setFocus !== 'boolean') {
       setFocus = true;
     }
-    const selectedId = element.getAttribute("id");
+    const selectedId = element.getAttribute('id');
     tabs.forEach((tab) => {
-      const id = tab.getAttribute("id");
-      const isCurrentTab = id === selectedId
+      const id = tab.getAttribute('id');
+      const isCurrentTab = id === selectedId;
       if (isCurrentTab) {
-        tab.setAttribute("aria-selected", "true");
+        tab.setAttribute('aria-selected', 'true');
         tab.removeAttribute('tabindex');
-        tab.classList.add("selected");
+        tab.classList.add('selected');
         if (setFocus) tab.focus();
         // Show corresponding panel
-        showActivePanel(element)
+        showActivePanel(element);
       } else {
-        tab.setAttribute("tabindex", "-1");
-        tab.setAttribute("aria-selected", "false");
-        tab.classList.remove("selected");
+        tab.setAttribute('tabindex', '-1');
+        tab.setAttribute('aria-selected', 'false');
+        tab.classList.remove('selected');
       }
     });
   };
 
   const initArrowNavigation = () => {
-    const firstIndex = 0
-    const lastIndex = tabs.length - 1
+    const firstIndex = 0;
+    const lastIndex = tabs.length - 1;
     tabs.forEach((tab, index) => {
       tab.addEventListener('keydown', (event) => {
         const isFirst = index <= firstIndex;
         const isLast = index >= lastIndex;
-        const previousIndex = index - 1
-        const nextIndex = index + 1
+        const previousIndex = index - 1;
+        const nextIndex = index + 1;
         switch (event.key) {
           case 'ArrowLeft':
-            const nextTabOnArrowLeft = tabs[isFirst ? lastIndex : previousIndex]
-            setSelectedTab(nextTabOnArrowLeft)
+            const nextTabOnArrowLeft =
+              tabs[isFirst ? lastIndex : previousIndex];
+            setSelectedTab(nextTabOnArrowLeft);
             break;
           case 'ArrowRight':
-            const nextTabOnArrowRight = tabs[isLast ? 0 : nextIndex]
-            setSelectedTab(nextTabOnArrowRight)
+            const nextTabOnArrowRight = tabs[isLast ? 0 : nextIndex];
+            setSelectedTab(nextTabOnArrowRight);
             break;
           case 'Home':
-            const nextTabOnHome = tabs[firstIndex]
-            setSelectedTab(nextTabOnHome)
+            const nextTabOnHome = tabs[firstIndex];
+            setSelectedTab(nextTabOnHome);
             break;
           case 'End':
-            const nextTabOnEnd = tabs[lastIndex]
-            setSelectedTab(nextTabOnEnd)
+            const nextTabOnEnd = tabs[lastIndex];
+            setSelectedTab(nextTabOnEnd);
             break;
           default:
             break;
         }
       });
 
-      tab.addEventListener('click', (event) => setSelectedTab(event.currentTarget));
+      tab.addEventListener('click', (event) =>
+        setSelectedTab(event.currentTarget),
+      );
     });
   };
 
@@ -113,19 +182,18 @@
 
     // tabs should not be focus navigable
     tabs.forEach((event) => {
-      event.setAttribute("tabindex", "-1");
-      event.setAttribute("aria-selected", "false");
+      event.setAttribute('tabindex', '-1');
+      event.setAttribute('aria-selected', 'false');
     });
 
     // hide panels
     tabPanels.forEach((panel) => {
-      panel.classList.add("vtmn-hidden");
+      panel.classList.add('vtmn-hidden');
     });
 
     // active first tab / panel
-    setSelectedTab(tabs[0], false)
-  }
+    setSelectedTab(tabs[0], false);
+  };
 
   window.addEventListener('load', initTabs);
-
 </script>
