@@ -9,6 +9,7 @@
   const linkArgs = {
     href: 'https://decathlon.design',
     target: '_blank',
+    rel: 'noopener noreferrer',
   };
 </script>
 

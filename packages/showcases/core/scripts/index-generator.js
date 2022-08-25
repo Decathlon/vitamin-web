@@ -1,5 +1,5 @@
 const generateLinks = (package) => `
-  <a href="${package.name}" target="_blank" class="vtmn-btn vtmn-btn_variant--tertiary vtmn-mb-4" style="width: 300px">
+  <a href="${package.name}" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer" class="vtmn-btn vtmn-btn_variant--tertiary vtmn-mb-4" style="width: 300px">
     ${package.name}
   </a>
 `;
