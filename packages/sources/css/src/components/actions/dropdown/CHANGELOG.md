@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-dropdown@0.7.4...@vtmn/css-dropdown@0.7.5) (2022-08-22)
+
+**Note:** Version bump only for package @vtmn/css-dropdown
+
+
+
+
+
 ## [0.7.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-dropdown@0.7.3...@vtmn/css-dropdown@0.7.4) (2022-07-26)
 
 
