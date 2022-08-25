@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.51.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.51.5...@vtmn/svelte@0.51.6) (2022-08-22)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** `VtmnSelect` autocomplete ([#1241](https://github.com/Decathlon/vitamin-web/issues/1241)) ([9e6f44d](https://github.com/Decathlon/vitamin-web/commit/9e6f44d2861cfcbc76e07d904646e57779a81b95))
+
+
+
+
+
 ## [0.51.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.51.4...@vtmn/svelte@0.51.5) (2022-08-18)
 
 
