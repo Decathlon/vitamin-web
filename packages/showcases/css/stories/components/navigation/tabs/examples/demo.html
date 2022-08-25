@@ -5,7 +5,6 @@
         <a
           href="#tabpanel-demo-1"
           role="tab"
-          class="tab"
           id="tab-demo-1"
           aria-controls="tabpanel-demo-1"
           >Tab Name 1</a
@@ -15,7 +14,6 @@
         <a
           href="#tabpanel-demo-2"
           role="tab"
-          class="tab"
           id="tab-demo-2"
           aria-controls="tabpanel-demo-2"
           >Tab Name 2
@@ -25,7 +23,6 @@
         <a
           href="#tabpanel-demo-3"
           role="tab"
-          class="tab"
           id="tab-demo-3"
           aria-controls="tabpanel-demo-3"
           >Tab Name 3</a
@@ -35,7 +32,6 @@
         <a
           href="#tabpanel-demo-4"
           role="tab"
-          class="tab"
           id="tab-demo-4"
           aria-controls="tabpanel-demo-4"
           >Tab Name 4</a
@@ -44,10 +40,12 @@
     </ul>
     <div class="vtmn-divider" role="separator"></div>
   </nav>
-  <div class="vtmn-w-full vtmn-p-5 vtmn-bg-background-primary">
+  <div
+    id="demo-tabs-tabpanels"
+    class="vtmn-w-full vtmn-p-5 vtmn-bg-background-primary"
+  >
     <section
       role="tabpanel"
-      class="tabpanel"
       id="tabpanel-demo-1"
       aria-labelledby="tab-demo-1"
       tabindex="0"
@@ -60,7 +58,6 @@
     </section>
     <section
       role="tabpanel"
-      class="tabpanel"
       id="tabpanel-demo-2"
       aria-labelledby="tab-demo-2"
       tabindex="0"
@@ -73,7 +70,6 @@
     </section>
     <section
       role="tabpanel"
-      class="tabpanel"
       id="tabpanel-demo-3"
       aria-labelledby="tab-demo-3"
       tabindex="0"
@@ -86,7 +82,6 @@
     </section>
     <section
       role="tabpanel"
-      class="tabpanel"
       id="tabpanel-demo-4"
       aria-labelledby="tab-demo-4"
       tabindex="0"
@@ -102,8 +97,10 @@
 
 <script>
   const tabList = document.querySelector('[role=tablist]#demo-tabs-tablist');
-  const tabs = tabList.querySelectorAll('[role=tab].tab');
-  const tabPanels = document.querySelectorAll('[role=tabpanel].tabpanel');
+  const tabs = tabList.querySelectorAll('.vtmn-tabs > ul > li > a[role=tab]');
+  const tabPanels = document.querySelectorAll(
+    '#demo-tabs-tabpanels > section[role=tabpanel]',
+  );
 
   const showActivePanel = (element) => {
     const selectedId = element.getAttribute('id');
