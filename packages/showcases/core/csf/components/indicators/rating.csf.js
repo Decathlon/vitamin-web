@@ -72,9 +72,9 @@ export const argTypes = {
     control: { type: 'boolean' },
   },
   ariaLabel: {
-    type: { name: 'string', required: false },
+    type: { name: 'object', required: false },
     description: 'Add aria label for accessibility',
     defaultValue: '{0} star out of 5',
-    control: { type: 'text' },
+    control: { type: 'object' },
   },
 };
