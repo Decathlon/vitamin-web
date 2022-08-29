@@ -6,7 +6,13 @@
     argTypes,
   } from '@vtmn/showcase-core/csf/components/indicators/rating.csf';
 
-  const ariaLabel = '{0} star out of 5';
+  const ariaLabel = {
+    rateArticle: 'Rate the article',
+    ratingStarNote: '4 star out of 5',
+    ratingStarPosition: '{0} star out of 5',
+    ratingNumber: 'number of rating',
+    ratingArticle: 'article rating',
+  };
 </script>
 
 <Meta

@@ -58,16 +58,33 @@
   export let comments = undefined;
 
   /**
-   * @type {string} Aria label for accessibility
-   * (ex: {0} star out of 5).
+   * @typedef AriaLabels
+   * @type {object}
+   * @property {string} rateArticle - Aria label of the radio group (readOnly to false).
+   * @property {string} ratingStarNote - Aria label of the note of the component.
+   * @property {string} ratingStarPosition - Aria label of the each star.
+   * @property {string} ratingNumber - Aria label of comment element.
+   * @property {string} ratingArticle - Aria label of value note element.
    */
-  export let ariaLabel = undefined;
+
+  /**
+   * @type {AriaLabels} Aria labels of the component.
+   */
+  export let ariaLabel = {};
 
   let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */
   export { className as class };
+
+  const {
+    rateArticle,
+    ratingStarNote,
+    ratingStarPosition,
+    ratingNumber,
+    ratingArticle,
+  } = ariaLabel || {};
 
   $: componentClass = cn(
     'vtmn-rating',
@@ -99,7 +116,7 @@
   class={componentClass}
   aria-disabled={disabled}
   {...$$restProps}
-  aria-label={ariaLabel && ariaLabel.replace('{0}', value || 0)}
+  aria-label={ratingStarNote}
 >
   {#if readonly}
     {#each Array(starsCnt) as _, index}
@@ -110,22 +127,19 @@
       />
     {/each}
     {#if showValue}
-      <span class="vtmn-rating_comment--primary" aria-label="article rating">
+      <span class="vtmn-rating_comment--primary" aria-label={ratingArticle}>
         {value}/5
       </span>
     {/if}
     {#if comments}
-      <span
-        class="vtmn-rating_comment--secondary"
-        aria-label="number of ratings"
-      >
+      <span class="vtmn-rating_comment--secondary" aria-label={ratingNumber}>
         {comments}
       </span>
     {/if}
   {:else}
     <div
       class="vtmn-rating--interactive"
-      aria-label="Rate the article"
+      aria-label={rateArticle}
       role="radiogroup"
       data-rating={value}
     >
@@ -137,7 +151,8 @@
           {name}
           value={position}
           id={`${name}-${position}`}
-          aria-label={ariaLabel && ariaLabel.replace('{0}', position)}
+          aria-label={ratingStarPosition &&
+            ratingStarPosition.replace('{0}', position)}
           {disabled}
         />
         <label for={`${name}-${position}`} />
