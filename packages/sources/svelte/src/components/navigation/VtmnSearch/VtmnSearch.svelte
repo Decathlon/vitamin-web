@@ -33,6 +33,12 @@
   export let value;
 
   /**
+   * Reference of the search input
+   * @type {HTMLElement}
+   */
+  export let inputRef;
+
+  /**
    * @typedef AriaLabels
    * @type {object}
    * @property {string} clearButton - Aria label of the clear button.
@@ -73,6 +79,7 @@
 <div class={componentClass} role="search">
   <input
     type="search"
+    bind:this={inputRef}
     {...$$restProps}
     on:click
     on:input
