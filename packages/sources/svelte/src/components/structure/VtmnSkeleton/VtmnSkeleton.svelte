@@ -1,13 +1,23 @@
 <script>
   import { cn } from '../../../utils/classnames';
-  import { VTMN_SKELETON_SHAPE } from './enums';
+  import {
+    VTMN_SKELETON_SHAPE,
+    VTMN_SKELETON_UNIT,
+    VTMN_DEFAULT_WIDTH,
+  } from './enums';
   import { objectToStyle } from '../../../utils/style';
 
   /**
    * @type {number} width to apply to the skeleton (in percentage).
    * @defaultValue 100
    */
-  export let width = 100;
+  export let width = VTMN_DEFAULT_WIDTH;
+
+  /**
+   * @type {'%'|'rem'|'px'|'vw'|'ch'}
+   * @defaultValue %
+   */
+  export let unit = VTMN_SKELETON_UNIT.PERCENT;
 
   /**
    * @type {'line' | 'avatar' }  variant of the shape.
@@ -28,8 +38,14 @@
     className,
   );
 
+  $: computedWidth = width > 0 ? width : VTMN_DEFAULT_WIDTH;
+  $: computedUnit =
+    unit && Object.values(VTMN_SKELETON_UNIT).includes(unit)
+      ? unit
+      : VTMN_SKELETON_UNIT.PERCENT;
+
   $: componentStyle = objectToStyle({
-    '--skeleton-width': `${width}%`,
+    '--skeleton-width': `${computedWidth}${computedUnit}`,
   });
 </script>
 
@@ -38,6 +54,6 @@
 <style lang="css">
   @import '@vtmn/css-skeleton';
   .skeleton-width {
-    width: var(--skeleton-width, 0);
+    width: var(--skeleton-width, 100%);
   }
 </style>
