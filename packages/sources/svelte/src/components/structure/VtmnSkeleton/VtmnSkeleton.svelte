@@ -8,19 +8,19 @@
   import { objectToStyle } from '../../../utils/style';
 
   /**
-   * @type {number} width to apply to the skeleton (in percentage).
+   * @type {number} Width applied on the skeleton.
    * @defaultValue 100
    */
   export let width = VTMN_DEFAULT_WIDTH;
 
   /**
-   * @type {'%'|'rem'|'px'|'vw'|'ch'}
+   * @type {'%'|'rem'|'px'|'vw'|'ch'} Unit applied on the width.
    * @defaultValue %
    */
   export let unit = VTMN_SKELETON_UNIT.PERCENT;
 
   /**
-   * @type {'line' | 'avatar' }  variant of the shape.
+   * @type {'line' | 'avatar' } Variant of the shape.
    * @defaultValue line
    */
   export let shape = VTMN_SKELETON_SHAPE.LINE;
