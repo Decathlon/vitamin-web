@@ -50,7 +50,7 @@ describe('VtmnSkeleton', () => {
   });
 
   test('Should set the unit as % if unit not found', () => {
-    const { container } = render(VtmnSkeleton, { unit: 'toto' });
+    const { container } = render(VtmnSkeleton, { unit: 'foo' });
     expect(getSkeleton(container)).toHaveStyle('--skeleton-width:100%');
   });
 

@@ -3,7 +3,7 @@
   import {
     VTMN_SKELETON_SHAPE,
     VTMN_SKELETON_UNIT,
-    VTMN_DEFAULT_WIDTH,
+    VTMN_DEFAULT_DEFAULT__WIDTH,
   } from './enums';
   import { objectToStyle } from '../../../utils/style';
 
@@ -11,7 +11,7 @@
    * @type {number} Width applied on the skeleton.
    * @defaultValue 100
    */
-  export let width = VTMN_DEFAULT_WIDTH;
+  export let width = VTMN_DEFAULT_DEFAULT__WIDTH;
 
   /**
    * @type {'%'|'rem'|'px'|'vw'|'ch'} Unit applied on the width.
@@ -38,7 +38,7 @@
     className,
   );
 
-  $: computedWidth = width > 0 ? width : VTMN_DEFAULT_WIDTH;
+  $: computedWidth = width > 0 ? width : VTMN_DEFAULT_DEFAULT__WIDTH;
   $: computedUnit =
     unit && Object.values(VTMN_SKELETON_UNIT).includes(unit)
       ? unit

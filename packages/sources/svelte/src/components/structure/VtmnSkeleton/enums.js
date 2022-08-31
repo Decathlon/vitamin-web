@@ -15,4 +15,4 @@ export const VTMN_SKELETON_UNIT = {
   PX: 'px',
 };
 
-export const VTMN_DEFAULT_WIDTH = 100;
+export const VTMN_DEFAULT_DEFAULT__WIDTH = 100;
