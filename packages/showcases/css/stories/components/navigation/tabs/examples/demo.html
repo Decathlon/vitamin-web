@@ -6,40 +6,24 @@
     aria-label="Tabs navigation"
   >
     <li>
-      <a
-        href="#tabpanel-demo-1"
-        role="tab"
-        id="tab-demo-1"
-        aria-controls="tabpanel-demo-1"
-        >Tab Name 1</a
-      >
+      <button role="tab" id="tab-demo-1" aria-controls="tabpanel-demo-1">
+        Tab Name 1
+      </button>
     </li>
     <li>
-      <a
-        href="#tabpanel-demo-2"
-        role="tab"
-        id="tab-demo-2"
-        aria-controls="tabpanel-demo-2"
-        >Tab Name 2
-      </a>
+      <button role="tab" id="tab-demo-2" aria-controls="tabpanel-demo-2">
+        Tab Name 2
+      </button>
     </li>
     <li>
-      <a
-        href="#tabpanel-demo-3"
-        role="tab"
-        id="tab-demo-3"
-        aria-controls="tabpanel-demo-3"
-        >Tab Name 3</a
-      >
+      <button role="tab" id="tab-demo-3" aria-controls="tabpanel-demo-3">
+        Tab Name 3
+      </button>
     </li>
     <li>
-      <a
-        href="#tabpanel-demo-4"
-        role="tab"
-        id="tab-demo-4"
-        aria-controls="tabpanel-demo-4"
-        >Tab Name 4</a
-      >
+      <button role="tab" id="tab-demo-4" aria-controls="tabpanel-demo-4">
+        Tab Name 4
+      </button>
     </li>
   </ul>
   <div class="vtmn-divider" role="separator"></div>
@@ -100,7 +84,7 @@
 
 <script>
   const tabList = document.querySelector('[role=tablist]#demo-tabs-tablist');
-  const tabs = tabList.querySelectorAll('.vtmn-tabs > li > a[role=tab]');
+  const tabs = tabList.querySelectorAll('.vtmn-tabs > li > button[role=tab]');
   const tabPanels = document.querySelectorAll(
     '#demo-tabs-tabpanels > section[role=tabpanel]',
   );
@@ -127,14 +111,12 @@
       if (isCurrentTab) {
         tab.setAttribute('aria-selected', 'true');
         tab.removeAttribute('tabindex');
-        tab.classList.add('selected');
         if (setFocus) tab.focus();
         // Show corresponding panel
         showActivePanel(element);
       } else {
         tab.setAttribute('tabindex', '-1');
         tab.setAttribute('aria-selected', 'false');
-        tab.classList.remove('selected');
       }
     });
   };
