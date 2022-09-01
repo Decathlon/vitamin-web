@@ -4,7 +4,7 @@ import { VtmnTabsAlign, VtmnTabsSize } from './types';
 import { VtmnDivider } from '../../../components/structure/VtmnDivider';
 import clsx from 'clsx';
 
-export interface VtmnTabsProps extends React.ComponentPropsWithoutRef<'nav'> {
+export interface VtmnTabsProps extends React.ComponentPropsWithoutRef<'ul'> {
   /**
    * The alignment of the tabs.
    * @type {VtmnTabsAlign}
@@ -28,16 +28,19 @@ export interface VtmnTabsProps extends React.ComponentPropsWithoutRef<'nav'> {
 
 export const VtmnTabs = ({ className, children, ...props }: VtmnTabsProps) => {
   return (
-    <nav
-      className={clsx(
-        'vtmn-tabs',
-        `vtmn-tabs_align--${props.align}`,
-        `vtmn-tabs_size--${props.size}`,
-        className,
-      )}
-      {...props}
-    >
-      <ul role="tablist">{children}</ul>
+    <nav>
+      <ul
+        className={clsx(
+          'vtmn-tabs',
+          `vtmn-tabs_align--${props.align}`,
+          `vtmn-tabs_size--${props.size}`,
+          className,
+        )}
+        role="tablist"
+        {...props}
+      >
+        {children}
+      </ul>
       <VtmnDivider />
     </nav>
   );
