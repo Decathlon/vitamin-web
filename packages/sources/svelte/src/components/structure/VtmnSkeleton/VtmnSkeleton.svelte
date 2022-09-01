@@ -2,8 +2,8 @@
   import { cn } from '../../../utils/classnames';
   import {
     VTMN_SKELETON_SHAPE,
-    VTMN_SKELETON_UNIT,
-    VTMN_DEFAULT_DEFAULT__WIDTH,
+    VTMN_SKELETON_DEFAULT_UNIT,
+    VTMN_SKELETON_DEFAULT_WIDTH,
   } from './enums';
   import { objectToStyle } from '../../../utils/style';
 
@@ -11,13 +11,13 @@
    * @type {number} Width applied on the skeleton.
    * @defaultValue 100
    */
-  export let width = VTMN_DEFAULT_DEFAULT__WIDTH;
+  export let width = VTMN_SKELETON_DEFAULT_WIDTH;
 
   /**
    * @type {'%'|'rem'|'em'|'px'|'vw'|'ch'} Unit applied on the width.
    * @defaultValue %
    */
-  export let unit = VTMN_SKELETON_UNIT.PERCENT;
+  export let unit = VTMN_SKELETON_DEFAULT_UNIT.PERCENT;
 
   /**
    * @type {'line' | 'avatar' } Variant of the shape.
@@ -44,10 +44,10 @@
   $: {
     if (
       width < 0 ||
-      (unit && !Object.values(VTMN_SKELETON_UNIT).includes(unit))
+      (unit && !Object.values(VTMN_SKELETON_DEFAULT_UNIT).includes(unit))
     ) {
       computedWidth = 100;
-      computedUnit = VTMN_SKELETON_UNIT.PERCENT;
+      computedUnit = VTMN_SKELETON_DEFAULT_UNIT.PERCENT;
       console.warn(
         '[VtmnSkeleton] property width or unit are wrong. Set to default value',
       );

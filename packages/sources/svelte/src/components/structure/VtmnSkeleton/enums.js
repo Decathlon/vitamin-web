@@ -6,7 +6,7 @@ export const VTMN_SKELETON_SHAPE = {
   AVATAR: 'avatar',
 };
 
-export const VTMN_SKELETON_UNIT = {
+export const VTMN_SKELETON_DEFAULT_UNIT = {
   EM: 'em',
   REM: 'rem',
   VW: 'vw',
@@ -15,4 +15,4 @@ export const VTMN_SKELETON_UNIT = {
   PX: 'px',
 };
 
-export const VTMN_DEFAULT_DEFAULT__WIDTH = 100;
+export const VTMN_SKELETON_DEFAULT_WIDTH = 100;
