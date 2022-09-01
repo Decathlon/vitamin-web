@@ -14,7 +14,7 @@
   export let width = VTMN_DEFAULT_DEFAULT__WIDTH;
 
   /**
-   * @type {'%'|'rem'|'px'|'vw'|'ch'} Unit applied on the width.
+   * @type {'%'|'rem'|'em'|'px'|'vw'|'ch'} Unit applied on the width.
    * @defaultValue %
    */
   export let unit = VTMN_SKELETON_UNIT.PERCENT;
@@ -38,11 +38,24 @@
     className,
   );
 
-  $: computedWidth = width > 0 ? width : VTMN_DEFAULT_DEFAULT__WIDTH;
-  $: computedUnit =
-    unit && Object.values(VTMN_SKELETON_UNIT).includes(unit)
-      ? unit
-      : VTMN_SKELETON_UNIT.PERCENT;
+  let computedUnit;
+  let computedWidth;
+
+  $: {
+    if (
+      width < 0 ||
+      (unit && !Object.values(VTMN_SKELETON_UNIT).includes(unit))
+    ) {
+      computedWidth = 100;
+      computedUnit = VTMN_SKELETON_UNIT.PERCENT;
+      console.warn(
+        '[VtmnSkeleton] property width or unit are wrong. Set to default value',
+      );
+    } else {
+      computedWidth = width;
+      computedUnit = unit;
+    }
+  }
 
   $: componentStyle = objectToStyle({
     '--skeleton-width': `${computedWidth}${computedUnit}`,

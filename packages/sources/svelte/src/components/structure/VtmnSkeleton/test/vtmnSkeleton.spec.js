@@ -50,12 +50,12 @@ describe('VtmnSkeleton', () => {
   });
 
   test('Should set the unit as % if unit not found', () => {
-    const { container } = render(VtmnSkeleton, { unit: 'foo' });
+    const { container } = render(VtmnSkeleton, { unit: 'foo', width: 50 });
     expect(getSkeleton(container)).toHaveStyle('--skeleton-width:100%');
   });
 
   test('Should set the width as 0 if width are negative', () => {
-    const { container } = render(VtmnSkeleton, { width: -1 });
+    const { container } = render(VtmnSkeleton, { width: -1, unit: 'px' });
     expect(getSkeleton(container)).toHaveStyle('--skeleton-width:100%');
   });
 });
