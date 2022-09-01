@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.51.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.51.6...@vtmn/svelte@0.51.7) (2022-09-01)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** add input ref into the component ([#1250](https://github.com/Decathlon/vitamin-web/issues/1250)) ([8da26d9](https://github.com/Decathlon/vitamin-web/commit/8da26d98761164e0d103dfc527a8ce35a248798b))
+
+
+
+
+
 ## [0.51.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.51.5...@vtmn/svelte@0.51.6) (2022-08-22)
 
 
