@@ -9,9 +9,6 @@
   block-size: fit-content;
   inline-size: 100%;
   background-color: var(--vtmn-semantic-color_background-primary);
-}
-
-.vtmn-tabs > ul {
   display: block;
   white-space: nowrap;
   overflow-x: auto;
@@ -19,7 +16,7 @@
   padding: 0;
 }
 
-.vtmn-tabs li {
+.vtmn-tabs > li {
   display: inline-flex;
   padding-inline: rem(2px);
   padding-block-start: rem(2px);
@@ -85,17 +82,17 @@
 /* ALIGN */
 
 /* Start (default) */
-.vtmn-tabs_align--start > ul {
+.vtmn-tabs_align--start {
   text-align: start;
 }
 
 /* Center */
-.vtmn-tabs_align--center > ul {
+.vtmn-tabs_align--center {
   text-align: center;
 }
 
 /* End */
-.vtmn-tabs_align--end > ul {
+.vtmn-tabs_align--end {
   text-align: end;
 }
 
