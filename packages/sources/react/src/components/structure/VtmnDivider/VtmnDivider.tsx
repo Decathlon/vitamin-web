@@ -43,7 +43,7 @@ export const VtmnDivider = ({
       {...props}
       role="separator"
       aria-orientation={orientation}
-      aria-labelledBy={labelId ? labelId : undefined}
+      aria-labelledby={labelId ? labelId : undefined}
     >
       {children ? (
         <span id={labelId ? labelId : undefined}>{children}</span>
