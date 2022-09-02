@@ -125,11 +125,13 @@ export default /*#__PURE__*/ defineComponent({
         x2="100%"
         y1="50%"
         y2="50%"
-        :style="{
-          '--vtmn-progressbar_progress-transform': isDeterminate
-            ? `translateX(${progress - 100}%)`
-            : 'unset',
-        }"
+        :style="
+          isDeterminate
+            ? `--vtmn-progressbar_progress-transform: translateX(${
+                progress - 100
+              }%) scale(${+(progress > 0)})`
+            : undefined
+        "
       />
     </svg>
 

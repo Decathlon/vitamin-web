@@ -19,7 +19,9 @@
           x2="100%"
           y1="50%"
           y2="50%"
-          style="--vtmn-progressbar_progress-transform: translateX(-40%)"
+          style="
+            --vtmn-progressbar_progress-transform: translateX(-40%) scale(1);
+          "
         />
       </svg>
     </div>
@@ -64,7 +66,9 @@
           x2="100%"
           y1="50%"
           y2="50%"
-          style="--vtmn-progressbar_progress-transform: translateX(-75%)"
+          style="
+            --vtmn-progressbar_progress-transform: translateX(-75%) scale(1);
+          "
         />
       </svg>
     </div>
@@ -109,7 +113,9 @@
           x2="100%"
           y1="50%"
           y2="50%"
-          style="--vtmn-progressbar_progress-transform: translateX(-65%)"
+          style="
+            --vtmn-progressbar_progress-transform: translateX(-65%) scale(1);
+          "
         />
       </svg>
     </div>
@@ -157,7 +163,9 @@
           x2="100%"
           y1="50%"
           y2="50%"
-          style="--vtmn-progressbar_progress-transform: translateX(-100%)"
+          style="
+            --vtmn-progressbar_progress-transform: translateX(-100%) scale(0);
+          "
         />
       </svg>
     </div>
@@ -215,7 +223,7 @@
       container.setAttribute('aria-valuenow', `${value}`);
       progress.style.setProperty(
         '--vtmn-progressbar_progress-transform',
-        `translateX(calc(${value}% - 100%))`,
+        `translateX(calc(${value}% - 100%)) scale(${+(value > 0)})`,
       );
     }
 
@@ -224,7 +232,7 @@
       container.setAttribute('aria-valuenow', '0');
       progress.style.setProperty(
         '--vtmn-progressbar_progress-transform',
-        `translateX(-100%)`,
+        `translateX(-100%) scale(0)`,
       );
     }
   }

@@ -151,8 +151,8 @@ export const VtmnProgressbar = ({
               style={
                 {
                   '--vtmn-progressbar_progress-transform': isDeterminate
-                    ? `translateX(${progress - 100}%)`
-                    : 'unset',
+                    ? `translateX(${progress - 100}%) scale(${+(progress > 0)})`
+                    : undefined,
                 } as React.CSSProperties
               }
             />
