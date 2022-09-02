@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.52.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.52.0...@vtmn/svelte@0.52.1) (2022-09-02)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** add unit param on `VtmnSkeleton` ([#1252](https://github.com/Decathlon/vitamin-web/issues/1252)) ([e7861f2](https://github.com/Decathlon/vitamin-web/commit/e7861f29ce9a55875411af01bb1b4df80a493a5d))
+
+
+
+
+
 # [0.52.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.51.7...@vtmn/svelte@0.52.0) (2022-09-02)
 
 
