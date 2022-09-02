@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.52.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.51.7...@vtmn/svelte@0.52.0) (2022-09-02)
+
+
+### Features
+
+* **@vtmn/svelte:** add `on:input` and `on:change` on `VtmnTextInput` component ([#1243](https://github.com/Decathlon/vitamin-web/issues/1243)) ([3f3398a](https://github.com/Decathlon/vitamin-web/commit/3f3398a7ae3d761d86bf4026b7f0a99c4ec6dec2))
+
+
+
+
+
 ## [0.51.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.51.6...@vtmn/svelte@0.51.7) (2022-09-01)
 
 
