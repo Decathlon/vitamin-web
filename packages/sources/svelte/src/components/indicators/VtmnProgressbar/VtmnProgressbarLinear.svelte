@@ -76,13 +76,11 @@
       x2="100%"
       y1="50%"
       y2="50%"
-      style={`
-        --vtmn-progressbar_progress-transform:${
-          !indeterminate
-            ? `translateX(${progress - 100}%) scale(${+(progress > 0)})`
-            : undefined
-        };
-      `}
+      style={`--vtmn-progressbar_progress-transform:${
+        !indeterminate
+          ? `translateX(${progress - 100}%) scale(${+(progress > 0)})`
+          : undefined
+      };`}
     />
   </svg>
 </div>
