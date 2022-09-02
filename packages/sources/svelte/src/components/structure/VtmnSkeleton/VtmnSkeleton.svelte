@@ -43,11 +43,8 @@
   let computedWidth;
 
   $: {
-    if (
-      width < 0 ||
-      (unit && !Object.values(VTMN_SKELETON_UNIT).includes(unit))
-    ) {
-      computedWidth = 100;
+    if (width < 0 || !Object.values(VTMN_SKELETON_UNIT).includes(unit)) {
+      computedWidth = VTMN_SKELETON_DEFAULT_WIDTH;
       computedUnit = VTMN_SKELETON_DEFAULT_UNIT;
       console.warn(
         '[VtmnSkeleton] property width or unit are wrong. Set to default value',
