@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.15.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.14.0...@vtmn/icons@0.15.0) (2022-09-05)
+
+
+### Features
+
+* **@vtmn/icons:** add file-copy icon ([b0a9e13](https://github.com/Decathlon/vitamin-web/commit/b0a9e130619fad26499a87b9e855998c92196c88))
+
+
+
+
+
 # [0.14.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.13.0...@vtmn/icons@0.14.0) (2022-06-23)
 
 
