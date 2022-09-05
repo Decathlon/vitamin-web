@@ -43,4 +43,19 @@ describe('VtmnSkeleton', () => {
     const { container } = render(VtmnSkeleton, { 'data-nrt': 'test' });
     expect(getSkeleton(container)).toHaveAttribute('data-nrt', 'test');
   });
+
+  test('Should change the unit', () => {
+    const { container } = render(VtmnSkeleton, { unit: 'px' });
+    expect(getSkeleton(container)).toHaveStyle('--skeleton-width:100px');
+  });
+
+  test('Should set the unit as % if unit not found', () => {
+    const { container } = render(VtmnSkeleton, { unit: 'foo', width: 50 });
+    expect(getSkeleton(container)).toHaveStyle('--skeleton-width:100%');
+  });
+
+  test('Should set the width as 0 if width are negative', () => {
+    const { container } = render(VtmnSkeleton, { width: -1, unit: 'px' });
+    expect(getSkeleton(container)).toHaveStyle('--skeleton-width:100%');
+  });
 });
