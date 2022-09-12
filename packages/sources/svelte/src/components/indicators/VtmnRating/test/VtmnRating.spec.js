@@ -15,13 +15,6 @@ describe('VtmnRating', () => {
     container.querySelectorAll('span[role="presentation"]');
   const getRadioInputs = (container) =>
     container.querySelectorAll('input[type="radio"]');
-  const ariaLabel = {
-    rateArticle: 'Rate the article',
-    ratingStarNote: '4 star out of 5',
-    ratingStarPosition: '{0} star out of 5',
-    ratingNumber: 'number of rating',
-    ratingArticle: 'article rating',
-  };
 
   describe('Default', () => {
     test("Should have by default class 'vtmn-rating' + class 'vtmn-rating_size--medium' and not 'vtmn-rating_variant--brand' + aria-disabled", () => {
@@ -91,41 +84,16 @@ describe('VtmnRating', () => {
       const { container } = render(VtmnRating, { name: 'rating', value: 2 });
       expect(getCommentSecondary(container)).toBeUndefined();
     });
-
-    test('Should have rate article aria label for radio group', () => {
-      const { container } = render(VtmnRating, {
-        name: 'rating',
-        value: 2,
-        ariaLabel,
-      });
-      expect(getRating(container)).toHaveAttribute(
-        'aria-label',
-        '4 star out of 5',
-      );
-    });
-
-    test('Should have rate article aria label for radio group', () => {
-      const { getByRole } = render(VtmnRating, {
-        name: 'rating',
-        value: 2,
-        ariaLabel,
-      });
-      expect(
-        getByRole('radiogroup', { name: ariaLabel.rateArticle }),
-      ).toBeVisible();
-    });
-
     test('Should have aria label for radio', () => {
       const { getByRole } = render(VtmnRating, {
         name: 'rating',
         value: 2,
-        ariaLabel,
       });
-      expect(getByRole('radio', { name: '1 star out of 5' })).toBeVisible();
-      expect(getByRole('radio', { name: '2 star out of 5' })).toBeVisible();
-      expect(getByRole('radio', { name: '3 star out of 5' })).toBeVisible();
-      expect(getByRole('radio', { name: '4 star out of 5' })).toBeVisible();
-      expect(getByRole('radio', { name: '5 star out of 5' })).toBeVisible();
+      expect(getByRole('radio', { name: '1/5' })).toBeVisible();
+      expect(getByRole('radio', { name: '2/5' })).toBeVisible();
+      expect(getByRole('radio', { name: '3/5' })).toBeVisible();
+      expect(getByRole('radio', { name: '4/5' })).toBeVisible();
+      expect(getByRole('radio', { name: '5/5' })).toBeVisible();
     });
   });
 
@@ -273,46 +241,6 @@ describe('VtmnRating', () => {
         expect(spans[i]).toBeVisible();
         expect(spans[i]).toHaveClass('vtmx-star-fill');
       }
-    });
-
-    test('Should have a global rate article aria label', () => {
-      const { container } = render(VtmnRating, {
-        name: 'rating',
-        value: 2,
-        ariaLabel,
-      });
-      expect(getRating(container)).toHaveAttribute(
-        'aria-label',
-        '4 star out of 5',
-      );
-    });
-
-    test('Should have value aria label for note with showValue = true', () => {
-      const { container } = render(VtmnRating, {
-        name: 'rating',
-        readonly: true,
-        value: 2,
-        showValue: true,
-        ariaLabel,
-      });
-      expect(getCommentPrimary(container)).toHaveAttribute(
-        'aria-label',
-        'article rating',
-      );
-    });
-
-    test('Should have value aria label for note with comments', () => {
-      const { container } = render(VtmnRating, {
-        name: 'rating',
-        readonly: true,
-        value: 2,
-        comments: 46,
-        ariaLabel,
-      });
-      expect(getCommentSecondary(container)).toHaveAttribute(
-        'aria-label',
-        'number of rating',
-      );
     });
   });
 
