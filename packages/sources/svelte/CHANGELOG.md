@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.52.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.52.2...@vtmn/svelte@0.52.3) (2022-09-13)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** add aria-label for accessibility on `VtmnRating` ([#1247](https://github.com/Decathlon/vitamin-web/issues/1247)) ([9114aec](https://github.com/Decathlon/vitamin-web/commit/9114aec570e7d88276cc51ffb0a1bcb7a2cca365))
+
+
+
+
+
 ## [0.52.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.52.1...@vtmn/svelte@0.52.2) (2022-09-05)
 
 **Note:** Version bump only for package @vtmn/svelte
