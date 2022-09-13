@@ -61,4 +61,20 @@ describe('VtmnLink', () => {
     await fireEvent.click(getByText('Unit-test'));
     expect(handleClick).toHaveBeenCalledTimes(1);
   });
+  test('Should set the rel', () => {
+    const { container } = render(VtmnLink, { ...links, rel: 'hello world' });
+    expect(getLink(container)).toHaveAttribute('rel', 'hello world');
+  });
+  test('Should defined the rel to noopener noreferrer if target is blank', () => {
+    const { container } = render(VtmnLink, {
+      props: { ...links, target: '_blank' },
+    });
+    expect(getLink(container)).toHaveAttribute('rel', 'noopener noreferrer');
+  });
+  test('Should not duplicate the rel into link', () => {
+    const { container } = render(VtmnLink, {
+      props: { ...links, target: '_blank', rel: 'noopener' },
+    });
+    expect(getLink(container)).toHaveAttribute('rel', 'noopener noreferrer');
+  });
 });

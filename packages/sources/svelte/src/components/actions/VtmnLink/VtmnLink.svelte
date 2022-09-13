@@ -44,6 +44,12 @@
    */
   export let iconAlong = false;
 
+  /**
+   * The relationship of the linked URL as space-separated link types.
+   * @type {string}
+   */
+  export let rel = '';
+
   let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
@@ -58,9 +64,23 @@
     standalone && iconAlong && 'vtmn-link--icon-along',
     className,
   );
+
+  let computedRel =
+    target === '_blank'
+      ? Array.from(new Set(rel.split(' ')).add('noopener').add('noreferrer'))
+          .join(' ')
+          .trim()
+      : rel;
 </script>
 
-<a {href} {target} class={componentClass} on:click {...$$restProps}><slot /></a>
+<a
+  {href}
+  {target}
+  class={componentClass}
+  rel={computedRel}
+  on:click
+  {...$$restProps}><slot /></a
+>
 
 <style lang="css">
   @import '@vtmn/css-link';
