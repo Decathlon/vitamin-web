@@ -22,8 +22,7 @@
   padding-block-start: rem(2px);
 }
 
-.vtmn-tabs > li > button,
-.vtmn-tabs_size--medium a > li > button {
+.vtmn-tabs > li > button {
   display: inline-flex;
   align-items: center;
   font-family: var(--vtmn-typo_font-family);

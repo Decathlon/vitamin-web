@@ -83,83 +83,84 @@
 </div>
 
 <script>
-  const tabList = document.querySelector('[role=tablist]#demo-tabs-tablist');
-  const tabs = tabList.querySelectorAll('.vtmn-tabs > li > button[role=tab]');
-  const tabPanels = document.querySelectorAll(
-    '#demo-tabs-tabpanels > section[role=tabpanel]',
-  );
-
-  const showActivePanel = (element) => {
-    const selectedId = element.getAttribute('id');
-    // Hide all panels
-    tabPanels.forEach((panel) => panel.classList.add('vtmn-hidden'));
-    // Only show active panel
-    const activePanel = document.querySelector(
-      `[aria-labelledby="${selectedId}"]`,
+  const initTabs = () => {
+    const tabList = document.querySelector('[role=tablist]#demo-tabs-tablist');
+    const tabs = tabList.querySelectorAll('.vtmn-tabs > li > button[role=tab]');
+    const tabPanels = document.querySelectorAll(
+      '#demo-tabs-tabpanels > section[role=tabpanel]',
     );
-    activePanel.classList.remove('vtmn-hidden');
-  };
 
-  const setSelectedTab = (element, setFocus) => {
-    if (typeof setFocus !== 'boolean') {
-      setFocus = true;
-    }
-    const selectedId = element.getAttribute('id');
-    tabs.forEach((tab) => {
-      const id = tab.getAttribute('id');
-      const isCurrentTab = id === selectedId;
-      if (isCurrentTab) {
-        tab.setAttribute('aria-selected', 'true');
-        tab.removeAttribute('tabindex');
-        if (setFocus) tab.focus();
-        // Show corresponding panel
-        showActivePanel(element);
-      } else {
-        tab.setAttribute('tabindex', '-1');
-        tab.setAttribute('aria-selected', 'false');
+    const showActivePanel = (element) => {
+      const selectedId = element.getAttribute('id');
+      // Hide all panels
+      tabPanels.forEach((panel) => panel.classList.add('vtmn-hidden'));
+      // Only show active panel
+      const activePanel = document.querySelector(
+        `[aria-labelledby="${selectedId}"]`,
+      );
+      activePanel.classList.remove('vtmn-hidden');
+    };
+
+    const setSelectedTab = (element, setFocus) => {
+      if (typeof setFocus !== 'boolean') {
+        setFocus = true;
       }
-    });
-  };
-
-  const initArrowNavigation = () => {
-    const firstIndex = 0;
-    const lastIndex = tabs.length - 1;
-    tabs.forEach((tab, index) => {
-      tab.addEventListener('keydown', (event) => {
-        const isFirst = index <= firstIndex;
-        const isLast = index >= lastIndex;
-        const previousIndex = index - 1;
-        const nextIndex = index + 1;
-        switch (event.key) {
-          case 'ArrowLeft':
-            const nextTabOnArrowLeft =
-              tabs[isFirst ? lastIndex : previousIndex];
-            setSelectedTab(nextTabOnArrowLeft);
-            break;
-          case 'ArrowRight':
-            const nextTabOnArrowRight = tabs[isLast ? 0 : nextIndex];
-            setSelectedTab(nextTabOnArrowRight);
-            break;
-          case 'Home':
-            const nextTabOnHome = tabs[firstIndex];
-            setSelectedTab(nextTabOnHome);
-            break;
-          case 'End':
-            const nextTabOnEnd = tabs[lastIndex];
-            setSelectedTab(nextTabOnEnd);
-            break;
-          default:
-            break;
+      const selectedId = element.getAttribute('id');
+      tabs.forEach((tab) => {
+        const id = tab.getAttribute('id');
+        const isCurrentTab = id === selectedId;
+        if (isCurrentTab) {
+          tab.setAttribute('aria-selected', 'true');
+          tab.removeAttribute('tabindex');
+          if (setFocus) tab.focus();
+          // Show corresponding panel
+          showActivePanel(element);
+        } else {
+          tab.setAttribute('tabindex', '-1');
+          tab.setAttribute('aria-selected', 'false');
         }
       });
+    };
 
-      tab.addEventListener('click', (event) =>
-        setSelectedTab(event.currentTarget),
-      );
-    });
-  };
+    const initArrowNavigation = () => {
+      const firstIndex = 0;
+      const lastIndex = tabs.length - 1;
+      tabs.forEach((tab, index) => {
+        tab.addEventListener('keydown', (event) => {
+          const isFirst = index <= firstIndex;
+          const isLast = index >= lastIndex;
+          const previousIndex = index - 1;
+          const nextIndex = index + 1;
+          switch (event.key) {
+            case 'ArrowLeft':
+              const nextTabOnArrowLeft =
+                tabs[isFirst ? lastIndex : previousIndex];
+              setSelectedTab(nextTabOnArrowLeft);
+              break;
+            case 'ArrowRight':
+              const nextTabOnArrowRight = tabs[isLast ? 0 : nextIndex];
+              setSelectedTab(nextTabOnArrowRight);
+              break;
+            case 'Home':
+              const nextTabOnHome = tabs[firstIndex];
+              setSelectedTab(nextTabOnHome);
+              break;
+            case 'End':
+              const nextTabOnEnd = tabs[lastIndex];
+              setSelectedTab(nextTabOnEnd);
+              break;
+            default:
+              break;
+          }
+        });
 
-  const initTabs = () => {
+        tab.addEventListener('click', (event) =>
+          setSelectedTab(event.currentTarget),
+        );
+      });
+    };
+
+    // Init when specific DOM is ready
     initArrowNavigation();
 
     // tabs should not be focus navigable
@@ -177,5 +178,20 @@
     setSelectedTab(tabs[0], false);
   };
 
-  window.addEventListener('load', initTabs);
+  // Tabs should be initialized when all elements are available in storybook panel
+  const storybookRootPanel = document.querySelector('#root');
+  const observer = new MutationObserver((mutationList) => {
+    for (const mutation of mutationList) {
+      // Check if storybook panel is showing the tabs demo
+      const isOnTabDemoView =
+        mutation.type === 'childList' &&
+        mutation.target.baseURI.includes('components-navigation-tabs--demo');
+      if (isOnTabDemoView) initTabs();
+    }
+  });
+  observer.observe(storybookRootPanel, {
+    attributes: true,
+    childList: true,
+    characterData: true,
+  });
 </script>

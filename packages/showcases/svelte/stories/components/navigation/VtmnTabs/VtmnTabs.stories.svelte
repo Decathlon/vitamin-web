@@ -26,7 +26,7 @@
       {#each tabItems() as { tabText }, index}
         <VtmnTabsItem
           on:click={() => action('click')(index.toString())}
-          aria-selected={index === 0 ? true : false}
+          aria-selected={index === 0}
         >
           {tabText}
         </VtmnTabsItem>
@@ -42,7 +42,7 @@
         <VtmnTabsItem
           on:click={() => action('click')(index.toString())}
           icon="heart-line"
-          aria-selected={index === 2 ? true : false}
+          aria-selected={index === 2}
         >
           {tabText}
         </VtmnTabsItem>
@@ -59,7 +59,7 @@
           on:click={() => action('click')(index.toString())}
           icon="heart-line"
           badgeValue={6}
-          aria-selected={index === 3 ? true : false}
+          aria-selected={index === 3}
         >
           {tabText}
         </VtmnTabsItem>
