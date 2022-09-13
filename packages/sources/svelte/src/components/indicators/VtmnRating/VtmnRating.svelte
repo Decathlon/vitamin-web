@@ -90,28 +90,6 @@
 </script>
 
 <div class={componentClass} aria-disabled={disabled} {...$$restProps}>
-  {#if !readonly}
-    <div
-      class="vtmn-rating--interactive"
-      aria-label="Rate the article"
-      role="radiogroup"
-      data-rating={value}
-    >
-      {#each Array(starsCnt) as _, index}
-        {@const position = index + 1}
-        <input
-          type="radio"
-          bind:group={value}
-          {name}
-          value={position}
-          id={`${name}-${position}`}
-          aria-label={`${position} star out of 5`}
-          {disabled}
-        />
-        <label for={`${name}-${position}`} />
-      {/each}
-    </div>
-  {/if}
   {#if readonly}
     {#each Array(starsCnt) as _, index}
       {@const position = index + 1}
@@ -121,18 +99,36 @@
       />
     {/each}
     {#if showValue}
-      <span class="vtmn-rating_comment--primary" aria-label="article rating">
+      <span class="vtmn-rating_comment--primary">
         {value}/5
       </span>
     {/if}
     {#if comments}
-      <span
-        class="vtmn-rating_comment--secondary"
-        aria-label="number of ratings"
-      >
+      <span class="vtmn-rating_comment--secondary">
         {comments}
       </span>
     {/if}
+  {:else}
+    <div
+      class="vtmn-rating--interactive"
+      role="radiogroup"
+      data-rating={value}
+      {...$$restProps}
+    >
+      {#each Array(starsCnt) as _, index}
+        {@const position = index + 1}
+        <input
+          type="radio"
+          bind:group={value}
+          {name}
+          value={position}
+          id={`${name}-${position}`}
+          aria-label={`${position}/5`}
+          {disabled}
+        />
+        <label for={`${name}-${position}`} />
+      {/each}
+    </div>
   {/if}
 </div>
 
