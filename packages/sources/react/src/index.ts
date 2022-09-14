@@ -51,6 +51,12 @@ export { VtmnTabs } from './components/navigation/VtmnTabs';
 export type { VtmnTabsProps } from './components/navigation/VtmnTabs';
 export { VtmnTabsItem } from './components/navigation/VtmnTabs';
 export type { VtmnTabsItemProps } from './components/navigation/VtmnTabs';
+export { VtmnTabsItems } from './components/navigation/VtmnTabs';
+export type { VtmnTabsItemsProps } from './components/navigation/VtmnTabs';
+export { VtmnTabsPanel } from './components/navigation/VtmnTabs';
+export type { VtmnTabsPanelProps } from './components/navigation/VtmnTabs';
+export { VtmnTabsPanels } from './components/navigation/VtmnTabs';
+export type { VtmnTabsPanelsProps } from './components/navigation/VtmnTabs';
 
 // Overlays
 export { VtmnAlert } from './components/overlays/VtmnAlert';

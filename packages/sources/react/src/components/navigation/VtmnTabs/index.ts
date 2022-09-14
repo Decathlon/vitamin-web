@@ -1,4 +1,10 @@
 export { default as VtmnTabs } from './VtmnTabs';
 export * from './VtmnTabs';
+export { default as VtmnTabsItems } from './VtmnTabsItems';
+export * from './VtmnTabsItems';
 export { default as VtmnTabsItem } from './VtmnTabsItem';
 export * from './VtmnTabsItem';
+export { default as VtmnTabsPanels } from './VtmnTabsPanels';
+export * from './VtmnTabsPanels';
+export { default as VtmnTabsPanel } from './VtmnTabsPanel';
+export * from './VtmnTabsPanel';

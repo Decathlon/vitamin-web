@@ -1,48 +1,47 @@
 import * as React from 'react';
 import '@vtmn/css-tabs/dist/index-with-vars.css';
-import { VtmnTabsAlign, VtmnTabsSize } from './types';
-import { VtmnDivider } from '../../../components/structure/VtmnDivider';
-import clsx from 'clsx';
+import { VtmnTabsItemProps } from './VtmnTabsItem';
+import { VtmnTabsPanelProps } from './VtmnTabsPanel';
 
 export interface VtmnTabsProps extends React.ComponentPropsWithoutRef<'ul'> {
   /**
-   * The alignment of the tabs.
-   * @type {VtmnTabsAlign}
-   * @defaultValue 'start'
+   * The default current tab index.
+   * @type {number}
+   * @defaultValue 0
    */
-  align?: VtmnTabsAlign;
-
-  /**
-   * The size of the tabs.
-   * @type {VtmnTabsSize}
-   * @defaultValue 'medium'
-   */
-  size?: VtmnTabsSize;
+  defaultCurrentTabIndex?: number;
 
   /**
    * The content to render inside the component.
    * @defaultValue undefined
    */
-  children?: React.ReactNode;
+  children: React.ReactNode;
 }
 
-export const VtmnTabs = ({ className, children, ...props }: VtmnTabsProps) => {
+const VtmnTabs = ({
+  className,
+  defaultCurrentTabIndex = 0,
+  children,
+  ...props
+}: VtmnTabsProps) => {
+  const [currentTabIndex, setCurrentTabIndex] = React.useState(
+    defaultCurrentTabIndex,
+  );
+
   return (
-    <nav>
-      <ul
-        className={clsx(
-          'vtmn-tabs',
-          `vtmn-tabs_align--${props.align}`,
-          `vtmn-tabs_size--${props.size}`,
-          className,
-        )}
-        role="tablist"
-        {...props}
-      >
-        {children}
-      </ul>
-      <VtmnDivider />
-    </nav>
+    <>
+      {/* @ts-expect-error: Not all code paths return a value */}
+      {React.Children.map(children, (child, index) => {
+        if (React.isValidElement(child)) {
+          return React.cloneElement(child, {
+            currentTabIndex,
+            setCurrentTabIndex,
+            key: index,
+            props,
+          } as Partial<VtmnTabsItemProps | VtmnTabsPanelProps>);
+        }
+      })}
+    </>
   );
 };
 
