@@ -9,9 +9,6 @@
   block-size: fit-content;
   inline-size: 100%;
   background-color: var(--vtmn-semantic-color_background-primary);
-}
-
-.vtmn-tabs > ul {
   display: block;
   white-space: nowrap;
   overflow-x: auto;
@@ -19,14 +16,13 @@
   padding: 0;
 }
 
-.vtmn-tabs li {
+.vtmn-tabs > li {
   display: inline-flex;
   padding-inline: rem(2px);
   padding-block-start: rem(2px);
 }
 
-.vtmn-tabs a,
-.vtmn-tabs_size--medium a {
+.vtmn-tabs > li > button {
   display: inline-flex;
   align-items: center;
   font-family: var(--vtmn-typo_font-family);
@@ -43,25 +39,25 @@
   text-decoration: none;
 }
 
-.vtmn-tabs a:hover {
+.vtmn-tabs > li > button:hover {
   color: var(--vtmn-semantic-color_hover-brand);
 }
 
-.vtmn-tabs a:active {
+.vtmn-tabs > li > button:active {
   color: var(--vtmn-semantic-color_active-brand);
 }
 
-.vtmn-tabs a:focus-visible {
+.vtmn-tabs > li > button:focus-visible {
   border-block-end: rem(2px) solid var(--vtmn-semantic-color_content-primary);
   box-shadow: 0 0 0 rem(2px) var(--vtmn-semantic-color_content-primary);
 }
 
-.vtmn-tabs a.selected {
+.vtmn-tabs > li > button[aria-selected='true'] {
   color: var(--vtmn-semantic-color_content-active);
   border-block-end: rem(2px) solid var(--vtmn-semantic-color_content-active);
 }
 
-.vtmn-tabs a.selected:focus-visible {
+.vtmn-tabs > li > button[aria-selected='true']:focus-visible {
   border-block-end: rem(2px) solid var(--vtmn-semantic-color_content-primary);
 }
 
@@ -85,24 +81,24 @@
 /* ALIGN */
 
 /* Start (default) */
-.vtmn-tabs_align--start > ul {
+.vtmn-tabs_align--start {
   text-align: start;
 }
 
 /* Center */
-.vtmn-tabs_align--center > ul {
+.vtmn-tabs_align--center {
   text-align: center;
 }
 
 /* End */
-.vtmn-tabs_align--end > ul {
+.vtmn-tabs_align--end {
   text-align: end;
 }
 
 /* SIZES */
 
 /* Medium (default) */
-.vtmn-tabs_size--medium a {
+.vtmn-tabs_size--medium > li > button {
   font-size: var(--vtmn-typo_text-2-font-size);
   padding-inline: rem(20px);
   padding-block-start: var(--vtmn-spacing_3);
@@ -114,7 +110,7 @@
 }
 
 /* Small */
-.vtmn-tabs_size--small a {
+.vtmn-tabs_size--small > li > button {
   font-size: var(--vtmn-typo_text-3-font-size);
   padding-inline: var(--vtmn-spacing_4);
   padding-block-start: var(--vtmn-spacing_2);

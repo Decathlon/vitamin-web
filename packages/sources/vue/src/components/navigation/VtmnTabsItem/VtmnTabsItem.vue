@@ -9,10 +9,6 @@ export default /*#__PURE__*/ defineComponent({
   name: 'VtmnTabs',
   components: { VtmnBadge, VtmnIcon },
   props: {
-    href: {
-      type: String as PropType<string>,
-      default: '#',
-    },
     icon: {
       type: String as PropType<VitamixId>,
       default: undefined,
@@ -33,17 +29,14 @@ export default /*#__PURE__*/ defineComponent({
         color: 'inherit',
         fontSize: 'inherit',
       },
-      classes: computed(() => ({
-        selected: props.selected,
-      })),
     };
   },
 });
 </script>
 
 <template>
-  <li role="tab">
-    <a :href="href" :class="classes" v-bind="$attrs">
+  <li>
+    <button role="tab" v-bind="$attrs">
       <VtmnIcon
         v-if="icon"
         :value="icon"
@@ -52,6 +45,6 @@ export default /*#__PURE__*/ defineComponent({
       />
       <slot />
       <VtmnBadge v-if="badgeValue" :value="badgeValue" />
-    </a>
+    </button>
   </li>
 </template>

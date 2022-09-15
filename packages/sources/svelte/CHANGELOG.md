@@ -3,6 +3,66 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.52.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.52.3...@vtmn/svelte@0.52.4) (2022-09-13)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+## [0.52.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.52.2...@vtmn/svelte@0.52.3) (2022-09-13)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** add aria-label for accessibility on `VtmnRating` ([#1247](https://github.com/Decathlon/vitamin-web/issues/1247)) ([9114aec](https://github.com/Decathlon/vitamin-web/commit/9114aec570e7d88276cc51ffb0a1bcb7a2cca365))
+
+
+
+
+
+## [0.52.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.52.1...@vtmn/svelte@0.52.2) (2022-09-05)
+
+**Note:** Version bump only for package @vtmn/svelte
+
+
+
+
+
+## [0.52.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.52.0...@vtmn/svelte@0.52.1) (2022-09-02)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** add unit param on `VtmnSkeleton` ([#1252](https://github.com/Decathlon/vitamin-web/issues/1252)) ([e7861f2](https://github.com/Decathlon/vitamin-web/commit/e7861f29ce9a55875411af01bb1b4df80a493a5d))
+
+
+
+
+
+# [0.52.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.51.7...@vtmn/svelte@0.52.0) (2022-09-02)
+
+
+### Features
+
+* **@vtmn/svelte:** add `on:input` and `on:change` on `VtmnTextInput` component ([#1243](https://github.com/Decathlon/vitamin-web/issues/1243)) ([3f3398a](https://github.com/Decathlon/vitamin-web/commit/3f3398a7ae3d761d86bf4026b7f0a99c4ec6dec2))
+
+
+
+
+
+## [0.51.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.51.6...@vtmn/svelte@0.51.7) (2022-09-01)
+
+
+### Bug Fixes
+
+* **@vtmn/svelte:** add input ref into the component ([#1250](https://github.com/Decathlon/vitamin-web/issues/1250)) ([8da26d9](https://github.com/Decathlon/vitamin-web/commit/8da26d98761164e0d103dfc527a8ce35a248798b))
+
+
+
+
+
 ## [0.51.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.51.5...@vtmn/svelte@0.51.6) (2022-08-22)
 
 
