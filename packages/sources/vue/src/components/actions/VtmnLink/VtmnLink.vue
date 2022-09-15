@@ -12,6 +12,14 @@ export default /*#__PURE__*/ defineComponent({
       validator: (val: VtmnLinkSize) =>
         ['small', 'medium', 'large'].includes(val),
     },
+    target: {
+      type: String as PropType<string>,
+      default: undefined,
+    },
+    rel: {
+      type: String as PropType<string>,
+      default: '',
+    },
     standalone: {
       type: Boolean as PropType<boolean>,
       default: false,
@@ -28,6 +36,15 @@ export default /*#__PURE__*/ defineComponent({
   setup(props) {
     props = reactive(props);
 
+    let computedRel =
+      props.target === '_blank'
+        ? Array.from(
+            new Set(props.rel.split(' ')).add('noopener').add('noreferrer'),
+          )
+            .join(' ')
+            .trim()
+        : props.rel;
+
     return {
       classes: computed(() => ({
         'vtmn-link': true,
@@ -36,13 +53,14 @@ export default /*#__PURE__*/ defineComponent({
         'vtmn-link--reversed': props.reversed,
         'vtmn-link--icon-along': props.iconAlong && props.standalone,
       })),
+      computedRel,
     };
   },
 });
 </script>
 
 <template>
-  <a :class="classes" v-bind="$attrs">
+  <a :target="target" :rel="computedRel" :class="classes" v-bind="$attrs">
     <slot />
   </a>
 </template>
