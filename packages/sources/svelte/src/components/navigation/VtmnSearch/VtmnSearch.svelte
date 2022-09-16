@@ -50,11 +50,13 @@
    */
   export let ariaLabels = {};
 
+  let className = undefined;
   /**
    * Custom classes to apply to the component.
+   *
    * @type {string}
    */
-  export let className = undefined;
+  export { className as class };
 
   const dispatch = createEventDispatcher();
 
