@@ -33,6 +33,12 @@
   export let value;
 
   /**
+   * Reference of the search input
+   * @type {HTMLElement}
+   */
+  export let inputRef;
+
+  /**
    * @typedef AriaLabels
    * @type {object}
    * @property {string} clearButton - Aria label of the clear button.
@@ -44,11 +50,13 @@
    */
   export let ariaLabels = {};
 
+  let className = undefined;
   /**
    * Custom classes to apply to the component.
+   *
    * @type {string}
    */
-  export let className = undefined;
+  export { className as class };
 
   const dispatch = createEventDispatcher();
 
@@ -73,6 +81,7 @@
 <div class={componentClass} role="search">
   <input
     type="search"
+    bind:this={inputRef}
     {...$$restProps}
     on:click
     on:input

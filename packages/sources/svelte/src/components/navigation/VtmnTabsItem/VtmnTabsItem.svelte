@@ -10,11 +10,11 @@
   $: componentClass = cn(selected && 'selected');
 </script>
 
-<li role="tab">
-  <a
+<li>
+  <button
     class={componentClass}
+    role="tab"
     {...$$restProps}
-    {href}
     on:click|preventDefault
     on:mouseover
     on:mouseenter
@@ -30,5 +30,5 @@
     {#if badgeValue}
       <VtmnBadge value={badgeValue} />
     {/if}
-  </a>
+  </button>
 </li>

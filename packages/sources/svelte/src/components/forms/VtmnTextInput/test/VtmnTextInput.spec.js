@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
 
-import { render } from '@testing-library/svelte';
+import { render, fireEvent } from '@testing-library/svelte';
 import VtmnTextInput from '../VtmnTextInput.svelte';
 
 describe('VtmnTextInput', () => {
@@ -31,6 +31,18 @@ describe('VtmnTextInput', () => {
       );
       expect(getHelperText(container)).toBeUndefined();
       expect(getTextInput(container)).not.toHaveAttribute('disabled');
+    });
+
+    test('Should trigger event change when the input value changes', async () => {
+      const onChange = jest.fn((e) => e.target.value);
+      const nextValue = 'Unit test value changed';
+      const { container, component } = render(VtmnTextInput, { ...params });
+      component.$on('input', onChange);
+      await fireEvent.input(getTextInput(container), {
+        target: { value: nextValue },
+      });
+      expect(onChange).toHaveBeenCalledTimes(1);
+      expect(onChange.mock.results[0].value).toEqual(nextValue);
     });
 
     test('Should display the label if labelText are defined', () => {

@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css",
-  "version": "0.85.5",
+  "version": "0.85.7",
   "description": "Decathlon Design System - Vitamin global CSS styles library",
   "keywords": [
     "design-system",
@@ -34,7 +34,7 @@
     "start": "chokidar \"src/**\" -i \"**/dist/**\" -c \"yarn build\""
   },
   "devDependencies": {
-    "@vtmn/css-accordion": "^0.5.1",
+    "@vtmn/css-accordion": "^0.5.2",
     "@vtmn/css-alert": "^0.8.4",
     "@vtmn/css-badge": "^0.13.1",
     "@vtmn/css-breadcrumb": "^0.7.4",
@@ -56,14 +56,14 @@
     "@vtmn/css-progressbar": "^0.7.1",
     "@vtmn/css-quantity": "^0.8.3",
     "@vtmn/css-radio-button": "^0.8.3",
-    "@vtmn/css-rating": "^0.5.5",
-    "@vtmn/css-search": "^0.7.5",
+    "@vtmn/css-rating": "^0.5.6",
+    "@vtmn/css-search": "^0.7.6",
     "@vtmn/css-select": "^0.8.5",
     "@vtmn/css-skeleton": "^0.5.3",
     "@vtmn/css-snackbar": "^0.7.3",
-    "@vtmn/css-tabs": "^0.7.2",
+    "@vtmn/css-tabs": "^0.7.3",
     "@vtmn/css-tag": "^0.7.3",
-    "@vtmn/css-tailwind-preset": "^0.35.15",
+    "@vtmn/css-tailwind-preset": "^0.35.17",
     "@vtmn/css-text-input": "^0.17.3",
     "@vtmn/css-toast": "^0.7.3",
     "@vtmn/css-toggle": "^0.8.3",
