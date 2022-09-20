@@ -16,7 +16,6 @@ describe('VtmnPopover', () => {
       'aria-describedby',
       'unit-test-id',
     );
-    expect(getPopover(container)).toHaveAttribute('tabindex', '0');
     expect(getByRole('tooltip')).toHaveAttribute('id', 'unit-test-id');
   });
   test('Should apply the position', () => {
