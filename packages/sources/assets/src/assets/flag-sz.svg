@@ -1,4 +1,5 @@
 <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_503_4826)">
 <rect width="28" height="20" rx="2" fill="white"/>
 <mask id="mask0_503_4826" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20">
 <rect width="28" height="20" rx="2" fill="white"/>
@@ -7,15 +8,21 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4H28V0H0V4Z" fill="#486BCA"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 20H28V16H0V20Z" fill="#486BCA"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 16H28V4H0V16Z" fill="#FFDF20"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0 14.6667H28V5.33334H0V14.6667Z" fill="#CF1615"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M14 13.3333C17.3137 13.3333 20 9.99999 20 9.99999C20 9.99999 17.3137 6.66666 14 6.66666C10.6863 6.66666 8 9.99999 8 9.99999C8 9.99999 10.6863 13.3333 14 13.3333Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 14.6667H28V5.33333H0V14.6667Z" fill="#CF1615"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14 13.3333C17.3137 13.3333 20 10 20 10C20 10 17.3137 6.66667 14 6.66667C10.6863 6.66667 8 10 8 10C8 10 10.6863 13.3333 14 13.3333Z" fill="white"/>
 <mask id="mask1_503_4826" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="8" y="6" width="12" height="8">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M14 13.3333C17.3137 13.3333 20 9.99999 20 9.99999C20 9.99999 17.3137 6.66666 14 6.66666C10.6863 6.66666 8 9.99999 8 9.99999C8 9.99999 10.6863 13.3333 14 13.3333Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14 13.3333C17.3137 13.3333 20 10 20 10C20 10 17.3137 6.66667 14 6.66667C10.6863 6.66667 8 10 8 10C8 10 10.6863 13.3333 14 13.3333Z" fill="white"/>
 </mask>
 <g mask="url(#mask1_503_4826)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M14.6665 6.66666H7.99984V13.3333H13.3332L14.6665 6.66666Z" fill="#262626"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M15.3332 10.6667C15.7014 10.6667 15.9998 10.3682 15.9998 10C15.9998 9.63182 15.7014 9.33334 15.3332 9.33334C14.965 9.33334 14.6665 9.63182 14.6665 10C14.6665 10.3682 14.965 10.6667 15.3332 10.6667Z" fill="#1A1A1A"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M12.6667 10.6666C13.0349 10.6666 13.3333 10.3682 13.3333 9.99998C13.3333 9.63179 13.0349 9.33331 12.6667 9.33331C12.2985 9.33331 12 9.63179 12 9.99998C12 10.3682 12.2985 10.6666 12.6667 10.6666Z" fill="#F6F6F6"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.6665 6.66667H7.99984V13.3333H13.3332L14.6665 6.66667Z" fill="#262626"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.3332 10.6667C15.7014 10.6667 15.9998 10.3682 15.9998 10C15.9998 9.63184 15.7014 9.33336 15.3332 9.33336C14.965 9.33336 14.6665 9.63184 14.6665 10C14.6665 10.3682 14.965 10.6667 15.3332 10.6667Z" fill="#1A1A1A"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.6667 10.6667C13.0349 10.6667 13.3333 10.3682 13.3333 10C13.3333 9.63182 13.0349 9.33334 12.6667 9.33334C12.2985 9.33334 12 9.63182 12 10C12 10.3682 12.2985 10.6667 12.6667 10.6667Z" fill="#F6F6F6"/>
 </g>
 </g>
+</g>
+<defs>
+<clipPath id="clip0_503_4826">
+<rect width="28" height="20" rx="2" fill="white"/>
+</clipPath>
+</defs>
 </svg>
