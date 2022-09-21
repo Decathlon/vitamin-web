@@ -1,6 +1,6 @@
 export const parameters = {
   actions: {
-    handles: ['mouseenter', 'click', 'focusin', 'focusout'],
+    handles: ['mouseenter', 'click', 'focusin', 'focusout', 'open', 'close'],
   },
   design: {
     type: 'figma',
@@ -19,7 +19,7 @@ export const argTypes = {
   },
   open: {
     type: { name: 'boolean', required: false },
-    description: 'Define if accorion is open or not',
+    description: 'Define if accordion is open or not',
     defaultValue: false,
     control: {
       type: 'boolean',
@@ -40,15 +40,5 @@ export const argTypes = {
     control: {
       type: 'boolean',
     },
-  },
-  onOpen: {
-    type: { name: 'function', required: false },
-    description: 'Callback fired when the accordion is opening',
-    action: 'onOpen',
-  },
-  onClose: {
-    type: { name: 'function', required: false },
-    description: 'Callback fired when the accordion is closing',
-    action: 'onClose',
   },
 };

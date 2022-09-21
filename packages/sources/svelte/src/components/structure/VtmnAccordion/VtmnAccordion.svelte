@@ -34,9 +34,10 @@
 
   const dispatch = createEventDispatcher();
 
-  const toggle = () => {
+  const toggle = ({ target }) => {
     open = !open;
-    dispatch(open ? 'open' : 'close');
+    if (open) dispatch('open', { target });
+    else dispatch('close', { target });
   };
 
   $: componentClass = cn(

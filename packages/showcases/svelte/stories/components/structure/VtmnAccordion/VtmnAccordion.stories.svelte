@@ -1,10 +1,11 @@
 <script>
-  import { Meta, Story } from '@storybook/addon-svelte-csf';
+  import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
   import { VtmnAccordion, VtmnButton } from '@vtmn/svelte';
   import {
     argTypes,
     parameters,
   } from '@vtmn/showcase-core/csf/components/structure/accordion.csf';
+  import { action } from '@storybook/addon-actions';
 </script>
 
 <Meta
@@ -24,38 +25,46 @@
   }}
 />
 
-<Story name="Overview" let:args>
-  <VtmnAccordion class="accordion-stories" {...args}>
-    <p>
-      {args.slot}
-    </p>
+<Template let:args>
+  <VtmnAccordion
+    {...args}
+    class="accordion-stories"
+    on:open={(e) => console.log('onOpen', e)}
+    on:close={action('close')}
+  >
+    {args.slot}
   </VtmnAccordion>
-</Story>
+</Template>
 
-<Story name="Simple">
-  <VtmnAccordion summary="Item 1" class="accordion-stories" open>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-  </VtmnAccordion>
-  <VtmnAccordion summary="Item 2" class="accordion-stories">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-  </VtmnAccordion>
-  <VtmnAccordion summary="Item 3" disabled class="accordion-stories">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-  </VtmnAccordion>
-</Story>
+<Story name="Overview" />
 
-<Story name="With left icons">
-  <VtmnAccordion summary="Item 1" withIconLeft class="accordion-stories" open>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-  </VtmnAccordion>
-  <VtmnAccordion summary="Item 2" withIconLeft class="accordion-stories">
+<Story name="Multiple" let:args>
+  <VtmnAccordion
+    {...args}
+    summary="Item 1"
+    class="accordion-stories"
+    open
+    on:open={action('open')}
+    on:close={action('close')}
+  >
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
   </VtmnAccordion>
   <VtmnAccordion
+    {...args}
+    summary="Item 2"
+    class="accordion-stories"
+    on:open={action('open')}
+    on:close={action('close')}
+  >
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </VtmnAccordion>
+  <VtmnAccordion
+    {...args}
     summary="Item 3"
     disabled
-    withIconLeft
     class="accordion-stories"
+    on:open={action('open')}
+    on:close={action('close')}
   >
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
   </VtmnAccordion>
@@ -67,24 +76,13 @@
     withIconLeft
     class="accordion-stories"
     open
+    on:open={action('open')}
+    on:close={action('close')}
     {...args}
   >
     <VtmnButton variant="primary" size="small">Button 1</VtmnButton>
     <VtmnButton variant="primary" size="small">Button 2</VtmnButton>
     <VtmnButton variant="primary" size="small">Button 3</VtmnButton>
-  </VtmnAccordion>
-</Story>
-
-<Story name="Callback on toggle" let:args>
-  <VtmnAccordion
-    summary="Item 1"
-    class="accordion-stories"
-    open
-    on:close={args.onClose}
-    on:open={args.onOpen}
-    {...args}
-  >
-    {args.slot}
   </VtmnAccordion>
 </Story>
 

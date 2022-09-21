@@ -11,6 +11,16 @@ export default {
   component: VtmnAccordion,
   argTypes: {
     ...argTypes,
+    onOpen: {
+      type: { name: 'function', required: false },
+      description: 'Callback fired when the accordion is opening',
+      action: 'onOpen',
+    },
+    onClose: {
+      type: { name: 'function', required: false },
+      description: 'Callback fired when the accordion is closing',
+      action: 'onClose',
+    },
     children: {
       type: { name: 'string', required: false },
       description: 'The content to render inside the component.',
