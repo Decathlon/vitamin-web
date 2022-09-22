@@ -65,7 +65,7 @@ describe('VtmnLink', () => {
     const { container } = render(VtmnLink, { ...links, rel: 'hello world' });
     expect(getLink(container)).toHaveAttribute('rel', 'hello world');
   });
-  test('Should defined the rel to noopener noreferrer if target is blank', () => {
+  test('Should define the rel to noopener noreferrer if target is blank', () => {
     const { container } = render(VtmnLink, {
       props: { ...links, target: '_blank' },
     });
@@ -75,6 +75,6 @@ describe('VtmnLink', () => {
     const { container } = render(VtmnLink, {
       props: { ...links, target: '_blank', rel: 'noopener' },
     });
-    expect(getLink(container)).toHaveAttribute('rel', 'noopener noreferrer');
+    expect(getLink(container)).toHaveAttribute('rel', 'noopener');
   });
 });

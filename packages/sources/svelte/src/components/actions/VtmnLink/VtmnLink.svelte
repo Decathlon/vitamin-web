@@ -10,13 +10,6 @@
   export let href;
 
   /**
-   * The target of the link.
-   * @type {string}
-   * @requires
-   */
-  export let target = undefined;
-
-  /**
    * The size of the link.
    * @type {string}
    * @defaultValue 'medium'
@@ -44,12 +37,6 @@
    */
   export let iconAlong = false;
 
-  /**
-   * The relationship of the linked URL as space-separated link types.
-   * @type {string}
-   */
-  export let rel = '';
-
   let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
@@ -66,20 +53,17 @@
   );
 
   let computedRel =
-    target === '_blank'
-      ? Array.from(new Set(rel.split(' ')).add('noopener').add('noreferrer'))
+    $$restProps['target'] === '_blank'
+      ? Array.from(
+          new Set($$restProps['rel']).add('noopener').add('noreferrer'),
+        )
           .join(' ')
           .trim()
-      : rel;
+      : $$restProps['rel'];
 </script>
 
-<a
-  {href}
-  {target}
-  class={componentClass}
-  rel={computedRel}
-  on:click
-  {...$$restProps}><slot /></a
+<a {href} class={componentClass} rel={computedRel} on:click {...$$restProps}
+  ><slot /></a
 >
 
 <style lang="css">
