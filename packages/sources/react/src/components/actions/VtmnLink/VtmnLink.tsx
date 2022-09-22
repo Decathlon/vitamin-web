@@ -18,21 +18,6 @@ export interface VtmnLinkProps extends React.ComponentPropsWithoutRef<'a'> {
   standalone?: boolean;
 
   /**
-   * The target attribute of the link.
-   * @type {string}
-   * @defaultValue undefined
-   * @requires
-   */
-  target: string;
-
-  /**
-   * The rel attribute of the link.
-   * @type {string}
-   * @defaultValue undefined
-   */
-  rel?: string;
-
-  /**
    * Whether link is reversed or not.
    * @type {boolean}
    * @defaultValue false
@@ -57,25 +42,24 @@ export const VtmnLink = ({
   iconAlong = false,
   standalone = false,
   reversed = false,
-  target,
-  rel = '',
   size = 'medium',
   children,
   className,
   ...props
 }: VtmnLinkProps) => {
+  const relAttrValues = Array.from(
+    new Set([
+      // If component has a given "rel" attribute, keep values
+      ...(props?.rel?.split(' ') ?? []),
+      // If comp has "target" set to "blank", add some values
+      ...(props?.target === '_blank' ? ['noopener', 'noreferrer'] : []),
+    ]),
+  )
+    .join(' ')
+    .trim();
+
   return (
     <a
-      target={target}
-      rel={
-        target === '_blank'
-          ? Array.from(
-              new Set(rel.split(' ')).add('noopener').add('noreferrer'),
-            )
-              .join(' ')
-              .trim()
-          : rel
-      }
       className={clsx(
         'vtmn-link',
         `vtmn-link_size--${size}`,
@@ -84,6 +68,7 @@ export const VtmnLink = ({
         { 'vtmn-link--icon-along': standalone && iconAlong },
         className,
       )}
+      {...(relAttrValues && { rel: relAttrValues })}
       {...props}
     >
       {children}
