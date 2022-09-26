@@ -40,13 +40,19 @@ export const VtmnPopover = ({
       className="vtmn-popover"
       data-position={position}
       aria-describedby={identifier}
-      tabIndex={0}
+      aria-labelledby={`${identifier}-title`}
       {...props}
     >
       {children}
 
-      <div id={identifier} role="tooltip">
-        <p className="vtmn-popover_title">{title}</p>
+      <div id={identifier} role="dialog">
+        <p
+          className="vtmn-popover_title"
+          id={`${identifier}-title`}
+          role="heading"
+        >
+          {title}
+        </p>
         <p className="vtmn-popover_text">{body}</p>
       </div>
     </div>
