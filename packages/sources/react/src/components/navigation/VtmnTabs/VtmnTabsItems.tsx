@@ -71,7 +71,7 @@ export const VtmnTabsItems = ({
       );
   };
 
-  const handleKeyPress = (event: React.KeyboardEvent<HTMLUListElement>) => {
+  const handleKeyPress = (event: React.KeyboardEvent<HTMLDivElement>) => {
     if (event.key === 'ArrowLeft') handlePrev();
     if (event.key === 'ArrowRight') handleNext();
   };
@@ -92,7 +92,7 @@ export const VtmnTabsItems = ({
 
   return (
     <>
-      <ul
+      <div
         className={clsx(
           'vtmn-tabs',
           `vtmn-tabs_align--${props.align}`,
@@ -119,7 +119,7 @@ export const VtmnTabsItems = ({
             } as VtmnTabsItemProps);
           }
         })}
-      </ul>
+      </div>
       <VtmnDivider />
     </>
   );

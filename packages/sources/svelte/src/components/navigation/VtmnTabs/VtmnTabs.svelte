@@ -29,9 +29,9 @@
   );
 </script>
 
-<ul class={componentClass} role="tablist" {...$$restProps}>
+<div class={componentClass} role="tablist" {...$$restProps}>
   <slot />
-</ul>
+</div>
 <VtmnDivider />
 
 <style lang="css">

@@ -51,26 +51,24 @@ export const VtmnTabsItem = React.forwardRef<
     ref,
   ) => {
     return (
-      <li>
-        <button
-          role="tab"
-          aria-selected={isActive}
-          ref={ref}
-          {...(isActive ? {} : { tabIndex: -1 })}
-          onClick={onClick}
-          {...props}
-        >
-          {Boolean(icon) && (
-            <VtmnIcon
-              value={icon as VitamixId}
-              aria-hidden="true"
-              style={{ color: 'inherit', fontSize: 'inherit' }}
-            />
-          )}
-          {children}
-          {Boolean(badgeValue) && <VtmnBadge value={badgeValue} />}
-        </button>
-      </li>
+      <button
+        role="tab"
+        aria-selected={isActive}
+        ref={ref}
+        {...(isActive ? {} : { tabIndex: -1 })}
+        onClick={onClick}
+        {...props}
+      >
+        {Boolean(icon) && (
+          <VtmnIcon
+            value={icon as VitamixId}
+            aria-hidden="true"
+            style={{ color: 'inherit', fontSize: 'inherit' }}
+          />
+        )}
+        {children}
+        {Boolean(badgeValue) && <VtmnBadge value={badgeValue} />}
+      </button>
     );
   },
 );

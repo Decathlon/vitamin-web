@@ -1,35 +1,31 @@
 <div class="block">
-  <ul
+  <div
     id="demo-tabs-tablist"
     class="vtmn-tabs"
     role="tablist"
     aria-label="Tabs navigation"
+    tabindex="-1"
   >
-    <li>
-      <button role="tab" id="tab-demo-1" aria-controls="tabpanel-demo-1">
-        Tab Name 1
-      </button>
-    </li>
-    <li>
-      <button role="tab" id="tab-demo-2" aria-controls="tabpanel-demo-2">
-        Tab Name 2
-      </button>
-    </li>
-    <li>
-      <button role="tab" id="tab-demo-3" aria-controls="tabpanel-demo-3">
-        Tab Name 3
-      </button>
-    </li>
-    <li>
-      <button role="tab" id="tab-demo-4" aria-controls="tabpanel-demo-4">
-        Tab Name 4
-      </button>
-    </li>
-  </ul>
+    <button role="tab" id="tab-demo-1" aria-controls="tabpanel-demo-1">
+      Tab Name 1
+    </button>
+
+    <button role="tab" id="tab-demo-2" aria-controls="tabpanel-demo-2">
+      Tab Name 2
+    </button>
+
+    <button role="tab" id="tab-demo-3" aria-controls="tabpanel-demo-3">
+      Tab Name 3
+    </button>
+
+    <button role="tab" id="tab-demo-4" aria-controls="tabpanel-demo-4">
+      Tab Name 4
+    </button>
+  </div>
   <div class="vtmn-divider" role="separator"></div>
   <div
     id="demo-tabs-tabpanels"
-    class="vtmn-w-full vtmn-p-5 vtmn-bg-background-primary"
+    class="vtmn-w-fdivl vtmn-p-5 vtmn-bg-background-primary"
   >
     <section
       role="tabpanel"
@@ -85,7 +81,7 @@
 <script>
   const initTabs = () => {
     const tabList = document.querySelector('[role=tablist]#demo-tabs-tablist');
-    const tabs = tabList.querySelectorAll('.vtmn-tabs > li > button[role=tab]');
+    const tabs = tabList.querySelectorAll('.vtmn-tabs > button[role=tab]');
     const tabPanels = document.querySelectorAll(
       '#demo-tabs-tabpanels > section[role=tabpanel]',
     );
@@ -149,8 +145,7 @@
               const nextTabOnEnd = tabs[lastIndex];
               setSelectedTab(nextTabOnEnd);
               break;
-            default:
-              break;
+              defadivt: break;
           }
         });
 
@@ -163,7 +158,7 @@
     // Init when specific DOM is ready
     initArrowNavigation();
 
-    // tabs should not be focus navigable
+    // tabs shodivd not be focus navigable
     tabs.forEach((event) => {
       event.setAttribute('tabindex', '-1');
       event.setAttribute('aria-selected', 'false');
@@ -178,7 +173,7 @@
     setSelectedTab(tabs[0], false);
   };
 
-  // Tabs should be initialized when all elements are available in storybook panel
+  // Tabs shodivd be initialized when all elements are available in storybook panel
   const storybookRootPanel = document.querySelector('#root');
   const observer = new MutationObserver((mutationList) => {
     for (const mutation of mutationList) {
