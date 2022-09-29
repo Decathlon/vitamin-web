@@ -12,14 +12,6 @@ export default /*#__PURE__*/ defineComponent({
       validator: (val: VtmnLinkSize) =>
         ['small', 'medium', 'large'].includes(val),
     },
-    target: {
-      type: String as PropType<string>,
-      default: undefined,
-    },
-    rel: {
-      type: String as PropType<string>,
-      default: '',
-    },
     standalone: {
       type: Boolean as PropType<boolean>,
       default: false,
@@ -33,17 +25,26 @@ export default /*#__PURE__*/ defineComponent({
       default: false,
     },
   },
-  setup(props) {
+  setup(props, { attrs }) {
     props = reactive(props);
 
-    let computedRel =
-      props.target === '_blank'
-        ? Array.from(
-            new Set(props.rel.split(' ')).add('noopener').add('noreferrer'),
-          )
-            .join(' ')
-            .trim()
-        : props.rel;
+    let computedRel = '';
+
+    if (String(attrs['target']) === '_blank') {
+      if (attrs['rel'] !== undefined) {
+        computedRel = Array.from(
+          new Set(String(attrs['rel']).split(' '))
+            .add('noopener')
+            .add('noreferrer'),
+        )
+          .join(' ')
+          .trim();
+      } else {
+        computedRel = 'noopener noreferrer';
+      }
+    } else {
+      computedRel = String(attrs['rel']);
+    }
 
     return {
       classes: computed(() => ({
@@ -60,7 +61,7 @@ export default /*#__PURE__*/ defineComponent({
 </script>
 
 <template>
-  <a :target="target" :rel="computedRel" :class="classes" v-bind="$attrs">
+  <a :rel="computedRel" :class="classes" v-bind="$attrs">
     <slot />
   </a>
 </template>
