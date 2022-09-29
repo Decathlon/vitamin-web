@@ -24,13 +24,15 @@
   class={componentClass}
   data-position={position}
   aria-describedby={id}
-  tabindex="0"
+  aria-labelledby={`${id}-title`}
   {...$$restProps}
 >
   <slot />
 
-  <div {id} role="tooltip">
-    <p class="vtmn-popover_title"><slot name="title" /></p>
+  <div {id} role="dialog">
+    <p class="vtmn-popover_title" id={`${id}-title`} role="heading">
+      <slot name="title" />
+    </p>
     <p class="vtmn-popover_text"><slot name="body" /></p>
   </div>
 </div>

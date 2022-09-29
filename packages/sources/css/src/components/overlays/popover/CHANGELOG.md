@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-popover@0.7.3...@vtmn/css-popover@0.7.4) (2022-09-23)
+
+
+### Bug Fixes
+
+* **@vtmn/css, @vtmn/svelte, @vtmn/react, @vtmn/vue:** popover position & a11y ([#1259](https://github.com/Decathlon/vitamin-web/issues/1259)) ([#1261](https://github.com/Decathlon/vitamin-web/issues/1261)) ([219d318](https://github.com/Decathlon/vitamin-web/commit/219d3182e6404ac7a6cede344334e354730e7008))
+
+
+
+
+
 ## [0.7.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-popover@0.7.2...@vtmn/css-popover@0.7.3) (2022-08-22)
 
 **Note:** Version bump only for package @vtmn/css-popover

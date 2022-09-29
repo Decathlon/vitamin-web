@@ -13,7 +13,7 @@
   outline: 0;
 }
 
-.vtmn-popover > [role='tooltip'] > .vtmn-popover_title {
+.vtmn-popover > [role='dialog'] > .vtmn-popover_title {
   margin-block: rem(4px);
   margin-inline: 0;
   font-family: var(--vtmn-typo_font-family);
@@ -23,7 +23,7 @@
   align-self: flex-start;
 }
 
-.vtmn-popover > [role='tooltip'] > .vtmn-popover_text {
+.vtmn-popover > [role='dialog'] > .vtmn-popover_text {
   margin-block: rem(8px);
   margin-inline: 0;
   font-family: var(--vtmn-typo_font-family);
@@ -34,13 +34,13 @@
   text-align: left;
 }
 
-.vtmn-popover > [role='tooltip'] > button {
+.vtmn-popover > [role='dialog'] > button {
   margin: 0;
   align-self: flex-end;
 }
 
 /* ALL POPOVER */
-.vtmn-popover > [role='tooltip'] {
+.vtmn-popover > [role='dialog'] {
   min-inline-size: rem(250px);
   inline-size: auto;
   box-shadow: var(--vtmn-shadow_200);
@@ -55,7 +55,7 @@
   cursor: default;
 }
 
-.vtmn-popover > [role='tooltip']::after {
+.vtmn-popover > [role='dialog']::after {
   border-radius: 0;
   content: ' ';
   block-size: 0;
@@ -64,7 +64,7 @@
   box-shadow: none;
 }
 
-.vtmn-popover:focus-within > [role='tooltip'] {
+.vtmn-popover:focus-within > [role='dialog'] {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -77,13 +77,13 @@
 }
 
 /* POSITION: TOP */
-.vtmn-popover[data-position^='top'] > [role='tooltip'] {
-  bottom: 100%;
+.vtmn-popover[data-position^='top'] > [role='dialog'] {
+  bottom: calc(100% + 1.5em);
   left: 50%;
-  transform: translate(-50%, -1.5em);
+  transform: translateX(-50%);
 }
 
-.vtmn-popover[data-position^='top'] > [role='tooltip']::after {
+.vtmn-popover[data-position^='top'] > [role='dialog']::after {
   border-left: solid transparent 0.6em;
   border-right: solid transparent 0.6em;
   border-top: solid var(--vtmn-semantic-color_background-primary-reversed)
@@ -94,50 +94,31 @@
 }
 
 /* POSITION: TOP-LEFT */
-.vtmn-popover[data-position='top-left'] > [role='tooltip']::after {
+.vtmn-popover[data-position='top-left'] > [role='dialog']::after {
   left: 90%;
 }
 
-.vtmn-popover[data-position='top-left'] > [role='tooltip'] {
-  transform: translate(-90%, -1.5em);
+.vtmn-popover[data-position='top-left'] > [role='dialog'] {
+  transform: translateX(-90%);
 }
 
 /* POSITION: TOP-RIGHT */
-.vtmn-popover[data-position='top-right'] > [role='tooltip']::after {
+.vtmn-popover[data-position='top-right'] > [role='dialog']::after {
   left: 10%;
 }
 
-.vtmn-popover[data-position='top-right'] > [role='tooltip'] {
-  transform: translate(-10%, -1.5em);
+.vtmn-popover[data-position='top-right'] > [role='dialog'] {
+  transform: translateX(-10%);
 }
 
 /* POSITION: BOTTOM */
-.vtmn-popover[data-position^='bottom'] > [role='tooltip'] {
-  bottom: 100%;
+.vtmn-popover[data-position^='bottom'] > [role='dialog'] {
+  top: calc(100% + 1.5em);
   left: 50%;
-  transform: translate(-50%, 100%);
+  transform: translateX(-50%);
 }
 
-.vtmn-popover[data-position^='bottom']
-  > .vtmn-btn_size--small
-  + [role='tooltip'] {
-  bottom: -40%;
-}
-
-.vtmn-popover[data-position^='bottom']
-  > .vtmn-btn_size--medium
-  + [role='tooltip'],
-.vtmn-popover[data-position^='bottom'] > .vtmn-btn + [role='tooltip'] {
-  bottom: -40%;
-}
-
-.vtmn-popover[data-position^='bottom']
-  > .vtmn-btn_size--large
-  + [role='tooltip'] {
-  bottom: -20%;
-}
-
-.vtmn-popover[data-position^='bottom'] > [role='tooltip']::after {
+.vtmn-popover[data-position^='bottom'] > [role='dialog']::after {
   border-left: solid transparent 0.6em;
   border-right: solid transparent 0.6em;
   border-bottom: solid var(--vtmn-semantic-color_background-primary-reversed)
@@ -148,81 +129,53 @@
 }
 
 /* POSITION: BOTTOM-LEFT */
-.vtmn-popover[data-position='bottom-left'] > [role='tooltip']::after {
+.vtmn-popover[data-position='bottom-left'] > [role='dialog']::after {
   left: 90%;
 }
 
-.vtmn-popover[data-position='bottom-left'] > [role='tooltip'] {
-  transform: translate(-90%, 120%);
+.vtmn-popover[data-position='bottom-left'] > [role='dialog'] {
+  transform: translateX(-90%);
 }
 
 /* POSITION: BOTTOM-RIGHT */
-.vtmn-popover[data-position='bottom-right'] > [role='tooltip']::after {
+.vtmn-popover[data-position='bottom-right'] > [role='dialog']::after {
   left: 10%;
 }
 
-.vtmn-popover[data-position='bottom-right'] > [role='tooltip'] {
-  transform: translate(-10%, 120%);
+.vtmn-popover[data-position='bottom-right'] > [role='dialog'] {
+  transform: translateX(-10%);
 }
 
 /* POSITION: LEFT */
-.vtmn-popover[data-position='left'] > [role='tooltip'] {
-  transform: translate(-100%, -50%);
+.vtmn-popover[data-position='left'] > [role='dialog'] {
+  top: 50%;
   left: -1.5em;
+  transform: translate(-100%, -50%);
 }
 
-.vtmn-popover[data-position='left'] > .vtmn-btn_size--small + [role='tooltip'] {
-  transform: translate(-100%, -52%);
-}
-
-.vtmn-popover[data-position='left']
-  > .vtmn-btn_size--medium
-  + [role='tooltip'] {
-  transform: translate(-100%, -55%);
-}
-
-.vtmn-popover[data-position='left'] > .vtmn-btn_size--large + [role='tooltip'] {
-  transform: translate(-100%, -58%);
-}
-
-.vtmn-popover[data-position='left'] > [role='tooltip']::after {
+.vtmn-popover[data-position='left'] > [role='dialog']::after {
   border-top: solid transparent 0.6em;
   border-bottom: solid transparent 0.6em;
   border-left: solid var(--vtmn-semantic-color_background-primary-reversed)
     0.65em;
   right: -0.6em;
-  bottom: 50%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* POSITION: RIGHT */
-.vtmn-popover[data-position='right'] > [role='tooltip'] {
-  transform: translate(100%, -50%);
+.vtmn-popover[data-position='right'] > [role='dialog'] {
+  top: 50%;
   right: -1.5em;
+  transform: translate(100%, -50%);
 }
 
-.vtmn-popover[data-position='right']
-  > .vtmn-btn_size--small
-  + [role='tooltip'] {
-  transform: translate(100%, -52%);
-}
-
-.vtmn-popover[data-position='right']
-  > .vtmn-btn_size--medium
-  + [role='tooltip'] {
-  transform: translate(100%, -55%);
-}
-
-.vtmn-popover[data-position='right']
-  > .vtmn-btn_size--large
-  + [role='tooltip'] {
-  transform: translate(100%, -58%);
-}
-
-.vtmn-popover[data-position='right'] > [role='tooltip']::after {
+.vtmn-popover[data-position='right'] > [role='dialog']::after {
   border-top: solid transparent 0.6em;
   border-bottom: solid transparent 0.6em;
   border-right: solid var(--vtmn-semantic-color_background-primary-reversed)
     0.65em;
   left: -0.6em;
-  bottom: 50%;
+  top: 50%;
+  transform: translateY(-50%);
 }

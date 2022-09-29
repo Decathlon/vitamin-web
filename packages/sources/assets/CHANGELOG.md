@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/assets@0.1.4...@vtmn/assets@0.2.0) (2022-09-20)
+
+
+### Features
+
+* **@vtmn/assets:** add missing flags on assets ([#1262](https://github.com/Decathlon/vitamin-web/issues/1262)) ([94adb77](https://github.com/Decathlon/vitamin-web/commit/94adb7743af218b33774429de680c17e5b561e70))
+
+
+
+
+
 ## [0.1.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/assets@0.1.3...@vtmn/assets@0.1.4) (2022-08-31)
 
 
