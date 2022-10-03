@@ -5,6 +5,7 @@ import { VtmnLinkSize } from './types';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnLink',
+  inheritAttrs: false,
   props: {
     size: {
       type: String as PropType<VtmnLinkSize>,
@@ -28,22 +29,19 @@ export default /*#__PURE__*/ defineComponent({
   setup(props, { attrs }) {
     props = reactive(props);
 
-    let computedRel = '';
+    let computedRel = String(attrs['rel']);
 
+    // If target is set to '_blank', rel should be at least
+    // set to 'noopener noreferrer'
     if (String(attrs['target']) === '_blank') {
-      if (attrs['rel'] !== undefined) {
-        computedRel = Array.from(
-          new Set(String(attrs['rel']).split(' '))
-            .add('noopener')
-            .add('noreferrer'),
-        )
-          .join(' ')
-          .trim();
-      } else {
-        computedRel = 'noopener noreferrer';
-      }
-    } else {
-      computedRel = String(attrs['rel']);
+      const currentRel = attrs['rel'] ?? ''
+      computedRel = Array.from(
+        new Set(String(currentRel).split(' '))
+          .add('noopener')
+          .add('noreferrer'),
+      )
+        .join(' ')
+        .trim();
     }
 
     return {
@@ -61,7 +59,7 @@ export default /*#__PURE__*/ defineComponent({
 </script>
 
 <template>
-  <a :rel="computedRel" :class="classes" v-bind="$attrs">
+  <a v-bind="$attrs" :rel="computedRel" :class="classes">
     <slot />
   </a>
 </template>
