@@ -86,6 +86,7 @@
     bind:value
     on:input
     on:change
+    on:blur
     class={componentClass}
     {id}
     {disabled}
@@ -98,6 +99,7 @@
       bind:value
       on:input
       on:change
+      on:blur
       class={componentClass}
       type="text"
       {id}
