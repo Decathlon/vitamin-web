@@ -83,15 +83,8 @@
   const buttonsOpen = document.querySelectorAll('.block .vtmn-btn');
   const templates = document.getElementsByTagName('template');
 
-  console.log(buttonsOpen);
-  console.log(templates);
-
   function showSnackbar(template) {
-    console.log('template', template);
-
     const clon = template.content.cloneNode(true);
-
-    console.log('clon', clon);
 
     //If snackbar already exists, remove it
     if (document.getElementsByClassName('vtmn-snackbar')[0]) {
@@ -100,13 +93,10 @@
 
     document.getElementById('root').appendChild(clon);
 
-    console.log('body', document.getElementById('root'));
-
     timeOut();
 
     function timeOut() {
       const snack = document.querySelector('#root > .vtmn-snackbar');
-      console.log('timeout', snack);
       snack.classList.add('show');
       setTimeout(function () {
         snack.classList.remove('show');
@@ -116,7 +106,6 @@
   }
 
   for (let i = 0; i < buttonsOpen.length; i++) {
-    console.log(i);
     buttonsOpen[i].addEventListener('click', function () {
       showSnackbar(templates[i]);
     });
