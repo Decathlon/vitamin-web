@@ -41,6 +41,13 @@
   align-items: center;
 }
 
+/* Linear */
+.vtmn-progressbar_variant--linear .vtmn-progressbar_indicator {
+  --vtmn-progressbar_progress-transform: unset;
+
+  transform: var(--vtmn-progressbar_progress-transform);
+}
+
 /* Circle */
 .vtmn-progressbar_variant--circular.vtmn-progressbar_container {
   inline-size: rem(136px);

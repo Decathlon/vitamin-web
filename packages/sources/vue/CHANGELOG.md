@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.43.9](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.43.8...@vtmn/vue@0.43.9) (2022-10-07)
+
+
+### Bug Fixes
+
+* **@vtmn/css, @vtmn/react, @vtmn/vue, @vtmn/svelte:** linear progressbar animation ([#1238](https://github.com/Decathlon/vitamin-web/issues/1238)) ([bfb1aaf](https://github.com/Decathlon/vitamin-web/commit/bfb1aaf06a36b3faa1d06457c69b5b2308cabab2))
+
+
+
+
+
 ## [0.43.8](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.43.7...@vtmn/vue@0.43.8) (2022-09-23)
 
 
