@@ -83,6 +83,11 @@
   const buttonsOpen = document.querySelectorAll('.block .vtmn-btn');
   const templates = document.getElementsByTagName('template');
 
+  //Create the div thaht embed the role status
+  const newDiv = document.createElement('div');
+  newDiv.setAttribute('role', 'status');
+  document.getElementById('root').appendChild(newDiv);
+
   function showSnackbar(template) {
     const clon = template.content.cloneNode(true);
 
@@ -91,12 +96,12 @@
       document.getElementsByClassName('vtmn-snackbar')[0].remove();
     }
 
-    document.getElementById('root').appendChild(clon);
+    newDiv.appendChild(clon);
 
     timeOut();
 
     function timeOut() {
-      const snack = document.querySelector('#root > .vtmn-snackbar');
+      const snack = document.querySelector('#root .vtmn-snackbar');
       snack.classList.add('show');
       setTimeout(function () {
         snack.classList.remove('show');
