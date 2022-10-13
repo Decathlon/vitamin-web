@@ -55,15 +55,6 @@
       this.length--;
       return this.list.shift();
     }
-
-    /**
-     * Same as stacks we're going to define a "peek" function for getting the next
-     * value without removing it from the queue.
-     */
-
-    peek() {
-      return this.list[0];
-    }
   }
 
   function uuidv4() {
@@ -76,6 +67,15 @@
       },
     );
   }
+
+  const buttonsOpen = document.querySelectorAll('.block .vtmn-btn');
+
+  console.log('buttonsOpen', buttonsOpen);
+
+  //Create the div that embeds the role status
+  const newDiv = document.createElement('div');
+  newDiv.setAttribute('role', 'alert');
+  document.getElementById('root').appendChild(newDiv);
 
   let alertQueue = new Queue();
 
@@ -152,42 +152,32 @@
   function instanciateAlert(id) {
     let uid = uuidv4();
     switch (id) {
+      case 0:
+        newDiv.innerHTML = templateAlert1(uid);
+        break;
       case 1:
-        document.body.lastChild.innerHTML = templateAlert1(uid);
+        newDiv.innerHTML = templateAlert2(uid);
         break;
       case 2:
-        document.body.lastChild.innerHTML = templateAlert2(uid);
+        newDiv.innerHTML = templateAlert3(uid);
         break;
       case 3:
-        document.body.lastChild.innerHTML = templateAlert3(uid);
-        break;
-      case 4:
-        document.body.lastChild.innerHTML = templateAlert4(uid);
+        newDiv.innerHTML = templateAlert4(uid);
         break;
       default:
-        document.body.lastChild.remove();
+        newDiv.removeChild();
     }
 
     if (document.getElementById(`btn-close-alert-${uid}`)) {
       document
         .getElementById(`btn-close-alert-${uid}`)
         .addEventListener('click', function () {
-          document.getElementById(`vtmn-alert-${uid}`).parentElement.remove();
+          document.getElementById(`vtmn-alert-${uid}`).remove();
         });
     }
 
     document.getElementById(`vtmn-alert-${uid}`).style.display = 'none';
     alertQueue.enqueue(document.getElementById(`vtmn-alert-${uid}`));
-  }
-
-  function createAlert(type) {
-    document.body.setAttribute('aria-live', 'assertive');
-    //Create the block div container
-    let newDiv = document.createElement('div');
-    newDiv.classList.add('block');
-    newDiv.setAttribute('role', 'alert');
-    document.body.appendChild(newDiv);
-    instanciateAlert(type);
   }
 
   let timeOut;
@@ -198,26 +188,17 @@
       currentAlert.style.display = 'flex';
       currentAlert.classList.add('show');
       timeOut = setTimeout(function removeShowClass() {
-        currentAlert.parentElement.remove();
+        currentAlert.remove();
         intervalTimer = setInterval(addShowClass, 1000);
       }, 8000);
     } else {
     }
   }, 1000);
 
-  document.getElementById('btn-alert-1').addEventListener('click', function () {
-    createAlert(1);
-  });
-
-  document.getElementById('btn-alert-2').addEventListener('click', function () {
-    createAlert(2);
-  });
-
-  document.getElementById('btn-alert-3').addEventListener('click', function () {
-    createAlert(3);
-  });
-
-  document.getElementById('btn-alert-4').addEventListener('click', function () {
-    createAlert(4);
-  });
+  for (let i = 0; i < buttonsOpen.length; i++) {
+    buttonsOpen[i].addEventListener('click', function () {
+      instanciateAlert(i);
+      console.log('root', document.querySelector('#root'));
+    });
+  }
 </script>
