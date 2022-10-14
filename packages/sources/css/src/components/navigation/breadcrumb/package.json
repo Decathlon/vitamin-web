@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-breadcrumb",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "description": "Decathlon Design System - Vitamin specific CSS styles for breadcrumb component",
   "keywords": [
     "design-system",
@@ -26,7 +26,7 @@
     "build": "node build.js"
   },
   "devDependencies": {
-    "@vtmn/css-design-tokens": "^0.20.1",
+    "@vtmn/css-design-tokens": "^0.20.2",
     "@vtmn/css-postcss-config": "*"
   },
   "publishConfig": {
