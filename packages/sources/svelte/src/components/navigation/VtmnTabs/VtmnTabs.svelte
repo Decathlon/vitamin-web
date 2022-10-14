@@ -35,5 +35,6 @@
 <VtmnDivider />
 
 <style lang="css">
+  @import '@vtmn/css/dist/preflight.css';
   @import '@vtmn/css-tabs';
 </style>
