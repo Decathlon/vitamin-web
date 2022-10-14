@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/svelte",
-  "version": "0.53.1",
+  "version": "0.53.2",
   "description": "Decathlon Design System - Vitamin Svelte components library",
   "keywords": [
     "design-system",
@@ -32,7 +32,7 @@
     "test:watch": "npm run test -- --watch"
   },
   "dependencies": {
-    "@vtmn/css": "^0.85.11",
+    "@vtmn/css": "^0.85.12",
     "@vtmn/css-accordion": "^0.5.3",
     "@vtmn/css-alert": "^0.8.5",
     "@vtmn/css-badge": "^0.13.2",
