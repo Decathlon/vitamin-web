@@ -1,10 +1,10 @@
-
 import { withDesign } from 'storybook-addon-designs';
 import backgrounds from '@vtmn/showcase-core/addons/backgrounds.json';
 import viewports from '@vtmn/showcase-core/addons/viewports.json';
 import DivDecorator from './DivDecorator.svelte';
 import { addReadme } from 'storybook-readme/html';
 
+import "@vtmn/svelte/dist/index.css"
 import '@vtmn/icons/dist/vitamix/font/vitamix.css';
 
 export const decorators = [() => DivDecorator, withDesign, addReadme];
