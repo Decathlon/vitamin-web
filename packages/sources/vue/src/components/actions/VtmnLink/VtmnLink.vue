@@ -5,6 +5,7 @@ import { VtmnLinkSize } from './types';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnLink',
+  inheritAttrs: false,
   props: {
     size: {
       type: String as PropType<VtmnLinkSize>,
@@ -25,8 +26,23 @@ export default /*#__PURE__*/ defineComponent({
       default: false,
     },
   },
-  setup(props) {
+  setup(props, { attrs }) {
     props = reactive(props);
+
+    let computedRel = String(attrs['rel']);
+
+    // If target is set to '_blank', rel should be at least
+    // set to 'noopener noreferrer'
+    if (String(attrs['target']) === '_blank') {
+      const currentRel = attrs['rel'] ?? ''
+      computedRel = Array.from(
+        new Set(String(currentRel).split(' '))
+          .add('noopener')
+          .add('noreferrer'),
+      )
+        .join(' ')
+        .trim();
+    }
 
     return {
       classes: computed(() => ({
@@ -36,13 +52,14 @@ export default /*#__PURE__*/ defineComponent({
         'vtmn-link--reversed': props.reversed,
         'vtmn-link--icon-along': props.iconAlong && props.standalone,
       })),
+      computedRel,
     };
   },
 });
 </script>
 
 <template>
-  <a :class="classes" v-bind="$attrs">
+  <a v-bind="$attrs" :rel="computedRel" :class="classes">
     <slot />
   </a>
 </template>

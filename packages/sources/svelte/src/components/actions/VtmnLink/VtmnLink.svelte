@@ -10,13 +10,6 @@
   export let href;
 
   /**
-   * The target of the link.
-   * @type {string}
-   * @requires
-   */
-  export let target = undefined;
-
-  /**
    * The size of the link.
    * @type {string}
    * @defaultValue 'medium'
@@ -58,9 +51,20 @@
     standalone && iconAlong && 'vtmn-link--icon-along',
     className,
   );
+
+  let computedRel =
+    $$restProps['target'] === '_blank'
+      ? Array.from(
+          new Set($$restProps['rel']).add('noopener').add('noreferrer'),
+        )
+          .join(' ')
+          .trim()
+      : $$restProps['rel'];
 </script>
 
-<a {href} {target} class={componentClass} on:click {...$$restProps}><slot /></a>
+<a {href} class={componentClass} rel={computedRel} on:click {...$$restProps}
+  ><slot /></a
+>
 
 <style lang="css">
   @import '@vtmn/css-link';
