@@ -28,6 +28,10 @@
 }
 
 .vtmn-quantity input[type='number'] {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  line-height: inherit;
   outline: 0;
   inline-size: rem(60px);
   padding-block: 0;

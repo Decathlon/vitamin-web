@@ -41,6 +41,7 @@
 
 /* ALL POPOVER */
 .vtmn-popover > [role='dialog'] {
+  box-sizing: border-box;
   min-inline-size: rem(250px);
   inline-size: auto;
   box-shadow: var(--vtmn-shadow_200);
