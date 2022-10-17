@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.53.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.52.11...@vtmn/react@0.53.0) (2022-10-17)
+
+### Features
+
+- **@vtmn/css, @vtmn/svelte, @vtmn/react, @vtmn/vue:** add rel attribute for blank link targets to prevent security issues ([#1245](https://github.com/Decathlon/vitamin-web/issues/1245)) ([78e137e](https://github.com/Decathlon/vitamin-web/commit/78e137e71eb952fd38289ecd4ebde919d1c9b5d7))
+
 ## [0.52.11](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.52.10...@vtmn/react@0.52.11) (2022-10-14)
 
 **Note:** Version bump only for package @vtmn/react
