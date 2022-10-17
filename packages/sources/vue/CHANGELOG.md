@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.44.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.43.10...@vtmn/vue@0.44.0) (2022-10-17)
+
+### Bug Fixes
+
+- **@vtmn/vue:** lint styles ([124536b](https://github.com/Decathlon/vitamin-web/commit/124536bba15eee4d4a6e7bbd4fa296c3d24c07db))
+
+### Features
+
+- **@vtmn/css, @vtmn/svelte, @vtmn/react, @vtmn/vue:** add rel attribute for blank link targets to prevent security issues ([#1245](https://github.com/Decathlon/vitamin-web/issues/1245)) ([78e137e](https://github.com/Decathlon/vitamin-web/commit/78e137e71eb952fd38289ecd4ebde919d1c9b5d7))
+
 ## [0.43.10](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.43.9...@vtmn/vue@0.43.10) (2022-10-14)
 
 **Note:** Version bump only for package @vtmn/vue
