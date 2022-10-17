@@ -34,7 +34,7 @@ export default /*#__PURE__*/ defineComponent({
     // If target is set to '_blank', rel should be at least
     // set to 'noopener noreferrer'
     if (String(attrs['target']) === '_blank') {
-      const currentRel = attrs['rel'] ?? ''
+      const currentRel = attrs['rel'] ?? '';
       computedRel = Array.from(
         new Set(String(currentRel).split(' '))
           .add('noopener')
