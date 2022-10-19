@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.54.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.54.0...@vtmn/svelte@0.54.1) (2022-10-19)
+
+### Bug Fixes
+
+- manage preflight styles ([#1279](https://github.com/Decathlon/vitamin-web/issues/1279)) ([df6f86f](https://github.com/Decathlon/vitamin-web/commit/df6f86f6315f6555cd9d36f30104037ca07cb4d7)), closes [#1278](https://github.com/Decathlon/vitamin-web/issues/1278) [#1278](https://github.com/Decathlon/vitamin-web/issues/1278)
+
 # [0.54.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.53.2...@vtmn/svelte@0.54.0) (2022-10-17)
 
 ### Features
