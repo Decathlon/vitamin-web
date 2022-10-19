@@ -22,7 +22,6 @@
     "@storybook/core-events": "6.3.13",
     "@storybook/svelte": "6.3.13",
     "@storybook/theming": "6.3.13",
-    "@vtmn/css": "*",
     "@vtmn/icons": "*",
     "@vtmn/showcase-core": "*",
     "@vtmn/svelte": "*",

@@ -13,6 +13,7 @@
 }
 
 .vtmn-progressbar_container svg {
+  display: block;
   inline-size: 100%;
   block-size: rem(8px);
   border-radius: var(--vtmn-radius_700);
