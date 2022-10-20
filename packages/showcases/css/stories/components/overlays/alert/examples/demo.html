@@ -19,186 +19,119 @@
   </button>
 </div>
 
+<template>
+  <div
+    class="vtmn-alert vtmn-alert_variant--success"
+    aria-labelledby="alert-title-1"
+  >
+    <div class="vtmn-alert_content">
+      <div id="alert-title-1" class="vtmn-alert_content-title">
+        This is the title of the alert
+      </div>
+    </div>
+  </div>
+</template>
+
+<template>
+  <div
+    id="vtmn-alert-${id}"
+    class="vtmn-alert vtmn-alert_variant--success"
+    aria-labelledby="alert-title-2"
+  >
+    <div class="vtmn-alert_content">
+      <div id="alert-title-2" class="vtmn-alert_content-title">
+        This is the title of the alert
+        <button
+          class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone"
+          onclick="toRemove(this)"
+        >
+          <span class="vtmn-sr-only">Close alert</span>
+          <span class="vtmx-close-line" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template>
+  <div
+    class="vtmn-alert vtmn-alert_variant--warning"
+    aria-labelledby="alert-title-3"
+    aria-describedby="alert-text-3"
+  >
+    <div class="vtmn-alert_content">
+      <div id="alert-title-3" class="vtmn-alert_content-title">
+        This is the title of the alert
+      </div>
+      <p id="alert-text-3" class="vtmn-alert_content-description">
+        Alert are used to draw the users attention to an important information
+      </p>
+    </div>
+  </div>
+</template>
+
+<template>
+  <div
+    class="vtmn-alert vtmn-alert_variant--info"
+    aria-labelledby="alert-title-4"
+    aria-describedby="alert-text-4"
+  >
+    <div class="vtmn-alert_content">
+      <div id="alert-title-4" class="vtmn-alert_content-title">
+        This is the title of the alert
+        <button
+          class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone"
+          onclick="toRemove(this)"
+        >
+          <span class="vtmn-sr-only">Close alert</span>
+          <span class="vtmx-close-line" aria-hidden="true"></span>
+        </button>
+      </div>
+      <p id="alert-text-4" class="vtmn-alert_content-description">
+        Alert are used to draw the users attention to an important information
+      </p>
+    </div>
+  </div>
+</template>
+
 <script>
-  class Queue {
-    /**
-     * Again, our queue is using a JavaScript array as a list rather than memory.
-     */
-
-    constructor() {
-      this.list = [];
-      this.length = 0;
-    }
-
-    /**
-     * Similar to stacks we're going to define two functions for adding and
-     * removing items from the queue. The first is "enqueue".
-     *
-     * This will push values to the end of the list.
-     */
-
-    enqueue(value) {
-      this.length++;
-      this.list.push(value);
-    }
-
-    /**
-     * Next is "dequeue", instead of removing the item from the end of the list,
-     * we're going to remove it from the start.
-     */
-
-    dequeue() {
-      // Don't do anything if we don't have any items.
-      if (this.length === 0) return;
-
-      // Shift the first item off the start of the list and return the value.
-      this.length--;
-      return this.list.shift();
-    }
-  }
-
-  function uuidv4() {
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(
-      /[xy]/g,
-      function (c) {
-        let r = (Math.random() * 16) | 0,
-          v = c == 'x' ? r : (r & 0x3) | 0x8;
-        return v.toString(16);
-      },
-    );
-  }
-
   const buttonsOpen = document.querySelectorAll('.block .vtmn-btn');
+  const templates = document.getElementsByTagName('template');
 
-  console.log('buttonsOpen', buttonsOpen);
-
-  //Create the div that embeds the role status
+  //Create the div thaht embed the role status
   const newDiv = document.createElement('div');
   newDiv.setAttribute('role', 'alert');
   document.getElementById('root').appendChild(newDiv);
 
-  let alertQueue = new Queue();
+  function showAlert(template) {
+    const clon = template.content.cloneNode(true);
 
-  const templateAlert1 = (id) => ` <div
-      id="vtmn-alert-${id}"
-      class="vtmn-alert vtmn-alert_variant--success"
-      aria-labelledby="alert-title-${id}"
-    >
-      <div class="vtmn-alert_content">
-        <div id="alert-title-${id}" class="vtmn-alert_content-title">
-          This is the title of the alert
-        </div>
-      </div>
-    </div>`;
-
-  const templateAlert2 = (id) => ` <div
-      id="vtmn-alert-${id}"
-      class="vtmn-alert vtmn-alert_variant--success"
-      aria-labelledby="alert-title-${id}"
-    >
-      <div class="vtmn-alert_content">
-        <div id="alert-title-${id}" class="vtmn-alert_content-title">
-          This is the title of the alert
-          <button
-            id="btn-close-alert-${id}"
-            class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone"
-          >
-            <span class="vtmn-sr-only">Close alert</span>
-            <span class="vtmx-close-line" aria-hidden="true"></span>
-          </button>
-        </div>
-      </div>
-    </div>`;
-
-  const templateAlert3 = (id) => ` <div
-      id="vtmn-alert-${id}"
-      class="vtmn-alert vtmn-alert_variant--warning"
-      aria-labelledby="alert-title-${id}"
-      aria-describedby="alert-text-${id}"
-    >
-      <div class="vtmn-alert_content">
-        <div id="alert-title-${id}" class="vtmn-alert_content-title">
-          This is the title of the alert
-        </div>
-        <p id="alert-text-${id}" class="vtmn-alert_content-description">
-          Alert are used to draw the users attention to an important information
-        </p>
-      </div>
-    </div>`;
-
-  const templateAlert4 = (id) => ` <div
-      id="vtmn-alert-${id}"
-      class="vtmn-alert vtmn-alert_variant--info"
-      aria-labelledby="alert-title-${id}"
-      aria-describedby="alert-text-${id}"
-    >
-      <div class="vtmn-alert_content">
-        <div id="alert-title-${id}" class="vtmn-alert_content-title">
-          This is the title of the alert
-          <button
-            id="btn-close-alert-${id}"
-            class="vtmn-btn vtmn-btn_variant--ghost-reversed vtmn-btn_size--small vtmn-btn--icon-alone"
-          >
-            <span class="vtmn-sr-only">Close alert</span>
-            <span class="vtmx-close-line" aria-hidden="true"></span>
-          </button>
-        </div>
-        <p id="alert-text-${id}" class="vtmn-alert_content-description">
-          Alert are used to draw the users attention to an important information
-        </p>
-      </div>
-    </div>`;
-
-  function instanciateAlert(id) {
-    let uid = uuidv4();
-    switch (id) {
-      case 0:
-        newDiv.innerHTML = templateAlert1(uid);
-        break;
-      case 1:
-        newDiv.innerHTML = templateAlert2(uid);
-        break;
-      case 2:
-        newDiv.innerHTML = templateAlert3(uid);
-        break;
-      case 3:
-        newDiv.innerHTML = templateAlert4(uid);
-        break;
-      default:
-        newDiv.removeChild();
+    //If alert already exists, remove it
+    if (document.getElementsByClassName('vtmn-alert')[0]) {
+      document.getElementsByClassName('vtmn-alert')[0].remove();
     }
 
-    if (document.getElementById(`btn-close-alert-${uid}`)) {
-      document
-        .getElementById(`btn-close-alert-${uid}`)
-        .addEventListener('click', function () {
-          document.getElementById(`vtmn-alert-${uid}`).remove();
-        });
-    }
+    newDiv.appendChild(clon);
 
-    document.getElementById(`vtmn-alert-${uid}`).style.display = 'none';
-    alertQueue.enqueue(document.getElementById(`vtmn-alert-${uid}`));
-  }
+    timeOut();
 
-  let timeOut;
-  let intervalTimer = setInterval(function addShowClass() {
-    if (alertQueue.length > 0) {
-      clearInterval(intervalTimer);
-      let currentAlert = alertQueue.dequeue();
-      currentAlert.style.display = 'flex';
-      currentAlert.classList.add('show');
-      timeOut = setTimeout(function removeShowClass() {
-        currentAlert.remove();
-        intervalTimer = setInterval(addShowClass, 1000);
+    function timeOut() {
+      const alert = document.querySelector('#root .vtmn-alert');
+      alert.classList.add('show');
+      setTimeout(function () {
+        alert.classList.remove('show');
+        alert.remove();
       }, 8000);
-    } else {
     }
-  }, 1000);
+  }
 
   for (let i = 0; i < buttonsOpen.length; i++) {
     buttonsOpen[i].addEventListener('click', function () {
-      instanciateAlert(i);
-      console.log('root', document.querySelector('#root'));
+      showAlert(templates[i]);
     });
+  }
+
+  function toRemove(event) {
+    event.parentNode.parentNode.parentNode.remove();
   }
 </script>
