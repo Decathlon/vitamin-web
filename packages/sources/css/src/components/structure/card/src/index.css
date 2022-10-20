@@ -53,6 +53,13 @@
   position: relative;
 }
 
+.vtmn-card_image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: middle;
+}
+
 .vtmn-card > .vtmn-card_image--full,
 .vtmn-card_variant--top-image > .vtmn-card_image--full {
   inline-size: fit-content;

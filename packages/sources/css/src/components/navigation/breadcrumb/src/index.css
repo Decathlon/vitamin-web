@@ -16,6 +16,12 @@
   line-height: var(--vtmn-typo_text-3-line-height);
 }
 
+.vtmn-breadcrumb {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .vtmn-breadcrumb a {
   text-decoration: none;
   line-height: 1;
