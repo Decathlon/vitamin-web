@@ -1,4 +1,4 @@
-import { VtmnPopover, VtmnLink } from '@vtmn/vue';
+import { VtmnPopover, VtmnButton } from '@vtmn/vue';
 import {
   argTypes,
   parameters,
@@ -12,11 +12,11 @@ export default {
 };
 
 const Template = (args) => ({
-  components: { VtmnPopover, VtmnLink },
+  components: { VtmnPopover, VtmnButton },
   setup() {
     return { args };
   },
-  template: `<VtmnPopover id="my-popover" v-bind="args"><VtmnLink>Popover on the {{ args.position }}</VtmnLink></VtmnPopover>`,
+  template: `<VtmnPopover id="my-popover" v-bind="args"><VtmnButton>Popover on the {{ args.position }}</VtmnButton></VtmnPopover>`,
 });
 
 export const Overview = Template.bind({});

@@ -41,6 +41,7 @@ export const VtmnPopover = ({
       data-position={position}
       aria-describedby={identifier}
       aria-labelledby={`${identifier}-title`}
+      tabIndex={0}
       {...props}
     >
       {children}
