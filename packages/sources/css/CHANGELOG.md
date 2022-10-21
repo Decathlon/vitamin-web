@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.85.15](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.85.14...@vtmn/css@0.85.15) (2022-10-21)
+
+### Bug Fixes
+
+- **@vtmn/showcase-svelte:** showcase header & Card component in Storybook Svelte ([#1289](https://github.com/Decathlon/vitamin-web/issues/1289)) ([4b1c430](https://github.com/Decathlon/vitamin-web/commit/4b1c430afc22a4a43fbede848039350557dd4f9b))
+
 ## [0.85.14](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.85.13...@vtmn/css@0.85.14) (2022-10-19)
 
 **Note:** Version bump only for package @vtmn/css
