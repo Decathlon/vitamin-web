@@ -25,6 +25,7 @@
   data-position={position}
   aria-describedby={id}
   aria-labelledby={`${id}-title`}
+  tabindex="0"
   {...$$restProps}
 >
   <slot />
