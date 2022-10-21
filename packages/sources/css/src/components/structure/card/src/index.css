@@ -7,12 +7,13 @@
 @import '@vtmn/css-design-tokens/src/radius';
 
 .vtmn-card {
+  font-family: var(--vtmn-typo_font-family);
+  font-weight: var(--vtmn-typo_font-weight--normal);
   max-inline-size: 100%;
   min-inline-size: min-content;
   border-radius: var(--vtmn-radius_200);
   box-shadow: var(--vtmn-shadow_100);
   position: relative;
-  font: var(--vtmn-typo_font-family) var(--vtmn-typo_font-weight--normal);
 }
 
 .vtmn-card_content {
