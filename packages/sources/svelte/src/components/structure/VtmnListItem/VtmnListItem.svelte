@@ -53,6 +53,8 @@
   };
 </script>
 
+<!-- svelte-ignore a11y-role-has-required-aria-props -->
+<!-- This will be refactored in next major release -->
 <li
   on:click
   class={componentClass}

@@ -2,7 +2,6 @@
   import { cn } from '../../../utils/classnames';
   import VtmnBadge from '../../indicators/VtmnBadge/VtmnBadge.svelte';
   import VtmnIcon from '../../../guidelines/iconography/VtmnIcon/VtmnIcon.svelte';
-  export let href = '#';
   export let badgeValue = undefined;
   export let icon = undefined;
   export let selected = false;

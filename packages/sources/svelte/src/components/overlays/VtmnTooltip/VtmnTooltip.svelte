@@ -13,6 +13,8 @@
   export let tooltip;
 </script>
 
+<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+<!-- This will be refactored in next major release -->
 <span
   tabindex="0"
   class="vtmn-tooltip"
