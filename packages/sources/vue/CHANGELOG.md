@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.44.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.44.4...@vtmn/vue@0.44.5) (2022-10-21)
+
+### Bug Fixes
+
+- **@vtmn/svelte:** lint warnings ([#1290](https://github.com/Decathlon/vitamin-web/issues/1290)) ([224364a](https://github.com/Decathlon/vitamin-web/commit/224364a794c96fbccc949c9932949eecc043f536))
+
 ## [0.44.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.44.3...@vtmn/vue@0.44.4) (2022-10-21)
 
 **Note:** Version bump only for package @vtmn/vue
