@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.54.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.53.2...@vtmn/react@0.54.0) (2022-10-21)
+
+### Features
+
+- **@vtmn/css, @vtmn/svelte, @vtmn/react, @vtmn/vue:** tabindex for the popover ([#1288](https://github.com/Decathlon/vitamin-web/issues/1288)) ([92c036c](https://github.com/Decathlon/vitamin-web/commit/92c036cae8ff5ecc4dd6d43b703ffc1ea7350561))
+
 ## [0.53.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.53.1...@vtmn/react@0.53.2) (2022-10-19)
 
 **Note:** Version bump only for package @vtmn/react
