@@ -20,6 +20,8 @@
   $: componentClass = cn('vtmn-popover', className);
 </script>
 
+<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+<!-- This will be refactored in next major release -->
 <div
   class={componentClass}
   data-position={position}
@@ -31,7 +33,12 @@
   <slot />
 
   <div {id} role="dialog">
-    <p class="vtmn-popover_title" id={`${id}-title`} role="heading">
+    <p
+      class="vtmn-popover_title"
+      id={`${id}-title`}
+      role="heading"
+      aria-level="2"
+    >
       <slot name="title" />
     </p>
     <p class="vtmn-popover_text"><slot name="body" /></p>
