@@ -41,13 +41,16 @@ export default /*#__PURE__*/ defineComponent({
     class="vtmn-popover"
     :data-position="position"
     :aria-describedby="id"
+    :aria-labelledby="id + '-title'"
     tabindex="0"
     v-bind="$attrs"
   >
     <slot />
 
-    <div :id="id" role="tooltip">
-      <p class="vtmn-popover_title">{{ title }}</p>
+    <div :id="id" role="dialog">
+      <p :id="id + '-title'" class="vtmn-popover_title" role="heading">
+        {{ title }}
+      </p>
       <p class="vtmn-popover_text">{{ body }}</p>
     </div>
   </div>

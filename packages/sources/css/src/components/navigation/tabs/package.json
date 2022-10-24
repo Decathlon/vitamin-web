@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-tabs",
-  "version": "0.7.1",
+  "version": "0.7.5",
   "description": "Decathlon Design System - Vitamin specific CSS styles for tabs component",
   "keywords": [
     "design-system",
@@ -26,7 +26,7 @@
     "build": "node build.js"
   },
   "devDependencies": {
-    "@vtmn/css-design-tokens": "^0.20.0",
+    "@vtmn/css-design-tokens": "^0.20.2",
     "@vtmn/css-postcss-config": "*"
   },
   "publishConfig": {

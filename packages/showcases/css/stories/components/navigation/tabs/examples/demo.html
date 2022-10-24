@@ -1,21 +1,197 @@
 <div class="block">
-  <nav id="demo-tabs-nav" aria-label="Tabs list" class="vtmn-tabs">
-    <ul id="demo-tabs-tablist" role="tablist">
-      <span id="block-focus-trap-start" tabindex="-1"></span>
-      <li id="tab-demo-1" role="tab" aria-selected="false">
-        <a href="" class="selected">Tab Name</a>
-      </li>
-      <li id="tab-demo-2" role="tab" aria-selected="false">
-        <a href="">Tab Name</a>
-      </li>
-      <li id="tab-demo-3" role="tab" aria-selected="false">
-        <a href="">Tab Name</a>
-      </li>
-      <li id="tab-demo-4" role="tab" aria-selected="false">
-        <a href="">Tab Name</a>
-      </li>
-      <span id="block-focus-trap-end" tabindex="-1"></span>
-    </ul>
-    <div class="vtmn-divider" role="separator"></div>
-  </nav>
+  <ul
+    id="demo-tabs-tablist"
+    class="vtmn-tabs"
+    role="tablist"
+    aria-label="Tabs navigation"
+  >
+    <li>
+      <button role="tab" id="tab-demo-1" aria-controls="tabpanel-demo-1">
+        Tab Name 1
+      </button>
+    </li>
+    <li>
+      <button role="tab" id="tab-demo-2" aria-controls="tabpanel-demo-2">
+        Tab Name 2
+      </button>
+    </li>
+    <li>
+      <button role="tab" id="tab-demo-3" aria-controls="tabpanel-demo-3">
+        Tab Name 3
+      </button>
+    </li>
+    <li>
+      <button role="tab" id="tab-demo-4" aria-controls="tabpanel-demo-4">
+        Tab Name 4
+      </button>
+    </li>
+  </ul>
+  <div class="vtmn-divider" role="separator"></div>
+  <div
+    id="demo-tabs-tabpanels"
+    class="vtmn-w-full vtmn-p-5 vtmn-bg-background-primary"
+  >
+    <section
+      role="tabpanel"
+      id="tabpanel-demo-1"
+      aria-labelledby="tab-demo-1"
+      tabindex="0"
+    >
+      Tab Name 1 <br />
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur
+      voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam
+      cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum
+      necessitatibus? Sequi?
+    </section>
+    <section
+      role="tabpanel"
+      id="tabpanel-demo-2"
+      aria-labelledby="tab-demo-2"
+      tabindex="0"
+    >
+      Tab Name 2 <br />
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur
+      voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam
+      cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum
+      necessitatibus? Sequi?
+    </section>
+    <section
+      role="tabpanel"
+      id="tabpanel-demo-3"
+      aria-labelledby="tab-demo-3"
+      tabindex="0"
+    >
+      Tab Name 3 <br />
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur
+      voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam
+      cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum
+      necessitatibus? Sequi?
+    </section>
+    <section
+      role="tabpanel"
+      id="tabpanel-demo-4"
+      aria-labelledby="tab-demo-4"
+      tabindex="0"
+    >
+      Tab Name 4 <br />
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur
+      voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam
+      cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum
+      necessitatibus? Sequi?
+    </section>
+  </div>
 </div>
+
+<script>
+  const initTabs = () => {
+    const tabList = document.querySelector('[role=tablist]#demo-tabs-tablist');
+    const tabs = tabList.querySelectorAll('.vtmn-tabs > li > button[role=tab]');
+    const tabPanels = document.querySelectorAll(
+      '#demo-tabs-tabpanels > section[role=tabpanel]',
+    );
+
+    const showActivePanel = (element) => {
+      const selectedId = element.getAttribute('id');
+      // Hide all panels
+      tabPanels.forEach((panel) => panel.classList.add('vtmn-hidden'));
+      // Only show active panel
+      const activePanel = document.querySelector(
+        `[aria-labelledby="${selectedId}"]`,
+      );
+      activePanel.classList.remove('vtmn-hidden');
+    };
+
+    const setSelectedTab = (element, setFocus) => {
+      if (typeof setFocus !== 'boolean') {
+        setFocus = true;
+      }
+      const selectedId = element.getAttribute('id');
+      tabs.forEach((tab) => {
+        const id = tab.getAttribute('id');
+        const isCurrentTab = id === selectedId;
+        if (isCurrentTab) {
+          tab.setAttribute('aria-selected', 'true');
+          tab.removeAttribute('tabindex');
+          if (setFocus) tab.focus();
+          // Show corresponding panel
+          showActivePanel(element);
+        } else {
+          tab.setAttribute('tabindex', '-1');
+          tab.setAttribute('aria-selected', 'false');
+        }
+      });
+    };
+
+    const initArrowNavigation = () => {
+      const firstIndex = 0;
+      const lastIndex = tabs.length - 1;
+      tabs.forEach((tab, index) => {
+        tab.addEventListener('keydown', (event) => {
+          const isFirst = index <= firstIndex;
+          const isLast = index >= lastIndex;
+          const previousIndex = index - 1;
+          const nextIndex = index + 1;
+          switch (event.key) {
+            case 'ArrowLeft':
+              const nextTabOnArrowLeft =
+                tabs[isFirst ? lastIndex : previousIndex];
+              setSelectedTab(nextTabOnArrowLeft);
+              break;
+            case 'ArrowRight':
+              const nextTabOnArrowRight = tabs[isLast ? 0 : nextIndex];
+              setSelectedTab(nextTabOnArrowRight);
+              break;
+            case 'Home':
+              const nextTabOnHome = tabs[firstIndex];
+              setSelectedTab(nextTabOnHome);
+              break;
+            case 'End':
+              const nextTabOnEnd = tabs[lastIndex];
+              setSelectedTab(nextTabOnEnd);
+              break;
+            default:
+              break;
+          }
+        });
+
+        tab.addEventListener('click', (event) =>
+          setSelectedTab(event.currentTarget),
+        );
+      });
+    };
+
+    // Init when specific DOM is ready
+    initArrowNavigation();
+
+    // tabs should not be focus navigable
+    tabs.forEach((event) => {
+      event.setAttribute('tabindex', '-1');
+      event.setAttribute('aria-selected', 'false');
+    });
+
+    // hide panels
+    tabPanels.forEach((panel) => {
+      panel.classList.add('vtmn-hidden');
+    });
+
+    // active first tab / panel
+    setSelectedTab(tabs[0], false);
+  };
+
+  // Tabs should be initialized when all elements are available in storybook panel
+  const storybookRootPanel = document.querySelector('#root');
+  const observer = new MutationObserver((mutationList) => {
+    for (const mutation of mutationList) {
+      // Check if storybook panel is showing the tabs demo
+      const isOnTabDemoView =
+        mutation.type === 'childList' &&
+        mutation.target.baseURI.includes('components-navigation-tabs--demo');
+      if (isOnTabDemoView) initTabs();
+    }
+  });
+  observer.observe(storybookRootPanel, {
+    attributes: true,
+    childList: true,
+    characterData: true,
+  });
+</script>

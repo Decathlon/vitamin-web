@@ -7,6 +7,7 @@
 @import '@vtmn/css-design-tokens/src/radius';
 
 .vtmn-alert {
+  box-sizing: border-box;
   display: flex;
   position: relative;
   flex-direction: row;

@@ -1,6 +1,6 @@
 <script>
   import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
-  import { VtmnPopover, VtmnLink } from '@vtmn/svelte';
+  import { VtmnPopover, VtmnButton } from '@vtmn/svelte';
   import {
     parameters,
     argTypes,
@@ -18,7 +18,7 @@
   <VtmnPopover position={args.position} id={args.id}>
     <svelte:fragment slot="title">{args.title}</svelte:fragment>
     <svelte:fragment slot="body">{args.body}</svelte:fragment>
-    <VtmnLink>Popover on the {args.position}</VtmnLink>
+    <VtmnButton>Popover on the {args.position}</VtmnButton>
   </VtmnPopover>
 </Template>
 

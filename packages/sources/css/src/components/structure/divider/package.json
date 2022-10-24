@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-divider",
-  "version": "0.5.1",
+  "version": "0.5.3",
   "description": "Decathlon Design System - Vitamin specific CSS styles for divider component",
   "keywords": [
     "design-system",
@@ -26,7 +26,7 @@
     "build": "node build.js"
   },
   "devDependencies": {
-    "@vtmn/css-design-tokens": "^0.20.0",
+    "@vtmn/css-design-tokens": "^0.20.2",
     "@vtmn/css-postcss-config": "*"
   },
   "publishConfig": {

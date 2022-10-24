@@ -23,6 +23,11 @@
 }
 
 .vtmn-select_container select {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  line-height: inherit;
   appearance: none;
   padding-block: rem(12px);
   padding-inline-start: rem(12px);

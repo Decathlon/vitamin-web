@@ -1,110 +1,88 @@
 import resolve from '@rollup/plugin-node-resolve';
-import css from 'rollup-plugin-css-only';
 import svelte from 'rollup-plugin-svelte';
 import sveltePreprocess from 'svelte-preprocess';
+import postcss from 'rollup-plugin-postcss';
+import postcssImport from 'postcss-import';
+import postcssUrl from 'postcss-url';
+import fs from 'fs';
+import path from 'path';
+import pkg from './package.json';
+import { terser } from 'rollup-plugin-terser';
+
 const preprocessOptions = require('./svelte.config').preprocessOptions;
 
-const src = {
-  components: [
-    {
-      folder: 'actions',
-      components: [
-        'VtmnButton',
-        'VtmnDropdown',
-        'VtmnDropdownItem',
-        'VtmnLink',
-      ],
-    },
-    {
-      folder: 'forms',
-      components: ['VtmnSelect', 'VtmnTextInput'],
-    },
-    {
-      folder: 'indicators',
-      components: [
-        'VtmnBadge',
-        'VtmnLoader',
-        'VtmnPrice',
-        'VtmnProgressbar',
-        'VtmnRating',
-        'VtmnTag',
-      ],
-    },
-    {
-      folder: 'navigation',
-      components: [
-        'VtmnBreadcrumb',
-        'VtmnBreadcrumbItem',
-        'VtmnNavbar',
-        'VtmnSearch',
-        'VtmnTabs',
-        'VtmnTabsItem',
-      ],
-    },
-    {
-      folder: 'overlays',
-      components: [
-        'VtmnAlert',
-        'VtmnModal',
-        'VtmnPopover',
-        'VtmnSnackbar',
-        'VtmnToast',
-        'VtmnTooltip',
-      ],
-    },
-    {
-      folder: 'selection-controls',
-      components: [
-        'VtmnCheckbox',
-        'VtmnChip',
-        'VtmnQuantity',
-        'VtmnRadioButton',
-        'VtmnToggle',
-      ],
-    },
-    {
-      folder: 'structure',
-      components: [
-        'VtmnAccordion',
-        'VtmnCard',
-        'VtmnDivider',
-        'VtmnList',
-        'VtmnListItem',
-        'VtmnSkeleton',
-      ],
-    },
-  ],
-  guidelines: [
-    {
-      folder: 'iconography',
-      components: ['VtmnIcon'],
-    },
-  ],
+const postcssProcess = (component, variant = '') =>
+  postcss({
+    extract: `${component}${variant}.css`,
+    plugins: [
+      postcssImport({
+        load: (filename) => {
+          const finalPath = filename.includes('@vtmn/css-')
+            ? filename.replaceAll('.css', `${variant}.css`)
+            : filename;
+          return fs.readFileSync(path.resolve(finalPath), {
+            encoding: 'utf8',
+            flag: 'r',
+          });
+        },
+      }),
+      postcssUrl({
+        url: ({ absolutePath, pathname }) => {
+          const dist = path.join(__dirname, 'dist');
+          if (!fs.existsSync(dist)) {
+            fs.mkdirSync(dist, { recursive: true });
+          }
+          const destinationPath = path.join(__dirname, 'dist', pathname);
+          if (!fs.existsSync(destinationPath)) {
+            fs.copyFileSync(absolutePath, destinationPath);
+          }
+          return pathname;
+        },
+      }),
+    ],
+  });
+
+const globals = {
+  'svelte/store': 'store',
+  'svelte/internal': 'svelte/internal',
+  svelte: 'svelte',
 };
 
-const svelteOptions = (component) => ({
+const svelteOptions = (component, variant) => ({
+  external: /^svelte.*$/,
   output: [
-    { file: `dist/${component}.mjs`, format: 'es' },
-    { file: `dist/${component}.js`, format: 'umd', name: component },
+    {
+      file: pkg.module,
+      format: 'es',
+      sourcemap: true,
+      globals,
+    },
+    {
+      file: pkg.main,
+      format: 'umd',
+      name: 'index',
+      sourcemap: true,
+      globals,
+    },
   ],
   plugins: [
     svelte({
       preprocess: sveltePreprocess(preprocessOptions),
     }),
-    css({ output: `${component}.css` }),
-    resolve(),
+    postcssProcess(component, variant),
+    resolve({
+      // Exclude all svelte related stuff
+      resolveOnly: [/^(?!svelte.*$)/],
+    }),
+    terser(),
   ],
 });
 
-const predicate =
-  (baseDir) =>
-  ({ folder, components }) =>
-    components.map((component) => ({
-      input: `src/${baseDir}/${folder}/${component}/${component}.svelte`,
-      ...svelteOptions(component),
-    }));
-
 export default [
-  ...src.components.flatMap(predicate('components')),
-  ...src.guidelines.flatMap(predicate('guidelines')),
+  ...[undefined, '-base10', '-with-vars-base10', '-with-vars'].map(
+    (variant) => ({
+      input: 'src/index.js',
+      ...svelteOptions('index', variant),
+    }),
+  ),
 ];

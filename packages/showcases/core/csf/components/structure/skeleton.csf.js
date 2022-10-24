@@ -11,12 +11,20 @@ export const parameters = {
 export const argTypes = {
   width: {
     type: { name: 'number', required: false },
-    description: 'Width of the skeleton (in percentage).',
+    description: 'Width of the skeleton.',
     defaultValue: 100,
     control: {
-      type: 'range',
+      type: 'number',
       min: 0,
-      max: 100,
+    },
+  },
+  unit: {
+    type: { name: 'string', required: false },
+    description: 'Unit of the width.',
+    defaultValue: '%',
+    control: {
+      type: 'select',
+      options: ['%', 'em', 'rem', 'vw', 'ch', 'px'],
     },
   },
   shape: {

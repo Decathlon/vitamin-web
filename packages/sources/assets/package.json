@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/assets",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Decathlon Design System - Vitamin assets library",
   "keywords": [
     "design-system",
@@ -25,7 +25,7 @@
     "prebuild": "shx rm -rf dist",
     "build": "yarn build:svg && yarn build:json && yarn build:sprite",
     "build:json": "shx rm -rf ./dist/assets/json && shx mkdir ./dist/assets/json && fantasticon",
-    "build:sprite": "shx rm -rf ./dist/assets/sprite && shx mkdir ./dist/assets/sprite && spritesh --viewbox \"0 0 16 16\" -i dist/assets/svg -o dist/assets/sprite/assets.svg && node src/scripts/add-sprite-declaration.js",
+    "build:sprite": "shx rm -rf ./dist/assets/sprite && shx mkdir ./dist/assets/sprite && spritesh -i dist/assets/svg -o dist/assets/sprite/assets.svg && node src/scripts/add-sprite-declaration.js",
     "build:svg": "node src/scripts/build-svg.js && svgo -f dist/assets/svg"
   },
   "devDependencies": {

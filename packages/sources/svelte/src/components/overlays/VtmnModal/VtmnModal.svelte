@@ -54,6 +54,9 @@
       id="vtmn-modal-background"
       class="vtmn-modal_background-overlay"
       on:click={handleClose}
+      on:keydown
+      on:keyup
+      on:keypress
     />
     <div {id} class={componentClass}>
       <div class="vtmn-modal_content_title">

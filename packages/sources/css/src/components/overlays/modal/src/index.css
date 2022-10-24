@@ -19,6 +19,7 @@
 }
 
 .vtmn-modal_content {
+  box-sizing: border-box;
   background-color: var(--vtmn-semantic-color_background-primary);
   border-radius: var(--vtmn-radius_200);
   padding: rem(32px);
@@ -50,6 +51,7 @@
   font-size: rem(26px);
   line-height: rem(32px);
   flex: auto;
+  margin: 0;
 }
 
 .vtmn-modal_content_title .vtmn-btn {
@@ -80,6 +82,7 @@
   line-height: rem(24px);
   align-self: flex-start;
   text-align: start;
+  margin: 0;
 }
 
 .vtmn-modal_content_actions {

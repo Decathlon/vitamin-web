@@ -8,7 +8,7 @@
   "dependencies": {
     "autoprefixer": "^10.3.6",
     "postcss": "^8.4.6",
-    "postcss-cli": "^9.0.2",
+    "postcss-cli": "^10.0.0",
     "postcss-color-mod-function": "^3.0.3",
     "postcss-combine-duplicated-selectors": "^10.0.2",
     "postcss-combine-media-query": "^1.0.1",
@@ -17,7 +17,7 @@
     "postcss-css-variables": "^0.18.0",
     "postcss-discard-comments": "^5.0.1",
     "postcss-encode-background-svgs": "^1.0.4",
-    "postcss-import": "^14.0.0",
+    "postcss-import": "^15.0.0",
     "postcss-loader": "^7.0.0",
     "postcss-prettify": "^0.3.4",
     "postcss-rem": "^2.0.1",
