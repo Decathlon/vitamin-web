@@ -13,10 +13,16 @@ export default {
 
 const Template = (args) => ({
   components: { VtmnChip },
+
   setup() {
-    return { args };
+    return {
+      args,
+      handleCancel: () => {
+        console.log('cancel');
+      },
+    };
   },
-  template: `<VtmnChip v-bind="args">Chip</VtmnChip>`,
+  template: `<VtmnChip @cancel="handleCancel()" v-bind="args">Chip</VtmnChip>`,
 });
 
 export const Overview = Template.bind({});
