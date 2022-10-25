@@ -6,5 +6,9 @@ module.exports = {
         attrs: '*:(stroke|fill|color)',
       },
     },
+    {
+      name: 'removeDimensions',
+      active: true,
+    },
   ],
 };
