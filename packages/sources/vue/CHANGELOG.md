@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.44.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.44.5...@vtmn/vue@0.44.6) (2022-10-25)
+
+### Bug Fixes
+
+- **@vtmn/vue:** cancel event is not present in VtmnChip component (input variant) ([#1294](https://github.com/Decathlon/vitamin-web/issues/1294)) ([b3d9c10](https://github.com/Decathlon/vitamin-web/commit/b3d9c10f2d05e7ca985275fec097e1af2326fd13))
+
 ## [0.44.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.44.4...@vtmn/vue@0.44.5) (2022-10-21)
 
 ### Bug Fixes

@@ -37,6 +37,7 @@ export const VtmnAlert = ({
 }: VtmnAlertProps) => {
   return (
     <div
+      aria-label={title}
       role="dialog"
       className={clsx(
         'vtmn-alert',
