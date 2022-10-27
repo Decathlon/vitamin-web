@@ -12,8 +12,6 @@
         role="group"
         aria-labelledby="dropdown-demo-label"
       >
-        <!-- <span id="block-focus-trap-start" tabindex="-1"></span> -->
-
         <input type="checkbox" name="dropdown-demo" id="dropdown-demo-opt-1" />
         <label for="dropdown-demo-opt-1">
           <span class="vtmx-emotion-laugh-line"></span>
@@ -79,24 +77,9 @@
           class="vtmn-divider vtmn-divider_orientation--horizontal"
           role="separator"
         ></div>
-
-        <!-- <span id="block-focus-trap-end" tabindex="0"></span> -->
       </div>
     </details>
   </div>
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-
-  <button class="vtmn-btn">BONJOUR</button>
 </div>
 
 <script>
@@ -126,20 +109,16 @@
       if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
         if (index < inputs.length - 1) {
           inputs[index + 1].focus();
-          console.log('inputs[index + 1].focus();', index + 1);
         } else {
           inputs[0].focus();
-          console.log('inputs[0].focus();', 0);
         }
       }
 
       if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
         if (index <= 0) {
           inputs[inputs.length - 1].focus();
-          console.log('inputs[inputs.length - 1].focus();', index - 1);
         } else {
           inputs[index - 1].focus();
-          console.log('inputs[index - 1].focus();');
         }
       }
 
