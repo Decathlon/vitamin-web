@@ -39,33 +39,39 @@ export interface VtmnToggleProps
   disabled?: boolean;
 }
 
-export const VtmnToggle = ({
-  className,
-  identifier,
-  labelText,
-  size = 'medium',
-  checked = false,
-  disabled = false,
-  ...props
-}: VtmnToggleProps) => {
-  return (
-    <div
-      className={clsx('vtmn-toggle', `vtmn-toggle_size--${size}`, className)}
-    >
-      <div className="vtmn-toggle_switch">
-        <input
-          type="checkbox"
-          id={identifier}
-          checked={checked}
-          disabled={disabled}
-          {...props}
-        />
-        <span aria-hidden="true"></span>
+export const VtmnToggle = React.forwardRef<HTMLInputElement, VtmnToggleProps>(
+  (
+    {
+      className,
+      identifier,
+      labelText,
+      size = 'medium',
+      checked = false,
+      disabled = false,
+      ...props
+    },
+    ref,
+  ) => {
+    return (
+      <div
+        className={clsx('vtmn-toggle', `vtmn-toggle_size--${size}`, className)}
+      >
+        <div className="vtmn-toggle_switch">
+          <input
+            type="checkbox"
+            id={identifier}
+            checked={checked}
+            disabled={disabled}
+            ref={ref}
+            {...props}
+          />
+          <span aria-hidden="true"></span>
+        </div>
+        <label htmlFor={identifier}>{labelText}</label>
       </div>
-      <label htmlFor={identifier}>{labelText}</label>
-    </div>
-  );
-};
+    );
+  },
+);
 
 const MemoVtmnToggle = React.memo(VtmnToggle);
 
