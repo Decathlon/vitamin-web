@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.54.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.54.2...@vtmn/react@0.54.3) (2022-10-25)
+
+### Bug Fixes
+
+- **@vtmn/react:** missing accessible name on VtmnAlert ([#1293](https://github.com/Decathlon/vitamin-web/issues/1293)) ([ef8214e](https://github.com/Decathlon/vitamin-web/commit/ef8214e649938d57868f71f3b57cdd5035ccba9d))
+
 ## [0.54.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.54.1...@vtmn/react@0.54.2) (2022-10-21)
 
 **Note:** Version bump only for package @vtmn/react

@@ -43,7 +43,7 @@ export default /*#__PURE__*/ defineComponent({
       default: 0,
     },
   },
-  emits: ['update:modelValue'],
+  emits: ['update:modelValue', 'cancel'],
   setup(props, { emit }) {
     props = reactive(props);
 
@@ -54,6 +54,10 @@ export default /*#__PURE__*/ defineComponent({
           (event.target as HTMLInputElement).checked,
         );
       }
+    };
+
+    const handleCancel = () => {
+      return emit('cancel');
     };
 
     return {
@@ -69,6 +73,7 @@ export default /*#__PURE__*/ defineComponent({
         ['vtmn-chip--disabled']: props.disabled,
       })),
       handleChange,
+      handleCancel,
     };
   },
 });
@@ -95,6 +100,7 @@ export default /*#__PURE__*/ defineComponent({
       :iconAlone="'close-line'"
       :size="size"
       :disabled="disabled"
+      @click.prevent="handleCancel"
       aria-label="Unselect the selection"
     />
     <VtmnBadge
