@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.17.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.17.0...@vtmn/icons@0.17.1) (2022-10-28)
+
+**Note:** Version bump only for package @vtmn/icons
+
 # [0.17.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.16.0...@vtmn/icons@0.17.0) (2022-10-19)
 
 ### Features
