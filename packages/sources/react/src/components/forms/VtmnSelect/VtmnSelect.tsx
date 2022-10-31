@@ -2,7 +2,8 @@ import '@vtmn/css-select/dist/index-with-vars.css';
 import clsx from 'clsx';
 import React from 'react';
 
-export interface VtmnSelectProps extends React.ComponentPropsWithRef<'select'> {
+export interface VtmnSelectProps
+  extends React.ComponentPropsWithoutRef<'select'> {
   error?: boolean;
   errorText?: string;
   id: string;
