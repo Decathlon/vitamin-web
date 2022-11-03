@@ -4,5 +4,9 @@ module.exports = {
       name: 'removeViewBox',
       active: false,
     },
+    {
+      name: 'removeDimensions',
+      active: true,
+    },
   ],
 };

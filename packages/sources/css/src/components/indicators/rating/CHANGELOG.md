@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.10](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-rating@0.5.9...@vtmn/css-rating@0.5.10) (2022-10-28)
+
+**Note:** Version bump only for package @vtmn/css-rating
+
 ## [0.5.9](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-rating@0.5.8...@vtmn/css-rating@0.5.9) (2022-10-19)
 
 **Note:** Version bump only for package @vtmn/css-rating

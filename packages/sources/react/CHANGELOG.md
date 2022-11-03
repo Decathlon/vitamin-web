@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.55.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.54.4...@vtmn/react@0.55.0) (2022-10-31)
+
+### Features
+
+- **@vtmn/react:** add ref forwarding on form elements ([#1295](https://github.com/Decathlon/vitamin-web/issues/1295)) ([8b51387](https://github.com/Decathlon/vitamin-web/commit/8b513879a86ad9d6cebaea6b0fdd6efe2361cc20))
+
+## [0.54.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.54.3...@vtmn/react@0.54.4) (2022-10-28)
+
+**Note:** Version bump only for package @vtmn/react
+
 ## [0.54.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.54.2...@vtmn/react@0.54.3) (2022-10-25)
 
 ### Bug Fixes
