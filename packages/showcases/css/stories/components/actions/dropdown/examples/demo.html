@@ -87,16 +87,13 @@
 
   let inputs = groupItems.querySelectorAll('[type="checkbox"]');
 
+  let summary = document.querySelector('#dropdown-demo summary');
+
   let details = document.querySelector('#dropdown-demo details');
 
   details.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
-      inputs[0].focus();
-    }
-  });
-
-  groupItems.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+    if (e.key === 'ArrowDown' || e.key === 'ArrowRight' || e.key === 'Enter') {
+      details.setAttribute('open', true);
       inputs[0].focus();
     }
   });
@@ -128,6 +125,11 @@
 
       if (e.key === 'Tab') {
         groupItems.focus();
+      }
+
+      if (e.key === 'Escape') {
+        details.removeAttribute('open');
+        summary.focus();
       }
 
       e.stopPropagation();
