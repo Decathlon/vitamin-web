@@ -24,6 +24,12 @@
    */
   export let contentOpaque = false;
 
+  /**
+   * @type {'span'|'h1'|'h2'|'h3'|'h4'|'h5'|'h6'} Title displayed element
+   * @default span
+   */
+  export let titleElement = 'span';
+
   let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
@@ -59,7 +65,9 @@
   {/if}
   <div class={componentContentClass}>
     {#if title}
-      <span class="vtmn-card_content--title">{title}</span>
+      <svelte:element this={titleElement} class="vtmn-card_content--title"
+        >{title}</svelte:element
+      >
     {/if}
     {#if $$slots.content}
       <span class="vtmn-card_content--body">

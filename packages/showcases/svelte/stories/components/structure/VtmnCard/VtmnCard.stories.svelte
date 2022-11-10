@@ -13,7 +13,18 @@
   title="Components / Structure / VtmnCard"
   component={VtmnCard}
   {parameters}
-  {argTypes}
+  argTypes={{
+    ...argTypes,
+    titleElement: {
+      type: { name: 'string', required: false },
+      description: 'HTML element who displayed the title.',
+      defaultValue: 'span',
+      control: {
+        type: 'select',
+        options: ['span', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
+      },
+    },
+  }}
 />
 
 <Template let:args>
