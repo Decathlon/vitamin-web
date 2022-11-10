@@ -11,6 +11,7 @@
         style="height: 200px"
         role="group"
         aria-labelledby="dropdown-demo-label"
+        tabindex="-1"
       >
         <input type="checkbox" name="dropdown-demo" id="dropdown-demo-opt-1" />
         <label for="dropdown-demo-opt-1">
@@ -82,6 +83,13 @@
   </div>
 </div>
 
+<button
+  class="vtmn-btn vtmn-btn_variant--conversion vtmn-btn_size--small vtmn-btn--icon-alone"
+>
+  <span class="vtmx-add-line" aria-hidden="true"></span>
+  <span class="vtmn-sr-only">add</span>
+</button>
+
 <script>
   let groupItems = document.querySelector('#dropdown-items');
 
@@ -121,10 +129,6 @@
 
       if (e.key === ' ') {
         inputs[index].checked = !inputs[index].checked;
-      }
-
-      if (e.key === 'Tab') {
-        groupItems.focus();
       }
 
       if (e.key === 'Escape') {
