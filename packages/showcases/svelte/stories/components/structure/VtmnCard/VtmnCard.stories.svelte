@@ -15,16 +15,6 @@
   {parameters}
   argTypes={{
     ...argTypes,
-    headingLevel: {
-      type: { name: 'number', required: false },
-      description: 'Heading level of the card title',
-      defaultValue: 2,
-      control: {
-        type: 'range',
-        min: 1,
-        max: 6,
-      },
-    },
   }}
 />
 
