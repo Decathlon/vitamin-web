@@ -31,7 +31,6 @@
 .vtmn-card_content--title {
   font-size: var(--vtmn-typo_title-5-font-size);
   font-weight: var(--vtmn-typo_font-weight--bold);
-  min-inline-size: max-content;
 }
 
 .vtmn-card_content--body {

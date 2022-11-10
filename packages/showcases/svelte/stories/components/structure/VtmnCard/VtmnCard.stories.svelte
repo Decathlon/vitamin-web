@@ -15,13 +15,14 @@
   {parameters}
   argTypes={{
     ...argTypes,
-    titleElement: {
+    headingLevel: {
       type: { name: 'string', required: false },
-      description: 'HTML element who displayed the title.',
-      defaultValue: 'span',
+      description: 'Heading level of the card title',
+      defaultValue: undefined,
       control: {
         type: 'select',
-        options: ['span', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
+        options: [undefined, 1, 2, 3, 4, 5, 6],
+        default: undefined,
       },
     },
   }}

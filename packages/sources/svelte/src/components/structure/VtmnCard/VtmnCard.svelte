@@ -25,10 +25,10 @@
   export let contentOpaque = false;
 
   /**
-   * @type {'span'|'h1'|'h2'|'h3'|'h4'|'h5'|'h6'} Title displayed element
-   * @default span
+   * @type {undefined|1|2|3|4|5|6} Heading level of card title
+   * @default undefined
    */
-  export let titleElement = 'span';
+  export let headingLevel = undefined;
 
   let className = undefined;
   /**
@@ -65,9 +65,13 @@
   {/if}
   <div class={componentContentClass}>
     {#if title}
-      <svelte:element this={titleElement} class="vtmn-card_content--title"
-        >{title}</svelte:element
+      <span
+        role={headingLevel && 'heading'}
+        aria-level={headingLevel && headingLevel}
+        class="vtmn-card_content--title"
       >
+        {title}
+      </span>
     {/if}
     {#if $$slots.content}
       <span class="vtmn-card_content--body">

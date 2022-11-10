@@ -59,7 +59,7 @@ describe('VtmnCard', () => {
     test('Should set the title as h1', () => {
       const { getByRole } = render(VtmnCard, {
         title: 'unit test',
-        titleElement: 'h1',
+        headingLevel: 1,
       });
       expect(getByRole('heading', { level: 1 })).toBeVisible();
     });
