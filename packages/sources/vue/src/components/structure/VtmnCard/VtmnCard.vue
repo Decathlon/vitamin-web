@@ -25,6 +25,10 @@ export default /*#__PURE__*/ defineComponent({
       type: Boolean as PropType<boolean>,
       default: false,
     },
+    headingLevel: {
+      type: Number as PropType<number>,
+      default: 2,
+    },
   },
   setup(props) {
     props = reactive(props);
@@ -45,6 +49,10 @@ export default /*#__PURE__*/ defineComponent({
         'vtmn-card_content--opaque':
           props.variant === 'full-image' && props.contentOpaque,
       })),
+
+      Heading: computed(() => {
+        return `h${props.headingLevel}`;
+      }),
     };
   },
 });
@@ -56,9 +64,13 @@ export default /*#__PURE__*/ defineComponent({
       <slot name="img" />
     </div>
     <div :class="componentContentClasses">
-      <span v-if="$props.title" class="vtmn-card_content--title">
+      <component
+        :is="Heading"
+        v-if="$props.title"
+        class="vtmn-card_content--title"
+      >
         {{ $props.title }}
-      </span>
+      </component>
 
       <template v-if="$slots['content']">
         <span class="vtmn-card_content--body">
