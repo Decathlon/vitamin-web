@@ -18,11 +18,11 @@
     headingLevel: {
       type: { name: 'number', required: false },
       description: 'Heading level of the card title',
-      defaultValue: undefined,
+      defaultValue: 2,
       control: {
-        type: 'select',
-        options: [undefined, 1, 2, 3, 4, 5, 6],
-        default: undefined,
+        type: 'range',
+        min: 1,
+        max: 6,
       },
     },
   }}

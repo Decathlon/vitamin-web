@@ -25,10 +25,10 @@
   export let contentOpaque = false;
 
   /**
-   * @type {undefined|1|2|3|4|5|6} Heading level of card title
-   * @default undefined
+   * @type {1|2|3|4|5|6} Heading level of card title
+   * @default 2
    */
-  export let headingLevel = undefined;
+  export let headingLevel = 2;
 
   let className = undefined;
   /**
@@ -36,7 +36,7 @@
    */
   export { className as class };
 
-  const Heading = headingLevel ? `h${headingLevel}` : 'span';
+  const Heading = `h${headingLevel}`;
 
   $: componentClass = cn(
     'vtmn-card',
