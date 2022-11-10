@@ -29,6 +29,7 @@
 }
 
 .vtmn-card_content--title {
+  all: unset;
   font-size: var(--vtmn-typo_title-5-font-size);
   font-weight: var(--vtmn-typo_font-weight--bold);
 }
