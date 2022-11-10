@@ -36,6 +36,8 @@
    */
   export { className as class };
 
+  const Heading = headingLevel ? `h${headingLevel}` : 'span';
+
   $: componentClass = cn(
     'vtmn-card',
     variant && `vtmn-card_variant--${variant}`,
@@ -65,13 +67,9 @@
   {/if}
   <div class={componentContentClass}>
     {#if title}
-      <span
-        role={headingLevel && 'heading'}
-        aria-level={headingLevel && headingLevel}
-        class="vtmn-card_content--title"
-      >
+      <svelte:element this={Heading} class="vtmn-card_content--title">
         {title}
-      </span>
+      </svelte:element>
     {/if}
     {#if $$slots.content}
       <span class="vtmn-card_content--body">

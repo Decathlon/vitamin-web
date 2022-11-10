@@ -16,7 +16,7 @@
   argTypes={{
     ...argTypes,
     headingLevel: {
-      type: { name: 'string', required: false },
+      type: { name: 'number', required: false },
       description: 'Heading level of the card title',
       defaultValue: undefined,
       control: {
