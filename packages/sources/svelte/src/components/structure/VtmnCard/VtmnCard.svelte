@@ -67,7 +67,7 @@
   {/if}
   <div class={componentContentClass}>
     {#if title}
-      <svelte:element this={Heading} class="vtmn-card_content--title">
+      <svelte:element this={titleElement} class="vtmn-card_content--title">
         {title}
       </svelte:element>
     {/if}
