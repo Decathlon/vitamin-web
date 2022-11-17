@@ -28,7 +28,10 @@
    * @type {1|2|3|4|5|6} Heading level of card title
    * @default 2
    */
-  export let headingLevel = 2;
+  /**
+   * @type {1|2|3|4|5|6} Heading level of card title
+   */
+  export let headingLevel;
 
   let className = undefined;
   /**
