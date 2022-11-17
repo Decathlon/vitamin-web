@@ -36,7 +36,7 @@
    */
   export { className as class };
 
-  const Heading = `h${headingLevel}`;
+  $: titleElement = headingLevel > 0 && headingLevel <= 6 && `h${headingLevel}` || 'span';
 
   $: componentClass = cn(
     'vtmn-card',
