@@ -39,7 +39,8 @@
    */
   export { className as class };
 
-  $: titleElement = headingLevel > 0 && headingLevel <= 6 && `h${headingLevel}` || 'span';
+  $: titleElement =
+    (headingLevel > 0 && headingLevel <= 6 && `h${headingLevel}`) || 'span';
 
   $: componentClass = cn(
     'vtmn-card',
