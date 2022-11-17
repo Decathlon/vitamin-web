@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/assets@0.2.2...@vtmn/assets@0.3.0) (2022-11-14)
+
+### Features
+
+- update assets ([#1308](https://github.com/Decathlon/vitamin-web/issues/1308)) ([754cc52](https://github.com/Decathlon/vitamin-web/commit/754cc522afc4f83d2c91a11b534600598da1bd2a))
+
 ## [0.2.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/assets@0.2.1...@vtmn/assets@0.2.2) (2022-10-28)
 
 **Note:** Version bump only for package @vtmn/assets
