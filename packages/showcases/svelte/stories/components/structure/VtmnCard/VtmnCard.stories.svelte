@@ -13,9 +13,7 @@
   title="Components / Structure / VtmnCard"
   component={VtmnCard}
   {parameters}
-  argTypes={{
-    ...argTypes,
-  }}
+  {argTypes}
 />
 
 <Template let:args>
