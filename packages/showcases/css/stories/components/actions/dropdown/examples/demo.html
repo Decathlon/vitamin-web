@@ -11,9 +11,8 @@
         style="height: 200px"
         role="group"
         aria-labelledby="dropdown-demo-label"
+        tabindex="0"
       >
-        <span id="block-focus-trap-start" tabindex="-1"></span>
-
         <input type="checkbox" name="dropdown-demo" id="dropdown-demo-opt-1" />
         <label for="dropdown-demo-opt-1">
           <span class="vtmx-emotion-laugh-line"></span>
@@ -79,46 +78,58 @@
           class="vtmn-divider vtmn-divider_orientation--horizontal"
           role="separator"
         ></div>
-
-        <span id="block-focus-trap-end" tabindex="0"></span>
       </div>
     </details>
   </div>
 </div>
 
 <script>
-  let firstItem = document.querySelector('#dropdown-demo-opt-1');
-  let lastItem = document.querySelector('#dropdown-demo-opt-6');
+  let groupItems = document.querySelector('#dropdown-items');
 
-  let groupItem = document.querySelector('#dropdown-items');
+  let inputs = groupItems.querySelectorAll('[type="checkbox"]');
 
-  let firstFocusTrap = document.querySelector('#block-focus-trap-start');
-  let lastFocusTrap = document.querySelector('#block-focus-trap-end');
+  let summary = document.querySelector('#dropdown-demo summary');
 
-  groupItem.addEventListener('focus', () => {
-    firstItem.focus();
-  });
+  let details = document.querySelector('#dropdown-demo details');
 
-  groupItem.addEventListener('focusout', () => {
-    firstFocusTrap.setAttribute('tabindex', '-1');
-  });
-
-  groupItem.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') {
-      document.querySelector('#dropdown-details').open = false;
-      document.querySelector('#dropdown-details > summary').focus();
+  details.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowDown' || e.key === 'ArrowRight' || e.key === 'Enter') {
+      details.setAttribute('open', true);
+      inputs[0].focus();
     }
   });
 
-  firstItem.addEventListener('focus', () => {
-    firstFocusTrap.setAttribute('tabindex', '0');
-  });
+  inputs.forEach((input, index) => {
+    input.setAttribute('tabindex', '-1');
 
-  firstFocusTrap.addEventListener('focus', () => {
-    lastItem.focus();
-  });
+    input.addEventListener('keydown', (e) => {
+      e.preventDefault();
+      if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+        if (index < inputs.length - 1) {
+          inputs[index + 1].focus();
+        } else {
+          inputs[0].focus();
+        }
+      }
 
-  lastFocusTrap.addEventListener('focus', () => {
-    firstItem.focus();
+      if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+        if (index <= 0) {
+          inputs[inputs.length - 1].focus();
+        } else {
+          inputs[index - 1].focus();
+        }
+      }
+
+      if (e.key === ' ') {
+        inputs[index].checked = !inputs[index].checked;
+      }
+
+      if (e.key === 'Escape') {
+        details.removeAttribute('open');
+        summary.focus();
+      }
+
+      e.stopPropagation();
+    });
   });
 </script>

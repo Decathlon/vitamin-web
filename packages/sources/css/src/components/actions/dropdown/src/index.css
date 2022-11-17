@@ -107,6 +107,7 @@
 
 .vtmn-dropdown_items:focus {
   outline: none;
+  box-shadow: var(--vtmn-shadow_focus-visible);
 }
 
 .vtmn-dropdown_items input[type='checkbox'] {
