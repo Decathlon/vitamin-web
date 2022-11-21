@@ -63,7 +63,6 @@
 <span class={componentClass} style={componentStyle} {...$$restProps} />
 
 <style>
-  @import '@vtmn/icons/dist/vitamix/font/vitamix.css';
   .vtmn-icon-size {
     color: var(--vtmn-icon-semantic-color);
     font-size: var(--vtmn-icon-size);
