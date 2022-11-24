@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-card@0.10.6...@vtmn/css-card@0.11.0) (2022-11-24)
+
+### Features
+
+- **@vtmn/svelte, @vtmn/react, @vtmn/vue, @vtmn/css:** add heading level on title + title wraps correctly ([#1304](https://github.com/Decathlon/vitamin-web/issues/1304)) ([bfc4a0a](https://github.com/Decathlon/vitamin-web/commit/bfc4a0aa0daaa5ee557c9b55fbd4830ebdbf989f))
+
 ## [0.10.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-card@0.10.5...@vtmn/css-card@0.10.6) (2022-10-21)
 
 ### Bug Fixes

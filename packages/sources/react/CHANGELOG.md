@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.56.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.55.1...@vtmn/react@0.56.0) (2022-11-24)
+
+### Features
+
+- **@vtmn/svelte, @vtmn/react, @vtmn/vue, @vtmn/css:** add heading level on title + title wraps correctly ([#1304](https://github.com/Decathlon/vitamin-web/issues/1304)) ([bfc4a0a](https://github.com/Decathlon/vitamin-web/commit/bfc4a0aa0daaa5ee557c9b55fbd4830ebdbf989f))
+
 ## [0.55.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.55.0...@vtmn/react@0.55.1) (2022-11-14)
 
 **Note:** Version bump only for package @vtmn/react
