@@ -51,7 +51,9 @@ export default /*#__PURE__*/ defineComponent({
       })),
 
       Heading: computed(() => {
-        return `h${props.headingLevel}`;
+        return props.headingLevel >= 0 && props.headingLevel <= 6
+          ? `h${props.headingLevel}`
+          : 'h2';
       }),
     };
   },

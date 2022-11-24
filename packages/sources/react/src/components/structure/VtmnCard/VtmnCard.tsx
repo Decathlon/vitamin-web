@@ -57,7 +57,10 @@ export const VtmnCard = ({
   children,
   className,
 }: VtmnCardProps) => {
-  const Heading = `h${headingLevel}` as keyof JSX.IntrinsicElements;
+  const Heading =
+    headingLevel >= 0 && headingLevel <= 6
+      ? (`h${headingLevel}` as keyof JSX.IntrinsicElements)
+      : 'h2';
 
   return (
     <div className="vtmn-card-container">
