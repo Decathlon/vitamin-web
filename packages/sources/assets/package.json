@@ -25,7 +25,7 @@
     "prebuild": "shx rm -rf dist",
     "build": "yarn build:svg && yarn build:json && yarn build:sprite",
     "build:json": "shx rm -rf ./dist/assets/json && shx mkdir ./dist/assets/json && fantasticon",
-    "build:sprite": "shx rm -rf ./dist/assets/sprite && shx mkdir ./dist/assets/sprite && spritesh -i dist/assets/svg -o dist/assets/sprite/assets.svg && node src/scripts/add-sprite-declaration.js",
+    "build:sprite": "shx rm -rf ./dist/assets/sprite && shx mkdir ./dist/assets/sprite && spritesh -i dist/assets/svg -o dist/assets/sprite/assets.svg && svgo dist/assets/sprite/assets.svg -o dist/assets/sprite/assets.svg --config ./svgo-sprite.config.js && node src/scripts/add-sprite-declaration.js",
     "build:svg": "node src/scripts/build-svg.js && svgo -f dist/assets/svg"
   },
   "devDependencies": {
@@ -34,7 +34,7 @@
     "fs-extra": "^10.0.0",
     "shx": "^0.3.4",
     "spritesh": "^1.2.1",
-    "svgo": "^2.7.0"
+    "svgo": "3.0.2"
   },
   "publishConfig": {
     "access": "public"
