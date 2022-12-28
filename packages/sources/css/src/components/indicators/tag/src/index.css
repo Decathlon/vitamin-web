@@ -11,13 +11,10 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  min-block-size: rem(24px);
-  block-size: rem(24px);
   inline-size: fit-content;
   padding-block: rem(2px);
   padding-inline: var(--vtmn-spacing_2);
   font-family: var(--vtmn-typo_font-family);
-  font-size: var(--vtmn-typo_text-3-font-size);
   font-weight: var(--vtmn-typo_font-weight--normal);
   color: var(--vtmn-semantic-color_content-accent);
   background-color: var(--vtmn-semantic-color_background-accent);

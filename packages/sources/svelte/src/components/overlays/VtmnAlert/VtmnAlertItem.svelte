@@ -50,7 +50,7 @@
   );
 </script>
 
-<div class={componentClass} role="alert" aria-live="assertive" tabindex="-1" {...$$restProps}>
+<div class={componentClass} role="alert" tabindex="-1" {...$$restProps}>
   <div class="vtmn-alert_content" role="document">
     <div id="alert-title" class="vtmn-alert_content-title">
       {title}
