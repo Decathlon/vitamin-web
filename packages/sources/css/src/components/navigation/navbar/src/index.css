@@ -4,6 +4,7 @@
 @import '@vtmn/css-design-tokens/src/opacities';
 
 .vtmn-navbar {
+  box-sizing: border-box;
   inline-size: 100%;
   block-size: rem(64px);
   background: var(--vtmn-semantic-color_background-primary);

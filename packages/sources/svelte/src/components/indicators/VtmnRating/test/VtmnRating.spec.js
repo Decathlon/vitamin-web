@@ -84,6 +84,17 @@ describe('VtmnRating', () => {
       const { container } = render(VtmnRating, { name: 'rating', value: 2 });
       expect(getCommentSecondary(container)).toBeUndefined();
     });
+    test('Should have aria label for radio', () => {
+      const { getByRole } = render(VtmnRating, {
+        name: 'rating',
+        value: 2,
+      });
+      expect(getByRole('radio', { name: '1/5' })).toBeVisible();
+      expect(getByRole('radio', { name: '2/5' })).toBeVisible();
+      expect(getByRole('radio', { name: '3/5' })).toBeVisible();
+      expect(getByRole('radio', { name: '4/5' })).toBeVisible();
+      expect(getByRole('radio', { name: '5/5' })).toBeVisible();
+    });
   });
 
   describe('readonly', () => {

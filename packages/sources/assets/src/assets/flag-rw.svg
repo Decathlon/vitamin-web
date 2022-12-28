@@ -1,4 +1,5 @@
 <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_503_3026)">
 <rect width="28" height="20" rx="2" fill="white"/>
 <mask id="mask0_503_3026" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20">
 <rect width="28" height="20" rx="2" fill="white"/>
@@ -9,7 +10,8 @@
 </g>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9.33333H28V0H0V9.33333Z" fill="#25B1EB"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 14.6667H28V9.33333H0V14.6667Z" fill="#FECB2F"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M21.3333 6L20.3128 7.13035L20.3905 5.60948L18.8696 5.68716L20 4.66667L18.8696 3.64618L20.3905 3.72386L20.3128 2.20299L21.3333 3.33333L22.3538 2.20299L22.2761 3.72386L23.797 3.64618L22.6667 4.66667L23.797 5.68716L22.2761 5.60948L22.3538 7.13035L21.3333 6Z" fill="#FECB2F"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21.3334 6L20.3129 7.13035L20.3905 5.60948L18.8697 5.68716L20 4.66667L18.8697 3.64618L20.3905 3.72386L20.3129 2.20299L21.3334 3.33333L22.3538 2.20299L22.2762 3.72386L23.797 3.64618L22.6667 4.66667L23.797 5.68716L22.2762 5.60948L22.3538 7.13035L21.3334 6Z" fill="#FECB2F"/>
+</g>
 </g>
 <defs>
 <filter id="filter0_d_503_3026" x="0" y="14.6667" width="28" height="5.33333" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -20,5 +22,8 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_503_3026"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_503_3026" result="shape"/>
 </filter>
+<clipPath id="clip0_503_3026">
+<rect width="28" height="20" rx="2" fill="white"/>
+</clipPath>
 </defs>
 </svg>

@@ -73,8 +73,8 @@ describe('VtmnProgressbar', () => {
         '30',
       );
       expect(getProgressLinearIndicator(container)).toHaveAttribute(
-        'x2',
-        '30%',
+        'style',
+        '--vtmn-progressbar_progress-transform:translateX(-70%) scale(1);',
       );
     });
     test('Should apply an indeterminate value', () => {

@@ -1,4 +1,5 @@
 <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_503_4477)">
 <rect width="28" height="20" rx="2" fill="white"/>
 <mask id="mask0_503_4477" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20">
 <rect width="28" height="20" rx="2" fill="white"/>
@@ -11,6 +12,7 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 20H28V14.6667H0V20Z" fill="#DE2035"/>
 </g>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 9.33333H28V0H0V9.33333Z" fill="#FFD935"/>
+</g>
 </g>
 <defs>
 <filter id="filter0_d_503_4477" x="0" y="9.33334" width="28" height="5.33334" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -29,5 +31,8 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_503_4477"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_503_4477" result="shape"/>
 </filter>
+<clipPath id="clip0_503_4477">
+<rect width="28" height="20" rx="2" fill="white"/>
+</clipPath>
 </defs>
 </svg>

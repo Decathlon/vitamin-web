@@ -21,21 +21,6 @@ export const argTypes = {
     defaultValue: '#',
     control: { type: 'text' },
   },
-  target: {
-    type: { name: 'string', required: false },
-    description: 'The target of the link.',
-    defaultValue: '_self',
-    table: {
-      type: {
-        summary: 'string',
-      },
-      defaultValue: { summary: '_self' },
-    },
-    control: {
-      type: 'radio',
-      options: ['_self', '_blank', '_parent', '_top'],
-    },
-  },
   size: {
     type: { name: 'string', required: false },
     description: 'The size of the link.',

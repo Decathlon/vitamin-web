@@ -38,30 +38,39 @@ export interface VtmnCheckboxProps
   disabled?: boolean;
 }
 
-export const VtmnCheckbox = ({
-  identifier,
-  labelText,
-  checked = false,
-  defaultChecked = undefined,
-  disabled = false,
-  ...props
-}: VtmnCheckboxProps) => {
-  return (
-    <div>
-      <input
-        className="vtmn-checkbox"
-        type="checkbox"
-        id={identifier}
-        {...(typeof defaultChecked !== 'undefined'
-          ? { defaultChecked }
-          : { checked })}
-        disabled={disabled}
-        {...props}
-      />
-      <label htmlFor={identifier}>{labelText}</label>
-    </div>
-  );
-};
+export const VtmnCheckbox = React.forwardRef<
+  HTMLInputElement,
+  VtmnCheckboxProps
+>(
+  (
+    {
+      identifier,
+      labelText,
+      checked = false,
+      defaultChecked = undefined,
+      disabled = false,
+      ...props
+    },
+    ref,
+  ) => {
+    return (
+      <div>
+        <input
+          className="vtmn-checkbox"
+          type="checkbox"
+          id={identifier}
+          {...(typeof defaultChecked !== 'undefined'
+            ? { defaultChecked }
+            : { checked })}
+          disabled={disabled}
+          ref={ref}
+          {...props}
+        />
+        <label htmlFor={identifier}>{labelText}</label>
+      </div>
+    );
+  },
+);
 
 const MemoVtmnCheckbox = React.memo(VtmnCheckbox);
 

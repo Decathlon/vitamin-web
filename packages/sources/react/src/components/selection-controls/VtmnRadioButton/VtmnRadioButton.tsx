@@ -38,31 +38,39 @@ export interface VtmnRadioButtonProps
   disabled?: boolean;
 }
 
-export const VtmnRadioButton = ({
-  identifier,
-  labelText,
-  checked = false,
-  defaultChecked = undefined,
-  disabled = false,
-  ...props
-}: VtmnRadioButtonProps) => {
-  return (
-    <div>
-      <input
-        className="vtmn-radio-button"
-        type="radio"
-        id={identifier}
-        {...(typeof defaultChecked !== 'undefined'
-          ? { defaultChecked }
-          : { checked })}
-        disabled={disabled}
-        {...props}
-      />
-      <label htmlFor={identifier}>{labelText}</label>
-    </div>
-  );
-};
-
+export const VtmnRadioButton = React.forwardRef<
+  HTMLInputElement,
+  VtmnRadioButtonProps
+>(
+  (
+    {
+      identifier,
+      labelText,
+      checked = false,
+      defaultChecked = undefined,
+      disabled = false,
+      ...props
+    },
+    ref,
+  ) => {
+    return (
+      <div>
+        <input
+          className="vtmn-radio-button"
+          type="radio"
+          id={identifier}
+          {...(typeof defaultChecked !== 'undefined'
+            ? { defaultChecked }
+            : { checked })}
+          disabled={disabled}
+          ref={ref}
+          {...props}
+        />
+        <label htmlFor={identifier}>{labelText}</label>
+      </div>
+    );
+  },
+);
 const MemoVtmnRadioButton = React.memo(VtmnRadioButton);
 
 MemoVtmnRadioButton.displayName = 'VtmnRadioButton';

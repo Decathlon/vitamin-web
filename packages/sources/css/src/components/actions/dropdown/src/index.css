@@ -88,6 +88,7 @@
 }
 
 .vtmn-dropdown_items {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -106,6 +107,7 @@
 
 .vtmn-dropdown_items:focus {
   outline: none;
+  box-shadow: var(--vtmn-shadow_focus-visible);
 }
 
 .vtmn-dropdown_items input[type='checkbox'] {
@@ -116,6 +118,7 @@
 }
 
 .vtmn-dropdown_items > label {
+  box-sizing: border-box;
   background-color: var(--vtmn-semantic-color_background-primary);
   padding: var(--vtmn-spacing_3);
   margin: 0;

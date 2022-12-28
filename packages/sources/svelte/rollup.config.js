@@ -43,6 +43,7 @@ const postcssProcess = (component, variant = '') =>
   });
 
 const globals = {
+  'svelte/store': 'store',
   'svelte/internal': 'svelte/internal',
   svelte: 'svelte',
 };

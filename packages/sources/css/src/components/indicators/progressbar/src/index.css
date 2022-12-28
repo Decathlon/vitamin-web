@@ -13,6 +13,7 @@
 }
 
 .vtmn-progressbar_container svg {
+  display: block;
   inline-size: 100%;
   block-size: rem(8px);
   border-radius: var(--vtmn-radius_700);
@@ -39,6 +40,13 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+/* Linear */
+.vtmn-progressbar_variant--linear .vtmn-progressbar_indicator {
+  --vtmn-progressbar_progress-transform: unset;
+
+  transform: var(--vtmn-progressbar_progress-transform);
 }
 
 /* Circle */

@@ -103,45 +103,49 @@
 />
 
 <Template let:args>
-  <VtmnProgressbar labelId="label-text-0" {...args} />
+  <div style="width: 300px; display:flex; justify-content: center;">
+    <VtmnProgressbar labelId="label-text-0" {...args} />
+  </div>
 </Template>
 
 <Story name="Overview" />
 
 <Story name="Linear">
-  <div class="block">
-    <VtmnProgressbar
-      labelId="label-text-1"
-      label="loading"
-      progress="60"
-      size="small"
-    />
-  </div>
-  <div class="block">
-    <VtmnProgressbar labelId="label-text-3" size="small" indeterminate />
-  </div>
+  <div style="width: 300px;">
+    <div class="block">
+      <VtmnProgressbar
+        labelId="label-text-1"
+        label="loading"
+        progress="60"
+        size="small"
+      />
+    </div>
+    <div class="block">
+      <VtmnProgressbar labelId="label-text-3" size="small" indeterminate />
+    </div>
 
-  <div class="block">
-    <VtmnProgressbar
-      labelId="label-text-4"
-      label="loading"
-      progress="25"
-      size="medium"
-    />
-  </div>
-  <div class="block">
-    <VtmnProgressbar labelId="label-text-6" size="medium" indeterminate />
-  </div>
-  <div class="block">
-    <VtmnProgressbar
-      labelId="label-text-7"
-      label="loading"
-      progress="35"
-      size="large"
-    />
-  </div>
-  <div class="block">
-    <VtmnProgressbar labelId="label-text-9" size="large" indeterminate />
+    <div class="block">
+      <VtmnProgressbar
+        labelId="label-text-4"
+        label="loading"
+        progress="25"
+        size="medium"
+      />
+    </div>
+    <div class="block">
+      <VtmnProgressbar labelId="label-text-6" size="medium" indeterminate />
+    </div>
+    <div class="block">
+      <VtmnProgressbar
+        labelId="label-text-7"
+        label="loading"
+        progress="35"
+        size="large"
+      />
+    </div>
+    <div class="block">
+      <VtmnProgressbar labelId="label-text-9" size="large" indeterminate />
+    </div>
   </div>
 </Story>
 
