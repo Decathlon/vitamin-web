@@ -96,5 +96,10 @@ describe('VtmnTag', () => {
       );
       expect(getTag(container)).toBeVisible();
     });
+    test('Should have by default medium size', () => {
+      const { container } = render(VtmnTag);
+      expect(getTag(container)).toHaveClass('vtmn-tag_size--medium');
+      expect(getTag(container)).toBeVisible();
+    });
   });
 });
