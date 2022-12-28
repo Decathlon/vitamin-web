@@ -94,3 +94,19 @@ a.vtmn-tag:focus-visible {
   background-color: var(--vtmn-semantic-color_decorative-emerald);
   color: var(--vtmn-semantic-color_content-primary);
 }
+
+/* SIZES */
+
+/* Small */
+.vtmn-tag_size--small {
+  min-block-size: rem(20px);
+  block-size: rem(20px);
+  font-size: var(--vtmn-typo_caption-1-font-size);
+}
+
+/* Medium */
+.vtmn-tag_size--medium {
+  min-block-size: rem(24px);
+  block-size: rem(24px);
+  font-size: var(--vtmn-typo_text-3-font-size);
+}

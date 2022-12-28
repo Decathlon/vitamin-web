@@ -2,7 +2,7 @@
 import '@vtmn/css-tag/dist/index-with-vars.css';
 import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
 import { reactive, computed, defineComponent, PropType } from 'vue';
-import { VtmnTagVariant } from './types';
+import { VtmnTagSize, VtmnTagVariant } from './types';
 import VtmnIcon from '../../../guidelines/iconography/VtmnIcon/VtmnIcon.vue';
 
 export default /*#__PURE__*/ defineComponent({
@@ -36,6 +36,12 @@ export default /*#__PURE__*/ defineComponent({
       type: String as PropType<VitamixId>,
       default: null,
     },
+    size: {
+      type: String as PropType<VtmnTagSize>,
+      default: 'medium',
+      validator: (val: VtmnTagSize) =>
+          ['small', 'medium'].includes(val),
+    },
   },
   setup(props) {
     props = reactive(props);
@@ -47,6 +53,7 @@ export default /*#__PURE__*/ defineComponent({
       classes: computed(() => ({
         'vtmn-tag': true,
         [`vtmn-tag_variant--${props.variant}`]: props.variant,
+        [`vtmn-tag_size--${props.size}`]: true,
       })),
     };
   },

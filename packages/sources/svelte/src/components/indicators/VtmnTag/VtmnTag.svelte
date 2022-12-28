@@ -1,7 +1,14 @@
 <script>
   import { cn } from '../../../utils/classnames';
-  import { VTMN_TAG_VARIANT } from './enums';
+  import { VTMN_TAG_SIZE, VTMN_TAG_VARIANT } from './enums';
   import VtmnIcon from '../../../guidelines/iconography/VtmnIcon/VtmnIcon.svelte';
+
+  /**
+   * Size of the tag
+   * @type {'small' | 'medium'}
+   * @defaultValue 'medium'
+   */
+  export let size = VTMN_TAG_SIZE.MEDIUM;
 
   /**
    * The variant of the tag
@@ -29,6 +36,7 @@
 
   $: componentClass = cn(
     'vtmn-tag',
+    size && `vtmn-tag_size--${size}`,
     variant && `vtmn-tag_variant--${variant}`,
     className,
   );
