@@ -88,5 +88,18 @@ describe('VtmnTag', () => {
       const { getByText } = render(VtmnTag, { href: 'http://example.com' });
       expect(getByText('Unit-test tag')).toBeVisible();
     });
+    test('Should apply size', () => {
+      const { container } = render(VtmnTag, { size: 'small' });
+      expect(getTag(container)).toHaveClass(
+        'vtmn-tag_size--small',
+        'vtmn-tag_variant--accent',
+      );
+      expect(getTag(container)).toBeVisible();
+    });
+    test('Should have by default medium size', () => {
+      const { container } = render(VtmnTag);
+      expect(getTag(container)).toHaveClass('vtmn-tag_size--medium');
+      expect(getTag(container)).toBeVisible();
+    });
   });
 });
