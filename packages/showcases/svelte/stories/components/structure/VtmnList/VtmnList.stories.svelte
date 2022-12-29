@@ -89,3 +89,29 @@
     </VtmnList>
   </div>
 </Story>
+
+<Story name="With links" let:args>
+  <div style="width: 700px; display: flex; justify-content: center">
+    <VtmnList>
+      {#each listItems() as { }, index}
+        <VtmnListItem href="/" target="_blank">
+          <span slot="text">Lorem ipsum</span>
+          <span slot="subtext">Lorem ipsum dolor sit amet</span>
+        </VtmnListItem>
+      {/each}
+    </VtmnList>
+  </div>
+</Story>
+
+<Story name="With links disabled and without divider" let:args>
+  <div style="width: 700px; display: flex; justify-content: center">
+    <VtmnList>
+      {#each listItems() as { }, index}
+        <VtmnListItem href="/" target="_blank" disabled>
+          <span slot="text">Lorem ipsum</span>
+          <span slot="subtext">Lorem ipsum dolor sit amet</span>
+        </VtmnListItem>
+      {/each}
+    </VtmnList>
+  </div>
+</Story>
