@@ -39,8 +39,7 @@ export default /*#__PURE__*/ defineComponent({
     size: {
       type: String as PropType<VtmnTagSize>,
       default: 'medium',
-      validator: (val: VtmnTagSize) =>
-          ['small', 'medium'].includes(val),
+      validator: (val: VtmnTagSize) => ['small', 'medium'].includes(val),
     },
   },
   setup(props) {

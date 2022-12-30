@@ -61,13 +61,17 @@
 
 <style>
   :global(#anchor--components-actions-vtmndropdown--overview .docs-story),
-  :global(#anchor--components-actions-vtmndropdown--overview
-      .docs-story
-      > div:first-child),
+  :global(
+      #anchor--components-actions-vtmndropdown--overview
+        .docs-story
+        > div:first-child
+    ),
   :global(#anchor--components-actions-vtmndropdown--with-icons .docs-story),
-  :global(#anchor--components-actions-vtmndropdown--with-icons
-      .docs-story
-      > div:first-child) {
+  :global(
+      #anchor--components-actions-vtmndropdown--with-icons
+        .docs-story
+        > div:first-child
+    ) {
     height: 500px;
     justify-content: flex-start;
   }

@@ -76,9 +76,11 @@
   }
 
   :global(#anchor--components-structure-vtmnskeleton--with-card .docs-story),
-  :global(#anchor--components-structure-vtmnskeleton--with-card
-      .docs-story
-      > div:first-child) {
+  :global(
+      #anchor--components-structure-vtmnskeleton--with-card
+        .docs-story
+        > div:first-child
+    ) {
     height: 500px;
   }
 </style>
