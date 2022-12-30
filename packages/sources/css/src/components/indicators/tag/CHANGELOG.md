@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tag@0.7.4...@vtmn/css-tag@0.8.0) (2022-12-30)
+
+### Features
+
+- **@vtmn/css:** add small size for `VtmnTag` component ([#1320](https://github.com/Decathlon/vitamin-web/issues/1320)) ([e4b0ffb](https://github.com/Decathlon/vitamin-web/commit/e4b0ffbfc64d67718e7e0f4c3f0dbfa6c89de245))
+
 ## [0.7.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tag@0.7.3...@vtmn/css-tag@0.7.4) (2022-10-14)
 
 **Note:** Version bump only for package @vtmn/css-tag

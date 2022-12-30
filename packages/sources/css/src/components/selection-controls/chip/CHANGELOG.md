@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-chip@0.9.4...@vtmn/css-chip@0.9.5) (2022-12-30)
+
+### Bug Fixes
+
+- re-trigger linter for lerna ([c2ce2c4](https://github.com/Decathlon/vitamin-web/commit/c2ce2c4b3305b2283b68c8189d2d7ef6269d52e6))
+
 ## [0.9.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-chip@0.9.3...@vtmn/css-chip@0.9.4) (2022-10-14)
 
 **Note:** Version bump only for package @vtmn/css-chip
