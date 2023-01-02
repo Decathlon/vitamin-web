@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.46.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.45.0...@vtmn/vue@0.46.0) (2022-12-30)
+
+### Bug Fixes
+
+- re-trigger linter for lerna ([c2ce2c4](https://github.com/Decathlon/vitamin-web/commit/c2ce2c4b3305b2283b68c8189d2d7ef6269d52e6))
+
+### Features
+
+- **@vtmn/css:** add small size for `VtmnTag` component ([#1320](https://github.com/Decathlon/vitamin-web/issues/1320)) ([e4b0ffb](https://github.com/Decathlon/vitamin-web/commit/e4b0ffbfc64d67718e7e0f4c3f0dbfa6c89de245))
+
 # [0.45.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.44.8...@vtmn/vue@0.45.0) (2022-11-24)
 
 ### Features

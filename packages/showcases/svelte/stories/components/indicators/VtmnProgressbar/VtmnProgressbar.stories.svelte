@@ -289,16 +289,20 @@
   }
 
   :global(#anchor--components-indicators-vtmnprogressbar--linear .docs-story),
-  :global(#anchor--components-indicators-vtmnprogressbar--linear
-      .docs-story
-      > div:first-child) {
+  :global(
+      #anchor--components-indicators-vtmnprogressbar--linear
+        .docs-story
+        > div:first-child
+    ) {
     height: 450px;
   }
 
   :global(#anchor--components-indicators-vtmnprogressbar--circular .docs-story),
-  :global(#anchor--components-indicators-vtmnprogressbar--circular
-      .docs-story
-      > div:first-child) {
+  :global(
+      #anchor--components-indicators-vtmnprogressbar--circular
+        .docs-story
+        > div:first-child
+    ) {
     height: 700px;
   }
 </style>

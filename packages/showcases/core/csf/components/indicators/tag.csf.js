@@ -57,4 +57,13 @@ export const argTypes = {
       options: ['', ...Object.keys(vitamixIconsList)],
     },
   },
+  size: {
+    type: { name: 'string', required: false },
+    description: 'The size of the tag.',
+    defaultValue: 'medium',
+    control: {
+      type: 'select',
+      options: ['small', 'medium'],
+    },
+  },
 };

@@ -11,3 +11,8 @@ export const VTMN_TAG_VARIANT = {
   DECORATIVE_COBALT: 'decorative_cobalt',
   DECORATIVE_AMETHYST: 'decorative_amethyst',
 };
+
+export const VTMN_TAG_SIZE = {
+  SMALL: 'small',
+  MEDIUM: 'medium',
+};

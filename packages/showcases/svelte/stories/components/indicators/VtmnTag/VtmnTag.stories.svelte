@@ -1,6 +1,6 @@
 <script>
   import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
-  import { VtmnTag, VtmnIcon } from '@vtmn/svelte';
+  import { VtmnTag } from '@vtmn/svelte';
   import {
     parameters,
     argTypes,

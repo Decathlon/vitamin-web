@@ -247,12 +247,16 @@
   font-size: rem(24px);
 }
 
-.vtmn-chip_variant--input[aria-pressed='true']:not([aria-disabled='true']):hover {
+.vtmn-chip_variant--input[aria-pressed='true']:not(
+    [aria-disabled='true']
+  ):hover {
   cursor: initial;
   background-color: var(--vtmn-semantic-color_background-brand-primary);
 }
 
-.vtmn-chip_variant--input[aria-pressed='true']:not([aria-disabled='true']):active {
+.vtmn-chip_variant--input[aria-pressed='true']:not(
+    [aria-disabled='true']
+  ):active {
   background-color: var(--vtmn-semantic-color_background-brand-primary);
 }
 
