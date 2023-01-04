@@ -33,6 +33,15 @@ export const VtmnListItemEndAction = ({
   </div>
 );
 
+/**
+ * Custom function to inject elements under the link
+ * NB: Outside the link must be only the VtmnListItemEndAction because it can be a action button
+ * @param children
+ * @param className
+ * @param target
+ * @param props
+ * @constructor
+ */
 export const VtmnListItemLink = ({
   children,
   className,

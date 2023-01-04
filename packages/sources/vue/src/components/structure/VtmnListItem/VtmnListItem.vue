@@ -50,7 +50,13 @@ export default /*#__PURE__*/ defineComponent({
     v-bind="$attrs"
   >
     <template v-if="href">
-      <a class="vtmn-list__link" :href="href" :target="target" :rel="rel" :aria-disabled="disabled">
+      <a
+        class="vtmn-list__link"
+        :href="href"
+        :target="target"
+        :rel="rel"
+        :aria-disabled="disabled"
+      >
         <div v-if="$slots['start-visual']" class="vtmn-list_start-visual">
           <slot name="start-visual" />
         </div>
