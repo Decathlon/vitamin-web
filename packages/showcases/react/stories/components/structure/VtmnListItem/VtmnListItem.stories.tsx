@@ -32,6 +32,27 @@ export default {
         options: ['small', 'medium'],
       },
     },
+    href: {
+      type: { name: 'string', required: false },
+      description: 'Redirection link.',
+      control: {
+        type: 'text',
+      },
+    },
+    target: {
+      type: { name: 'string', required: false },
+      description: 'Redirection link.',
+      control: {
+        type: 'text',
+      },
+    },
+    rel: {
+      type: { name: 'string', required: false },
+      description: 'Redirection link.',
+      control: {
+        type: 'text',
+      },
+    },
     children: {
       type: { name: 'string', required: false },
       description: 'The content to render inside the component.',

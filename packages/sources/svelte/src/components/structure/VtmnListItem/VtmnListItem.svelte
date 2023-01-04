@@ -106,12 +106,6 @@
           {/if}
         </div>
       {/if}
-
-      {#if checkSlotExists('end-action')}
-        <div class="vtmn-list_end-action">
-          <slot name="end-action" />
-        </div>
-      {/if}
     </a>
   {:else}
     {#if checkSlotExists('start-visual')}
@@ -129,11 +123,10 @@
         {/if}
       </div>
     {/if}
-
-    {#if checkSlotExists('end-action')}
-      <div class="vtmn-list_end-action">
-        <slot name="end-action" />
-      </div>
-    {/if}
+  {/if}
+  {#if checkSlotExists('end-action')}
+    <div class="vtmn-list_end-action">
+      <slot name="end-action" />
+    </div>
   {/if}
 </li>

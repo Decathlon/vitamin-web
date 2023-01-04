@@ -19,6 +19,18 @@
       description: 'Disable list item.',
       defaultValue: false,
     },
+    href: {
+      description: 'Redirection link.',
+      control: { type: 'text' },
+    },
+    target: {
+      description: 'Target of the link.',
+      control: { type: 'text' },
+    },
+    rel: {
+      description: 'Rel of the link.',
+      control: { type: 'text' },
+    },
   }}
   parameters={{
     actions: {

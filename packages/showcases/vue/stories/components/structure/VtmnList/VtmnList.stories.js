@@ -7,22 +7,22 @@ export default {
   parameters,
 };
 
-const Template = (args) => ({
+const Template = (args, listArgs) => ({
   components: { VtmnList, VtmnListItem },
   setup() {
     return { args };
   },
   template: `<div style="width: 400px; display: flex; justify-content: center">
     <VtmnList v-bind="args">
-      <VtmnListItem>
+      <VtmnListItem href="/">
         <template v-slot:text><span>Lorem ipsum</span></template>
         <template v-slot:subtext><span>Lorem ipsum dolor sit amet</span></template>
       </VtmnListItem>
-      <VtmnListItem>
+      <VtmnListItem href="/">
         <template v-slot:text><span>Lorem ipsum</span></template>
         <template v-slot:subtext><span>Lorem ipsum dolor sit amet</span></template>
       </VtmnListItem>
-      <VtmnListItem>
+      <VtmnListItem href="/">
         <template v-slot:text><span>Lorem ipsum</span></template>
         <template v-slot:subtext><span>Lorem ipsum dolor sit amet</span></template>
       </VtmnListItem>
@@ -32,3 +32,6 @@ const Template = (args) => ({
 
 export const Overview = Template.bind({});
 Overview.args = {};
+
+export const WithLinks = Template.bind({});
+WithLinks.args = {};

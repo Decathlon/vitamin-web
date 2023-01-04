@@ -97,6 +97,11 @@
         <VtmnListItem href="/" target="_blank">
           <span slot="text">Lorem ipsum</span>
           <span slot="subtext">Lorem ipsum dolor sit amet</span>
+          <VtmnButton
+            slot="end-action"
+            on:click={() => console.log(`List item button clicked !`)}
+            >Button</VtmnButton
+          >
         </VtmnListItem>
       {/each}
     </VtmnList>

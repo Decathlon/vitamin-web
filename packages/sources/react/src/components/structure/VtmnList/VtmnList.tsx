@@ -33,6 +33,26 @@ export const VtmnListItemEndAction = ({
   </div>
 );
 
+export const VtmnListItemLink = ({
+  children,
+  className,
+  target,
+  ...props
+}: React.ComponentPropsWithoutRef<'a'>) => (
+  <>
+    <a className={clsx('vtmn-list__link', className)} {...props}>
+      {React.Children.toArray(children).filter(
+        (child) =>
+          React.isValidElement(child) && child.type !== VtmnListItemEndAction,
+      )}
+    </a>
+    {React.Children.toArray(children).filter(
+      (child) =>
+        React.isValidElement(child) && child.type === VtmnListItemEndAction,
+    )}
+  </>
+);
+
 export interface VtmnListItemProps
   extends React.ComponentPropsWithoutRef<'li'> {
   /**
@@ -60,12 +80,33 @@ export interface VtmnListItemProps
    * @type {number}
    */
   tabIndex?: number;
+
+  /**
+   * Redirection link
+   * @type {string}
+   */
+  href?: string;
+
+  /**
+   * Target of the link
+   * @type {string}
+   */
+  target?: string;
+
+  /**
+   * Rel of the link
+   * @type {string}
+   */
+  rel?: string;
 }
 
 export const VtmnListItem = ({
   disabled = false,
   divider = true,
   size = 'medium',
+  href,
+  target,
+  rel,
   tabIndex,
   children,
   className,
@@ -81,7 +122,18 @@ export const VtmnListItem = ({
     tabIndex={tabIndex}
     {...props}
   >
-    {children}
+    {href ? (
+      <VtmnListItemLink
+        href={href}
+        rel={rel}
+        target={target}
+        aria-disabled={disabled}
+      >
+        {children}
+      </VtmnListItemLink>
+    ) : (
+      React.Children.map(children, (child) => child)
+    )}
   </li>
 );
 

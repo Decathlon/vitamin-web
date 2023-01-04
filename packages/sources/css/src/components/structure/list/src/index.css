@@ -23,12 +23,10 @@
   inline-size: 100%;
   text-decoration: inherit;
   color: inherit;
-  padding-right: 2.5rem; /* to avoid the padding-inline from child */
 }
 
 .vtmn-list li > a.vtmn-list__link[aria-disabled='true'] {
   color: currentcolor;
-  display: inline-block; /* For IE11/ MS Edge bug */
   pointer-events: none;
   text-decoration: none;
 }

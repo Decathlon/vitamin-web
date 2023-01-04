@@ -8,9 +8,11 @@ import {
   VtmnListItemEndAction,
   VtmnListItemStartVisual,
   VtmnListItemText,
+  VtmnListItemLink,
 } from '@vtmn/react';
 import { VtmnIcon } from '@vtmn/react';
 import { VtmnButton } from '@vtmn/react';
+
 export default {
   title: 'Components / Structure / VtmnList',
   component: VtmnList,
@@ -108,3 +110,20 @@ const SmallSizeTemplate: Story = (args) => (
 );
 
 export const SmallSize = SmallSizeTemplate.bind({});
+
+const WithLinkListTemplate: Story = (args) => (
+  <div style={{ width: '500px' }}>
+    <VtmnList {...args}>
+      {[...Array(3)].map((_, i) => (
+        <VtmnListItem key={i} size="small" href="/">
+          <VtmnListItemText>
+            <span>Lorem Ipsum</span>
+            <span>Lorem ipsum dolor sit amet</span>
+          </VtmnListItemText>
+        </VtmnListItem>
+      ))}
+    </VtmnList>
+  </div>
+);
+
+export const WithLinkList = WithLinkListTemplate.bind({});
