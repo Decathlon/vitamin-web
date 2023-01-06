@@ -5,8 +5,8 @@
  * @param rel
  * @returns {string|*}
  */
-export const computeRel = (target, rel = '') =>
-  target === '_blank'
+export const computeRel = (target: string, rel: string = '') =>
+  target === '_blank' && rel
     ? Array.from(new Set(rel.split(' ')).add('noopener').add('noreferrer'))
         .join(' ')
         .trim()

@@ -2,6 +2,7 @@ import * as React from 'react';
 import '@vtmn/css-list/dist/index-with-vars.css';
 import clsx from 'clsx';
 import { VtmnListSize } from './types';
+import { computeRel } from '@/utils/link';
 
 export const VtmnListItemStartVisual = ({
   children,
@@ -38,6 +39,7 @@ export const VtmnListItemEndAction = ({
  * NB: Outside the link must be only the VtmnListItemEndAction because it can be a action button
  * @param children
  * @param className
+ * @param rel
  * @param target
  * @param props
  * @constructor
@@ -45,11 +47,16 @@ export const VtmnListItemEndAction = ({
 export const VtmnListItemLink = ({
   children,
   className,
+  rel,
   target,
   ...props
 }: React.ComponentPropsWithoutRef<'a'>) => (
   <>
-    <a className={clsx('vtmn-list__link', className)} {...props}>
+    <a
+      className={clsx('vtmn-list__link', className)}
+      rel={target && computeRel(target, rel)}
+      {...props}
+    >
       {React.Children.toArray(children).filter(
         (child) =>
           React.isValidElement(child) && child.type !== VtmnListItemEndAction,

@@ -24,7 +24,10 @@
     "strict": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true
+    "noEmit": true,
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "include": ["*.js", "src/**/*.ts", "src/**/*.tsx", "scripts/**/*.js"],
   "exclude": [

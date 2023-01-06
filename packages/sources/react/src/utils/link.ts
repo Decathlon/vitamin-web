@@ -5,7 +5,7 @@
  * @param rel
  * @returns {string|*}
  */
-export const computeRel = (target, rel = '') =>
+export const computeRel = (target: string, rel = '') =>
   target === '_blank'
     ? Array.from(new Set(rel.split(' ')).add('noopener').add('noreferrer'))
         .join(' ')

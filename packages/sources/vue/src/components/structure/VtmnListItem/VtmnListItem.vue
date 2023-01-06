@@ -2,9 +2,11 @@
 import '@vtmn/css-list/dist/index-with-vars.css';
 import { defineComponent, reactive, computed, PropType } from 'vue';
 import { VtmnListItemSize } from './types';
+import { computeRel } from '@/utils/link';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnListItem',
+  methods: { computeRel },
   props: {
     size: {
       type: String as PropType<VtmnListItemSize>,
@@ -54,7 +56,7 @@ export default /*#__PURE__*/ defineComponent({
         class="vtmn-list__link"
         :href="href"
         :target="target"
-        :rel="rel"
+        :rel="computeRel(target, rel)"
         :aria-disabled="disabled"
       >
         <div v-if="$slots['start-visual']" class="vtmn-list_start-visual">

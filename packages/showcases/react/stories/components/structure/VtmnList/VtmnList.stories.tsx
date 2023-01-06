@@ -115,7 +115,13 @@ const WithLinkListTemplate: Story = (args) => (
   <div style={{ width: '500px' }}>
     <VtmnList {...args}>
       {[...Array(3)].map((_, i) => (
-        <VtmnListItem key={i} size="small" href="/">
+        <VtmnListItem
+          key={i}
+          size="small"
+          href="/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <VtmnListItemText>
             <span>Lorem Ipsum</span>
             <span>Lorem ipsum dolor sit amet</span>
