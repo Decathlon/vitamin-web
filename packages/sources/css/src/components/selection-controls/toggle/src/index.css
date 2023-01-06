@@ -9,6 +9,7 @@
 .vtmn-toggle {
   display: flex;
   align-items: center;
+  gap: rem(8px);
 }
 
 .vtmn-toggle_switch {
@@ -118,7 +119,6 @@
   font-family: var(--vtmn-typo_font-family);
   color: var(--vtmn-semantic-color_content-primary);
   font-size: var(--vtmn-typo_text-2-font-size);
-  margin-inline-start: rem(12px);
 }
 
 /* Disabled state */
@@ -145,7 +145,6 @@
 
 .vtmn-toggle_size--small label {
   font-size: var(--vtmn-typo_text-3-font-size);
-  margin-inline-start: rem(8px);
 }
 
 .vtmn-toggle_size--small span::after {
@@ -193,6 +192,10 @@
 
 /* Medium */
 
+.vtmn-toggle_size--medium {
+  gap: rem(12px);
+}
+
 .vtmn-toggle_size--medium .vtmn-toggle_switch {
   inline-size: rem(56px);
   block-size: rem(32px);
@@ -205,7 +208,6 @@
 
 .vtmn-toggle_size--medium label {
   font-size: var(--vtmn-typo_text-2-font-size);
-  margin-inline-start: rem(12px);
 }
 
 .vtmn-toggle_size--medium span::after {
