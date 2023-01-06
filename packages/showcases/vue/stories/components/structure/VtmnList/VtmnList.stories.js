@@ -14,15 +14,15 @@ const Template = (args, listArgs) => ({
   },
   template: `<div style="width: 400px; display: flex; justify-content: center">
     <VtmnList v-bind="args">
-      <VtmnListItem href="/">
+      <VtmnListItem href="/" target="_blank" rel="noopener noreferrer">
         <template v-slot:text><span>Lorem ipsum</span></template>
         <template v-slot:subtext><span>Lorem ipsum dolor sit amet</span></template>
       </VtmnListItem>
-      <VtmnListItem href="/">
+      <VtmnListItem href="/" target="_blank" rel="noopener noreferrer">
         <template v-slot:text><span>Lorem ipsum</span></template>
         <template v-slot:subtext><span>Lorem ipsum dolor sit amet</span></template>
       </VtmnListItem>
-      <VtmnListItem href="/">
+      <VtmnListItem href="/" target="_blank" rel="noopener noreferrer">
         <template v-slot:text><span>Lorem ipsum</span></template>
         <template v-slot:subtext><span>Lorem ipsum dolor sit amet</span></template>
       </VtmnListItem>

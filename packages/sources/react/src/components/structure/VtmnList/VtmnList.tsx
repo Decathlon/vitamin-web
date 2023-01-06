@@ -34,7 +34,7 @@ export const VtmnListItemEndAction = ({
 );
 
 /**
- * Custom function to inject elements under the link
+ * Custom component to inject elements under the link
  * NB: Outside the link must be only the VtmnListItemEndAction because it can be a action button
  * @param children
  * @param className

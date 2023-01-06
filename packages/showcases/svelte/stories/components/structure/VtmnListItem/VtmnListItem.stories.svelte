@@ -26,10 +26,12 @@
     target: {
       description: 'Target of the link.',
       control: { type: 'text' },
+      if: { arg: 'href' },
     },
     rel: {
       description: 'Rel of the link.',
       control: { type: 'text' },
+      if: { arg: 'href' },
     },
   }}
   parameters={{

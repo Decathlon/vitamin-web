@@ -6,8 +6,8 @@
  * @returns {string|*}
  */
 export const computeRel = (target, rel) =>
-  target === '_blank'
-    ? Array.from(new Set(rel).add('noopener').add('noreferrer'))
+  target === '_blank' && rel
+    ? Array.from(new Set(rel.split(' ')).add('noopener').add('noreferrer'))
         .join(' ')
         .trim()
     : rel;

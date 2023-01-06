@@ -41,17 +41,19 @@ export default {
     },
     target: {
       type: { name: 'string', required: false },
-      description: 'Redirection link.',
+      description: 'Target of the link.',
       control: {
         type: 'text',
       },
+      if: { arg: 'href' },
     },
     rel: {
       type: { name: 'string', required: false },
-      description: 'Redirection link.',
+      description: 'Rel of the link.',
       control: {
         type: 'text',
       },
+      if: { arg: 'href' },
     },
     children: {
       type: { name: 'string', required: false },
