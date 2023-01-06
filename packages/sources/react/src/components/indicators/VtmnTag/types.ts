@@ -11,3 +11,5 @@ export type VtmnTagVariant =
   | 'decorative_emerald'
   | 'decorative_cobalt'
   | 'decorative_amethyst';
+
+export type VtmnTagSize = 'small' | 'medium';

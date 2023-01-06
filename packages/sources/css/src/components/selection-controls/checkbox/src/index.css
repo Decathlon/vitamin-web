@@ -52,7 +52,9 @@
     var(--vtmn-semantic-color_hover-primary-transparent);
 }
 
-.vtmn-checkbox[type='checkbox']:not(:focus-visible):checked:not(:disabled):active
+.vtmn-checkbox[type='checkbox']:not(:focus-visible):checked:not(
+    :disabled
+  ):active
   + label::before {
   box-shadow: 0 0 0 rem(7px)
     var(--vtmn-semantic-color_active-primary-transparent);

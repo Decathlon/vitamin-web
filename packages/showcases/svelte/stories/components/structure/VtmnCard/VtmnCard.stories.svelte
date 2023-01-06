@@ -116,45 +116,69 @@
     max-width: 300px;
   }
   :global(#anchor--components-structure-vtmncard--overview .docs-story),
-  :global(#anchor--components-structure-vtmncard--overview
-      .docs-story
-      > div:first-child),
+  :global(
+      #anchor--components-structure-vtmncard--overview
+        .docs-story
+        > div:first-child
+    ),
   :global(#anchor--components-structure-vtmncard--top-image .docs-story),
-  :global(#anchor--components-structure-vtmncard--top-image
-      .docs-story
-      > div:first-child),
-  :global(#anchor--components-structure-vtmncard--top-image-full-image
-      .docs-story),
-  :global(#anchor--components-structure-vtmncard--top-image-full-image
-      .docs-story
-      > div:first-child),
-  :global(#anchor--components-structure-vtmncard--top-image-without-image
-      .docs-story),
-  :global(#anchor--components-structure-vtmncard--top-image-without-image
-      .docs-story
-      > div:first-child),
+  :global(
+      #anchor--components-structure-vtmncard--top-image
+        .docs-story
+        > div:first-child
+    ),
+  :global(
+      #anchor--components-structure-vtmncard--top-image-full-image .docs-story
+    ),
+  :global(
+      #anchor--components-structure-vtmncard--top-image-full-image
+        .docs-story
+        > div:first-child
+    ),
+  :global(
+      #anchor--components-structure-vtmncard--top-image-without-image
+        .docs-story
+    ),
+  :global(
+      #anchor--components-structure-vtmncard--top-image-without-image
+        .docs-story
+        > div:first-child
+    ),
   :global(#anchor--components-structure-vtmncard--full-image .docs-story),
-  :global(#anchor--components-structure-vtmncard--full-image
-      .docs-story
-      > div:first-child),
-  :global(#anchor--components-structure-vtmncard--full-image-with-content-opaque
-      .docs-story),
-  :global(#anchor--components-structure-vtmncard--full-image-with-content-opaque
-      .docs-story
-      > div:first-child),
-  :global(#anchor--components-structure-vtmncard--full-image-with-actions
-      .docs-story),
-  :global(#anchor--components-structure-vtmncard--full-image-with-actions
-      .docs-story
-      > div:first-child) {
+  :global(
+      #anchor--components-structure-vtmncard--full-image
+        .docs-story
+        > div:first-child
+    ),
+  :global(
+      #anchor--components-structure-vtmncard--full-image-with-content-opaque
+        .docs-story
+    ),
+  :global(
+      #anchor--components-structure-vtmncard--full-image-with-content-opaque
+        .docs-story
+        > div:first-child
+    ),
+  :global(
+      #anchor--components-structure-vtmncard--full-image-with-actions
+        .docs-story
+    ),
+  :global(
+      #anchor--components-structure-vtmncard--full-image-with-actions
+        .docs-story
+        > div:first-child
+    ) {
     height: 600px;
   }
 
-  :global(#anchor--components-structure-vtmncard--top-image-with-actions
-      .docs-story),
-  :global(#anchor--components-structure-vtmncard--top-image-with-actions
-      .docs-story
-      > div:first-child) {
+  :global(
+      #anchor--components-structure-vtmncard--top-image-with-actions .docs-story
+    ),
+  :global(
+      #anchor--components-structure-vtmncard--top-image-with-actions
+        .docs-story
+        > div:first-child
+    ) {
     height: 700px;
   }
 </style>
