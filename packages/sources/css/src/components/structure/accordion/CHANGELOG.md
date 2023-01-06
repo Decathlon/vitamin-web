@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.8](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-accordion@0.5.7...@vtmn/css-accordion@0.5.8) (2023-01-06)
+
+**Note:** Version bump only for package @vtmn/css-accordion
+
 ## [0.5.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-accordion@0.5.6...@vtmn/css-accordion@0.5.7) (2022-11-14)
 
 **Note:** Version bump only for package @vtmn/css-accordion

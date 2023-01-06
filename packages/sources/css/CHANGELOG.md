@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.87.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.87.0...@vtmn/css@0.87.1) (2023-01-06)
+
+**Note:** Version bump only for package @vtmn/css
+
 # [0.87.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.86.0...@vtmn/css@0.87.0) (2022-12-30)
 
 ### Bug Fixes
