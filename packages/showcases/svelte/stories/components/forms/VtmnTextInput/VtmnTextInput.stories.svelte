@@ -19,7 +19,11 @@
   component={VtmnTextInput}
   argTypes={{
     ...argTypes,
-    identifier: null,
+    identifier: {
+      table: {
+        disable: true,
+      },
+    },
     id: {
       type: { name: 'string', required: true },
       description: 'The id of the input.',

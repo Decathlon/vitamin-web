@@ -12,7 +12,11 @@
   component={VtmnIcon}
   argTypes={{
     ...argTypes,
-    color: undefined,
+    color: {
+      table: {
+        disable: true,
+      },
+    },
   }}
   {...parameters}
 />
