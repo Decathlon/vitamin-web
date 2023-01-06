@@ -35,10 +35,13 @@ export const VtmnTabsItem = React.forwardRef<
         ref={ref}
         {...props}
         onFocus={(e) => {
+          const vmtnItemsParentElement = e.target.parentElement?.parentElement;
+          if (vmtnItemsParentElement) {
+            Array.from(vmtnItemsParentElement.children).forEach((vtmnItem) => {
+              vtmnItem?.firstElementChild?.removeAttribute('aria-selected');
+            });
+          }
           e.currentTarget.setAttribute('aria-selected', 'true');
-        }}
-        onBlur={(e) => {
-          e.currentTarget.setAttribute('aria-selected', 'false');
         }}
       >
         {icon ? (

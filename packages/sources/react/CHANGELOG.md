@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.58.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.57.0...@vtmn/react@0.58.0) (2023-01-06)
+
+### Features
+
+- **@vtmn/react:** keep the last focused VtmnTabsItem in a focus state ([#1318](https://github.com/Decathlon/vitamin-web/issues/1318)) ([c7c83dc](https://github.com/Decathlon/vitamin-web/commit/c7c83dc47b710f392d1e296ccdd3318a6e45ee56))
+
 # [0.57.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.56.0...@vtmn/react@0.57.0) (2022-12-30)
 
 ### Features
