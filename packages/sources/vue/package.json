@@ -21,6 +21,7 @@
   "main": "dist/vtmn/vue.cjs.js",
   "module": "dist/vtmn/vue.es.js",
   "types": "dist/index.d.ts",
+  "sideEffects": false,
   "files": [
     "dist",
     "dist/*.d.ts"
