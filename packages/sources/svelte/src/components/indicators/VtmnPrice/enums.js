@@ -6,6 +6,7 @@ export const VTMN_PRICE_VARIANT = {
 };
 
 export const VTMN_PRICE_SIZE = {
+  XSMALL: 'xsmall',
   SMALL: 'small',
   MEDIUM: 'medium',
   LARGE: 'large',

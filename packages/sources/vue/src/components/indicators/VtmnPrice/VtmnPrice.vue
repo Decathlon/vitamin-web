@@ -17,7 +17,7 @@ export default /*#__PURE__*/ defineComponent({
       type: String as PropType<VtmnPriceSize>,
       default: 'medium',
       validator: (val: VtmnPriceSize) =>
-        ['small', 'medium', 'large'].includes(val),
+        ['xsmall', 'small', 'medium', 'large'].includes(val),
     },
   },
   setup(props) {

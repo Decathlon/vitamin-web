@@ -24,7 +24,7 @@ export const argTypes = {
     defaultValue: 'medium',
     control: {
       type: 'select',
-      options: ['small', 'medium', 'large'],
+      options: ['xsmall', 'small', 'medium', 'large'],
     },
   },
 };
