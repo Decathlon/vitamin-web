@@ -79,16 +79,18 @@
   on:click
   class={componentClass}
   role="option"
-  tabindex="0"
+  tabindex={href ? -1 : 0}
   aria-disabled={disabled}
   {...$$restProps}
 >
   {#if href}
     <a
       class="vtmn-list__link"
+      tabindex={disabled && -1}
       {href}
       {target}
       rel={computeRel(target, rel)}
+      aria-label={$$restProps['aria-label']}
       aria-disabled={disabled}
     >
       {#if checkSlotExists('start-visual')}

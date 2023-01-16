@@ -41,6 +41,7 @@ export const VtmnListItemEndAction = ({
  * @param className
  * @param rel
  * @param target
+ * @param tabIndex
  * @param props
  * @constructor
  */
@@ -49,6 +50,7 @@ export const VtmnListItemLink = ({
   className,
   rel,
   target,
+  tabIndex,
   ...props
 }: React.ComponentPropsWithoutRef<'a'>) => (
   <>
@@ -142,7 +144,9 @@ export const VtmnListItem = ({
       <VtmnListItemLink
         href={href}
         rel={rel}
+        tabindex={disabled && -1}
         target={target}
+        aria-label={props['aria-label']}
         aria-disabled={disabled}
       >
         {children}

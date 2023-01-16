@@ -116,6 +116,7 @@ const WithLinkListTemplate: Story = (args) => (
     <VtmnList {...args}>
       {[...Array(3)].map((_, i) => (
         <VtmnListItem
+          aria-label={'list item ' + i}
           key={i}
           size="small"
           href="/"
@@ -133,3 +134,33 @@ const WithLinkListTemplate: Story = (args) => (
 );
 
 export const WithLinkList = WithLinkListTemplate.bind({});
+
+const WithDisabledLinkListTemplate: Story = (args) => (
+  <div style={{ width: '500px' }}>
+    <VtmnList {...args}>
+      {[...Array(3)].map((_, i) => (
+        <VtmnListItem
+          key={i}
+          aria-label={'list item ' + i}
+          disabled
+          size="small"
+          href="/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <VtmnListItemText>
+            <span>Lorem Ipsum</span>
+            <span>Lorem ipsum dolor sit amet</span>
+          </VtmnListItemText>
+          <VtmnListItemEndAction>
+            <VtmnButton disabled variant="primary">
+              Button
+            </VtmnButton>
+          </VtmnListItemEndAction>
+        </VtmnListItem>
+      ))}
+    </VtmnList>
+  </div>
+);
+
+export const WithDisabledLinkList = WithDisabledLinkListTemplate.bind({});

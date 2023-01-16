@@ -47,7 +47,7 @@ export default /*#__PURE__*/ defineComponent({
   <li
     :class="classes"
     role="option"
-    tabindex="0"
+    :tabindex="href ? -1 : 0"
     :aria-disabled="disabled"
     v-bind="$attrs"
   >
@@ -56,7 +56,9 @@ export default /*#__PURE__*/ defineComponent({
         class="vtmn-list__link"
         :href="href"
         :target="target"
+        :tabindex="disabled && -1"
         :rel="computeRel(target, rel)"
+        :aria-label="$attrs['aria-label']"
         :aria-disabled="disabled"
       >
         <div v-if="$slots['start-visual']" class="vtmn-list_start-visual">
