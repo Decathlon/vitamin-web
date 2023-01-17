@@ -18,7 +18,7 @@ const postcssProcess = (component, variant = '') =>
       postcssImport({
         load: (filename) => {
           const finalPath = filename.includes('sources/css/src')
-            ? filename.replaceAll('.css', `${variant}.css`)
+            ? filename.replace('.css', `${variant}.css`)
             : filename;
           return fs.readFileSync(path.resolve(finalPath), {
             encoding: 'utf8',
