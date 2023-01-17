@@ -4,7 +4,7 @@
 
   /**
    * Size of the price
-   * @type {'small' | 'medium' | 'large' }
+   * @type { 'xsmall' | 'small' | 'medium' | 'large' }
    * @defaultValue 'medium'
    */
   export let size = VTMN_PRICE_SIZE.MEDIUM;

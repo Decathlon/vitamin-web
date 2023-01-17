@@ -2,9 +2,11 @@
 import '@vtmn/css-list/dist/index-with-vars.css';
 import { defineComponent, reactive, computed, PropType } from 'vue';
 import { VtmnListItemSize } from './types';
+import { computeRel } from '@/utils/link';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnListItem',
+  methods: { computeRel },
   props: {
     size: {
       type: String as PropType<VtmnListItemSize>,
@@ -18,6 +20,15 @@ export default /*#__PURE__*/ defineComponent({
     disabled: {
       type: Boolean as PropType<boolean>,
       default: false,
+    },
+    href: {
+      type: String as PropType<string>,
+    },
+    rel: {
+      type: String as PropType<string>,
+    },
+    target: {
+      type: String as PropType<string>,
     },
   },
   setup(props) {
@@ -36,20 +47,44 @@ export default /*#__PURE__*/ defineComponent({
   <li
     :class="classes"
     role="option"
-    tabindex="0"
+    :tabindex="href ? -1 : 0"
     :aria-disabled="disabled"
     v-bind="$attrs"
   >
-    <div v-if="$slots['start-visual']" class="vtmn-list_start-visual">
-      <slot name="start-visual" />
-    </div>
+    <template v-if="href">
+      <a
+        class="vtmn-list__link"
+        :href="href"
+        :target="target"
+        :tabindex="disabled && -1"
+        :rel="computeRel(target, rel)"
+        :aria-label="$attrs['aria-label']"
+        :aria-disabled="disabled"
+      >
+        <div v-if="$slots['start-visual']" class="vtmn-list_start-visual">
+          <slot name="start-visual" />
+        </div>
 
-    <div v-if="$slots['text']" class="vtmn-list_text">
-      <slot name="text" />
-      <template v-if="$slots['subtext']">
-        <slot name="subtext" />
-      </template>
-    </div>
+        <div v-if="$slots['text']" class="vtmn-list_text">
+          <slot name="text" />
+          <template v-if="$slots['subtext']">
+            <slot name="subtext" />
+          </template>
+        </div>
+      </a>
+    </template>
+    <template v-else>
+      <div v-if="$slots['start-visual']" class="vtmn-list_start-visual">
+        <slot name="start-visual" />
+      </div>
+
+      <div v-if="$slots['text']" class="vtmn-list_text">
+        <slot name="text" />
+        <template v-if="$slots['subtext']">
+          <slot name="subtext" />
+        </template>
+      </div>
+    </template>
 
     <div v-if="$slots['end-action']" class="vtmn-list_end-action">
       <slot name="end-action" />

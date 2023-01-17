@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.59.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.58.0...@vtmn/svelte@0.59.0) (2023-01-17)
+
+### Features
+
+- add XSmall size on Price variant ([#1329](https://github.com/Decathlon/vitamin-web/issues/1329)) ([ce1de41](https://github.com/Decathlon/vitamin-web/commit/ce1de417d6c3c5c558cb850d32870d188754118b))
+
+# [0.58.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.57.2...@vtmn/svelte@0.58.0) (2023-01-17)
+
+### Features
+
+- **@vtmn/css:** add href property on `VtmnListItem` ([#1321](https://github.com/Decathlon/vitamin-web/issues/1321)) ([598e663](https://github.com/Decathlon/vitamin-web/commit/598e66328a9fcb414d49a9fe8a1a4f24ba7321c6))
+
 ## [0.57.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.57.1...@vtmn/svelte@0.57.2) (2023-01-16)
 
 **Note:** Version bump only for package @vtmn/svelte

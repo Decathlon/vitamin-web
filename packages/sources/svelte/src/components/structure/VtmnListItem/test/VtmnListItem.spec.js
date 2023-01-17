@@ -54,4 +54,27 @@ describe('VtmnListItem', () => {
     const { container } = render(VtmnListItem, {});
     expect(container.querySelector('[slot="end-action"]')).toBeVisible();
   });
+  test('Should have a link element', () => {
+    const { getByRole } = render(VtmnListItem, {
+      href: 'https://decathlon.fr',
+    });
+    expect(getByRole('link')).toHaveAttribute('href', 'https://decathlon.fr');
+    expect(getByRole('link')).toHaveAttribute('aria-disabled', 'false');
+  });
+  test('Should have a link element disabled', () => {
+    const { getByRole } = render(VtmnListItem, {
+      href: 'https://decathlon.fr',
+      disabled: true,
+    });
+    expect(getByRole('link')).toHaveAttribute('href', 'https://decathlon.fr');
+    expect(getByRole('link')).toHaveAttribute('aria-disabled', 'true');
+  });
+  test('Should have a link _blank with noopener noreferrer', () => {
+    const { getByRole } = render(VtmnListItem, {
+      props: { href: 'https://decathlon.fr', target: '_blank' },
+    });
+    expect(getByRole('link')).toHaveAttribute('href', 'https://decathlon.fr');
+    expect(getByRole('link')).toHaveAttribute('target', '_blank');
+    expect(getByRole('link')).toHaveAttribute('rel', 'noopener noreferrer');
+  });
 });

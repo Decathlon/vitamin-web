@@ -1,6 +1,7 @@
 <script>
   import { cn } from '../../../utils/classnames';
   import { VTMN_LINK_SIZE } from './enums';
+  import { computeRel } from '../../../utils/link';
 
   /**
    * The href of the link.
@@ -52,14 +53,7 @@
     className,
   );
 
-  let computedRel =
-    $$restProps['target'] === '_blank'
-      ? Array.from(
-          new Set($$restProps['rel']).add('noopener').add('noreferrer'),
-        )
-          .join(' ')
-          .trim()
-      : $$restProps['rel'];
+  let computedRel = computeRel($$restProps['target'], $$restProps['rel']);
 </script>
 
 <a {href} class={componentClass} rel={computedRel} on:click {...$$restProps}
