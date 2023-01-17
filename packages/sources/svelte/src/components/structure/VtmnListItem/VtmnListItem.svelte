@@ -1,6 +1,7 @@
 <script>
   import { VTMN_LISTITEM_SIZE } from './enums';
   import { cn } from '../../../utils/classnames';
+  import { computeRel } from '../../../utils/link';
 
   /** @restProps */
 
@@ -29,6 +30,25 @@
    * @defaultValue false
    */
   export let disabled = false;
+
+  /**
+   * Set if the list item is a link
+   * @type {string}
+   */
+  export let href = undefined;
+
+  /**
+   * If the list item is a link, add a target
+   * @type {string}
+   * @default _blank
+   */
+  export let target = '_blank';
+
+  /**
+   * If the list item is a link, add a rel
+   * @type {string}
+   */
+  export let rel = undefined;
 
   let className = undefined;
   /**
@@ -59,26 +79,53 @@
   on:click
   class={componentClass}
   role="option"
-  tabindex="0"
+  tabindex={href ? -1 : 0}
   aria-disabled={disabled}
   {...$$restProps}
 >
-  {#if checkSlotExists('start-visual')}
-    <div class="vtmn-list_start-visual">
-      <slot name="start-visual" />
-    </div>
-  {/if}
-
-  {#if checkSlotExists('text')}
-    <div class="vtmn-list_text">
-      <slot name="text" />
-
-      {#if checkSlotExists('subtext')}
-        <slot name="subtext" />
+  {#if href}
+    <a
+      class="vtmn-list__link"
+      tabindex={disabled && -1}
+      {href}
+      {target}
+      rel={computeRel(target, rel)}
+      aria-label={$$restProps['aria-label']}
+      aria-disabled={disabled}
+    >
+      {#if checkSlotExists('start-visual')}
+        <div class="vtmn-list_start-visual">
+          <slot name="start-visual" />
+        </div>
       {/if}
-    </div>
-  {/if}
 
+      {#if checkSlotExists('text')}
+        <div class="vtmn-list_text">
+          <slot name="text" />
+
+          {#if checkSlotExists('subtext')}
+            <slot name="subtext" />
+          {/if}
+        </div>
+      {/if}
+    </a>
+  {:else}
+    {#if checkSlotExists('start-visual')}
+      <div class="vtmn-list_start-visual">
+        <slot name="start-visual" />
+      </div>
+    {/if}
+
+    {#if checkSlotExists('text')}
+      <div class="vtmn-list_text">
+        <slot name="text" />
+
+        {#if checkSlotExists('subtext')}
+          <slot name="subtext" />
+        {/if}
+      </div>
+    {/if}
+  {/if}
   {#if checkSlotExists('end-action')}
     <div class="vtmn-list_end-action">
       <slot name="end-action" />

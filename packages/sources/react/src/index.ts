@@ -99,6 +99,7 @@ export {
   VtmnListItemStartVisual,
   VtmnListItemText,
   VtmnListItemEndAction,
+  VtmnListItemLink,
 } from './components/structure/VtmnList';
 export type {
   VtmnListProps,
