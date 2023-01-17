@@ -48,6 +48,13 @@
 
 /* SIZES */
 
+/* XSmall */
+.vtmn-price_size--xsmall {
+  min-block-size: rem(20px);
+  block-size: rem(20px);
+  font-size: var(--vtmn-typo_caption-1-font-size);
+}
+
 /* Small */
 .vtmn-price_size--small {
   min-block-size: rem(24px);
