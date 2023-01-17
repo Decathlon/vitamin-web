@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.88.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.87.1...@vtmn/css@0.88.0) (2023-01-17)
+
+### Features
+
+- **@vtmn/css:** add href property on `VtmnListItem` ([#1321](https://github.com/Decathlon/vitamin-web/issues/1321)) ([598e663](https://github.com/Decathlon/vitamin-web/commit/598e66328a9fcb414d49a9fe8a1a4f24ba7321c6))
+
 ## [0.87.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.87.0...@vtmn/css@0.87.1) (2023-01-06)
 
 **Note:** Version bump only for package @vtmn/css
