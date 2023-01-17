@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.48.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.47.0...@vtmn/vue@0.48.0) (2023-01-17)
+
+### Features
+
+- add XSmall size on Price variant ([#1329](https://github.com/Decathlon/vitamin-web/issues/1329)) ([ce1de41](https://github.com/Decathlon/vitamin-web/commit/ce1de417d6c3c5c558cb850d32870d188754118b))
+
 # [0.47.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.46.2...@vtmn/vue@0.47.0) (2023-01-17)
 
 ### Features

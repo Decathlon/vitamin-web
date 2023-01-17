@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-price@0.5.4...@vtmn/css-price@0.6.0) (2023-01-17)
+
+### Features
+
+- add XSmall size on Price variant ([#1329](https://github.com/Decathlon/vitamin-web/issues/1329)) ([ce1de41](https://github.com/Decathlon/vitamin-web/commit/ce1de417d6c3c5c558cb850d32870d188754118b))
+
 ## [0.5.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-price@0.5.3...@vtmn/css-price@0.5.4) (2022-10-14)
 
 **Note:** Version bump only for package @vtmn/css-price
