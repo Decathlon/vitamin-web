@@ -58,6 +58,38 @@ import 'typeface-roboto-condensed';
 
 To use this package, you need to use the source files and compile on your side. To do so, you can start with [+SvelteKit](https://kit.svelte.dev/) for example.
 
+You should then preprocess the component CSS since they are imported in each corresponding component with an [`@import`](https://developer.mozilla.org/fr/docs/Web/CSS/@import) rule. There are several ways to resolve path of an `@import` rule, our recommended way is to use the [postcss-import](https://github.com/postcss/postcss-import) plugin.
+
+For example, here is a working `svelte.config.js`:
+
+```javascript
+import adapter from '@sveltejs/adapter-auto';
+import preprocess from 'svelte-preprocess';
+import atImport from 'postcss-import';
+
+const config = {
+  preprocess: preprocess({
+    postcss: {
+      plugins: [
+        atImport({
+          root: process.cwd(),
+          // import should default to node_modules, then look into src
+          path: [
+            join(process.cwd(), 'node_modules'),
+            join(process.cwd(), 'src'),
+          ],
+        }),
+      ],
+    },
+  }),
+  kit: {
+    adapter: adapter(),
+  },
+};
+
+export default config;
+```
+
 Then, you just need to import components you need. Example with `VtmnButton`:
 
 ```js
