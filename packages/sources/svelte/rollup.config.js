@@ -17,8 +17,9 @@ const postcssProcess = (component, variant = '') =>
     plugins: [
       postcssImport({
         load: (filename) => {
-          console.log('filename', filename);
-          const finalPath = filename.replaceAll('.css', `${variant}.css`);
+          const finalPath = filename.includes('sources/css/src')
+            ? filename.replaceAll('.css', `${variant}.css`)
+            : filename;
           return fs.readFileSync(path.resolve(finalPath), {
             encoding: 'utf8',
             flag: 'r',
