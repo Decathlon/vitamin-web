@@ -2,10 +2,13 @@
   import { VTMN_LISTITEM_SIZE } from './enums';
   import { cn } from '../../../utils/classnames';
   import { computeRel } from '../../../utils/link';
+  import { createEventDispatcher } from 'svelte';
+  import { ENTER } from '../../../utils/keyCodes';
 
   /** @restProps */
 
   const SLOTS = $$props.$$slots;
+  const dispatch = createEventDispatcher();
 
   /**
    * The size of the list.
@@ -22,6 +25,13 @@
    * @defaultValue true
    */
   export let divider = true;
+
+  /**
+   * role of the list element
+   * @type {string}
+   * @default listitem
+   */
+  export let role = 'listitem';
 
   /**
    * Set disabled state of list item.
@@ -71,14 +81,21 @@
   const checkSlotExists = (slotName) => {
     return SLOTS && SLOTS[slotName] && SLOTS[slotName].length;
   };
+
+  const handleSelectItem = (e) => {
+    if (!e.keyCode || e.keyCode === ENTER) {
+      dispatch('click');
+    }
+  };
 </script>
 
 <!-- svelte-ignore a11y-role-has-required-aria-props -->
 <!-- This will be refactored in next major release -->
 <li
-  on:click
+  on:click={handleSelectItem}
+  on:keydown={handleSelectItem}
   class={componentClass}
-  role="option"
+  {role}
   tabindex={href ? -1 : 0}
   aria-disabled={disabled}
   {...$$restProps}
@@ -89,6 +106,8 @@
       tabindex={disabled && -1}
       {href}
       {target}
+      on:click|stopPropagation
+      on:keydown={(e) => e.stopPropagation()}
       rel={computeRel(target, rel)}
       aria-label={$$restProps['aria-label']}
       aria-disabled={disabled}

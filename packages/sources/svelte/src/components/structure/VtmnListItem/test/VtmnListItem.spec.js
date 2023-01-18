@@ -6,40 +6,42 @@ import VtmnListItem from './VtmnListItemWithSlots.svelte';
 describe('VtmnListItem', () => {
   test('Should display a list-item with medium size and divider', () => {
     const { getByRole } = render(VtmnListItem, {});
-    expect(getByRole('option')).toBeVisible();
-    expect(getByRole('option')).toHaveClass('vtmn-list_item-size--medium');
-    expect(getByRole('option')).not.toHaveClass(
+    expect(getByRole('listitem')).toBeVisible();
+    expect(getByRole('listitem')).toHaveClass('vtmn-list_item-size--medium');
+    expect(getByRole('listitem')).not.toHaveClass(
       'vtmn-list_item--without-divider',
     );
-    expect(getByRole('option')).toHaveAttribute('aria-disabled', 'false');
-    expect(getByRole('option')).toHaveAttribute('tabindex', '0');
+    expect(getByRole('listitem')).toHaveAttribute('aria-disabled', 'false');
+    expect(getByRole('listitem')).toHaveAttribute('tabindex', '0');
   });
   test('Should apply custom class on component', () => {
     const { getByRole } = render(VtmnListItem, {
       class: 'custom-class',
     });
-    expect(getByRole('option')).toBeVisible();
-    expect(getByRole('option')).toHaveClass('custom-class');
+    expect(getByRole('listitem')).toBeVisible();
+    expect(getByRole('listitem')).toHaveClass('custom-class');
   });
   test('Should hide divider if divider is false', () => {
     const { getByRole } = render(VtmnListItem, { divider: false });
-    expect(getByRole('option')).toBeVisible();
-    expect(getByRole('option')).toHaveClass('vtmn-list_item--without-divider');
+    expect(getByRole('listitem')).toBeVisible();
+    expect(getByRole('listitem')).toHaveClass(
+      'vtmn-list_item--without-divider',
+    );
   });
   test('Should disable the item', () => {
     const { getByRole } = render(VtmnListItem, { disabled: true });
-    expect(getByRole('option')).toHaveAttribute('aria-disabled', 'true');
+    expect(getByRole('listitem')).toHaveAttribute('aria-disabled', 'true');
   });
   test('Should trigger click on element', async () => {
     const handleClick = jest.fn();
     const { getByRole, component } = render(VtmnListItem, {});
     component.$on('click', handleClick);
-    await fireEvent.click(getByRole('option'));
+    await fireEvent.click(getByRole('listitem'));
     expect(handleClick).toHaveBeenCalledTimes(1);
   });
   test('Should change the size of the list', () => {
     const { getByRole } = render(VtmnListItem, { size: 'small' });
-    expect(getByRole('option')).toHaveClass('vtmn-list_item-size--small');
+    expect(getByRole('listitem')).toHaveClass('vtmn-list_item-size--small');
   });
   test('Should display the start-visual slot', () => {
     const { container } = render(VtmnListItem, {});
@@ -60,6 +62,24 @@ describe('VtmnListItem', () => {
     });
     expect(getByRole('link')).toHaveAttribute('href', 'https://decathlon.fr');
     expect(getByRole('link')).toHaveAttribute('aria-disabled', 'false');
+  });
+  test('Should trigger click when user click on the the link element', async () => {
+    const { getByRole, component } = render(VtmnListItem, {
+      href: 'https://decathlon.fr',
+    });
+    const handleClick = jest.fn();
+    component.$on('click', handleClick);
+    await fireEvent.click(getByRole('link'));
+    expect(handleClick).toHaveBeenCalledTimes(1);
+  });
+  test('Should trigger once click if href + click slot button', async () => {
+    const { getByRole, component } = render(VtmnListItem, {
+      href: 'https://decathlon.fr',
+    });
+    const handleClick = jest.fn();
+    component.$on('click', handleClick);
+    await fireEvent.click(getByRole('button'));
+    expect(handleClick).toHaveBeenCalledTimes(1);
   });
   test('Should have a link element disabled', () => {
     const { getByRole } = render(VtmnListItem, {
