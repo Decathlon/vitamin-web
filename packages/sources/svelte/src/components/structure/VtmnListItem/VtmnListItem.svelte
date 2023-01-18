@@ -3,7 +3,7 @@
   import { cn } from '../../../utils/classnames';
   import { computeRel } from '../../../utils/link';
   import { createEventDispatcher } from 'svelte';
-  import { ENTER, SPACE } from '../../../utils/keyCodes';
+  import { ENTER } from '../../../utils/keyCodes';
 
   /** @restProps */
 
