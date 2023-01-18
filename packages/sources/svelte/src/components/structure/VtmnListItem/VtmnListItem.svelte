@@ -9,7 +9,6 @@
 
   const SLOTS = $$props.$$slots;
   const dispatch = createEventDispatcher();
-  let listElement;
 
   /**
    * The size of the list.
@@ -26,6 +25,13 @@
    * @defaultValue true
    */
   export let divider = true;
+
+  /**
+   * role of the list element
+   * @type {string}
+   * @default listitem
+   */
+  export let role = 'listitem';
 
   /**
    * Set disabled state of list item.
@@ -86,11 +92,10 @@
 <!-- svelte-ignore a11y-role-has-required-aria-props -->
 <!-- This will be refactored in next major release -->
 <li
-  bind:this={listElement}
-  on:click|stopPropagation={handleSelectItem}
-  on:keydown|stopPropagation={handleSelectItem}
+  on:click={handleSelectItem}
+  on:keydown={handleSelectItem}
   class={componentClass}
-  role="option"
+  {role}
   tabindex={href ? -1 : 0}
   aria-disabled={disabled}
   {...$$restProps}
@@ -108,11 +113,7 @@
       aria-disabled={disabled}
     >
       {#if checkSlotExists('start-visual')}
-        <div
-          class="vtmn-list_start-visual"
-          on:click={(e) => e.stopPropagation()}
-          on:keydown={(e) => e.stopPropagation()}
-        >
+        <div class="vtmn-list_start-visual">
           <slot name="start-visual" />
         </div>
       {/if}
@@ -129,11 +130,7 @@
     </a>
   {:else}
     {#if checkSlotExists('start-visual')}
-      <div
-        class="vtmn-list_start-visual"
-        on:click={(e) => e.stopPropagation()}
-        on:keydown={(e) => e.stopPropagation()}
-      >
+      <div class="vtmn-list_start-visual">
         <slot name="start-visual" />
       </div>
     {/if}
@@ -149,11 +146,7 @@
     {/if}
   {/if}
   {#if checkSlotExists('end-action')}
-    <div
-      class="vtmn-list_end-action"
-      on:click={(e) => e.stopPropagation()}
-      on:keydown={(e) => e.stopPropagation()}
-    >
+    <div class="vtmn-list_end-action">
       <slot name="end-action" />
     </div>
   {/if}

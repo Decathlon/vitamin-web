@@ -28,6 +28,11 @@
       control: { type: 'text' },
       if: { arg: 'href' },
     },
+    role: {
+      description: 'Role of the li',
+      control: { type: 'text' },
+      defaultValue: 'listitem',
+    },
     rel: {
       description: 'Rel of the link.',
       control: { type: 'text' },

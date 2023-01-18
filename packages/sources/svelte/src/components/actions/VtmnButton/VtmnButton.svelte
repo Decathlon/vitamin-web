@@ -55,7 +55,13 @@
   );
 </script>
 
-<button on:click type="button" class={componentClass} {...$$restProps}>
+<button
+  on:click
+  on:keydown
+  type="button"
+  class={componentClass}
+  {...$$restProps}
+>
   {#if !iconAlone && iconLeft}
     <VtmnIcon value={iconLeft} />
   {/if}
