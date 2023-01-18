@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.59.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.59.1...@vtmn/svelte@0.59.2) (2023-01-18)
+
+### Bug Fixes
+
+- **@vtmn/svelte:** fix events accessibility `VtmnListItem` ([#1334](https://github.com/Decathlon/vitamin-web/issues/1334)) ([1c8ed07](https://github.com/Decathlon/vitamin-web/commit/1c8ed0746729b223f065b6cb987307f79a9406e8))
+
 ## [0.59.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.59.0...@vtmn/svelte@0.59.1) (2023-01-17)
 
 **Note:** Version bump only for package @vtmn/svelte
