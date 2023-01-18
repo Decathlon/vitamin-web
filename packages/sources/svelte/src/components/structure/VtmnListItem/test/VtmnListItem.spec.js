@@ -61,6 +61,24 @@ describe('VtmnListItem', () => {
     expect(getByRole('link')).toHaveAttribute('href', 'https://decathlon.fr');
     expect(getByRole('link')).toHaveAttribute('aria-disabled', 'false');
   });
+  test('Should trigger click when user click on the the link element', async () => {
+    const { getByRole, component } = render(VtmnListItem, {
+      href: 'https://decathlon.fr',
+    });
+    const handleClick = jest.fn();
+    component.$on('click', handleClick);
+    await fireEvent.click(getByRole('link'));
+    expect(handleClick).toHaveBeenCalledTimes(1);
+  });
+  test('Should trigger once click if href + click slot button', async () => {
+    const { getByRole, component } = render(VtmnListItem, {
+      href: 'https://decathlon.fr',
+    });
+    const handleClick = jest.fn();
+    component.$on('click', handleClick);
+    await fireEvent.click(getByRole('button'));
+    expect(handleClick).toHaveBeenCalledTimes(1);
+  });
   test('Should have a link element disabled', () => {
     const { getByRole } = render(VtmnListItem, {
       href: 'https://decathlon.fr',

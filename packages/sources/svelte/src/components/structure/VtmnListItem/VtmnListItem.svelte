@@ -2,10 +2,14 @@
   import { VTMN_LISTITEM_SIZE } from './enums';
   import { cn } from '../../../utils/classnames';
   import { computeRel } from '../../../utils/link';
+  import { createEventDispatcher } from 'svelte';
+  import { ENTER, SPACE } from '../../../utils/keyCodes';
 
   /** @restProps */
 
   const SLOTS = $$props.$$slots;
+  const dispatch = createEventDispatcher();
+  let listElement;
 
   /**
    * The size of the list.
@@ -71,12 +75,20 @@
   const checkSlotExists = (slotName) => {
     return SLOTS && SLOTS[slotName] && SLOTS[slotName].length;
   };
+
+  const handleSelectItem = (e) => {
+    if (!e.keyCode || e.keyCode === ENTER) {
+      dispatch('click');
+    }
+  };
 </script>
 
 <!-- svelte-ignore a11y-role-has-required-aria-props -->
 <!-- This will be refactored in next major release -->
 <li
-  on:click
+  bind:this={listElement}
+  on:click|stopPropagation={handleSelectItem}
+  on:keydown|stopPropagation={handleSelectItem}
   class={componentClass}
   role="option"
   tabindex={href ? -1 : 0}
@@ -89,12 +101,18 @@
       tabindex={disabled && -1}
       {href}
       {target}
+      on:click|stopPropagation
+      on:keydown={(e) => e.stopPropagation()}
       rel={computeRel(target, rel)}
       aria-label={$$restProps['aria-label']}
       aria-disabled={disabled}
     >
       {#if checkSlotExists('start-visual')}
-        <div class="vtmn-list_start-visual">
+        <div
+          class="vtmn-list_start-visual"
+          on:click={(e) => e.stopPropagation()}
+          on:keydown={(e) => e.stopPropagation()}
+        >
           <slot name="start-visual" />
         </div>
       {/if}
@@ -111,7 +129,11 @@
     </a>
   {:else}
     {#if checkSlotExists('start-visual')}
-      <div class="vtmn-list_start-visual">
+      <div
+        class="vtmn-list_start-visual"
+        on:click={(e) => e.stopPropagation()}
+        on:keydown={(e) => e.stopPropagation()}
+      >
         <slot name="start-visual" />
       </div>
     {/if}
@@ -127,7 +149,11 @@
     {/if}
   {/if}
   {#if checkSlotExists('end-action')}
-    <div class="vtmn-list_end-action">
+    <div
+      class="vtmn-list_end-action"
+      on:click={(e) => e.stopPropagation()}
+      on:keydown={(e) => e.stopPropagation()}
+    >
       <slot name="end-action" />
     </div>
   {/if}
