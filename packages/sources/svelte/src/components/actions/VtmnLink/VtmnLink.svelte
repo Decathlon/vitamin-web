@@ -1,6 +1,7 @@
 <script>
   import { cn } from '../../../utils/classnames';
   import { VTMN_LINK_SIZE } from './enums';
+  import { computeRel } from '../../../utils/link';
 
   /**
    * The href of the link.
@@ -8,13 +9,6 @@
    * @requires
    */
   export let href;
-
-  /**
-   * The target of the link.
-   * @type {string}
-   * @requires
-   */
-  export let target = undefined;
 
   /**
    * The size of the link.
@@ -58,9 +52,13 @@
     standalone && iconAlong && 'vtmn-link--icon-along',
     className,
   );
+
+  let computedRel = computeRel($$restProps['target'], $$restProps['rel']);
 </script>
 
-<a {href} {target} class={componentClass} on:click {...$$restProps}><slot /></a>
+<a {href} class={componentClass} rel={computedRel} on:click {...$$restProps}
+  ><slot /></a
+>
 
 <style lang="css">
   @import '@vtmn/css-link';

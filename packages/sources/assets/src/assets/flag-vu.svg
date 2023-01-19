@@ -1,4 +1,5 @@
 <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_503_3860)">
 <rect width="28" height="20" rx="2" fill="white"/>
 <mask id="mask0_503_3860" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="20">
 <rect width="28" height="20" rx="2" fill="white"/>
@@ -12,8 +13,9 @@
 </g>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12H28V8H0V12Z" fill="#262626"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L13.3333 10L0 20V0Z" fill="#262626"/>
-<path d="M-0.666646 17.3628V2.63717L9.52804 10L-0.666646 17.3628Z" stroke="#FDCE12" stroke-width="1.33333"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M9.33331 10.6667H28V9.33333H9.33331V10.6667Z" fill="#FDCE12"/>
+<path d="M-0.666677 17.3628V2.63717L9.52801 10L-0.666677 17.3628Z" stroke="#FDCE12" stroke-width="1.33333"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.33334 10.6667H28V9.33333H9.33334V10.6667Z" fill="#FDCE12"/>
+</g>
 </g>
 <defs>
 <filter id="filter0_d_503_3860" x="0" y="12" width="28" height="8" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -32,5 +34,8 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_503_3860"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_503_3860" result="shape"/>
 </filter>
+<clipPath id="clip0_503_3860">
+<rect width="28" height="20" rx="2" fill="white"/>
+</clipPath>
 </defs>
 </svg>

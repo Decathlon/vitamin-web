@@ -24,11 +24,20 @@
    */
   export let contentOpaque = false;
 
+  /**
+   * @type {1|2|3|4|5|6} Heading level of card title
+   * @default 2
+   */
+  export let headingLevel;
+
   let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
    */
   export { className as class };
+
+  $: titleElement =
+    (headingLevel > 0 && headingLevel <= 6 && `h${headingLevel}`) || 'span';
 
   $: componentClass = cn(
     'vtmn-card',
@@ -59,7 +68,9 @@
   {/if}
   <div class={componentContentClass}>
     {#if title}
-      <span class="vtmn-card_content--title">{title}</span>
+      <svelte:element this={titleElement} class="vtmn-card_content--title">
+        {title}
+      </svelte:element>
     {/if}
     {#if $$slots.content}
       <span class="vtmn-card_content--body">

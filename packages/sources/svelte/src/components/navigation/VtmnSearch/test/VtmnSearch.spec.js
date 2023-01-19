@@ -87,7 +87,7 @@ describe('<VtmnSearch />', () => {
   test('Can add custom css classes', () => {
     const { container } = render(VtmnSearch, {
       ...props,
-      className: 'test-class',
+      class: 'test-class',
     });
 
     expect(container.getElementsByClassName(`test-class`).length).toBe(1);

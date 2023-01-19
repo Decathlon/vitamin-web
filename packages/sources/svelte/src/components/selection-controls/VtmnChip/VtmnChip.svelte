@@ -83,6 +83,9 @@
   aria-disabled={disabled}
   aria-pressed={selected && variant !== 'action'}
   on:click={selectClickHandler}
+  on:keydown
+  on:keyup
+  on:keypress
   tabindex={disableTableIndex ? undefined : 0}
 >
   {#if displayLeftIcon}

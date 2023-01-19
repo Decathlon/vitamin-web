@@ -17,8 +17,8 @@ const postcssProcess = (component, variant = '') =>
     plugins: [
       postcssImport({
         load: (filename) => {
-          const finalPath = filename.includes('@vtmn/css-')
-            ? filename.replaceAll('.css', `${variant}.css`)
+          const finalPath = filename.includes('sources/css/src')
+            ? filename.replace('.css', `${variant}.css`)
             : filename;
           return fs.readFileSync(path.resolve(finalPath), {
             encoding: 'utf8',
@@ -43,6 +43,7 @@ const postcssProcess = (component, variant = '') =>
   });
 
 const globals = {
+  'svelte/store': 'store',
   'svelte/internal': 'svelte/internal',
   svelte: 'svelte',
 };

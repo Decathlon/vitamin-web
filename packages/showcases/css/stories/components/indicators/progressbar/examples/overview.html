@@ -1,51 +1,56 @@
-<div class="block">
-  <div
-    class="vtmn-progressbar_container"
-    role="progressbar"
-    aria-labelledby="progress-bar-overview-1"
-    aria-valuemin="0"
-    aria-valuemax="100"
-    aria-valuenow="60"
-  >
-    <div class="vtmn-progressbar_label">
-      <span id="progress-bar-overview-1">Loading</span>
-      <span aria-live="assertive">60%</span>
-    </div>
-    <svg>
-      <line
-        class="vtmn-progressbar_indicator"
-        x1="0"
-        x2="60%"
-        y1="50%"
-        y2="50%"
-      />
-    </svg>
-  </div>
-</div>
-
-<div class="block">
-  <div
-    class="vtmn-progressbar_container vtmn-progressbar_variant--circular"
-    role="progressbar"
-    aria-labelledby="progress-bar-overview-2"
-    aria-valuemin="0"
-    aria-valuemax="100"
-    aria-valuenow="65"
-  >
-    <span
-      id="progress-bar-overview-2"
-      class="vtmn-progressbar_label"
-      aria-live="assertive"
-      >65%</span
+<div style="width: 300px">
+  <div class="block">
+    <div
+      class="vtmn-progressbar_container vtmn-progressbar_variant--linear"
+      role="progressbar"
+      aria-labelledby="progress-bar-overview-1"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      aria-valuenow="60"
     >
-    <svg>
-      <circle
-        class="vtmn-progressbar_indicator"
-        stroke-dashoffset="calc(400px - (400px * 65) / 100)"
-        cx="50%"
-        cy="50%"
-        r="64"
-      />
-    </svg>
+      <div class="vtmn-progressbar_label">
+        <span id="progress-bar-overview-1">Loading</span>
+        <span aria-live="assertive">60%</span>
+      </div>
+      <svg>
+        <line
+          class="vtmn-progressbar_indicator"
+          x1="0"
+          x2="100%"
+          y1="50%"
+          y2="50%"
+          style="
+            --vtmn-progressbar_progress-transform: translateX(-40%) scale(1);
+          "
+        />
+      </svg>
+    </div>
+  </div>
+
+  <div class="block">
+    <div
+      class="vtmn-progressbar_container vtmn-progressbar_variant--circular"
+      role="progressbar"
+      aria-labelledby="progress-bar-overview-2"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      aria-valuenow="65"
+    >
+      <span
+        id="progress-bar-overview-2"
+        class="vtmn-progressbar_label"
+        aria-live="assertive"
+        >65%</span
+      >
+      <svg>
+        <circle
+          class="vtmn-progressbar_indicator"
+          stroke-dashoffset="calc(400px - (400px * 65) / 100)"
+          cx="50%"
+          cy="50%"
+          r="64"
+        />
+      </svg>
+    </div>
   </div>
 </div>

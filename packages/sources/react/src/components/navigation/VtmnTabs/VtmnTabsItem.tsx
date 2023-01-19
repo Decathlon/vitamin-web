@@ -5,13 +5,7 @@ import { VtmnIcon } from '../../../guidelines/iconography/VtmnIcon';
 import { VtmnBadge } from '../../../components/indicators/VtmnBadge';
 
 export interface VtmnTabsItemProps
-  extends React.ComponentPropsWithoutRef<'nav'> {
-  /**
-   * The href of the tab item.
-   * @defaultValue null
-   */
-  href?: string;
-
+  extends React.ComponentPropsWithoutRef<'button'> {
   /**
    * The leading icon of the tab item.
    * @defaultValue null
@@ -25,43 +19,30 @@ export interface VtmnTabsItemProps
   badgeValue?: number;
 
   /**
-   * Check whether the tabs item is currently selected or not.
-   * @defaultValue null
-   */
-  selected?: boolean;
-
-  onClick?: React.MouseEventHandler;
-
-  /**
    * The content to render inside the component.
    * @defaultValue undefined
    */
   children?: React.ReactNode;
 }
 
-export const VtmnTabsItem = ({
-  icon,
-  href = '#',
-  badgeValue,
-  selected = false,
-  children,
-  onClick,
-  ...props
-}: VtmnTabsItemProps) => {
-  const handleClick = (e: React.MouseEvent<HTMLElement>) => {
-    e.preventDefault();
-    if (onClick) {
-      onClick();
-    }
-  };
-
+export const VtmnTabsItem = React.forwardRef<
+  HTMLButtonElement,
+  VtmnTabsItemProps
+>(({ icon, badgeValue, children, ...props }, ref) => {
   return (
     <li role="tab">
-      <a
-        href={href}
-        className={selected ? 'selected' : ''}
-        onClick={handleClick}
+      <button
+        ref={ref}
         {...props}
+        onFocus={(e) => {
+          const vmtnItemsParentElement = e.target.parentElement?.parentElement;
+          if (vmtnItemsParentElement) {
+            Array.from(vmtnItemsParentElement.children).forEach((vtmnItem) => {
+              vtmnItem?.firstElementChild?.removeAttribute('aria-selected');
+            });
+          }
+          e.currentTarget.setAttribute('aria-selected', 'true');
+        }}
       >
         {icon ? (
           <VtmnIcon
@@ -72,10 +53,10 @@ export const VtmnTabsItem = ({
         ) : null}
         {children}
         {badgeValue ? <VtmnBadge value={badgeValue} /> : null}
-      </a>
+      </button>
     </li>
   );
-};
+});
 
 const MemoVtmnTabsItem = React.memo(VtmnTabsItem);
 

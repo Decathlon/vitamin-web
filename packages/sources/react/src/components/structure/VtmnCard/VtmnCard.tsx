@@ -35,6 +35,12 @@ export interface VtmnCardProps extends React.ComponentPropsWithoutRef<'div'> {
   contentOpaque?: boolean;
 
   /**
+   * Heading level of the title
+   * @defaultValue 2
+   */
+  headingLevel?: 1 | 2 | 3 | 4 | 5 | 6;
+
+  /**
    * The content to render inside the component.
    * @defaultValue undefined
    */
@@ -47,9 +53,15 @@ export const VtmnCard = ({
   img,
   fullImage = false,
   contentOpaque = false,
+  headingLevel = 2,
   children,
   className,
 }: VtmnCardProps) => {
+  const Heading =
+    headingLevel >= 0 && headingLevel <= 6
+      ? (`h${headingLevel}` as keyof JSX.IntrinsicElements)
+      : 'h2';
+
   return (
     <div className="vtmn-card-container">
       <div
@@ -72,7 +84,9 @@ export const VtmnCard = ({
               contentOpaque && variant === 'full-image',
           })}
         >
-          {title && <h2 className="vtmn-card_content--title">{title}</h2>}
+          {title && (
+            <Heading className="vtmn-card_content--title">{title}</Heading>
+          )}
           {children && (
             <span className="vtmn-card_content--body">{children}</span>
           )}

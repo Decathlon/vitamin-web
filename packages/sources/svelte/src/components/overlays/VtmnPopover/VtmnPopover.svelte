@@ -20,17 +20,27 @@
   $: componentClass = cn('vtmn-popover', className);
 </script>
 
+<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+<!-- This will be refactored in next major release -->
 <div
   class={componentClass}
   data-position={position}
   aria-describedby={id}
+  aria-labelledby={`${id}-title`}
   tabindex="0"
   {...$$restProps}
 >
   <slot />
 
-  <div {id} role="tooltip">
-    <p class="vtmn-popover_title"><slot name="title" /></p>
+  <div {id} role="dialog">
+    <p
+      class="vtmn-popover_title"
+      id={`${id}-title`}
+      role="heading"
+      aria-level="2"
+    >
+      <slot name="title" />
+    </p>
     <p class="vtmn-popover_text"><slot name="body" /></p>
   </div>
 </div>

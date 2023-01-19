@@ -56,6 +56,13 @@ describe('VtmnCard', () => {
       expect(getSlotImg(container)).toBeVisible();
       expect(getImg(container)).toBeVisible();
     });
+    test('Should set the title as h1', () => {
+      const { getByRole } = render(VtmnCard, {
+        title: 'unit test',
+        headingLevel: 1,
+      });
+      expect(getByRole('heading', { level: 1 })).toBeVisible();
+    });
   });
 
   describe('top-image', () => {

@@ -1,110 +1,431 @@
 <div class="block">
-  <nav aria-label="Tabs list" class="vtmn-tabs vtmn-tabs_size--small">
-    <ul>
-      <li><a href="" class="selected">Tab Name</a></li>
-      <li><a href="">Tab Name</a></li>
-      <li><a href="">Tab Name</a></li>
-      <li><a href="">Tab Name</a></li>
-    </ul>
-    <div class="vtmn-divider" role="separator"></div>
-  </nav>
+  <ul
+    id="demo-tabs-tablist-small1"
+    class="vtmn-tabs vtmn-tabs_size--small"
+    role="tablist"
+    aria-label="Small tabs navigation"
+  >
+    <li>
+      <button
+        role="tab"
+        id="tab-small1-1"
+        aria-controls="tabpanel-small1-1"
+        aria-selected="true"
+      >
+        Tab Name 1
+      </button>
+    </li>
+    <li>
+      <button
+        role="tab"
+        id="tab-small1-2"
+        aria-controls="tabpanel-small1-2"
+        tabindex="-1"
+        aria-selected="false"
+      >
+        Tab Name 2
+      </button>
+    </li>
+    <li>
+      <button
+        role="tab"
+        id="tab-small1-3"
+        aria-controls="tabpanel-small1-3"
+        tabindex="-1"
+        aria-selected="false"
+      >
+        Tab Name 3
+      </button>
+    </li>
+    <li>
+      <button
+        role="tab"
+        id="tab-small1-4"
+        aria-controls="tabpanel-small1-4"
+        tabindex="-1"
+        aria-selected="false"
+      >
+        Tab Name 4
+      </button>
+    </li>
+  </ul>
+  <div class="vtmn-divider" role="separator"></div>
+  <div
+    id="demo-tabs-tabpanels"
+    class="vtmn-w-full vtmn-p-5 vtmn-bg-background-primary"
+  >
+    <section
+      role="tabpanel"
+      id="tabpanel-small1-1"
+      aria-labelledby="tab-small1-1"
+      tabindex="0"
+    >
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur
+      voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam
+      cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum
+      necessitatibus? Sequi?
+    </section>
+    <section
+      role="tabpanel"
+      id="tabpanel-small1-2"
+      aria-labelledby="tab-small1-2"
+      class="vtmn-hidden"
+      tabindex="0"
+    >
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur
+      voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam
+      cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum
+      necessitatibus? Sequi?
+    </section>
+    <section
+      role="tabpanel"
+      id="tabpanel-small1-3"
+      aria-labelledby="tab-small1-3"
+      class="vtmn-hidden"
+      tabindex="0"
+    >
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur
+      voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam
+      cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum
+      necessitatibus? Sequi?
+    </section>
+    <section
+      role="tabpanel"
+      id="tabpanel-small1-4"
+      aria-labelledby="tab-small1-4"
+      class="vtmn-hidden"
+      tabindex="0"
+    >
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur
+      voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam
+      cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum
+      necessitatibus? Sequi?
+    </section>
+  </div>
 </div>
 
 <div class="block">
-  <nav
-    aria-label="Tabs list"
+  <ul
+    id="demo-tabs-tablist-small2"
     class="vtmn-tabs vtmn-tabs_align--start vtmn-tabs_size--small"
+    role="tablist"
+    aria-label="Small tabs navigation"
   >
-    <ul>
-      <li>
-        <a href=""
-          ><span aria-hidden="true" class="vtmx-heart-line"></span>Tab Name</a
-        >
-      </li>
-      <li>
-        <a href=""
-          ><span aria-hidden="true" class="vtmx-heart-line"></span>Tab Name</a
-        >
-      </li>
-      <li>
-        <a href="" class="selected"
-          ><span aria-hidden="true" class="vtmx-heart-line"></span>Tab Name</a
-        >
-      </li>
-      <li>
-        <a href=""
-          ><span aria-hidden="true" class="vtmx-heart-line"></span>Tab Name</a
-        >
-      </li>
-    </ul>
-    <div class="vtmn-divider" role="separator"></div>
-  </nav>
+    <li>
+      <button
+        role="tab"
+        id="tab-small2-1"
+        aria-controls="tabpanel-small2-1"
+        aria-selected="true"
+      >
+        <span aria-hidden="true" class="vtmx-heart-line"></span> Tab Name 1
+      </button>
+    </li>
+    <li>
+      <button
+        role="tab"
+        id="tab-small2-2"
+        aria-controls="tabpanel-small2-2"
+        tabindex="-1"
+        aria-selected="false"
+      >
+        <span aria-hidden="true" class="vtmx-heart-line"></span> Tab Name 2
+      </button>
+    </li>
+    <li>
+      <button
+        role="tab"
+        id="tab-small2-3"
+        aria-controls="tabpanel-small2-3"
+        tabindex="-1"
+        aria-selected="false"
+      >
+        <span aria-hidden="true" class="vtmx-heart-line"></span> Tab Name 3
+      </button>
+    </li>
+    <li>
+      <button
+        role="tab"
+        id="tab-small2-4"
+        aria-controls="tabpanel-small2-4"
+        tabindex="-1"
+        aria-selected="false"
+      >
+        <span aria-hidden="true" class="vtmx-heart-line"></span> Tab Name 4
+      </button>
+    </li>
+  </ul>
+  <div class="vtmn-divider" role="separator"></div>
+  <div
+    id="demo-tabs-tabpanels"
+    class="vtmn-w-full vtmn-p-5 vtmn-bg-background-primary"
+  >
+    <section
+      role="tabpanel"
+      id="tabpanel-small2-1"
+      aria-labelledby="tab-small2-1"
+      tabindex="0"
+    >
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur
+      voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam
+      cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum
+      necessitatibus? Sequi?
+    </section>
+    <section
+      role="tabpanel"
+      id="tabpanel-small2-2"
+      aria-labelledby="tab-small2-2"
+      class="vtmn-hidden"
+      tabindex="0"
+    >
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur
+      voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam
+      cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum
+      necessitatibus? Sequi?
+    </section>
+    <section
+      role="tabpanel"
+      id="tabpanel-small2-3"
+      aria-labelledby="tab-small2-3"
+      class="vtmn-hidden"
+      tabindex="0"
+    >
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur
+      voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam
+      cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum
+      necessitatibus? Sequi?
+    </section>
+    <section
+      role="tabpanel"
+      id="tabpanel-small2-4"
+      aria-labelledby="tab-small2-4"
+      class="vtmn-hidden"
+      tabindex="0"
+    >
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur
+      voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam
+      cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum
+      necessitatibus? Sequi?
+    </section>
+  </div>
 </div>
 
 <div class="block">
-  <nav
-    aria-label="Tabs list"
+  <ul
+    id="demo-tabs-tablist-small3"
     class="vtmn-tabs vtmn-tabs_align--center vtmn-tabs_size--small"
+    role="tablist"
+    aria-label="Small tabs navigation"
   >
-    <ul>
-      <li>
-        <a href=""
-          ><span aria-hidden="true" class="vtmx-heart-line"></span>Tab Name<span
-            class="vtmn-badge"
-            >6</span
-          ></a
-        >
-      </li>
-      <li>
-        <a href=""
-          ><span aria-hidden="true" class="vtmx-heart-line"></span>Tab Name<span
-            class="vtmn-badge"
-            >6</span
-          ></a
-        >
-      </li>
-      <li>
-        <a href="" class="selected"
-          ><span aria-hidden="true" class="vtmx-heart-line"></span>Tab Name<span
-            class="vtmn-badge"
-            >6</span
-          ></a
-        >
-      </li>
-      <li>
-        <a href=""
-          ><span aria-hidden="true" class="vtmx-heart-line"></span>Tab Name<span
-            class="vtmn-badge"
-            >6</span
-          ></a
-        >
-      </li>
-    </ul>
-    <div class="vtmn-divider" role="separator"></div>
-  </nav>
+    <li>
+      <button
+        role="tab"
+        id="tab-small3-1"
+        aria-controls="tabpanel-small3-1"
+        aria-selected="true"
+      >
+        <span aria-hidden="true" class="vtmx-heart-line"></span> Tab Name 1
+        <span class="vtmn-badge" role="status" aria-label="6 new items">6</span>
+      </button>
+    </li>
+    <li>
+      <button
+        role="tab"
+        id="tab-small3-2"
+        aria-controls="tabpanel-small3-2"
+        tabindex="-1"
+        aria-selected="false"
+      >
+        <span aria-hidden="true" class="vtmx-heart-line"></span> Tab Name 2
+        <span class="vtmn-badge" role="status" aria-label="6 new items">6</span>
+      </button>
+    </li>
+    <li>
+      <button
+        role="tab"
+        id="tab-small3-3"
+        aria-controls="tabpanel-small3-3"
+        tabindex="-1"
+        aria-selected="false"
+      >
+        <span aria-hidden="true" class="vtmx-heart-line"></span> Tab Name 3
+        <span class="vtmn-badge" role="status" aria-label="6 new items">6</span>
+      </button>
+    </li>
+    <li>
+      <button
+        role="tab"
+        id="tab-small3-4"
+        aria-controls="tabpanel-small3-4"
+        tabindex="-1"
+        aria-selected="false"
+      >
+        <span aria-hidden="true" class="vtmx-heart-line"></span> Tab Name 4
+        <span class="vtmn-badge" role="status" aria-label="6 new items">6</span>
+      </button>
+    </li>
+  </ul>
+  <div class="vtmn-divider" role="separator"></div>
+  <div
+    id="demo-tabs-tabpanels"
+    class="vtmn-w-full vtmn-p-5 vtmn-bg-background-primary"
+  >
+    <section
+      role="tabpanel"
+      id="tabpanel-small3-1"
+      aria-labelledby="tab-small3-1"
+      tabindex="0"
+    >
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur
+      voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam
+      cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum
+      necessitatibus? Sequi?
+    </section>
+    <section
+      role="tabpanel"
+      id="tabpanel-small3-2"
+      aria-labelledby="tab-small3-2"
+      class="vtmn-hidden"
+      tabindex="0"
+    >
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur
+      voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam
+      cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum
+      necessitatibus? Sequi?
+    </section>
+    <section
+      role="tabpanel"
+      id="tabpanel-small3-3"
+      aria-labelledby="tab-small3-3"
+      class="vtmn-hidden"
+      tabindex="0"
+    >
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur
+      voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam
+      cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum
+      necessitatibus? Sequi?
+    </section>
+    <section
+      role="tabpanel"
+      id="tabpanel-small3-4"
+      aria-labelledby="tab-small3-4"
+      class="vtmn-hidden"
+      tabindex="0"
+    >
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur
+      voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam
+      cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum
+      necessitatibus? Sequi?
+    </section>
+  </div>
 </div>
 
 <div class="block">
-  <nav
-    aria-label="Tabs list"
+  <ul
+    id="demo-tabs-tablist-small4"
     class="vtmn-tabs vtmn-tabs_align--end vtmn-tabs_size--small"
+    role="tablist"
+    aria-label="Small tabs navigation"
   >
-    <ul>
-      <li>
-        <a href="">Tab Name<span class="vtmn-badge">6</span></a>
-      </li>
-      <li>
-        <a href="">Tab Name<span class="vtmn-badge">6</span></a>
-      </li>
-      <li>
-        <a href="">Tab Name<span class="vtmn-badge">6</span></a>
-      </li>
-      <li>
-        <a href="" class="selected"
-          >Tab Name<span class="vtmn-badge">6</span></a
-        >
-      </li>
-    </ul>
-    <div class="vtmn-divider" role="separator"></div>
-  </nav>
+    <li>
+      <button
+        role="tab"
+        id="tab-small4-1"
+        aria-controls="tabpanel-small4-1"
+        aria-selected="true"
+      >
+        Tab Name 1
+        <span class="vtmn-badge" role="status" aria-label="6 new items">6</span>
+      </button>
+    </li>
+    <li>
+      <button
+        role="tab"
+        id="tab-small4-2"
+        aria-controls="tabpanel-small4-2"
+        tabindex="-1"
+        aria-selected="false"
+      >
+        Tab Name 2
+        <span class="vtmn-badge" role="status" aria-label="6 new items">6</span>
+      </button>
+    </li>
+    <li>
+      <button
+        role="tab"
+        id="tab-small4-3"
+        aria-controls="tabpanel-small4-3"
+        tabindex="-1"
+        aria-selected="false"
+      >
+        Tab Name 3
+        <span class="vtmn-badge" role="status" aria-label="6 new items">6</span>
+      </button>
+    </li>
+    <li>
+      <button
+        role="tab"
+        id="tab-small4-4"
+        aria-controls="tabpanel-small4-4"
+        tabindex="-1"
+        aria-selected="false"
+      >
+        Tab Name 4
+        <span class="vtmn-badge" role="status" aria-label="6 new items">6</span>
+      </button>
+    </li>
+  </ul>
+  <div class="vtmn-divider" role="separator"></div>
+  <div
+    id="demo-tabs-tabpanels"
+    class="vtmn-w-full vtmn-p-5 vtmn-bg-background-primary"
+  >
+    <section
+      role="tabpanel"
+      id="tabpanel-small4-1"
+      aria-labelledby="tab-small4-1"
+      tabindex="0"
+    >
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur
+      voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam
+      cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum
+      necessitatibus? Sequi?
+    </section>
+    <section
+      role="tabpanel"
+      id="tabpanel-small4-2"
+      aria-labelledby="tab-small4-2"
+      class="vtmn-hidden"
+      tabindex="0"
+    >
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur
+      voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam
+      cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum
+      necessitatibus? Sequi?
+    </section>
+    <section
+      role="tabpanel"
+      id="tabpanel-small4-3"
+      aria-labelledby="tab-small4-3"
+      class="vtmn-hidden"
+      tabindex="0"
+    >
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur
+      voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam
+      cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum
+      necessitatibus? Sequi?
+    </section>
+    <section
+      role="tabpanel"
+      id="tabpanel-small4-4"
+      aria-labelledby="tab-small4-4"
+      class="vtmn-hidden"
+      tabindex="0"
+    >
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur
+      voluptatum asperiores quis eum perspiciatis repellat temporibus ab aperiam
+      cumque deserunt eveniet dolore excepturi, error veniam quidem ipsum
+      necessitatibus? Sequi?
+    </section>
+  </div>
 </div>

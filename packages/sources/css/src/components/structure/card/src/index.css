@@ -7,12 +7,13 @@
 @import '@vtmn/css-design-tokens/src/radius';
 
 .vtmn-card {
+  font-family: var(--vtmn-typo_font-family);
+  font-weight: var(--vtmn-typo_font-weight--normal);
   max-inline-size: 100%;
   min-inline-size: min-content;
   border-radius: var(--vtmn-radius_200);
   box-shadow: var(--vtmn-shadow_100);
   position: relative;
-  font: var(--vtmn-typo_font-family) var(--vtmn-typo_font-weight--normal);
 }
 
 .vtmn-card_content {
@@ -28,9 +29,9 @@
 }
 
 .vtmn-card_content--title {
+  all: unset;
   font-size: var(--vtmn-typo_title-5-font-size);
   font-weight: var(--vtmn-typo_font-weight--bold);
-  min-inline-size: max-content;
 }
 
 .vtmn-card_content--body {
@@ -51,6 +52,13 @@
   block-size: 100%;
   margin: var(--vtmn-spacing_4);
   position: relative;
+}
+
+.vtmn-card_image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: middle;
 }
 
 .vtmn-card > .vtmn-card_image--full,

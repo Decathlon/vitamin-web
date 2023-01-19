@@ -29,12 +29,10 @@
   );
 </script>
 
-<nav class={componentClass} {...$$restProps}>
-  <ul role="tablist">
-    <slot />
-  </ul>
-  <VtmnDivider />
-</nav>
+<ul class={componentClass} role="tablist" {...$$restProps}>
+  <slot />
+</ul>
+<VtmnDivider />
 
 <style lang="css">
   @import '@vtmn/css-tabs';
