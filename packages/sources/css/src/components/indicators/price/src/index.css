@@ -28,6 +28,7 @@
 .vtmn-price_variant--default {
   background-color: transparent;
   color: var(--vtmn-semantic-color_content-primary);
+  padding-inline: 0;
 }
 
 .vtmn-price_variant--accent {
@@ -44,6 +45,7 @@
   background-color: transparent;
   color: var(--vtmn-semantic-color_content-tertiary);
   text-decoration: line-through;
+  padding-inline: 0;
 }
 
 /* SIZES */
