@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.90.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.89.2...@vtmn/css@0.90.0) (2023-01-20)
+
+### Features
+
+- **@vtmn/css:** improve `VtmnPrice` component by removing padding ([#1341](https://github.com/Decathlon/vitamin-web/issues/1341)) ([b49492d](https://github.com/Decathlon/vitamin-web/commit/b49492d358563868566a7526000fe2b038426aea))
+
 ## [0.89.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.89.1...@vtmn/css@0.89.2) (2023-01-20)
 
 **Note:** Version bump only for package @vtmn/css
