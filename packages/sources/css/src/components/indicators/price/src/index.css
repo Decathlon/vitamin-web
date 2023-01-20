@@ -14,7 +14,6 @@
   block-size: rem(28px);
   inline-size: fit-content;
   padding-block: rem(2px);
-  padding-inline: var(--vtmn-spacing_2);
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
   font-weight: var(--vtmn-typo_font-weight--bold);
@@ -28,24 +27,24 @@
 .vtmn-price_variant--default {
   background-color: transparent;
   color: var(--vtmn-semantic-color_content-primary);
-  padding-inline: 0;
 }
 
 .vtmn-price_variant--accent {
   background-color: var(--vtmn-semantic-color_background-accent);
   color: var(--vtmn-semantic-color_content-accent);
+  padding-inline: var(--vtmn-spacing_2);
 }
 
 .vtmn-price_variant--alert {
   background-color: var(--vtmn-semantic-color_background-alert);
   color: var(--vtmn-semantic-color_content-primary-reversed);
+  padding-inline: var(--vtmn-spacing_2);
 }
 
 .vtmn-price_variant--strikethrough {
   background-color: transparent;
   color: var(--vtmn-semantic-color_content-tertiary);
   text-decoration: line-through;
-  padding-inline: 0;
 }
 
 /* SIZES */
