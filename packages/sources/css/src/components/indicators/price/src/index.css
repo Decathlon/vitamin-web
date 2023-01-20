@@ -9,11 +9,8 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  min-block-size: rem(28px);
   line-height: 1;
-  block-size: rem(28px);
   inline-size: fit-content;
-  padding-block: rem(2px);
   font-family: var(--vtmn-typo_font-family);
   font-size: var(--vtmn-typo_text-2-font-size);
   font-weight: var(--vtmn-typo_font-weight--bold);
@@ -33,12 +30,14 @@
   background-color: var(--vtmn-semantic-color_background-accent);
   color: var(--vtmn-semantic-color_content-accent);
   padding-inline: var(--vtmn-spacing_2);
+  padding-block: rem(2px);
 }
 
 .vtmn-price_variant--alert {
   background-color: var(--vtmn-semantic-color_background-alert);
   color: var(--vtmn-semantic-color_content-primary-reversed);
   padding-inline: var(--vtmn-spacing_2);
+  padding-block: rem(2px);
 }
 
 .vtmn-price_variant--strikethrough {
@@ -50,29 +49,45 @@
 /* SIZES */
 
 /* XSmall */
-.vtmn-price_size--xsmall {
+.vtmn-price_variant--accent.vtmn-price_size--xsmall,
+.vtmn-price_variant--alert.vtmn-price_size--xsmall {
   min-block-size: rem(20px);
   block-size: rem(20px);
+}
+
+.vtmn-price_size--xsmall {
   font-size: var(--vtmn-typo_caption-1-font-size);
 }
 
 /* Small */
-.vtmn-price_size--small {
+.vtmn-price_variant--accent.vtmn-price_size--small,
+.vtmn-price_variant--alert.vtmn-price_size--small {
   min-block-size: rem(24px);
   block-size: rem(24px);
+}
+
+.vtmn-price_size--small {
   font-size: var(--vtmn-typo_text-3-font-size);
 }
 
 /* Medium */
-.vtmn-price_size--medium {
+.vtmn-price_variant--accent.vtmn-price_size--medium,
+.vtmn-price_variant--alert.vtmn-price_size--medium {
   min-block-size: rem(28px);
   block-size: rem(28px);
+}
+
+.vtmn-price_size--medium {
   font-size: var(--vtmn-typo_text-2-font-size);
 }
 
 /* Large */
-.vtmn-price_size--large {
+.vtmn-price_variant--accent.vtmn-price_size--large,
+.vtmn-price_variant--alert.vtmn-price_size--large {
   min-block-size: rem(32px);
   block-size: rem(32px);
+}
+
+.vtmn-price_size--large {
   font-size: var(--vtmn-typo_text-1-font-size);
 }
