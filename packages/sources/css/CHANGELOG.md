@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.89.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.89.0...@vtmn/css@0.89.1) (2023-01-20)
+
+### Bug Fixes
+
+- **@vtmn/css:** remove white space for list text ([#1340](https://github.com/Decathlon/vitamin-web/issues/1340)) ([daa0f12](https://github.com/Decathlon/vitamin-web/commit/daa0f126df79b6a76c4e89bac6ef4afa43b382ad))
+
 # [0.89.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.88.0...@vtmn/css@0.89.0) (2023-01-17)
 
 ### Features
