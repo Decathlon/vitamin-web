@@ -87,7 +87,6 @@
   flex-direction: column;
   justify-content: center;
   border-block-end: rem(1px) solid var(--vtmn-semantic-color_border-primary);
-  white-space: nowrap;
   padding-block: var(--vtmn-spacing_3);
   padding-inline: rem(20px);
   line-height: var(--vtmn-typo_text-2-line-height);
