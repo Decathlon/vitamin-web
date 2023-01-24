@@ -1,6 +1,7 @@
 import * as React from 'react';
 import '@vtmn/css-tooltip/dist/index-with-vars.css';
 import { VtmnTooltipPosition } from './types';
+import clsx from 'clsx';
 
 export interface VtmnTooltipProps
   extends React.ComponentPropsWithoutRef<'span'> {
@@ -35,7 +36,7 @@ export const VtmnTooltip = ({
       <span
         tabIndex={0}
         role="tooltip"
-        className={`vtmn-tooltip ${className ?? className}`}
+        className={clsx('vtmn-tooltip', className)}
         data-tooltip={tooltip}
         data-position={position}
         {...props}
