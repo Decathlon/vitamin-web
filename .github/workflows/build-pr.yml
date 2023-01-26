@@ -16,18 +16,32 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '14.x'
+          
+      - uses: juztcode/pr-updater@1.0.0
+        if: ${{ github.head_ref == 'feat/update-icons' }}
+        with:
+          title: 'feat: update icons'
+          body: '**Automated Pull Request to update icons.**'
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: danielswensson/auto-assign-owner-action@v1
         if: ${{ github.head_ref == 'feat/update-icons' }}
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-
-      - uses: docker://takanabe/github-actions-automate-projects:v0.0.1
+          
+      - uses: actions-ecosystem/action-add-labels@v1
         if: ${{ github.head_ref == 'feat/update-icons' }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_PROJECT_URL: https://github.com/orgs/Decathlon/projects/3
-          GITHUB_PROJECT_COLUMN_NAME: 👀 Dev review
+        with:
+          labels: |
+            enhancement 🚀
+            icons ✨
+            run 💨
+          
+      - uses: actions/add-to-project@v0.4.0
+        if: ${{ github.head_ref == 'feat/update-icons' }}
+        with:
+          project-url: https://github.com/orgs/Decathlon/projects/3
+          github-token: ${{ secrets.API_TOKEN_GITHUB }}
 
       - name: Restore/create node_modules cache
         uses: actions/cache@v2
