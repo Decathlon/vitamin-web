@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.90.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.90.0...@vtmn/css@0.90.1) (2023-01-26)
+
+### Reverts
+
+- Revert "feat(@vtmn/css): improve `VtmnPrice` component by removing padding (#1341)" ([26378a2](https://github.com/Decathlon/vitamin-web/commit/26378a2a492d08a8c32bd2edbc8bad04d417a462)), closes [#1341](https://github.com/Decathlon/vitamin-web/issues/1341)
+
 # [0.90.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.89.2...@vtmn/css@0.90.0) (2023-01-20)
 
 ### Features
