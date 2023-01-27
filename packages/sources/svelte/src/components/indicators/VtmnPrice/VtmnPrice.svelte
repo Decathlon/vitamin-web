@@ -16,6 +16,13 @@
    */
   export let variant = VTMN_PRICE_VARIANT.DEFAULT;
 
+  /**
+   * Padding on the price
+   * @type boolean
+   * @defaultValue true
+   */
+  export let padding = true;
+
   let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
@@ -26,6 +33,7 @@
     'vtmn-price',
     size && `vtmn-price_size--${size}`,
     variant && `vtmn-price_variant--${variant}`,
+    !padding && 'vtmn-price--no-padding',
     className,
   );
 </script>
