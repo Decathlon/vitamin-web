@@ -45,6 +45,11 @@ export interface VtmnCardProps extends React.ComponentPropsWithoutRef<'div'> {
    * @defaultValue undefined
    */
   children?: React.ReactNode;
+  /**
+   * The content to render top right the component.
+   * @defaultValue undefined
+   */
+  topActions?: React.ReactNode;
 }
 
 export const VtmnCard = ({
@@ -56,6 +61,7 @@ export const VtmnCard = ({
   headingLevel = 2,
   children,
   className,
+  topActions,
 }: VtmnCardProps) => {
   const Heading =
     headingLevel >= 0 && headingLevel <= 6
@@ -63,21 +69,23 @@ export const VtmnCard = ({
       : 'h2';
 
   return (
-    <div className="vtmn-card-container">
-      <div
-        className={clsx(
-          'vtmn-card',
-          `vtmn-card_variant--${variant}`,
-          className,
+    <div className="vtmn-card">
+      {(variant == 'side-image' || variant == 'without-image') &&
+        topActions && (
+          <div className={clsx('vtmn-card_top-action')}>
+            <span className="vtmn-card_top-action--body">{topActions}</span>
+          </div>
         )}
-      >
-        <div
-          className={clsx('vtmn-card_image', {
-            'vtmn-card_image--full': fullImage && variant === 'top-image',
-          })}
-        >
-          {img && img}
-        </div>
+      <div className={clsx(`vtmn-card_variant--${variant}`, className)}>
+        {variant != 'without-image' && (
+          <div
+            className={clsx('vtmn-card_image', {
+              'vtmn-card_image--full': fullImage && variant === 'top-image',
+            })}
+          >
+            {img && img}
+          </div>
+        )}
         <div
           className={clsx('vtmn-card_content', {
             'vtmn-card_content--opaque':

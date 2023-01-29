@@ -19,6 +19,14 @@ export default {
         type: 'text',
       },
     },
+    topActions: {
+      type: { name: 'string', required: false },
+      description: 'The actions to render on the top of the component.',
+      defaultValue: 'Label',
+      control: {
+        type: 'text',
+      },
+    },
   },
   parameters,
 } as Meta;

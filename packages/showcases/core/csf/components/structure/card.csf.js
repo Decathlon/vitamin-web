@@ -15,7 +15,7 @@ export const argTypes = {
     defaultValue: 'top-image',
     control: {
       type: 'select',
-      options: ['top-image', 'side-image', 'full-image'],
+      options: ['top-image', 'side-image', 'full-image', 'without-image'],
     },
   },
   fullImage: {
