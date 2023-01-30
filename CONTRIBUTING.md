@@ -114,10 +114,7 @@ When you are opening an issue, please be sure to report as much information as y
 
 If you are a dev and you want to directly fix a problem or implement a new feature... you are the best one! :clap::clap:
 
-To help you, we have created project boards:
-
-- [Vitamin Web - Build V0 workflow](https://github.com/Decathlon/vitamin-web/projects/2)
-- [Vitamin Web - Run workflow](https://github.com/Decathlon/vitamin-web/projects/3)
+To help you follow the progress, we have this project board: https://github.com/orgs/Decathlon/projects/3
 
 To propose any change you have to submit us a [Pull Request](https://help.github.com/articles/about-pull-requests/)
 
