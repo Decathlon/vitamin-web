@@ -75,3 +75,11 @@
   block-size: rem(32px);
   font-size: var(--vtmn-typo_text-1-font-size);
 }
+
+/* NO-PADDING */
+
+.vtmn-price--no-padding {
+  min-block-size: 0;
+  block-size: auto;
+  padding: 0;
+}

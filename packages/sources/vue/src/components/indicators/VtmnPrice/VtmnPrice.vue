@@ -19,6 +19,10 @@ export default /*#__PURE__*/ defineComponent({
       validator: (val: VtmnPriceSize) =>
         ['xsmall', 'small', 'medium', 'large'].includes(val),
     },
+    noPadding: {
+      type: Boolean as PropType<boolean>,
+      default: false,
+    },
   },
   setup(props) {
     props = reactive(props);
@@ -31,6 +35,7 @@ export default /*#__PURE__*/ defineComponent({
         'vtmn-price': true,
         [`vtmn-price_variant--${props.variant}`]: props.variant,
         [`vtmn-price_size--${props.size}`]: true,
+        'vtmn-price--no-padding': props.noPadding,
       })),
     };
   },

@@ -27,4 +27,10 @@ export const argTypes = {
       options: ['xsmall', 'small', 'medium', 'large'],
     },
   },
+  noPadding: {
+    type: { name: 'boolean', required: false },
+    description: 'Remove padding to the price.',
+    defaultValue: false,
+    control: { type: 'boolean' },
+  },
 };

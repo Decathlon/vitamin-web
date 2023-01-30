@@ -1,6 +1,7 @@
 import * as React from 'react';
 import '@vtmn/css-price/dist/index-with-vars.css';
 import { VtmnPriceVariant, VtmnPriceSize } from './types';
+import clsx from 'clsx';
 
 export interface VtmnPriceProps extends React.ComponentPropsWithoutRef<'span'> {
   /**
@@ -16,6 +17,12 @@ export interface VtmnPriceProps extends React.ComponentPropsWithoutRef<'span'> {
   size?: VtmnPriceSize;
 
   /**
+   * No padding on the price.
+   * @defaultValue false
+   */
+  noPadding?: boolean;
+
+  /**
    * The content to render inside the component.
    * @defaultValue undefined
    */
@@ -24,15 +31,24 @@ export interface VtmnPriceProps extends React.ComponentPropsWithoutRef<'span'> {
 
 export const VtmnPrice = React.forwardRef<HTMLButtonElement, VtmnPriceProps>(
   (
-    { variant = 'default', size = 'medium', children, className, ...props },
+    {
+      variant = 'default',
+      size = 'medium',
+      noPadding = false,
+      children,
+      className,
+      ...props
+    },
     ref,
   ) => {
     return (
       <span
         ref={ref}
-        className={`vtmn-price vtmn-price_variant--${variant} vtmn-price_size--${size} ${
-          className ? className : ''
-        }`}
+        className={clsx(
+          `vtmn-price vtmn-price_variant--${variant} vtmn-price_size--${size}`,
+          noPadding && 'vtmn-price--no-padding',
+          className ? className : '',
+        )}
         {...props}
       >
         {children}
