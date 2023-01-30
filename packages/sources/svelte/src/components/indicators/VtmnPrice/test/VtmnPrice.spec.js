@@ -31,6 +31,11 @@ describe('VtmnPrice', () => {
     );
     expect(getPrice(container)).toBeVisible();
   });
+  test('Should apply no padding parameter', () => {
+    const { container } = render(VtmnPrice, { noPadding: true });
+    expect(getPrice(container)).toHaveClass('vtmn-price--no-padding');
+    expect(getPrice(container)).toBeVisible();
+  });
   test('Should apply custom class on component', () => {
     const { container } = render(VtmnPrice, { class: 'custom-class' });
     expect(getPrice(container)).toHaveClass('custom-class');

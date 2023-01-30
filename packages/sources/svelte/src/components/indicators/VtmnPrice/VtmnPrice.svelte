@@ -17,11 +17,11 @@
   export let variant = VTMN_PRICE_VARIANT.DEFAULT;
 
   /**
-   * Padding on the price
+   * No padding on the price
    * @type boolean
-   * @defaultValue true
+   * @defaultValue false
    */
-  export let padding = true;
+  export let noPadding = false;
 
   let className = undefined;
   /**
@@ -33,7 +33,7 @@
     'vtmn-price',
     size && `vtmn-price_size--${size}`,
     variant && `vtmn-price_variant--${variant}`,
-    !padding && 'vtmn-price--no-padding',
+    noPadding && 'vtmn-price--no-padding',
     className,
   );
 </script>
