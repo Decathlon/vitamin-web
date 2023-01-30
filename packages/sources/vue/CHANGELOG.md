@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.49.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.48.4...@vtmn/vue@0.49.0) (2023-01-30)
+
+### Features
+
+- **@vtmn/css:** update price to allow no-padding ([#1343](https://github.com/Decathlon/vitamin-web/issues/1343)) ([d5ede03](https://github.com/Decathlon/vitamin-web/commit/d5ede03a6404b6426745a6b8a7035d2d40bf4f74))
+
 ## [0.48.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.48.3...@vtmn/vue@0.48.4) (2023-01-26)
 
 **Note:** Version bump only for package @vtmn/vue

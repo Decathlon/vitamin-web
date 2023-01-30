@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-price@0.7.1...@vtmn/css-price@0.8.0) (2023-01-30)
+
+### Features
+
+- **@vtmn/css:** update price to allow no-padding ([#1343](https://github.com/Decathlon/vitamin-web/issues/1343)) ([d5ede03](https://github.com/Decathlon/vitamin-web/commit/d5ede03a6404b6426745a6b8a7035d2d40bf4f74))
+
 ## [0.7.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-price@0.7.0...@vtmn/css-price@0.7.1) (2023-01-26)
 
 ### Reverts

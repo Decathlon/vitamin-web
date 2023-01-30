@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.61.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.60.5...@vtmn/react@0.61.0) (2023-01-30)
+
+### Features
+
+- **@vtmn/css:** update price to allow no-padding ([#1343](https://github.com/Decathlon/vitamin-web/issues/1343)) ([d5ede03](https://github.com/Decathlon/vitamin-web/commit/d5ede03a6404b6426745a6b8a7035d2d40bf4f74))
+
 ## [0.60.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.60.4...@vtmn/react@0.60.5) (2023-01-26)
 
 **Note:** Version bump only for package @vtmn/react
