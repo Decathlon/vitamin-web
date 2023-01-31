@@ -1,3689 +1,4146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
     <title>vitamix</title>
 
     <style>
-      body {
-        font-family: sans-serif;
-        margin: 0;
-        padding: 10px 20px;
-        text-align: center;
-      }
-      .preview {
-        width: 100px;
-        display: inline-block;
-        margin: 10px;
-      }
-      .preview .inner {
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-        background: #f5f5f5;
-        -webkit-border-radius: 3px 3px 0 0;
-        -moz-border-radius: 3px 3px 0 0;
-        border-radius: 3px 3px 0 0;
-      }
-      .preview .inner {
-        line-height: 85px;
-        font-size: 40px;
-        color: #333;
-      }
-      .label {
-        display: inline-block;
-        width: 100%;
-        box-sizing: border-box;
-        padding: 5px;
-        font-size: 10px;
-        font-family: Monaco, monospace;
-        color: #666;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        background: #ddd;
-        -webkit-border-radius: 0 0 3px 3px;
-        -moz-border-radius: 0 0 3px 3px;
-        border-radius: 0 0 3px 3px;
-        color: #666;
-      }
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .preview {
+            width: 100px;
+            display: inline-block;
+            margin: 10px;
+        }
+        .preview .inner {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            background: #f5f5f5;
+            -webkit-border-radius: 3px 3px 0 0;
+            -moz-border-radius: 3px 3px 0 0;
+            border-radius: 3px 3px 0 0;
+        }
+        .preview .inner  {
+            line-height: 85px;
+            font-size: 40px;
+            color: #333;
+        }
+        .label {
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 5px;
+            font-size: 10px;
+            font-family: Monaco, monospace;
+            color: #666;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            background: #ddd;
+            -webkit-border-radius: 0 0 3px 3px;
+            -moz-border-radius: 0 0 3px 3px;
+            border-radius: 0 0 3px 3px;
+            color: #666;
+        }
     </style>
 
     <link rel="stylesheet" type="text/css" href="vitamix.css" />
-  </head>
-  <body>
+</head>
+<body>
+
     <h1>vitamix</h1>
 
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-add-circle-fill"></i>
-      </span>
-      <br />
-      <span class="label">add-circle-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-add-circle-line"></i>
-      </span>
-      <br />
-      <span class="label">add-circle-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-add-fill"></i>
-      </span>
-      <br />
-      <span class="label">add-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-add-line"></i>
-      </span>
-      <br />
-      <span class="label">add-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-alert-fill"></i>
-      </span>
-      <br />
-      <span class="label">alert-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-alert-line"></i>
-      </span>
-      <br />
-      <span class="label">alert-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-amazon-fill"></i>
-      </span>
-      <br />
-      <span class="label">amazon-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-amazon-line"></i>
-      </span>
-      <br />
-      <span class="label">amazon-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-android-fill"></i>
-      </span>
-      <br />
-      <span class="label">android-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-android-line"></i>
-      </span>
-      <br />
-      <span class="label">android-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-apple-fill"></i>
-      </span>
-      <br />
-      <span class="label">apple-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-apple-line"></i>
-      </span>
-      <br />
-      <span class="label">apple-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-down-circle-fill"></i>
-      </span>
-      <br />
-      <span class="label">arrow-down-circle-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-down-circle-line"></i>
-      </span>
-      <br />
-      <span class="label">arrow-down-circle-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-down-fill"></i>
-      </span>
-      <br />
-      <span class="label">arrow-down-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-down-line"></i>
-      </span>
-      <br />
-      <span class="label">arrow-down-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-go-back-fill"></i>
-      </span>
-      <br />
-      <span class="label">arrow-go-back-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-go-back-line"></i>
-      </span>
-      <br />
-      <span class="label">arrow-go-back-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-go-forward-fill"></i>
-      </span>
-      <br />
-      <span class="label">arrow-go-forward-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-go-forward-line"></i>
-      </span>
-      <br />
-      <span class="label">arrow-go-forward-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-left-circle-fill"></i>
-      </span>
-      <br />
-      <span class="label">arrow-left-circle-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-left-circle-line"></i>
-      </span>
-      <br />
-      <span class="label">arrow-left-circle-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-left-down-fill"></i>
-      </span>
-      <br />
-      <span class="label">arrow-left-down-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-left-down-line"></i>
-      </span>
-      <br />
-      <span class="label">arrow-left-down-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-left-fill"></i>
-      </span>
-      <br />
-      <span class="label">arrow-left-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-left-line"></i>
-      </span>
-      <br />
-      <span class="label">arrow-left-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-left-right-fill"></i>
-      </span>
-      <br />
-      <span class="label">arrow-left-right-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-left-right-line"></i>
-      </span>
-      <br />
-      <span class="label">arrow-left-right-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-left-up-fill"></i>
-      </span>
-      <br />
-      <span class="label">arrow-left-up-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-left-up-line"></i>
-      </span>
-      <br />
-      <span class="label">arrow-left-up-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-right-circle-fill"></i>
-      </span>
-      <br />
-      <span class="label">arrow-right-circle-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-right-circle-line"></i>
-      </span>
-      <br />
-      <span class="label">arrow-right-circle-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-right-down-fill"></i>
-      </span>
-      <br />
-      <span class="label">arrow-right-down-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-right-down-line"></i>
-      </span>
-      <br />
-      <span class="label">arrow-right-down-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-right-fill"></i>
-      </span>
-      <br />
-      <span class="label">arrow-right-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-right-line"></i>
-      </span>
-      <br />
-      <span class="label">arrow-right-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-right-up-fill"></i>
-      </span>
-      <br />
-      <span class="label">arrow-right-up-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-right-up-line"></i>
-      </span>
-      <br />
-      <span class="label">arrow-right-up-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-up-circle-fill"></i>
-      </span>
-      <br />
-      <span class="label">arrow-up-circle-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-up-circle-line"></i>
-      </span>
-      <br />
-      <span class="label">arrow-up-circle-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-up-down-fill"></i>
-      </span>
-      <br />
-      <span class="label">arrow-up-down-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-up-down-line"></i>
-      </span>
-      <br />
-      <span class="label">arrow-up-down-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-up-fill"></i>
-      </span>
-      <br />
-      <span class="label">arrow-up-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-arrow-up-line"></i>
-      </span>
-      <br />
-      <span class="label">arrow-up-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-attachment-fill"></i>
-      </span>
-      <br />
-      <span class="label">attachment-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-attachment-line"></i>
-      </span>
-      <br />
-      <span class="label">attachment-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-award-fill"></i>
-      </span>
-      <br />
-      <span class="label">award-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-award-line"></i>
-      </span>
-      <br />
-      <span class="label">award-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-bank-card-fill"></i>
-      </span>
-      <br />
-      <span class="label">bank-card-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-bank-card-line"></i>
-      </span>
-      <br />
-      <span class="label">bank-card-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-bar-chart-fill"></i>
-      </span>
-      <br />
-      <span class="label">bar-chart-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-bar-chart-line"></i>
-      </span>
-      <br />
-      <span class="label">bar-chart-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-barcode-fill"></i>
-      </span>
-      <br />
-      <span class="label">barcode-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-barcode-line"></i>
-      </span>
-      <br />
-      <span class="label">barcode-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-bill-fill"></i>
-      </span>
-      <br />
-      <span class="label">bill-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-bill-line"></i>
-      </span>
-      <br />
-      <span class="label">bill-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-body-scan-fill"></i>
-      </span>
-      <br />
-      <span class="label">body-scan-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-body-scan-line"></i>
-      </span>
-      <br />
-      <span class="label">body-scan-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-calendar-2-fill"></i>
-      </span>
-      <br />
-      <span class="label">calendar-2-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-calendar-2-line"></i>
-      </span>
-      <br />
-      <span class="label">calendar-2-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-calendar-check-fill"></i>
-      </span>
-      <br />
-      <span class="label">calendar-check-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-calendar-check-line"></i>
-      </span>
-      <br />
-      <span class="label">calendar-check-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-calendar-date-fill"></i>
-      </span>
-      <br />
-      <span class="label">calendar-date-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-calendar-date-line"></i>
-      </span>
-      <br />
-      <span class="label">calendar-date-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-calendar-fill"></i>
-      </span>
-      <br />
-      <span class="label">calendar-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-calendar-line"></i>
-      </span>
-      <br />
-      <span class="label">calendar-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-camera-fill"></i>
-      </span>
-      <br />
-      <span class="label">camera-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-camera-line"></i>
-      </span>
-      <br />
-      <span class="label">camera-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-car-fill"></i>
-      </span>
-      <br />
-      <span class="label">car-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-car-line"></i>
-      </span>
-      <br />
-      <span class="label">car-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-check-fill"></i>
-      </span>
-      <br />
-      <span class="label">check-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-check-line"></i>
-      </span>
-      <br />
-      <span class="label">check-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-checkbox-blank-circle-fill"></i>
-      </span>
-      <br />
-      <span class="label">checkbox-blank-circle-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-checkbox-blank-circle-line"></i>
-      </span>
-      <br />
-      <span class="label">checkbox-blank-circle-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-checkbox-blank-fill"></i>
-      </span>
-      <br />
-      <span class="label">checkbox-blank-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-checkbox-blank-line"></i>
-      </span>
-      <br />
-      <span class="label">checkbox-blank-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-checkbox-circle-fill"></i>
-      </span>
-      <br />
-      <span class="label">checkbox-circle-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-checkbox-circle-line"></i>
-      </span>
-      <br />
-      <span class="label">checkbox-circle-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-checkbox-fill"></i>
-      </span>
-      <br />
-      <span class="label">checkbox-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-checkbox-line"></i>
-      </span>
-      <br />
-      <span class="label">checkbox-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-checkbox-multiple-fill"></i>
-      </span>
-      <br />
-      <span class="label">checkbox-multiple-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-checkbox-multiple-line"></i>
-      </span>
-      <br />
-      <span class="label">checkbox-multiple-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-chevron-down-fill"></i>
-      </span>
-      <br />
-      <span class="label">chevron-down-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-chevron-down-line"></i>
-      </span>
-      <br />
-      <span class="label">chevron-down-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-chevron-left-fill"></i>
-      </span>
-      <br />
-      <span class="label">chevron-left-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-chevron-left-line"></i>
-      </span>
-      <br />
-      <span class="label">chevron-left-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-chevron-right-fill"></i>
-      </span>
-      <br />
-      <span class="label">chevron-right-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-chevron-right-line"></i>
-      </span>
-      <br />
-      <span class="label">chevron-right-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-chevron-up-fill"></i>
-      </span>
-      <br />
-      <span class="label">chevron-up-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-chevron-up-line"></i>
-      </span>
-      <br />
-      <span class="label">chevron-up-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-chrome-fill"></i>
-      </span>
-      <br />
-      <span class="label">chrome-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-chrome-line"></i>
-      </span>
-      <br />
-      <span class="label">chrome-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-close-circle-fill"></i>
-      </span>
-      <br />
-      <span class="label">close-circle-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-close-circle-line"></i>
-      </span>
-      <br />
-      <span class="label">close-circle-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-close-fill"></i>
-      </span>
-      <br />
-      <span class="label">close-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-close-line"></i>
-      </span>
-      <br />
-      <span class="label">close-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-cloud-fill"></i>
-      </span>
-      <br />
-      <span class="label">cloud-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-cloud-line"></i>
-      </span>
-      <br />
-      <span class="label">cloud-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-cloud-windy-fill"></i>
-      </span>
-      <br />
-      <span class="label">cloud-windy-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-cloud-windy-line"></i>
-      </span>
-      <br />
-      <span class="label">cloud-windy-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-counter-fill"></i>
-      </span>
-      <br />
-      <span class="label">counter-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-counter-line"></i>
-      </span>
-      <br />
-      <span class="label">counter-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-customer-service-fill"></i>
-      </span>
-      <br />
-      <span class="label">customer-service-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-customer-service-line"></i>
-      </span>
-      <br />
-      <span class="label">customer-service-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-database-fill"></i>
-      </span>
-      <br />
-      <span class="label">database-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-database-line"></i>
-      </span>
-      <br />
-      <span class="label">database-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-delete-bin-fill"></i>
-      </span>
-      <br />
-      <span class="label">delete-bin-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-delete-bin-line"></i>
-      </span>
-      <br />
-      <span class="label">delete-bin-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-direction-fill"></i>
-      </span>
-      <br />
-      <span class="label">direction-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-direction-line"></i>
-      </span>
-      <br />
-      <span class="label">direction-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-distance-fill"></i>
-      </span>
-      <br />
-      <span class="label">distance-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-distance-line"></i>
-      </span>
-      <br />
-      <span class="label">distance-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-download-fill"></i>
-      </span>
-      <br />
-      <span class="label">download-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-download-line"></i>
-      </span>
-      <br />
-      <span class="label">download-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-drive-fill"></i>
-      </span>
-      <br />
-      <span class="label">drive-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-drive-line"></i>
-      </span>
-      <br />
-      <span class="label">drive-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-drizzle-fill"></i>
-      </span>
-      <br />
-      <span class="label">drizzle-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-drizzle-line"></i>
-      </span>
-      <br />
-      <span class="label">drizzle-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-earth-fill"></i>
-      </span>
-      <br />
-      <span class="label">earth-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-earth-line"></i>
-      </span>
-      <br />
-      <span class="label">earth-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-edit-fill"></i>
-      </span>
-      <br />
-      <span class="label">edit-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-edit-line"></i>
-      </span>
-      <br />
-      <span class="label">edit-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-emotion-fill"></i>
-      </span>
-      <br />
-      <span class="label">emotion-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-emotion-laugh-fill"></i>
-      </span>
-      <br />
-      <span class="label">emotion-laugh-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-emotion-laugh-line"></i>
-      </span>
-      <br />
-      <span class="label">emotion-laugh-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-emotion-line"></i>
-      </span>
-      <br />
-      <span class="label">emotion-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-emotion-normal-fill"></i>
-      </span>
-      <br />
-      <span class="label">emotion-normal-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-emotion-normal-line"></i>
-      </span>
-      <br />
-      <span class="label">emotion-normal-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-emotion-sad-fill"></i>
-      </span>
-      <br />
-      <span class="label">emotion-sad-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-emotion-sad-line"></i>
-      </span>
-      <br />
-      <span class="label">emotion-sad-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-emotion-unhappy-fill"></i>
-      </span>
-      <br />
-      <span class="label">emotion-unhappy-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-emotion-unhappy-line"></i>
-      </span>
-      <br />
-      <span class="label">emotion-unhappy-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-equalizer-fill"></i>
-      </span>
-      <br />
-      <span class="label">equalizer-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-equalizer-line"></i>
-      </span>
-      <br />
-      <span class="label">equalizer-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-error-warning-fill"></i>
-      </span>
-      <br />
-      <span class="label">error-warning-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-error-warning-line"></i>
-      </span>
-      <br />
-      <span class="label">error-warning-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-exchange-fill"></i>
-      </span>
-      <br />
-      <span class="label">exchange-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-exchange-line"></i>
-      </span>
-      <br />
-      <span class="label">exchange-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-external-link-fill"></i>
-      </span>
-      <br />
-      <span class="label">external-link-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-external-link-line"></i>
-      </span>
-      <br />
-      <span class="label">external-link-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-eye-fill"></i>
-      </span>
-      <br />
-      <span class="label">eye-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-eye-line"></i>
-      </span>
-      <br />
-      <span class="label">eye-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-eye-off-fill"></i>
-      </span>
-      <br />
-      <span class="label">eye-off-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-eye-off-line"></i>
-      </span>
-      <br />
-      <span class="label">eye-off-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-facebook-fill"></i>
-      </span>
-      <br />
-      <span class="label">facebook-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-facebook-line"></i>
-      </span>
-      <br />
-      <span class="label">facebook-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-feedback-fill"></i>
-      </span>
-      <br />
-      <span class="label">feedback-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-feedback-line"></i>
-      </span>
-      <br />
-      <span class="label">feedback-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-file-copy-fill"></i>
-      </span>
-      <br />
-      <span class="label">file-copy-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-file-copy-line"></i>
-      </span>
-      <br />
-      <span class="label">file-copy-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-file-fill"></i>
-      </span>
-      <br />
-      <span class="label">file-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-file-line"></i>
-      </span>
-      <br />
-      <span class="label">file-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-film-fill"></i>
-      </span>
-      <br />
-      <span class="label">film-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-film-line"></i>
-      </span>
-      <br />
-      <span class="label">film-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-filter-fill"></i>
-      </span>
-      <br />
-      <span class="label">filter-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-filter-line"></i>
-      </span>
-      <br />
-      <span class="label">filter-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-filter-off-fill"></i>
-      </span>
-      <br />
-      <span class="label">filter-off-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-filter-off-line"></i>
-      </span>
-      <br />
-      <span class="label">filter-off-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-fire-fill"></i>
-      </span>
-      <br />
-      <span class="label">fire-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-fire-line"></i>
-      </span>
-      <br />
-      <span class="label">fire-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-firefox-fill"></i>
-      </span>
-      <br />
-      <span class="label">firefox-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-firefox-line"></i>
-      </span>
-      <br />
-      <span class="label">firefox-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-flashlight-fill"></i>
-      </span>
-      <br />
-      <span class="label">flashlight-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-flashlight-line"></i>
-      </span>
-      <br />
-      <span class="label">flashlight-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-focus-fill"></i>
-      </span>
-      <br />
-      <span class="label">focus-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-focus-line"></i>
-      </span>
-      <br />
-      <span class="label">focus-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-foggy-fill"></i>
-      </span>
-      <br />
-      <span class="label">foggy-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-foggy-line"></i>
-      </span>
-      <br />
-      <span class="label">foggy-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-football-fill"></i>
-      </span>
-      <br />
-      <span class="label">football-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-football-line"></i>
-      </span>
-      <br />
-      <span class="label">football-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-forbid-fill"></i>
-      </span>
-      <br />
-      <span class="label">forbid-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-forbid-line"></i>
-      </span>
-      <br />
-      <span class="label">forbid-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-fullscreen-fill"></i>
-      </span>
-      <br />
-      <span class="label">fullscreen-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-fullscreen-line"></i>
-      </span>
-      <br />
-      <span class="label">fullscreen-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-function-fill"></i>
-      </span>
-      <br />
-      <span class="label">function-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-function-line"></i>
-      </span>
-      <br />
-      <span class="label">function-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-gift-fill"></i>
-      </span>
-      <br />
-      <span class="label">gift-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-gift-line"></i>
-      </span>
-      <br />
-      <span class="label">gift-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-github-fill"></i>
-      </span>
-      <br />
-      <span class="label">github-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-github-line"></i>
-      </span>
-      <br />
-      <span class="label">github-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-google-fill"></i>
-      </span>
-      <br />
-      <span class="label">google-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-google-line"></i>
-      </span>
-      <br />
-      <span class="label">google-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-grid-fill"></i>
-      </span>
-      <br />
-      <span class="label">grid-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-grid-line"></i>
-      </span>
-      <br />
-      <span class="label">grid-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-group-fill"></i>
-      </span>
-      <br />
-      <span class="label">group-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-group-line"></i>
-      </span>
-      <br />
-      <span class="label">group-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-hail-fill"></i>
-      </span>
-      <br />
-      <span class="label">hail-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-hail-line"></i>
-      </span>
-      <br />
-      <span class="label">hail-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-heart-fill"></i>
-      </span>
-      <br />
-      <span class="label">heart-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-heart-line"></i>
-      </span>
-      <br />
-      <span class="label">heart-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-heart-pulse-fill"></i>
-      </span>
-      <br />
-      <span class="label">heart-pulse-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-heart-pulse-line"></i>
-      </span>
-      <br />
-      <span class="label">heart-pulse-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-history-fill"></i>
-      </span>
-      <br />
-      <span class="label">history-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-history-line"></i>
-      </span>
-      <br />
-      <span class="label">history-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-home-fill"></i>
-      </span>
-      <br />
-      <span class="label">home-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-home-line"></i>
-      </span>
-      <br />
-      <span class="label">home-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-hourglass-fill"></i>
-      </span>
-      <br />
-      <span class="label">hourglass-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-hourglass-line"></i>
-      </span>
-      <br />
-      <span class="label">hourglass-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-ie-fill"></i>
-      </span>
-      <br />
-      <span class="label">ie-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-ie-line"></i>
-      </span>
-      <br />
-      <span class="label">ie-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-image-fill"></i>
-      </span>
-      <br />
-      <span class="label">image-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-image-line"></i>
-      </span>
-      <br />
-      <span class="label">image-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-information-fill"></i>
-      </span>
-      <br />
-      <span class="label">information-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-information-line"></i>
-      </span>
-      <br />
-      <span class="label">information-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-instagram-fill"></i>
-      </span>
-      <br />
-      <span class="label">instagram-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-instagram-line"></i>
-      </span>
-      <br />
-      <span class="label">instagram-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-kakao-talk-fill"></i>
-      </span>
-      <br />
-      <span class="label">kakao-talk-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-kakao-talk-line"></i>
-      </span>
-      <br />
-      <span class="label">kakao-talk-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-leaf-fill"></i>
-      </span>
-      <br />
-      <span class="label">leaf-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-leaf-line"></i>
-      </span>
-      <br />
-      <span class="label">leaf-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-lightbulb-fill"></i>
-      </span>
-      <br />
-      <span class="label">lightbulb-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-lightbulb-line"></i>
-      </span>
-      <br />
-      <span class="label">lightbulb-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-line-chart-fill"></i>
-      </span>
-      <br />
-      <span class="label">line-chart-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-line-chart-line"></i>
-      </span>
-      <br />
-      <span class="label">line-chart-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-line-fill"></i>
-      </span>
-      <br />
-      <span class="label">line-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-line-line"></i>
-      </span>
-      <br />
-      <span class="label">line-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-link-fill"></i>
-      </span>
-      <br />
-      <span class="label">link-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-link-line"></i>
-      </span>
-      <br />
-      <span class="label">link-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-list-check-fill"></i>
-      </span>
-      <br />
-      <span class="label">list-check-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-list-check-line"></i>
-      </span>
-      <br />
-      <span class="label">list-check-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-list-settings-fill"></i>
-      </span>
-      <br />
-      <span class="label">list-settings-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-list-settings-line"></i>
-      </span>
-      <br />
-      <span class="label">list-settings-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-lock-fill"></i>
-      </span>
-      <br />
-      <span class="label">lock-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-lock-line"></i>
-      </span>
-      <br />
-      <span class="label">lock-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-logout-fill"></i>
-      </span>
-      <br />
-      <span class="label">logout-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-logout-line"></i>
-      </span>
-      <br />
-      <span class="label">logout-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-mac-fill"></i>
-      </span>
-      <br />
-      <span class="label">mac-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-mac-line"></i>
-      </span>
-      <br />
-      <span class="label">mac-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-macbook-fill"></i>
-      </span>
-      <br />
-      <span class="label">macbook-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-macbook-line"></i>
-      </span>
-      <br />
-      <span class="label">macbook-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-mail-fill"></i>
-      </span>
-      <br />
-      <span class="label">mail-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-mail-line"></i>
-      </span>
-      <br />
-      <span class="label">mail-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-mail-send-fill"></i>
-      </span>
-      <br />
-      <span class="label">mail-send-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-mail-send-line"></i>
-      </span>
-      <br />
-      <span class="label">mail-send-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-map-pin-fill"></i>
-      </span>
-      <br />
-      <span class="label">map-pin-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-map-pin-line"></i>
-      </span>
-      <br />
-      <span class="label">map-pin-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-mastercard-fill"></i>
-      </span>
-      <br />
-      <span class="label">mastercard-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-mastercard-line"></i>
-      </span>
-      <br />
-      <span class="label">mastercard-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-menu-fill"></i>
-      </span>
-      <br />
-      <span class="label">menu-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-menu-line"></i>
-      </span>
-      <br />
-      <span class="label">menu-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-message-fill"></i>
-      </span>
-      <br />
-      <span class="label">message-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-message-line"></i>
-      </span>
-      <br />
-      <span class="label">message-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-messenger-fill"></i>
-      </span>
-      <br />
-      <span class="label">messenger-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-messenger-line"></i>
-      </span>
-      <br />
-      <span class="label">messenger-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-mic-fill"></i>
-      </span>
-      <br />
-      <span class="label">mic-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-mic-line"></i>
-      </span>
-      <br />
-      <span class="label">mic-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-mist-fill"></i>
-      </span>
-      <br />
-      <span class="label">mist-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-mist-line"></i>
-      </span>
-      <br />
-      <span class="label">mist-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-money-cny-box-fill"></i>
-      </span>
-      <br />
-      <span class="label">money-cny-box-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-money-cny-box-line"></i>
-      </span>
-      <br />
-      <span class="label">money-cny-box-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-money-dollar-box-fill"></i>
-      </span>
-      <br />
-      <span class="label">money-dollar-box-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-money-dollar-box-line"></i>
-      </span>
-      <br />
-      <span class="label">money-dollar-box-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-money-euro-box-fill"></i>
-      </span>
-      <br />
-      <span class="label">money-euro-box-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-money-euro-box-line"></i>
-      </span>
-      <br />
-      <span class="label">money-euro-box-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-money-pound-box-fill"></i>
-      </span>
-      <br />
-      <span class="label">money-pound-box-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-money-pound-box-line"></i>
-      </span>
-      <br />
-      <span class="label">money-pound-box-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-moon-cloudy-fill"></i>
-      </span>
-      <br />
-      <span class="label">moon-cloudy-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-moon-cloudy-line"></i>
-      </span>
-      <br />
-      <span class="label">moon-cloudy-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-moon-fill"></i>
-      </span>
-      <br />
-      <span class="label">moon-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-moon-line"></i>
-      </span>
-      <br />
-      <span class="label">moon-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-more-2-fill"></i>
-      </span>
-      <br />
-      <span class="label">more-2-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-more-2-line"></i>
-      </span>
-      <br />
-      <span class="label">more-2-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-more-fill"></i>
-      </span>
-      <br />
-      <span class="label">more-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-more-line"></i>
-      </span>
-      <br />
-      <span class="label">more-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-music-2-fill"></i>
-      </span>
-      <br />
-      <span class="label">music-2-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-music-2-line"></i>
-      </span>
-      <br />
-      <span class="label">music-2-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-music-fill"></i>
-      </span>
-      <br />
-      <span class="label">music-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-music-line"></i>
-      </span>
-      <br />
-      <span class="label">music-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-naver-fill"></i>
-      </span>
-      <br />
-      <span class="label">naver-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-naver-line"></i>
-      </span>
-      <br />
-      <span class="label">naver-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-navigation-fill"></i>
-      </span>
-      <br />
-      <span class="label">navigation-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-navigation-line"></i>
-      </span>
-      <br />
-      <span class="label">navigation-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-notification-fill"></i>
-      </span>
-      <br />
-      <span class="label">notification-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-notification-line"></i>
-      </span>
-      <br />
-      <span class="label">notification-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-package-fill"></i>
-      </span>
-      <br />
-      <span class="label">package-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-package-line"></i>
-      </span>
-      <br />
-      <span class="label">package-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-pause-circle-fill"></i>
-      </span>
-      <br />
-      <span class="label">pause-circle-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-pause-circle-line"></i>
-      </span>
-      <br />
-      <span class="label">pause-circle-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-pause-fill"></i>
-      </span>
-      <br />
-      <span class="label">pause-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-pause-line"></i>
-      </span>
-      <br />
-      <span class="label">pause-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-phone-fill"></i>
-      </span>
-      <br />
-      <span class="label">phone-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-phone-line"></i>
-      </span>
-      <br />
-      <span class="label">phone-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-pie-chart-fill"></i>
-      </span>
-      <br />
-      <span class="label">pie-chart-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-pie-chart-line"></i>
-      </span>
-      <br />
-      <span class="label">pie-chart-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-pinterest-fill"></i>
-      </span>
-      <br />
-      <span class="label">pinterest-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-pinterest-line"></i>
-      </span>
-      <br />
-      <span class="label">pinterest-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-play-circle-fill"></i>
-      </span>
-      <br />
-      <span class="label">play-circle-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-play-circle-line"></i>
-      </span>
-      <br />
-      <span class="label">play-circle-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-play-fill"></i>
-      </span>
-      <br />
-      <span class="label">play-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-play-line"></i>
-      </span>
-      <br />
-      <span class="label">play-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-price-tag-fill"></i>
-      </span>
-      <br />
-      <span class="label">price-tag-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-price-tag-line"></i>
-      </span>
-      <br />
-      <span class="label">price-tag-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-printer-fill"></i>
-      </span>
-      <br />
-      <span class="label">printer-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-printer-line"></i>
-      </span>
-      <br />
-      <span class="label">printer-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-qr-scan-fill"></i>
-      </span>
-      <br />
-      <span class="label">qr-scan-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-qr-scan-line"></i>
-      </span>
-      <br />
-      <span class="label">qr-scan-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-question-fill"></i>
-      </span>
-      <br />
-      <span class="label">question-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-question-line"></i>
-      </span>
-      <br />
-      <span class="label">question-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-radio-button-fill"></i>
-      </span>
-      <br />
-      <span class="label">radio-button-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-radio-button-line"></i>
-      </span>
-      <br />
-      <span class="label">radio-button-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-rainy-fill"></i>
-      </span>
-      <br />
-      <span class="label">rainy-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-rainy-line"></i>
-      </span>
-      <br />
-      <span class="label">rainy-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-recycle-fill"></i>
-      </span>
-      <br />
-      <span class="label">recycle-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-recycle-line"></i>
-      </span>
-      <br />
-      <span class="label">recycle-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-refresh-fill"></i>
-      </span>
-      <br />
-      <span class="label">refresh-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-refresh-line"></i>
-      </span>
-      <br />
-      <span class="label">refresh-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-refund-fill"></i>
-      </span>
-      <br />
-      <span class="label">refund-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-refund-line"></i>
-      </span>
-      <br />
-      <span class="label">refund-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-repeat-fill"></i>
-      </span>
-      <br />
-      <span class="label">repeat-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-repeat-line"></i>
-      </span>
-      <br />
-      <span class="label">repeat-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-return-fill"></i>
-      </span>
-      <br />
-      <span class="label">return-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-return-line"></i>
-      </span>
-      <br />
-      <span class="label">return-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-riding-fill"></i>
-      </span>
-      <br />
-      <span class="label">riding-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-riding-line"></i>
-      </span>
-      <br />
-      <span class="label">riding-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-rocket-fill"></i>
-      </span>
-      <br />
-      <span class="label">rocket-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-rocket-line"></i>
-      </span>
-      <br />
-      <span class="label">rocket-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-rss-fill"></i>
-      </span>
-      <br />
-      <span class="label">rss-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-rss-line"></i>
-      </span>
-      <br />
-      <span class="label">rss-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-ruler-fill"></i>
-      </span>
-      <br />
-      <span class="label">ruler-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-ruler-line"></i>
-      </span>
-      <br />
-      <span class="label">ruler-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-run-fill"></i>
-      </span>
-      <br />
-      <span class="label">run-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-run-line"></i>
-      </span>
-      <br />
-      <span class="label">run-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-safari-fill"></i>
-      </span>
-      <br />
-      <span class="label">safari-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-safari-line"></i>
-      </span>
-      <br />
-      <span class="label">safari-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-scales-fill"></i>
-      </span>
-      <br />
-      <span class="label">scales-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-scales-line"></i>
-      </span>
-      <br />
-      <span class="label">scales-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-search-fill"></i>
-      </span>
-      <br />
-      <span class="label">search-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-search-line"></i>
-      </span>
-      <br />
-      <span class="label">search-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-secure-payment-fill"></i>
-      </span>
-      <br />
-      <span class="label">secure-payment-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-secure-payment-line"></i>
-      </span>
-      <br />
-      <span class="label">secure-payment-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-seed-1-fill"></i>
-      </span>
-      <br />
-      <span class="label">seed-1-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-seed-1-line"></i>
-      </span>
-      <br />
-      <span class="label">seed-1-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-seed-2-fill"></i>
-      </span>
-      <br />
-      <span class="label">seed-2-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-seed-2-line"></i>
-      </span>
-      <br />
-      <span class="label">seed-2-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-seed-3-fill"></i>
-      </span>
-      <br />
-      <span class="label">seed-3-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-seed-3-line"></i>
-      </span>
-      <br />
-      <span class="label">seed-3-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-selected-by-decathlon-fill"></i>
-      </span>
-      <br />
-      <span class="label">selected-by-decathlon-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-selected-by-decathlon-line"></i>
-      </span>
-      <br />
-      <span class="label">selected-by-decathlon-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-send-plane-2-fill"></i>
-      </span>
-      <br />
-      <span class="label">send-plane-2-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-send-plane-2-line"></i>
-      </span>
-      <br />
-      <span class="label">send-plane-2-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-send-plane-fill"></i>
-      </span>
-      <br />
-      <span class="label">send-plane-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-send-plane-line"></i>
-      </span>
-      <br />
-      <span class="label">send-plane-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-settings-fill"></i>
-      </span>
-      <br />
-      <span class="label">settings-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-settings-line"></i>
-      </span>
-      <br />
-      <span class="label">settings-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-share-android-fill"></i>
-      </span>
-      <br />
-      <span class="label">share-android-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-share-android-line"></i>
-      </span>
-      <br />
-      <span class="label">share-android-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-share-fill"></i>
-      </span>
-      <br />
-      <span class="label">share-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-share-ios-fill"></i>
-      </span>
-      <br />
-      <span class="label">share-ios-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-share-ios-line"></i>
-      </span>
-      <br />
-      <span class="label">share-ios-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-share-line"></i>
-      </span>
-      <br />
-      <span class="label">share-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-shield-check-fill"></i>
-      </span>
-      <br />
-      <span class="label">shield-check-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-shield-check-line"></i>
-      </span>
-      <br />
-      <span class="label">shield-check-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-shopping-bag-fill"></i>
-      </span>
-      <br />
-      <span class="label">shopping-bag-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-shopping-bag-line"></i>
-      </span>
-      <br />
-      <span class="label">shopping-bag-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-shopping-cart-fill"></i>
-      </span>
-      <br />
-      <span class="label">shopping-cart-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-shopping-cart-line"></i>
-      </span>
-      <br />
-      <span class="label">shopping-cart-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-showers-fill"></i>
-      </span>
-      <br />
-      <span class="label">showers-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-showers-line"></i>
-      </span>
-      <br />
-      <span class="label">showers-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-shut-down-fill"></i>
-      </span>
-      <br />
-      <span class="label">shut-down-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-shut-down-line"></i>
-      </span>
-      <br />
-      <span class="label">shut-down-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-slack-fill"></i>
-      </span>
-      <br />
-      <span class="label">slack-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-slack-line"></i>
-      </span>
-      <br />
-      <span class="label">slack-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-smartphone-fill"></i>
-      </span>
-      <br />
-      <span class="label">smartphone-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-smartphone-line"></i>
-      </span>
-      <br />
-      <span class="label">smartphone-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-snapchat-fill"></i>
-      </span>
-      <br />
-      <span class="label">snapchat-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-snapchat-line"></i>
-      </span>
-      <br />
-      <span class="label">snapchat-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-snowy-fill"></i>
-      </span>
-      <br />
-      <span class="label">snowy-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-snowy-line"></i>
-      </span>
-      <br />
-      <span class="label">snowy-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-sparkles-fill"></i>
-      </span>
-      <br />
-      <span class="label">sparkles-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-sparkles-line"></i>
-      </span>
-      <br />
-      <span class="label">sparkles-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-star-fill"></i>
-      </span>
-      <br />
-      <span class="label">star-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-star-half-fill"></i>
-      </span>
-      <br />
-      <span class="label">star-half-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-star-half-line"></i>
-      </span>
-      <br />
-      <span class="label">star-half-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-star-line"></i>
-      </span>
-      <br />
-      <span class="label">star-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-stop-circle-fill"></i>
-      </span>
-      <br />
-      <span class="label">stop-circle-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-stop-circle-line"></i>
-      </span>
-      <br />
-      <span class="label">stop-circle-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-stop-fill"></i>
-      </span>
-      <br />
-      <span class="label">stop-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-stop-line"></i>
-      </span>
-      <br />
-      <span class="label">stop-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-store-fill"></i>
-      </span>
-      <br />
-      <span class="label">store-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-store-line"></i>
-      </span>
-      <br />
-      <span class="label">store-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-subtract-fill"></i>
-      </span>
-      <br />
-      <span class="label">subtract-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-subtract-line"></i>
-      </span>
-      <br />
-      <span class="label">subtract-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-suitcase-fill"></i>
-      </span>
-      <br />
-      <span class="label">suitcase-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-suitcase-line"></i>
-      </span>
-      <br />
-      <span class="label">suitcase-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-sun-cloudy-fill"></i>
-      </span>
-      <br />
-      <span class="label">sun-cloudy-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-sun-cloudy-line"></i>
-      </span>
-      <br />
-      <span class="label">sun-cloudy-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-sun-fill"></i>
-      </span>
-      <br />
-      <span class="label">sun-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-sun-line"></i>
-      </span>
-      <br />
-      <span class="label">sun-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-t-shirt-fill"></i>
-      </span>
-      <br />
-      <span class="label">t-shirt-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-t-shirt-line"></i>
-      </span>
-      <br />
-      <span class="label">t-shirt-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-tablet-fill"></i>
-      </span>
-      <br />
-      <span class="label">tablet-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-tablet-line"></i>
-      </span>
-      <br />
-      <span class="label">tablet-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-task-fill"></i>
-      </span>
-      <br />
-      <span class="label">task-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-task-line"></i>
-      </span>
-      <br />
-      <span class="label">task-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-telegram-fill"></i>
-      </span>
-      <br />
-      <span class="label">telegram-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-telegram-line"></i>
-      </span>
-      <br />
-      <span class="label">telegram-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-temp-cold-fill"></i>
-      </span>
-      <br />
-      <span class="label">temp-cold-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-temp-cold-line"></i>
-      </span>
-      <br />
-      <span class="label">temp-cold-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-temp-hot-fill"></i>
-      </span>
-      <br />
-      <span class="label">temp-hot-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-temp-hot-line"></i>
-      </span>
-      <br />
-      <span class="label">temp-hot-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-thumb-down-fill"></i>
-      </span>
-      <br />
-      <span class="label">thumb-down-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-thumb-down-line"></i>
-      </span>
-      <br />
-      <span class="label">thumb-down-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-thumb-up-fill"></i>
-      </span>
-      <br />
-      <span class="label">thumb-up-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-thumb-up-line"></i>
-      </span>
-      <br />
-      <span class="label">thumb-up-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-thunderstorms-fill"></i>
-      </span>
-      <br />
-      <span class="label">thunderstorms-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-thunderstorms-line"></i>
-      </span>
-      <br />
-      <span class="label">thunderstorms-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-tiktok-fill"></i>
-      </span>
-      <br />
-      <span class="label">tiktok-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-tiktok-line"></i>
-      </span>
-      <br />
-      <span class="label">tiktok-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-time-fill"></i>
-      </span>
-      <br />
-      <span class="label">time-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-time-line"></i>
-      </span>
-      <br />
-      <span class="label">time-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-timer-fill"></i>
-      </span>
-      <br />
-      <span class="label">timer-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-timer-line"></i>
-      </span>
-      <br />
-      <span class="label">timer-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-tools-fill"></i>
-      </span>
-      <br />
-      <span class="label">tools-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-tools-line"></i>
-      </span>
-      <br />
-      <span class="label">tools-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-train-fill"></i>
-      </span>
-      <br />
-      <span class="label">train-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-train-line"></i>
-      </span>
-      <br />
-      <span class="label">train-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-trophy-fill"></i>
-      </span>
-      <br />
-      <span class="label">trophy-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-trophy-line"></i>
-      </span>
-      <br />
-      <span class="label">trophy-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-truck-fill"></i>
-      </span>
-      <br />
-      <span class="label">truck-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-truck-line"></i>
-      </span>
-      <br />
-      <span class="label">truck-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-twitter-fill"></i>
-      </span>
-      <br />
-      <span class="label">twitter-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-twitter-line"></i>
-      </span>
-      <br />
-      <span class="label">twitter-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-unlink-fill"></i>
-      </span>
-      <br />
-      <span class="label">unlink-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-unlink-line"></i>
-      </span>
-      <br />
-      <span class="label">unlink-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-upload-fill"></i>
-      </span>
-      <br />
-      <span class="label">upload-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-upload-line"></i>
-      </span>
-      <br />
-      <span class="label">upload-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-user-fill"></i>
-      </span>
-      <br />
-      <span class="label">user-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-user-line"></i>
-      </span>
-      <br />
-      <span class="label">user-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-viber-fill"></i>
-      </span>
-      <br />
-      <span class="label">viber-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-viber-line"></i>
-      </span>
-      <br />
-      <span class="label">viber-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-visa-fill"></i>
-      </span>
-      <br />
-      <span class="label">visa-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-visa-line"></i>
-      </span>
-      <br />
-      <span class="label">visa-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-volume-alert-fill"></i>
-      </span>
-      <br />
-      <span class="label">volume-alert-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-volume-alert-line"></i>
-      </span>
-      <br />
-      <span class="label">volume-alert-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-volume-down-fill"></i>
-      </span>
-      <br />
-      <span class="label">volume-down-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-volume-down-line"></i>
-      </span>
-      <br />
-      <span class="label">volume-down-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-volume-mute-fill"></i>
-      </span>
-      <br />
-      <span class="label">volume-mute-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-volume-mute-line"></i>
-      </span>
-      <br />
-      <span class="label">volume-mute-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-volume-up-fill"></i>
-      </span>
-      <br />
-      <span class="label">volume-up-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-volume-up-line"></i>
-      </span>
-      <br />
-      <span class="label">volume-up-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-walk-fill"></i>
-      </span>
-      <br />
-      <span class="label">walk-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-walk-line"></i>
-      </span>
-      <br />
-      <span class="label">walk-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-wallet-fill"></i>
-      </span>
-      <br />
-      <span class="label">wallet-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-wallet-line"></i>
-      </span>
-      <br />
-      <span class="label">wallet-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-whatsapp-fill"></i>
-      </span>
-      <br />
-      <span class="label">whatsapp-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-whatsapp-line"></i>
-      </span>
-      <br />
-      <span class="label">whatsapp-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-windy-fill"></i>
-      </span>
-      <br />
-      <span class="label">windy-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-windy-line"></i>
-      </span>
-      <br />
-      <span class="label">windy-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-youtube-fill"></i>
-      </span>
-      <br />
-      <span class="label">youtube-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-youtube-line"></i>
-      </span>
-      <br />
-      <span class="label">youtube-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-zoom-in-fill"></i>
-      </span>
-      <br />
-      <span class="label">zoom-in-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-zoom-in-line"></i>
-      </span>
-      <br />
-      <span class="label">zoom-in-line</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-zoom-out-fill"></i>
-      </span>
-      <br />
-      <span class="label">zoom-out-fill</span>
-    </div>
-
-    <div class="preview">
-      <span class="inner">
-        <i class="vtmx vtmx-zoom-out-line"></i>
-      </span>
-      <br />
-      <span class="label">zoom-out-line</span>
-    </div>
-  </body>
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-add-circle-fill"></i>
+            </span>
+            <br>
+            <span class='label'>add-circle-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-add-circle-line"></i>
+            </span>
+            <br>
+            <span class='label'>add-circle-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-add-fill"></i>
+            </span>
+            <br>
+            <span class='label'>add-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-add-line"></i>
+            </span>
+            <br>
+            <span class='label'>add-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-alert-fill"></i>
+            </span>
+            <br>
+            <span class='label'>alert-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-alert-line"></i>
+            </span>
+            <br>
+            <span class='label'>alert-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-amazon-fill"></i>
+            </span>
+            <br>
+            <span class='label'>amazon-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-amazon-line"></i>
+            </span>
+            <br>
+            <span class='label'>amazon-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-android-fill"></i>
+            </span>
+            <br>
+            <span class='label'>android-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-android-line"></i>
+            </span>
+            <br>
+            <span class='label'>android-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-apple-fill"></i>
+            </span>
+            <br>
+            <span class='label'>apple-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-apple-line"></i>
+            </span>
+            <br>
+            <span class='label'>apple-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-down-circle-fill"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-down-circle-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-down-circle-line"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-down-circle-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-down-fill"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-down-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-down-line"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-down-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-go-back-fill"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-go-back-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-go-back-line"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-go-back-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-go-forward-fill"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-go-forward-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-go-forward-line"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-go-forward-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-left-circle-fill"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-left-circle-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-left-circle-line"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-left-circle-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-left-down-fill"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-left-down-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-left-down-line"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-left-down-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-left-fill"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-left-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-left-line"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-left-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-left-right-fill"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-left-right-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-left-right-line"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-left-right-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-left-up-fill"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-left-up-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-left-up-line"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-left-up-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-right-circle-fill"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-right-circle-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-right-circle-line"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-right-circle-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-right-down-fill"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-right-down-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-right-down-line"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-right-down-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-right-fill"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-right-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-right-line"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-right-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-right-up-fill"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-right-up-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-right-up-line"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-right-up-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-up-circle-fill"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-up-circle-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-up-circle-line"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-up-circle-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-up-down-fill"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-up-down-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-up-down-line"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-up-down-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-up-fill"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-up-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-arrow-up-line"></i>
+            </span>
+            <br>
+            <span class='label'>arrow-up-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-attachment-fill"></i>
+            </span>
+            <br>
+            <span class='label'>attachment-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-attachment-line"></i>
+            </span>
+            <br>
+            <span class='label'>attachment-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-award-fill"></i>
+            </span>
+            <br>
+            <span class='label'>award-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-award-line"></i>
+            </span>
+            <br>
+            <span class='label'>award-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-bank-card-fill"></i>
+            </span>
+            <br>
+            <span class='label'>bank-card-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-bank-card-line"></i>
+            </span>
+            <br>
+            <span class='label'>bank-card-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-bar-chart-fill"></i>
+            </span>
+            <br>
+            <span class='label'>bar-chart-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-bar-chart-line"></i>
+            </span>
+            <br>
+            <span class='label'>bar-chart-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-barcode-fill"></i>
+            </span>
+            <br>
+            <span class='label'>barcode-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-barcode-line"></i>
+            </span>
+            <br>
+            <span class='label'>barcode-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-bill-fill"></i>
+            </span>
+            <br>
+            <span class='label'>bill-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-bill-line"></i>
+            </span>
+            <br>
+            <span class='label'>bill-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-body-scan-fill"></i>
+            </span>
+            <br>
+            <span class='label'>body-scan-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-body-scan-line"></i>
+            </span>
+            <br>
+            <span class='label'>body-scan-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-calendar-2-fill"></i>
+            </span>
+            <br>
+            <span class='label'>calendar-2-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-calendar-2-line"></i>
+            </span>
+            <br>
+            <span class='label'>calendar-2-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-calendar-check-fill"></i>
+            </span>
+            <br>
+            <span class='label'>calendar-check-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-calendar-check-line"></i>
+            </span>
+            <br>
+            <span class='label'>calendar-check-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-calendar-date-fill"></i>
+            </span>
+            <br>
+            <span class='label'>calendar-date-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-calendar-date-line"></i>
+            </span>
+            <br>
+            <span class='label'>calendar-date-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-calendar-fill"></i>
+            </span>
+            <br>
+            <span class='label'>calendar-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-calendar-line"></i>
+            </span>
+            <br>
+            <span class='label'>calendar-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-camera-fill"></i>
+            </span>
+            <br>
+            <span class='label'>camera-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-camera-line"></i>
+            </span>
+            <br>
+            <span class='label'>camera-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-car-fill"></i>
+            </span>
+            <br>
+            <span class='label'>car-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-car-line"></i>
+            </span>
+            <br>
+            <span class='label'>car-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-check-fill"></i>
+            </span>
+            <br>
+            <span class='label'>check-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-check-line"></i>
+            </span>
+            <br>
+            <span class='label'>check-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-checkbox-blank-circle-fill"></i>
+            </span>
+            <br>
+            <span class='label'>checkbox-blank-circle-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-checkbox-blank-circle-line"></i>
+            </span>
+            <br>
+            <span class='label'>checkbox-blank-circle-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-checkbox-blank-fill"></i>
+            </span>
+            <br>
+            <span class='label'>checkbox-blank-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-checkbox-blank-line"></i>
+            </span>
+            <br>
+            <span class='label'>checkbox-blank-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-checkbox-circle-fill"></i>
+            </span>
+            <br>
+            <span class='label'>checkbox-circle-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-checkbox-circle-line"></i>
+            </span>
+            <br>
+            <span class='label'>checkbox-circle-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-checkbox-fill"></i>
+            </span>
+            <br>
+            <span class='label'>checkbox-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-checkbox-line"></i>
+            </span>
+            <br>
+            <span class='label'>checkbox-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-checkbox-multiple-fill"></i>
+            </span>
+            <br>
+            <span class='label'>checkbox-multiple-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-checkbox-multiple-line"></i>
+            </span>
+            <br>
+            <span class='label'>checkbox-multiple-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-chevron-down-fill"></i>
+            </span>
+            <br>
+            <span class='label'>chevron-down-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-chevron-down-line"></i>
+            </span>
+            <br>
+            <span class='label'>chevron-down-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-chevron-left-fill"></i>
+            </span>
+            <br>
+            <span class='label'>chevron-left-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-chevron-left-line"></i>
+            </span>
+            <br>
+            <span class='label'>chevron-left-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-chevron-right-fill"></i>
+            </span>
+            <br>
+            <span class='label'>chevron-right-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-chevron-right-line"></i>
+            </span>
+            <br>
+            <span class='label'>chevron-right-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-chevron-up-fill"></i>
+            </span>
+            <br>
+            <span class='label'>chevron-up-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-chevron-up-line"></i>
+            </span>
+            <br>
+            <span class='label'>chevron-up-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-chrome-fill"></i>
+            </span>
+            <br>
+            <span class='label'>chrome-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-chrome-line"></i>
+            </span>
+            <br>
+            <span class='label'>chrome-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-close-circle-fill"></i>
+            </span>
+            <br>
+            <span class='label'>close-circle-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-close-circle-line"></i>
+            </span>
+            <br>
+            <span class='label'>close-circle-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-close-fill"></i>
+            </span>
+            <br>
+            <span class='label'>close-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-close-line"></i>
+            </span>
+            <br>
+            <span class='label'>close-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-cloud-fill"></i>
+            </span>
+            <br>
+            <span class='label'>cloud-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-cloud-line"></i>
+            </span>
+            <br>
+            <span class='label'>cloud-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-cloud-windy-fill"></i>
+            </span>
+            <br>
+            <span class='label'>cloud-windy-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-cloud-windy-line"></i>
+            </span>
+            <br>
+            <span class='label'>cloud-windy-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-counter-fill"></i>
+            </span>
+            <br>
+            <span class='label'>counter-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-counter-line"></i>
+            </span>
+            <br>
+            <span class='label'>counter-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-customer-service-fill"></i>
+            </span>
+            <br>
+            <span class='label'>customer-service-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-customer-service-line"></i>
+            </span>
+            <br>
+            <span class='label'>customer-service-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-database-fill"></i>
+            </span>
+            <br>
+            <span class='label'>database-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-database-line"></i>
+            </span>
+            <br>
+            <span class='label'>database-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-delete-bin-fill"></i>
+            </span>
+            <br>
+            <span class='label'>delete-bin-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-delete-bin-line"></i>
+            </span>
+            <br>
+            <span class='label'>delete-bin-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-direction-fill"></i>
+            </span>
+            <br>
+            <span class='label'>direction-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-direction-line"></i>
+            </span>
+            <br>
+            <span class='label'>direction-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-distance-fill"></i>
+            </span>
+            <br>
+            <span class='label'>distance-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-distance-line"></i>
+            </span>
+            <br>
+            <span class='label'>distance-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-download-fill"></i>
+            </span>
+            <br>
+            <span class='label'>download-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-download-line"></i>
+            </span>
+            <br>
+            <span class='label'>download-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-drive-fill"></i>
+            </span>
+            <br>
+            <span class='label'>drive-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-drive-line"></i>
+            </span>
+            <br>
+            <span class='label'>drive-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-drizzle-fill"></i>
+            </span>
+            <br>
+            <span class='label'>drizzle-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-drizzle-line"></i>
+            </span>
+            <br>
+            <span class='label'>drizzle-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-earth-fill"></i>
+            </span>
+            <br>
+            <span class='label'>earth-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-earth-line"></i>
+            </span>
+            <br>
+            <span class='label'>earth-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-edit-fill"></i>
+            </span>
+            <br>
+            <span class='label'>edit-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-edit-line"></i>
+            </span>
+            <br>
+            <span class='label'>edit-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-emotion-fill"></i>
+            </span>
+            <br>
+            <span class='label'>emotion-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-emotion-laugh-fill"></i>
+            </span>
+            <br>
+            <span class='label'>emotion-laugh-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-emotion-laugh-line"></i>
+            </span>
+            <br>
+            <span class='label'>emotion-laugh-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-emotion-line"></i>
+            </span>
+            <br>
+            <span class='label'>emotion-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-emotion-normal-fill"></i>
+            </span>
+            <br>
+            <span class='label'>emotion-normal-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-emotion-normal-line"></i>
+            </span>
+            <br>
+            <span class='label'>emotion-normal-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-emotion-sad-fill"></i>
+            </span>
+            <br>
+            <span class='label'>emotion-sad-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-emotion-sad-line"></i>
+            </span>
+            <br>
+            <span class='label'>emotion-sad-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-emotion-unhappy-fill"></i>
+            </span>
+            <br>
+            <span class='label'>emotion-unhappy-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-emotion-unhappy-line"></i>
+            </span>
+            <br>
+            <span class='label'>emotion-unhappy-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-equalizer-fill"></i>
+            </span>
+            <br>
+            <span class='label'>equalizer-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-equalizer-line"></i>
+            </span>
+            <br>
+            <span class='label'>equalizer-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-error-warning-fill"></i>
+            </span>
+            <br>
+            <span class='label'>error-warning-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-error-warning-line"></i>
+            </span>
+            <br>
+            <span class='label'>error-warning-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-exchange-fill"></i>
+            </span>
+            <br>
+            <span class='label'>exchange-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-exchange-line"></i>
+            </span>
+            <br>
+            <span class='label'>exchange-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-external-link-fill"></i>
+            </span>
+            <br>
+            <span class='label'>external-link-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-external-link-line"></i>
+            </span>
+            <br>
+            <span class='label'>external-link-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-eye-fill"></i>
+            </span>
+            <br>
+            <span class='label'>eye-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-eye-line"></i>
+            </span>
+            <br>
+            <span class='label'>eye-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-eye-off-fill"></i>
+            </span>
+            <br>
+            <span class='label'>eye-off-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-eye-off-line"></i>
+            </span>
+            <br>
+            <span class='label'>eye-off-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-facebook-fill"></i>
+            </span>
+            <br>
+            <span class='label'>facebook-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-facebook-line"></i>
+            </span>
+            <br>
+            <span class='label'>facebook-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-feedback-fill"></i>
+            </span>
+            <br>
+            <span class='label'>feedback-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-feedback-line"></i>
+            </span>
+            <br>
+            <span class='label'>feedback-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-file-copy-fill"></i>
+            </span>
+            <br>
+            <span class='label'>file-copy-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-file-copy-line"></i>
+            </span>
+            <br>
+            <span class='label'>file-copy-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-file-fill"></i>
+            </span>
+            <br>
+            <span class='label'>file-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-file-line"></i>
+            </span>
+            <br>
+            <span class='label'>file-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-film-fill"></i>
+            </span>
+            <br>
+            <span class='label'>film-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-film-line"></i>
+            </span>
+            <br>
+            <span class='label'>film-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-filter-fill"></i>
+            </span>
+            <br>
+            <span class='label'>filter-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-filter-line"></i>
+            </span>
+            <br>
+            <span class='label'>filter-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-filter-off-fill"></i>
+            </span>
+            <br>
+            <span class='label'>filter-off-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-filter-off-line"></i>
+            </span>
+            <br>
+            <span class='label'>filter-off-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-fire-fill"></i>
+            </span>
+            <br>
+            <span class='label'>fire-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-fire-line"></i>
+            </span>
+            <br>
+            <span class='label'>fire-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-firefox-fill"></i>
+            </span>
+            <br>
+            <span class='label'>firefox-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-firefox-line"></i>
+            </span>
+            <br>
+            <span class='label'>firefox-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-flashlight-fill"></i>
+            </span>
+            <br>
+            <span class='label'>flashlight-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-flashlight-line"></i>
+            </span>
+            <br>
+            <span class='label'>flashlight-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-focus-fill"></i>
+            </span>
+            <br>
+            <span class='label'>focus-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-focus-line"></i>
+            </span>
+            <br>
+            <span class='label'>focus-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-foggy-fill"></i>
+            </span>
+            <br>
+            <span class='label'>foggy-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-foggy-line"></i>
+            </span>
+            <br>
+            <span class='label'>foggy-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-football-fill"></i>
+            </span>
+            <br>
+            <span class='label'>football-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-football-line"></i>
+            </span>
+            <br>
+            <span class='label'>football-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-forbid-fill"></i>
+            </span>
+            <br>
+            <span class='label'>forbid-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-forbid-line"></i>
+            </span>
+            <br>
+            <span class='label'>forbid-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-fullscreen-fill"></i>
+            </span>
+            <br>
+            <span class='label'>fullscreen-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-fullscreen-line"></i>
+            </span>
+            <br>
+            <span class='label'>fullscreen-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-function-fill"></i>
+            </span>
+            <br>
+            <span class='label'>function-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-function-line"></i>
+            </span>
+            <br>
+            <span class='label'>function-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-gift-fill"></i>
+            </span>
+            <br>
+            <span class='label'>gift-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-gift-line"></i>
+            </span>
+            <br>
+            <span class='label'>gift-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-github-fill"></i>
+            </span>
+            <br>
+            <span class='label'>github-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-github-line"></i>
+            </span>
+            <br>
+            <span class='label'>github-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-google-fill"></i>
+            </span>
+            <br>
+            <span class='label'>google-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-google-line"></i>
+            </span>
+            <br>
+            <span class='label'>google-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-grid-fill"></i>
+            </span>
+            <br>
+            <span class='label'>grid-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-grid-line"></i>
+            </span>
+            <br>
+            <span class='label'>grid-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-group-fill"></i>
+            </span>
+            <br>
+            <span class='label'>group-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-group-line"></i>
+            </span>
+            <br>
+            <span class='label'>group-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-hail-fill"></i>
+            </span>
+            <br>
+            <span class='label'>hail-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-hail-line"></i>
+            </span>
+            <br>
+            <span class='label'>hail-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-heart-fill"></i>
+            </span>
+            <br>
+            <span class='label'>heart-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-heart-line"></i>
+            </span>
+            <br>
+            <span class='label'>heart-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-heart-pulse-fill"></i>
+            </span>
+            <br>
+            <span class='label'>heart-pulse-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-heart-pulse-line"></i>
+            </span>
+            <br>
+            <span class='label'>heart-pulse-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-history-fill"></i>
+            </span>
+            <br>
+            <span class='label'>history-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-history-line"></i>
+            </span>
+            <br>
+            <span class='label'>history-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-home-fill"></i>
+            </span>
+            <br>
+            <span class='label'>home-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-home-line"></i>
+            </span>
+            <br>
+            <span class='label'>home-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-hourglass-fill"></i>
+            </span>
+            <br>
+            <span class='label'>hourglass-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-hourglass-line"></i>
+            </span>
+            <br>
+            <span class='label'>hourglass-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-ie-fill"></i>
+            </span>
+            <br>
+            <span class='label'>ie-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-ie-line"></i>
+            </span>
+            <br>
+            <span class='label'>ie-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-image-fill"></i>
+            </span>
+            <br>
+            <span class='label'>image-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-image-line"></i>
+            </span>
+            <br>
+            <span class='label'>image-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-information-fill"></i>
+            </span>
+            <br>
+            <span class='label'>information-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-information-line"></i>
+            </span>
+            <br>
+            <span class='label'>information-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-instagram-fill"></i>
+            </span>
+            <br>
+            <span class='label'>instagram-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-instagram-line"></i>
+            </span>
+            <br>
+            <span class='label'>instagram-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-kakao-talk-fill"></i>
+            </span>
+            <br>
+            <span class='label'>kakao-talk-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-kakao-talk-line"></i>
+            </span>
+            <br>
+            <span class='label'>kakao-talk-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-leaf-fill"></i>
+            </span>
+            <br>
+            <span class='label'>leaf-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-leaf-line"></i>
+            </span>
+            <br>
+            <span class='label'>leaf-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-lightbulb-fill"></i>
+            </span>
+            <br>
+            <span class='label'>lightbulb-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-lightbulb-line"></i>
+            </span>
+            <br>
+            <span class='label'>lightbulb-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-line-chart-fill"></i>
+            </span>
+            <br>
+            <span class='label'>line-chart-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-line-chart-line"></i>
+            </span>
+            <br>
+            <span class='label'>line-chart-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-line-fill"></i>
+            </span>
+            <br>
+            <span class='label'>line-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-line-line"></i>
+            </span>
+            <br>
+            <span class='label'>line-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-link-fill"></i>
+            </span>
+            <br>
+            <span class='label'>link-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-link-line"></i>
+            </span>
+            <br>
+            <span class='label'>link-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-list-check-fill"></i>
+            </span>
+            <br>
+            <span class='label'>list-check-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-list-check-line"></i>
+            </span>
+            <br>
+            <span class='label'>list-check-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-list-settings-fill"></i>
+            </span>
+            <br>
+            <span class='label'>list-settings-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-list-settings-line"></i>
+            </span>
+            <br>
+            <span class='label'>list-settings-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-lock-fill"></i>
+            </span>
+            <br>
+            <span class='label'>lock-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-lock-line"></i>
+            </span>
+            <br>
+            <span class='label'>lock-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-logout-fill"></i>
+            </span>
+            <br>
+            <span class='label'>logout-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-logout-line"></i>
+            </span>
+            <br>
+            <span class='label'>logout-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-mac-fill"></i>
+            </span>
+            <br>
+            <span class='label'>mac-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-mac-line"></i>
+            </span>
+            <br>
+            <span class='label'>mac-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-macbook-fill"></i>
+            </span>
+            <br>
+            <span class='label'>macbook-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-macbook-line"></i>
+            </span>
+            <br>
+            <span class='label'>macbook-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-mail-fill"></i>
+            </span>
+            <br>
+            <span class='label'>mail-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-mail-line"></i>
+            </span>
+            <br>
+            <span class='label'>mail-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-mail-send-fill"></i>
+            </span>
+            <br>
+            <span class='label'>mail-send-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-mail-send-line"></i>
+            </span>
+            <br>
+            <span class='label'>mail-send-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-map-pin-fill"></i>
+            </span>
+            <br>
+            <span class='label'>map-pin-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-map-pin-line"></i>
+            </span>
+            <br>
+            <span class='label'>map-pin-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-mastercard-fill"></i>
+            </span>
+            <br>
+            <span class='label'>mastercard-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-mastercard-line"></i>
+            </span>
+            <br>
+            <span class='label'>mastercard-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-menu-fill"></i>
+            </span>
+            <br>
+            <span class='label'>menu-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-menu-line"></i>
+            </span>
+            <br>
+            <span class='label'>menu-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-message-fill"></i>
+            </span>
+            <br>
+            <span class='label'>message-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-message-line"></i>
+            </span>
+            <br>
+            <span class='label'>message-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-messenger-fill"></i>
+            </span>
+            <br>
+            <span class='label'>messenger-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-messenger-line"></i>
+            </span>
+            <br>
+            <span class='label'>messenger-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-mic-fill"></i>
+            </span>
+            <br>
+            <span class='label'>mic-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-mic-line"></i>
+            </span>
+            <br>
+            <span class='label'>mic-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-mist-fill"></i>
+            </span>
+            <br>
+            <span class='label'>mist-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-mist-line"></i>
+            </span>
+            <br>
+            <span class='label'>mist-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-money-cny-box-fill"></i>
+            </span>
+            <br>
+            <span class='label'>money-cny-box-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-money-cny-box-line"></i>
+            </span>
+            <br>
+            <span class='label'>money-cny-box-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-money-dollar-box-fill"></i>
+            </span>
+            <br>
+            <span class='label'>money-dollar-box-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-money-dollar-box-line"></i>
+            </span>
+            <br>
+            <span class='label'>money-dollar-box-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-money-euro-box-fill"></i>
+            </span>
+            <br>
+            <span class='label'>money-euro-box-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-money-euro-box-line"></i>
+            </span>
+            <br>
+            <span class='label'>money-euro-box-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-money-pound-box-fill"></i>
+            </span>
+            <br>
+            <span class='label'>money-pound-box-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-money-pound-box-line"></i>
+            </span>
+            <br>
+            <span class='label'>money-pound-box-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-moon-cloudy-fill"></i>
+            </span>
+            <br>
+            <span class='label'>moon-cloudy-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-moon-cloudy-line"></i>
+            </span>
+            <br>
+            <span class='label'>moon-cloudy-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-moon-fill"></i>
+            </span>
+            <br>
+            <span class='label'>moon-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-moon-line"></i>
+            </span>
+            <br>
+            <span class='label'>moon-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-more-2-fill"></i>
+            </span>
+            <br>
+            <span class='label'>more-2-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-more-2-line"></i>
+            </span>
+            <br>
+            <span class='label'>more-2-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-more-fill"></i>
+            </span>
+            <br>
+            <span class='label'>more-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-more-line"></i>
+            </span>
+            <br>
+            <span class='label'>more-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-music-2-fill"></i>
+            </span>
+            <br>
+            <span class='label'>music-2-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-music-2-line"></i>
+            </span>
+            <br>
+            <span class='label'>music-2-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-music-fill"></i>
+            </span>
+            <br>
+            <span class='label'>music-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-music-line"></i>
+            </span>
+            <br>
+            <span class='label'>music-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-naver-fill"></i>
+            </span>
+            <br>
+            <span class='label'>naver-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-naver-line"></i>
+            </span>
+            <br>
+            <span class='label'>naver-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-navigation-fill"></i>
+            </span>
+            <br>
+            <span class='label'>navigation-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-navigation-line"></i>
+            </span>
+            <br>
+            <span class='label'>navigation-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-notification-fill"></i>
+            </span>
+            <br>
+            <span class='label'>notification-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-notification-line"></i>
+            </span>
+            <br>
+            <span class='label'>notification-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-package-fill"></i>
+            </span>
+            <br>
+            <span class='label'>package-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-package-line"></i>
+            </span>
+            <br>
+            <span class='label'>package-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-pause-circle-fill"></i>
+            </span>
+            <br>
+            <span class='label'>pause-circle-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-pause-circle-line"></i>
+            </span>
+            <br>
+            <span class='label'>pause-circle-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-pause-fill"></i>
+            </span>
+            <br>
+            <span class='label'>pause-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-pause-line"></i>
+            </span>
+            <br>
+            <span class='label'>pause-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-phone-fill"></i>
+            </span>
+            <br>
+            <span class='label'>phone-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-phone-line"></i>
+            </span>
+            <br>
+            <span class='label'>phone-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-pie-chart-fill"></i>
+            </span>
+            <br>
+            <span class='label'>pie-chart-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-pie-chart-line"></i>
+            </span>
+            <br>
+            <span class='label'>pie-chart-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-pinterest-fill"></i>
+            </span>
+            <br>
+            <span class='label'>pinterest-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-pinterest-line"></i>
+            </span>
+            <br>
+            <span class='label'>pinterest-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-play-circle-fill"></i>
+            </span>
+            <br>
+            <span class='label'>play-circle-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-play-circle-line"></i>
+            </span>
+            <br>
+            <span class='label'>play-circle-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-play-fill"></i>
+            </span>
+            <br>
+            <span class='label'>play-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-play-line"></i>
+            </span>
+            <br>
+            <span class='label'>play-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-price-tag-fill"></i>
+            </span>
+            <br>
+            <span class='label'>price-tag-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-price-tag-line"></i>
+            </span>
+            <br>
+            <span class='label'>price-tag-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-printer-fill"></i>
+            </span>
+            <br>
+            <span class='label'>printer-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-printer-line"></i>
+            </span>
+            <br>
+            <span class='label'>printer-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-qr-scan-fill"></i>
+            </span>
+            <br>
+            <span class='label'>qr-scan-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-qr-scan-line"></i>
+            </span>
+            <br>
+            <span class='label'>qr-scan-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-question-fill"></i>
+            </span>
+            <br>
+            <span class='label'>question-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-question-line"></i>
+            </span>
+            <br>
+            <span class='label'>question-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-radio-button-fill"></i>
+            </span>
+            <br>
+            <span class='label'>radio-button-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-radio-button-line"></i>
+            </span>
+            <br>
+            <span class='label'>radio-button-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-rainy-fill"></i>
+            </span>
+            <br>
+            <span class='label'>rainy-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-rainy-line"></i>
+            </span>
+            <br>
+            <span class='label'>rainy-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-recycle-fill"></i>
+            </span>
+            <br>
+            <span class='label'>recycle-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-recycle-line"></i>
+            </span>
+            <br>
+            <span class='label'>recycle-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-refresh-fill"></i>
+            </span>
+            <br>
+            <span class='label'>refresh-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-refresh-line"></i>
+            </span>
+            <br>
+            <span class='label'>refresh-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-refund-fill"></i>
+            </span>
+            <br>
+            <span class='label'>refund-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-refund-line"></i>
+            </span>
+            <br>
+            <span class='label'>refund-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-repeat-fill"></i>
+            </span>
+            <br>
+            <span class='label'>repeat-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-repeat-line"></i>
+            </span>
+            <br>
+            <span class='label'>repeat-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-return-fill"></i>
+            </span>
+            <br>
+            <span class='label'>return-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-return-line"></i>
+            </span>
+            <br>
+            <span class='label'>return-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-riding-fill"></i>
+            </span>
+            <br>
+            <span class='label'>riding-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-riding-line"></i>
+            </span>
+            <br>
+            <span class='label'>riding-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-rocket-fill"></i>
+            </span>
+            <br>
+            <span class='label'>rocket-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-rocket-line"></i>
+            </span>
+            <br>
+            <span class='label'>rocket-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-rss-fill"></i>
+            </span>
+            <br>
+            <span class='label'>rss-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-rss-line"></i>
+            </span>
+            <br>
+            <span class='label'>rss-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-ruler-fill"></i>
+            </span>
+            <br>
+            <span class='label'>ruler-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-ruler-line"></i>
+            </span>
+            <br>
+            <span class='label'>ruler-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-run-fill"></i>
+            </span>
+            <br>
+            <span class='label'>run-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-run-line"></i>
+            </span>
+            <br>
+            <span class='label'>run-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-safari-fill"></i>
+            </span>
+            <br>
+            <span class='label'>safari-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-safari-line"></i>
+            </span>
+            <br>
+            <span class='label'>safari-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-scales-fill"></i>
+            </span>
+            <br>
+            <span class='label'>scales-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-scales-line"></i>
+            </span>
+            <br>
+            <span class='label'>scales-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-search-fill"></i>
+            </span>
+            <br>
+            <span class='label'>search-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-search-line"></i>
+            </span>
+            <br>
+            <span class='label'>search-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-secure-payment-fill"></i>
+            </span>
+            <br>
+            <span class='label'>secure-payment-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-secure-payment-line"></i>
+            </span>
+            <br>
+            <span class='label'>secure-payment-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-seed-1-fill"></i>
+            </span>
+            <br>
+            <span class='label'>seed-1-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-seed-1-line"></i>
+            </span>
+            <br>
+            <span class='label'>seed-1-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-seed-2-fill"></i>
+            </span>
+            <br>
+            <span class='label'>seed-2-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-seed-2-line"></i>
+            </span>
+            <br>
+            <span class='label'>seed-2-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-seed-3-fill"></i>
+            </span>
+            <br>
+            <span class='label'>seed-3-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-seed-3-line"></i>
+            </span>
+            <br>
+            <span class='label'>seed-3-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-selected-by-decathlon-fill"></i>
+            </span>
+            <br>
+            <span class='label'>selected-by-decathlon-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-selected-by-decathlon-line"></i>
+            </span>
+            <br>
+            <span class='label'>selected-by-decathlon-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-send-plane-2-fill"></i>
+            </span>
+            <br>
+            <span class='label'>send-plane-2-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-send-plane-2-line"></i>
+            </span>
+            <br>
+            <span class='label'>send-plane-2-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-send-plane-fill"></i>
+            </span>
+            <br>
+            <span class='label'>send-plane-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-send-plane-line"></i>
+            </span>
+            <br>
+            <span class='label'>send-plane-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-settings-fill"></i>
+            </span>
+            <br>
+            <span class='label'>settings-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-settings-line"></i>
+            </span>
+            <br>
+            <span class='label'>settings-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-share-android-fill"></i>
+            </span>
+            <br>
+            <span class='label'>share-android-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-share-android-line"></i>
+            </span>
+            <br>
+            <span class='label'>share-android-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-share-fill"></i>
+            </span>
+            <br>
+            <span class='label'>share-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-share-ios-fill"></i>
+            </span>
+            <br>
+            <span class='label'>share-ios-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-share-ios-line"></i>
+            </span>
+            <br>
+            <span class='label'>share-ios-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-share-line"></i>
+            </span>
+            <br>
+            <span class='label'>share-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-shield-check-fill"></i>
+            </span>
+            <br>
+            <span class='label'>shield-check-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-shield-check-line"></i>
+            </span>
+            <br>
+            <span class='label'>shield-check-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-shopping-bag-fill"></i>
+            </span>
+            <br>
+            <span class='label'>shopping-bag-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-shopping-bag-line"></i>
+            </span>
+            <br>
+            <span class='label'>shopping-bag-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-shopping-cart-fill"></i>
+            </span>
+            <br>
+            <span class='label'>shopping-cart-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-shopping-cart-line"></i>
+            </span>
+            <br>
+            <span class='label'>shopping-cart-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-showers-fill"></i>
+            </span>
+            <br>
+            <span class='label'>showers-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-showers-line"></i>
+            </span>
+            <br>
+            <span class='label'>showers-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-shut-down-fill"></i>
+            </span>
+            <br>
+            <span class='label'>shut-down-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-shut-down-line"></i>
+            </span>
+            <br>
+            <span class='label'>shut-down-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-slack-fill"></i>
+            </span>
+            <br>
+            <span class='label'>slack-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-slack-line"></i>
+            </span>
+            <br>
+            <span class='label'>slack-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-smartphone-fill"></i>
+            </span>
+            <br>
+            <span class='label'>smartphone-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-smartphone-line"></i>
+            </span>
+            <br>
+            <span class='label'>smartphone-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-snapchat-fill"></i>
+            </span>
+            <br>
+            <span class='label'>snapchat-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-snapchat-line"></i>
+            </span>
+            <br>
+            <span class='label'>snapchat-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-snowy-fill"></i>
+            </span>
+            <br>
+            <span class='label'>snowy-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-snowy-line"></i>
+            </span>
+            <br>
+            <span class='label'>snowy-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-sparkles-fill"></i>
+            </span>
+            <br>
+            <span class='label'>sparkles-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-sparkles-line"></i>
+            </span>
+            <br>
+            <span class='label'>sparkles-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-star-fill"></i>
+            </span>
+            <br>
+            <span class='label'>star-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-star-half-fill"></i>
+            </span>
+            <br>
+            <span class='label'>star-half-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-star-half-line"></i>
+            </span>
+            <br>
+            <span class='label'>star-half-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-star-line"></i>
+            </span>
+            <br>
+            <span class='label'>star-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-stop-circle-fill"></i>
+            </span>
+            <br>
+            <span class='label'>stop-circle-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-stop-circle-line"></i>
+            </span>
+            <br>
+            <span class='label'>stop-circle-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-stop-fill"></i>
+            </span>
+            <br>
+            <span class='label'>stop-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-stop-line"></i>
+            </span>
+            <br>
+            <span class='label'>stop-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-store-fill"></i>
+            </span>
+            <br>
+            <span class='label'>store-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-store-line"></i>
+            </span>
+            <br>
+            <span class='label'>store-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-subtract-fill"></i>
+            </span>
+            <br>
+            <span class='label'>subtract-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-subtract-line"></i>
+            </span>
+            <br>
+            <span class='label'>subtract-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-suitcase-fill"></i>
+            </span>
+            <br>
+            <span class='label'>suitcase-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-suitcase-line"></i>
+            </span>
+            <br>
+            <span class='label'>suitcase-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-sun-cloudy-fill"></i>
+            </span>
+            <br>
+            <span class='label'>sun-cloudy-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-sun-cloudy-line"></i>
+            </span>
+            <br>
+            <span class='label'>sun-cloudy-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-sun-fill"></i>
+            </span>
+            <br>
+            <span class='label'>sun-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-sun-line"></i>
+            </span>
+            <br>
+            <span class='label'>sun-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-t-shirt-fill"></i>
+            </span>
+            <br>
+            <span class='label'>t-shirt-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-t-shirt-line"></i>
+            </span>
+            <br>
+            <span class='label'>t-shirt-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-tablet-fill"></i>
+            </span>
+            <br>
+            <span class='label'>tablet-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-tablet-line"></i>
+            </span>
+            <br>
+            <span class='label'>tablet-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-task-fill"></i>
+            </span>
+            <br>
+            <span class='label'>task-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-task-line"></i>
+            </span>
+            <br>
+            <span class='label'>task-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-telegram-fill"></i>
+            </span>
+            <br>
+            <span class='label'>telegram-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-telegram-line"></i>
+            </span>
+            <br>
+            <span class='label'>telegram-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-temp-cold-fill"></i>
+            </span>
+            <br>
+            <span class='label'>temp-cold-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-temp-cold-line"></i>
+            </span>
+            <br>
+            <span class='label'>temp-cold-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-temp-hot-fill"></i>
+            </span>
+            <br>
+            <span class='label'>temp-hot-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-temp-hot-line"></i>
+            </span>
+            <br>
+            <span class='label'>temp-hot-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-thumb-down-fill"></i>
+            </span>
+            <br>
+            <span class='label'>thumb-down-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-thumb-down-line"></i>
+            </span>
+            <br>
+            <span class='label'>thumb-down-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-thumb-up-fill"></i>
+            </span>
+            <br>
+            <span class='label'>thumb-up-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-thumb-up-line"></i>
+            </span>
+            <br>
+            <span class='label'>thumb-up-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-thunderstorms-fill"></i>
+            </span>
+            <br>
+            <span class='label'>thunderstorms-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-thunderstorms-line"></i>
+            </span>
+            <br>
+            <span class='label'>thunderstorms-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-tiktok-fill"></i>
+            </span>
+            <br>
+            <span class='label'>tiktok-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-tiktok-line"></i>
+            </span>
+            <br>
+            <span class='label'>tiktok-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-time-fill"></i>
+            </span>
+            <br>
+            <span class='label'>time-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-time-line"></i>
+            </span>
+            <br>
+            <span class='label'>time-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-timer-fill"></i>
+            </span>
+            <br>
+            <span class='label'>timer-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-timer-line"></i>
+            </span>
+            <br>
+            <span class='label'>timer-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-tools-fill"></i>
+            </span>
+            <br>
+            <span class='label'>tools-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-tools-line"></i>
+            </span>
+            <br>
+            <span class='label'>tools-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-train-fill"></i>
+            </span>
+            <br>
+            <span class='label'>train-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-train-line"></i>
+            </span>
+            <br>
+            <span class='label'>train-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-trophy-fill"></i>
+            </span>
+            <br>
+            <span class='label'>trophy-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-trophy-line"></i>
+            </span>
+            <br>
+            <span class='label'>trophy-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-truck-fill"></i>
+            </span>
+            <br>
+            <span class='label'>truck-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-truck-line"></i>
+            </span>
+            <br>
+            <span class='label'>truck-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-twitter-fill"></i>
+            </span>
+            <br>
+            <span class='label'>twitter-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-twitter-line"></i>
+            </span>
+            <br>
+            <span class='label'>twitter-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-unlink-fill"></i>
+            </span>
+            <br>
+            <span class='label'>unlink-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-unlink-line"></i>
+            </span>
+            <br>
+            <span class='label'>unlink-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-upload-fill"></i>
+            </span>
+            <br>
+            <span class='label'>upload-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-upload-line"></i>
+            </span>
+            <br>
+            <span class='label'>upload-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-user-fill"></i>
+            </span>
+            <br>
+            <span class='label'>user-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-user-line"></i>
+            </span>
+            <br>
+            <span class='label'>user-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-viber-fill"></i>
+            </span>
+            <br>
+            <span class='label'>viber-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-viber-line"></i>
+            </span>
+            <br>
+            <span class='label'>viber-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-visa-fill"></i>
+            </span>
+            <br>
+            <span class='label'>visa-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-visa-line"></i>
+            </span>
+            <br>
+            <span class='label'>visa-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-volume-alert-fill"></i>
+            </span>
+            <br>
+            <span class='label'>volume-alert-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-volume-alert-line"></i>
+            </span>
+            <br>
+            <span class='label'>volume-alert-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-volume-down-fill"></i>
+            </span>
+            <br>
+            <span class='label'>volume-down-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-volume-down-line"></i>
+            </span>
+            <br>
+            <span class='label'>volume-down-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-volume-mute-fill"></i>
+            </span>
+            <br>
+            <span class='label'>volume-mute-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-volume-mute-line"></i>
+            </span>
+            <br>
+            <span class='label'>volume-mute-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-volume-up-fill"></i>
+            </span>
+            <br>
+            <span class='label'>volume-up-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-volume-up-line"></i>
+            </span>
+            <br>
+            <span class='label'>volume-up-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-walk-fill"></i>
+            </span>
+            <br>
+            <span class='label'>walk-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-walk-line"></i>
+            </span>
+            <br>
+            <span class='label'>walk-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-wallet-fill"></i>
+            </span>
+            <br>
+            <span class='label'>wallet-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-wallet-line"></i>
+            </span>
+            <br>
+            <span class='label'>wallet-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-whatsapp-fill"></i>
+            </span>
+            <br>
+            <span class='label'>whatsapp-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-whatsapp-line"></i>
+            </span>
+            <br>
+            <span class='label'>whatsapp-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-windy-fill"></i>
+            </span>
+            <br>
+            <span class='label'>windy-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-windy-line"></i>
+            </span>
+            <br>
+            <span class='label'>windy-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-youtube-fill"></i>
+            </span>
+            <br>
+            <span class='label'>youtube-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-youtube-line"></i>
+            </span>
+            <br>
+            <span class='label'>youtube-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-zoom-in-fill"></i>
+            </span>
+            <br>
+            <span class='label'>zoom-in-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-zoom-in-line"></i>
+            </span>
+            <br>
+            <span class='label'>zoom-in-line</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-zoom-out-fill"></i>
+            </span>
+            <br>
+            <span class='label'>zoom-out-fill</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="vtmx vtmx-zoom-out-line"></i>
+            </span>
+            <br>
+            <span class='label'>zoom-out-line</span>
+        </div>
+
+
+</body>
 </html>
