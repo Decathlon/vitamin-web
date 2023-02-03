@@ -25,7 +25,6 @@ Or you can also install it with a CDN like `unpkg.com`. You can browse content [
 Once you have installed this package, depending on your setup, you can include `@vtmn/assets` in a handful of ways.
 
 - Reference via `<img>` element
-- Use the SVG sprite
 - Include via CSS
 - Copy-paste SVGs as embedded HTML
 
@@ -43,18 +42,6 @@ Reference assets SVGs like normal images with the `<img>` element.
   width="32"
   height="32"
 />
-```
-
-### Sprite
-
-Use the SVG sprite to insert any icon through the `<use>` element. Use the icon’s filename as the fragment identifier (e.g., `home-fill` is `#home-fill`). SVG sprites allow you to reference an external file similar to an `<img>` element.
-
-```html
-<svg width="32" height="32" fill="#001018">
-  <use
-    xlink:href="/node_modules/@vtmn/assets/dist/vitamix/sprite/vitamix.svg#home-fill"
-  />
-</svg>
 ```
 
 ### CSS
