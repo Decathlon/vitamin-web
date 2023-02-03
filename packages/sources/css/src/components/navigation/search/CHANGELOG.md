@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.16](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-search@0.7.15...@vtmn/css-search@0.7.16) (2023-02-03)
+
+**Note:** Version bump only for package @vtmn/css-search
+
 ## [0.7.15](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-search@0.7.14...@vtmn/css-search@0.7.15) (2023-02-03)
 
 **Note:** Version bump only for package @vtmn/css-search
