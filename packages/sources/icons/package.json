@@ -23,7 +23,7 @@
   ],
   "scripts": {
     "prebuild": "shx rm -rf dist",
-    "build": "shx mkdir -p dist/vitamix && shx cp -r src/vitamix dist",
+    "build": "shx mkdir -p dist/vitamix && shx cp -r src/generated/vitamix dist",
     "prestart": "yarn build",
     "start": "chokidar \"src/**/\" -i \"**/dist/**\" -c \"yarn build\""
   },
