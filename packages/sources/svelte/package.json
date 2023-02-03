@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/svelte",
-  "version": "0.61.1",
+  "version": "0.61.2",
   "description": "Decathlon Design System - Vitamin Svelte components library",
   "keywords": [
     "design-system",
@@ -33,8 +33,8 @@
     "test:watch": "npm run test -- --watch"
   },
   "dependencies": {
-    "@vtmn/css": "^0.91.1",
-    "@vtmn/css-accordion": "^0.5.10",
+    "@vtmn/css": "^0.91.2",
+    "@vtmn/css-accordion": "^0.5.11",
     "@vtmn/css-alert": "^0.8.6",
     "@vtmn/css-badge": "^0.13.2",
     "@vtmn/css-breadcrumb": "^0.7.7",
@@ -55,8 +55,8 @@
     "@vtmn/css-progressbar": "^0.7.4",
     "@vtmn/css-quantity": "^0.8.5",
     "@vtmn/css-radio-button": "^0.8.5",
-    "@vtmn/css-rating": "^0.5.14",
-    "@vtmn/css-search": "^0.7.14",
+    "@vtmn/css-rating": "^0.5.15",
+    "@vtmn/css-search": "^0.7.15",
     "@vtmn/css-select": "^0.8.8",
     "@vtmn/css-skeleton": "^0.5.4",
     "@vtmn/css-snackbar": "^0.7.4",
@@ -66,7 +66,7 @@
     "@vtmn/css-toast": "^0.7.4",
     "@vtmn/css-toggle": "^0.8.4",
     "@vtmn/css-tooltip": "^0.8.4",
-    "@vtmn/icons": "^0.20.1"
+    "@vtmn/icons": "^0.21.0"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.0.0",
