@@ -93,7 +93,6 @@ jobs:
             'packages/sources/css/src/components/structure/skeleton',
             'packages/sources/css/src/design-tokens',
             'packages/sources/css/src/utilities',
-            'packages/sources/icons',
             'packages/sources/react',
             'packages/sources/svelte',
             'packages/sources/vue',
