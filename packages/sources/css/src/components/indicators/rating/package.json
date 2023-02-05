@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css-rating",
-  "version": "0.5.17",
+  "version": "0.5.18",
   "description": "Decathlon Design System - Vitamin specific CSS styles for rating component",
   "keywords": [
     "design-system",
@@ -26,7 +26,7 @@
     "build": "node build.js"
   },
   "dependencies": {
-    "@vtmn/icons": "^0.21.2"
+    "@vtmn/icons": "^0.21.3"
   },
   "devDependencies": {
     "@vtmn/css-design-tokens": "^0.20.2",
