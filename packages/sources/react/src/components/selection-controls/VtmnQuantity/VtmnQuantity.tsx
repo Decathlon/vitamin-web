@@ -40,6 +40,13 @@ export interface VtmnQuantityProps
   disabled?: boolean;
 
   /**
+   * Displays the quantity at 100% of its parent's width
+   * @type {boolean}
+   * @defaultValue false
+   */
+  fullWidth?: boolean;
+
+  /**
    * The minimum value of the quantity.
    * @type {number}
    * @defaultValue 0
@@ -79,6 +86,7 @@ export const VtmnQuantity = React.forwardRef<
       step = 1,
       label = undefined,
       disabled = false,
+      fullWidth = false,
       min = 0,
       max = Infinity,
       error = undefined,
@@ -91,7 +99,14 @@ export const VtmnQuantity = React.forwardRef<
     const [quantity, setQuantity] = React.useState(value);
 
     return (
-      <div className={clsx('vtmn-quantity', className)} {...props}>
+      <div
+        className={clsx(
+          'vtmn-quantity',
+          { 'vtmn-quantity--full-width': fullWidth },
+          className,
+        )}
+        {...props}
+      >
         {label && <label htmlFor={id}>{label}</label>}
 
         <div className="vtmn-quantity_content">
