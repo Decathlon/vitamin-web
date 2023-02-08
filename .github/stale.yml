@@ -1,8 +1,5 @@
 # Configuration for probot-stale - https://github.com/probot/stale
 
-# Limit to only `issues` or `pulls`
-only: pulls
-
 # Number of days of inactivity before an Issue or Pull Request becomes stale
 daysUntilStale: 30
 
@@ -12,7 +9,7 @@ daysUntilClose: 7
 
 # Issues or Pull Requests with these labels will never be considered stale. Set to `[]` to disable
 exemptLabels:
-  - next ⛳
+  - "next ⛳"
   
 # Label to use when marking an issue as stale
 staleLabel: wontfix 🚫
