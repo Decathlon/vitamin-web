@@ -9,6 +9,7 @@ export interface VtmnSelectProps
   id: string;
   labelText?: string;
   options: React.ReactNode[];
+  border?: boolean;
   valid?: boolean;
   labelClassName?: string;
   labelProps?: React.ComponentPropsWithoutRef<'label'>;
@@ -25,6 +26,7 @@ export const VtmnSelect = React.forwardRef<HTMLSelectElement, VtmnSelectProps>(
       labelClassName,
       labelProps,
       options = [],
+      border = true,
       ...props
     },
     ref,
@@ -33,13 +35,17 @@ export const VtmnSelect = React.forwardRef<HTMLSelectElement, VtmnSelectProps>(
     const hasErrorText = error && errorText;
 
     return (
-      <div className="vtmn-select_container">
+      <div
+        className={clsx('vtmn-select_container', {
+          'vtmn-select--no-border': !border,
+        })}
+      >
         <label className={labelClassName || ''} htmlFor={id} {...labelProps}>
           {labelText}
         </label>
         <select
           id={id}
-          className={clsx('vtmn-select', className, {
+          className={clsx(className, {
             'vtmn-select--error': error,
           })}
           aria-describedby={hasErrorText ? errorTextId : undefined}

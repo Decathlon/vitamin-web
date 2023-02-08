@@ -1,6 +1,7 @@
 import overview from './examples/overview.html';
 import error from './examples/error.html';
 import disabled from './examples/disabled.html';
+import noBorder from './examples/no-border.html';
 
 import { parameters } from '@vtmn/showcase-core/csf/components/forms/select.csf';
 
@@ -35,4 +36,14 @@ Disabled.parameters = {
       code: disabled,
     },
   },
+};
+
+export const NoBorder = () => noBorder;
+NoBorder.parameters = {
+  docs: {
+    source: {
+      code: noBorder,
+    },
+  },
+  backgrounds: { default: 'primary' },
 };
