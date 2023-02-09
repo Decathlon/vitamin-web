@@ -49,6 +49,15 @@ export const argTypes = {
       type: 'boolean',
     },
   },
+  size: {
+    type: { name: 'string', required: false },
+    description: 'The size of the quantity.',
+    defaultValue: 'medium',
+    control: {
+      type: 'select',
+      options: ['small', 'medium'],
+    },
+  },
   fullWidth: {
     type: { name: 'boolean', required: false },
     description: `Displays the quantity at 100% of its parent's width`,

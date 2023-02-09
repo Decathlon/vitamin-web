@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-quantity@0.9.0...@vtmn/css-quantity@0.10.0) (2023-02-09)
+
+### Features
+
+- add small size for `Quantity` component ([#1368](https://github.com/Decathlon/vitamin-web/issues/1368)) ([1ab77c3](https://github.com/Decathlon/vitamin-web/commit/1ab77c3969a4f829795b01fc6903964041649cc7))
+
 # [0.9.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-quantity@0.8.5...@vtmn/css-quantity@0.9.0) (2023-02-09)
 
 ### Features
