@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/vue",
-  "version": "0.49.5",
+  "version": "0.49.6",
   "description": "Decathlon Design System - Vitamin Vue components library",
   "keywords": [
     "design-system",
@@ -21,7 +21,6 @@
   "main": "dist/vtmn/vue.cjs.js",
   "module": "dist/vtmn/vue.es.js",
   "types": "dist/index.d.ts",
-  "sideEffects": false,
   "files": [
     "dist",
     "dist/*.d.ts"
