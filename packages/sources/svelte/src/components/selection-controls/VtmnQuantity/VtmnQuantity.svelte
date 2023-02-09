@@ -24,6 +24,11 @@
   export let disabled = false;
 
   /**
+   * @type {boolean} displays the quantity at 100% of its parent's width
+   */
+  export let fullWidth = false;
+
+  /**
    * @type {string} error text displayed under the input
    */
   export let error = undefined;
@@ -68,7 +73,11 @@
     disabledMax = value >= max;
   }
 
-  $: componentClass = cn('vtmn-quantity', className);
+  $: componentClass = cn(
+    'vtmn-quantity',
+    fullWidth && 'vtmn-quantity--full-width',
+    className,
+  );
 </script>
 
 <div class={componentClass}>

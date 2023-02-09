@@ -23,6 +23,10 @@ export default /*#__PURE__*/ defineComponent({
       type: Boolean as PropType<boolean>,
       default: false,
     },
+    fullWidth: {
+      type: Boolean as PropType<boolean>,
+      default: false,
+    },
     min: {
       type: Number as PropType<number>,
       default: -Infinity,
@@ -63,6 +67,7 @@ export default /*#__PURE__*/ defineComponent({
     return {
       classes: computed(() => ({
         'vtmn-quantity': true,
+        'vtmn-quantity--full-width': props.fullWidth,
       })),
       handleChange,
       handleSubstract,
