@@ -121,3 +121,41 @@
   inline-size: rem(16px);
   margin-inline-end: rem(5px);
 }
+
+/* Sizes */
+
+.vtmn-quantity.vtmn-quantity_size--small .vtmn-btn {
+  min-inline-size: rem(32px);
+  min-block-size: rem(32px);
+}
+
+.vtmn-quantity.vtmn-quantity_size--medium .vtmn-btn {
+  min-inline-size: rem(48px);
+  min-block-size: rem(48px);
+}
+
+.vtmn-quantity.vtmn-quantity_size--small input[type='number'] {
+  inline-size: rem(40px);
+}
+
+.vtmn-quantity.vtmn-quantity_size--medium input[type='number'] {
+  inline-size: rem(60px);
+}
+
+.vtmn-quantity.vtmn-quantity_size--small > label {
+  font-size: var(--vtmn-typo_text-3-font-size);
+  line-height: var(--vtmn-typo_text-3-line-height);
+}
+
+.vtmn-quantity.vtmn-quantity_size--medium > label {
+  font-size: var(--vtmn-typo_text-2-font-size);
+  line-height: var(--vtmn-typo_text-2-line-height);
+}
+
+.vtmn-quantity.vtmn-quantity_size--small {
+  font-size: var(--vtmn-typo_text-3-font-size);
+}
+
+.vtmn-quantity.vtmn-quantity_size--medium {
+  font-size: var(--vtmn-typo_text-2-font-size);
+}

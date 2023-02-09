@@ -2,6 +2,7 @@
 import '@vtmn/css-quantity/dist/index-with-vars.css';
 import { computed, defineComponent, PropType, reactive } from 'vue';
 import { VtmnButton } from '../../index';
+import { VtmnQuantitySize } from './types';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnQuantity',
@@ -35,6 +36,11 @@ export default /*#__PURE__*/ defineComponent({
       type: Number as PropType<number>,
       default: 1,
     },
+    size: {
+      type: String as PropType<VtmnQuantitySize>,
+      default: 'medium',
+      validator: (val: VtmnQuantitySize) => ['small', 'medium'].includes(val),
+    },
     error: {
       type: String as PropType<string>,
       default: undefined,
@@ -63,6 +69,7 @@ export default /*#__PURE__*/ defineComponent({
     return {
       classes: computed(() => ({
         'vtmn-quantity': true,
+        [`vtmn-quantity_size--${props.size}`]: true,
       })),
       handleChange,
       handleSubstract,
@@ -82,6 +89,7 @@ export default /*#__PURE__*/ defineComponent({
         icon-alone="subtract-line"
         aria-label="substract"
         @click="handleSubstract"
+        :size="size"
       />
       <input
         type="number"
@@ -101,6 +109,7 @@ export default /*#__PURE__*/ defineComponent({
         icon-alone="add-line"
         aria-label="add"
         @click="handleAdd"
+        :size="size"
       />
     </div>
     <p

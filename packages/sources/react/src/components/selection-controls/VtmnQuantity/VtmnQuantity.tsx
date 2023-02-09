@@ -2,6 +2,7 @@ import * as React from 'react';
 import '@vtmn/css-quantity/dist/index-with-vars.css';
 import clsx from 'clsx';
 import { VtmnButton } from '../../actions/VtmnButton/VtmnButton';
+import { VtmnQuantitySize } from './types';
 
 export interface VtmnQuantityProps
   extends Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
@@ -31,6 +32,12 @@ export interface VtmnQuantityProps
    * @defaultValue 1
    */
   step?: number;
+
+  /**
+   * The size of the quantity.
+   * @defaultValue 'medium'
+   */
+  size?: VtmnQuantitySize;
 
   /**
    * Disabled state of the quantity.
@@ -77,6 +84,7 @@ export const VtmnQuantity = React.forwardRef<
       id,
       value = 0,
       step = 1,
+      size = 'medium',
       label = undefined,
       disabled = false,
       min = 0,
@@ -91,7 +99,14 @@ export const VtmnQuantity = React.forwardRef<
     const [quantity, setQuantity] = React.useState(value);
 
     return (
-      <div className={clsx('vtmn-quantity', className)} {...props}>
+      <div
+        className={clsx(
+          'vtmn-quantity',
+          `vtmn-quantity_size--${size}`,
+          className,
+        )}
+        {...props}
+      >
         {label && <label htmlFor={id}>{label}</label>}
 
         <div className="vtmn-quantity_content">
@@ -108,6 +123,7 @@ export const VtmnQuantity = React.forwardRef<
                 return newQuantity;
               })
             }
+            size={size}
             aria-label="subtract"
           />
           <input
@@ -135,6 +151,7 @@ export const VtmnQuantity = React.forwardRef<
             variant="secondary"
             disabled={disabled || quantity >= max}
             iconAlone={'add-fill'}
+            size={size}
             onClick={() =>
               setQuantity((oldQuantity) => {
                 const newQuantity = Math.min(max, oldQuantity + step);

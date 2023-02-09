@@ -49,6 +49,15 @@ export const argTypes = {
       type: 'boolean',
     },
   },
+  size: {
+    type: { name: 'string', required: false },
+    description: 'The size of the quantity.',
+    defaultValue: 'medium',
+    control: {
+      type: 'select',
+      options: ['small', 'medium'],
+    },
+  },
   min: {
     type: { name: 'number', required: false },
     description: 'Minimum value of the input',
