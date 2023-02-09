@@ -58,6 +58,14 @@ export const argTypes = {
       options: ['small', 'medium'],
     },
   },
+  fullWidth: {
+    type: { name: 'boolean', required: false },
+    description: `Displays the quantity at 100% of its parent's width`,
+    defaultValue: false,
+    control: {
+      type: 'boolean',
+    }
+  },
   min: {
     type: { name: 'number', required: false },
     description: 'Minimum value of the input',

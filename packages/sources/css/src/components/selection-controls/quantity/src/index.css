@@ -15,6 +15,10 @@
   inline-size: fit-content;
 }
 
+.vtmn-quantity.vtmn-quantity--full-width {
+  inline-size: 100%;
+}
+
 .vtmn-quantity > label {
   font-size: var(--vtmn-typo_text-2-font-size);
   line-height: var(--vtmn-typo_text-2-line-height);
@@ -44,6 +48,10 @@
   appearance: textfield;
   transition: var(--vtmn-transition_focus-visible);
   border-radius: 0;
+}
+
+.vtmn-quantity.vtmn-quantity--full-width input[type='number'] {
+  inline-size: 100%;
 }
 
 .vtmn-quantity input[type='number']::placeholder {

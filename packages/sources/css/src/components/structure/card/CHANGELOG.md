@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-card@0.11.0...@vtmn/css-card@0.11.1) (2023-02-09)
+
+### Bug Fixes
+
+- **@vtmn/css-card:** align padding between variants ([#1366](https://github.com/Decathlon/vitamin-web/issues/1366)) ([ffbaf65](https://github.com/Decathlon/vitamin-web/commit/ffbaf650c1b8236b16db05aaf79aa828d8145ead))
+
 # [0.11.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-card@0.10.6...@vtmn/css-card@0.11.0) (2022-11-24)
 
 ### Features

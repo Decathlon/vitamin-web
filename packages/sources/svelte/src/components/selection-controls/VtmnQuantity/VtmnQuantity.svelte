@@ -24,6 +24,11 @@
   export let disabled = false;
 
   /**
+   * @type {boolean} displays the quantity at 100% of its parent's width
+   */
+  export let fullWidth = false;
+
+  /**
    * @type {string} error text displayed under the input
    */
   export let error = undefined;
@@ -78,6 +83,7 @@
   $: componentClass = cn(
     'vtmn-quantity',
     size && `vtmn-quantity_size--${size}`,
+    fullWidth && 'vtmn-quantity--full-width',
     className,
   );
 </script>
