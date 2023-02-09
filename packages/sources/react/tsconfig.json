@@ -6,7 +6,7 @@
     "noFallthroughCasesInSwitch": true,
     "rootDir": ".",
     "declaration": true,
-    "sourceMap": true,
+    "declarationDir": "dist",
     "allowJs": false,
     "jsx": "react-jsx",
     "moduleResolution": "node",
@@ -24,10 +24,10 @@
     "strict": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
     "paths": {
       "@/*": ["src/*"]
-    }
+    },
+    "outDir": "dist"
   },
   "include": ["*.js", "src/**/*.ts", "src/**/*.tsx", "scripts/**/*.js"],
   "exclude": [

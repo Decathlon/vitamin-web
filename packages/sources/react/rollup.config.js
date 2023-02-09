@@ -5,24 +5,22 @@ import url from '@rollup/plugin-url';
 import svgr from '@svgr/rollup';
 import external from 'rollup-plugin-peer-deps-external';
 import postcss from 'rollup-plugin-postcss';
-import pkg from './package.json';
 
-const TARGETS = [
-  { format: 'cjs', dir: './dist', tsconfig: './tsconfig.cjs.json' },
-  { format: 'es', file: pkg.module, tsconfig: './tsconfig.es.json' },
-];
+const formatOutput = (format) => ({
+  format,
+  exports: 'named',
+  sourcemap: false,
+  dir: 'dist',
+  preserveModules: true,
+  preserveModulesRoot: 'src',
+  entryFileNames: `[name].${format === 'es' ? 'js' : 'cjs'}`,
+});
 
-export default TARGETS.map((target) => ({
+export default {
   input: 'src/index.ts',
-  output: {
-    file: target.file,
-    format: target.format,
-    exports: 'named',
-    sourcemap: true,
-    dir: target.dir,
-  },
+  output: [formatOutput('es'), formatOutput('cjs')],
   plugins: [
-    typescript({ tsconfig: target.tsconfig }),
+    typescript(),
     external(),
     resolve(),
     url({ exclude: ['**/*.svg'] }),
@@ -32,4 +30,4 @@ export default TARGETS.map((target) => ({
     }),
     commonjs(),
   ],
-}));
+};

@@ -17,11 +17,11 @@
     "type": "git",
     "url": "git+https://github.com/Decathlon/vitamin-web.git"
   },
-  "sideEffects": false,
   "license": "Apache-2.0",
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
-  "jsnext:main": "dist/index.es.js",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "jsnext:main": "dist/index.js",
   "types": "dist/src/index.d.ts",
   "files": [
     "dist"
