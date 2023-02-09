@@ -21,6 +21,12 @@
   export let disabled = false;
 
   /**
+   * @type {boolean} Displays the search button.
+   * @defaultValue true
+   */
+  export let showSearchButton = true;
+
+  /**
    * @type {'small' | 'medium'}
    * @defaultValue 'medium'
    */
@@ -110,15 +116,17 @@
       />
     {/if}
 
-    <VtmnButton
-      iconAlone="search-line"
-      variant="ghost"
-      {disabled}
-      {size}
-      on:click={onSearch}
-      type="submit"
-      aria-label={ariaLabels.searchButton}
-    />
+    {#if showSearchButton}
+      <VtmnButton
+        iconAlone="search-line"
+        variant="ghost"
+        {disabled}
+        {size}
+        on:click={onSearch}
+        type="submit"
+        aria-label={ariaLabels.searchButton}
+      />
+    {/if}
   </div>
 </div>
 

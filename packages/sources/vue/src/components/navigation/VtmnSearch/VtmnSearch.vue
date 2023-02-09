@@ -20,6 +20,10 @@ export default /*#__PURE__*/ defineComponent({
       type: Boolean as PropType<boolean>,
       default: false,
     },
+    showSearchButton: {
+      type: Boolean as PropType<boolean>,
+      default: true,
+    },
     size: {
       type: String as PropType<VtmnSearchSize>,
       default: 'medium',
@@ -89,6 +93,7 @@ export default /*#__PURE__*/ defineComponent({
         type="submit"
         aria-label="search"
         @click.prevent="handleSearch"
+        v-if="showSearchButton"
       />
     </div>
   </div>

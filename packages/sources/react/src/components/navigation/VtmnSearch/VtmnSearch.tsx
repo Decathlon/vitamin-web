@@ -28,6 +28,13 @@ export interface VtmnSearchProps
   disabled?: boolean;
 
   /**
+   * Displays the search button.
+   * @type {boolean}
+   * @defaultValue true
+   */
+  showSearchButton?: boolean;
+
+  /**
    * The placeholder of the search bar.
    * @type {string}
    * @defaultValue 'Search'
@@ -61,6 +68,7 @@ export const VtmnSearch = ({
   size = 'medium',
   disabled = false,
   placeholder = 'Search',
+  showSearchButton = true,
   value = undefined,
   className,
   onSearch,
@@ -117,15 +125,17 @@ export const VtmnSearch = ({
           />
         )}
 
-        <VtmnButton
-          onClick={searchValue}
-          variant="ghost"
-          size={size}
-          disabled={disabled}
-          type="submit"
-          iconAlone="search-line"
-          aria-label="search"
-        />
+        {showSearchButton && (
+          <VtmnButton
+            onClick={searchValue}
+            variant="ghost"
+            size={size}
+            disabled={disabled}
+            type="submit"
+            iconAlone="search-line"
+            aria-label="search"
+          />
+        )}
       </div>
     </div>
   );

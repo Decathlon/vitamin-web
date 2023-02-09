@@ -24,6 +24,12 @@ export const argTypes = {
     defaultValue: false,
     control: { type: 'boolean' },
   },
+  showSearchButton: {
+    type: { name: 'boolean', required: false },
+    description: 'Displays the search button.',
+    defaultValue: true,
+    control: { type: 'boolean' },
+  },
   size: {
     type: { name: 'string', required: false },
     description: 'Size of input.',
