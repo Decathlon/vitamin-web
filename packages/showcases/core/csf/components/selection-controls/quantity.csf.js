@@ -64,7 +64,7 @@ export const argTypes = {
     defaultValue: false,
     control: {
       type: 'boolean',
-    }
+    },
   },
   min: {
     type: { name: 'number', required: false },
