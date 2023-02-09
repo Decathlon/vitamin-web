@@ -49,6 +49,13 @@
    */
   export let step = 1;
 
+  /**
+   * The size of the quantity.
+   * @type {'small' | 'medium'}
+   * @defaultValue 'medium'
+   */
+  export let size = 'medium';
+
   let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
@@ -75,6 +82,7 @@
 
   $: componentClass = cn(
     'vtmn-quantity',
+    size && `vtmn-quantity_size--${size}`,
     fullWidth && 'vtmn-quantity--full-width',
     className,
   );
@@ -89,6 +97,7 @@
       variant="secondary"
       iconAlone="subtract-line"
       aria-label="subtract"
+      {size}
     />
     <input
       type="number"
@@ -108,6 +117,7 @@
       variant="secondary"
       iconAlone="add-line"
       aria-label="add"
+      {size}
     />
   </div>
   {#if error}
