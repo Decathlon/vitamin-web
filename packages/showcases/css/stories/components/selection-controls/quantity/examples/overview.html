@@ -27,13 +27,10 @@
 </div>
 
 <div class="block">
-  <div class="vtmn-quantity">
-    <label for="my-quantity-2">Label</label>
+  <div class="vtmn-quantity vtmn-quantity--full-width">
+    <label for="my-quantity-2">Label (full width)</label>
     <div class="vtmn-quantity_content">
-      <button
-        class="vtmn-btn vtmn-btn_variant--secondary vtmn-btn--icon-alone"
-        disabled
-      >
+      <button class="vtmn-btn vtmn-btn_variant--secondary vtmn-btn--icon-alone">
         <span class="vtmn-sr-only">
           substract one quantity of this article
         </span>
@@ -49,8 +46,8 @@
 </div>
 
 <div class="block">
-  <div class="vtmn-quantity" aria-disabled="true">
-    <label for="my-quantity-3" aria-disabled="true">Label</label>
+  <div class="vtmn-quantity">
+    <label for="my-quantity-3">Label</label>
     <div class="vtmn-quantity_content">
       <button
         class="vtmn-btn vtmn-btn_variant--secondary vtmn-btn--icon-alone"
@@ -61,7 +58,29 @@
         </span>
         <span class="vtmx-subtract-line" aria-hidden="true"></span>
       </button>
-      <input type="number" id="my-quantity-3" disabled />
+      <input type="number" id="my-quantity-3" />
+      <button class="vtmn-btn vtmn-btn_variant--secondary vtmn-btn--icon-alone">
+        <span class="vtmn-sr-only"> add one quantity of this article </span>
+        <span class="vtmx-add-line" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="block">
+  <div class="vtmn-quantity" aria-disabled="true">
+    <label for="my-quantity-4" aria-disabled="true">Label</label>
+    <div class="vtmn-quantity_content">
+      <button
+        class="vtmn-btn vtmn-btn_variant--secondary vtmn-btn--icon-alone"
+        disabled
+      >
+        <span class="vtmn-sr-only">
+          substract one quantity of this article
+        </span>
+        <span class="vtmx-subtract-line" aria-hidden="true"></span>
+      </button>
+      <input type="number" id="my-quantity-4" disabled />
       <button
         class="vtmn-btn vtmn-btn_variant--secondary vtmn-btn--icon-alone"
         disabled
@@ -75,7 +94,7 @@
 
 <div class="block">
   <div class="vtmn-quantity">
-    <label for="my-quantity-4">Label</label>
+    <label for="my-quantity-5">Label</label>
     <div class="vtmn-quantity_content">
       <button class="vtmn-btn vtmn-btn_variant--secondary vtmn-btn--icon-alone">
         <span class="vtmn-sr-only">
@@ -85,7 +104,7 @@
       </button>
       <input
         type="number"
-        id="my-quantity-4"
+        id="my-quantity-5"
         value="-2"
         min="0"
         aria-describedby="quantity-helper-1"
@@ -114,7 +133,7 @@
   <div class="accessibility-highlight_container">
     <div class="accessibility-highlight_container_component">
       <div class="vtmn-quantity">
-        <label for="my-quantity-4">Label</label>
+        <label for="my-quantity-6">Label</label>
         <div class="vtmn-quantity_content">
           <button
             class="vtmn-btn vtmn-btn_variant--secondary vtmn-btn--icon-alone"
@@ -124,7 +143,7 @@
             </span>
             <span class="vtmx-subtract-line" aria-hidden="true"></span>
           </button>
-          <input type="number" id="my-quantity-4" />
+          <input type="number" id="my-quantity-6" />
           <button
             class="vtmn-btn vtmn-btn_variant--secondary vtmn-btn--icon-alone"
           >
