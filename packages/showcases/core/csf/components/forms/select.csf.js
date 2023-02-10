@@ -39,4 +39,10 @@ export const argTypes = {
     defaultValue: 'Label',
     control: { type: 'text' },
   },
+  border: {
+    type: { name: 'boolean', required: false },
+    description: 'The select has a border.',
+    defaultValue: true,
+    control: { type: 'boolean' },
+  },
 };

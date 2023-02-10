@@ -39,6 +39,10 @@ export default /*#__PURE__*/ defineComponent({
       type: String as PropType<string>,
       default: null,
     },
+    border: {
+      type: String as PropType<string>,
+      default: true,
+    },
   },
   emits: ['update:modelValue'],
   setup(props, { emit }) {
@@ -52,14 +56,12 @@ export default /*#__PURE__*/ defineComponent({
       }
     };
     return {
-      classes: computed(() => ({
-        'vtmn-text-input': true,
-        'vtmn-text-input--error': props.error,
-        'vtmn-text-input--valid': props.valid,
+      containerClasses: computed(() => ({
+        'vtmn-select_container': true,
+        'vtmn-select--no-border': !props.border,
       })),
-      helperClasses: computed(() => ({
-        'vtmn-text-input_helper-text': true,
-        'vtmn-text-input_helper-text--error': props.error,
+      classes: computed(() => ({
+        'vtmn-select--error': props.error,
       })),
       handleChange,
     };
@@ -68,13 +70,13 @@ export default /*#__PURE__*/ defineComponent({
 </script>
 
 <template>
-  <div class="vtmn-select_container">
-    <label :v-if="labelText" class="vtmn-text-input_label" :for="identifier">
+  <div :class="containerClasses">
+    <label :v-if="labelText" :for="identifier">
       {{ labelText }}
     </label>
     <select
       :id="identifier"
-      class="vtmn-w-full vtmn-text-input vtmn-appearance-none"
+      :class="classes"
       :value="modelValue"
       :disabled="disabled"
       v-bind="$attrs"
@@ -92,9 +94,9 @@ export default /*#__PURE__*/ defineComponent({
     </select>
 
     <p
-      :v-if="error && errorText"
+      v-if="error && errorText"
       :id="`${identifier}-error-text`"
-      :class="helperClasses"
+      class="vtmn-select_error-text"
     >
       {{ errorText }}
     </p>
