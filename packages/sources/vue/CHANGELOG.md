@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.53.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.52.0...@vtmn/vue@0.53.0) (2023-02-10)
+
+### Features
+
+- add a prop to hide search button in Search component ([#1369](https://github.com/Decathlon/vitamin-web/issues/1369)) ([e59acd3](https://github.com/Decathlon/vitamin-web/commit/e59acd3a82712d8170714bd403baba9a7cae5606))
+
 # [0.52.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.51.0...@vtmn/vue@0.52.0) (2023-02-10)
 
 ### Features
