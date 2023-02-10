@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-quantity@0.10.0...@vtmn/css-quantity@0.10.1) (2023-02-10)
+
+### Bug Fixes
+
+- **@vtmn/css-quantity:** full-width ([#1371](https://github.com/Decathlon/vitamin-web/issues/1371)) ([638c73f](https://github.com/Decathlon/vitamin-web/commit/638c73fef3e5e982053d90d328661788188d6503))
+
 # [0.10.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-quantity@0.9.0...@vtmn/css-quantity@0.10.0) (2023-02-09)
 
 ### Features
