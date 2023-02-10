@@ -13,6 +13,12 @@
   export let error = undefined;
 
   /**
+   * @type {boolean} the select has a border
+   * @default true
+   */
+  export let border = true;
+
+  /**
    * @type {string} id of the select
    * @requires
    */
@@ -42,7 +48,11 @@
    */
   export { className as class };
 
-  $: componentClass = cn('vtmn-select_container', className);
+  $: componentClass = cn(
+    'vtmn-select_container',
+    !border && `vtmn-select--no-border`,
+    className,
+  );
 </script>
 
 <div class={componentClass}>

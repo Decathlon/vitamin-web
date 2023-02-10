@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/react",
-  "version": "0.63.0",
+  "version": "0.64.0",
   "description": "Decathlon Design System - Vitamin React components library",
   "keywords": [
     "design-system",
@@ -69,7 +69,7 @@
     "@vtmn/css-radio-button": "^0.8.5",
     "@vtmn/css-rating": "^0.5.18",
     "@vtmn/css-search": "^0.7.18",
-    "@vtmn/css-select": "^0.8.8",
+    "@vtmn/css-select": "^0.9.0",
     "@vtmn/css-skeleton": "^0.5.4",
     "@vtmn/css-snackbar": "^0.7.4",
     "@vtmn/css-tabs": "^0.7.5",

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.52.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.51.0...@vtmn/vue@0.52.0) (2023-02-10)
+
+### Features
+
+- add a new prop for Select component for border ([#1365](https://github.com/Decathlon/vitamin-web/issues/1365)) ([9e21b77](https://github.com/Decathlon/vitamin-web/commit/9e21b77407ca65715d290fdb5464380c70db330d))
+
 # [0.51.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.50.0...@vtmn/vue@0.51.0) (2023-02-09)
 
 ### Features
