@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '@vtmn/css-tabs/dist/index-with-vars.css';
+import '@vtmn/css-tabs';
 import { VtmnTabsAlign, VtmnTabsSize } from './types';
 import { VtmnDivider } from '../../../components/structure/VtmnDivider';
 import clsx from 'clsx';

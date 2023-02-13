@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '@vtmn/css-navbar/dist/index-with-vars.css';
+import '@vtmn/css-navbar';
 
 export interface VtmnNavbarProps extends React.ComponentPropsWithoutRef<'nav'> {
   /**

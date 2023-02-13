@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '@vtmn/css-breadcrumb/dist/index-with-vars.css';
+import '@vtmn/css-breadcrumb';
 import clsx from 'clsx';
 
 export interface VtmnBreadcrumbProps

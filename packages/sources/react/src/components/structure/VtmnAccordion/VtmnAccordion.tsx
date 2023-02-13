@@ -1,6 +1,6 @@
 import * as React from 'react';
 import clsx from 'clsx';
-import '@vtmn/css-accordion/dist/index-with-vars.css';
+import '@vtmn/css-accordion';
 
 export interface VtmnAccordionProps
   extends React.ComponentPropsWithoutRef<'details'> {

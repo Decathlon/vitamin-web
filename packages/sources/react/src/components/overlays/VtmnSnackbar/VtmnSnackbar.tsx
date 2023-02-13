@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '@vtmn/css-snackbar/dist/index-with-vars.css';
+import '@vtmn/css-snackbar';
 import clsx from 'clsx';
 import { VtmnButton } from '../../actions/VtmnButton';
 

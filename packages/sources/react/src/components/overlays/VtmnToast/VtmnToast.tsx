@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '@vtmn/css-toast/dist/index-with-vars.css';
+import '@vtmn/css-toast';
 import clsx from 'clsx';
 import { VtmnButton } from '../../actions/VtmnButton';
 

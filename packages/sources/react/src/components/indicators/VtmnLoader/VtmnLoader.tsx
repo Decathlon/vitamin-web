@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '@vtmn/css-loader/dist/index-with-vars.css';
+import '@vtmn/css-loader';
 import { VtmnLoaderSize } from './types';
 
 export interface VtmnLoaderProps extends React.ComponentPropsWithoutRef<'div'> {

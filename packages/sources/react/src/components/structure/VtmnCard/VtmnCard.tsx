@@ -1,6 +1,6 @@
 import * as React from 'react';
 import clsx from 'clsx';
-import '@vtmn/css-card/dist/index-with-vars.css';
+import '@vtmn/css-card';
 import { VtmnCardVariant } from './types';
 
 export interface VtmnCardProps extends React.ComponentPropsWithoutRef<'div'> {

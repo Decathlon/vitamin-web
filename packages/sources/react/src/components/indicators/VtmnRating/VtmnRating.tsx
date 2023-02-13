@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import '@vtmn/css-rating/dist/index-with-vars.css';
+import '@vtmn/css-rating';
 import * as React from 'react';
 import { VtmnRatingSize } from './types';
 

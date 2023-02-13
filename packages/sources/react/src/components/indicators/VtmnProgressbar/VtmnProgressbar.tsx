@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '@vtmn/css-progressbar/dist/index-with-vars.css';
+import '@vtmn/css-progressbar';
 import clsx from 'clsx';
 import {
   VtmnProgressbarVariant,

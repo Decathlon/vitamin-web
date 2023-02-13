@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '@vtmn/css-price/dist/index-with-vars.css';
+import '@vtmn/css-price';
 import { VtmnPriceVariant, VtmnPriceSize } from './types';
 import clsx from 'clsx';
 

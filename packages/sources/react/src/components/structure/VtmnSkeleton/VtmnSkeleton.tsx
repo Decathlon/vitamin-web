@@ -1,6 +1,6 @@
 import * as React from 'react';
 import clsx from 'clsx';
-import '@vtmn/css-skeleton/dist/index-with-vars.css';
+import '@vtmn/css-skeleton';
 import { VtmnSkeletonShape } from './types';
 
 export interface VtmnSkeletonProps

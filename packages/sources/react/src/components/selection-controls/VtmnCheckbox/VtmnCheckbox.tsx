@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '@vtmn/css-checkbox/dist/index-with-vars.css';
+import '@vtmn/css-checkbox';
 
 export interface VtmnCheckboxProps
   extends React.ComponentPropsWithoutRef<'input'> {

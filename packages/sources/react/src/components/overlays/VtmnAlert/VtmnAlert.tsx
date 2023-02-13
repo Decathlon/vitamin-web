@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '@vtmn/css-alert/dist/index-with-vars.css';
+import '@vtmn/css-alert';
 import { VtmnAlertVariant } from './types';
 import clsx from 'clsx';
 import { VtmnButton } from '../../actions/VtmnButton';

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import clsx from 'clsx';
-import '@vtmn/css-chip/dist/index-with-vars.css';
+import '@vtmn/css-chip';
 import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
 import { VtmnChipSize, VtmnChipVariant } from './types';
 import { VtmnIcon } from '../../../guidelines/iconography/VtmnIcon/VtmnIcon';

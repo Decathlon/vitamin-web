@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '@vtmn/css-link/dist/index-with-vars.css';
+import '@vtmn/css-link';
 import clsx from 'clsx';
 import { VtmnLinkSize } from './types';
 

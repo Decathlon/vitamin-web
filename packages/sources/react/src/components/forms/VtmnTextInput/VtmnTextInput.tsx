@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '@vtmn/css-text-input/dist/index-with-vars.css';
+import '@vtmn/css-text-input';
 import clsx from 'clsx';
 import { VtmnIcon } from '../../../guidelines/iconography/VtmnIcon';
 import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';

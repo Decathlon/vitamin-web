@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '@vtmn/css-tooltip/dist/index-with-vars.css';
+import '@vtmn/css-tooltip';
 import { VtmnTooltipPosition } from './types';
 import clsx from 'clsx';
 

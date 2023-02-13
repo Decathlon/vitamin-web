@@ -1,4 +1,4 @@
-import '@vtmn/css-select/dist/index-with-vars.css';
+import '@vtmn/css-select';
 import clsx from 'clsx';
 import React from 'react';
 

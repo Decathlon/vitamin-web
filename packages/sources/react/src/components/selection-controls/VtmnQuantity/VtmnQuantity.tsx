@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '@vtmn/css-quantity/dist/index-with-vars.css';
+import '@vtmn/css-quantity';
 import clsx from 'clsx';
 import { VtmnButton } from '../../actions/VtmnButton/VtmnButton';
 import { VtmnQuantitySize } from './types';

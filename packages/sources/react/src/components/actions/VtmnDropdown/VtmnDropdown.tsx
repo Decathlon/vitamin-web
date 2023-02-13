@@ -1,5 +1,5 @@
 import * as React from 'react';
-import '@vtmn/css-dropdown/dist/index-with-vars.css';
+import '@vtmn/css-dropdown';
 
 export interface VtmnDropdownProps
   extends React.ComponentPropsWithoutRef<'div'> {

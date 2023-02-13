@@ -1,6 +1,6 @@
 import * as React from 'react';
 import clsx from 'clsx';
-import '@vtmn/css-divider/dist/index-with-vars.css';
+import '@vtmn/css-divider';
 import { VtmnDividerOrientation, VtmnDividerTextPosition } from './types';
 
 export interface VtmnDividerProps

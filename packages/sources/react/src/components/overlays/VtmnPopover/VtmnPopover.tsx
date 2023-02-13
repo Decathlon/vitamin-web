@@ -1,4 +1,4 @@
-import '@vtmn/css-popover/dist/index-with-vars.css';
+import '@vtmn/css-popover';
 import * as React from 'react';
 import { VtmnPopoverPosition } from './types';
 

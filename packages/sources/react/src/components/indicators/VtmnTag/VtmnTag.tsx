@@ -1,4 +1,4 @@
-import '@vtmn/css-tag/dist/index-with-vars.css';
+import '@vtmn/css-tag';
 import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
 import * as React from 'react';
 import { VtmnIcon } from '../../../guidelines/iconography/VtmnIcon';
