@@ -5,21 +5,7 @@
     width: 100%;
   }
 
-  @media screen and (max-width: 1800px) {
-    .vtmn-navbar_right-navigation button.vtmn-btn--icon-alone:nth-child(1),
-    .vtmn-navbar_right-navigation button.vtmn-btn--icon-alone:nth-child(2) {
-      display: none;
-    }
-  }
-
-  @media screen and (max-width: 900px) {
-    .vtmn-navbar_right-navigation
-      button.vtmn-btn:not(.vtmn-btn--icon-alone):not(:last-child) {
-      display: none;
-    }
-  }
-
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 899px) {
     .vtmn-navbar {
       justify-content: space-between;
     }
@@ -28,13 +14,10 @@
       display: none;
     }
 
-    .vtmn-navbar_right-navigation button.vtmn-btn--icon-alone:nth-child(3),
-    .vtmn-navbar_right-navigation button.vtmn-btn--icon-alone:nth-child(4) {
+    .vtmn-navbar_right-navigation .vtmn-navbar_link:nth-child(1),
+    .vtmn-navbar_right-navigation .vtmn-navbar_link:nth-child(2),
+    .vtmn-navbar_right-navigation .vtmn-navbar_link:nth-child(3) {
       display: none;
-    }
-
-    .vtmn-navbar_logo > svg {
-      height: 80%;
     }
   }
 </style>
@@ -87,7 +70,7 @@
     </a>
 
     <div class="vtmn-navbar_middle-area">
-      <div class="vtmn-search vtmn-search_variant--default" role="search">
+      <div class="vtmn-search vtmn-search_variant--persistent" role="search">
         <label class="vtmn-sr-only" for="my-navbar-search-1"
           >Search a sport product</label
         >
@@ -114,32 +97,28 @@
       </div>
     </div>
     <div class="vtmn-navbar_right-navigation">
-      <button class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_variant--ghost">
-        <span class="vtmn-sr-only">Profile</span>
+      <a class="vtmn-navbar_link" href="#">
+        <span class="vtmx-question-line" aria-hidden="true"></span>
+        Contact us
+      </a>
+      <a class="vtmn-navbar_link" href="#">
+        <span class="vtmx-store-line" aria-hidden="true"></span>
+        Find a store
+      </a>
+      <a class="vtmn-navbar_link" href="#">
         <span class="vtmx-user-line" aria-hidden="true"></span>
-      </button>
-      <button class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_variant--ghost">
-        <span class="vtmn-sr-only">My cart</span>
+        Account
+      </a>
+      <a class="vtmn-navbar_link" href="#">
         <span class="vtmx-shopping-cart-line" aria-hidden="true"></span>
-      </button>
-      <button class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_variant--ghost">
-        <span class="vtmn-sr-only">My favorites</span>
-        <span class="vtmx-heart-line" aria-hidden="true"></span>
-      </button>
-      <button class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_variant--ghost">
-        <span class="vtmn-sr-only">My awards</span>
-        <span class="vtmx-award-fill" aria-hidden="true"></span>
-      </button>
-      <button class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_variant--ghost">
-        <span class="vtmn-sr-only">Disconnect</span>
-        <span class="vtmx-shut-down-line" aria-hidden="true"></span>
-      </button>
+        Cart
+      </a>
     </div>
   </nav>
 </div>
 
 <div class="block">
-  <nav class="vtmn-navbar" aria-label="Navbar with buttons">
+  <nav class="vtmn-navbar" aria-label="Navbar with icons">
     <div class="vtmn-navbar_left-navigation">
       <button
         class="vtmn-btn vtmn-btn--icon-alone vtmn-btn_variant--ghost"
@@ -157,13 +136,13 @@
     </a>
 
     <div class="vtmn-navbar_middle-area">
-      <div class="vtmn-search vtmn-search_variant--default" role="search">
-        <label class="vtmn-sr-only" for="my-navbar-search-2"
+      <div class="vtmn-search vtmn-search_variant--persistent" role="search">
+        <label class="vtmn-sr-only" for="my-navbar-search-1"
           >Search a sport product</label
         >
         <input
           type="search"
-          id="my-navbar-search-2"
+          id="my-navbar-search-1"
           placeholder="Search a sport product"
           title="Search a sport product"
         />
@@ -172,28 +151,34 @@
             class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--medium vtmn-btn--icon-alone"
           >
             <span class="vtmn-sr-only">Clean input</span>
-            <span class="vtmx-close-line"></span>
+            <span class="vtmx-close-line" aria-hidden="true"></span>
           </button>
           <button
             class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--medium vtmn-btn--icon-alone"
           >
             <span class="vtmn-sr-only">Search</span>
-            <span class="vtmx-search-line"></span>
+            <span class="vtmx-search-line" aria-hidden="true"></span>
           </button>
         </div>
       </div>
     </div>
     <div class="vtmn-navbar_right-navigation">
-      <button class="vtmn-btn vtmn-btn_variant--ghost vtmn-btn_size--small">
-        Button 1
-      </button>
-      <button class="vtmn-btn vtmn-btn_size--small">Button 2</button>
-      <button
-        class="vtmn-btn vtmn-btn--icon-right vtmn-btn_variant--conversion vtmn-btn_size--small"
-      >
-        Button 3
-        <span aria-hidden="true" class="vtmx-shopping-cart-line"></span>
-      </button>
+      <a class="vtmn-navbar_link vtmn-navbar_link--icon-alone" href="#">
+        <span class="vtmx-question-line" aria-hidden="true"></span>
+        <span class="vtmn-sr-only">Contact us</span>
+      </a>
+      <a class="vtmn-navbar_link vtmn-navbar_link--icon-alone" href="#">
+        <span class="vtmx-store-line" aria-hidden="true"></span>
+        <span class="vtmn-sr-only">Find a store</span>
+      </a>
+      <a class="vtmn-navbar_link vtmn-navbar_link--icon-alone" href="#">
+        <span class="vtmx-user-line" aria-hidden="true"></span>
+        <span class="vtmn-sr-only">Account</span>
+      </a>
+      <a class="vtmn-navbar_link vtmn-navbar_link--icon-alone" href="#">
+        <span class="vtmx-shopping-cart-line" aria-hidden="true"></span>
+        <span class="vtmn-sr-only">Cart</span>
+      </a>
     </div>
   </nav>
 </div>

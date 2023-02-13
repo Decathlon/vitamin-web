@@ -1,5 +1,5 @@
 <script lang="ts">
-import '@vtmn/css-search/dist/index-with-vars.css';
+import '@vtmn/css-navbar/dist/index-with-vars.css';
 import { defineComponent, PropType } from 'vue';
 
 export default /*#__PURE__*/ defineComponent({

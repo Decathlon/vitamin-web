@@ -4,7 +4,12 @@
     argTypes,
     parameters,
   } from '@vtmn/showcase-core/csf/components/navigation/navbar.csf';
-  import { VtmnButton, VtmnNavbar, VtmnSearch } from '@vtmn/svelte';
+  import {
+    VtmnButton,
+    VtmnNavbar,
+    VtmnNavbarLink,
+    VtmnSearch,
+  } from '@vtmn/svelte';
 </script>
 
 <Meta
@@ -46,7 +51,7 @@
   </div>
 </Story>
 
-<Story name="With menu and buttons" let:args>
+<Story name="With menu and links" let:args>
   <div style="width: 800px; display: flex; justify-content: center">
     <VtmnNavbar {...args}>
       <svelte:fragment slot="left-nav">
@@ -88,17 +93,14 @@
       </svelte:fragment>
 
       <svelte:fragment slot="right-nav">
-        <VtmnButton iconAlone="heart-line" variant="ghost" />
-
-        <VtmnButton iconAlone="heart-line" variant="ghost" />
-
-        <VtmnButton iconAlone="heart-line" variant="ghost" />
+        <VtmnNavbarLink href="#" icon="user-line" label="Account" />
+        <VtmnNavbarLink href="#" icon="shopping-cart-line" label="Cart" />
       </svelte:fragment>
     </VtmnNavbar>
   </div>
 </Story>
 
-<Story name="With menu and button" let:args>
+<Story name="With menu and links (without label)" let:args>
   <div style="width: 800px; display: flex; justify-content: center">
     <VtmnNavbar {...args}>
       <svelte:fragment slot="left-nav">
@@ -140,11 +142,18 @@
       </svelte:fragment>
 
       <svelte:fragment slot="right-nav">
-        <VtmnButton variant="ghost">button 1</VtmnButton>
-
-        <VtmnButton class="vtmn-mx-2">button 2</VtmnButton>
-
-        <VtmnButton variant="conversion">button 3</VtmnButton>
+        <VtmnNavbarLink
+          href="#"
+          icon="user-line"
+          label="Account"
+          showLabel={false}
+        />
+        <VtmnNavbarLink
+          href="#"
+          icon="shopping-cart-line"
+          label="Cart"
+          showLabel={false}
+        />
       </svelte:fragment>
     </VtmnNavbar>
   </div>
