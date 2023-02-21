@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-navbar@0.3.5...@vtmn/css-navbar@0.4.0) (2023-02-21)
+
+### Features
+
+- add navbar link ([#1372](https://github.com/Decathlon/vitamin-web/issues/1372)) ([6b8a621](https://github.com/Decathlon/vitamin-web/commit/6b8a621c8b0c2eb0c99db88afedb4d5f1b0697ba))
+
 ## [0.3.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-navbar@0.3.4...@vtmn/css-navbar@0.3.5) (2022-10-19)
 
 ### Bug Fixes
