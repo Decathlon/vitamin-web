@@ -21,6 +21,7 @@ export { default as VtmnBreadcrumb } from './navigation/VtmnBreadcrumb/VtmnBread
 export { default as VtmnBreadcrumbItem } from './navigation/VtmnBreadcrumbItem/VtmnBreadcrumbItem.svelte';
 export { default as VtmnSearch } from './navigation/VtmnSearch/VtmnSearch.svelte';
 export { default as VtmnNavbar } from './navigation/VtmnNavbar/VtmnNavbar.svelte';
+export { default as VtmnNavbarLink } from './navigation/VtmnNavbarLink/VtmnNavbarLink.svelte';
 export { default as VtmnTabs } from './navigation/VtmnTabs/VtmnTabs.svelte';
 export { default as VtmnTabsItem } from './navigation/VtmnTabsItem/VtmnTabsItem.svelte';
 

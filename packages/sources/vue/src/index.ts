@@ -31,6 +31,7 @@ export { default as VtmnTag } from './components/indicators/VtmnTag';
 export { default as VtmnBreadcrumb } from './components/navigation/VtmnBreadcrumb';
 export { default as VtmnBreadcrumbItem } from './components/navigation/VtmnBreadcrumbItem';
 export { default as VtmnNavbar } from './components/navigation/VtmnNavbar';
+export { default as VtmnNavbarLink } from './components/navigation/VtmnNavbarLink';
 export { default as VtmnSearch } from './components/navigation/VtmnSearch';
 export { default as VtmnTabs } from './components/navigation/VtmnTabs';
 export { default as VtmnTabsItem } from './components/navigation/VtmnTabsItem';

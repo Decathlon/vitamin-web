@@ -45,6 +45,8 @@ export { VtmnBreadcrumbItem } from './components/navigation/VtmnBreadcrumb';
 export type { VtmnBreadcrumbItemProps } from './components/navigation/VtmnBreadcrumb';
 export { VtmnNavbar } from './components/navigation/VtmnNavbar/VtmnNavbar';
 export type { VtmnNavbarProps } from './components/navigation/VtmnNavbar/VtmnNavbar';
+export { VtmnNavbarLink } from './components/navigation/VtmnNavbarLink/VtmnNavbarLink';
+export type { VtmnNavbarLinkProps } from './components/navigation/VtmnNavbarLink/VtmnNavbarLink';
 export { VtmnSearch } from './components/navigation/VtmnSearch/VtmnSearch';
 export type { VtmnSearchProps } from './components/navigation/VtmnSearch/VtmnSearch';
 export { VtmnTabs } from './components/navigation/VtmnTabs';

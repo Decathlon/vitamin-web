@@ -1,12 +1,15 @@
 @import '@vtmn/css-design-tokens/src/base-colors';
 @import '@vtmn/css-design-tokens/src/themes/default';
 @import '@vtmn/css-design-tokens/src/typography';
+@import '@vtmn/css-design-tokens/src/radius';
+@import '@vtmn/css-design-tokens/src/shadows';
+@import '@vtmn/css-design-tokens/src/transitions';
 @import '@vtmn/css-design-tokens/src/opacities';
 
 .vtmn-navbar {
   box-sizing: border-box;
   inline-size: 100%;
-  block-size: rem(64px);
+  block-size: rem(82px);
   background: var(--vtmn-semantic-color_background-primary);
   padding-block: rem(12px);
   padding-inline: rem(16px);
@@ -21,7 +24,7 @@
 }
 
 .vtmn-navbar_left-navigation {
-  block-size: 100%;
+  block-size: rem(48px);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -41,9 +44,16 @@
 
 .vtmn-navbar_logo {
   block-size: 100%;
+  height: rem(48px);
   margin-inline-end: rem(8px);
   display: flex;
   align-items: center;
+  outline: 0;
+}
+
+.vtmn-navbar_logo:focus-visible {
+  box-shadow: var(--vtmn-shadow_focus-visible);
+  transition: var(--vtmn-transition_focus-visible);
 }
 
 .vtmn-navbar_logo > * {
@@ -97,4 +107,50 @@
   align-items: center;
   justify-content: center;
   min-inline-size: fit-content;
+}
+
+.vtmn-navbar_link {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: rem(104px);
+  padding: rem(12px);
+  font-size: var(--vtmn-typo_text-3-font-size);
+  line-height: var(--vtmn-typo_text-3-line-height);
+  outline: 0;
+  border-radius: var(--vtmn-radius_100);
+  text-decoration: none;
+  text-align: center;
+  font-family: var(--vtmn-typo_font-family);
+  color: var(--vtmn-semantic-color_content-primary);
+}
+
+.vtmn-navbar_link:hover {
+  background-color: var(--vtmn-semantic-color_hover-primary);
+}
+
+.vtmn-navbar_link:active {
+  background-color: var(--vtmn-semantic-color_active-primary);
+}
+
+.vtmn-navbar_link:focus-visible {
+  box-shadow: var(--vtmn-shadow_focus-visible);
+  transition: var(--vtmn-transition_focus-visible);
+}
+
+.vtmn-navbar_link span[class^='vtmx-'] {
+  font-size: rem(24px);
+  margin-bottom: rem(4px);
+}
+
+.vtmn-navbar_link.vtmn-navbar_link--icon-alone {
+  width: rem(48px);
+  height: rem(48px);
+}
+
+.vtmn-navbar_link.vtmn-navbar_link--icon-alone span[class^='vtmx-'] {
+  margin-bottom: 0;
 }

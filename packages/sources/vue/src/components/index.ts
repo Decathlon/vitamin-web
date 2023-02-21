@@ -16,6 +16,7 @@ import VtmnRating from './indicators/VtmnRating';
 import VtmnBreadcrumb from './navigation/VtmnBreadcrumb';
 import VtmnBreadcrumbItem from './navigation/VtmnBreadcrumbItem';
 import VtmnNavbar from './navigation/VtmnNavbar';
+import VtmnNavbarLink from './navigation/VtmnNavbarLink';
 import VtmnSearch from './navigation/VtmnSearch';
 import VtmnTabs from './navigation/VtmnTabs';
 import VtmnTabsItem from './navigation/VtmnTabsItem';
@@ -56,6 +57,7 @@ export {
   VtmnBreadcrumb,
   VtmnBreadcrumbItem,
   VtmnNavbar,
+  VtmnNavbarLink,
   VtmnSearch,
   VtmnTabs,
   VtmnTabsItem,
