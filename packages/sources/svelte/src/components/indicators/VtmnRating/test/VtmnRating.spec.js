@@ -1,6 +1,7 @@
 import '@testing-library/jest-dom';
 import { fireEvent, render } from '@testing-library/svelte';
 import VtmnRating from '../VtmnRating.svelte';
+import { computeRatingFill } from '../vtmnRating.util';
 
 describe('VtmnRating', () => {
   const getRating = (container) =>
@@ -228,6 +229,20 @@ describe('VtmnRating', () => {
       expect(spans[3]).toHaveClass('vtmx-star-line');
       expect(spans[4]).toHaveClass('vtmx-star-line');
     });
+    test("Should have 5 span with class 'vtmx-star-fill' if rating > 4.5 and compact = false", () => {
+      const { container } = render(VtmnRating, {
+        name: 'rating',
+        readonly: true,
+        compact: false,
+        value: 4.6,
+      });
+      const spans = getReadonlyPresentations(container);
+      expect(spans.length).toEqual(5);
+      for (let i = 0, ii = spans.length; i < ii; i++) {
+        expect(spans[i]).toBeVisible();
+        expect(spans[i]).toHaveClass('vtmx-star-fill');
+      }
+    });
     test("Should have 5 span with class 'vtmx-star-fill' if rating = 5 and compact = false", () => {
       const { container } = render(VtmnRating, {
         name: 'rating',
@@ -338,6 +353,24 @@ describe('VtmnRating', () => {
       await fireEvent.click(inputs[1]);
       expect(inputs[1].checked).toEqual(true);
       expect(getInteractive(container)).toHaveAttribute('data-rating', '2');
+    });
+  });
+
+  describe('computeRatingFill', () => {
+    test('Should return line if isCompact and rattingValue is 0', () => {
+      expect(computeRatingFill(true, 1, 0)).toBe('line');
+    });
+    test('Should return fill if isCompact and rattingValue is > 0', () => {
+      expect(computeRatingFill(true, 1, 0.1)).toBe('fill');
+    });
+    test('Should return fill if current position < ratingValue', () => {
+      expect(computeRatingFill(false, 1, 2)).toBe('fill');
+    });
+    test('Should return half-fill if current position is floating value and ratingValue < position', () => {
+      expect(computeRatingFill(false, 1, 0.5)).toBe('half-fill');
+    });
+    test('Should return line if current value < position', () => {
+      expect(computeRatingFill(false, 4, 1)).toBe('line');
     });
   });
 });
