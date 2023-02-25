@@ -2,10 +2,10 @@ import { isFloat } from '../../../utils/math';
 
 /**
  * Compute the vtmn-icon who has to be displayed on the position
- * @param isCompact if the rating are compact
- * @param currentRatingStarPosition current position of the star
- * @param ratingValue value of the rating
- * @returns {string} icon id
+ * @param {boolean} isCompact If the rating are compact
+ * @param {number} currentRatingStarPosition Current position of the star on the component (range [1-5])
+ * @param {number} ratingValue Value of the rating
+ * @returns {'line'|'half-fill'|'fill'} Vtmn icon id
  */
 export const computeRatingFill = (
   isCompact,
