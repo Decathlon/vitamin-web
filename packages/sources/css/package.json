@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/css",
-  "version": "0.95.0",
+  "version": "0.95.1",
   "description": "Decathlon Design System - Vitamin global CSS styles library",
   "keywords": [
     "design-system",
@@ -64,7 +64,7 @@
     "@vtmn/css-snackbar": "^0.7.4",
     "@vtmn/css-tabs": "^0.7.5",
     "@vtmn/css-tag": "^0.8.0",
-    "@vtmn/css-tailwind-preset": "^0.35.49",
+    "@vtmn/css-tailwind-preset": "^0.35.50",
     "@vtmn/css-text-input": "^0.17.4",
     "@vtmn/css-toast": "^0.7.4",
     "@vtmn/css-toggle": "^0.8.4",
