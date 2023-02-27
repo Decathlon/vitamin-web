@@ -120,7 +120,7 @@ _You will need a plugin to understand `@import` statements. If you use PostCSS, 
 
 For more details about Tailwind presets, [see Tailwind CSS documentation about presets here](https://tailwindcss.com/docs/presets).
 
-Important: our Taiwind CSS preset has a prefix in order to avoid conflicts with existing Tailwind CSS project. So, to use our library, you will have to prefix all CSS utility classes with `vtmn-`.
+Important: our Tailwind CSS preset has a prefix in order to avoid conflicts with existing Tailwind CSS project. So, to use our library, you will have to prefix all CSS utility classes with `vtmn-`.
 
 To know all the use cases and their associated code, [check out the showcase here](https://decathlon.github.io/vitamin-web/@vtmn/showcase-css).
 
