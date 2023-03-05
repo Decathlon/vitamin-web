@@ -1,8 +1,9 @@
 import * as React from 'react';
 import '@vtmn/css-dropdown/dist/index-with-vars.css';
+import { VtmnDropdownItem } from '.';
 
 export interface VtmnDropdownProps
-  extends React.ComponentPropsWithoutRef<'div'> {
+  extends Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
   /**
    * The label of the dropdown.
    * @defaultValue undefined
@@ -26,6 +27,13 @@ export interface VtmnDropdownProps
    * @defaultValue undefined
    */
   children?: React.ReactNode;
+
+  /**
+   * Called when an item in the list has changed
+   * @type {void}
+   * @defaultValue undefined
+   */
+  onChange?: (value: string) => void;
 }
 
 export const VtmnDropdown = ({
@@ -34,6 +42,7 @@ export const VtmnDropdown = ({
   disabled = false,
   className,
   children,
+  onChange,
   ...props
 }: VtmnDropdownProps) => {
   return (
@@ -46,6 +55,20 @@ export const VtmnDropdown = ({
           role="group"
           aria-labelledby={props['id']}
         >
+          {/**
+           * Renders every child and inject onChange in VtmnDropdownItem
+           */}
+          {React.Children.map(children, (child: React.ReactNode) =>
+            React.isValidElement(child) && child.type === VtmnDropdownItem
+              ? React.cloneElement(child, {
+                  ...child.props,
+                  onChange: (ev: React.ChangeEvent<HTMLDivElement>) => {
+                    onChange && onChange(child.props.value);
+                    child.props.onChange && child.props.onChange(ev);
+                  },
+                })
+              : child,
+          )}
           {children}
         </div>
       </details>
