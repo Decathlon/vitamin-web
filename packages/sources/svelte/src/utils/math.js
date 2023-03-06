@@ -13,3 +13,7 @@ export function uuid() {
     return v.toString(16);
   });
 }
+
+export function roundToNearestHalf(number) {
+  return Math.round(number * 2) / 2;
+}

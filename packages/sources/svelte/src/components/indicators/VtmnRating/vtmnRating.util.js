@@ -1,4 +1,4 @@
-import { isFloat } from '../../../utils/math';
+import { isFloat, roundToNearestHalf } from '../../../utils/math';
 
 /**
  * Compute the vtmn-icon who has to be displayed on the position
@@ -15,15 +15,13 @@ export const computeRatingFill = (
   if (isCompact) {
     return ratingValue === 0 ? 'line' : 'fill';
   }
-  if (currentRatingStarPosition <= ratingValue || 4.5 < ratingValue) {
+
+  const computedRating = roundToNearestHalf(ratingValue);
+  if (currentRatingStarPosition <= computedRating) {
     return 'fill';
   }
-  if (
-    ratingValue < currentRatingStarPosition &&
-    isFloat(ratingValue) &&
-    Math.ceil(ratingValue) === currentRatingStarPosition
-  ) {
-    return 'half-fill';
-  }
-  return 'line';
+  return Math.ceil(computedRating) === currentRatingStarPosition &&
+    isFloat(computedRating)
+    ? 'half-fill'
+    : 'line';
 };

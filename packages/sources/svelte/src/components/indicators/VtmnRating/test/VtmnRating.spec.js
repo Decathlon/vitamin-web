@@ -207,7 +207,7 @@ describe('VtmnRating', () => {
       }
       expect(spans[0]).toHaveClass('vtmx-star-fill');
       expect(spans[1]).toHaveClass('vtmx-star-fill');
-      expect(spans[2]).toHaveClass('vtmx-star-half-fill');
+      expect(spans[2]).toHaveClass('vtmx-star-line');
       expect(spans[3]).toHaveClass('vtmx-star-line');
       expect(spans[4]).toHaveClass('vtmx-star-line');
     });
@@ -225,16 +225,16 @@ describe('VtmnRating', () => {
       }
       expect(spans[0]).toHaveClass('vtmx-star-fill');
       expect(spans[1]).toHaveClass('vtmx-star-fill');
-      expect(spans[2]).toHaveClass('vtmx-star-half-fill');
+      expect(spans[2]).toHaveClass('vtmx-star-fill');
       expect(spans[3]).toHaveClass('vtmx-star-line');
       expect(spans[4]).toHaveClass('vtmx-star-line');
     });
-    test("Should have 5 span with class 'vtmx-star-fill' if rating > 4.5 and compact = false", () => {
+    test("Should have 5 span with class 'vtmx-star-fill' if rating > 4.75 and compact = false", () => {
       const { container } = render(VtmnRating, {
         name: 'rating',
         readonly: true,
         compact: false,
-        value: 4.6,
+        value: 4.75,
       });
       const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(5);
