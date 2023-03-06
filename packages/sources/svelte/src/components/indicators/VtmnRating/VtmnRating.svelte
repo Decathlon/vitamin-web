@@ -1,8 +1,8 @@
 <script>
   import VtmnIcon from '../../../guidelines/iconography/VtmnIcon/VtmnIcon.svelte';
   import { cn } from '../../../utils/classnames';
-  import { isFloat } from '../../../utils/math';
   import { VTMN_RATING_SIZE } from './enum';
+  import { computeRatingFill } from './vtmnRating.util';
 
   /**
    * @type {string} name used on interactive mode to name the inputs
@@ -70,23 +70,6 @@
     className,
   );
   $: starsCnt = compact && readonly ? 1 : 5;
-
-  const computeRatingFill = (currentRatingStar) => {
-    if (starsCnt === 1) {
-      return value === 0 ? 'line' : 'fill';
-    }
-    if (currentRatingStar <= value) {
-      return 'fill';
-    }
-    if (
-      value < currentRatingStar &&
-      isFloat(value) &&
-      Math.ceil(value) === currentRatingStar
-    ) {
-      return 'half-fill';
-    }
-    return 'line';
-  };
 </script>
 
 <div class={componentClass} aria-disabled={disabled} {...$$restProps}>
@@ -94,7 +77,7 @@
     {#each Array(starsCnt) as _, index}
       {@const position = index + 1}
       <VtmnIcon
-        value={`star-${computeRatingFill(position)}`}
+        value={`star-${computeRatingFill(compact, position, value)}`}
         role="presentation"
       />
     {/each}
