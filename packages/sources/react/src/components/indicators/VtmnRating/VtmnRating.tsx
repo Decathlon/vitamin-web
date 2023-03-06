@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import '@vtmn/css-rating/dist/index-with-vars.css';
 import * as React from 'react';
 import { VtmnRatingSize } from './types';
+import { computeRatingFill } from './utils';
 
 export interface VtmnRatingProps
   extends Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
@@ -154,13 +155,7 @@ export const VtmnRating = ({
             Array.from(Array(5).keys()).map((index) => (
               <span
                 key={`rating-readonly-${index + 1}`}
-                className={
-                  index <= position && position - index >= 0.5
-                    ? position - index < 1 && position - index >= 0.5
-                      ? 'vtmx-star-half-fill'
-                      : 'vtmx-star-fill'
-                    : 'vtmx-star-line'
-                }
+                className={`vtmx-star-${computeRatingFill(index + 1, value)}`}
                 role="presentation"
               />
             ))

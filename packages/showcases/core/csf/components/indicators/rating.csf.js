@@ -59,7 +59,7 @@ export const argTypes = {
     description:
       'Rating value. NB: if readonly is set to false, the value step is 1.',
     defaultValue: 0,
-    control: { type: 'range', min: 0, max: 5, step: 0.5 },
+    control: { type: 'range', min: 0, max: 5, step: 0.1 },
   },
   comments: {
     type: { name: 'string', required: false },

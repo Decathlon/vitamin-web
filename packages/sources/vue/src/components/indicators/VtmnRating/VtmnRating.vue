@@ -3,6 +3,7 @@ import VtmnIcon from '../../../guidelines/iconography/VtmnIcon';
 import '@vtmn/css-rating/dist/index-with-vars.css';
 import { computed, defineComponent, PropType, reactive } from 'vue';
 import { VtmnRatingSize } from './types';
+import { computeRatingFill } from './utils';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnRating',
@@ -50,6 +51,7 @@ export default /*#__PURE__*/ defineComponent({
     props = reactive(props);
 
     return {
+      computeRatingFill,
       styleObject: {
         color: 'inherit',
         fontSize: 'none',
@@ -88,13 +90,7 @@ export default /*#__PURE__*/ defineComponent({
     <template v-else-if="!compact">
       <template v-for="i in 5" :key="i">
         <VtmnIcon
-          :value="
-            i <= value
-              ? 'star-fill'
-              : i > value && i - 0.5 <= value
-              ? 'star-half-fill'
-              : 'star-line'
-          "
+          :value="computeRatingFill(i, value)"
           :style="styleObject"
           role="presentation"
         />
