@@ -69,7 +69,6 @@ export const VtmnDropdown = ({
                 })
               : child,
           )}
-          {children}
         </div>
       </details>
     </div>
