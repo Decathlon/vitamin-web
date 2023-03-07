@@ -24,6 +24,7 @@ export const argTypes = {
     control: {
       type: 'boolean',
     },
+    if: { arg: 'readonly' },
   },
   size: {
     type: { name: 'string', required: false },
@@ -51,12 +52,14 @@ export const argTypes = {
     description: 'Display compact mode. Only if readonly is true.',
     defaultValue: false,
     control: { type: 'boolean' },
+    if: { arg: 'readonly' },
   },
   value: {
     type: { name: 'number', required: false },
-    description: 'Rating value.',
+    description:
+      'Rating value. NB: if readonly is set to false, the value step is 1.',
     defaultValue: 0,
-    control: { type: 'range', min: 0, max: 5, step: 0.5 },
+    control: { type: 'range', min: 0, max: 5, step: 0.1 },
   },
   comments: {
     type: { name: 'string', required: false },
@@ -64,11 +67,13 @@ export const argTypes = {
       'Comments displayed after the rating. Only if readonly is true.',
     defaultValue: undefined,
     control: { type: 'text' },
+    if: { arg: 'readonly' },
   },
   showValue: {
     type: { name: 'boolean', required: false },
     description: 'Display the rating value. Only if readonly is true.',
     defaultValue: false,
     control: { type: 'boolean' },
+    if: { arg: 'readonly' },
   },
 };

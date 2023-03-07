@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.54.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.54.0...@vtmn/vue@0.54.1) (2023-03-06)
+
+### Bug Fixes
+
+- **@vtmn/svelte, @vtmn/react, @vtmn/vue:** fix rounded value on `VtmnRating` ([#1378](https://github.com/Decathlon/vitamin-web/issues/1378)) ([a6334b7](https://github.com/Decathlon/vitamin-web/commit/a6334b74c735b79811597d32d3d41643bb536f1d))
+
 # [0.54.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.53.1...@vtmn/vue@0.54.0) (2023-02-21)
 
 ### Features
