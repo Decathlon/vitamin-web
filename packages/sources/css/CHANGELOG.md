@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.96.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.95.2...@vtmn/css@0.96.0) (2023-03-09)
+
+### Features
+
+- **listItem:** add position relative ([#1383](https://github.com/Decathlon/vitamin-web/issues/1383)) ([ca23341](https://github.com/Decathlon/vitamin-web/commit/ca23341c3e39f6504f42f98c4262a650a76c8f17))
+- **listItem:** add position relative ([#1384](https://github.com/Decathlon/vitamin-web/issues/1384)) ([8382373](https://github.com/Decathlon/vitamin-web/commit/838237316c438ad345a3d6a46d3ceb1bfa0599ca))
+
 ## [0.95.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@0.95.1...@vtmn/css@0.95.2) (2023-03-09)
 
 **Note:** Version bump only for package @vtmn/css

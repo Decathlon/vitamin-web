@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.66.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.66.2...@vtmn/react@0.66.3) (2023-03-09)
+
+### Bug Fixes
+
+- **@vtmn/react:** add missing onChange event to `VtmnDropdown` ([#1380](https://github.com/Decathlon/vitamin-web/issues/1380)) ([266366b](https://github.com/Decathlon/vitamin-web/commit/266366b62f0b345004999054a9446fce5f5561fa))
+
 ## [0.66.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.66.1...@vtmn/react@0.66.2) (2023-03-09)
 
 **Note:** Version bump only for package @vtmn/react
