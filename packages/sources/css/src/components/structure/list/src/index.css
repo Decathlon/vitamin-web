@@ -84,7 +84,7 @@
 .vtmn-list_text {
   inline-size: 100%;
   display: flex;
-  position:relative;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   border-block-end: rem(1px) solid var(--vtmn-semantic-color_border-primary);
