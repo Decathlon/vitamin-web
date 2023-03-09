@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/react",
-  "version": "0.66.1",
+  "version": "0.66.2",
   "description": "Decathlon Design System - Vitamin React components library",
   "keywords": [
     "design-system",
@@ -33,7 +33,7 @@
     "start": "npm run build -- -w"
   },
   "dependencies": {
-    "@vtmn/icons": "^0.21.3"
+    "@vtmn/icons": "^0.21.4"
   },
   "devDependencies": {
     "@babel/core": "^7.17.12",
@@ -49,7 +49,7 @@
     "@types/react-dom": "^18.0.4",
     "@typescript-eslint/eslint-plugin": "^5.24.0",
     "@typescript-eslint/parser": "^5.24.0",
-    "@vtmn/css-accordion": "^0.5.14",
+    "@vtmn/css-accordion": "^0.5.15",
     "@vtmn/css-alert": "^0.8.6",
     "@vtmn/css-badge": "^0.13.2",
     "@vtmn/css-breadcrumb": "^0.7.7",
@@ -67,8 +67,8 @@
     "@vtmn/css-progressbar": "^0.7.4",
     "@vtmn/css-quantity": "^0.10.1",
     "@vtmn/css-radio-button": "^0.8.5",
-    "@vtmn/css-rating": "^0.5.18",
-    "@vtmn/css-search": "^0.7.18",
+    "@vtmn/css-rating": "^0.5.19",
+    "@vtmn/css-search": "^0.7.19",
     "@vtmn/css-select": "^0.9.0",
     "@vtmn/css-skeleton": "^0.5.4",
     "@vtmn/css-snackbar": "^0.7.4",
