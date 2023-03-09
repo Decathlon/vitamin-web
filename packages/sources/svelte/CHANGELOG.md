@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.66.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.66.2...@vtmn/svelte@0.66.3) (2023-03-09)
+
+**Note:** Version bump only for package @vtmn/svelte
+
 ## [0.66.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.66.1...@vtmn/svelte@0.66.2) (2023-03-06)
 
 ### Bug Fixes
