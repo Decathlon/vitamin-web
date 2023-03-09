@@ -1,8 +1,8 @@
 @font-face {
     font-family: "vitamix";
-    src: url("./vitamix.ttf?2ea1e90eb3fb123dbb0fb2bfdbebed4c") format("truetype"),
-url("./vitamix.woff?2ea1e90eb3fb123dbb0fb2bfdbebed4c") format("woff"),
-url("./vitamix.woff2?2ea1e90eb3fb123dbb0fb2bfdbebed4c") format("woff2");
+    src: url("./vitamix.ttf?8880a93e7dbb625d98d1ee364132f425") format("truetype"),
+url("./vitamix.woff?8880a93e7dbb625d98d1ee364132f425") format("woff"),
+url("./vitamix.woff2?8880a93e7dbb625d98d1ee364132f425") format("woff2");
 }
 
 [class^="vtmx-"], [class*=" vtmx-"] {
@@ -699,687 +699,693 @@ url("./vitamix.woff2?2ea1e90eb3fb123dbb0fb2bfdbebed4c") format("woff2");
 .vtmx-logout-line:before {
     content: "\f1e2";
 }
-.vtmx-mac-fill:before {
+.vtmx-loyalty-card-fill:before {
     content: "\f1e3";
 }
-.vtmx-mac-line:before {
+.vtmx-loyalty-card-line:before {
     content: "\f1e4";
 }
-.vtmx-macbook-fill:before {
+.vtmx-mac-fill:before {
     content: "\f1e5";
 }
-.vtmx-macbook-line:before {
+.vtmx-mac-line:before {
     content: "\f1e6";
 }
-.vtmx-mail-fill:before {
+.vtmx-macbook-fill:before {
     content: "\f1e7";
 }
-.vtmx-mail-line:before {
+.vtmx-macbook-line:before {
     content: "\f1e8";
 }
-.vtmx-mail-send-fill:before {
+.vtmx-mail-fill:before {
     content: "\f1e9";
 }
-.vtmx-mail-send-line:before {
+.vtmx-mail-line:before {
     content: "\f1ea";
 }
-.vtmx-map-pin-fill:before {
+.vtmx-mail-send-fill:before {
     content: "\f1eb";
 }
-.vtmx-map-pin-line:before {
+.vtmx-mail-send-line:before {
     content: "\f1ec";
 }
-.vtmx-mastercard-fill:before {
+.vtmx-map-pin-fill:before {
     content: "\f1ed";
 }
-.vtmx-mastercard-line:before {
+.vtmx-map-pin-line:before {
     content: "\f1ee";
 }
-.vtmx-menu-fill:before {
+.vtmx-mastercard-fill:before {
     content: "\f1ef";
 }
-.vtmx-menu-line:before {
+.vtmx-mastercard-line:before {
     content: "\f1f0";
 }
-.vtmx-message-fill:before {
+.vtmx-menu-fill:before {
     content: "\f1f1";
 }
-.vtmx-message-line:before {
+.vtmx-menu-line:before {
     content: "\f1f2";
 }
-.vtmx-messenger-fill:before {
+.vtmx-message-fill:before {
     content: "\f1f3";
 }
-.vtmx-messenger-line:before {
+.vtmx-message-line:before {
     content: "\f1f4";
 }
-.vtmx-mic-fill:before {
+.vtmx-messenger-fill:before {
     content: "\f1f5";
 }
-.vtmx-mic-line:before {
+.vtmx-messenger-line:before {
     content: "\f1f6";
 }
-.vtmx-mist-fill:before {
+.vtmx-mic-fill:before {
     content: "\f1f7";
 }
-.vtmx-mist-line:before {
+.vtmx-mic-line:before {
     content: "\f1f8";
 }
-.vtmx-money-cny-box-fill:before {
+.vtmx-mist-fill:before {
     content: "\f1f9";
 }
-.vtmx-money-cny-box-line:before {
+.vtmx-mist-line:before {
     content: "\f1fa";
 }
-.vtmx-money-dollar-box-fill:before {
+.vtmx-money-cny-box-fill:before {
     content: "\f1fb";
 }
-.vtmx-money-dollar-box-line:before {
+.vtmx-money-cny-box-line:before {
     content: "\f1fc";
 }
-.vtmx-money-euro-box-fill:before {
+.vtmx-money-dollar-box-fill:before {
     content: "\f1fd";
 }
-.vtmx-money-euro-box-line:before {
+.vtmx-money-dollar-box-line:before {
     content: "\f1fe";
 }
-.vtmx-money-pound-box-fill:before {
+.vtmx-money-euro-box-fill:before {
     content: "\f1ff";
 }
-.vtmx-money-pound-box-line:before {
+.vtmx-money-euro-box-line:before {
     content: "\f200";
 }
-.vtmx-moon-cloudy-fill:before {
+.vtmx-money-pound-box-fill:before {
     content: "\f201";
 }
-.vtmx-moon-cloudy-line:before {
+.vtmx-money-pound-box-line:before {
     content: "\f202";
 }
-.vtmx-moon-fill:before {
+.vtmx-moon-cloudy-fill:before {
     content: "\f203";
 }
-.vtmx-moon-line:before {
+.vtmx-moon-cloudy-line:before {
     content: "\f204";
 }
-.vtmx-more-2-fill:before {
+.vtmx-moon-fill:before {
     content: "\f205";
 }
-.vtmx-more-2-line:before {
+.vtmx-moon-line:before {
     content: "\f206";
 }
-.vtmx-more-fill:before {
+.vtmx-more-2-fill:before {
     content: "\f207";
 }
-.vtmx-more-line:before {
+.vtmx-more-2-line:before {
     content: "\f208";
 }
-.vtmx-music-2-fill:before {
+.vtmx-more-fill:before {
     content: "\f209";
 }
-.vtmx-music-2-line:before {
+.vtmx-more-line:before {
     content: "\f20a";
 }
-.vtmx-music-fill:before {
+.vtmx-music-2-fill:before {
     content: "\f20b";
 }
-.vtmx-music-line:before {
+.vtmx-music-2-line:before {
     content: "\f20c";
 }
-.vtmx-naver-fill:before {
+.vtmx-music-fill:before {
     content: "\f20d";
 }
-.vtmx-naver-line:before {
+.vtmx-music-line:before {
     content: "\f20e";
 }
-.vtmx-navigation-fill:before {
+.vtmx-naver-fill:before {
     content: "\f20f";
 }
-.vtmx-navigation-line:before {
+.vtmx-naver-line:before {
     content: "\f210";
 }
-.vtmx-notification-fill:before {
+.vtmx-navigation-fill:before {
     content: "\f211";
 }
-.vtmx-notification-line:before {
+.vtmx-navigation-line:before {
     content: "\f212";
 }
-.vtmx-package-fill:before {
+.vtmx-notification-fill:before {
     content: "\f213";
 }
-.vtmx-package-line:before {
+.vtmx-notification-line:before {
     content: "\f214";
 }
-.vtmx-pause-circle-fill:before {
+.vtmx-package-fill:before {
     content: "\f215";
 }
-.vtmx-pause-circle-line:before {
+.vtmx-package-line:before {
     content: "\f216";
 }
-.vtmx-pause-fill:before {
+.vtmx-pause-circle-fill:before {
     content: "\f217";
 }
-.vtmx-pause-line:before {
+.vtmx-pause-circle-line:before {
     content: "\f218";
 }
-.vtmx-phone-fill:before {
+.vtmx-pause-fill:before {
     content: "\f219";
 }
-.vtmx-phone-line:before {
+.vtmx-pause-line:before {
     content: "\f21a";
 }
-.vtmx-pie-chart-fill:before {
+.vtmx-phone-fill:before {
     content: "\f21b";
 }
-.vtmx-pie-chart-line:before {
+.vtmx-phone-line:before {
     content: "\f21c";
 }
-.vtmx-pinterest-fill:before {
+.vtmx-pie-chart-fill:before {
     content: "\f21d";
 }
-.vtmx-pinterest-line:before {
+.vtmx-pie-chart-line:before {
     content: "\f21e";
 }
-.vtmx-play-circle-fill:before {
+.vtmx-pinterest-fill:before {
     content: "\f21f";
 }
-.vtmx-play-circle-line:before {
+.vtmx-pinterest-line:before {
     content: "\f220";
 }
-.vtmx-play-fill:before {
+.vtmx-play-circle-fill:before {
     content: "\f221";
 }
-.vtmx-play-line:before {
+.vtmx-play-circle-line:before {
     content: "\f222";
 }
-.vtmx-price-tag-fill:before {
+.vtmx-play-fill:before {
     content: "\f223";
 }
-.vtmx-price-tag-line:before {
+.vtmx-play-line:before {
     content: "\f224";
 }
-.vtmx-printer-fill:before {
+.vtmx-price-tag-fill:before {
     content: "\f225";
 }
-.vtmx-printer-line:before {
+.vtmx-price-tag-line:before {
     content: "\f226";
 }
-.vtmx-qr-scan-fill:before {
+.vtmx-printer-fill:before {
     content: "\f227";
 }
-.vtmx-qr-scan-line:before {
+.vtmx-printer-line:before {
     content: "\f228";
 }
-.vtmx-question-fill:before {
+.vtmx-qr-scan-fill:before {
     content: "\f229";
 }
-.vtmx-question-line:before {
+.vtmx-qr-scan-line:before {
     content: "\f22a";
 }
-.vtmx-radio-button-fill:before {
+.vtmx-question-fill:before {
     content: "\f22b";
 }
-.vtmx-radio-button-line:before {
+.vtmx-question-line:before {
     content: "\f22c";
 }
-.vtmx-rainy-fill:before {
+.vtmx-radio-button-fill:before {
     content: "\f22d";
 }
-.vtmx-rainy-line:before {
+.vtmx-radio-button-line:before {
     content: "\f22e";
 }
-.vtmx-recycle-fill:before {
+.vtmx-rainy-fill:before {
     content: "\f22f";
 }
-.vtmx-recycle-line:before {
+.vtmx-rainy-line:before {
     content: "\f230";
 }
-.vtmx-refresh-fill:before {
+.vtmx-recycle-fill:before {
     content: "\f231";
 }
-.vtmx-refresh-line:before {
+.vtmx-recycle-line:before {
     content: "\f232";
 }
-.vtmx-refund-fill:before {
+.vtmx-refresh-fill:before {
     content: "\f233";
 }
-.vtmx-refund-line:before {
+.vtmx-refresh-line:before {
     content: "\f234";
 }
-.vtmx-repeat-fill:before {
+.vtmx-refund-fill:before {
     content: "\f235";
 }
-.vtmx-repeat-line:before {
+.vtmx-refund-line:before {
     content: "\f236";
 }
-.vtmx-return-fill:before {
+.vtmx-repeat-fill:before {
     content: "\f237";
 }
-.vtmx-return-line:before {
+.vtmx-repeat-line:before {
     content: "\f238";
 }
-.vtmx-riding-fill:before {
+.vtmx-return-fill:before {
     content: "\f239";
 }
-.vtmx-riding-line:before {
+.vtmx-return-line:before {
     content: "\f23a";
 }
-.vtmx-rocket-fill:before {
+.vtmx-riding-fill:before {
     content: "\f23b";
 }
-.vtmx-rocket-line:before {
+.vtmx-riding-line:before {
     content: "\f23c";
 }
-.vtmx-rss-fill:before {
+.vtmx-rocket-fill:before {
     content: "\f23d";
 }
-.vtmx-rss-line:before {
+.vtmx-rocket-line:before {
     content: "\f23e";
 }
-.vtmx-ruler-fill:before {
+.vtmx-rss-fill:before {
     content: "\f23f";
 }
-.vtmx-ruler-line:before {
+.vtmx-rss-line:before {
     content: "\f240";
 }
-.vtmx-run-fill:before {
+.vtmx-ruler-fill:before {
     content: "\f241";
 }
-.vtmx-run-line:before {
+.vtmx-ruler-line:before {
     content: "\f242";
 }
-.vtmx-safari-fill:before {
+.vtmx-run-fill:before {
     content: "\f243";
 }
-.vtmx-safari-line:before {
+.vtmx-run-line:before {
     content: "\f244";
 }
-.vtmx-scales-fill:before {
+.vtmx-safari-fill:before {
     content: "\f245";
 }
-.vtmx-scales-line:before {
+.vtmx-safari-line:before {
     content: "\f246";
 }
-.vtmx-search-fill:before {
+.vtmx-scales-fill:before {
     content: "\f247";
 }
-.vtmx-search-line:before {
+.vtmx-scales-line:before {
     content: "\f248";
 }
-.vtmx-secure-payment-fill:before {
+.vtmx-search-fill:before {
     content: "\f249";
 }
-.vtmx-secure-payment-line:before {
+.vtmx-search-line:before {
     content: "\f24a";
 }
-.vtmx-seed-1-fill:before {
+.vtmx-secure-payment-fill:before {
     content: "\f24b";
 }
-.vtmx-seed-1-line:before {
+.vtmx-secure-payment-line:before {
     content: "\f24c";
 }
-.vtmx-seed-2-fill:before {
+.vtmx-seed-1-fill:before {
     content: "\f24d";
 }
-.vtmx-seed-2-line:before {
+.vtmx-seed-1-line:before {
     content: "\f24e";
 }
-.vtmx-seed-3-fill:before {
+.vtmx-seed-2-fill:before {
     content: "\f24f";
 }
-.vtmx-seed-3-line:before {
+.vtmx-seed-2-line:before {
     content: "\f250";
 }
-.vtmx-selected-by-decathlon-fill:before {
+.vtmx-seed-3-fill:before {
     content: "\f251";
 }
-.vtmx-selected-by-decathlon-line:before {
+.vtmx-seed-3-line:before {
     content: "\f252";
 }
-.vtmx-send-plane-2-fill:before {
+.vtmx-selected-by-decathlon-fill:before {
     content: "\f253";
 }
-.vtmx-send-plane-2-line:before {
+.vtmx-selected-by-decathlon-line:before {
     content: "\f254";
 }
-.vtmx-send-plane-fill:before {
+.vtmx-send-plane-2-fill:before {
     content: "\f255";
 }
-.vtmx-send-plane-line:before {
+.vtmx-send-plane-2-line:before {
     content: "\f256";
 }
-.vtmx-settings-fill:before {
+.vtmx-send-plane-fill:before {
     content: "\f257";
 }
-.vtmx-settings-line:before {
+.vtmx-send-plane-line:before {
     content: "\f258";
 }
-.vtmx-share-android-fill:before {
+.vtmx-settings-fill:before {
     content: "\f259";
 }
-.vtmx-share-android-line:before {
+.vtmx-settings-line:before {
     content: "\f25a";
 }
-.vtmx-share-fill:before {
+.vtmx-share-android-fill:before {
     content: "\f25b";
 }
-.vtmx-share-ios-fill:before {
+.vtmx-share-android-line:before {
     content: "\f25c";
 }
-.vtmx-share-ios-line:before {
+.vtmx-share-fill:before {
     content: "\f25d";
 }
-.vtmx-share-line:before {
+.vtmx-share-ios-fill:before {
     content: "\f25e";
 }
-.vtmx-shield-check-fill:before {
+.vtmx-share-ios-line:before {
     content: "\f25f";
 }
-.vtmx-shield-check-line:before {
+.vtmx-share-line:before {
     content: "\f260";
 }
-.vtmx-shopping-bag-fill:before {
+.vtmx-shield-check-fill:before {
     content: "\f261";
 }
-.vtmx-shopping-bag-line:before {
+.vtmx-shield-check-line:before {
     content: "\f262";
 }
-.vtmx-shopping-cart-fill:before {
+.vtmx-shopping-bag-fill:before {
     content: "\f263";
 }
-.vtmx-shopping-cart-line:before {
+.vtmx-shopping-bag-line:before {
     content: "\f264";
 }
-.vtmx-showers-fill:before {
+.vtmx-shopping-cart-fill:before {
     content: "\f265";
 }
-.vtmx-showers-line:before {
+.vtmx-shopping-cart-line:before {
     content: "\f266";
 }
-.vtmx-shut-down-fill:before {
+.vtmx-showers-fill:before {
     content: "\f267";
 }
-.vtmx-shut-down-line:before {
+.vtmx-showers-line:before {
     content: "\f268";
 }
-.vtmx-slack-fill:before {
+.vtmx-shut-down-fill:before {
     content: "\f269";
 }
-.vtmx-slack-line:before {
+.vtmx-shut-down-line:before {
     content: "\f26a";
 }
-.vtmx-smartphone-fill:before {
+.vtmx-slack-fill:before {
     content: "\f26b";
 }
-.vtmx-smartphone-line:before {
+.vtmx-slack-line:before {
     content: "\f26c";
 }
-.vtmx-snapchat-fill:before {
+.vtmx-smartphone-fill:before {
     content: "\f26d";
 }
-.vtmx-snapchat-line:before {
+.vtmx-smartphone-line:before {
     content: "\f26e";
 }
-.vtmx-snowy-fill:before {
+.vtmx-snapchat-fill:before {
     content: "\f26f";
 }
-.vtmx-snowy-line:before {
+.vtmx-snapchat-line:before {
     content: "\f270";
 }
-.vtmx-sparkles-fill:before {
+.vtmx-snowy-fill:before {
     content: "\f271";
 }
-.vtmx-sparkles-line:before {
+.vtmx-snowy-line:before {
     content: "\f272";
 }
-.vtmx-star-fill:before {
+.vtmx-sparkles-fill:before {
     content: "\f273";
 }
-.vtmx-star-half-fill:before {
+.vtmx-sparkles-line:before {
     content: "\f274";
 }
-.vtmx-star-half-line:before {
+.vtmx-star-fill:before {
     content: "\f275";
 }
-.vtmx-star-line:before {
+.vtmx-star-half-fill:before {
     content: "\f276";
 }
-.vtmx-stop-circle-fill:before {
+.vtmx-star-half-line:before {
     content: "\f277";
 }
-.vtmx-stop-circle-line:before {
+.vtmx-star-line:before {
     content: "\f278";
 }
-.vtmx-stop-fill:before {
+.vtmx-stop-circle-fill:before {
     content: "\f279";
 }
-.vtmx-stop-line:before {
+.vtmx-stop-circle-line:before {
     content: "\f27a";
 }
-.vtmx-store-fill:before {
+.vtmx-stop-fill:before {
     content: "\f27b";
 }
-.vtmx-store-line:before {
+.vtmx-stop-line:before {
     content: "\f27c";
 }
-.vtmx-subtract-fill:before {
+.vtmx-store-fill:before {
     content: "\f27d";
 }
-.vtmx-subtract-line:before {
+.vtmx-store-line:before {
     content: "\f27e";
 }
-.vtmx-suitcase-fill:before {
+.vtmx-subtract-fill:before {
     content: "\f27f";
 }
-.vtmx-suitcase-line:before {
+.vtmx-subtract-line:before {
     content: "\f280";
 }
-.vtmx-sun-cloudy-fill:before {
+.vtmx-suitcase-fill:before {
     content: "\f281";
 }
-.vtmx-sun-cloudy-line:before {
+.vtmx-suitcase-line:before {
     content: "\f282";
 }
-.vtmx-sun-fill:before {
+.vtmx-sun-cloudy-fill:before {
     content: "\f283";
 }
-.vtmx-sun-line:before {
+.vtmx-sun-cloudy-line:before {
     content: "\f284";
 }
-.vtmx-t-shirt-fill:before {
+.vtmx-sun-fill:before {
     content: "\f285";
 }
-.vtmx-t-shirt-line:before {
+.vtmx-sun-line:before {
     content: "\f286";
 }
-.vtmx-tablet-fill:before {
+.vtmx-t-shirt-fill:before {
     content: "\f287";
 }
-.vtmx-tablet-line:before {
+.vtmx-t-shirt-line:before {
     content: "\f288";
 }
-.vtmx-task-fill:before {
+.vtmx-tablet-fill:before {
     content: "\f289";
 }
-.vtmx-task-line:before {
+.vtmx-tablet-line:before {
     content: "\f28a";
 }
-.vtmx-telegram-fill:before {
+.vtmx-task-fill:before {
     content: "\f28b";
 }
-.vtmx-telegram-line:before {
+.vtmx-task-line:before {
     content: "\f28c";
 }
-.vtmx-temp-cold-fill:before {
+.vtmx-telegram-fill:before {
     content: "\f28d";
 }
-.vtmx-temp-cold-line:before {
+.vtmx-telegram-line:before {
     content: "\f28e";
 }
-.vtmx-temp-hot-fill:before {
+.vtmx-temp-cold-fill:before {
     content: "\f28f";
 }
-.vtmx-temp-hot-line:before {
+.vtmx-temp-cold-line:before {
     content: "\f290";
 }
-.vtmx-thumb-down-fill:before {
+.vtmx-temp-hot-fill:before {
     content: "\f291";
 }
-.vtmx-thumb-down-line:before {
+.vtmx-temp-hot-line:before {
     content: "\f292";
 }
-.vtmx-thumb-up-fill:before {
+.vtmx-thumb-down-fill:before {
     content: "\f293";
 }
-.vtmx-thumb-up-line:before {
+.vtmx-thumb-down-line:before {
     content: "\f294";
 }
-.vtmx-thunderstorms-fill:before {
+.vtmx-thumb-up-fill:before {
     content: "\f295";
 }
-.vtmx-thunderstorms-line:before {
+.vtmx-thumb-up-line:before {
     content: "\f296";
 }
-.vtmx-tiktok-fill:before {
+.vtmx-thunderstorms-fill:before {
     content: "\f297";
 }
-.vtmx-tiktok-line:before {
+.vtmx-thunderstorms-line:before {
     content: "\f298";
 }
-.vtmx-time-fill:before {
+.vtmx-tiktok-fill:before {
     content: "\f299";
 }
-.vtmx-time-line:before {
+.vtmx-tiktok-line:before {
     content: "\f29a";
 }
-.vtmx-timer-fill:before {
+.vtmx-time-fill:before {
     content: "\f29b";
 }
-.vtmx-timer-line:before {
+.vtmx-time-line:before {
     content: "\f29c";
 }
-.vtmx-tools-fill:before {
+.vtmx-timer-fill:before {
     content: "\f29d";
 }
-.vtmx-tools-line:before {
+.vtmx-timer-line:before {
     content: "\f29e";
 }
-.vtmx-train-fill:before {
+.vtmx-tools-fill:before {
     content: "\f29f";
 }
-.vtmx-train-line:before {
+.vtmx-tools-line:before {
     content: "\f2a0";
 }
-.vtmx-trophy-fill:before {
+.vtmx-train-fill:before {
     content: "\f2a1";
 }
-.vtmx-trophy-line:before {
+.vtmx-train-line:before {
     content: "\f2a2";
 }
-.vtmx-truck-fill:before {
+.vtmx-trophy-fill:before {
     content: "\f2a3";
 }
-.vtmx-truck-line:before {
+.vtmx-trophy-line:before {
     content: "\f2a4";
 }
-.vtmx-twitter-fill:before {
+.vtmx-truck-fill:before {
     content: "\f2a5";
 }
-.vtmx-twitter-line:before {
+.vtmx-truck-line:before {
     content: "\f2a6";
 }
-.vtmx-unlink-fill:before {
+.vtmx-twitter-fill:before {
     content: "\f2a7";
 }
-.vtmx-unlink-line:before {
+.vtmx-twitter-line:before {
     content: "\f2a8";
 }
-.vtmx-upload-fill:before {
+.vtmx-unlink-fill:before {
     content: "\f2a9";
 }
-.vtmx-upload-line:before {
+.vtmx-unlink-line:before {
     content: "\f2aa";
 }
-.vtmx-user-fill:before {
+.vtmx-upload-fill:before {
     content: "\f2ab";
 }
-.vtmx-user-line:before {
+.vtmx-upload-line:before {
     content: "\f2ac";
 }
-.vtmx-viber-fill:before {
+.vtmx-user-fill:before {
     content: "\f2ad";
 }
-.vtmx-viber-line:before {
+.vtmx-user-line:before {
     content: "\f2ae";
 }
-.vtmx-visa-fill:before {
+.vtmx-viber-fill:before {
     content: "\f2af";
 }
-.vtmx-visa-line:before {
+.vtmx-viber-line:before {
     content: "\f2b0";
 }
-.vtmx-volume-alert-fill:before {
+.vtmx-visa-fill:before {
     content: "\f2b1";
 }
-.vtmx-volume-alert-line:before {
+.vtmx-visa-line:before {
     content: "\f2b2";
 }
-.vtmx-volume-down-fill:before {
+.vtmx-volume-alert-fill:before {
     content: "\f2b3";
 }
-.vtmx-volume-down-line:before {
+.vtmx-volume-alert-line:before {
     content: "\f2b4";
 }
-.vtmx-volume-mute-fill:before {
+.vtmx-volume-down-fill:before {
     content: "\f2b5";
 }
-.vtmx-volume-mute-line:before {
+.vtmx-volume-down-line:before {
     content: "\f2b6";
 }
-.vtmx-volume-up-fill:before {
+.vtmx-volume-mute-fill:before {
     content: "\f2b7";
 }
-.vtmx-volume-up-line:before {
+.vtmx-volume-mute-line:before {
     content: "\f2b8";
 }
-.vtmx-walk-fill:before {
+.vtmx-volume-up-fill:before {
     content: "\f2b9";
 }
-.vtmx-walk-line:before {
+.vtmx-volume-up-line:before {
     content: "\f2ba";
 }
-.vtmx-wallet-fill:before {
+.vtmx-walk-fill:before {
     content: "\f2bb";
 }
-.vtmx-wallet-line:before {
+.vtmx-walk-line:before {
     content: "\f2bc";
 }
-.vtmx-whatsapp-fill:before {
+.vtmx-wallet-fill:before {
     content: "\f2bd";
 }
-.vtmx-whatsapp-line:before {
+.vtmx-wallet-line:before {
     content: "\f2be";
 }
-.vtmx-windy-fill:before {
+.vtmx-whatsapp-fill:before {
     content: "\f2bf";
 }
-.vtmx-windy-line:before {
+.vtmx-whatsapp-line:before {
     content: "\f2c0";
 }
-.vtmx-youtube-fill:before {
+.vtmx-windy-fill:before {
     content: "\f2c1";
 }
-.vtmx-youtube-line:before {
+.vtmx-windy-line:before {
     content: "\f2c2";
 }
-.vtmx-zoom-in-fill:before {
+.vtmx-youtube-fill:before {
     content: "\f2c3";
 }
-.vtmx-zoom-in-line:before {
+.vtmx-youtube-line:before {
     content: "\f2c4";
 }
-.vtmx-zoom-out-fill:before {
+.vtmx-zoom-in-fill:before {
     content: "\f2c5";
 }
-.vtmx-zoom-out-line:before {
+.vtmx-zoom-in-line:before {
     content: "\f2c6";
+}
+.vtmx-zoom-out-fill:before {
+    content: "\f2c7";
+}
+.vtmx-zoom-out-line:before {
+    content: "\f2c8";
 }
