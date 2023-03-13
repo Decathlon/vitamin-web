@@ -1,6 +1,7 @@
 import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
 import * as React from 'react';
 import { VtmnIconColor, VtmnIconSize, VtmnIconVariant } from './types';
+import { retrieveSemanticColor } from './utils';
 
 export interface VtmnIconProps extends React.HTMLAttributes<HTMLElement> {
   /**
@@ -34,30 +35,11 @@ export const VtmnIcon: React.FC<VtmnIconProps> = ({
   style,
   ...props
 }) => {
-  const retrieveSemanticColor = (iconVariant: VtmnIconVariant) => {
-    switch (iconVariant) {
-      case 'default':
-        return 'content-primary';
-      case 'brand':
-        return 'background-brand-primary';
-      case 'reversed':
-        return 'content-primary-reversed';
-      case 'positive':
-        return 'content-positive';
-      case 'information':
-        return 'content-information';
-      case 'warning':
-        return 'content-warning';
-      case 'negative':
-        return 'content-negative';
-    }
-  };
-
   const getIconColor = () => {
     let iconColor = undefined;
     if (color) {
       iconColor = `var(--vtmn-color_${color})`;
-    } else if (variant !== 'default') {
+    } else {
       iconColor = `var(--vtmn-semantic-color_${retrieveSemanticColor(
         variant,
       )})`;

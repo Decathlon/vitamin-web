@@ -2,6 +2,7 @@
 import { reactive, defineComponent, PropType, computed } from 'vue';
 import { VtmnIconSize, VtmnIconVariant } from './types';
 import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
+import { retrieveSemanticColor } from './utils';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnIcon',
@@ -23,35 +24,27 @@ export default /*#__PURE__*/ defineComponent({
         [
           'default',
           'brand',
-          'reversed',
+          'primary',
+          'secondary',
+          'tertiary',
+          'action',
+          'active',
+          'inactive',
+          'negative',
+          'warning',
           'positive',
           'information',
-          'warning',
-          'negative',
+          'accent',
+          'visited',
+          'reversed',
+          'primary-reversed',
+          'action-reserved',
+          'visited-reversed',
         ].includes(val),
     },
   },
   setup(props) {
     props = reactive(props);
-
-    const retrieveSemanticColor = (variant: VtmnIconVariant) => {
-      switch (variant) {
-        case 'default':
-          return 'content-primary';
-        case 'brand':
-          return 'background-brand-primary';
-        case 'reversed':
-          return 'content-primary-reversed';
-        case 'positive':
-          return 'content-positive';
-        case 'information':
-          return 'content-information';
-        case 'warning':
-          return 'content-warning';
-        case 'negative':
-          return 'content-negative';
-      }
-    };
 
     const style = computed(() => ({
       color: `var(--vtmn-semantic-color_${retrieveSemanticColor(

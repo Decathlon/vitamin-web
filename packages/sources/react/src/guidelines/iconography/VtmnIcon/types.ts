@@ -10,10 +10,21 @@ export type VtmnIconColor =
 export type VtmnIconVariant =
   | 'default'
   | 'brand'
-  | 'reversed'
+  | 'primary'
+  | 'secondary'
+  | 'tertiary'
+  | 'action'
+  | 'active'
+  | 'inactive'
+  | 'negative'
+  | 'warning'
   | 'positive'
   | 'information'
-  | 'warning'
-  | 'negative';
+  | 'accent'
+  | 'visited'
+  | 'reversed'
+  | 'primary-reversed'
+  | 'action-reversed'
+  | 'visited-reversed';
 
 export type VtmnIconSize = 16 | 20 | 24 | 32 | 64;
