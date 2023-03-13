@@ -26,22 +26,14 @@
 
   const retrieveSemanticColor = (variant) => {
     switch (variant) {
-      case VTMN_ICON_VARIANT.BRAND_PRIMARY:
+      case VTMN_ICON_VARIANT.DEFAULT:
+        return 'content-primary';
+      case VTMN_ICON_VARIANT.BRAND:
         return 'background-brand-primary';
       case VTMN_ICON_VARIANT.REVERSED:
         return 'content-primary-reversed';
-      case VTMN_ICON_VARIANT.POSITIVE:
-        return 'content-positive';
-      case VTMN_ICON_VARIANT.INFORMATION:
-        return 'content-information';
-      case VTMN_ICON_VARIANT.WARNING:
-        return 'content-warning';
-      case VTMN_ICON_VARIANT.NEGATIVE:
-        return 'content-negative';
-      case VTMN_ICON_VARIANT.DEFAULT:
-        return 'content-primary';
       default:
-        return undefined;
+        return `content-${variant}`;
     }
   };
 
