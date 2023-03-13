@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.21.5](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.21.4...@vtmn/icons@0.21.5) (2023-03-13)
+
+### Performance Improvements
+
+- reorder font src, woff2 in first position ([#1388](https://github.com/Decathlon/vitamin-web/issues/1388)) ([9b56e66](https://github.com/Decathlon/vitamin-web/commit/9b56e6678483f8833f6d2f0eb32e4609695fe32b))
+
 ## [0.21.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@0.21.3...@vtmn/icons@0.21.4) (2023-03-09)
 
 **Note:** Version bump only for package @vtmn/icons
