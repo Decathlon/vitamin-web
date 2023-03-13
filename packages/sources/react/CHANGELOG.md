@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.67.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.66.4...@vtmn/react@0.67.0) (2023-03-13)
+
+### Features
+
+- add new variants for VtmnIcon ([#1390](https://github.com/Decathlon/vitamin-web/issues/1390)) ([a8a5ae4](https://github.com/Decathlon/vitamin-web/commit/a8a5ae4074cc2e2690fc43dab25332858eb4534d))
+
 ## [0.66.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.66.3...@vtmn/react@0.66.4) (2023-03-13)
 
 **Note:** Version bump only for package @vtmn/react

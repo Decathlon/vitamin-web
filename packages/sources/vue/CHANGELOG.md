@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.55.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.54.4...@vtmn/vue@0.55.0) (2023-03-13)
+
+### Features
+
+- add new variants for VtmnIcon ([#1390](https://github.com/Decathlon/vitamin-web/issues/1390)) ([a8a5ae4](https://github.com/Decathlon/vitamin-web/commit/a8a5ae4074cc2e2690fc43dab25332858eb4534d))
+
 ## [0.54.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.54.3...@vtmn/vue@0.54.4) (2023-03-13)
 
 **Note:** Version bump only for package @vtmn/vue
