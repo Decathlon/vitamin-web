@@ -23,9 +23,9 @@
   ],
   "scripts": {
     "prebuild": "shx rm -rf dist",
-    "build": "yarn build:svg && yarn build:json",
-    "build:json": "shx rm -rf ./dist/assets/json && shx mkdir ./dist/assets/json && fantasticon",
-    "build:svg": "node src/scripts/build-svg.js && svgo -f dist/assets/svg"
+    "build": "shx mkdir -p dist/assets/svg && shx cp -r src/generated/assets/svg/all/* dist/assets/svg",
+    "prestart": "yarn build",
+    "start": "chokidar \"src/**/\" -i \"**/dist/**\" -c \"yarn build\""
   },
   "devDependencies": {
     "chokidar-cli": "^3.0.0",
