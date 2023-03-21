@@ -60,7 +60,7 @@ jobs:
         with:
           labels: |
             enhancement 🚀
-            assets 🏞 
+            assets 🏞
             run 💨
           
       - uses: actions/add-to-project@v0.4.0
