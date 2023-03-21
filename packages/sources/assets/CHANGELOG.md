@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/assets@0.3.1...@vtmn/assets@0.3.2) (2023-03-21)
+
+**Note:** Version bump only for package @vtmn/assets
+
 ## [0.3.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/assets@0.3.0...@vtmn/assets@0.3.1) (2023-01-31)
 
 **Note:** Version bump only for package @vtmn/assets
