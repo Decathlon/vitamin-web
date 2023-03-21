@@ -42,6 +42,32 @@ jobs:
         with:
           project-url: https://github.com/orgs/Decathlon/projects/3
           github-token: ${{ secrets.API_TOKEN_GITHUB }}
+          
+      - uses: juztcode/pr-updater@1.0.0
+        if: ${{ github.head_ref == 'feat/update-assets' }}
+        with:
+          title: 'feat: update assets'
+          body: '**Automated Pull Request to update assets.**'
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: danielswensson/auto-assign-owner-action@v1
+        if: ${{ github.head_ref == 'feat/update-assets' }}
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - uses: actions-ecosystem/action-add-labels@v1
+        if: ${{ github.head_ref == 'feat/update-assets' }}
+        with:
+          labels: |
+            enhancement 🚀
+            assets 🏞 
+            run 💨
+          
+      - uses: actions/add-to-project@v0.4.0
+        if: ${{ github.head_ref == 'feat/update-assets' }}
+        with:
+          project-url: https://github.com/orgs/Decathlon/projects/3
+          github-token: ${{ secrets.API_TOKEN_GITHUB }}
 
       - name: Restore/create node_modules cache
         uses: actions/cache@v2
