@@ -112,7 +112,7 @@ Embed your icons within the HTML of your page (as opposed to an external image f
 
 ## Development
 
-To know all the use cases and their associated code, [check out the showcase here](https://decathlon.github.io/vitamin-web/@vtmn/showcase-icons).
+To know all the use cases and their associated code, [check out the showcase here](https://decathlon.github.io/vitamin-web/@vtmn/showcase-icons/).
 
 ## Changelog
 
