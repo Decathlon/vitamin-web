@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-breadcrumb@0.7.7...@vtmn/css-breadcrumb@1.1.0) (2023-03-22)
+
+### Features
+
+- bump packages to 1.x.x ([#1397](https://github.com/Decathlon/vitamin-web/issues/1397)) ([ddb1589](https://github.com/Decathlon/vitamin-web/commit/ddb1589616c267100edd785c11a476868d856bfc))
+
 ## [0.7.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-breadcrumb@0.7.6...@vtmn/css-breadcrumb@0.7.7) (2022-10-21)
 
 **Note:** Version bump only for package @vtmn/css-breadcrumb

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tag@0.8.0...@vtmn/css-tag@1.1.0) (2023-03-22)
+
+### Features
+
+- bump packages to 1.x.x ([#1397](https://github.com/Decathlon/vitamin-web/issues/1397)) ([ddb1589](https://github.com/Decathlon/vitamin-web/commit/ddb1589616c267100edd785c11a476868d856bfc))
+
 # [0.8.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-tag@0.7.4...@vtmn/css-tag@0.8.0) (2022-12-30)
 
 ### Features
