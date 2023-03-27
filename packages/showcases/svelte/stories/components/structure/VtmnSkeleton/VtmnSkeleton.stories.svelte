@@ -26,7 +26,7 @@
   <div class="post-example">
     <VtmnSkeleton shape="avatar" width="20%" />
     <div class="post-example_body">
-      <VtmnSkeleton shape="line" width="55%" />
+      <VtmnSkeleton shape="line" width="55%" height="2em" />
       <p class="vtmn-mt-2">
         <VtmnSkeleton shape="line" width="84%" />
         <VtmnSkeleton shape="line" width="90%" />

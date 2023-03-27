@@ -10,6 +10,11 @@
   export let width = VTMN_SKELETON_DEFAULT_WIDTH;
 
   /**
+   * @type {string} Height applied on the skeleton.
+   */
+  export let height = undefined;
+
+  /**
    * @type {'line' | 'avatar' } Variant of the shape.
    * @defaultValue line
    */
@@ -25,11 +30,13 @@
     'vtmn-skeleton',
     shape && `vtmn-skeleton_${shape}`,
     width && `skeleton-width`,
+    height && `skeleton-height`,
     className,
   );
 
   $: componentStyle = objectToStyle({
     '--skeleton-width': width,
+    '--skeleton-height': height,
   });
 </script>
 
@@ -39,5 +46,9 @@
   @import '@vtmn/css-skeleton';
   .skeleton-width {
     width: var(--skeleton-width, 100%);
+  }
+
+  .skeleton-height {
+    height: var(--skeleton-height);
   }
 </style>
