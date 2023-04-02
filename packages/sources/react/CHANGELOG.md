@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@1.1.0...@vtmn/react@1.1.1) (2023-03-31)
+
+### Bug Fixes
+
+- **@vtmn/react:** remove default label value in VtmnDropdown ([#1405](https://github.com/Decathlon/vitamin-web/issues/1405)) ([4203f05](https://github.com/Decathlon/vitamin-web/commit/4203f05dc4fa988f33cbe725fc4d001ec023882b))
+
 # [1.1.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@0.67.3...@vtmn/react@1.1.0) (2023-03-22)
 
 ### Features
