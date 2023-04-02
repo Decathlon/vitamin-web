@@ -8,7 +8,7 @@
 
 ## Install package
 
-After installing [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) or [yarn](https://yarnpkg.com/en/docs/install), you can install `@vtmn/css` with this command:
+After installing [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) or [yarn](https://yarnpkg.com/en/docs/install), you can install `@vtmn/css-tailwind-preset` with this command:
 
 ```sh
 # with npm
