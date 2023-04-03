@@ -18,13 +18,13 @@ export const argTypes = {
       min: 0,
     },
   },
-  unit: {
-    type: { name: 'string', required: false },
-    description: 'Unit of the width.',
-    defaultValue: '%',
+  height: {
+    type: { name: 'number', required: false },
+    description: 'Height of the skeleton.',
+    defaultValue: undefined,
     control: {
-      type: 'select',
-      options: ['%', 'em', 'rem', 'vw', 'ch', 'px'],
+      type: 'number',
+      min: 0,
     },
   },
   shape: {
