@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@1.1.0...@vtmn/svelte@2.0.0) (2023-04-04)
+
+### Features
+
+- **@vtmn/svelte:** manage height parameter of `VtmnSkeleton` component ([#1404](https://github.com/Decathlon/vitamin-web/issues/1404)) ([26eff49](https://github.com/Decathlon/vitamin-web/commit/26eff494a7439ab8966015ac9c89da15d1b613e1))
+
+### BREAKING CHANGES
+
+- **@vtmn/svelte:** remove `unit` from `VtmnSkeleton`, it should now be passed in the `width` or `height` props directly.
+
 # [1.1.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@0.67.3...@vtmn/svelte@1.1.0) (2023-03-22)
 
 ### Features
