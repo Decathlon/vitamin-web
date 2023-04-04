@@ -23,8 +23,8 @@ describe('VtmnSkeleton', () => {
     expect(getSkeleton(container)).toHaveClass('vtmn-skeleton_avatar');
   });
 
-  test("Should have a width 100% if width = '100'", () => {
-    const { container } = render(VtmnSkeleton, { width: '100' });
+  test("Should have a width 100% if width = '100%'", () => {
+    const { container } = render(VtmnSkeleton, { width: '100%' });
     expect(getSkeleton(container)).toHaveClass('skeleton-width');
     expect(getSkeleton(container)).toHaveStyle('--skeleton-width:100%');
   });
@@ -45,17 +45,7 @@ describe('VtmnSkeleton', () => {
   });
 
   test('Should change the unit', () => {
-    const { container } = render(VtmnSkeleton, { unit: 'px' });
+    const { container } = render(VtmnSkeleton, { width: '100px' });
     expect(getSkeleton(container)).toHaveStyle('--skeleton-width:100px');
-  });
-
-  test('Should set the unit as % if unit not found', () => {
-    const { container } = render(VtmnSkeleton, { unit: 'foo', width: 50 });
-    expect(getSkeleton(container)).toHaveStyle('--skeleton-width:100%');
-  });
-
-  test('Should set the width as 0 if width are negative', () => {
-    const { container } = render(VtmnSkeleton, { width: -1, unit: 'px' });
-    expect(getSkeleton(container)).toHaveStyle('--skeleton-width:100%');
   });
 });

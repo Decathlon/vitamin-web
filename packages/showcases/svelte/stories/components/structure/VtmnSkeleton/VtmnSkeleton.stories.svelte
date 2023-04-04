@@ -24,14 +24,14 @@
 
 <Story name="With avatar" let:args>
   <div class="post-example">
-    <VtmnSkeleton shape="avatar" width="20" />
+    <VtmnSkeleton shape="avatar" width="20%" />
     <div class="post-example_body">
-      <VtmnSkeleton shape="line" width="55" />
+      <VtmnSkeleton shape="line" width="55%" height="2em" />
       <p class="vtmn-mt-2">
-        <VtmnSkeleton shape="line" width="84" />
-        <VtmnSkeleton shape="line" width="90" />
-        <VtmnSkeleton shape="line" width="83" />
-        <VtmnSkeleton shape="line" width="60" />
+        <VtmnSkeleton shape="line" width="84%" />
+        <VtmnSkeleton shape="line" width="90%" />
+        <VtmnSkeleton shape="line" width="83%" />
+        <VtmnSkeleton shape="line" width="60%" />
       </p>
     </div>
   </div>
@@ -41,12 +41,12 @@
   <div id="skeleton-card-container">
     <VtmnCard class="skeleton-card">
       <svelte:fragment slot="img">
-        <VtmnSkeleton class="skeleton-card-image" width="100" />
+        <VtmnSkeleton class="skeleton-card-image" width="100%" />
       </svelte:fragment>
 
       <svelte:fragment slot="content">
-        <VtmnSkeleton width="95" />
-        <VtmnSkeleton width="70" />
+        <VtmnSkeleton width="95%" />
+        <VtmnSkeleton width="70%" />
       </svelte:fragment>
     </VtmnCard>
   </div>
