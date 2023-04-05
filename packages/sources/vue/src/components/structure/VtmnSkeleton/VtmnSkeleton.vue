@@ -8,9 +8,11 @@ export default /*#__PURE__*/ defineComponent({
   inheritAttrs: false,
   props: {
     width: {
-      type: Number as PropType<number>,
-      default: 0,
-      validator: (val: number) => val >= 0 && val <= 100,
+      type: String as PropType<string>,
+      default: '100%',
+    },
+    height: {
+      type: String as PropType<string>,
     },
     shape: {
       type: String as PropType<VtmnSkeletonShape>,
@@ -26,7 +28,8 @@ export default /*#__PURE__*/ defineComponent({
         [`vtmn-skeleton_${props.shape}`]: props.shape,
       })),
       styles: computed(() => ({
-        width: `${props.width}%`,
+        width: props.width,
+        height: props.height,
       })),
     };
   },
