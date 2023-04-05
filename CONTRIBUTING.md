@@ -118,7 +118,7 @@ To help you follow the progress, we have this project board: https://github.com/
 
 To propose any change you have to submit us a [Pull Request](https://help.github.com/articles/about-pull-requests/)
 
-The workflow we are using the one-pay project is:
+The workflow we are using is:
 
 1. Fork this repository (as you don't have a direct write access to the main one.
 2. Create your code, `Commit` and `Push the code` on your forked repo
