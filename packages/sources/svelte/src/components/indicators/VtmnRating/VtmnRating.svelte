@@ -72,7 +72,11 @@
   $: starsCnt = compact && readonly ? 1 : 5;
 </script>
 
-<div class={componentClass} aria-disabled={disabled} {...$$restProps}>
+<div
+  class={componentClass}
+  aria-disabled={disabled}
+  {...readonly && $$restProps}
+>
   {#if readonly}
     {#each Array(starsCnt) as _, index}
       {@const position = index + 1}
