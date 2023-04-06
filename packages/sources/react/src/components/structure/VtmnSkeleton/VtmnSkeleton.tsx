@@ -6,10 +6,15 @@ import { VtmnSkeletonShape } from './types';
 export interface VtmnSkeletonProps
   extends React.ComponentPropsWithoutRef<'span'> {
   /**
-   * Width of the skeleton (in percentage)..
-   * @defaultValue 100
+   * Width of the skeleton
+   * @defaultValue 100%
    */
-  width?: number;
+  width?: string;
+
+  /**
+   * Height of the skeleton
+   */
+  height?: string;
 
   /**
    * Define the type of shape.
@@ -19,7 +24,8 @@ export interface VtmnSkeletonProps
 }
 
 export const VtmnSkeleton = ({
-  width = 100,
+  width = '100%',
+  height,
   shape = 'line',
   className,
   ...props
@@ -27,7 +33,7 @@ export const VtmnSkeleton = ({
   return (
     <span
       className={clsx('vtmn-skeleton', `vtmn-skeleton_${shape}`, className)}
-      style={{ width: `${width}%` }}
+      style={{ width, height }}
       {...props}
     ></span>
   );

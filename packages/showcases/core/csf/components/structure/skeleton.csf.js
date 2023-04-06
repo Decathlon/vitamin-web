@@ -10,21 +10,19 @@ export const parameters = {
 
 export const argTypes = {
   width: {
-    type: { name: 'number', required: false },
+    type: { name: 'string', required: false },
     description: 'Width of the skeleton.',
-    defaultValue: 100,
+    defaultValue: '100%',
     control: {
-      type: 'number',
-      min: 0,
+      type: 'text',
     },
   },
   height: {
-    type: { name: 'number', required: false },
+    type: { name: 'string', required: false },
     description: 'Height of the skeleton.',
     defaultValue: undefined,
     control: {
-      type: 'number',
-      min: 0,
+      type: 'text',
     },
   },
   shape: {
