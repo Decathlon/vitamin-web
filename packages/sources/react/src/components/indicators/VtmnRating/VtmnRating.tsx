@@ -105,7 +105,7 @@ export const VtmnRating = ({
         className,
       )}
       aria-disabled={disabled}
-      {...props}
+      {...(readonly && props)}
     >
       {/**
        * Interactive mode
@@ -116,6 +116,7 @@ export const VtmnRating = ({
           aria-label="Rate the article"
           role="radiogroup"
           data-rating={position}
+          {...props}
         >
           {Array.from(Array(5).keys()).map((index) => (
             <React.Fragment key={`rating-${index + 1}`}>
