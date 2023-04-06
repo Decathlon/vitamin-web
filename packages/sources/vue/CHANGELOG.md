@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@1.1.0...@vtmn/vue@2.0.0) (2023-04-06)
+
+### Features
+
+- **@vtmn/react, @vtmn/vue:** manage height parameter of `VtmnSkeleton` component ([#1408](https://github.com/Decathlon/vitamin-web/issues/1408)) ([25a7c16](https://github.com/Decathlon/vitamin-web/commit/25a7c16abf352170e4936aacb6b674aec54e3067))
+
+### BREAKING CHANGES
+
+- **@vtmn/react, @vtmn/vue:** `VtmnSkeleton` should now receive unit directly in `width` (or `height`) in string instead of number related to percentage.
+
 # [1.1.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@0.55.3...@vtmn/vue@1.1.0) (2023-03-22)
 
 ### Features
