@@ -9,6 +9,7 @@
     VtmnNavbar,
     VtmnNavbarLink,
     VtmnSearch,
+    VtmnBadge,
   } from '@vtmn/svelte';
 </script>
 
@@ -94,7 +95,9 @@
 
       <svelte:fragment slot="right-nav">
         <VtmnNavbarLink href="#" icon="user-line" label="Account" />
-        <VtmnNavbarLink href="#" icon="shopping-cart-line" label="Cart" />
+        <VtmnNavbarLink href="#" icon="shopping-cart-line" label="My basket"
+          ><VtmnBadge value={3} variant="accent" />
+        </VtmnNavbarLink>
       </svelte:fragment>
     </VtmnNavbar>
   </div>
@@ -153,7 +156,8 @@
           icon="shopping-cart-line"
           label="Cart"
           showLabel={false}
-        />
+          ><VtmnBadge value={3} variant="accent" /></VtmnNavbarLink
+        >
       </svelte:fragment>
     </VtmnNavbar>
   </div>

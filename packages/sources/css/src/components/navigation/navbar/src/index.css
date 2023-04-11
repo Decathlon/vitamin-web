@@ -146,6 +146,13 @@
   margin-bottom: rem(4px);
 }
 
+.vtmn-navbar_link .vtmn-badge {
+  position: relative;
+  top: rem(12px);
+  left: rem(10px);
+  margin-top: rem(-12px);
+}
+
 .vtmn-navbar_link.vtmn-navbar_link--icon-alone {
   width: rem(48px);
   height: rem(48px);
