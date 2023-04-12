@@ -40,13 +40,18 @@ export const VtmnDropdown = ({
   label = undefined,
   summary = 'Dropdown',
   disabled = false,
-  className,
+  className = '',
+  style,
   children,
   onChange,
   ...props
 }: VtmnDropdownProps) => {
   return (
-    <div className={`vtmn-dropdown ${className}`} aria-disabled={disabled}>
+    <div
+      className={`vtmn-dropdown ${className}`}
+      aria-disabled={disabled}
+      style={style}
+    >
       {label && <label htmlFor={props['id']}>{label}</label>}
       <details open={disabled ? false : undefined}>
         <summary aria-labelledby={props['id']}>{summary}</summary>
