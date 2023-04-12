@@ -30,11 +30,8 @@
 
 <Story name="With badge" let:args>
   <div style="width: 400px; display: flex; justify-content: center">
-    <VtmnNavbarLink
-      href="#"
-      icon="shopping-cart-line"
-      label="My basket"
-      {...args}><VtmnBadge value={1} variant="accent" /></VtmnNavbarLink
+    <VtmnNavbarLink href="#" icon="shopping-cart-line" label="Cart" {...args}
+      ><VtmnBadge value={3} variant="accent" /></VtmnNavbarLink
     >
   </div>
 </Story>

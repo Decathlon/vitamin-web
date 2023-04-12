@@ -110,6 +110,7 @@
 }
 
 .vtmn-navbar_link {
+  position: relative;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -147,10 +148,14 @@
 }
 
 .vtmn-navbar_link .vtmn-badge {
-  position: relative;
-  top: rem(12px);
-  left: rem(10px);
-  margin-top: rem(-12px);
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.vtmn-navbar_link.vtmn-navbar_link--icon-alone .vtmn-badge {
+  top: rem(6px);
+  left: 50%;
 }
 
 .vtmn-navbar_link.vtmn-navbar_link--icon-alone {

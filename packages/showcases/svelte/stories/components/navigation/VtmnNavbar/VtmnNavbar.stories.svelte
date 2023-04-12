@@ -95,7 +95,7 @@
 
       <svelte:fragment slot="right-nav">
         <VtmnNavbarLink href="#" icon="user-line" label="Account" />
-        <VtmnNavbarLink href="#" icon="shopping-cart-line" label="My basket"
+        <VtmnNavbarLink href="#" icon="shopping-cart-line" label="Cart"
           ><VtmnBadge value={3} variant="accent" />
         </VtmnNavbarLink>
       </svelte:fragment>

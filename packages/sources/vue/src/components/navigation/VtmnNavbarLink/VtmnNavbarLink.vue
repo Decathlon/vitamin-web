@@ -39,11 +39,13 @@ export default /*#__PURE__*/ defineComponent({
 <template>
   <template v-if="showLabel">
     <a :class="classes" v-bind="$attrs">
+      <slot />
       <VtmnIcon :value="icon" aria-hidden="true" />{{ label }}</a
     >
   </template>
   <template v-else>
     <a :class="classes" v-bind="$attrs">
+      <slot />
       <VtmnIcon :value="icon" aria-hidden="true" />
       <span class="vtmn-sr-only">{{ label }}</span>
     </a>

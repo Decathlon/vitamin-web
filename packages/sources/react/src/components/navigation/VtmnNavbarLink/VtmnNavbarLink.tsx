@@ -22,6 +22,12 @@ export interface VtmnNavbarLinkProps
    * @defaultValue true
    */
   showLabel?: boolean;
+
+  /**
+   * The badge to render on top of the navbar link.
+   * @defaultValue undefined
+   */
+  children?: React.ReactNode;
 }
 
 export const VtmnNavbarLink = ({
@@ -29,10 +35,12 @@ export const VtmnNavbarLink = ({
   label,
   showLabel = true,
   className,
+  children,
   ...props
 }: VtmnNavbarLinkProps) => {
   return showLabel ? (
     <a className={`vtmn-navbar_link ${className}`} {...props}>
+      {children}
       <VtmnIcon value={icon} aria-hidden={true} />
       {label}
     </a>
@@ -41,6 +49,7 @@ export const VtmnNavbarLink = ({
       className={`vtmn-navbar_link vtmn-navbar_link--icon-alone ${className}`}
       {...props}
     >
+      {children}
       <VtmnIcon value={icon} aria-hidden={true} />
       <span className="vtmn-sr-only">{label}</span>
     </a>
