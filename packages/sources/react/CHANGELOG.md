@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@2.0.0...@vtmn/react@2.0.1) (2023-04-12)
+
+### Bug Fixes
+
+- **@vtmn/react:** support style prop for `VtmnDropdown` component ([#1414](https://github.com/Decathlon/vitamin-web/issues/1414)) ([2a8e3d0](https://github.com/Decathlon/vitamin-web/commit/2a8e3d0bf10904fef5ba939e4c41e5d97c872143))
+
 # [2.0.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/react@1.1.1...@vtmn/react@2.0.0) (2023-04-06)
 
 ### Features
