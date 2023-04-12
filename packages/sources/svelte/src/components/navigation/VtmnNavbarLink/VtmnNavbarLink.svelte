@@ -43,11 +43,13 @@
 <!-- because href comes through $$restProps -->
 {#if showLabel}
   <a class={componentClass} {...$$restProps}>
+    <slot />
     <VtmnIcon value={icon} aria-hidden="true" />
     {label}
   </a>
 {:else}
   <a class={componentClass} {...$$restProps}>
+    <slot />
     <VtmnIcon value={icon} aria-hidden="true" />
     <span class="vtmn-sr-only">{label}</span>
   </a>

@@ -1,4 +1,4 @@
-import { VtmnNavbarLink } from '@vtmn/vue';
+import { VtmnNavbarLink, VtmnBadge } from '@vtmn/vue';
 import {
   argTypes,
   parameters,
@@ -12,12 +12,12 @@ export default {
 };
 
 const Template = (args) => ({
-  components: { VtmnNavbarLink },
+  components: { VtmnNavbarLink, VtmnBadge },
   setup() {
     return { args };
   },
   template: `<div style="width: 400px; display: flex; justify-content: center">
-    <VtmnNavbarLink href="#" icon="question-line" label="Contact us" v-bind="args"></VtmnNavbarLink>
+    <VtmnNavbarLink href="#" icon="shopping-cart-line" label="Cart" v-bind="args"><VtmnBadge value="3" variant="accent" /></VtmnNavbarLink>
     </div>`,
 });
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { VtmnNavbarLink } from '@vtmn/react';
+import { VtmnBadge, VtmnNavbarLink } from '@vtmn/react';
 import { Meta, Story } from '@storybook/react';
 import {
   argTypes,
@@ -21,12 +21,9 @@ const Template: Story = (args) => (
       justifyContent: 'center',
     }}
   >
-    <VtmnNavbarLink
-      label="Contact us"
-      icon="question-line"
-      href="#"
-      {...args}
-    ></VtmnNavbarLink>
+    <VtmnNavbarLink label="Cart" icon="shopping-cart-line" href="#" {...args}>
+      <VtmnBadge value={3} variant="accent" />
+    </VtmnNavbarLink>
   </div>
 );
 

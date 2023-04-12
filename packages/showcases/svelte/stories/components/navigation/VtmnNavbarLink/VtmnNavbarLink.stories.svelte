@@ -2,7 +2,7 @@
   import { Meta, Story } from '@storybook/addon-svelte-csf';
   import { parameters } from '@vtmn/showcase-core/csf/components/navigation/navbar-link.csf';
   import vitamixIcons from '@vtmn/icons/dist/vitamix/font/vitamix.json';
-  import { VtmnNavbarLink } from '@vtmn/svelte';
+  import { VtmnNavbarLink, VtmnBadge } from '@vtmn/svelte';
 </script>
 
 <Meta
@@ -25,5 +25,13 @@
       label="Contact us"
       {...args}
     />
+  </div>
+</Story>
+
+<Story name="With badge" let:args>
+  <div style="width: 400px; display: flex; justify-content: center">
+    <VtmnNavbarLink href="#" icon="shopping-cart-line" label="Cart" {...args}
+      ><VtmnBadge value={3} variant="accent" /></VtmnNavbarLink
+    >
   </div>
 </Story>
