@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-navbar@1.1.1...@vtmn/css-navbar@1.2.0) (2023-04-12)
+
+### Features
+
+- **@vtmn/svelte, @vtmn/vue, @vtmn/react:** possibility to add a `VtmnBadge` on the `VtmnNavbarLink` ([#1416](https://github.com/Decathlon/vitamin-web/issues/1416)) ([ff345a9](https://github.com/Decathlon/vitamin-web/commit/ff345a93a43716004d1554eb0a17c1e5c1274768))
+
 ## [1.1.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-navbar@1.1.0...@vtmn/css-navbar@1.1.1) (2023-04-12)
 
 **Note:** Version bump only for package @vtmn/css-navbar
