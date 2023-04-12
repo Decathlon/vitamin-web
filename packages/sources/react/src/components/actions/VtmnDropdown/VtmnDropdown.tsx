@@ -40,7 +40,7 @@ export const VtmnDropdown = ({
   label = undefined,
   summary = 'Dropdown',
   disabled = false,
-  className,
+  className = '',
   style,
   children,
   onChange,
