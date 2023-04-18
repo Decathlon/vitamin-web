@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@1.2.0...@vtmn/icons@1.2.1) (2023-04-18)
+
+### Bug Fixes
+
+- **@vtmn/icons:** generation of sprite symbols' viewBoxes from `0 0 16 16` to `0 0 24 24` ([#1419](https://github.com/Decathlon/vitamin-web/issues/1419)) ([761ac49](https://github.com/Decathlon/vitamin-web/commit/761ac498cbe8ff9c8124657f78e39348094656f4))
+
 # [1.2.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/icons@1.1.0...@vtmn/icons@1.2.0) (2023-04-18)
 
 ### Features
