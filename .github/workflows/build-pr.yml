@@ -35,7 +35,6 @@ jobs:
           labels: |
             enhancement 🚀
             icons ✨
-            run 💨
           
       - uses: actions/add-to-project@v0.4.0
         if: ${{ github.head_ref == 'feat/update-icons' }}
@@ -61,7 +60,6 @@ jobs:
           labels: |
             enhancement 🚀
             assets 🏞
-            run 💨
           
       - uses: actions/add-to-project@v0.4.0
         if: ${{ github.head_ref == 'feat/update-assets' }}
