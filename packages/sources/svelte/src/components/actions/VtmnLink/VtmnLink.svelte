@@ -56,9 +56,9 @@
   let computedRel = computeRel($$restProps['target'], $$restProps['rel']);
 </script>
 
-<a {href} class={componentClass} rel={computedRel} on:click {...$$restProps}
-  ><slot /></a
->
+<a {href} class={componentClass} on:click {...$$restProps} rel={computedRel}>
+  <slot />
+</a>
 
 <style lang="css">
   @import '@vtmn/css-link';

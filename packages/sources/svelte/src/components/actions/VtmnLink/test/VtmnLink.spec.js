@@ -75,6 +75,6 @@ describe('VtmnLink', () => {
     const { container } = render(VtmnLink, {
       props: { ...links, target: '_blank', rel: 'noopener' },
     });
-    expect(getLink(container)).toHaveAttribute('rel', 'noopener');
+    expect(getLink(container)).toHaveAttribute('rel', 'noopener noreferrer');
   });
 });

@@ -1,6 +1,7 @@
 <script>
   import VtmnIcon from '../../../guidelines/iconography/VtmnIcon/VtmnIcon.svelte';
   import { cn } from '../../../utils/classnames';
+  import { computeRel } from '../../../utils/link';
 
   /** @restProps { a } */
 
@@ -37,12 +38,13 @@
     !showLabel && 'vtmn-navbar_link--icon-alone',
     className,
   );
+  let computedRel = computeRel($$restProps['target'], $$restProps['rel']);
 </script>
 
 <!-- svelte-ignore a11y-missing-attribute -->
 <!-- because href comes through $$restProps -->
 {#if showLabel}
-  <a class={componentClass} {...$$restProps}>
+  <a class={componentClass} {...$$restProps} rel={computedRel}>
     <slot />
     <VtmnIcon value={icon} aria-hidden="true" />
     {label}

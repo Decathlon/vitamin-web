@@ -1,7 +1,9 @@
 import * as React from 'react';
+import clsx from 'clsx';
 import '@vtmn/css-navbar/dist/index-with-vars.css';
 import { VtmnIcon } from '../../../guidelines/iconography/VtmnIcon';
 import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
+import { computeRel } from '@/utils/link';
 
 export interface VtmnNavbarLinkProps
   extends React.ComponentPropsWithoutRef<'a'> {
@@ -38,15 +40,24 @@ export const VtmnNavbarLink = ({
   children,
   ...props
 }: VtmnNavbarLinkProps) => {
+  const relAttrValues = props?.target && computeRel(props.target, props.rel);
   return showLabel ? (
-    <a className={`vtmn-navbar_link ${className}`} {...props}>
+    <a
+      className={clsx('vtmn-navbar_link', className)}
+      {...props}
+      {...(relAttrValues && { rel: relAttrValues })}
+    >
       {children}
       <VtmnIcon value={icon} aria-hidden={true} />
       {label}
     </a>
   ) : (
     <a
-      className={`vtmn-navbar_link vtmn-navbar_link--icon-alone ${className}`}
+      className={clsx(
+        'vtmn-navbar_link',
+        'vtmn-navbar_link--icon-alone',
+        className,
+      )}
       {...props}
     >
       {children}

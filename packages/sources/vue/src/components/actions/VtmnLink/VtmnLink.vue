@@ -2,6 +2,7 @@
 import '@vtmn/css-link/dist/index-with-vars.css';
 import { reactive, computed, defineComponent, PropType } from 'vue';
 import { VtmnLinkSize } from './types';
+import { computeRel } from '@/utils/link';
 
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnLink',
@@ -29,20 +30,7 @@ export default /*#__PURE__*/ defineComponent({
   setup(props, { attrs }) {
     props = reactive(props);
 
-    let computedRel = String(attrs['rel']);
-
-    // If target is set to '_blank', rel should be at least
-    // set to 'noopener noreferrer'
-    if (String(attrs['target']) === '_blank') {
-      const currentRel = attrs['rel'] ?? '';
-      computedRel = Array.from(
-        new Set(String(currentRel).split(' '))
-          .add('noopener')
-          .add('noreferrer'),
-      )
-        .join(' ')
-        .trim();
-    }
+    let computedRel = (attrs['target'] && computeRel(<string>attrs['target'], <string | undefined>attrs['rel'])) || '';
 
     return {
       classes: computed(() => ({
