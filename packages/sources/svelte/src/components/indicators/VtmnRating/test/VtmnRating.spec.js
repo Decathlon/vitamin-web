@@ -355,7 +355,7 @@ describe('VtmnRating', () => {
       expect(getInteractive(container)).toHaveAttribute('data-rating', '2');
     });
 
-    test('Should not contains restProps many times', () => {
+    test('Should not have repeated restProps', () => {
       const { getAllByLabelText } = render(VtmnRating, {
         name: 'rating',
         'aria-label': 'test-rating',
