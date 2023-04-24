@@ -2,6 +2,7 @@ import * as React from 'react';
 import '@vtmn/css-link/dist/index-with-vars.css';
 import clsx from 'clsx';
 import { VtmnLinkSize } from './types';
+import { computeRel } from '@/utils/link';
 
 export interface VtmnLinkProps extends React.ComponentPropsWithoutRef<'a'> {
   /**
@@ -47,17 +48,7 @@ export const VtmnLink = ({
   className,
   ...props
 }: VtmnLinkProps) => {
-  const relAttrValues = Array.from(
-    new Set([
-      // If component has a given "rel" attribute, keep values
-      ...(props?.rel?.split(' ') ?? []),
-      // If comp has "target" set to "blank", add some values
-      ...(props?.target === '_blank' ? ['noopener', 'noreferrer'] : []),
-    ]),
-  )
-    .join(' ')
-    .trim();
-
+  const relAttrValues = props?.target && computeRel(props.target, props.rel);
   return (
     <a
       className={clsx(
