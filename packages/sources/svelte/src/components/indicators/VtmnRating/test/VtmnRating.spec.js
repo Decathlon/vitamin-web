@@ -354,6 +354,16 @@ describe('VtmnRating', () => {
       expect(inputs[1].checked).toEqual(true);
       expect(getInteractive(container)).toHaveAttribute('data-rating', '2');
     });
+
+    test('Should not have repeated restProps', () => {
+      const { getAllByLabelText } = render(VtmnRating, {
+        name: 'rating',
+        'aria-label': 'test-rating',
+        readonly: false,
+        value: 0,
+      });
+      expect(getAllByLabelText('test-rating').length).toEqual(1);
+    });
   });
 
   describe('computeRatingFill', () => {

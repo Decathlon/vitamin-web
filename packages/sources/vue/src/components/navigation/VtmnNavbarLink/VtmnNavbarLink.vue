@@ -23,7 +23,13 @@ export default /*#__PURE__*/ defineComponent({
   },
   setup(props, { attrs }) {
     props = reactive(props);
-    let computedRel = (attrs['target'] && computeRel(<string>attrs['target'], <string | undefined>attrs['rel'])) || '';
+    let computedRel =
+      (attrs['target'] &&
+        computeRel(
+          <string>attrs['target'],
+          <string | undefined>attrs['rel'],
+        )) ||
+      '';
     return {
       styleObject: {
         color: 'inherit',

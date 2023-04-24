@@ -67,12 +67,13 @@ export default /*#__PURE__*/ defineComponent({
 </script>
 
 <template>
-  <div :class="classes" :aria-disabled="disabled" v-bind="$attrs">
+  <div :class="classes" :aria-disabled="disabled" v-bind="readonly && $attrs">
     <div
       v-if="!readonly"
       class="vtmn-rating--interactive"
       aria-label="Rate this"
       role="radiogroup"
+      v-bind="$attrs"
     >
       <template v-for="i in 5" :key="i">
         <input
