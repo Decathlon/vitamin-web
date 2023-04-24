@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@2.1.2...@vtmn/svelte@2.1.3) (2023-04-24)
+
+### Bug Fixes
+
+- **@vtmn/svelte, @vtmn/react, @vtmn/vue:** `VtmnNavbarLink` force rel noopener noreferrer if target blank ([#1423](https://github.com/Decathlon/vitamin-web/issues/1423)) ([7fedfc9](https://github.com/Decathlon/vitamin-web/commit/7fedfc9e64085e866e617a7f5cd2abcddf1f9676))
+- **@vtmn/svelte, @vtmn/vue, @vtmn/react:** interactive `VtmnRating` have duplicate `$$restProps` ([#1411](https://github.com/Decathlon/vitamin-web/issues/1411)) ([fa054c5](https://github.com/Decathlon/vitamin-web/commit/fa054c539deacd04c228a452299fb7cfd0fcace3))
+
 ## [2.1.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@2.1.1...@vtmn/svelte@2.1.2) (2023-04-18)
 
 **Note:** Version bump only for package @vtmn/svelte
