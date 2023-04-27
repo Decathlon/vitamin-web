@@ -94,9 +94,12 @@
       </svelte:fragment>
 
       <svelte:fragment slot="right-nav">
-        <VtmnNavbarLink href="#" icon="user-line" label="Account" />
-        <VtmnNavbarLink href="#" icon="shopping-cart-line" label="Cart"
-          ><VtmnBadge value={3} variant="accent" />
+        <VtmnNavbarLink href="#" icon="user-line">
+          <span>Account</span>
+        </VtmnNavbarLink>
+        <VtmnNavbarLink href="#" icon="shopping-cart-line">
+          <VtmnBadge slot="badge" value={3} variant="accent" />
+          <span>Cart</span>
         </VtmnNavbarLink>
       </svelte:fragment>
     </VtmnNavbar>
@@ -145,19 +148,13 @@
       </svelte:fragment>
 
       <svelte:fragment slot="right-nav">
-        <VtmnNavbarLink
-          href="#"
-          icon="user-line"
-          label="Account"
-          showLabel={false}
-        />
-        <VtmnNavbarLink
-          href="#"
-          icon="shopping-cart-line"
-          label="Cart"
-          showLabel={false}
-          ><VtmnBadge value={3} variant="accent" /></VtmnNavbarLink
-        >
+        <VtmnNavbarLink href="#" icon="user-line">
+          <span class="vtmn-sr-only">Account</span>
+        </VtmnNavbarLink>
+        <VtmnNavbarLink href="#" icon="shopping-cart-line">
+          <VtmnBadge slot="badge" value={3} variant="accent" />
+          <span class="vtmn-sr-only">Cart</span>
+        </VtmnNavbarLink>
       </svelte:fragment>
     </VtmnNavbar>
   </div>

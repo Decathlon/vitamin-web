@@ -18,7 +18,9 @@ const Template = (args) => ({
   },
   template: `<div style="width: 400px; display: flex; justify-content: center">
     <VtmnNavbarLink href="#" icon="shopping-cart-line" label="Cart" v-bind="args">
-      <VtmnBadge slot="badge" value="3" variant="accent" />
+      <template v-slot:badge>
+        <VtmnBadge slot="badge" value="3" variant="accent" />
+      </template>
       <span>Cart</span>
     </VtmnNavbarLink>
     </div>`,
@@ -30,8 +32,10 @@ const TemplateHidden = (args) => ({
     return { args };
   },
   template: `<div style="width: 400px; display: flex; justify-content: center">
-    <VtmnNavbarLink href="#" icon="shopping-cart-line" label="Cart" v-bind="args">
-      <VtmnBadge slot="badge" value="3" variant="accent" />
+    <VtmnNavbarLink href="#" icon="shopping-cart-line" v-bind="args">
+      <template v-slot:badge>
+        <VtmnBadge value="3" variant="accent" />
+      </template>
       <span class="vtmn-sr-only">Cart</span>
     </VtmnNavbarLink>
     </div>`,

@@ -36,11 +36,13 @@ export const VtmnNavbarLink = ({
       {...props}
       {...(relAttrValues && { rel: relAttrValues })}
     >
-      {childrenArray.find((child: ReactElement) => {
-        console.log(child);
-        return child.type === VtmnBadge;
-      })}
-      <VtmnIcon value={icon} aria-hidden={true} />
+      <div>
+        {childrenArray.find((child: ReactElement) => {
+          console.log(child);
+          return child.type === VtmnBadge;
+        })}
+        <VtmnIcon value={icon} aria-hidden={true} />
+      </div>
       {childrenArray.find((child: ReactElement) => child.type === 'span')}
     </a>
   );
