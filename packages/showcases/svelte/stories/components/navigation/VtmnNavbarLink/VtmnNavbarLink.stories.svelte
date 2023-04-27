@@ -19,19 +19,48 @@
 
 <Story name="Overview" let:args>
   <div style="width: 400px; display: flex; justify-content: center">
-    <VtmnNavbarLink
-      href="#"
-      icon="question-line"
-      label="Contact us"
-      {...args}
-    />
+    <VtmnNavbarLink href="#" icon="question-line" {...args}>
+      <span>Contact us</span>
+    </VtmnNavbarLink>
   </div>
 </Story>
 
 <Story name="With badge" let:args>
   <div style="width: 400px; display: flex; justify-content: center">
-    <VtmnNavbarLink href="#" icon="shopping-cart-line" label="Cart" {...args}
-      ><VtmnBadge value={3} variant="accent" /></VtmnNavbarLink
-    >
+    <VtmnNavbarLink href="#" icon="shopping-cart-line" {...args}>
+      <VtmnBadge slot="badge" value={3} variant="accent" />
+      <span>Cart</span>
+    </VtmnNavbarLink>
   </div>
 </Story>
+
+<Story name="Hide label" let:args>
+  <div style="width: 400px; display: flex; justify-content: center">
+    <VtmnNavbarLink href="#" icon="question-line" {...args}>
+      <span class="vtmn-sr-only">Contact us</span>
+    </VtmnNavbarLink>
+  </div>
+</Story>
+
+<Story name="Hide label with badge" let:args>
+  <div style="width: 400px; display: flex; justify-content: center">
+    <VtmnNavbarLink href="#" icon="shopping-cart-line" {...args}>
+      <VtmnBadge slot="badge" value={3} variant="accent" />
+      <span class="vtmn-sr-only">Cart</span>
+    </VtmnNavbarLink>
+  </div>
+</Story>
+
+<style>
+  :global(.vtmn-sr-only) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+</style>
