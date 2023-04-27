@@ -39,8 +39,10 @@ export default /*#__PURE__*/ defineComponent({
 
 <template>
   <a :class="classes" v-bind="$attrs" :rel="computedRel">
-    <slot name="badge" />
-    <VtmnIcon :value="icon" aria-hidden="true" />
-    <slot />
+    <div>
+      <slot name="badge"></slot>
+      <VtmnIcon :value="icon" aria-hidden="true" />
+    </div>
+    <slot></slot>
   </a>
 </template>

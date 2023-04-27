@@ -38,7 +38,9 @@
   on:blur
   on:keydown
 >
-  <slot name="badge" />
-  <VtmnIcon value={icon} aria-hidden="true" />
+  <div class="vtmn-relative">
+    <slot name="badge" />
+    <VtmnIcon value={icon} aria-hidden="true" />
+  </div>
   <slot />
 </a>

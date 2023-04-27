@@ -89,7 +89,7 @@
 }
 
 .vtmn-navbar_right-navigation {
-  block-size: 100%;
+  block-size: rem(74px);
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
@@ -156,6 +156,10 @@
 
 .vtmn-navbar_link .vtmn-badge {
   position: absolute;
-  top: rem(6px);
+  bottom: rem(16px);
   left: 50%;
+}
+
+.vtmn-navbar_link > div:first-of-type {
+  position: relative;
 }
