@@ -37,10 +37,7 @@ export const VtmnNavbarLink = ({
       {...(relAttrValues && { rel: relAttrValues })}
     >
       <div>
-        {childrenArray.find((child: ReactElement) => {
-          console.log(child);
-          return child.type === VtmnBadge;
-        })}
+        {childrenArray.find((child: ReactElement) => child.type === VtmnBadge)}
         <VtmnIcon value={icon} aria-hidden={true} />
       </div>
       {childrenArray.find((child: ReactElement) => child.type === 'span')}
