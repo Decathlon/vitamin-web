@@ -18,6 +18,12 @@ type VtmnTextInputAdditionalProps = {
   labelText?: string;
 
   /**
+   * Label element for the input
+   * @type {JSX.Element}
+   */
+  labelComponent?: JSX.Element | JSX.Element[];
+
+  /**
    * Helper text to help the user
    * @type {string}
    * @defaultValue undefined
@@ -100,6 +106,7 @@ export const VtmnTextInput = React.forwardRef<
       onIconClick,
       labelClassName,
       labelProps,
+      labelComponent,
       ...props
     },
     ref,
@@ -107,13 +114,13 @@ export const VtmnTextInput = React.forwardRef<
     const { multiline, ...rest } = props;
     return (
       <>
-        {labelText && (
+        {(labelComponent || labelText) && (
           <label
             className={`vtmn-text-input_label ${labelClassName || ''}`}
             htmlFor={identifier}
             {...labelProps}
           >
-            {labelText}
+            {labelComponent || labelText}
           </label>
         )}
         {multiline ? (

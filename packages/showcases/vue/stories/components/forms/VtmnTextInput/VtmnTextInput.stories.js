@@ -19,5 +19,14 @@ const Template = (args) => ({
   template: `<VtmnTextInput v-bind="args"/>`,
 });
 
+const LabelComponent = (args) => ({
+  components: { VtmnTextInput },
+  setup() {
+    return { args };
+  },
+  template: `<VtmnTextInput v-bind="args"><template #labelComponent><p>Label <i>(Optionnal)</i></p></template></VtmnTextInput>`,
+});
+
 export const Overview = Template.bind({});
 Overview.args = {};
+export const WithCustomLabel = LabelComponent.bind({});

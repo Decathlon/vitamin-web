@@ -2,6 +2,7 @@ import '@testing-library/jest-dom';
 
 import { render, fireEvent } from '@testing-library/svelte';
 import VtmnTextInput from '../VtmnTextInput.svelte';
+import VtmnTextInputSlot from './VtmnTextInputSlot.svelte';
 
 describe('VtmnTextInput', () => {
   const params = {
@@ -51,6 +52,18 @@ describe('VtmnTextInput', () => {
       expect(getTextLabel(container)).toHaveAttribute('for', 'text-input');
       expect(getTextInput(container)).toHaveAttribute('id', 'text-input');
     });
+
+    test('Should display the label component if labelComponent is defined', () => {
+      const { container, queryByText } = render(VtmnTextInputSlot, {
+        ...params,
+      });
+      expect(queryByText(/Label/)).toBeVisible();
+      expect(queryByText(/(Optionnal)/)).toBeVisible();
+      expect(queryByText(/Unit test label/i)).toBeNull();
+      expect(getTextLabel(container)).toHaveAttribute('for', 'text-input');
+      expect(getTextInput(container)).toHaveAttribute('id', 'text-input');
+    });
+
     test('Should display the placeholder', () => {
       const { container } = render(VtmnTextInput, { ...params });
       expect(getTextInput(container)).toHaveAttribute(

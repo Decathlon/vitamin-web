@@ -79,7 +79,8 @@ export default /*#__PURE__*/ defineComponent({
 
 <template>
   <label :v-if="labelText" class="vtmn-text-input_label" :for="identifier">
-    {{ labelText }}
+    <slot name="labelComponent" v-if="$slots.labelComponent" />
+    <template v-else>{{ labelText }}</template>
   </label>
   <textarea
     v-if="multiline"
