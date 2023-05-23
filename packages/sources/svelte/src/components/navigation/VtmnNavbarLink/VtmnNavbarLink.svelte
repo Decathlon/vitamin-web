@@ -43,24 +43,19 @@
 
 <!-- svelte-ignore a11y-missing-attribute -->
 <!-- because href comes through $$restProps -->
-<a
-  class={componentClass}
-  {...$$restProps}
-  rel={computedRel}
-  on:click
-  on:mouseover
-  on:mouseenter
-  on:mouseout
-  on:focus
-  on:blur
-  on:keydown
->
-  <slot />
-  {#if icon}
+{#if showLabel}
+  <a class={componentClass} {...$$restProps} rel={computedRel}>
+    <slot />
     <VtmnIcon value={icon} aria-hidden="true" />
-  {/if}
-  <span class:vtmn-sr-only={!showLabel}>{label}</span>
-</a>
+    {label}
+  </a>
+{:else}
+  <a class={componentClass} {...$$restProps}>
+    <slot />
+    <VtmnIcon value={icon} aria-hidden="true" />
+    <span class="vtmn-sr-only">{label}</span>
+  </a>
+{/if}
 
 <style>
   .vtmn-sr-only {
