@@ -14,13 +14,13 @@
    * Label text linked to the input
    * @type {string}
    */
-  export let labelText;
+  export let labelText = undefined;
 
   /**
    * Plaholder of the input
    * @type {string}
    */
-  export let placeholder;
+  export let placeholder = undefined;
 
   /**
    * Whether input should be disabled or not
@@ -78,8 +78,14 @@
   );
 </script>
 
-{#if labelText}
-  <label class="vtmn-text-input_label" for={id}>{labelText}</label>
+{#if $$slots.labelComponent || labelText}
+  <label class="vtmn-text-input_label" for={id}>
+    {#if $$slots.labelComponent}
+      <slot name="labelComponent" />
+    {:else}
+      {labelText}
+    {/if}
+  </label>
 {/if}
 {#if multiline}
   <textarea

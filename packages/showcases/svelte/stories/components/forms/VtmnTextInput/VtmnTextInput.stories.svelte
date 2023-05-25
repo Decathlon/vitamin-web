@@ -40,8 +40,13 @@
   {parameters}
 />
 
-<Template let:args>
+<Story name="Overview" args={textinputArgs} let:args>
   <VtmnTextInput {...args} />
-</Template>
-
-<Story name="Overview" args={textinputArgs} />
+</Story>
+<Story name="With custom label" args={textinputArgs} let:args>
+  <VtmnTextInput {...args}>
+    <p slot="labelComponent">
+      Label <i>(Optionnal)</i>
+    </p>
+  </VtmnTextInput>
+</Story>

@@ -25,7 +25,21 @@ export default {
 
 const Template: Story = (args) => <VtmnTextInput {...args} />;
 
+const LabelComponent: Story = (args) => (
+  <VtmnTextInput
+    identifier="comp"
+    labelComponent={
+      <p>
+        Label <i>(Optionnal)</i>
+      </p>
+    }
+    {...args}
+  />
+);
+
 export const Overview = Template.bind({});
 Overview.args = {
   onIconClick: () => action('icon clicked'),
 };
+
+export const WithCustomLabel = LabelComponent.bind({});
