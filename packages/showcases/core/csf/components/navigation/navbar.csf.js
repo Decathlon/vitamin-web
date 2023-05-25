@@ -5,11 +5,4 @@ export const parameters = {
   },
 };
 
-export const argTypes = {
-  logoHref: {
-    type: { name: 'string', required: false },
-    description: 'Logo anchor',
-    defaultValue: '#',
-    control: { type: 'text' },
-  },
-};
+export const argTypes = {};
