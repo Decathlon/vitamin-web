@@ -1,9 +1,6 @@
 <script>
   import { Meta, Story } from '@storybook/addon-svelte-csf';
-  import {
-    argTypes,
-    parameters,
-  } from '@vtmn/showcase-core/csf/components/navigation/navbar.csf';
+  import { parameters } from '@vtmn/showcase-core/csf/components/navigation/navbar.csf';
   import {
     VtmnButton,
     VtmnNavbar,
@@ -16,7 +13,7 @@
 <Meta
   title="Components / Navigation / VtmnNavbar"
   component={VtmnNavbar}
-  {argTypes}
+  argTypes={{}}
   {parameters}
 />
 

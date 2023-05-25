@@ -1,15 +1,12 @@
 import React from 'react';
 import { VtmnNavbar } from '@vtmn/react';
 import { Meta, Story } from '@storybook/react';
-import {
-  argTypes,
-  parameters,
-} from '@vtmn/showcase-core/csf/components/navigation/navbar.csf';
+import { parameters } from '@vtmn/showcase-core/csf/components/navigation/navbar.csf';
 
 export default {
   title: 'Components / Navigation / VtmnNavbar',
   component: VtmnNavbar,
-  argTypes,
+  argTypes: {},
   parameters,
 } as Meta;
 
