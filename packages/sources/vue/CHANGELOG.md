@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@2.1.3...@vtmn/vue@2.2.0) (2023-05-25)
+
+### Features
+
+- **textinput:** add custom label ([#1432](https://github.com/Decathlon/vitamin-web/issues/1432)) ([775da7f](https://github.com/Decathlon/vitamin-web/commit/775da7f369b872fea062d9e19a86e92b7fcb45f5))
+
 ## [2.1.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@2.1.2...@vtmn/vue@2.1.3) (2023-04-24)
 
 ### Bug Fixes
