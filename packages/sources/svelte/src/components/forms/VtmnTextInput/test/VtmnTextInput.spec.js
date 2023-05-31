@@ -46,6 +46,17 @@ describe('VtmnTextInput', () => {
       expect(onChange.mock.results[0].value).toEqual(nextValue);
     });
 
+    test('Should trigger focus event if focused', async () => {
+      const onFocus = jest.fn();
+      const { component, getByPlaceholderText } = render(VtmnTextInput, {
+        ...params,
+      });
+      const inputEl = getByPlaceholderText(params.placeholder);
+      component.$on('focus', onFocus);
+      inputEl.focus();
+      expect(onFocus).toHaveBeenCalledTimes(1);
+    });
+
     test('Should display the label if labelText are defined', () => {
       const { container } = render(VtmnTextInput, { ...params });
       expect(getTextLabel(container)).toBeVisible();
@@ -207,6 +218,18 @@ describe('VtmnTextInput', () => {
         icon: 'unit-test',
       });
       expect(getIcon(container, 'unit-test')).toBeUndefined();
+    });
+
+    test('Should trigger focus event if focused', async () => {
+      const onFocus = jest.fn();
+      const { component, getByPlaceholderText } = render(VtmnTextInput, {
+        ...params,
+        multiline: true,
+      });
+      const inputEl = getByPlaceholderText(params.placeholder);
+      component.$on('focus', onFocus);
+      inputEl.focus();
+      expect(onFocus).toHaveBeenCalledTimes(1);
     });
   });
 
