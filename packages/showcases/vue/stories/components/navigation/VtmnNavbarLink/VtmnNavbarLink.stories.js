@@ -17,9 +17,32 @@ const Template = (args) => ({
     return { args };
   },
   template: `<div style="width: 400px; display: flex; justify-content: center">
-    <VtmnNavbarLink href="#" icon="shopping-cart-line" label="Cart" v-bind="args"><VtmnBadge value="3" variant="accent" /></VtmnNavbarLink>
+    <VtmnNavbarLink href="#" icon="shopping-cart-line" label="Cart" v-bind="args">
+      <template v-slot:badge>
+        <VtmnBadge slot="badge" value="3" variant="accent" />
+      </template>
+      <span>Cart</span>
+    </VtmnNavbarLink>
+    </div>`,
+});
+
+const TemplateHidden = (args) => ({
+  components: { VtmnNavbarLink, VtmnBadge },
+  setup() {
+    return { args };
+  },
+  template: `<div style="width: 400px; display: flex; justify-content: center">
+    <VtmnNavbarLink href="#" icon="shopping-cart-line" v-bind="args">
+      <template v-slot:badge>
+        <VtmnBadge value="3" variant="accent" />
+      </template>
+      <span class="vtmn-sr-only">Cart</span>
+    </VtmnNavbarLink>
     </div>`,
 });
 
 export const Overview = Template.bind({});
 Overview.args = {};
+
+export const Hidden = TemplateHidden.bind({});
+Hidden.args = {};
