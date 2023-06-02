@@ -21,10 +21,27 @@ const Template: Story = (args) => (
       justifyContent: 'center',
     }}
   >
-    <VtmnNavbarLink label="Cart" icon="shopping-cart-line" href="#" {...args}>
+    <VtmnNavbarLink icon="shopping-cart-line" href="#" {...args}>
       <VtmnBadge value={3} variant="accent" />
+      <span>Cart</span>
+    </VtmnNavbarLink>
+  </div>
+);
+
+const HiddenTemplate: Story = (args) => (
+  <div
+    style={{
+      width: 800,
+      display: 'flex',
+      justifyContent: 'center',
+    }}
+  >
+    <VtmnNavbarLink icon="shopping-cart-line" href="#" {...args}>
+      <VtmnBadge value={3} variant="accent" />
+      <span className="vtmn-sr-only">Cart</span>
     </VtmnNavbarLink>
   </div>
 );
 
 export const Overview = Template.bind({});
+export const Hidden = HiddenTemplate.bind({});
