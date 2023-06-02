@@ -46,7 +46,7 @@ describe('VtmnTextInput', () => {
       expect(onChange.mock.results[0].value).toEqual(nextValue);
     });
 
-    test('Should trigger focus event if focused', async () => {
+    test('Should trigger focus event if focused', () => {
       const onFocus = jest.fn();
       const { component, getByPlaceholderText } = render(VtmnTextInput, {
         ...params,
@@ -220,7 +220,7 @@ describe('VtmnTextInput', () => {
       expect(getIcon(container, 'unit-test')).toBeUndefined();
     });
 
-    test('Should trigger focus event if focused', async () => {
+    test('Should trigger focus event if focused', () => {
       const onFocus = jest.fn();
       const { component, getByPlaceholderText } = render(VtmnTextInput, {
         ...params,
