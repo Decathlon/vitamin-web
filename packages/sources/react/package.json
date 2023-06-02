@@ -1,6 +1,6 @@
 {
   "name": "@vtmn/react",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "Decathlon Design System - Vitamin React components library",
   "keywords": [
     "design-system",
@@ -61,7 +61,7 @@
     "@vtmn/css-list": "^1.1.1",
     "@vtmn/css-loader": "^1.1.1",
     "@vtmn/css-modal": "^1.1.1",
-    "@vtmn/css-navbar": "^1.2.0",
+    "@vtmn/css-navbar": "^1.3.0",
     "@vtmn/css-popover": "^1.1.1",
     "@vtmn/css-price": "^1.1.1",
     "@vtmn/css-progressbar": "^1.1.1",

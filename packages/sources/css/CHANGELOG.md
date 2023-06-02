@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@1.2.2...@vtmn/css@1.3.0) (2023-06-02)
+
+### Features
+
+- **`@vtmn/css`, `@vtmn/svelte`, `@vtmn/react`, `@vtmn/vue`:** rework `VtmnNavbarLink` for SSR ([#1425](https://github.com/Decathlon/vitamin-web/issues/1425)) ([dc6b999](https://github.com/Decathlon/vitamin-web/commit/dc6b99940a6aa3f1b2023bd7c139344c6a6e28cd))
+
 ## [1.2.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@1.2.1...@vtmn/css@1.2.2) (2023-04-18)
 
 **Note:** Version bump only for package @vtmn/css
