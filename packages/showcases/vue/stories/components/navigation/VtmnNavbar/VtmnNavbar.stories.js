@@ -1,10 +1,13 @@
 import { VtmnNavbar } from '@vtmn/vue';
-import { parameters } from '@vtmn/showcase-core/csf/components/navigation/navbar.csf';
+import {
+  argTypes,
+  parameters,
+} from '@vtmn/showcase-core/csf/components/navigation/navbar.csf';
 
 export default {
   title: 'Components / Navigation / VtmnNavbar',
   component: VtmnNavbar,
-  argTypes: {},
+  argTypes,
   parameters,
 };
 
@@ -16,7 +19,6 @@ const Template = (args) => ({
   template: `<div style="width: 800px; display: flex; justify-content: center">
     <VtmnNavbar v-bind="args">
       <template #logo>
-        <a aria-label="decathlon logo" href="#">
             <svg viewBox="0 0 200 50" aria-label="Decathlon logo" role="img">
               <title>Decathlon</title>
               <g
@@ -40,10 +42,9 @@ const Template = (args) => ({
                 </g>
               </g>
             </svg>
-          </a>
-        </template>
-    </VtmnNavbar>
-  </div>`,
+          </template>
+      </VtmnNavbar>
+    </div>`,
 });
 
 export const Overview = Template.bind({});

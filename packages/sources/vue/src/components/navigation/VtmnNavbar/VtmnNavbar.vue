@@ -5,7 +5,12 @@ import { defineComponent, PropType } from 'vue';
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnNavbar',
   components: {},
-  props: {},
+  props: {
+    logoHref: {
+      type: String as PropType<string>,
+      default: '#',
+    },
+  },
 });
 </script>
 
@@ -15,9 +20,9 @@ export default /*#__PURE__*/ defineComponent({
       <slot name="left-nav" />
     </div>
 
-    <div v-if="$slots['logo']" class="vtmn-navbar_logo">
+    <a v-if="$slots['logo']" class="vtmn-navbar_logo" :href="logoHref">
       <slot name="logo" />
-    </div>
+    </a>
 
     <div v-if="$slots['middle-area']" class="vtmn-navbar_middle-area">
       <slot name="middle-area" />
