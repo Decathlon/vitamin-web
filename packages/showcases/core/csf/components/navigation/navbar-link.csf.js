@@ -16,4 +16,22 @@ export const argTypes = {
       options: ['', ...Object.keys(vitamixIconsList)],
     },
   },
+  label: {
+    type: { name: 'string', required: true },
+    description:
+      'Label of the navbar link. Mandatory even if label is not shown for screen readers.',
+    control: { type: 'text' },
+  },
+  showLabel: {
+    type: { name: 'boolean', required: true },
+    description: 'Displays the label of the navbar link.',
+    table: {
+      type: {
+        summary: 'boolean',
+      },
+      defaultValue: { summary: 'true' },
+    },
+    defaultValue: true,
+    control: { type: 'boolean' },
+  },
 };

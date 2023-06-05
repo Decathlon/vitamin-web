@@ -4,7 +4,6 @@ import '@vtmn/css-navbar/dist/index-with-vars.css';
 import { VtmnIcon } from '../../../guidelines/iconography/VtmnIcon';
 import { VitamixId } from '@vtmn/icons/dist/vitamix/font/vitamix';
 import { computeRel } from '@/utils/link';
-import { VtmnBadge } from '@/components/indicators/VtmnBadge';
 
 export interface VtmnNavbarLinkProps
   extends React.ComponentPropsWithoutRef<'a'> {
@@ -16,6 +15,17 @@ export interface VtmnNavbarLinkProps
   icon: VitamixId;
 
   /**
+   * Label of the navbar link. Mandatory even if label is not shown for screen readers.
+   */
+  label: string;
+
+  /**
+   * Displays the label of the navbar link.
+   * @defaultValue true
+   */
+  showLabel?: boolean;
+
+  /**
    * The badge to render on top of the navbar link.
    * @defaultValue undefined
    */
@@ -24,23 +34,35 @@ export interface VtmnNavbarLinkProps
 
 export const VtmnNavbarLink = ({
   icon,
+  label,
+  showLabel = true,
   className,
   children,
   ...props
 }: VtmnNavbarLinkProps) => {
   const relAttrValues = props?.target && computeRel(props.target, props.rel);
-  const childrenArray = React.Children.toArray(children);
-  return (
+  return showLabel ? (
     <a
       className={clsx('vtmn-navbar_link', className)}
       {...props}
       {...(relAttrValues && { rel: relAttrValues })}
     >
-      <div>
-        {childrenArray.find((child: ReactElement) => child.type === VtmnBadge)}
-        <VtmnIcon value={icon} aria-hidden={true} />
-      </div>
-      {childrenArray.find((child: ReactElement) => child.type === 'span')}
+      {children}
+      <VtmnIcon value={icon} aria-hidden={true} />
+      {label}
+    </a>
+  ) : (
+    <a
+      className={clsx(
+        'vtmn-navbar_link',
+        'vtmn-navbar_link--icon-alone',
+        className,
+      )}
+      {...props}
+    >
+      {children}
+      <VtmnIcon value={icon} aria-hidden={true} />
+      <span className="vtmn-sr-only">{label}</span>
     </a>
   );
 };

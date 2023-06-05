@@ -12,6 +12,19 @@
    */
   export let icon;
 
+  /**
+   * Label of the navbar link. Mandatory even if label is not shown for screen readers.
+   *
+   * @type {string}
+   */
+  export let label;
+
+  /**
+   * @type {boolean} Displays the label of the navbar link.
+   * @defaultValue true
+   */
+  export let showLabel = true;
+
   let className = undefined;
   /**
    * Custom classes to apply to the component.
@@ -20,27 +33,40 @@
    */
   export { className as class };
 
-  $: componentClass = cn('vtmn-navbar_link', className);
+  $: componentClass = cn(
+    'vtmn-navbar_link',
+    !showLabel && 'vtmn-navbar_link--icon-alone',
+    className,
+  );
   let computedRel = computeRel($$restProps['target'], $$restProps['rel']);
 </script>
 
 <!-- svelte-ignore a11y-missing-attribute -->
 <!-- because href comes through $$restProps -->
-<a
-  class={componentClass}
-  {...$$restProps}
-  rel={computedRel}
-  on:click
-  on:mouseover
-  on:mouseenter
-  on:mouseout
-  on:focus
-  on:blur
-  on:keydown
->
-  <div class="vtmn-relative">
-    <slot name="badge" />
+{#if showLabel}
+  <a class={componentClass} {...$$restProps} rel={computedRel}>
+    <slot />
     <VtmnIcon value={icon} aria-hidden="true" />
-  </div>
-  <slot />
-</a>
+    {label}
+  </a>
+{:else}
+  <a class={componentClass} {...$$restProps}>
+    <slot />
+    <VtmnIcon value={icon} aria-hidden="true" />
+    <span class="vtmn-sr-only">{label}</span>
+  </a>
+{/if}
+
+<style>
+  .vtmn-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+</style>
