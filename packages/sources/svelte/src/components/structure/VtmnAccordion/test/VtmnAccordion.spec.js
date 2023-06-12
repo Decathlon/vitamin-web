@@ -1,6 +1,7 @@
 import '@testing-library/jest-dom';
 import { render } from '@testing-library/svelte';
 import VtmnAccordion from './VtmnAccordionWithSlots.svelte';
+import VtmnAccordionWithSummarySlots from './VtmnAccordionWithSummarySlots.svelte';
 
 describe('VtmnAccordion', () => {
   const getAccordion = (container) =>
@@ -65,5 +66,10 @@ describe('VtmnAccordion', () => {
       summary: 'Unit test summary',
     });
     expect(getByText('Unit test summary')).toBeVisible();
+  });
+
+  test('Should display the summary from the slot', () => {
+    const { getByText } = render(VtmnAccordionWithSummarySlots);
+    expect(getByText('Summary from slot')).toBeVisible();
   });
 });

@@ -1,6 +1,6 @@
 <script>
   import { Meta, Story } from '@storybook/addon-svelte-csf';
-  import { VtmnAccordion, VtmnButton } from '@vtmn/svelte';
+  import { VtmnAccordion, VtmnButton, VtmnBadge } from '@vtmn/svelte';
   import {
     argTypes,
     parameters,
@@ -59,6 +59,17 @@
 </Story>
 <Story name="Custom content">
   <VtmnAccordion summary="Item 1" withIconLeft class="accordion-stories" open>
+    <VtmnButton variant="primary" size="small">Button 1</VtmnButton>
+    <VtmnButton variant="primary" size="small">Button 2</VtmnButton>
+    <VtmnButton variant="primary" size="small">Button 3</VtmnButton>
+  </VtmnAccordion>
+</Story>
+
+<Story name="Slot summary">
+  <VtmnAccordion withIconLeft class="accordion-stories" open>
+    <span slot="summaryComponent">
+      Size <VtmnBadge variant="brand" value="1" />
+    </span>
     <VtmnButton variant="primary" size="small">Button 1</VtmnButton>
     <VtmnButton variant="primary" size="small">Button 2</VtmnButton>
     <VtmnButton variant="primary" size="small">Button 3</VtmnButton>

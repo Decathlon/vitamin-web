@@ -5,7 +5,7 @@
    * @type {string} Summary of the accordion.
    * @requires
    */
-  export let summary;
+  export let summary = undefined;
 
   /**
    * @type {boolean} Display left icon on summary.
@@ -44,7 +44,13 @@
   {open}
   {...$$restProps}
 >
-  <summary>{summary}</summary>
+  <summary>
+    {#if $$slots.summaryComponent}
+      <slot name="summaryComponent" />
+    {:else}
+      {summary}
+    {/if}
+  </summary>
   <div class="vtmn-accordion_content">
     <slot />
   </div>
