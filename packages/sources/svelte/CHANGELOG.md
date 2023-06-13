@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@2.3.1...@vtmn/svelte@3.0.0) (2023-06-13)
+
+### Features
+
+- **`@vtmn/css`, `@vtmn/svelte`, `@vtmn/react`, `@vtmn/vue`:** rework `VtmnNavbarLink` for SSR ([#1436](https://github.com/Decathlon/vitamin-web/issues/1436)) ([5f21476](https://github.com/Decathlon/vitamin-web/commit/5f21476c20f5431e2966920d262a62bf1079869e))
+
+### BREAKING CHANGES
+
+- **`@vtmn/css`, `@vtmn/svelte`, `@vtmn/react`, `@vtmn/vue`:** The VtmnNavbarLink component removes properties "label" and "showLabel", they are replaced by a <span> slot.
+
 ## [2.3.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@2.3.0...@vtmn/svelte@2.3.1) (2023-06-05)
 
 **Note:** Version bump only for package @vtmn/svelte
