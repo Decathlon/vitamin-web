@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@3.0.0...@vtmn/svelte@3.1.0) (2023-06-15)
+
+### Features
+
+- **`@vtmn/svelte`:** add focus event support for Svelte version of `VtmnTextInput` ([#1433](https://github.com/Decathlon/vitamin-web/issues/1433)) ([373a12c](https://github.com/Decathlon/vitamin-web/commit/373a12c552f5674c7da85487215681c512396a5f))
+
 # [3.0.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@2.3.1...@vtmn/svelte@3.0.0) (2023-06-13)
 
 ### Features
