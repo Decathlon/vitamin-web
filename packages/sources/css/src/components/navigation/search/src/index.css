@@ -165,6 +165,10 @@
   color: var(--vtmn-semantic-color_content-secondary);
 }
 
+.vtmn-search_variant--persistent > .vtmn-search_buttons {
+  background-color: var(--vtmn-semantic-color_background-secondary);
+}
+
 /* ON CONTENT */
 .vtmn-search_variant--on-content > input[type='search'] {
   box-shadow: var(--vtmn-shadow_100);
