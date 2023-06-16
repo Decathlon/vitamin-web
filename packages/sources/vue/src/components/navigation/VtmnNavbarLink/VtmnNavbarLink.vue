@@ -13,13 +13,6 @@ export default /*#__PURE__*/ defineComponent({
       type: String as PropType<VitamixId>,
       default: null,
     },
-    label: {
-      type: String as PropType<string>,
-    },
-    showLabel: {
-      type: Boolean as PropType<boolean>,
-      default: true,
-    },
   },
   setup(props, { attrs }) {
     props = reactive(props);
@@ -37,7 +30,6 @@ export default /*#__PURE__*/ defineComponent({
       },
       classes: computed(() => ({
         'vtmn-navbar_link': true,
-        'vtmn-navbar_link--icon-alone': !props.showLabel,
       })),
       computedRel,
     };
@@ -46,17 +38,11 @@ export default /*#__PURE__*/ defineComponent({
 </script>
 
 <template>
-  <template v-if="showLabel">
-    <a :class="classes" v-bind="$attrs" :rel="computedRel">
-      <slot />
-      <VtmnIcon :value="icon" aria-hidden="true" />{{ label }}</a
-    >
-  </template>
-  <template v-else>
-    <a :class="classes" v-bind="$attrs" :rel="computedRel">
-      <slot />
+  <a :class="classes" v-bind="$attrs" :rel="computedRel">
+    <div>
+      <slot name="badge"></slot>
       <VtmnIcon :value="icon" aria-hidden="true" />
-      <span class="vtmn-sr-only">{{ label }}</span>
-    </a>
-  </template>
+    </div>
+    <slot></slot>
+  </a>
 </template>

@@ -89,7 +89,7 @@
 }
 
 .vtmn-navbar_right-navigation {
-  block-size: 100%;
+  block-size: rem(74px);
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
@@ -117,7 +117,8 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  width: rem(104px);
+  min-width: rem(48px);
+  max-width: rem(104px);
   padding: rem(12px);
   font-size: var(--vtmn-typo_text-3-font-size);
   line-height: var(--vtmn-typo_text-3-line-height);
@@ -142,27 +143,23 @@
   transition: var(--vtmn-transition_focus-visible);
 }
 
+.vtmn-navbar_link span:not([class^='vtmn-badge']) {
+  margin-top: rem(4px);
+  width: rem(104px);
+}
+
 .vtmn-navbar_link span[class^='vtmx-'] {
   font-size: rem(24px);
-  margin-bottom: rem(4px);
+  width: inherit;
+  margin-top: 0;
 }
 
 .vtmn-navbar_link .vtmn-badge {
   position: absolute;
-  top: 0;
+  bottom: rem(16px);
   left: 50%;
 }
 
-.vtmn-navbar_link.vtmn-navbar_link--icon-alone .vtmn-badge {
-  top: rem(6px);
-  left: 50%;
-}
-
-.vtmn-navbar_link.vtmn-navbar_link--icon-alone {
-  width: rem(48px);
-  height: rem(48px);
-}
-
-.vtmn-navbar_link.vtmn-navbar_link--icon-alone span[class^='vtmx-'] {
-  margin-bottom: 0;
+.vtmn-navbar_link > div:first-of-type {
+  position: relative;
 }
