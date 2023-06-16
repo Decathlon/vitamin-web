@@ -25,7 +25,7 @@
   font-weight: var(--vtmn-typo_text-2-line-height);
   padding-block: rem(12px);
   padding-inline-start: rem(12px);
-  padding-inline-end: rem(86px);
+  padding-inline-end: rem(12px);
   color: var(--vtmn-semantic-color_content-primary);
   outline: none;
   appearance: none;
@@ -79,6 +79,9 @@
   text-align: end;
   padding-inline-end: rem(2px);
   margin-inline-end: rem(2px);
+  padding-inline-start: rem(2px);
+  margin-inline-start: rem(2px);
+  background-color: var(--vtmn-semantic-color_background-primary);
 }
 
 .vtmn-search_buttons > .vtmn-btn {
@@ -105,7 +108,7 @@
   font-size: var(--vtmn-typo_text-3-font-size);
   padding-block: rem(12px);
   padding-inline-start: rem(12px);
-  padding-inline-end: rem(56px);
+  padding-inline-end: rem(12px);
 }
 
 .vtmn-search_size--small > .vtmn-search_buttons > .vtmn-btn {
@@ -128,7 +131,7 @@
   font-size: var(--vtmn-typo_text-2-font-size);
   padding-block: rem(12px);
   padding-inline-start: rem(12px);
-  padding-inline-end: rem(86px);
+  padding-inline-end: rem(12px);
 }
 
 .vtmn-search_size--medium > .vtmn-search_buttons > .vtmn-btn {
@@ -160,6 +163,10 @@
 
 .vtmn-search_variant--persistent > input[type='search']::placeholder {
   color: var(--vtmn-semantic-color_content-secondary);
+}
+
+.vtmn-search_variant--persistent > .vtmn-search_buttons {
+  background-color: var(--vtmn-semantic-color_background-secondary);
 }
 
 /* ON CONTENT */
