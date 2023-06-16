@@ -93,6 +93,7 @@
     on:input
     on:change
     on:blur
+    on:focus
     class={componentClass}
     {id}
     {disabled}
@@ -106,6 +107,7 @@
       on:input
       on:change
       on:blur
+      on:focus
       class={componentClass}
       type="text"
       {id}
