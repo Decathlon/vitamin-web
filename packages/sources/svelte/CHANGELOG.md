@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@3.1.0...@vtmn/svelte@3.2.0) (2023-06-16)
+
+### Features
+
+- **`@vtmn/react`, `@vtmn/vue`, `@vtmn/svelte`:** add summaryComponent on `VtmnAccordion` ([#1441](https://github.com/Decathlon/vitamin-web/issues/1441)) ([abb2c7a](https://github.com/Decathlon/vitamin-web/commit/abb2c7a5cccea93c08aaa01470dfe6da1fbbd67a))
+
 # [3.1.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@3.0.0...@vtmn/svelte@3.1.0) (2023-06-15)
 
 ### Features

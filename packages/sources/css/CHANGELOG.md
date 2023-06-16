@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@2.0.0...@vtmn/css@2.0.1) (2023-06-16)
+
+### Bug Fixes
+
+- **`@vtmn/css`:** fix padding end with child count for `VtmnSearch` ([#1439](https://github.com/Decathlon/vitamin-web/issues/1439)) ([41cb153](https://github.com/Decathlon/vitamin-web/commit/41cb15348b9583c18d6e19071d8c9715c257dbad))
+
 # [2.0.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@1.3.1...@vtmn/css@2.0.0) (2023-06-13)
 
 ### Features
