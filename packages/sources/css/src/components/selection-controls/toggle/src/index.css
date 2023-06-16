@@ -93,7 +93,7 @@
   inline-size: rem(24px);
   inset-inline-start: rem(4px);
   inset-block-start: rem(4px);
-  background-color: var(--vtmn-semantic-color_content-primary-reversed);
+  background-color: var(--vtmn-base-color_white);
   transition: var(--vtmn-transition_focus-visible), transform 0.2s ease-out,
     background-color 0.2s ease-out;
   border-radius: 50%;
