@@ -11,6 +11,12 @@ export interface VtmnAccordionProps
   summary?: string;
 
   /**
+   * Label element for the input
+   * @type {JSX.Element}
+   */
+  summaryComponent?: JSX.Element | JSX.Element[];
+
+  /**
    * @type {boolean} Display left icon on summary.
    * @default false
    */
@@ -31,6 +37,7 @@ export interface VtmnAccordionProps
 
 export const VtmnAccordion = ({
   summary,
+  summaryComponent,
   withIconLeft,
   disabled,
   open,
@@ -50,7 +57,7 @@ export const VtmnAccordion = ({
       open={open}
       {...props}
     >
-      <summary>{summary}</summary>
+      <summary>{summaryComponent || summary}</summary>
       <div className="vtmn-accordion_content">{children}</div>
     </details>
   );

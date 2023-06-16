@@ -42,7 +42,10 @@ export default /*#__PURE__*/ defineComponent({
     :aria-expanded="open"
     v-bind="$attrs"
   >
-    <summary>{{ summary }}</summary>
+    <summary>
+      <slot name="summaryComponent" v-if="$slots.summaryComponent" />
+      <template v-else>{{ summary }}</template>
+    </summary>
     <div class="vtmn-accordion_content">
       <slot />
     </div>

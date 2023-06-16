@@ -1,5 +1,5 @@
 import React from 'react';
-import { VtmnAccordion, VtmnButton } from '@vtmn/react';
+import { VtmnAccordion, VtmnButton, VtmnBadge } from '@vtmn/react';
 import { Meta, Story } from '@storybook/react';
 import {
   argTypes,
@@ -73,7 +73,32 @@ const CustomContentTemplate: Story = (args) => (
   </div>
 );
 
+const SummarySlotTemplate: Story = (arg) => (
+  <div style={{ width: 400, height: 250 }}>
+    <VtmnAccordion
+      summaryComponent={
+        <span>
+          Title <VtmnBadge value={1} variant="brand" />
+        </span>
+      }
+      withIconLeft
+      open
+    >
+      <VtmnButton variant="primary" size="small">
+        Button 1
+      </VtmnButton>
+      <VtmnButton variant="primary" size="small">
+        Button 2
+      </VtmnButton>
+      <VtmnButton variant="primary" size="small">
+        Button 3
+      </VtmnButton>
+    </VtmnAccordion>
+  </div>
+);
+
 export const Overview = OverviewTemplate.bind({});
 export const Simple = SimpleTemplate.bind({});
 export const WithLeftIcons = WithLeftIconsTemplate.bind({});
 export const CustomContent = CustomContentTemplate.bind({});
+export const SummarySlot = SummarySlotTemplate.bind({});
