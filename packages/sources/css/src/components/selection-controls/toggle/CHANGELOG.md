@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-toggle@1.1.1...@vtmn/css-toggle@1.1.2) (2023-06-20)
+
+### Bug Fixes
+
+- **@vtmn/css:** the thumb of the Toggle component doesn't have the right color in dark mode ([#1443](https://github.com/Decathlon/vitamin-web/issues/1443)) ([8ad1179](https://github.com/Decathlon/vitamin-web/commit/8ad1179d83928a9b692edd3b6e96896b93e989fe))
+
 ## [1.1.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-toggle@1.1.0...@vtmn/css-toggle@1.1.1) (2023-04-12)
 
 **Note:** Version bump only for package @vtmn/css-toggle
