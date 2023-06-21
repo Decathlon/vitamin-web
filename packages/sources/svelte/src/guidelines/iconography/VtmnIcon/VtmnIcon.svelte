@@ -38,7 +38,7 @@
   };
 
   let componentStyle;
-  $: componentClass = cn(`vtmx-${value}`, 'vtmn-icon-size', className);
+  $: componentClass = cn('vtmn-icon-size', className);
   $: {
     const style = {
       '--vtmn-icon-size': `${size}px`,
@@ -46,18 +46,26 @@
     if (variant) {
       style[
         '--vtmn-icon-semantic-color'
-      ] = `var(--vtmn-semantic-color_${retrieveSemanticColor(variant)})`;
+      ] = `var(--vtmn-semantic-color_${retrieveSemanticColor(variant)}-filter)`;
     }
     componentStyle = objectToStyle(style);
   }
 </script>
 
-<span class={componentClass} style={componentStyle} {...$$restProps} />
+{#await import(`@vtmn/icons/dist/vitamix/svg/${value}.svg`) then { default: src }}
+  <img
+    alt=""
+    style={componentStyle}
+    {src}
+    class={componentClass}
+    {...$$restProps}
+  />
+{/await}
 
 <style>
-  @import '@vtmn/icons/dist/vitamix/font/vitamix.css';
   .vtmn-icon-size {
-    color: var(--vtmn-icon-semantic-color);
-    font-size: var(--vtmn-icon-size);
+    width: var(--vtmn-icon-size);
+    height: var(--vtmn-icon-size);
+    filter: var(--vtmn-icon-semantic-color);
   }
 </style>

@@ -264,7 +264,23 @@
   --vtmn-semantic-color_shadow--s: var(--vtmn-base-color_blue200--s);
   --vtmn-semantic-color_shadow--l: var(--vtmn-base-color_blue200--l);
   --vtmn-semantic-color_shadow: hsla(var(--vtmn-semantic-color_shadow--h), var(--vtmn-semantic-color_shadow--s), var(--vtmn-semantic-color_shadow--l), 0.1);
-  
+  /* Icon */
+  --vtmn-semantic-color_content-primary-filter: invert(5%) sepia(95%) saturate(751%) hue-rotate(162deg) brightness(96%) contrast(103%);
+  --vtmn-semantic-color_content-secondary-filter: invert(95%) sepia(10%) saturate(90%) hue-rotate(169deg) brightness(94%) contrast(90%);
+  --vtmn-semantic-color_content-tertiary-filter: invert(47%) sepia(18%) saturate(400%) hue-rotate(170deg) brightness(94%) contrast(92%);
+  --vtmn-semantic-color_content-action-filter: invert(25%) sepia(30%) saturate(5532%) hue-rotate(180deg) brightness(95%) contrast(101%);
+  --vtmn-semantic-color_content-active-filter: invert(28%) sepia(86%) saturate(1541%) hue-rotate(176deg) brightness(101%) contrast(101%);
+  --vtmn-semantic-color_content-inactive-filter: invert(64%) sepia(10%) saturate(398%) hue-rotate(173deg) brightness(91%) contrast(87%);
+  --vtmn-semantic-color_content-negative-filter: invert(21%) sepia(56%) saturate(3597%) hue-rotate(341deg) brightness(104%) contrast(99%);
+  --vtmn-semantic-color_content-warning-filter: invert(45%) sepia(84%) saturate(3191%) hue-rotate(355deg) brightness(104%) contrast(101%);
+  --vtmn-semantic-color_content-positive-filter: invert(59%) sepia(62%) saturate(5080%) hue-rotate(102deg) brightness(97%) contrast(73%);
+  --vtmn-semantic-color_content-information-filter: invert(33%) sepia(100%) saturate(1209%) hue-rotate(174deg) brightness(87%) contrast(103%);
+  --vtmn-semantic-color_content-accent-filter: invert(5%) sepia(41%) saturate(1959%) hue-rotate(167deg) brightness(93%) contrast(102%);
+  --vtmn-semantic-color_content-visited-filter: invert(34%) sepia(7%) saturate(2309%) hue-rotate(247deg) brightness(89%) contrast(85%);
+  --vtmn-semantic-color_content-primary-reversed-filter: invert(100%) sepia(99%) saturate(0%) hue-rotate(61deg) brightness(115%) contrast(100%);
+  --vtmn-semantic-color_content-action-reversed-filter: var(--vtmn-semantic-color_content-primary-reversed-filter);
+  --vtmn-semantic-color_content-visited-reversed-filter: invert(64%) sepia(8%) saturate(1027%) hue-rotate(247deg) brightness(92%) contrast(87%);
+  --vtmn-semantic-color_content-brand-primary-filter: var(--vtmn-semantic-color_content-information-filter);
   /* DEPRECATED */
   --vtmn-semantic-color_background-discount--h: var(--vtmn-base-color_red400--h);
   --vtmn-semantic-color_background-discount--s: var(--vtmn-base-color_red400--s);
