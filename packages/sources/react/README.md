@@ -22,7 +22,27 @@ yarn add @vtmn/react
 
 [Roboto](https://fonts.google.com/specimen/Roboto) & [Roboto Condensed](https://fonts.google.com/specimen/Roboto+Condensed) fonts as described in [Typography](https://www.decathlon.design/726f8c765/v/0/p/860e14-typography) section will not be automatically loaded. Fortunately, there is a few easy ways to get started.
 
-Shown below is a sample link markup used to load from a CDN:
+You can install them with [FontSource](https://github.com/fontsource/fontsource):
+
+```sh
+# with npm
+npm i -S @fontsource/roboto @fontsource/roboto-condensed
+
+# with yarn
+yarn add @fontsource/roboto @fontsource/roboto-condensed
+```
+
+Then, within your app entry file or site component, import it in:
+
+```javascript
+import '@fontsource/roboto'; // Defaults to weight 400
+import '@fontsource/roboto/400.css'; // Specify weight
+import '@fontsource/roboto/400-italic.css'; // Specify weight and style
+```
+
+In order to enhance performance of your app, please read about [font subsetting](https://web.dev/font-best-practices/#subset-fonts). [FontSource explains it here](https://fontsource.org/docs/getting-started/subsets).
+
+Otherwise, you can also load them through CDN:
 
 ```html
 <link
@@ -31,27 +51,10 @@ Shown below is a sample link markup used to load from a CDN:
 />
 ```
 
-You can also do it via CSS Import:
+Finally, you can also import them via CSS import:
 
 ```css
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap');
-```
-
-Otherwise, you can install them with `typeface`:
-
-```sh
-# with npm
-npm i -S typeface-roboto typeface-roboto-condensed
-
-# with yarn
-yarn add typeface-roboto typeface-roboto-condensed
-```
-
-Then, you can import them in your entry-point:
-
-```javascript
-import 'typeface-roboto';
-import 'typeface-roboto-condensed';
 ```
 
 ## Usage
