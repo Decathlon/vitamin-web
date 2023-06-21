@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-navbar@2.0.0...@vtmn/css-navbar@2.0.1) (2023-06-21)
+
+**Note:** Version bump only for package @vtmn/css-navbar
+
 # [2.0.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-navbar@1.3.1...@vtmn/css-navbar@2.0.0) (2023-06-13)
 
 ### Features
