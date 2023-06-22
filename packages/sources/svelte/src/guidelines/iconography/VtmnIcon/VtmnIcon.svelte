@@ -52,15 +52,18 @@
   }
 </script>
 
-{#await import(`@vtmn/icons/dist/vitamix/svg/${value}.svg`) then { default: src }}
-  <img
-    alt=""
-    style={componentStyle}
-    {src}
-    class={componentClass}
-    {...$$restProps}
-  />
-{/await}
+{#if value}
+  {#await import(`@vtmn/icons/dist/vitamix/svg/${value}.svg`) then { default: src }}
+    <img
+      alt=""
+      style={componentStyle}
+      {src}
+      data-icon={value}
+      class={componentClass}
+      {...$$restProps}
+    />
+  {/await}
+{/if}
 
 <style>
   .vtmn-icon-size {
