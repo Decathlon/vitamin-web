@@ -68,6 +68,8 @@
     "@vtmn/icons": "^1.2.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/eslint-parser": "^7.22.5",
     "@rollup/plugin-node-resolve": "^15.0.0",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/svelte": "^3.0.3",

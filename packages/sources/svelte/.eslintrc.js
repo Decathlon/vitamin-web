@@ -11,6 +11,7 @@ module.exports = {
 			processor: 'svelte3/svelte3',
 		},
 	],
+  parser: "@babel/eslint-parser",
 	parserOptions: {
 		allowImportExportEverywhere: true,
 		ecmaVersion: 2019,
