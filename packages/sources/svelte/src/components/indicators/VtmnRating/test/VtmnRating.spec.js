@@ -169,7 +169,7 @@ describe('VtmnRating', () => {
       const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(5);
       for (let i = 0, ii = spans.length; i < ii; i++) {
-        expect(spans[i].getAttribute('data-icon')).toHaveClass('star-line');
+        expect(spans[i].getAttribute('data-icon')).toEqual('star-line');
       }
     });
     test("Should have 2 span with class 'vtmx-star-fill' and 3 span with class 'vtmx-star-line' if rating = 2 and compact = false", () => {

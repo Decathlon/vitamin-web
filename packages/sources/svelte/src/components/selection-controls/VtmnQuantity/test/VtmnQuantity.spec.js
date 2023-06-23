@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom';
-
+import jest from 'jest-mock';
 import { fireEvent, render } from '@testing-library/svelte';
 import VtmnQuantity from '../VtmnQuantity.svelte';
 

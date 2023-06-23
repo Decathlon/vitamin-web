@@ -28,7 +28,7 @@
     "lint:fix": "eslint src --ext .js,.svelte --fix",
     "prestart": "yarn build",
     "start": "chokidar \"src/**\" -i \"**/dist/**\" -c \"yarn build\"",
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest src -i",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest src",
     "test:watch": "npm run test -- --watch"
   },
   "dependencies": {
@@ -91,12 +91,15 @@
     "svelte-jester": "^2.3.2",
     "svelte-preprocess": "4.10.7"
   },
+  "type": "module",
   "jest": {
     "testEnvironment": "jsdom",
+    "extensionsToTreatAsEsm": [
+      ".svelte"
+    ],
     "transform": {
       "^.+\\.js$": "babel-jest",
-      "^.+\\.svelte$": "svelte-jester",
-      "\\.(svg)$": "<rootDir>/__mocks__/fileTransformer.js"
+      "^.+\\.svelte$": "svelte-jester"
     },
     "moduleNameMapper": {
       "@vtmn/icons/(.*)": "<rootDir>/__mocks__/fileMock.js"

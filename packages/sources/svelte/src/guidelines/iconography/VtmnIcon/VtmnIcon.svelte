@@ -52,12 +52,11 @@
   }
 
   let src;
-  $: (async () => {
-    if (value) {
-      const module = await import(`@vtmn/icons/dist/vitamix/svg/${value}.svg`);
+  $: if (value) {
+    import(`@vtmn/icons/dist/vitamix/svg/${value}.svg`).then((module) => {
       src = module.default;
-    }
-  })();
+    });
+  }
 </script>
 
 <img

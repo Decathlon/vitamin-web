@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom';
-
+import jest from 'jest-mock';
 import { fireEvent, render } from '@testing-library/svelte';
 import { VTMN_CHIP_VARIANT, VTMN_CHIP_SIZE } from '../enums';
 

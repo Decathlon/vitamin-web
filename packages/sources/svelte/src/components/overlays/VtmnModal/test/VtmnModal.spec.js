@@ -1,4 +1,5 @@
 import '@testing-library/jest-dom';
+import jest from 'jest-mock';
 import { fireEvent, render } from '@testing-library/svelte';
 import VtmnModal from '../VtmnModal.svelte';
 import VtmnModalWithActions from './VtmnModalWithActions.svelte';

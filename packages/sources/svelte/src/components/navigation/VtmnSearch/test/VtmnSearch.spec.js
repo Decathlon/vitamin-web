@@ -1,3 +1,5 @@
+import '@testing-library/jest-dom';
+import jest from 'jest-mock';
 import { render, fireEvent } from '@testing-library/svelte';
 import VtmnSearch from '../VtmnSearch.svelte';
 import { VTMN_SEARCH_VARIANT, VTMN_SEARCH_SIZE } from '../enums';
