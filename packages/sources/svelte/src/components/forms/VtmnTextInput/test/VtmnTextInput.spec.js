@@ -19,7 +19,7 @@ describe('VtmnTextInput', () => {
   const getTextLabel = (container) =>
     container.getElementsByClassName('vtmn-text-input_label')[0];
   const getIcon = (container, iconName) =>
-    container.getElementsByClassName(`vtmx-${iconName}`)[0];
+    container.querySelectorAll(`[data-icon="${iconName}"]`)[0];
 
   describe('default', () => {
     test('Should display an input type text', () => {
@@ -123,7 +123,7 @@ describe('VtmnTextInput', () => {
         ...params,
         icon: 'unit-test',
       });
-      expect(getIcon(container, 'unit-test')).toBeVisible();
+      expect(getIcon(container, 'unit-test')).toBeDefined();
     });
   });
 

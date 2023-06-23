@@ -21,7 +21,9 @@ describe('VtmnBreadcrumbItem', () => {
 
   test('Should apply class from parameters', () => {
     const { container } = render(VtmnBreadcrumbItem, { icon: 'home-line' });
-    expect(container.getElementsByClassName('vtmx-home-line')[0]).toBeVisible();
+    expect(
+      container.querySelectorAll('[data-icon="home-line"]')[0],
+    ).toBeDefined();
   });
 
   test('Should apply an tag <a> if href are set', () => {

@@ -22,19 +22,25 @@ describe('VtmnButton', () => {
     const { container } = render(VtmnButton, { iconLeft: 'account' });
     expect(getBtn(container)).toBeVisible();
     expect(getBtn(container)).toHaveClass('vtmn-btn--icon-left');
-    expect(getBtn(container).children[0]).toHaveClass('vtmx-account');
+    expect(getBtn(container).children[0].getAttribute('data-icon')).toEqual(
+      'account',
+    );
   });
   test('Should display right icon', () => {
     const { container } = render(VtmnButton, { iconRight: 'account' });
     expect(getBtn(container)).toBeVisible();
     expect(getBtn(container)).toHaveClass('vtmn-btn--icon-right');
-    expect(getBtn(container).children[1]).toHaveClass('vtmx-account');
+    expect(getBtn(container).children[1].getAttribute('data-icon')).toEqual(
+      'account',
+    );
   });
   test('Should display icon alone', () => {
     const { container } = render(VtmnButton, { iconAlone: 'account' });
     expect(getBtn(container)).toBeVisible();
     expect(getBtn(container)).toHaveClass('vtmn-btn--icon-alone');
-    expect(getBtn(container).children[0]).toHaveClass('vtmx-account');
+    expect(getBtn(container).children[0].getAttribute('data-icon')).toEqual(
+      'account',
+    );
     expect(container.querySelector('[data-ut="slot"]')).toBeNull();
   });
   test('Should display icon alone without left / right icon', () => {
@@ -49,7 +55,9 @@ describe('VtmnButton', () => {
       'vtmn-btn--icon-left',
       'vtmn-btn--icon-right',
     );
-    expect(getBtn(container).children[0]).toHaveClass('vtmx-icon-alone');
+    expect(getBtn(container).children[0].getAttribute('data-icon')).toEqual(
+      'icon-alone',
+    );
   });
   test('Should apply custom class', () => {
     const { container } = render(VtmnButton, { class: 'custom-class' });

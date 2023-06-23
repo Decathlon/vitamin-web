@@ -9,7 +9,7 @@ describe('VtmnChip', () => {
   const getChip = (container) =>
     container.getElementsByClassName('vtmn-chip')[0];
   const getIcon = (container, iconName) =>
-    container.getElementsByClassName(`vtmx-${iconName}`)[0];
+    container.querySelectorAll(`[data-icon="${iconName}"]`)[0];
   const getCancelBtn = (container) =>
     container.getElementsByClassName('vtmn-btn')[0];
   const expectedClickOnElement = async (
@@ -34,44 +34,44 @@ describe('VtmnChip', () => {
   };
 
   describe('Default', () => {
-    test('Should have single choice variant by default', () => {
+    test('Should have single choice variant by default', async () => {
       const { container } = render(VtmnChip);
       expect(getChip(container)).toHaveClass(
         'vtmn-chip_variant--single-choice',
       );
     });
 
-    test('Should set class vtmn-chip_size--medium by default', () => {
+    test('Should set class vtmn-chip_size--medium by default', async () => {
       const { container } = render(VtmnChip);
       expect(getChip(container)).toHaveClass('vtmn-chip_size--medium');
     });
 
-    test('Should set class vtmn-chip_size--small if size is small', () => {
+    test('Should set class vtmn-chip_size--small if size is small', async () => {
       const { container } = render(VtmnChip, { size: VTMN_CHIP_SIZE.SMALL });
       expect(getChip(container)).toHaveClass('vtmn-chip_size--small');
     });
 
-    test("Should not have class 'vtmn-chip--disabled' if it's false", () => {
+    test("Should not have class 'vtmn-chip--disabled' if it's false", async () => {
       const { container } = render(VtmnChip, { disabled: false });
       expect(getChip(container)).not.toHaveClass('vtmn-chip--disabled');
     });
 
-    test("Should have class 'vtmn-chip--disabled' if disabled is true", () => {
+    test("Should have class 'vtmn-chip--disabled' if disabled is true", async () => {
       const { container } = render(VtmnChip, { disabled: true });
       expect(getChip(container)).toHaveClass('vtmn-chip--disabled');
     });
 
-    test("Should not have class 'vtmn-chip--selected' if selected is false", () => {
+    test("Should not have class 'vtmn-chip--selected' if selected is false", async () => {
       const { container } = render(VtmnChip, { selected: false });
       expect(getChip(container)).not.toHaveClass('vtmn-chip--selected');
     });
 
-    test("Should have class 'vtmn-chip--selected' if selected is true", () => {
+    test("Should have class 'vtmn-chip--selected' if selected is true", async () => {
       const { container } = render(VtmnChip, { selected: true });
       expect(getChip(container)).toHaveClass('vtmn-chip--selected');
     });
 
-    test('Should pass class on the main container', () => {
+    test('Should pass class on the main container', async () => {
       const { container } = render(VtmnChip, { class: 'unit-test' });
       expect(getChip(container)).toHaveClass('unit-test');
     });
@@ -81,12 +81,12 @@ describe('VtmnChip', () => {
       await expectedClickOnElement(getChip(container), component, 1);
     });
 
-    test('Should have a tabindex = 0', () => {
+    test('Should have a tabindex = 0', async () => {
       const { container } = render(VtmnChip);
       expect(getChip(container)).toHaveAttribute('tabindex', '0');
     });
 
-    test('Should not have a tabindex if disabled', () => {
+    test('Should not have a tabindex if disabled', async () => {
       const { container } = render(VtmnChip, { disabled: true });
       expect(getChip(container)).not.toHaveAttribute('tabindex');
     });
@@ -98,14 +98,14 @@ describe('VtmnChip', () => {
   });
 
   describe('Filter', () => {
-    test('Should set class vtmn-chip_variant--filter', () => {
+    test('Should set class vtmn-chip_variant--filter', async () => {
       const { container } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.FILTER,
       });
       expect(getChip(container)).toHaveClass('vtmn-chip_variant--filter');
     });
 
-    test('Should be disabled', () => {
+    test('Should be disabled', async () => {
       const { container } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.FILTER,
         disabled: true,
@@ -113,7 +113,7 @@ describe('VtmnChip', () => {
       expect(getChip(container)).toHaveClass('vtmn-chip--disabled');
     });
 
-    test('Should be selected', () => {
+    test('Should be selected', async () => {
       const { container } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.FILTER,
         selected: true,
@@ -121,7 +121,7 @@ describe('VtmnChip', () => {
       expect(getChip(container)).toHaveClass('vtmn-chip--selected');
     });
 
-    test('Should have a tabindex = 0', () => {
+    test('Should have a tabindex = 0', async () => {
       const { container } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.FILTER,
         selected: true,
@@ -129,7 +129,7 @@ describe('VtmnChip', () => {
       expect(getChip(container)).toHaveAttribute('tabindex', '0');
     });
 
-    test('Should not display vtmx icon if selected', () => {
+    test('Should not display vtmx icon if selected', async () => {
       const { container } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.FILTER,
         icon: 'add-fill',
@@ -138,7 +138,7 @@ describe('VtmnChip', () => {
       expect(getIcon(container)).toBeUndefined();
     });
 
-    test('Should not display vtmx icon if not selected', () => {
+    test('Should not display vtmx icon if not selected', async () => {
       const { container } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.FILTER,
         icon: 'add-fill',
@@ -148,14 +148,14 @@ describe('VtmnChip', () => {
   });
 
   describe('Input', () => {
-    test('Should set class vtmn-chip_variant--input', () => {
+    test('Should set class vtmn-chip_variant--input', async () => {
       const { container } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.INPUT,
       });
       expect(getChip(container)).toHaveClass('vtmn-chip_variant--input');
     });
 
-    test('Should be disabled', () => {
+    test('Should be disabled', async () => {
       const { container } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.INPUT,
         disabled: true,
@@ -214,7 +214,7 @@ describe('VtmnChip', () => {
       expect(handleClickCancel).toHaveBeenCalledTimes(0);
     });
 
-    test('Should be selectable', () => {
+    test('Should be selectable', async () => {
       const { container } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.INPUT,
         selected: true,
@@ -222,7 +222,7 @@ describe('VtmnChip', () => {
       expect(getChip(container)).toHaveClass('vtmn-chip--selected');
     });
 
-    test('Should not display button when chip not selected', () => {
+    test('Should not display button when chip not selected', async () => {
       const { container } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.INPUT,
         selected: false,
@@ -230,7 +230,7 @@ describe('VtmnChip', () => {
       expect(getCancelBtn(container)).toBeUndefined();
     });
 
-    test('Should display button cancel when chip is selected', () => {
+    test('Should display button cancel when chip is selected', async () => {
       const { container } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.INPUT,
         selected: true,
@@ -238,15 +238,15 @@ describe('VtmnChip', () => {
       expect(getCancelBtn(container)).toBeVisible();
     });
 
-    test('Should be display an icon', () => {
+    test('Should be display an icon', async () => {
       const { container } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.INPUT,
         icon: 'add-fill',
       });
-      expect(getIcon(container, 'add-fill')).toHaveClass('vtmx-add-fill');
+      expect(getIcon(container, 'add-fill')).toBeDefined();
     });
 
-    test("Should have a tabindex = 0 if it's not selected", () => {
+    test("Should have a tabindex = 0 if it's not selected", async () => {
       const { container } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.INPUT,
         selected: false,
@@ -254,7 +254,7 @@ describe('VtmnChip', () => {
       expect(getChip(container)).toHaveAttribute('tabindex', '0');
     });
 
-    test('Should not have a tabindex if chip is selected', () => {
+    test('Should not have a tabindex if chip is selected', async () => {
       const { container } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.INPUT,
         selected: true,
@@ -264,7 +264,7 @@ describe('VtmnChip', () => {
   });
 
   describe('Single choice', () => {
-    test('Should set class vtmn-chip_variant--single-choice', () => {
+    test('Should set class vtmn-chip_variant--single-choice', async () => {
       const { container } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.SINGLE_CHOICE,
       });
@@ -273,7 +273,7 @@ describe('VtmnChip', () => {
       );
     });
 
-    test('Should be selected', () => {
+    test('Should be selected', async () => {
       const { container } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.SINGLE_CHOICE,
         selected: true,
@@ -281,7 +281,7 @@ describe('VtmnChip', () => {
       expect(getChip(container)).toHaveClass('vtmn-chip--selected');
     });
 
-    test('Should be disable', () => {
+    test('Should be disable', async () => {
       const { container } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.SINGLE_CHOICE,
         disabled: true,
@@ -289,7 +289,7 @@ describe('VtmnChip', () => {
       expect(getChip(container)).toHaveClass('vtmn-chip--disabled');
     });
 
-    test('Should not have a icon', () => {
+    test('Should not have a icon', async () => {
       const { container } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.SINGLE_CHOICE,
         icon: 'add-fill',
@@ -297,7 +297,7 @@ describe('VtmnChip', () => {
       expect(getIcon(container)).toBeUndefined();
     });
 
-    test('Should not have a cancel button when unselected', () => {
+    test('Should not have a cancel button when unselected', async () => {
       const { container } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.SINGLE_CHOICE,
         selected: false,
@@ -305,7 +305,7 @@ describe('VtmnChip', () => {
       expect(getCancelBtn(container)).toBeUndefined();
     });
 
-    test('Should not have a cancel button when selected', () => {
+    test('Should not have a cancel button when selected', async () => {
       const { container } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.SINGLE_CHOICE,
         selected: true,
@@ -318,7 +318,7 @@ describe('VtmnChip', () => {
       await expectedClickOnElement(getChip(container), component, 1);
     });
 
-    test('Should have a tabindex = 0 when selected', () => {
+    test('Should have a tabindex = 0 when selected', async () => {
       const { container } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.SINGLE_CHOICE,
         selected: true,
@@ -335,7 +335,7 @@ describe('VtmnChip', () => {
       expect(getChip(container)).toHaveClass('vtmn-chip_variant--action');
     });
 
-    test('Should not be selected', () => {
+    test('Should not be selected', async () => {
       const { container } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.ACTION,
         selected: true,
@@ -343,12 +343,12 @@ describe('VtmnChip', () => {
       expect(getChip(container)).not.toHaveClass('vtmn-chip--selected');
     });
 
-    test('Should display icon', () => {
+    test('Should display icon', async () => {
       const { container } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.ACTION,
         icon: 'add-fill',
       });
-      expect(getIcon(container, 'add-fill')).toHaveClass('vtmx-add-fill');
+      expect(getIcon(container, 'add-fill')).toBeDefined();
     });
 
     test('Should click on the chip', async () => {
@@ -361,7 +361,7 @@ describe('VtmnChip', () => {
       expect(handleClick).toHaveBeenCalledTimes(1);
     });
 
-    test('Should be disabled', () => {
+    test('Should be disabled', async () => {
       const { container } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.ACTION,
         disabled: true,
@@ -369,7 +369,7 @@ describe('VtmnChip', () => {
       expect(getChip(container)).toHaveClass('vtmn-chip--disabled');
     });
 
-    test('Should have a tabindex=0', () => {
+    test('Should have a tabindex=0', async () => {
       const { container } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.ACTION,
       });

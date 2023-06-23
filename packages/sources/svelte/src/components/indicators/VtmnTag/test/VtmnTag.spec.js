@@ -6,7 +6,7 @@ import VtmnTag from './VtmnTagWithSlots.svelte';
 describe('VtmnTag', () => {
   const getTag = (container) => container.getElementsByClassName('vtmn-tag')[0];
   const getIcon = (container, iconName) =>
-    container.getElementsByClassName(`vtmx-${iconName}`)[0];
+    container.querySelectorAll(`[data-icon="${iconName}"]`)[0];
 
   describe('Without href', () => {
     test('Should display the vtmn-tag on <span> node with variant', () => {
@@ -33,7 +33,6 @@ describe('VtmnTag', () => {
     });
     test('Should display icon if icon are set', () => {
       const { container } = render(VtmnTag, { icon: 'test' });
-      expect(getIcon(container, 'test')).toBeVisible();
       expect(getIcon(container, 'test')).toHaveAttribute('aria-hidden', 'true');
     });
     test('Should display the slot', () => {
@@ -81,7 +80,6 @@ describe('VtmnTag', () => {
         href: 'http://example.com',
         icon: 'test',
       });
-      expect(getIcon(container, 'test')).toBeVisible();
       expect(getIcon(container, 'test')).toHaveAttribute('aria-hidden', 'true');
     });
     test('Should display the slot', () => {

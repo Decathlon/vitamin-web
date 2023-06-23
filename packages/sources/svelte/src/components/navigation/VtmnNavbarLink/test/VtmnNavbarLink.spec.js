@@ -16,7 +16,8 @@ describe('<VtmnNavbarLink />', () => {
 
     expect(container).toBeVisible();
     expect(
-      container.children[0].getElementsByClassName('vtmx-question-line').length,
+      container.children[0].querySelectorAll('[data-icon="question-line"]')
+        .length,
     ).toBe(1);
     expect(getByText('Contact us')).toBeDefined();
   });

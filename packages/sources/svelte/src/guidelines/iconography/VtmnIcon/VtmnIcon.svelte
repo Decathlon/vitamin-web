@@ -50,20 +50,24 @@
     }
     componentStyle = objectToStyle(style);
   }
+
+  let src;
+  $: (async () => {
+    if (value) {
+      const module = await import(`@vtmn/icons/dist/vitamix/svg/${value}.svg`);
+      src = module.default;
+    }
+  })();
 </script>
 
-{#if value}
-  {#await import(`@vtmn/icons/dist/vitamix/svg/${value}.svg`) then { default: src }}
-    <img
-      alt=""
-      style={componentStyle}
-      {src}
-      data-icon={value}
-      class={componentClass}
-      {...$$restProps}
-    />
-  {/await}
-{/if}
+<img
+  alt=""
+  style={componentStyle}
+  {src}
+  data-icon={value}
+  class={componentClass}
+  {...$$restProps}
+/>
 
 <style>
   .vtmn-icon-size {

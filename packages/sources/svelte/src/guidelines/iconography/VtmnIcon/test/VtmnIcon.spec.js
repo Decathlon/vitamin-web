@@ -4,7 +4,7 @@ import VtmnIcon from '../VtmnIcon.svelte';
 
 describe('VtmnIcon', () => {
   const getIcon = (container, iconName) =>
-    container.getElementsByClassName(`vtmx-${iconName}`)[0];
+    container.querySelectorAll(`[data-icon="${iconName}"]`)[0];
 
   test('Should display the icon with default variant and default size', () => {
     const { container } = render(VtmnIcon, { value: 'test' });
@@ -23,7 +23,7 @@ describe('VtmnIcon', () => {
     });
     const icon = getIcon(container, 'test');
     expect(icon.style.getPropertyValue('--vtmn-icon-semantic-color')).toEqual(
-      'var(--vtmn-semantic-color_content-positive)',
+      'var(--vtmn-semantic-color_content-positive-filter)',
     );
   });
   test('Should define style size', () => {

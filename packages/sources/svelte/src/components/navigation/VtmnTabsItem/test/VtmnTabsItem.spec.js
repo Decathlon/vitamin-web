@@ -5,8 +5,8 @@ describe('VtmnTabsItem', () => {
   test('Should be have a icon', () => {
     const { container } = render(VtmnTabsItem, { icon: 'heart-line' });
     expect(
-      container.getElementsByClassName('vtmx-heart-line')[0],
-    ).toBeVisible();
+      container.querySelectorAll('[data-icon="heart-line"]').length,
+    ).toEqual(1);
   });
 
   test('Should be have a badge', () => {

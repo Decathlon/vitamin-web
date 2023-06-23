@@ -46,7 +46,7 @@ describe('VtmnTabsWithSlot', () => {
   test('Should be have a icon', () => {
     const { container } = render(VtmnTabsWithSlot);
     expect(
-      container.getElementsByClassName('vtmx-checkbox-circle-line')[0],
+      container.querySelectorAll('[data-icon="checkbox-circle-line"]')[0],
     ).toBeVisible();
   });
 

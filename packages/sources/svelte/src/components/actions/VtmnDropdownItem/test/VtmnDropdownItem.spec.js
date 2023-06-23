@@ -52,7 +52,9 @@ describe('VtmnDropdownItem', () => {
       icon: 'user-line',
     });
 
-    expect(container.getElementsByClassName('vtmx-user-line')).toHaveLength(1);
+    expect(container.querySelectorAll('[data-icon="user-line"]')).toHaveLength(
+      1,
+    );
   });
 
   test('Should display a divider', () => {

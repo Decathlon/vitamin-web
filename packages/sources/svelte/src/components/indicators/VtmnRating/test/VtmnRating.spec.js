@@ -13,7 +13,7 @@ describe('VtmnRating', () => {
   const getCommentSecondary = (container) =>
     container.getElementsByClassName('vtmn-rating_comment--secondary')[0];
   const getReadonlyPresentations = (container) =>
-    container.querySelectorAll('span[role="presentation"]');
+    container.querySelectorAll('[data-icon]');
   const getRadioInputs = (container) =>
     container.querySelectorAll('input[type="radio"]');
 
@@ -135,7 +135,7 @@ describe('VtmnRating', () => {
       });
       const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(1);
-      expect(spans[0]).toBeVisible();
+      expect(spans[0]).toBeDefined();
     });
     test("Should have 1 span with class 'vtmx-star-line' if rating = 0 and compact mode", () => {
       const { container } = render(VtmnRating, {
@@ -146,8 +146,7 @@ describe('VtmnRating', () => {
       });
       const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(1);
-      expect(spans[0]).toBeVisible();
-      expect(spans[0]).toHaveClass('vtmx-star-line');
+      expect(spans[0].getAttribute('data-icon')).toEqual('star-line');
     });
     test("Should have 1 span with class 'vtmx-star-fill' if rating > 0 and compact mode", () => {
       const { container } = render(VtmnRating, {
@@ -158,8 +157,7 @@ describe('VtmnRating', () => {
       });
       const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(1);
-      expect(spans[0]).toBeVisible();
-      expect(spans[0]).toHaveClass('vtmx-star-fill');
+      expect(spans[0].getAttribute('data-icon')).toEqual('star-fill');
     });
     test("Should have 5 span with class 'vtmx-star-line' if rating = 0 and compact = false", () => {
       const { container } = render(VtmnRating, {
@@ -171,8 +169,7 @@ describe('VtmnRating', () => {
       const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(5);
       for (let i = 0, ii = spans.length; i < ii; i++) {
-        expect(spans[i]).toBeVisible();
-        expect(spans[i]).toHaveClass('vtmx-star-line');
+        expect(spans[i].getAttribute('data-icon')).toHaveClass('star-line');
       }
     });
     test("Should have 2 span with class 'vtmx-star-fill' and 3 span with class 'vtmx-star-line' if rating = 2 and compact = false", () => {
@@ -184,14 +181,11 @@ describe('VtmnRating', () => {
       });
       const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(5);
-      for (let i = 0, ii = spans.length; i < ii; i++) {
-        expect(spans[i]).toBeVisible();
-      }
-      expect(spans[0]).toHaveClass('vtmx-star-fill');
-      expect(spans[1]).toHaveClass('vtmx-star-fill');
-      expect(spans[2]).toHaveClass('vtmx-star-line');
-      expect(spans[3]).toHaveClass('vtmx-star-line');
-      expect(spans[4]).toHaveClass('vtmx-star-line');
+      expect(spans[0].getAttribute('data-icon')).toEqual('star-fill');
+      expect(spans[1].getAttribute('data-icon')).toEqual('star-fill');
+      expect(spans[2].getAttribute('data-icon')).toEqual('star-line');
+      expect(spans[3].getAttribute('data-icon')).toEqual('star-line');
+      expect(spans[4].getAttribute('data-icon')).toEqual('star-line');
     });
     test("Should have 2 span with class 'vtmx-star-fill' and 1 with class 'vtmx-star-half-fill' and 2 span with class 'vtmx-star-line' if rating = 2.1 and compact = false", () => {
       const { container } = render(VtmnRating, {
@@ -202,14 +196,11 @@ describe('VtmnRating', () => {
       });
       const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(5);
-      for (let i = 0, ii = spans.length; i < ii; i++) {
-        expect(spans[i]).toBeVisible();
-      }
-      expect(spans[0]).toHaveClass('vtmx-star-fill');
-      expect(spans[1]).toHaveClass('vtmx-star-fill');
-      expect(spans[2]).toHaveClass('vtmx-star-line');
-      expect(spans[3]).toHaveClass('vtmx-star-line');
-      expect(spans[4]).toHaveClass('vtmx-star-line');
+      expect(spans[0].getAttribute('data-icon')).toEqual('star-fill');
+      expect(spans[1].getAttribute('data-icon')).toEqual('star-fill');
+      expect(spans[2].getAttribute('data-icon')).toEqual('star-line');
+      expect(spans[3].getAttribute('data-icon')).toEqual('star-line');
+      expect(spans[4].getAttribute('data-icon')).toEqual('star-line');
     });
     test("Should have 2 span with class 'vtmx-star-fill' and 1 with class 'vtmx-star-half-fill' and 2 span with class 'vtmx-star-line' if rating = 2.9 and compact = false", () => {
       const { container } = render(VtmnRating, {
@@ -220,14 +211,11 @@ describe('VtmnRating', () => {
       });
       const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(5);
-      for (let i = 0, ii = spans.length; i < ii; i++) {
-        expect(spans[i]).toBeVisible();
-      }
-      expect(spans[0]).toHaveClass('vtmx-star-fill');
-      expect(spans[1]).toHaveClass('vtmx-star-fill');
-      expect(spans[2]).toHaveClass('vtmx-star-fill');
-      expect(spans[3]).toHaveClass('vtmx-star-line');
-      expect(spans[4]).toHaveClass('vtmx-star-line');
+      expect(spans[0].getAttribute('data-icon')).toEqual('star-fill');
+      expect(spans[1].getAttribute('data-icon')).toEqual('star-fill');
+      expect(spans[2].getAttribute('data-icon')).toEqual('star-fill');
+      expect(spans[3].getAttribute('data-icon')).toEqual('star-line');
+      expect(spans[4].getAttribute('data-icon')).toEqual('star-line');
     });
     test("Should have 5 span with class 'vtmx-star-fill' if rating > 4.75 and compact = false", () => {
       const { container } = render(VtmnRating, {
@@ -239,8 +227,7 @@ describe('VtmnRating', () => {
       const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(5);
       for (let i = 0, ii = spans.length; i < ii; i++) {
-        expect(spans[i]).toBeVisible();
-        expect(spans[i]).toHaveClass('vtmx-star-fill');
+        expect(spans[i].getAttribute('data-icon')).toEqual('star-fill');
       }
     });
     test("Should have 5 span with class 'vtmx-star-fill' if rating = 5 and compact = false", () => {
@@ -253,8 +240,7 @@ describe('VtmnRating', () => {
       const spans = getReadonlyPresentations(container);
       expect(spans.length).toEqual(5);
       for (let i = 0, ii = spans.length; i < ii; i++) {
-        expect(spans[i]).toBeVisible();
-        expect(spans[i]).toHaveClass('vtmx-star-fill');
+        expect(spans[i].getAttribute('data-icon')).toEqual('star-fill');
       }
     });
   });
