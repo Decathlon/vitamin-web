@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-search@1.1.6...@vtmn/css-search@1.1.7) (2023-06-29)
+
+### Bug Fixes
+
+- **@vtmn/css:** wrong color of close icon in text-input component ([09dfe88](https://github.com/Decathlon/vitamin-web/commit/09dfe888c599f68ac0eb68a4c2505c28ea00c3c6))
+
 ## [1.1.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-search@1.1.5...@vtmn/css-search@1.1.6) (2023-06-29)
 
 ### Bug Fixes
