@@ -96,7 +96,7 @@
   font-size: var(--vtmn-typo_title-5-font-size);
 }
 
-.vtmn-search_buttons > .vtmn-btn:first-child {
+.vtmn-search_buttons > .vtmn-btn > span[class='vtmx-close-line'] {
   color: var(--vtmn-semantic-color_content-tertiary);
 }
 
