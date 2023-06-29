@@ -96,8 +96,8 @@
   font-size: var(--vtmn-typo_title-5-font-size);
 }
 
-.vtmn-search_buttons > .vtmn-btn > span[class='vtmx-close-line'] {
-  color: var(--vtmn-semantic-color_content-tertiary);
+.vtmn-search_buttons > .vtmn-btn > span.vtmx-close-line {
+  color: var(--vtmn-semantic-color_content-tertiary) !important;
 }
 
 /* Sizes */
