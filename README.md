@@ -1,4 +1,4 @@
-> **❗ Important note: This current version of Vitamin will no longer evolve and only accept bug fixes, new icons and assets from now on. [More details here](https://github.com/Decathlon/vitamin-design/blob/main/IMPORTANT_NOTE.md).**
+> **❗ Important note: This current version of Vitamin will no longer evolve and only accept bug fixes from now on. [More details here](https://github.com/Decathlon/vitamin-design/blob/main/IMPORTANT_NOTE.md).**
 
 <br />
 
