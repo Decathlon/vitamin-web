@@ -60,10 +60,8 @@ export default /*#__PURE__*/ defineComponent({
       return emit('cancel');
     };
 
-    const isSelected = props.selected &&
-      ['single-choice', 'filter'].includes(
-        props.variant,
-      );
+    const isSelected =
+      props.selected && ['single-choice', 'filter'].includes(props.variant);
 
     return {
       styleObject: {

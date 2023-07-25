@@ -195,7 +195,7 @@ describe('VtmnChip', () => {
       expect(handleClickCancel).toHaveBeenCalledTimes(1);
     });
 
-    test('Should not trigger click event', async () => {
+    test('Should trigger click event', async () => {
       const { container, component } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.INPUT,
       });
