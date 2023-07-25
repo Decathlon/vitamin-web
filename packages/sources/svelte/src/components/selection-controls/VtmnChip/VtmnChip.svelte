@@ -46,31 +46,33 @@
    */
   export { className as class };
 
+  $: isSelected =
+    selected &&
+    [VTMN_CHIP_VARIANT.SINGLE_CHOICE, VTMN_CHIP_VARIANT.FILTER].includes(
+      variant,
+    );
   $: componentClass = cn(
     'vtmn-chip',
     `vtmn-chip_variant--${variant}`,
     `vtmn-chip_size--${size}`,
-    selected && variant !== VTMN_CHIP_VARIANT.ACTION
-      ? 'vtmn-chip--selected'
-      : '',
+    isSelected && 'vtmn-chip--selected',
     disabled ? 'vtmn-chip--disabled' : '',
     className,
   );
 
-  $: displayInputButton = variant === VTMN_CHIP_VARIANT.INPUT && selected;
+  $: displayInputButton = variant === VTMN_CHIP_VARIANT.INPUT;
   $: displayFilterBadge =
     variant === VTMN_CHIP_VARIANT.FILTER && badgeValue > 0;
   $: displayLeftIcon =
     [VTMN_CHIP_VARIANT.INPUT, VTMN_CHIP_VARIANT.ACTION].includes(variant) &&
     icon;
-  $: disableTableIndex =
-    (variant === VTMN_CHIP_VARIANT.INPUT && selected) || disabled;
 
-  const cancelClickHandler = () => {
+  const cancelClickHandler = (e) => {
+    e.stopPropagation();
     dispatch('cancel');
   };
   const selectClickHandler = () => {
-    if (disabled || (variant === VTMN_CHIP_VARIANT.INPUT && selected)) {
+    if (disabled) {
       return;
     }
     dispatch('click');
@@ -81,12 +83,12 @@
   class={componentClass}
   role="button"
   aria-disabled={disabled}
-  aria-pressed={selected && variant !== 'action'}
+  aria-pressed={isSelected && variant !== 'action'}
   on:click={selectClickHandler}
   on:keydown
   on:keyup
   on:keypress
-  tabindex={disableTableIndex ? undefined : 0}
+  tabindex={disabled ? undefined : 0}
 >
   {#if displayLeftIcon}
     <VtmnIcon value={icon} aria-hidden="true" />

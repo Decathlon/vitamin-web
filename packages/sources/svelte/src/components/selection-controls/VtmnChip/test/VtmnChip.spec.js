@@ -175,7 +175,6 @@ describe('VtmnChip', () => {
       const { container, component } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.INPUT,
         disabled: true,
-        selected: true,
       });
       await expectedCancelOnElement(getChip(container), component, 0);
     });
@@ -183,7 +182,6 @@ describe('VtmnChip', () => {
     test('Should not trigger click when user click on cancel', async () => {
       const { container, component } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.INPUT,
-        selected: true,
       });
 
       const handleClickCancel = jest.fn();
@@ -197,10 +195,9 @@ describe('VtmnChip', () => {
       expect(handleClickCancel).toHaveBeenCalledTimes(1);
     });
 
-    test('Should not trigger click event when the chip is selected', async () => {
+    test('Should not trigger click event', async () => {
       const { container, component } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.INPUT,
-        selected: true,
       });
 
       const handleClickCancel = jest.fn();
@@ -210,30 +207,13 @@ describe('VtmnChip', () => {
 
       await fireEvent.click(getChip(container));
 
-      expect(handleClickDefault).toHaveBeenCalledTimes(0);
+      expect(handleClickDefault).toHaveBeenCalledTimes(1);
       expect(handleClickCancel).toHaveBeenCalledTimes(0);
     });
 
-    test('Should be selectable', () => {
+    test('Should display button cancel', () => {
       const { container } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.INPUT,
-        selected: true,
-      });
-      expect(getChip(container)).toHaveClass('vtmn-chip--selected');
-    });
-
-    test('Should not display button when chip not selected', () => {
-      const { container } = render(VtmnChip, {
-        variant: VTMN_CHIP_VARIANT.INPUT,
-        selected: false,
-      });
-      expect(getCancelBtn(container)).toBeUndefined();
-    });
-
-    test('Should display button cancel when chip is selected', () => {
-      const { container } = render(VtmnChip, {
-        variant: VTMN_CHIP_VARIANT.INPUT,
-        selected: true,
       });
       expect(getCancelBtn(container)).toBeVisible();
     });
@@ -246,20 +226,11 @@ describe('VtmnChip', () => {
       expect(getIcon(container, 'add-fill')).toHaveClass('vtmx-add-fill');
     });
 
-    test("Should have a tabindex = 0 if it's not selected", () => {
+    test('Should not have a tabindex', () => {
       const { container } = render(VtmnChip, {
         variant: VTMN_CHIP_VARIANT.INPUT,
-        selected: false,
       });
-      expect(getChip(container)).toHaveAttribute('tabindex', '0');
-    });
-
-    test('Should not have a tabindex if chip is selected', () => {
-      const { container } = render(VtmnChip, {
-        variant: VTMN_CHIP_VARIANT.INPUT,
-        selected: true,
-      });
-      expect(getChip(container)).not.toHaveAttribute('tabindex');
+      expect(getChip(container)).toHaveAttribute('tabindex');
     });
   });
 

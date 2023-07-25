@@ -76,6 +76,7 @@ export const VtmnChip = ({
   className,
   ...props
 }: VtmnChipProps) => {
+  const isSelected = selected && ['single-choice', 'filter'].includes(variant);
   return (
     <div
       className={clsx(
@@ -83,13 +84,17 @@ export const VtmnChip = ({
         `vtmn-chip_size--${size}`,
         `vtmn-chip_variant--${variant}`,
         disabled && 'vtmn-chip--disabled',
-        selected && variant !== 'action' && 'vtmn-chip--selected',
+        isSelected && 'vtmn-chip--selected',
         className,
       )}
       role="button"
       aria-disabled={disabled}
-      aria-pressed={selected && variant !== 'action'}
-      onClick={onClick}
+      aria-pressed={isSelected && variant !== 'action'}
+      onClick={(e) => {
+        if (!disabled && onClick) {
+          onClick(e);
+        }
+      }}
       {...props}
     >
       {icon && (variant === 'input' || variant === 'action') && (
@@ -106,11 +111,16 @@ export const VtmnChip = ({
         <VtmnBadge variant="default" value={badgeValue} />
       )}
 
-      {variant == 'input' && selected && (
+      {variant == 'input' && (
         <VtmnButton
-          variant="ghost-reversed"
-          iconAlone="close-fill"
-          onClick={onCancel}
+          variant="ghost"
+          iconAlone="close-line"
+          disabled={disabled}
+          size={size}
+          onClick={(e) => {
+            e.stopPropagation();
+            onCancel?.(e);
+          }}
         />
       )}
     </div>
