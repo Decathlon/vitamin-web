@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.7](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@2.0.6...@vtmn/css@2.0.7) (2023-08-02)
+
+### Bug Fixes
+
+- convert breakpoints variables to values instead of strings ([#1458](https://github.com/Decathlon/vitamin-web/issues/1458)) ([e0e3a34](https://github.com/Decathlon/vitamin-web/commit/e0e3a34a8513cb8eb8d0b4ea2bd83a8fe6457253))
+
 ## [2.0.6](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@2.0.5...@vtmn/css@2.0.6) (2023-07-03)
 
 **Note:** Version bump only for package @vtmn/css
