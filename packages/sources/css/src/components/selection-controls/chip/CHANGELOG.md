@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-chip@1.1.3...@vtmn/css-chip@2.0.0) (2023-08-04)
+
+### Features
+
+- **`@vtmn/css`, `@vtmn/svelte`, `@vtmn/react`, `@vtmn/vue`:** `VtmnChip` variant `input` match now the figma specs ([#1456](https://github.com/Decathlon/vitamin-web/issues/1456)) ([8b33064](https://github.com/Decathlon/vitamin-web/commit/8b33064e0adacb41b268bd09c17b8b3064e57937))
+
+### BREAKING CHANGES
+
+- **`@vtmn/css`, `@vtmn/svelte`, `@vtmn/react`, `@vtmn/vue`:** The design of `VtmnChip`now matches Figma's version. If you used the `VtmnChip` with an "input" variant, you will have changes when you will upgrade to this new version. "Selected" input is no longer available on this variant. The color of the variant stays white, and no longer has a blue color.
+
 ## [1.1.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-chip@1.1.2...@vtmn/css-chip@1.1.3) (2023-08-02)
 
 **Note:** Version bump only for package @vtmn/css-chip
