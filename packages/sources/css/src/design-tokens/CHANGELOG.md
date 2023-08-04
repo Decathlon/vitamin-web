@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@1.1.1...@vtmn/css-design-tokens@1.1.2) (2023-08-02)
+
+### Bug Fixes
+
+- convert breakpoints variables to values instead of strings ([#1458](https://github.com/Decathlon/vitamin-web/issues/1458)) ([e0e3a34](https://github.com/Decathlon/vitamin-web/commit/e0e3a34a8513cb8eb8d0b4ea2bd83a8fe6457253))
+
 ## [1.1.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css-design-tokens@1.1.0...@vtmn/css-design-tokens@1.1.1) (2023-06-21)
 
 **Note:** Version bump only for package @vtmn/css-design-tokens
