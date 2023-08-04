@@ -357,15 +357,15 @@
   padding-right: rem(6px);
 }
 
-.vtmn-chip_variant--input.vtmn-chip_size--small.vtmn-chip--selected {
+.vtmn-chip_variant--input.vtmn-chip_size--small {
   padding-right: rem(4px);
 }
 
-.vtmn-chip_variant--input.vtmn-chip_size--medium.vtmn-chip--selected {
+.vtmn-chip_variant--input.vtmn-chip_size--medium {
   padding-right: rem(6px);
 }
 
-.vtmn-chip_variant--input.vtmn-chip--selected::before {
+.vtmn-chip_variant--input::before {
   content: initial;
   mask: initial;
   mask-size: initial;
@@ -376,7 +376,7 @@
   background-color: initial;
 }
 
-.vtmn-chip_variant--input.vtmn-chip--selected > .vtmn-btn--icon-alone {
+.vtmn-chip_variant--input > .vtmn-btn--icon-alone {
   margin-left: rem(6px);
   padding: 0;
   height: rem(24px);
@@ -384,9 +384,9 @@
   border-radius: 50%;
 }
 
-.vtmn-chip_variant--input.vtmn-chip--selected
-  > .vtmn-btn--icon-alone
-  > span[class^='vtmx-'],
-.vtmn-chip_variant--input.vtmn-chip--selected > .vtmn-btn--icon-alone > svg {
+.vtmn-chip_variant--input > .vtmn-btn--icon-alone > span[class^='vtmx-'],
+.vtmn-chip_variant--input > .vtmn-btn--icon-alone > svg {
   font-size: rem(24px);
+  color: var(--vtmn-semantic-color_content-action);
+  fill: var(--vtmn-semantic-color_content-action);
 }

@@ -60,16 +60,20 @@ export default /*#__PURE__*/ defineComponent({
       return emit('cancel');
     };
 
+    const isSelected =
+      props.selected && ['single-choice', 'filter'].includes(props.variant);
+
     return {
       styleObject: {
         color: 'inherit',
         fontSize: 'inherit',
       },
+      isSelected,
       classes: computed(() => ({
         'vtmn-chip': true,
         [`vtmn-chip_variant--${props.variant}`]: props.variant,
         [`vtmn-chip_size--${props.size}`]: props.size,
-        ['vtmn-chip--selected']: props.selected && props.variant !== 'action',
+        ['vtmn-chip--selected']: isSelected,
         ['vtmn-chip--disabled']: props.disabled,
       })),
       handleChange,
@@ -85,7 +89,7 @@ export default /*#__PURE__*/ defineComponent({
     :value="modelValue"
     role="button"
     :aria-disabled="disabled"
-    :aria-pressed="selected && variant !== 'action'"
+    :aria-pressed="isSelected"
   >
     <VtmnIcon
       v-if="(variant === 'input' || variant === 'action') && icon"
@@ -95,12 +99,12 @@ export default /*#__PURE__*/ defineComponent({
     />
     <slot />
     <VtmnButton
-      v-if="variant === 'input' && selected"
-      :variant="'ghost-reversed'"
+      v-if="variant === 'input'"
+      :variant="'ghost'"
       :iconAlone="'close-line'"
       :size="size"
       :disabled="disabled"
-      @click.prevent="handleCancel"
+      @click.prevent.stop="handleCancel"
       aria-label="Unselect the selection"
     />
     <VtmnBadge
