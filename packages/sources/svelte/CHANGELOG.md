@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@4.0.0...@vtmn/svelte@4.0.1) (2023-09-13)
+
+### Bug Fixes
+
+- url of placeholder in showcases ([2b766cd](https://github.com/Decathlon/vitamin-web/commit/2b766cd3713089010d15598d2118b505cc0f8f0c))
+
 # [4.0.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@3.2.6...@vtmn/svelte@4.0.0) (2023-08-04)
 
 ### Features
