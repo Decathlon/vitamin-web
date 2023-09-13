@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@3.0.0...@vtmn/css@3.0.1) (2023-09-13)
+
+### Bug Fixes
+
+- bug on appearance of VtmnQuantity for Safari & Chrome mobile + improve showcases ([cb83c73](https://github.com/Decathlon/vitamin-web/commit/cb83c7334bb372be4617904f0cca26140dd3f26d))
+
 # [3.0.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@2.0.7...@vtmn/css@3.0.0) (2023-08-04)
 
 ### Features
