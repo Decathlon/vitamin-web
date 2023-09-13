@@ -86,7 +86,7 @@
   };
 
   const img =
-    'https://storage.googleapis.com/dkt-design-cdn/images/landscape-placeholder.jpg';
+    'https://storage.googleapis.com/design-system-public/images/landscape-placeholder.jpg';
 </script>
 
 <Meta

@@ -15,7 +15,7 @@ const Template = (args) => ({
   components: { VtmnCard, VtmnPrice, VtmnButton },
   setup() {
     const src =
-      'https://storage.googleapis.com/dkt-design-cdn/images/landscape-placeholder.jpg';
+      'https://storage.googleapis.com/design-system-public/images/landscape-placeholder.jpg';
     return { args, src };
   },
   template: `<div style="display: flex; justify-content: center; max-width: 300px;">

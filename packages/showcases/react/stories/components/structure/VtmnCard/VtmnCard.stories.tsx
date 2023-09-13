@@ -29,7 +29,7 @@ const Template: Story = (args) => (
       {...args}
       img={
         <img
-          src="https://storage.googleapis.com/dkt-design-cdn/images/landscape-placeholder.jpg"
+          src="https://storage.googleapis.com/design-system-public/images/landscape-placeholder.jpg"
           alt="placeholder"
         />
       }
