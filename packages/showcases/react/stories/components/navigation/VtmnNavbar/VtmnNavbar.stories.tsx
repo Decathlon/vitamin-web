@@ -12,7 +12,12 @@ export default {
 
 const DecathlonLogo = () => (
   <a aria-label="decathlon logo" href="#">
-    <svg viewBox="0 0 200 50" aria-label="Decathlon logo" width="160px">
+    <svg
+      viewBox="0 0 200 50"
+      width="200"
+      aria-label="Decathlon logo"
+      width="160px"
+    >
       <title>{'Decathlon'}</title>
       <g fill="none" fillRule="evenodd">
         <path fill="#0082C3" d="M0 50h200V0H0z" />

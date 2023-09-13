@@ -23,7 +23,7 @@ const generateHTML = (packages) => `
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/@vtmn/css">
   </head>
   <body>
-    <div class="vtmn-flex vtmn-flex-col vtmn-justify-center vtmn-items-center">
+    <div class="vtmn-flex vtmn-flex-col vtmn-justify-center vtmn-items-center vtmn-p-6">
       <img width="400" class="vtmn-m-8" src="https://user-images.githubusercontent.com/9600228/102414461-e3b92b00-3ff6-11eb-9c96-5f37c4d5e02c.png" alt="Decathlon Design System - Vitamin"/>
       ${packages.map(generateLinks).join('')}
   </body>

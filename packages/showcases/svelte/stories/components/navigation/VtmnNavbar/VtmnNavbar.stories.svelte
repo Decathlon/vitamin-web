@@ -23,7 +23,12 @@
     <VtmnNavbar {...args}>
       <svelte:fragment slot="logo">
         <a aria-label="decathlon logo" href="#">
-          <svg viewBox="0 0 200 50" aria-label="Decathlon logo" role="img">
+          <svg
+            viewBox="0 0 200 50"
+            width="200"
+            aria-label="Decathlon logo"
+            role="img"
+          >
             <title>Decathlon</title>
             <g
               id="decathlon-logo"
@@ -66,7 +71,12 @@
 
       <svelte:fragment slot="logo">
         <a aria-label="decathlon logo" href="#">
-          <svg viewBox="0 0 200 50" aria-label="Decathlon logo" role="img">
+          <svg
+            viewBox="0 0 200 50"
+            width="200"
+            aria-label="Decathlon logo"
+            role="img"
+          >
             <title>Decathlon</title>
             <g
               id="decathlon-logo"
@@ -123,7 +133,12 @@
 
       <svelte:fragment slot="logo">
         <a aria-label="decathlon logo" href="#">
-          <svg viewBox="0 0 200 50" aria-label="Decathlon logo" role="img">
+          <svg
+            viewBox="0 0 200 50"
+            width="200"
+            aria-label="Decathlon logo"
+            role="img"
+          >
             <title>Decathlon</title>
             <g
               id="decathlon-logo"
