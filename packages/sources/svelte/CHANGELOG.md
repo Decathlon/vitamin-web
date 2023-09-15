@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@4.0.2...@vtmn/svelte@4.0.3) (2023-09-15)
+
+### Bug Fixes
+
+- make open property of VtmnAccordion reactive ([#1461](https://github.com/Decathlon/vitamin-web/issues/1461)) ([a4612af](https://github.com/Decathlon/vitamin-web/commit/a4612af9bf7c9d0a8017f1e0bbdfc0ada9bfdfd4))
+
 ## [4.0.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@4.0.1...@vtmn/svelte@4.0.2) (2023-09-13)
 
 **Note:** Version bump only for package @vtmn/svelte
