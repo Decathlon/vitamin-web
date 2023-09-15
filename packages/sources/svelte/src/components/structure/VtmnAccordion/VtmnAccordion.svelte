@@ -41,7 +41,7 @@
   class={componentClass}
   aria-disabled={disabled}
   aria-expanded={open}
-  {open}
+  bind:open
   {...$$restProps}
 >
   <summary>
