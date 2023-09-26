@@ -29,7 +29,7 @@ export const VtmnBadge = ({
       }`}
       {...props}
     >
-      {value && value > 99 ? '99+' : value || ''}
+      {value && value > 99 ? '99+' : value ?? ''}
     </span>
   );
 };
