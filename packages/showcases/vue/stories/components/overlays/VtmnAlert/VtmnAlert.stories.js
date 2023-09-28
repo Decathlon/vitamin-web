@@ -33,3 +33,18 @@ const Template = (args) => ({
 
 export const Overview = Template.bind({});
 Overview.args = {};
+
+const AlertItemTemplate = (args) => ({
+  components: { VtmnAlert },
+  setup() {
+    return {
+      args,
+    };
+  },
+  template: `<VtmnAlert v-bind="args" />`,
+});
+
+export const AlertItem = AlertItemTemplate.bind({});
+AlertItem.args = {
+  timeout: 0,
+};

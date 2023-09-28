@@ -27,6 +27,12 @@ export interface VtmnAlertProps
   ariaLabelCloseButton: string;
 
   /**
+   * time (ms) before the alert disappears
+   * Set to 0 to keep the alert visible
+   */
+  timeout: number;
+
+  /**
    * The alert callback close function
    * @type {function}
    */
@@ -39,6 +45,7 @@ export const VtmnAlert = ({
   message,
   onClose,
   ariaLabelCloseButton,
+  timeout = 8000,
   className,
 }: VtmnAlertProps) => {
   return (
@@ -48,7 +55,7 @@ export const VtmnAlert = ({
       className={clsx(
         'vtmn-alert',
         `vtmn-alert_variant--${variant}`,
-        'show',
+        timeout > 0 && 'show',
         className,
       )}
     >

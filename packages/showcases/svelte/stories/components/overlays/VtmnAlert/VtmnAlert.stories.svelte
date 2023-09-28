@@ -82,9 +82,9 @@
 <Story
   name="Alert item"
   args={{
-    timeout: undefined,
     title: undefined,
     description: undefined,
+    timeout: 0,
     ariaLabelCloseButton: 'Close alert',
   }}
   let:args

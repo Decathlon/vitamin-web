@@ -36,3 +36,14 @@ const OverviewTemplate: Story = (args) => {
 
 export const Overview = OverviewTemplate.bind({});
 Overview.args = {};
+
+const AlertItemTemplate: Story = (args) => {
+  return (
+    <div>
+      <VtmnAlert {...args} timeout={0} />
+    </div>
+  );
+};
+
+export const AlertItem = AlertItemTemplate.bind({});
+AlertItem.args = {};
