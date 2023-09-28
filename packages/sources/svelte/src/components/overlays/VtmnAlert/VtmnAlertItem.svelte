@@ -3,12 +3,6 @@
   import { createEventDispatcher, onDestroy, onMount } from 'svelte';
   import { cn } from '../../../utils/classnames';
   import { VTMN_ALERT_VARIANT } from './enums';
-  import { uuid } from '../../../utils/math';
-
-  /**
-   * @type {string} unique id suffix for the component
-   */
-  export let id = uuid();
 
   /**
    * @type {'info'|'success'|'danger'|'warning'} variant of the alert
@@ -68,7 +62,7 @@
 
 <div class={componentClass} role="alert" tabindex="-1" {...$$restProps}>
   <div class="vtmn-alert_content" role="document">
-    <div id="alert-title-{id}" class="vtmn-alert_content-title">
+    <div class="vtmn-alert_content-title">
       {#if $$slots.title}
         <slot name="title" />
       {:else}
@@ -85,7 +79,7 @@
       {/if}
     </div>
     {#if description || $$slots.description}
-      <span id="alert-text-{id}" class="vtmn-alert_content-description">
+      <span class="vtmn-alert_content-description">
         {#if $$slots.description}
           <slot name="description" />
         {:else}
