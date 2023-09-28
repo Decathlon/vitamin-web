@@ -1,12 +1,17 @@
 <script>
   import { Meta, Template, Story } from '@storybook/addon-svelte-csf';
-  import { vtmnAlertStore, VtmnAlert, VtmnButton } from '@vtmn/svelte';
+  import {
+    vtmnAlertStore,
+    VtmnAlert,
+    VtmnButton,
+    VtmnAlertItem,
+  } from '@vtmn/svelte';
   import { parameters } from '@vtmn/showcase-core/csf/components/overlays/alert.csf';
   import README from '@vtmn/svelte/src/components/overlays/VtmnAlert/README.md';
 
   const argTypes = {
     title: {
-      type: { name: 'string', required: true },
+      type: { name: 'string' },
       description: 'Title of the modal',
       defaultValue: 'This is the title of the alert',
       control: { type: 'text' },
@@ -24,6 +29,13 @@
       defaultValue: false,
       control: {
         type: 'boolean',
+      },
+    },
+    ariaLabelButton: {
+      type: { name: 'string', required: false },
+      description: 'Aria label displayed for the close button',
+      control: {
+        type: 'text',
       },
     },
     variant: {
@@ -56,6 +68,7 @@
     on:click={() => {
       vtmnAlertStore.send({
         ...args,
+        ariaLabelButton: 'Close alert',
         'aria-labelledby': 'Storybook',
         'aria-describedby': args.variant,
       });
@@ -65,3 +78,19 @@
 </Template>
 
 <Story name="Overview" />
+
+<Story
+  name="Alert item"
+  args={{
+    timeout: undefined,
+    title: undefined,
+    description: undefined,
+    ariaLabelButton: 'Close alert',
+  }}
+  let:args
+>
+  <VtmnAlertItem {...args}>
+    <svelte:fragment slot="title">Slot title</svelte:fragment>
+    <svelte:fragment slot="description">Slot description</svelte:fragment>
+  </VtmnAlertItem>
+</Story>

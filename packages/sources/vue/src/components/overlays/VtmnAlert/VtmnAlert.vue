@@ -26,6 +26,9 @@ export default /*#__PURE__*/ defineComponent({
       type: Boolean as PropType<boolean>,
       default: false,
     },
+    ariaLabelButton: {
+      type: String as PropType<string>,
+    },
     timeout: {
       type: Number as PropType<number>,
       default: 8000,
@@ -64,7 +67,7 @@ export default /*#__PURE__*/ defineComponent({
           iconAlone="close-line"
           variant="ghost-reversed"
           size="small"
-          aria-label="close"
+          :aria-label="ariaLabelButton"
           @click.prevent="handleClose"
         />
       </div>
