@@ -24,7 +24,7 @@ export interface VtmnAlertProps
   /**
    * Aria label applied on the close button
    */
-  ariaLabelButton: string;
+  ariaLabelCloseButton: string;
 
   /**
    * The alert callback close function
@@ -38,7 +38,7 @@ export const VtmnAlert = ({
   title,
   message,
   onClose,
-  ariaLabelButton,
+  ariaLabelCloseButton,
   className,
 }: VtmnAlertProps) => {
   return (
@@ -60,7 +60,7 @@ export const VtmnAlert = ({
               size="small"
               variant="ghost-reversed"
               iconAlone="close-line"
-              aria-label={ariaLabelButton}
+              aria-label={ariaLabelCloseButton}
               onClick={onClose}
             ></VtmnButton>
           )}

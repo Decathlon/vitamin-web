@@ -35,7 +35,7 @@
   /**
    * @type {string} aria label on the button
    */
-  export let ariaLabelButton;
+  export let ariaLabelCloseButton;
 
   let className = undefined;
   /**
@@ -68,7 +68,7 @@
       {/if}
       {#if withCloseButton}
         <VtmnButton
-          aria-label={ariaLabelButton}
+          aria-label={ariaLabelCloseButton}
           variant="ghost-reversed"
           size="small"
           iconAlone="close-line"

@@ -11,7 +11,7 @@ class VtmnAlertStore {
     title,
     description,
     withCloseButton,
-    ariaLabelButton,
+    ariaLabelCloseButton,
     ...attributes
   }) {
     this._alerts.update((state) => [
@@ -22,7 +22,7 @@ class VtmnAlertStore {
         title,
         description,
         withCloseButton,
-        ariaLabelButton,
+        ariaLabelCloseButton,
         id: `vtmn-alert-${uuid()}`,
       },
     ]);

@@ -139,7 +139,7 @@ describe('VtmnAlertItem', () => {
     const { getByLabelText } = render(VtmnAlertItem, {
       title: 'Alert unit-test',
       timeout,
-      ariaLabelButton: 'Close alert',
+      ariaLabelCloseButton: 'Close alert',
       withCloseButton: true,
     });
     expect(getByLabelText('Close alert')).toBeVisible();
@@ -149,7 +149,7 @@ describe('VtmnAlertItem', () => {
     const { getByLabelText, component } = render(VtmnAlertItem, {
       title: 'Alert unit-test',
       timeout,
-      ariaLabelButton: 'Close alert',
+      ariaLabelCloseButton: 'Close alert',
       withCloseButton: true,
     });
     await expectedCloseOnElement(getByLabelText('Close alert'), component, 1);

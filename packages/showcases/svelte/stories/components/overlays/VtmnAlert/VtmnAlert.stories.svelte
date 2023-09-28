@@ -31,7 +31,7 @@
         type: 'boolean',
       },
     },
-    ariaLabelButton: {
+    ariaLabelCloseButton: {
       type: { name: 'string', required: false },
       description: 'Aria label displayed for the close button',
       control: {
@@ -68,7 +68,7 @@
     on:click={() => {
       vtmnAlertStore.send({
         ...args,
-        ariaLabelButton: 'Close alert',
+        ariaLabelCloseButton: 'Close alert',
         'aria-labelledby': 'Storybook',
         'aria-describedby': args.variant,
       });
@@ -85,7 +85,7 @@
     timeout: undefined,
     title: undefined,
     description: undefined,
-    ariaLabelButton: 'Close alert',
+    ariaLabelCloseButton: 'Close alert',
   }}
   let:args
 >
