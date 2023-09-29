@@ -28,7 +28,7 @@ export default /*#__PURE__*/ defineComponent({
     },
     ariaLabelCloseButton: {
       type: String as PropType<string>,
-      default: 'Close alert'
+      default: 'Close alert',
     },
     timeout: {
       type: Number as PropType<number>,
