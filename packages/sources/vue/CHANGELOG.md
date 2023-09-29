@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@4.0.1...@vtmn/vue@4.1.0) (2023-09-29)
+
+### Bug Fixes
+
+- **build:** fix lint issues ([#1465](https://github.com/Decathlon/vitamin-web/issues/1465)) ([80cf58f](https://github.com/Decathlon/vitamin-web/commit/80cf58f4fd9e326a7345c61b73f1f7d8e0139f8b))
+
+### Features
+
+- **`@vtmn/svelte`, `@vtmn/react`, `vtmn/vue`:** use `VtmnAlert` as a display component ([#1464](https://github.com/Decathlon/vitamin-web/issues/1464)) ([590dd2e](https://github.com/Decathlon/vitamin-web/commit/590dd2e2b3f112fede276ea769ea28ea1ab58738))
+
 ## [4.0.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@4.0.0...@vtmn/vue@4.0.1) (2023-09-13)
 
 **Note:** Version bump only for package @vtmn/vue
