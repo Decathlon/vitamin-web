@@ -1,6 +1,7 @@
 import '@testing-library/jest-dom';
 import { fireEvent, render, waitFor } from '@testing-library/svelte';
 import VtmnAlertItem from '../VtmnAlertItem.svelte';
+import VtmnAlertItemWithSlot from './VtmnAlertItemWithSlots.test.svelte';
 
 const timeout = 5000;
 
@@ -138,6 +139,7 @@ describe('VtmnAlertItem', () => {
     const { getByLabelText } = render(VtmnAlertItem, {
       title: 'Alert unit-test',
       timeout,
+      ariaLabelCloseButton: 'Close alert',
       withCloseButton: true,
     });
     expect(getByLabelText('Close alert')).toBeVisible();
@@ -147,6 +149,7 @@ describe('VtmnAlertItem', () => {
     const { getByLabelText, component } = render(VtmnAlertItem, {
       title: 'Alert unit-test',
       timeout,
+      ariaLabelCloseButton: 'Close alert',
       withCloseButton: true,
     });
     await expectedCloseOnElement(getByLabelText('Close alert'), component, 1);
@@ -164,5 +167,11 @@ describe('VtmnAlertItem', () => {
     await waitFor(() => expect(handleClick).toHaveBeenCalledTimes(1), {
       timeout: 100,
     });
+  });
+
+  test('Should display the component with the slots', async () => {
+    const { getByText } = render(VtmnAlertItemWithSlot, {});
+    expect(getByText('Slot title')).toBeVisible();
+    expect(getByText('Slot description')).toBeVisible();
   });
 });

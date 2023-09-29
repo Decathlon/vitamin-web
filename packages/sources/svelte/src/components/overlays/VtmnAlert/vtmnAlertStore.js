@@ -6,7 +6,14 @@ class VtmnAlertStore {
     this._alerts = writable([]);
   }
 
-  send({ variant, title, description, withCloseButton, ...attributes }) {
+  send({
+    variant,
+    title,
+    description,
+    withCloseButton,
+    ariaLabelCloseButton,
+    ...attributes
+  }) {
     this._alerts.update((state) => [
       ...state,
       {
@@ -15,6 +22,7 @@ class VtmnAlertStore {
         title,
         description,
         withCloseButton,
+        ariaLabelCloseButton,
         id: `vtmn-alert-${uuid()}`,
       },
     ]);

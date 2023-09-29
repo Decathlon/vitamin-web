@@ -26,6 +26,10 @@ export default /*#__PURE__*/ defineComponent({
       type: Boolean as PropType<boolean>,
       default: false,
     },
+    ariaLabelCloseButton: {
+      type: String as PropType<string>,
+      default: 'Close alert'
+    },
     timeout: {
       type: Number as PropType<number>,
       default: 8000,
@@ -45,7 +49,7 @@ export default /*#__PURE__*/ defineComponent({
     return {
       classes: computed(() => ({
         'vtmn-alert': true,
-        show: true,
+        show: props.timeout > 0,
         [`vtmn-alert_variant--${props.variant}`]: props.variant,
       })),
       handleClose,
@@ -57,18 +61,18 @@ export default /*#__PURE__*/ defineComponent({
 <template>
   <div :class="classes" role="alert" tabindex="-1" v-bind="$attrs">
     <div class="vtmn-alert_content" role="document">
-      <div id="alert-title" class="vtmn-alert_content-title">
+      <div class="vtmn-alert_content-title">
         {{ title }}
         <VtmnButton
           v-if="withCloseButton"
           iconAlone="close-line"
           variant="ghost-reversed"
           size="small"
-          aria-label="close"
+          :aria-label="ariaLabelCloseButton"
           @click.prevent="handleClose"
         />
       </div>
-      <p v-if="message" id="alert-text" class="vtmn-alert_content-description">
+      <p v-if="message" class="vtmn-alert_content-description">
         {{ message }}
       </p>
     </div>

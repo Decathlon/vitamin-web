@@ -12,11 +12,13 @@
 
   /**
    * @type {string} title of the alert
+   * Can also be set with a slot="title"
    */
-  export let title;
+  export let title = undefined;
 
   /**
    * @type {string} description of the alert
+   * Can also be set with a slot="description"
    */
   export let description = undefined;
 
@@ -27,8 +29,15 @@
 
   /**
    * @type {number} time (ms) before the alert disappears
+   * Can't be above 8000ms.
+   * Set to 0 to keep the alert visible
    */
-  export let timeout;
+  export let timeout = 8000;
+
+  /**
+   * @type {string} aria label on the button
+   */
+  export let ariaLabelCloseButton = 'Close alert';
 
   let className = undefined;
   /**
@@ -39,12 +48,13 @@
   const dispatch = createEventDispatcher();
   const closeHandler = () => dispatch('close');
   const _clearTimeout = () => timeoutId && clearTimeout(timeoutId);
-  const _setTimeout = () => (timeoutId = setTimeout(closeHandler, timeout));
+  const _setTimeout = () =>
+    (timeoutId = timeout && setTimeout(closeHandler, timeout));
   onDestroy(_clearTimeout);
   onMount(_setTimeout);
   $: componentClass = cn(
     'vtmn-alert',
-    'show',
+    timeout > 0 && 'show',
     variant && `vtmn-alert_variant--${variant}`,
     className,
   );
@@ -52,11 +62,15 @@
 
 <div class={componentClass} role="alert" tabindex="-1" {...$$restProps}>
   <div class="vtmn-alert_content" role="document">
-    <div id="alert-title" class="vtmn-alert_content-title">
-      {title}
+    <div class="vtmn-alert_content-title">
+      {#if $$slots.title}
+        <slot name="title" />
+      {:else}
+        {title}
+      {/if}
       {#if withCloseButton}
         <VtmnButton
-          aria-label="Close alert"
+          aria-label={ariaLabelCloseButton}
           variant="ghost-reversed"
           size="small"
           iconAlone="close-line"
@@ -64,10 +78,14 @@
         />
       {/if}
     </div>
-    {#if description}
-      <p id="alert-text" class="vtmn-alert_content-description">
-        {description}
-      </p>
+    {#if description || $$slots.description}
+      <span class="vtmn-alert_content-description">
+        {#if $$slots.description}
+          <slot name="description" />
+        {:else}
+          {description}
+        {/if}
+      </span>
     {/if}
   </div>
 </div>
