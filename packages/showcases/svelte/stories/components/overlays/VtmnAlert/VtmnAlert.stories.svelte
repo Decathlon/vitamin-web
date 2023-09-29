@@ -34,6 +34,7 @@
     ariaLabelCloseButton: {
       type: { name: 'string', required: false },
       description: 'Aria label displayed for the close button',
+      defaultValue: 'Close alert',
       control: {
         type: 'text',
       },

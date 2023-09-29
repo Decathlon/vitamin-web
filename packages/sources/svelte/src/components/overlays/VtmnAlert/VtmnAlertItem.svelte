@@ -37,7 +37,7 @@
   /**
    * @type {string} aria label on the button
    */
-  export let ariaLabelCloseButton;
+  export let ariaLabelCloseButton = 'Close alert';
 
   let className = undefined;
   /**

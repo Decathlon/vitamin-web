@@ -44,7 +44,7 @@ export const VtmnAlert = ({
   title,
   message,
   onClose,
-  ariaLabelCloseButton,
+  ariaLabelCloseButton = 'Close alert',
   timeout = 8000,
   className,
 }: VtmnAlertProps) => {
