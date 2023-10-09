@@ -33,6 +33,8 @@
   type="checkbox"
   {id}
   bind:checked
+  on:click
+  on:change
   {disabled}
   {...$$restProps}
 />
