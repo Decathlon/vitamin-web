@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@4.1.0...@vtmn/svelte@4.1.1) (2023-10-10)
+
+### Bug Fixes
+
+- **`@vtmn/svelte`:** add events on `VtmnCheckbox` ([#1467](https://github.com/Decathlon/vitamin-web/issues/1467)) ([74abe1a](https://github.com/Decathlon/vitamin-web/commit/74abe1a499fcdcdd120cadf5609f67103d432598))
+
 # [4.1.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@4.0.3...@vtmn/svelte@4.1.0) (2023-09-29)
 
 ### Features
