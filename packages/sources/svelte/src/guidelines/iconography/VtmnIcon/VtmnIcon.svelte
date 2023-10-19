@@ -18,6 +18,11 @@
    */
   export let variant = undefined;
 
+  /**
+   * Target reference of the icon
+   */
+  export let ref = undefined;
+
   let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
@@ -52,7 +57,12 @@
   }
 </script>
 
-<span class={componentClass} style={componentStyle} {...$$restProps} />
+<span
+  bind:this={ref}
+  class={componentClass}
+  style={componentStyle}
+  {...$$restProps}
+/>
 
 <style>
   @import '@vtmn/icons/dist/vitamix/font/vitamix.css';

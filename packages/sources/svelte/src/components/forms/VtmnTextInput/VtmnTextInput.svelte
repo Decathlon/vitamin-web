@@ -94,6 +94,9 @@
     on:change
     on:blur
     on:focus
+    on:keyup
+    on:keydown
+    on:keypress
     class={componentClass}
     {id}
     {disabled}
@@ -108,6 +111,9 @@
       on:change
       on:blur
       on:focus
+      on:keyup
+      on:keydown
+      on:keypress
       class={componentClass}
       type="text"
       {id}
