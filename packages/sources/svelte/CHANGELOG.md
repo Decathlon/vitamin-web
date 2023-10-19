@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.2.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@4.1.1...@vtmn/svelte@4.2.0) (2023-10-19)
+
+### Features
+
+- **`@vtmn/svelte`:** dispatch missing events on `VtmnInput` + export ref on `VtmnIcon` ([#1469](https://github.com/Decathlon/vitamin-web/issues/1469)) ([61417fb](https://github.com/Decathlon/vitamin-web/commit/61417fbc970e87a040c05d52adb3707694207575))
+
 ## [4.1.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@4.1.0...@vtmn/svelte@4.1.1) (2023-10-10)
 
 ### Bug Fixes
