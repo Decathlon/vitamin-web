@@ -44,6 +44,11 @@
    */
   export { className as class };
 
+  /**
+   * Reference of the link
+   */
+  export let ref = undefined;
+
   $: componentClass = cn(
     'vtmn-link',
     size && `vtmn-link_size--${size}`,
@@ -56,7 +61,14 @@
   let computedRel = computeRel($$restProps['target'], $$restProps['rel']);
 </script>
 
-<a {href} class={componentClass} on:click {...$$restProps} rel={computedRel}>
+<a
+  bind:this={ref}
+  {href}
+  class={componentClass}
+  on:click
+  {...$$restProps}
+  rel={computedRel}
+>
   <slot />
 </a>
 

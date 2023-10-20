@@ -25,6 +25,11 @@
    */
   export { className as class };
 
+  /**
+   * Reference of the input
+   */
+  export let ref = undefined;
+
   $: componentClass = cn('vtmn-checkbox', className);
 </script>
 
@@ -35,6 +40,7 @@
   bind:checked
   on:click
   on:change
+  bind:this={ref}
   {disabled}
   {...$$restProps}
 />
