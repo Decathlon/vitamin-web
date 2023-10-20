@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.3.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@4.2.0...@vtmn/svelte@4.3.0) (2023-10-20)
+
+### Features
+
+- **`@vtmn/svelte`:** export ref on components ([#1471](https://github.com/Decathlon/vitamin-web/issues/1471)) ([7802bd3](https://github.com/Decathlon/vitamin-web/commit/7802bd35e1af87871b4eafbb2dba2d48de9095a5))
+
 # [4.2.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@4.1.1...@vtmn/svelte@4.2.0) (2023-10-19)
 
 ### Features
