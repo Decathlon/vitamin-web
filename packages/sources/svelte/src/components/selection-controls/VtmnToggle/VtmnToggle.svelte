@@ -33,12 +33,17 @@
    */
   export { className as class };
 
+  /**
+   * Reference of the input
+   */
+  export let ref = undefined;
+
   $: componentClass = cn('vtmn-toggle', `vtmn-toggle_size--${size}`, className);
 </script>
 
 <div class={componentClass}>
   <div class="vtmn-toggle_switch">
-    <input type="checkbox" {id} {disabled} bind:checked />
+    <input type="checkbox" {id} {disabled} bind:checked bind:this={ref} />
     <span aria-hidden="true" />
   </div>
   <label for={id}>

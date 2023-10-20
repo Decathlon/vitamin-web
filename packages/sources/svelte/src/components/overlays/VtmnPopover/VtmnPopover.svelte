@@ -17,6 +17,21 @@
    */
   export { className as class };
 
+  /**
+   * Reference of the popover
+   */
+  export let ref = undefined;
+
+  /**
+   * Reference of the body of the popover
+   */
+  export let bodyRef = undefined;
+
+  /**
+   * Reference of the title of the popover
+   */
+  export let titleRef = undefined;
+
   $: componentClass = cn('vtmn-popover', className);
 </script>
 
@@ -28,12 +43,15 @@
   aria-describedby={id}
   aria-labelledby={`${id}-title`}
   tabindex="0"
+  {id}
+  bind:this={ref}
   {...$$restProps}
 >
   <slot />
 
   <div {id} role="dialog">
     <p
+      bind:this={titleRef}
       class="vtmn-popover_title"
       id={`${id}-title`}
       role="heading"
@@ -41,7 +59,7 @@
     >
       <slot name="title" />
     </p>
-    <p class="vtmn-popover_text"><slot name="body" /></p>
+    <p class="vtmn-popover_text" bind:this={bodyRef}><slot name="body" /></p>
   </div>
 </div>
 

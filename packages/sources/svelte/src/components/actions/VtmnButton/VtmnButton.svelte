@@ -44,6 +44,11 @@
    */
   export { className as class };
 
+  /**
+   * Reference of the button
+   */
+  export let ref = undefined;
+
   $: componentClass = cn(
     'vtmn-btn',
     variant && `vtmn-btn_variant--${variant}`,
@@ -59,6 +64,7 @@
   on:click
   on:keydown
   type="button"
+  bind:this={ref}
   class={componentClass}
   {...$$restProps}
 >

@@ -70,6 +70,11 @@
    */
   export { className as class };
 
+  /**
+   * Reference of the text input
+   */
+  export let ref = undefined;
+
   $: componentClass = cn(
     'vtmn-text-input',
     valid && 'vtmn-text-input--valid',
@@ -89,6 +94,7 @@
 {/if}
 {#if multiline}
   <textarea
+    bind:this={ref}
     bind:value
     on:input
     on:change
@@ -106,6 +112,7 @@
 {:else}
   <div class="vtmn-text-input_container">
     <input
+      bind:this={ref}
       bind:value
       on:input
       on:change

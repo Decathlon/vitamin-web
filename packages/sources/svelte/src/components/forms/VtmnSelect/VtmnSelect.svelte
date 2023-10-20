@@ -48,6 +48,11 @@
    */
   export { className as class };
 
+  /**
+   * Reference of the select
+   */
+  export let ref = undefined;
+
   $: componentClass = cn(
     'vtmn-select_container',
     !border && `vtmn-select--no-border`,
@@ -58,6 +63,7 @@
 <div class={componentClass}>
   <label for={id}>{label}</label>
   <select
+    bind:this={ref}
     {name}
     {id}
     {disabled}
