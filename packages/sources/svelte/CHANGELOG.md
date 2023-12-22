@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.4.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@4.3.0...@vtmn/svelte@4.4.0) (2023-12-22)
+
+### Features
+
+- **`@vtmn/svelte`:** add missing events on `VtmnToggle` ([#1476](https://github.com/Decathlon/vitamin-web/issues/1476)) ([86fbef0](https://github.com/Decathlon/vitamin-web/commit/86fbef0ca90188dc0bfb23fd9d5f18462ce15c38))
+
 # [4.3.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@4.2.0...@vtmn/svelte@4.3.0) (2023-10-20)
 
 ### Features
