@@ -43,7 +43,16 @@
 
 <div class={componentClass}>
   <div class="vtmn-toggle_switch">
-    <input type="checkbox" {id} {disabled} bind:checked bind:this={ref} />
+    <input
+      type="checkbox"
+      {id}
+      {disabled}
+      bind:checked
+      bind:this={ref}
+      {...$$restProps}
+      on:click
+      on:change
+    />
     <span aria-hidden="true" />
   </div>
   <label for={id}>
