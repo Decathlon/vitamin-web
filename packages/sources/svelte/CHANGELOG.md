@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.5.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@4.4.0...@vtmn/svelte@4.5.0) (2024-01-25)
+
+### Features
+
+- **`vtmn/svelte`:** change `vtmnChip` in order to set a different type of node ([#1479](https://github.com/Decathlon/vitamin-web/issues/1479)) ([7516a55](https://github.com/Decathlon/vitamin-web/commit/7516a55cc800753330ac83745d7461cc144f6100))
+
 # [4.4.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@4.3.0...@vtmn/svelte@4.4.0) (2023-12-22)
 
 ### Features
