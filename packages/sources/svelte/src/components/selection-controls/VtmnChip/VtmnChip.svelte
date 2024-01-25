@@ -40,6 +40,11 @@
    */
   export let badgeValue = 0;
 
+  /**
+   * Root node type
+   */
+  export let element = 'div';
+
   let className = undefined;
   /**
    * @type {string} Custom classes to apply to the component.
@@ -79,7 +84,8 @@
   };
 </script>
 
-<div
+<svelte:element
+  this={element}
   class={componentClass}
   role="button"
   aria-disabled={disabled}
@@ -89,6 +95,7 @@
   on:keyup
   on:keypress
   tabindex={disabled ? undefined : 0}
+  {...$$restProps}
 >
   {#if displayLeftIcon}
     <VtmnIcon value={icon} aria-hidden="true" />
@@ -107,7 +114,7 @@
   {#if displayFilterBadge}
     <VtmnBadge value={badgeValue} />
   {/if}
-</div>
+</svelte:element>
 
 <style lang="css">
   @import '@vtmn/css-chip';
