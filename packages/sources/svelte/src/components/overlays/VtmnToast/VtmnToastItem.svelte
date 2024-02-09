@@ -2,6 +2,7 @@
   import VtmnButton from '../../actions/VtmnButton/VtmnButton.svelte';
   import { createEventDispatcher, onDestroy, onMount } from 'svelte';
   import { cn } from '../../../utils/classnames';
+  import { INFINITE_TIMEOUT_MS, CSS_ANIMATION_TIME_MS } from './enums';
 
   /**
    * @type {boolean} display the toast with an icon
@@ -36,19 +37,34 @@
   const dispatch = createEventDispatcher();
   const closeHandler = () => dispatch('close');
   const _clearTimeout = () => timeoutId && clearTimeout(timeoutId);
-  const _setTimeout = () => (timeoutId = setTimeout(closeHandler, timeout));
+  const _setTimeout = () =>
+    (timeoutId =
+      typeof timeout === 'number' &&
+      setTimeout(
+        closeHandler,
+        (timeout < Infinity ? timeout : INFINITE_TIMEOUT_MS) +
+          CSS_ANIMATION_TIME_MS,
+      ));
   onDestroy(_clearTimeout);
   onMount(_setTimeout);
 
   $: componentClass = cn(
     'vtmn-toast',
-    'show',
+    timeout > 0 && 'show animate-delay',
     withIcon && 'vtmn-toast--with-icon-info',
     className,
   );
 </script>
 
-<div class={componentClass} role="status" {...$$restProps}>
+<div
+  class={componentClass}
+  style:--vtmn-animation_overlay-duration={typeof timeout === 'number' &&
+  timeout < Infinity
+    ? `${timeout}ms`
+    : `${INFINITE_TIMEOUT_MS}ms`}
+  role="status"
+  {...$$restProps}
+>
   <div class="vtmn-toast_content">{content}</div>
   {#if withCloseButton}
     <VtmnButton

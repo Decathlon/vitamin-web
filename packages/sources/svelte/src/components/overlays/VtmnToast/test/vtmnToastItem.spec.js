@@ -2,6 +2,7 @@ import '@testing-library/jest-dom';
 
 import { fireEvent, render, waitFor } from '@testing-library/svelte';
 import VtmnToastItem from '../VtmnToastItem.svelte';
+import { CSS_ANIMATION_TIME_MS } from '../../VtmnSnackbar/enum';
 
 const timeout = 5000;
 
@@ -36,7 +37,9 @@ describe('VtmnToastItem', () => {
       timeout,
       style: '--position: 1;',
     });
-    expect(getToast(container)).toHaveAttribute('style', '--position: 1;');
+    expect(
+      getToast(container).getAttribute('style').includes('--position: 1;'),
+    ).toBeTruthy();
   });
   test('Should pass custom class to the toast', () => {
     const { container } = render(VtmnToastItem, {
@@ -100,7 +103,7 @@ describe('VtmnToastItem', () => {
     component.$on('close', handleClick);
     expect(handleClick).toHaveBeenCalledTimes(0);
     await waitFor(() => expect(handleClick).toHaveBeenCalledTimes(1), {
-      timeout: 100,
+      timeout: 100 + CSS_ANIMATION_TIME_MS,
     });
   });
 });

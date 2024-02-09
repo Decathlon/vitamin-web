@@ -3,6 +3,7 @@ import '@testing-library/jest-dom';
 import { fireEvent, render, waitFor } from '@testing-library/svelte';
 
 import VtmnSnackbarItem from '../VtmnSnackbarItem.svelte';
+import { CSS_ANIMATION_TIME_MS } from '../enum';
 
 describe('VtmnSnackbar', () => {
   const timeout = 1000;
@@ -43,7 +44,7 @@ describe('VtmnSnackbar', () => {
     component.$on('close', handleClick);
     expect(handleClick).toHaveBeenCalledTimes(0);
     await waitFor(() => expect(handleClick).toHaveBeenCalledTimes(1), {
-      timeout: 100,
+      timeout: 100 + CSS_ANIMATION_TIME_MS,
     });
   });
   test('Should trigger event on click button close', async () => {

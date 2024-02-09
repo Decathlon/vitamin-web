@@ -2,6 +2,7 @@ import '@testing-library/jest-dom';
 import { fireEvent, render, waitFor } from '@testing-library/svelte';
 import VtmnAlertItem from '../VtmnAlertItem.svelte';
 import VtmnAlertItemWithSlot from './VtmnAlertItemWithSlots.test.svelte';
+import { CSS_ANIMATION_TIME_MS } from '../enums';
 
 const timeout = 5000;
 
@@ -165,7 +166,7 @@ describe('VtmnAlertItem', () => {
     component.$on('close', handleClick);
     expect(handleClick).toHaveBeenCalledTimes(0);
     await waitFor(() => expect(handleClick).toHaveBeenCalledTimes(1), {
-      timeout: 100,
+      timeout: 100 + CSS_ANIMATION_TIME_MS,
     });
   });
 

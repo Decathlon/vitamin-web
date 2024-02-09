@@ -58,3 +58,8 @@
     transform: translate(50%, 0%);
   }
 }
+
+.vtmn-snackbar.animate-delay {
+  animation-delay: 0s, 0s, var(--vtmn-animation_overlay-duration),
+    var(--vtmn-animation_overlay-duration);
+}

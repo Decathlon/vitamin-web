@@ -6,10 +6,16 @@ class VtmnToastStore {
     this._toasts = writable([]);
   }
 
-  send({ content, withCloseButton, withIcon }) {
+  send({ content, withCloseButton, withIcon, timeout }) {
     this._toasts.update((state) => [
       ...state,
-      { content, withCloseButton, withIcon, id: `vtmn-toast-${uuid()}` },
+      {
+        content,
+        withCloseButton,
+        withIcon,
+        timeout,
+        id: `vtmn-toast-${uuid()}`,
+      },
     ]);
   }
 

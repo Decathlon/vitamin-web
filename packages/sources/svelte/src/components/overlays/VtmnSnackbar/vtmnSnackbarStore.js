@@ -6,9 +6,15 @@ class VtmnSnackbarStore {
     this._snackbar = writable([]);
   }
 
-  send({ content, withCloseButton, action }) {
+  send({ content, withCloseButton, action, timeout }) {
     this._snackbar.set([
-      { content, withCloseButton, action, id: `vtmn-snackbar-${uuid()}` },
+      {
+        content,
+        withCloseButton,
+        action,
+        timeout,
+        id: `vtmn-snackbar-${uuid()}`,
+      },
     ]);
   }
 

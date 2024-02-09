@@ -130,3 +130,7 @@
     animation: var(--vtmn-animation_alert-mobile);
   }
 }
+
+.vtmn-alert.animate-delay {
+  animation-delay: 0s, 0s, var(--vtmn-animation_alert-duration);
+}
