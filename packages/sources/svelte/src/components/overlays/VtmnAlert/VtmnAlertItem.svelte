@@ -34,8 +34,7 @@
 
   /**
    * @type {number} time (ms) before the alert disappears
-   * Can't be above 8000ms.
-   * Set to 0 to keep the alert visible
+   * Set to Infinity to keep the alert visible
    */
   export let timeout = VTMN_ALERT_TIMEOUT;
 

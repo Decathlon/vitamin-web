@@ -22,6 +22,7 @@
 
   /**
    * @type {number} timeout before the component execute the close action.
+   * Set to Infinity to keep the snackbar visible
    */
   export let timeout;
 

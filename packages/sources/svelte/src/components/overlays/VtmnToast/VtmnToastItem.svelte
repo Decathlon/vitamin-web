@@ -23,6 +23,7 @@
 
   /**
    * @type {number} Time (ms) before the component dispatch automatically 'close'
+   * Set to Infinity to keep the toast visible
    */
   export let timeout;
 
