@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.6.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@4.5.0...@vtmn/svelte@4.6.0) (2024-02-12)
+
+### Features
+
+- **`@vtmn/svelte`:** add property for ol attributes `VtmnBreadcrumb` ([#1481](https://github.com/Decathlon/vitamin-web/issues/1481)) ([97f3245](https://github.com/Decathlon/vitamin-web/commit/97f32452c178b6125f224fae713440068c19510d))
+
 # [4.5.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@4.4.0...@vtmn/svelte@4.5.0) (2024-01-25)
 
 ### Features
