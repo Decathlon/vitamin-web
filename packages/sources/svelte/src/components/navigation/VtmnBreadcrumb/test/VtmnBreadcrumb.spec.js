@@ -16,6 +16,15 @@ describe('VtmnBreadcrumbWithSlot', () => {
     expect(container.querySelector('ol').children.length).toEqual(3);
   });
 
+  test('Should apply property on the ol node', () => {
+    const { getByTestId } = render(VtmnBreadcrumbWithSlot, {
+      orderedListAttributes: {
+        'data-testid': 'foo',
+      },
+    });
+    expect(getByTestId('foo')).toBeVisible();
+  });
+
   test('Should apply a custom class on the breadcrumb', () => {
     const { container } = render(VtmnBreadcrumbWithSlot, {
       class: 'custom-class',

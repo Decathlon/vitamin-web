@@ -8,11 +8,17 @@
    */
   export let className = undefined;
 
+  /**
+   * Properties applied on the `ol` node
+   * @type {object}
+   */
+  export let orderedListAttributes = {};
+
   $: componentClass = cn('vtmn-breadcrumb', className);
 </script>
 
 <nav class={componentClass} {...$$restProps}>
-  <ol>
+  <ol {...orderedListAttributes}>
     <slot />
   </ol>
 </nav>
