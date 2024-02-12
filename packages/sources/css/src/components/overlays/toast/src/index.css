@@ -63,3 +63,8 @@
     margin: 0 auto;
   }
 }
+
+.vtmn-toast.animate-delay {
+  animation-delay: 0s, 0s, var(--vtmn-animation_overlay-duration),
+    var(--vtmn-animation_overlay-duration);
+}

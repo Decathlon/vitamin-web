@@ -2,7 +2,12 @@
   import VtmnButton from '../../actions/VtmnButton/VtmnButton.svelte';
   import { createEventDispatcher, onDestroy, onMount } from 'svelte';
   import { cn } from '../../../utils/classnames';
-  import { VTMN_ALERT_VARIANT } from './enums';
+  import {
+    VTMN_ALERT_TIMEOUT,
+    VTMN_ALERT_VARIANT,
+    CSS_ANIMATION_TIME_MS,
+    INFINITE_TIMEOUT_MS,
+  } from './enums';
 
   /**
    * @type {'info'|'success'|'danger'|'warning'} variant of the alert
@@ -29,10 +34,9 @@
 
   /**
    * @type {number} time (ms) before the alert disappears
-   * Can't be above 8000ms.
-   * Set to 0 to keep the alert visible
+   * Set to Infinity to keep the alert visible
    */
-  export let timeout = 8000;
+  export let timeout = VTMN_ALERT_TIMEOUT;
 
   /**
    * @type {string} aria label on the button
@@ -49,18 +53,34 @@
   const closeHandler = () => dispatch('close');
   const _clearTimeout = () => timeoutId && clearTimeout(timeoutId);
   const _setTimeout = () =>
-    (timeoutId = timeout && setTimeout(closeHandler, timeout));
+    (timeoutId =
+      typeof timeout === 'number' &&
+      setTimeout(
+        closeHandler,
+        (timeout < Infinity ? timeout : INFINITE_TIMEOUT_MS) +
+          CSS_ANIMATION_TIME_MS,
+      ));
   onDestroy(_clearTimeout);
   onMount(_setTimeout);
+
   $: componentClass = cn(
     'vtmn-alert',
-    timeout > 0 && 'show',
+    typeof timeout === 'number' && 'show animate-delay',
     variant && `vtmn-alert_variant--${variant}`,
     className,
   );
 </script>
 
-<div class={componentClass} role="alert" tabindex="-1" {...$$restProps}>
+<div
+  class={componentClass}
+  style:--vtmn-animation_alert-duration={typeof timeout === 'number' &&
+  timeout < Infinity
+    ? `${timeout}ms`
+    : `${INFINITE_TIMEOUT_MS}ms`}
+  role="alert"
+  tabindex="-1"
+  {...$$restProps}
+>
   <div class="vtmn-alert_content" role="document">
     <div class="vtmn-alert_content-title">
       {#if $$slots.title}

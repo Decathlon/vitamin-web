@@ -39,6 +39,14 @@
         type: 'text',
       },
     },
+    timeout: {
+      type: { name: 'number', required: false },
+      description: 'Duration of the animation',
+      defaultValue: 8000,
+      control: {
+        type: 'number',
+      },
+    },
     variant: {
       type: { name: 'boolean', required: false },
       description: 'Variant of the alert',
@@ -85,7 +93,7 @@
   args={{
     title: undefined,
     description: undefined,
-    timeout: 0,
+    timeout: null,
     ariaLabelCloseButton: 'Close alert',
   }}
   let:args

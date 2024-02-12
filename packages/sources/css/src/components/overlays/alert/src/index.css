@@ -112,6 +112,7 @@
   position: fixed;
   inset-block-start: rem(32px);
   inset-inline-end: rem(16px);
+  margin-left: rem(16px);
   animation: var(--vtmn-animation_alert);
 }
 
@@ -129,4 +130,8 @@
     inset-inline-start: rem(16px);
     animation: var(--vtmn-animation_alert-mobile);
   }
+}
+
+.vtmn-alert.animate-delay {
+  animation-delay: 0s, 0s, var(--vtmn-animation_alert-duration);
 }

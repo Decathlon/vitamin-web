@@ -2,6 +2,7 @@
   import { cn } from '../../../utils/classnames';
   import VtmnButton from '../../actions/VtmnButton/VtmnButton.svelte';
   import { createEventDispatcher, onDestroy, onMount } from 'svelte';
+  import { INFINITE_TIMEOUT_MS, CSS_ANIMATION_TIME_MS } from './enum';
 
   /**
    * @type {string} text write into the snackbar
@@ -21,6 +22,7 @@
 
   /**
    * @type {number} timeout before the component execute the close action.
+   * Set to Infinity to keep the snackbar visible
    */
   export let timeout;
 
@@ -31,20 +33,33 @@
   export { className as class };
 
   let timeoutId;
-
   const dispatch = createEventDispatcher();
   const closeHandler = () => dispatch('close');
   const actionHandler = () => dispatch('action');
   const _clearTimeout = () => timeoutId && clearTimeout(timeoutId);
-  const _setTimeout = () => (timeoutId = setTimeout(closeHandler, timeout));
+  const _setTimeout = () =>
+    (timeoutId =
+      typeof timeout === 'number' &&
+      setTimeout(
+        closeHandler,
+        (timeout < Infinity ? timeout : INFINITE_TIMEOUT_MS) +
+          CSS_ANIMATION_TIME_MS,
+      ));
 
   onDestroy(_clearTimeout);
   onMount(_setTimeout);
 
-  $: componentClass = cn('vtmn-snackbar', 'show', className);
+  $: componentClass = cn('vtmn-snackbar show animate-delay', className);
 </script>
 
-<div class={componentClass} role="status">
+<div
+  class={componentClass}
+  style:--vtmn-animation_overlay-duration={typeof timeout === 'number' &&
+  timeout < Infinity
+    ? `${timeout}ms`
+    : `${INFINITE_TIMEOUT_MS}ms`}
+  role="status"
+>
   <div class="vtmn-snackbar_content">
     {content}
   </div>

@@ -1,13 +1,18 @@
 :root {
-  --vtmn-animation_alert: fade-in 200ms ease-in forwards,
-    slide-left 0.2s ease-in forwards, slide-right 0.2s 7.5s ease-in forwards;
-  --vtmn-animation_alert-mobile: fade_in 200ms ease-in forwards,
-    slide-up 0.2s ease-in forwards, slide-down 0.2s 7.5s ease-in forwards;
+  --vtmn-animation_alert-duration: 7.5s;
+  --vtmn-animation_overlay-duration: 4.5s;
+  --vtmn-animation_alert: fade-in 0.2s ease-in forwards,
+    slide-left 0.2s ease-in forwards,
+    slide-right 0.2s var(--vtmn-animation_alert-duration) ease-in forwards;
+  --vtmn-animation_alert-mobile: fade_in 0.2s ease-in forwards,
+    slide-up 0.2s ease-in forwards,
+    slide-down 0.2s var(--vtmn-animation_alert-duration) ease-in forwards;
   --vtmn-animation_fade-in: fade-in 200ms ease-in-out forwards;
   --vtmn-animation_show-up: show-up 400ms ease-in-out forwards;
   --vtmn-animation_overlay: fade-in 0.5s ease-in-out forwards,
-    show-up 0.5s ease-in-out forwards, fade-out 0.5s 4.5s ease-in-out forwards,
-    vanish 0.5s 4.5s ease-in-out forwards;
+    show-up 0.5s ease-in-out forwards,
+    fade-out 0.5s var(--vtmn-animation_overlay-duration) ease-in-out forwards,
+    vanish 0.5s var(--vtmn-animation_overlay-duration) ease-in-out forwards;
   --vtmn-animation_linear-indeterminate: 1.5s ease-in-out infinite
     linear-indeterminate;
   --vtmn-animation_circle-indeterminate: 4s linear infinite circle-indeterminate;
