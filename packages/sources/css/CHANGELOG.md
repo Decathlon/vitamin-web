@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@3.0.1...@vtmn/css@3.0.2) (2024-02-12)
+
+### Bug Fixes
+
+- **`@vtmn/svelte`, `@vtmn/css`:** fix timeout on overlays components ([#1480](https://github.com/Decathlon/vitamin-web/issues/1480)) ([15ccc52](https://github.com/Decathlon/vitamin-web/commit/15ccc5286832d3da0ff531c903148ba0f31f8e6e))
+
 ## [3.0.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/css@3.0.0...@vtmn/css@3.0.1) (2023-09-13)
 
 ### Bug Fixes
