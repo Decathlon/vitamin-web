@@ -4,6 +4,8 @@ import { computed, defineComponent, PropType, reactive } from 'vue';
 import { VtmnAlertVariant } from './types';
 import { VtmnButton } from '../../index';
 
+const INFINITE_TIMEOUT_MS = 9999000;
+
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnAlert',
   components: { VtmnButton },
@@ -49,9 +51,16 @@ export default /*#__PURE__*/ defineComponent({
     return {
       classes: computed(() => ({
         'vtmn-alert': true,
-        show: props.timeout > 0,
+        'show animate-delay': props.timeout > 0,
         [`vtmn-alert_variant--${props.variant}`]: props.variant,
       })),
+      style: {
+        '--vtmn-animation_alert-duration': `${
+          typeof props.timeout === 'number' && props.timeout < Infinity
+            ? props.timeout
+            : INFINITE_TIMEOUT_MS
+        }ms`,
+      },
       handleClose,
     };
   },
@@ -59,7 +68,13 @@ export default /*#__PURE__*/ defineComponent({
 </script>
 
 <template>
-  <div :class="classes" role="alert" tabindex="-1" v-bind="$attrs">
+  <div
+    :class="classes"
+    :style="style"
+    role="alert"
+    tabindex="-1"
+    v-bind="$attrs"
+  >
     <div class="vtmn-alert_content" role="document">
       <div class="vtmn-alert_content-title">
         {{ title }}

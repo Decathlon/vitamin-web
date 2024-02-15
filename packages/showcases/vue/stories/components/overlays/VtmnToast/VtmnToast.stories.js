@@ -2,6 +2,8 @@ import { ref } from 'vue';
 import { VtmnToast, VtmnButton } from '@vtmn/vue';
 import { parameters } from '@vtmn/showcase-core/csf/components/overlays/toast.csf';
 
+const CSS_ANIMATION_TIME_MS = 500;
+
 export default {
   title: 'Components / Overlays / VtmnToast',
   component: VtmnToast,
@@ -22,6 +24,14 @@ export default {
         type: 'boolean',
       },
     },
+    timeout: {
+      type: { name: 'number', required: false },
+      description: 'Duration of the animation',
+      defaultValue: 4500,
+      control: {
+        type: 'number',
+      },
+    },
   },
   parameters,
 };
@@ -37,7 +47,7 @@ const Template = (args) => ({
         showToast.value = true;
         setTimeout(() => {
           showToast.value = false;
-        }, 8000);
+        }, args.timeout + CSS_ANIMATION_TIME_MS);
       },
       args,
     };

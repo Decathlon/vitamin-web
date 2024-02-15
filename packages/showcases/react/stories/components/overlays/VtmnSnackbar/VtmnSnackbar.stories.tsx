@@ -7,6 +7,8 @@ import {
 import { VtmnSnackbar } from '@vtmn/react';
 import { VtmnButton } from '@vtmn/react';
 
+const CSS_ANIMATION_TIME_MS = 500;
+
 export default {
   title: 'Components / Overlays / VtmnSnackbar',
   component: VtmnSnackbar,
@@ -21,7 +23,7 @@ const OverviewTemplate: Story = (args) => {
     if (showSnackbar) {
       const timeout = setTimeout(() => {
         setshowSnackbar(false);
-      }, 8000);
+      }, args.timeout + CSS_ANIMATION_TIME_MS);
       return () => clearTimeout(timeout);
     }
   }, [showSnackbar]);

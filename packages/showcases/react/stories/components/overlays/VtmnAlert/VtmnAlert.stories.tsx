@@ -7,6 +7,8 @@ import {
 import { VtmnAlert } from '@vtmn/react';
 import { VtmnButton } from '@vtmn/react';
 
+const CSS_ANIMATION_TIME_MS = 700;
+
 export default {
   title: 'Components / Overlays / VtmnAlert',
   component: VtmnAlert,
@@ -21,7 +23,7 @@ const OverviewTemplate: Story = (args) => {
     if (showAlert) {
       const timeout = setTimeout(() => {
         setShowAlert(false);
-      }, 8000);
+      }, args.timeout + CSS_ANIMATION_TIME_MS);
       return () => clearTimeout(timeout);
     }
   }, [showAlert]);

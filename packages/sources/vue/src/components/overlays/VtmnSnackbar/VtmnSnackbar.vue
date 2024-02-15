@@ -2,6 +2,9 @@
 import '@vtmn/css-snackbar/dist/index-with-vars.css';
 import { computed, defineComponent, PropType } from 'vue';
 import { VtmnButton } from '../../index';
+
+const INFINITE_TIMEOUT_MS = 9999000;
+
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnSnackbar',
   inheritAttrs: false,
@@ -11,13 +14,17 @@ export default /*#__PURE__*/ defineComponent({
       type: Boolean as PropType<boolean>,
       default: false,
     },
+    timeout: {
+      type: Number as PropType<number>,
+      default: 4500,
+    },
     actionLabel: {
       type: String as PropType<string>,
       default: undefined,
     },
   },
   emits: ['close', 'action'],
-  setup(_, { emit }) {
+  setup(props, { emit }) {
     const handleClose = (event: Event) => {
       return emit('close', (event.target as HTMLInputElement).value);
     };
@@ -29,8 +36,15 @@ export default /*#__PURE__*/ defineComponent({
     return {
       classes: computed(() => ({
         'vtmn-snackbar': true,
-        show: true,
+        'show animate-delay': props.timeout > 0,
       })),
+      style: {
+        '--vtmn-animation_overlay-duration': `${
+          typeof props.timeout === 'number' && props.timeout < Infinity
+            ? props.timeout
+            : INFINITE_TIMEOUT_MS
+        }ms`,
+      },
       handleClose,
       handleAction,
     };
@@ -39,7 +53,7 @@ export default /*#__PURE__*/ defineComponent({
 </script>
 
 <template>
-  <div :class="classes" role="status" v-bind="$attrs">
+  <div :class="classes" :style="style" role="status" v-bind="$attrs">
     <div v-if="$slots.content" class="vtmn-snackbar_content">
       <slot name="content" />
     </div>

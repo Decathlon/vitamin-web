@@ -5,6 +5,8 @@ import {
   parameters,
 } from '@vtmn/showcase-core/csf/components/overlays/alert.csf';
 
+const CSS_ANIMATION_TIME_MS = 700;
+
 export default {
   title: 'Components / Overlays / VtmnAlert',
   component: VtmnAlert,
@@ -23,7 +25,7 @@ const Template = (args) => ({
         showAlert.value = true;
         setTimeout(() => {
           showAlert.value = false;
-        }, 8000);
+        }, args.timeout + CSS_ANIMATION_TIME_MS);
       },
       args,
     };

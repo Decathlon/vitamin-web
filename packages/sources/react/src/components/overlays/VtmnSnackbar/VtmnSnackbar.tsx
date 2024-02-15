@@ -3,6 +3,8 @@ import '@vtmn/css-snackbar/dist/index-with-vars.css';
 import clsx from 'clsx';
 import { VtmnButton } from '../../actions/VtmnButton';
 
+const INFINITE_TIMEOUT_MS = 9999000;
+
 export interface VtmnSnackbarProps
   extends Omit<React.ComponentPropsWithoutRef<'dialog'>, 'onClose'> {
   /**
@@ -21,6 +23,11 @@ export interface VtmnSnackbarProps
   withCloseButton?: boolean;
 
   /**
+   * Duration of the snackbar in ms
+   */
+  timeout?: number;
+
+  /**
    * The alert callback close function
    * @type {function}
    */
@@ -33,11 +40,22 @@ export const VtmnSnackbar = ({
   withCloseButton = false,
   onClose,
   className,
+  timeout = 4500,
 }: VtmnSnackbarProps) => {
+  const propertyStyle: Record<string, string> = {
+    '--vtmn-animation_overlay-duration': `${
+      timeout < Infinity ? timeout : INFINITE_TIMEOUT_MS
+    }ms`,
+  };
   return (
     <div
       role="status"
-      className={clsx('vtmn-snackbar', 'show', className)}
+      style={propertyStyle}
+      className={clsx(
+        'vtmn-snackbar',
+        timeout > 0 && 'show animate-delay',
+        className,
+      )}
       onClick={onClose}
     >
       <div className="vtmn-snackbar_content">{content}</div>
