@@ -32,4 +32,13 @@ export const argTypes = {
     defaultValue: undefined,
     control: { type: 'text' },
   },
+
+  timeout: {
+    type: { name: 'number', required: false },
+    description: 'Duration of the animation',
+    defaultValue: 8000,
+    control: {
+      type: 'number',
+    },
+  },
 };

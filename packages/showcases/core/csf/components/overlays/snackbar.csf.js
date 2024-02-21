@@ -9,12 +9,6 @@ export const parameters = {
 };
 
 export const argTypes = {
-  content: {
-    type: { name: 'string', required: true },
-    description: 'Text displayed on the snackbar',
-    defaultValue: 'This is the content of a snackbar',
-    control: { type: 'text' },
-  },
   withCloseButton: {
     type: { name: 'boolean', required: false },
     description: 'Show close button',
@@ -29,6 +23,14 @@ export const argTypes = {
     defaultValue: 'Action',
     control: {
       type: 'text',
+    },
+  },
+  timeout: {
+    type: { name: 'number', required: false },
+    description: 'Duration of the animation',
+    defaultValue: 4500,
+    control: {
+      type: 'number',
     },
   },
 };

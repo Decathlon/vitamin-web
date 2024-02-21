@@ -4,6 +4,8 @@ import { VtmnAlertVariant } from './types';
 import clsx from 'clsx';
 import { VtmnButton } from '../../actions/VtmnButton';
 
+const INFINITE_TIMEOUT_MS = 9999000;
+
 export interface VtmnAlertProps
   extends Omit<React.ComponentPropsWithoutRef<'dialog'>, 'onClose'> {
   /**
@@ -48,14 +50,20 @@ export const VtmnAlert = ({
   timeout = 8000,
   className,
 }: VtmnAlertProps) => {
+  const propertyStyle: Record<string, string> = {
+    '--vtmn-animation_alert-duration': `${
+      timeout < Infinity ? timeout : INFINITE_TIMEOUT_MS
+    }ms`,
+  };
   return (
     <div
       aria-label={title}
       role="dialog"
+      style={propertyStyle}
       className={clsx(
         'vtmn-alert',
         `vtmn-alert_variant--${variant}`,
-        timeout > 0 && 'show',
+        timeout > 0 && 'show animate-delay',
         className,
       )}
     >

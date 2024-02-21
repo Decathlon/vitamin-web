@@ -3,6 +3,8 @@ import '@vtmn/css-toast/dist/index-with-vars.css';
 import { computed, defineComponent, PropType, reactive } from 'vue';
 import { VtmnButton } from '../../index';
 
+const INFINITE_TIMEOUT_MS = 9999000;
+
 export default /*#__PURE__*/ defineComponent({
   name: 'VtmnToast',
   inheritAttrs: false,
@@ -11,6 +13,10 @@ export default /*#__PURE__*/ defineComponent({
     withIcon: {
       type: Boolean as PropType<boolean>,
       default: false,
+    },
+    timeout: {
+      type: Number as PropType<number>,
+      default: 4500,
     },
     withCloseButton: {
       type: Boolean as PropType<boolean>,
@@ -28,9 +34,16 @@ export default /*#__PURE__*/ defineComponent({
     return {
       classes: computed(() => ({
         'vtmn-toast': true,
-        show: true,
+        'show animate-delay': props.timeout > 0,
         [`vtmn-toast--with-icon-info`]: props.withIcon,
       })),
+      style: {
+        '--vtmn-animation_overlay-duration': `${
+          typeof props.timeout === 'number' && props.timeout < Infinity
+            ? props.timeout
+            : INFINITE_TIMEOUT_MS
+        }ms`,
+      },
       handleClose,
     };
   },
@@ -38,7 +51,7 @@ export default /*#__PURE__*/ defineComponent({
 </script>
 
 <template>
-  <div :class="classes" role="status" v-bind="$attrs">
+  <div :class="classes" :style="style" role="status" v-bind="$attrs">
     <div v-if="$slots.content" class="vtmn-toast_content">
       <slot name="content" />
     </div>

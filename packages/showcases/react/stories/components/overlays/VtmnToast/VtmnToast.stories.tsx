@@ -7,10 +7,20 @@ import {
 import { VtmnToast } from '@vtmn/react';
 import { VtmnButton } from '@vtmn/react';
 
+const CSS_ANIMATION_TIME_MS = 500;
+
 export default {
   title: 'Components / Overlays / VtmnToast',
   component: VtmnToast,
-  argTypes,
+  argTypes: {
+    ...argTypes,
+    content: {
+      type: { name: 'string', required: true },
+      description: 'Text displayed on the snackbar',
+      defaultValue: 'This is the content of a snackbar',
+      control: { type: 'text' },
+    },
+  },
   parameters,
 } as Meta;
 
@@ -21,7 +31,7 @@ const OverviewTemplate: Story = (args) => {
     if (showToast) {
       const timeout = setTimeout(() => {
         setshowToast(false);
-      }, 8000);
+      }, args.timeout + CSS_ANIMATION_TIME_MS);
       return () => clearTimeout(timeout);
     }
   }, [showToast]);

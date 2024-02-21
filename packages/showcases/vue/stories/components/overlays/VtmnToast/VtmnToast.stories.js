@@ -1,28 +1,16 @@
 import { ref } from 'vue';
 import { VtmnToast, VtmnButton } from '@vtmn/vue';
-import { parameters } from '@vtmn/showcase-core/csf/components/overlays/toast.csf';
+import {
+  parameters,
+  argTypes,
+} from '@vtmn/showcase-core/csf/components/overlays/toast.csf';
+
+const CSS_ANIMATION_TIME_MS = 500;
 
 export default {
   title: 'Components / Overlays / VtmnToast',
   component: VtmnToast,
-  argTypes: {
-    withCloseButton: {
-      type: { name: 'boolean', required: false },
-      description: 'Show close button',
-      defaultValue: false,
-      control: {
-        type: 'boolean',
-      },
-    },
-    withIcon: {
-      type: { name: 'boolean', required: false },
-      description: 'Display left icon',
-      defaultValue: false,
-      control: {
-        type: 'boolean',
-      },
-    },
-  },
+  argTypes,
   parameters,
 };
 
@@ -37,7 +25,7 @@ const Template = (args) => ({
         showToast.value = true;
         setTimeout(() => {
           showToast.value = false;
-        }, 8000);
+        }, args.timeout + CSS_ANIMATION_TIME_MS);
       },
       args,
     };

@@ -3,6 +3,8 @@ import '@vtmn/css-toast/dist/index-with-vars.css';
 import clsx from 'clsx';
 import { VtmnButton } from '../../actions/VtmnButton';
 
+const INFINITE_TIMEOUT_MS = 9999000;
+
 export interface VtmnToastProps
   extends Omit<React.ComponentPropsWithoutRef<'dialog'>, 'onClose'> {
   /**
@@ -21,6 +23,11 @@ export interface VtmnToastProps
   withCloseButton?: boolean;
 
   /**
+   * Duration of the toast in ms
+   */
+  timeout?: number;
+
+  /**
    * The alert callback close function
    * @type {function}
    */
@@ -33,13 +40,20 @@ export const VtmnToast = ({
   withCloseButton = false,
   onClose,
   className,
+  timeout = 4500,
 }: VtmnToastProps) => {
+  const propertyStyle: Record<string, string> = {
+    '--vtmn-animation_overlay-duration': `${
+      timeout < Infinity ? timeout : INFINITE_TIMEOUT_MS
+    }ms`,
+  };
   return (
     <div
       role="status"
+      style={propertyStyle}
       className={clsx(
         'vtmn-toast',
-        'show',
+        timeout > 0 && 'show animate-delay',
         withIcon && 'vtmn-toast--with-icon-info',
         className,
       )}

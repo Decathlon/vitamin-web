@@ -9,12 +9,6 @@ export const parameters = {
 };
 
 export const argTypes = {
-  content: {
-    type: { name: 'string', required: true },
-    description: 'Text displayed on the toast',
-    defaultValue: 'This is the content of a toast',
-    control: { type: 'text' },
-  },
   withCloseButton: {
     type: { name: 'boolean', required: false },
     description: 'Show close button',
@@ -29,6 +23,14 @@ export const argTypes = {
     defaultValue: false,
     control: {
       type: 'boolean',
+    },
+  },
+  timeout: {
+    type: { name: 'number', required: false },
+    description: 'Duration of the animation',
+    defaultValue: 4500,
+    control: {
+      type: 'number',
     },
   },
 };
