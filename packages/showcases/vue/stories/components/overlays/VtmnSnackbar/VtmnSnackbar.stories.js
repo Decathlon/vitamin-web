@@ -1,38 +1,16 @@
 import { ref } from 'vue';
 import { VtmnSnackbar, VtmnButton } from '@vtmn/vue';
-import { parameters } from '@vtmn/showcase-core/csf/components/overlays/snackbar.csf';
+import {
+  parameters,
+  argTypes,
+} from '@vtmn/showcase-core/csf/components/overlays/snackbar.csf';
 
 const CSS_ANIMATION_TIME_MS = 500;
 
 export default {
   title: 'Components / Overlays / VtmnSnackbar',
   component: VtmnSnackbar,
-  argTypes: {
-    withCloseButton: {
-      type: { name: 'boolean', required: true },
-      description: 'Show close button',
-      defaultValue: false,
-      control: {
-        type: 'boolean',
-      },
-    },
-    actionLabel: {
-      type: { name: 'string', required: false },
-      describe: 'Label of the action. If set, it displays action button',
-      defaultValue: undefined,
-      control: {
-        type: 'text',
-      },
-    },
-    timeout: {
-      type: { name: 'number', required: false },
-      description: 'Duration of the animation',
-      defaultValue: 4500,
-      control: {
-        type: 'number',
-      },
-    },
-  },
+  argTypes,
   parameters,
 };
 

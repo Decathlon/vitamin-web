@@ -9,12 +9,6 @@ export const parameters = {
 };
 
 export const argTypes = {
-  content: {
-    type: { name: 'string', required: true },
-    description: 'Text displayed on the toast',
-    defaultValue: 'This is the content of a toast',
-    control: { type: 'text' },
-  },
   withCloseButton: {
     type: { name: 'boolean', required: false },
     description: 'Show close button',

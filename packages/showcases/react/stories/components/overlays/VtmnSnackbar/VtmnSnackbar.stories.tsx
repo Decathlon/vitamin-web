@@ -12,7 +12,15 @@ const CSS_ANIMATION_TIME_MS = 500;
 export default {
   title: 'Components / Overlays / VtmnSnackbar',
   component: VtmnSnackbar,
-  argTypes,
+  argTypes: {
+    ...argTypes,
+    content: {
+      type: { name: 'string', required: true },
+      description: 'Text displayed on the toast',
+      defaultValue: 'This is the content of a toast',
+      control: { type: 'text' },
+    },
+  },
   parameters,
 } as Meta;
 

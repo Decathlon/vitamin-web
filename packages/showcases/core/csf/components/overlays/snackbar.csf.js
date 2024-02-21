@@ -9,12 +9,6 @@ export const parameters = {
 };
 
 export const argTypes = {
-  content: {
-    type: { name: 'string', required: true },
-    description: 'Text displayed on the snackbar',
-    defaultValue: 'This is the content of a snackbar',
-    control: { type: 'text' },
-  },
   withCloseButton: {
     type: { name: 'boolean', required: false },
     description: 'Show close button',
