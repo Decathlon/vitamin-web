@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.2.0](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@4.1.1...@vtmn/vue@4.2.0) (2024-02-21)
+
+### Features
+
+- **`@vtmn/react`, `@vtmn/vue`:** timeout enhancement ([#1483](https://github.com/Decathlon/vitamin-web/issues/1483)) ([135c6dd](https://github.com/Decathlon/vitamin-web/commit/135c6dde680c07f425625ca782f7dfaaffd1963f))
+
 ## [4.1.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/vue@4.1.0...@vtmn/vue@4.1.1) (2024-02-12)
 
 **Note:** Version bump only for package @vtmn/vue
