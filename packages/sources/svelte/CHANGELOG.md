@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.6.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@4.6.1...@vtmn/svelte@4.6.2) (2024-02-23)
+
+### Bug Fixes
+
+- **`@vtmn/svelte`:** fix `VmntAlert` with timeout 0 ([#1485](https://github.com/Decathlon/vitamin-web/issues/1485)) ([998e012](https://github.com/Decathlon/vitamin-web/commit/998e0125f3c632feed3a42b087e483d76025366e))
+
 ## [4.6.1](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@4.6.0...@vtmn/svelte@4.6.1) (2024-02-12)
 
 ### Bug Fixes
