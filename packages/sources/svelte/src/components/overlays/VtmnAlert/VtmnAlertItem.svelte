@@ -65,7 +65,7 @@
 
   $: componentClass = cn(
     'vtmn-alert',
-    typeof timeout === 'number' && 'show animate-delay',
+    typeof timeout === 'number' && timeout > 0 && 'show animate-delay',
     variant && `vtmn-alert_variant--${variant}`,
     className,
   );
