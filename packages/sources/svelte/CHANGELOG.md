@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.6.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@4.6.2...@vtmn/svelte@4.6.3) (2024-02-27)
+
+### Bug Fixes
+
+- **`@vtmn/svelte`:** fix dispatch close for `VtmnAlertItem` / `VtmnSnackbarItem` / `VtmnToastItem` ([#1486](https://github.com/Decathlon/vitamin-web/issues/1486)) ([cdd09b2](https://github.com/Decathlon/vitamin-web/commit/cdd09b291e371deb5522bdb0b5e7a778af084462))
+
 ## [4.6.2](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@4.6.1...@vtmn/svelte@4.6.2) (2024-02-23)
 
 ### Bug Fixes
