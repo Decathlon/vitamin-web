@@ -55,6 +55,7 @@
   const _setTimeout = () =>
     (timeoutId =
       typeof timeout === 'number' &&
+      timeout > 0 &&
       setTimeout(
         closeHandler,
         (timeout < Infinity ? timeout : INFINITE_TIMEOUT_MS) +
