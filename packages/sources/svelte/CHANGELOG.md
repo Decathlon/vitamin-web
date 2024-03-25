@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.6.4](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@4.6.3...@vtmn/svelte@4.6.4) (2024-03-25)
+
+### Bug Fixes
+
+- **`@vtmn/svelte`:** `VtmnListItem` tabindex can be false ([#1490](https://github.com/Decathlon/vitamin-web/issues/1490)) ([473474e](https://github.com/Decathlon/vitamin-web/commit/473474e9dd410d8651dcb7f675959efd6c1054b9))
+
 ## [4.6.3](https://github.com/Decathlon/vitamin-web/compare/@vtmn/svelte@4.6.2...@vtmn/svelte@4.6.3) (2024-02-27)
 
 ### Bug Fixes
