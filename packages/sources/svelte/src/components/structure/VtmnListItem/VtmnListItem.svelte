@@ -103,7 +103,7 @@
   {#if href}
     <a
       class="vtmn-list__link"
-      tabindex={disabled && -1}
+      tabindex={disabled ? -1 : 0}
       {href}
       {target}
       on:click|stopPropagation
