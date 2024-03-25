@@ -88,6 +88,7 @@ describe('VtmnListItem', () => {
     });
     expect(getByRole('link')).toHaveAttribute('href', 'https://decathlon.fr');
     expect(getByRole('link')).toHaveAttribute('aria-disabled', 'true');
+    expect(getByRole('link')).toHaveAttribute('tabindex', '-1');
   });
   test('Should have a link _blank with noopener noreferrer', () => {
     const { getByRole } = render(VtmnListItem, {
@@ -96,5 +97,6 @@ describe('VtmnListItem', () => {
     expect(getByRole('link')).toHaveAttribute('href', 'https://decathlon.fr');
     expect(getByRole('link')).toHaveAttribute('target', '_blank');
     expect(getByRole('link')).toHaveAttribute('rel', 'noopener noreferrer');
+    expect(getByRole('link')).toHaveAttribute('tabindex', undefined);
   });
 });
