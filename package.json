@@ -82,7 +82,7 @@
     "stylelint": "^14.0.0",
     "stylelint-config-prettier": "^9.0.2",
     "stylelint-config-standard": "^28.0.0",
-    "svelte": "^3.46.3",
+    "svelte": "^4.2.19",
     "typescript": "^4.5.4"
   },
   "engines": {
