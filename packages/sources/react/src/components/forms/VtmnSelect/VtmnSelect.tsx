@@ -22,7 +22,7 @@ export const VtmnSelect = React.forwardRef<HTMLSelectElement, VtmnSelectProps>(
       error = false,
       errorText,
       id,
-      labelText,
+      labelText = '',
       labelClassName,
       labelProps,
       options = [],
@@ -40,9 +40,11 @@ export const VtmnSelect = React.forwardRef<HTMLSelectElement, VtmnSelectProps>(
           'vtmn-select--no-border': !border,
         })}
       >
-        <label className={labelClassName || ''} htmlFor={id} {...labelProps}>
-          {labelText}
-        </label>
+        {labelText && (
+          <label className={labelClassName || ''} htmlFor={id} {...labelProps}>
+            {labelText}
+          </label>
+        )}
         <select
           id={id}
           className={clsx(className, {
