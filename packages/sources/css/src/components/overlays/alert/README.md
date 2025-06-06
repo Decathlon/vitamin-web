@@ -5,7 +5,6 @@
 <a href="https://www.decathlon.design/726f8c765/p/3086dd-popover-beta/b/129609"><img src="https://img.shields.io/badge/decathlon.design-docs-007dbc" alt="documentation" /></a>
 <a href="https://decathlon.github.io/vitamin-web/@vtmn/showcase-css/?path=/docs/components-overlays-popover--overview"><img src="https://img.shields.io/badge/storybook-css-d891bc?style=flat&logo=storybook" alt="storybook" /></a>
 <a href="https://www.npmjs.com/package/@vtmn/css-popover"><img src="https://img.shields.io/npm/v/@vtmn/css-popover?style=flat&logo=npm" alt="npm version" /></a>
-<a href="https://sonarcloud.io/project/overview?id=decathlon_vitamin-web_css_components_popover"><img src="https://sonarcloud.io/api/project_badges/measure?project=decathlon_vitamin-web_css_components_popover&metric=alert_status" alt="Quality Gate Status" /></a>
 
 ## Install package
 

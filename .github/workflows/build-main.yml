@@ -6,14 +6,13 @@ on:
       - main
 jobs:
   build:
+    permissions: write-all
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          ssh-key: ${{ secrets.DEPLOY_KEY }}
-          ssh-strict: false
 
       - name: Set git configuration
         run: |
@@ -26,7 +25,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
 
       - name: Restore/create node_modules cache
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: '**/node_modules'
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
@@ -51,60 +50,3 @@ jobs:
         run: yarn deploy-storybook --ci
         env:
           GH_TOKEN: '${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}'
-
-  sonarcloud:
-    name: SonarCloud analysis
-    strategy:
-      matrix:
-        project_base_dir:
-          [
-            'packages/sources/css',
-            'packages/sources/css/src/components/actions/button',
-            'packages/sources/css/src/components/actions/dropdown',
-            'packages/sources/css/src/components/actions/link',
-            'packages/sources/css/src/components/forms/select',
-            'packages/sources/css/src/components/forms/text-input',
-            'packages/sources/css/src/components/indicators/badge',
-            'packages/sources/css/src/components/indicators/loader',
-            'packages/sources/css/src/components/indicators/price',
-            'packages/sources/css/src/components/indicators/progressbar',
-            'packages/sources/css/src/components/indicators/rating',
-            'packages/sources/css/src/components/indicators/tag',
-            'packages/sources/css/src/components/navigation/breadcrumb',
-            'packages/sources/css/src/components/navigation/navbar',
-            'packages/sources/css/src/components/navigation/search',
-            'packages/sources/css/src/components/navigation/tabs',
-            'packages/sources/css/src/components/overlays/alert',
-            'packages/sources/css/src/components/overlays/modal',
-            'packages/sources/css/src/components/overlays/popover',
-            'packages/sources/css/src/components/overlays/snackbar',
-            'packages/sources/css/src/components/overlays/toast',
-            'packages/sources/css/src/components/overlays/tooltip',
-            'packages/sources/css/src/components/selection-controls/checkbox',
-            'packages/sources/css/src/components/selection-controls/chip',
-            'packages/sources/css/src/components/selection-controls/quantity',
-            'packages/sources/css/src/components/selection-controls/radio-button',
-            'packages/sources/css/src/components/selection-controls/toggle',
-            'packages/sources/css/src/components/structure/accordion',
-            'packages/sources/css/src/components/structure/card',
-            'packages/sources/css/src/components/structure/divider',
-            'packages/sources/css/src/components/structure/list',
-            'packages/sources/css/src/components/structure/skeleton',
-            'packages/sources/css/src/design-tokens',
-            'packages/sources/css/src/utilities',
-            'packages/sources/react',
-            'packages/sources/svelte',
-            'packages/sources/vue',
-          ]
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
-      - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
-        with:
-          projectBaseDir: ${{ matrix.project_base_dir }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

@@ -6,15 +6,14 @@ on:
 
 jobs:
   build-canary:
+    permissions: write-all
     if: github.event.action == 'labeled' && contains(github.event.label.name, 'Publish canary')
     name: Build canary
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          ssh-key: ${{ secrets.DEPLOY_KEY }}
-          ssh-strict: false
 
       - name: Set git configuration
         run: |
@@ -27,7 +26,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
 
       - name: Restore/create node_modules cache
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: '**/node_modules'
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
